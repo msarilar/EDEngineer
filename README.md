@@ -4,7 +4,11 @@ EDEngineer is a basic app I've written to track materials, data and cargo acquir
 
 ##### **Warning:** Elite Dangerous started outputting logs only recently. It's very probable that the initial state of the app is wrong (negative numbers, missing entries, wrong numbers...) so you will have to manually change the quantities using the +/- buttons. These manual changes are recorded so you don't have to do it each time you start the app. After that, you are not supposed to use these +/- buttons.
 
-![Overview](http://i.imgur.com/gmtVVjH.png)
+![Overview](http://i.imgur.com/lOsjnfe.png)
+
+### Install
+
+Get the latest release in this [list](https://github.com/msarilar/EDEngineer/releases). Unzip the setup.zip file and run the setup.exe afterwards.
 
 ### Features
 
