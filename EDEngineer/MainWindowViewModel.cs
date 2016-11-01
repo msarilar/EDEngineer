@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.IO;
@@ -111,17 +110,14 @@ namespace EDEngineer
             {
                 blueprint.FavoriteAvailable += (o, e) =>
                 {
-                    // Get a toast XML template
                     var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
-
-                    // Fill in the text elements
+                    
                     var stringElements = toastXml.GetElementsByTagName("text");
 
                     stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
                     stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
                     stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
-
-                    // Specify the absolute path to an image
+                    
                     var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
 
                     var imageElements = toastXml.GetElementsByTagName("image");

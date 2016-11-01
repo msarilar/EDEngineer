@@ -1,6 +1,4 @@
 using System;
-using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 using EDEngineer.Utils.System;
 
@@ -13,10 +11,10 @@ namespace EDEngineer.Utils.UI
             EventHandler configureShortcutHandler)
         {
             var menu = BuildContextMenu(showHandler, quitHandler, configureShortcutHandler);
-
+            
             var icon = new NotifyIcon
             {
-                Icon = new Icon(Path.GetFullPath("Resources/Images/elite-dangerous-clean.ico")),
+                Icon = Properties.Resources.elite_dangerous_icon,
                 Visible = true,
                 Text = "ED - Engineer",
                 ContextMenu = menu

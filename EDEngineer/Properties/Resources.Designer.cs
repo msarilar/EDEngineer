@@ -59,5 +59,15 @@ namespace EDEngineer.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon elite_dangerous_icon {
+            get {
+                object obj = ResourceManager.GetObject("elite_dangerous_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }
