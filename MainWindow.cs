@@ -152,18 +152,28 @@ namespace EDEngineer
             Blueprints.CellStyle = newStyle;
         }
 
+        bool transitionning = false;
         private void HideWindow()
         {
-            var sb = (Storyboard) FindResource("WindowDeactivated");
-            Storyboard.SetTarget(sb, this);
-            sb.Begin();
+            if (!transitionning)
+            {
+                transitionning = true;
+                var sb = (Storyboard)FindResource("WindowDeactivated");
+                Storyboard.SetTarget(sb, this);
+                sb.Begin();
+            }
         }
 
         private void ShowWindow()
         {
-            var sb = (Storyboard)FindResource("WindowActivated");
-            Storyboard.SetTarget(sb, this);
-            sb.Begin();
+            if (!transitionning)
+            {
+                Focus();
+                transitionning = true;
+                var sb = (Storyboard) FindResource("WindowActivated");
+                Storyboard.SetTarget(sb, this);
+                sb.Begin();
+            }
         }
 
         protected override void OnSourceInitialized(EventArgs e)
@@ -199,6 +209,11 @@ namespace EDEngineer
             HotkeyManager.UnregisterHotKey(this);
             handle.RemoveHook(WndProc);
             icon.Dispose();
+        }
+
+        private void TransitionCompleted(object sender, EventArgs e)
+        {
+            transitionning = false;
         }
     }
 }

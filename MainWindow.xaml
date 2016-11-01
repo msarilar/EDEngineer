@@ -96,11 +96,13 @@
         <Storyboard x:Key="WindowActivated">
             <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
                              From="0.0" To="1.0"
+                             Completed="TransitionCompleted"
                              Duration="0:0:0.5"/>
         </Storyboard>
         <Storyboard x:Key="WindowDeactivated">
             <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
                              From="1.0" To="0.0"
+                             Completed="TransitionCompleted"
                              Duration="0:0:0.3"/>
         </Storyboard>
     </Window.Resources>
@@ -118,8 +120,8 @@
 
         <Grid Grid.Column="1"
               Grid.Row="1"
-              Background="Black"
-              Opacity="0.9">
+              Opacity="0.9"
+              Background="Black">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.5*" />

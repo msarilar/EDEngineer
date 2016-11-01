@@ -106,6 +106,32 @@ namespace EDEngineer
             ApplyEventsToSate(allLogs);
 
             IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
+
+            foreach (var blueprint in Blueprints)
+            {
+                blueprint.FavoriteAvailable += (o, e) =>
+                {
+                    // Get a toast XML template
+                    var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
+
+                    // Fill in the text elements
+                    var stringElements = toastXml.GetElementsByTagName("text");
+
+                    stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
+                    stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
+                    stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
+
+                    // Specify the absolute path to an image
+                    var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+
+                    var imageElements = toastXml.GetElementsByTagName("image");
+                    imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+
+                    var toast = new ToastNotification(toastXml);
+
+                    ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                };
+            }
         }
 
         private void ApplyEventsToSate(IEnumerable<string> allLogs)
@@ -189,28 +215,6 @@ namespace EDEngineer
                 };
 
                 State.StateChanged += blueprint.OnStateChanged;
-                blueprint.FavoriteAvailable += (o, e) =>
-                {
-                    // Get a toast XML template
-                    var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
-
-                    // Fill in the text elements
-                    var stringElements = toastXml.GetElementsByTagName("text");
-
-                    stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
-                    stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
-                    stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
-
-                    // Specify the absolute path to an image
-                    var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
-
-                    var imageElements = toastXml.GetElementsByTagName("image");
-                    imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
-
-                    var toast = new ToastNotification(toastXml);
-
-                    ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
-                };
             }
         }
 

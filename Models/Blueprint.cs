@@ -16,6 +16,7 @@ namespace EDEngineer.Models
         public string Name { get; set; }
         public List<string> Engineers { get; set; }
         public List<BlueprintIngredient> Ingredients { get; set; }
+        public int Grade { get; set; }
 
         public bool Favorite
         {
@@ -38,8 +39,6 @@ namespace EDEngineer.Models
                 OnPropertyChanged();
             }
         }
-
-        public int Grade { get; set; }
 
         public double Progress
         {
