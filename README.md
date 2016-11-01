@@ -9,11 +9,12 @@ EDEngineer is a basic app I've written to track materials, data and cargo acquir
 ### Features
 
 1. A transparent overlay that runs continuously and updates in real time what your ship holds (based on logs outputted by the game)
-2. Show/Hide the overlay based on a global shortcut (default is Control + F10)
-2. A tray icon where you can configure the shortcut and exit the overlay
-3. All blueprints available in a handy sortable grid which you can filter too
-4. Ignore/Favorite flags - Favorited blueprints that become available to craft trigger a Windows toast
-5. Persistent state : EDEngineer will remember which filters you applied and what blueprints are favorited/ignored
+2. Automatically finds the log folder ; you can change it by clicking on the path (bottom of the overlay)
+3. Show/Hide the overlay based on a global shortcut (default is Control + F10)
+4. A tray icon where you can configure the shortcut and exit the overlay
+5. All blueprints available in a handy sortable grid which you can filter too
+6. Ignore/Favorite flags - Favorited blueprints that become available to craft trigger a Windows toast
+7. Persistent state : EDEngineer will remember which filters you applied and what blueprints are favorited/ignored
 
 ### Additional Screenshots
 
