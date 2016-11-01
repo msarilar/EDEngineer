@@ -193,23 +193,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\common.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Images\standard.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Images\very-common.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\Images\very-rare.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Resources\Images\common.png" />
+    <Resource Include="Resources\Images\standard.png" />
+    <Resource Include="Resources\Images\very-common.png" />
+    <Resource Include="Resources\Images\very-rare.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\rare.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Data\blueprints.json" />
