@@ -13,6 +13,7 @@ EDEngineer is a basic app I've written to track materials, data and cargo acquir
 2. A tray icon where you can configure the shortcut and exit the overlay
 3. All blueprints available in a handy sortable grid which you can filter too
 4. Ignore/Favorite flags - Favorited blueprints that become available to craft trigger a Windows toast
+5. Persistent state : EDEngineer will remember which filters you applied and what blueprints are favorited/ignored
 
 ### Additional Screenshots
 
