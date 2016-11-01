@@ -34,6 +34,7 @@ namespace EDEngineer.Utils.System
                     EnableRaisingEvents = true
                 };
 
+                // TODO: use something like unix's tail rather than reading the entire file every time it's modified...
                 watcher.Changed += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
             }
         }
