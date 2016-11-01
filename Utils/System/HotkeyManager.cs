@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using System.Windows.Interop;
 using MessageBox = System.Windows.Forms.MessageBox;
 
-namespace EDEngineer.Utils
+namespace EDEngineer.Utils.System
 {
     public static class HotkeyManager
     {

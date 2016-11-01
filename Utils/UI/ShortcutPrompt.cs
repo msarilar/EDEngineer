@@ -1,7 +1,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace EDEngineer
+namespace EDEngineer.Utils.UI
 {
     public static class ShortcutPrompt
     {

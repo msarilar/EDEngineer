@@ -1,6 +1,6 @@
 using System;
 
-namespace EDEngineer.Utils
+namespace EDEngineer.Utils.System
 {
     public static class Disposable
     {

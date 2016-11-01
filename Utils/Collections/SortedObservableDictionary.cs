@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EDEngineer.Utils
+namespace EDEngineer.Utils.Collections
 {
     public class SortedObservableDictionary<TKey, TValue> : SortedObservableCollection<KeyValuePair<TKey, TValue>>
     {

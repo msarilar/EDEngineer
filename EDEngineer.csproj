@@ -115,15 +115,15 @@
     <Compile Include="Filters\EngineerFilter.cs" />
     <Compile Include="Filters\GradeFilter.cs" />
     <Compile Include="Filters\IgnoredFavoriteFilter.cs" />
-    <Compile Include="ShortcutPrompt.cs" />
-    <Compile Include="TrayIconManager.cs" />
-    <Compile Include="Utils\Diposable.cs" />
-    <Compile Include="Utils\IOManager.cs" />
+    <Compile Include="Utils\UI\ShortcutPrompt.cs" />
+    <Compile Include="Utils\UI\TrayIconManager.cs" />
+    <Compile Include="Utils\System\Diposable.cs" />
+    <Compile Include="Utils\System\IOManager.cs" />
     <Compile Include="Models\StateChangeArgs.cs" />
     <Compile Include="Properties\NotifyPropertyChangedInvocatorAttribute.cs" />
-    <Compile Include="Utils\SortedObservableDictionary.cs" />
+    <Compile Include="Utils\Collections\SortedObservableDictionary.cs" />
     <Compile Include="Filters\TypeFilter.cs" />
-    <Compile Include="Utils\HotkeyManager.cs" />
+    <Compile Include="Utils\System\HotkeyManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -133,8 +133,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Converters\IngredientToVisibilityConverter.cs" />
-    <Compile Include="ItemNameConverter.cs" />
-    <Compile Include="JournalEntryConverter.cs" />
+    <Compile Include="Utils\ItemNameConverter.cs" />
+    <Compile Include="Utils\JournalEntryConverter.cs" />
     <Compile Include="MainWindow.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -157,8 +157,8 @@
     <Compile Include="Models\Operations\MissionCompletedOperation.cs" />
     <Compile Include="Models\Rarity.cs" />
     <Compile Include="Models\State.cs" />
-    <Compile Include="Utils\SortedObservableCollection.cs" />
-    <Compile Include="Utils\SortedObservableCounter.cs" />
+    <Compile Include="Utils\Collections\SortedObservableCollection.cs" />
+    <Compile Include="Utils\Collections\SortedObservableCounter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -2,9 +2,9 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using EDEngineer.Utils;
+using EDEngineer.Utils.System;
 
-namespace EDEngineer
+namespace EDEngineer.Utils.UI
 {
     public static class TrayIconManager
     {

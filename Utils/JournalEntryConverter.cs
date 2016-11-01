@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NodaTime.Text;
 
-namespace EDEngineer
+namespace EDEngineer.Utils
 {
     public class JournalEntryConverter : JsonConverter
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using EDEngineer.Models;
 
-namespace EDEngineer.Utils
+namespace EDEngineer.Utils.Collections
 {
     public class SortedObservableCounter : SortedObservableDictionary<string, Entry>
     {

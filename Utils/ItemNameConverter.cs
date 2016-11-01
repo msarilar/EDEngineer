@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using EDEngineer.Models;
 
-namespace EDEngineer
+namespace EDEngineer.Utils
 {
     public class ItemNameConverter
     {

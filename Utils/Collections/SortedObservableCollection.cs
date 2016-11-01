@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 
-namespace EDEngineer.Utils
+namespace EDEngineer.Utils.Collections
 {
     public class SortedObservableCollection<T> : ObservableCollection<T>
     {
