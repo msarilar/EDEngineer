@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
@@ -152,11 +154,33 @@ namespace EDEngineer.Utils.System
 
         public static string GetBlueprintsJson()
         {
+            string json;
+            try
+            {
+                using (var client = new HttpClient())
+                {
+                    var getResponse = client.GetAsync(
+                        "https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/Resources/Data/blueprints.json")
+                        .Result;
+
+                    if (getResponse.StatusCode == HttpStatusCode.OK)
+                    {
+                        return getResponse.Content.ReadAsStringAsync().Result;
+                    }
+                }
+            }
+            catch
+            {
+                // ignored
+            }
+
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.blueprints.json"))
             using (var reader = new StreamReader(stream))
             {
-                return reader.ReadToEnd();
+                json = reader.ReadToEnd();
             }
+
+            return json;
         }
     }
 }
