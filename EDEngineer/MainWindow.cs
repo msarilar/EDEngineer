@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -23,6 +24,18 @@ namespace EDEngineer
 
         public MainWindow()
         {
+            var procName = Process.GetCurrentProcess().ProcessName;
+            // get the list of all processes by the "procName"       
+            var processes = Process.GetProcessesByName(procName);
+
+            if (processes.Length > 1)
+            {
+                System.Windows.Forms.MessageBox.Show($"EDEngineer already running, you can bring it up with your shortcut ({Properties.Settings.Default.Shortcut}).",
+                    "Oops", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                App.Current.Shutdown();
+                return;
+            }
+
             InitializeComponent();
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
