@@ -236,7 +236,7 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Version" />
+    <EmbeddedResource Include="Version" />
     <EmbeddedResource Include="Resources\Data\blueprints.json" />
     <Content Include="Resources\Images\elite-dangerous-clean.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

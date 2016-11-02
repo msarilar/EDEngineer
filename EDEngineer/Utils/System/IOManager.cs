@@ -164,7 +164,12 @@ namespace EDEngineer.Utils.System
                     if (getResponse.StatusCode == HttpStatusCode.OK)
                     {
                         var version = getResponse.Content.ReadAsStringAsync().Result;
-                        return Assembly.GetExecutingAssembly().GetName().Version < Version.Parse(version);
+
+                        using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Version"))
+                        using (var reader = new StreamReader(stream))
+                        {
+                            return Version.Parse(reader.ReadToEnd()) < Version.Parse(version);
+                        }
                     }
                 }
 
