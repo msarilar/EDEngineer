@@ -165,6 +165,8 @@ namespace EDEngineer.Utils.System
         public static string GetBlueprintsJson()
         {
             string json;
+
+#if !DEBUG
             try
             {
                 using (var client = new HttpClient())
@@ -183,6 +185,7 @@ namespace EDEngineer.Utils.System
             {
                 // ignored
             }
+#endif
 
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.blueprints.json"))
             using (var reader = new StreamReader(stream))

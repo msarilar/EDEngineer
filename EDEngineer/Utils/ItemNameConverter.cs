@@ -9,7 +9,7 @@ namespace EDEngineer.Utils
         public static readonly Dictionary<string, Rarity> Rarities = new Dictionary<string, Rarity>
         {
             {"Aberrant Shield Pattern Analysis", Rarity.Rare},
-            {"Abnormal Compact Emission Data", Rarity.VeryRare},
+            {"Abnormal Compact Emissions Data", Rarity.VeryRare},
             {"Adaptive Encryptors Capture", Rarity.VeryRare},
             {"Anomalous Bulk Scan Data", Rarity.VeryCommon},
             {"Anomalous FSD Telemetry", Rarity.Common},
@@ -227,7 +227,7 @@ namespace EDEngineer.Utils
             {
                 // data
                 "Aberrant Shield Pattern Analysis",
-                "Abnormal Compact Emission Data",
+                "Abnormal Compact Emissions Data",
                 "Adaptive Encryptors Capture",
                 "Anomalous Bulk Scan Data",
                 "Anomalous FSD Telemetry",
@@ -290,9 +290,14 @@ namespace EDEngineer.Utils
 
         public static IEnumerable<string> Names { get; } = MaterialNames.Concat(DataNames).Concat(CommodityNames);
 
-
         public static bool TryGet(string key, out string name)
         {
+            if (key == "shielddensityreports")
+            {
+                name = "Untypical Shield Scans";
+                return true;
+            }
+
             name = Names.FirstOrDefault(n => n.ToLowerInvariant().Replace(" ", "").Contains(key.ToLowerInvariant()));
 
             return name != null;

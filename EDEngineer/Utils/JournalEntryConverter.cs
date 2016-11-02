@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.Linq;
+using System.Windows.Forms;
 using EDEngineer.Models;
 using EDEngineer.Models.Operations;
 using EDEngineer.Utils.Collections;
@@ -122,6 +123,7 @@ namespace EDEngineer.Utils
                     string materialDiscardedName;
                     if (!ItemNameConverter.TryGet((string) data["Name"], out materialDiscardedName))
                     {
+                        MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
                         break;
                     }
 
@@ -147,6 +149,7 @@ namespace EDEngineer.Utils
                     string materialCollectedName;
                     if (!ItemNameConverter.TryGet((string) data["Name"], out materialCollectedName))
                     {
+                        MessageBox.Show($"Unknown material, please contact the author ! {(string)data["Name"]}");
                         break;
                     }
 
