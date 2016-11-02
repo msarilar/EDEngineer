@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Filters;
 using EDEngineer.Properties;
+using EDEngineer.Utils;
 
 namespace EDEngineer.Models
 {
@@ -14,9 +15,46 @@ namespace EDEngineer.Models
         private bool ignored;
         public string Type { get; set; }
         public string Name { get; set; }
-        public List<string> Engineers { get; set; }
-        public List<BlueprintIngredient> Ingredients { get; set; }
+        public IReadOnlyCollection<string> Engineers { get; set; }
+        public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
         public int Grade { get; set; }
+
+        public Blueprint(string type, string name, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
+        {
+            Type = type;
+            Name = name;
+            Grade = grade;
+            Engineers = engineers;
+            Ingredients = ingredients;
+
+            foreach (var ingredient in Ingredients)
+            {
+                ingredient.Entry.PropertyChanged += (o, e) =>
+                {
+                    var extended = (PropertyChangedExtendedEventArgs<int>) e;
+
+                    var progressBefore =
+                        ComputeProgress(i => i.Entry.Name == ingredient.Entry.Name ? extended.OldValue : i.Entry.Count);
+
+                    if (Math.Abs(progressBefore - Progress) > 0.1)
+                    {
+                        OnPropertyChanged(nameof(Progress));
+                    }
+
+                    var canCraftCountBefore =
+                        ComputeCraftCount(i => i.Entry.Name == ingredient.Entry.Name ? extended.OldValue : i.Entry.Count);
+                    
+                    if (canCraftCountBefore != CanCraftCount)
+                    {
+                        OnPropertyChanged(nameof(CanCraftCount));
+                        if (Favorite && canCraftCountBefore == 0 && CanCraftCount > 0)
+                        {
+                            FavoriteAvailable?.Invoke(this, EventArgs.Empty);
+                        }
+                    }
+                };
+            }
+        }
 
         public bool Favorite
         {
@@ -42,15 +80,22 @@ namespace EDEngineer.Models
 
         public double Progress
         {
-            get
-            {
-                return Ingredients.Sum(
-                    ingredient =>
-                        Math.Min(1, ingredient.Current/(double) ingredient.Size)/Ingredients.Count)*100;
-            }
+            get { return ComputeProgress(i => i.Entry.Count); }
         }
 
-        public int CanCraftCount => Ingredients.Min(i => i.Current/i.Size);
+        public int CanCraftCount => ComputeCraftCount(i => i.Entry.Count);
+
+        private int ComputeCraftCount(Func<BlueprintIngredient, int> countExtractor)
+        {
+            return Ingredients.Min(i => countExtractor(i)/i.Size);
+        }
+
+        private double ComputeProgress(Func<BlueprintIngredient, int> countExtractor)
+        {
+            return Ingredients.Sum(
+                ingredient =>
+                    Math.Min(1, countExtractor(ingredient)/(double) ingredient.Size)/Ingredients.Count)*100;
+        }
 
         public double ProgressSorting => CanCraftCount + Progress;
 
@@ -66,36 +111,6 @@ namespace EDEngineer.Models
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public void OnStateChanged(object sender, StateChangeArgs e)
-        {
-            if (e.NewValue < 0)
-            {
-                return;
-            }
-
-            foreach (var ingredient in Ingredients.Where(ingredient => ingredient.Name == e.Name))
-            {
-                var progressBefore = Progress;
-                var canCraftCountBefore = CanCraftCount;
-
-                ingredient.Current = e.NewValue;
-
-                if (Math.Abs(progressBefore - Progress) > 0.01)
-                {
-                    OnPropertyChanged(nameof(Progress));
-                }
-
-                if (canCraftCountBefore != CanCraftCount)
-                {
-                    OnPropertyChanged(nameof(CanCraftCount));
-                    if (Favorite && canCraftCountBefore == 0 && CanCraftCount > 0)
-                    {
-                        FavoriteAvailable?.Invoke(this, EventArgs.Empty);
-                    }
-                }
-            }
         }
 
         public bool SatisfyFilter(BlueprintFilter filter)

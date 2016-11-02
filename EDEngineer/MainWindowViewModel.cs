@@ -41,7 +41,8 @@ namespace EDEngineer
             }
         }
 
-        private readonly JournalEntryConverter journalEntryConverter = new JournalEntryConverter();
+        private readonly JournalEntryConverter journalEntryConverter;
+        private readonly BlueprintConverter blueprintConverter;
         private readonly HashSet<JournalEntry> processedEntries = new HashSet<JournalEntry>();
         private readonly object processedEntriesLock = new object();
         private Instant lastUpdate = Instant.MinValue;
@@ -49,6 +50,8 @@ namespace EDEngineer
         public MainWindowViewModel()
         {
             State = new State();
+            journalEntryConverter = new JournalEntryConverter(State.Cargo);
+            blueprintConverter = new BlueprintConverter(State.Cargo);
             LoadBlueprints();
             Filters = new BlueprintFilters(Blueprints);
 
@@ -153,7 +156,7 @@ namespace EDEngineer
         {
             var blueprintsJson = IOManager.GetBlueprintsJson();
 
-            Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson));
+            Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter));
 
             if (Properties.Settings.Default.Favorites == null)
             {
@@ -206,8 +209,6 @@ namespace EDEngineer
                         Properties.Settings.Default.Save();
                     }
                 };
-
-                State.StateChanged += blueprint.OnStateChanged;
             }
         }
 

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace EDEngineer.Utils.Collections
 {
-    public class SortedObservableDictionary<TKey, TValue> : SortedObservableCollection<KeyValuePair<TKey, TValue>>
+    public class SortedObservableDictionary<TKey, TValue> : SortedObservableCollection<KeyValuePair<TKey, TValue>>, ISimpleDictionary<TKey, TValue>
     {
         public SortedObservableDictionary(Func<KeyValuePair<TKey, TValue>, KeyValuePair<TKey, TValue>, int> comparer)
             : base(comparer)

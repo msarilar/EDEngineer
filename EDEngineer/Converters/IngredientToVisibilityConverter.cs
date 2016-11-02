@@ -14,11 +14,11 @@ namespace EDEngineer.Converters
             bool visible;
             if (parameter != null && (string) parameter == "Inverted")
             {
-                visible = ingredient.Current < ingredient.Size;
+                visible = ingredient.Entry.Count < ingredient.Size;
             }
             else
             {
-                visible = ingredient.Current >= ingredient.Size;
+                visible = ingredient.Entry.Count >= ingredient.Size;
             }
 
             return visible ? Visibility.Visible : Visibility.Collapsed;

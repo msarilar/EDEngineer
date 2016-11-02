@@ -1,3 +1,4 @@
+using System.Linq;
 using EDEngineer.Models;
 
 namespace EDEngineer.Filters

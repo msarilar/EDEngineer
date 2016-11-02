@@ -10,9 +10,9 @@ namespace EDEngineer.Models.Operations
         {
             foreach (var ingredient in IngredientsConsumed)
             {
-                if (state.Cargo.ContainsKey(ingredient.Name))
+                if (state.Cargo.ContainsKey(ingredient.Entry.Name))
                 {
-                    state.IncrementCargo(ingredient.Name, -1*ingredient.Size);
+                    state.IncrementCargo(ingredient.Entry.Name, -1 * ingredient.Size);
                 }
             }
         }

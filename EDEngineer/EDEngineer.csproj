@@ -145,6 +145,9 @@
     <Compile Include="Filters\EngineerFilter.cs" />
     <Compile Include="Filters\GradeFilter.cs" />
     <Compile Include="Filters\IgnoredFavoriteFilter.cs" />
+    <Compile Include="Utils\BlueprintConverter.cs" />
+    <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
+    <Compile Include="Utils\PropertyChangedExtendedEventArgs.cs" />
     <Compile Include="Utils\UI\ShortcutPrompt.cs" />
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />

@@ -386,7 +386,7 @@
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
                                                     <TextBlock>
-                                                        <Run Text="{Binding Kind}" />
+                                                        <Run Text="{Binding Entry.Kind, Mode=OneWay}" />
                                                         <Run Text=":" />
                                                     </TextBlock>
                                                 </DataTemplate>
@@ -399,7 +399,7 @@
                                                       FontSize="13">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <TextBlock Text="{Binding Name}" />
+                                                    <TextBlock Text="{Binding Entry.Name, Mode=OneWay}" />
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
                                         </ItemsControl>
@@ -412,9 +412,9 @@
                                                 <DataTemplate>
                                                     <TextBlock>
                                                         <Run Text="(" />
-                                                        <Run Text="{Binding Current}" />
+                                                        <Run Text="{Binding Entry.Count}" />
                                                         <Run Text="/" />
-                                                        <Run Text="{Binding Size}" />
+                                                        <Run Text="{Binding Size, Mode=OneWay}" />
                                                         <Run Text=")" />
                                                     </TextBlock>
                                                 </DataTemplate>

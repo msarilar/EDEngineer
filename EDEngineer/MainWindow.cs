@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -42,7 +43,7 @@ namespace EDEngineer
             DataContext = viewModel;
 
             var blueprintsView = new CollectionViewSource {Source = viewModel.Blueprints}.View;
-            viewModel.Filters.Monitor(blueprintsView);
+            viewModel.Filters.Monitor(blueprintsView, viewModel.State.Cargo.Select(c => c.Value));
             Blueprints.ItemsSource = blueprintsView;
 
             Commodities.ItemsSource = viewModel.FilterView(Kind.Commodity, new CollectionViewSource { Source = viewModel.State.Cargo }.View);

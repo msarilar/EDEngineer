@@ -175,7 +175,7 @@ namespace EDEngineer
 
         private List<BlueprintFilter> AllFilters { get; }
 
-        public void Monitor(ICollectionView view)
+        public void Monitor(ICollectionView view, IEnumerable<Entry> entries)
         {
             foreach (var filter in AllFilters)
             {
@@ -190,9 +190,9 @@ namespace EDEngineer
                 };
             }
 
-            foreach (var item in view)
+            foreach (var item in entries)
             {
-                ((Blueprint)item).PropertyChanged += (o, e) => Application.Current.Dispatcher.Invoke(view.Refresh);
+                item.PropertyChanged += (o, e) => Application.Current.Dispatcher.Invoke(view.Refresh);
             }
 
             view.Filter = o =>

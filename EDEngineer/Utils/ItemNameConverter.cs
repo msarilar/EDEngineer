@@ -288,7 +288,7 @@ namespace EDEngineer.Utils
                 "Telemetry Suite"
             };
 
-        private static IEnumerable<string> Names { get; } = MaterialNames.Concat(DataNames).Concat(CommodityNames);
+        public static IEnumerable<string> Names { get; } = MaterialNames.Concat(DataNames).Concat(CommodityNames);
 
 
         public static bool TryGet(string key, out string name)

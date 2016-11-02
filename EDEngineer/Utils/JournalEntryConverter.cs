@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using EDEngineer.Models;
 using EDEngineer.Models.Operations;
+using EDEngineer.Utils.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NodaTime.Text;
@@ -11,6 +13,13 @@ namespace EDEngineer.Utils
 {
     public class JournalEntryConverter : JsonConverter
     {
+        private readonly ISimpleDictionary<string, Entry> entries;
+
+        public JournalEntryConverter(ISimpleDictionary<string, Entry> entries)
+        {
+            this.entries = entries;
+        }
+
         public override bool CanWrite => true;
 
         public override bool CanConvert(Type objectType)
@@ -76,11 +85,7 @@ namespace EDEngineer.Utils
                                     (int) cc.Value);
                             })
                             .Where(c => c.Item1)
-                            .Select(c => new BlueprintIngredient
-                            {
-                                Name = c.Item2,
-                                Size = c.Item3
-                            }).ToList()
+                            .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
                     };
 
                     if (engineerCraft.IngredientsConsumed.Any())

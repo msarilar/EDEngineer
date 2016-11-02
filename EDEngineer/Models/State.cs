@@ -19,11 +19,9 @@ namespace EDEngineer.Models
 
         public SortedObservableCounter Cargo { get; set; } = new SortedObservableCounter(comparer);
 
-        public event EventHandler<StateChangeArgs> StateChanged;
-
         public void LoadBaseData()
         {
-            foreach (var name in ItemNameConverter.CommodityNames)
+            foreach (var name in ItemNameConverter.Names)
             {
                 IncrementCargo(name, 0);
             }
@@ -34,8 +32,6 @@ namespace EDEngineer.Models
             lock (stateLock)
             {
                 Cargo.Increment(name, change);
-                StateChanged?.Invoke(this,
-                    new StateChangeArgs(Kind.Commodity, name, Cargo.ContainsKey(name) ? Cargo[name].Count : 0));
             }
         }
     }

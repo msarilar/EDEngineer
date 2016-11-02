@@ -40,8 +40,9 @@ namespace EDEngineer.Models
             set
             {
                 if (value == count) return;
+                var oldValue = count;
                 count = value;
-                OnPropertyChanged();
+                OnPropertyChanged(oldValue, count);
             }
         }
 
@@ -51,13 +52,12 @@ namespace EDEngineer.Models
         {
             return Name + "(" + Count + ")";
         }
-
-
+        
         public event PropertyChangedEventHandler PropertyChanged;
         [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        protected virtual void OnPropertyChanged(int oldValue, int newValue, [CallerMemberName] string propertyName = null)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedExtendedEventArgs<int>(propertyName, oldValue, newValue));
         }
     }
 }
