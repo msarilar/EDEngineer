@@ -8,7 +8,7 @@ EDEngineer is a basic app I've written to track materials, data and cargo acquir
 
 ### Install
 
-Install the [setup.exe](https://github.com/msarilar/EDEngineer/blob/master/EDEngineer/publish/setup.exe) which will download the published application on github. It will check for update each time the application is started.
+Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/publish/setup.exe) which will download the published application on github. It will check for update each time the application is started.
 
 ### Features
 
