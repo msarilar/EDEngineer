@@ -162,31 +162,6 @@ namespace EDEngineer.Utils.System
             return logDirectory;
         }
 
-        public static bool NewVersionAvailable
-        {
-            get
-            {
-                using (var client = new HttpClient())
-                {
-                    var getResponse =
-                        client.GetAsync("https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/Version").Result;
-
-                    if (getResponse.StatusCode == HttpStatusCode.OK)
-                    {
-                        var version = getResponse.Content.ReadAsStringAsync().Result;
-
-                        using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Version"))
-                        using (var reader = new StreamReader(stream))
-                        {
-                            return Version.Parse(reader.ReadToEnd()) < Version.Parse(version);
-                        }
-                    }
-                }
-
-                return false;
-            }
-        }
-
         public static string GetBlueprintsJson()
         {
             string json;
