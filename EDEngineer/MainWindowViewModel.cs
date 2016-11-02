@@ -229,7 +229,10 @@ namespace EDEngineer
             logEntry.OriginalJson = json;
 
             logEntry.JournalOperation.Mutate(State);
-            File.AppendAllText("manualChanges.json", json + Environment.NewLine);
+
+            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "EDEngineer", "manualChanges.json");
+            File.AppendAllText(path, json + Environment.NewLine);
         }
 
 

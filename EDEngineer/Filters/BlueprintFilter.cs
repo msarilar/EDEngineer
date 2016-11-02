@@ -9,7 +9,6 @@ namespace EDEngineer.Filters
     {
         public string UniqueName { get; }
         private bool @checked;
-        private bool enabled;
 
         protected BlueprintFilter(string uniqueName)
         {

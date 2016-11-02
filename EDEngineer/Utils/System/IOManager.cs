@@ -71,8 +71,18 @@ namespace EDEngineer.Utils.System
                 gameLogLines.AddRange(ReadLinesWithoutLock(file));
             }
 
-            var manualChangeLines = File.Exists(MANUAL_CHANGES_LOG_FILE_NAME)
-                ? File.ReadAllLines(MANUAL_CHANGES_LOG_FILE_NAME)
+            var directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "EDEngineer");
+
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            var path = Path.Combine(directory, MANUAL_CHANGES_LOG_FILE_NAME);
+
+            var manualChangeLines = File.Exists(path)
+                ? File.ReadAllLines(path)
                 : new string[] { };
 
             return gameLogLines.Concat(manualChangeLines);
