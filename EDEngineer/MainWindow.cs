@@ -13,6 +13,7 @@ using System.Windows.Media.Animation;
 using EDEngineer.Models;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
+using Application = System.Windows.Application;
 using Button = System.Windows.Controls.Button;
 using DataGridCell = System.Windows.Controls.DataGridCell;
 
@@ -32,7 +33,7 @@ namespace EDEngineer
             {
                 System.Windows.Forms.MessageBox.Show($"EDEngineer already running, you can bring it up with your shortcut ({Properties.Settings.Default.Shortcut}).",
                     "Oops", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                App.Current.Shutdown();
+                Application.Current.Shutdown();
                 return;
             }
 
@@ -47,7 +48,7 @@ namespace EDEngineer
 
         private void MainWindow_OnLoaded(object sender, RoutedEventArgs args)
         {
-            icon = TrayIconManager.Init((o, e) => Activate(), (o, e) => Close(), ConfigureShortcut);
+            icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);
 
             var shortcut = Properties.Settings.Default.Shortcut;
             var converter = new KeysConverter();
@@ -64,7 +65,11 @@ namespace EDEngineer
         {
             string shortcut;
             ignoreShortcut = true;
-            HideWindow();
+            if (Math.Abs(Opacity) > 0.99)
+            {
+                HideWindow();
+            }
+
             HotkeyManager.UnregisterHotKey(this);
             if (ShortcutPrompt.ShowDialog(Properties.Settings.Default.Shortcut, out shortcut))
             {
