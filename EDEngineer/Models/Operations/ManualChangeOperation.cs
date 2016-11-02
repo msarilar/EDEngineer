@@ -11,14 +11,6 @@ namespace EDEngineer.Models.Operations
             {
                 state.IncrementCargo(Name, Count);
             }
-            else if (state.Data.ContainsKey(Name))
-            {
-                state.IncrementData(Name, Count);
-            }
-            else if (state.Materials.ContainsKey(Name))
-            {
-                state.IncrementMaterials(Name, Count);
-            }
         }
     }
 }

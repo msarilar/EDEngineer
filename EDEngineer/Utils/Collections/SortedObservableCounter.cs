@@ -19,10 +19,9 @@ namespace EDEngineer.Utils.Collections
             }
             else
             {
-                this[key] = new Entry
+                this[key] = new Entry(key)
                 {
-                    Count = value,
-                    Name = key
+                    Count = value
                 };
             }
         }

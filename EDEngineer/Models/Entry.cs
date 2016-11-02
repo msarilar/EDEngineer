@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
@@ -7,8 +9,30 @@ namespace EDEngineer.Models
 {
     public class Entry : INotifyPropertyChanged
     {
+        public Entry(string name)
+        {
+            Name = name;
+            if (ItemNameConverter.CommodityNames.Contains(name))
+            {
+                Kind = Kind.Commodity;
+            }
+            else if (ItemNameConverter.MaterialNames.Contains(name))
+            {
+                Kind = Kind.Material;
+            }
+            else if (ItemNameConverter.DataNames.Contains(name))
+            {
+                Kind = Kind.Data;
+            }
+            else
+            {
+                throw new ArgumentOutOfRangeException();
+            }
+        }
+
         private int count;
-        public string Name { get; set; }
+        public string Name { get; }
+        public Kind Kind { get; }
 
         public int Count
         {

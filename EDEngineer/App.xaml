@@ -24,7 +24,7 @@
             <converters:FilterToLabelConverter x:Key="FilterToLabel" />
             <converters:AllFiltersToHeaderConverter x:Key="AllFiltersToHeader" />
             <converters:InstantToStringConverter x:Key="InstantToString" />
-            
+
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">
                 <Setter Property="Background" Value="{DynamicResource WhiteBrush}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush}" />

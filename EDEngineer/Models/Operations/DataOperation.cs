@@ -8,7 +8,7 @@ namespace EDEngineer.Models.Operations
 
         public override void Mutate(State state)
         {
-            state.IncrementData(DataName, Size);
+            state.IncrementCargo(DataName, Size);
         }
     }
 }

@@ -41,12 +41,16 @@ namespace EDEngineer
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
 
-            var view = new CollectionViewSource {Source = viewModel.Blueprints}.View;
-            viewModel.Filters.Monitor(view);
-            Blueprints.ItemsSource = view;
+            var blueprintsView = new CollectionViewSource {Source = viewModel.Blueprints}.View;
+            viewModel.Filters.Monitor(blueprintsView);
+            Blueprints.ItemsSource = blueprintsView;
+
+            Commodities.ItemsSource = viewModel.FilterView(Kind.Commodity, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
+            Materials.ItemsSource = viewModel.FilterView(Kind.Material, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
+            Data.ItemsSource = viewModel.FilterView(Kind.Data, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
         }
 
-        private void MainWindow_OnLoaded(object sender, RoutedEventArgs args)
+        private void MainWindowLoaded(object sender, RoutedEventArgs args)
         {
             icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);
 

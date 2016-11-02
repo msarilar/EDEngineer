@@ -14,14 +14,6 @@ namespace EDEngineer.Models.Operations
                 {
                     state.IncrementCargo(ingredient.Name, -1*ingredient.Size);
                 }
-                else if (state.Data.ContainsKey(ingredient.Name))
-                {
-                    state.IncrementData(ingredient.Name, -1*ingredient.Size);
-                }
-                else if (state.Materials.ContainsKey(ingredient.Name))
-                {
-                    state.IncrementMaterials(ingredient.Name, -1*ingredient.Size);
-                }
             }
         }
     }

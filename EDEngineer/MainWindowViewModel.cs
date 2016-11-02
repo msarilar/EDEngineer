@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
@@ -80,8 +81,6 @@ namespace EDEngineer
                 else
                 {
                     State.Cargo.Where(c => c.Value.Count == 0).ToList().ForEach(c => State.Cargo.Remove(c));
-                    State.Materials.Where(c => c.Value.Count == 0).ToList().ForEach(c => State.Materials.Remove(c));
-                    State.Data.Where(c => c.Value.Count == 0).ToList().ForEach(c => State.Data.Remove(c));
                 }
             }
         }
@@ -94,8 +93,6 @@ namespace EDEngineer
             lock (processedEntriesLock)
             {
                 State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Name, -1*k.Value.Count));
-                State.Materials.ToList().ForEach(k => State.IncrementMaterials(k.Value.Name, -1*k.Value.Count));
-                State.Data.ToList().ForEach(k => State.IncrementData(k.Value.Name, -1*k.Value.Count));
                 processedEntries.Clear();
                 LastUpdate = Instant.MinValue;
             }
@@ -240,6 +237,21 @@ namespace EDEngineer
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ICollectionView FilterView(Kind kind, ICollectionView view)
+        {
+            view.Filter = o => ((KeyValuePair<string, Entry>)o).Value.Kind == kind;
+
+            PropertyChanged += (o, e) =>
+            {
+                if (e.PropertyName == nameof(ShowZeroes))
+                {
+                    view.Refresh();
+                }
+            };
+
+            return view;
         }
     }
 }

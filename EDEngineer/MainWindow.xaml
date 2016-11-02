@@ -13,7 +13,7 @@
         WindowStyle="None"
         Background="Transparent"
         ShowInTaskbar="False" 
-        Loaded="MainWindow_OnLoaded"
+        Loaded="MainWindowLoaded"
         ResizeMode="NoResize"
         Height="{x:Static SystemParameters.PrimaryScreenHeight}"
         Width="{x:Static SystemParameters.PrimaryScreenWidth}">
@@ -152,8 +152,8 @@
                     <controls:MetroTabItem Header="Commodities"
                                            FontFamily="./Resources/Fonts/#Euro Caps">
                         <ScrollViewer>
-                            <ItemsControl ItemsSource="{Binding State.Cargo}"
-                                          Background="Transparent"
+                            <ItemsControl Background="Transparent"
+                                          x:Name="Commodities"
                                           ItemTemplate="{StaticResource EntryTemplate}">
                                 <ItemsControl.ItemContainerStyle>
                                     <Style>
@@ -166,8 +166,8 @@
                     <controls:MetroTabItem Header="Materials"
                                            FontFamily="./Resources/Fonts/#Euro Caps">
                         <ScrollViewer>
-                            <ItemsControl ItemsSource="{Binding State.Materials}"
-                                          Background="Transparent"
+                            <ItemsControl Background="Transparent"
+                                          x:Name="Materials"
                                           ItemTemplate="{StaticResource EntryTemplate}">
                                 <ItemsControl.ItemContainerStyle>
                                     <Style>
@@ -180,8 +180,8 @@
                     <controls:MetroTabItem Header="Data"
                                            FontFamily="./Resources/Fonts/#Euro Caps">
                         <ScrollViewer>
-                            <ItemsControl ItemsSource="{Binding State.Data}"
-                                          Background="Transparent"
+                            <ItemsControl Background="Transparent"
+                                          x:Name="Data"
                                           ItemTemplate="{StaticResource EntryTemplate}">
                                 <ItemsControl.ItemContainerStyle>
                                     <Style>
