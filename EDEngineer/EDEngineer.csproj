@@ -28,7 +28,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>EDEngineer</ProductName>
     <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.0.0.1</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -236,6 +236,7 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Version" />
     <EmbeddedResource Include="Resources\Data\blueprints.json" />
     <Content Include="Resources\Images\elite-dangerous-clean.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

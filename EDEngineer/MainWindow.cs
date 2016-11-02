@@ -38,6 +38,16 @@ namespace EDEngineer
                 return;
             }
 
+            if (IOManager.NewVersionAvailable)
+            {
+                if (System.Windows.Forms.MessageBox.Show($"New version available!{Environment.NewLine}Would you like to close the application and download it?", "Update available", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.OK)
+                {
+                    Process.Start("https://github.com/msarilar/EDEngineer/releases/latest");
+                    Application.Current.Shutdown();
+                    return;
+                }
+            }
+
             InitializeComponent();
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
