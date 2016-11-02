@@ -238,9 +238,12 @@ namespace EDEngineer
 
         protected override void OnClosed(EventArgs e)
         {
-            HotkeyManager.UnregisterHotKey(this);
-            handle.RemoveHook(WndProc);
-            icon.Dispose();
+            if (handle != null)
+            {
+                HotkeyManager.UnregisterHotKey(this);
+                handle.RemoveHook(WndProc);
+                icon.Dispose();
+            }
         }
 
         private void TransitionCompleted(object sender, EventArgs e)
