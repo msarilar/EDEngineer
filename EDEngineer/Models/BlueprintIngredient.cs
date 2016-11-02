@@ -1,9 +1,6 @@
-﻿using System.ComponentModel;
-using System.Runtime.CompilerServices;
-
-namespace EDEngineer.Models
+﻿namespace EDEngineer.Models
 {
-    public class BlueprintIngredient : INotifyPropertyChanged
+    public class BlueprintIngredient
     {
         public Entry Entry { get; }
 
@@ -15,16 +12,9 @@ namespace EDEngineer.Models
 
         public int Size { get; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
         public override string ToString()
         {
             return $"{Entry.Kind} : {Entry.Name} ({Entry.Count} / {Size})";
-        }
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }
