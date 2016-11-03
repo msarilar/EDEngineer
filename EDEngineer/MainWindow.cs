@@ -190,6 +190,7 @@ namespace EDEngineer
         {
             if (!transitionning)
             {
+                Show();
                 Focus();
                 transitionning = true;
                 var sb = (Storyboard) FindResource("WindowActivated");
@@ -236,8 +237,14 @@ namespace EDEngineer
             }
         }
 
-        private void TransitionCompleted(object sender, EventArgs e)
+        private void WindowActivatedCompleted(object sender, EventArgs e)
         {
+            transitionning = false;
+        }
+
+        private void WindowDeactivatedCompleted(object sender, EventArgs e)
+        {
+            Hide();
             transitionning = false;
         }
     }

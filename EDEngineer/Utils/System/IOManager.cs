@@ -33,11 +33,13 @@ namespace EDEngineer.Utils.System
                     Path = logDirectory,
                     NotifyFilter = NotifyFilters.LastWrite,
                     Filter = LOG_FILE_PATTERN,
-                    EnableRaisingEvents = true
+                    EnableRaisingEvents = true,
+                    IncludeSubdirectories = false
                 };
 
                 // TODO: use something like unix's tail rather than reading the entire file every time it's modified...
                 watcher.Changed += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
+                watcher.Created += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
             }
         }
 

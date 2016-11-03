@@ -247,6 +247,7 @@ namespace EDEngineer.Utils
                 "Modified Consumer Firmware",
                 "Modified Embedded Firmware",
                 "Open Symmetric Keys",
+                "Pattern Obelisk Data",
                 "Peculiar Shield Frequency Data",
                 "Security Firmware Patch",
                 "Specialised Legacy Firmware",
@@ -295,6 +296,24 @@ namespace EDEngineer.Utils
             if (key == "shielddensityreports")
             {
                 name = "Untypical Shield Scans";
+                return true;
+            }
+
+            if (key == "encodedscandata")
+            {
+                name = "Divergent Scan Data";
+                return true;
+            }
+
+            if (key == "ancienthistoricaldata")
+            {
+                name = "Pattern Obelisk Data";
+                return true;
+            }
+
+            if (key == "archivedemissiondata")
+            {
+                name = "Irregular Emission Data";
                 return true;
             }
 
