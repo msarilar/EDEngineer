@@ -8,7 +8,7 @@ EDEngineer is a basic app I've written to track materials, data and cargo acquir
 
 ### Install
 
-Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe) which will download the published application on github. It will check for update each time the application is started.
+Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe) which will download the published application on github (it will check for update each time the application is started). Launch the game in windowed mode, launch EDEngineer. Change the shortcut if ctrl+F10 does not suit you (right click the tasktray icon to do so) and fix the cargo/materials/data numbers (by comparing counters one by one ; it's kind of tedious I agree, but it's a one time only operation!).
 
 ### Features
 
