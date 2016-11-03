@@ -38,6 +38,13 @@ namespace EDEngineer
                 return;
             }
 
+            if (Properties.Settings.Default.UpgradeRequired)
+            {
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.UpgradeRequired = false;
+                Properties.Settings.Default.Save();
+            }
+
             InitializeComponent();
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
