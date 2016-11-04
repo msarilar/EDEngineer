@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -95,15 +96,48 @@ namespace EDEngineer
             viewModel.Filters.ChangeAllFilters(false);
         }
 
+        private readonly Regex forbiddenCharacters = new Regex("[^0-9.-]+");
+        private void EntryCountTextBoxOnPreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            int newCount;
+            if (forbiddenCharacters.IsMatch(e.Text))
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private BindingBase binding;
+        private void EntryCountTextBox_OnGotFocus(object sender, RoutedEventArgs e)
+        {
+            var box = (System.Windows.Controls.TextBox)sender;
+            binding = box.GetBindingExpression(System.Windows.Controls.TextBox.TextProperty).ParentBindingBase;
+            BindingOperations.ClearBinding(box, System.Windows.Controls.TextBox.TextProperty);
+        }
+
+        private void EntryCountTextBox_OnLostFocus(object sender, RoutedEventArgs e)
+        {
+            var box = (System.Windows.Controls.TextBox)sender;
+
+            int newCount;
+            if (int.TryParse(box.Text, out newCount))
+            {
+                var entry = (Entry)box.Tag;
+                viewModel.UserChange(entry, newCount - entry.Count);
+            }
+
+            BindingOperations.SetBinding(box, System.Windows.Controls.TextBox.TextProperty, binding);
+        }
+
         private void IncrementButtonClicked(object sender, RoutedEventArgs e)
         {
-            var entry = ((KeyValuePair<string, Entry>) ((Button) sender).DataContext).Value;
+            var entry = (Entry) ((Button) sender).Tag;
             viewModel.UserChange(entry, 1);
         }
 
         private void DecrementButtonClicked(object sender, RoutedEventArgs e)
         {
-            var entry = ((KeyValuePair<string, Entry>) ((Button) sender).DataContext).Value;
+            var entry = (Entry) ((Button) sender).Tag;
             viewModel.UserChange(entry, -1);
         }
 

@@ -51,18 +51,25 @@
                                            Style="{DynamicResource MetroAutoCollapsingTextBlock}"
                                            Text="{TemplateBinding controls:TextBoxHelper.Watermark}" />
                             </ContentControl>
-                            <TextBlock Grid.Column="0"
-                                       HorizontalAlignment="Right"
-                                       Foreground="#ff7100"
-                                       Background="Transparent"
-                                       VerticalAlignment="Center"
-                                       FontSize="20"
-                                       FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
-                                       Text="{Binding Value.Count}" />
+                            <TextBox Grid.Column="0"
+                                     HorizontalAlignment="Right"
+                                     Foreground="#ff7100"
+                                     Background="Transparent"
+                                     VerticalAlignment="Center"
+                                     BorderBrush="Transparent"
+                                     FontSize="20"
+                                     GotFocus="EntryCountTextBox_OnGotFocus"
+                                     LostFocus="EntryCountTextBox_OnLostFocus"
+                                     x:Name="EntryCountTextBox"
+                                     Tag="{Binding Value}"
+                                     PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
+                                     CaretBrush="White"
+                                     FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
+                                     Text="{Binding Value.Count, Mode=OneWay}" />
                             <Button x:Name="IncrementButton"
                                     Grid.Column="1"
                                     Margin="2 2 2 2"
-                                    Tag="{Binding}"
+                                    Tag="{Binding Value}"
                                     Style="{DynamicResource ChromelessButtonStyle}"
                                     Click="IncrementButtonClicked"
                                     IsTabStop="False">
@@ -78,7 +85,7 @@
                                     Margin="0 2 2 2"
                                     VerticalContentAlignment="Center"
                                     Click="DecrementButtonClicked"
-                                    Tag="{Binding}"
+                                    Tag="{Binding Value}"
                                     Style="{DynamicResource ChromelessButtonStyle}"
                                     IsTabStop="False">
                                 <Path x:Name="PolygonDown"

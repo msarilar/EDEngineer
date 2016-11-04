@@ -216,6 +216,11 @@ namespace EDEngineer
 
         public void UserChange(Entry entry, int change)
         {
+            if (change == 0)
+            {
+                return;
+            }
+
             var logEntry = new JournalEntry
             {
                 JournalOperation = new ManualChangeOperation
