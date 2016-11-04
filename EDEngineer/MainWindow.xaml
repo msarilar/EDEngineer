@@ -265,7 +265,8 @@
                         <controls:DropDownButton ItemsSource="{Binding Filters.EngineerFilters}"
                                                  Content="{Binding Filters.EngineerFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Engineer}"
                                                  Grid.Row="0"
-                                                 Grid.Column="1">
+                                                 Grid.Column="1"
+                                                 >
                             <controls:DropDownButton.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
@@ -282,9 +283,16 @@
                                                  Content="{Binding Filters.TypeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Type}"
                                                  Grid.Row="0"
                                                  Grid.Column="2">
+                            <controls:DropDownButton.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Width="575"
+                                               MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}" />
+                                </ItemsPanelTemplate>
+                            </controls:DropDownButton.ItemsPanel>
                             <controls:DropDownButton.ItemTemplate>
                                 <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
+                                    <StackPanel Orientation="Horizontal"
+                                                Width="220">
                                         <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
                                         <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}" />
@@ -455,7 +463,7 @@
                                     </Style>
                                 </DataGridTextColumn.ElementStyle>
                             </DataGridTextColumn>
-                            <DataGridTextColumn Header="Type" Binding="{Binding Type}" IsReadOnly="True" Width="110">
+                            <DataGridTextColumn Header="Type" Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}" IsReadOnly="True" Width="110">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="TextWrapping" Value="Wrap" />
