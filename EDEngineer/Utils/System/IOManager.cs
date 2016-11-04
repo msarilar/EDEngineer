@@ -161,12 +161,23 @@ namespace EDEngineer.Utils.System
                 }
             }
 
+            Properties.Settings.Default.LogDirectory = logDirectory;
+            Properties.Settings.Default.Save();
             return logDirectory;
         }
 
         public static string GetBlueprintsJson()
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.blueprints.json"))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        public static string GetEntryDatasJson()
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.entryData.json"))
             using (var reader = new StreamReader(stream))
             {
                 return reader.ReadToEnd();

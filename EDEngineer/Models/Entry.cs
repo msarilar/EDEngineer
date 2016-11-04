@@ -9,30 +9,13 @@ namespace EDEngineer.Models
 {
     public class Entry : INotifyPropertyChanged
     {
-        public Entry(string name)
+        public Entry(EntryData data)
         {
-            Name = name;
-            if (ItemNameConverter.CommodityNames.Contains(name))
-            {
-                Kind = Kind.Commodity;
-            }
-            else if (ItemNameConverter.MaterialNames.Contains(name))
-            {
-                Kind = Kind.Material;
-            }
-            else if (ItemNameConverter.DataNames.Contains(name))
-            {
-                Kind = Kind.Data;
-            }
-            else
-            {
-                throw new ArgumentOutOfRangeException();
-            }
+            Data = data;
         }
 
+        public EntryData Data { get; }
         private int count;
-        public string Name { get; }
-        public Kind Kind { get; }
 
         public int Count
         {
@@ -46,11 +29,9 @@ namespace EDEngineer.Models
             }
         }
 
-        public Rarity Rarity => ItemNameConverter.Rarities.ContainsKey(Name) ? ItemNameConverter.Rarities[Name] : Rarity.Standard;
-
         public override string ToString()
         {
-            return Name + "(" + Count + ")";
+            return Data.Name + "(" + Count + ")";
         }
         
         public event PropertyChangedEventHandler PropertyChanged;

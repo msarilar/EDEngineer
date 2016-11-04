@@ -78,12 +78,12 @@ namespace EDEngineer
                 .Union(IgnoredFavoriteFilters)
                 .Union(CraftableFilters).ToList();
 
-            LoadSettings();
+            LoadSavedFilters();
 
             InsertMagicFilters();
         }
 
-        private void LoadSettings()
+        private void LoadSavedFilters()
         {
             if (Properties.Settings.Default.FiltersChecked == null)
             {
@@ -114,6 +114,7 @@ namespace EDEngineer
                     };
                 }
             }
+
             Properties.Settings.Default.Save();
         }
 

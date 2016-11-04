@@ -14,7 +14,7 @@
 
         public override string ToString()
         {
-            return $"{Entry.Kind} : {Entry.Name} ({Entry.Count} / {Size})";
+            return $"{Entry.Data.Kind} : {Entry.Data.Name} ({Entry.Count} / {Size})";
         }
     }
 }

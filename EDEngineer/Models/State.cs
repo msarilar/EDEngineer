@@ -7,13 +7,16 @@ namespace EDEngineer.Models
 {
     public class State
     {
+        private readonly List<EntryData> entryDatas;
+
         private static readonly Func<KeyValuePair<string, Entry>, KeyValuePair<string, Entry>, int> comparer =
             (a, b) => string.Compare(a.Key, b.Key, StringComparison.Ordinal);
 
         private readonly object stateLock = new object();
 
-        public State()
+        public State(List<EntryData> entryDatas)
         {
+            this.entryDatas = entryDatas;
             LoadBaseData();
         }
 
@@ -21,9 +24,12 @@ namespace EDEngineer.Models
 
         public void LoadBaseData()
         {
-            foreach (var name in ItemNameConverter.Names)
+            lock (stateLock)
             {
-                IncrementCargo(name, 0);
+                foreach (var item in entryDatas)
+                {
+                    Cargo.Add(new KeyValuePair<string, Entry>(item.Name, new Entry(item)));
+                }
             }
         }
 

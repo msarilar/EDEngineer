@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -13,10 +14,12 @@ namespace EDEngineer.Utils
 {
     public class JournalEntryConverter : JsonConverter
     {
+        private readonly ItemNameConverter converter;
         private readonly ISimpleDictionary<string, Entry> entries;
 
-        public JournalEntryConverter(ISimpleDictionary<string, Entry> entries)
+        public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries)
         {
+            this.converter = converter;
             this.entries = entries;
         }
 
@@ -61,7 +64,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.MiningRefined:
                     string miningRefinedName;
-                    if (!ItemNameConverter.TryGet((string) data["Type"], out miningRefinedName))
+                    if (!converter.TryGet((string) data["Type"], out miningRefinedName))
                     {
                         break;
                     }
@@ -80,7 +83,7 @@ namespace EDEngineer.Utils
                             {
                                 dynamic cc = c;
                                 string rewardName;
-                                return Tuple.Create(ItemNameConverter.TryGet((string) cc.Name, out rewardName),
+                                return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName),
                                     rewardName,
                                     (int) cc.Value);
                             })
@@ -95,7 +98,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.MarketSell:
                     string marketSellName;
-                    if (!ItemNameConverter.TryGet((string) data["Type"], out marketSellName))
+                    if (!converter.TryGet((string) data["Type"], out marketSellName))
                     {
                         break;
                     }
@@ -108,7 +111,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.MarketBuy:
                     string marketBuyName;
-                    if (!ItemNameConverter.TryGet((string) data["Type"], out marketBuyName))
+                    if (!converter.TryGet((string) data["Type"], out marketBuyName))
                     {
                         break;
                     }
@@ -121,7 +124,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.MaterialDiscarded:
                     string materialDiscardedName;
-                    if (!ItemNameConverter.TryGet((string) data["Name"], out materialDiscardedName))
+                    if (!converter.TryGet((string) data["Name"], out materialDiscardedName))
                     {
                         MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
                         break;
@@ -147,7 +150,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.MaterialCollected:
                     string materialCollectedName;
-                    if (!ItemNameConverter.TryGet((string) data["Name"], out materialCollectedName))
+                    if (!converter.TryGet((string) data["Name"], out materialCollectedName))
                     {
                         MessageBox.Show($"Unknown material, please contact the author ! {(string)data["Name"]}");
                         break;
@@ -188,7 +191,7 @@ namespace EDEngineer.Utils
                             {
                                 string rewardName;
                                 return Tuple.Create(c,
-                                    ItemNameConverter.TryGet((string) c["Name"], out rewardName),
+                                    converter.TryGet((string) c["Name"], out rewardName),
                                     rewardName);
                             })
                             .Where(c => c.Item2)
@@ -211,7 +214,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.CollectCargo:
                     string collectCargoName;
-                    if (!ItemNameConverter.TryGet((string) data["Type"], out collectCargoName))
+                    if (!converter.TryGet((string) data["Type"], out collectCargoName))
                     {
                         break;
                     }
@@ -224,7 +227,7 @@ namespace EDEngineer.Utils
                     break;
                 case JournalEvent.EjectCargo:
                     string ejectCargoName;
-                    if (!ItemNameConverter.TryGet((string) data["Type"], out ejectCargoName))
+                    if (!converter.TryGet((string) data["Type"], out ejectCargoName))
                     {
                         break;
                     }

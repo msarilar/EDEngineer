@@ -34,7 +34,7 @@ namespace EDEngineer.Models
                     var extended = (PropertyChangedExtendedEventArgs<int>) e;
 
                     var progressBefore =
-                        ComputeProgress(i => i.Entry.Name == ingredient.Entry.Name ? extended.OldValue : i.Entry.Count);
+                        ComputeProgress(i => i.Entry.Data.Name == ingredient.Entry.Data.Name ? extended.OldValue : i.Entry.Count);
 
                     if (Math.Abs(progressBefore - Progress) > 0.1)
                     {
@@ -42,7 +42,7 @@ namespace EDEngineer.Models
                     }
 
                     var canCraftCountBefore =
-                        ComputeCraftCount(i => i.Entry.Name == ingredient.Entry.Name ? extended.OldValue : i.Entry.Count);
+                        ComputeCraftCount(i => i.Entry.Data.Name == ingredient.Entry.Data.Name ? extended.OldValue : i.Entry.Count);
                     
                     if (canCraftCountBefore != CanCraftCount)
                     {

@@ -25,12 +25,12 @@
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
-                            <Image Source="{Binding Value.Rarity, Converter={StaticResource RarityToIcon}}"
+                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}}"
                                    HorizontalAlignment="Left"
                                    Width="20"
                                    Height="20"
                                    VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding Value.Name}"
+                            <TextBlock Text="{Binding Value.Data.Name}"
                                        FontFamily="./Resources/Fonts/#Euro Caps"
                                        FontSize="20"
                                        Margin="2,0,0,0"
@@ -394,7 +394,7 @@
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
                                                     <TextBlock>
-                                                        <Run Text="{Binding Entry.Kind, Mode=OneWay}" />
+                                                        <Run Text="{Binding Entry.Data.Kind, Mode=OneWay}" />
                                                         <Run Text=":" />
                                                     </TextBlock>
                                                 </DataTemplate>
@@ -407,7 +407,7 @@
                                                       FontSize="13">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <TextBlock Text="{Binding Entry.Name, Mode=OneWay}" />
+                                                    <TextBlock Text="{Binding Entry.Data.Name, Mode=OneWay}" />
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
                                         </ItemsControl>

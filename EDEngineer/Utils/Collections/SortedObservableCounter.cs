@@ -19,10 +19,7 @@ namespace EDEngineer.Utils.Collections
             }
             else
             {
-                this[key] = new Entry(key)
-                {
-                    Count = value
-                };
+                throw new ArgumentOutOfRangeException(nameof(key), $"Unknown key : {key}");
             }
         }
     }

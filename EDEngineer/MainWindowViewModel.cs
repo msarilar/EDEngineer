@@ -48,12 +48,13 @@ namespace EDEngineer
 
         public MainWindowViewModel()
         {
-            State = new State();
-            journalEntryConverter = new JournalEntryConverter(State.Cargo);
+            var entryDatas = JsonConvert.DeserializeObject<List<EntryData>>(IOManager.GetEntryDatasJson());
+            var converter = new ItemNameConverter(entryDatas);
+
+            State = new State(entryDatas);
+            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo);
             blueprintConverter = new BlueprintConverter(State.Cargo);
             LoadBlueprints();
-            Filters = new BlueprintFilters(Blueprints);
-
             LoadState();
         }
 
@@ -94,7 +95,7 @@ namespace EDEngineer
             // Clear state:
             lock (processedEntriesLock)
             {
-                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Name, -1*k.Value.Count));
+                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1*k.Value.Count));
                 processedEntries.Clear();
                 LastUpdate = Instant.MinValue;
             }
@@ -209,6 +210,8 @@ namespace EDEngineer
                     }
                 };
             }
+
+            Filters = new BlueprintFilters(Blueprints);
         }
 
         public void UserChange(Entry entry, int change)
@@ -219,7 +222,7 @@ namespace EDEngineer
                 {
                     Count = change,
                     JournalEvent = JournalEvent.ManualUserChange,
-                    Name = entry.Name
+                    Name = entry.Data.Name
                 },
                 TimeStamp = SystemClock.Instance.Now
             };
@@ -244,7 +247,7 @@ namespace EDEngineer
 
         public ICollectionView FilterView(Kind kind, ICollectionView view)
         {
-            view.Filter = o => ((KeyValuePair<string, Entry>)o).Value.Kind == kind;
+            view.Filter = o => ((KeyValuePair<string, Entry>)o).Value.Data.Kind == kind;
 
             PropertyChanged += (o, e) =>
             {

@@ -27,23 +27,17 @@ namespace EDEngineer
         public MainWindow()
         {
             var procName = Process.GetCurrentProcess().ProcessName;
-            // get the list of all processes by the "procName"       
             var processes = Process.GetProcessesByName(procName);
 
             if (processes.Length > 1)
             {
-                System.Windows.Forms.MessageBox.Show($"EDEngineer already running, you can bring it up with your shortcut ({Properties.Settings.Default.Shortcut}).",
+                System.Windows.Forms.MessageBox.Show($"EDEngineer already running, you can bring it up with your shortcut ({SettingsManager.Shortcut}).",
                     "Oops", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Application.Current.Shutdown();
                 return;
             }
 
-            if (Properties.Settings.Default.UpgradeRequired)
-            {
-                Properties.Settings.Default.Upgrade();
-                Properties.Settings.Default.UpgradeRequired = false;
-                Properties.Settings.Default.Save();
-            }
+            SettingsManager.Init();
 
             InitializeComponent();
             viewModel = new MainWindowViewModel();
@@ -62,13 +56,7 @@ namespace EDEngineer
         {
             icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);
 
-            var shortcut = Properties.Settings.Default.Shortcut;
-            var converter = new KeysConverter();
-            if (string.IsNullOrEmpty(shortcut))
-            {
-                shortcut = Properties.Settings.Default.Shortcut = converter.ConvertToString(Keys.F10 | Keys.Control);
-                Properties.Settings.Default.Save();
-            }
+            var shortcut = SettingsManager.Shortcut;
 
             HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(shortcut));
         }
@@ -83,16 +71,15 @@ namespace EDEngineer
             }
 
             HotkeyManager.UnregisterHotKey(this);
-            if (ShortcutPrompt.ShowDialog(Properties.Settings.Default.Shortcut, out shortcut))
+            if (ShortcutPrompt.ShowDialog(SettingsManager.Shortcut, out shortcut))
             {
-                Properties.Settings.Default.Shortcut = shortcut;
-                Properties.Settings.Default.Save();
+                SettingsManager.Shortcut = shortcut;
                 HotkeyManager.UnregisterHotKey(this);
                 HotkeyManager.RegisterHotKey(this, (Keys) new KeysConverter().ConvertFromString(shortcut));
             }
             else
             {
-                HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(Properties.Settings.Default.Shortcut));
+                HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(SettingsManager.Shortcut));
             }
 
             ignoreShortcut = false;

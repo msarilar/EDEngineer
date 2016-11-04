@@ -150,9 +150,11 @@
     <Compile Include="Filters\EngineerFilter.cs" />
     <Compile Include="Filters\GradeFilter.cs" />
     <Compile Include="Filters\IgnoredFavoriteFilter.cs" />
+    <Compile Include="Models\EntryData.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
     <Compile Include="Utils\PropertyChangedExtendedEventArgs.cs" />
+    <Compile Include="Utils\System\SettingsManager.cs" />
     <Compile Include="Utils\UI\ShortcutPrompt.cs" />
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />
@@ -221,6 +223,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <EmbeddedResource Include="Resources\Data\entryData.json" />
     <Resource Include="Resources\Fonts\telegrama.otf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
