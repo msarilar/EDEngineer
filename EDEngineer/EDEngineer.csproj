@@ -164,6 +164,7 @@
     <Compile Include="Utils\Collections\SortedObservableDictionary.cs" />
     <Compile Include="Filters\TypeFilter.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
+    <Compile Include="Utils\WindowDimensions.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -13,6 +14,7 @@ using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using EDEngineer.Models;
+using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
 using Application = System.Windows.Application;
@@ -55,6 +57,13 @@ namespace EDEngineer
 
         private void MainWindowLoaded(object sender, RoutedEventArgs args)
         {
+            var dimensions = SettingsManager.Dimensions;
+
+            Height = dimensions.Height;
+            Width = dimensions.Width;
+            Top = dimensions.Top;
+            Left = dimensions.Left;
+
             icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);
 
             var shortcut = SettingsManager.Shortcut;
@@ -99,7 +108,6 @@ namespace EDEngineer
         private readonly Regex forbiddenCharacters = new Regex("[^0-9.-]+");
         private void EntryCountTextBoxOnPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            int newCount;
             if (forbiddenCharacters.IsMatch(e.Text))
             {
                 e.Handled = true;
@@ -274,6 +282,25 @@ namespace EDEngineer
         {
             Hide();
             transitionning = false;
+        }
+
+        private void ToggleEditModeChecked(object sender, RoutedEventArgs e)
+        {
+            var w = new MainWindow()
+            {
+                AllowsTransparency = !AllowsTransparency,
+                WindowStyle = WindowStyle == WindowStyle.ToolWindow ? WindowStyle.None : WindowStyle.ToolWindow
+            };
+
+            Close();
+            w.Show();
+        }
+
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            var coords = PointToScreen(new Point(0, 0));
+            SettingsManager.Dimensions = new WindowDimensions() { Height = ActualHeight, Left = coords.X, Top = coords.Y, Width = ActualWidth };
+            base.OnClosing(e);
         }
     }
 }

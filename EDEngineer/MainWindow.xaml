@@ -7,16 +7,13 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
         Title="MainWindow"
-        WindowStartupLocation="CenterScreen"
-        AllowsTransparency="True"
         Topmost="True"
         WindowStyle="None"
         Background="Transparent"
+        AllowsTransparency="True"
         ShowInTaskbar="False"
         Loaded="MainWindowLoaded"
-        ResizeMode="CanResize"
-        Height="{x:Static SystemParameters.PrimaryScreenHeight}"
-        Width="{x:Static SystemParameters.PrimaryScreenWidth}">
+        ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
             <Grid>
@@ -114,9 +111,7 @@
         </Storyboard>
     </Window.Resources>
 
-    <Grid Width="1152"
-          Height="648"
-          Opacity="0.9"
+    <Grid Opacity="0.9"
           Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*" />
@@ -132,6 +127,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
@@ -139,7 +135,7 @@
             <!-- CURRENT CARGO -->
 
             <controls:MetroTabControl Grid.Row="0"
-                                          Grid.ColumnSpan="3">
+                                      Grid.ColumnSpan="4">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -191,17 +187,31 @@
 
             <!-- META DATA -->
 
-            <ToggleButton Content="Show Zeroes?"
+            <Grid Grid.Row="1"
+                  Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Button Content="Switch Between Modes"
+                        HorizontalAlignment="Stretch"
+                        FontSize="16"
+                        FontFamily="./Resources/Fonts/#Euro Caps"
+                        x:Name="ToggleEditMode"
+                        Click="ToggleEditModeChecked"
+                        Grid.Row="0"/>
+                <ToggleButton Content="Show Zeroes?"
                               HorizontalAlignment="Stretch"
-                              FontSize="20"
+                              FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Row="1"
-                              Grid.Column="0"
                               IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </Grid>
             <TextBlock HorizontalAlignment="Stretch"
                             FontSize="15"
                             Grid.Row="1"
-                            Grid.Column="1"
+                            Grid.Column="2"
                            Foreground="#ff7100"
                            TextWrapping="Wrap"
                             FontFamily="./Resources/Fonts/#Euro Caps">
@@ -211,7 +221,7 @@
             <Button HorizontalAlignment="Stretch"
                         FontSize="15"
                         Grid.Row="1"
-                        Grid.Column="2"
+                        Grid.Column="3"
                         Foreground="DarkCyan"
                         Background="Black"
                         Style="{DynamicResource ChromelessButtonStyle}"
