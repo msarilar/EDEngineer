@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using EDEngineer.Utils;
 using EDEngineer.Utils.Collections;
 
@@ -26,7 +27,8 @@ namespace EDEngineer.Models
         {
             lock (stateLock)
             {
-                foreach (var item in entryDatas)
+                var toAdd = entryDatas.Where(e => !Cargo.ContainsKey(e.Name));
+                foreach (var item in toAdd)
                 {
                     Cargo.Add(new KeyValuePair<string, Entry>(item.Name, new Entry(item)));
                 }
