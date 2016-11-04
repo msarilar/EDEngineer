@@ -12,9 +12,9 @@
         Topmost="True"
         WindowStyle="None"
         Background="Transparent"
-        ShowInTaskbar="False" 
+        ShowInTaskbar="False"
         Loaded="MainWindowLoaded"
-        ResizeMode="NoResize"
+        ResizeMode="CanResize"
         Height="{x:Static SystemParameters.PrimaryScreenHeight}"
         Width="{x:Static SystemParameters.PrimaryScreenWidth}">
     <Window.Resources>
@@ -113,103 +113,92 @@
                              Duration="0:0:0.3"/>
         </Storyboard>
     </Window.Resources>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.2*" />
-            <ColumnDefinition Width="0.6*" />
-            <ColumnDefinition Width="0.2*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.2*" />
-            <RowDefinition Height="0.6*" />
-            <RowDefinition Height="0.2*" />
-        </Grid.RowDefinitions>
 
-        <Grid Grid.Column="1"
-              Grid.Row="1"
-              Opacity="0.9"
-              Background="Black">
+    <Grid Width="1152"
+          Height="648"
+          Opacity="0.9"
+          Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- LEFT SIDE -->
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*" />
-                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- LEFT SIDE -->
-            
-            <Grid Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                
-                <!-- CURRENT CARGO -->
-                
-                <controls:MetroTabControl Grid.Row="0"
+            <!-- CURRENT CARGO -->
+
+            <controls:MetroTabControl Grid.Row="0"
                                           Grid.ColumnSpan="3">
-                    <TabControl.Resources>
-                        <Style TargetType="{x:Type TabPanel}">
-                            <Setter Property="HorizontalAlignment" Value="Center" />
-                        </Style>
-                    </TabControl.Resources>
-                    <controls:MetroTabItem Header="Commodities"
+                <TabControl.Resources>
+                    <Style TargetType="{x:Type TabPanel}">
+                        <Setter Property="HorizontalAlignment" Value="Center" />
+                    </Style>
+                </TabControl.Resources>
+                <controls:MetroTabItem Header="Commodities"
                                            FontFamily="./Resources/Fonts/#Euro Caps">
-                        <ScrollViewer>
-                            <ItemsControl Background="Transparent"
+                    <ScrollViewer>
+                        <ItemsControl Background="Transparent"
                                           x:Name="Commodities"
                                           ItemTemplate="{StaticResource EntryTemplate}">
-                                <ItemsControl.ItemContainerStyle>
-                                    <Style>
-                                        <Setter Property="FrameworkElement.Margin" Value="3" />
-                                    </Style>
-                                </ItemsControl.ItemContainerStyle>
-                            </ItemsControl>
-                        </ScrollViewer>
-                    </controls:MetroTabItem>
-                    <controls:MetroTabItem Header="Materials"
+                            <ItemsControl.ItemContainerStyle>
+                                <Style>
+                                    <Setter Property="FrameworkElement.Margin" Value="3" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </controls:MetroTabItem>
+                <controls:MetroTabItem Header="Materials"
                                            FontFamily="./Resources/Fonts/#Euro Caps">
-                        <ScrollViewer>
-                            <ItemsControl Background="Transparent"
+                    <ScrollViewer>
+                        <ItemsControl Background="Transparent"
                                           x:Name="Materials"
                                           ItemTemplate="{StaticResource EntryTemplate}">
-                                <ItemsControl.ItemContainerStyle>
-                                    <Style>
-                                        <Setter Property="FrameworkElement.Margin" Value="3" />
-                                    </Style>
-                                </ItemsControl.ItemContainerStyle>
-                            </ItemsControl>
-                        </ScrollViewer>
-                    </controls:MetroTabItem>
-                    <controls:MetroTabItem Header="Data"
+                            <ItemsControl.ItemContainerStyle>
+                                <Style>
+                                    <Setter Property="FrameworkElement.Margin" Value="3" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </controls:MetroTabItem>
+                <controls:MetroTabItem Header="Data"
                                            FontFamily="./Resources/Fonts/#Euro Caps">
-                        <ScrollViewer>
-                            <ItemsControl Background="Transparent"
+                    <ScrollViewer>
+                        <ItemsControl Background="Transparent"
                                           x:Name="Data"
                                           ItemTemplate="{StaticResource EntryTemplate}">
-                                <ItemsControl.ItemContainerStyle>
-                                    <Style>
-                                        <Setter Property="FrameworkElement.Margin" Value="3" />
-                                    </Style>
-                                </ItemsControl.ItemContainerStyle>
-                            </ItemsControl>
-                        </ScrollViewer>
-                    </controls:MetroTabItem>
-                </controls:MetroTabControl>
-                
-                <!-- META DATA -->
+                            <ItemsControl.ItemContainerStyle>
+                                <Style>
+                                    <Setter Property="FrameworkElement.Margin" Value="3" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </controls:MetroTabItem>
+            </controls:MetroTabControl>
 
-                <ToggleButton Content="Show Zeroes?"
+            <!-- META DATA -->
+
+            <ToggleButton Content="Show Zeroes?"
                               HorizontalAlignment="Stretch"
                               FontSize="20"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Row="1"
                               Grid.Column="0"
                               IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                <TextBlock HorizontalAlignment="Stretch"
+            <TextBlock HorizontalAlignment="Stretch"
                             FontSize="15"
                             Grid.Row="1"
                             Grid.Column="1"
@@ -218,8 +207,8 @@
                             FontFamily="./Resources/Fonts/#Euro Caps">
                     <Run Text="Last update: "/>
                     <Run Text="{Binding LastUpdate, Converter={StaticResource InstantToString}}"></Run>
-                </TextBlock>
-                <Button HorizontalAlignment="Stretch"
+            </TextBlock>
+            <Button HorizontalAlignment="Stretch"
                         FontSize="15"
                         Grid.Row="1"
                         Grid.Column="2"
@@ -228,142 +217,142 @@
                         Style="{DynamicResource ChromelessButtonStyle}"
                         Click="ChangeFolderButtonClicked"
                         FontFamily="./Resources/Fonts/#Euro Caps">
-                    <TextBlock Text="{Binding LogDirectory}" TextWrapping="Wrap"/>
-                </Button>
-            </Grid>
+                <TextBlock Text="{Binding LogDirectory}" TextWrapping="Wrap"/>
+            </Button>
+        </Grid>
 
-            <!-- RIGHT SIDE -->
-            
-            <Grid Grid.Column="1">
-                <Grid>
+        <!-- RIGHT SIDE -->
+
+        <Grid Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.15*" />
+                    <RowDefinition Height="0.85*" />
+                </Grid.RowDefinitions>
+
+                <!-- FIlTERS (TOP) -->
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.15*" />
-                        <RowDefinition Height="0.85*" />
+                        <RowDefinition />
+                        <RowDefinition />
                     </Grid.RowDefinitions>
-                    
-                    <!-- FIlTERS (TOP) -->
-                    
-                    <Grid Grid.Row="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />
-                            <ColumnDefinition />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition />
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
-                        <controls:DropDownButton ItemsSource="{Binding Filters.GradeFilters}"
+                    <controls:DropDownButton ItemsSource="{Binding Filters.GradeFilters}"
                                                  Content="{Binding Filters.GradeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Grade}"
                                                  Grid.Row="0"
                                                  Grid.Column="0">
-                            <controls:DropDownButton.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <CheckBox Width="20"
+                        <controls:DropDownButton.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                        <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
+                                    <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
                                                    Width="100" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </controls:DropDownButton.ItemTemplate>
-                        </controls:DropDownButton>
+                                </StackPanel>
+                            </DataTemplate>
+                        </controls:DropDownButton.ItemTemplate>
+                    </controls:DropDownButton>
 
-                        <controls:DropDownButton ItemsSource="{Binding Filters.EngineerFilters}"
+                    <controls:DropDownButton ItemsSource="{Binding Filters.EngineerFilters}"
                                                  Content="{Binding Filters.EngineerFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Engineer}"
                                                  Grid.Row="0"
                                                  Grid.Column="1"
                                                  >
-                            <controls:DropDownButton.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <CheckBox Width="20"
+                        <controls:DropDownButton.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                        <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
+                                    <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
                                                    Width="100" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </controls:DropDownButton.ItemTemplate>
-                        </controls:DropDownButton>
+                                </StackPanel>
+                            </DataTemplate>
+                        </controls:DropDownButton.ItemTemplate>
+                    </controls:DropDownButton>
 
-                        <controls:DropDownButton ItemsSource="{Binding Filters.TypeFilters}"
+                    <controls:DropDownButton ItemsSource="{Binding Filters.TypeFilters}"
                                                  Content="{Binding Filters.TypeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Type}"
                                                  Grid.Row="0"
                                                  Grid.Column="2">
-                            <controls:DropDownButton.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <WrapPanel Width="575"
+                        <controls:DropDownButton.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Width="575"
                                                MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}" />
-                                </ItemsPanelTemplate>
-                            </controls:DropDownButton.ItemsPanel>
-                            <controls:DropDownButton.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal"
+                            </ItemsPanelTemplate>
+                        </controls:DropDownButton.ItemsPanel>
+                        <controls:DropDownButton.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal"
                                                 Width="220">
-                                        <CheckBox Width="20"
+                                    <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                        <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </controls:DropDownButton.ItemTemplate>
-                        </controls:DropDownButton>
+                                    <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </controls:DropDownButton.ItemTemplate>
+                    </controls:DropDownButton>
 
-                        <controls:DropDownButton ItemsSource="{Binding Filters.IgnoredFavoriteFilters}"
+                    <controls:DropDownButton ItemsSource="{Binding Filters.IgnoredFavoriteFilters}"
                                                  Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=IgnoredAndFavorite}"
                                                  Grid.Row="1"
                                                  Grid.Column="0">
-                            <controls:DropDownButton.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <CheckBox Width="20"
+                        <controls:DropDownButton.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                        <TextBlock Text="{Binding Label}"
+                                    <TextBlock Text="{Binding Label}"
                                                    Width="100" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </controls:DropDownButton.ItemTemplate>
-                        </controls:DropDownButton>
+                                </StackPanel>
+                            </DataTemplate>
+                        </controls:DropDownButton.ItemTemplate>
+                    </controls:DropDownButton>
 
-                        <controls:DropDownButton ItemsSource="{Binding Filters.CraftableFilters}"
+                    <controls:DropDownButton ItemsSource="{Binding Filters.CraftableFilters}"
                                                  Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Craftable}"
                                                  Grid.Row="1"
                                                  Grid.Column="1">
-                            <controls:DropDownButton.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <CheckBox Width="20"
+                        <controls:DropDownButton.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                        <TextBlock Text="{Binding Label}"
+                                    <TextBlock Text="{Binding Label}"
                                                    Width="100" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </controls:DropDownButton.ItemTemplate>
-                        </controls:DropDownButton>
+                                </StackPanel>
+                            </DataTemplate>
+                        </controls:DropDownButton.ItemTemplate>
+                    </controls:DropDownButton>
 
-                        <Grid Grid.Row="1"
+                    <Grid Grid.Row="1"
                               Grid.Column="2">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition />
-                                <ColumnDefinition />
-                            </Grid.ColumnDefinitions>
-                            <Button Grid.Column="0"
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0"
                                     HorizontalAlignment="Stretch"
                                     Click="CheckAllButtonClicked"
                                     x:Name="CheckAllButton">
-                                <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="#ff7100" />
-                            </Button>
-                            <Button Grid.Column="1"
+                            <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="#ff7100" />
+                        </Button>
+                        <Button Grid.Column="1"
                                     HorizontalAlignment="Stretch"
                                     Click="UncheckAllButtonClicked"
                                     x:Name="UncheckAllButton">
-                                <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="#ff7100" />
-                            </Button>
-                        </Grid>
+                            <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="#ff7100" />
+                        </Button>
                     </Grid>
+                </Grid>
 
-                    <!-- BLUEPRINTS -->
+                <!-- BLUEPRINTS -->
 
-                    <DataGrid x:Name="Blueprints"
+                <DataGrid x:Name="Blueprints"
                               IsReadOnly="True"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Background="Black"
@@ -378,149 +367,149 @@
                               Loaded="BlueprintsDataGridLoaded"
                               Grid.Row="1"
                               Style="{DynamicResource BlueprintGridStyle}">
-                        <DataGrid.RowDetailsTemplate>
-                            <DataTemplate>
-                                <Grid Background="#043A59">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.5*" />
-                                        <ColumnDefinition Width="0.5*" />
-                                    </Grid.ColumnDefinitions>
-                                    <Grid Grid.Column="0"
+                    <DataGrid.RowDetailsTemplate>
+                        <DataTemplate>
+                            <Grid Background="#043A59">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="0.5*" />
+                                    <ColumnDefinition Width="0.5*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0"
                                           Margin="10,0,0,0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                        </Grid.ColumnDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                    <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="0"
                                                       Margin="0,0,7,0"
                                                       FontSize="13">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock>
                                                         <Run Text="{Binding Entry.Data.Kind, Mode=OneWay}" />
                                                         <Run Text=":" />
-                                                    </TextBlock>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
+                                                </TextBlock>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                    <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="1"
                                                       Margin="0,0,7,0"
                                                       FontSize="13">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock Text="{Binding Entry.Data.Name, Mode=OneWay}" />
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Entry.Data.Name, Mode=OneWay}" />
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                    <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="2"
                                                       Margin="0,0,7,0"
                                                       FontSize="13">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock>
                                                         <Run Text="(" />
                                                         <Run Text="{Binding Entry.Count}" />
                                                         <Run Text="/" />
                                                         <Run Text="{Binding Size, Mode=OneWay}" />
                                                         <Run Text=")" />
-                                                    </TextBlock>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
+                                                </TextBlock>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                    <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="3"
                                                       Margin="0,0,7,0">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <Grid>
-                                                        <iconPacks:PackIconMaterial Kind="Check"
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <iconPacks:PackIconMaterial Kind="Check"
                                                                                     Visibility="{Binding Converter={StaticResource IngredientToVisibility}}"
                                                                                     Foreground="Green" />
-                                                        <iconPacks:PackIconMaterial Height="14" Kind="Close"
+                                                    <iconPacks:PackIconMaterial Height="14" Kind="Close"
                                                                                     Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted}"
                                                                                     Foreground="Red" />
-                                                    </Grid>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
-                                    </Grid>
-                                    <ItemsControl Margin="0,0,10,0"
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Grid>
+                                <ItemsControl Margin="0,0,10,0"
                                                   FontSize="13"
                                                   ItemsSource="{Binding Engineers}"
                                                   HorizontalAlignment="Right"
                                                   Grid.Column="1" />
-                                </Grid>
-                            </DataTemplate>
-                        </DataGrid.RowDetailsTemplate>
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Header="G" Binding="{Binding Grade}" IsReadOnly="True" Width="30">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="HorizontalAlignment" Value="Center" />
-                                        <Setter Property="VerticalAlignment" Value="Center" />
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <DataGridTextColumn Header="Type" Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}" IsReadOnly="True" Width="110">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="TextWrapping" Value="Wrap" />
-                                        <Setter Property="TextAlignment" Value="Center" />
-                                        <Setter Property="HorizontalAlignment" Value="Center" />
-                                        <Setter Property="VerticalAlignment" Value="Center" />
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="*">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="TextWrapping" Value="Wrap" />
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <DataGridTemplateColumn Header="Progress" 
+                            </Grid>
+                        </DataTemplate>
+                    </DataGrid.RowDetailsTemplate>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="G" Binding="{Binding Grade}" IsReadOnly="True" Width="30">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center" />
+                                    <Setter Property="VerticalAlignment" Value="Center" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Type" Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}" IsReadOnly="True" Width="110">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                    <Setter Property="TextAlignment" Value="Center" />
+                                    <Setter Property="HorizontalAlignment" Value="Center" />
+                                    <Setter Property="VerticalAlignment" Value="Center" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="*">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="TextWrapping" Value="Wrap" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+                        <DataGridTemplateColumn Header="Progress" 
                                                     IsReadOnly="True"
                                                     SortMemberPath="ProgressSorting"
                                                     Width="140">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Grid>
-                                            <StackPanel Orientation="Vertical">
-                                                <TextBlock HorizontalAlignment="Center">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock HorizontalAlignment="Center">
                                                     <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
                                                     <Run Text=": can craft" />
                                                     <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
-                                                </TextBlock>
-                                                <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
+                                            </TextBlock>
+                                            <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
                                                                            Background="WhiteSmoke" Foreground="#ff7100" />
-                                            </StackPanel>
-                                        </Grid>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <DataGridTemplateColumn IsReadOnly="True" Width="100" >
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Grid>
-                                            <ToggleButton Width="40"
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn IsReadOnly="True" Width="100" >
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <ToggleButton Width="40"
                                                           Height="40"
                                                           HorizontalAlignment="Left"
                                                           Margin="10,0,0,0"
                                                           VerticalAlignment="Center"
                                                           IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                           Foreground="Black">
-                                                <iconPacks:PackIconMaterial Kind="Heart" Foreground="#ff7100" />
-                                            </ToggleButton>
-                                            <ToggleButton x:Name="IgnoreBluebrintButton"
+                                            <iconPacks:PackIconMaterial Kind="Heart" Foreground="#ff7100" />
+                                        </ToggleButton>
+                                        <ToggleButton x:Name="IgnoreBluebrintButton"
                                                           Width="40"
                                                           Height="40"
                                                           HorizontalAlignment="Right"
@@ -528,15 +517,14 @@
                                                           VerticalAlignment="Center"
                                                           IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                           Foreground="Black">
-                                                <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black"/>
-                                            </ToggleButton>
-                                        </Grid>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
-                </Grid>
+                                            <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black"/>
+                                        </ToggleButton>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
             </Grid>
         </Grid>
     </Grid>
