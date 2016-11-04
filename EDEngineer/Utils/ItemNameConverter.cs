@@ -247,7 +247,11 @@ namespace EDEngineer.Utils
                 "Modified Consumer Firmware",
                 "Modified Embedded Firmware",
                 "Open Symmetric Keys",
-                "Pattern Obelisk Data",
+                "Pattern Alpha Obelisk Data",
+                "Pattern Beta Obelisk Data",
+                "Pattern Epsilon Obelisk Data",
+                "Pattern Gamma Obelisk Data",
+                "Pattern Delta Obelisk Data",
                 "Peculiar Shield Frequency Data",
                 "Security Firmware Patch",
                 "Specialised Legacy Firmware",
@@ -291,35 +295,24 @@ namespace EDEngineer.Utils
 
         public static IEnumerable<string> Names { get; } = MaterialNames.Concat(DataNames).Concat(CommodityNames);
 
+        private static readonly Dictionary<string, string> customMappingForBadEntries = new Dictionary<string, string>()
+        {
+            ["shielddensityreports"] = "Untypical Shield Scans",
+            ["encodedscandata"] = "Divergent Scan Data",
+            ["archivedemissiondata"] = "Irregular Emission Data",
+            ["compactemissionsdata"] = "Abnormal Compact Emission Data",
+            ["ancientbiologicaldata"] = "Pattern Alpha Obelisk Data",
+            ["ancientculturaldata"] = "Pattern Beta Obelisk Data",
+            ["ancienttechnologicaldata"] = "Pattern Epsilon Obelisk Data",
+            ["ancienthistoricaldata"] = "Pattern Gamma Obelisk Data",
+            ["ancientlanguagedata"] = "Pattern Delta Obelisk Data",
+            ["fedproprietarycomposites"] = "Proprietary Composites"
+        };
+
         public static bool TryGet(string key, out string name)
         {
-            if (key == "shielddensityreports")
+            if (customMappingForBadEntries.TryGetValue(key, out name))
             {
-                name = "Untypical Shield Scans";
-                return true;
-            }
-
-            if (key == "encodedscandata")
-            {
-                name = "Divergent Scan Data";
-                return true;
-            }
-
-            if (key == "ancienthistoricaldata")
-            {
-                name = "Pattern Obelisk Data";
-                return true;
-            }
-
-            if (key == "archivedemissiondata")
-            {
-                name = "Irregular Emission Data";
-                return true;
-            }
-
-            if (key == "compactemissionsdata")
-            {
-                name = "Abnormal Compact Emission Data";
                 return true;
             }
 
