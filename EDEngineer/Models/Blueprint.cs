@@ -34,7 +34,7 @@ namespace EDEngineer.Models
                     var extended = (PropertyChangedExtendedEventArgs<int>) e;
 
                     var progressBefore =
-                        ComputeProgress(i => i.Entry.Data.Name == ingredient.Entry.Data.Name ? extended.OldValue : i.Entry.Count);
+                        ComputeProgress(i => Math.Max(0, i.Entry.Data.Name == ingredient.Entry.Data.Name ? extended.OldValue : i.Entry.Count));
 
                     if (Math.Abs(progressBefore - Progress) > 0.1)
                     {
@@ -42,7 +42,7 @@ namespace EDEngineer.Models
                     }
 
                     var canCraftCountBefore =
-                        ComputeCraftCount(i => i.Entry.Data.Name == ingredient.Entry.Data.Name ? extended.OldValue : i.Entry.Count);
+                        ComputeCraftCount(i => Math.Max(0, i.Entry.Data.Name == ingredient.Entry.Data.Name ? extended.OldValue : i.Entry.Count));
                     
                     if (canCraftCountBefore != CanCraftCount)
                     {
@@ -80,10 +80,10 @@ namespace EDEngineer.Models
 
         public double Progress
         {
-            get { return ComputeProgress(i => i.Entry.Count); }
+            get { return ComputeProgress(i => Math.Max(0, i.Entry.Count)); }
         }
 
-        public int CanCraftCount => ComputeCraftCount(i => i.Entry.Count);
+        public int CanCraftCount => ComputeCraftCount(i => Math.Max(0, i.Entry.Count));
 
         private int ComputeCraftCount(Func<BlueprintIngredient, int> countExtractor)
         {

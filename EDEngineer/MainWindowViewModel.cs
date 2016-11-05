@@ -157,7 +157,6 @@ namespace EDEngineer
             var blueprintsJson = IOManager.GetBlueprintsJson();
 
             Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter));
-
             if (Properties.Settings.Default.Favorites == null)
             {
                 Properties.Settings.Default.Favorites = new StringCollection();
