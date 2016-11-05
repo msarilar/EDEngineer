@@ -39,7 +39,7 @@ namespace EDEngineer
                 Application.Current.Shutdown();
                 return;
             }
-
+            
             SettingsManager.Init();
             InitializeComponent();
             viewModel = new MainWindowViewModel();
@@ -56,8 +56,6 @@ namespace EDEngineer
 
         private void MainWindowLoaded(object sender, RoutedEventArgs args)
         {
-            Opacity = 1;
-
             var dimensions = SettingsManager.Dimensions;
 
             Width = dimensions.Width;
