@@ -10,8 +10,14 @@ namespace EDEngineer.Utils.System
 {
     public static class ReleaseNotesManager
     {
-        public static void ShowReleaseNotes(string newVersionString)
+        public static void ShowReleaseNotes(string oldVersionString, string newVersionString)
         {
+            Version oldVersion;
+            if (!Version.TryParse(oldVersionString, out oldVersion))
+            {
+                oldVersion = new Version(1, 0, 0, 0);
+            }
+
             var newVersion = Version.Parse(newVersionString);
 
             string releasesJson = null;
@@ -38,7 +44,7 @@ namespace EDEngineer.Utils.System
             {
                 var releaseVersion = Version.Parse((string)release["tag_name"]);
 
-                if (releaseVersion <= newVersion)
+                if (releaseVersion <= newVersion && releaseVersion > oldVersion)
                 {
                     builder.AppendLine($"Version : {releaseVersion}");
                     builder.AppendLine((string) release["body"]);
@@ -49,7 +55,7 @@ namespace EDEngineer.Utils.System
 
             if (builder.Length > 0)
             {
-                MessageBox.Show(builder.ToString(), $"Release notes (new version: {newVersion})", MessageBoxButtons.OK,
+                MessageBox.Show(builder.ToString(), $"Release notes (new version: {newVersion}, old version: {oldVersion})", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
         }

@@ -9,6 +9,8 @@ namespace EDEngineer.Utils.System
         {
             if (Properties.Settings.Default.UpgradeRequired)
             {
+                var oldVersion = Properties.Settings.Default.Version;
+
                 Properties.Settings.Default.Upgrade();
                 Properties.Settings.Default.UpgradeRequired = false;
                 Properties.Settings.Default.Save();
@@ -17,7 +19,7 @@ namespace EDEngineer.Utils.System
 
                 try
                 {
-                    ReleaseNotesManager.ShowReleaseNotes(newVersion);
+                    ReleaseNotesManager.ShowReleaseNotes(oldVersion, newVersion);
                 }
                 catch
                 {
