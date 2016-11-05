@@ -97,11 +97,12 @@ namespace EDEngineer.Utils
                     return ExtractCollectCargo(data);
                 case JournalEvent.EjectCargo:
                     return ExtractEjectCargo(data);
+                case JournalEvent.Synthesis:
+                    return ExtractSynthesis(data);
                 default:
                     return null;
             }
         }
-
         private JournalOperation ExtractMarketSell(JObject data)
         {
             string marketSellName;
@@ -239,29 +240,69 @@ namespace EDEngineer.Utils
             }
         }
 
+        private JournalOperation ExtractSynthesis(JObject data)
+        {
+            foreach (var jToken in data["Materials"])
+            {
+                var material = (JProperty) jToken;
+                string synthesisIngredientName;
+                if (!converter.TryGet(material.Name, out synthesisIngredientName))
+                {
+                    MessageBox.Show($"Unknown material, please contact the author ! {material.Name}");
+                    return null;
+                }
+
+                var entry = converter[synthesisIngredientName];
+
+                switch (entry.Kind)
+                {
+                    case Kind.Material:
+                        return new MaterialOperation()
+                        {
+                            MaterialName = synthesisIngredientName,
+                            Size = material.Value != null ? (int) material.Value : 1
+                        };
+                    case Kind.Data:
+                        return new DataOperation()
+                        {
+                            DataName = synthesisIngredientName,
+                            Size = material.Value != null ? (int)material.Value : 1
+                        };
+                    case Kind.Commodity:
+                        return new CargoOperation()
+                        {
+                            CommodityName = synthesisIngredientName,
+                            Size = material.Value != null ? (int)material.Value : 1
+                        };
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+            }
+
+            return null;
+        }
+
         private JournalOperation ExtractMaterialCollected(JObject data)
         {
             string materialCollectedName;
-            if (!converter.TryGet((string)data["Name"], out materialCollectedName))
+            if (!converter.TryGet((string) data["Name"], out materialCollectedName))
             {
-                MessageBox.Show($"Unknown material, please contact the author ! {(string)data["Name"]}");
+                MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
                 return null;
             }
 
-            if (((string)data["Category"]).ToLowerInvariant() == "encoded")
+            if (((string) data["Category"]).ToLowerInvariant() == "encoded")
             {
                 return new DataOperation
                 {
-                    DataName = materialCollectedName,
-                    Size = data["Count"]?.ToObject<int>() ?? 1
+                    DataName = materialCollectedName, Size = data["Count"]?.ToObject<int>() ?? 1
                 };
             }
             else // Manufactured & Raw
             {
                 return new MaterialOperation
                 {
-                    MaterialName = materialCollectedName,
-                    Size = data["Count"]?.ToObject<int>() ?? 1
+                    MaterialName = materialCollectedName, Size = data["Count"]?.ToObject<int>() ?? 1
                 };
             }
         }
@@ -270,17 +311,12 @@ namespace EDEngineer.Utils
         {
             var operation = new EngineerOperation
             {
-                IngredientsConsumed = data["Ingredients"]
-                    .Select(c =>
-                    {
-                        dynamic cc = c;
-                        string rewardName;
-                        return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName),
-                            rewardName,
-                            (int) cc.Value);
-                    })
-                    .Where(c => c.Item1)
-                    .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
+                IngredientsConsumed = data["Ingredients"].Select(c =>
+                {
+                    dynamic cc = c;
+                    string rewardName;
+                    return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName), rewardName, (int) cc.Value);
+                }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
             };
 
             return operation.IngredientsConsumed.Any() ? operation : null;
@@ -290,8 +326,7 @@ namespace EDEngineer.Utils
         {
             return new ManualChangeOperation
             {
-                Name = (string) data["Name"],
-                Count = (int) data["Count"]
+                Name = (string) data["Name"], Count = (int) data["Count"]
             };
         }
 
@@ -301,8 +336,7 @@ namespace EDEngineer.Utils
             var operation = (ManualChangeOperation) entry.JournalOperation;
             writer.WriteStartObject();
             writer.WritePropertyName("timestamp");
-            writer.WriteValue(entry.TimeStamp.ToString(InstantPattern.GeneralPattern.PatternText,
-                CultureInfo.InvariantCulture));
+            writer.WriteValue(entry.TimeStamp.ToString(InstantPattern.GeneralPattern.PatternText, CultureInfo.InvariantCulture));
             writer.WritePropertyName("event");
             writer.WriteValue(operation.JournalEvent.ToString());
             writer.WritePropertyName("Name");
