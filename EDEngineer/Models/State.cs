@@ -39,7 +39,7 @@ namespace EDEngineer.Models
         {
             lock (stateLock)
             {
-                if (Cargo.ContainsKey(name))
+                if (!Cargo.ContainsKey(name))
                 {
                     Cargo.Add(new KeyValuePair<string, Entry>(name, new Entry(entryDatas.First(e => e.Name == name))));
                 }
