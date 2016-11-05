@@ -7,10 +7,7 @@ namespace EDEngineer.Models.Operations
 
         public override void Mutate(State state)
         {
-            if (state.Cargo.ContainsKey(Name))
-            {
-                state.IncrementCargo(Name, Count);
-            }
+            state.IncrementCargo(Name, Count);
         }
     }
 }

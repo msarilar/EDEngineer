@@ -14,6 +14,7 @@ namespace EDEngineer.Utils.System
         private const string MANUAL_CHANGES_LOG_FILE_NAME = "manualChanges.json";
         private const string LOG_FILE_PATTERN = "Journal.*.log";
         private static FileSystemWatcher watcher;
+        private static Timer periodicTouch;
 
         public static void InitiateWatch(string logDirectory, Action<IEnumerable<string>> action)
         {
@@ -39,6 +40,39 @@ namespace EDEngineer.Utils.System
                 watcher.Changed += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
                 watcher.Created += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
             }
+
+            periodicTouch = new Timer()
+            {
+                Interval = 2000
+            };
+
+            periodicTouch.Tick +=
+                (o, e) =>
+                {
+                    var file = Directory.GetFiles(logDirectory).Where(f => Path.GetFileName(f).StartsWith("Journal.") &&
+                                                                           Path.GetFileName(f).EndsWith(".log"))
+                        .OrderByDescending(f => f)
+                        .First();
+
+                    /*
+                     * EDEngineer updates *as soon* as the log files are updated by passively listening to file changes via the Windows API. It's almost immediate!
+                     * Elite Dangerous updates the log files periodically
+                     * EDEngineer *explicitly* reads the log files upon startup
+                     * Switching modes make EDEngineer reboot, so it makes the app read the files again
+                     * Elite Dangerous **seems to force a log update when it detects somebody explicitly read its logs!** I don't know why they do it like that, probably performance reasons
+                     */
+
+                    //File.SetLastAccessTimeUtc doesn't seem to work
+                    ReadLinesWithoutLock(file);
+                };
+
+            periodicTouch.Start();
+        }
+
+        public static void StopWatch()
+        {
+            periodicTouch?.Dispose();
+            watcher?.Dispose();
         }
 
         public static List<string> ReadLinesWithoutLock(string file)
@@ -95,7 +129,6 @@ namespace EDEngineer.Utils.System
             if (!forcePickFolder)
             {
                 logDirectory = Properties.Settings.Default.LogDirectory;
-
                 if (string.IsNullOrEmpty(logDirectory))
                 {
                     var userProfile = Environment.GetEnvironmentVariable("USERPROFILE");
