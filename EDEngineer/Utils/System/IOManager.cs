@@ -29,7 +29,7 @@ namespace EDEngineer.Utils.System
             {
                 watcher = new FileSystemWatcher
                 {
-                    Path = logDirectory,
+                    Path = logDirectory + Path.DirectorySeparatorChar,
                     NotifyFilter = NotifyFilters.LastWrite,
                     Filter = LOG_FILE_PATTERN,
                     EnableRaisingEvents = true,
@@ -63,7 +63,7 @@ namespace EDEngineer.Utils.System
                      */
 
                     //File.SetLastAccessTimeUtc doesn't seem to work
-                    ReadLinesWithoutLock(file);
+                    File.SetLastWriteTime(file, DateTime.Now);
                 };
 
             periodicTouch.Start();
