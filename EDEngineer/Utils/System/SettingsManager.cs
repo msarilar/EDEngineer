@@ -12,6 +12,17 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.Upgrade();
                 Properties.Settings.Default.UpgradeRequired = false;
                 Properties.Settings.Default.Save();
+
+                var newVersion = Properties.Settings.Default.Version;
+
+                try
+                {
+                    ReleaseNotesManager.ShowReleaseNotes(newVersion);
+                }
+                catch
+                {
+                    // silently fail if release notes can't be shown
+                }
             }
         }
 
