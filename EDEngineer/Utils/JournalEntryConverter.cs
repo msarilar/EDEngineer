@@ -56,187 +56,34 @@ namespace EDEngineer.Utils
             switch (journalEvent)
             {
                 case JournalEvent.ManualUserChange:
-                    entry.JournalOperation = new ManualChangeOperation
-                    {
-                        Name = (string) data["Name"],
-                        Count = (int) data["Count"]
-                    };
+                    entry.JournalOperation = ExctractManualOperation(data);
                     break;
                 case JournalEvent.MiningRefined:
-                    string miningRefinedName;
-                    if (!converter.TryGet((string) data["Type"], out miningRefinedName))
-                    {
-                        break;
-                    }
-
-                    entry.JournalOperation = new CargoOperation
-                    {
-                        CommodityName = miningRefinedName,
-                        Size = 1
-                    };
+                    entry.JournalOperation = ExtractMiningRefined(data);
                     break;
                 case JournalEvent.EngineerCraft:
-                    var engineerCraft = new EngineerOperation
-                    {
-                        IngredientsConsumed = data["Ingredients"]
-                            .Select(c =>
-                            {
-                                dynamic cc = c;
-                                string rewardName;
-                                return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName),
-                                    rewardName,
-                                    (int) cc.Value);
-                            })
-                            .Where(c => c.Item1)
-                            .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
-                    };
-
-                    if (engineerCraft.IngredientsConsumed.Any())
-                    {
-                        entry.JournalOperation = engineerCraft;
-                    }
+                    entry.JournalOperation = ExtractEngineerOperation(data);
                     break;
                 case JournalEvent.MarketSell:
-                    string marketSellName;
-                    if (!converter.TryGet((string) data["Type"], out marketSellName))
-                    {
-                        break;
-                    }
-
-                    entry.JournalOperation = new CargoOperation
-                    {
-                        CommodityName = marketSellName,
-                        Size = -1*data["Count"].ToObject<int>()
-                    };
+                    entry.JournalOperation = ExtractMarketSell(data);
                     break;
                 case JournalEvent.MarketBuy:
-                    string marketBuyName;
-                    if (!converter.TryGet((string) data["Type"], out marketBuyName))
-                    {
-                        break;
-                    }
-
-                    entry.JournalOperation = new CargoOperation
-                    {
-                        CommodityName = marketBuyName,
-                        Size = data["Count"].ToObject<int>()
-                    };
+                    entry.JournalOperation = ExtractMarketBuy(data);
                     break;
                 case JournalEvent.MaterialDiscarded:
-                    string materialDiscardedName;
-                    if (!converter.TryGet((string) data["Name"], out materialDiscardedName))
-                    {
-                        MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
-                        break;
-                    }
-
-                    if (((string) data["Category"]).ToLowerInvariant() == "encoded")
-                    {
-                        entry.JournalOperation = new DataOperation
-                        {
-                            DataName = materialDiscardedName,
-                            Size = -1*data["Count"].ToObject<int>()
-                        };
-                    }
-                    else // Manufactured & Raw
-                    {
-                        entry.JournalOperation = new MaterialOperation
-                        {
-                            MaterialName = materialDiscardedName,
-                            Size = -1*data["Count"].ToObject<int>()
-                        };
-                    }
-
+                    entry.JournalOperation = ExtractMaterialDiscarded(data);
                     break;
                 case JournalEvent.MaterialCollected:
-                    string materialCollectedName;
-                    if (!converter.TryGet((string) data["Name"], out materialCollectedName))
-                    {
-                        MessageBox.Show($"Unknown material, please contact the author ! {(string)data["Name"]}");
-                        break;
-                    }
-
-                    if (((string) data["Category"]).ToLowerInvariant() == "encoded")
-                    {
-                        entry.JournalOperation = new DataOperation
-                        {
-                            DataName = materialCollectedName,
-                            Size = data["Count"].ToObject<int>()
-                        };
-                    }
-                    else // Manufactured & Raw
-                    {
-                        entry.JournalOperation = new MaterialOperation
-                        {
-                            MaterialName = materialCollectedName,
-                            Size = data["Count"].ToObject<int>()
-                        };
-                    }
-
+                    entry.JournalOperation = ExtractMaterialCollected(data);
                     break;
                 case JournalEvent.MissionCompleted:
-                    JToken rewardData;
-
-                    // TODO: missions can sometimes reward data/material and this is not currently handled
-
-                    if (!data.TryGetValue("CommodityReward", out rewardData))
-                    {
-                        break;
-                    }
-
-                    var missionCompleted = new MissionCompletedOperation
-                    {
-                        CommodityRewards = rewardData
-                            .Select(c =>
-                            {
-                                string rewardName;
-                                return Tuple.Create(c,
-                                    converter.TryGet((string) c["Name"], out rewardName),
-                                    rewardName);
-                            })
-                            .Where(c => c.Item2)
-                            .Select(c =>
-                            {
-                                var r = new CargoOperation
-                                {
-                                    CommodityName = c.Item3,
-                                    Size = c.Item1["Count"].ToObject<int>(),
-                                    JournalEvent = JournalEvent.MissionCompleted
-                                };
-                                return r;
-                            }).ToList()
-                    };
-                    if (missionCompleted.CommodityRewards.Any())
-                    {
-                        entry.JournalOperation = missionCompleted;
-                    }
-
+                    entry.JournalOperation = ExtractMissionCompleted(data);
                     break;
                 case JournalEvent.CollectCargo:
-                    string collectCargoName;
-                    if (!converter.TryGet((string) data["Type"], out collectCargoName))
-                    {
-                        break;
-                    }
-
-                    entry.JournalOperation = new CargoOperation
-                    {
-                        CommodityName = collectCargoName,
-                        Size = 1
-                    };
+                    entry.JournalOperation = ExtractCollectCargo(data);
                     break;
                 case JournalEvent.EjectCargo:
-                    string ejectCargoName;
-                    if (!converter.TryGet((string) data["Type"], out ejectCargoName))
-                    {
-                        break;
-                    }
-
-                    entry.JournalOperation = new CargoOperation
-                    {
-                        CommodityName = ejectCargoName,
-                        Size = -1
-                    };
+                    entry.JournalOperation = ExtractEjectCargo(data);
                     break;
             }
 
@@ -246,6 +93,199 @@ namespace EDEngineer.Utils
             }
 
             return entry;
+        }
+
+        private JournalOperation ExtractMarketSell(JObject data)
+        {
+            string marketSellName;
+            if (!converter.TryGet((string) data["Type"], out marketSellName))
+            {
+                return null;
+            }
+
+            return new CargoOperation
+            {
+                CommodityName = marketSellName,
+                Size = -1*data["Count"].ToObject<int>()
+            };
+        }
+
+        private JournalOperation ExtractMiningRefined(JObject data)
+        {
+            string miningRefinedName;
+            if (!converter.TryGet((string)data["Type"], out miningRefinedName))
+            {
+                return null;
+            }
+
+            return new CargoOperation
+            {
+                CommodityName = miningRefinedName,
+                Size = 1
+            };
+        }
+
+        private JournalOperation ExtractMarketBuy(JObject data)
+        {
+            string marketBuyName;
+            if (!converter.TryGet((string)data["Type"], out marketBuyName))
+            {
+                return null;
+            }
+
+            return new CargoOperation
+            {
+                CommodityName = marketBuyName,
+                Size = data["Count"].ToObject<int>()
+            };
+        }
+
+        private JournalOperation ExtractEjectCargo(JObject data)
+        {
+            string ejectCargoName;
+            if (!converter.TryGet((string)data["Type"], out ejectCargoName))
+            {
+                return null;
+            }
+
+            return new CargoOperation
+            {
+                CommodityName = ejectCargoName,
+                Size = -1
+            };
+        }
+
+        private JournalOperation ExtractCollectCargo(JObject data)
+        {
+            string collectCargoName;
+            if (!converter.TryGet((string) data["Type"], out collectCargoName))
+            {
+                return null;
+            }
+
+            return new CargoOperation
+            {
+                CommodityName = collectCargoName,
+                Size = 1
+            };
+        }
+
+        private MissionCompletedOperation ExtractMissionCompleted(JObject data)
+        {
+            JToken rewardData;
+
+            if (!data.TryGetValue("CommodityReward", out rewardData))
+            {
+                return null;
+            }
+
+            var missionCompleted = new MissionCompletedOperation
+            {
+                CommodityRewards = rewardData
+                    .Select(c =>
+                    {
+                        string rewardName;
+                        return Tuple.Create(c,
+                            converter.TryGet((string) c["Name"], out rewardName),
+                            rewardName);
+                    })
+                    .Where(c => c.Item2)
+                    .Select(c =>
+                    {
+                        var r = new CargoOperation
+                        {
+                            CommodityName = c.Item3,
+                            Size = c.Item1["Count"].ToObject<int>(),
+                            JournalEvent = JournalEvent.MissionCompleted
+                        };
+                        return r;
+                    }).ToList()
+            };
+
+            return missionCompleted.CommodityRewards.Any() ? missionCompleted : null;
+        }
+
+        private JournalOperation ExtractMaterialDiscarded(JObject data)
+        {
+            string materialDiscardedName;
+            if (!converter.TryGet((string) data["Name"], out materialDiscardedName))
+            {
+                MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
+                return null;
+            }
+
+            if (((string) data["Category"]).ToLowerInvariant() == "encoded")
+            {
+                return new DataOperation
+                {
+                    DataName = materialDiscardedName,
+                    Size = -1*data["Count"].ToObject<int>()
+                };
+            }
+            else // Manufactured & Raw
+            {
+                return new MaterialOperation
+                {
+                    MaterialName = materialDiscardedName,
+                    Size = -1*data["Count"].ToObject<int>()
+                };
+            }
+        }
+
+        private JournalOperation ExtractMaterialCollected(JObject data)
+        {
+            string materialCollectedName;
+            if (!converter.TryGet((string)data["Name"], out materialCollectedName))
+            {
+                MessageBox.Show($"Unknown material, please contact the author ! {(string)data["Name"]}");
+                return null;
+            }
+
+            if (((string)data["Category"]).ToLowerInvariant() == "encoded")
+            {
+                return new DataOperation
+                {
+                    DataName = materialCollectedName,
+                    Size = data["Count"].ToObject<int>()
+                };
+            }
+            else // Manufactured & Raw
+            {
+                return new MaterialOperation
+                {
+                    MaterialName = materialCollectedName,
+                    Size = data["Count"].ToObject<int>()
+                };
+            }
+        }
+
+        private EngineerOperation ExtractEngineerOperation(JObject data)
+        {
+            var operation = new EngineerOperation
+            {
+                IngredientsConsumed = data["Ingredients"]
+                    .Select(c =>
+                    {
+                        dynamic cc = c;
+                        string rewardName;
+                        return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName),
+                            rewardName,
+                            (int) cc.Value);
+                    })
+                    .Where(c => c.Item1)
+                    .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
+            };
+
+            return operation.IngredientsConsumed.Any() ? operation : null;
+        }
+
+        private static ManualChangeOperation ExctractManualOperation(JObject data)
+        {
+            return new ManualChangeOperation
+            {
+                Name = (string) data["Name"],
+                Count = (int) data["Count"]
+            };
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
