@@ -19,6 +19,7 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 5. All blueprints available in a handy sortable grid which you can filter too
 6. Ignore/Favorite flags - Favorited blueprints that become available to craft trigger a Windows toast
 7. Persistent state : EDEngineer will remember which filters you applied and what blueprints are favorited/ignored
+8. Movable window mode
 
 ### Additional Screenshots
 
