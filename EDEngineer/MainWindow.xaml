@@ -56,7 +56,7 @@
                                      BorderBrush="Transparent"
                                      FontSize="20"
                                      GotFocus="EntryCountTextBox_OnGotFocus"
-                                     LostFocus="EntryCountTextBox_OnLostFocus"
+                                     LostFocus="EntryCountTextBoxOnLostFocus"
                                      x:Name="EntryCountTextBox"
                                      Tag="{Binding Value}"
                                      PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
@@ -123,12 +123,11 @@
         <Grid Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MaxHeight="63"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="155"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
@@ -194,24 +193,32 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Button Content="Switch Between Modes"
-                        HorizontalAlignment="Stretch"
-                        FontSize="16"
+                <Button HorizontalAlignment="Stretch"
+                        FontSize="14"
                         FontFamily="./Resources/Fonts/#Euro Caps"
                         x:Name="ToggleEditMode"
                         Click="ToggleEditModeChecked"
                         Grid.Row="0"/>
+                <Button HorizontalAlignment="Stretch"
+                        FontSize="14"
+                        Content="Reset"
+                        Visibility="Hidden"
+                        FontFamily="./Resources/Fonts/#Euro Caps"
+                        x:Name="ResetWindowPositionButton"
+                        Click="ResetWindowPositionButtonClicked"
+                        Grid.Row="1"/>
                 <ToggleButton Content="Show Zeroes?"
                               HorizontalAlignment="Stretch"
                               FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
+                              x:Name="ShowZeroesToggleButton"
                               Grid.Row="1"
                               IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             </Grid>
             <TextBlock HorizontalAlignment="Stretch"
-                            FontSize="15"
+                            FontSize="16"
                             Grid.Row="1"
-                            Grid.Column="2"
+                            Grid.Column="1"
                            Foreground="#ff7100"
                            TextWrapping="Wrap"
                             FontFamily="./Resources/Fonts/#Euro Caps">
@@ -221,7 +228,7 @@
             <Button HorizontalAlignment="Stretch"
                         FontSize="15"
                         Grid.Row="1"
-                        Grid.Column="3"
+                        Grid.Column="2"
                         Foreground="DarkCyan"
                         Background="Black"
                         Style="{DynamicResource ChromelessButtonStyle}"
@@ -469,7 +476,7 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Type" Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}" IsReadOnly="True" Width="110">
+                        <DataGridTextColumn Header="Type" Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}" IsReadOnly="True" Width="*" MaxWidth="110">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="TextWrapping" Value="Wrap" />
@@ -487,9 +494,10 @@
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
                         <DataGridTemplateColumn Header="Progress" 
-                                                    IsReadOnly="True"
-                                                    SortMemberPath="ProgressSorting"
-                                                    Width="140">
+                                                IsReadOnly="True"
+                                                SortMemberPath="ProgressSorting"
+                                                Width="*"
+                                                MaxWidth="140">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid>

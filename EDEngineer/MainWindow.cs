@@ -41,7 +41,6 @@ namespace EDEngineer
             }
 
             SettingsManager.Init();
-
             InitializeComponent();
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
@@ -57,12 +56,27 @@ namespace EDEngineer
 
         private void MainWindowLoaded(object sender, RoutedEventArgs args)
         {
+            Opacity = 1;
+
             var dimensions = SettingsManager.Dimensions;
 
-            Height = dimensions.Height;
             Width = dimensions.Width;
-            Top = dimensions.Top;
             Left = dimensions.Left;
+
+            if (AllowsTransparency)
+            {
+                Top = dimensions.Top;
+                Height = dimensions.Height;
+                ToggleEditMode.Content = "Unlock Window";
+            }
+            else
+            {
+                Top = dimensions.Top - SystemInformation.ToolWindowCaptionHeight;
+                Height = dimensions.Height + SystemInformation.ToolWindowCaptionHeight;
+                ToggleEditMode.Content = "Lock Window";
+                ResetWindowPositionButton.Visibility = Visibility.Visible;
+                ShowZeroesToggleButton.Visibility = Visibility.Hidden;
+            }
 
             icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);
 
@@ -123,7 +137,7 @@ namespace EDEngineer
             BindingOperations.ClearBinding(box, System.Windows.Controls.TextBox.TextProperty);
         }
 
-        private void EntryCountTextBox_OnLostFocus(object sender, RoutedEventArgs e)
+        private void EntryCountTextBoxOnLostFocus(object sender, RoutedEventArgs e)
         {
             var box = (System.Windows.Controls.TextBox)sender;
 
@@ -298,9 +312,22 @@ namespace EDEngineer
 
         protected override void OnClosing(CancelEventArgs e)
         {
-            var coords = PointToScreen(new Point(0, 0));
-            SettingsManager.Dimensions = new WindowDimensions() { Height = ActualHeight, Left = coords.X, Top = coords.Y, Width = ActualWidth };
+            if (!bypassPositionSave)
+            {
+                var coords = PointToScreen(new Point(0, 0));
+                var modificator = AllowsTransparency ? 0 : SystemInformation.ToolWindowCaptionHeight;
+                SettingsManager.Dimensions = new WindowDimensions() { Height = ActualHeight - modificator, Left = coords.X, Top = coords.Y + modificator, Width = ActualWidth };
+            }
+
             base.OnClosing(e);
+        }
+
+        private bool bypassPositionSave = false;
+        private void ResetWindowPositionButtonClicked(object sender, RoutedEventArgs e)
+        {
+            SettingsManager.Dimensions.Reset();
+            bypassPositionSave = true;
+            ToggleEditModeChecked(null, null);
         }
     }
 }

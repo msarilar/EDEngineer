@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace EDEngineer.Utils.System
 {
-    public class SettingsManager
+    public static class SettingsManager
     {
         public static void Init()
         {
@@ -13,6 +13,12 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.UpgradeRequired = false;
                 Properties.Settings.Default.Save();
             }
+        }
+
+        public static void Reset(this WindowDimensions dimensions)
+        {
+            Properties.Settings.Default.WindowHeight = 0;
+            Properties.Settings.Default.Save();
         }
 
         public static WindowDimensions Dimensions
