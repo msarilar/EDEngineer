@@ -54,23 +54,23 @@ namespace EDEngineer
             Data.ItemsSource = viewModel.FilterView(Kind.Data, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
         }
 
+        private int ToolbarHeight => SystemInformation.CaptionHeight + 6; // couldn't find a proper property returning "29" which is the height I need
+
         private void MainWindowLoaded(object sender, RoutedEventArgs args)
         {
             var dimensions = SettingsManager.Dimensions;
 
             Width = dimensions.Width;
             Left = dimensions.Left;
+            Top = dimensions.Top;
+            Height = dimensions.Height;
 
             if (AllowsTransparency)
             {
-                Top = dimensions.Top;
-                Height = dimensions.Height;
                 ToggleEditMode.Content = "Unlock Window";
             }
             else
             {
-                Top = dimensions.Top - SystemInformation.ToolWindowCaptionHeight;
-                Height = dimensions.Height + SystemInformation.ToolWindowCaptionHeight;
                 ToggleEditMode.Content = "Lock Window";
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
                 ShowZeroesToggleButton.Visibility = Visibility.Hidden;
@@ -301,7 +301,9 @@ namespace EDEngineer
             var w = new MainWindow()
             {
                 AllowsTransparency = !AllowsTransparency,
-                WindowStyle = WindowStyle == WindowStyle.ToolWindow ? WindowStyle.None : WindowStyle.ToolWindow
+                WindowStyle = WindowStyle == WindowStyle.SingleBorderWindow ? WindowStyle.None : WindowStyle.SingleBorderWindow,
+                Topmost = !Topmost,
+                ShowInTaskbar = !ShowInTaskbar
             };
 
             Close();
@@ -313,8 +315,8 @@ namespace EDEngineer
             if (!bypassPositionSave)
             {
                 var coords = PointToScreen(new Point(0, 0));
-                var modificator = AllowsTransparency ? 0 : SystemInformation.ToolWindowCaptionHeight;
-                SettingsManager.Dimensions = new WindowDimensions() { Height = ActualHeight - modificator, Left = coords.X, Top = coords.Y + modificator, Width = ActualWidth };
+                var modificator = AllowsTransparency ? 0 : ToolbarHeight;
+                SettingsManager.Dimensions = new WindowDimensions() { Height = ActualHeight, Left = coords.X, Top = coords.Y - modificator, Width = ActualWidth };
             }
 
             base.OnClosing(e);
