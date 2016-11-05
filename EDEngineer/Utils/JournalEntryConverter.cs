@@ -38,7 +38,7 @@ namespace EDEngineer.Utils
 
             var entry = new JournalEntry
             {
-                TimeStamp = InstantPattern.GeneralPattern.Parse((string) data["timestamp"]).Value,
+                TimeStamp = InstantPattern.GeneralPattern.Parse((string)data["timestamp"]).Value,
                 OriginalJson = data.ToString()
             };
 
@@ -53,38 +53,16 @@ namespace EDEngineer.Utils
                 return entry;
             }
 
-            switch (journalEvent)
+            try
             {
-                case JournalEvent.ManualUserChange:
-                    entry.JournalOperation = ExctractManualOperation(data);
-                    break;
-                case JournalEvent.MiningRefined:
-                    entry.JournalOperation = ExtractMiningRefined(data);
-                    break;
-                case JournalEvent.EngineerCraft:
-                    entry.JournalOperation = ExtractEngineerOperation(data);
-                    break;
-                case JournalEvent.MarketSell:
-                    entry.JournalOperation = ExtractMarketSell(data);
-                    break;
-                case JournalEvent.MarketBuy:
-                    entry.JournalOperation = ExtractMarketBuy(data);
-                    break;
-                case JournalEvent.MaterialDiscarded:
-                    entry.JournalOperation = ExtractMaterialDiscarded(data);
-                    break;
-                case JournalEvent.MaterialCollected:
-                    entry.JournalOperation = ExtractMaterialCollected(data);
-                    break;
-                case JournalEvent.MissionCompleted:
-                    entry.JournalOperation = ExtractMissionCompleted(data);
-                    break;
-                case JournalEvent.CollectCargo:
-                    entry.JournalOperation = ExtractCollectCargo(data);
-                    break;
-                case JournalEvent.EjectCargo:
-                    entry.JournalOperation = ExtractEjectCargo(data);
-                    break;
+                entry.JournalOperation = ExtractOperation(data, journalEvent);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(
+                    $"Something went wrong in parsing your logs, open an issue on GitHub with this information : {Environment.NewLine}" +
+                    $"LogEntry = {data}{Environment.NewLine}" +
+                    $"Error:{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             if (entry.JournalOperation != null)
@@ -93,6 +71,35 @@ namespace EDEngineer.Utils
             }
 
             return entry;
+        }
+
+        private JournalOperation ExtractOperation(JObject data, JournalEvent journalEvent)
+        {
+            switch (journalEvent)
+            {
+                case JournalEvent.ManualUserChange:
+                    return ExctractManualOperation(data);
+                case JournalEvent.MiningRefined:
+                    return ExtractMiningRefined(data);
+                case JournalEvent.EngineerCraft:
+                    return ExtractEngineerOperation(data);
+                case JournalEvent.MarketSell:
+                    return ExtractMarketSell(data);
+                case JournalEvent.MarketBuy:
+                    return ExtractMarketBuy(data);
+                case JournalEvent.MaterialDiscarded:
+                    return ExtractMaterialDiscarded(data);
+                case JournalEvent.MaterialCollected:
+                    return ExtractMaterialCollected(data);
+                case JournalEvent.MissionCompleted:
+                    return ExtractMissionCompleted(data);
+                case JournalEvent.CollectCargo:
+                    return ExtractCollectCargo(data);
+                case JournalEvent.EjectCargo:
+                    return ExtractEjectCargo(data);
+                default:
+                    return null;
+            }
         }
 
         private JournalOperation ExtractMarketSell(JObject data)
@@ -106,7 +113,7 @@ namespace EDEngineer.Utils
             return new CargoOperation
             {
                 CommodityName = marketSellName,
-                Size = -1*data["Count"].ToObject<int>()
+                Size = -1*data["Count"]?.ToObject<int>() ?? -1
             };
         }
 
@@ -136,7 +143,7 @@ namespace EDEngineer.Utils
             return new CargoOperation
             {
                 CommodityName = marketBuyName,
-                Size = data["Count"].ToObject<int>()
+                Size = data["Count"]?.ToObject<int>() ?? 1
             };
         }
 
@@ -195,7 +202,7 @@ namespace EDEngineer.Utils
                         var r = new CargoOperation
                         {
                             CommodityName = c.Item3,
-                            Size = c.Item1["Count"].ToObject<int>(),
+                            Size = c.Item1["Count"]?.ToObject<int>() ?? 1,
                             JournalEvent = JournalEvent.MissionCompleted
                         };
                         return r;
@@ -219,7 +226,7 @@ namespace EDEngineer.Utils
                 return new DataOperation
                 {
                     DataName = materialDiscardedName,
-                    Size = -1*data["Count"].ToObject<int>()
+                    Size = -1*data["Count"]?.ToObject<int>() ?? -1
                 };
             }
             else // Manufactured & Raw
@@ -227,7 +234,7 @@ namespace EDEngineer.Utils
                 return new MaterialOperation
                 {
                     MaterialName = materialDiscardedName,
-                    Size = -1*data["Count"].ToObject<int>()
+                    Size = -1*data["Count"]?.ToObject<int>() ?? -1
                 };
             }
         }
@@ -246,7 +253,7 @@ namespace EDEngineer.Utils
                 return new DataOperation
                 {
                     DataName = materialCollectedName,
-                    Size = data["Count"].ToObject<int>()
+                    Size = data["Count"]?.ToObject<int>() ?? 1
                 };
             }
             else // Manufactured & Raw
@@ -254,7 +261,7 @@ namespace EDEngineer.Utils
                 return new MaterialOperation
                 {
                     MaterialName = materialCollectedName,
-                    Size = data["Count"].ToObject<int>()
+                    Size = data["Count"]?.ToObject<int>() ?? 1
                 };
             }
         }
