@@ -176,7 +176,7 @@
   {
     "Name": "Core Dynamics Composites",
     "Rarity": 4,
-    "FormattedName": "coredynamicscomposites",
+    "FormattedName": "fedcorecomposites",
     "Kind": 0
   },
   {
@@ -266,7 +266,7 @@
   {
     "Name": "Flawed Focus Crystals",
     "Rarity": 1,
-    "FormattedName": "flawedfocuscrystals",
+    "FormattedName": "uncutfocuscrystals",
     "Kind": 0
   },
   {
@@ -776,7 +776,7 @@
   {
     "Name": "Unknown Fragment",
     "Rarity": 4,
-    "FormattedName": "unknownfragment",
+    "FormattedName": "unknownenergysource",
     "Kind": 0
   },
   {
