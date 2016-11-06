@@ -132,6 +132,7 @@ namespace EDEngineer
             var box = (System.Windows.Controls.TextBox)sender;
             binding = box.GetBindingExpression(System.Windows.Controls.TextBox.TextProperty).ParentBindingBase;
             BindingOperations.ClearBinding(box, System.Windows.Controls.TextBox.TextProperty);
+            box.SelectAll();
         }
 
         private void EntryCountTextBoxOnLostFocus(object sender, RoutedEventArgs e)
