@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -40,23 +42,19 @@ namespace EDEngineer.Utils.System
             var releases = (JArray)JsonConvert.DeserializeObject(releasesJson);
 
             var builder = new StringBuilder();
-            foreach (var release in releases)
-            {
-                var releaseVersion = Version.Parse((string)release["tag_name"]);
 
-                if (releaseVersion <= newVersion && releaseVersion > oldVersion)
-                {
-                    builder.AppendLine($"Version : {releaseVersion}");
-                    builder.AppendLine((string) release["body"]);
-                    builder.AppendLine("--------");
-                    builder.AppendLine();
-                }
-            }
+            var releaseNotes =
+                from release in releases
+                let releaseVersionString = (string)release["tag_name"]
+                let releaseVersion = Version.Parse(releaseVersionString)
+                orderby releaseVersion descending
+                where releaseVersion <= newVersion && releaseVersion > oldVersion
+                select Tuple.Create(releaseVersionString, (string) release["body"]);
 
-            if (builder.Length > 0)
+            var list =  releaseNotes.ToList();
+            if (list.Any())
             {
-                MessageBox.Show(builder.ToString(), $"Release notes (new version: {newVersion}, old version: {oldVersion})", MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                new ReleaseNotesWindow(list, $"Release notes (new version: {newVersion}, old version: {oldVersion})").ShowDialog();
             }
         }
     }
