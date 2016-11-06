@@ -41,14 +41,11 @@ namespace EDEngineer.Utils.System
 
             var releases = (JArray)JsonConvert.DeserializeObject(releasesJson);
 
-            var builder = new StringBuilder();
-
             var releaseNotes =
                 from release in releases
                 let releaseVersionString = (string)release["tag_name"]
                 let releaseVersion = Version.Parse(releaseVersionString)
                 orderby releaseVersion descending
-                where releaseVersion <= newVersion && releaseVersion > oldVersion
                 select Tuple.Create(releaseVersionString, (string) release["body"]);
 
             var list =  releaseNotes.ToList();
