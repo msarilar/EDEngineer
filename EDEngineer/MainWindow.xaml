@@ -340,7 +340,7 @@
                                     <CheckBox Width="20"
                                                   IsChecked="{Binding Checked, Mode=TwoWay}" />
                                     <TextBlock Text="{Binding Label}"
-                                                   Width="100" />
+                                                   Width="Auto" />
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>

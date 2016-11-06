@@ -85,6 +85,13 @@ namespace EDEngineer.Models
 
         public int CanCraftCount => ComputeCraftCount(i => Math.Max(0, i.Entry.Count));
 
+        public bool JustMissingCommodities
+            =>
+                Ingredients.All(
+                    i =>
+                        i.Size <= i.Entry.Count && i.Entry.Data.Kind != Kind.Commodity || // not commodity and just enough or more stock available
+                        i.Size > i.Entry.Count && i.Entry.Data.Kind == Kind.Commodity); // commodity and not enough stock
+
         private int ComputeCraftCount(Func<BlueprintIngredient, int> countExtractor)
         {
             return Ingredients.Min(i => countExtractor(i)/i.Size);

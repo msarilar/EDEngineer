@@ -69,6 +69,12 @@ namespace EDEngineer
                     Checked = true,
                     Label = "Non Craftable",
                     AppliesToDelegate = blueprint => blueprint.CanCraftCount == 0
+                },
+                new CraftableFilter("CFmissingcommodities")
+                {
+                    Checked = true,
+                    Label = "Missing Commodities",
+                    AppliesToDelegate = blueprint => blueprint.JustMissingCommodities
                 }
             };
 
