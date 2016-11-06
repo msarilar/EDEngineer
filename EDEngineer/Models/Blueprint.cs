@@ -102,7 +102,7 @@ namespace EDEngineer.Models
 
         private int ComputeCraftCount(Func<BlueprintIngredient, int> countExtractor)
         {
-            return Ingredients.Min(i => countExtractor(i)/i.Size);
+            return Ingredients.Any() ? Ingredients.Min(i => countExtractor(i)/i.Size) : 0;
         }
 
         private double ComputeProgress(Func<BlueprintIngredient, int> countExtractor)

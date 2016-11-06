@@ -10800,6 +10800,13 @@
     "Grade": 4
   },
   {
+    "Type": "Fragment Cannon",
+    "Name": "Double Shot",
+    "Engineers": [ "Zacariah Nemo" ],
+    "Ingredients": [ ],
+    "Grade": 5
+  },
+  {
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Shielded",
     "Engineers": [ "Tiana Fortune", "The Sarge", "Ram Tah" ],
