@@ -41,6 +41,14 @@ namespace EDEngineer.Utils.System
                 watcher.Created += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
             }
 
+            /*
+             * For some reason, Elite Dangerous writes to the log but doesn't update the lastwrite timestamp so the
+             * FileSystemWatcher isn't triggered (if the lastwrite would change, it would be triggered).
+             * 
+             * I'm not really sure how it's possible but until I figure it out, I'm forcing a refresh every 2 seconds
+             * on the most recent file, which is pretty fast anyway but not really pretty...
+             */
+
             periodicTouch = new Timer()
             {
                 Interval = 2000
