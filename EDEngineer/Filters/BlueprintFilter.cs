@@ -26,7 +26,7 @@ namespace EDEngineer.Filters
             }
         }
 
-        public bool Magic { get; set; }
+        public bool Magic { get; protected set; }
         public event PropertyChangedEventHandler PropertyChanged;
 
         public abstract bool AppliesTo(Blueprint blueprint);

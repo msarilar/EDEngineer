@@ -151,6 +151,7 @@
     <Compile Include="Filters\EngineerFilter.cs" />
     <Compile Include="Filters\GradeFilter.cs" />
     <Compile Include="Filters\IgnoredFavoriteFilter.cs" />
+    <Compile Include="Filters\IngredientFilter.cs" />
     <Compile Include="Models\EntryData.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
@@ -161,7 +162,6 @@
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />
     <Compile Include="Utils\System\IOManager.cs" />
-    <Compile Include="Models\StateChangeArgs.cs" />
     <Compile Include="Properties\NotifyPropertyChangedInvocatorAttribute.cs" />
     <Compile Include="Utils\Collections\SortedObservableDictionary.cs" />
     <Compile Include="Filters\TypeFilter.cs" />

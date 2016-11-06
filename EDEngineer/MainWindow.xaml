@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:utils="clr-namespace:EDEngineer.Utils"
         mc:Ignorable="d"
         Title="MainWindow"
         Topmost="True"
@@ -151,11 +152,11 @@
                     </Style>
                 </TabControl.Resources>
                 <controls:MetroTabItem Header="Commodities"
-                                           FontFamily="./Resources/Fonts/#Euro Caps">
+                                       FontFamily="./Resources/Fonts/#Euro Caps">
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                          x:Name="Commodities"
-                                          ItemTemplate="{StaticResource EntryTemplate}">
+                                      x:Name="Commodities"
+                                      ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -165,11 +166,11 @@
                     </ScrollViewer>
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="Materials"
-                                           FontFamily="./Resources/Fonts/#Euro Caps">
+                                       FontFamily="./Resources/Fonts/#Euro Caps">
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                          x:Name="Materials"
-                                          ItemTemplate="{StaticResource EntryTemplate}">
+                                      x:Name="Materials"
+                                      ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -179,11 +180,11 @@
                     </ScrollViewer>
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="Data"
-                                           FontFamily="./Resources/Fonts/#Euro Caps">
+                                       FontFamily="./Resources/Fonts/#Euro Caps">
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                          x:Name="Data"
-                                          ItemTemplate="{StaticResource EntryTemplate}">
+                                      x:Name="Data"
+                                      ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -226,24 +227,24 @@
                               IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             </Grid>
             <TextBlock HorizontalAlignment="Stretch"
-                            FontSize="16"
-                            Grid.Row="1"
-                            Grid.Column="1"
-                           Foreground="#ff7100"
-                           TextWrapping="Wrap"
-                            FontFamily="./Resources/Fonts/#Euro Caps">
+                       FontSize="16"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       Foreground="#ff7100"
+                       TextWrapping="Wrap"
+                       FontFamily="./Resources/Fonts/#Euro Caps">
                     <Run Text="Last update: "/>
                     <Run Text="{Binding LastUpdate, Converter={StaticResource InstantToString}}"></Run>
             </TextBlock>
             <Button HorizontalAlignment="Stretch"
-                        FontSize="15"
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        Foreground="DarkCyan"
-                        Background="Black"
-                        Style="{DynamicResource ChromelessButtonStyle}"
-                        Click="ChangeFolderButtonClicked"
-                        FontFamily="./Resources/Fonts/#Euro Caps">
+                    FontSize="15"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Foreground="DarkCyan"
+                    Background="Black"
+                    Style="{DynamicResource ChromelessButtonStyle}"
+                    Click="ChangeFolderButtonClicked"
+                    FontFamily="./Resources/Fonts/#Euro Caps">
                 <TextBlock Text="{Binding LogDirectory}" TextWrapping="Wrap"/>
             </Button>
         </Grid>
@@ -315,9 +316,9 @@
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal"
-                                                Width="220">
+                                            Width="220">
                                     <CheckBox Width="20"
-                                                  IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
                                     <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}" />
                                 </StackPanel>
                             </DataTemplate>
@@ -325,25 +326,25 @@
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.IgnoredFavoriteFilters}"
-                                                 Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=IgnoredAndFavorite}"
-                                                 Grid.Row="1"
-                                                 Grid.Column="0">
+                                             Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=IgnoredAndFavorite}"
+                                             Grid.Row="1"
+                                             Grid.Column="0">
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
-                                                  IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
                                     <TextBlock Text="{Binding Label}"
-                                                   Width="100" />
+                                               Width="100" />
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.CraftableFilters}"
-                                                 Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Craftable}"
-                                                 Grid.Row="1"
-                                                 Grid.Column="1">
+                                             Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Craftable}"
+                                             Grid.Row="1"
+                                             Grid.Column="1">
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
@@ -356,25 +357,47 @@
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
-                    <Grid Grid.Row="1"
-                              Grid.Column="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0"
-                                    HorizontalAlignment="Stretch"
-                                    Click="CheckAllButtonClicked"
-                                    x:Name="CheckAllButton">
-                            <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="#ff7100" />
-                        </Button>
-                        <Button Grid.Column="1"
-                                    HorizontalAlignment="Stretch"
-                                    Click="UncheckAllButtonClicked"
-                                    x:Name="UncheckAllButton">
-                            <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="#ff7100" />
-                        </Button>
-                    </Grid>
+                    <controls:DropDownButton ItemsSource="{Binding Filters.GroupedIngredientFilters}"
+                                             Content="{Binding Filters.GroupedIngredientFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Ingredients}"
+                                             Grid.Row="1"
+                                             x:Name="IngredientFiltersDropDown"
+                                             Grid.Column="2">
+                        <controls:DropDownButton.ItemContainerStyle>
+                            <Style TargetType="MenuItem">
+                                <Setter Property="Margin" Value="-30,0,-30,0"/>
+                            </Style>
+                        </controls:DropDownButton.ItemContainerStyle>
+                        <controls:DropDownButton.ItemTemplate>
+                            <DataTemplate>
+                                <Expander Header="{Binding Key}"
+                                          Background="Transparent"
+                                          BorderBrush="Black">
+                                    <ItemsControl ItemsSource="{Binding}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid Width="Auto">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <CheckBox Width="20"
+                                                              Grid.Column="0"
+                                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                                    <TextBlock Width="Auto" 
+                                                               Grid.Column="1">
+                                                            <Run Text="{Binding Entry.Data.Name}"/>
+                                                            <Run Text=" ("/>
+                                                            <Run Text="{Binding Entry.Count}"/>
+                                                            <Run Text=")"/>
+                                                    </TextBlock>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Expander>
+                            </DataTemplate>
+                        </controls:DropDownButton.ItemTemplate>
+                    </controls:DropDownButton>
                 </Grid>
 
                 <!-- BLUEPRINTS -->
@@ -459,10 +482,10 @@
                                             <DataTemplate>
                                                 <Grid>
                                                     <iconPacks:PackIconMaterial Kind="Check"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}}"
+                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
                                                                                     Foreground="Green" />
                                                     <iconPacks:PackIconMaterial Height="14" Kind="Close"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted}"
+                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
                                                                                     Foreground="Red" />
                                                 </Grid>
                                             </DataTemplate>

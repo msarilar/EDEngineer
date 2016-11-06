@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Data;
 using EDEngineer.Filters;
+using EDEngineer.Models;
 
 namespace EDEngineer.Converters
 {
@@ -31,12 +32,15 @@ namespace EDEngineer.Converters
                 case "IgnoredAndFavorite":
                     builder.Append("Ignored And Favorite Filter");
                     break;
+                case "Ingredients":
+                    return "Ingredient Filter (Reversed)";
                 default:
                     throw new NotImplementedException();
             }
             var filters = (IEnumerable<BlueprintFilter>) value;
 
-            builder.Append($" ({filters.Count(f => !f.Magic && f.Checked)}/{filters.Count(f => !f.Magic)})");
+            var blueprintFilters = filters as IList<BlueprintFilter> ?? filters.ToList();
+            builder.Append($" ({blueprintFilters.Count(f => !f.Magic && f.Checked)}/{blueprintFilters.Count(f => !f.Magic)})");
 
             return builder.ToString();
         }

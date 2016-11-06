@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Interop;
@@ -106,16 +107,6 @@ namespace EDEngineer
             ignoreShortcut = false;
         }
 
-        private void CheckAllButtonClicked(object sender, RoutedEventArgs e)
-        {
-            viewModel.Filters.ChangeAllFilters(true);
-        }
-
-        private void UncheckAllButtonClicked(object sender, RoutedEventArgs e)
-        {
-            viewModel.Filters.ChangeAllFilters(false);
-        }
-
         private readonly Regex forbiddenCharacters = new Regex("[^0-9.-]+");
         private void EntryCountTextBoxOnPreviewTextInput(object sender, TextCompositionEventArgs e)
         {
@@ -193,6 +184,11 @@ namespace EDEngineer
         {
             while (true)
             {
+                if (child is Run)
+                {
+                    return null;
+                }
+
                 var parentObject = VisualTreeHelper.GetParent(child);
 
                 if (parentObject == null)

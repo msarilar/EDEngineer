@@ -11,70 +11,67 @@ namespace EDEngineer
 {
     public class BlueprintFilters : INotifyPropertyChanged
     {
-        public List<GradeFilter> GradeFilters { get; set; }
-        public List<EngineerFilter> EngineerFilters { get; set; }
-        public List<TypeFilter> TypeFilters { get; set; }
-        public List<IgnoredFavoriteFilter> IgnoredFavoriteFilters { get; set; }
-        public List<CraftableFilter> CraftableFilters { get; set; }
+        public List<GradeFilter> GradeFilters { get; }
+        public List<EngineerFilter> EngineerFilters { get; }
+        public List<TypeFilter> TypeFilters { get; }
+        public List<IgnoredFavoriteFilter> IgnoredFavoriteFilters { get; }
+        public List<CraftableFilter> CraftableFilters { get; }
+        private List<IngredientFilter> IngredientFilters { get; }
+        public IEnumerable<IGrouping<Kind, IngredientFilter>> GroupedIngredientFilters => IngredientFilters.GroupBy(f => f.Entry.Data.Kind); 
 
         public BlueprintFilters(IReadOnlyCollection<Blueprint> availableBlueprints)
         {
             GradeFilters = new List<GradeFilter>(availableBlueprints.GroupBy(b => b.Grade)
                 .Select(b => b.Key)
                 .OrderBy(b => b)
-                .Select(g => new GradeFilter($"GF{g}") { Grade = g, Checked = true }));
+                .Select(g => new GradeFilter(g, $"GF{g}") {  Checked = true }));
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()
                 .OrderBy(b => b)
-                .Select(g => new EngineerFilter($"EF{g}") { Engineer = g, Checked = true }));
+                .Select(g => new EngineerFilter(g, $"EF{g}") { Checked = true }));
 
             TypeFilters = new List<TypeFilter>(availableBlueprints.GroupBy(b => b.Type)
                 .Select(b => b.Key)
                 .OrderBy(b => b)
-                .Select(g => new TypeFilter($"TF{g}") { Type = g, Checked = true }));
+                .Select(g => new TypeFilter(g, $"TF{g}") { Checked = true }));
 
+            IngredientFilters = new List<IngredientFilter>(availableBlueprints.SelectMany(b => b.Ingredients)
+                .Select(ingredient => ingredient.Entry)
+                .Distinct()
+                .OrderBy(b => b.Data.Kind)
+                .ThenBy(b => b.Data.Name)
+                .Select(g => new IngredientFilter(g, $"IF{g.Data.Kind}-{g.Data.Name}") { Checked = false }));
+            
             IgnoredFavoriteFilters = new List<IgnoredFavoriteFilter>
             {
-                new IgnoredFavoriteFilter("IFFnone")
+                new IgnoredFavoriteFilter("None", blueprint => !blueprint.Ignored && !blueprint.Favorite, "IFFnone")
                 {
                     Checked = true,
-                    Label = "None",
-                    AppliesToDelegate = blueprint => !blueprint.Ignored && !blueprint.Favorite
                 },
-                new IgnoredFavoriteFilter("IFFfavorite")
+                new IgnoredFavoriteFilter("Favorite", blueprint => blueprint.Favorite, "IFFfavorite")
                 {
                     Checked = true,
-                    Label = "Favorite",
-                    AppliesToDelegate = blueprint => blueprint.Favorite
                 },
-                new IgnoredFavoriteFilter("IFFignored")
+                new IgnoredFavoriteFilter("Ignored", blueprint => blueprint.Ignored, "IFFignored")
                 {
                     Checked = false,
-                    Label = "Ignored",
-                    AppliesToDelegate = blueprint => blueprint.Ignored
                 }
             };
 
             CraftableFilters = new List<CraftableFilter>
             {
-                new CraftableFilter("CFcraftable")
+                new CraftableFilter("Craftable", blueprint => blueprint.CanCraftCount >= 1, "CFcraftable")
                 {
-                    Checked = true,
-                    Label = "Craftable",
-                    AppliesToDelegate = blueprint => blueprint.CanCraftCount >= 1
+                    Checked = true
                 },
-                new CraftableFilter("CFnoncraftable")
+                new CraftableFilter("Non Craftable", blueprint => blueprint.CanCraftCount == 0, "CFnoncraftable")
                 {
-                    Checked = true,
-                    Label = "Non Craftable",
-                    AppliesToDelegate = blueprint => blueprint.CanCraftCount == 0
+                    Checked = true
                 },
-                new CraftableFilter("CFmissingcommodities")
+                new CraftableFilter("Missing Commodities", blueprint => blueprint.JustMissingCommodities, "CFmissingcommodities")
                 {
-                    Checked = true,
-                    Label = "Missing Commodities",
-                    AppliesToDelegate = blueprint => blueprint.JustMissingCommodities
+                    Checked = true
                 }
             };
 
@@ -82,7 +79,8 @@ namespace EDEngineer
                 .Union(EngineerFilters)
                 .Union(TypeFilters)
                 .Union(IgnoredFavoriteFilters)
-                .Union(CraftableFilters).ToList();
+                .Union(CraftableFilters)
+                .Union(IngredientFilters).ToList();
 
             LoadSavedFilters();
 
@@ -101,7 +99,7 @@ namespace EDEngineer
             }
             else
             {
-                foreach (var filter in AllFilters)
+                foreach (var filter in AllFilters.Where(filter => !(filter is IngredientFilter)))
                 {
                     filter.Checked = Properties.Settings.Default.FiltersChecked.Contains(filter.UniqueName);
 
@@ -126,25 +124,13 @@ namespace EDEngineer
 
         private void InsertMagicFilters()
         {
-            var magicTypeFilters = new TypeFilter("TFmagic")
-            {
-                Checked = true,
-                Magic = true
-            };
+            var magicTypeFilters = TypeFilter.MagicFilter;
             TypeFilters.Insert(0, magicTypeFilters);
 
-            var magicEngineerFilters = new EngineerFilter("EFmagic")
-            {
-                Checked = true,
-                Magic = true
-            };
+            var magicEngineerFilters = EngineerFilter.MagicFilter;
             EngineerFilters.Insert(0, magicEngineerFilters);
 
-            var magicGradeFilter = new GradeFilter("GFmagic")
-            {
-                Checked = true,
-                Magic = true
-            };
+            var magicGradeFilter = GradeFilter.MagicFilter;
             GradeFilters.Insert(0, magicGradeFilter);
 
             magicGradeFilter.PropertyChanged += (o, e) =>
@@ -172,14 +158,6 @@ namespace EDEngineer
             };
         }
 
-        public void ChangeAllFilters(bool @checked)
-        {
-            foreach (var filter in AllFilters)
-            {
-                filter.Checked = @checked;
-            }
-        }
-
         private List<BlueprintFilter> AllFilters { get; }
 
         public void Monitor(ICollectionView view, IEnumerable<Entry> entries)
@@ -205,8 +183,11 @@ namespace EDEngineer
             view.Filter = o =>
             {
                 var blueprint = (Blueprint)o;
+                var checkedIngredients = IngredientFilters.Where(f => f.Checked).ToList();
+                var satisfyIngredientFilters =  !checkedIngredients.Any() || checkedIngredients.Any(i => blueprint.Ingredients.Any(b => b.Entry == i.Entry));
 
-                var ret = GradeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
+                var ret = satisfyIngredientFilters &&
+                          GradeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           EngineerFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           TypeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           IgnoredFavoriteFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
