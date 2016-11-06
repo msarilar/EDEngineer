@@ -48,21 +48,31 @@
                                            Style="{DynamicResource MetroAutoCollapsingTextBlock}"
                                            Text="{TemplateBinding controls:TextBoxHelper.Watermark}" />
                             </ContentControl>
-                            <TextBox Grid.Column="0"
-                                     HorizontalAlignment="Right"
-                                     Foreground="#ff7100"
-                                     Background="Transparent"
-                                     VerticalAlignment="Center"
-                                     BorderBrush="Transparent"
-                                     FontSize="20"
-                                     GotFocus="EntryCountTextBox_OnGotFocus"
-                                     LostFocus="EntryCountTextBoxOnLostFocus"
-                                     x:Name="EntryCountTextBox"
-                                     Tag="{Binding Value}"
-                                     PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
-                                     CaretBrush="White"
-                                     FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
-                                     Text="{Binding Value.Count, Mode=OneWay}" />
+
+                            <StackPanel Grid.Column="0"
+                                        HorizontalAlignment="Right"
+                                        Orientation="Horizontal"
+                                        VerticalAlignment="Center">
+                                <iconPacks:PackIconMaterial Kind="Star"
+                                                            HorizontalAlignment="Right"
+                                                            VerticalAlignment="Center"
+                                                            Visibility="{Binding Value.FavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
+                                                            Foreground="#ff7100" />
+                                <TextBox HorizontalAlignment="Right"
+                                         Foreground="#ff7100"
+                                         Background="Transparent"
+                                         VerticalAlignment="Center"
+                                         BorderBrush="Transparent"
+                                         FontSize="20"
+                                         GotFocus="EntryCountTextBox_OnGotFocus"
+                                         LostFocus="EntryCountTextBoxOnLostFocus"
+                                         x:Name="EntryCountTextBox"
+                                         Tag="{Binding Value}"
+                                         PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
+                                         CaretBrush="White"
+                                         FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
+                                         Text="{Binding Value.Count, Mode=OneWay}" />
+                            </StackPanel>
                             <Button x:Name="IncrementButton"
                                     Grid.Column="1"
                                     Margin="2 2 2 2"

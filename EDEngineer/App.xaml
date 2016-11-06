@@ -25,6 +25,7 @@
             <converters:AllFiltersToHeaderConverter x:Key="AllFiltersToHeader" />
             <converters:InstantToStringConverter x:Key="InstantToString" />
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
+            <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
 
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">
                 <Setter Property="Background" Value="{DynamicResource WhiteBrush}" />

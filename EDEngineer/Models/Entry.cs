@@ -16,16 +16,37 @@ namespace EDEngineer.Models
 
         public EntryData Data { get; }
         private int count;
+        private int favoriteCount;
 
         public int Count
         {
             get { return count; }
             set
             {
-                if (value == count) return;
+                if (value == count)
+                {
+                    return;
+                }
+
                 var oldValue = count;
                 count = value;
                 OnPropertyChanged(oldValue, count);
+            }
+        }
+
+        public int FavoriteCount
+        {
+            get { return favoriteCount; }
+            set
+            {
+                if (value == favoriteCount)
+                {
+                    return;
+                }
+
+                var oldValue = favoriteCount;
+                favoriteCount = value;
+                OnPropertyChanged(oldValue, favoriteCount);
             }
         }
 

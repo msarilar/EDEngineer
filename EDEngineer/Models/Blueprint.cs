@@ -31,6 +31,11 @@ namespace EDEngineer.Models
             {
                 ingredient.Entry.PropertyChanged += (o, e) =>
                 {
+                    if (e.PropertyName != "Count")
+                    {
+                        return;
+                    }
+
                     var extended = (PropertyChangedExtendedEventArgs<int>) e;
 
                     var progressBefore =
@@ -63,6 +68,9 @@ namespace EDEngineer.Models
             {
                 if (value == favorite) return;
                 favorite = value;
+
+                Ingredients.Select(ingredient => ingredient.Entry).ToList().ForEach(entry => entry.FavoriteCount += value ? 1 : -1);
+
                 OnPropertyChanged();
             }
         }
