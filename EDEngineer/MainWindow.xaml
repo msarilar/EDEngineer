@@ -525,7 +525,7 @@
                                                           VerticalAlignment="Center"
                                                           IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                           Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="Heart" Foreground="#ff7100" />
+                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
                                         </ToggleButton>
                                         <ToggleButton x:Name="IgnoreBluebrintButton"
                                                           Width="40"

@@ -77,14 +77,7 @@ namespace EDEngineer
             set
             {
                 showZeroes = value;
-                if (value)
-                {
-                    State.LoadBaseData();
-                }
-                else
-                {
-                    State.Cargo.Where(c => c.Value.Count == 0).ToList().ForEach(c => State.Cargo.Remove(c));
-                }
+                OnPropertyChanged();
             }
         }
 
@@ -251,7 +244,12 @@ namespace EDEngineer
 
         public ICollectionView FilterView(Kind kind, ICollectionView view)
         {
-            view.Filter = o => ((KeyValuePair<string, Entry>)o).Value.Data.Kind == kind;
+            view.Filter = o =>
+            {
+                var entry = ((KeyValuePair<string, Entry>)o).Value;
+
+                return entry.Data.Kind == kind && (ShowZeroes || entry.Count > 0);
+            };
 
             PropertyChanged += (o, e) =>
             {
