@@ -9,13 +9,14 @@ namespace EDEngineer.Utils.System
         {
             if (Properties.Settings.Default.UpgradeRequired)
             {
-                var oldVersion = Properties.Settings.Default.Version;
-
                 Properties.Settings.Default.Upgrade();
                 Properties.Settings.Default.UpgradeRequired = false;
-                Properties.Settings.Default.Save();
 
+                var oldVersion = Properties.Settings.Default.CurrentVersion;
                 var newVersion = Properties.Settings.Default.Version;
+                Properties.Settings.Default.CurrentVersion = newVersion;
+
+                Properties.Settings.Default.Save();
 
                 try
                 {

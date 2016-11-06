@@ -94,7 +94,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.0.0.10")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.0.0.11")]
         public string Version {
             get {
                 return ((string)(this["Version"]));
@@ -149,6 +149,18 @@ namespace EDEngineer.Properties {
             }
             set {
                 this["WindowLeft"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CurrentVersion {
+            get {
+                return ((string)(this["CurrentVersion"]));
+            }
+            set {
+                this["CurrentVersion"] = value;
             }
         }
     }
