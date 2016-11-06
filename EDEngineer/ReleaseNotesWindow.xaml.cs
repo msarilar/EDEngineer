@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows;
-using MahApps.Metro.Controls;
+using EDEngineer.Models;
 
 namespace EDEngineer
 {
@@ -10,7 +9,7 @@ namespace EDEngineer
     /// </summary>
     public partial class ReleaseNotesWindow
     {
-        public ReleaseNotesWindow(IEnumerable<Tuple<string, string>> list, string title)
+        public ReleaseNotesWindow(IEnumerable<ReleaseNote> list, string title)
         {
             InitializeComponent();
             Title = title;

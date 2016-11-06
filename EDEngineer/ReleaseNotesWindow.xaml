@@ -19,14 +19,14 @@
                                   Grid.Row="0">      
             <TabControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding Item1}" />
+                    <TextBlock Text="{Binding Version}" />
                 </DataTemplate>
             </TabControl.ItemTemplate>
             <TabControl.ContentTemplate>
                 <!-- this is the body of the TabItem template-->
                 <DataTemplate>
                     <Grid Background="AliceBlue">
-                        <TextBlock Text="{Binding Item2}"
+                        <TextBlock Text="{Binding Content}"
                                Margin="10"
                                FontSize="14" />
                     </Grid>

@@ -1,0 +1,51 @@
+﻿[
+  {
+    "Version": "1.0.0.13",
+    "Content": "Fixed issue which would make the application crash when it would read invalid json outputted by the game"
+  },
+  {
+    "Version": "1.0.0.12",
+    "Content": "Fixed issue with release notes not showing up"
+  },
+  {
+    "Version": "1.0.0.11",
+    "Content": "* Working release notes (don't panic if you see \"current version 1.0.0.0\", that's only the first time)\r\n* Favorited blueprints have their ingredients display a little star in your cargo list\r\n* New craftable filter for when only commodities are missing\r\n* Autoselect text when overriding cargo's count (protip: use TAB key to change currently editing entry)\r\n* New filter for ingredients (tick an ingredient to only see blueprints that require it)\r\n* Handle Material Discovery events (issue in Elite Dangerous itself, but I tried to handle it here as best as I could)"
+  },
+  {
+    "Version": "1.0.0.10",
+    "Content": "Fixed a bug in the monitoring of file with a temporary solution until I find what's wrong with .NET's FileSystemWatcher"
+  },
+  {
+    "Version": "1.0.0.9",
+    "Content": "* Improve the refresh rate of the data\r\n* Fixed a bug where if you had the zero as hidden, the acquisition of a material would make the application crash"
+  },
+  {
+    "Version": "1.0.0.8",
+    "Content": "Fix an issue which could make some blueprints not visible in the list"
+  },
+  {
+    "Version": "1.0.0.7",
+    "Content": "Take synthesis logs into account (they were not before, so if you do synthesis please check your materials)"
+  },
+  {
+    "Version": "1.0.0.6",
+    "Content": "Added new release notes popup when an update has been installed."
+  },
+  {
+    "Version": "1.0.0.5",
+    "Content": "* Fixed crash when parsing logs for entries that report material collection without size reported (probably old logs)\r\n* Unlocking the window now make it like a real \"normal\" window (minimize, maximize, appears in taskbar, etc...)\r\n\r\nUnknown materials added:\r\n* uncutfocuscrystals\r\n* fedcorecomposites\r\n* unknownenergysource"
+  },
+  {
+    "Version": "1.0.0.4",
+    "Content": "* Move/Resize window\r\n* Editable counters"
+  },
+  {
+    "Version": "1.0.0.3",
+    "Content": "Added missing data:\r\n* Pattern Alpha Obelisk Data\r\n* Pattern Beta Obelisk Data\r\n* Pattern Epsilon Obelisk Data\r\n* Pattern Gamma Obelisk Data\r\n* Pattern Delta Obelisk Data\r\n\r\nAdded missing material:\r\n* Proprietary Composites"
+  },
+  {
+    "Version": "1.0.0.2",
+    "Content": "2.2 blueprints added"
+  }
+]
+

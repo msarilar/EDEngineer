@@ -125,7 +125,11 @@ namespace EDEngineer
 
         private void ApplyEventsToSate(IEnumerable<string> allLogs)
         {
-            var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, journalEntryConverter))
+            var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, new JsonSerializerSettings()
+            {
+                Converters = new List<JsonConverter>() { journalEntryConverter },
+                Error = (o, e) => e.ErrorContext.Handled = true
+            }))
                 .Where(e => e?.Relevant == true)
                 .OrderBy(e => e.TimeStamp)
                 .ToList();

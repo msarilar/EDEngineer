@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -34,7 +33,18 @@ namespace EDEngineer.Utils
             JsonSerializer serializer)
         {
             reader.DateParseHandling = DateParseHandling.None;
-            var data = JObject.Load(reader);
+
+            JObject data;
+
+            try
+            {
+                data = JObject.Load(reader);
+            }
+            catch(JsonReaderException)
+            {
+                // malformed json outputted by the game, nothing we can do here
+                return new JournalEntry();
+            }
 
             var entry = new JournalEntry
             {
@@ -42,20 +52,25 @@ namespace EDEngineer.Utils
                 OriginalJson = data.ToString()
             };
 
-            JournalEvent journalEvent;
+            JournalEvent? journalEvent;
 
             try
             {
-                journalEvent = data["event"].ToObject<JournalEvent>(serializer);
+                journalEvent = data["event"]?.ToObject<JournalEvent>(serializer);
             }
-            catch (JsonSerializationException)
+            catch (Exception)
+            {
+                return entry;
+            }
+
+            if (!journalEvent.HasValue)
             {
                 return entry;
             }
 
             try
             {
-                entry.JournalOperation = ExtractOperation(data, journalEvent);
+                entry.JournalOperation = ExtractOperation(data, journalEvent.Value);
             }
             catch (Exception e)
             {
@@ -67,7 +82,7 @@ namespace EDEngineer.Utils
 
             if (entry.JournalOperation != null)
             {
-                entry.JournalOperation.JournalEvent = journalEvent;
+                entry.JournalOperation.JournalEvent = journalEvent.Value;
             }
 
             return entry;

@@ -132,6 +132,7 @@ namespace EDEngineer.Utils.System
 
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)
         {
+            return @"C:\Users\Max\Documents\download";
             string logDirectory = null;
 
             if (!forcePickFolder)
@@ -208,6 +209,15 @@ namespace EDEngineer.Utils.System
         public static string GetBlueprintsJson()
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.blueprints.json"))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        public static string GetReleaseNotesJson()
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.releaseNotes.json"))
             using (var reader = new StreamReader(stream))
             {
                 return reader.ReadToEnd();

@@ -5,6 +5,8 @@ namespace EDEngineer.Models
     public enum JournalEvent
     {
         ManualUserChange,
+        CrewAssign,
+        CrewHire,
         Fileheader,
         LoadGame,
         Rank,
