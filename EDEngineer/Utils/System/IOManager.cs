@@ -132,7 +132,6 @@ namespace EDEngineer.Utils.System
 
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)
         {
-            return @"C:\Users\Max\Documents\download";
             string logDirectory = null;
 
             if (!forcePickFolder)
