@@ -28,8 +28,9 @@
                 <DataTemplate>
                     <Grid Background="AliceBlue">
                         <TextBlock Text="{Binding Content}"
-                               Margin="10"
-                               FontSize="14" />
+                                   Margin="10"
+                                   FontSize="14"
+                                   TextWrapping="Wrap"/>
                     </Grid>
                 </DataTemplate>
             </TabControl.ContentTemplate>
