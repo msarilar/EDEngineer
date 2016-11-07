@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.19",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.18",
     "Content": "* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned"
   },
