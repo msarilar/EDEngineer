@@ -9,14 +9,14 @@ using Application = System.Windows.Application;
 
 namespace EDEngineer.Utils.System
 {
-    public static class IOManager
+    public class IOManager
     {
         private const string MANUAL_CHANGES_LOG_FILE_NAME = "manualChanges.json";
         private const string LOG_FILE_PATTERN = "Journal.*.log";
-        private static FileSystemWatcher watcher;
-        private static Timer periodicTouch;
+        private FileSystemWatcher watcher;
+        private Timer periodicTouch;
 
-        public static void InitiateWatch(string logDirectory, Action<IEnumerable<string>> action)
+        public void InitiateWatch(string logDirectory, Action<IEnumerable<string>> action)
         {
             if (watcher != null)
             {
@@ -25,21 +25,24 @@ namespace EDEngineer.Utils.System
             }
 
             watcher = null;
-            if (logDirectory != null && Directory.Exists(logDirectory))
-            {
-                watcher = new FileSystemWatcher
-                {
-                    Path = logDirectory + Path.DirectorySeparatorChar,
-                    NotifyFilter = NotifyFilters.LastWrite,
-                    Filter = LOG_FILE_PATTERN,
-                    EnableRaisingEvents = true,
-                    IncludeSubdirectories = false
-                };
 
-                // TODO: use something like unix's tail rather than reading the entire file every time it's modified...
-                watcher.Changed += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
-                watcher.Created += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
+            if (!Directory.Exists(logDirectory))
+            {
+                return;
             }
+
+            watcher = new FileSystemWatcher
+            {
+                Path = logDirectory + Path.DirectorySeparatorChar,
+                NotifyFilter = NotifyFilters.LastWrite,
+                Filter = LOG_FILE_PATTERN,
+                EnableRaisingEvents = true,
+                IncludeSubdirectories = false
+            };
+
+            // TODO: use something like unix's tail rather than reading the entire file every time it's modified...
+            watcher.Changed += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
+            watcher.Created += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
 
             /*
              * For some reason, Elite Dangerous writes to the log but doesn't update the lastwrite timestamp so the
@@ -49,6 +52,8 @@ namespace EDEngineer.Utils.System
              * on the most recent file, which is pretty fast anyway but not really pretty...
              */
 
+            periodicTouch?.Dispose();
+
             periodicTouch = new Timer()
             {
                 Interval = 2000
@@ -57,10 +62,16 @@ namespace EDEngineer.Utils.System
             periodicTouch.Tick +=
                 (o, e) =>
                 {
-                    var file = Directory.GetFiles(logDirectory).Where(f => Path.GetFileName(f).StartsWith("Journal.") &&
+                    var file = Directory.GetFiles(logDirectory).Where(f => f != null && 
+                                                                           Path.GetFileName(f).StartsWith("Journal.") &&
                                                                            Path.GetFileName(f).EndsWith(".log"))
                         .OrderByDescending(f => f)
-                        .First();
+                        .FirstOrDefault();
+
+                    if (file == null)
+                    {
+                        return;
+                    }
 
                     /*
                      * EDEngineer updates *as soon* as the log files are updated by passively listening to file changes via the Windows API. It's almost immediate!
@@ -77,7 +88,7 @@ namespace EDEngineer.Utils.System
             periodicTouch.Start();
         }
 
-        public static void StopWatch()
+        public void StopWatch()
         {
             periodicTouch?.Dispose();
             watcher?.Dispose();
@@ -85,6 +96,11 @@ namespace EDEngineer.Utils.System
 
         public static List<string> ReadLinesWithoutLock(string file)
         {
+            if (!File.Exists(file))
+            {
+                return new List<string>();
+            }
+
             var gameLogLines = new List<string>();
             using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var reader = new StreamReader(stream, Encoding.UTF8))
@@ -163,7 +179,8 @@ namespace EDEngineer.Utils.System
 
                 if (pickFolderResult == DialogResult.OK)
                 {
-                    if (!Directory.GetFiles(dialog.SelectedPath).Any(f => f != null && Path.GetFileName(f).StartsWith("Journal.") &&
+                    if (!Directory.GetFiles(dialog.SelectedPath).Any(f => f != null &&
+                                                                          Path.GetFileName(f).StartsWith("Journal.") &&
                                                                           Path.GetFileName(f).EndsWith(".log")))
                     {
                         var result =
@@ -186,6 +203,7 @@ namespace EDEngineer.Utils.System
                             Application.Current.Shutdown();
                         }
                     }
+
                     logDirectory = dialog.SelectedPath;
                 }
                 else if (forcePickFolder)

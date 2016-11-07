@@ -325,7 +325,7 @@ namespace EDEngineer
                 SettingsManager.Dimensions = new WindowDimensions() { Height = ActualHeight, Left = coords.X, Top = coords.Y - modificator, Width = ActualWidth };
             }
 
-            IOManager.StopWatch();
+            viewModel.IOManager.StopWatch();
             base.OnClosing(e);
         }
 

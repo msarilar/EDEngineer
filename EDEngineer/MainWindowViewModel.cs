@@ -81,6 +81,8 @@ namespace EDEngineer
             }
         }
 
+        public IOManager IOManager { get; private set; }
+
         internal void LoadState(bool forcePickFolder = false)
         {
             LogDirectory = IOManager.RetrieveLogDirectory(forcePickFolder, LogDirectory);
@@ -97,6 +99,7 @@ namespace EDEngineer
 
             ApplyEventsToSate(allLogs);
 
+            IOManager = new IOManager();
             IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
 
             foreach (var blueprint in Blueprints)
