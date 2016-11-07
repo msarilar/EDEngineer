@@ -71,12 +71,24 @@ namespace EDEngineer
         }
 
         private bool showZeroes = true;
+        private bool showOnlyForFavorites;
+
         public bool ShowZeroes
         {
             get { return showZeroes; }
             set
             {
                 showZeroes = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool ShowOnlyForFavorites
+        {
+            get { return showOnlyForFavorites; }
+            set
+            {
+                showOnlyForFavorites = value;
                 OnPropertyChanged();
             }
         }
@@ -255,16 +267,26 @@ namespace EDEngineer
             {
                 var entry = ((KeyValuePair<string, Entry>)o).Value;
 
-                return entry.Data.Kind == kind && (ShowZeroes || entry.Count > 0);
+                return entry.Data.Kind == kind && 
+                        (ShowZeroes || entry.Count > 0) && 
+                        (!ShowOnlyForFavorites || Blueprints.Any(b => b.Favorite && b.Ingredients.Any(i => i.Entry == entry)));
             };
 
             PropertyChanged += (o, e) =>
             {
-                if (e.PropertyName == nameof(ShowZeroes))
+                if (e.PropertyName == nameof(ShowZeroes) || e.PropertyName == nameof(ShowOnlyForFavorites))
                 {
                     view.Refresh();
                 }
             };
+
+            Blueprints.ForEach(b => b.PropertyChanged += (o, e) =>
+            {
+                if (ShowOnlyForFavorites && e.PropertyName == "Favorite")
+                {
+                    view.Refresh();
+                }
+            });
 
             return view;
         }

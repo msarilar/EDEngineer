@@ -83,7 +83,7 @@ namespace EDEngineer
             {
                 ToggleEditMode.Content = "Lock Window";
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
-                ShowZeroesToggleButton.Visibility = Visibility.Hidden;
+                CargoFiltersGrid.Visibility = Visibility.Hidden;
             }
 
             icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);

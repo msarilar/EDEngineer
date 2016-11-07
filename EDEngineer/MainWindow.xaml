@@ -206,25 +206,42 @@
 
                 <Button HorizontalAlignment="Stretch"
                         FontSize="14"
-                        FontFamily="./Resources/Fonts/#Euro Caps"
-                        x:Name="ToggleEditMode"
-                        Click="ToggleEditModeChecked"
-                        Grid.Row="0"/>
-                <Button HorizontalAlignment="Stretch"
-                        FontSize="14"
                         Content="Reset"
                         Visibility="Hidden"
                         FontFamily="./Resources/Fonts/#Euro Caps"
                         x:Name="ResetWindowPositionButton"
                         Click="ResetWindowPositionButtonClicked"
+                        Grid.Row="0"/>
+                <Grid Grid.Row="0"
+                      x:Name="CargoFiltersGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <ToggleButton HorizontalAlignment="Stretch"
+                                  FontSize="16"
+                                  FontFamily="./Resources/Fonts/#Euro Caps"
+                                  Grid.Column="0"
+                                  ToolTip="Show Zeroes?"
+                                  IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                        <iconPacks:PackIconMaterial Kind="Texture" />
+                    </ToggleButton>
+                    <ToggleButton HorizontalAlignment="Stretch"
+                                  FontSize="16"
+                                  FontFamily="./Resources/Fonts/#Euro Caps"
+                                  Grid.Column="1"
+                                  ToolTip="Show only for favorites?"
+                                  IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                        <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
+                    </ToggleButton>
+                </Grid>
+                
+                <Button HorizontalAlignment="Stretch"
+                        FontSize="14"
+                        FontFamily="./Resources/Fonts/#Euro Caps"
+                        x:Name="ToggleEditMode"
+                        Click="ToggleEditModeChecked"
                         Grid.Row="1"/>
-                <ToggleButton Content="Show Zeroes?"
-                              HorizontalAlignment="Stretch"
-                              FontSize="16"
-                              FontFamily="./Resources/Fonts/#Euro Caps"
-                              x:Name="ShowZeroesToggleButton"
-                              Grid.Row="1"
-                              IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             </Grid>
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"

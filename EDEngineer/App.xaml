@@ -7,7 +7,6 @@
     StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
-
             <ResourceDictionary.MergedDictionaries>
                 <!-- MahApps.Metro resource dictionaries. Make sure that all file names are Case Sensitive! -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
@@ -27,7 +26,7 @@
             <converters:InstantToStringConverter x:Key="InstantToString" />
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
-
+            
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">
                 <Setter Property="Background" Value="{DynamicResource WhiteBrush}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush}" />
