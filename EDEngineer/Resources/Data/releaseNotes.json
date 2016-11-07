@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.16",
-    "Content": "* The software now correctly works even if no logs are found in the log directory\r\n* Fixed an issue that would make the application lose synchronization with the logs when the window was locked/unlocked"
+    "Content": ""
   },
   {
     "Version": "1.0.0.15",
