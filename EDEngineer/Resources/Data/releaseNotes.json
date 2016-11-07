@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.17",
-    "Content": ""
+    "Content": "Fixed an issue with engineer progress that would increase your cargo instead of reduce it by the amount of items necessary to unlock said engineer"
   },
   {
     "Version": "1.0.0.16",
