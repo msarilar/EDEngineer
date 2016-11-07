@@ -118,6 +118,8 @@ namespace EDEngineer.Utils
                     return ExtractMaterialDiscovered(data);
                 case JournalEvent.EngineerProgress:
                     return ExtractEngineerProgress(data);
+                case JournalEvent.ScientificResearch:
+                    return ExtractMaterialDiscarded(data);
                 default:
                     return null;
             }
