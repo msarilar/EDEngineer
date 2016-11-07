@@ -111,6 +111,7 @@ namespace EDEngineer
 
             ApplyEventsToSate(allLogs);
 
+            IOManager?.StopWatch();
             IOManager = new IOManager();
             IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
 
