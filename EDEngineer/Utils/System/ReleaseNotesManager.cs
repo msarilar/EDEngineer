@@ -8,8 +8,20 @@ namespace EDEngineer.Utils.System
 {
     public static class ReleaseNotesManager
     {
-        public static void ShowReleaseNotes(string oldVersionString, string newVersionString)
+        public static void ShowReleaseNotes()
         {
+            var oldVersionString = Properties.Settings.Default.CurrentVersion;
+            var newVersionString = Properties.Settings.Default.Version;
+
+            if (oldVersionString == newVersionString)
+            {
+                return;
+            }
+
+            Properties.Settings.Default.CurrentVersion = newVersionString;
+
+            Properties.Settings.Default.Save();
+
             Version oldVersion;
             if (!Version.TryParse(oldVersionString, out oldVersion))
             {

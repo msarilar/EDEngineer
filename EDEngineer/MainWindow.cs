@@ -41,6 +41,16 @@ namespace EDEngineer
             }
             
             SettingsManager.Init();
+
+            try
+            {
+                ReleaseNotesManager.ShowReleaseNotes();
+            }
+            catch
+            {
+                // silently fail if release notes can't be shown
+            }
+
             InitializeComponent();
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;

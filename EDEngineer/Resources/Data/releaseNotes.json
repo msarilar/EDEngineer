@@ -1,7 +1,11 @@
 ﻿[
   {
+    "Version": "1.0.0.15",
+    "Content": "* Fixed a bug that made the app incorrectly compute synthesis operations\r\n* Now correctly handle Engineer's unlock (when an engineer requires items to be unlocked, like Ram Tah and his 50 units of Classified Scan Databanks)"
+  },
+  {
     "Version": "1.0.0.14",
-    "Content": "Quick patch to remove unwanted code that slipped in 1.0.0.13"
+    "Content": "Quick patch to remove unwanted debug code that slipped in 1.0.0.13"
   },
   {
     "Version": "1.0.0.13",
