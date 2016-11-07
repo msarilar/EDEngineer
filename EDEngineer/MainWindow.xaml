@@ -196,14 +196,13 @@
             </controls:MetroTabControl>
 
             <!-- META DATA -->
-
+            
             <Grid Grid.Row="1"
                   Grid.Column="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-
                 <Button HorizontalAlignment="Stretch"
                         FontSize="14"
                         Content="Reset"
@@ -258,7 +257,7 @@
                     Grid.Row="1"
                     Grid.Column="2"
                     Foreground="DarkCyan"
-                    Background="Black"
+                    Background="Transparent"
                     Style="{DynamicResource ChromelessButtonStyle}"
                     Click="ChangeFolderButtonClicked"
                     FontFamily="./Resources/Fonts/#Euro Caps">
