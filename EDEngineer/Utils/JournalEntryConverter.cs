@@ -116,9 +116,27 @@ namespace EDEngineer.Utils
                     return ExtractSynthesis(data);
                 case JournalEvent.MaterialDiscovered:
                     return ExtractMaterialDiscovered(data);
+                case JournalEvent.EngineerProgress:
+                    return ExtractEngineerProgress(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractEngineerProgress(JObject data)
+        {
+            var engineer = (string) data["Engineer"];
+            var progressInfo = (string) data["Progress"];
+
+            if (progressInfo == "Unlocked")
+            {
+                return new EngineerProgressOperation()
+                {
+                    Engineer = engineer
+                };
+            }
+
+            return null;
         }
 
         private JournalOperation ExtractMarketSell(JObject data)
