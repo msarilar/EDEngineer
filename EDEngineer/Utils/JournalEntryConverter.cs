@@ -197,7 +197,7 @@ namespace EDEngineer.Utils
             return new CargoOperation
             {
                 CommodityName = ejectCargoName,
-                Size = -1
+                Size = -1 * data["Count"]?.ToObject<int>() ?? -1
             };
         }
 
