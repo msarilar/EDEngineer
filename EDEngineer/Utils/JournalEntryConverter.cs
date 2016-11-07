@@ -296,19 +296,19 @@ namespace EDEngineer.Utils
                         return new MaterialOperation()
                         {
                             MaterialName = synthesisIngredientName,
-                            Size = material.Value != null ? (int) material.Value : 1
+                            Size = -1 * material.Value?.ToObject<int>() ?? -1
                         };
                     case Kind.Data:
                         return new DataOperation()
                         {
                             DataName = synthesisIngredientName,
-                            Size = material.Value != null ? (int)material.Value : 1
+                            Size = -1 * material.Value?.ToObject<int>() ?? -1
                         };
                     case Kind.Commodity:
                         return new CargoOperation()
                         {
                             CommodityName = synthesisIngredientName,
-                            Size = material.Value != null ? (int)material.Value : 1
+                            Size = -1 * material.Value?.ToObject<int>() ?? -1
                         };
                     default:
                         throw new ArgumentOutOfRangeException();
