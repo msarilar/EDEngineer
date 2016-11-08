@@ -166,7 +166,11 @@ namespace EDEngineer.Utils
         private JournalOperation ExtractMiningRefined(JObject data)
         {
             string miningRefinedName;
-            if (!converter.TryGet((string)data["Type"], out miningRefinedName))
+            var type = (string) data["Type"];
+
+            type = type.Replace("$", "").Replace("_name;", ""); // "Type":"$samarium_name;" 
+
+            if (!converter.TryGet(type, out miningRefinedName))
             {
                 return null;
             }
