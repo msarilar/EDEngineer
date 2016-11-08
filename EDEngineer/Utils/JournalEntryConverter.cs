@@ -291,6 +291,11 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractSynthesis(JObject data)
         {
+            var synthesisOperation = new SynthesisOperation()
+            {
+                SynthesisPartOperation = new List<JournalOperation>()
+            };
+
             foreach (var jToken in data["Materials"])
             {
                 var material = (JProperty) jToken;
@@ -298,7 +303,7 @@ namespace EDEngineer.Utils
                 if (!converter.TryGet(material.Name, out synthesisIngredientName))
                 {
                     MessageBox.Show($"Unknown material, please contact the author ! {material.Name}");
-                    return null;
+                    continue;
                 }
 
                 var entry = converter[synthesisIngredientName];
@@ -306,29 +311,35 @@ namespace EDEngineer.Utils
                 switch (entry.Kind)
                 {
                     case Kind.Material:
-                        return new MaterialOperation()
+                        synthesisOperation.SynthesisPartOperation.Add(new MaterialOperation()
                         {
                             MaterialName = synthesisIngredientName,
                             Size = -1 * material.Value?.ToObject<int>() ?? -1
-                        };
+                        });
+
+                        break;
                     case Kind.Data:
-                        return new DataOperation()
+                        synthesisOperation.SynthesisPartOperation.Add(new DataOperation()
                         {
                             DataName = synthesisIngredientName,
                             Size = -1 * material.Value?.ToObject<int>() ?? -1
-                        };
+                        });
+
+                        break;
                     case Kind.Commodity:
-                        return new CargoOperation()
+                        synthesisOperation.SynthesisPartOperation.Add(new CargoOperation()
                         {
                             CommodityName = synthesisIngredientName,
                             Size = -1 * material.Value?.ToObject<int>() ?? -1
-                        };
+                        });
+
+                        break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
             }
 
-            return null;
+            return synthesisOperation.SynthesisPartOperation.Any() ? synthesisOperation : null;
         }
 
 

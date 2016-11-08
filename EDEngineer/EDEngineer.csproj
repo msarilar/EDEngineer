@@ -155,6 +155,7 @@
     <Compile Include="Models\EntryData.cs" />
     <Compile Include="Models\Operations\EngineerProgressOperation.cs" />
     <Compile Include="Models\Operations\NoOperation.cs" />
+    <Compile Include="Models\Operations\SynthesisOperation.cs" />
     <Compile Include="Models\ReleaseNote.cs" />
     <Compile Include="ReleaseNotesWindow.xaml.cs">
       <DependentUpon>ReleaseNotesWindow.xaml</DependentUpon>

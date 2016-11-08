@@ -285,7 +285,7 @@ namespace EDEngineer
             {
                 if (ShowOnlyForFavorites && e.PropertyName == "Favorite")
                 {
-                    view.Refresh();
+                    view.Refresh(); // Application.Current.Dispatcher.Invoke(view.Refresh);
                 }
             });
 
