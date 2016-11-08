@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.22",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.21",
     "Content": "Again, fixed the issue for old version of Windows"
   },
