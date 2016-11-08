@@ -1,11 +1,11 @@
 ﻿[
   {
     "Version": "1.0.0.19",
-    "Content": ""
+    "Content": "* Handle unknown commodities:\r\n  * powertransferconduits (Power Transfer Bus)\r\n  * powergridassembly (Energy Grid Assembly)\r\n* Improve overall performance\r\n* Correctly handle synthesis operations\r\n* Correctly handle mining refined operations\r\n* Added an error window for unhandled errors so that you can submit it with an issue if the application crashes"
   },
   {
     "Version": "1.0.0.18",
-    "Content": "* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned"
+    "Content": "* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data)\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned"
   },
   {
     "Version": "1.0.0.17",
