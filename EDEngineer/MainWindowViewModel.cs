@@ -139,7 +139,7 @@ namespace EDEngineer
 
                         ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
                     }
-                    catch (PlatformNotSupportedException)
+                    catch (Exception)
                     {
                         // silently fail for platforms not supporting toasts
                     }
