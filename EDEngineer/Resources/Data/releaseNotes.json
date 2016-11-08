@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.20",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.19",
     "Content": "* Handle unknown commodities:\r\n  * powertransferconduits (Power Transfer Bus)\r\n  * powergridassembly (Energy Grid Assembly)\r\n* Improve overall performance\r\n* Correctly handle synthesis operations\r\n* Correctly handle mining refined operations\r\n* Added an error window for unhandled errors so that you can submit it with an issue if the application crashes"
   },
