@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.23",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.22",
     "Content": "Last update required to make the application support older version of Windows"
   },
