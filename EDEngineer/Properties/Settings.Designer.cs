@@ -163,5 +163,29 @@ namespace EDEngineer.Properties {
                 this["CurrentVersion"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double LeftSideWidth {
+            get {
+                return ((double)(this["LeftSideWidth"]));
+            }
+            set {
+                this["LeftSideWidth"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double RightSideWidth {
+            get {
+                return ((double)(this["RightSideWidth"]));
+            }
+            set {
+                this["RightSideWidth"] = value;
+            }
+        }
     }
 }
