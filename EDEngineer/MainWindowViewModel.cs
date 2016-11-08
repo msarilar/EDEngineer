@@ -45,6 +45,7 @@ namespace EDEngineer
         private readonly HashSet<JournalEntry> processedEntries = new HashSet<JournalEntry>();
         private readonly object processedEntriesLock = new object();
         private Instant lastUpdate = Instant.MinValue;
+        private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
 
         public MainWindowViewModel()
         {
@@ -165,7 +166,6 @@ namespace EDEngineer
             }
         }
 
-        private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private void LoadBlueprints()
         {
             var blueprintsJson = IOManager.GetBlueprintsJson();
@@ -289,7 +289,7 @@ namespace EDEngineer
             {
                 if (ShowOnlyForFavorites && e.PropertyName == "Favorite")
                 {
-                    view.Refresh(); // Application.Current.Dispatcher.Invoke(view.Refresh);
+                    Application.Current.Dispatcher.Invoke(view.Refresh);
                 }
             });
 
