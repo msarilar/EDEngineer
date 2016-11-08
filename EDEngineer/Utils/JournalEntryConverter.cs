@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,6 +16,7 @@ namespace EDEngineer.Utils
     {
         private readonly ItemNameConverter converter;
         private readonly ISimpleDictionary<string, Entry> entries;
+        private static readonly HashSet<string> relevantJournalEvents = new HashSet<string>(Enum.GetNames(typeof(JournalEvent)));
 
         public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries)
         {
@@ -52,11 +54,16 @@ namespace EDEngineer.Utils
                 OriginalJson = data.ToString()
             };
 
-            JournalEvent? journalEvent;
+            JournalEvent? journalEvent = null;
 
             try
             {
-                journalEvent = data["event"]?.ToObject<JournalEvent>(serializer);
+                var eventString =(string) data["event"];
+
+                if (relevantJournalEvents.Contains(eventString))
+                {
+                    journalEvent = data["event"]?.ToObject<JournalEvent>(serializer);
+                }
             }
             catch (Exception)
             {
