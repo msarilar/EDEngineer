@@ -31,8 +31,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>24</ApplicationRevision>
-    <ApplicationVersion>1.0.0.24</ApplicationVersion>
+    <ApplicationRevision>25</ApplicationRevision>
+    <ApplicationVersion>1.0.0.25</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>

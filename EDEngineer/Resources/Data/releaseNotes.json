@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.25",
-    "Content": ""
+    "Content": "Hotfix to correct the GUI. Your Window position and size has been reset (sorry!) to correct an issue that would make the entire overlay black otherwise"
   },
   {
     "Version": "1.0.0.24",

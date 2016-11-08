@@ -187,5 +187,17 @@ namespace EDEngineer.Properties {
                 this["RightSideWidth"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ResetUI {
+            get {
+                return ((bool)(this["ResetUI"]));
+            }
+            set {
+                this["ResetUI"] = value;
+            }
+        }
     }
 }
