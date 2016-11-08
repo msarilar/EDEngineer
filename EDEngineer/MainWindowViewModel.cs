@@ -103,50 +103,69 @@ namespace EDEngineer
             // Clear state:
             lock (processedEntriesLock)
             {
-                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1*k.Value.Count));
+                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
                 processedEntries.Clear();
                 LastUpdate = Instant.MinValue;
             }
 
             var allLogs = IOManager.RetrieveAllLogs(logDirectory);
-
+            UnsubscribeToasts();
             ApplyEventsToSate(allLogs);
 
             IOManager?.StopWatch();
             IOManager = new IOManager();
             IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
 
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200,0)) // windows 8 or more recent
+            SubscribeToasts();
+        }
+
+        private void UnsubscribeToasts()
+        {
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
             {
                 foreach (var blueprint in Blueprints)
                 {
-                    blueprint.FavoriteAvailable += (o, e) =>
-                    {
-                        try
-                        {
-                            var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
-
-                            var stringElements = toastXml.GetElementsByTagName("text");
-
-                            stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
-                            stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
-                            stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
-
-                            var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
-
-                            var imageElements = toastXml.GetElementsByTagName("image");
-                            imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
-
-                            var toast = new ToastNotification(toastXml);
-
-                            ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
-                        }
-                        catch (Exception)
-                        {
-                            // silently fail for platforms not supporting toasts
-                        }
-                    };
+                    blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
                 }
+            }
+        }
+
+        private void SubscribeToasts()
+        {
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
+            {
+                foreach (var blueprint in Blueprints)
+                {
+                    blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
+                }
+            }
+        }
+
+        private void BlueprintOnFavoriteAvailable(object sender, EventArgs e)
+        {
+            var blueprint = (Blueprint) sender;
+            try
+            {
+                var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
+
+                var stringElements = toastXml.GetElementsByTagName("text");
+
+                stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
+                stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
+                stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
+
+                var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+
+                var imageElements = toastXml.GetElementsByTagName("image");
+                imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+
+                var toast = new ToastNotification(toastXml);
+
+                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+            }
+            catch (Exception)
+            {
+                // silently fail for platforms not supporting toasts
             }
         }
 
