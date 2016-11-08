@@ -74,8 +74,12 @@ namespace EDEngineer
             Left = dimensions.Left;
             Top = dimensions.Top;
             Height = dimensions.Height;
-            MainGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
-            MainGrid.ColumnDefinitions[2].Width = new GridLength(dimensions.RightSideWidth, GridUnitType.Star);
+
+            if (dimensions.LeftSideWidth != 1 || dimensions.RightSideWidth != 1)
+            {
+                MainGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
+                MainGrid.ColumnDefinitions[2].Width = new GridLength(dimensions.RightSideWidth, GridUnitType.Star);
+            }
 
             if (AllowsTransparency)
             {

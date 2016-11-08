@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.24",
-    "Content": ""
+    "Content": "Fixed an issue that could make the GUI go entirely black due to 1.0.0.23 changes (check the release notes !)"
   },
   {
     "Version": "1.0.0.23",
