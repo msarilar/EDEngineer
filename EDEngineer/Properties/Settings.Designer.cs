@@ -94,7 +94,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.0.0.24")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.0.0.25")]
         public string Version {
             get {
                 return ((string)(this["Version"]));
