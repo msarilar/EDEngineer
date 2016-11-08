@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.24",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.23",
     "Content": "* Minor UI rework\r\n* Added a command in the tasktray icon to unlock the window (in case you don't know where the overlay is anymore)\r\n* In unlocked mode, you can now distribute the size of the overlay between the two columns. Don't forget the RESET button in case you want to go back to the initial position!"
   },
