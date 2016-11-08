@@ -165,6 +165,7 @@ namespace EDEngineer
             }
         }
 
+        private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private void LoadBlueprints()
         {
             var blueprintsJson = IOManager.GetBlueprintsJson();
@@ -185,6 +186,7 @@ namespace EDEngineer
                 if (Properties.Settings.Default.Favorites.Contains(blueprint.ToString()))
                 {
                     blueprint.Favorite = true;
+                    favoritedBlueprints.Add(blueprint);
                 }
 
                 if (Properties.Settings.Default.Ignored.Contains(blueprint.ToString()))
@@ -199,10 +201,12 @@ namespace EDEngineer
                         if (blueprint.Favorite)
                         {
                             Properties.Settings.Default.Favorites.Add(blueprint.ToString());
+                            favoritedBlueprints.Add(blueprint);
                         }
                         else
                         {
                             Properties.Settings.Default.Favorites.Remove(blueprint.ToString());
+                            favoritedBlueprints.Remove(blueprint);
                         }
 
                         Properties.Settings.Default.Save();
@@ -270,7 +274,7 @@ namespace EDEngineer
 
                 return entry.Data.Kind == kind && 
                         (ShowZeroes || entry.Count > 0) && 
-                        (!ShowOnlyForFavorites || Blueprints.Any(b => b.Favorite && b.Ingredients.Any(i => i.Entry == entry)));
+                        (!ShowOnlyForFavorites || favoritedBlueprints.Any(b => b.Ingredients.Any(i => i.Entry == entry)));
             };
 
             PropertyChanged += (o, e) =>
