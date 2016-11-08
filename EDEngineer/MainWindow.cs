@@ -86,7 +86,7 @@ namespace EDEngineer
                 CargoFiltersGrid.Visibility = Visibility.Hidden;
             }
 
-            icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut);
+            icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut, (o, e) => ToggleEditModeChecked(o, null));
 
             var shortcut = SettingsManager.Shortcut;
 
