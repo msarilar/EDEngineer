@@ -188,6 +188,17 @@ namespace EDEngineer
                     }
                 };
             }
+
+            foreach (Blueprint blueprint in view)
+            {
+                blueprint.PropertyChanged += (o, e) =>
+                {
+                    if (e.PropertyName == "Favorite" || e.PropertyName == "Ignored")
+                    {
+                        view.Refresh();
+                    }
+                };
+            }
             
             view.Filter = o =>
             {
