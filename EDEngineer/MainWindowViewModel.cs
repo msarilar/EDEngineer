@@ -116,34 +116,37 @@ namespace EDEngineer
             IOManager = new IOManager();
             IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
 
-            foreach (var blueprint in Blueprints)
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200,0)) // windows 8 or more recent
             {
-                blueprint.FavoriteAvailable += (o, e) =>
+                foreach (var blueprint in Blueprints)
                 {
-                    try
+                    blueprint.FavoriteAvailable += (o, e) =>
                     {
-                        var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
+                        try
+                        {
+                            var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
 
-                        var stringElements = toastXml.GetElementsByTagName("text");
+                            var stringElements = toastXml.GetElementsByTagName("text");
 
-                        stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
-                        stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
-                        stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
+                            stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
+                            stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
+                            stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
 
-                        var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+                            var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
 
-                        var imageElements = toastXml.GetElementsByTagName("image");
-                        imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+                            var imageElements = toastXml.GetElementsByTagName("image");
+                            imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
 
-                        var toast = new ToastNotification(toastXml);
+                            var toast = new ToastNotification(toastXml);
 
-                        ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
-                    }
-                    catch (Exception)
-                    {
-                        // silently fail for platforms not supporting toasts
-                    }
-                };
+                            ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                        }
+                        catch (Exception)
+                        {
+                            // silently fail for platforms not supporting toasts
+                        }
+                    };
+                }
             }
         }
 
