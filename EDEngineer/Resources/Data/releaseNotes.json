@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.20",
-    "Content": ""
+    "Content": "Fixed an issue that would occur on old version of Windows not supporting toasts when a favorite blueprint would become available to craft"
   },
   {
     "Version": "1.0.0.19",

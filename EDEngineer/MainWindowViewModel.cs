@@ -120,22 +120,29 @@ namespace EDEngineer
             {
                 blueprint.FavoriteAvailable += (o, e) =>
                 {
-                    var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
-                    
-                    var stringElements = toastXml.GetElementsByTagName("text");
+                    try
+                    {
+                        var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
 
-                    stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
-                    stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
-                    stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
-                    
-                    var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+                        var stringElements = toastXml.GetElementsByTagName("text");
 
-                    var imageElements = toastXml.GetElementsByTagName("image");
-                    imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+                        stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
+                        stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
+                        stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
 
-                    var toast = new ToastNotification(toastXml);
+                        var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
 
-                    ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                        var imageElements = toastXml.GetElementsByTagName("image");
+                        imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+
+                        var toast = new ToastNotification(toastXml);
+
+                        ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                    }
+                    catch (PlatformNotSupportedException)
+                    {
+                        // silently fail for platforms not supporting toasts
+                    }
                 };
             }
         }
