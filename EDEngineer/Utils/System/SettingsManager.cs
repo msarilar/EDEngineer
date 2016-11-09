@@ -26,13 +26,16 @@ namespace EDEngineer.Utils.System
         {
             get
             {
-                double height, width, left, top;
-                if (Properties.Settings.Default.WindowHeight == 0)
+                double height, width, left, top, leftSideWidth, rightSideWidth;
+                if (Properties.Settings.Default.WindowHeight == 0 || Properties.Settings.Default.ResetUI)
                 {
                     Properties.Settings.Default.WindowHeight = height = SystemParameters.PrimaryScreenHeight*0.6d;
                     Properties.Settings.Default.WindowWidth = width = SystemParameters.PrimaryScreenWidth*0.6d;
                     Properties.Settings.Default.WindowLeft = left = SystemParameters.PrimaryScreenWidth / 2d - width / 2d;
                     Properties.Settings.Default.WindowTop = top = SystemParameters.PrimaryScreenHeight / 2d - height / 2d;
+                    Properties.Settings.Default.LeftSideWidth = leftSideWidth = 1;
+                    Properties.Settings.Default.RightSideWidth = rightSideWidth = 1;
+                    Properties.Settings.Default.ResetUI = false;
 
                     Properties.Settings.Default.Save();
                 }
@@ -42,9 +45,11 @@ namespace EDEngineer.Utils.System
                     width = Properties.Settings.Default.WindowWidth;
                     left = Properties.Settings.Default.WindowLeft;
                     top = Properties.Settings.Default.WindowTop;
+                    leftSideWidth = Properties.Settings.Default.LeftSideWidth;
+                    rightSideWidth = Properties.Settings.Default.RightSideWidth;
                 }
 
-                return new WindowDimensions() { Height = height, Left = left, Top = top, Width = width };
+                return new WindowDimensions() { Height = height, Left = left, Top = top, Width = width, LeftSideWidth = leftSideWidth, RightSideWidth = rightSideWidth};
             }
             set
             {
@@ -52,6 +57,8 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.WindowWidth = value.Width;
                 Properties.Settings.Default.WindowLeft = value.Left;
                 Properties.Settings.Default.WindowTop = value.Top;
+                Properties.Settings.Default.LeftSideWidth = value.LeftSideWidth;
+                Properties.Settings.Default.RightSideWidth = value.RightSideWidth;
 
                 Properties.Settings.Default.Save();
             }

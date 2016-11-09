@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using EDEngineer.Filters;
 using EDEngineer.Models;
+using EDEngineer.Utils;
 
 namespace EDEngineer
 {
@@ -45,7 +46,7 @@ namespace EDEngineer
             
             IgnoredFavoriteFilters = new List<IgnoredFavoriteFilter>
             {
-                new IgnoredFavoriteFilter("None", blueprint => !blueprint.Ignored && !blueprint.Favorite, "IFFnone")
+                new IgnoredFavoriteFilter("Neither", blueprint => !blueprint.Ignored && !blueprint.Favorite, "IFFnone")
                 {
                     Checked = true,
                 },
@@ -177,9 +178,28 @@ namespace EDEngineer
 
             foreach (var item in entries)
             {
-                item.PropertyChanged += (o, e) => Application.Current.Dispatcher.Invoke(view.Refresh);
+                item.PropertyChanged += (o, e) =>
+                {
+                    var extended = e as PropertyChangedExtendedEventArgs<int>;
+
+                    if (e.PropertyName == "Count" || extended?.OldValue * extended?.NewValue == 0)
+                    {
+                        Application.Current.Dispatcher.Invoke(view.Refresh);
+                    }
+                };
             }
 
+            foreach (Blueprint blueprint in view)
+            {
+                blueprint.PropertyChanged += (o, e) =>
+                {
+                    if (e.PropertyName == "Favorite" || e.PropertyName == "Ignored")
+                    {
+                        view.Refresh();
+                    }
+                };
+            }
+            
             view.Filter = o =>
             {
                 var blueprint = (Blueprint)o;

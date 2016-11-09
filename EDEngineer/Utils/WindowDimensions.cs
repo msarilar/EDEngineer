@@ -6,5 +6,7 @@ namespace EDEngineer.Utils
         public double Height { get; set; }
         public double Left { get; set; }
         public double Top { get; set; }
+        public double LeftSideWidth { get; set; }
+        public double RightSideWidth { get; set; }
     }
 }

@@ -31,8 +31,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>18</ApplicationRevision>
-    <ApplicationVersion>1.0.0.18</ApplicationVersion>
+    <ApplicationRevision>26</ApplicationRevision>
+    <ApplicationVersion>1.0.0.26</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -146,6 +146,10 @@
     <Compile Include="Converters\InstantToStringConverter.cs" />
     <Compile Include="Converters\IntegerToVisibilityConverter.cs" />
     <Compile Include="Converters\RarityToIconConverter.cs" />
+    <Compile Include="DesignTime\DesignViewModel.cs" />
+    <Compile Include="ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Filters\BlueprintFilter.cs" />
     <Compile Include="Filters\CraftableFilter.cs" />
     <Compile Include="Filters\EngineerFilter.cs" />
@@ -174,6 +178,14 @@
     <Compile Include="Filters\TypeFilter.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
+    <Page Include="DesignTime\DesignViewModel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -230,7 +242,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

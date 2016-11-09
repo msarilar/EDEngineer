@@ -1,0 +1,34 @@
+﻿<controls:MetroWindow x:Class="EDEngineer.ErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+       WindowStyle="ToolWindow"
+        Title="Unrecoverable Error" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock FontSize="14"
+                   Grid.Row="0"
+                   Text="An error has been thrown by the application:"
+                   TextWrapping="Wrap"
+                   HorizontalAlignment="Center"/>
+        <ScrollViewer Grid.Row="1">
+            <TextBox x:Name="ExceptionContent"
+                 IsReadOnly="True"
+                 FontFamily="Consolas"
+                 FontSize="12"/>
+        </ScrollViewer>
+        
+        <Button Content="Close"
+                Grid.Row="2"
+                x:Name="CloseButton"
+                Click="CloseButtonClicked"/>
+    </Grid>
+</controls:MetroWindow>

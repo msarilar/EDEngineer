@@ -8,9 +8,10 @@ namespace EDEngineer.Utils.UI
     {
         public static IDisposable Init(EventHandler showHandler,
             EventHandler quitHandler,
-            EventHandler configureShortcutHandler)
+            EventHandler configureShortcutHandler,
+            EventHandler unlockWindowHandler)
         {
-            var menu = BuildContextMenu(showHandler, quitHandler, configureShortcutHandler);
+            var menu = BuildContextMenu(showHandler, quitHandler, configureShortcutHandler, unlockWindowHandler);
             
             var icon = new NotifyIcon
             {
@@ -28,13 +29,19 @@ namespace EDEngineer.Utils.UI
             });
         }
 
-        private static ContextMenu BuildContextMenu(EventHandler showHandler, EventHandler quitHandler, EventHandler configureShortcutHandler)
+        private static ContextMenu BuildContextMenu(EventHandler showHandler, EventHandler quitHandler, EventHandler configureShortcutHandler, EventHandler unlockWindowHandler)
         {
             var showItem = new MenuItem()
             {
                 Text = "Show"
             };
             showItem.Click += showHandler;
+
+            var unlockItem = new MenuItem()
+            {
+                Text = "Toggle Window Mode (Lock/Unlocked)"
+            };
+            unlockItem.Click += unlockWindowHandler;
 
             var setShortCutItem = new MenuItem()
             {
@@ -49,6 +56,7 @@ namespace EDEngineer.Utils.UI
 
             var menu = new ContextMenu();
             menu.MenuItems.Add(showItem);
+            menu.MenuItems.Add(unlockItem);
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(quitItem);

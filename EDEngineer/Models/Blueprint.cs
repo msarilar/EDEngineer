@@ -94,7 +94,7 @@ namespace EDEngineer.Models
         public int CanCraftCount => ComputeCraftCount(i => Math.Max(0, i.Entry.Count));
 
         public bool JustMissingCommodities
-            =>
+            => CanCraftCount == 0 &&
                 Ingredients.All(
                     i =>
                         i.Size <= i.Entry.Count && i.Entry.Data.Kind != Kind.Commodity || // not commodity and just enough or more stock available

@@ -12,6 +12,10 @@ namespace EDEngineer.Models
             Data = data;
         }
 
+        public Entry()
+        {
+        }
+
         public EntryData Data { get; }
         private int count;
         private int favoriteCount;

@@ -63,6 +63,7 @@
     <Compile Include="Utils\JournalEntryConverterTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

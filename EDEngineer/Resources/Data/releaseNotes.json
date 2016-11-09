@@ -1,11 +1,43 @@
 ﻿[
   {
-    "Version": "1.0.0.19",
+    "Version": "1.0.0.27",
     "Content": ""
   },
   {
+    "Version": "1.0.0.26",
+    "Content": "Fixed a small issue with the Missing Commodity filter that would show blueprints not requiring commodities"
+  },
+  {
+    "Version": "1.0.0.25",
+    "Content": "Hotfix to correct the GUI. Your Window position and size has been reset (sorry!) to correct an issue that would make the entire overlay black otherwise"
+  },
+  {
+    "Version": "1.0.0.24",
+    "Content": "Fixed an issue that could make the GUI go entirely black due to 1.0.0.23 changes (check the release notes !)"
+  },
+  {
+    "Version": "1.0.0.23",
+    "Content": "* Minor UI rework\r\n* Added a command in the tasktray icon to unlock the window (in case you don't know where the overlay is anymore)\r\n* In unlocked mode, you can now distribute the size of the overlay between the two columns. Don't forget the RESET button in case you want to go back to the initial position!"
+  },
+  {
+    "Version": "1.0.0.22",
+    "Content": "Last update required to make the application support older version of Windows"
+  },
+  {
+    "Version": "1.0.0.21",
+    "Content": "Again, fixed the issue for old version of Windows"
+  },
+  {
+    "Version": "1.0.0.20",
+    "Content": "Fixed an issue that would occur on old version of Windows not supporting toasts when a favorite blueprint would become available to craft"
+  },
+  {
+    "Version": "1.0.0.19",
+    "Content": "* Handle unknown commodities:\r\n  * powertransferconduits (Power Transfer Bus)\r\n  * powergridassembly (Energy Grid Assembly)\r\n* Improve overall performance\r\n* Correctly handle synthesis operations\r\n* Correctly handle mining refined operations\r\n* Added an error window for unhandled errors so that you can submit it with an issue if the application crashes"
+  },
+  {
     "Version": "1.0.0.18",
-    "Content": "* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned"
+    "Content": "* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data)\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned"
   },
   {
     "Version": "1.0.0.17",

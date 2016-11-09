@@ -45,6 +45,7 @@ namespace EDEngineer
         private readonly HashSet<JournalEntry> processedEntries = new HashSet<JournalEntry>();
         private readonly object processedEntriesLock = new object();
         private Instant lastUpdate = Instant.MinValue;
+        private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
 
         public MainWindowViewModel()
         {
@@ -102,40 +103,69 @@ namespace EDEngineer
             // Clear state:
             lock (processedEntriesLock)
             {
-                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1*k.Value.Count));
+                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
                 processedEntries.Clear();
                 LastUpdate = Instant.MinValue;
             }
 
             var allLogs = IOManager.RetrieveAllLogs(logDirectory);
-
+            UnsubscribeToasts();
             ApplyEventsToSate(allLogs);
 
             IOManager?.StopWatch();
             IOManager = new IOManager();
             IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
 
-            foreach (var blueprint in Blueprints)
+            SubscribeToasts();
+        }
+
+        private void UnsubscribeToasts()
+        {
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
             {
-                blueprint.FavoriteAvailable += (o, e) =>
+                foreach (var blueprint in Blueprints)
                 {
-                    var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
-                    
-                    var stringElements = toastXml.GetElementsByTagName("text");
+                    blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
+                }
+            }
+        }
 
-                    stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
-                    stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
-                    stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
-                    
-                    var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+        private void SubscribeToasts()
+        {
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
+            {
+                foreach (var blueprint in Blueprints)
+                {
+                    blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
+                }
+            }
+        }
 
-                    var imageElements = toastXml.GetElementsByTagName("image");
-                    imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+        private void BlueprintOnFavoriteAvailable(object sender, EventArgs e)
+        {
+            var blueprint = (Blueprint) sender;
+            try
+            {
+                var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
 
-                    var toast = new ToastNotification(toastXml);
+                var stringElements = toastXml.GetElementsByTagName("text");
 
-                    ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
-                };
+                stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
+                stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
+                stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
+
+                var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+
+                var imageElements = toastXml.GetElementsByTagName("image");
+                imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+
+                var toast = new ToastNotification(toastXml);
+
+                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+            }
+            catch (Exception)
+            {
+                // silently fail for platforms not supporting toasts
             }
         }
 
@@ -165,7 +195,6 @@ namespace EDEngineer
             }
         }
 
-        private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private void LoadBlueprints()
         {
             var blueprintsJson = IOManager.GetBlueprintsJson();
@@ -289,7 +318,7 @@ namespace EDEngineer
             {
                 if (ShowOnlyForFavorites && e.PropertyName == "Favorite")
                 {
-                    view.Refresh(); // Application.Current.Dispatcher.Invoke(view.Refresh);
+                    Application.Current.Dispatcher.Invoke(view.Refresh);
                 }
             });
 
