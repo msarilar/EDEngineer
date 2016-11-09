@@ -1,9 +1,5 @@
 ﻿[
   {
-    "Version": "1.0.0.27",
-    "Content": ""
-  },
-  {
     "Version": "1.0.0.26",
     "Content": "Fixed a small issue with the Missing Commodity filter that would show blueprints not requiring commodities"
   },
