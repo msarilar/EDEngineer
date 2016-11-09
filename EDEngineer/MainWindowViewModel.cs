@@ -42,14 +42,12 @@ namespace EDEngineer
 
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;
-        private readonly HashSet<JournalEntry> processedEntries = new HashSet<JournalEntry>();
-        private readonly object processedEntriesLock = new object();
         private Instant lastUpdate = Instant.MinValue;
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
 
         public MainWindowViewModel()
         {
-            var entryDatas = JsonConvert.DeserializeObject<List<EntryData>>(IOManager.GetEntryDatasJson());
+            var entryDatas = JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
             var converter = new ItemNameConverter(entryDatas);
 
             State = new State(entryDatas);
@@ -94,27 +92,25 @@ namespace EDEngineer
             }
         }
 
-        public IOManager IOManager { get; private set; }
+        public LogWatcher LogWatcher { get; private set; }
 
         internal void LoadState(bool forcePickFolder = false)
         {
-            LogDirectory = IOManager.RetrieveLogDirectory(forcePickFolder, LogDirectory);
+            LogDirectory = IOUtils.RetrieveLogDirectory(forcePickFolder, LogDirectory);
+
+            LogWatcher?.Dispose();
 
             // Clear state:
-            lock (processedEntriesLock)
-            {
-                State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
-                processedEntries.Clear();
-                LastUpdate = Instant.MinValue;
-            }
-
-            var allLogs = IOManager.RetrieveAllLogs(logDirectory);
+            State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
+            LastUpdate = Instant.MinValue;
             UnsubscribeToasts();
+
+            LogWatcher = new LogWatcher(LogDirectory);
+
+            var allLogs = LogWatcher.RetrieveAllLogs();
             ApplyEventsToSate(allLogs);
 
-            IOManager?.StopWatch();
-            IOManager = new IOManager();
-            IOManager.InitiateWatch(logDirectory, ApplyEventsToSate);
+            LogWatcher.InitiateWatch(ApplyEventsToSate);
 
             SubscribeToasts();
         }
@@ -182,14 +178,6 @@ namespace EDEngineer
 
             foreach (var entry in entries.Where(entry => entry.TimeStamp >= LastUpdate).ToList())
             {
-                lock (processedEntriesLock)
-                {
-                    if (!(entry.JournalOperation is ManualChangeOperation) && !processedEntries.Add(entry))
-                    {
-                        continue;
-                    }
-                }
-
                 Application.Current.Dispatcher.Invoke(() => entry.JournalOperation.Mutate(State));
                 LastUpdate = entry.TimeStamp;
             }
@@ -197,7 +185,7 @@ namespace EDEngineer
 
         private void LoadBlueprints()
         {
-            var blueprintsJson = IOManager.GetBlueprintsJson();
+            var blueprintsJson = IOUtils.GetBlueprintsJson();
 
             Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter));
             if (Properties.Settings.Default.Favorites == null)

@@ -295,6 +295,8 @@ namespace EDEngineer
                 handle.RemoveHook(WndProc);
                 icon.Dispose();
             }
+
+            viewModel.LogWatcher?.Dispose();
         }
 
         private void WindowActivatedCompleted(object sender, EventArgs e)
@@ -339,7 +341,6 @@ namespace EDEngineer
                 };
             }
 
-            viewModel.IOManager.StopWatch();
             base.OnClosing(e);
         }
 

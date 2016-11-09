@@ -30,7 +30,7 @@ namespace EDEngineer.Utils.System
 
             var newVersion = Version.Parse(newVersionString);
 
-            var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(IOManager.GetReleaseNotesJson());
+            var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(IOUtils.GetReleaseNotesJson());
 
             var list =  releaseNotes.ToList();
             if (list.Any())
