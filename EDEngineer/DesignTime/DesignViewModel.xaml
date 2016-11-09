@@ -1,0 +1,56 @@
+﻿<DesignViewModel xmlns="clr-namespace:EDEngineer.DesignTime"
+                 xmlns:system="clr-namespace:System;assembly=mscorlib"
+                 LogDirectory="C:\Users\Max\AppData\Local\EDEngineer">
+    <DesignViewModel.GradeFilters>
+        <DesignFilter FilterName="1"
+                      Checked="False"/>
+        <DesignFilter FilterName="2"
+                      Checked="True"/>
+    </DesignViewModel.GradeFilters>
+    <DesignViewModel.LastUpdate>
+        <DesignInstant Year="2001" Month="5" Day="12" Hour="5" Minute="45" Second="3"/>
+    </DesignViewModel.LastUpdate>
+    <DesignViewModel.State>
+        <DesignState>
+            <DesignState.Cargo>
+                <Wrapper>
+                    <Wrapper.Value>
+                        <DesignEntry xmlns:models="clr-namespace:EDEngineer.Models"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         Count="524"
+                         FavoriteCount="0">
+                            <DesignEntry.Data>
+                                <models:EntryData Rarity="Common" Name="Modular Terminals"/>
+                            </DesignEntry.Data>
+                        </DesignEntry>
+                    </Wrapper.Value>
+                </Wrapper>
+                <Wrapper>
+                    <Wrapper.Value>
+                        <DesignEntry xmlns:models="clr-namespace:EDEngineer.Models"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         Count="3"
+                         FavoriteCount="1">
+                            <DesignEntry.Data>
+                                <models:EntryData Rarity="Rare" Name="CMM Composite"/>
+                            </DesignEntry.Data>
+                        </DesignEntry>
+                    </Wrapper.Value>
+                </Wrapper>
+            </DesignState.Cargo>
+        </DesignState>
+    </DesignViewModel.State>
+    <DesignViewModel.Blueprints>
+        <DesignBluePrint Grade="1"
+                         Type="Frameshit Drive Interdictor"
+                         Name="Efficient Weapon"
+                         CanCraftCount="0"
+                         Favorite="False"
+                         Ignored="True">
+            <DesignBluePrint.Progress>
+                <system:Double>75</system:Double>
+            </DesignBluePrint.Progress>
+
+        </DesignBluePrint>
+    </DesignViewModel.Blueprints>
+</DesignViewModel>

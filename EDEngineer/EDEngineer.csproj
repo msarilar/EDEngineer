@@ -146,6 +146,7 @@
     <Compile Include="Converters\InstantToStringConverter.cs" />
     <Compile Include="Converters\IntegerToVisibilityConverter.cs" />
     <Compile Include="Converters\RarityToIconConverter.cs" />
+    <Compile Include="DesignTime\DesignViewModel.cs" />
     <Compile Include="ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
@@ -177,6 +178,10 @@
     <Compile Include="Filters\TypeFilter.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
+    <Page Include="DesignTime\DesignViewModel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ErrorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

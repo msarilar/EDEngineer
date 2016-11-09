@@ -10,9 +10,12 @@
         Topmost="True"
         WindowStyle="None"
         Background="Transparent"
+        d:DesignWidth="1152"
+        d:DesignHeight="648"
         AllowsTransparency="True"
         ShowInTaskbar="False"
         Loaded="MainWindowLoaded"
+        d:DataContext="{d:DesignData Source=DesignTime/DesignViewModel.xaml}" 
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
@@ -180,7 +183,8 @@
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
                                       x:Name="Commodities"
-                                      ItemTemplate="{StaticResource EntryTemplate}">
+                                      ItemTemplate="{StaticResource EntryTemplate}"
+                                      ItemsSource="{Binding State.Cargo}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -381,20 +385,21 @@
                 <!-- BLUEPRINTS -->
 
                 <DataGrid x:Name="Blueprints"
-                              IsReadOnly="True"
-                              FontFamily="./Resources/Fonts/#Euro Caps"
-                              Background="Black"
-                              BorderBrush="#ff7100"
-                              HorizontalAlignment="Stretch"
-                              ColumnWidth="*"
-                              FontSize="14.5"
-                              IsSynchronizedWithCurrentItem="False"
-                              HorizontalContentAlignment="Stretch"
-                              SelectionUnit="FullRow"
-                              AutoGenerateColumns="False"
-                              Loaded="BlueprintsDataGridLoaded"
-                              Grid.Row="1"
-                              Style="{DynamicResource BlueprintGridStyle}">
+                          IsReadOnly="True"
+                          FontFamily="./Resources/Fonts/#Euro Caps"
+                          Background="Black"
+                          BorderBrush="#ff7100"
+                          HorizontalAlignment="Stretch"
+                          ColumnWidth="*"
+                          FontSize="14.5"
+                          IsSynchronizedWithCurrentItem="False"
+                          HorizontalContentAlignment="Stretch"
+                          SelectionUnit="FullRow"
+                          AutoGenerateColumns="False"
+                          Loaded="BlueprintsDataGridLoaded"
+                          ItemsSource="{Binding Blueprints}"
+                          Grid.Row="1"
+                          Style="{DynamicResource BlueprintGridStyle}">
                     <DataGrid.RowDetailsTemplate>
                         <DataTemplate>
                             <Grid Background="#043A59">
@@ -569,19 +574,21 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
-                        FontSize="14"
-                        Content="Reset"
-                        Visibility="Collapsed"
-                        FontFamily="./Resources/Fonts/#Euro Caps"
-                        x:Name="ResetWindowPositionButton"
-                        Click="ResetWindowPositionButtonClicked"
-                        Grid.Column="0"/>
+                    FontSize="14"
+                    Content="Reset"
+                    Visibility="Collapsed"
+                    FontFamily="./Resources/Fonts/#Euro Caps"
+                    x:Name="ResetWindowPositionButton"
+                    Click="ResetWindowPositionButtonClicked"
+                    Grid.Column="0"/>
             <Button HorizontalAlignment="Stretch"
-                        FontSize="14"
-                        FontFamily="./Resources/Fonts/#Euro Caps"
-                        x:Name="ToggleEditMode"
-                        Click="ToggleEditModeChecked"
-                        Grid.Column="1"/>
+                    FontSize="14"
+                    FontFamily="./Resources/Fonts/#Euro Caps"
+                    x:Name="ToggleEditMode"
+                    Content="Unlock Window"
+                    Click="ToggleEditModeChecked"
+                    d:IsHidden="False"
+                    Grid.Column="1"/>
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"
                        Grid.Column="2"
