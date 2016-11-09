@@ -25,7 +25,7 @@
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
-                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}}"
+                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                    HorizontalAlignment="Left"
                                    Width="20"
                                    Height="20"

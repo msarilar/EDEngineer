@@ -26,7 +26,9 @@
             <converters:InstantToStringConverter x:Key="InstantToString" />
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
-            
+
+            <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
+
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">
                 <Setter Property="Background" Value="{DynamicResource WhiteBrush}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush}" />
