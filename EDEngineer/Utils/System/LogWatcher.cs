@@ -33,6 +33,8 @@ namespace EDEngineer.Utils.System
                 watcher = null;
             }
 
+            periodicRefresher?.Dispose();
+
             if (!Directory.Exists(logDirectory))
             {
                 return;
@@ -54,9 +56,7 @@ namespace EDEngineer.Utils.System
         }
 
         private void InitPeriodicRefresh()
-        {   
-            periodicRefresher?.Dispose();
-
+        {
             periodicRefresher = new Timer()
             {
                 Interval = 2000
