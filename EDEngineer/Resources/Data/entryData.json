@@ -1,824 +1,824 @@
 ﻿[
   {
     "Name": "Aberrant Shield Pattern Analysis",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "aberrantshieldpatternanalysis",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Abnormal Compact Emission Data",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "compactemissionsdata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Adaptive Encryptors Capture",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "adaptiveencryptorscapture",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Anomalous Bulk Scan Data",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "anomalousbulkscandata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Anomalous FSD Telemetry",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "anomalousfsdtelemetry",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Antimony",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "antimony",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Arsenic",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "arsenic",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Articulation Motors",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "articulationmotors",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Atypical Disrupted Wake Echoes",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "atypicaldisruptedwakeechoes",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Atypical Encryption Archives",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "atypicalencryptionarchives",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Basic Conductors",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "basicconductors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Biotech Conductors",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "biotechconductors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Bromellite",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "bromellite",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Cadmium",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "cadmium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Carbon",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "carbon",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Chemical Distillery",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "chemicaldistillery",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Chemical Manipulators",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "chemicalmanipulators",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Chemical Processors",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "chemicalprocessors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Chemical Storage Units",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "chemicalstorageunits",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Chromium",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "chromium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Classified Scan Databanks",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "classifiedscandatabanks",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Classified Scan Fragment",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "classifiedscanfragment",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "CMM Composite",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "cmmcomposite",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Compact Composites",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "compactcomposites",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Compound Shielding",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "compoundshielding",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Conductive Ceramics",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "conductiveceramics",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Conductive Components",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "conductivecomponents",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Conductive Polymers",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "conductivepolymers",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Configurable Components",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "configurablecomponents",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Core Dynamics Composites",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "fedcorecomposites",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Cracked Industrial Firmware",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "crackedindustrialfirmware",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Crystal Shards",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "crystalshards",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Datamined Wake Exceptions",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "dataminedwakeexceptions",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Decoded Emission Data",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "decodedemissiondata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Distorted Shield Cycle Recordings",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "distortedshieldcyclerecordings",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Divergent Scan Data",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "encodedscandata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Eccentric Hyperspace Trajectories",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "eccentrichyperspacetrajectories",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Electrochemical Arrays",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "electrochemicalarrays",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Emergency Power Cells",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "emergencypowercells",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Energy Grid Assembly",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "powergridassembly",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Exceptional Scrambled Emission Data",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "exceptionalscrambledemissiondata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Exhaust Manifold",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "exhaustmanifold",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Exquisite Focus Crystals",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "exquisitefocuscrystals",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Filament Composites",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "filamentcomposites",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Flawed Focus Crystals",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "uncutfocuscrystals",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Focus Crystals",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "focuscrystals",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Galvanising Alloys",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "galvanisingalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Germanium",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "germanium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Grid Resistors",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "gridresistors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Hardware Diagnostic Sensor",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "hardwarediagnosticsensor",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Heat Conduction Wiring",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "heatconductionwiring",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Heat Dispersion Plate",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "heatdispersionplate",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Heat Exchangers",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "heatexchangers",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Heat Resistant Ceramics",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "heatresistantceramics",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Heat Vanes",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "heatvanes",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Heatsink Interlink",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "heatsinkinterlink",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "High Density Composites",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "highdensitycomposites",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "HN Shock Mount",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "hnshockmount",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Hybrid Capacitors",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "hybridcapacitors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Imperial Shielding",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "imperialshielding",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Improvised Components",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "improvisedcomponents",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Inconsistent Shield Soak Analysis",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "inconsistentshieldsoakanalysis",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Insulating Membrane",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "insulatingmembrane",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Ion Distributor",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "iondistributor",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Iron",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "iron",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Irregular Emission Data",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "archivedemissiondata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Magnetic Emitter Coil",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "magneticemittercoil",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Manganese",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "manganese",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Mechanical Components",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "mechanicalcomponents",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Mechanical Equipment",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "mechanicalequipment",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Mechanical Scrap",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "mechanicalscrap",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Mercury",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "mercury",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Micro Controllers",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "microcontrollers",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Micro-Weave Cooling Hoses",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "micro-weavecoolinghoses",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Military Grade Alloys",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "militarygradealloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Military Supercapacitors",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "militarysupercapacitors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Modified Consumer Firmware",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "modifiedconsumerfirmware",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Modified Embedded Firmware",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "modifiedembeddedfirmware",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Modular Terminals",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "modularterminals",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Molybdenum",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "molybdenum",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Nanobreakers",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "nanobreakers",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Neofabric Insulation",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "neofabricinsulation",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Nickel",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "nickel",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Niobium",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "niobium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Open Symmetric Keys",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "opensymmetrickeys",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Osmium",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "osmium",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Pattern Alpha Obelisk Data",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "ancientbiologicaldata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Pattern Beta Obelisk Data",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "ancientculturaldata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Pattern Delta Obelisk Data",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "ancientlanguagedata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Pattern Epsilon Obelisk Data",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "ancienttechnologicaldata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Pattern Gamma Obelisk Data",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "ancienthistoricaldata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Peculiar Shield Frequency Data",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "peculiarshieldfrequencydata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Pharmaceutical Isolators",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "pharmaceuticalisolators",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Phase Alloys",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "phasealloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Phosphorus",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "phosphorus",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Platinum",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "platinum",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Polonium",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "polonium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Polymer Capacitors",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "polymercapacitors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Power Converter",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "powerconverter",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Power Transfer Bus",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "powertransferconduits",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Praseodymium",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "praseodymium",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Precipitated Alloys",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "precipitatedalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Proprietary Composites",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "fedproprietarycomposites",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Proto Heat Radiators",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "protoheatradiators",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Proto Light Alloys",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "protolightalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Proto Radiolic Alloys",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "protoradiolicalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Radiation Baffle",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "radiationbaffle",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Refined Focus Crystals",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "refinedfocuscrystals",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Reinforced Mounting Plate",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "reinforcedmountingplate",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Ruthenium",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "ruthenium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Salvaged Alloys",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "salvagedalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Samarium",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "samarium",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Security Firmware Patch",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "securityfirmwarepatch",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Selenium",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "selenium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Shield Emitters",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "shieldemitters",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Shielding Sensors",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "shieldingsensors",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Specialised Legacy Firmware",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "specialisedlegacyfirmware",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Strange Wake Solutions",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "strangewakesolutions",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Sulphur",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "sulphur",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Tagged Encryption Codes",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "taggedencryptioncodes",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Technetium",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "technetium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Telemetry Suite",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "telemetrysuite",
-    "Kind": 2
+    "Kind": "Commodity"
   },
   {
     "Name": "Tellurium",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "tellurium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Tempered Alloys",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "temperedalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Thermic Alloys",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "thermicalloys",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Tin",
-    "Rarity": 3,
+    "Rarity": "Rare",
     "FormattedName": "tin",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Tungsten",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "tungsten",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Unexpected Emission Data",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "unexpectedemissiondata",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Unidentified Scan Archives",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "unidentifiedscanarchives",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Unknown Fragment",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "unknownenergysource",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Untypical Shield Scans",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "shielddensityreports",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Unusual Encrypted Files",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "unusualencryptedfiles",
-    "Kind": 1
+    "Kind": "Data"
   },
   {
     "Name": "Vanadium",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "vanadium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Worn Shield Emitters",
-    "Rarity": 0,
+    "Rarity": "VeryCommon",
     "FormattedName": "wornshieldemitters",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Yttrium",
-    "Rarity": 4,
+    "Rarity": "VeryRare",
     "FormattedName": "yttrium",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Zinc",
-    "Rarity": 1,
+    "Rarity": "Common",
     "FormattedName": "zinc",
-    "Kind": 0
+    "Kind": "Material"
   },
   {
     "Name": "Zirconium",
-    "Rarity": 2,
+    "Rarity": "Standard",
     "FormattedName": "zirconium",
-    "Kind": 0
+    "Kind": "Material"
   }
 ]
