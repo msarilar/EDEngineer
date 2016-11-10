@@ -55,13 +55,21 @@ namespace EDEngineer
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
 
-            var blueprintsView = new CollectionViewSource {Source = viewModel.Blueprints}.View;
-            viewModel.Filters.Monitor(blueprintsView, viewModel.State.Cargo.Select(c => c.Value));
-            Blueprints.ItemsSource = blueprintsView;
+            RefreshCargoSources();
+            viewModel.PropertyChanged += (o, e) => RefreshCargoSources();
+        }
 
-            Commodities.ItemsSource = viewModel.FilterView(Kind.Commodity, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
-            Materials.ItemsSource = viewModel.FilterView(Kind.Material, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
-            Data.ItemsSource = viewModel.FilterView(Kind.Data, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
+        public void RefreshCargoSources()
+        {
+            var commander = viewModel.CurrentCommander.Value;
+
+            var blueprintSource = new CollectionViewSource { Source = commander.Blueprints };
+            commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value));
+            Blueprints.ItemsSource = blueprintSource.View;
+
+            Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo });
+            Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo });
+            Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo });
         }
 
         private int ToolbarHeight => SystemInformation.CaptionHeight + 6; // couldn't find a proper property returning "29" which is the height I need
@@ -77,8 +85,8 @@ namespace EDEngineer
 
             if (dimensions.LeftSideWidth != 1 || dimensions.RightSideWidth != 1)
             {
-                MainGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
-                MainGrid.ColumnDefinitions[2].Width = new GridLength(dimensions.RightSideWidth, GridUnitType.Star);
+                ContentGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
+                ContentGrid.ColumnDefinitions[2].Width = new GridLength(dimensions.RightSideWidth, GridUnitType.Star);
             }
 
             if (AllowsTransparency)
@@ -336,8 +344,8 @@ namespace EDEngineer
                     Left = coords.X,
                     Top = coords.Y - modificator,
                     Width = ActualWidth,
-                    LeftSideWidth = MainGrid.ColumnDefinitions[0].Width.Value,
-                    RightSideWidth = MainGrid.ColumnDefinitions[2].Width.Value
+                    LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
+                    RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
                 };
             }
 

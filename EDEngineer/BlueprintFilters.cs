@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Data;
 using EDEngineer.Filters;
 using EDEngineer.Models;
 using EDEngineer.Utils;
@@ -161,13 +162,13 @@ namespace EDEngineer
 
         private List<BlueprintFilter> AllFilters { get; }
 
-        public void Monitor(ICollectionView view, IEnumerable<Entry> entries)
+        public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries)
         {
             foreach (var filter in AllFilters)
             {
                 filter.PropertyChanged += (o, e) =>
                 {
-                    view.Refresh();
+                    source.View.Refresh();
                     OnPropertyChanged(nameof(EngineerFilters));
                     OnPropertyChanged(nameof(GradeFilters));
                     OnPropertyChanged(nameof(TypeFilters));
@@ -184,25 +185,25 @@ namespace EDEngineer
 
                     if (e.PropertyName == "Count" || extended?.OldValue * extended?.NewValue == 0)
                     {
-                        Application.Current.Dispatcher.Invoke(view.Refresh);
+                        Application.Current.Dispatcher.Invoke(source.View.Refresh);
                     }
                 };
             }
 
-            foreach (Blueprint blueprint in view)
+            foreach (var blueprint in (IEnumerable<Blueprint>) source.Source)
             {
                 blueprint.PropertyChanged += (o, e) =>
                 {
                     if (e.PropertyName == "Favorite" || e.PropertyName == "Ignored")
                     {
-                        view.Refresh();
+                        source.View.Refresh();
                     }
                 };
             }
             
-            view.Filter = o =>
+            source.Filter+= (o,e) =>
             {
-                var blueprint = (Blueprint)o;
+                var blueprint = (Blueprint)e.Item;
                 var checkedIngredients = IngredientFilters.Where(f => f.Checked).ToList();
                 var satisfyIngredientFilters =  !checkedIngredients.Any() || checkedIngredients.Any(i => blueprint.Ingredients.Any(b => b.Entry == i.Entry));
 
@@ -213,7 +214,7 @@ namespace EDEngineer
                           IgnoredFavoriteFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           CraftableFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint));
 
-                return ret;
+                e.Accepted = ret;
             };
         }
 

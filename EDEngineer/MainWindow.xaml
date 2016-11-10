@@ -10,12 +10,12 @@
         Topmost="True"
         WindowStyle="None"
         Background="Transparent"
+        AllowsTransparency="True"
         d:DesignWidth="1152"
         d:DesignHeight="648"
-        AllowsTransparency="True"
         ShowInTaskbar="False"
         Loaded="MainWindowLoaded"
-        d:DataContext="{d:DesignData Source=DesignTime/DesignViewModel.xaml}" 
+        d:DataContext="{d:DesignData Source=DesignTime/DesignViewModel.xaml}"
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
@@ -25,11 +25,12 @@
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
-                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
-                                   HorizontalAlignment="Left"
-                                   Width="20"
-                                   Height="20"
-                                   VerticalAlignment="Center" />
+                            <Image
+                                Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                                HorizontalAlignment="Left"
+                                Width="20"
+                                Height="20"
+                                VerticalAlignment="Center" />
                             <TextBlock Text="{Binding Value.Data.Name}"
                                        FontFamily="./Resources/Fonts/#Euro Caps"
                                        FontSize="20"
@@ -114,65 +115,91 @@
             <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
                              From="0.0" To="1.0"
                              Completed="WindowActivatedCompleted"
-                             Duration="0:0:0.5"/>
+                             Duration="0:0:0.5" />
         </Storyboard>
         <Storyboard x:Key="WindowDeactivated">
             <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
                              From="1.0" To="0.0"
                              Completed="WindowDeactivatedCompleted"
-                             Duration="0:0:0.3"/>
+                             Duration="0:0:0.3" />
         </Storyboard>
     </Window.Resources>
 
     <Grid Opacity="0.9"
           Background="Black"
-          x:Name="MainGrid">
+          x:Name="ContentGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="27" MaxHeight="27"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="27" MaxHeight="27" />
         </Grid.RowDefinitions>
+
+        <!-- COMMANDERS -->
+
+        <TabControl ItemsSource="{Binding Commanders}"
+                    SelectedItem="{Binding CurrentCommander, Mode=TwoWay}"
+                    Visibility="{Binding Commanders.Count, Converter={StaticResource IntegerToVisibility}, Mode=OneWay, ConverterParameter=1}"
+                    Height="35"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    Margin="10,0,0,0">
+            <TabControl.ContentTemplate>
+                <DataTemplate>
+                    <TabItem Height="0"/>
+                </DataTemplate>
+            </TabControl.ContentTemplate>
+            <TabControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding Value}"
+                                FontFamily="./Resources/Fonts/#Euro Caps"
+                                FontSize="25" />
+                </DataTemplate>
+            </TabControl.ItemTemplate>
+        </TabControl>
+
         <!-- LEFT SIDE -->
 
         <Grid Grid.Column="0"
-              Grid.Row="0">
+              Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <!-- CARGO FILTERS -->
 
             <Grid Grid.Row="0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <ToggleButton HorizontalAlignment="Stretch"
-                                  FontSize="16"
-                                  FontFamily="./Resources/Fonts/#Euro Caps"
-                                  Grid.Column="0"
-                                  ToolTip="Show entries with no stock?"
-                                  IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                              FontSize="16"
+                              FontFamily="./Resources/Fonts/#Euro Caps"
+                              Grid.Column="0"
+                              ToolTip="Show entries with no stock?"
+                              IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="Texture" />
                 </ToggleButton>
                 <ToggleButton HorizontalAlignment="Stretch"
-                                  FontSize="16"
-                                  FontFamily="./Resources/Fonts/#Euro Caps"
-                                  Grid.Column="1"
-                                  ToolTip="Show only for favorites?"
-                                  IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                              FontSize="16"
+                              FontFamily="./Resources/Fonts/#Euro Caps"
+                              Grid.Column="1"
+                              ToolTip="Show only for favorites?"
+                              IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
                 </ToggleButton>
             </Grid>
 
             <!-- CURRENT CARGO -->
 
-            <controls:MetroTabControl Grid.Row="1">
+            <controls:MetroTabControl Grid.Row="1"
+                                      DataContext="{Binding CurrentCommander.Value}">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -225,16 +252,17 @@
         </Grid>
 
         <!-- SPLITTER -->
-        <GridSplitter Grid.Column="1" 
+        <GridSplitter Grid.Column="1"
                       Width="3"
-                      Grid.Row="0"
+                      Grid.Row="1"
                       x:Name="Splitter"
-                      HorizontalAlignment="Stretch"/>
+                      HorizontalAlignment="Stretch" />
 
         <!-- RIGHT SIDE -->
 
         <Grid Grid.Column="2"
-              Grid.Row="0">
+              Grid.Row="1"
+              DataContext="{Binding CurrentCommander.Value}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -261,9 +289,9 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
-                                                  IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
                                     <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
-                                                   Width="100" />
+                                               Width="100" />
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
@@ -277,9 +305,9 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
-                                                  IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
                                     <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
-                                                   Width="100" />
+                                               Width="100" />
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
@@ -292,7 +320,7 @@
                         <controls:DropDownButton.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <WrapPanel Width="575"
-                                               MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}" />
+                                           MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}" />
                             </ItemsPanelTemplate>
                         </controls:DropDownButton.ItemsPanel>
                         <controls:DropDownButton.ItemTemplate>
@@ -331,9 +359,9 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
-                                                  IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
                                     <TextBlock Text="{Binding Label}"
-                                                   Width="Auto" />
+                                               Width="Auto" />
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
@@ -346,7 +374,7 @@
                                              Grid.Column="2">
                         <controls:DropDownButton.ItemContainerStyle>
                             <Style TargetType="MenuItem">
-                                <Setter Property="Margin" Value="-30,0,-30,0"/>
+                                <Setter Property="Margin" Value="-30,0,-30,0" />
                             </Style>
                         </controls:DropDownButton.ItemContainerStyle>
                         <controls:DropDownButton.ItemTemplate>
@@ -359,18 +387,18 @@
                                             <DataTemplate>
                                                 <Grid Width="Auto">
                                                     <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="Auto"/>
-                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="Auto" />
+                                                        <ColumnDefinition Width="*" />
                                                     </Grid.ColumnDefinitions>
                                                     <CheckBox Width="20"
                                                               Grid.Column="0"
                                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                                    <TextBlock Width="Auto" 
+                                                    <TextBlock Width="Auto"
                                                                Grid.Column="1">
-                                                            <Run Text="{Binding Entry.Data.Name}"/>
-                                                            <Run Text=" ("/>
-                                                            <Run Text="{Binding Entry.Count}"/>
-                                                            <Run Text=")"/>
+                                                        <Run Text="{Binding Entry.Data.Name}" />
+                                                        <Run Text=" (" />
+                                                        <Run Text="{Binding Entry.Count}" />
+                                                        <Run Text=")" />
                                                     </TextBlock>
                                                 </Grid>
                                             </DataTemplate>
@@ -408,7 +436,7 @@
                                     <ColumnDefinition Width="0.5*" />
                                 </Grid.ColumnDefinitions>
                                 <Grid Grid.Column="0"
-                                          Margin="10,0,0,0">
+                                      Margin="10,0,0,0">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto" />
                                         <ColumnDefinition Width="Auto" />
@@ -417,23 +445,23 @@
                                     </Grid.ColumnDefinitions>
 
                                     <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                      Grid.Column="0"
-                                                      Margin="0,0,7,0"
-                                                      FontSize="13">
+                                                  Grid.Column="0"
+                                                  Margin="0,0,7,0"
+                                                  FontSize="13">
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
                                                 <TextBlock>
-                                                        <Run Text="{Binding Entry.Data.Kind, Mode=OneWay}" />
-                                                        <Run Text=":" />
+                                                    <Run Text="{Binding Entry.Data.Kind, Mode=OneWay}" />
+                                                    <Run Text=":" />
                                                 </TextBlock>
                                             </DataTemplate>
                                         </ItemsControl.ItemTemplate>
                                     </ItemsControl>
 
                                     <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                      Grid.Column="1"
-                                                      Margin="0,0,7,0"
-                                                      FontSize="13">
+                                                  Grid.Column="1"
+                                                  Margin="0,0,7,0"
+                                                  FontSize="13">
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
                                                 <TextBlock Text="{Binding Entry.Data.Name, Mode=OneWay}" />
@@ -442,44 +470,44 @@
                                     </ItemsControl>
 
                                     <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                      Grid.Column="2"
-                                                      Margin="0,0,7,0"
-                                                      FontSize="13">
+                                                  Grid.Column="2"
+                                                  Margin="0,0,7,0"
+                                                  FontSize="13">
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
                                                 <TextBlock>
-                                                        <Run Text="(" />
-                                                        <Run Text="{Binding Entry.Count}" />
-                                                        <Run Text="/" />
-                                                        <Run Text="{Binding Size, Mode=OneWay}" />
-                                                        <Run Text=")" />
+                                                    <Run Text="(" />
+                                                    <Run Text="{Binding Entry.Count}" />
+                                                    <Run Text="/" />
+                                                    <Run Text="{Binding Size, Mode=OneWay}" />
+                                                    <Run Text=")" />
                                                 </TextBlock>
                                             </DataTemplate>
                                         </ItemsControl.ItemTemplate>
                                     </ItemsControl>
 
                                     <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                      Grid.Column="3"
-                                                      Margin="0,0,7,0">
+                                                  Grid.Column="3"
+                                                  Margin="0,0,7,0">
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
                                                 <Grid>
                                                     <iconPacks:PackIconMaterial Kind="Check"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
-                                                                                    Foreground="Green" />
+                                                                                Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
+                                                                                Foreground="Green" />
                                                     <iconPacks:PackIconMaterial Height="14" Kind="Close"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
-                                                                                    Foreground="Red" />
+                                                                                Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
+                                                                                Foreground="Red" />
                                                 </Grid>
                                             </DataTemplate>
                                         </ItemsControl.ItemTemplate>
                                     </ItemsControl>
                                 </Grid>
                                 <ItemsControl Margin="0,0,10,0"
-                                                  FontSize="13"
-                                                  ItemsSource="{Binding Engineers}"
-                                                  HorizontalAlignment="Right"
-                                                  Grid.Column="1" />
+                                              FontSize="13"
+                                              ItemsSource="{Binding Engineers}"
+                                              HorizontalAlignment="Right"
+                                              Grid.Column="1" />
                             </Grid>
                         </DataTemplate>
                     </DataGrid.RowDetailsTemplate>
@@ -492,7 +520,9 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Type" Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}" IsReadOnly="True" Width="*" MaxWidth="110">
+                        <DataGridTextColumn Header="Type"
+                                            Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}"
+                                            IsReadOnly="True" Width="*" MaxWidth="110">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="TextWrapping" Value="Wrap" />
@@ -509,7 +539,7 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTemplateColumn Header="Progress" 
+                        <DataGridTemplateColumn Header="Progress"
                                                 IsReadOnly="True"
                                                 SortMemberPath="ProgressSorting"
                                                 Width="*"
@@ -519,39 +549,40 @@
                                     <Grid>
                                         <StackPanel Orientation="Vertical">
                                             <TextBlock HorizontalAlignment="Center">
-                                                    <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                    <Run Text=": can craft" />
-                                                    <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
+                                                <Run
+                                                    Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
+                                                <Run Text=": can craft" />
+                                                <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
                                             </TextBlock>
                                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                           Background="WhiteSmoke" Foreground="#ff7100" />
+                                                                       Background="WhiteSmoke" Foreground="#ff7100" />
                                         </StackPanel>
                                     </Grid>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
-                        <DataGridTemplateColumn IsReadOnly="True" Width="100" >
+                        <DataGridTemplateColumn IsReadOnly="True" Width="100">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid>
                                         <ToggleButton Width="40"
-                                                          Height="40"
-                                                          HorizontalAlignment="Left"
-                                                          Margin="10,0,0,0"
-                                                          VerticalAlignment="Center"
-                                                          IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                          Foreground="Black">
+                                                      Height="40"
+                                                      HorizontalAlignment="Left"
+                                                      Margin="10,0,0,0"
+                                                      VerticalAlignment="Center"
+                                                      IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                      Foreground="Black">
                                             <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
                                         </ToggleButton>
                                         <ToggleButton x:Name="IgnoreBluebrintButton"
-                                                          Width="40"
-                                                          Height="40"
-                                                          HorizontalAlignment="Right"
-                                                          Margin="0,0,10,0"
-                                                          VerticalAlignment="Center"
-                                                          IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                          Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black"/>
+                                                      Width="40"
+                                                      Height="40"
+                                                      HorizontalAlignment="Right"
+                                                      Margin="0,0,10,0"
+                                                      VerticalAlignment="Center"
+                                                      IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                      Foreground="Black">
+                                            <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black" />
                                         </ToggleButton>
                                     </Grid>
                                 </DataTemplate>
@@ -564,14 +595,14 @@
 
         <!-- META DATA -->
 
-        <Grid Grid.Row="1"
+        <Grid Grid.Row="2"
               Grid.Column="0"
               Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
@@ -580,7 +611,7 @@
                     FontFamily="./Resources/Fonts/#Euro Caps"
                     x:Name="ResetWindowPositionButton"
                     Click="ResetWindowPositionButtonClicked"
-                    Grid.Column="0"/>
+                    Grid.Column="0" />
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
                     FontFamily="./Resources/Fonts/#Euro Caps"
@@ -588,7 +619,7 @@
                     Content="Unlock Window"
                     Click="ToggleEditModeChecked"
                     d:IsHidden="False"
-                    Grid.Column="1"/>
+                    Grid.Column="1" />
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"
                        Grid.Column="2"
@@ -598,8 +629,8 @@
                        VerticalAlignment="Center"
                        TextWrapping="Wrap"
                        FontFamily="./Resources/Fonts/#Euro Caps">
-                    <Run Text="Last update: "/>
-                    <Run Text="{Binding LastUpdate, Converter={StaticResource InstantToString}}"></Run>
+                <Run Text="Last update: " />
+                <Run Text="{Binding CurrentCommander.LastUpdate, Converter={StaticResource InstantToString}}"></Run>
             </TextBlock>
             <Button HorizontalAlignment="Right"
                     FontSize="15"
@@ -610,8 +641,9 @@
                     Style="{DynamicResource ChromelessButtonStyle}"
                     Click="ChangeFolderButtonClicked"
                     FontFamily="./Resources/Fonts/#Euro Caps">
-                <TextBlock Text="{Binding LogDirectory}" TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding LogDirectory}" TextWrapping="Wrap" />
             </Button>
         </Grid>
     </Grid>
+
 </Window>
