@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.27",
-    "Content": ""
+    "Content": "* Now supports multi commander ! (your GUI has been reset to avoid graphical issues since I've reworked the interface a bit in order to integrate that, sorry !)\r\n* Optimized log extraction, solve some issues with data acquisition issues (you might want to quickly check your data tab and see everything is still synchronized ; if it's not, you should fix it manually once and for all now)"
   },
   {
     "Version": "1.0.0.26",
