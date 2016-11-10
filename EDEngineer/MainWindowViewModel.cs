@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models;
 using EDEngineer.Properties;
@@ -12,11 +14,16 @@ namespace EDEngineer
     {
         public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; }  = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
 
-        public CommanderViewModel CurrentCommander
+        public KeyValuePair<string, CommanderViewModel> CurrentCommander
         {
             get { return currentCommander; }
             set
             {
+                if (object.Equals(value, currentCommander))
+                {
+                    return;
+                }
+
                 currentCommander = value; 
                 OnPropertyChanged();
             }
@@ -61,6 +68,8 @@ namespace EDEngineer
                 Commanders[commander] = commanderState;
             }
 
+            CurrentCommander = Commanders.First();
+
             LogWatcher.InitiateWatch(logs =>
             {
                 if (Commanders.ContainsKey(logs.Item1))
@@ -78,7 +87,7 @@ namespace EDEngineer
 
         private bool showZeroes = true;
         private bool showOnlyForFavorites;
-        private CommanderViewModel currentCommander;
+        private KeyValuePair<string, CommanderViewModel> currentCommander;
 
         public bool ShowZeroes
         {
@@ -113,7 +122,7 @@ namespace EDEngineer
 
         public void UserChange(Entry entry, int i)
         {
-            CurrentCommander.UserChange(entry, i);
+            CurrentCommander.Value.UserChange(entry, i);
         }
     }
 }

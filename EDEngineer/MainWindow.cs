@@ -82,8 +82,8 @@ namespace EDEngineer
 
             if (dimensions.LeftSideWidth != 1 || dimensions.RightSideWidth != 1)
             {
-                MainGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
-                MainGrid.ColumnDefinitions[2].Width = new GridLength(dimensions.RightSideWidth, GridUnitType.Star);
+                ContentGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
+                ContentGrid.ColumnDefinitions[2].Width = new GridLength(dimensions.RightSideWidth, GridUnitType.Star);
             }
 
             if (AllowsTransparency)
@@ -341,8 +341,8 @@ namespace EDEngineer
                     Left = coords.X,
                     Top = coords.Y - modificator,
                     Width = ActualWidth,
-                    LeftSideWidth = MainGrid.ColumnDefinitions[0].Width.Value,
-                    RightSideWidth = MainGrid.ColumnDefinitions[2].Width.Value
+                    LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
+                    RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
                 };
             }
 

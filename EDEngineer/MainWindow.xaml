@@ -124,15 +124,27 @@
         </Storyboard>
     </Window.Resources>
 
-    <Grid>
+    <Grid Opacity="0.9"
+          Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         <controls:MetroTabControl ItemsSource="{Binding Commanders}"
-                                  SelectedItem="{Binding CurrentCommander}">
-
+                                  SelectedItem="{Binding CurrentCommander, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  Grid.Row="0"
+                                  Margin="10,0,0,0">
+            <controls:MetroTabControl.ItemTemplate>
+                <DataTemplate>
+                    <controls:MetroTabItem Header="{Binding Value}"
+                                           FontFamily="./Resources/Fonts/#Euro Caps"
+                                           FontSize="25"/>
+                </DataTemplate>
+            </controls:MetroTabControl.ItemTemplate>
         </controls:MetroTabControl>
         
-        <Grid Opacity="0.9"
-          Background="Black"
-          x:Name="MainGrid">
+        <Grid Grid.Row="1"
+              x:Name="ContentGrid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
@@ -179,7 +191,7 @@
                 <!-- CURRENT CARGO -->
 
                 <controls:MetroTabControl Grid.Row="1"
-                                          DataContext="{Binding CurrentCommander}">
+                                          DataContext="{Binding CurrentCommander.Value}">
                     <TabControl.Resources>
                         <Style TargetType="{x:Type TabPanel}">
                             <Setter Property="HorizontalAlignment" Value="Center" />
@@ -242,7 +254,7 @@
 
             <Grid Grid.Column="2"
                   Grid.Row="0"
-                  DataContext="{Binding CurrentCommander}">
+                  DataContext="{Binding CurrentCommander.Value}">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />

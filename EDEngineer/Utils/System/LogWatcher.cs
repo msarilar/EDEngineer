@@ -160,11 +160,11 @@ namespace EDEngineer.Utils.System
                 var fileContents = ReadLinesWithoutLock(file);
                 if (gameLogLines.ContainsKey(fileContents.Item1))
                 {
-                    gameLogLines[fileContents.Item1] = fileContents.Item2;
+                    gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
                 }
                 else
                 {
-                    gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
+                    gameLogLines[fileContents.Item1] = fileContents.Item2;
                 }
             }
 
@@ -202,9 +202,11 @@ namespace EDEngineer.Utils.System
                     gameLogLines[commanderName].AddRange(content);
                 }
 
+                // migrate old manualChanges.json files to new one:
                 if (splittedName.Length == 2)
                 {
                     File.Move(file, Path.Combine(directory, $"{splittedName[0]}.{commanderName}.json"));
+                    File.Delete(file);
                 }
             }
 
