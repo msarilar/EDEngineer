@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Data;
 using Windows.UI.Notifications;
 using EDEngineer.Models;
 using EDEngineer.Models.Operations;
@@ -150,7 +151,7 @@ namespace EDEngineer
             logEntry.JournalOperation.Mutate(State);
 
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "EDEngineer", "manualChanges.json");
+                "EDEngineer", $"manualChanges.{CommanderName}.json");
             File.AppendAllText(path, json + Environment.NewLine);
         }
 
@@ -167,18 +168,18 @@ namespace EDEngineer
 
             foreach (var entry in entries.Where(entry => entry.TimeStamp >= LastUpdate).ToList())
             {
-                Application.Current.Dispatcher.Invoke(() => entry.JournalOperation.Mutate(State));
+                entry.JournalOperation.Mutate(State);
                 LastUpdate = entry.TimeStamp;
             }
         }
 
-        public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, ICollectionView view)
+        public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, CollectionViewSource source)
         {
-            view.Filter = o =>
+            source.Filter += (o, e) =>
             {
-                var entry = ((KeyValuePair<string, Entry>)o).Value;
+                var entry = ((KeyValuePair<string, Entry>)e.Item).Value;
 
-                return entry.Data.Kind == kind &&
+                e.Accepted = entry.Data.Kind == kind &&
                        (parentViewModel.ShowZeroes || entry.Count > 0) &&
                        (!parentViewModel.ShowOnlyForFavorites || favoritedBlueprints.Any(b => b.Ingredients.Any(i => i.Entry == entry)));
             };
@@ -187,7 +188,7 @@ namespace EDEngineer
             {
                 if (e.PropertyName == nameof(parentViewModel.ShowZeroes) || e.PropertyName == nameof(parentViewModel.ShowOnlyForFavorites))
                 {
-                    view.Refresh();
+                    source.View.Refresh();
                 }
             };
 
@@ -195,11 +196,11 @@ namespace EDEngineer
             {
                 if (parentViewModel.ShowOnlyForFavorites && e.PropertyName == "Favorite")
                 {
-                    Application.Current.Dispatcher.Invoke(view.Refresh);
+                    Application.Current.Dispatcher.Invoke(source.View.Refresh);
                 }
             });
 
-            return view;
+            return source.View;
         }
 
         private void LoadBlueprints()

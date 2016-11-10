@@ -55,18 +55,21 @@ namespace EDEngineer
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
 
-            foreach (var commanderPair in viewModel.Commanders)
-            {
-                var commander = commanderPair.Value;
+            RefreshCargoSources();
+            viewModel.PropertyChanged += (o, e) => RefreshCargoSources();
+        }
 
-                var blueprintsView = new CollectionViewSource { Source = commander.Blueprints }.View;
-                commander.Filters.Monitor(blueprintsView, commander.State.Cargo.Select(c => c.Value));
-                Blueprints.ItemsSource = blueprintsView;
+        public void RefreshCargoSources()
+        {
+            var commander = viewModel.CurrentCommander.Value;
 
-                Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo }.View);
-                Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo }.View);
-                Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo }.View);
-            }
+            var blueprintSource = new CollectionViewSource { Source = commander.Blueprints };
+            commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value));
+            Blueprints.ItemsSource = blueprintSource.View;
+
+            Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo });
+            Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo });
+            Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo });
         }
 
         private int ToolbarHeight => SystemInformation.CaptionHeight + 6; // couldn't find a proper property returning "29" which is the height I need

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using EDEngineer.Models;
 using EDEngineer.Properties;
 using EDEngineer.Utils.Collections;
@@ -63,6 +64,12 @@ namespace EDEngineer
 
             foreach (var commander in allLogs.Keys)
             {
+                // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
+                if (allLogs[commander].Count <= 1)
+                {
+                    continue;
+                }
+
                 var commanderState = new CommanderViewModel(commander);
                 commanderState.LoadState(allLogs[commander]);
                 Commanders[commander] = commanderState;
@@ -72,16 +79,24 @@ namespace EDEngineer
 
             LogWatcher.InitiateWatch(logs =>
             {
-                if (Commanders.ContainsKey(logs.Item1))
+                Application.Current.Dispatcher.Invoke(() =>
                 {
-                    Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
-                }
-                else
-                {
-                    var commanderState = new CommanderViewModel(logs.Item1);
-                    commanderState.LoadState(logs.Item2);
-                    Commanders[logs.Item1] = commanderState;
-                }
+                    if (logs.Item2.Count == 0)
+                    {
+                        return;
+                    }
+
+                    if (Commanders.ContainsKey(logs.Item1))
+                    {
+                        Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
+                    }
+                    else
+                    {
+                        var commanderState = new CommanderViewModel(logs.Item1);
+                        commanderState.LoadState(logs.Item2);
+                        Commanders[logs.Item1] = commanderState;
+                    }
+                });
             });
         }
 
