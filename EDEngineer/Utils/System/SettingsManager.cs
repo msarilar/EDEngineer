@@ -27,7 +27,6 @@ namespace EDEngineer.Utils.System
             get
             {
                 double height, width, left, top, leftSideWidth, rightSideWidth;
-                Properties.Settings.Default.ResetUI = true;
                 if (Properties.Settings.Default.WindowHeight == 0 || Properties.Settings.Default.ResetUI)
                 {
                     Properties.Settings.Default.WindowHeight = height = SystemParameters.PrimaryScreenHeight*0.6d;
