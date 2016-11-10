@@ -55,13 +55,18 @@ namespace EDEngineer
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
 
-            var blueprintsView = new CollectionViewSource {Source = viewModel.Blueprints}.View;
-            viewModel.Filters.Monitor(blueprintsView, viewModel.State.Cargo.Select(c => c.Value));
-            Blueprints.ItemsSource = blueprintsView;
+            foreach (var commanderPair in viewModel.Commanders)
+            {
+                var commander = commanderPair.Value;
 
-            Commodities.ItemsSource = viewModel.FilterView(Kind.Commodity, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
-            Materials.ItemsSource = viewModel.FilterView(Kind.Material, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
-            Data.ItemsSource = viewModel.FilterView(Kind.Data, new CollectionViewSource { Source = viewModel.State.Cargo }.View);
+                var blueprintsView = new CollectionViewSource { Source = commander.Blueprints }.View;
+                commander.Filters.Monitor(blueprintsView, commander.State.Cargo.Select(c => c.Value));
+                Blueprints.ItemsSource = blueprintsView;
+
+                Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo }.View);
+                Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo }.View);
+                Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo }.View);
+            }
         }
 
         private int ToolbarHeight => SystemInformation.CaptionHeight + 6; // couldn't find a proper property returning "29" which is the height I need

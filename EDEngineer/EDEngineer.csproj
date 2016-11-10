@@ -139,6 +139,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BlueprintFilters.cs" />
+    <Compile Include="CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
     <Compile Include="Converters\BlueprintNameShortener.cs" />
     <Compile Include="Converters\DoubleToPercentConverter.cs" />

@@ -17,6 +17,7 @@ namespace EDEngineer.Models
         Synthesis,
         MaterialDiscovered,
         EngineerProgress,
-        ScientificResearch
+        ScientificResearch,
+        LoadGame
     }
 }

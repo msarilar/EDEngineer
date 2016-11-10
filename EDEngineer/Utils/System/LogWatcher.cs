@@ -4,6 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using EDEngineer.Models;
+using Newtonsoft.Json.Linq;
 
 namespace EDEngineer.Utils.System
 {
@@ -11,6 +13,7 @@ namespace EDEngineer.Utils.System
     {
         private const string MANUAL_CHANGES_LOG_FILE_NAME = "manualChanges.json";
         private const string LOG_FILE_PATTERN = "Journal.*.log";
+        private const string DEFAULT_COMMANDER_NAME = "Default";
 
         private readonly string logDirectory;
         private FileSystemWatcher watcher;
@@ -18,13 +21,14 @@ namespace EDEngineer.Utils.System
 
         private readonly Dictionary<string, long> positions = new Dictionary<string, long>();
         private readonly Dictionary<string, FileInfo> fileInfos = new Dictionary<string, FileInfo>();
+        private readonly Dictionary<string, string> fileCommanders = new Dictionary<string, string>(); 
 
         public LogWatcher(string logDirectory)
         {
             this.logDirectory = logDirectory;
         }
 
-        public void InitiateWatch(Action<IEnumerable<string>> action)
+        public void InitiateWatch(Action<Tuple<string, List<string>>> callback)
         {
             if (watcher != null)
             {
@@ -49,8 +53,8 @@ namespace EDEngineer.Utils.System
                 NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.Size | NotifyFilters.FileName | NotifyFilters.CreationTime
             };
             
-            watcher.Changed += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
-            watcher.Created += (o, e) => { action(ReadLinesWithoutLock(e.FullPath)); };
+            watcher.Changed += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
+            watcher.Created += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
 
             InitPeriodicRefresh();
         }
@@ -86,37 +90,65 @@ namespace EDEngineer.Utils.System
             periodicRefresher.Start();
         }
 
-        public List<string> ReadLinesWithoutLock(string file)
+        public Tuple<string, List<string>> ReadLinesWithoutLock(string file)
         {
             if (!File.Exists(file))
             {
-                return new List<string>();
+                return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
             }
 
             var gameLogLines = new List<string>();
             using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
+                var watchForLoadGameEvent = false;
+
                 if (positions.ContainsKey(file))
                 {
                     stream.Seek(positions[file], SeekOrigin.Begin);
+                }
+                
+                if(!fileCommanders.ContainsKey(file))
+                {
+                    watchForLoadGameEvent = true;
                 }
 
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
                     gameLogLines.Add(line);
+
+                    if (watchForLoadGameEvent && line.Contains($@"""event"":""{JournalEvent.LoadGame}"""))
+                    {
+                        try
+                        {
+                            var data = JObject.Parse(line);
+                            fileCommanders[file] = (string) data["Commander"];
+                        }
+                        catch
+                        {
+                            fileCommanders[file] = DEFAULT_COMMANDER_NAME;
+                        }
+
+                        watchForLoadGameEvent = false;
+                    }
                 }
 
                 positions[file] = stream.Length;
             }
 
-            return gameLogLines;
+            string commanderName;
+            if (!fileCommanders.TryGetValue(file, out commanderName))
+            {
+                commanderName = DEFAULT_COMMANDER_NAME;
+            }
+
+            return Tuple.Create(commanderName, gameLogLines);
         }
 
-        public IEnumerable<string> RetrieveAllLogs()
+        public Dictionary<string, List<string>> RetrieveAllLogs()
         {
-            var gameLogLines = new List<string>();
+            var gameLogLines = new Dictionary<string, List<string>>();
             foreach (
                 var file in
                     Directory.GetFiles(logDirectory)
@@ -125,7 +157,15 @@ namespace EDEngineer.Utils.System
                                 f != null && Path.GetFileName(f).StartsWith("Journal.") &&
                                 Path.GetFileName(f).EndsWith(".log")))
             {
-                gameLogLines.AddRange(ReadLinesWithoutLock(file));
+                var fileContents = ReadLinesWithoutLock(file);
+                if (gameLogLines.ContainsKey(fileContents.Item1))
+                {
+                    gameLogLines[fileContents.Item1] = fileContents.Item2;
+                }
+                else
+                {
+                    gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
+                }
             }
 
             var directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
@@ -136,13 +176,39 @@ namespace EDEngineer.Utils.System
                 Directory.CreateDirectory(directory);
             }
 
-            var path = Path.Combine(directory, MANUAL_CHANGES_LOG_FILE_NAME);
+            foreach (var file in Directory.GetFiles(directory).ToList())
+            {
+                var splittedName = file.Split('.');
+                string commanderName;
 
-            var manualChangeLines = File.Exists(path)
-                ? File.ReadAllLines(path)
-                : new string[] { };
+                if (splittedName.Length == 2) // manualChanges.json
+                {
+                    commanderName = gameLogLines.Keys.FirstOrDefault() ?? DEFAULT_COMMANDER_NAME;
+                }
+                else // manualChanges.Hg.Json
+                {
+                    commanderName = splittedName[1];
+                }
 
-            return gameLogLines.Concat(manualChangeLines);
+                var content = File.ReadAllLines(file).ToList();
+
+
+                if (gameLogLines.ContainsKey(commanderName))
+                {
+                    gameLogLines[commanderName] = content;
+                }
+                else
+                {
+                    gameLogLines[commanderName].AddRange(content);
+                }
+
+                if (splittedName.Length == 2)
+                {
+                    File.Move(file, Path.Combine(directory, $"{splittedName[0]}.{commanderName}.json"));
+                }
+            }
+
+            return gameLogLines;
         }
 
         public void Dispose()
