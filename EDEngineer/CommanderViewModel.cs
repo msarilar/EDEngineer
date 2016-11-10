@@ -50,7 +50,7 @@ namespace EDEngineer
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        internal void LoadState(List<string> events)
+        private void LoadState(List<string> events)
         {
             // Clear state:
             State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
@@ -62,7 +62,7 @@ namespace EDEngineer
             SubscribeToasts();
         }
 
-        public CommanderViewModel(string commanderName)
+        public CommanderViewModel(string commanderName, List<string> logs)
         {
             CommanderName = commanderName;
 
@@ -74,6 +74,8 @@ namespace EDEngineer
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo);
             blueprintConverter = new BlueprintConverter(State.Cargo);
             LoadBlueprints();
+
+            LoadState(logs);
         }
 
         private void UnsubscribeToasts()

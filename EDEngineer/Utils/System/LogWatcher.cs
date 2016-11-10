@@ -11,9 +11,8 @@ namespace EDEngineer.Utils.System
 {
     public class LogWatcher : IDisposable
     {
-        private const string MANUAL_CHANGES_LOG_FILE_NAME = "manualChanges.json";
+        public const string DEFAULT_COMMANDER_NAME = "Default";
         private const string LOG_FILE_PATTERN = "Journal.*.log";
-        private const string DEFAULT_COMMANDER_NAME = "Default";
 
         private readonly string logDirectory;
         private FileSystemWatcher watcher;
@@ -176,7 +175,7 @@ namespace EDEngineer.Utils.System
                 Directory.CreateDirectory(directory);
             }
 
-            foreach (var file in Directory.GetFiles(directory).ToList())
+            foreach (var file in Directory.GetFiles(directory).Where(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")).ToList())
             {
                 var splittedName = file.Split('.');
                 string commanderName;
@@ -193,7 +192,7 @@ namespace EDEngineer.Utils.System
                 var content = File.ReadAllLines(file).ToList();
 
 
-                if (gameLogLines.ContainsKey(commanderName))
+                if (!gameLogLines.ContainsKey(commanderName))
                 {
                     gameLogLines[commanderName] = content;
                 }

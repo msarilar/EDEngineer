@@ -70,9 +70,13 @@ namespace EDEngineer
                     continue;
                 }
 
-                var commanderState = new CommanderViewModel(commander);
-                commanderState.LoadState(allLogs[commander]);
+                var commanderState = new CommanderViewModel(commander, allLogs[commander]);
                 Commanders[commander] = commanderState;
+            }
+
+            if (Commanders.Count == 0) // we found absolutely nothing
+            {
+                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, new List<string>());
             }
 
             CurrentCommander = Commanders.First();
@@ -92,8 +96,7 @@ namespace EDEngineer
                     }
                     else
                     {
-                        var commanderState = new CommanderViewModel(logs.Item1);
-                        commanderState.LoadState(logs.Item2);
+                        var commanderState = new CommanderViewModel(logs.Item1, logs.Item2);
                         Commanders[logs.Item1] = commanderState;
                     }
                 });
