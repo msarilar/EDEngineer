@@ -20,6 +20,7 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 6. Ignore/Favorite flags - Favorited blueprints that become available to craft trigger a Windows toast
 7. Persistent state : EDEngineer will remember which filters you applied and what blueprints are favorited/ignored
 8. Movable window mode and resizable panels (use the RESET button to reset the window location while in "unlocked" mode)
+9. Handles multiple commanders if you own multiple accounts
 
 ### Additional Screenshots
 
