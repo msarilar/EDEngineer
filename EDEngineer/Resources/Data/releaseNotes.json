@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.29",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.28",
     "Content": "Fixed a small display issue with the \"Last Update\" timestamp that would't be correctly displayed"
   },
