@@ -630,7 +630,7 @@
                        TextWrapping="Wrap"
                        FontFamily="./Resources/Fonts/#Euro Caps">
                 <Run Text="Last update: " />
-                <Run Text="{Binding CurrentCommander.LastUpdate, Converter={StaticResource InstantToString}}"></Run>
+                <Run Text="{Binding CurrentCommander.Value.LastUpdate, Converter={StaticResource InstantToString}}"></Run>
             </TextBlock>
             <Button HorizontalAlignment="Right"
                     FontSize="15"
