@@ -1,17 +1,37 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using EDEngineer.Models;
 using NodaTime;
 
 namespace EDEngineer.DesignTime
 {
+    public class DesignKeyValuePair
+    {
+        public string Key { get; set; }
+        public DesignCommanderViewModel Value { get; set; }
+    }
+
     public class DesignViewModel
     {
-        public ObservableCollection<DesignFilter> GradeFilters { get; set; }
+        public ObservableCollection<DesignKeyValuePair> Commanders { get; set; }
+        public DesignKeyValuePair CurrentCommander { get; set; }
+        
+        public string LogDirectory { get; set; }
+    }
+
+    public class DesignCommanderViewModel
+    {
         public DesignState State { get; set; }
         public ObservableCollection<DesignBluePrint> Blueprints { get; set; }
         public DesignInstant LastUpdate { get; set; }
-        public string LogDirectory { get; set; }
+        public ObservableCollection<DesignFilter> GradeFilters { get; set; }
+        public string CommanderName { get; set; }
+
+        public override string ToString()
+        {
+            return $"CMDR {CommanderName}";
+        }
     }
 
     public class DesignInstant
