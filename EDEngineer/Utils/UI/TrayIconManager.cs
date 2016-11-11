@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 using EDEngineer.Utils.System;
 
@@ -48,6 +49,13 @@ namespace EDEngineer.Utils.UI
                 Text = "Set Shortcut"
             };
             setShortCutItem.Click += configureShortcutHandler;
+
+            var helpItem = new MenuItem()
+            {
+                Text = "Help",
+            };
+            helpItem.Click += (o,e) => Process.Start("https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues");
+
             var quitItem = new MenuItem()
             {
                 Text = "Quit",
@@ -59,6 +67,7 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(unlockItem);
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add("-");
+            menu.MenuItems.Add(helpItem);
             menu.MenuItems.Add(quitItem);
             return menu;
         }
