@@ -221,13 +221,13 @@ namespace EDEngineer.Utils.System
             var roamingDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
                 "EDEngineer");
 
-            if (Directory.Exists(localDirectory))
-            {
-                directory = localDirectory;
-            }
-            else if (Directory.Exists(roamingDirectory))
+            if (Directory.Exists(roamingDirectory))
             {
                 directory = roamingDirectory;
+            }
+            else if (Directory.Exists(localDirectory))
+            {
+                directory = localDirectory;
             }
             else
             {

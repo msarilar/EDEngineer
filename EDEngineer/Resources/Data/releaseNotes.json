@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.32",
-    "Content": ""
+    "Content": "Fixed an issue for users who installed the application on a domain server where manual changes were never saved. If that is your situation, please uninstall, delete the entire folder located in \"C:\\Users\\%USERNAME%\\AppData\\Local\\EDEngineer\" and reinstall the application"
   },
   {
     "Version": "1.0.0.31",
