@@ -150,14 +150,14 @@
                     Margin="10,0,0,0">
             <TabControl.ContentTemplate>
                 <DataTemplate>
-                    <TabItem Height="0"/>
+                    <TabItem Height="0" />
                 </DataTemplate>
             </TabControl.ContentTemplate>
             <TabControl.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock  Text="{Binding Value}"
-                                FontFamily="./Resources/Fonts/#Euro Caps"
-                                FontSize="25" />
+                    <TextBlock Text="{Binding Value}"
+                               FontFamily="./Resources/Fonts/#Euro Caps"
+                               FontSize="25" />
                 </DataTemplate>
             </TabControl.ItemTemplate>
         </TabControl>
@@ -512,7 +512,8 @@
                         </DataTemplate>
                     </DataGrid.RowDetailsTemplate>
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="G" Binding="{Binding Grade}" IsReadOnly="True" Width="30">
+                        <DataGridTextColumn Header="G" Binding="{Binding Grade}" IsReadOnly="True" Width="30"
+                                            CanUserResize="False">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="HorizontalAlignment" Value="Center" />
@@ -522,7 +523,10 @@
                         </DataGridTextColumn>
                         <DataGridTextColumn Header="Type"
                                             Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}"
-                                            IsReadOnly="True" Width="*" MaxWidth="110">
+                                            IsReadOnly="True"
+                                            Width="*"
+                                            MaxWidth="110"
+                                            CanUserResize="False">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="TextWrapping" Value="Wrap" />
@@ -532,7 +536,8 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="*">
+                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="*"
+                                            CanUserResize="False">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="TextWrapping" Value="Wrap" />
@@ -543,7 +548,7 @@
                                                 IsReadOnly="True"
                                                 SortMemberPath="ProgressSorting"
                                                 Width="*"
-                                                MaxWidth="140">
+                                                MaxWidth="140" CanUserResize="False">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid>
@@ -561,7 +566,7 @@
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
-                        <DataGridTemplateColumn IsReadOnly="True" Width="100">
+                        <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid>
