@@ -1,0 +1,1718 @@
+﻿{
+  "LanguageInfos": [
+    {
+      "TwoLetterISOLanguageName": "en",
+      "Name": "English",
+      "Ready": true
+    },
+    {
+      "TwoLetterISOLanguageName": "es",
+      "Name": "Español",
+      "Ready": false
+    },
+    {
+      "TwoLetterISOLanguageName": "de",
+      "Name": "Deutsch",
+      "Ready": false
+    },
+    {
+      "TwoLetterISOLanguageName": "fr",
+      "Name": "Français",
+      "Ready": false
+    },
+    {
+      "TwoLetterISOLanguageName": "es",
+      "Name": "Русский",
+      "Ready": false
+    }
+  ],
+  "Translations": {
+    "Short Range Blaster": {
+      "es": "Destructor de Corto Alcance",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Lightweight": {
+      "es": "Aligerado",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heavy Duty Hull Reinforcement": {
+      "es": "Refuerzo Estructural de Alta Resistencia",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Drive Strengthening": {
+      "es": "Fortalecimiento de motor",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Efficient Weapon": {
+      "es": "Arma Eficiente",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Lightweight Mount": {
+      "es": "Anclaje Ligero",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Armoured ": {
+      "es": "Blindado ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Reinforced": {
+      "es": "Reforzado",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Sturdy Mount": {
+      "es": "Anclaje Robusto",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Longer Range FSD interdictor": {
+      "es": "Interdictor de MDD de Largo Alcance",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Reinforced Shields": {
+      "es": "Escudos Reforzados",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Enhanced, Low Power Shields": {
+      "es": "Escudos Mejorados de Baja Energía",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shielded": {
+      "es": "Blindado",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Thermal Resistant ": {
+      "es": "Resistencia Térmica ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Weapon Focused ": {
+      "es": "Orientado a Armas ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Blast Resistant ": {
+      "es": "Blindaje Resistente a Explosiones ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "High Capacity Magazine": {
+      "es": "Cargador de Alta Capacidad",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Kinetic Resistant ": {
+      "es": "Resistencia Cinética ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Focused Weapon": {
+      "es": "Arma Concentrada",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Thermal Resistant Shields": {
+      "es": "Escudos de Resistencia Térmica",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Rapid Fire Modification": {
+      "es": "Modificación de Tiro Rápido",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Long Range Weapon": {
+      "es": "Arma de Largo Alcance",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Ammo Capacity": {
+      "es": "Capacidad de Munición",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Overcharged Weapon": {
+      "es": "Arma Sobrecargada",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Low Emissions ": {
+      "es": "Bajas Emisiones ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "System Focused ": {
+      "es": "Orientado a Sistemas ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Lightweight ": {
+      "es": "Aligerado ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Overcharged ": {
+      "es": "Sobrecargado ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Increased FSD Range": {
+      "es": "Aumento de Alcance de MDD",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Thermal Resistant Hull Reinforcement": {
+      "es": "Refuerzo Estructural de Resistencia Térmica",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Dirty Drive Tuning": {
+      "es": "Modificación de Motor Sucio",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Engine Focused ": {
+      "es": "Orientado a Motor ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Kinetic Resistant Hull Reinforcement": {
+      "es": "Refuerzo Estructural de Resistencia Cinética",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "High Charge Capacity ": {
+      "es": "Alta Capacidad de Carga ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Rapid Charge ": {
+      "es": "Recarga Rápida ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Expanded FSD Interdictor Capture Arc": {
+      "es": "Arco de Captura de Interdictor de MDD Extendido",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heavy Duty ": {
+      "es": "Alta Resistencia ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Charge Enhanced ": {
+      "es": "Carga Mejorada ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Blast Resistant Hull Reinforcement": {
+      "es": "Refuerzo Estructural de Resistencia Explosiva",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Double Shot": {
+      "es": "Doble Disparo",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Lightweight Hull Reinforcement": {
+      "es": "Refuerzo Estructural Aligerado",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Resistance Augmented ": {
+      "es": "Resistencia Aumentada ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Specialised ": {
+      "es": "Especializado ",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shielded ": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Faster FSD Boot Sequence": {
+      "es": "Secuencia de Inicio de MDD Rápida",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shielded FSD": {
+      "es": "MDD Blindado",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Clean Drive Tuning": {
+      "es": "Modificación de Motor Limpio",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Kinetic Resistant Shields": {
+      "es": "Escudos de Resistencia Cinética",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Plasma Accelerator": {
+      "es": "Plasma Accelerator",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Electronic Countermeasure": {
+      "es": "Electronic Countermeasure",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Life Support": {
+      "es": "Life Support",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Hull Reinforcement Package": {
+      "es": "Hull Reinforcement Package",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Cannon": {
+      "es": "Cannon",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Thrusters": {
+      "es": "Thrusters",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Multi-cannon": {
+      "es": "Multi-cannon",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Missile Rack": {
+      "es": "Missile Rack",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Power Plant": {
+      "es": "Power Plant",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Chaff Launcher": {
+      "es": "Chaff Launcher",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Frame Shift Drive Interdictor": {
+      "es": "Frame Shift Drive Interdictor",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shield Generator": {
+      "es": "Shield Generator",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Point Defence": {
+      "es": "Point Defence",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shield Booster": {
+      "es": "Shield Booster",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Kill Warrant Scanner": {
+      "es": "Kill Warrant Scanner",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Rail Gun": {
+      "es": "Rail Gun",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Power Distributor": {
+      "es": "Power Distributor",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Fragment Cannon": {
+      "es": "Fragment Cannon",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Mine Launcher": {
+      "es": "Mine Launcher",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Beam Laser": {
+      "es": "Beam Laser",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Armour": {
+      "es": "Armour",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Prospector Limpet Controller": {
+      "es": "Prospector Limpet Controller",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Manifest Scanner": {
+      "es": "Manifest Scanner",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Burst Laser": {
+      "es": "Burst Laser",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heat Sink Launcher": {
+      "es": "Heat Sink Launcher",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Frame Shift Wake Scanner": {
+      "es": "Frame Shift Wake Scanner",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pulse Laser": {
+      "es": "Pulse Laser",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Refinery": {
+      "es": "Refinery",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Auto Field-Maintenance Unit": {
+      "es": "Auto Field-Maintenance Unit",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Fuel Transfer Limpet Controller": {
+      "es": "Fuel Transfer Limpet Controller",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Frame Shift Drive": {
+      "es": "Frame Shift Drive",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Hatch Breaker Limpet Controller": {
+      "es": "Hatch Breaker Limpet Controller",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Fuel Scoop": {
+      "es": "Fuel Scoop",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Torpedo Pylon": {
+      "es": "Torpedo Pylon",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Collector Limpet Controller": {
+      "es": "Collector Limpet Controller",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shield Cell Bank": {
+      "es": "Shield Cell Bank",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Aberrant Shield Pattern Analysis": {
+      "es": "Aberrant Shield Pattern Analysis",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Abnormal Compact Emission Data": {
+      "es": "Abnormal Compact Emission Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Adaptive Encryptors Capture": {
+      "es": "Adaptive Encryptors Capture",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Anomalous Bulk Scan Data": {
+      "es": "Anomalous Bulk Scan Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Anomalous FSD Telemetry": {
+      "es": "Anomalous FSD Telemetry",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Antimony": {
+      "es": "Antimony",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Arsenic": {
+      "es": "Arsenic",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Articulation Motors": {
+      "es": "Articulation Motors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Atypical Disrupted Wake Echoes": {
+      "es": "Atypical Disrupted Wake Echoes",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Atypical Encryption Archives": {
+      "es": "Atypical Encryption Archives",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Basic Conductors": {
+      "es": "Basic Conductors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Biotech Conductors": {
+      "es": "Biotech Conductors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Bromellite": {
+      "es": "Bromellite",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Cadmium": {
+      "es": "Cadmium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Carbon": {
+      "es": "Carbon",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Chemical Distillery": {
+      "es": "Chemical Distillery",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Chemical Manipulators": {
+      "es": "Chemical Manipulators",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Chemical Processors": {
+      "es": "Chemical Processors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Chemical Storage Units": {
+      "es": "Chemical Storage Units",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Chromium": {
+      "es": "Chromium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Classified Scan Databanks": {
+      "es": "Classified Scan Databanks",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Classified Scan Fragment": {
+      "es": "Classified Scan Fragment",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "CMM Composite": {
+      "es": "CMM Composite",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Compact Composites": {
+      "es": "Compact Composites",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Compound Shielding": {
+      "es": "Compound Shielding",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Conductive Ceramics": {
+      "es": "Conductive Ceramics",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Conductive Components": {
+      "es": "Conductive Components",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Conductive Polymers": {
+      "es": "Conductive Polymers",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Configurable Components": {
+      "es": "Configurable Components",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Core Dynamics Composites": {
+      "es": "Core Dynamics Composites",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Cracked Industrial Firmware": {
+      "es": "Cracked Industrial Firmware",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Crystal Shards": {
+      "es": "Crystal Shards",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Datamined Wake Exceptions": {
+      "es": "Datamined Wake Exceptions",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Decoded Emission Data": {
+      "es": "Decoded Emission Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Distorted Shield Cycle Recordings": {
+      "es": "Distorted Shield Cycle Recordings",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Divergent Scan Data": {
+      "es": "Divergent Scan Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Eccentric Hyperspace Trajectories": {
+      "es": "Eccentric Hyperspace Trajectories",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Electrochemical Arrays": {
+      "es": "Electrochemical Arrays",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Emergency Power Cells": {
+      "es": "Emergency Power Cells",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Energy Grid Assembly": {
+      "es": "Energy Grid Assembly",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Exceptional Scrambled Emission Data": {
+      "es": "Exceptional Scrambled Emission Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Exhaust Manifold": {
+      "es": "Exhaust Manifold",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Exquisite Focus Crystals": {
+      "es": "Exquisite Focus Crystals",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Filament Composites": {
+      "es": "Filament Composites",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Flawed Focus Crystals": {
+      "es": "Flawed Focus Crystals",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Focus Crystals": {
+      "es": "Focus Crystals",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Galvanising Alloys": {
+      "es": "Galvanising Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Germanium": {
+      "es": "Germanium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Grid Resistors": {
+      "es": "Grid Resistors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Hardware Diagnostic Sensor": {
+      "es": "Hardware Diagnostic Sensor",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heat Conduction Wiring": {
+      "es": "Heat Conduction Wiring",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heat Dispersion Plate": {
+      "es": "Heat Dispersion Plate",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heat Exchangers": {
+      "es": "Heat Exchangers",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heat Resistant Ceramics": {
+      "es": "Heat Resistant Ceramics",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heat Vanes": {
+      "es": "Heat Vanes",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Heatsink Interlink": {
+      "es": "Heatsink Interlink",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "High Density Composites": {
+      "es": "High Density Composites",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "HN Shock Mount": {
+      "es": "HN Shock Mount",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Hybrid Capacitors": {
+      "es": "Hybrid Capacitors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Imperial Shielding": {
+      "es": "Imperial Shielding",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Improvised Components": {
+      "es": "Improvised Components",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Inconsistent Shield Soak Analysis": {
+      "es": "Inconsistent Shield Soak Analysis",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Insulating Membrane": {
+      "es": "Insulating Membrane",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Ion Distributor": {
+      "es": "Ion Distributor",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Iron": {
+      "es": "Iron",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Irregular Emission Data": {
+      "es": "Irregular Emission Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Magnetic Emitter Coil": {
+      "es": "Magnetic Emitter Coil",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Manganese": {
+      "es": "Manganese",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Mechanical Components": {
+      "es": "Mechanical Components",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Mechanical Equipment": {
+      "es": "Mechanical Equipment",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Mechanical Scrap": {
+      "es": "Mechanical Scrap",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Mercury": {
+      "es": "Mercury",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Micro Controllers": {
+      "es": "Micro Controllers",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Micro-Weave Cooling Hoses": {
+      "es": "Micro-Weave Cooling Hoses",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Military Grade Alloys": {
+      "es": "Military Grade Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Military Supercapacitors": {
+      "es": "Military Supercapacitors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Modified Consumer Firmware": {
+      "es": "Modified Consumer Firmware",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Modified Embedded Firmware": {
+      "es": "Modified Embedded Firmware",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Modular Terminals": {
+      "es": "Modular Terminals",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Molybdenum": {
+      "es": "Molybdenum",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Nanobreakers": {
+      "es": "Nanobreakers",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Neofabric Insulation": {
+      "es": "Neofabric Insulation",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Nickel": {
+      "es": "Nickel",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Niobium": {
+      "es": "Niobium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Open Symmetric Keys": {
+      "es": "Open Symmetric Keys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Osmium": {
+      "es": "Osmium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pattern Alpha Obelisk Data": {
+      "es": "Pattern Alpha Obelisk Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pattern Beta Obelisk Data": {
+      "es": "Pattern Beta Obelisk Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pattern Delta Obelisk Data": {
+      "es": "Pattern Delta Obelisk Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pattern Epsilon Obelisk Data": {
+      "es": "Pattern Epsilon Obelisk Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pattern Gamma Obelisk Data": {
+      "es": "Pattern Gamma Obelisk Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Peculiar Shield Frequency Data": {
+      "es": "Peculiar Shield Frequency Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Pharmaceutical Isolators": {
+      "es": "Pharmaceutical Isolators",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Phase Alloys": {
+      "es": "Phase Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Phosphorus": {
+      "es": "Phosphorus",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Platinum": {
+      "es": "Platinum",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Polonium": {
+      "es": "Polonium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Polymer Capacitors": {
+      "es": "Polymer Capacitors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Power Converter": {
+      "es": "Power Converter",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Power Transfer Bus": {
+      "es": "Power Transfer Bus",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Praseodymium": {
+      "es": "Praseodymium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Precipitated Alloys": {
+      "es": "Precipitated Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Proprietary Composites": {
+      "es": "Proprietary Composites",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Proto Heat Radiators": {
+      "es": "Proto Heat Radiators",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Proto Light Alloys": {
+      "es": "Proto Light Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Proto Radiolic Alloys": {
+      "es": "Proto Radiolic Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Radiation Baffle": {
+      "es": "Radiation Baffle",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Refined Focus Crystals": {
+      "es": "Refined Focus Crystals",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Reinforced Mounting Plate": {
+      "es": "Reinforced Mounting Plate",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Ruthenium": {
+      "es": "Ruthenium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Salvaged Alloys": {
+      "es": "Salvaged Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Samarium": {
+      "es": "Samarium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Security Firmware Patch": {
+      "es": "Security Firmware Patch",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Selenium": {
+      "es": "Selenium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shield Emitters": {
+      "es": "Shield Emitters",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Shielding Sensors": {
+      "es": "Shielding Sensors",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Specialised Legacy Firmware": {
+      "es": "Specialised Legacy Firmware",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Strange Wake Solutions": {
+      "es": "Strange Wake Solutions",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Sulphur": {
+      "es": "Sulphur",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Tagged Encryption Codes": {
+      "es": "Tagged Encryption Codes",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Technetium": {
+      "es": "Technetium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Telemetry Suite": {
+      "es": "Telemetry Suite",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Tellurium": {
+      "es": "Tellurium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Tempered Alloys": {
+      "es": "Tempered Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Thermic Alloys": {
+      "es": "Thermic Alloys",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Tin": {
+      "es": "Tin",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Tungsten": {
+      "es": "Tungsten",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unexpected Emission Data": {
+      "es": "Unexpected Emission Data",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unidentified Scan Archives": {
+      "es": "Unidentified Scan Archives",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unknown Fragment": {
+      "es": "Unknown Fragment",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Untypical Shield Scans": {
+      "es": "Untypical Shield Scans",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unusual Encrypted Files": {
+      "es": "Unusual Encrypted Files",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Vanadium": {
+      "es": "Vanadium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Worn Shield Emitters": {
+      "es": "Worn Shield Emitters",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Yttrium": {
+      "es": "Yttrium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Zinc": {
+      "es": "Zinc",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Zirconium": {
+      "es": "Zirconium",
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "ECM": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Hull": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "FSD Interdictor": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Prospector LC": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Fuel Transfer LC": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Hatch Breaker LC": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Collector LC": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "AFMU": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Data": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Commodity": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Commodities": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Material": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Materials": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Type": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Name": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Progress": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Last Update": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unlock Window": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Show entries with no stock?": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Show only for favorites?": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Grade Filter": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Engineer Filter": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Type Filter": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Ignored And Favorite Filter": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Craftable Filter": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Ingredient Filter (Reversed)": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    ": can craft": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Reset": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Lock Window": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Show": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Toggle Window Mode (Locked/Unlocked)": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Reset Window Position": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Set Shortcut": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Help": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Quit": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "OK": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Cancel": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Input a shortcut that's going to be used to show the window": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "You can't use an empty shortcut": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Error": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "The requested shortcut ({0}) is invalid": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unknown material, please contact the author ! {0}": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Neither": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Favorite": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Ignored": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Craftable": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Non Craftable": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Missing Commodities": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "All": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "An error has been thrown by the application:": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unrecoverable Error": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Close": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Select a new log directory": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Couln't find the log folder for elite, you'll have to specify it": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Selected directory doesn't seem to contain any log file ; are you sure?": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Warning": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "No folder in use ; click to change": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    }
+  }
+}
+
