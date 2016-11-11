@@ -157,7 +157,7 @@ namespace EDEngineer.Utils.System
                                 Path.GetFileName(f).EndsWith(".log")))
             {
                 var fileContents = ReadLinesWithoutLock(file);
-                if (fileContents.Item2.Count <= 1)
+                if (fileContents.Item1 == DEFAULT_COMMANDER_NAME)
                 {
                     continue;
                 }
@@ -187,7 +187,7 @@ namespace EDEngineer.Utils.System
 
                 if (splittedName.Length == 2) // manualChanges.json
                 {
-                    commanderName = gameLogLines.Keys.FirstOrDefault() ?? DEFAULT_COMMANDER_NAME;
+                    commanderName = gameLogLines.Keys.FirstOrDefault(k => k != DEFAULT_COMMANDER_NAME) ?? DEFAULT_COMMANDER_NAME;
                 }
                 else // manualChanges.Hg.Json
                 {

@@ -94,7 +94,7 @@ namespace EDEngineer
                     {
                         Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
                     }
-                    else
+                    else if(logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
                     {
                         var commanderState = new CommanderViewModel(logs.Item1, logs.Item2);
                         Commanders[logs.Item1] = commanderState;
