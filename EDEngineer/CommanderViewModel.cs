@@ -128,13 +128,8 @@ namespace EDEngineer
             }
         }
 
-        public void UserChange(Entry entry, int change)
+        public JournalEntry UserChange(Entry entry, int change)
         {
-            if (change == 0)
-            {
-                return;
-            }
-
             var logEntry = new JournalEntry
             {
                 JournalOperation = new ManualChangeOperation
@@ -152,9 +147,7 @@ namespace EDEngineer
 
             logEntry.JournalOperation.Mutate(State);
 
-            var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "EDEngineer", $"manualChanges.{CommanderName}.json");
-            File.AppendAllText(path, json + Environment.NewLine);
+            return logEntry;
         }
 
         public void ApplyEventsToSate(IEnumerable<string> allLogs)

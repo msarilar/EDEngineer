@@ -7,7 +7,7 @@ using Application = System.Windows.Application;
 
 namespace EDEngineer.Utils.System
 {
-    public class IOUtils
+    public static class IOUtils
     {
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)
         {

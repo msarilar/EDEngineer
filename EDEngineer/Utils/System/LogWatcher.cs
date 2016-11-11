@@ -145,6 +145,7 @@ namespace EDEngineer.Utils.System
             return Tuple.Create(commanderName, gameLogLines);
         }
 
+        public string ManualChangesDirectory { get; private set; }
         public Dictionary<string, List<string>> RetrieveAllLogs()
         {
             var gameLogLines = new Dictionary<string, List<string>>();
@@ -172,15 +173,9 @@ namespace EDEngineer.Utils.System
                 }
             }
 
-            var directory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "EDEngineer");
+            ManualChangesDirectory = GetManualChangesDirectory();
 
-            if (!Directory.Exists(directory))
-            {
-                Directory.CreateDirectory(directory);
-            }
-
-            foreach (var file in Directory.GetFiles(directory).Where(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")).ToList())
+            foreach (var file in Directory.GetFiles(ManualChangesDirectory).Where(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")).ToList())
             {
                 var splittedName = file.Split('.');
                 string commanderName;
@@ -209,12 +204,46 @@ namespace EDEngineer.Utils.System
                 // migrate old manualChanges.json files to new one:
                 if (splittedName.Length == 2)
                 {
-                    File.Move(file, Path.Combine(directory, $"{splittedName[0]}.{commanderName}.json"));
+                    File.Move(file, Path.Combine(ManualChangesDirectory, $"{splittedName[0]}.{commanderName}.json"));
                     File.Delete(file);
                 }
             }
 
             return gameLogLines;
+        }
+
+        private string GetManualChangesDirectory()
+        {
+            string directory;
+
+            var localDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "EDEngineer");
+            var roamingDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "EDEngineer");
+
+            if (Directory.Exists(localDirectory))
+            {
+                directory = localDirectory;
+            }
+            else if (Directory.Exists(roamingDirectory))
+            {
+                directory = roamingDirectory;
+            }
+            else
+            {
+                try
+                {
+                    Directory.CreateDirectory(roamingDirectory);
+                    directory = roamingDirectory;
+                }
+                catch
+                {
+                    Directory.CreateDirectory(localDirectory);
+                    directory = localDirectory;
+                }
+            }
+
+            return directory;
         }
 
         public void Dispose()

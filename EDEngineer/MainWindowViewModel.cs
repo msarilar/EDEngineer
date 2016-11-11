@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -140,7 +141,15 @@ namespace EDEngineer
 
         public void UserChange(Entry entry, int i)
         {
-            CurrentCommander.Value.UserChange(entry, i);
+            if (i == 0)
+            {
+                return;
+            }
+
+            var userChange = CurrentCommander.Value.UserChange(entry, i);
+
+            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"manualChanges.{CurrentCommander.Key}.json");
+            File.AppendAllText(path, userChange.OriginalJson + Environment.NewLine);
         }
     }
 }
