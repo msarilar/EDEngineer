@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.0.31",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.30",
     "Content": "Another hotfix for weird logs not containing any CMDR's information"
   },
