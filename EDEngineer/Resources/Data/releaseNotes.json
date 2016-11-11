@@ -1,7 +1,11 @@
 ﻿[
   {
+    "Version": "1.0.0.32",
+    "Content": ""
+  },
+  {
     "Version": "1.0.0.31",
-    "Content": "* Persistent window state (locked / unlocked) between restarts\r\n* Salvaged your old favorites/ignored blueprints that were lost in the previous update!\r\n Added a new Reset command in the tasktray icon in case your screen goes black. Checkout the Help command too!"
+    "Content": "* Persistent window state (locked / unlocked) between restarts\r\n* Salvaged your old favorites/ignored blueprints that were lost in the previous update!\r\n* Added a new Reset command in the tasktray icon in case your screen goes black. Checkout the Help command too!"
   },
   {
     "Version": "1.0.0.30",
