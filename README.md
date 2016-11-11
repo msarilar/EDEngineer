@@ -2,6 +2,8 @@
 
 EDEngineer is a basic app I've written to track materials, data and cargo acquired in Elite Dangerous. That way, we can also track progress of blueprints available from the Engineers.
 
+##### [Common Issues and their fixes!](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
+
 ##### **Warning:** Elite Dangerous started outputting logs only recently. It's very probable that the initial state of the app is wrong (negative numbers, missing entries, wrong numbers...) so you will have to manually change the quantities using the +/- buttons. These manual changes are recorded so you don't have to do it each time you start the app. After that, you are not supposed to use these +/- buttons. You can also directly edit the numbers without going through the buttons. Changes are saved and persist between updates. Even if you reinstall, they will remain in C:\Users\%USERNAME%\AppData\Local\EDEngineer !
 
 ![Overview](http://i.imgur.com/tDNLdAS.png)
