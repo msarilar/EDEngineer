@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.0.29",
-    "Content": ""
+    "Content": "Hotfix to handle weird logs some users have encountered."
   },
   {
     "Version": "1.0.0.28",

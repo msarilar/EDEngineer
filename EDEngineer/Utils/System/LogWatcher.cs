@@ -157,6 +157,11 @@ namespace EDEngineer.Utils.System
                                 Path.GetFileName(f).EndsWith(".log")))
             {
                 var fileContents = ReadLinesWithoutLock(file);
+                if (fileContents.Item2.Count <= 1)
+                {
+                    continue;
+                }
+
                 if (gameLogLines.ContainsKey(fileContents.Item1))
                 {
                     gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
