@@ -158,6 +158,9 @@
     <Compile Include="Filters\IgnoredFavoriteFilter.cs" />
     <Compile Include="Filters\IngredientFilter.cs" />
     <Compile Include="Models\EntryData.cs" />
+    <Compile Include="Models\Localization\Translation.cs" />
+    <Compile Include="Models\Localization\LanguageInfo.cs" />
+    <Compile Include="Models\Localization\Languages.cs" />
     <Compile Include="Models\Operations\EngineerProgressOperation.cs" />
     <Compile Include="Models\Operations\NoOperation.cs" />
     <Compile Include="Models\Operations\SynthesisOperation.cs" />
