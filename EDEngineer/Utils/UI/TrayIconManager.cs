@@ -10,9 +10,10 @@ namespace EDEngineer.Utils.UI
         public static IDisposable Init(EventHandler showHandler,
             EventHandler quitHandler,
             EventHandler configureShortcutHandler,
-            EventHandler unlockWindowHandler)
+            EventHandler unlockWindowHandler,
+            EventHandler resetWindowHandler)
         {
-            var menu = BuildContextMenu(showHandler, quitHandler, configureShortcutHandler, unlockWindowHandler);
+            var menu = BuildContextMenu(showHandler, quitHandler, configureShortcutHandler, unlockWindowHandler, resetWindowHandler);
             
             var icon = new NotifyIcon
             {
@@ -30,7 +31,7 @@ namespace EDEngineer.Utils.UI
             });
         }
 
-        private static ContextMenu BuildContextMenu(EventHandler showHandler, EventHandler quitHandler, EventHandler configureShortcutHandler, EventHandler unlockWindowHandler)
+        private static ContextMenu BuildContextMenu(EventHandler showHandler, EventHandler quitHandler, EventHandler configureShortcutHandler, EventHandler unlockWindowHandler, EventHandler resetWindowHandler)
         {
             var showItem = new MenuItem()
             {
@@ -40,9 +41,15 @@ namespace EDEngineer.Utils.UI
 
             var unlockItem = new MenuItem()
             {
-                Text = "Toggle Window Mode (Lock/Unlocked)"
+                Text = "Toggle Window Mode (Locked/Unlocked)"
             };
             unlockItem.Click += unlockWindowHandler;
+
+            var resetItem = new MenuItem()
+            {
+                Text = "Reset Window Position"
+            };
+            resetItem.Click += resetWindowHandler;
 
             var setShortCutItem = new MenuItem()
             {
@@ -65,6 +72,7 @@ namespace EDEngineer.Utils.UI
             var menu = new ContextMenu();
             menu.MenuItems.Add(showItem);
             menu.MenuItems.Add(unlockItem);
+            menu.MenuItems.Add(resetItem);
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(helpItem);

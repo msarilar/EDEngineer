@@ -52,6 +52,22 @@ namespace EDEngineer
             }
 
             InitializeComponent();
+
+            if (Properties.Settings.Default.WindowUnlocked)
+            {
+                AllowsTransparency = false;
+                WindowStyle = WindowStyle.SingleBorderWindow;
+                Topmost = false;
+                ShowInTaskbar = true;
+            }
+            else
+            {
+                AllowsTransparency = true;
+                WindowStyle = WindowStyle.None;
+                Topmost = true;
+                ShowInTaskbar = false;
+            }
+
             viewModel = new MainWindowViewModel();
             DataContext = viewModel;
 
@@ -100,7 +116,10 @@ namespace EDEngineer
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
             }
 
-            icon = TrayIconManager.Init((o, e) => ShowWindow(), (o, e) => Close(), ConfigureShortcut, (o, e) => ToggleEditModeChecked(o, null));
+            icon = TrayIconManager.Init((o, e) => ShowWindow(), 
+                (o, e) => Close(), ConfigureShortcut, 
+                (o, e) => ToggleEditModeChecked(o, null),
+                (o, e) => ResetWindowPositionButtonClicked(o, null));
 
             var shortcut = SettingsManager.Shortcut;
 
@@ -304,7 +323,7 @@ namespace EDEngineer
                 icon.Dispose();
             }
 
-            viewModel.LogWatcher?.Dispose();
+            viewModel?.LogWatcher?.Dispose();
         }
 
         private void WindowActivatedCompleted(object sender, EventArgs e)
@@ -320,14 +339,10 @@ namespace EDEngineer
 
         private void ToggleEditModeChecked(object sender, RoutedEventArgs e)
         {
-            var w = new MainWindow()
-            {
-                AllowsTransparency = !AllowsTransparency,
-                WindowStyle = WindowStyle == WindowStyle.SingleBorderWindow ? WindowStyle.None : WindowStyle.SingleBorderWindow,
-                Topmost = !Topmost,
-                ShowInTaskbar = !ShowInTaskbar
-            };
+            Properties.Settings.Default.WindowUnlocked = !Properties.Settings.Default.WindowUnlocked;
+            Properties.Settings.Default.Save();
 
+            var w = new MainWindow();
             Close();
             w.Show();
         }
@@ -357,7 +372,13 @@ namespace EDEngineer
         {
             SettingsManager.Dimensions.Reset();
             bypassPositionSave = true;
-            ToggleEditModeChecked(null, null);
+
+            Properties.Settings.Default.WindowUnlocked = false;
+            Properties.Settings.Default.Save();
+
+            var w = new MainWindow();
+            Close();
+            w.Show();
         }
     }
 }

@@ -199,5 +199,17 @@ namespace EDEngineer.Properties {
                 this["ResetUI"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool WindowUnlocked {
+            get {
+                return ((bool)(this["WindowUnlocked"]));
+            }
+            set {
+                this["WindowUnlocked"] = value;
+            }
+        }
     }
 }

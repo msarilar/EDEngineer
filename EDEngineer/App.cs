@@ -12,16 +12,19 @@ namespace EDEngineer
         {
             AppDomain.CurrentDomain.UnhandledException += (o, e) =>
             {
-                Current.MainWindow.Visibility = Visibility.Hidden;
+                if (Current.MainWindow != null)
+                {
+                    Current.MainWindow.Visibility = Visibility.Hidden;
+                }
+                
                 new ErrorWindow((Exception)e.ExceptionObject).ShowDialog();
-                Current.MainWindow.Close();
+                Current.MainWindow?.Close();
             };
 
             Current.DispatcherUnhandledException += (o, e) =>
             {
-                Current.MainWindow.Visibility = Visibility.Hidden;
                 new ErrorWindow(e.Exception).ShowDialog();
-                Current.MainWindow.Close();
+                Current.MainWindow?.Close();
             };
         }
     }

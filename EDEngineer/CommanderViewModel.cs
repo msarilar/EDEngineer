@@ -226,11 +226,38 @@ namespace EDEngineer
                 {
                     blueprint.Favorite = true;
                     favoritedBlueprints.Add(blueprint);
+
+                    if (Settings.Default.Favorites.Contains($"{blueprint}"))
+                    {
+                        Settings.Default.Favorites.Remove($"{blueprint}");
+                        Settings.Default.Save();
+                    }
+                }
+                else if (Settings.Default.Favorites.Contains($"{blueprint}"))
+                {
+                    blueprint.Favorite = true;
+                    favoritedBlueprints.Add(blueprint);
+                    Settings.Default.Favorites.Remove($"{blueprint}");
+                    Settings.Default.Favorites.Add($"{CommanderName}:{blueprint}");
+                    Settings.Default.Save();
                 }
 
                 if (Settings.Default.Ignored.Contains($"{CommanderName}:{blueprint}"))
                 {
                     blueprint.Ignored = true;
+
+                    if (Settings.Default.Ignored.Contains($"{blueprint}"))
+                    {
+                        Settings.Default.Ignored.Remove($"{blueprint}");
+                        Settings.Default.Save();
+                    }
+                }
+                else if (Settings.Default.Ignored.Contains($"{blueprint}"))
+                {
+                    blueprint.Ignored = true;
+                    Settings.Default.Ignored.Remove($"{blueprint}");
+                    Settings.Default.Ignored.Add($"{CommanderName}:{blueprint}");
+                    Settings.Default.Save();
                 }
 
                 blueprint.PropertyChanged += (o, e) =>
