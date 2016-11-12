@@ -15,8 +15,19 @@ namespace EDEngineer.DesignTime
     {
         public ObservableCollection<DesignKeyValuePair> Commanders { get; set; }
         public DesignKeyValuePair CurrentCommander { get; set; }
-        
+        public DesignLanguages Languages { get; set; }
+
         public string LogDirectory { get; set; }
+    }
+
+    public class DesignLanguages
+    {
+        public DesignLanguageInfo CurrentLanguage { get; set; }
+    }
+
+    public class DesignLanguageInfo
+    {
+        public string TwoLetterISOLanguageName { get; set; }
     }
 
     public class DesignCommanderViewModel

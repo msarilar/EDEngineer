@@ -7,6 +7,7 @@ using EDEngineer.Properties;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
 using System.Windows.Data;
+using EDEngineer.DesignTime;
 
 namespace EDEngineer.Models.Localization
 {
@@ -114,6 +115,11 @@ namespace EDEngineer.Models.Localization
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            if (value is DesignLanguageInfo)
+            {
+                return parameter;
+            }
+
             var lang = (LanguageInfo) value;
             var text = parameter.ToString();
 

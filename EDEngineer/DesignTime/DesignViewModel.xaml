@@ -2,6 +2,13 @@
                  xmlns:system="clr-namespace:System;assembly=mscorlib"
                  xmlns:generic="clr-namespace:System.Collections.Generic;assembly=mscorlib"
                  LogDirectory="C:\Users\Max\AppData\Local\EDEngineer">
+    <DesignViewModel.Languages>
+        <DesignLanguages>
+            <DesignLanguages.CurrentLanguage>
+                <DesignLanguageInfo TwoLetterISOLanguageName="en"/>
+            </DesignLanguages.CurrentLanguage>
+        </DesignLanguages>
+    </DesignViewModel.Languages>
     <DesignViewModel.Commanders>
         <DesignKeyValuePair Key="Badal">
             <DesignKeyValuePair.Value>
