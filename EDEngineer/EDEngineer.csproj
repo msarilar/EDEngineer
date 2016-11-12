@@ -258,7 +258,7 @@
     <AppDesigner Include="Properties\" />
     <EmbeddedResource Include="Resources\Data\entryData.json" />
     <EmbeddedResource Include="Resources\Data\releaseNotes.json" />
-    <None Include="Resources\Data\localization.json" />
+    <EmbeddedResource Include="Resources\Data\localization.json" />
     <Resource Include="Resources\Fonts\telegrama.otf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

@@ -1,36 +1,31 @@
 ﻿{
-  "LanguageInfos": [
-    {
+  "LanguageInfos": {
+    "en": {
       "TwoLetterISOLanguageName": "en",
       "Name": "English",
-      "Ready": true,
       "WarningIncomplete": "Warning ! That translation is not complete. If the application can't find a translation for a specific word, it will use the english version"
     },
-    {
+    "es": {
       "TwoLetterISOLanguageName": "es",
       "Name": "Español",
-      "Ready": false,
-      "WarningIncomplete": ""
+      "WarningIncomplete": null
     },
-    {
+    "de": {
       "TwoLetterISOLanguageName": "de",
       "Name": "Deutsch",
-      "Ready": false,
-      "WarningIncomplete": ""
+      "WarningIncomplete": null
     },
-    {
+    "fr": {
       "TwoLetterISOLanguageName": "fr",
       "Name": "Français",
-      "Ready": false,
       "WarningIncomplete": "Avertissement ! Cette traduction n'est pas complète. Si l'application ne peut pas trouver de traduction pour un mot spécifique, elle utilisera la version anglaise"
     },
-    {
+    "ru": {
       "TwoLetterISOLanguageName": "ru",
       "Name": "Русский",
-      "Ready": false,
-      "WarningIncomplete": ""
+      "WarningIncomplete": null
     }
-  ],
+  },
   "Translations": {
     "Short Range Blaster": {
       "es": "Destructor de Corto Alcance",
@@ -1720,4 +1715,5 @@
     }
   }
 }
+
 

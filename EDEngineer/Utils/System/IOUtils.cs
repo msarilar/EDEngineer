@@ -104,6 +104,15 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static string GetLocalizationJson()
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.localization.json"))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
         public static string GetEntryDatasJson()
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.entryData.json"))

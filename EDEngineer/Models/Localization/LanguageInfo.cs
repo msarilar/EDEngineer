@@ -5,5 +5,6 @@
         public string TwoLetterISOLanguageName { get; set; }
         public string Name { get; set; }
         public bool Ready { get; set; }
+        public double Progress { get; set; }
     }
 }

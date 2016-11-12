@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using EDEngineer.Models;
+using EDEngineer.Models.Localization;
 using EDEngineer.Properties;
 using EDEngineer.Utils.Collections;
 using EDEngineer.Utils.System;
@@ -15,6 +16,8 @@ namespace EDEngineer
     public class MainWindowViewModel : INotifyPropertyChanged
     {
         public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; }  = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
+
+        public Languages Languages { get; private set; }
 
         public KeyValuePair<string, CommanderViewModel> CurrentCommander
         {
@@ -49,8 +52,9 @@ namespace EDEngineer
             }
         }
 
-        public MainWindowViewModel()
+        public MainWindowViewModel(Languages languages)
         {
+            Languages = languages;
             LoadState();
         }
 

@@ -14,6 +14,7 @@ using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using EDEngineer.Models;
+using EDEngineer.Models.Localization;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
@@ -51,6 +52,8 @@ namespace EDEngineer
                 // silently fail if release notes can't be shown
             }
 
+            var languages = Languages.InitLanguages();
+
             InitializeComponent();
 
             if (Properties.Settings.Default.WindowUnlocked)
@@ -68,7 +71,7 @@ namespace EDEngineer
                 ShowInTaskbar = false;
             }
 
-            viewModel = new MainWindowViewModel();
+            viewModel = new MainWindowViewModel(languages);
             DataContext = viewModel;
 
             RefreshCargoSources();
