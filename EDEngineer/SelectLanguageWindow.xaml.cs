@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 using EDEngineer.Models.Localization;
 
 namespace EDEngineer
@@ -17,6 +18,11 @@ namespace EDEngineer
         private void OkButtonClicked(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void HelpTranslateButtonClicked(object sender, RoutedEventArgs e)
+        {
+            Process.Start("https://github.com/msarilar/EDEngineer/issues/32");
         }
     }
 }

@@ -56,19 +56,28 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <TextBlock Grid.Row="1"
-                   Foreground="Red"
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="1"
+                    Margin="5"
+                    Visibility="{Binding CurrentLanguage.Ready, Converter={StaticResource BooleanToVisibility}, ConverterParameter=Inverted}">
+            <TextBlock Foreground="Red"
                    Text="{Binding CurrentLanguage.NotReadyWarning}"
                    TextWrapping="Wrap"
                    FontSize="15"
-                   Margin="5"
                    Background="Black"
                    TextAlignment="Justify"
-                   FontWeight="Bold"
-                   Visibility="{Binding CurrentLanguage.Ready, Converter={StaticResource BooleanToVisibility}, ConverterParameter=Inverted}"/>
+                   FontWeight="Bold"/>
+            <Button Content="Help Translate The Application"
+                    HorizontalAlignment="Stretch"
+                    Background="Blue"
+                    Foreground="White"
+                    x:Name="HelpTranslateButton"
+                    Click="HelpTranslateButtonClicked"></Button>
+        </StackPanel>
+        
         <Button Content="OK"
                 Background="Green"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Stretch"
                 Grid.Row="2"
                 x:Name="OkButton"
                 Click="OkButtonClicked"

@@ -50,7 +50,6 @@ namespace EDEngineer
             {
                 // silently fail if release notes can't be shown
             }
-            Properties.Settings.Default.Language = null;
 
             Languages.InitLanguages();
 
