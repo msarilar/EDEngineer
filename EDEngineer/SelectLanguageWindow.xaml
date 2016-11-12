@@ -9,6 +9,7 @@
         mc:Ignorable="d"
         Title="Language"
         SizeToContent="Height"
+        Topmost="True"
         Height="300"
         Width="300">
     <Grid>
