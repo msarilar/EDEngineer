@@ -81,8 +81,7 @@ namespace EDEngineer
                 .Union(EngineerFilters)
                 .Union(TypeFilters)
                 .Union(IgnoredFavoriteFilters)
-                .Union(CraftableFilters)
-                .Union(IngredientFilters).ToList();
+                .Union(CraftableFilters).ToList();
 
             LoadSavedFilters();
 
@@ -101,7 +100,7 @@ namespace EDEngineer
             }
             else
             {
-                foreach (var filter in AllFilters.Where(filter => !(filter is IngredientFilter)))
+                foreach (var filter in AllFilters)
                 {
                     filter.Checked = Properties.Settings.Default.FiltersChecked.Contains(filter.UniqueName);
 
@@ -160,11 +159,11 @@ namespace EDEngineer
             };
         }
 
-        private List<BlueprintFilter> AllFilters { get; }
+        public List<BlueprintFilter> AllFilters { get; }
 
         public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries)
         {
-            foreach (var filter in AllFilters)
+            foreach (var filter in AllFilters.Concat(IngredientFilters))
             {
                 filter.PropertyChanged += (o, e) =>
                 {

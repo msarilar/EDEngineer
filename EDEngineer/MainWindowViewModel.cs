@@ -155,5 +155,18 @@ namespace EDEngineer
             var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"manualChanges.{CurrentCommander.Key}.json");
             File.AppendAllText(path, userChange.OriginalJson + Environment.NewLine);
         }
+
+        public void ChangeAllFilters(bool newValue)
+        {
+            foreach (var filter in CurrentCommander.Value.Filters.AllFilters)
+            {
+                filter.Checked = newValue;
+            }
+
+            foreach (var ingredientFilter in CurrentCommander.Value.Filters.GroupedIngredientFilters.SelectMany(g => g))
+            {
+                ingredientFilter.Checked = false;
+            }
+        }
     }
 }

@@ -383,5 +383,15 @@ namespace EDEngineer
             Close();
             w.Show();
         }
+
+        private void CheckAllButtonClicked(object sender, RoutedEventArgs e)
+        {
+            viewModel.ChangeAllFilters(true);
+        }
+
+        private void UncheckAllButtonClicked(object sender, RoutedEventArgs e)
+        {
+            viewModel.ChangeAllFilters(false);
+        }
     }
 }
