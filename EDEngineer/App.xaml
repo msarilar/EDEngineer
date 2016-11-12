@@ -26,6 +26,7 @@
             <converters:InstantToStringConverter x:Key="InstantToString" />
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
+            <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 

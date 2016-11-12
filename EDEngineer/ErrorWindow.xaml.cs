@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using EDEngineer.Models.Localization;
 
 namespace EDEngineer
 {
@@ -13,6 +14,8 @@ namespace EDEngineer
             InitializeComponent();
 
             ExceptionContent.Text = exception.ToString();
+            Title = Languages.Instance.Translate("Unrecoverable Error");
+            CloseButton.Content = Languages.Instance.Translate("Close");
         }
 
         private void CloseButtonClicked(object sender, RoutedEventArgs e)

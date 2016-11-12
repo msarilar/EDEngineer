@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:localization="clr-namespace:EDEngineer.Models.Localization"
+        xmlns:local="clr-namespace:EDEngineer"
         mc:Ignorable="d"
         Title="MainWindow"
         Topmost="True"
@@ -31,12 +33,19 @@
                                 Width="20"
                                 Height="20"
                                 VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding Value.Data.Name}"
-                                       FontFamily="./Resources/Fonts/#Euro Caps"
+                            <TextBlock FontFamily="./Resources/Fonts/#Euro Caps"
                                        FontSize="20"
                                        Margin="2,0,0,0"
                                        VerticalAlignment="Center"
-                                       Foreground="#ff7100" />
+                                       Foreground="#ff7100" >
+                                <TextBlock.Text>
+                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                        <Binding Path="Value.Data.Name"/>
+                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>
                         </StackPanel>
 
                         <Grid>
@@ -182,7 +191,7 @@
                               FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Column="0"
-                              ToolTip="Show entries with no stock?"
+                              ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show entries with no stock?'}"
                               IsChecked="{Binding ShowZeroes, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="Texture" />
                 </ToggleButton>
@@ -190,7 +199,7 @@
                               FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Column="1"
-                              ToolTip="Show only for favorites?"
+                              ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show only for favorites?'}"
                               IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
                 </ToggleButton>
@@ -205,7 +214,7 @@
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </TabControl.Resources>
-                <controls:MetroTabItem Header="Commodities"
+                <controls:MetroTabItem Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Commodities'}"
                                        FontFamily="./Resources/Fonts/#Euro Caps">
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
@@ -220,7 +229,7 @@
                         </ItemsControl>
                     </ScrollViewer>
                 </controls:MetroTabItem>
-                <controls:MetroTabItem Header="Materials"
+                <controls:MetroTabItem Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"
                                        FontFamily="./Resources/Fonts/#Euro Caps">
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
@@ -234,7 +243,7 @@
                         </ItemsControl>
                     </ScrollViewer>
                 </controls:MetroTabItem>
-                <controls:MetroTabItem Header="Data"
+                <controls:MetroTabItem Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"
                                        FontFamily="./Resources/Fonts/#Euro Caps">
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
@@ -282,7 +291,7 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
                     <controls:DropDownButton ItemsSource="{Binding Filters.GradeFilters}"
-                                             Content="{Binding Filters.GradeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Grade}"
+                                             Content="{Binding Filters.GradeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Grade'}"
                                              Grid.Row="0"
                                              Grid.Column="0">
                         <controls:DropDownButton.ItemTemplate>
@@ -290,15 +299,22 @@
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
-                                               Width="100" />
+                                    <TextBlock Width="100" >
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                <Binding Converter="{StaticResource FilterToLabel}"/>
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.EngineerFilters}"
-                                             Content="{Binding Filters.EngineerFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Engineer}"
+                                             Content="{Binding Filters.EngineerFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Engineer'}"
                                              Grid.Row="0"
                                              Grid.Column="1">
                         <controls:DropDownButton.ItemTemplate>
@@ -306,15 +322,22 @@
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}"
-                                               Width="100" />
+                                    <TextBlock Width="100" >
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                <Binding Converter="{StaticResource FilterToLabel}"/>
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.TypeFilters}"
-                                             Content="{Binding Filters.TypeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Type}"
+                                             Content="{Binding Filters.TypeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Type'}"
                                              Grid.Row="0"
                                              Grid.Column="2">
                         <controls:DropDownButton.ItemsPanel>
@@ -329,14 +352,22 @@
                                             Width="220">
                                     <CheckBox Width="20"
                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Text="{Binding Converter={StaticResource FilterToLabel}}" />
+                                    <TextBlock>
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                <Binding Converter="{StaticResource FilterToLabel}"/>
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.IgnoredFavoriteFilters}"
-                                             Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=IgnoredAndFavorite}"
+                                             Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='IgnoredAndFavorite'}"
                                              Grid.Row="1"
                                              Grid.Column="0">
                         <controls:DropDownButton.ItemTemplate>
@@ -344,15 +375,22 @@
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Text="{Binding Label}"
-                                               Width="100" />
+                                    <TextBlock Width="100" >
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                <Binding Path="Label"/>
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.CraftableFilters}"
-                                             Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Craftable}"
+                                             Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Craftable'}"
                                              Grid.Row="1"
                                              Grid.Column="1">
                         <controls:DropDownButton.ItemTemplate>
@@ -360,15 +398,22 @@
                                 <StackPanel Orientation="Horizontal">
                                     <CheckBox Width="20"
                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Text="{Binding Label}"
-                                               Width="Auto" />
+                                    <TextBlock Width="Auto" >
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                <Binding Path="Label" />
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.GroupedIngredientFilters}"
-                                             Content="{Binding Filters.GroupedIngredientFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter=Ingredients}"
+                                             Content="{Binding Filters.GroupedIngredientFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Ingredients'}"
                                              Grid.Row="1"
                                              x:Name="IngredientFiltersDropDown"
                                              Grid.Column="2">
@@ -379,9 +424,15 @@
                         </controls:DropDownButton.ItemContainerStyle>
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
-                                <Expander Header="{Binding Key}"
-                                          Background="Transparent"
+                                <Expander Background="Transparent"
                                           BorderBrush="Black">
+                                    <Expander.Header>
+                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                            <Binding Path="Key"/>
+                                            <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                        </MultiBinding>
+                                    </Expander.Header>
                                     <ItemsControl ItemsSource="{Binding}">
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
@@ -395,7 +446,15 @@
                                                               IsChecked="{Binding Checked, Mode=TwoWay}" />
                                                     <TextBlock Width="Auto"
                                                                Grid.Column="1">
-                                                        <Run Text="{Binding Entry.Data.Name}" />
+                                                        <Run>
+                                                            <Run.Text>
+                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                    <Binding Path="Entry.Data.Name"/>
+                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                </MultiBinding>
+                                                            </Run.Text>
+                                                        </Run>
                                                         <Run Text=" (" />
                                                         <Run Text="{Binding Entry.Count}" />
                                                         <Run Text=")" />
@@ -426,6 +485,7 @@
                           AutoGenerateColumns="False"
                           Loaded="BlueprintsDataGridLoaded"
                           ItemsSource="{Binding Blueprints}"
+                          DataContext="{Binding}"
                           Grid.Row="1"
                           Style="{DynamicResource BlueprintGridStyle}">
                     <DataGrid.RowDetailsTemplate>
@@ -451,7 +511,15 @@
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
                                                 <TextBlock>
-                                                    <Run Text="{Binding Entry.Data.Kind, Mode=OneWay}" />
+                                                    <Run>
+                                                        <Run.Text>
+                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                <Binding Path="Entry.Data.Kind"/>
+                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                            RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                            </MultiBinding>
+                                                        </Run.Text>
+                                                    </Run>
                                                     <Run Text=":" />
                                                 </TextBlock>
                                             </DataTemplate>
@@ -464,7 +532,15 @@
                                                   FontSize="13">
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
-                                                <TextBlock Text="{Binding Entry.Data.Name, Mode=OneWay}" />
+                                                <TextBlock>
+                                                    <TextBlock.Text>
+                                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                            <Binding Path="Entry.Data.Name"/>
+                                                            <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                        </MultiBinding>
+                                                    </TextBlock.Text>
+                                                </TextBlock>
                                             </DataTemplate>
                                         </ItemsControl.ItemTemplate>
                                     </ItemsControl>
@@ -521,12 +597,24 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Type"
-                                            Binding="{Binding Type, Converter={StaticResource BlueprintNameShortener}}"
-                                            IsReadOnly="True"
+                        <DataGridTextColumn IsReadOnly="True"
                                             Width="*"
                                             MaxWidth="110"
                                             CanUserResize="False">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                    <Binding Path="Type"
+                                             Converter="{StaticResource BlueprintNameShortener}"/>
+                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                          Converter={x:Static localization:Languages.Instance},
+                                                          ConverterParameter='Type'}"/>
+                            </DataGridTextColumn.Header>
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="TextWrapping" Value="Wrap" />
@@ -536,27 +624,48 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True" Width="*"
+                        <DataGridTextColumn IsReadOnly="True"
+                                            Width="*"
                                             CanUserResize="False">
+                            <DataGridTextColumn.Binding>
+                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                    <Binding Path="Name"/>
+                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                </MultiBinding>
+                            </DataGridTextColumn.Binding>
+                            <DataGridTextColumn.Header>
+                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                          Converter={x:Static localization:Languages.Instance},
+                                                          ConverterParameter='Name'}"/>
+                            </DataGridTextColumn.Header>
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
                                     <Setter Property="TextWrapping" Value="Wrap" />
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTemplateColumn Header="Progress"
-                                                IsReadOnly="True"
+                        <DataGridTemplateColumn IsReadOnly="True"
                                                 SortMemberPath="ProgressSorting"
                                                 Width="*"
                                                 MaxWidth="140" CanUserResize="False">
+                            <DataGridTemplateColumn.Header>
+                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                          Converter={x:Static localization:Languages.Instance},
+                                                          ConverterParameter='Progress'}"/>
+                            </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid>
                                         <StackPanel Orientation="Vertical">
                                             <TextBlock HorizontalAlignment="Center">
-                                                <Run
-                                                    Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                <Run Text=": can craft" />
+                                                <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
+                                                <Run Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                                    RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                                    Converter={x:Static localization:Languages.Instance},
+                                                                    ConverterParameter=': can craft'}" /> 
                                                 <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
                                             </TextBlock>
                                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
@@ -611,7 +720,7 @@
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
-                    Content="Reset"
+                    Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Reset'}"
                     Visibility="Collapsed"
                     FontFamily="./Resources/Fonts/#Euro Caps"
                     x:Name="ResetWindowPositionButton"
@@ -621,7 +730,7 @@
                     FontSize="14"
                     FontFamily="./Resources/Fonts/#Euro Caps"
                     x:Name="ToggleEditMode"
-                    Content="Unlock Window"
+                    Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unlock Window'}"
                     Click="ToggleEditModeChecked"
                     d:IsHidden="False"
                     Grid.Column="1" />
@@ -634,7 +743,7 @@
                        VerticalAlignment="Center"
                        TextWrapping="Wrap"
                        FontFamily="./Resources/Fonts/#Euro Caps">
-                <Run Text="Last update: " />
+                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Last update: '}" />
                 <Run Text="{Binding CurrentCommander.Value.LastUpdate, Converter={StaticResource InstantToString}}"></Run>
             </TextBlock>
             <Button HorizontalAlignment="Right"

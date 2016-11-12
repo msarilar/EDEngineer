@@ -40,7 +40,6 @@ namespace EDEngineer
                 Application.Current.Shutdown();
                 return;
             }
-            
             SettingsManager.Init();
 
             try
@@ -51,8 +50,9 @@ namespace EDEngineer
             {
                 // silently fail if release notes can't be shown
             }
+            Properties.Settings.Default.Language = null;
 
-            var languages = Languages.InitLanguages();
+            Languages.InitLanguages();
 
             InitializeComponent();
 
@@ -71,7 +71,7 @@ namespace EDEngineer
                 ShowInTaskbar = false;
             }
 
-            viewModel = new MainWindowViewModel(languages);
+            viewModel = new MainWindowViewModel(Languages.Instance);
             DataContext = viewModel;
 
             RefreshCargoSources();
@@ -122,7 +122,8 @@ namespace EDEngineer
             icon = TrayIconManager.Init((o, e) => ShowWindow(), 
                 (o, e) => Close(), ConfigureShortcut, 
                 (o, e) => ToggleEditModeChecked(o, null),
-                (o, e) => ResetWindowPositionButtonClicked(o, null));
+                (o, e) => ResetWindowPositionButtonClicked(o, null),
+                (o, e) => Languages.PromptLanguage(viewModel.Languages));
 
             var shortcut = SettingsManager.Shortcut;
 

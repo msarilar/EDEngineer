@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Data;
 using EDEngineer.Filters;
+using EDEngineer.Models.Localization;
 
 namespace EDEngineer.Converters
 {
@@ -12,27 +13,29 @@ namespace EDEngineer.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            var translator = Languages.Instance;
+
             var builder = new StringBuilder();
 
             switch ((string) parameter)
             {
                 case "Engineer":
-                    builder.Append("Engineer Filter");
+                    builder.Append(translator.Translate("Engineer Filter"));
                     break;
                 case "Grade":
-                    builder.Append("Grade Filter");
+                    builder.Append(translator.Translate("Grade Filter"));
                     break;
                 case "Type":
-                    builder.Append("Type Filter");
+                    builder.Append(translator.Translate("Type Filter"));
                     break;
                 case "Craftable":
-                    builder.Append("Craftable Filter");
+                    builder.Append(translator.Translate("Craftable Filter"));
                     break;
                 case "IgnoredAndFavorite":
-                    builder.Append("Ignored And Favorite Filter");
+                    builder.Append(translator.Translate("Ignored And Favorite Filter"));
                     break;
                 case "Ingredients":
-                    return "Ingredient Filter (Reversed)";
+                    return translator.Translate("Ingredient Filter (Reversed)");
                 default:
                     throw new NotImplementedException();
             }

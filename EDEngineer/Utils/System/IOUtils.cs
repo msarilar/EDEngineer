@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using EDEngineer.Models.Localization;
 using Application = System.Windows.Application;
 
 namespace EDEngineer.Utils.System
@@ -11,6 +12,7 @@ namespace EDEngineer.Utils.System
     {
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)
         {
+            var translator = Languages.Instance;
             string logDirectory = null;
 
             if (!forcePickFolder)
@@ -30,7 +32,9 @@ namespace EDEngineer.Utils.System
             {
                 var dialog = new FolderBrowserDialog
                 {
-                    Description = forcePickFolder ? "Select a new log directory" : "Couln't find the log folder for elite, you'll have to specify it"
+                    Description = forcePickFolder ? 
+                                translator.Translate("Select a new log directory") :
+                                translator.Translate("Couln't find the log folder for elite, you'll have to specify it")
                 };
 
                 if (forcePickFolder && !string.IsNullOrEmpty(currentLogDirectory))
@@ -48,8 +52,8 @@ namespace EDEngineer.Utils.System
                     {
                         var result =
                             MessageBox.Show(
-                                "Selected directory doesn't seem to contain any log file ; are you sure?",
-                                "Warning", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
+                                translator.Translate("Selected directory doesn't seem to contain any log file ; are you sure?"),
+                                translator.Translate("Warning"), MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
 
                         if (result == DialogResult.Retry)
                         {
@@ -75,9 +79,9 @@ namespace EDEngineer.Utils.System
                 }
                 else
                 {
-                    MessageBox.Show("You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.",
-                        "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    logDirectory = @"\No folder in use ; click to change";
+                    MessageBox.Show(translator.Translate("You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though."),
+                        translator.Translate("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    logDirectory = @"\" + translator.Translate("No folder in use ; click to change");
                 }
             }
 

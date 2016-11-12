@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
-       WindowStyle="ToolWindow"
+        WindowStyle="ToolWindow"
         Title="Unrecoverable Error" Height="300" Width="500">
     <Grid>
         <Grid.RowDefinitions>

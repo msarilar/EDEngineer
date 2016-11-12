@@ -1,5 +1,6 @@
 using System.Drawing;
 using System.Windows.Forms;
+using EDEngineer.Models.Localization;
 
 namespace EDEngineer.Utils.UI
 {
@@ -7,6 +8,8 @@ namespace EDEngineer.Utils.UI
     {
         public static bool ShowDialog(string current, out string shortcut)
         {
+            var translator = Languages.Instance;
+
             var block = new TextBox()
             {
                 Width = 385,
@@ -37,7 +40,7 @@ namespace EDEngineer.Utils.UI
                 DialogResult = DialogResult.OK,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.Green,
-                Text = "OK",
+                Text = translator.Translate("OK"),
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Left
             };
@@ -48,7 +51,7 @@ namespace EDEngineer.Utils.UI
                 DialogResult = DialogResult.Cancel,
                 FlatStyle = FlatStyle.Flat,
                 BackColor = Color.OrangeRed,
-                Text = "Cancel",
+                Text = translator.Translate("Cancel"),
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Right
             };
@@ -58,7 +61,7 @@ namespace EDEngineer.Utils.UI
                 FormBorderStyle = FormBorderStyle.FixedToolWindow,
                 Width = 400,
                 Height = 100,
-                Text = "Input a shortcut that's going to be used to show the window"
+                Text = translator.Translate("Input a shortcut that's going to be used to show the window")
             };
 
             f.Controls.Add(block);
@@ -70,7 +73,7 @@ namespace EDEngineer.Utils.UI
                 Keys keys;
                 if (string.IsNullOrEmpty(block.Text))
                 {
-                    MessageBox.Show("You can't use an empty shortcut", "Error", MessageBoxButtons.OK,
+                    MessageBox.Show(translator.Translate("You can't use an empty shortcut"), translator.Translate("Error"), MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                     return false;
                 }
@@ -81,7 +84,7 @@ namespace EDEngineer.Utils.UI
                 }
                 catch
                 {
-                    MessageBox.Show($"The requested shortcut ({block.Text}) is invalid", "Error", MessageBoxButtons.OK,
+                    MessageBox.Show(string.Format(translator.Translate("The requested shortcut ({0}) is invalid"), block.Text), translator.Translate("Error"), MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                     return false;
                 }
@@ -90,7 +93,7 @@ namespace EDEngineer.Utils.UI
                      ~Keys.LShiftKey & ~Keys.RShiftKey & ~Keys.Menu) == Keys.None)
                 {
                     MessageBox.Show(
-                        "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)", "Error",
+                        translator.Translate("You must use a regular key to accompany the modifier key like Ctrl+F10 or Shift+R"), translator.Translate("Error"),
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                     return false;

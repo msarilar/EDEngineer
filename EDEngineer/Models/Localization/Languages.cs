@@ -1,17 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
+using System.Windows.Data;
 
 namespace EDEngineer.Models.Localization
 {
-    public class Languages : INotifyPropertyChanged
+    public class Languages : INotifyPropertyChanged, IValueConverter, IMultiValueConverter
     {
+        public static Languages Instance => instance ?? (instance = InitLanguages());
+
         private const string DEFAULT_LANG = "en";
 
         private LanguageInfo currentLanguage;
+        private static Languages instance;
         public Dictionary<string, LanguageInfo> LanguageInfos { get; set; }
         public Dictionary<string, Translation> Translations { get; set; }
 
@@ -44,10 +50,24 @@ namespace EDEngineer.Models.Localization
             var total = CheckForExistingTranslation(languages);
             ComputeProgress(languages, total);
 
-            // CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
-            // CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
+            if (string.IsNullOrEmpty(Settings.Default.Language))
+            {
+                languages.CurrentLanguage = languages.LanguageInfos[DEFAULT_LANG];
+                PromptLanguage(languages);
+            }
+            else
+            {
+                languages.CurrentLanguage = languages.LanguageInfos[Settings.Default.Language];
+            }
 
             return languages;
+        }
+
+        public static void PromptLanguage(Languages languages)
+        {
+            new SelectLanguageWindow(languages).ShowDialog();
+            Settings.Default.Language = languages.CurrentLanguage.TwoLetterISOLanguageName;
+            Settings.Default.Save();
         }
 
         private static double CheckForExistingTranslation(Languages languages)
@@ -84,7 +104,46 @@ namespace EDEngineer.Models.Localization
                 }
 
                 languages.LanguageInfos[lang].Progress *= 100;
+
+                if (languages.LanguageInfos[lang].Progress == 100)
+                {
+                    languages.LanguageInfos[lang].Ready = true;
+                }
             }
+        }
+
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            var lang = (LanguageInfo) value;
+            var text = parameter.ToString();
+
+            string translatedText;
+            if (!Translations.ContainsKey(text) || !Translations[text].TryGetValue(lang.TwoLetterISOLanguageName, out translatedText) || string.IsNullOrEmpty(translatedText))
+            {
+                translatedText = text;
+            }
+
+            return translatedText;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
+        {
+            return Convert(values[1], targetType, values[0], culture);
+        }
+
+        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Translate(string text)
+        {
+            return (string) Convert(CurrentLanguage, null, text, null);
         }
     }
 }

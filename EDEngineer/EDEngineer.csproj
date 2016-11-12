@@ -142,6 +142,7 @@
     <Compile Include="CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
     <Compile Include="Converters\BlueprintNameShortener.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\DoubleToPercentConverter.cs" />
     <Compile Include="Converters\FilterToLabelConverter.cs" />
     <Compile Include="Converters\InstantToStringConverter.cs" />
@@ -167,6 +168,9 @@
     <Compile Include="Models\ReleaseNote.cs" />
     <Compile Include="ReleaseNotesWindow.xaml.cs">
       <DependentUpon>ReleaseNotesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLanguageWindow.xaml.cs">
+      <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
@@ -207,6 +211,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ReleaseNotesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectLanguageWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

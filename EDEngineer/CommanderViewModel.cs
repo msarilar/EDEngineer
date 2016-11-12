@@ -9,6 +9,7 @@ using System.Windows;
 using System.Windows.Data;
 using Windows.UI.Notifications;
 using EDEngineer.Models;
+using EDEngineer.Models.Localization;
 using EDEngineer.Models.Operations;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
@@ -105,12 +106,14 @@ namespace EDEngineer
             var blueprint = (Blueprint)sender;
             try
             {
+                var translator = Languages.Instance;
+
                 var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
 
                 var stringElements = toastXml.GetElementsByTagName("text");
 
-                stringElements[0].AppendChild(toastXml.CreateTextNode("Blueprint Ready"));
-                stringElements[1].AppendChild(toastXml.CreateTextNode($"{blueprint.Name} (G{blueprint.Grade})"));
+                stringElements[0].AppendChild(toastXml.CreateTextNode(translator.Translate("Blueprint Ready")));
+                stringElements[1].AppendChild(toastXml.CreateTextNode($"{translator.Translate(blueprint.Name)} (G{blueprint.Grade})"));
                 stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
 
                 var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");

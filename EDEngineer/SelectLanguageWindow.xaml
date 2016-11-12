@@ -1,0 +1,77 @@
+﻿<controls:MetroWindow  x:Class="EDEngineer.SelectLanguageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        WindowStyle="ToolWindow"
+        mc:Ignorable="d"
+        Title="Language"
+        SizeToContent="Height"
+        Height="300"
+        Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="0"
+                  ItemsSource="{Binding LanguageInfos.Values}"
+                  SelectionMode="Single"
+                  SelectedItem="{Binding CurrentLanguage, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="100"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0"
+                                   Text="{Binding TwoLetterISOLanguageName}"/>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding Name}"/>
+                        <Grid Grid.Column="2">
+                            <iconPacks:PackIconMaterial Kind="Check"
+                                                        Visibility="{Binding Ready, Converter={StaticResource BooleanToVisibility}, Mode=OneWay}"
+                                                        Foreground="Green" />
+                            <iconPacks:PackIconMaterial Height="14"
+                                                        Kind="Close"
+                                                        Visibility="{Binding Ready, Converter={StaticResource BooleanToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
+                                                        Foreground="Red" />
+                        </Grid>
+                        <StackPanel Orientation="Vertical"
+                                    Grid.Column="3">
+                            <TextBlock HorizontalAlignment="Center"
+                                       Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}"/>
+                            <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
+                                                       Background="Red"
+                                                       Foreground="Green" />
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBlock Grid.Row="1"
+                   Foreground="Red"
+                   Text="{Binding CurrentLanguage.NotReadyWarning}"
+                   TextWrapping="Wrap"
+                   FontSize="15"
+                   Margin="5"
+                   Background="Black"
+                   TextAlignment="Justify"
+                   FontWeight="Bold"
+                   Visibility="{Binding CurrentLanguage.Ready, Converter={StaticResource BooleanToVisibility}, ConverterParameter=Inverted}"/>
+        <Button Content="OK"
+                Background="Green"
+                HorizontalAlignment="Center"
+                Grid.Row="2"
+                x:Name="OkButton"
+                Click="OkButtonClicked"
+                FontSize="15"/>
+    </Grid>
+</controls:MetroWindow>
