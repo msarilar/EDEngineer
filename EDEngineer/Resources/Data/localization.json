@@ -3,27 +3,32 @@
     {
       "TwoLetterISOLanguageName": "en",
       "Name": "English",
-      "Ready": true
+      "Ready": true,
+      "WarningIncomplete": "Warning ! That translation is not complete. If the application can't find a translation for a specific word, it will use the english version"
     },
     {
       "TwoLetterISOLanguageName": "es",
       "Name": "Español",
-      "Ready": false
+      "Ready": false,
+      "WarningIncomplete": ""
     },
     {
       "TwoLetterISOLanguageName": "de",
       "Name": "Deutsch",
-      "Ready": false
+      "Ready": false,
+      "WarningIncomplete": ""
     },
     {
       "TwoLetterISOLanguageName": "fr",
       "Name": "Français",
-      "Ready": false
+      "Ready": false,
+      "WarningIncomplete": "Avertissement ! Cette traduction n'est pas complète. Si l'application ne peut pas trouver de traduction pour un mot spécifique, elle utilisera la version anglaise"
     },
     {
-      "TwoLetterISOLanguageName": "es",
+      "TwoLetterISOLanguageName": "ru",
       "Name": "Русский",
-      "Ready": false
+      "Ready": false,
+      "WarningIncomplete": ""
     }
   ],
   "Translations": {
@@ -1614,103 +1619,103 @@
     "Unknown material, please contact the author ! {0}": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Micromateriau inconnu, contactez l'auteur ! {0}",
       "ru": null
     },
     "Neither": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Autres",
       "ru": null
     },
     "Favorite": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Favorites",
       "ru": null
     },
     "Ignored": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Ignorées",
       "ru": null
     },
     "Craftable": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Craftable",
       "ru": null
     },
     "Non Craftable": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Non Craftable",
       "ru": null
     },
     "Missing Commodities": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Commodités Manquantes",
       "ru": null
     },
     "All": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Tous",
       "ru": null
     },
     "An error has been thrown by the application:": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Une erreur a été levée par l'application:",
       "ru": null
     },
     "Unrecoverable Error": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Erreur Fatale",
       "ru": null
     },
     "Close": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Fermer",
       "ru": null
     },
     "Select a new log directory": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Choisissez un nouveau répertoire de logs",
       "ru": null
     },
     "Couln't find the log folder for elite, you'll have to specify it": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Impossible de trouver le dossier des logs de Elite, vous devez le spécifier",
       "ru": null
     },
     "Selected directory doesn't seem to contain any log file ; are you sure?": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Le répertoire choisi ne semble pas contenir de fichier ; êtes vous sûr?",
       "ru": null
     },
     "Warning": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Avertissement",
       "ru": null
     },
     "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
       "ru": null
     },
     "No folder in use ; click to change": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Aucun répertoire ; cliquez ici pour changer",
       "ru": null
     }
   }
