@@ -177,16 +177,18 @@ namespace EDEngineer.Utils.System
 
             foreach (var file in Directory.GetFiles(ManualChangesDirectory).Where(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")).ToList())
             {
-                var splittedName = file.Split('.');
+                var fileName = Path.GetFileName(file);
+                var manualChangesCommander = fileName.Substring("manualChanges.".Length);
+
                 string commanderName;
 
-                if (splittedName.Length == 2) // manualChanges.json
+                if (manualChangesCommander == "json") // manualChanges.json
                 {
                     commanderName = gameLogLines.Keys.FirstOrDefault(k => k != DEFAULT_COMMANDER_NAME) ?? DEFAULT_COMMANDER_NAME;
                 }
                 else // manualChanges.Hg.Json
                 {
-                    commanderName = splittedName[1];
+                    commanderName = manualChangesCommander.Substring(0, manualChangesCommander.Length - ".json".Length);
                 }
 
                 var content = File.ReadAllLines(file).ToList();
@@ -202,9 +204,9 @@ namespace EDEngineer.Utils.System
                 }
 
                 // migrate old manualChanges.json files to new one:
-                if (splittedName.Length == 2)
+                if (manualChangesCommander == "json")
                 {
-                    File.Move(file, Path.Combine(ManualChangesDirectory, $"{splittedName[0]}.{commanderName}.json"));
+                    File.Move(file, Path.Combine(ManualChangesDirectory, $"manualChanges.{commanderName}.json"));
                     File.Delete(file);
                 }
             }
@@ -225,7 +227,7 @@ namespace EDEngineer.Utils.System
             {
                 directory = roamingDirectory;
             }
-            else if (Directory.Exists(localDirectory))
+            else if (Directory.Exists(localDirectory) && Directory.GetFiles(localDirectory).Any(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")))
             {
                 directory = localDirectory;
             }
