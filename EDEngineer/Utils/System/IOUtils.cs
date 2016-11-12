@@ -125,5 +125,39 @@ namespace EDEngineer.Utils.System
                 return reader.ReadToEnd();
             }
         }
+
+        public static string GetManualChangesDirectory()
+        {
+            string directory;
+
+            var localDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "EDEngineer");
+            var roamingDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "EDEngineer");
+
+            if (Directory.Exists(roamingDirectory))
+            {
+                directory = roamingDirectory;
+            }
+            else if (Directory.Exists(localDirectory) && Directory.GetFiles(localDirectory).Any(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")))
+            {
+                directory = localDirectory;
+            }
+            else
+            {
+                try
+                {
+                    Directory.CreateDirectory(roamingDirectory);
+                    directory = roamingDirectory;
+                }
+                catch
+                {
+                    Directory.CreateDirectory(localDirectory);
+                    directory = localDirectory;
+                }
+            }
+
+            return directory;
+        }
     }
 }
