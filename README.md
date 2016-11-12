@@ -1,6 +1,6 @@
 # EDEngineer
 
-EDEngineer is a basic app I've written to track materials, data and cargo acquired in Elite Dangerous. That way, we can also track progress of blueprints available from the Engineers.
+EDEngineer is a basic app I've written to track materials, data and cargo acquired in Elite Dangerous. That way, we can also track progress of blueprints available from the Engineers. [Installer here](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe).
 
 ## [**Common Issues and their fixes!**](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
 
