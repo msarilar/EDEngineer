@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
@@ -45,6 +46,11 @@ namespace EDEngineer.Models.Localization
 
         public static Languages InitLanguages()
         {
+            if ((bool)(DesignerProperties.IsInDesignModeProperty.GetMetadata(typeof(DependencyObject)).DefaultValue))
+            {
+                return new Languages();
+            }
+
             var json = IOUtils.GetLocalizationJson();
             var languages = JsonConvert.DeserializeObject<Languages>(json);
 

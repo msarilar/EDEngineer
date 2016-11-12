@@ -39,7 +39,7 @@
                                        VerticalAlignment="Center"
                                        Foreground="#ff7100" >
                                 <TextBlock.Text>
-                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                         <Binding Path="Value.Data.Name"/>
                                         <Binding Path="DataContext.Languages.CurrentLanguage"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
@@ -291,7 +291,7 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
                     <controls:DropDownButton ItemsSource="{Binding Filters.GradeFilters}"
-                                             Content="{Binding Filters.GradeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Grade'}"
+                                             Content="{Binding Filters.GradeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Grade', FallbackValue='Grade Filter (4/5)'}"
                                              Grid.Row="0"
                                              Grid.Column="0">
                         <controls:DropDownButton.ItemTemplate>
@@ -314,7 +314,7 @@
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.EngineerFilters}"
-                                             Content="{Binding Filters.EngineerFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Engineer'}"
+                                             Content="{Binding Filters.EngineerFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Engineer', FallbackValue='Engineer Filter (4/5)'}"
                                              Grid.Row="0"
                                              Grid.Column="1">
                         <controls:DropDownButton.ItemTemplate>
@@ -337,7 +337,7 @@
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.TypeFilters}"
-                                             Content="{Binding Filters.TypeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Type'}"
+                                             Content="{Binding Filters.TypeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Type', FallbackValue='Type Filter (4/5)'}"
                                              Grid.Row="0"
                                              Grid.Column="2">
                         <controls:DropDownButton.ItemsPanel>
@@ -367,7 +367,7 @@
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.IgnoredFavoriteFilters}"
-                                             Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='IgnoredAndFavorite'}"
+                                             Content="{Binding Filters.IgnoredFavoriteFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='IgnoredAndFavorite', FallbackValue='Ignored And Favorite Filter (4/5)'}"
                                              Grid.Row="1"
                                              Grid.Column="0">
                         <controls:DropDownButton.ItemTemplate>
@@ -390,7 +390,7 @@
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.CraftableFilters}"
-                                             Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Craftable'}"
+                                             Content="{Binding Filters.CraftableFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Craftable', FallbackValue='Craftable Filter (4/5)'}"
                                              Grid.Row="1"
                                              Grid.Column="1">
                         <controls:DropDownButton.ItemTemplate>
@@ -413,7 +413,7 @@
                     </controls:DropDownButton>
 
                     <controls:DropDownButton ItemsSource="{Binding Filters.GroupedIngredientFilters}"
-                                             Content="{Binding Filters.GroupedIngredientFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Ingredients'}"
+                                             Content="{Binding Filters.GroupedIngredientFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Ingredients', FallbackValue='Ingredient Filter (Reversed)'}"
                                              Grid.Row="1"
                                              x:Name="IngredientFiltersDropDown"
                                              Grid.Column="2">
@@ -513,7 +513,7 @@
                                                 <TextBlock>
                                                     <Run>
                                                         <Run.Text>
-                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
                                                                 <Binding Path="Entry.Data.Kind"/>
                                                                 <Binding Path="DataContext.Languages.CurrentLanguage"
 				                                                            RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
@@ -534,7 +534,7 @@
                                             <DataTemplate>
                                                 <TextBlock>
                                                     <TextBlock.Text>
-                                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                                             <Binding Path="Entry.Data.Name"/>
                                                             <Binding Path="DataContext.Languages.CurrentLanguage"
 				                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
@@ -602,7 +602,7 @@
                                             MaxWidth="110"
                                             CanUserResize="False">
                             <DataGridTextColumn.Binding>
-                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Plasma Accelerator">
                                     <Binding Path="Type"
                                              Converter="{StaticResource BlueprintNameShortener}"/>
                                     <Binding Path="DataContext.Languages.CurrentLanguage"
@@ -613,7 +613,8 @@
                                 <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
                                                           RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
                                                           Converter={x:Static localization:Languages.Instance},
-                                                          ConverterParameter='Type'}"/>
+                                                          ConverterParameter='Type',
+                                                          FallbackValue='Type'}"/>
                             </DataGridTextColumn.Header>
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
@@ -628,7 +629,7 @@
                                             Width="*"
                                             CanUserResize="False">
                             <DataGridTextColumn.Binding>
-                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
                                     <Binding Path="Name"/>
                                     <Binding Path="DataContext.Languages.CurrentLanguage"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
@@ -638,7 +639,8 @@
                                 <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
                                                           RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
                                                           Converter={x:Static localization:Languages.Instance},
-                                                          ConverterParameter='Name'}"/>
+                                                          ConverterParameter='Name',
+                                                          FallbackValue='Name'}"/>
                             </DataGridTextColumn.Header>
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
@@ -654,7 +656,8 @@
                                 <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
                                                           RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
                                                           Converter={x:Static localization:Languages.Instance},
-                                                          ConverterParameter='Progress'}"/>
+                                                          ConverterParameter='Progress',
+                                                          FallbackValue='Progress'}"/>
                             </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
@@ -665,7 +668,8 @@
                                                 <Run Text="{Binding DataContext.Languages.CurrentLanguage,
                                                                     RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
                                                                     Converter={x:Static localization:Languages.Instance},
-                                                                    ConverterParameter=': can craft'}" /> 
+                                                                    ConverterParameter=': can craft',
+                                                                    FallbackValue=': can craft'}" /> 
                                                 <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
                                             </TextBlock>
                                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
@@ -720,7 +724,11 @@
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
-                    Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Reset'}"
+                    Content="{Binding DataContext.Languages.CurrentLanguage, 
+                RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, 
+                Converter={x:Static localization:Languages.Instance}, 
+                ConverterParameter='Reset',
+                FallbackValue='Reset'}"
                     Visibility="Collapsed"
                     FontFamily="./Resources/Fonts/#Euro Caps"
                     x:Name="ResetWindowPositionButton"
@@ -730,7 +738,7 @@
                     FontSize="14"
                     FontFamily="./Resources/Fonts/#Euro Caps"
                     x:Name="ToggleEditMode"
-                    Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unlock Window'}"
+                    Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unlock Window', FallbackValue='Unlock Window'}"
                     Click="ToggleEditModeChecked"
                     d:IsHidden="False"
                     Grid.Column="1" />
@@ -743,7 +751,7 @@
                        VerticalAlignment="Center"
                        TextWrapping="Wrap"
                        FontFamily="./Resources/Fonts/#Euro Caps">
-                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Last update: '}" />
+                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Last update: ', FallbackValue='Last Update: '}" />
                 <Run Text="{Binding CurrentCommander.Value.LastUpdate, Converter={StaticResource InstantToString}}"></Run>
             </TextBlock>
             <Button HorizontalAlignment="Right"
