@@ -26,10 +26,34 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 
 ### Additional Screenshots
 
-![Details](http://i.imgur.com/4seMO8l.png)
+<p align="center">
+  <img src="http://i.imgur.com/4seMO8l.png" alt="Details"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/jiHt4LI.png" alt="Filters"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/td5H0OW.png" alt="Toast"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/JuSJYCd.png" alt="Tray Icon"/>
+</p>
 
-![Filters](http://i.imgur.com/jiHt4LI.png)
+### Languages
 
-![Toast](http://i.imgur.com/td5H0OW.png)
 
-![Tray Icon](http://i.imgur.com/Xi1xa1y.png)
+<p align="center">
+  <img src="http://i.imgur.com/UmNRFhi.png" alt="English"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/9qIFpNF.png" alt="Spanish"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/kwPrIlV.png" alt="German"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/o1HPrAg.png" alt="French"/>
+</p>
+<p align="center">
+  <img src="http://i.imgur.com/5LvcKbi.png" alt="Russian"/>
+</p>
