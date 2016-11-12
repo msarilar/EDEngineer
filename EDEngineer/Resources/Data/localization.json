@@ -46,7 +46,7 @@
       "ru": null
     },
     "Drive Strengthening": {
-      "es": "Fortalecimiento de motor",
+      "es": "Fortalecimiento de Motor",
       "de": null,
       "fr": null,
       "ru": null
@@ -286,7 +286,7 @@
       "ru": null
     },
     "Shielded ": {
-      "es": null,
+      "es": "Blindado",
       "de": null,
       "fr": null,
       "ru": null
@@ -544,7 +544,7 @@
       "ru": null
     },
     "Adaptive Encryptors Capture": {
-      "es": null,
+      "es": "Captura de Encriptadores Adaptativos",
       "de": null,
       "fr": null,
       "ru": null
@@ -1120,7 +1120,7 @@
       "ru": null
     },
     "Power Converter": {
-      "es": "Convertidor de Potencia",
+      "es": "Convertidor de Energía",
       "de": null,
       "fr": null,
       "ru": null
@@ -1354,367 +1354,367 @@
       "ru": null
     },
     "ECM": {
-      "es": null,
+      "es": "Contramedida",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Hull": {
-      "es": null,
+      "es": "Casco",
       "de": null,
       "fr": null,
       "ru": null
     },
     "FSD Interdictor": {
-      "es": null,
+      "es": "Interdictor",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Prospector LC": {
-      "es": null,
+      "es": "LD Prospector",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Fuel Transfer LC": {
-      "es": null,
+      "es": "LD Repostaje",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Hatch Breaker LC": {
-      "es": null,
+      "es": "LD Extractor",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Collector LC": {
-      "es": null,
+      "es": "LD Colector",
       "de": null,
       "fr": null,
       "ru": null
     },
     "AFMU": {
-      "es": null,
+      "es": "Unidad de Automantenimiento",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Data": {
-      "es": null,
+      "es": "Datos",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Commodity": {
-      "es": null,
+      "es": "Mercancía",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Commodities": {
-      "es": null,
+      "es": "Mercancías",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Material": {
-      "es": null,
+      "es": "Material",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Materials": {
-      "es": null,
+      "es": "Materiales",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Type": {
-      "es": null,
+      "es": "Tipo",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Name": {
-      "es": null,
+      "es": "Nombre",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Progress": {
-      "es": null,
+      "es": "Progreso",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Last update: ": {
-      "es": null,
+      "es": "Ultima actualización",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Unlock Window": {
-      "es": null,
+      "es": "Desbloquear ventana",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Show entries with no stock?": {
-      "es": null,
+      "es": "¿Mostrar entradas sin stock?",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Show only for favorites?": {
-      "es": null,
+      "es": "¿Mostras sólo los favoritos?",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Grade Filter": {
-      "es": null,
+      "es": "Filtro de Grados",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Engineer Filter": {
-      "es": null,
+      "es": "Filtro de Ingenieros",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Type Filter": {
-      "es": null,
+      "es": "Filtro de Tipos",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Ignored And Favorite Filter": {
-      "es": null,
+      "es": "Filtro de Ignorados y Favoritos",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Craftable Filter": {
-      "es": null,
+      "es": "Filtro de Elaborados",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Ingredient Filter (Reversed)": {
-      "es": null,
+      "es": "Filtro de Ingredientes (Inverso)",
       "de": null,
       "fr": null,
       "ru": null
     },
     ": can craft": {
-      "es": null,
+      "es": "Elaborable",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Reset": {
-      "es": null,
+      "es": "Reiniciar",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Lock Window": {
-      "es": null,
+      "es": "Bloquear Ventana",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Show": {
-      "es": null,
+      "es": "Mostrar",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Toggle Window Mode (Locked/Unlocked)": {
-      "es": null,
+      "es": "Cambiar el Modo Ventana (Bloqueado/Desbloqueado)",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Reset Window Position": {
-      "es": null,
+      "es": "Restablecer la Posición de la Ventana",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Set Shortcut": {
-      "es": null,
+      "es": "Establecer Acceso Directo",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Help": {
-      "es": null,
+      "es": "Ayuda",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Quit": {
-      "es": null,
+      "es": "Abandonar",
       "de": null,
       "fr": null,
       "ru": null
     },
     "OK": {
-      "es": null,
+      "es": "OK",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Cancel": {
-      "es": null,
+      "es": "Cancelar",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Input a shortcut that's going to be used to show the window": {
-      "es": null,
+      "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
       "de": null,
       "fr": null,
       "ru": null
     },
     "You can't use an empty shortcut": {
-      "es": null,
+      "es": "No puede usar un acceso directo vacío",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Error": {
-      "es": null,
+      "es": "Error",
       "de": null,
       "fr": null,
       "ru": null
     },
     "The requested shortcut ({0}) is invalid": {
-      "es": null,
+      "es": "El acceso directo solicitado ({0}) no es válido",
       "de": null,
       "fr": null,
       "ru": null
     },
     "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
-      "es": null,
+      "es": "Debes utilizar una tecla normal para acompañar la tecla modificadora como (Ctrl+F10 or Shift+R)",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
-      "es": null,
+      "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Unknown material, please contact the author ! {0}": {
-      "es": null,
+      "es": "Material desconocido, contacta con el autor  ! {0}"
       "de": null,
       "fr": "Micromateriau inconnu, contactez l'auteur ! {0}",
       "ru": null
     },
     "Neither": {
-      "es": null,
+      "es": "Ninguno",
       "de": null,
       "fr": "Autres",
       "ru": null
     },
     "Favorite": {
-      "es": null,
+      "es": "Favorito",
       "de": null,
       "fr": "Favorites",
       "ru": null
     },
     "Ignored": {
-      "es": null,
+      "es": "Ignorado",
       "de": null,
       "fr": "Ignorées",
       "ru": null
     },
     "Craftable": {
-      "es": null,
+      "es": "Elaborable",
       "de": null,
       "fr": "Craftable",
       "ru": null
     },
     "Non Craftable": {
-      "es": null,
+      "es": "No Elaborable",
       "de": null,
       "fr": "Non Craftable",
       "ru": null
     },
     "Missing Commodities": {
-      "es": null,
+      "es": "Mercancía Perdida",
       "de": null,
       "fr": "Commodités Manquantes",
       "ru": null
     },
     "All": {
-      "es": null,
+      "es": "Todo",
       "de": null,
       "fr": "Tous",
       "ru": null
     },
     "An error has been thrown by the application:": {
-      "es": null,
+      "es": "Se ha producido un error:",
       "de": null,
       "fr": "Une erreur a été levée par l'application:",
       "ru": null
     },
     "Unrecoverable Error": {
-      "es": null,
+      "es": "Error Irrecuperable",
       "de": null,
       "fr": "Erreur Fatale",
       "ru": null
     },
     "Close": {
-      "es": null,
+      "es": "Cerrar",
       "de": null,
       "fr": "Fermer",
       "ru": null
     },
     "Select a new log directory": {
-      "es": null,
+      "es": "Selecciona un nuevo directorio de logs",
       "de": null,
       "fr": "Choisissez un nouveau répertoire de logs",
       "ru": null
     },
     "Couln't find the log folder for elite, you'll have to specify it": {
-      "es": null,
+      "es": "No se pudo encontrar la carpeta de logs para Elite, tendrás que especificarla",
       "de": null,
       "fr": "Impossible de trouver le dossier des logs de Elite, vous devez le spécifier",
       "ru": null
     },
     "Selected directory doesn't seem to contain any log file ; are you sure?": {
-      "es": null,
+      "es": "El directorio seleccionado no parece contener ningún log ; ¿Estás seguro?",
       "de": null,
       "fr": "Le répertoire choisi ne semble pas contenir de fichier ; êtes vous sûr?",
       "ru": null
     },
     "Warning": {
-      "es": null,
+      "es": "Aviso",
       "de": null,
       "fr": "Avertissement",
       "ru": null
     },
     "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
-      "es": null,
+      "es": "No ha seleccionado un directorio de registro, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
       "de": null,
       "fr": "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
       "ru": null
     },
     "No folder in use ; click to change": {
-      "es": null,
+      "es": "Ninguna carpeta en uso ; haz clic para cambiar",
       "de": null,
       "fr": "Aucun répertoire ; cliquez ici pour changer",
       "ru": null
     },
     "Blueprint Ready": {
-      "es": null,
+      "es": "Receta lista",
       "de": null,
       "fr": null,
       "ru": null
