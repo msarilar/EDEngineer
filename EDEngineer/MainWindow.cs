@@ -109,12 +109,12 @@ namespace EDEngineer
 
             if (AllowsTransparency)
             {
-                ToggleEditMode.Content = "Unlock Window";
+                ToggleEditMode.Content = viewModel.Languages.Translate("Unlock Window");
                 Splitter.Visibility = Visibility.Hidden;
             }
             else
             {
-                ToggleEditMode.Content = "Lock Window";
+                ToggleEditMode.Content = viewModel.Languages.Translate("Lock Window");
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
             }
 
