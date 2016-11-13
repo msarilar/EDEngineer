@@ -1,11 +1,22 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace EDEngineer.Utils.Collections
 {
     public class SortedObservableCollection<T> : ObservableCollection<T>
     {
         private readonly Func<T, T, int> func;
+
+        public void RefreshSort()
+        {
+            var temp = this.ToList();
+            Clear();
+            foreach (var item in temp)
+            {
+                Add(item);
+            }
+        }
 
         public SortedObservableCollection(Func<T, T, int> comparer)
         {

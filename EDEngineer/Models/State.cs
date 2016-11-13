@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using EDEngineer.Models.Localization;
 using EDEngineer.Utils.Collections;
 
 namespace EDEngineer.Models
@@ -9,18 +10,18 @@ namespace EDEngineer.Models
     {
         private readonly List<EntryData> entryDatas;
 
-        private static readonly Func<KeyValuePair<string, Entry>, KeyValuePair<string, Entry>, int> comparer =
-            (a, b) => string.Compare(a.Key, b.Key, StringComparison.Ordinal);
-
         private readonly object stateLock = new object();
 
-        public State(List<EntryData> entryDatas)
+        public State(List<EntryData> entryDatas, Languages languages)
         {
+            Cargo = new SortedObservableCounter((a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase));
+            languages.PropertyChanged += (o, e) => Cargo.RefreshSort();
+            
             this.entryDatas = entryDatas;
             LoadBaseData();
         }
 
-        public SortedObservableCounter Cargo { get; set; } = new SortedObservableCounter(comparer);
+        public SortedObservableCounter Cargo { get; }
 
         public void LoadBaseData()
         {

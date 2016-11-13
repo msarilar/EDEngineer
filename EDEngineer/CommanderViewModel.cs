@@ -63,14 +63,14 @@ namespace EDEngineer
             SubscribeToasts();
         }
 
-        public CommanderViewModel(string commanderName, List<string> logs)
+        public CommanderViewModel(string commanderName, List<string> logs, Languages languages)
         {
             CommanderName = commanderName;
 
             var entryDatas = JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
             var converter = new ItemNameConverter(entryDatas);
 
-            State = new State(entryDatas);
+            State = new State(entryDatas, languages);
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo);
             blueprintConverter = new BlueprintConverter(State.Cargo);
