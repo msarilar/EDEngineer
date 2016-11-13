@@ -35,25 +35,25 @@
     },
     "Lightweight": {
       "es": "Aligerado",
-      "de": null,
+      "de": "Leichtbau",
       "fr": null,
       "ru": null
     },
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
-      "de": null,
+      "de": "Hochleistungs-Hüllenverstärkung",
       "fr": null,
       "ru": null
     },
     "Drive Strengthening": {
       "es": "Fortalecimiento de motor",
-      "de": null,
+      "de": "Antriebsstärkung",
       "fr": null,
       "ru": null
     },
     "Efficient Weapon": {
       "es": "Arma Eficiente",
-      "de": null,
+      "de": "Waffeneffizienz",
       "fr": null,
       "ru": null
     },
@@ -65,85 +65,85 @@
     },
     "Armoured ": {
       "es": "Blindado ",
-      "de": null,
+      "de": "Gepanzert ",
       "fr": null,
       "ru": null
     },
     "Reinforced": {
       "es": "Reforzado",
-      "de": null,
+      "de": "Verstärkt",
       "fr": null,
       "ru": null
     },
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
-      "de": null,
+      "de": "Robustes Gestell",
       "fr": null,
       "ru": null
     },
     "Longer Range FSD interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
-      "de": null,
+      "de": "Ferndistanz-FSA-Unterbrecher",
       "fr": null,
       "ru": null
     },
     "Reinforced Shields": {
       "es": "Escudos Reforzados",
-      "de": null,
+      "de": "Verstärkte Schilde",
       "fr": null,
       "ru": null
     },
     "Enhanced, Low Power Shields": {
       "es": "Escudos Mejorados de Baja Energía",
-      "de": null,
+      "de": "Verbesserte Niedrigenergieschilde",
       "fr": null,
       "ru": null
     },
     "Shielded": {
       "es": "Blindado",
-      "de": null,
+      "de": "Abgeschirmt",
       "fr": null,
       "ru": null
     },
     "Thermal Resistant ": {
       "es": "Resistencia Térmica ",
-      "de": null,
+      "de": "Hitzebeständig ",
       "fr": null,
       "ru": null
     },
     "Weapon Focused ": {
       "es": "Orientado a Armas ",
-      "de": null,
+      "de": "Waffenfokussierte ",
       "fr": null,
       "ru": null
     },
     "Blast Resistant ": {
       "es": "Blindaje Resistente a Explosiones ",
-      "de": null,
+      "de": "Detonationsresistenter ",
       "fr": null,
       "ru": null
     },
     "High Capacity Magazine": {
       "es": "Cargador de Alta Capacidad",
-      "de": null,
+      "de": "Hochleistungsmagazin",
       "fr": null,
       "ru": null
     },
     "Kinetic Resistant ": {
       "es": "Resistencia Cinética ",
-      "de": null,
+      "de": "Kinetikresistent ",
       "fr": null,
       "ru": null
     },
     "Focused Weapon": {
       "es": "Arma Concentrada",
-      "de": null,
+      "de": "Waffenfokus",
       "fr": null,
       "ru": null
     },
     "Thermal Resistant Shields": {
       "es": "Escudos de Resistencia Térmica",
-      "de": null,
+      "de": "Thermalresistente Schilde",
       "fr": null,
       "ru": null
     },
