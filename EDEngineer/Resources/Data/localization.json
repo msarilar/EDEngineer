@@ -551,13 +551,13 @@
     },
     "Anomalous Bulk Scan Data": {
       "es": "Datos de Escáner en Bruto Anómalos",
-      "de": null,
+      "de": "Anormale Massen-Scan-Daten",
       "fr": null,
       "ru": null
     },
     "Anomalous FSD Telemetry": {
       "es": "Telemetría de MDD Anómala",
-      "de": null,
+      "de": "Anormale FSA-Telemetrie",
       "fr": null,
       "ru": null
     },
@@ -569,13 +569,13 @@
     },
     "Arsenic": {
       "es": "Arsénico",
-      "de": null,
+      "de": "Arsen",
       "fr": null,
       "ru": null
     },
     "Articulation Motors": {
       "es": "Motores de Articulación",
-      "de": null,
+      "de": "Gelenkmotoren",
       "fr": null,
       "ru": null
     },
@@ -695,7 +695,7 @@
     },
     "Conductive Polymers": {
       "es": "Polímeros Conductivos",
-      "de": null,
+      "de": "Leitfähige Polymere",
       "fr": null,
       "ru": null
     },
@@ -719,7 +719,7 @@
     },
     "Crystal Shards": {
       "es": "Piedras de Cristal",
-      "de": null,
+      "de": "Kristallscherben",
       "fr": null,
       "ru": null
     },
@@ -815,13 +815,13 @@
     },
     "Germanium": {
       "es": "Germanio",
-      "de": null,
+      "de": "Germanium",
       "fr": null,
       "ru": null
     },
     "Grid Resistors": {
       "es": "Red Resistiva",
-      "de": null,
+      "de": "Gitterwiderstände",
       "fr": null,
       "ru": null
     },
@@ -941,13 +941,13 @@
     },
     "Mechanical Components": {
       "es": "Componentes Mecánicos",
-      "de": null,
+      "de": "Mechanische Komponenten",
       "fr": null,
       "ru": null
     },
     "Mechanical Equipment": {
       "es": "Equipamiento Mecánico",
-      "de": null,
+      "de": "Mechanisches Equipment",
       "fr": null,
       "ru": null
     },
@@ -959,7 +959,7 @@
     },
     "Mercury": {
       "es": "Mercurio",
-      "de": null,
+      "de": "Quecksilber",
       "fr": null,
       "ru": null
     },
@@ -971,7 +971,7 @@
     },
     "Micro-Weave Cooling Hoses": {
       "es": "Mangueras de Refrigeración de Micro-tejidos",
-      "de": null,
+      "de": "Mikroflecht-Kühlschläuche",
       "fr": null,
       "ru": null
     },
@@ -1001,7 +1001,7 @@
     },
     "Modular Terminals": {
       "es": "Terminales Modulares",
-      "de": null,
+      "de": "Modulterminals",
       "fr": null,
       "ru": null
     },
@@ -1013,19 +1013,19 @@
     },
     "Nanobreakers": {
       "es": "Nanorrompedores",
-      "de": null,
+      "de": "Nanozertrümmerer",
       "fr": null,
       "ru": null
     },
     "Neofabric Insulation": {
       "es": "Neotejido Aislante",
-      "de": null,
+      "de": "Neogewebe-Isolierung",
       "fr": null,
       "ru": null
     },
     "Nickel": {
       "es": "Níquel",
-      "de": null,
+      "de": "Nickel",
       "fr": null,
       "ru": null
     },
@@ -1043,7 +1043,7 @@
     },
     "Osmium": {
       "es": "Osmio",
-      "de": null,
+      "de": "Osmium",
       "fr": null,
       "ru": null
     },
@@ -1097,13 +1097,13 @@
     },
     "Phosphorus": {
       "es": "Fósforo",
-      "de": null,
+      "de": "Phosphor",
       "fr": null,
       "ru": null
     },
     "Platinum": {
       "es": "Platino",
-      "de": null,
+      "de": "Platin",
       "fr": null,
       "ru": null
     },
@@ -1229,7 +1229,7 @@
     },
     "Specialised Legacy Firmware": {
       "es": "Firmware Heredado Especializado",
-      "de": null,
+      "de": "Spezial-Legacy-Firmware",
       "fr": null,
       "ru": null
     },
@@ -1301,7 +1301,7 @@
     },
     "Unidentified Scan Archives": {
       "es": "Archivos de Escáner no Identificados",
-      "de": null,
+      "de": "Unidentifizierte Scan-Archive",
       "fr": null,
       "ru": null
     },
