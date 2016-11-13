@@ -72,7 +72,7 @@ namespace EDEngineer
 
             State = new State(entryDatas, languages);
 
-            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo);
+            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
             blueprintConverter = new BlueprintConverter(State.Cargo);
             LoadBlueprints();
 

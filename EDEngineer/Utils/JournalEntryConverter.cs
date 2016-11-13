@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
 using EDEngineer.Models;
+using EDEngineer.Models.Localization;
 using EDEngineer.Models.Operations;
 using EDEngineer.Utils.Collections;
 using Newtonsoft.Json;
@@ -16,12 +17,14 @@ namespace EDEngineer.Utils
     {
         private readonly ItemNameConverter converter;
         private readonly ISimpleDictionary<string, Entry> entries;
+        private readonly Languages languages;
         private static readonly HashSet<string> relevantJournalEvents = new HashSet<string>(Enum.GetNames(typeof(JournalEvent)));
 
-        public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries)
+        public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries, Languages languages)
         {
             this.converter = converter;
             this.entries = entries;
+            this.languages = languages;
         }
 
         public override bool CanWrite => true;
@@ -82,7 +85,8 @@ namespace EDEngineer.Utils
             catch (Exception e)
             {
                 MessageBox.Show(
-                    $"Something went wrong in parsing your logs, open an issue on GitHub with this information : {Environment.NewLine}" +
+                    languages.Translate("Something went wrong in parsing your logs, open an issue on GitHub with this information : ") + 
+                    Environment.NewLine +
                     $"LogEntry = {data}{Environment.NewLine}" +
                     $"Error:{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -267,7 +271,7 @@ namespace EDEngineer.Utils
             string materialDiscardedName;
             if (!converter.TryGet((string) data["Name"], out materialDiscardedName))
             {
-                MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
+                MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
                 return null;
             }
 
@@ -302,7 +306,7 @@ namespace EDEngineer.Utils
                 string synthesisIngredientName;
                 if (!converter.TryGet(material.Name, out synthesisIngredientName))
                 {
-                    MessageBox.Show($"Unknown material, please contact the author ! {material.Name}");
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), material.Name));
                     continue;
                 }
 
@@ -348,7 +352,7 @@ namespace EDEngineer.Utils
             string materialCollectedName;
             if (!converter.TryGet((string)data["Name"], out materialCollectedName))
             {
-                MessageBox.Show($"Unknown material, please contact the author ! {(string)data["Name"]}");
+                MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
                 return null;
             }
 
@@ -375,7 +379,7 @@ namespace EDEngineer.Utils
             string materialCollectedName;
             if (!converter.TryGet((string) data["Name"], out materialCollectedName))
             {
-                MessageBox.Show($"Unknown material, please contact the author ! {(string) data["Name"]}");
+                MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
                 return null;
             }
 
