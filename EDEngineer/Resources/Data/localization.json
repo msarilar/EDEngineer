@@ -329,7 +329,7 @@
     },
     "Life Support": {
       "es": "Soporte Vital",
-      "de": null,
+      "de": "Lebenserhaltung",
       "fr": null,
       "ru": null
     },
@@ -341,19 +341,19 @@
     },
     "Cannon": {
       "es": "Cañón",
-      "de": null,
+      "de": "Kanone",
       "fr": null,
       "ru": null
     },
     "Thrusters": {
       "es": "Impulsores",
-      "de": null,
+      "de": "Schubdüsen",
       "fr": null,
       "ru": null
     },
     "Multi-cannon": {
       "es": "Multicañón",
-      "de": null,
+      "de": "Mehrfachgeschütz",
       "fr": null,
       "ru": null
     },
@@ -371,49 +371,49 @@
     },
     "Chaff Launcher": {
       "es": "Lanzador de Señuelos",
-      "de": null,
+      "de": "Düppel-Werfer",
       "fr": null,
       "ru": null
     },
     "Frame Shift Drive Interdictor": {
       "es": "Interdictor de MDD",
-      "de": null,
+      "de": "FSA-Unterbrecher",
       "fr": null,
       "ru": null
     },
     "Shield Generator": {
       "es": "Generador de Escudos",
-      "de": null,
+      "de": "Schildgenerator",
       "fr": null,
       "ru": null
     },
     "Point Defence": {
       "es": "Defensa de Punto",
-      "de": null,
+      "de": "Punktverteidigung",
       "fr": null,
       "ru": null
     },
     "Shield Booster": {
       "es": "Potenciador de Escudos",
-      "de": null,
+      "de": "Schild-Booster",
       "fr": null,
       "ru": null
     },
     "Kill Warrant Scanner": {
       "es": "Escáner de Registro Criminal",
-      "de": null,
+      "de": "Tötungsbefehl-Scanner",
       "fr": null,
       "ru": null
     },
     "Rail Gun": {
       "es": "Cañón de Riel",
-      "de": null,
+      "de": "Schienenkanone",
       "fr": null,
       "ru": null
     },
     "Power Distributor": {
       "es": "Distribuidor de Energía",
-      "de": null,
+      "de": "Energieverteiler",
       "fr": null,
       "ru": null
     },
@@ -425,13 +425,13 @@
     },
     "Mine Launcher": {
       "es": "Lanzaminas",
-      "de": null,
+      "de": "Minenwerfer",
       "fr": null,
       "ru": null
     },
     "Beam Laser": {
       "es": "Láser de Rayo",
-      "de": null,
+      "de": "Strahlenlaser",
       "fr": null,
       "ru": null
     },
@@ -455,7 +455,7 @@
     },
     "Burst Laser": {
       "es": "Láser de Ráfagas",
-      "de": null,
+      "de": "Salvenlaser",
       "fr": null,
       "ru": null
     },
@@ -479,7 +479,7 @@
     },
     "Refinery": {
       "es": "Refinería",
-      "de": null,
+      "de": "Raffinerie",
       "fr": null,
       "ru": null
     },
@@ -497,7 +497,7 @@
     },
     "Frame Shift Drive": {
       "es": "Motor de Distorsión",
-      "de": null,
+      "de": "Frameshiftantrieb",
       "fr": null,
       "ru": null
     },
@@ -509,7 +509,7 @@
     },
     "Fuel Scoop": {
       "es": "Colector de Combustible",
-      "de": null,
+      "de": "Treibstoffsammler",
       "fr": null,
       "ru": null
     },
@@ -527,7 +527,7 @@
     },
     "Shield Cell Bank": {
       "es": "Células de Escudo",
-      "de": null,
+      "de": "Schildzellenbank",
       "fr": null,
       "ru": null
     },
@@ -563,7 +563,7 @@
     },
     "Antimony": {
       "es": "Antimonio",
-      "de": null,
+      "de": "Antimon",
       "fr": null,
       "ru": null
     },
@@ -593,7 +593,7 @@
     },
     "Basic Conductors": {
       "es": "Conductores Básicos",
-      "de": null,
+      "de": "Einfache Leiter",
       "fr": null,
       "ru": null
     },
@@ -605,7 +605,7 @@
     },
     "Bromellite": {
       "es": "Bromelita",
-      "de": null,
+      "de": "Bromellit",
       "fr": null,
       "ru": null
     },
@@ -617,25 +617,25 @@
     },
     "Carbon": {
       "es": "Carbono",
-      "de": null,
+      "de": "Kohlenstoff",
       "fr": null,
       "ru": null
     },
     "Chemical Distillery": {
       "es": "Destilería Química",
-      "de": null,
+      "de": "Chemiedestillerie",
       "fr": null,
       "ru": null
     },
     "Chemical Manipulators": {
       "es": "Manipuladores Químicos",
-      "de": null,
+      "de": "Chemische Manipulatoren",
       "fr": null,
       "ru": null
     },
     "Chemical Processors": {
       "es": "Procesadores Químicos",
-      "de": null,
+      "de": "Chemische Prozessoren",
       "fr": null,
       "ru": null
     },
@@ -647,7 +647,7 @@
     },
     "Chromium": {
       "es": "Cromo",
-      "de": null,
+      "de": "Chrom",
       "fr": null,
       "ru": null
     },
@@ -683,13 +683,13 @@
     },
     "Conductive Ceramics": {
       "es": "Cerámicas Conductivas",
-      "de": null,
+      "de": "Elektrokeramiken",
       "fr": null,
       "ru": null
     },
     "Conductive Components": {
       "es": "Componentes Conductivos",
-      "de": null,
+      "de": "Leitfähige Komponenten",
       "fr": null,
       "ru": null
     },
@@ -701,7 +701,7 @@
     },
     "Configurable Components": {
       "es": "Componentes Configurables",
-      "de": null,
+      "de": "Konfigurierbare Komponenten",
       "fr": null,
       "ru": null
     },
@@ -743,7 +743,7 @@
     },
     "Divergent Scan Data": {
       "es": "Datos de Escáner Divergentes",
-      "de": null,
+      "de": "Divergente Scandaten",
       "fr": null,
       "ru": null
     },
@@ -755,7 +755,7 @@
     },
     "Electrochemical Arrays": {
       "es": "Matriz Electroquímica",
-      "de": null,
+      "de": "Elektrochemische Detektoren",
       "fr": null,
       "ru": null
     },
@@ -851,7 +851,7 @@
     },
     "Heat Resistant Ceramics": {
       "es": "Cerámicas Resistentes al Calor",
-      "de": null,
+      "de": "Hitzefeste Keramik",
       "fr": null,
       "ru": null
     },
@@ -881,7 +881,7 @@
     },
     "Hybrid Capacitors": {
       "es": "Capacitadores Híbridos",
-      "de": null,
+      "de": "Hybridkondensatoren",
       "fr": null,
       "ru": null
     },
@@ -917,13 +917,13 @@
     },
     "Iron": {
       "es": "Hierro",
-      "de": null,
+      "de": "Eisen",
       "fr": null,
       "ru": null
     },
     "Irregular Emission Data": {
       "es": "Datos de Emisión Irregulares",
-      "de": null,
+      "de": "Irreguläre Emissionsdaten",
       "fr": null,
       "ru": null
     },
@@ -977,19 +977,19 @@
     },
     "Military Grade Alloys": {
       "es": "Aleaciones de Grado Militar",
-      "de": null,
+      "de": "Militärqualitätslegierungen",
       "fr": null,
       "ru": null
     },
     "Military Supercapacitors": {
       "es": "Supercapacitadores Militares",
-      "de": null,
+      "de": "Militärische Superkondensatoren",
       "fr": null,
       "ru": null
     },
     "Modified Consumer Firmware": {
       "es": "Firmware de Consumo Modificado",
-      "de": null,
+      "de": "Modifizierte Consumer-Firmware",
       "fr": null,
       "ru": null
     },
@@ -1007,7 +1007,7 @@
     },
     "Molybdenum": {
       "es": "Molibdeno",
-      "de": null,
+      "de": "Molibdän",
       "fr": null,
       "ru": null
     },
@@ -1031,7 +1031,7 @@
     },
     "Niobium": {
       "es": "Niobio",
-      "de": null,
+      "de": "Niobium",
       "fr": null,
       "ru": null
     },
@@ -1049,31 +1049,31 @@
     },
     "Pattern Alpha Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Alpha",
-      "de": null,
+      "de": "Alpha-Muster-Obeliskendaten",
       "fr": null,
       "ru": null
     },
     "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
-      "de": null,
+      "de": "Beta-Muster-Obeliskendaten",
       "fr": null,
       "ru": null
     },
     "Pattern Delta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Delta",
-      "de": null,
+      "de": "Delta-Muster-Obeliskendaten",
       "fr": null,
       "ru": null
     },
     "Pattern Epsilon Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Epsilon",
-      "de": null,
+      "de": "Epsilon-Muster-Obeliskendaten",
       "fr": null,
       "ru": null
     },
     "Pattern Gamma Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Gamma",
-      "de": null,
+      "de": "Gamma-Muster-Obeliskendaten",
       "fr": null,
       "ru": null
     },
@@ -1133,13 +1133,13 @@
     },
     "Praseodymium": {
       "es": "Praseodimio",
-      "de": null,
+      "de": "Praseodym",
       "fr": null,
       "ru": null
     },
     "Precipitated Alloys": {
       "es": "Aleaciones de Precipitación",
-      "de": null,
+      "de": "Gehärtete Legierungen",
       "fr": null,
       "ru": null
     },
@@ -1714,12 +1714,6 @@
       "ru": null
     },
     "Blueprint Ready": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "Select Language": {
       "es": null,
       "de": null,
       "fr": null,
