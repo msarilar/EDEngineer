@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.1.3",
+    "Content": "* Fixed a bug where the blueprint couldn't be sortable anymore by Type or Name\r\n* FULL spanish translation is finished! Many thanks to CMDR Aken (@omicrono) and CMDR TCAS (@TCAS) :)\r\n* Partial German translation (~40% complete) thanks to @rogerkilo and @Scorprox"
+  },
+  {
     "Version": "1.0.1.2",
     "Content": "* Fixed a bug where the blueprint couldn't be sortable anymore by Type or Name\r\n* FULL spanish translation is finished! Many thanks to CMDR Aken (@omicrono) and CMDR TCAS (@TCAS) :)\r\n* Partial German translation (~40% complete) thanks to @rogerkilo and @Scorprox"
   },
