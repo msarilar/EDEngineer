@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.1.1",
+    "Content": "* Fixed an issue linked to localization some Commanders experienced when using multiple accounts\r\n* The select language window is now showed on top of the overlay, not behind\r\n* Sharper rarity icons\r\n* Added Two buttons on the top right of the application (check all filters/uncheck all filters)"
+  },
+  {
     "Version": "1.0.1",
     "Content": "* Localization ! Pick your language the first time. You can switch in te tasktray icon afterwards. Translation contributions are welcome!\r\n* Fixed an issue for commanders with a dot (.) in their name\r\n* Fixed an issue for users who installed the application on a domain server where manual changes were never saved. If that is your situation, please uninstall, delete the entire folder located in \"C:\\Users\\%USERNAME%\\AppData\\Local\\EDEngineer\" and reinstall the application"
   },
