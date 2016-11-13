@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Filters;
+using EDEngineer.Models.Localization;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
 
@@ -18,6 +19,9 @@ namespace EDEngineer.Models
         public IReadOnlyCollection<string> Engineers { get; set; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
         public int Grade { get; set; }
+
+        public string TranslatedType => Languages.Instance.Translate(Type);
+        public string TranslatedName => Languages.Instance.Translate(Name);
 
         public Blueprint(string type, string name, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {

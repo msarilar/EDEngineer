@@ -7,6 +7,7 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:localization="clr-namespace:EDEngineer.Models.Localization"
         xmlns:local="clr-namespace:EDEngineer"
+        xmlns:ui="clr-namespace:EDEngineer.Utils.UI"
         mc:Ignorable="d"
         Title="MainWindow"
         Topmost="True"
@@ -610,7 +611,11 @@
                         </DataTemplate>
                     </DataGrid.RowDetailsTemplate>
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="G" Binding="{Binding Grade}" IsReadOnly="True" Width="30"
+                        <!-- GRADE -->
+                        <DataGridTextColumn Header="G"
+                                            Binding="{Binding Grade}"
+                                            IsReadOnly="True"
+                                            Width="30"
                                             CanUserResize="False">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="TextBlock">
@@ -619,10 +624,12 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <!-- TYPE -->
                         <DataGridTextColumn IsReadOnly="True"
                                             Width="*"
                                             MaxWidth="110"
-                                            CanUserResize="False">
+                                            CanUserResize="False"
+                                            SortMemberPath="TranslatedType">
                             <DataGridTextColumn.Binding>
                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Plasma Accelerator">
                                     <Binding Path="Type"
@@ -647,9 +654,11 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <!-- NAME -->
                         <DataGridTextColumn IsReadOnly="True"
                                             Width="*"
-                                            CanUserResize="False">
+                                            CanUserResize="False"
+                                            SortMemberPath="TranslatedName">
                             <DataGridTextColumn.Binding>
                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
                                     <Binding Path="Name"/>
@@ -670,10 +679,12 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
+                        <!-- PROGRESS -->
                         <DataGridTemplateColumn IsReadOnly="True"
                                                 SortMemberPath="ProgressSorting"
                                                 Width="*"
-                                                MaxWidth="140" CanUserResize="False">
+                                                MaxWidth="140"
+                                                CanUserResize="False">
                             <DataGridTemplateColumn.Header>
                                 <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
                                                           RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
@@ -701,6 +712,7 @@
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
+                        <!-- FAVORITE / IGNORED BUTTONS -->
                         <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
