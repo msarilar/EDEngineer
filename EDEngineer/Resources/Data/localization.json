@@ -599,7 +599,7 @@
     },
     "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
-      "de": null,
+      "de": "Biotech-Leiter",
       "fr": null,
       "ru": null
     },
@@ -713,7 +713,7 @@
     },
     "Cracked Industrial Firmware": {
       "es": "Firmware Industrial Pirateado",
-      "de": null,
+      "de": "Gecrackte Industrie-Firmware",
       "fr": null,
       "ru": null
     },
@@ -875,7 +875,7 @@
     },
     "HN Shock Mount": {
       "es": "Suspensión HN",
-      "de": null,
+      "de": "HN-Dämpferaufhängung",
       "fr": null,
       "ru": null
     },
@@ -935,7 +935,7 @@
     },
     "Manganese": {
       "es": "Manganeso",
-      "de": null,
+      "de": "Mangan",
       "fr": null,
       "ru": null
     },
@@ -953,7 +953,7 @@
     },
     "Mechanical Scrap": {
       "es": "Chatarra Mecánica",
-      "de": null,
+      "de": "Mechanischer Schrott",
       "fr": null,
       "ru": null
     },
@@ -1163,7 +1163,7 @@
     },
     "Proto Radiolic Alloys": {
       "es": "Aleaciones Protorradiadas",
-      "de": null,
+      "de": "Radiologische Legierungen (Proto)",
       "fr": null,
       "ru": null
     },
@@ -1175,7 +1175,7 @@
     },
     "Refined Focus Crystals": {
       "es": "Cristales de Enfoque Refinados",
-      "de": null,
+      "de": "Raffinierte Laserkristalle",
       "fr": null,
       "ru": null
     },
@@ -1211,19 +1211,19 @@
     },
     "Selenium": {
       "es": "Selenio",
-      "de": null,
+      "de": "Selen",
       "fr": null,
       "ru": null
     },
     "Shield Emitters": {
       "es": "Emisores de Escudo",
-      "de": null,
+      "de": "Schildemitter",
       "fr": null,
       "ru": null
     },
     "Shielding Sensors": {
       "es": "Sensores de Escudo",
-      "de": null,
+      "de": "Schildsensoren",
       "fr": null,
       "ru": null
     },
@@ -1241,7 +1241,7 @@
     },
     "Sulphur": {
       "es": "Azufre",
-      "de": null,
+      "de": "Schwefel",
       "fr": null,
       "ru": null
     },
@@ -1253,19 +1253,19 @@
     },
     "Technetium": {
       "es": "Tecnecio",
-      "de": null,
+      "de": "Technetium",
       "fr": null,
       "ru": null
     },
     "Telemetry Suite": {
       "es": "Paquete de Telemetría",
-      "de": null,
+      "de": "Telemetrie-Paket",
       "fr": null,
       "ru": null
     },
     "Tellurium": {
       "es": "Teluro",
-      "de": null,
+      "de": "Tellur",
       "fr": null,
       "ru": null
     },
@@ -1283,19 +1283,19 @@
     },
     "Tin": {
       "es": "Estaño",
-      "de": null,
+      "de": "Zinn",
       "fr": null,
       "ru": null
     },
     "Tungsten": {
       "es": "Tungsteno",
-      "de": null,
+      "de": "Wolfram",
       "fr": null,
       "ru": null
     },
     "Unexpected Emission Data": {
       "es": "Datos de Emisión Inesperados",
-      "de": null,
+      "de": "Unerwartete Emissionsdaten",
       "fr": null,
       "ru": null
     },
@@ -1307,7 +1307,7 @@
     },
     "Unknown Fragment": {
       "es": "Fragmento Desconocido",
-      "de": null,
+      "de": "Unbekanntes Fragment",
       "fr": null,
       "ru": null
     },
@@ -1325,7 +1325,7 @@
     },
     "Vanadium": {
       "es": "Vanadio",
-      "de": null,
+      "de": "Vanadium",
       "fr": null,
       "ru": null
     },
@@ -1337,19 +1337,19 @@
     },
     "Yttrium": {
       "es": "Ytrio",
-      "de": null,
+      "de": "Yttrium",
       "fr": null,
       "ru": null
     },
     "Zinc": {
       "es": "Zinc",
-      "de": null,
+      "de": "Zink",
       "fr": null,
       "ru": null
     },
     "Zirconium": {
       "es": "Circonio",
-      "de": null,
+      "de": "Zirconium",
       "fr": null,
       "ru": null
     },
