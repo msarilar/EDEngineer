@@ -48,7 +48,7 @@
                         <StackPanel Orientation="Vertical"
                                     Grid.Column="3">
                             <TextBlock HorizontalAlignment="Center"
-                                       Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}"/>
+                                       Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}, ConverterParameter=precise}"/>
                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
                                                        Background="Red"
                                                        Foreground="Green" />

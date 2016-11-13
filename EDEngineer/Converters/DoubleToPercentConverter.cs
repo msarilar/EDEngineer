@@ -8,7 +8,14 @@ namespace EDEngineer.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return ((double) value).ToString("0") + "%";
+            if ((parameter as string) == "precise")
+            {
+                return ((double)value).ToString("0.00") + "%";
+            }
+            else
+            {
+                return ((double)value).ToString("0") + "%";
+            }
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
