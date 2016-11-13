@@ -32,6 +32,8 @@
                                 HorizontalAlignment="Left"
                                 Width="20"
                                 Height="20"
+                                Margin="3,0,3,0"
+                                RenderOptions.BitmapScalingMode="HighQuality"
                                 VerticalAlignment="Center" />
                             <TextBlock FontFamily="./Resources/Fonts/#Euro Caps"
                                        FontSize="20"
