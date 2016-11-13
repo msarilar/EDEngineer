@@ -76,6 +76,8 @@ namespace EDEngineer
             blueprintConverter = new BlueprintConverter(State.Cargo);
             LoadBlueprints();
 
+            languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
+
             LoadState(logs);
         }
 
