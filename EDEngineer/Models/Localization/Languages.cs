@@ -127,14 +127,14 @@ namespace EDEngineer.Models.Localization
             }
 
             var lang = value as LanguageInfo;
-
-            if (lang == null) // users reported crashes and it appears that value might be of type MS.Internal.NamedObject ... it never should though.
+            
+            if (lang == null)
             {
-                return parameter?.ToString();
+                return null;
             }
 
             var text = parameter.ToString();
-
+            
             string translatedText;
             if (!Translations.ContainsKey(text) || !Translations[text].TryGetValue(lang.TwoLetterISOLanguageName, out translatedText) || string.IsNullOrEmpty(translatedText))
             {
