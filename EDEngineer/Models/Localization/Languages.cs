@@ -126,7 +126,13 @@ namespace EDEngineer.Models.Localization
                 return parameter;
             }
 
-            var lang = (LanguageInfo) value;
+            var lang = value as LanguageInfo;
+
+            if (lang == null) // users reported crashes and it appears that value might be of type MS.Internal.NamedObject ... it never should though.
+            {
+                return parameter?.ToString();
+            }
+
             var text = parameter.ToString();
 
             string translatedText;
