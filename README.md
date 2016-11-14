@@ -42,7 +42,7 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 ### Languages
 
 <p align="center">
-  <img src="http://i.imgur.com/R6Emccd.png" alt="Translation Progress"/>
+  <img src="http://i.imgur.com/C0geuSN.png" alt="Translation Progress"/>
 </p>
 
 Español: OK
