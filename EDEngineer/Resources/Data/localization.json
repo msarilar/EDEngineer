@@ -55,7 +55,7 @@
       "es": "Arma Eficiente",
       "de": "Waffeneffizienz",
       "fr": null,
-      "ru": null
+      "ru": "Эффективное Оружие"
     },
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
@@ -79,7 +79,7 @@
       "es": "Anclaje Robusto",
       "de": "Robustes Gestell",
       "fr": null,
-      "ru": null
+      "ru": "Прочное Крепление"
     },
     "Longer Range FSD interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
@@ -127,7 +127,7 @@
       "es": "Cargador de Alta Capacidad",
       "de": "Hochleistungsmagazin",
       "fr": null,
-      "ru": null
+      "ru": "Вместительный Магазин"
     },
     "Kinetic Resistant ": {
       "es": "Resistencia Cinética ",
@@ -139,7 +139,7 @@
       "es": "Arma Concentrada",
       "de": "Waffenfokus",
       "fr": null,
-      "ru": null
+      "ru": "Сфокусированное Оружие"
     },
     "Thermal Resistant Shields": {
       "es": "Escudos de Resistencia Térmica",
@@ -151,13 +151,13 @@
       "es": "Modificación de Tiro Rápido",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Увеличение Cкорострельности"
     },
     "Long Range Weapon": {
       "es": "Arma de Largo Alcance",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Увеличенная Дальность"
     },
     "Ammo Capacity": {
       "es": "Capacidad de Munición",
@@ -169,7 +169,7 @@
       "es": "Arma Sobrecargada",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Усиленное Оружие"
     },
     "Low Emissions ": {
       "es": "Bajas Emisiones ",
@@ -181,7 +181,7 @@
       "es": "Orientado a Sistemas ",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Системо-ориентированный"
     },
     "Lightweight ": {
       "es": "Aligerado ",
@@ -211,13 +211,13 @@
       "es": "Modificación de Motor Sucio",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "«Грязная» Донастройка"
     },
     "Engine Focused ": {
       "es": "Orientado a Motor ",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Двигатель-ориентированный"
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
@@ -265,7 +265,7 @@
       "es": "Doble Disparo",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Двойной Выстрел"
     },
     "Lightweight Hull Reinforcement": {
       "es": "Refuerzo Estructural Aligerado",
@@ -307,7 +307,7 @@
       "es": "Modificación de Motor Limpio",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "«Чистая» Донастройка"
     },
     "Kinetic Resistant Shields": {
       "es": "Escudos de Resistencia Cinética",
@@ -499,7 +499,7 @@
       "es": "Motor de Distorsión",
       "de": "Frameshiftantrieb",
       "fr": null,
-      "ru": "Рамочно-смесительный двигатель"
+      "ru": "Рамочно-Смесительный двигатель"
     },
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
@@ -709,7 +709,7 @@
       "es": "Compuestos de Core Dynamics",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Композиты Core Dynamics"
     },
     "Cracked Industrial Firmware": {
       "es": "Firmware Industrial Pirateado",
@@ -727,7 +727,7 @@
       "es": "Excepciones en Análisis de Estelas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Искл. из глубинного анализа данных следа"
     },
     "Decoded Emission Data": {
       "es": "Datos de Emisión Descodificados",
@@ -739,7 +739,7 @@
       "es": "Registros de Ciclo de Escudo Distorsionados",
       "de": null,
       "fr": null,
-      "ru": "Поврежденные Цикличные Записи Щита"
+      "ru": "Поврежденные цикличные записи щита"
     },
     "Divergent Scan Data": {
       "es": "Datos de Escáner Divergentes",
@@ -757,13 +757,13 @@
       "es": "Matriz Electroquímica",
       "de": "Elektrochemische Detektoren",
       "fr": null,
-      "ru": null
+      "ru": "Электрохимические массивы"
     },
     "Emergency Power Cells": {
       "es": "Celulas de Energía de Emergencia",
       "de": null,
       "fr": null,
-      "ru": "Аварийные Энергоячейки"
+      "ru": "Аварийные энергоячейки"
     },
     "Energy Grid Assembly": {
       "es": "Red de Energía",
@@ -817,13 +817,13 @@
       "es": "Germanio",
       "de": "Germanium",
       "fr": null,
-      "ru": null
+      "ru": "Германий"
     },
     "Grid Resistors": {
       "es": "Red Resistiva",
       "de": "Gitterwiderstände",
       "fr": null,
-      "ru": null
+      "ru": "Наборные резисторы"
     },
     "Hardware Diagnostic Sensor": {
       "es": "Sensor de Diagnóstico de Hardware",
@@ -883,13 +883,13 @@
       "es": "Capacitadores Híbridos",
       "de": "Hybridkondensatoren",
       "fr": null,
-      "ru": null
+      "ru": "Гибридные конденсаторы"
     },
     "Imperial Shielding": {
       "es": "Escudos Imperiales",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Имперская защита"
     },
     "Improvised Components": {
       "es": "Componentes Improvisados",
@@ -907,13 +907,13 @@
       "es": "Membrana Aislante",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Изолирующая мембрана"
     },
     "Ion Distributor": {
       "es": "Distribuidor de Iones",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Ионный распределитель"
     },
     "Iron": {
       "es": "Hierro",
@@ -1003,7 +1003,7 @@
       "es": "Terminales Modulares",
       "de": "Modulterminals",
       "fr": null,
-      "ru": "Модульные Терминалы"
+      "ru": "Модульные терминалы"
     },
     "Molybdenum": {
       "es": "Molibdeno",
@@ -1117,7 +1117,7 @@
       "es": "Capacitadores de Polímeros",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Полимерные конденсаторы"
     },
     "Power Converter": {
       "es": "Convertidor de Energía",
