@@ -535,37 +535,37 @@
       "es": "Análisis de Patrón de Escudo Aberrantes",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Анализ аномального поведения щита"
     },
     "Abnormal Compact Emission Data": {
       "es": "Compresión de Datos de Transmisiones Anormal",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Аномальные компактные данные об излучении"
     },
     "Adaptive Encryptors Capture": {
       "es": "Captura de Encriptadores Adaptativos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Захват адаптивного шифровальщика"
     },
     "Anomalous Bulk Scan Data": {
       "es": "Datos de Escáner en Bruto Anómalos",
       "de": "Anormale Massen-Scan-Daten",
       "fr": null,
-      "ru": null
+      "ru": "Аномальный массив данных сканирования"
     },
     "Anomalous FSD Telemetry": {
       "es": "Telemetría de MDD Anómala",
       "de": "Anormale FSA-Telemetrie",
       "fr": null,
-      "ru": null
+      "ru": "Аномальная телеметрия FSD"
     },
     "Antimony": {
       "es": "Antimonio",
       "de": "Antimon",
       "fr": null,
-      "ru": null
+      "ru": "Сурьма"
     },
     "Arsenic": {
       "es": "Arsénico",
@@ -577,31 +577,31 @@
       "es": "Motores de Articulación",
       "de": "Gelenkmotoren",
       "fr": null,
-      "ru": null
+      "ru": "Шарнирные моторы"
     },
     "Atypical Disrupted Wake Echoes": {
       "es": "Ecos de Estelas Interrumpidas Atípicos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Атипичное эхо поврежденного следа"
     },
     "Atypical Encryption Archives": {
       "es": "Archivos Encriptados Atípicos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Нетипичные архивы шифрования"
     },
     "Basic Conductors": {
       "es": "Conductores Básicos",
       "de": "Einfache Leiter",
       "fr": null,
-      "ru": null
+      "ru": "Простые проводники"
     },
     "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
       "de": "Biotech-Leiter",
       "fr": null,
-      "ru": null
+      "ru": "Биотехнические проводники"
     },
     "Bromellite": {
       "es": "Bromelita",
@@ -625,25 +625,25 @@
       "es": "Destilería Química",
       "de": "Chemiedestillerie",
       "fr": null,
-      "ru": null
+      "ru": "Оборудование для перегонки химикатов"
     },
     "Chemical Manipulators": {
       "es": "Manipuladores Químicos",
       "de": "Chemische Manipulatoren",
       "fr": null,
-      "ru": null
+      "ru": "Манипуляторы для работы с химикатами"
     },
     "Chemical Processors": {
       "es": "Procesadores Químicos",
       "de": "Chemische Prozessoren",
       "fr": null,
-      "ru": null
+      "ru": "Оборудование для химобработки"
     },
     "Chemical Storage Units": {
       "es": "Unidades de Almacenamiento Químico",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Контейнеры для химикатов"
     },
     "Chromium": {
       "es": "Cromo",
@@ -655,13 +655,13 @@
       "es": "Datos de Escáner Clasificados",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Засекреченные базы данных сканирования"
     },
     "Classified Scan Fragment": {
       "es": "Fragmento de Escáner Clasificado",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Засекреченные фрагменты данных сканирования"
     },
     "CMM Composite": {
       "es": "Compuesto CMM",
@@ -673,37 +673,37 @@
       "es": "Compuestos Compactos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Спрессованные композиты"
     },
     "Compound Shielding": {
       "es": "Escudos Compuestos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Многоступенчатая защита"
     },
     "Conductive Ceramics": {
       "es": "Cerámicas Conductivas",
       "de": "Elektrokeramiken",
       "fr": null,
-      "ru": null
+      "ru": "Проводящая керамика"
     },
     "Conductive Components": {
       "es": "Componentes Conductivos",
       "de": "Leitfähige Komponenten",
       "fr": null,
-      "ru": null
+      "ru": "Проводящие компоненты"
     },
     "Conductive Polymers": {
       "es": "Polímeros Conductivos",
       "de": "Leitfähige Polymere",
       "fr": null,
-      "ru": null
+      "ru": "Проводящие полимеры"
     },
     "Configurable Components": {
       "es": "Componentes Configurables",
       "de": "Konfigurierbare Komponenten",
       "fr": null,
-      "ru": null
+      "ru": "Настраиваемые компоненты"
     },
     "Core Dynamics Composites": {
       "es": "Compuestos de Core Dynamics",
@@ -715,13 +715,13 @@
       "es": "Firmware Industrial Pirateado",
       "de": "Gecrackte Industrie-Firmware",
       "fr": null,
-      "ru": null
+      "ru": "Взломанные промышленные микропрограммы"
     },
     "Crystal Shards": {
       "es": "Piedras de Cristal",
       "de": "Kristallscherben",
       "fr": null,
-      "ru": null
+      "ru": "Осколки кристаллов"
     },
     "Datamined Wake Exceptions": {
       "es": "Excepciones en Análisis de Estelas",
@@ -733,7 +733,7 @@
       "es": "Datos de Emisión Descodificados",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Расшифрованные данные об излучении"
     },
     "Distorted Shield Cycle Recordings": {
       "es": "Registros de Ciclo de Escudo Distorsionados",
@@ -745,13 +745,13 @@
       "es": "Datos de Escáner Divergentes",
       "de": "Divergente Scandaten",
       "fr": null,
-      "ru": null
+      "ru": "Неформатные данные сканирования"
     },
     "Eccentric Hyperspace Trajectories": {
       "es": "Trayectorias de Hiperespacio Excéntricas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Аномальные траектории в гиперпространстве"
     },
     "Electrochemical Arrays": {
       "es": "Matriz Electroquímica",
@@ -769,37 +769,37 @@
       "es": "Red de Energía",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Электросеть в сборе"
     },
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Исключительные зашифрованные данные об изл."
     },
     "Exhaust Manifold": {
       "es": "Colector de Escape",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Выпускной коллектор"
     },
     "Exquisite Focus Crystals": {
       "es": "Cristales de Enfoque Exquisitos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Отборные фокусировочные кристаллы"
     },
     "Filament Composites": {
       "es": "Compuestos de Filamentos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Волокнистые композиты"
     },
     "Flawed Focus Crystals": {
       "es": "Cristales de Enfoque Defectuosos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Поврежденные фокусировочные кристаллы"
     },
     "Focus Crystals": {
       "es": "Cristales de Enfoque",
@@ -811,7 +811,7 @@
       "es": "Aleaciones Galvanizadas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Сплавы для гальванизации"
     },
     "Germanium": {
       "es": "Germanio",
@@ -829,55 +829,55 @@
       "es": "Sensor de Diagnóstico de Hardware",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Сенсор диагностики оборудования"
     },
     "Heat Conduction Wiring": {
       "es": "Cableado de Conducción Calorífica",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Теплопроводящие провода"
     },
     "Heat Dispersion Plate": {
       "es": "Placa de Dispersión de Calor",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Теплорассеивающая пластина"
     },
     "Heat Exchangers": {
       "es": "Intercambiadores de Calor",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Теплообменные агрегаты"
     },
     "Heat Resistant Ceramics": {
       "es": "Cerámicas Resistentes al Calor",
       "de": "Hitzefeste Keramik",
       "fr": null,
-      "ru": null
+      "ru": "Жаропрочная керамика"
     },
     "Heat Vanes": {
       "es": "Palas Térmicas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Тепловые заслонки"
     },
     "Heatsink Interlink": {
       "es": "Interconectores de Eyector Térmico",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Радиаторный соединитель"
     },
     "High Density Composites": {
       "es": "Compuestos de Alta Densidad",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Высокоплотностные композиты"
     },
     "HN Shock Mount": {
       "es": "Suspensión HN",
       "de": "HN-Dämpferaufhängung",
       "fr": null,
-      "ru": null
+      "ru": "Разрядная установка HN"f
     },
     "Hybrid Capacitors": {
       "es": "Capacitadores Híbridos",
@@ -895,13 +895,13 @@
       "es": "Componentes Improvisados",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Кустарные компоненты"
     },
     "Inconsistent Shield Soak Analysis": {
       "es": "Analisis de Absorcion de Esucudos Inconsistente",
       "de": null,
       "fr": null,
-      "ru": "Неполный Анализ Поглощения Щита"
+      "ru": "Неполный анализ поглощения щита"
     },
     "Insulating Membrane": {
       "es": "Membrana Aislante",
@@ -925,43 +925,43 @@
       "es": "Datos de Emisión Irregulares",
       "de": "Irreguläre Emissionsdaten",
       "fr": null,
-      "ru": null
+      "ru": "Нестандартные данные об излучении"
     },
     "Magnetic Emitter Coil": {
       "es": "Bobina de Emisión Magnética",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Спираль магнитного излучателя"
     },
     "Manganese": {
       "es": "Manganeso",
       "de": "Mangan",
       "fr": null,
-      "ru": null
+      "ru": "Марганец"
     },
     "Mechanical Components": {
       "es": "Componentes Mecánicos",
       "de": "Mechanische Komponenten",
       "fr": null,
-      "ru": null
+      "ru": "Механические компоненты"
     },
     "Mechanical Equipment": {
       "es": "Equipamiento Mecánico",
       "de": "Mechanisches Equipment",
       "fr": null,
-      "ru": null
+      "ru": "Механическое оборудование"
     },
     "Mechanical Scrap": {
       "es": "Chatarra Mecánica",
       "de": "Mechanischer Schrott",
       "fr": null,
-      "ru": null
+      "ru": "Механические отходы"
     },
     "Mercury": {
       "es": "Mercurio",
       "de": "Quecksilber",
       "fr": null,
-      "ru": null
+      "ru": "Ртуть"
     },
     "Micro Controllers": {
       "es": "Microcontroladores",
@@ -973,7 +973,7 @@
       "es": "Mangueras de Refrigeración de Micro-tejidos",
       "de": "Mikroflecht-Kühlschläuche",
       "fr": null,
-      "ru": null
+      "ru": "Шланги системы охлаждения малых диаметров"
     },
     "Military Grade Alloys": {
       "es": "Aleaciones de Grado Militar",
@@ -985,19 +985,19 @@
       "es": "Supercapacitadores Militares",
       "de": "Militärische Superkondensatoren",
       "fr": null,
-      "ru": null
+      "ru": "Военные суперконденсаторы"
     },
     "Modified Consumer Firmware": {
       "es": "Firmware de Consumo Modificado",
       "de": "Modifizierte Consumer-Firmware",
       "fr": null,
-      "ru": null
+      "ru": "Измененные пользовательские микропрограммы"
     },
     "Modified Embedded Firmware": {
       "es": "Firmware Integrado Modificado",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Измененные встроенные микропрограммы"
     },
     "Modular Terminals": {
       "es": "Terminales Modulares",
@@ -1009,19 +1009,19 @@
       "es": "Molibdeno",
       "de": "Molibdän",
       "fr": null,
-      "ru": null
+      "ru": "Молибден"
     },
     "Nanobreakers": {
       "es": "Nanorrompedores",
       "de": "Nanozertrümmerer",
       "fr": null,
-      "ru": null
+      "ru": "Нанопрерыватели"
     },
     "Neofabric Insulation": {
       "es": "Neotejido Aislante",
       "de": "Neogewebe-Isolierung",
       "fr": null,
-      "ru": null
+      "ru": "Высокотехнологичная изоляция"
     },
     "Nickel": {
       "es": "Níquel",
@@ -1039,7 +1039,7 @@
       "es": "Claves Simétricas Abiertas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Открытые симметричные ключи"
     },
     "Osmium": {
       "es": "Osmio",
@@ -1081,25 +1081,25 @@
       "es": "Datos de Frecuencias de Escudo Peculiares",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Специфические данные о частоте щитов"
     },
     "Pharmaceutical Isolators": {
       "es": "Aislantes Farmacéuticos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Фармацевтические изоляционные материалы"
     },
     "Phase Alloys": {
       "es": "Aleaciones de Fase",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Фазовые сплавы"
     },
     "Phosphorus": {
       "es": "Fósforo",
       "de": "Phosphor",
       "fr": null,
-      "ru": null
+      "ru": "Фосфор"
     },
     "Platinum": {
       "es": "Platino",
@@ -1123,13 +1123,13 @@
       "es": "Convertidor de Energía",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Преобразователь энергии"
     },
     "Power Transfer Bus": {
       "es": "Conductos de Transferencia de Energía",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Энергообменная шина"
     },
     "Praseodymium": {
       "es": "Praseodimio",
@@ -1147,43 +1147,43 @@
       "es": "Compuestos con Patente",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Патентованные композиты"
     },
     "Proto Heat Radiators": {
       "es": "Protorradiadores Térmicos",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Прототипы теплоизлучателей"
     },
     "Proto Light Alloys": {
       "es": "Protoaleaciones Ligeras",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Опытные легкие сплавы"
     },
     "Proto Radiolic Alloys": {
       "es": "Aleaciones Protorradiadas",
       "de": "Radiologische Legierungen (Proto)",
       "fr": null,
-      "ru": null
+      "ru": "Сплавы для изготовления зондов"
     },
     "Radiation Baffle": {
       "es": "Deflector de Radiación",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Отражатель излучения"
     },
     "Refined Focus Crystals": {
       "es": "Cristales de Enfoque Refinados",
       "de": "Raffinierte Laserkristalle",
       "fr": null,
-      "ru": null
+      "ru": "Обработанные фокусировочные кристаллы"
     },
     "Reinforced Mounting Plate": {
       "es": "Placa de Anclaje Reforzada",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Усиленная монтажная плита"
     },
     "Ruthenium": {
       "es": "Rutenio",
@@ -1195,7 +1195,7 @@
       "es": "Aleaciones Recuperadas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Захваченные сплавы"
     },
     "Samarium": {
       "es": "Samario",
@@ -1207,7 +1207,7 @@
       "es": "Parche de Firmware de Seguridad",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Обновление для защитной микропрограммы"
     },
     "Selenium": {
       "es": "Selenio",
@@ -1219,25 +1219,25 @@
       "es": "Emisores de Escudo",
       "de": "Schildemitter",
       "fr": null,
-      "ru": null
+      "ru": "Щитоизлучатели"
     },
     "Shielding Sensors": {
       "es": "Sensores de Escudo",
       "de": "Schildsensoren",
       "fr": null,
-      "ru": null
+      "ru": "Сенсоры системы экранирования"
     },
     "Specialised Legacy Firmware": {
       "es": "Firmware Heredado Especializado",
       "de": "Spezial-Legacy-Firmware",
       "fr": null,
-      "ru": null
+      "ru": "Спец. микропрограммы предыдущего поколения"
     },
     "Strange Wake Solutions": {
       "es": "Extrañas Soluciones de Estelas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Странные расчеты следа"
     },
     "Sulphur": {
       "es": "Azufre",
@@ -1249,7 +1249,7 @@
       "es": "Códigos de Encriptación Marcados",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Меченые шифровальные коды"
     },
     "Technetium": {
       "es": "Tecnecio",
@@ -1261,25 +1261,25 @@
       "es": "Paquete de Telemetría",
       "de": "Telemetrie-Paket",
       "fr": null,
-      "ru": null
+      "ru": "Телеметрический комплект"
     },
     "Tellurium": {
       "es": "Teluro",
       "de": "Tellur",
       "fr": null,
-      "ru": "Теллурий"
+      "ru": "Теллур"
     },
     "Tempered Alloys": {
       "es": "Aleaciones Templadas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Жаропрочная керамика"
     },
     "Thermic Alloys": {
       "es": "Aleaciones Térmicas",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Термические сплавы"
     },
     "Tin": {
       "es": "Estaño",
@@ -1297,19 +1297,19 @@
       "es": "Datos de Emisión Inesperados",
       "de": "Unerwartete Emissionsdaten",
       "fr": null,
-      "ru": null
+      "ru": "Неожиданные данные об излучении"
     },
     "Unidentified Scan Archives": {
       "es": "Archivos de Escáner no Identificados",
       "de": "Unidentifizierte Scan-Archive",
       "fr": null,
-      "ru": null
+      "ru": "Неопознанные архивы сканирования"
     },
     "Unknown Fragment": {
       "es": "Fragmento Desconocido",
       "de": "Unbekanntes Fragment",
       "fr": null,
-      "ru": "Неизвестный Фрагмент"
+      "ru": "Неизвестный фрагмент"
     },
     "Untypical Shield Scans": {
       "es": "Escáner de Escudos Atípico",
@@ -1321,7 +1321,7 @@
       "es": "Ficheros Encriptados Inusuales",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Особые зашифрованные файлы"
     },
     "Vanadium": {
       "es": "Vanadio",
@@ -1333,7 +1333,7 @@
       "es": "Emisor de Escudos Desgastado",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Изношенные щитоизлучатели"
     },
     "Yttrium": {
       "es": "Ytrio",
