@@ -7,7 +7,6 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:localization="clr-namespace:EDEngineer.Models.Localization"
         xmlns:local="clr-namespace:EDEngineer"
-        xmlns:ui="clr-namespace:EDEngineer.Utils.UI"
         mc:Ignorable="d"
         Title="MainWindow"
         Topmost="True"
@@ -510,7 +509,17 @@
                           ItemsSource="{Binding Blueprints}"
                           DataContext="{Binding}"
                           Grid.Row="1"
+                          TargetUpdated="Blueprints_OnTargetUpdated"
                           Style="{DynamicResource BlueprintGridStyle}">
+                    <DataGrid.GroupStyle>
+                        <GroupStyle>
+                            <GroupStyle.Panel>
+                                <ItemsPanelTemplate>
+                                    <DataGridRowsPresenter/>
+                                </ItemsPanelTemplate>
+                            </GroupStyle.Panel>
+                        </GroupStyle>
+                    </DataGrid.GroupStyle>
                     <DataGrid.RowDetailsTemplate>
                         <DataTemplate>
                             <Grid Background="#043A59">
@@ -626,7 +635,7 @@
                         </DataGridTextColumn>
                         <!-- TYPE -->
                         <DataGridTextColumn IsReadOnly="True"
-                                            Width="*"
+                                            MinWidth="110"
                                             MaxWidth="110"
                                             CanUserResize="False"
                                             SortMemberPath="TranslatedType">
@@ -656,8 +665,9 @@
                         </DataGridTextColumn>
                         <!-- NAME -->
                         <DataGridTextColumn IsReadOnly="True"
-                                            Width="*"
+                                            Width="1*"
                                             CanUserResize="False"
+                                            x:Name="BlueprintNameColumn"
                                             SortMemberPath="TranslatedName">
                             <DataGridTextColumn.Binding>
                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
@@ -682,38 +692,44 @@
                         <!-- PROGRESS -->
                         <DataGridTemplateColumn IsReadOnly="True"
                                                 SortMemberPath="ProgressSorting"
-                                                Width="*"
-                                                MaxWidth="140"
+                                                x:Name="BlueprintProgressColumn"
+                                                Width="Auto"
                                                 CanUserResize="False">
                             <DataGridTemplateColumn.Header>
                                 <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
                                                           RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
                                                           Converter={x:Static localization:Languages.Instance},
                                                           ConverterParameter='Progress',
-                                                          FallbackValue='Progress'}"/>
+                                                          FallbackValue='Progress',
+                                                          NotifyOnTargetUpdated=True}"/>
                             </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <Grid>
-                                        <StackPanel Orientation="Vertical">
-                                            <TextBlock HorizontalAlignment="Center">
-                                                <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                <Run Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                                    RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                                    Converter={x:Static localization:Languages.Instance},
-                                                                    ConverterParameter=': can craft',
-                                                                    FallbackValue=': can craft'}" /> 
-                                                <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
-                                            </TextBlock>
-                                            <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                       Background="WhiteSmoke" Foreground="#ff7100" />
-                                        </StackPanel>
+                                    <Grid Width="Auto">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock HorizontalAlignment="Center"
+                                                    Grid.Row="0">
+                                            <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
+                                            <Run Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                                RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                                Converter={x:Static localization:Languages.Instance},
+                                                                ConverterParameter=': can craft',
+                                                                FallbackValue=': can craft'}" /> 
+                                            <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
+                                        </TextBlock>
+                                        <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
+                                                                    Background="WhiteSmoke"
+                                                                    Grid.Row="1"
+                                                                    Foreground="#ff7100" />
                                     </Grid>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
                         <!-- FAVORITE / IGNORED BUTTONS -->
-                        <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
+                        <DataGridTemplateColumn IsReadOnly="True" Width="100" MaxWidth="100" MinWidth="100" CanUserResize="False">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
                                     <Grid>
@@ -771,10 +787,18 @@
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
                     FontFamily="./Resources/Fonts/#Euro Caps"
-                    x:Name="ToggleEditMode"
+                    x:Name="ToggleEditModeUnlock"
                     Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unlock Window', FallbackValue='Unlock Window'}"
                     Click="ToggleEditModeChecked"
                     d:IsHidden="False"
+                    Grid.Column="1" />
+            <Button HorizontalAlignment="Stretch"
+                    FontSize="14"
+                    FontFamily="./Resources/Fonts/#Euro Caps"
+                    x:Name="ToggleEditModeLock"
+                    Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Lock Window', FallbackValue='Lock Window'}"
+                    Click="ToggleEditModeChecked"
+                    d:IsHidden="True"
                     Grid.Column="1" />
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"
