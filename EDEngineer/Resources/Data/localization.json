@@ -23,7 +23,7 @@
     "ru": {
       "TwoLetterISOLanguageName": "ru",
       "Name": "Русский",
-      "NotReadyWarning": "Этот перевод является неполным! Если вы выберете его, будут переведены только части приложения. Все, что не было переведено еще будет отображаться на английском языке."
+      "NotReadyWarning": "Этот перевод является неполным! Если вы выберете его, будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке."
     }
   },
   "Translations": {
@@ -349,13 +349,13 @@
       "es": "Impulsores",
       "de": "Schubdüsen",
       "fr": null,
-      "ru": null
+      "ru": "Маневровые двигатели"
     },
     "Multi-cannon": {
       "es": "Multicañón",
       "de": "Mehrfachgeschütz",
       "fr": null,
-      "ru": null
+      "ru": "Многоствольное орудие"
     },
     "Missile Rack": {
       "es": "Batería de Misiles",
@@ -379,7 +379,7 @@
       "es": "Interdictor de MDD",
       "de": "FSA-Unterbrecher",
       "fr": null,
-      "ru": null
+      "ru": "FSD перехватчик"
     },
     "Shield Generator": {
       "es": "Generador de Escudos",
@@ -391,19 +391,19 @@
       "es": "Defensa de Punto",
       "de": "Punktverteidigung",
       "fr": null,
-      "ru": null
+      "ru": "Точечная оборона"
     },
     "Shield Booster": {
       "es": "Potenciador de Escudos",
       "de": "Schild-Booster",
       "fr": null,
-      "ru": null
+      "ru": "Усилитель щита"
     },
     "Kill Warrant Scanner": {
       "es": "Escáner de Registro Criminal",
       "de": "Tötungsbefehl-Scanner",
       "fr": null,
-      "ru": null
+      "ru": "Сканер преступников"
     },
     "Rail Gun": {
       "es": "Cañón de Riel",
@@ -415,7 +415,7 @@
       "es": "Distribuidor de Energía",
       "de": "Energieverteiler",
       "fr": null,
-      "ru": null
+      "ru": "Распределитель питания"
     },
     "Fragment Cannon": {
       "es": "Cañón de Fragmentación",
@@ -475,7 +475,7 @@
       "es": "Láser de Pulso",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Импульсный лазер"
     },
     "Refinery": {
       "es": "Refinería",
@@ -499,7 +499,7 @@
       "es": "Motor de Distorsión",
       "de": "Frameshiftantrieb",
       "fr": null,
-      "ru": null
+      "ru": "Рамочно-смесительный двигатель"
     },
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
@@ -511,7 +511,7 @@
       "es": "Colector de Combustible",
       "de": "Treibstoffsammler",
       "fr": null,
-      "ru": null
+      "ru": "Топливозаборник"
     },
     "Torpedo Pylon": {
       "es": "Lanzatorpedos",
@@ -529,7 +529,7 @@
       "es": "Células de Escudo",
       "de": "Schildzellenbank",
       "fr": null,
-      "ru": null
+      "ru": "Щитонакопитель"
     },
     "Aberrant Shield Pattern Analysis": {
       "es": "Análisis de Patrón de Escudo Aberrantes",
@@ -1243,7 +1243,7 @@
       "es": "Azufre",
       "de": "Schwefel",
       "fr": null,
-      "ru": null
+      "ru": "Сера"
     },
     "Tagged Encryption Codes": {
       "es": "Códigos de Encriptación Marcados",
@@ -1267,7 +1267,7 @@
       "es": "Teluro",
       "de": "Tellur",
       "fr": null,
-      "ru": null
+      "ru": "Теллурий"
     },
     "Tempered Alloys": {
       "es": "Aleaciones Templadas",
@@ -1327,7 +1327,7 @@
       "es": "Vanadio",
       "de": "Vanadium",
       "fr": null,
-      "ru": null
+      "ru": "Ванадий"
     },
     "Worn Shield Emitters": {
       "es": "Emisor de Escudos Desgastado",
@@ -1339,13 +1339,13 @@
       "es": "Ytrio",
       "de": "Yttrium",
       "fr": null,
-      "ru": null
+      "ru": "Иттрий"
     },
     "Zinc": {
       "es": "Zinc",
       "de": "Zink",
       "fr": null,
-      "ru": null
+      "ru": "Цинк"
     },
     "Zirconium": {
       "es": "Circonio",
@@ -1411,43 +1411,43 @@
       "es": "Mercancía",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Товар"
     },
     "Commodities": {
       "es": "Mercancías",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Товары"
     },
     "Material": {
       "es": "Material",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Материал"
     },
     "Materials": {
       "es": "Materiales",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Материалы"
     },
     "Type": {
       "es": "Tipo",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Тип"
     },
     "Name": {
       "es": "Nombre",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Имя"
     },
     "Progress": {
       "es": "Progreso",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Прогресс"
     },
     "Last update: ": {
       "es": "Ultima actualización",
@@ -1513,7 +1513,7 @@
       "es": "Elaborable",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": ": можно изготовить"
     },
     "Reset": {
       "es": "Reiniciar",
@@ -1555,19 +1555,19 @@
       "es": "Ayuda",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Помощь"
     },
     "Quit": {
       "es": "Abandonar",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Выйти"
     },
     "OK": {
       "es": "OK",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "ОК"
     },
     "Cancel": {
       "es": "Cancelar",
@@ -1591,7 +1591,7 @@
       "es": "Error",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Ошибка"
     },
     "The requested shortcut ({0}) is invalid": {
       "es": "El acceso directo solicitado ({0}) no es válido",
@@ -1675,7 +1675,7 @@
       "es": "Cerrar",
       "de": null,
       "fr": "Fermer",
-      "ru": null
+      "ru": "Закрыть"
     },
     "Select a new log directory": {
       "es": "Selecciona un nuevo directorio de logs",
@@ -1723,7 +1723,7 @@
       "es": "Cambiar Idioma",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Выбрать язык"
     }
   }
 }
