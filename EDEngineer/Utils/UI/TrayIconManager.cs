@@ -42,46 +42,32 @@ namespace EDEngineer.Utils.UI
         {
             var translator = Languages.Instance;
 
-            var showItem = new MenuItem()
-            {
-                Text = translator.Translate("Show")
-            };
+            var showItem = new MenuItem();
             showItem.Click += showHandler;
 
-            var unlockItem = new MenuItem()
-            {
-                Text = translator.Translate("Toggle Window Mode (Locked/Unlocked)")
-            };
+            var unlockItem = new MenuItem();
             unlockItem.Click += unlockWindowHandler;
 
-            var resetItem = new MenuItem()
-            {
-                Text = translator.Translate("Reset Window Position")
-            };
+            var resetItem = new MenuItem();
             resetItem.Click += resetWindowHandler;
 
-            var selectLanguageItem = new MenuItem()
-            {
-                Text = translator.Translate("Select Language")
-            };
+            var selectLanguageItem = new MenuItem();
             selectLanguageItem.Click += selectLanguageHandler;
 
-            var setShortCutItem = new MenuItem()
-            {
-                Text = translator.Translate("Set Shortcut")
-            };
+            var setShortCutItem = new MenuItem();
             setShortCutItem.Click += configureShortcutHandler;
 
-            var helpItem = new MenuItem()
-            {
-                Text = translator.Translate("Help")
-            };
+            var helpItem = new MenuItem();
             helpItem.Click += (o,e) => Process.Start("https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues");
 
-            var quitItem = new MenuItem()
+            var quitItem = new MenuItem();
+
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem);
+            translator.PropertyChanged += (o, e) =>
             {
-                Text = translator.Translate("Quit")
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem);
             };
+
             quitItem.Click += quitHandler;
 
             var menu = new ContextMenu();
@@ -95,6 +81,18 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(helpItem);
             menu.MenuItems.Add(quitItem);
             return menu;
+        }
+
+        private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
+                                         MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem)
+        {
+            quitItem.Text = translator.Translate("Quit");
+            helpItem.Text = translator.Translate("Help");
+            setShortCutItem.Text = translator.Translate("Set Shortcut");
+            selectLanguageItem.Text = translator.Translate("Select Language");
+            resetItem.Text = translator.Translate("Reset Window Position");
+            unlockItem.Text = translator.Translate("Toggle Window Mode (Locked/Unlocked)");
+            showItem.Text = translator.Translate("Show");
         }
     }
 }
