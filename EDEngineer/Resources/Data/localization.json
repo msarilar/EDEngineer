@@ -23,7 +23,7 @@
     "ru": {
       "TwoLetterISOLanguageName": "ru",
       "Name": "Русский",
-      "NotReadyWarning": "Этот перевод является неполным! Если вы выберете его, будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке."
+      "NotReadyWarning": "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке."
     }
   },
   "Translations": {
@@ -367,7 +367,7 @@
       "es": "Núcleo de Energía",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Силовая установка"
     },
     "Chaff Launcher": {
       "es": "Lanzador de Señuelos",
@@ -385,7 +385,7 @@
       "es": "Generador de Escudos",
       "de": "Schildgenerator",
       "fr": null,
-      "ru": null
+      "ru": "Генератор щита"
     },
     "Point Defence": {
       "es": "Defensa de Punto",
@@ -571,7 +571,7 @@
       "es": "Arsénico",
       "de": "Arsen",
       "fr": null,
-      "ru": null
+      "ru": "Мышьяк"
     },
     "Articulation Motors": {
       "es": "Motores de Articulación",
@@ -607,19 +607,19 @@
       "es": "Bromelita",
       "de": "Bromellit",
       "fr": null,
-      "ru": null
+      "ru": "Бромеллит"
     },
     "Cadmium": {
       "es": "Cadmio",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Кадмий"
     },
     "Carbon": {
       "es": "Carbono",
       "de": "Kohlenstoff",
       "fr": null,
-      "ru": null
+      "ru": "Углерод"
     },
     "Chemical Distillery": {
       "es": "Destilería Química",
@@ -649,7 +649,7 @@
       "es": "Cromo",
       "de": "Chrom",
       "fr": null,
-      "ru": null
+      "ru": "Хром"
     },
     "Classified Scan Databanks": {
       "es": "Datos de Escáner Clasificados",
@@ -667,7 +667,7 @@
       "es": "Compuesto CMM",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "СММ Композит"
     },
     "Compact Composites": {
       "es": "Compuestos Compactos",
@@ -739,7 +739,7 @@
       "es": "Registros de Ciclo de Escudo Distorsionados",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Поврежденные Цикличные Записи Щита"
     },
     "Divergent Scan Data": {
       "es": "Datos de Escáner Divergentes",
@@ -763,7 +763,7 @@
       "es": "Celulas de Energía de Emergencia",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Аварийные Энергоячейки"
     },
     "Energy Grid Assembly": {
       "es": "Red de Energía",
@@ -805,7 +805,7 @@
       "es": "Cristales de Enfoque",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Фокусировочные Кристаллы"
     },
     "Galvanising Alloys": {
       "es": "Aleaciones Galvanizadas",
@@ -901,7 +901,7 @@
       "es": "Analisis de Absorcion de Esucudos Inconsistente",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Неполный Анализ Поглощения Щита"
     },
     "Insulating Membrane": {
       "es": "Membrana Aislante",
@@ -919,7 +919,7 @@
       "es": "Hierro",
       "de": "Eisen",
       "fr": null,
-      "ru": null
+      "ru": "Железо"
     },
     "Irregular Emission Data": {
       "es": "Datos de Emisión Irregulares",
@@ -967,7 +967,7 @@
       "es": "Microcontroladores",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Микроконтроллеры"
     },
     "Micro-Weave Cooling Hoses": {
       "es": "Mangueras de Refrigeración de Micro-tejidos",
@@ -979,7 +979,7 @@
       "es": "Aleaciones de Grado Militar",
       "de": "Militärqualitätslegierungen",
       "fr": null,
-      "ru": null
+      "ru": "Сплавы военного назначения"
     },
     "Military Supercapacitors": {
       "es": "Supercapacitadores Militares",
@@ -1003,7 +1003,7 @@
       "es": "Terminales Modulares",
       "de": "Modulterminals",
       "fr": null,
-      "ru": null
+      "ru": "Модульные Терминалы"
     },
     "Molybdenum": {
       "es": "Molibdeno",
@@ -1027,13 +1027,13 @@
       "es": "Níquel",
       "de": "Nickel",
       "fr": null,
-      "ru": null
+      "ru": "Никель"
     },
     "Niobium": {
       "es": "Niobio",
       "de": "Niobium",
       "fr": null,
-      "ru": null
+      "ru": "Ниобий"
     },
     "Open Symmetric Keys": {
       "es": "Claves Simétricas Abiertas",
@@ -1045,7 +1045,7 @@
       "es": "Osmio",
       "de": "Osmium",
       "fr": null,
-      "ru": null
+      "ru": "Осмий"
     },
     "Pattern Alpha Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Alpha",
@@ -1105,13 +1105,13 @@
       "es": "Platino",
       "de": "Platin",
       "fr": null,
-      "ru": null
+      "ru": "Платина"
     },
     "Polonium": {
       "es": "Polonio",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Полоний"
     },
     "Polymer Capacitors": {
       "es": "Capacitadores de Polímeros",
@@ -1135,13 +1135,13 @@
       "es": "Praseodimio",
       "de": "Praseodym",
       "fr": null,
-      "ru": null
+      "ru": "Празеодим"
     },
     "Precipitated Alloys": {
       "es": "Aleaciones de Precipitación",
       "de": "Gehärtete Legierungen",
       "fr": null,
-      "ru": null
+      "ru": "Осажденные сплавы"
     },
     "Proprietary Composites": {
       "es": "Compuestos con Patente",
@@ -1189,7 +1189,7 @@
       "es": "Rutenio",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Рутений"
     },
     "Salvaged Alloys": {
       "es": "Aleaciones Recuperadas",
@@ -1201,7 +1201,7 @@
       "es": "Samario",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Самарий"
     },
     "Security Firmware Patch": {
       "es": "Parche de Firmware de Seguridad",
@@ -1213,7 +1213,7 @@
       "es": "Selenio",
       "de": "Selen",
       "fr": null,
-      "ru": null
+      "ru": "Селен"
     },
     "Shield Emitters": {
       "es": "Emisores de Escudo",
@@ -1255,7 +1255,7 @@
       "es": "Tecnecio",
       "de": "Technetium",
       "fr": null,
-      "ru": null
+      "ru": "Технеций"
     },
     "Telemetry Suite": {
       "es": "Paquete de Telemetría",
@@ -1285,13 +1285,13 @@
       "es": "Estaño",
       "de": "Zinn",
       "fr": null,
-      "ru": null
+      "ru": "Олово"
     },
     "Tungsten": {
       "es": "Tungsteno",
       "de": "Wolfram",
       "fr": null,
-      "ru": null
+      "ru": "Вольфрам"
     },
     "Unexpected Emission Data": {
       "es": "Datos de Emisión Inesperados",
@@ -1309,13 +1309,13 @@
       "es": "Fragmento Desconocido",
       "de": "Unbekanntes Fragment",
       "fr": null,
-      "ru": null
+      "ru": "Неизвестный Фрагмент"
     },
     "Untypical Shield Scans": {
       "es": "Escáner de Escudos Atípico",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Нетипичные данные сканирования щитов"
     },
     "Unusual Encrypted Files": {
       "es": "Ficheros Encriptados Inusuales",
@@ -1351,7 +1351,7 @@
       "es": "Circonio",
       "de": "Zirconium",
       "fr": null,
-      "ru": null
+      "ru": "Цирконий"
     },
     "ECM": {
       "es": "Contramedida",
@@ -1573,7 +1573,7 @@
       "es": "Cancelar",
       "de": null,
       "fr": null,
-      "ru": null
+      "ru": "Отмена"
     },
     "Input a shortcut that's going to be used to show the window": {
       "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
@@ -1627,7 +1627,7 @@
       "es": "Favorito",
       "de": null,
       "fr": "Favorites",
-      "ru": null
+      "ru": "Избранное"
     },
     "Ignored": {
       "es": "Ignorado",
@@ -1639,13 +1639,13 @@
       "es": "Elaborable",
       "de": null,
       "fr": "Craftable",
-      "ru": null
+      "ru": "Доступны для изготовления"
     },
     "Non Craftable": {
       "es": "No Elaborable",
       "de": null,
       "fr": "Non Craftable",
-      "ru": null
+      "ru": "Не доступны для изготовления"
     },
     "Missing Commodities": {
       "es": "Mercancía Perdida",
@@ -1657,7 +1657,7 @@
       "es": "Todo",
       "de": null,
       "fr": "Tous",
-      "ru": null
+      "ru": "Всё"
     },
     "An error has been thrown by the application:": {
       "es": "Se ha producido un error:",
@@ -1699,7 +1699,7 @@
       "es": "Aviso",
       "de": null,
       "fr": "Avertissement",
-      "ru": null
+      "ru": "Предупреждение"
     },
     "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
       "es": "No ha seleccionado un directorio de registro, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
