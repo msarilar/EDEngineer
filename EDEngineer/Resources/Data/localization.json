@@ -671,7 +671,7 @@
     },
     "Compact Composites": {
       "es": "Compuestos Compactos",
-      "de": null,
+      "de": "Kompakt-Komposit",
       "fr": null,
       "ru": "Спрессованные композиты"
     },
@@ -1367,7 +1367,7 @@
     },
     "FSD Interdictor": {
       "es": "Interdictor",
-      "de": null,
+      "de": "FSA-Unterbrecher",
       "fr": null,
       "ru": null
     },
@@ -1403,289 +1403,289 @@
     },
     "Data": {
       "es": "Datos",
-      "de": null,
+      "de": "Daten",
       "fr": null,
       "ru": null
     },
     "Commodity": {
       "es": "Mercancía",
-      "de": null,
+      "de": "Handelsware",
       "fr": null,
       "ru": "Товар"
     },
     "Commodities": {
       "es": "Mercancías",
-      "de": null,
+      "de": "Handelswaren",
       "fr": null,
       "ru": "Товары"
     },
     "Material": {
       "es": "Material",
-      "de": null,
+      "de": "Material",
       "fr": null,
       "ru": "Материал"
     },
     "Materials": {
       "es": "Materiales",
-      "de": null,
+      "de": "Materialien",
       "fr": null,
       "ru": "Материалы"
     },
     "Type": {
       "es": "Tipo",
-      "de": null,
+      "de": "Typ",
       "fr": null,
       "ru": "Тип"
     },
     "Name": {
       "es": "Nombre",
-      "de": null,
+      "de": "Name",
       "fr": null,
       "ru": "Имя"
     },
     "Progress": {
       "es": "Progreso",
-      "de": null,
+      "de": "Fortschritt",
       "fr": null,
       "ru": "Прогресс"
     },
     "Last update: ": {
       "es": "Ultima actualización",
-      "de": null,
+      "de": "Letzte Aktualisierung: ",
       "fr": null,
       "ru": null
     },
     "Unlock Window": {
       "es": "Desbloquear ventana",
-      "de": null,
+      "de": "Fixierung aufheben",
       "fr": null,
       "ru": null
     },
     "Show entries with no stock?": {
       "es": "¿Mostrar entradas sin stock?",
-      "de": null,
+      "de": "Einträge ohne Bestand anzeigen?",
       "fr": null,
       "ru": null
     },
     "Show only for favorites?": {
       "es": "¿Mostras sólo los favoritos?",
-      "de": null,
+      "de": "Nur Favoriten anzeigen?",
       "fr": null,
       "ru": null
     },
     "Grade Filter": {
       "es": "Filtro de Grados",
-      "de": null,
+      "de": "Zugangsgrad Filter",
       "fr": null,
       "ru": null
     },
     "Engineer Filter": {
       "es": "Filtro de Ingenieros",
-      "de": null,
+      "de": "Ingenieur Filter",
       "fr": null,
       "ru": null
     },
     "Type Filter": {
       "es": "Filtro de Tipos",
-      "de": null,
+      "de": "Typ Filter",
       "fr": null,
       "ru": null
     },
     "Ignored And Favorite Filter": {
       "es": "Filtro de Ignorados y Favoritos",
-      "de": null,
+      "de": "Ignorierte und Favoriten Filter",
       "fr": null,
       "ru": null
     },
     "Craftable Filter": {
       "es": "Filtro de Elaborados",
-      "de": null,
+      "de": "Baubarkeit Filter",
       "fr": null,
       "ru": null
     },
     "Ingredient Filter (Reversed)": {
       "es": "Filtro de Ingredientes (Inverso)",
-      "de": null,
+      "de": "Bestandteile Filter (invers)",
       "fr": null,
       "ru": null
     },
     ": can craft": {
       "es": ": elaborable",
-      "de": null,
+      "de": ": baubar",
       "fr": null,
       "ru": ": можно изготовить"
     },
     "Reset": {
       "es": "Reiniciar",
-      "de": null,
+      "de": "Zurücksetzen",
       "fr": null,
       "ru": null
     },
     "Lock Window": {
       "es": "Bloquear Ventana",
-      "de": null,
+      "de": "Fenster fixieren",
       "fr": null,
       "ru": null
     },
     "Show": {
       "es": "Mostrar",
-      "de": null,
+      "de": "Anzeigen",
       "fr": null,
       "ru": null
     },
     "Toggle Window Mode (Locked/Unlocked)": {
       "es": "Cambiar el Modo Ventana (Bloqueado/Desbloqueado)",
-      "de": null,
+      "de": "Fenster Modus umschalten (fixiert/freigegeben)",
       "fr": null,
       "ru": null
     },
     "Reset Window Position": {
       "es": "Restablecer la Posición de la Ventana",
-      "de": null,
+      "de": "Fensterposition zurücksetzen",
       "fr": null,
       "ru": null
     },
     "Set Shortcut": {
       "es": "Establecer Acceso Directo",
-      "de": null,
+      "de": "Tastenkombination setzen",
       "fr": null,
       "ru": null
     },
     "Help": {
       "es": "Ayuda",
-      "de": null,
+      "de": "Hilfe",
       "fr": null,
       "ru": "Помощь"
     },
     "Quit": {
       "es": "Abandonar",
-      "de": null,
+      "de": "Beenden",
       "fr": null,
       "ru": "Выйти"
     },
     "OK": {
       "es": "OK",
-      "de": null,
+      "de": "OK",
       "fr": null,
       "ru": "ОК"
     },
     "Cancel": {
       "es": "Cancelar",
-      "de": null,
+      "de": "Abbrechen",
       "fr": null,
       "ru": "Отмена"
     },
     "Input a shortcut that's going to be used to show the window": {
       "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
-      "de": null,
+      "de": "Geben Sie eine Tastenkombination ein, die das Fenster anzeigt",
       "fr": null,
       "ru": null
     },
     "You can't use an empty shortcut": {
       "es": "No puede usar un acceso directo vacío",
-      "de": null,
+      "de": "Sie können keine leere Tastenkombination benutzen",
       "fr": null,
       "ru": null
     },
     "Error": {
       "es": "Error",
-      "de": null,
+      "de": "Fehler",
       "fr": null,
       "ru": "Ошибка"
     },
     "The requested shortcut ({0}) is invalid": {
       "es": "El acceso directo solicitado ({0}) no es válido",
-      "de": null,
+      "de": "Die gewünschte Tastenkombination ({0}) ist ungültig",
       "fr": null,
       "ru": null
     },
     "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
       "es": "Debes utilizar una tecla normal para acompañar la tecla modificadora como (Ctrl+F10 or Shift+R)",
-      "de": null,
+      "de": "Sie müssen eine reguläre Taste zusammen mit einer modifizierenden Taste verwenden wie (Strg+F10 or Shift+R)",
       "fr": null,
       "ru": null
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
-      "de": null,
+      "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
       "fr": null,
       "ru": null
     },
     "Unknown material, please contact the author ! {0}": {
       "es": "Material desconocido, contacta con el autor  ! {0}",
-      "de": null,
+      "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor ! {0}",
       "fr": "Micromateriau inconnu, contactez l'auteur ! {0}",
       "ru": null
     },
     "Neither": {
       "es": "Ninguno",
-      "de": null,
+      "de": "Weder noch",
       "fr": "Autres",
       "ru": null
     },
     "Favorite": {
       "es": "Favorito",
-      "de": null,
+      "de": "Favoriten",
       "fr": "Favorites",
       "ru": "Избранное"
     },
     "Ignored": {
       "es": "Ignorado",
-      "de": null,
+      "de": "Ignorierte",
       "fr": "Ignorées",
       "ru": null
     },
     "Craftable": {
       "es": "Elaborable",
-      "de": null,
+      "de": "Baubare",
       "fr": "Craftable",
       "ru": "Доступны для изготовления"
     },
     "Non Craftable": {
       "es": "No Elaborable",
-      "de": null,
+      "de": "Nicht Baubare",
       "fr": "Non Craftable",
       "ru": "Не доступны для изготовления"
     },
     "Missing Commodities": {
       "es": "Mercancía Perdida",
-      "de": null,
+      "de": "Fehlende Handelswaren",
       "fr": "Commodités Manquantes",
       "ru": null
     },
     "All": {
       "es": "Todo",
-      "de": null,
+      "de": "Alle",
       "fr": "Tous",
       "ru": "Всё"
     },
     "An error has been thrown by the application:": {
       "es": "Se ha producido un error:",
-      "de": null,
+      "de": "Ein Fehler ist aufgetreten:",
       "fr": "Une erreur a été levée par l'application:",
       "ru": null
     },
     "Unrecoverable Error": {
       "es": "Error Irrecuperable",
-      "de": null,
+      "de": "Fataler Fehler",
       "fr": "Erreur Fatale",
       "ru": null
     },
     "Close": {
       "es": "Cerrar",
-      "de": null,
+      "de": "Schließen",
       "fr": "Fermer",
       "ru": "Закрыть"
     },
     "Select a new log directory": {
       "es": "Selecciona un nuevo directorio de logs",
-      "de": null,
+      "de": "Wählen Sie ein neues Log Verzeichnis aus",
       "fr": "Choisissez un nouveau répertoire de logs",
       "ru": null
     },
-    "Couln't find the log folder for elite, you'll have to specify it": {
+    "Couldn't find the log folder for elite, you'll have to specify it": {
       "es": "No se pudo encontrar la carpeta de logs para Elite, tendrás que especificarla",
-      "de": null,
+      "de": "Der Log Folder von Elite konnte nicht gefunden werden, bitte geben Sie ihn manuell an",
       "fr": "Impossible de trouver le dossier des logs de Elite, vous devez le spécifier",
       "ru": null
     },
