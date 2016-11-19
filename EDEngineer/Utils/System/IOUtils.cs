@@ -34,7 +34,7 @@ namespace EDEngineer.Utils.System
                 {
                     Description = forcePickFolder ? 
                                 translator.Translate("Select a new log directory") :
-                                translator.Translate("Couln't find the log folder for elite, you'll have to specify it")
+                                translator.Translate("Couldn't find the log folder for elite, you'll have to specify it")
                 };
 
                 if (forcePickFolder && !string.IsNullOrEmpty(currentLogDirectory))

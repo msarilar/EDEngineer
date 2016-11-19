@@ -134,7 +134,13 @@ namespace EDEngineer.Models.Localization
             }
 
             var text = parameter.ToString();
-            
+
+#if debug
+            if(!Translations.ContainsKey(text))
+            {
+                MessageBox.Show($"No localization for text : {text}");
+            }
+#endif
             string translatedText;
             if (!Translations.ContainsKey(text) || !Translations[text].TryGetValue(lang.TwoLetterISOLanguageName, out translatedText) || string.IsNullOrEmpty(translatedText))
             {
