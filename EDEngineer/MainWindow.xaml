@@ -7,7 +7,6 @@
         xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
         xmlns:localization="clr-namespace:EDEngineer.Models.Localization"
         xmlns:local="clr-namespace:EDEngineer"
-        xmlns:ui="clr-namespace:EDEngineer.Utils.UI"
         mc:Ignorable="d"
         Title="MainWindow"
         Topmost="True"
