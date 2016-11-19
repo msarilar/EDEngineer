@@ -107,7 +107,7 @@
     },
     "Thermal Resistant ": {
       "es": "Resistencia Térmica ",
-      "de": "Hitzebeständig ",
+      "de": "Thermalresistenter ",
       "fr": null,
       "ru": null
     },
@@ -131,7 +131,7 @@
     },
     "Kinetic Resistant ": {
       "es": "Resistencia Cinética ",
-      "de": "Kinetikresistent ",
+      "de": "Kinetikresistenter ",
       "fr": null,
       "ru": null
     },
@@ -245,7 +245,7 @@
     },
     "Heavy Duty ": {
       "es": "Alta Resistencia ",
-      "de": "Hochleistungs ",
+      "de": "Schwerer ",
       "fr": null,
       "ru": null
     },
