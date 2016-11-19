@@ -4079,6 +4079,10 @@
       {
         "Name": "Vanadium",
         "Size": 1
+      },
+      {
+        "Name": "CMM Composite",
+        "Size": 1
       }
     ],
     "Grade": 3
