@@ -59,7 +59,7 @@
     },
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
-      "de": null,
+      "de": "Leichtgewichtgeschütz",
       "fr": null,
       "ru": null
     },
@@ -149,7 +149,7 @@
     },
     "Rapid Fire Modification": {
       "es": "Modificación de Tiro Rápido",
-      "de": null,
+      "de": "Schnellfeuermodifikation",
       "fr": null,
       "ru": "Увеличение Cкорострельности"
     },
@@ -161,7 +161,7 @@
     },
     "Ammo Capacity": {
       "es": "Capacidad de Munición",
-      "de": null,
+      "de": "Hochleistungsmagazin",
       "fr": null,
       "ru": null
     },
@@ -185,7 +185,7 @@
     },
     "Lightweight ": {
       "es": "Aligerado ",
-      "de": null,
+      "de": "Leichtgewicht ",
       "fr": null,
       "ru": null
     },
@@ -203,7 +203,7 @@
     },
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
-      "de": null,
+      "de": "Thermischer Widerstand Hüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -221,7 +221,7 @@
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
-      "de": null,
+      "de": "Kinetischer Widerstand Hüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -233,7 +233,7 @@
     },
     "Rapid Charge ": {
       "es": "Recarga Rápida ",
-      "de": null,
+      "de": "Ladungsoptimierte ",
       "fr": null,
       "ru": null
     },
@@ -245,7 +245,7 @@
     },
     "Heavy Duty ": {
       "es": "Alta Resistencia ",
-      "de": null,
+      "de": "Hochleistungs ",
       "fr": null,
       "ru": null
     },
@@ -257,7 +257,7 @@
     },
     "Blast Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Explosiva",
-      "de": null,
+      "de": "Detonationswiderstand Hüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -269,7 +269,7 @@
     },
     "Lightweight Hull Reinforcement": {
       "es": "Refuerzo Estructural Aligerado",
-      "de": null,
+      "de": "Leichtgewicht Hüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -281,7 +281,7 @@
     },
     "Specialised ": {
       "es": "Especializado ",
-      "de": null,
+      "de": "Spezialisierte",
       "fr": null,
       "ru": null
     },
@@ -359,7 +359,7 @@
     },
     "Missile Rack": {
       "es": "Batería de Misiles",
-      "de": null,
+      "de": "Raketenrampe",
       "fr": null,
       "ru": null
     },
@@ -437,13 +437,13 @@
     },
     "Armour": {
       "es": "Blindaje",
-      "de": null,
+      "de": "Panzerung",
       "fr": null,
       "ru": null
     },
     "Prospector Limpet Controller": {
       "es": "Lanzador Dron Prospector",
-      "de": null,
+      "de": "Drohnensteuerung Erzsucher",
       "fr": null,
       "ru": null
     },
@@ -461,19 +461,19 @@
     },
     "Heat Sink Launcher": {
       "es": "Eyector Térmico",
-      "de": null,
+      "de": "Kühlkörperwerfer",
       "fr": null,
       "ru": null
     },
     "Frame Shift Wake Scanner": {
       "es": "Escáner de Estelas de Distorsión",
-      "de": null,
+      "de": "FS-Sogwolkenscanner",
       "fr": null,
       "ru": null
     },
     "Pulse Laser": {
       "es": "Láser de Pulso",
-      "de": null,
+      "de": "Impulslaser",
       "fr": null,
       "ru": "Импульсный лазер"
     },
@@ -485,13 +485,13 @@
     },
     "Auto Field-Maintenance Unit": {
       "es": "Unidad de Automantenimiento",
-      "de": null,
+      "de": "Automatische Feldwartungs-Einheit",
       "fr": null,
       "ru": null
     },
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
-      "de": null,
+      "de": "Treibstofftransferierer-Drohnensteuerung",
       "fr": null,
       "ru": null
     },
@@ -503,7 +503,7 @@
     },
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
-      "de": null,
+      "de": "Steuereinheit Ladelukenöffner-Drohne",
       "fr": null,
       "ru": null
     },
@@ -515,13 +515,13 @@
     },
     "Torpedo Pylon": {
       "es": "Lanzatorpedos",
-      "de": null,
+      "de": "Torpedopylon",
       "fr": null,
       "ru": null
     },
     "Collector Limpet Controller": {
       "es": "Lanzador Dron Colector",
-      "de": null,
+      "de": "Steuerung Sammeldrohne",
       "fr": null,
       "ru": null
     },
@@ -641,7 +641,7 @@
     },
     "Chemical Storage Units": {
       "es": "Unidades de Almacenamiento Químico",
-      "de": null,
+      "de": "Chemische Lagereinheiten",
       "fr": null,
       "ru": "Контейнеры для химикатов"
     },
@@ -1355,13 +1355,13 @@
     },
     "ECM": {
       "es": "Contramedida",
-      "de": null,
+      "de": "EGM",
       "fr": null,
       "ru": null
     },
     "Hull": {
       "es": "Casco",
-      "de": null,
+      "de": "Rumpfhülle",
       "fr": null,
       "ru": null
     },
@@ -1373,31 +1373,31 @@
     },
     "Prospector LC": {
       "es": "LD Prospector",
-      "de": null,
+      "de": "DS Erzsucher",
       "fr": null,
       "ru": null
     },
     "Fuel Transfer LC": {
       "es": "LD Repostaje",
-      "de": null,
+      "de": "DS Treibstofftransferierer",
       "fr": null,
       "ru": null
     },
     "Hatch Breaker LC": {
       "es": "LD Extractor",
-      "de": null,
+      "de": "DS Ladelukenöffner",
       "fr": null,
       "ru": null
     },
     "Collector LC": {
       "es": "LD Colector",
-      "de": null,
+      "de": "DS Sammeldrohne",
       "fr": null,
       "ru": null
     },
     "AFMU": {
       "es": "Unidad de Automantenimiento",
-      "de": null,
+      "de": "AFWE",
       "fr": null,
       "ru": null
     },
@@ -1691,37 +1691,37 @@
     },
     "Selected directory doesn't seem to contain any log file ; are you sure?": {
       "es": "El directorio seleccionado no parece contener ningún log ; ¿Estás seguro?",
-      "de": null,
+      "de": "Das gewählte Verzeichnis scheint keine Log Files zu enthalten ; Sind Sie sicher?",
       "fr": "Le répertoire choisi ne semble pas contenir de fichier ; êtes vous sûr?",
       "ru": null
     },
     "Warning": {
       "es": "Aviso",
-      "de": null,
+      "de": "Warnung",
       "fr": "Avertissement",
       "ru": "Предупреждение"
     },
     "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
       "es": "No ha seleccionado un directorio de registro, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
-      "de": null,
+      "de": "Sie haben kein Log Verzeichnis gewählt, EDEngineer wird die Bestandsänderungen nicht aktualisieren können. Sie können die App jedoch manuell benutzen.",
       "fr": "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
       "ru": null
     },
     "No folder in use ; click to change": {
       "es": "Ninguna carpeta en uso ; haz clic para cambiar",
-      "de": null,
+      "de": "Kein Verzeichnis in Verwendung ; Klicken Sie zum ändern",
       "fr": "Aucun répertoire ; cliquez ici pour changer",
       "ru": null
     },
     "Blueprint Ready": {
       "es": "Receta lista",
-      "de": null,
+      "de": "Blaupause fertig",
       "fr": null,
       "ru": null
     },
     "Select Language": {
       "es": "Cambiar Idioma",
-      "de": null,
+      "de": "Sprache wählen",
       "fr": null,
       "ru": "Выбрать язык"
     }
