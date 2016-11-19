@@ -73,17 +73,17 @@
                                 </ItemsControl.ItemsPanel>
                                 <ItemsControl.ItemContainerStyle>
                                     <Style>
-                                        <Setter Property="FrameworkElement.Margin" Value="5"/>
+                                        <Setter Property="FrameworkElement.Margin" Value="3"/>
                                     </Style>
                                 </ItemsControl.ItemContainerStyle>
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <Frame Template="{Binding Converter={StaticResource OriginToControlTemplate}}" 
-                                           Width="20"
+                                           Width="18"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            Foreground="{Binding Converter={StaticResource OriginToColor}}"
-                                           Height="20"/>
+                                           Height="18"/>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
