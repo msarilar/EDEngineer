@@ -1522,7 +1522,7 @@
       "ru": null
     },
     "Lock Window": {
-      "es": "Bloquear Ventana",
+      "es": "Bloquear ventana",
       "de": "Fenster fixieren",
       "fr": null,
       "ru": null
@@ -1534,19 +1534,19 @@
       "ru": null
     },
     "Toggle Window Mode (Locked/Unlocked)": {
-      "es": "Cambiar el Modo Ventana (Bloqueado/Desbloqueado)",
+      "es": "Cambiar el modo ventana (Bloqueado/Desbloqueado)",
       "de": "Fenster Modus umschalten (fixiert/freigegeben)",
       "fr": null,
       "ru": null
     },
     "Reset Window Position": {
-      "es": "Restablecer la Posición de la Ventana",
+      "es": "Restablecer la posición de la ventana",
       "de": "Fensterposition zurücksetzen",
       "fr": null,
       "ru": null
     },
     "Set Shortcut": {
-      "es": "Establecer Acceso Directo",
+      "es": "Establecer acceso directo",
       "de": "Tastenkombination setzen",
       "fr": null,
       "ru": null
@@ -1558,7 +1558,7 @@
       "ru": "Помощь"
     },
     "Quit": {
-      "es": "Abandonar",
+      "es": "Salir",
       "de": "Beenden",
       "fr": null,
       "ru": "Выйти"
@@ -1582,7 +1582,7 @@
       "ru": null
     },
     "You can't use an empty shortcut": {
-      "es": "No puede usar un acceso directo vacío",
+      "es": "No puedes usar un acceso directo vacío",
       "de": "Sie können keine leere Tastenkombination benutzen",
       "fr": null,
       "ru": null
@@ -1720,7 +1720,7 @@
       "ru": null
     },
     "Select Language": {
-      "es": "Cambiar Idioma",
+      "es": "Cambiar idioma",
       "de": null,
       "fr": null,
       "ru": "Выбрать язык"
