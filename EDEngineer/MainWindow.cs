@@ -109,12 +109,12 @@ namespace EDEngineer
 
             if (AllowsTransparency)
             {
-                ToggleEditModeLock.Visibility = Visibility.Hidden;
+                ToggleEditMode.Content = viewModel.Languages.Translate("Unlock Window");
                 Splitter.Visibility = Visibility.Hidden;
             }
             else
             {
-                ToggleEditModeUnlock.Visibility = Visibility.Hidden;
+                ToggleEditMode.Content = viewModel.Languages.Translate("Lock Window");
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
             }
 
@@ -392,13 +392,6 @@ namespace EDEngineer
         private void UncheckAllButtonClicked(object sender, RoutedEventArgs e)
         {
             viewModel.ChangeAllFilters(false);
-        }
-
-        private void Blueprints_OnTargetUpdated(object sender, DataTransferEventArgs e)
-        {
-            BlueprintNameColumn.Width = 0;
-            Blueprints.UpdateLayout();
-            BlueprintNameColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Auto);
         }
     }
 }
