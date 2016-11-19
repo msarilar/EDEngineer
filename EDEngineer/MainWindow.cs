@@ -74,7 +74,14 @@ namespace EDEngineer
             DataContext = viewModel;
 
             RefreshCargoSources();
-            viewModel.PropertyChanged += (o, e) => RefreshCargoSources();
+            viewModel.PropertyChanged += (o, e) =>
+                                         {
+                                             if (e.PropertyName == "ShowOnlyForFavorites" ||
+                                                 e.PropertyName == "ShowZeroes")
+                                             {
+                                                 RefreshCargoSources();
+                                             }
+                                         };
         }
 
         public void RefreshCargoSources()
