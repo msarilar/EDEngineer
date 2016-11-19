@@ -135,8 +135,8 @@ namespace EDEngineer.Models.Localization
 
             var text = parameter.ToString();
 
-#if debug
-            if(!Translations.ContainsKey(text))
+#if DEBUG
+            if (!Translations.ContainsKey(text))
             {
                 MessageBox.Show($"No localization for text : {text}");
             }
