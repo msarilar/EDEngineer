@@ -28,6 +28,8 @@
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+            <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
+            <converters:OriginToColorConverter x:Key="OriginToColor" />
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 

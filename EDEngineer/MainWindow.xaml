@@ -22,47 +22,16 @@
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
             <Grid>
+                <Grid.ToolTip>
+                    <ToolTip>
+                        <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}"/>
+                    </ToolTip>
+                </Grid.ToolTip>
                 <Border BorderBrush="#ff7100"
                         BorderThickness="1">
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
-                            <Frame Template="{StaticResource OriginMining}" 
-                                   Width="20"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"
-                                   Foreground="DeepSkyBlue"
-                                   Height="20">
-                            </Frame>
-                            <Frame Template="{StaticResource OriginMarket}" 
-                                   Width="20"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"
-                                   Foreground="OrangeRed"
-                                   Height="20">
-                            </Frame>
-                            <Frame Template="{StaticResource OriginSalvage}" 
-                                   Width="20"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"
-                                   Foreground="MediumPurple"
-                                   Height="20">
-                            </Frame>
-                            <Frame Template="{StaticResource OriginScan}" 
-                                   Width="20"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"
-                                   Foreground="Wheat"
-                                   Height="20">
-                            </Frame>
-                            <Frame Template="{StaticResource OriginSurface}" 
-                                   Width="20"
-                                   HorizontalAlignment="Center"
-                                   VerticalAlignment="Center"
-                                   Foreground="GreenYellow"
-                                   Height="20">
-                            </Frame>
-                            <!--
                             <Image
                                 Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                 HorizontalAlignment="Left"
@@ -71,7 +40,6 @@
                                 Margin="3,0,3,0"
                                 RenderOptions.BitmapScalingMode="HighQuality"
                                 VerticalAlignment="Center" />
-                            -->
                             <TextBlock FontFamily="./Resources/Fonts/#Euro Caps"
                                        FontSize="20"
                                        Margin="2,0,0,0"
@@ -87,21 +55,47 @@
                             </TextBlock>
                         </StackPanel>
 
-                        <Grid>
+                        <Grid HorizontalAlignment="Right">
                             <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
                                 <ColumnDefinition x:Name="PART_TextBoxColumn" Width="*" />
                                 <ColumnDefinition x:Name="PART_NumericUpColumn" Width="Auto" />
                                 <ColumnDefinition x:Name="PART_NumericDownColumn" Width="Auto" />
                             </Grid.ColumnDefinitions>
+
+                            <ItemsControl ItemsSource="{Binding Value.Data.Origins}"
+                                          Grid.Column="0">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Horizontal"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemContainerStyle>
+                                    <Style>
+                                        <Setter Property="FrameworkElement.Margin" Value="5"/>
+                                    </Style>
+                                </ItemsControl.ItemContainerStyle>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame Template="{Binding Converter={StaticResource OriginToControlTemplate}}" 
+                                           Width="20"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Foreground="{Binding Converter={StaticResource OriginToColor}}"
+                                           Height="20"/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            
                             <ContentControl x:Name="PART_FloatingMessageContainer"
-                                            Grid.Column="0"
+                                            Grid.Column="1"
                                             Style="{DynamicResource FloatingMessageContainerStyle}">
                                 <TextBlock x:Name="PART_FloatingMessage"
                                            Style="{DynamicResource MetroAutoCollapsingTextBlock}"
                                            Text="{TemplateBinding controls:TextBoxHelper.Watermark}" />
                             </ContentControl>
 
-                            <StackPanel Grid.Column="0"
+                            <StackPanel Grid.Column="1"
                                         HorizontalAlignment="Right"
                                         Orientation="Horizontal"
                                         VerticalAlignment="Center">
@@ -126,7 +120,7 @@
                                          Text="{Binding Value.Count, Mode=OneWay}" />
                             </StackPanel>
                             <Button x:Name="IncrementButton"
-                                    Grid.Column="1"
+                                    Grid.Column="2"
                                     Margin="2 2 2 2"
                                     Tag="{Binding Value}"
                                     Style="{DynamicResource ChromelessButtonStyle}"
@@ -140,7 +134,7 @@
                                       Stretch="Fill" />
                             </Button>
                             <Button x:Name="DecrementButton"
-                                    Grid.Column="2"
+                                    Grid.Column="3"
                                     Margin="0 2 2 2"
                                     VerticalContentAlignment="Center"
                                     Click="DecrementButtonClicked"
