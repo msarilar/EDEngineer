@@ -127,6 +127,7 @@ namespace EDEngineer
             var shortcut = SettingsManager.Shortcut;
 
             HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(shortcut));
+            Blueprints.UpdateLayout();
         }
 
         private void ConfigureShortcut(object sender, EventArgs e)
