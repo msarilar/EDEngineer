@@ -214,6 +214,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\OriginTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SelectLanguageWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -287,11 +291,6 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\origin-salvage.png" />
-    <Resource Include="Resources\Images\origin-surface.png" />
-    <Resource Include="Resources\Images\origin-market.png" />
-    <Resource Include="Resources\Images\origin-mining.png" />
-    <Resource Include="Resources\Images\origin-scanning.png" />
     <EmbeddedResource Include="Resources\Data\blueprints.json" />
     <Content Include="Resources\Images\elite-dangerous-clean.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
