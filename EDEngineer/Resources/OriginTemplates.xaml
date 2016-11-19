@@ -1,11 +1,11 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    <ControlTemplate 
                      x:Key="OriginSurface"
                      TargetType="Frame">
-        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
-            <Canvas Name="Svg3442" Width="772.552" Height="694.155" Canvas.Left="0" Canvas.Top="0">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Svg3442" Width="772.552" Height="694.155">
                 <Canvas.RenderTransform>
                     <TranslateTransform X="0" Y="0"/>
                 </Canvas.RenderTransform>
@@ -15,16 +15,16 @@
                 <Canvas Name="Layer4">
                     <Canvas Name="G3445">
                         <Canvas Name="G3447">
-                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3449" Fill="{TemplateBinding Foreground}">
+                            <Path Name="Path3449" Fill="{TemplateBinding Foreground}">
                                 <Path.Data>
                                     <PathGeometry Figures="M372.824 254.796l92.16 92.159l-92.16 92.159v-31.565v-14.492h-14.492H178.732l96.062-93.739h83.538     h14.492v-14.492V254.796 M358.332 219.809v65.017h-89.437L143.13 407.549h215.202v66.553l127.147-127.146L358.332 219.809     L358.332 219.809z" FillRule="NonZero"/>
                                 </Path.Data>
                             </Path>
                         </Canvas>
-                        <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="112.695,407.558 102.606,397.118 217.956,284.809 228.045,295.25   " Name="Polygon3451" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.75"/>
-                        <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="61.393,407.558 51.303,397.118 166.653,284.809 176.742,295.25   " Name="Polygon3453" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.5"/>
-                        <Polygon xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Points="10.089,407.558 0,397.118 115.35,284.809 125.44,295.25   " Name="Polygon3455" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.25"/>
-                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3457" Fill="{TemplateBinding Foreground}">
+                        <Polygon Points="112.695,407.558 102.606,397.118 217.956,284.809 228.045,295.25   " Name="Polygon3451" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.75"/>
+                        <Polygon Points="61.393,407.558 51.303,397.118 166.653,284.809 176.742,295.25   " Name="Polygon3453" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.5"/>
+                        <Polygon Points="10.089,407.558 0,397.118 115.35,284.809 125.44,295.25   " Name="Polygon3455" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.25"/>
+                        <Path Name="Path3457" Fill="{TemplateBinding Foreground}">
                             <Path.Data>
                                 <PathGeometry Figures="M311.656 287.858" FillRule="NonZero"/>
                             </Path.Data>
@@ -32,12 +32,12 @@
                     </Canvas>
                 </Canvas>
                 <Canvas Name="Layer3">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3460" StrokeThickness="23.2782" Stroke="{TemplateBinding Foreground}" Opacity="0.5">
+                    <Path Name="Path3460" StrokeThickness="23.2782" Stroke="{TemplateBinding Foreground}" Opacity="0.5">
                         <Path.Data>
                             <PathGeometry Figures="M349.511 673.192   c163.307-14.345 291.492-154.872 291.492-326.114c0-172.261-129.716-313.442-294.41-326.358" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3462" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3462" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M425.475 0C267.821 0 134.723 105.115 92.43 249.082h26.153c2.952-9.238 6.309-18.367 10.114-27.363   c16.22-38.35 39.447-72.797 69.034-102.384c29.587-29.587 64.034-52.813 102.384-69.034C339.806 33.512 381.983 25 425.475 25   s85.668 8.512 125.359 25.3c38.35 16.221 72.797 39.447 102.384 69.034c29.587 29.587 52.813 64.034 69.034 102.384   c16.788 39.691 25.3 81.868 25.3 125.359s-8.512 85.668-25.3 125.359c-16.221 38.35-39.447 72.797-69.034 102.384   s-64.034 52.813-102.384 69.034c-39.691 16.788-81.868 25.3-125.359 25.3s-85.668-8.512-125.359-25.3   c-38.35-16.221-72.797-39.447-102.384-69.034c-29.587-29.587-52.814-64.034-69.034-102.384   c-3.805-8.996-7.162-18.126-10.114-27.363H92.43c42.293 143.967 175.392 249.081 333.045 249.081   c191.686 0 347.077-155.392 347.077-347.077S617.16 0 425.475 0z" FillRule="NonZero"/>
                         </Path.Data>
@@ -46,55 +46,45 @@
             </Canvas>
         </Viewbox>
     </ControlTemplate>
-    <ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    <ControlTemplate 
                      x:Key="OriginScan"
                      TargetType="Frame">
-        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
-            <Canvas Name="Layer2" Width="465.587" Height="232.892" Canvas.Left="0" Canvas.Top="0">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer_1" Width="512" Height="512">
                 <Canvas.RenderTransform>
                     <TranslateTransform X="0" Y="0"/>
                 </Canvas.RenderTransform>
                 <Canvas.Resources/>
                 <!--Unknown tag: metadata-->
                 <!--Unknown tag: sodipodi:namedview-->
-                <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="164.7" Canvas.Top="164.9" Width="136" Height="136" Name="Circle3396" Fill="{TemplateBinding Foreground}"/>
-                <Canvas Name="G3398">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3400" Fill="{TemplateBinding Foreground}">
-                        <Path.Data>
-                            <PathGeometry Figures="M232.695 128.388c57.624 0 104.504 46.88 104.504 104.504s-46.88 104.504-104.504 104.504s-104.503-46.88-104.503-104.504   S175.072 128.388 232.695 128.388 M232.695 78.388c-85.33 0-154.503 69.174-154.503 154.504s69.174 154.504 154.503 154.504   s154.504-69.174 154.504-154.504S318.025 78.388 232.695 78.388L232.695 78.388z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                </Canvas>
-                <Canvas Name="G3402">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3404" Fill="{TemplateBinding Foreground}">
-                        <Path.Data>
-                            <PathGeometry Figures="M232.695 50c48.852 0 94.78 19.024 129.324 53.568s53.568 80.472 53.568 129.324s-19.024 94.78-53.568 129.324   c-34.544 34.544-80.472 53.568-129.324 53.568c-48.852 0-94.78-19.024-129.323-53.567c-34.544-34.544-53.568-80.472-53.568-129.324   c0-48.853 19.024-94.78 53.568-129.324S183.844 50 232.695 50 M232.695 0C104.074 0-0.196 104.27-0.196 232.892   s104.27 232.892 232.891 232.892c128.622 0 232.892-104.269 232.892-232.892S361.317 0 232.695 0L232.695 0z" FillRule="NonZero"/>
-                        </Path.Data>
-                    </Path>
-                </Canvas>
-                <Canvas Name="G3406"/>
-                <Canvas Name="G3408"/>
-                <Canvas Name="G3410"/>
-                <Canvas Name="G3412"/>
-                <Canvas Name="G3414"/>
-                <Canvas Name="G3416"/>
-                <Canvas Name="G3418"/>
-                <Canvas Name="G3420"/>
-                <Canvas Name="G3422"/>
-                <Canvas Name="G3424"/>
-                <Canvas Name="G3426"/>
-                <Canvas Name="G3428"/>
-                <Canvas Name="G3430"/>
-                <Canvas Name="G3432"/>
-                <Canvas Name="G3434"/>
+                <Path Name="path3341" Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M149.61 50.203c-1.253 1.201-2.533 2.353-3.762 3.582c-81.109 81.109-81.109 212.613 0 293.72  c81.106 81.109 212.611 81.109 293.721 0c1.229-1.232 2.381-2.51 3.578-3.764L149.61 50.203z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path Name="path3343" Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M385.93 92.192c30.74 26.61 49.351 66.68 49.61 107.354c-0.081 5.44-5.257 9.919-10.619 9.622  c-5.663 0.463-10.921-4.688-10.62-10.352c-0.649-34.366-16.255-68.198-42.338-90.654c-21.463-18.871-49.684-29.718-78.225-30.44  c-2.633 0.033-5.383-0.54-7.391-2.361c-5.354-4.231-4.779-13.67 0.944-17.325c1.976-1.391 4.458-1.712 6.815-1.598  C327.638 57.164 360.706 70.092 385.93 92.192z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path Name="path3345" Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M357.097 119.602c24.358 19.581 39.075 50.495 38.922 81.737c-0.346 5.205-5.185 9.436-10.381 9.233  c-5.473 0.552-10.774-4.073-10.831-9.598c-0.142-19.764-7.366-39.45-20.299-54.426c-15.544-18.352-39.286-29.235-63.293-29.365  c-5.724 0.162-10.571-5.354-9.946-10.989c-0.15-5.245 4.288-10.129 9.577-10.239C314.767 95.952 338.55 104.508 357.097 119.602z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path Name="path3347" Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M212.791 461.5c0.017 0 0.049-2.301 0.045-2.904c0-39.762-32.229-72.549-71.99-72.549s-71.992 33.063-71.992 72.82  c0 0.607 0.03 2.633 0.045 2.633H212.791z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
             </Canvas>
         </Viewbox>
     </ControlTemplate>
-    <ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    <ControlTemplate 
                      x:Key="OriginSalvage"
                      TargetType="Frame">
-        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
-            <Canvas Name="Layer2" Width="645.576" Height="645.577" Canvas.Left="0" Canvas.Top="0">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer2" Width="645.576" Height="645.577">
                 <Canvas.RenderTransform>
                     <TranslateTransform X="0" Y="0"/>
                 </Canvas.RenderTransform>
@@ -102,7 +92,7 @@
                 <!--Unknown tag: metadata-->
                 <!--Unknown tag: sodipodi:namedview-->
                 <Canvas Name="G3378">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3380" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3380" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M427.196 645.577l-316.801-104.82l-1.924-1.727l-9.939-7.681l3.19-5.527L0 218.38L150.414 0l0.326 93.272   c24.75 49.014 53.647 102.532 62.518 113.674c1.676 0.318 5.19 0.772 11.577 0.772c19.682 0 46.096-4.066 55.685-7.564   c12.649-4.614 50.309-24.858 68.406-34.587c6.332-3.404 10.923-5.872 13.31-7.087c3.413-1.888 20.021-13.874 34.681-24.453   c54.279-39.173 68.543-48.588 76.313-50.368c7.419-1.701 26.096-3.035 42.517-3.035c26.875 0 35.513 3.239 40.738 8.465   c4.453 4.453 8.771 11.502 8.452 43.825c-0.131 13.303-1.234 31.645-3.021 39.435c-1.778 7.766-11.192 22.03-50.364 76.308   c-10.579 14.658-22.565 31.267-24.454 34.682c-1.218 2.391-3.693 6.996-7.107 13.349c-9.724 18.089-29.956 55.728-34.567 68.368   c-5.739 15.733-9.189 56.363-6.856 67.21c10.999 8.811 64.629 37.771 113.738 62.57l93.272 0.326L427.196 645.577z    M129.949 515.626l292.513 96.785l127.158-87.584l-4.495-0.016l-3.156-1.589c-0.294-0.147-29.674-14.944-59.452-30.848   c-63.574-33.952-66.966-39.584-69.691-44.108c-1.924-3.194-7.034-11.679-4.091-46.605c1.192-14.142 4.134-34.906 8.504-46.886   c4.937-13.532 21.339-44.411 36.326-72.291c3.225-5.998 5.771-10.736 6.821-12.803c2.189-4.306 9.1-14 26.839-38.58   c14.665-20.321 41.736-57.833 45.601-66.169c1.863-9.494 2.974-40.739 1.295-53.399c-3.585-0.471-9.527-0.909-18.375-0.909   c-15.015 0-30.175 1.217-35.121 2.135c-8.374 3.896-45.846 30.939-66.152 45.594C389.894 176.091 380.2 183 375.896 185.189   c-2.063 1.049-6.786 3.588-12.766 6.803c-27.896 14.995-58.79 31.407-72.331 36.346c-13.94 5.085-44.148 9.38-65.966 9.38   c-17.085 0-23.684-2.654-27.524-4.967c-4.525-2.726-10.156-6.117-44.108-69.691c-15.903-29.779-30.701-59.159-30.848-59.452   l-1.589-3.157l-0.016-4.494L33.166 223.116L129.949 515.626z" FillRule="NonZero"/>
                         </Path.Data>
@@ -111,7 +101,7 @@
                 <Canvas Name="Layer3">
                     <Canvas Name="G3383">
                         <Canvas Name="G3385">
-                            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3387" Fill="{TemplateBinding Foreground}">
+                            <Path Name="Path3387" Fill="{TemplateBinding Foreground}">
                                 <Path.Data>
                                     <PathGeometry Figures="M314.942 296.263l34.37 34.369l-35.183 35.181l-14.144 14.143l14.143 14.143l35.182 35.18l-34.369 34.368     l-35.18-35.18l-14.142-14.142l-14.143 14.142l-35.181 35.18l-34.369-34.368l35.181-35.18l14.142-14.142l-14.142-14.143     l-35.181-35.183l34.368-34.367l35.18 35.179l14.142 14.142l14.142-14.142L314.942 296.263 M314.942 267.979l-49.323 49.322     l-49.322-49.32l-62.652 62.649l49.323 49.325l-49.324 49.322l62.653 62.652l49.323-49.321l49.322 49.321l62.653-62.652     l-49.324-49.322l49.326-49.323L314.942 267.979L314.942 267.979z" FillRule="NonZero"/>
                                 </Path.Data>
@@ -123,11 +113,11 @@
         </Viewbox>
     </ControlTemplate>
 
-    <ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    <ControlTemplate 
                      x:Key="OriginMining"
                      TargetType="Frame">
-        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
-            <Canvas Name="Layer2" Width="810.309" Height="855.061" Canvas.Left="0" Canvas.Top="0">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer2" Width="810.309" Height="855.061">
                 <Canvas.RenderTransform>
                     <TranslateTransform X="0" Y="0"/>
                 </Canvas.RenderTransform>
@@ -135,21 +125,21 @@
                 <!--Unknown tag: metadata-->
                 <!--Unknown tag: sodipodi:namedview-->
                 <Canvas Name="G3359">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3361" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3361" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M430.135 855.061h-55c-18.663 0-39.209-15.243-55.718-27.491c-6.365-4.723-12.948-9.606-16.593-11.333   c-12.714-6.022-36.068-28.563-58.899-51.133c-3.336-3.298-6.217-6.146-8.125-7.972c-8.281-7.921-28.167-17.975-43.14-23.965   c-16.363-6.546-18.915-23.393-20.286-32.443c-0.269-1.773-0.546-3.606-0.809-4.579c-1.563-4.884-15.718-25.658-23.643-34.654   c-9.716-11.027-12.684-31.009-16.121-54.144l-0.127-0.855c-2.669-17.961-44.909-110.131-59.469-129.767   c-0.787-1.062-1.706-2.256-2.713-3.568c-7.585-9.875-20.243-26.356-23.385-44.337c-2.367-7.991-28.1-61.899-38.687-83.404   c-8.515-17.295-10.662-74.265-1.33-95.263c9.44-21.241 49.127-60.967 68.9-71.867c3.962-2.184 14.486-7.985 86.747-12.999   c38.688-2.685 77.028-3.893 91.897-3.893c34.932 0 83.952 32.985 110.287 50.706c3.829 2.576 7.135 4.801 9.391 6.227   c42.52 26.871 73.258 66.838 88.03 86.045c2.518 3.274 4.507 5.86 5.88 7.501c10.37 12.396 57.829 100.863 62.674 129.167   c1.444 8.441 1.336 25.931 0.986 53.729c-0.258 20.455-0.688 54.607 1.308 61.349c1.426 3.118 5.773 8.646 9.618 13.535   c9.527 12.114 20.326 25.845 20.326 40.24v50c0 28.353-44.283 97.58-53.16 111.169c-14.21 21.754-28.753 41.619-40.949 55.937   C447.017 851.661 437.398 855.061 430.135 855.061z M253.635 186.395c-14.061 0-52.398 1.215-90.028 3.823   c-64.837 4.493-75.542 9.417-76.548 9.964c-16.712 9.212-51.478 45.175-58.122 60.125c-6.521 14.671-4.107 63.87 0.913 74.067   c1.596 3.242 39.108 79.517 40.85 89.942c2 11.972 12.404 25.519 18.62 33.613c1.103 1.436 2.106 2.743 2.967 3.905   c15.688 21.155 60.632 117.538 64.116 140.982l0.127 0.856c2.245 15.111 5.319 35.808 10.15 41.292   c5.7 6.47 25.893 33.048 29.024 44.68c0.628 2.334 0.996 4.763 1.386 7.335c1.008 6.655 2.006 11.837 4.854 12.977   c5.942 2.377 36.333 14.951 51.135 29.109c2.058 1.969 4.866 4.744 8.421 8.259c12.596 12.453 42.094 41.614 52.025 46.318   c5.866 2.779 12.781 7.909 20.787 13.849c12.114 8.987 30.42 22.569 40.822 22.569h53.938c7.431-3.465 30.916-29.029 61.813-77.052   c30.363-47.19 46.249-82.563 46.249-93.114v-50c0-5.742-9.013-17.202-14.977-24.785c-5.336-6.784-10.375-13.192-12.996-19.253   c-3.675-8.496-3.82-28.281-3.277-71.4c0.25-19.873 0.533-42.397-0.631-49.198c-3.894-22.753-49.058-107.601-57.207-117.343   c-1.701-2.034-3.828-4.799-6.521-8.301c-13.894-18.064-42.805-55.654-81.569-80.153c-2.56-1.618-5.84-3.825-9.993-6.62   C329.309 218.943 280.939 186.395 253.635 186.395z" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
                 </Canvas>
                 <Canvas Name="G3363">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3365" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3365" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M621.302 349.728c-19.906 0-47.5-18.322-86.839-57.661c-17.463-17.462-16.767-61.199-14.381-108.313   c0.386-7.63 0.72-14.22 0.72-18.526c0-22.912 21.059-67.408 33.611-91.892c8.349-16.284 17.173-31.969 24.846-44.165   C592.387 8.306 597.12 5.426 601.548 3.998C609.771 1.345 618.17 0 626.509 0c13.134 0 25.979 3.248 38.18 9.653   c1.24 0.387 5.662 1.133 12.204 1.133c4.909 0 7.985-0.417 9.313-0.688c5.078-3.553 11.538-5.353 19.233-5.353   c6.966 0 14.806 1.527 22.672 4.415c12.643 4.642 29.947 23.161 57.458 55.711c4.424 5.234 9.438 11.167 10.779 12.415   c7.412 6.671 13.552 24.098 13.961 39.657c0.362 13.783-3.615 25.236-11.502 33.124c-3.597 3.648-18.785 27.078-30.99 45.904   c-16.51 25.467-35.222 54.332-46.14 67.796c-0.587 0.739-2.479 3.659-4.149 6.235C702.059 293.859 665.835 349.728 621.302 349.728   z M611.1 27.218c-5.23 5.67-20.255 29.322-36.661 61.894c-21.114 41.919-28.637 66.805-28.637 76.116   c0 4.938-0.349 11.821-0.752 19.79c-0.819 16.178-1.839 36.312-0.86 54.498c1.421 26.401 6.445 33.367 7.951 34.873   c46.709 46.709 64.746 50.339 69.161 50.339c30.947 0 64.291-51.427 75.249-68.327c2.702-4.169 4.334-6.685 5.707-8.379   c10.082-12.434 28.41-40.707 44.581-65.651c18.473-28.495 29.173-44.865 34.29-49.982c3.493-3.493 4.904-10.429 3.872-19.03   c-1.072-8.942-4.35-16.056-5.641-17.731c-2.352-2.182-5.92-6.377-12.887-14.619c-9.436-11.164-38.148-45.138-46.98-48.381   c-5.063-1.859-10.055-2.883-14.055-2.883c-3.717 0-4.932 0.859-4.943 0.868c-1.913 1.547-6.395 5.173-23.603 5.173   c-7.427 0-17.549-0.673-23.599-3.879C639.802 24.759 625.392 23.113 611.1 27.218z" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
                 </Canvas>
                 <Canvas Name="G3367">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3369" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3369" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M680.635 553.395c-17.488 0-31.246-2.016-42.059-6.162c-17.48-6.703-27.107-19.489-27.107-36.004   c0-26.958 34.881-53.467 60.35-72.822c6.296-4.785 14.082-10.702 16.103-12.974c6.848-12.305 28.408-35.371 49.381-35.371   c25.758 0 46.5 27.991 46.5 51.167c0 23.808-13.781 36.576-22.016 44.205c-1.043 0.966-2.355 2.182-3.227 3.077   c-0.077 1.594-0.014 4.227 0.036 6.271c0.202 8.296 0.478 19.657-3.435 31.398C747.271 549.859 705.081 553.395 680.635 553.395z    M737.302 415.062c-7.853 0-23.188 14.373-27.638 22.715c-2.812 5.273-8.997 10.105-22.719 20.534   c-10.827 8.229-24.302 18.469-34.789 28.896c-14.159 14.077-15.688 21.489-15.688 24.022c0 14.188 24.018 17.166 44.166 17.166   c31.285 0 48.736-6.734 50.84-10.215c2.498-7.57 2.302-15.655 2.129-22.791c-0.186-7.62-0.345-14.201 3.242-19.677   c2.087-3.186 4.935-5.824 7.949-8.617c6.887-6.38 14.007-12.977 14.007-25.866C758.802 431.618 748.178 415.062 737.302 415.062z" FillRule="NonZero"/>
                         </Path.Data>
@@ -159,11 +149,11 @@
         </Viewbox>
     </ControlTemplate>
 
-    <ControlTemplate xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    <ControlTemplate 
                      x:Key="OriginMarket"
                      TargetType="Frame">
-        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
-            <Canvas Name="Layer1" Width="631.236" Height="534.748" Canvas.Left="0" Canvas.Top="0">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer1" Width="631.236" Height="534.748">
                 <Canvas.RenderTransform>
                     <TranslateTransform X="0" Y="0"/>
                 </Canvas.RenderTransform>
@@ -171,33 +161,33 @@
                 <!--Unknown tag: metadata-->
                 <!--Unknown tag: sodipodi:namedview-->
                 <Canvas Name="Layer2">
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3338" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3338" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M461.502 0.001L0.236 250.278l169.734 168.723l461.266-250L461.502 0.001z M28.374 255.517L458.217 22.655   l142.819 142.212L171.193 397.501L28.374 255.517z" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3340" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3340" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M17.104 304.021L0 313.302l164.5 163.489l461.269-250l-12.908-12.839L168.412 454.392L17.104 304.021z" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3342" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3342" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M17.104 361.98L0 371.259l164.5 163.489l461.269-250l-12.908-12.839L168.411 512.351L17.104 361.98z" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
-                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3344" Fill="{TemplateBinding Foreground}">
+                    <Path Name="Path3344" Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M310.736 130.334c-47 0-86.151 26.402-86.151 67.324S265.402 280 334.403 280   c54.481 0 81.666-25.078 81.666-66C416.069 173.08 371.736 130.334 310.736 130.334z M332.811 271.648   c-61.188 0-97.385-36.73-97.385-73.021s34.718-59.701 76.396-59.701c54.093 0 93.406 37.905 93.406 74.192   C405.229 249.41 381.122 271.648 332.811 271.648z" FillRule="NonZero"/>
                         </Path.Data>
                     </Path>
                     <Canvas Name="G3346">
-                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3348" Fill="{TemplateBinding Foreground}">
+                        <Path Name="Path3348" Fill="{TemplateBinding Foreground}">
                             <Path.Data>
                                 <PathGeometry Figures="M315.02 217.186l6.642-3.625c0.906 0.996 1.503 1.652 1.791 1.969c3.011 3.27 4.835 5.781 5.47 7.536    c1.333 3.574 0.055 6.864-3.841 9.87c-1.465 1.141-5.554 3.54-12.265 7.203c-3.008 1.644-5.198 2.764-6.572 3.358    c-1.374 0.598-2.852 1.057-4.434 1.379c-6.115 1.339-12.086-0.669-17.912-6.027c-2.666-2.475-5.367-5.218-8.104-8.229    c-5.618-6.185-9.12-10.335-10.507-12.458c-2.213-3.398-2.322-6.795-0.322-10.189c1.23-2.13 3.533-4.25 6.904-6.361    c1.646-1.033 4.736-2.789 9.275-5.268c4.288-2.34 7.488-3.746 9.598-4.223c4.771-1.078 9.138-0.075 13.107 3.009    c1.451 1.14 3.07 2.694 4.86 4.664c0.207 0.228 0.521 0.597 0.946 1.11l-6.558 3.58c-0.831-0.869-1.369-1.438-1.616-1.709    c-2.979-3.187-5.447-4.803-7.406-4.851c-1.711-0.048-4.586 1.029-8.624 3.233c-5.347 2.918-9.076 5.141-11.188 6.666    c-1.306 0.949-2.122 1.896-2.453 2.838c-0.33 0.943-0.231 2.05 0.298 3.32c0.583 1.375 2.069 3.375 4.455 6.002    c8.479 9.332 14.073 14.983 16.785 16.959c1.719 1.298 3.345 1.983 4.875 2.063c1.752 0.095 3.923-0.498 6.511-1.773    c1.573-0.79 3.236-1.665 4.99-2.623c4.038-2.204 6.898-3.927 8.585-5.167c1.684-1.241 2.627-2.324 2.829-3.247    c0.273-1.305-0.813-3.303-3.263-5.998C317.078 219.313 316.124 218.311 315.02 217.186z" FillRule="NonZero"/>
                             </Path.Data>
                         </Path>
-                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="Path3350" Fill="{TemplateBinding Foreground}">
+                        <Path Name="Path3350" Fill="{TemplateBinding Foreground}">
                             <Path.Data>
                                 <PathGeometry Figures="M343.484 222.584l-36.113-39.744l24.646-13.453c4.344-2.371 8.188-3.572 11.535-3.603    c2.924-0.037 5.715 0.811 8.373 2.543c1.568 1.041 3.291 2.592 5.162 4.651c3.088 3.396 4.787 6.162 5.102 8.295    c0.381 2.299-0.844 4.391-3.673 6.272c5.017-2.364 9.709-1.167 14.079 3.597l9.443 10.396l-6.643 3.625l-8.521-9.375    c-2.222-2.446-4.428-3.749-6.612-3.911c-2.184-0.063-4.658 0.697-7.433 2.277l-16.876 9.211l14.168 15.592L343.484 222.584z     M331.575 198.543l16.208-8.848c3.313-1.809 5.379-3.478 6.197-5.008c0.937-1.765 0.23-3.938-2.113-6.521    c-3.188-3.51-5.586-5.504-7.188-5.985c-1.983-0.576-4.729 0.092-8.237 2.006l-18.046 9.851L331.575 198.543z" FillRule="NonZero"/>
                             </Path.Data>
