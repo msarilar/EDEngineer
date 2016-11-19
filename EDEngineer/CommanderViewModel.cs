@@ -105,6 +105,11 @@ namespace EDEngineer
 
         private void BlueprintOnFavoriteAvailable(object sender, EventArgs e)
         {
+            if (!SettingsManager.BlueprintReadyToastEnabled)
+            {
+                return;
+            }
+
             var blueprint = (Blueprint)sender;
             try
             {

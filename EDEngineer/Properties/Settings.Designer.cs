@@ -223,5 +223,17 @@ namespace EDEngineer.Properties {
                 this["Language"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool BlueprintReadyToastEnabled {
+            get {
+                return ((bool)(this["BlueprintReadyToastEnabled"]));
+            }
+            set {
+                this["BlueprintReadyToastEnabled"] = value;
+            }
+        }
     }
 }

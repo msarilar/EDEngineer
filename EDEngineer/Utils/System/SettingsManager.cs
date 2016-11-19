@@ -64,6 +64,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool BlueprintReadyToastEnabled
+        {
+            get { return Properties.Settings.Default.BlueprintReadyToastEnabled; }
+            set
+            {
+                Properties.Settings.Default.BlueprintReadyToastEnabled = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static string Shortcut
         {
             get
