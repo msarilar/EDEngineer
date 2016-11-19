@@ -110,6 +110,8 @@ namespace EDEngineer
 
         private bool showZeroes = true;
         private bool showOnlyForFavorites;
+        private bool showOriginIcons = true;
+
         private KeyValuePair<string, CommanderViewModel> currentCommander;
 
         public bool ShowZeroes
@@ -128,6 +130,16 @@ namespace EDEngineer
             set
             {
                 showOnlyForFavorites = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public bool ShowOriginIcons
+        {
+            get { return showOriginIcons; }
+            set
+            {
+                showOriginIcons = value;
                 OnPropertyChanged();
             }
         }

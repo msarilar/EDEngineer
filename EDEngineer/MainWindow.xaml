@@ -64,7 +64,8 @@
                             </Grid.ColumnDefinitions>
 
                             <ItemsControl ItemsSource="{Binding Value.Data.Origins}"
-                                          Grid.Column="0">
+                                          Grid.Column="0"
+                                          Visibility="{Binding DataContext.ShowOriginIcons, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource BooleanToVisibility}}">
                                 <ItemsControl.ItemsPanel>
                                     <ItemsPanelTemplate>
                                         <StackPanel Orientation="Horizontal"/>
@@ -219,6 +220,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
@@ -235,6 +237,13 @@
                               ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show only for favorites?'}"
                               IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
+                </ToggleButton>
+                <ToggleButton HorizontalAlignment="Stretch"
+                              FontSize="16"
+                              FontFamily="./Resources/Fonts/#Euro Caps"
+                              Grid.Column="2"
+                              IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="#ff7100" />
                 </ToggleButton>
             </Grid>
 
