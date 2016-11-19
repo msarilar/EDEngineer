@@ -394,11 +394,13 @@ namespace EDEngineer
             viewModel.ChangeAllFilters(false);
         }
 
-        private void Blueprints_OnTargetUpdated(object sender, DataTransferEventArgs e)
+        private void BlueprintsTargetUpdated(object sender, DataTransferEventArgs e)
         {
             BlueprintNameColumn.Width = 0;
+            BlueprintProgressColumn.Width = 0;
             Blueprints.UpdateLayout();
             BlueprintNameColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Auto);
+            BlueprintProgressColumn.Width = new DataGridLength(1, DataGridLengthUnitType.Auto);
         }
     }
 }

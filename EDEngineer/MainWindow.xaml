@@ -509,7 +509,7 @@
                           ItemsSource="{Binding Blueprints}"
                           DataContext="{Binding}"
                           Grid.Row="1"
-                          TargetUpdated="Blueprints_OnTargetUpdated"
+                          TargetUpdated="BlueprintsTargetUpdated"
                           Style="{DynamicResource BlueprintGridStyle}">
                     <DataGrid.GroupStyle>
                         <GroupStyle>
@@ -665,7 +665,7 @@
                         </DataGridTextColumn>
                         <!-- NAME -->
                         <DataGridTextColumn IsReadOnly="True"
-                                            Width="1*"
+                                            Width="*"
                                             CanUserResize="False"
                                             x:Name="BlueprintNameColumn"
                                             SortMemberPath="TranslatedName">
