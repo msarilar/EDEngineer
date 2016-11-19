@@ -147,6 +147,8 @@
     <Compile Include="Converters\FilterToLabelConverter.cs" />
     <Compile Include="Converters\InstantToStringConverter.cs" />
     <Compile Include="Converters\IntegerToVisibilityConverter.cs" />
+    <Compile Include="Converters\OriginToColorConverter.cs" />
+    <Compile Include="Converters\OriginToControlTemplateConverter.cs" />
     <Compile Include="Converters\RarityToIconConverter.cs" />
     <Compile Include="DesignTime\DesignViewModel.cs" />
     <Compile Include="ErrorWindow.xaml.cs">
@@ -165,6 +167,7 @@
     <Compile Include="Models\Operations\EngineerProgressOperation.cs" />
     <Compile Include="Models\Operations\NoOperation.cs" />
     <Compile Include="Models\Operations\SynthesisOperation.cs" />
+    <Compile Include="Models\Origin.cs" />
     <Compile Include="Models\ReleaseNote.cs" />
     <Compile Include="ReleaseNotesWindow.xaml.cs">
       <DependentUpon>ReleaseNotesWindow.xaml</DependentUpon>

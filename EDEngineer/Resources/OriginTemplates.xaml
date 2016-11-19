@@ -197,4 +197,49 @@
             </Canvas>
         </Viewbox>
     </ControlTemplate>
+
+    <ControlTemplate x:Key="OriginMission"
+                     TargetType="Frame">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer_2" Width="837.472" Height="438.667">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="0"/>
+                </Canvas.RenderTransform>
+                <Canvas.Resources/>
+                <!--Unknown tag: metadata-->
+                <!--Unknown tag: sodipodi:namedview-->
+                <Canvas Name="g3337">
+                    <Path Name="path3339" Fill="{TemplateBinding Foreground}">
+                        <Path.Data>
+                            <PathGeometry Figures="M643.138 60.355l158.979 158.979L643.138 378.311v-54.453v-25h-25H308.321l165.71-161.701h144.106h25v-25   V60.355 M618.138 0v112.157H463.854L246.905 323.858h371.232v114.809l219.334-219.333L618.138 0L618.138 0z" FillRule="NonZero"/>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Path Name="path3341" StrokeThickness="35" Stroke="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M479.967 112.157" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path Name="path3343" StrokeThickness="35" Stroke="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M263.017 323.858" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Polygon Points="194.405,323.875 177,305.864 375.984,112.128 393.389,130.138 " Name="polygon3345" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.75"/>
+                <Polygon Points="105.905,323.875 88.5,305.864 287.484,112.128 304.889,130.138 " Name="polygon3347" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.5"/>
+                <Polygon Points="17.405,323.875 0,305.864 198.984,112.128 216.389,130.138 " Name="polygon3349" FillRule="NonZero" Fill="{TemplateBinding Foreground}" Opacity="0.25"/>
+                <Path Name="path3351" Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M537.621 117.388" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+                <Path Name="path3353" Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M345.763 303.998" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
 </ResourceDictionary>
