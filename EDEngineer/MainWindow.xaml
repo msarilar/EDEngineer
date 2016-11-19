@@ -626,8 +626,8 @@
                         </DataGridTextColumn>
                         <!-- TYPE -->
                         <DataGridTextColumn IsReadOnly="True"
-                                            Width="*"
-                                            MaxWidth="110"
+                                            MinWidth="130"
+                                            MaxWidth="130"
                                             CanUserResize="False"
                                             SortMemberPath="TranslatedType">
                             <DataGridTextColumn.Binding>
@@ -651,6 +651,8 @@
                                     <Setter Property="TextAlignment" Value="Center" />
                                     <Setter Property="HorizontalAlignment" Value="Center" />
                                     <Setter Property="VerticalAlignment" Value="Center" />
+                                    <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                                    <Setter Property="MaxHeight" Value="50" />
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
@@ -682,8 +684,8 @@
                         <!-- PROGRESS -->
                         <DataGridTemplateColumn IsReadOnly="True"
                                                 SortMemberPath="ProgressSorting"
-                                                Width="*"
-                                                MaxWidth="140"
+                                                Width="Auto"
+                                                MaxWidth="150"
                                                 CanUserResize="False">
                             <DataGridTemplateColumn.Header>
                                 <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
