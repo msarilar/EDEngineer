@@ -287,6 +287,11 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\origin-salvage.png" />
+    <Resource Include="Resources\Images\origin-surface.png" />
+    <Resource Include="Resources\Images\origin-market.png" />
+    <Resource Include="Resources\Images\origin-mining.png" />
+    <Resource Include="Resources\Images\origin-scanning.png" />
     <EmbeddedResource Include="Resources\Data\blueprints.json" />
     <Content Include="Resources\Images\elite-dangerous-clean.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
