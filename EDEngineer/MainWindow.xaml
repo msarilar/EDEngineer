@@ -635,9 +635,8 @@
                         </DataGridTextColumn>
                         <!-- TYPE -->
                         <DataGridTextColumn IsReadOnly="True"
-                                            MinWidth="110"
-                                            MaxWidth="110"
-                                            CanUserResize="False"
+                                            Width="110"
+                                            CanUserResize="True"
                                             SortMemberPath="TranslatedType">
                             <DataGridTextColumn.Binding>
                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Plasma Accelerator">
@@ -666,7 +665,7 @@
                         <!-- NAME -->
                         <DataGridTextColumn IsReadOnly="True"
                                             Width="*"
-                                            CanUserResize="False"
+                                            CanUserResize="True"
                                             x:Name="BlueprintNameColumn"
                                             SortMemberPath="TranslatedName">
                             <DataGridTextColumn.Binding>
