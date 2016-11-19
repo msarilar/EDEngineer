@@ -125,8 +125,6 @@ namespace EDEngineer.Utils
                     return ExtractEjectCargo(data);
                 case JournalEvent.Synthesis:
                     return ExtractSynthesis(data);
-                case JournalEvent.MaterialDiscovered:
-                    return ExtractMaterialDiscovered(data);
                 case JournalEvent.EngineerProgress:
                     return ExtractEngineerProgress(data);
                 case JournalEvent.ScientificResearch:
@@ -344,34 +342,6 @@ namespace EDEngineer.Utils
             }
 
             return synthesisOperation.SynthesisPartOperation.Any() ? synthesisOperation : null;
-        }
-
-
-        private JournalOperation ExtractMaterialDiscovered(JObject data)
-        {
-            string materialCollectedName;
-            if (!converter.TryGet((string)data["Name"], out materialCollectedName))
-            {
-                MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
-                return null;
-            }
-
-            if (((string)data["Category"]).ToLowerInvariant() == "encoded")
-            {
-                return new DataOperation
-                {
-                    DataName = materialCollectedName,
-                    Size = data["Count"]?.ToObject<int>() ?? 3
-                };
-            }
-            else // Manufactured & Raw
-            {
-                return new MaterialOperation
-                {
-                    MaterialName = materialCollectedName,
-                    Size = data["Count"]?.ToObject<int>() ?? 3
-                };
-            }
         }
 
         private JournalOperation ExtractMaterialCollected(JObject data)

@@ -15,7 +15,6 @@ namespace EDEngineer.Models
         CollectCargo,
         EjectCargo,
         Synthesis,
-        MaterialDiscovered,
         EngineerProgress,
         ScientificResearch,
         LoadGame
