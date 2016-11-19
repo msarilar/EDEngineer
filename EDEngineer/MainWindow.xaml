@@ -24,7 +24,20 @@
             <Grid>
                 <Grid.ToolTip>
                     <ToolTip>
-                        <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}"/>
+                        <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
+                                                <Binding Path=""/>
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text></TextBlock>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
                     </ToolTip>
                 </Grid.ToolTip>
                 <Border BorderBrush="#ff7100"
