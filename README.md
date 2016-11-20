@@ -39,7 +39,7 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
   <img src="http://i.imgur.com/YBUPheF.png" alt="Toast"/>
 </p>
 <p align="center">
-  <img src="http://i.imgur.com/YBUPheF.png" alt="Tray Icon"/>
+  <img src="http://i.imgur.com/JuSJYCd.png" alt="Tray Icon"/>
 </p>
 
 ### Languages
