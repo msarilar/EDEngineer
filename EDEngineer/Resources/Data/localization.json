@@ -653,7 +653,7 @@
     },
     "Classified Scan Databanks": {
       "es": "Datos de Escáner Clasificados",
-      "de": "Scandatenbank unter Verschluss",
+      "de": "Scan-Datenbanken unter Verschluss",
       "fr": null,
       "ru": "Засекреченные базы данных сканирования"
     },
@@ -1271,7 +1271,7 @@
     },
     "Tempered Alloys": {
       "es": "Aleaciones Templadas",
-      "de": "Gehärtete Legierungen",
+      "de": "Vergütete Legierungen",
       "fr": null,
       "ru": "Жаропрочная керамика"
     },
