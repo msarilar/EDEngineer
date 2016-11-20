@@ -26,7 +26,7 @@ namespace EDEngineer.Converters
                 case Origin.Market:
                     return Application.Current.FindResource("OriginMarket");
                 case Origin.Unknown:
-                    return Application.Current.FindResource("OriginMission");
+                    return Application.Current.FindResource("OriginUnknown");
                 default:
                     throw new ArgumentOutOfRangeException();
             }

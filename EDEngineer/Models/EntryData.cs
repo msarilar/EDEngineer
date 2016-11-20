@@ -19,7 +19,7 @@ namespace EDEngineer.Models
 
         public List<string> OriginDetails { get; set; }
 
-        public IEnumerable<Origin> Origins => OriginDetails?.Select(detail => originMapping[detail]).Distinct() ?? Enumerable.Empty<Origin>();
+        public IEnumerable<Origin> Origins => OriginDetails?.Select(detail => originMapping[detail]).Distinct() ?? new [] { Origin.Unknown };
 
         private static readonly Dictionary<string, Origin> originMapping = new Dictionary<string, Origin>()
         {
@@ -36,7 +36,7 @@ namespace EDEngineer.Models
             ["Signal source (low security)"] = Origin.Scan,
             ["Signal source (High grade emissions)"] = Origin.Scan,
             ["Ship salvage (military & authority ships)"] = Origin.Salvage,
-            ["Destroyed Unknown artefact"] = Origin.Unknown,
+            ["Destroyed Unknown Artefact"] = Origin.Unknown,
             ["Ship scanning (combat ships)"] = Origin.Scan,
             ["Deep space data beacon"] = Origin.Scan,
             ["Ship scanning (transport ships)"] = Origin.Scan,
