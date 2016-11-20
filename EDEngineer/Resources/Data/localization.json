@@ -35,13 +35,13 @@
     },
     "Lightweight": {
       "es": "Aligerado",
-      "de": "Leichtbau",
+      "de": "Leichte",
       "fr": null,
       "ru": null
     },
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
-      "de": "Hochleistungs-Hüllenverstärkung",
+      "de": "Schwere Rumpfhüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -107,7 +107,7 @@
     },
     "Thermal Resistant ": {
       "es": "Resistencia Térmica ",
-      "de": "Thermalresistenter ",
+      "de": "Thermalresistente ",
       "fr": "Résistance thermique",
       "ru": null
     },
@@ -119,7 +119,7 @@
     },
     "Blast Resistant ": {
       "es": "Blindaje Resistente a Explosiones ",
-      "de": "Detonationsresistenter ",
+      "de": "Detonationsresistente ",
       "fr": null,
       "ru": null
     },
@@ -131,7 +131,7 @@
     },
     "Kinetic Resistant ": {
       "es": "Resistencia Cinética ",
-      "de": "Kinetikresistenter ",
+      "de": "Kinetikresistente ",
       "fr": "Résistance cinétique",
       "ru": null
     },
@@ -203,7 +203,7 @@
     },
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
-      "de": "Thermischer Widerstand Hüllenverstärkung",
+      "de": "Thermalresistente Rumpfhüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -221,7 +221,7 @@
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
-      "de": "Kinetischer Widerstand Hüllenverstärkung",
+      "de": "Kinetikresistente Rumpfhüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -245,7 +245,7 @@
     },
     "Heavy Duty ": {
       "es": "Alta Resistencia ",
-      "de": "Schwerer ",
+      "de": "Schwere ",
       "fr": null,
       "ru": null
     },
@@ -257,7 +257,7 @@
     },
     "Blast Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Explosiva",
-      "de": "Detonationswiderstand Hüllenverstärkung",
+      "de": "Detonationsresistente Rumpfhüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -269,7 +269,7 @@
     },
     "Lightweight Hull Reinforcement": {
       "es": "Refuerzo Estructural Aligerado",
-      "de": "Leichtgewicht Hüllenverstärkung",
+      "de": "Leichtgewicht-Rumpfhüllenverstärkung",
       "fr": null,
       "ru": null
     },
@@ -1727,223 +1727,223 @@
     },
     "Surface prospecting": {
       "es": "Prospección de superficie",
-      "de": null,
+      "de": "Oberflächenabbau (SRV)",
       "fr": null,
       "ru": null
     },
     "Mining": {
       "es": "Minería",
-      "de": null,
+      "de": "Abbau",
       "fr": null,
       "ru": null
     },
     "Mission reward": {
       "es": "Recompensa de misiones",
-      "de": null,
+      "de": "Missions-Belohnungen",
       "fr": null,
       "ru": null
     },
     "Mining (ice rings)": {
       "es": "Minería (anillos helados)",
-      "de": null,
+      "de": "Abbau (Eis Ringe)",
       "fr": null,
       "ru": null
     },
     "Ship salvage (transport ships)": {
       "es": "Rescate de naves (naves de transporte)",
-      "de": null,
+      "de": "Bergungsgut Schiffswrack (Transportschiffe)",
       "fr": null,
       "ru": null
     },
     "Signal source (high security)": {
       "es": "Señales (seguridad alta)",
-      "de": null,
+      "de": "Signalquelle (Hohe Sicherheit)",
       "fr": null,
       "ru": null
     },
     "Surface POI": {
       "es": "Puntos de interés de superficie",
-      "de": null,
+      "de": "Planetenoberfläche POI",
       "fr": null,
       "ru": null
     },
     "Signal source": {
       "es": "Señales",
-      "de": null,
+      "de": "Signalquelle",
       "fr": null,
       "ru": null
     },
     "Ship salvage (combat ships)": {
       "es": "Rescate de naves (naves de combate)",
-      "de": null,
+      "de": "Bergungsgut Schiffswrack (Kampfschiffe)",
       "fr": null,
       "ru": null
     },
     "Signal source (anarchy)": {
       "es": "Señales (anarquía)",
-      "de": null,
+      "de": "Signalquelle (Anarchie)",
       "fr": null,
       "ru": null
     },
     "Signal source (low security)": {
       "es": "Señales (seguridad baja)",
-      "de": null,
+      "de": "Signalquelle (Niedrige Sicherheit)",
       "fr": null,
       "ru": null
     },
     "Signal source (High grade emissions)": {
       "es": "Señales (alta calidad)",
-      "de": null,
+      "de": "Hochgradige Signalquelle",
       "fr": null,
       "ru": null
     },
     "Ship salvage (military & authority ships)": {
       "es": "Rescate de naves (naves militares y de la autoridad)",
-      "de": null,
+      "de": "Bergungsgut Schiffswrack (Militär und Sicherheitsdienst)",
       "fr": null,
       "ru": null
     },
     "Destroyed Unknown Artefact": {
       "es": "Destrucción de Artefacto Desconocido",
-      "de": null,
+      "de": "Zerstörtes Unbekanntes Artefakt",
       "fr": null,
       "ru": null
     },
     "Ship scanning (combat ships)": {
       "es": "Escaneo de naves (naves de combate)",
-      "de": null,
+      "de": "Schiff Scan (Kampfschiffe)",
       "fr": null,
       "ru": null
     },
     "Deep space data beacon": {
       "es": "Baliza de datos en espacio profundo",
-      "de": null,
+      "de": "Privatdaten-Signal (deep space)",
       "fr": null,
       "ru": null
     },
     "Ship scanning (transport ships)": {
       "es": "Escaneo de naves (naves de transporte)",
-      "de": null,
+      "de": "Schiff Scan (Transportschiffe)",
       "fr": null,
       "ru": null
     },
     "High wake scanning": {
       "es": "Escaneo de estelas de salto",
-      "de": null,
+      "de": "Sogwolkenscan (Hohe Energie)",
       "fr": null,
       "ru": null
     },
     "Surface data point": {
       "es": "Punto de datos de superficie",
-      "de": null,
+      "de": "POI-Datenpunkt",
       "fr": null,
       "ru": null
     },
     "Ship scanning": {
       "es": "Escaneo de naves",
-      "de": null,
+      "de": "Schiff Scan",
       "fr": null,
       "ru": null
     },
     "Markets": {
       "es": "Mercados",
-      "de": null,
+      "de": "Märkte",
       "fr": null,
       "ru": null
     },
     "Markets near Akhenaten (High Tech/Refinery)": {
       "es": "Mercados cerca de Akhenaten (Alta Tecnología/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Akhenaten (Hightech/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Markets near Stafkarl (Industrial/Refinery)": {
       "es": "Mercados cerca de Stafkarl (Industrial/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Stafkarl (Industrie/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Markets near Run (Industrial/Refinery)": {
       "es": "Mercados cerca de Run (Industrial/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Run (Industrie/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Markets near Lei Jing (Industrial/Refinery)": {
       "es": "Mercados cerca de Lei Jing (Industrial/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Lei Jing (Industrie/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Markets near Myrbat (Industrial/Refinery)": {
       "es": "Mercados cerca de Myrbat (Industrial/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Myrbat (Industrie/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Markets near 70 Tauri (Industrial/Extraction)": {
       "es": "Mercados cerca de 70 Tauri (Industrial/Extracción)",
-      "de": null,
+      "de": "Märkte nahe 70 Tauri (Industrie/Abbau)",
       "fr": null,
       "ru": null
     },
     "Markets near Leesti (Industrial/Refinery)": {
       "es": "Mercados cerca de Leesti (Industrial/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Leesti (Industrie/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Markets near Lakota (Industrial/Extraction)": {
       "es": "Mercados cerca de Lakota (Industrial/Extracción)",
-      "de": null,
+      "de": "Märkte nahe Lakota (Industrie/Abbau)",
       "fr": null,
       "ru": null
     },
     "Markets near Cilbien Zu (Industrial/Extraction)": {
       "es": "Mercados cerca de Cilbien Zu (Industrial/Extracción)",
-      "de": null,
+      "de": "Märkte nahe Cilbien Zu (Industrie/Abbau)",
       "fr": null,
       "ru": null
     },
     "Markets near Heget (Industrial/Extraction)": {
       "es": "Mercados cerca de Heget (Industrial/Extracción)",
-      "de": null,
+      "de": "Märkte nahe Heget (Industrie/Abbau)",
       "fr": null,
       "ru": null
     },
     "Markets near Eurybia (Extraction/Refinery)": {
       "es": "Mercados cerca de Eurybia (Extracción/Refinería)",
-      "de": null,
+      "de": "Märkte nahe Eurybia (Abbau/Raffinerie)",
       "fr": null,
       "ru": null
     },
     "Materials Almost Full!": {
       "es": "Capacidad de materiales al límite.",
-      "de": null,
+      "de": "Materialien Kapazität beinahe erreicht!",
       "fr": null,
       "ru": null
     },
     "You have only {0} slots left for your materials": {
       "es": "Tienes {0} espacios para materiales",
-      "de": null,
+      "de": "Sie haben nur mehr {0} Kapazität für Materialien frei",
       "fr": null,
       "ru": null
     },
     "Data Almost Full!": {
       "es": "Capacidad de datos al límite.",
-      "de": null,
+      "de": "Datenspeicher beinahe voll!",
       "fr": null,
       "ru": null
     },
     "You have only {0} slots left for your data": {
       "es": "Tienes {0} espacios para datos",
-      "de": null,
+      "de": "Sie haben nur mehr {0} Datenspeicher frei",
       "fr": null,
       "ru": null
     },
     "Cargo Almost Full Warning": {
       "es": "Advertencia: Carga al límite",
-      "de": null,
+      "de": "Warnung: Frachtraum beinahe voll",
       "fr": null,
       "ru": null
     }
