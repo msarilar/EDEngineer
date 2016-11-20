@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using EDEngineer.Models.Localization;
 using EDEngineer.Utils.Collections;
 
 namespace EDEngineer.Models
 {
-    public class State
+    public class State : INotifyPropertyChanged
     {
         private readonly List<EntryData> entryDatas;
 
@@ -22,6 +24,23 @@ namespace EDEngineer.Models
         }
 
         public SortedObservableCounter Cargo { get; }
+
+        public int MaterialsCount => EntryCount(Kind.Material);
+
+        public int DataCount => EntryCount(Kind.Data);
+
+        public int MaxMaterials { get; } = 1000;
+        public int MaxData { get; } = 500;
+
+        private int EntryCount(Kind kind)
+        {
+            return Cargo
+                .Where(i => i.Value.Data.Kind == kind)
+                .Where(i => i.Value.Count > 0)
+                .Select(i => i.Value.Count)
+                .Sum();
+        }
+
 
         public void LoadBaseData()
         {
@@ -41,6 +60,16 @@ namespace EDEngineer.Models
             {
                 Cargo.Increment(name, change);
             }
+
+            OnPropertyChanged(nameof(MaterialsCount));
+            OnPropertyChanged(nameof(DataCount));
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

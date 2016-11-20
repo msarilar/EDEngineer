@@ -53,8 +53,6 @@
                 <Setter Property="CellStyle">
                     <Setter.Value>
                         <Style TargetType="{x:Type DataGridCell}">
-                            <Setter Property="custom:DataGridCellHelper.SelectionUnit"
-            					Value="{Binding (custom:DataGridRowHelper.SelectionUnit), Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGridRow}}}" />
                             <Setter Property="Background" Value="Transparent" />
                             <Setter Property="BorderBrush" Value="Transparent" />
                             <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -180,7 +178,6 @@
             									BorderThickness="{TemplateBinding BorderThickness}"
             									Background="{TemplateBinding Background}" Grid.ColumnSpan="2" />
                                             <custom:ContentControlEx x:Name="HeaderContent"
-            									ContentCharacterCasing="{Binding (custom:ControlsHelper.ContentCharacterCasing), RelativeSource={RelativeSource TemplatedParent}}"
             									ContentTemplate="{TemplateBinding ContentTemplate}"
             									Content="{TemplateBinding Content}"
             									ContentStringFormat="{TemplateBinding ContentStringFormat}"

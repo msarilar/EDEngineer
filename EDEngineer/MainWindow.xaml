@@ -266,21 +266,33 @@
             </Grid>
 
             <!-- CURRENT CARGO -->
-
-            <controls:MetroTabControl Grid.Row="1"
-                                      DataContext="{Binding CurrentCommander.Value}">
+            <UniformGrid Columns="3" Margin="5,0" Opacity="0" Grid.Row="1">
+                <Grid x:Name="c1"/>
+                <Grid/>
+                <Grid/>
+            </UniformGrid>
+            <controls:MetroTabControl Grid.Row="1">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </TabControl.Resources>
-                <controls:MetroTabItem Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Commodities'}"
-                                       FontFamily="./Resources/Fonts/#Euro Caps">
+                <controls:MetroTabItem FontFamily="./Resources/Fonts/#Euro Caps"
+                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                    <controls:MetroTabItem.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid Width="{Binding ElementName=c1, Path=ActualWidth}">
+                            <TextBlock HorizontalAlignment="Center"
+                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Commodities'}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:MetroTabItem.HeaderTemplate>
+                                
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                      x:Name="Commodities"
-                                      ItemTemplate="{StaticResource EntryTemplate}"
-                                      ItemsSource="{Binding State.Cargo}">
+                                    x:Name="Commodities"
+                                    ItemTemplate="{StaticResource EntryTemplate}"
+                                    ItemsSource="{Binding State.Cargo}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -289,8 +301,36 @@
                         </ItemsControl>
                     </ScrollViewer>
                 </controls:MetroTabItem>
-                <controls:MetroTabItem Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"
-                                       FontFamily="./Resources/Fonts/#Euro Caps">
+                <controls:MetroTabItem FontFamily="./Resources/Fonts/#Euro Caps"
+                                       Header="{Binding}"
+                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                    <controls:MetroTabItem.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0"
+                                           HorizontalAlignment="Center"
+                                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"/>
+                                <controls:MetroProgressBar Grid.Row="1"
+                                                           Width="{Binding ElementName=c1, Path=ActualWidth}"
+                                                           Margin="5,0,5,0"
+                                                           Value="{Binding CurrentCommander.Value.State.MaterialsCount, Mode=OneWay}"
+                                                           Maximum="{Binding CurrentCommander.Value.State.MaxMaterials, Mode=OneWay}"
+                                                           Background="WhiteSmoke"/>
+                                <TextBlock Grid.Row="2"
+                                        FontSize="12"
+                                        HorizontalAlignment="Center">
+                                <Run Text="{Binding CurrentCommander.Value.State.MaterialsCount, Mode=OneWay}"/>
+                                <Run Text="/"/>
+                                <Run Text="{Binding CurrentCommander.Value.State.MaxMaterials, Mode=OneWay}"/>
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:MetroTabItem.HeaderTemplate>
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
                                       x:Name="Materials"
@@ -303,12 +343,41 @@
                         </ItemsControl>
                     </ScrollViewer>
                 </controls:MetroTabItem>
-                <controls:MetroTabItem Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"
-                                       FontFamily="./Resources/Fonts/#Euro Caps">
+                <controls:MetroTabItem Header="{Binding}"
+                                       FontFamily="./Resources/Fonts/#Euro Caps"
+                                       HorizontalAlignment="Center"
+                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                    <controls:MetroTabItem.HeaderTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Grid.Row="0"
+                                           HorizontalAlignment="Center"
+                                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"/>
+                                <controls:MetroProgressBar Grid.Row="1"
+                                                           Width="{Binding ElementName=c1, Path=ActualWidth}"
+                                                           Margin="5,0,5,0"
+                                                           Value="{Binding CurrentCommander.Value.State.DataCount, Mode=OneWay}"
+                                                           Maximum="{Binding CurrentCommander.Value.State.MaxData, Mode=OneWay}"
+                                                           Background="WhiteSmoke"/>
+                                <TextBlock Grid.Row="2"
+                                        FontSize="12"
+                                        HorizontalAlignment="Center">
+                                <Run Text="{Binding CurrentCommander.Value.State.DataCount, Mode=OneWay}"/>
+                                <Run Text="/"/>
+                                <Run Text="{Binding CurrentCommander.Value.State.MaxData, Mode=OneWay}"/>
+                                </TextBlock>
+                            </Grid>
+                        </DataTemplate>
+                    </controls:MetroTabItem.HeaderTemplate>
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                      x:Name="Data"
-                                      ItemTemplate="{StaticResource EntryTemplate}">
+                                    x:Name="Data"
+                                    ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -318,7 +387,7 @@
                     </ScrollViewer>
                 </controls:MetroTabItem>
             </controls:MetroTabControl>
-        </Grid>
+            </Grid>
 
         <!-- SPLITTER -->
         <GridSplitter Grid.Column="1"
