@@ -74,6 +74,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool CargoAlmostFullWarningEnabled
+        {
+            get { return Properties.Settings.Default.CargoAlmostFullWarningEnabled; }
+            set
+            {
+                Properties.Settings.Default.CargoAlmostFullWarningEnabled = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+        
         public static string Shortcut
         {
             get
