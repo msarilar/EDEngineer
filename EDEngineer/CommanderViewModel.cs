@@ -121,12 +121,12 @@ namespace EDEngineer
             if (ratio <= 5 && e.PropertyName == "MaterialsCount")
             {
                 headerText = translator.Translate("Materials Almost Full!");
-                contentText = string.Format(translator.Translate("You have only {0} slots left for your materials"), ratio);
+                contentText = string.Format(translator.Translate("You have only {0} slots left for your materials."), ratio);
             }
             else if ((ratio = State.MaxData - State.DataCount) <= 5 && e.PropertyName == "DataCount")
             {
                 headerText = translator.Translate("Data Almost Full!");
-                contentText = string.Format(translator.Translate("You have only {0} slots left for your data"), ratio);
+                contentText = string.Format(translator.Translate("You have only {0} slots left for your data."), ratio);
             }
             else
             {

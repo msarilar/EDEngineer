@@ -1923,9 +1923,9 @@
       "fr": null,
       "ru": null
     },
-    "You have only {0} slots left for your materials": {
-      "es": "Tienes {0} espacios para materiales",
-      "de": "Sie haben nur mehr {0} Kapazität für Materialien frei",
+    "You have only {0} slots left for your materials.": {
+      "es": "Tienes {0} espacios para materiales.",
+      "de": "Sie haben nur mehr {0} Kapazität für Materialien frei.",
       "fr": null,
       "ru": null
     },
@@ -1935,9 +1935,9 @@
       "fr": null,
       "ru": null
     },
-    "You have only {0} slots left for your data": {
-      "es": "Tienes {0} espacios para datos",
-      "de": "Sie haben nur mehr {0} Datenspeicher frei",
+    "You have only {0} slots left for your data.": {
+      "es": "Tienes {0} espacios para datos.",
+      "de": "Sie haben nur mehr {0} Datenspeicher frei.",
       "fr": null,
       "ru": null
     },
