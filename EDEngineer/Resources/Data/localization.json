@@ -1916,6 +1916,36 @@
       "de": null,
       "fr": null,
       "ru": null
+    },
+    "Materials Almost Full!": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "You have only {0} slots left for your materials": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Data Almost Full!": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "You have only {0} slots left for your data": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Cargo Almost Full Warning": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }

@@ -235,5 +235,17 @@ namespace EDEngineer.Properties {
                 this["BlueprintReadyToastEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool CargoAlmostFullWarningEnabled {
+            get {
+                return ((bool)(this["CargoAlmostFullWarningEnabled"]));
+            }
+            set {
+                this["CargoAlmostFullWarningEnabled"] = value;
+            }
+        }
     }
 }

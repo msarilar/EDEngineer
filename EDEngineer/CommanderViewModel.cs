@@ -53,10 +53,11 @@ namespace EDEngineer
 
         private void LoadState(List<string> events)
         {
+            UnsubscribeToasts();
+
             // Clear state:
             State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
             LastUpdate = Instant.MinValue;
-            UnsubscribeToasts();
 
             ApplyEventsToSate(events);
 
@@ -89,6 +90,8 @@ namespace EDEngineer
                 {
                     blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
                 }
+
+                State.PropertyChanged -= StateCargoCountChanged;
             }
         }
 
@@ -100,6 +103,58 @@ namespace EDEngineer
                 {
                     blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
                 }
+
+                State.PropertyChanged += StateCargoCountChanged;
+            }
+        }
+
+        private void StateCargoCountChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (!SettingsManager.CargoAlmostFullWarningEnabled)
+            {
+                return;
+            }
+
+            var ratio = State.MaxMaterials - State.MaterialsCount;
+            string headerText, contentText;
+            var translator = Languages.Instance;
+            if (ratio <= 5 && e.PropertyName == "MaterialsCount")
+            {
+                headerText = translator.Translate("Materials Almost Full!");
+                contentText = string.Format(translator.Translate("You have only {0} slots left for your materials"), ratio);
+            }
+            else if ((ratio = State.MaxData - State.DataCount) <= 5 && e.PropertyName == "DataCount")
+            {
+                headerText = translator.Translate("Data Almost Full!");
+                contentText = string.Format(translator.Translate("You have only {0} slots left for your data"), ratio);
+            }
+            else
+            {
+                return;
+            }
+
+            try
+            {
+
+                var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText02);
+
+                var stringElements = toastXml.GetElementsByTagName("text");
+
+                stringElements[0].AppendChild(toastXml.CreateTextNode(headerText));
+                stringElements[1].AppendChild(toastXml.CreateTextNode(contentText));
+
+                var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+
+                var imageElements = toastXml.GetElementsByTagName("image");
+                imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+
+                var toast = new ToastNotification(toastXml);
+
+                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+            }
+            catch (Exception)
+            {
+                // silently fail for platforms not supporting toasts
             }
         }
 
