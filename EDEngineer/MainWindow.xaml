@@ -21,16 +21,20 @@
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
-            <Grid>
+            <Grid Background="Black">
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"
-                             Tag="{Binding Value.Data.OriginDetails}">
+                             Tag="{Binding Value.Data.OriginDetails}"
+                             Background="#ff7100"
+                             BorderBrush="Black"
+                             StaysOpen="True">
                         <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <TextBlock>
+                                    <TextBlock Foreground="Black"
+                                               FontFamily="./Resources/Fonts/#Euro Caps">
                                         <TextBlock.Text>
-                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Mission rewards">
                                                 <Binding Path=""/>
                                                 <Binding Path="DataContext.Languages.CurrentLanguage"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>

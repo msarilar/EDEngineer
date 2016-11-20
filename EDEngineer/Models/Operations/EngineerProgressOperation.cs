@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace EDEngineer.Models.Operations
 {
@@ -13,6 +14,12 @@ namespace EDEngineer.Models.Operations
             {
                 operation.Mutate(state);
             }
+#if DEBUG
+            else
+            {
+                MessageBox.Show($"Unknown Engineer ! {Engineer}");
+            }
+#endif
         }
 
         private static readonly Dictionary<string, JournalOperation> engineersProgressOperation = new Dictionary<string, JournalOperation>()
