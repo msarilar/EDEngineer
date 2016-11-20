@@ -33,7 +33,7 @@ namespace EDEngineer.Converters
                     color = Colors.OrangeRed;
                     break;
                 case Origin.Unknown:
-                    color = Colors.Transparent;
+                    color = Colors.RoyalBlue;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
