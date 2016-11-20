@@ -25,7 +25,7 @@
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"
                              Tag="{Binding Value.Data.OriginDetails}"
-                             Background="#ff7100"
+                             Background="{StaticResource EliteOrange}"
                              BorderBrush="Black"
                              StaysOpen="True">
                         <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}">
@@ -45,7 +45,7 @@
                         </ItemsControl>
                     </ToolTip>
                 </Grid.ToolTip>
-                <Border BorderBrush="#ff7100"
+                <Border BorderBrush="{StaticResource EliteOrange}"
                         BorderThickness="1">
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
@@ -62,7 +62,7 @@
                                        FontSize="20"
                                        Margin="2,0,0,0"
                                        VerticalAlignment="Center"
-                                       Foreground="#ff7100" >
+                                       Foreground="{StaticResource EliteOrange}" >
                                 <TextBlock.Text>
                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                         <Binding Path="Value.Data.Name"/>
@@ -122,9 +122,9 @@
                                                             HorizontalAlignment="Right"
                                                             VerticalAlignment="Center"
                                                             Visibility="{Binding Value.FavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
-                                                            Foreground="#ff7100" />
+                                                            Foreground="{StaticResource EliteOrange}" />
                                 <TextBox HorizontalAlignment="Right"
-                                         Foreground="#ff7100"
+                                         Foreground="{StaticResource EliteOrange}"
                                          Background="Transparent"
                                          VerticalAlignment="Center"
                                          BorderBrush="Transparent"
@@ -254,14 +254,14 @@
                               Grid.Column="1"
                               ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show only for favorites?'}"
                               IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                    <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
+                    <iconPacks:PackIconMaterial Kind="Star" Foreground="{StaticResource EliteOrange}" />
                 </ToggleButton>
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Column="2"
                               IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                    <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="#ff7100" />
+                    <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrange}" />
                 </ToggleButton>
             </Grid>
 
@@ -536,7 +536,7 @@
                             Width="40"
                             Style="{DynamicResource ChromelessButtonStyle}"
                             x:Name="CheckAllButton">
-                        <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="#ff7100" />
+                        <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrange}" />
                     </Button>
                     <Button Grid.Column="3"
                             Grid.Row="1"
@@ -545,7 +545,7 @@
                             Width="40"
                             Style="{DynamicResource ChromelessButtonStyle}"
                             x:Name="UncheckAllButton">
-                        <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="#ff7100" />
+                        <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrange}" />
                     </Button>
                 </Grid>
 
@@ -555,7 +555,7 @@
                           IsReadOnly="True"
                           FontFamily="./Resources/Fonts/#Euro Caps"
                           Background="Black"
-                          BorderBrush="#ff7100"
+                          BorderBrush="{StaticResource EliteOrange}"
                           HorizontalAlignment="Stretch"
                           ColumnWidth="*"
                           FontSize="14.5"
@@ -765,7 +765,7 @@
                                                 <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
                                             </TextBlock>
                                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                       Background="WhiteSmoke" Foreground="#ff7100" />
+                                                                       Background="WhiteSmoke" Foreground="{StaticResource EliteOrange}" />
                                         </StackPanel>
                                     </Grid>
                                 </DataTemplate>
@@ -783,7 +783,7 @@
                                                       VerticalAlignment="Center"
                                                       IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                       Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="#ff7100" />
+                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="{StaticResource EliteOrange}" />
                                         </ToggleButton>
                                         <ToggleButton x:Name="IgnoreBluebrintButton"
                                                       Width="40"
@@ -838,7 +838,7 @@
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"
                        Grid.Column="2"
-                       Foreground="#ff7100"
+                       Foreground="{StaticResource EliteOrange}"
                        Margin="10,0,0,0"
                        TextAlignment="Left"
                        VerticalAlignment="Center"

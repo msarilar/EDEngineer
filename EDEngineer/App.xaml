@@ -32,6 +32,10 @@
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
 
+            <SolidColorBrush x:Key="EliteOrange">
+                <SolidColorBrush.Color>#ff7100</SolidColorBrush.Color>
+            </SolidColorBrush>
+
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
             <Style TargetType="ToolTip" x:Key="TooltipStyle">
@@ -463,7 +467,7 @@
                                     <Setter Property="Background" Value="Black" />
                                     <Setter Property="BorderBrush"
             							Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
-                                    <Setter Property="Foreground" Value="#ff7100" />
+                                    <Setter Property="Foreground" Value="{StaticResource EliteOrange}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
