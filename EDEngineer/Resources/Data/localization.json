@@ -1918,31 +1918,31 @@
       "ru": null
     },
     "Materials Almost Full!": {
-      "es": null,
+      "es": "Capacidad de materiales al límite.",
       "de": null,
       "fr": null,
       "ru": null
     },
     "You have only {0} slots left for your materials": {
-      "es": null,
+      "es": "Tienes {0} espacios para materiales",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Data Almost Full!": {
-      "es": null,
+      "es": "Capacidad de datos al límite.",
       "de": null,
       "fr": null,
       "ru": null
     },
     "You have only {0} slots left for your data": {
-      "es": null,
+      "es": "Tienes {0} espacios para datos",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Cargo Almost Full Warning": {
-      "es": null,
+      "es": "Advertencia: Carga al límite",
       "de": null,
       "fr": null,
       "ru": null
