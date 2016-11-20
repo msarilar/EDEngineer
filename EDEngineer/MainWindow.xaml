@@ -24,8 +24,8 @@
             <Grid>
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"
-                             DataContext="{Binding Value.Data.OriginDetails}">
-                        <ItemsControl ItemsSource="{Binding}">
+                             Tag="{Binding Value.Data.OriginDetails}">
+                        <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <TextBlock>

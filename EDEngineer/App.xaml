@@ -36,7 +36,7 @@
             
             <Style TargetType="ToolTip" x:Key="TooltipStyle">
                 <Style.Triggers>
-                    <Trigger Property="DataContext" Value="{x:Null}">
+                    <Trigger Property="Tag" Value="{x:Null}">
                         <Setter Property="Visibility" Value="Collapsed" />
                     </Trigger>
                 </Style.Triggers>
