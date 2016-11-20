@@ -21,6 +21,9 @@ namespace EDEngineer.Models
 
         public IEnumerable<Origin> Origins => OriginDetails?.Select(detail => originMapping[detail]).Distinct() ?? new [] { Origin.Unknown };
 
+        [JsonIgnore]
+        public bool Unused { get; set; }
+
         private static readonly Dictionary<string, Origin> originMapping = new Dictionary<string, Origin>()
         {
             ["Surface prospecting"] = Origin.Surface,

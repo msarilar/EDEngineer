@@ -1946,6 +1946,12 @@
       "de": "Warnung: Frachtraum beinahe voll",
       "fr": null,
       "ru": null
+    },
+    "Ingredient not used in any blueprint!": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }

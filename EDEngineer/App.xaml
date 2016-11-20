@@ -31,7 +31,8 @@
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
-
+            <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
+            
             <SolidColorBrush x:Key="EliteOrange">
                 <SolidColorBrush.Color>#ff7100</SolidColorBrush.Color>
             </SolidColorBrush>

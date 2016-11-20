@@ -21,32 +21,53 @@
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
-            <Grid Background="Black">
+            <Grid Background="Black"
+                  Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                  >
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"
-                             Tag="{Binding Value.Data.OriginDetails}"
+                             Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
                              Background="{StaticResource EliteOrange}"
                              BorderBrush="Black"
-                             StaysOpen="True">
-                        <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <TextBlock Foreground="Black"
-                                               FontFamily="./Resources/Fonts/#Euro Caps">
-                                        <TextBlock.Text>
-                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Mission rewards">
-                                                <Binding Path=""/>
-                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                             StaysOpen="True"
+                             DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <TextBlock Foreground="Black"
+                                       FontWeight="Bold"
+                                       FontFamily="./Resources/Fonts/#Euro Caps"
+                                       Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
+                                       Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
+                            <Border BorderThickness="1"
+                                    BorderBrush="Black"
+                                    Grid.Row="1"
+                                    Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
+                            <ItemsControl ItemsSource="{Binding DataContext.Value.Data.OriginDetails}"
+                                          Grid.Row="2">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Foreground="Black"
+                                                   FontFamily="./Resources/Fonts/#Euro Caps">
+                                            <TextBlock.Text>
+                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Mission rewards">
+                                                    <Binding Path=""/>
+                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                            </MultiBinding>
-                                        </TextBlock.Text></TextBlock>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
+                                                </MultiBinding>
+                                            </TextBlock.Text></TextBlock>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
                 <Border BorderBrush="{StaticResource EliteOrange}"
-                        BorderThickness="1">
+                        BorderThickness="1"
+                        Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">

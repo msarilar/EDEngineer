@@ -80,6 +80,16 @@ namespace EDEngineer
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
             LoadState(logs);
+
+            var datas = State.Cargo.Select(c => c.Value.Data);
+            var ingredientUsed = Blueprints.SelectMany(blueprint => blueprint.Ingredients);
+            var ingredientUsedNames = ingredientUsed.Select(ingredient => ingredient.Entry.Data.Name).Distinct();
+            var unusedIngredients = datas.Where(data => !ingredientUsedNames.Contains(data.Name));
+
+            foreach (var data in unusedIngredients)
+            {
+                data.Unused = true;
+            }
         }
 
         private void UnsubscribeToasts()

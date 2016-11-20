@@ -142,6 +142,7 @@
     <Compile Include="CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
     <Compile Include="Converters\BlueprintNameShortener.cs" />
+    <Compile Include="Converters\BooleanToOpacityConverter.cs" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\DoubleToPercentConverter.cs" />
     <Compile Include="Converters\FilterToLabelConverter.cs" />
