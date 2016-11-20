@@ -23,8 +23,9 @@
         <DataTemplate x:Key="EntryTemplate">
             <Grid>
                 <Grid.ToolTip>
-                    <ToolTip>
-                        <ItemsControl ItemsSource="{Binding Value.Data.OriginDetails}">
+                    <ToolTip Style="{StaticResource TooltipStyle}"
+                             DataContext="{Binding Value.Data.OriginDetails}">
+                        <ItemsControl ItemsSource="{Binding}">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <TextBlock>

@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:converters="clr-namespace:EDEngineer.Converters"
     xmlns:custom="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     x:Class="EDEngineer.App"
     StartupUri="MainWindow.xaml">
     <Application.Resources>
@@ -32,6 +33,14 @@
             <converters:OriginToColorConverter x:Key="OriginToColor" />
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
+            
+            <Style TargetType="ToolTip" x:Key="TooltipStyle">
+                <Style.Triggers>
+                    <Trigger Property="DataContext" Value="{x:Null}">
+                        <Setter Property="Visibility" Value="Collapsed" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
 
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">
                 <Setter Property="Background" Value="{DynamicResource WhiteBrush}" />
