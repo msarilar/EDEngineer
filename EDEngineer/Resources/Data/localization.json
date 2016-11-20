@@ -66,13 +66,13 @@
     "Armoured ": {
       "es": "Blindado ",
       "de": "Gepanzert ",
-      "fr": null,
+      "fr": "Blindé",
       "ru": null
     },
     "Reinforced": {
       "es": "Reforzado",
       "de": "Verstärkt",
-      "fr": null,
+      "fr": "Renforcé",
       "ru": null
     },
     "Sturdy Mount": {
@@ -90,7 +90,7 @@
     "Reinforced Shields": {
       "es": "Escudos Reforzados",
       "de": "Verstärkte Schilde",
-      "fr": null,
+      "fr": "Bouclier renforcé",
       "ru": null
     },
     "Enhanced, Low Power Shields": {
@@ -108,7 +108,7 @@
     "Thermal Resistant ": {
       "es": "Resistencia Térmica ",
       "de": "Thermalresistenter ",
-      "fr": null,
+      "fr": "Résistance thermique",
       "ru": null
     },
     "Weapon Focused ": {
@@ -126,13 +126,13 @@
     "High Capacity Magazine": {
       "es": "Cargador de Alta Capacidad",
       "de": "Hochleistungsmagazin",
-      "fr": null,
+      "fr": "Chargeur grande capacité",
       "ru": "Вместительный Магазин"
     },
     "Kinetic Resistant ": {
       "es": "Resistencia Cinética ",
       "de": "Kinetikresistenter ",
-      "fr": null,
+      "fr": "Résistance cinétique",
       "ru": null
     },
     "Focused Weapon": {
@@ -144,31 +144,31 @@
     "Thermal Resistant Shields": {
       "es": "Escudos de Resistencia Térmica",
       "de": "Thermalresistente Schilde",
-      "fr": null,
+      "fr": "Bouclier à résistance thermique",
       "ru": null
     },
     "Rapid Fire Modification": {
       "es": "Modificación de Tiro Rápido",
       "de": "Schnellfeuermodifikation",
-      "fr": null,
+      "fr": "Modification tir rapide",
       "ru": "Увеличение Cкорострельности"
     },
     "Long Range Weapon": {
       "es": "Arma de Largo Alcance",
       "de": "Ferndistanzwaffe",
-      "fr": null,
+      "fr": "Armes longue portée",
       "ru": "Увеличенная Дальность"
     },
     "Ammo Capacity": {
       "es": "Capacidad de Munición",
       "de": "Hochleistungsmagazin",
-      "fr": null,
+      "fr": "capacité de munition",
       "ru": null
     },
     "Overcharged Weapon": {
       "es": "Arma Sobrecargada",
       "de": "Überladungswaffe",
-      "fr": null,
+      "fr": "Arme surchargée",
       "ru": "Усиленное Оружие"
     },
     "Low Emissions ": {
