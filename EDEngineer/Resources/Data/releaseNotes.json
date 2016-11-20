@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.2",
+    "Content": "* Added origin details to blueprints ingredients. Icons allow a quick view of the basic origin (market, mission, scan, surface, salvage, mining) and a tool tip will give more detail when you hover the ingredient (like \"Ship salvage (military & authority ships)\"). You can hide icons if it's too much visual noise via the new switch on top of the left panel.\r\n* Added an option to disable \"Blueprint Ready\" notifications in the context menu of the task tray icon (it's enabled by default)\r\n\r\n* Fixed an error in RamTah's blueprint which was missing CMM composite in its ingredient list. Please report any similar issue like this one if you see it!\r\n* Frontier's fixed an issue with \"Material Discovered\" event, it's now integrated in the app. Please double check materials/data you've recently discovered, the counter might be slightly off!\r\n* Fixed the \"Very Rare\" icon which was showing as \"Rare\"\r\n\r\n* FULL german translation available ! Many thanks to @Scorprox for his hard work and dedication\r\n* Spanish translations fixes, thanks a bunch to @TCAS !"
+  },
+  {
     "Version": "1.0.1.3",
     "Content": "* Minor hotfix regarding previous patch (1.0.1.2)"
   },
