@@ -188,7 +188,10 @@ namespace EDEngineer.Utils.System
                 }
                 else // manualChanges.Hg.Json
                 {
-                    commanderName = manualChangesCommander.Substring(0, manualChangesCommander.Length - ".json".Length);
+                    commanderName = manualChangesCommander
+                        .Substring(0, manualChangesCommander.Length - ".json".Length)
+                        .Desanitize();
+
                 }
 
                 var content = File.ReadAllLines(file).ToList();

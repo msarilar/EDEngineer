@@ -1,8 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using System.Windows.Input;
 using EDEngineer.Models.Localization;
 using Application = System.Windows.Application;
 
@@ -10,6 +12,49 @@ namespace EDEngineer.Utils.System
 {
     public static class IOUtils
     {
+        private static readonly Dictionary<char, string> specialCharactersMapping = new Dictionary<char, string>()
+        {
+            ['<'] = "&#60;",
+            ['>'] = "&#62;",
+            [':'] = "&#58;",
+            ['"'] = "&ldquo;",
+            ['/'] = "&#47;",
+            ['\\'] = "&#92;",
+            ['|'] = "&#124;",
+            ['?'] = "&#63;",
+            ['*'] = "&#42;",
+        };
+
+        private static readonly Dictionary<string, string> specialCharactersMappingReversed =
+            specialCharactersMapping.ToDictionary(k => k.Value, k => k.Key.ToString());
+
+        private static string SanitizeChar(char input)
+        {
+            string output;
+            if (!specialCharactersMapping.TryGetValue(input, out output))
+            {
+                return input.ToString();
+            }
+
+            return output;
+        }
+
+        public static string Sanitize(this string input)
+        {
+            return input.Select(name => name)
+                        .Aggregate(string.Empty, (acc, c) => acc + IOUtils.SanitizeChar(c));
+        }
+
+        public static string Desanitize(this string input)
+        {
+            specialCharactersMappingReversed.Keys.ToList().ForEach(k =>
+                                                                   {
+                                                                       input = input.Replace(k,
+                                                                           specialCharactersMappingReversed[k]);
+                                                                   });
+            return input;
+        }
+
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)
         {
             var translator = Languages.Instance;

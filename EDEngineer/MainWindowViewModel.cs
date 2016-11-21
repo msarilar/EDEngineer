@@ -164,7 +164,7 @@ namespace EDEngineer
 
             var userChange = CurrentCommander.Value.UserChange(entry, i);
 
-            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"manualChanges.{CurrentCommander.Key}.json");
+            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"manualChanges.{CurrentCommander.Key.Sanitize()}.json");
             File.AppendAllText(path, userChange.OriginalJson + Environment.NewLine);
         }
 
