@@ -13548,8 +13548,8 @@
   },
   {
     "Type": "FSD Injection",
-    "Name": "+ 25% Jump Range",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+25% Jump Range",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Vanadium",
@@ -13564,8 +13564,8 @@
   },
   {
     "Type": "FSD Injection",
-    "Name": "+ 50% Jump Range",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+50% Jump Range",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Vanadium",
@@ -13588,8 +13588,8 @@
   },
   {
     "Type": "FSD Injection",
-    "Name": "+ 100% Jump Range",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+100% Jump Range",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Arsenic",
@@ -13613,7 +13613,7 @@
   {
     "Type": "Plasma Munitions",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
@@ -13632,8 +13632,8 @@
   },
   {
     "Type": "Plasma Munitions",
-    "Name": "+ 15% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+15% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -13656,8 +13656,8 @@
   },
   {
     "Type": "Plasma Munitions",
-    "Name": "+ 30% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+30% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Selenium",
@@ -13681,7 +13681,7 @@
   {
     "Type": "Explosive Munitions",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -13704,8 +13704,8 @@
   },
   {
     "Type": "Explosive Munitions",
-    "Name": "+ 15% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+15% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
@@ -13728,8 +13728,8 @@
   },
   {
     "Type": "Explosive Munitions",
-    "Name": "+ 30% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+30% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -13757,7 +13757,7 @@
   {
     "Type": "Small Calibre Munitions",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -13776,8 +13776,8 @@
   },
   {
     "Type": "Small Calibre Munitions",
-    "Name": "+ 15% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+15% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -13804,8 +13804,8 @@
   },
   {
     "Type": "Small Calibre Munitions",
-    "Name": "+ 30% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+30% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
@@ -13837,7 +13837,7 @@
   {
     "Type": "High Velocity Munitions",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -13852,8 +13852,8 @@
   },
   {
     "Type": "High Velocity Munitions",
-    "Name": "+ 15% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+15% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -13876,8 +13876,8 @@
   },
   {
     "Type": "High Velocity Munitions",
-    "Name": "+ 30% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+30% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Vanadium",
@@ -13901,7 +13901,7 @@
   {
     "Type": "Large Calibre Munitions",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Nickel",
@@ -13920,8 +13920,8 @@
   },
   {
     "Type": "Large Calibre Munitions",
-    "Name": "+ 15% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+15% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Tin",
@@ -13948,8 +13948,8 @@
   },
   {
     "Type": "Large Calibre Munitions",
-    "Name": "+ 30% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+30% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Zinc",
@@ -13977,7 +13977,7 @@
   {
     "Type": "AFM Refill",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Nickel",
@@ -14000,8 +14000,8 @@
   },
   {
     "Type": "AFM Refill",
-    "Name": "+ 50% Repair Speed",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+50% Repair Speed",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Tin",
@@ -14028,8 +14028,8 @@
   },
   {
     "Type": "AFM Refill",
-    "Name": "+ 100% Repair Speed",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+100% Repair Speed",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Zinc",
@@ -14061,7 +14061,7 @@
   {
     "Type": "SRV Ammo Restock",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
@@ -14076,8 +14076,8 @@
   },
   {
     "Type": "SRV Ammo Restock",
-    "Name": "+ 15% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+15% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -14099,9 +14099,9 @@
     "Grade": 2
   },
   {
-    "Type": "ARV Ammo Restock",
-    "Name": "+ 30% Dmg",
-    "Engineers": [ "Synthesis" ],
+    "Type": "SRV Ammo Restock",
+    "Name": "+30% Dmg",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -14125,7 +14125,7 @@
   {
     "Type": "SRV Repair",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -14140,8 +14140,8 @@
   },
   {
     "Type": "SRV Repair",
-    "Name": "+ 50% Hull Strength",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+50% Hull Strength",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Nickel",
@@ -14164,8 +14164,8 @@
   },
   {
     "Type": "SRV Repair",
-    "Name": "+ 100% Hull Strength",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+100% Hull Strength",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Zinc",
@@ -14193,7 +14193,7 @@
   {
     "Type": "SRV Refuel",
     "Name": "None",
-    "Engineers": [ "Synthesis" ],
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
@@ -14208,8 +14208,8 @@
   },
   {
     "Type": "SRV Refuel",
-    "Name": "+ 100% Fuel Efficiency",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+100% Fuel Efficiency",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
@@ -14232,8 +14232,8 @@
   },
   {
     "Type": "SRV Refuel",
-    "Name": "+ 200% Fuel Efficiency",
-    "Engineers": [ "Synthesis" ],
+    "Name": "+200% Fuel Efficiency",
+    "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
         "Name": "Sulphur",
