@@ -77,7 +77,8 @@ namespace EDEngineer
             viewModel.PropertyChanged += (o, e) =>
                                          {
                                              if (e.PropertyName == "ShowOnlyForFavorites" ||
-                                                 e.PropertyName == "ShowZeroes")
+                                                 e.PropertyName == "ShowZeroes" ||
+                                                 e.PropertyName == "CurrentCommander")
                                              {
                                                  RefreshCargoSources();
                                              }
