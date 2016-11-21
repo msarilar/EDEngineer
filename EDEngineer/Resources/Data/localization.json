@@ -30,37 +30,37 @@
     "Short Range Blaster": {
       "es": "Destructor de Corto Alcance",
       "de": "Kurzdistanzblaster",
-      "fr": null,
+      "fr": "Tir à courte portée",
       "ru": null
     },
     "Lightweight": {
       "es": "Aligerado",
       "de": "Leichte",
-      "fr": null,
+      "fr": "Ultraléger",
       "ru": null
     },
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
       "de": "Schwere Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renfort de coque lourd",
       "ru": null
     },
     "Drive Strengthening": {
       "es": "Fortalecimiento de Motor",
       "de": "Antriebsstärkung",
-      "fr": null,
+      "fr": "Renforcement de réacteur",
       "ru": null
     },
     "Efficient Weapon": {
       "es": "Arma Eficiente",
       "de": "Waffeneffizienz",
-      "fr": null,
+      "fr": "Arme efficace",
       "ru": "Эффективное Оружие"
     },
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
       "de": "Leichtgewichtgeschütz",
-      "fr": null,
+      "fr": "Support ultraléger",
       "ru": null
     },
     "Armoured ": {
@@ -78,13 +78,13 @@
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
       "de": "Robustes Gestell",
-      "fr": null,
+      "fr": "Support robuste",
       "ru": "Прочное Крепление"
     },
     "Longer Range FSD interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
       "de": "Ferndistanz-FSA-Unterbrecher",
-      "fr": null,
+      "fr": "Intercepteur FSD longue portée",
       "ru": null
     },
     "Reinforced Shields": {
@@ -96,13 +96,13 @@
     "Enhanced, Low Power Shields": {
       "es": "Escudos Mejorados de Baja Energía",
       "de": "Verbesserte Niedrigenergieschilde",
-      "fr": null,
+      "fr": "Bouclier renforcé à consommation réduite",
       "ru": null
     },
     "Shielded": {
       "es": "Blindado",
       "de": "Abgeschirmt",
-      "fr": null,
+      "fr": "Protégé",
       "ru": null
     },
     "Thermal Resistant ": {
@@ -114,13 +114,13 @@
     "Weapon Focused ": {
       "es": "Orientado a Armas ",
       "de": "Waffenfokussierte ",
-      "fr": null,
+      "fr": "Arme optimisée",
       "ru": null
     },
     "Blast Resistant ": {
       "es": "Blindaje Resistente a Explosiones ",
       "de": "Detonationsresistente ",
-      "fr": null,
+      "fr": "résistant explosif",
       "ru": null
     },
     "High Capacity Magazine": {
@@ -138,7 +138,7 @@
     "Focused Weapon": {
       "es": "Arma Concentrada",
       "de": "Waffenfokus",
-      "fr": null,
+      "fr": "optimisé armes,
       "ru": "Сфокусированное Оружие"
     },
     "Thermal Resistant Shields": {
@@ -174,163 +174,163 @@
     "Low Emissions ": {
       "es": "Bajas Emisiones ",
       "de": "Emissionsoptimiertes ",
-      "fr": null,
+      "fr": "emission faible",
       "ru": null
     },
     "System Focused ": {
       "es": "Orientado a Sistemas ",
       "de": "Systemfokussierte ",
-      "fr": null,
+      "fr": "optimisé système",
       "ru": "Системо-ориентированный"
     },
     "Lightweight ": {
       "es": "Aligerado ",
       "de": "Leichtgewicht ",
-      "fr": null,
+      "fr": "Ultraléger",
       "ru": null
     },
     "Overcharged ": {
       "es": "Sobrecargado ",
       "de": "Überladungs",
-      "fr": null,
+      "fr": "Surchargé",
       "ru": null
     },
     "Increased FSD Range": {
       "es": "Aumento de Alcance de MDD",
       "de": "Erhöhte FSA-Reichweite",
-      "fr": null,
+      "fr": "FSD à portée améliorée",
       "ru": null
     },
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
       "de": "Thermalresistente Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renfort de coque à résistance tthermique",
       "ru": null
     },
     "Dirty Drive Tuning": {
       "es": "Modificación de Motor Sucio",
       "de": "Aggressives Antriebstuning",
-      "fr": null,
+      "fr": "optimisation de moteur déteriorante",
       "ru": "«Грязная» Донастройка"
     },
     "Engine Focused ": {
       "es": "Orientado a Motor ",
       "de": "Antriebsfokussierte ",
-      "fr": null,
+      "fr": "Optimisé Moteur",
       "ru": "Двигатель-ориентированный"
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
       "de": "Kinetikresistente Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renfort de coque à résistance cinétique",
       "ru": null
     },
     "High Charge Capacity ": {
       "es": "Alta Capacidad de Carga ",
       "de": "Hochleistungsfähige ",
-      "fr": null,
+      "fr": "Capacité de charde accrue",
       "ru": null
     },
     "Rapid Charge ": {
       "es": "Recarga Rápida ",
       "de": "Ladungsoptimierte ",
-      "fr": null,
+      "fr": "Rechargement rapide",
       "ru": null
     },
     "Expanded FSD Interdictor Capture Arc": {
       "es": "Arco de Captura de Interdictor de MDD Extendido",
       "de": "Erweiterter Abfangkreisbogen für FSA-Unterbrecher",
-      "fr": null,
+      "fr": "intercepteur FSD à angle de capture augmenté",
       "ru": null
     },
     "Heavy Duty ": {
       "es": "Alta Resistencia ",
       "de": "Schwere ",
-      "fr": null,
+      "fr": "Lourd",
       "ru": null
     },
     "Charge Enhanced ": {
       "es": "Carga Mejorada ",
       "de": "Ladungsoptimierte ",
-      "fr": null,
+      "fr": "Charge améliorée",
       "ru": null
     },
     "Blast Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Explosiva",
       "de": "Detonationsresistente Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renfort de coque à résistance explosif",
       "ru": null
     },
     "Double Shot": {
       "es": "Doble Disparo",
       "de": "Doppelschuss",
-      "fr": null,
+      "fr": "Double tir",
       "ru": "Двойной Выстрел"
     },
     "Lightweight Hull Reinforcement": {
       "es": "Refuerzo Estructural Aligerado",
       "de": "Leichtgewicht-Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renfort de coque ultraléger",
       "ru": null
     },
     "Resistance Augmented ": {
       "es": "Resistencia Aumentada ",
       "de": "Widerstandsverstärkter ",
-      "fr": null,
+      "fr": "Résistance augmentée",
       "ru": null
     },
     "Specialised ": {
       "es": "Especializado ",
       "de": "Spezialisierte",
-      "fr": null,
+      "fr": "Spécialisé",
       "ru": null
     },
     "Shielded ": {
       "es": "Blindado",
       "de": "Abgeschirmte ",
-      "fr": null,
+      "fr": "Protégé",
       "ru": null
     },
     "Faster FSD Boot Sequence": {
       "es": "Secuencia de Inicio de MDD Rápida",
       "de": "Schnellere FSA-Ladesequenz",
-      "fr": null,
+      "fr": "Démarrage accéléré du réacteur FSD",
       "ru": null
     },
     "Shielded FSD": {
       "es": "MDD Blindado",
       "de": "Abgeschirmter FSA",
-      "fr": null,
+      "fr": "FSD à protection améliorée",
       "ru": null
     },
     "Clean Drive Tuning": {
       "es": "Modificación de Motor Limpio",
       "de": "Ausgewogenes Antriebstuning",
-      "fr": null,
+      "fr": "Amélioration de réacteur propre",
       "ru": "«Чистая» Донастройка"
     },
     "Kinetic Resistant Shields": {
       "es": "Escudos de Resistencia Cinética",
       "de": "Kinetikresistente Schilde",
-      "fr": null,
+      "fr": "Bouclier à résistance cinétique",
       "ru": null
     },
     "Plasma Accelerator": {
       "es": "Acelerador de Plasma",
       "de": "Plasmabeschleuniger",
-      "fr": null,
+      "fr": "Accélerateur de plasma",
       "ru": null
     },
     "Electronic Countermeasure": {
       "es": "Contramedida Electrónica",
       "de": "Elektronische Gegenmaßnahmen",
-      "fr": null,
+      "fr": "Contre-mesure électronique",
       "ru": null
     },
     "Life Support": {
       "es": "Soporte Vital",
       "de": "Lebenserhaltung",
-      "fr": null,
+      "fr": "Système de survie",
       "ru": null
     },
     "Hull Reinforcement Package": {
@@ -342,49 +342,49 @@
     "Cannon": {
       "es": "Cañón",
       "de": "Kanone",
-      "fr": null,
+      "fr": "Canon",
       "ru": null
     },
     "Thrusters": {
       "es": "Impulsores",
       "de": "Schubdüsen",
-      "fr": null,
+      "fr": "Réacteur",
       "ru": "Маневровые двигатели"
     },
     "Multi-cannon": {
       "es": "Multicañón",
       "de": "Mehrfachgeschütz",
-      "fr": null,
+      "fr": "Multicanon",
       "ru": "Многоствольное орудие"
     },
     "Missile Rack": {
       "es": "Batería de Misiles",
       "de": "Raketenrampe",
-      "fr": null,
+      "fr":"batterie de missiles",
       "ru": null
     },
     "Power Plant": {
       "es": "Núcleo de Energía",
       "de": "Kraftwerk",
-      "fr": null,
+      "fr": "Générateur",
       "ru": "Силовая установка"
     },
     "Chaff Launcher": {
       "es": "Lanzador de Señuelos",
       "de": "Düppel-Werfer",
-      "fr": null,
+      "fr": "Lanceur de paillettes",
       "ru": null
     },
     "Frame Shift Drive Interdictor": {
       "es": "Interdictor de MDD",
       "de": "FSA-Unterbrecher",
-      "fr": null,
+      "fr": "Intercepteur FSD",
       "ru": "FSD перехватчик"
     },
     "Shield Generator": {
       "es": "Generador de Escudos",
       "de": "Schildgenerator",
-      "fr": null,
+      "fr": "Générateur de bouclier",
       "ru": "Генератор щита"
     },
     "Point Defence": {
@@ -396,55 +396,55 @@
     "Shield Booster": {
       "es": "Potenciador de Escudos",
       "de": "Schild-Booster",
-      "fr": null,
+      "fr": "Survolteur de bouclier",
       "ru": "Усилитель щита"
     },
     "Kill Warrant Scanner": {
       "es": "Escáner de Registro Criminal",
       "de": "Tötungsbefehl-Scanner",
-      "fr": null,
+      "fr": "Détecteur de primes",
       "ru": "Сканер преступников"
     },
     "Rail Gun": {
       "es": "Cañón de Riel",
       "de": "Schienenkanone",
-      "fr": null,
+      "fr": "Canon électrique",
       "ru": null
     },
     "Power Distributor": {
       "es": "Distribuidor de Energía",
       "de": "Energieverteiler",
-      "fr": null,
+      "fr": "Répartiteur de puissance",
       "ru": "Распределитель питания"
     },
     "Fragment Cannon": {
       "es": "Cañón de Fragmentación",
       "de": "Splitterkanone",
-      "fr": null,
+      "fr": "Canon à fragmenation",
       "ru": null
     },
     "Mine Launcher": {
       "es": "Lanzaminas",
       "de": "Minenwerfer",
-      "fr": null,
+      "fr": "lanceur de mines",
       "ru": null
     },
     "Beam Laser": {
       "es": "Láser de Rayo",
       "de": "Strahlenlaser",
-      "fr": null,
+      "fr": "Laser",
       "ru": null
     },
     "Armour": {
       "es": "Blindaje",
       "de": "Panzerung",
-      "fr": null,
+      "fr": "Armure",
       "ru": null
     },
     "Prospector Limpet Controller": {
       "es": "Lanzador Dron Prospector",
       "de": "Drohnensteuerung Erzsucher",
-      "fr": null,
+      "fr": "Contrôleur de prospecteur",
       "ru": null
     },
     "Manifest Scanner": {
@@ -456,223 +456,223 @@
     "Burst Laser": {
       "es": "Láser de Ráfagas",
       "de": "Salvenlaser",
-      "fr": null,
+      "fr": "laser à rafale",
       "ru": null
     },
     "Heat Sink Launcher": {
       "es": "Eyector Térmico",
       "de": "Kühlkörperwerfer",
-      "fr": null,
+      "fr": "Lanceur de dissipateur thermique",
       "ru": null
     },
     "Frame Shift Wake Scanner": {
       "es": "Escáner de Estelas de Distorsión",
       "de": "FS-Sogwolkenscanner",
-      "fr": null,
+      "fr": "Détecteur de sillage",
       "ru": null
     },
     "Pulse Laser": {
       "es": "Láser de Pulso",
       "de": "Impulslaser",
-      "fr": null,
+      "fr":" Laser à pulsation",
       "ru": "Импульсный лазер"
     },
     "Refinery": {
       "es": "Refinería",
       "de": "Raffinerie",
-      "fr": null,
+      "fr": "Raffinerie",
       "ru": null
     },
     "Auto Field-Maintenance Unit": {
       "es": "Unidad de Automantenimiento",
       "de": "Automatische Feldwartungs-Einheit",
-      "fr": null,
+      "fr": "Unité d'auto-réparation",
       "ru": null
     },
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
       "de": "Treibstofftransferierer-Drohnensteuerung",
-      "fr": null,
+      "fr": "Contrôleur de transfert de carburant",
       "ru": null
     },
     "Frame Shift Drive": {
       "es": "Motor de Distorsión",
       "de": "Frameshiftantrieb",
-      "fr": null,
+      "fr": " Réacteur FSD",
       "ru": "Рамочно-Смесительный двигатель"
     },
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
       "de": "Steuereinheit Ladelukenöffner-Drohne",
-      "fr": null,
+      "fr": "Contrôleur de perce-soute",
       "ru": null
     },
     "Fuel Scoop": {
       "es": "Colector de Combustible",
       "de": "Treibstoffsammler",
-      "fr": null,
+      "fr": "Récupérateur de carburant",
       "ru": "Топливозаборник"
     },
     "Torpedo Pylon": {
       "es": "Lanzatorpedos",
       "de": "Torpedopylon",
-      "fr": null,
+      "fr": "Lance torpille",
       "ru": null
     },
     "Collector Limpet Controller": {
       "es": "Lanzador Dron Colector",
       "de": "Steuerung Sammeldrohne",
-      "fr": null,
+      "fr": "Contrôleur de collecteur",
       "ru": null
     },
     "Shield Cell Bank": {
       "es": "Células de Escudo",
       "de": "Schildzellenbank",
-      "fr": null,
+      "fr": "batterie de cellules d'énergie",
       "ru": "Щитонакопитель"
     },
     "Aberrant Shield Pattern Analysis": {
       "es": "Análisis de Patrón de Escudo Aberrantes",
       "de": "Abweichende Schildeinsatz-Analysen",
-      "fr": null,
+      "fr": "Analyse de modèle de bouclier aberrante",
       "ru": "Анализ аномального поведения щита"
     },
     "Abnormal Compact Emission Data": {
       "es": "Compresión de Datos de Transmisiones Anormal",
       "de": "Anormale Kompakte Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions compactes anormales",
       "ru": "Аномальные компактные данные об излучении"
     },
     "Adaptive Encryptors Capture": {
       "es": "Captura de Encriptadores Adaptativos",
       "de": "Adaptive Verschlüsselungserfassung",
-      "fr": null,
+      "fr": "Capture d'encrypteurs adaptatifs",
       "ru": "Захват адаптивного шифровальщика"
     },
     "Anomalous Bulk Scan Data": {
       "es": "Datos de Escáner en Bruto Anómalos",
       "de": "Anormale Massen-Scan-Daten",
-      "fr": null,
+      "fr": "Données d'émission aberrantes",
       "ru": "Аномальный массив данных сканирования"
     },
     "Anomalous FSD Telemetry": {
       "es": "Telemetría de MDD Anómala",
       "de": "Anormale FSA-Telemetrie",
-      "fr": null,
+      "fr": "Télémétrie de FSD anormale",
       "ru": "Аномальная телеметрия FSD"
     },
     "Antimony": {
       "es": "Antimonio",
       "de": "Antimon",
-      "fr": null,
+      "fr": "antimoine",
       "ru": "Сурьма"
     },
     "Arsenic": {
       "es": "Arsénico",
       "de": "Arsen",
-      "fr": null,
+      "fr": "Arsenic",
       "ru": "Мышьяк"
     },
     "Articulation Motors": {
       "es": "Motores de Articulación",
       "de": "Gelenkmotoren",
-      "fr": null,
+      "fr": "Moteurs à articulation",
       "ru": "Шарнирные моторы"
     },
     "Atypical Disrupted Wake Echoes": {
       "es": "Ecos de Estelas Interrumpidas Atípicos",
       "de": "Atypische FSA-Stör-Aufzeichnungen",
-      "fr": null,
+      "fr": "Echos de sillages perturbés atypiques",
       "ru": "Атипичное эхо поврежденного следа"
     },
     "Atypical Encryption Archives": {
       "es": "Archivos Encriptados Atípicos",
       "de": "Atypische Verschlüsselungsarchive",
-      "fr": null,
+      "fr": "Archives crytpées atypiques",
       "ru": "Нетипичные архивы шифрования"
     },
     "Basic Conductors": {
       "es": "Conductores Básicos",
       "de": "Einfache Leiter",
-      "fr": null,
+      "fr": "Conducteurs simples",
       "ru": "Простые проводники"
     },
     "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
       "de": "Biotech-Leiter",
-      "fr": null,
+      "fr": "Conducteurs biotechniques",
       "ru": "Биотехнические проводники"
     },
     "Bromellite": {
       "es": "Bromelita",
       "de": "Bromellit",
-      "fr": null,
+      "fr": "Bromelite,
       "ru": "Бромеллит"
     },
     "Cadmium": {
       "es": "Cadmio",
       "de": "Kadmium",
-      "fr": null,
+      "fr": "Cadmium",
       "ru": "Кадмий"
     },
     "Carbon": {
       "es": "Carbono",
       "de": "Kohlenstoff",
-      "fr": null,
+      "fr": "Carbone",
       "ru": "Углерод"
     },
     "Chemical Distillery": {
       "es": "Destilería Química",
       "de": "Chemiedestillerie",
-      "fr": null,
+      "fr": n"Distillerie chimique",
       "ru": "Оборудование для перегонки химикатов"
     },
     "Chemical Manipulators": {
       "es": "Manipuladores Químicos",
       "de": "Chemische Manipulatoren",
-      "fr": null,
+      "fr": "Manipulateurs chimiques",
       "ru": "Манипуляторы для работы с химикатами"
     },
     "Chemical Processors": {
       "es": "Procesadores Químicos",
       "de": "Chemische Prozessoren",
-      "fr": null,
+      "fr": "Processeurs chimiques",
       "ru": "Оборудование для химобработки"
     },
     "Chemical Storage Units": {
       "es": "Unidades de Almacenamiento Químico",
       "de": "Chemische Lagereinheiten",
-      "fr": null,
+      "fr": "unités de stockage chimique",
       "ru": "Контейнеры для химикатов"
     },
     "Chromium": {
       "es": "Cromo",
       "de": "Chrom",
-      "fr": null,
+      "fr": "Chrome",
       "ru": "Хром"
     },
     "Classified Scan Databanks": {
       "es": "Datos de Escáner Clasificados",
       "de": "Scan-Datenbanken unter Verschluss",
-      "fr": null,
+      "fr": "banques de d'analyse de dossiers classifiés",
       "ru": "Засекреченные базы данных сканирования"
     },
     "Classified Scan Fragment": {
       "es": "Fragmento de Escáner Clasificado",
       "de": "Geheimes Scan Fragment",
-      "fr": null,
+      "fr": "Données d'analyse classifiées parcellaires",
       "ru": "Засекреченные фрагменты данных сканирования"
     },
     "CMM Composite": {
       "es": "Compuesto CMM",
       "de": "CMM-Komposit",
-      "fr": null,
+      "fr": "Composite MMC",
       "ru": "СММ Композит"
     },
     "Compact Composites": {
       "es": "Compuestos Compactos",
       "de": "Kompakt-Komposit",
-      "fr": null,
+      "fr": "Composites compacts",
       "ru": "Спрессованные композиты"
     },
     "Compound Shielding": {
@@ -684,43 +684,43 @@
     "Conductive Ceramics": {
       "es": "Cerámicas Conductivas",
       "de": "Elektrokeramiken",
-      "fr": null,
+      "fr": "Conducteurs en céramique",
       "ru": "Проводящая керамика"
     },
     "Conductive Components": {
       "es": "Componentes Conductivos",
       "de": "Leitfähige Komponenten",
-      "fr": null,
+      "fr": "Composants conducteurs",
       "ru": "Проводящие компоненты"
     },
     "Conductive Polymers": {
       "es": "Polímeros Conductivos",
       "de": "Leitfähige Polymere",
-      "fr": null,
+      "fr": "Conducteurs en polymère",
       "ru": "Проводящие полимеры"
     },
     "Configurable Components": {
       "es": "Componentes Configurables",
       "de": "Konfigurierbare Komponenten",
-      "fr": null,
+      "fr": "Composants paramétrables",
       "ru": "Настраиваемые компоненты"
     },
     "Core Dynamics Composites": {
       "es": "Compuestos de Core Dynamics",
       "de": "Core Dynamics Kompositwerkstoffe",
-      "fr": null,
+      "fr": "Composite Core Dynamics",
       "ru": "Композиты Core Dynamics"
     },
     "Cracked Industrial Firmware": {
       "es": "Firmware Industrial Pirateado",
       "de": "Gecrackte Industrie-Firmware",
-      "fr": null,
+      "fr": "Micrologiciel industriel piraté",
       "ru": "Взломанные промышленные микропрограммы"
     },
     "Crystal Shards": {
       "es": "Piedras de Cristal",
       "de": "Kristallscherben",
-      "fr": null,
+      "fr": "Eclat de cristal",
       "ru": "Осколки кристаллов"
     },
     "Datamined Wake Exceptions": {
@@ -732,151 +732,151 @@
     "Decoded Emission Data": {
       "es": "Datos de Emisión Descodificados",
       "de": "Entschlüsselte Emissionsdaten",
-      "fr": null,
+      "fr": "Donnée d'émission décodée",
       "ru": "Расшифрованные данные об излучении"
     },
     "Distorted Shield Cycle Recordings": {
       "es": "Registros de Ciclo de Escudo Distorsionados",
       "de": "Gestörte Schildzyklus-Aufzeichnungen",
-      "fr": null,
+      "fr": "Enregistrements de cycles de bouclier déformés",
       "ru": "Поврежденные цикличные записи щита"
     },
     "Divergent Scan Data": {
       "es": "Datos de Escáner Divergentes",
       "de": "Divergente Scandaten",
-      "fr": null,
+      "fr": "Données d'analyse divergentes",
       "ru": "Неформатные данные сканирования"
     },
     "Eccentric Hyperspace Trajectories": {
       "es": "Trayectorias de Hiperespacio Excéntricas",
       "de": "Exzentrische Hyperraum-Routen",
-      "fr": null,
+      "fr": "Trajectoire hyperespace excentrique",
       "ru": "Аномальные траектории в гиперпространстве"
     },
     "Electrochemical Arrays": {
       "es": "Matriz Electroquímica",
       "de": "Elektrochemische Detektoren",
-      "fr": null,
+      "fr": "Réseaux électrochimique",
       "ru": "Электрохимические массивы"
     },
     "Emergency Power Cells": {
       "es": "Celulas de Energía de Emergencia",
       "de": "Notfall-Energiezellen",
-      "fr": null,
+      "fr": "Cellules d'énergie d'urgence",
       "ru": "Аварийные энергоячейки"
     },
     "Energy Grid Assembly": {
       "es": "Red de Energía",
       "de": "Energienetz-Gruppe",
-      "fr": null,
+      "fr": "Système de reseaux d'alimentation",
       "ru": "Электросеть в сборе"
     },
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions brouillées exceptionnelles",
       "ru": "Исключительные зашифрованные данные об изл."
     },
     "Exhaust Manifold": {
       "es": "Colector de Escape",
       "de": "Krümmer",
-      "fr": null,
+      "fr": "Collecteur d'échappement",
       "ru": "Выпускной коллектор"
     },
     "Exquisite Focus Crystals": {
       "es": "Cristales de Enfoque Exquisitos",
       "de": "Erlesene Laserkristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation sans défaut",
       "ru": "Отборные фокусировочные кристаллы"
     },
     "Filament Composites": {
       "es": "Compuestos de Filamentos",
       "de": "Filament-Komposite",
-      "fr": null,
+      "fr": "filament composite",
       "ru": "Волокнистые композиты"
     },
     "Flawed Focus Crystals": {
       "es": "Cristales de Enfoque Defectuosos",
       "de": "Fehlerhafte Fokuskristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation imparfait",
       "ru": "Поврежденные фокусировочные кристаллы"
     },
     "Focus Crystals": {
       "es": "Cristales de Enfoque",
       "de": "Laserkristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation",
       "ru": "Фокусировочные Кристаллы"
     },
     "Galvanising Alloys": {
       "es": "Aleaciones Galvanizadas",
       "de": "Galvanisierende Legierungen",
-      "fr": null,
+      "fr": "Alliage galvanisé",
       "ru": "Сплавы для гальванизации"
     },
     "Germanium": {
       "es": "Germanio",
       "de": "Germanium",
-      "fr": null,
+      "fr": "Germanium",
       "ru": "Германий"
     },
     "Grid Resistors": {
       "es": "Red Resistiva",
       "de": "Gitterwiderstände",
-      "fr": null,
+      "fr": "Résistance à grille",
       "ru": "Наборные резисторы"
     },
     "Hardware Diagnostic Sensor": {
       "es": "Sensor de Diagnóstico de Hardware",
       "de": "Hardware-Diagnostiksensor",
-      "fr": null,
+      "fr": "Capteur de diagnostic matériel",
       "ru": "Сенсор диагностики оборудования"
     },
     "Heat Conduction Wiring": {
       "es": "Cableado de Conducción Calorífica",
       "de": "Wärmeleitungsverdrahtung",
-      "fr": null,
+      "fr": "Cablâge de conduction thermique",
       "ru": "Теплопроводящие провода"
     },
     "Heat Dispersion Plate": {
       "es": "Placa de Dispersión de Calor",
       "de": "Wärmeverteilungsplatte",
-      "fr": null,
+      "fr": "Plaque de dissipation thermique",
       "ru": "Теплорассеивающая пластина"
     },
     "Heat Exchangers": {
       "es": "Intercambiadores de Calor",
       "de": "Wärmeaustauscher",
-      "fr": null,
+      "fr": "Echangeur de chaleur",
       "ru": "Теплообменные агрегаты"
     },
     "Heat Resistant Ceramics": {
       "es": "Cerámicas Resistentes al Calor",
       "de": "Hitzefeste Keramik",
-      "fr": null,
+      "fr": "Céramiques résistantes à la chaleur",
       "ru": "Жаропрочная керамика"
     },
     "Heat Vanes": {
       "es": "Palas Térmicas",
       "de": "Wärmeleitbleche",
-      "fr": null,
+      "fr": "vannes thermiques",
       "ru": "Тепловые заслонки"
     },
     "Heatsink Interlink": {
       "es": "Interconectores de Eyector Térmico",
       "de": "Kühlkörperverbinder",
-      "fr": null,
+      "fr": "Interconnexion de dissipateur",
       "ru": "Радиаторный соединитель"
     },
     "High Density Composites": {
       "es": "Compuestos de Alta Densidad",
       "de": "Komposite hoher Dichte",
-      "fr": null,
+      "fr": "Composite haute densité",
       "ru": "Высокоплотностные композиты"
     },
     "HN Shock Mount": {
       "es": "Suspensión HN",
       "de": "HN-Dämpferaufhängung",
-      "fr": null,
+      "fr": "Protection antichoc HP",
       "ru": "Разрядная установка HN"
     },
     "Hybrid Capacitors": {
