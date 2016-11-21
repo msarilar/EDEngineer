@@ -161,7 +161,7 @@
     },
     "Ammo Capacity": {
       "es": "Capacidad de Munición",
-      "de": "Hochleistungsmagazin",
+      "de": "Munitionskapazität",
       "fr": "capacité de munition",
       "ru": null
     },
@@ -1793,7 +1793,7 @@
     },
     "Signal source (High grade emissions)": {
       "es": "Señales (alta calidad)",
-      "de": "Hochgradige Signalquelle",
+      "de": "Signalquelle (Hochgradige Emissionen)",
       "fr": null,
       "ru": null
     },
@@ -1949,7 +1949,7 @@
     },
     "Ingredient not used in any blueprint!": {
       "es": "Elemento no usado en ninguna receta!",
-      "de": null,
+      "de": "Bestandteil in keinem bekannten Bauplan!",
       "fr": null,
       "ru": null
     }
