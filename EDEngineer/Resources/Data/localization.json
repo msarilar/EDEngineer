@@ -534,127 +534,127 @@
     "Aberrant Shield Pattern Analysis": {
       "es": "Análisis de Patrón de Escudo Aberrantes",
       "de": "Abweichende Schildeinsatz-Analysen",
-      "fr": null,
+      "fr": "Analyse de modèle de bouclier aberrante",
       "ru": "Анализ аномального поведения щита"
     },
     "Abnormal Compact Emission Data": {
       "es": "Compresión de Datos de Transmisiones Anormal",
       "de": "Anormale Kompakte Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions compactes anormales ",
       "ru": "Аномальные компактные данные об излучении"
     },
     "Adaptive Encryptors Capture": {
       "es": "Captura de Encriptadores Adaptativos",
       "de": "Adaptive Verschlüsselungserfassung",
-      "fr": null,
+      "fr": "Capture d'encrypteurs adaptatifs",
       "ru": "Захват адаптивного шифровальщика"
     },
     "Anomalous Bulk Scan Data": {
       "es": "Datos de Escáner en Bruto Anómalos",
       "de": "Anormale Massen-Scan-Daten",
-      "fr": null,
+      "fr": "Fichier volumineux d'analyse anormale",
       "ru": "Аномальный массив данных сканирования"
     },
     "Anomalous FSD Telemetry": {
       "es": "Telemetría de MDD Anómala",
       "de": "Anormale FSA-Telemetrie",
-      "fr": null,
+      "fr": "Télémétrie FSD anormale",
       "ru": "Аномальная телеметрия FSD"
     },
     "Antimony": {
       "es": "Antimonio",
       "de": "Antimon",
-      "fr": null,
+      "fr": "Antimoine,
       "ru": "Сурьма"
     },
     "Arsenic": {
       "es": "Arsénico",
       "de": "Arsen",
-      "fr": null,
+      "fr": "Arsenic",
       "ru": "Мышьяк"
     },
     "Articulation Motors": {
       "es": "Motores de Articulación",
       "de": "Gelenkmotoren",
-      "fr": null,
+      "fr": "Moteur a articulutation,
       "ru": "Шарнирные моторы"
     },
     "Atypical Disrupted Wake Echoes": {
       "es": "Ecos de Estelas Interrumpidas Atípicos",
       "de": "Atypische FSA-Stör-Aufzeichnungen",
-      "fr": null,
+      "fr": "Échos de sillages perturbés atypique",
       "ru": "Атипичное эхо поврежденного следа"
     },
     "Atypical Encryption Archives": {
       "es": "Archivos Encriptados Atípicos",
       "de": "Atypische Verschlüsselungsarchive",
-      "fr": null,
+      "fr": "Archives crytpées atypiques",
       "ru": "Нетипичные архивы шифрования"
     },
     "Basic Conductors": {
       "es": "Conductores Básicos",
       "de": "Einfache Leiter",
-      "fr": null,
+      "fr": "conducteur simple,
       "ru": "Простые проводники"
     },
     "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
       "de": "Biotech-Leiter",
-      "fr": null,
+      "fr": "Conducteur biotechnique,
       "ru": "Биотехнические проводники"
     },
     "Bromellite": {
       "es": "Bromelita",
       "de": "Bromellit",
-      "fr": null,
+      "fr": "Bromellite",
       "ru": "Бромеллит"
     },
     "Cadmium": {
       "es": "Cadmio",
       "de": "Kadmium",
-      "fr": null,
+      "fr": "Cadmium",
       "ru": "Кадмий"
     },
     "Carbon": {
       "es": "Carbono",
       "de": "Kohlenstoff",
-      "fr": null,
+      "fr": "Carbone",
       "ru": "Углерод"
     },
     "Chemical Distillery": {
       "es": "Destilería Química",
       "de": "Chemiedestillerie",
-      "fr": null,
+      "fr": "Distilerie chimique",
       "ru": "Оборудование для перегонки химикатов"
     },
     "Chemical Manipulators": {
       "es": "Manipuladores Químicos",
       "de": "Chemische Manipulatoren",
-      "fr": null,
+      "fr": "Manipulateur chimique",
       "ru": "Манипуляторы для работы с химикатами"
     },
     "Chemical Processors": {
       "es": "Procesadores Químicos",
       "de": "Chemische Prozessoren",
-      "fr": null,
+      "fr": "Processeur chimique",
       "ru": "Оборудование для химобработки"
     },
     "Chemical Storage Units": {
       "es": "Unidades de Almacenamiento Químico",
       "de": "Chemische Lagereinheiten",
-      "fr": null,
+      "fr": "Unités de stockages chimiques",
       "ru": "Контейнеры для химикатов"
     },
     "Chromium": {
       "es": "Cromo",
       "de": "Chrom",
-      "fr": null,
+      "fr": "Chrome",
       "ru": "Хром"
     },
     "Classified Scan Databanks": {
       "es": "Datos de Escáner Clasificados",
       "de": "Scan-Datenbanken unter Verschluss",
-      "fr": null,
+      "fr": "Banques de données d'analyse classifiées",
       "ru": "Засекреченные базы данных сканирования"
     },
     "Classified Scan Fragment": {
@@ -666,43 +666,43 @@
     "CMM Composite": {
       "es": "Compuesto CMM",
       "de": "CMM-Komposit",
-      "fr": null,
+      "fr": "composite MMC",
       "ru": "СММ Композит"
     },
     "Compact Composites": {
       "es": "Compuestos Compactos",
       "de": "Kompakt-Komposit",
-      "fr": null,
+      "fr": "Composites compacts",
       "ru": "Спрессованные композиты"
     },
     "Compound Shielding": {
       "es": "Escudos Compuestos",
       "de": "Verbundschilde",
-      "fr": null,
+      "fr": "Composé de bouclier ",
       "ru": "Многоступенчатая защита"
     },
     "Conductive Ceramics": {
       "es": "Cerámicas Conductivas",
       "de": "Elektrokeramiken",
-      "fr": null,
+      "fr": "Conducteur en céramique",
       "ru": "Проводящая керамика"
     },
     "Conductive Components": {
       "es": "Componentes Conductivos",
       "de": "Leitfähige Komponenten",
-      "fr": null,
+      "fr": "Composant conducteur",
       "ru": "Проводящие компоненты"
     },
     "Conductive Polymers": {
       "es": "Polímeros Conductivos",
       "de": "Leitfähige Polymere",
-      "fr": null,
+      "fr": "Conducteur en polymere,
       "ru": "Проводящие полимеры"
     },
     "Configurable Components": {
       "es": "Componentes Configurables",
       "de": "Konfigurierbare Komponenten",
-      "fr": null,
+      "fr": "composant configurble",
       "ru": "Настраиваемые компоненты"
     },
     "Core Dynamics Composites": {
@@ -714,253 +714,253 @@
     "Cracked Industrial Firmware": {
       "es": "Firmware Industrial Pirateado",
       "de": "Gecrackte Industrie-Firmware",
-      "fr": null,
+      "fr": "Micrologiciel industriel piraté",
       "ru": "Взломанные промышленные микропрограммы"
     },
     "Crystal Shards": {
       "es": "Piedras de Cristal",
       "de": "Kristallscherben",
-      "fr": null,
+      "fr": "Eclat de cristal",
       "ru": "Осколки кристаллов"
     },
     "Datamined Wake Exceptions": {
       "es": "Excepciones en Análisis de Estelas",
       "de": "FSA-Daten-Cache-Ausnahmen",
-      "fr": null,
+      "fr": "Exploration de données de sillage anormales",
       "ru": "Искл. из глубинного анализа данных следа"
     },
     "Decoded Emission Data": {
       "es": "Datos de Emisión Descodificados",
       "de": "Entschlüsselte Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions décodées",
       "ru": "Расшифрованные данные об излучении"
     },
     "Distorted Shield Cycle Recordings": {
       "es": "Registros de Ciclo de Escudo Distorsionados",
       "de": "Gestörte Schildzyklus-Aufzeichnungen",
-      "fr": null,
+      "fr": "Enregistrements de cycles de bouclier déformés",
       "ru": "Поврежденные цикличные записи щита"
     },
     "Divergent Scan Data": {
       "es": "Datos de Escáner Divergentes",
       "de": "Divergente Scandaten",
-      "fr": null,
+      "fr": "Données d'analyse divergentes",
       "ru": "Неформатные данные сканирования"
     },
     "Eccentric Hyperspace Trajectories": {
       "es": "Trayectorias de Hiperespacio Excéntricas",
       "de": "Exzentrische Hyperraum-Routen",
-      "fr": null,
+      "fr": "Trajectoires hyperespace exentriques",
       "ru": "Аномальные траектории в гиперпространстве"
     },
     "Electrochemical Arrays": {
       "es": "Matriz Electroquímica",
       "de": "Elektrochemische Detektoren",
-      "fr": null,
+      "fr": "Réseaux électrochimique",
       "ru": "Электрохимические массивы"
     },
     "Emergency Power Cells": {
       "es": "Celulas de Energía de Emergencia",
       "de": "Notfall-Energiezellen",
-      "fr": null,
+      "fr": "Cellules d'énergie d'urgence",
       "ru": "Аварийные энергоячейки"
     },
     "Energy Grid Assembly": {
       "es": "Red de Energía",
       "de": "Energienetz-Gruppe",
-      "fr": null,
+      "fr": "Grille d'assemblage d'énergie",
       "ru": "Электросеть в сборе"
     },
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions brouillées exceptionnelles" ,
       "ru": "Исключительные зашифрованные данные об изл."
     },
     "Exhaust Manifold": {
       "es": "Colector de Escape",
       "de": "Krümmer",
-      "fr": null,
+      "fr": "Collecteur d'échappement",
       "ru": "Выпускной коллектор"
     },
     "Exquisite Focus Crystals": {
       "es": "Cristales de Enfoque Exquisitos",
       "de": "Erlesene Laserkristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation sans defaut,
       "ru": "Отборные фокусировочные кристаллы"
     },
     "Filament Composites": {
       "es": "Compuestos de Filamentos",
       "de": "Filament-Komposite",
-      "fr": null,
+      "fr": "Filament composite",
       "ru": "Волокнистые композиты"
     },
     "Flawed Focus Crystals": {
       "es": "Cristales de Enfoque Defectuosos",
       "de": "Fehlerhafte Fokuskristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation imparfaits",
       "ru": "Поврежденные фокусировочные кристаллы"
     },
     "Focus Crystals": {
       "es": "Cristales de Enfoque",
       "de": "Laserkristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation",
       "ru": "Фокусировочные Кристаллы"
     },
     "Galvanising Alloys": {
       "es": "Aleaciones Galvanizadas",
       "de": "Galvanisierende Legierungen",
-      "fr": null,
+      "fr": "Alliage galvanique"
       "ru": "Сплавы для гальванизации"
     },
     "Germanium": {
       "es": "Germanio",
       "de": "Germanium",
-      "fr": null,
+      "fr": "Germanium",
       "ru": "Германий"
     },
     "Grid Resistors": {
       "es": "Red Resistiva",
       "de": "Gitterwiderstände",
-      "fr": null,
+      "fr": "Resistance a grille",
       "ru": "Наборные резисторы"
     },
     "Hardware Diagnostic Sensor": {
       "es": "Sensor de Diagnóstico de Hardware",
       "de": "Hardware-Diagnostiksensor",
-      "fr": null,
+      "fr": "Capteur de diagnostic matériel",
       "ru": "Сенсор диагностики оборудования"
     },
     "Heat Conduction Wiring": {
       "es": "Cableado de Conducción Calorífica",
       "de": "Wärmeleitungsverdrahtung",
-      "fr": null,
+      "fr": "Câblage de conduction thermique",
       "ru": "Теплопроводящие провода"
     },
     "Heat Dispersion Plate": {
       "es": "Placa de Dispersión de Calor",
       "de": "Wärmeverteilungsplatte",
-      "fr": null,
+      "fr": "Plaque de dissipation thermique",
       "ru": "Теплорассеивающая пластина"
     },
     "Heat Exchangers": {
       "es": "Intercambiadores de Calor",
       "de": "Wärmeaustauscher",
-      "fr": null,
+      "fr": "Échangeurs de chaleur",
       "ru": "Теплообменные агрегаты"
     },
     "Heat Resistant Ceramics": {
       "es": "Cerámicas Resistentes al Calor",
       "de": "Hitzefeste Keramik",
-      "fr": null,
+      "fr": "Céramiques résistantes à la chaleur",
       "ru": "Жаропрочная керамика"
     },
     "Heat Vanes": {
       "es": "Palas Térmicas",
       "de": "Wärmeleitbleche",
-      "fr": null,
+      "fr": "Vanne thermique",
       "ru": "Тепловые заслонки"
     },
     "Heatsink Interlink": {
       "es": "Interconectores de Eyector Térmico",
       "de": "Kühlkörperverbinder",
-      "fr": null,
+      "fr": "Interconnexion de dissipateur",
       "ru": "Радиаторный соединитель"
     },
     "High Density Composites": {
       "es": "Compuestos de Alta Densidad",
       "de": "Komposite hoher Dichte",
-      "fr": null,
+      "fr": "Composites à haute densité",
       "ru": "Высокоплотностные композиты"
     },
     "HN Shock Mount": {
       "es": "Suspensión HN",
       "de": "HN-Dämpferaufhängung",
-      "fr": null,
+      "fr": "Protection antichoc HP",
       "ru": "Разрядная установка HN"
     },
     "Hybrid Capacitors": {
       "es": "Capacitadores Híbridos",
       "de": "Hybridkondensatoren",
-      "fr": null,
+      "fr": "Condensateurs hybrides",
       "ru": "Гибридные конденсаторы"
     },
     "Imperial Shielding": {
       "es": "Escudos Imperiales",
       "de": "Imperiale Schilde",
-      "fr": null,
+      "fr": "Blindage imperial,
       "ru": "Имперская защита"
     },
     "Improvised Components": {
       "es": "Componentes Improvisados",
       "de": "Behelfskomponenten",
-      "fr": null,
+      "fr": "Composants improvisés",
       "ru": "Кустарные компоненты"
     },
     "Inconsistent Shield Soak Analysis": {
       "es": "Analisis de Absorcion de Esucudos Inconsistente",
       "de": "Inkonsistente Schildleistungsanalyse",
-      "fr": null,
+      "fr": "Analyse d'absorption de bouclier incohérente",
       "ru": "Неполный анализ поглощения щита"
     },
     "Insulating Membrane": {
       "es": "Membrana Aislante",
       "de": "Isoliermembran",
-      "fr": null,
+      "fr": "Membrane isolante",
       "ru": "Изолирующая мембрана"
     },
     "Ion Distributor": {
       "es": "Distribuidor de Iones",
       "de": "Ionenverteiler",
-      "fr": null,
+      "fr": "Distributeur d'ions",
       "ru": "Ионный распределитель"
     },
     "Iron": {
       "es": "Hierro",
       "de": "Eisen",
-      "fr": null,
+      "fr": "Fer",
       "ru": "Железо"
     },
     "Irregular Emission Data": {
       "es": "Datos de Emisión Irregulares",
       "de": "Irreguläre Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions irrégulières",
       "ru": "Нестандартные данные об излучении"
     },
     "Magnetic Emitter Coil": {
       "es": "Bobina de Emisión Magnética",
       "de": "Magnetische Emitterspule",
-      "fr": null,
+      "fr": "Bobine d'émission magnétique",
       "ru": "Спираль магнитного излучателя"
     },
     "Manganese": {
       "es": "Manganeso",
       "de": "Mangan",
-      "fr": null,
+      "fr": "Manganese",
       "ru": "Марганец"
     },
     "Mechanical Components": {
       "es": "Componentes Mecánicos",
       "de": "Mechanische Komponenten",
-      "fr": null,
+      "fr": "Composants mécaniques",
       "ru": "Механические компоненты"
     },
     "Mechanical Equipment": {
       "es": "Equipamiento Mecánico",
       "de": "Mechanisches Equipment",
-      "fr": null,
+      "fr": "Equipement mécanique",
       "ru": "Механическое оборудование"
     },
     "Mechanical Scrap": {
       "es": "Chatarra Mecánica",
       "de": "Mechanischer Schrott",
-      "fr": null,
+      "fr": "Ferraille mécanique",
       "ru": "Механические отходы"
     },
     "Mercury": {
       "es": "Mercurio",
       "de": "Quecksilber",
-      "fr": null,
+      "fr": "Mercure",
       "ru": "Ртуть"
     },
     "Micro Controllers": {
