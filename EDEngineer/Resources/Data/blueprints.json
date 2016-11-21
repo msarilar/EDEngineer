@@ -13545,5 +13545,713 @@
       }
     ],
     "Grade": 5
+  },
+  {
+    "Type": "FSD Injection",
+    "Name": "+ 25% Jump Range",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 2
+      },
+      {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "FSD Injection",
+    "Name": "+ 50% Jump Range",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 1
+      },
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+      {
+        "Name": "Cadmium",
+        "Size": 2
+      },
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "FSD Injection",
+    "Name": "+ 100% Jump Range",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+      {
+        "Name": "Niobium",
+        "Size": 3
+      },
+      {
+        "Name": "Yttrium",
+        "Size": 1
+      },
+      {
+        "Name": "Polonium",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Plasma Munitions",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 3
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 4
+      },
+      {
+        "Name": "Manganese",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Plasma Munitions",
+    "Name": "+ 15% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 5
+      },
+      {
+        "Name": "Manganese",
+        "Size": 3
+      },
+      {
+        "Name": "Selenium",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 4
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Plasma Munitions",
+    "Name": "+ 30% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Selenium",
+        "Size": 5
+      },
+      {
+        "Name": "Cadmium",
+        "Size": 4
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 4
+      },
+      {
+        "Name": "Technetium",
+        "Size": 2
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Explosive Munitions",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 3
+      },
+      {
+        "Name": "Nickel",
+        "Size": 3
+      },
+      {
+        "Name": "Carbon",
+        "Size": 4
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 4
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Explosive Munitions",
+    "Name": "+ 15% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 6
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 6
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 4
+      },
+      {
+        "Name": "Mercury",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Explosive Munitions",
+    "Name": "+ 30% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 5
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 4
+      },
+      {
+        "Name": "Niobium",
+        "Size": 5
+      },
+      {
+        "Name": "Mercury",
+        "Size": 5
+      },
+      {
+        "Name": "Polonium",
+        "Size": 5
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Small Calibre Munitions",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Nickel",
+        "Size": 1
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Small Calibre Munitions",
+    "Name": "+ 15% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Zinc",
+        "Size": 2
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 2
+      },
+      {
+        "Name": "Selenium",
+        "Size": 2
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Small Calibre Munitions",
+    "Name": "+ 30% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 2
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 2
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 2
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      },
+      {
+        "Name": "Mercury",
+        "Size": 2
+      },
+      {
+        "Name": "Antimony",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "High Velocity Munitions",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "High Velocity Munitions",
+    "Name": "+ 15% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 4
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 3
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 2
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "High Velocity Munitions",
+    "Name": "+ 30% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 4
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 4
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      },
+      {
+        "Name": "Yttrium",
+        "Size": 2
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Large Calibre Munitions",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Nickel",
+        "Size": 4
+      },
+      {
+        "Name": "Carbon",
+        "Size": 3
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Large Calibre Munitions",
+    "Name": "+ 15% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Tin",
+        "Size": 2
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 3
+      },
+      {
+        "Name": "Zinc",
+        "Size": 3
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Large Calibre Munitions",
+    "Name": "+ 30% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Zinc",
+        "Size": 8
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 2
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+      {
+        "Name": "Mercury",
+        "Size": 1
+      },
+      {
+        "Name": "Antimony",
+        "Size": 2
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "AFM Refil",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Nickel",
+        "Size": 2
+      },
+      {
+        "Name": "Zinc",
+        "Size": 2
+      },
+      {
+        "Name": "Chromium",
+        "Size": 2
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 3
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "AFM Refil",
+    "Name": "+ 50% Repair Speed",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Tin",
+        "Size": 1
+      },
+      {
+        "Name": "Manganese",
+        "Size": 2
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 6
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "AFM Refil",
+    "Name": "+ 100% Repair Speed",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Zinc",
+        "Size": 2
+      },
+      {
+        "Name": "Chromium",
+        "Size": 4
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 6
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      },
+      {
+        "Name": "Tellurium",
+        "Size": 1
+      },
+      {
+        "Name": "Ruthenium",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "SRV Ammo Restock",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 2
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "SRV Ammo Restock",
+    "Name": "+ 15% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+      {
+        "Name": "Manganese",
+        "Size": 1
+      },
+      {
+        "Name": "Selenium",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "ARV Ammo Restock",
+    "Name": "+ 30% Dmg",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 2
+      },
+      {
+        "Name": "Selenium",
+        "Size": 2
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Technetium",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "SRV Repair",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Nickel",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "SRV Repair",
+    "Name": "+ 50% Hull Strength",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Nickel",
+        "Size": 3
+      },
+      {
+        "Name": "Manganese",
+        "Size": 1
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 2
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "SRV Repair",
+    "Name": "+ 100% Hull Strength",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Zinc",
+        "Size": 1
+      },
+      {
+        "Name": "Chromium",
+        "Size": 2
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 2
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Tellurium",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "SRV Refuel",
+    "Name": "None",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 1
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "SRV Refuel",
+    "Name": "+ 100% Fuel Efficiency",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 1
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+      {
+        "Name": "Mercury",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "ARV Refuel",
+    "Name": "+ 200% Fuel Efficiency",
+    "Engineers": [ "Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 1
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+      {
+        "Name": "Mercury",
+        "Size": 1
+      },
+      {
+        "Name": "Technetium",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
   }
 ]
