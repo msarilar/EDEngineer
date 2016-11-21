@@ -270,7 +270,7 @@
     "Lightweight Hull Reinforcement": {
       "es": "Refuerzo Estructural Aligerado",
       "de": "Leichtgewicht-Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renforcement de coque Léger",
       "ru": null
     },
     "Resistance Augmented ": {
@@ -294,7 +294,7 @@
     "Faster FSD Boot Sequence": {
       "es": "Secuencia de Inicio de MDD Rápida",
       "de": "Schnellere FSA-Ladesequenz",
-      "fr": null,
+      "fr": "Séquence de démarrage FSD accelerée",
       "ru": null
     },
     "Shielded FSD": {
@@ -312,7 +312,7 @@
     "Kinetic Resistant Shields": {
       "es": "Escudos de Resistencia Cinética",
       "de": "Kinetikresistente Schilde",
-      "fr": null,
+      "fr": "Bouclier à résistance Cinétique",
       "ru": null
     },
     "Plasma Accelerator": {
@@ -330,7 +330,7 @@
     "Life Support": {
       "es": "Soporte Vital",
       "de": "Lebenserhaltung",
-      "fr": null,
+      "fr": "Systèmes de Survie",
       "ru": null
     },
     "Hull Reinforcement Package": {
@@ -378,7 +378,7 @@
     "Frame Shift Drive Interdictor": {
       "es": "Interdictor de MDD",
       "de": "FSA-Unterbrecher",
-      "fr": null,
+      "fr": "Interdicteur FSD",
       "ru": "FSD перехватчик"
     },
     "Shield Generator": {
@@ -468,7 +468,7 @@
     "Frame Shift Wake Scanner": {
       "es": "Escáner de Estelas de Distorsión",
       "de": "FS-Sogwolkenscanner",
-      "fr": null,
+      "fr": "Scanner de sillages FSD",
       "ru": null
     },
     "Pulse Laser": {
@@ -486,7 +486,7 @@
     "Auto Field-Maintenance Unit": {
       "es": "Unidad de Automantenimiento",
       "de": "Automatische Feldwartungs-Einheit",
-      "fr": null,
+      "fr": "MTA",
       "ru": null
     },
     "Fuel Transfer Limpet Controller": {
@@ -504,13 +504,13 @@
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
       "de": "Steuereinheit Ladelukenöffner-Drohne",
-      "fr": null,
+      "fr": "Perce-Soute",
       "ru": null
     },
     "Fuel Scoop": {
       "es": "Colector de Combustible",
       "de": "Treibstoffsammler",
-      "fr": null,
+      "fr": "Récupérateur de carburant",
       "ru": "Топливозаборник"
     },
     "Torpedo Pylon": {
@@ -1080,7 +1080,7 @@
     "Peculiar Shield Frequency Data": {
       "es": "Datos de Frecuencias de Escudo Peculiares",
       "de": "Verdächtige Schildfrequenz-Daten",
-      "fr": null,
+      "fr": "Données de Fréquences de bouclier Singulières",
       "ru": "Специфические данные о частоте щитов"
     },
     "Pharmaceutical Isolators": {
