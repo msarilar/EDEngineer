@@ -174,7 +174,7 @@
     "Low Emissions ": {
       "es": "Bajas Emisiones ",
       "de": "Emissionsoptimiertes ",
-      "fr": "Basse émission"F,
+      "fr": "Basse émission",
       "ru": null
     },
     "System Focused ": {
@@ -1950,6 +1950,144 @@
     "Ingredient not used in any blueprint!": {
       "es": "Elemento no usado en ninguna receta!",
       "de": "Bestandteil in keinem bekannten Bauplan!",
+      "fr": null,
+      "ru": null
+    },
+    "+100% Fuel Efficiency": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+100% Hull Strength": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+100% Jump Range": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+100% Repair Speed": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+15% Dmg": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+200% Fuel Efficiency": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+25% Jump Range": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+30% Dmg": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+50% Hull Strength": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+50% Jump Range": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "+50% Repair Speed": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "AFM Refill": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Explosive Munitions": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "FSD Injection": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "High Velocity Munitions": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Large Calibre Munitions": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "None": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Plasma Munitions": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Small Calibre Munitions": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "SRV Ammo Restock": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "SRV Refuel": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "SRV Repair": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "@Synthesis": {
+      "es": null,
+      "de": null,
       "fr": null,
       "ru": null
     }
