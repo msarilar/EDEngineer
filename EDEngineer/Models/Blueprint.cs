@@ -20,6 +20,8 @@ namespace EDEngineer.Models
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
         public int Grade { get; set; }
 
+        public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";
+
         public string TranslatedType => Languages.Instance.Translate(Type);
         public string TranslatedName => Languages.Instance.Translate(Name);
 
@@ -73,7 +75,14 @@ namespace EDEngineer.Models
                 if (value == favorite) return;
                 favorite = value;
 
-                Ingredients.Select(ingredient => ingredient.Entry).ToList().ForEach(entry => entry.FavoriteCount += value ? 1 : -1);
+                if (Synthesis)
+                {
+                    Ingredients.Select(ingredient => ingredient.Entry).ToList().ForEach(entry => entry.SynthesisFavoriteCount += value ? 1 : -1);
+                }
+                else
+                {
+                    Ingredients.Select(ingredient => ingredient.Entry).ToList().ForEach(entry => entry.FavoriteCount += value ? 1 : -1);
+                }
 
                 OnPropertyChanged();
             }

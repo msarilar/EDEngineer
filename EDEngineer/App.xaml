@@ -36,7 +36,10 @@
             <SolidColorBrush x:Key="EliteOrange">
                 <SolidColorBrush.Color>#ff7100</SolidColorBrush.Color>
             </SolidColorBrush>
-
+            <SolidColorBrush x:Key="SynthesisBlue">
+                <SolidColorBrush.Color>#9CBDD4</SolidColorBrush.Color>
+            </SolidColorBrush>
+            
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
             <Style TargetType="ToolTip" x:Key="TooltipStyle">
@@ -475,6 +478,9 @@
                                     <Setter Property="Foreground"
             							Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
                                 </MultiTrigger>
+                                <DataTrigger Binding="{Binding Synthesis}" Value="True">
+                                    <Setter Property="Foreground" Value="{StaticResource SynthesisBlue}"/> 
+                                </DataTrigger>
                             </Style.Triggers>
                         </Style>
                     </Setter.Value>

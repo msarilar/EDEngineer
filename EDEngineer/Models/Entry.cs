@@ -19,6 +19,7 @@ namespace EDEngineer.Models
         public EntryData Data { get; }
         private int count;
         private int favoriteCount;
+        private int synthesisFavoriteCount;
 
         public int Count
         {
@@ -49,6 +50,22 @@ namespace EDEngineer.Models
                 var oldValue = favoriteCount;
                 favoriteCount = value;
                 OnPropertyChanged(oldValue, favoriteCount);
+            }
+        }
+
+        public int SynthesisFavoriteCount
+        {
+            get { return synthesisFavoriteCount; }
+            set
+            {
+                if (value == synthesisFavoriteCount)
+                {
+                    return;
+                }
+
+                var oldValue = synthesisFavoriteCount;
+                synthesisFavoriteCount = value;
+                OnPropertyChanged(oldValue, synthesisFavoriteCount);
             }
         }
 

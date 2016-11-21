@@ -144,6 +144,11 @@
                                                             VerticalAlignment="Center"
                                                             Visibility="{Binding Value.FavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
                                                             Foreground="{StaticResource EliteOrange}" />
+                                <iconPacks:PackIconMaterial Kind="Star"
+                                                            HorizontalAlignment="Right"
+                                                            VerticalAlignment="Center"
+                                                            Visibility="{Binding Value.SynthesisFavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
+                                                            Foreground="{StaticResource SynthesisBlue}" />
                                 <TextBox HorizontalAlignment="Right"
                                          Foreground="{StaticResource EliteOrange}"
                                          Background="Transparent"
@@ -855,7 +860,7 @@
                                                 <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
                                             </TextBlock>
                                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                       Background="WhiteSmoke" Foreground="{StaticResource EliteOrange}" />
+                                                                       Background="WhiteSmoke" Foreground="{TemplateBinding DataGridRow.Foreground}" />
                                         </StackPanel>
                                     </Grid>
                                 </DataTemplate>
@@ -873,7 +878,7 @@
                                                       VerticalAlignment="Center"
                                                       IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                       Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="{StaticResource EliteOrange}" />
+                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="{TemplateBinding DataGridRow.Foreground}" />
                                         </ToggleButton>
                                         <ToggleButton x:Name="IgnoreBluebrintButton"
                                                       Width="40"
