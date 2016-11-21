@@ -564,7 +564,7 @@
     "Antimony": {
       "es": "Antimonio",
       "de": "Antimon",
-      "fr": "Antimoine,
+      "fr": "Antimoine",
       "ru": "Сурьма"
     },
     "Arsenic": {
@@ -576,7 +576,7 @@
     "Articulation Motors": {
       "es": "Motores de Articulación",
       "de": "Gelenkmotoren",
-      "fr": "Moteur a articulutation,
+      "fr": "Moteur a articulutation",
       "ru": "Шарнирные моторы"
     },
     "Atypical Disrupted Wake Echoes": {
@@ -594,13 +594,13 @@
     "Basic Conductors": {
       "es": "Conductores Básicos",
       "de": "Einfache Leiter",
-      "fr": "conducteur simple,
+      "fr": "conducteur simple",
       "ru": "Простые проводники"
     },
     "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
       "de": "Biotech-Leiter",
-      "fr": "Conducteur biotechnique,
+      "fr": "Conducteur biotechnique",
       "ru": "Биотехнические проводники"
     },
     "Bromellite": {
@@ -678,7 +678,7 @@
     "Compound Shielding": {
       "es": "Escudos Compuestos",
       "de": "Verbundschilde",
-      "fr": "Composé de bouclier ",
+      "fr": "Composé de bouclier",
       "ru": "Многоступенчатая защита"
     },
     "Conductive Ceramics": {
@@ -696,7 +696,7 @@
     "Conductive Polymers": {
       "es": "Polímeros Conductivos",
       "de": "Leitfähige Polymere",
-      "fr": "Conducteur en polymere,
+      "fr": "Conducteur en polymere",
       "ru": "Проводящие полимеры"
     },
     "Configurable Components": {
@@ -786,7 +786,7 @@
     "Exquisite Focus Crystals": {
       "es": "Cristales de Enfoque Exquisitos",
       "de": "Erlesene Laserkristalle",
-      "fr": "Cristaux de focalisation sans defaut,
+      "fr": "Cristaux de focalisation sans defaut",
       "ru": "Отборные фокусировочные кристаллы"
     },
     "Filament Composites": {
@@ -888,7 +888,7 @@
     "Imperial Shielding": {
       "es": "Escudos Imperiales",
       "de": "Imperiale Schilde",
-      "fr": "Blindage imperial,
+      "fr": "Blindage imperial",
       "ru": "Имперская защита"
     },
     "Improvised Components": {
