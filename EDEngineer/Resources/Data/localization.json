@@ -42,7 +42,7 @@
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
       "de": "Schwere Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renforts de coque lourd",
       "ru": null
     },
     "Drive Strengthening": {
@@ -54,7 +54,7 @@
     "Efficient Weapon": {
       "es": "Arma Eficiente",
       "de": "Waffeneffizienz",
-      "fr": null,
+      "fr": "Arme efficace",
       "ru": "Эффективное Оружие"
     },
     "Lightweight Mount": {
@@ -84,7 +84,7 @@
     "Longer Range FSD interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
       "de": "Ferndistanz-FSA-Unterbrecher",
-      "fr": null,
+      "fr": "Intercepteur FSD longue portée",
       "ru": null
     },
     "Reinforced Shields": {
@@ -96,13 +96,13 @@
     "Enhanced, Low Power Shields": {
       "es": "Escudos Mejorados de Baja Energía",
       "de": "Verbesserte Niedrigenergieschilde",
-      "fr": null,
+      "fr": "Boucliers amélioré à consommation réduite",
       "ru": null
     },
     "Shielded": {
       "es": "Blindado",
       "de": "Abgeschirmt",
-      "fr": null,
+      "fr": "Renforcé",
       "ru": null
     },
     "Thermal Resistant ": {
@@ -114,13 +114,13 @@
     "Weapon Focused ": {
       "es": "Orientado a Armas ",
       "de": "Waffenfokussierte ",
-      "fr": null,
+      "fr": "Optimisé armes",
       "ru": null
     },
     "Blast Resistant ": {
       "es": "Blindaje Resistente a Explosiones ",
       "de": "Detonationsresistente ",
-      "fr": null,
+      "fr": "Anti-explosion",
       "ru": null
     },
     "High Capacity Magazine": {
@@ -138,7 +138,7 @@
     "Focused Weapon": {
       "es": "Arma Concentrada",
       "de": "Waffenfokus",
-      "fr": null,
+      "fr": "Arme efficace",
       "ru": "Сфокусированное Оружие"
     },
     "Thermal Resistant Shields": {
@@ -174,55 +174,55 @@
     "Low Emissions ": {
       "es": "Bajas Emisiones ",
       "de": "Emissionsoptimiertes ",
-      "fr": null,
+      "fr": "Basse émission"F,
       "ru": null
     },
     "System Focused ": {
       "es": "Orientado a Sistemas ",
       "de": "Systemfokussierte ",
-      "fr": null,
+      "fr": "Optimisé systèmes",
       "ru": "Системо-ориентированный"
     },
     "Lightweight ": {
       "es": "Aligerado ",
       "de": "Leichtgewicht ",
-      "fr": null,
+      "fr": "Léger",
       "ru": null
     },
     "Overcharged ": {
       "es": "Sobrecargado ",
       "de": "Überladungs",
-      "fr": null,
+      "fr": "Surchargé",
       "ru": null
     },
     "Increased FSD Range": {
       "es": "Aumento de Alcance de MDD",
       "de": "Erhöhte FSA-Reichweite",
-      "fr": null,
+      "fr": "Portée FSD améliorée",
       "ru": null
     },
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
       "de": "Thermalresistente Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renforts de coque antithermique",
       "ru": null
     },
     "Dirty Drive Tuning": {
       "es": "Modificación de Motor Sucio",
       "de": "Aggressives Antriebstuning",
-      "fr": null,
+      "fr": "Optimisation de réacteur détériorante",
       "ru": "«Грязная» Донастройка"
     },
     "Engine Focused ": {
       "es": "Orientado a Motor ",
       "de": "Antriebsfokussierte ",
-      "fr": null,
+      "fr": "Optimisé moteur",
       "ru": "Двигатель-ориентированный"
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
       "de": "Kinetikresistente Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renforts de coque anti-cinétique",
       "ru": null
     },
     "High Charge Capacity ": {
@@ -234,13 +234,13 @@
     "Rapid Charge ": {
       "es": "Recarga Rápida ",
       "de": "Ladungsoptimierte ",
-      "fr": null,
+      "fr": "Chargement rapide",
       "ru": null
     },
     "Expanded FSD Interdictor Capture Arc": {
       "es": "Arco de Captura de Interdictor de MDD Extendido",
       "de": "Erweiterter Abfangkreisbogen für FSA-Unterbrecher",
-      "fr": null,
+      "fr": "Intercepteur FSD à angle de capture augmenté",
       "ru": null
     },
     "Heavy Duty ": {
@@ -264,7 +264,7 @@
     "Double Shot": {
       "es": "Doble Disparo",
       "de": "Doppelschuss",
-      "fr": null,
+      "fr": "Double Tir",
       "ru": "Двойной Выстрел"
     },
     "Lightweight Hull Reinforcement": {
@@ -276,19 +276,19 @@
     "Resistance Augmented ": {
       "es": "Resistencia Aumentada ",
       "de": "Widerstandsverstärkter ",
-      "fr": null,
+      "fr": "Résistances Augmentés",
       "ru": null
     },
     "Specialised ": {
       "es": "Especializado ",
       "de": "Spezialisierte",
-      "fr": null,
+      "fr": "Specialisé",
       "ru": null
     },
     "Shielded ": {
       "es": "Blindado",
       "de": "Abgeschirmte ",
-      "fr": null,
+      "fr": "Renforcé",
       "ru": null
     },
     "Faster FSD Boot Sequence": {
@@ -300,13 +300,13 @@
     "Shielded FSD": {
       "es": "MDD Blindado",
       "de": "Abgeschirmter FSA",
-      "fr": null,
+      "fr": "FSD Renforcé",
       "ru": null
     },
     "Clean Drive Tuning": {
       "es": "Modificación de Motor Limpio",
       "de": "Ausgewogenes Antriebstuning",
-      "fr": null,
+      "fr": "Optimisation de réacteur propre",
       "ru": "«Чистая» Донастройка"
     },
     "Kinetic Resistant Shields": {
@@ -318,13 +318,13 @@
     "Plasma Accelerator": {
       "es": "Acelerador de Plasma",
       "de": "Plasmabeschleuniger",
-      "fr": null,
+      "fr": "Accelerateur à Plasma",
       "ru": null
     },
     "Electronic Countermeasure": {
       "es": "Contramedida Electrónica",
       "de": "Elektronische Gegenmaßnahmen",
-      "fr": null,
+      "fr": "CME",
       "ru": null
     },
     "Life Support": {
@@ -342,37 +342,37 @@
     "Cannon": {
       "es": "Cañón",
       "de": "Kanone",
-      "fr": null,
+      "fr": "Canon",
       "ru": null
     },
     "Thrusters": {
       "es": "Impulsores",
       "de": "Schubdüsen",
-      "fr": null,
+      "fr": "Moteurs",
       "ru": "Маневровые двигатели"
     },
     "Multi-cannon": {
       "es": "Multicañón",
       "de": "Mehrfachgeschütz",
-      "fr": null,
+      "fr": "Multi-cannon",
       "ru": "Многоствольное орудие"
     },
     "Missile Rack": {
       "es": "Batería de Misiles",
       "de": "Raketenrampe",
-      "fr": null,
+      "fr": "Rack de Missiles",
       "ru": null
     },
     "Power Plant": {
       "es": "Núcleo de Energía",
       "de": "Kraftwerk",
-      "fr": null,
+      "fr": "Générateur",
       "ru": "Силовая установка"
     },
     "Chaff Launcher": {
       "es": "Lanzador de Señuelos",
       "de": "Düppel-Werfer",
-      "fr": null,
+      "fr": "Contre-Mesures",
       "ru": null
     },
     "Frame Shift Drive Interdictor": {
@@ -384,7 +384,7 @@
     "Shield Generator": {
       "es": "Generador de Escudos",
       "de": "Schildgenerator",
-      "fr": null,
+      "fr": "Générateur de Bouclier",
       "ru": "Генератор щита"
     },
     "Point Defence": {
@@ -396,13 +396,13 @@
     "Shield Booster": {
       "es": "Potenciador de Escudos",
       "de": "Schild-Booster",
-      "fr": null,
+      "fr": "Survolteur de Bouclier",
       "ru": "Усилитель щита"
     },
     "Kill Warrant Scanner": {
       "es": "Escáner de Registro Criminal",
       "de": "Tötungsbefehl-Scanner",
-      "fr": null,
+      "fr": "Scanner d'avis de recherches",
       "ru": "Сканер преступников"
     },
     "Rail Gun": {
@@ -414,49 +414,49 @@
     "Power Distributor": {
       "es": "Distribuidor de Energía",
       "de": "Energieverteiler",
-      "fr": null,
+      "fr": "Répartiteur de Puissance",
       "ru": "Распределитель питания"
     },
     "Fragment Cannon": {
       "es": "Cañón de Fragmentación",
       "de": "Splitterkanone",
-      "fr": null,
+      "fr": "Canon à fragmentation",
       "ru": null
     },
     "Mine Launcher": {
       "es": "Lanzaminas",
       "de": "Minenwerfer",
-      "fr": null,
+      "fr": "Lanceur de mines",
       "ru": null
     },
     "Beam Laser": {
       "es": "Láser de Rayo",
       "de": "Strahlenlaser",
-      "fr": null,
+      "fr": "Rayon Laser",
       "ru": null
     },
     "Armour": {
       "es": "Blindaje",
       "de": "Panzerung",
-      "fr": null,
+      "fr": "Armure",
       "ru": null
     },
     "Prospector Limpet Controller": {
       "es": "Lanzador Dron Prospector",
       "de": "Drohnensteuerung Erzsucher",
-      "fr": null,
+      "fr": "Controleur de drones de prospection",
       "ru": null
     },
     "Manifest Scanner": {
       "es": "Escáner de Carga",
       "de": "Verzeichnisscanner",
-      "fr": null,
+      "fr": "Scanner de soute",
       "ru": null
     },
     "Burst Laser": {
       "es": "Láser de Ráfagas",
       "de": "Salvenlaser",
-      "fr": null,
+      "fr": "Laser à Rafale",
       "ru": null
     },
     "Heat Sink Launcher": {
@@ -474,13 +474,13 @@
     "Pulse Laser": {
       "es": "Láser de Pulso",
       "de": "Impulslaser",
-      "fr": null,
+      "fr": "Laser à Impulsion",
       "ru": "Импульсный лазер"
     },
     "Refinery": {
       "es": "Refinería",
       "de": "Raffinerie",
-      "fr": null,
+      "fr": "Raffinerie",
       "ru": null
     },
     "Auto Field-Maintenance Unit": {
@@ -492,13 +492,13 @@
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
       "de": "Treibstofftransferierer-Drohnensteuerung",
-      "fr": null,
+      "fr": "Controleur de drone de ravitaillement",
       "ru": null
     },
     "Frame Shift Drive": {
       "es": "Motor de Distorsión",
       "de": "Frameshiftantrieb",
-      "fr": null,
+      "fr": "FSD",
       "ru": "Рамочно-Смесительный двигатель"
     },
     "Hatch Breaker Limpet Controller": {
@@ -516,13 +516,13 @@
     "Torpedo Pylon": {
       "es": "Lanzatorpedos",
       "de": "Torpedopylon",
-      "fr": null,
+      "fr": "Torpilles",
       "ru": null
     },
     "Collector Limpet Controller": {
       "es": "Lanzador Dron Colector",
       "de": "Steuerung Sammeldrohne",
-      "fr": null,
+      "fr": "Controleur de drone collecteur",
       "ru": null
     },
     "Shield Cell Bank": {
@@ -774,7 +774,7 @@
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
-      "fr": "Données d'émissions brouillées exceptionnelles",
+      "fr": "Données d'émissions brouillées exceptionnelles" ,
       "ru": "Исключительные зашифрованные данные об изл."
     },
     "Exhaust Manifold": {
@@ -1356,7 +1356,7 @@
     "ECM": {
       "es": "Contramedida",
       "de": "EGM",
-      "fr": null,
+      "fr": "CME",
       "ru": null
     },
     "Hull": {
@@ -1950,144 +1950,6 @@
     "Ingredient not used in any blueprint!": {
       "es": "Elemento no usado en ninguna receta!",
       "de": "Bestandteil in keinem bekannten Bauplan!",
-      "fr": null,
-      "ru": null
-    },
-    "+100% Fuel Efficiency": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+100% Hull Strength": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+100% Jump Range": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+100% Repair Speed": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+15% Dmg": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+200% Fuel Efficiency": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+25% Jump Range": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+30% Dmg": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+50% Hull Strength": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+50% Jump Range": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "+50% Repair Speed": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "AFM Refill": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "Explosive Munitions": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "FSD Injection": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "High Velocity Munitions": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "Large Calibre Munitions": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "None": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "Plasma Munitions": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "Small Calibre Munitions": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "SRV Ammo Restock": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "SRV Refuel": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "SRV Repair": {
-      "es": null,
-      "de": null,
-      "fr": null,
-      "ru": null
-    },
-    "@Synthesis": {
-      "es": null,
-      "de": null,
       "fr": null,
       "ru": null
     }
