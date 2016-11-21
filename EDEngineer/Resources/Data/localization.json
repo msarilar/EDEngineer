@@ -888,7 +888,7 @@
     "Imperial Shielding": {
       "es": "Escudos Imperiales",
       "de": "Imperiale Schilde",
-      "fr": "Blindage imperial",
+      "fr": "Protection impériale",
       "ru": "Имперская защита"
     },
     "Improvised Components": {
@@ -1272,7 +1272,7 @@
     "Tempered Alloys": {
       "es": "Aleaciones Templadas",
       "de": "Vergütete Legierungen",
-      "fr": "Alliages tempérés",
+      "fr": "Alliages Thermiques",
       "ru": "Жаропрочная керамика"
     },
     "Thermic Alloys": {
@@ -1404,31 +1404,31 @@
     "Data": {
       "es": "Datos",
       "de": "Daten",
-      "fr": null,
+      "fr": "Données",
       "ru": null
     },
     "Commodity": {
       "es": "Mercancía",
       "de": "Handelsware",
-      "fr": null,
+      "fr": "Cargaison",
       "ru": "Товар"
     },
     "Commodities": {
       "es": "Mercancías",
       "de": "Handelswaren",
-      "fr": null,
+      "fr": "Cargaison",
       "ru": "Товары"
     },
     "Material": {
       "es": "Material",
       "de": "Material",
-      "fr": null,
+      "fr": "Matériaux",
       "ru": "Материал"
     },
     "Materials": {
       "es": "Materiales",
       "de": "Materialien",
-      "fr": null,
+      "fr": "Matériaux",
       "ru": "Материалы"
     },
     "Type": {
@@ -1812,7 +1812,7 @@
     "Ship scanning (combat ships)": {
       "es": "Escaneo de naves (naves de combate)",
       "de": "Schiff Scan (Kampfschiffe)",
-      "fr": null,
+      "fr": "Scan de vaisseau de Combats",
       "ru": null
     },
     "Deep space data beacon": {
@@ -2028,25 +2028,25 @@
     "Explosive Munitions": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Munitions Explosives",
       "ru": null
     },
     "FSD Injection": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Injection FSD",
       "ru": null
     },
     "High Velocity Munitions": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Munitions à Haute Vélocité",
       "ru": null
     },
     "Large Calibre Munitions": {
       "es": null,
       "de": null,
-      "fr": null,
+      "fr": "Munition de gros Calibre",
       "ru": null
     },
     "None": {
