@@ -2070,19 +2070,19 @@
     "SRV Ammo Restock": {
       "es": null,
       "de": "SRV-Munitionsnachladung",
-      "fr": null,
+      "fr": "Munitions SRV",
       "ru": null
     },
     "SRV Refuel": {
       "es": null,
       "de": "SRV-Auftankung",
-      "fr": null,
+      "fr": "Carburant SRV",
       "ru": null
     },
     "SRV Repair": {
       "es": null,
       "de": "SRV-Reparaturen",
-      "fr": null,
+      "fr": "Réparation SRV",
       "ru": null
     },
     "@Synthesis": {
