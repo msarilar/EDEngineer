@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.2.3",
+    "Content": "* Added synthesis blueprints (thanks to @ravstar52 for providing the raw data!). They appear with a light blue color and you can distinguish the ingredients you have favorited from blueprints and from synthesis. In the Engineer filter, you have a new filter \"@Synthesis\" and new type filters are available too.\r\n\r\n* Updated localization"
+  },
+  {
     "Version": "1.0.2.2",
     "Content": "* Ingredients not used in a single blueprint now appear faded with a hint in the tooltip. Check it out!\r\n\r\n* Fixed an issue with commanders having special characters in their name (<, >, :, \", /, \\, |, ?, *)\r\n* Fixed an issue with users having multiple commanders which made the application not correctly update cargo (visually) after switching from active commander\r\n\r\n* French translation progress (not finished though) ; thanks to @calvin00 and @Giblood for the dedication! Almost there :)"
   },
