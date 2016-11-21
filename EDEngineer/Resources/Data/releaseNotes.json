@@ -1,5 +1,13 @@
 ﻿[
   {
+    "Version": "1.0.2.2",
+    "Content": "* Ingredients not used in a single blueprint now appear faded with a hint in the tooltip. Check it out!\r\n\r\n* Fixed an issue with commanders having special characters in their name (<, >, :, \", /, \\, |, ?, *)\r\n* Fixed an issue with users having multiple commanders which made the application not correctly update cargo (visually) after switching from active commander\r\n\r\n* French translation progress (not finished though) ; thanks to @calvin00 and @Giblood for the dedication! Almost there :)"
+  },
+  {
+    "Version": "1.0.2.1",
+    "Content": "* Hotfix to avoid debug popups in the released version"
+  },
+  {
     "Version": "1.0.2",
     "Content": "* Added material/data count. A warning will popup if you have 5 or less slots available, you can disable that warning in the tasktray icon context menu!\r\n* Added origin details to blueprints ingredients. Icons allow a quick view of the basic origin (market, mission, scan, surface, salvage, mining) and a tool tip will give more detail when you hover the ingredient (like \"Ship salvage (military & authority ships)\"). You can hide icons if it's too much visual noise via the new switch on top of the left panel.\r\n* Added an option to disable \"Blueprint Ready\" notifications in the context menu of the task tray icon (it's enabled by default)\r\n\r\n* Fixed an error in RamTah's blueprint which was missing CMM composite in its ingredient list. Please report any similar issue like this one if you see it!\r\n* Frontier's fixed an issue with \"Material Discovered\" event, it's now integrated in the app. Please double check materials/data you've recently discovered, the counter might be slightly off!\r\n* Fixed the \"Very Rare\" icon which was showing as \"Rare\"\r\n\r\n* FULL german translation available ! Many thanks to @Scorprox for his hard work and dedication\r\n* Spanish translations fixes, thanks a bunch to @TCAS !"
   },
