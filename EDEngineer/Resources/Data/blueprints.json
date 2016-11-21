@@ -13975,7 +13975,7 @@
     "Grade": 3
   },
   {
-    "Type": "AFM Refil",
+    "Type": "AFM Refill",
     "Name": "None",
     "Engineers": [ "Synthesis" ],
     "Ingredients": [
@@ -13999,7 +13999,7 @@
     "Grade": 1
   },
   {
-    "Type": "AFM Refil",
+    "Type": "AFM Refill",
     "Name": "+ 50% Repair Speed",
     "Engineers": [ "Synthesis" ],
     "Ingredients": [
@@ -14027,7 +14027,7 @@
     "Grade": 2
   },
   {
-    "Type": "AFM Refil",
+    "Type": "AFM Refill",
     "Name": "+ 100% Repair Speed",
     "Engineers": [ "Synthesis" ],
     "Ingredients": [
@@ -14231,7 +14231,7 @@
     "Grade": 2
   },
   {
-    "Type": "ARV Refuel",
+    "Type": "SRV Refuel",
     "Name": "+ 200% Fuel Efficiency",
     "Engineers": [ "Synthesis" ],
     "Ingredients": [
