@@ -966,85 +966,85 @@
     "Micro Controllers": {
       "es": "Microcontroladores",
       "de": "Mikrocontroller",
-      "fr": null,
+      "fr": "Microcontrôleurs",
       "ru": "Микроконтроллеры"
     },
     "Micro-Weave Cooling Hoses": {
       "es": "Mangueras de Refrigeración de Micro-tejidos",
       "de": "Mikroflecht-Kühlschläuche",
-      "fr": null,
+      "fr": "Tuyaux de refroidissement à microfilaments",
       "ru": "Шланги системы охлаждения малых диаметров"
     },
     "Military Grade Alloys": {
       "es": "Aleaciones de Grado Militar",
       "de": "Militärqualitätslegierungen",
-      "fr": null,
+      "fr": "Alliage militaire",
       "ru": "Сплавы военного назначения"
     },
     "Military Supercapacitors": {
       "es": "Supercapacitadores Militares",
       "de": "Militärische Superkondensatoren",
-      "fr": null,
+      "fr": "Supercondensateurs militaires",
       "ru": "Военные суперконденсаторы"
     },
     "Modified Consumer Firmware": {
       "es": "Firmware de Consumo Modificado",
       "de": "Modifizierte Consumer-Firmware",
-      "fr": null,
+      "fr": "Micrologiciel consommateur modifié",
       "ru": "Измененные пользовательские микропрограммы"
     },
     "Modified Embedded Firmware": {
       "es": "Firmware Integrado Modificado",
       "de": "Modifizierte integrierte Firmware",
-      "fr": null,
+      "fr": "Micrologiciel intégré modifié",
       "ru": "Измененные встроенные микропрограммы"
     },
     "Modular Terminals": {
       "es": "Terminales Modulares",
       "de": "Modulterminals",
-      "fr": null,
+      "fr": "Terminaux modulaires",
       "ru": "Модульные терминалы"
     },
     "Molybdenum": {
       "es": "Molibdeno",
       "de": "Molibdän",
-      "fr": null,
+      "fr": "Molybdene",
       "ru": "Молибден"
     },
     "Nanobreakers": {
       "es": "Nanorrompedores",
       "de": "Nanozertrümmerer",
-      "fr": null,
+      "fr": "Nanodestructeurs",
       "ru": "Нанопрерыватели"
     },
     "Neofabric Insulation": {
       "es": "Neotejido Aislante",
       "de": "Neogewebe-Isolierung",
-      "fr": null,
+      "fr": "Isolant en néotextile",
       "ru": "Высокотехнологичная изоляция"
     },
     "Nickel": {
       "es": "Níquel",
       "de": "Nickel",
-      "fr": null,
+      "fr": "Nickel",
       "ru": "Никель"
     },
     "Niobium": {
       "es": "Niobio",
       "de": "Niobium",
-      "fr": null,
+      "fr": "Niobium",
       "ru": "Ниобий"
     },
     "Open Symmetric Keys": {
       "es": "Claves Simétricas Abiertas",
       "de": "Offene symmetrische Schlüssel",
-      "fr": null,
+      "fr": "clés symétriques ouverte",
       "ru": "Открытые симметричные ключи"
     },
     "Osmium": {
       "es": "Osmio",
       "de": "Osmium",
-      "fr": null,
+      "fr": "Osmium",
       "ru": "Осмий"
     },
     "Pattern Alpha Obelisk Data": {
@@ -1086,271 +1086,271 @@
     "Pharmaceutical Isolators": {
       "es": "Aislantes Farmacéuticos",
       "de": "Pharmazeutische Isolatoren",
-      "fr": null,
+      "fr": "Isolants pharmaceutiques",
       "ru": "Фармацевтические изоляционные материалы"
     },
     "Phase Alloys": {
       "es": "Aleaciones de Fase",
       "de": "Phasenlegierungen",
-      "fr": null,
+      "fr": "Alliages de phase",
       "ru": "Фазовые сплавы"
     },
     "Phosphorus": {
       "es": "Fósforo",
       "de": "Phosphor",
-      "fr": null,
+      "fr": "Phosphore",
       "ru": "Фосфор"
     },
     "Platinum": {
       "es": "Platino",
       "de": "Platin",
-      "fr": null,
+      "fr": "platinium",
       "ru": "Платина"
     },
     "Polonium": {
       "es": "Polonio",
       "de": "Polonium",
-      "fr": null,
+      "fr": "Polonium",
       "ru": "Полоний"
     },
     "Polymer Capacitors": {
       "es": "Capacitadores de Polímeros",
       "de": "Polymerkondensatoren",
-      "fr": null,
+      "fr": "Condensateurs en polymères",
       "ru": "Полимерные конденсаторы"
     },
     "Power Converter": {
       "es": "Convertidor de Energía",
       "de": "Energiekonverter",
-      "fr": null,
+      "fr": "Convertisseur de puissance",
       "ru": "Преобразователь энергии"
     },
     "Power Transfer Bus": {
       "es": "Conductos de Transferencia de Energía",
       "de": "Energietransferbus",
-      "fr": null,
+      "fr": "Conduit de transfert d’énergie",
       "ru": "Энергообменная шина"
     },
     "Praseodymium": {
       "es": "Praseodimio",
       "de": "Praseodym",
-      "fr": null,
+      "fr": "Praseodyme",
       "ru": "Празеодим"
     },
     "Precipitated Alloys": {
       "es": "Aleaciones de Precipitación",
       "de": "Gehärtete Legierungen",
-      "fr": null,
+      "fr": "Alliages précipités",
       "ru": "Осажденные сплавы"
     },
     "Proprietary Composites": {
       "es": "Compuestos con Patente",
       "de": "Kompositwerkstoffe",
-      "fr": null,
+      "fr": "Composites brevetés",
       "ru": "Патентованные композиты"
     },
     "Proto Heat Radiators": {
       "es": "Protorradiadores Térmicos",
       "de": "Proto-Wärmestrahler",
-      "fr": null,
+      "fr": "Proto-radiateurs",
       "ru": "Прототипы теплоизлучателей"
     },
     "Proto Light Alloys": {
       "es": "Protoaleaciones Ligeras",
       "de": "Leichte Legierungen (Proto)",
-      "fr": null,
+      "fr": "Proto-alliages légers",
       "ru": "Опытные легкие сплавы"
     },
     "Proto Radiolic Alloys": {
       "es": "Aleaciones Protorradiadas",
       "de": "Radiologische Legierungen (Proto)",
-      "fr": null,
+      "fr": "Proto-alliages radiologiques",
       "ru": "Сплавы для изготовления зондов"
     },
     "Radiation Baffle": {
       "es": "Deflector de Radiación",
       "de": "Strahlungsabweiser",
-      "fr": null,
+      "fr": "Ecran antiradiation",
       "ru": "Отражатель излучения"
     },
     "Refined Focus Crystals": {
       "es": "Cristales de Enfoque Refinados",
       "de": "Raffinierte Laserkristalle",
-      "fr": null,
+      "fr": "Cristaux de focalisation raffinés",
       "ru": "Обработанные фокусировочные кристаллы"
     },
     "Reinforced Mounting Plate": {
       "es": "Placa de Anclaje Reforzada",
       "de": "Verstärkte Trägerplatte",
-      "fr": null,
+      "fr": "Plaque de montage renforcée",
       "ru": "Усиленная монтажная плита"
     },
     "Ruthenium": {
       "es": "Rutenio",
       "de": "Ruthenium",
-      "fr": null,
+      "fr": "Rutheniume",
       "ru": "Рутений"
     },
     "Salvaged Alloys": {
       "es": "Aleaciones Recuperadas",
       "de": "Geborgene Legierungen",
-      "fr": null,
+      "fr": "Alliages récupérés",
       "ru": "Захваченные сплавы"
     },
     "Samarium": {
       "es": "Samario",
       "de": "Samarium",
-      "fr": null,
+      "fr": "Samarium",
       "ru": "Самарий"
     },
     "Security Firmware Patch": {
       "es": "Parche de Firmware de Seguridad",
       "de": "Sicherheits-Firmware-Patch",
-      "fr": null,
+      "fr": "Mise à jour de micrologiciel de sécurité",
       "ru": "Обновление для защитной микропрограммы"
     },
     "Selenium": {
       "es": "Selenio",
       "de": "Selen",
-      "fr": null,
+      "fr": "Selenium",
       "ru": "Селен"
     },
     "Shield Emitters": {
       "es": "Emisores de Escudo",
       "de": "Schildemitter",
-      "fr": null,
+      "fr": "Emetteurs de bouclier",
       "ru": "Щитоизлучатели"
     },
     "Shielding Sensors": {
       "es": "Sensores de Escudo",
       "de": "Schildsensoren",
-      "fr": null,
+      "fr": "Capteurs de bouclier",
       "ru": "Сенсоры системы экранирования"
     },
     "Specialised Legacy Firmware": {
       "es": "Firmware Heredado Especializado",
       "de": "Spezial-Legacy-Firmware",
-      "fr": null,
+      "fr": "Micrologiciel spécialisé périmé",
       "ru": "Спец. микропрограммы предыдущего поколения"
     },
     "Strange Wake Solutions": {
       "es": "Extrañas Soluciones de Estelas",
       "de": "Seltsame FSA-Zielorte",
-      "fr": null,
+      "fr": "Solutions de sillage anormales",
       "ru": "Странные расчеты следа"
     },
     "Sulphur": {
       "es": "Azufre",
       "de": "Schwefel",
-      "fr": null,
+      "fr": "Sulphure",
       "ru": "Сера"
     },
     "Tagged Encryption Codes": {
       "es": "Códigos de Encriptación Marcados",
       "de": "Getaggte Verschlüsselungscodes",
-      "fr": null,
+      "fr": "Codes de cryptage marqué",
       "ru": "Меченые шифровальные коды"
     },
     "Technetium": {
       "es": "Tecnecio",
       "de": "Technetium",
-      "fr": null,
+      "fr": "Technetium",
       "ru": "Технеций"
     },
     "Telemetry Suite": {
       "es": "Paquete de Telemetría",
       "de": "Telemetrie-Paket",
-      "fr": null,
+      "fr": "Suite de télémétrie",
       "ru": "Телеметрический комплект"
     },
     "Tellurium": {
       "es": "Teluro",
       "de": "Tellur",
-      "fr": null,
+      "fr": "Tellure",
       "ru": "Теллур"
     },
     "Tempered Alloys": {
       "es": "Aleaciones Templadas",
       "de": "Vergütete Legierungen",
-      "fr": null,
+      "fr": "Alliages tempérés",
       "ru": "Жаропрочная керамика"
     },
     "Thermic Alloys": {
       "es": "Aleaciones Térmicas",
       "de": "Thermische Legierungen",
-      "fr": null,
+      "fr": "Alliages thermiques",
       "ru": "Термические сплавы"
     },
     "Tin": {
       "es": "Estaño",
       "de": "Zinn",
-      "fr": null,
+      "fr": "Etain",
       "ru": "Олово"
     },
     "Tungsten": {
       "es": "Tungsteno",
       "de": "Wolfram",
-      "fr": null,
+      "fr": "Tungstend",
       "ru": "Вольфрам"
     },
     "Unexpected Emission Data": {
       "es": "Datos de Emisión Inesperados",
       "de": "Unerwartete Emissionsdaten",
-      "fr": null,
+      "fr": "Données d'émissions inattendues",
       "ru": "Неожиданные данные об излучении"
     },
     "Unidentified Scan Archives": {
       "es": "Archivos de Escáner no Identificados",
       "de": "Unidentifizierte Scan-Archive",
-      "fr": null,
+      "fr": "Analyse d'archives non identifiées",
       "ru": "Неопознанные архивы сканирования"
     },
     "Unknown Fragment": {
       "es": "Fragmento Desconocido",
       "de": "Unbekanntes Fragment",
-      "fr": null,
+      "fr": "Fragment inconnu",
       "ru": "Неизвестный фрагмент"
     },
     "Untypical Shield Scans": {
       "es": "Escáner de Escudos Atípico",
       "de": "Untypische Schildscans",
-      "fr": null,
+      "fr": "Analyses de bouclier atypique",
       "ru": "Нетипичные данные сканирования щитов"
     },
     "Unusual Encrypted Files": {
       "es": "Ficheros Encriptados Inusuales",
       "de": "Ungewöhnliche verschlüsselte Files",
-      "fr": null,
+      "fr": "Fichiers cryptés insolites",
       "ru": "Особые зашифрованные файлы"
     },
     "Vanadium": {
       "es": "Vanadio",
       "de": "Vanadium",
-      "fr": null,
+      "fr": "Vanadium",
       "ru": "Ванадий"
     },
     "Worn Shield Emitters": {
       "es": "Emisor de Escudos Desgastado",
       "de": "Gebrauchte Schildemitter",
-      "fr": null,
+      "fr": "Émetteurs de bouclier usé",
       "ru": "Изношенные щитоизлучатели"
     },
     "Yttrium": {
       "es": "Ytrio",
       "de": "Yttrium",
-      "fr": null,
+      "fr": "Yttrium",
       "ru": "Иттрий"
     },
     "Zinc": {
       "es": "Zinc",
       "de": "Zink",
-      "fr": null,
+      "fr": "Zinc",
       "ru": "Цинк"
     },
     "Zirconium": {
       "es": "Circonio",
       "de": "Zirconium",
-      "fr": null,
+      "fr": "Zirconium",
       "ru": "Цирконий"
     },
     "ECM": {
