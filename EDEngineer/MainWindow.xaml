@@ -27,7 +27,7 @@
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"
                              Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
-                             Background="{StaticResource EliteOrange}"
+                             Background="{StaticResource EliteOrangeBrush}"
                              BorderBrush="Black"
                              StaysOpen="True"
                              DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
@@ -65,7 +65,7 @@
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
-                <Border BorderBrush="{StaticResource EliteOrange}"
+                <Border BorderBrush="{StaticResource EliteOrangeBrush}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
                     <Grid HorizontalAlignment="Stretch">
@@ -83,7 +83,7 @@
                                        FontSize="20"
                                        Margin="2,0,0,0"
                                        VerticalAlignment="Center"
-                                       Foreground="{StaticResource EliteOrange}" >
+                                       Foreground="{StaticResource EliteOrangeBrush}" >
                                 <TextBlock.Text>
                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                         <Binding Path="Value.Data.Name"/>
@@ -143,14 +143,14 @@
                                                             HorizontalAlignment="Right"
                                                             VerticalAlignment="Center"
                                                             Visibility="{Binding Value.FavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
-                                                            Foreground="{StaticResource EliteOrange}" />
+                                                            Foreground="{StaticResource EliteOrangeBrush}" />
                                 <iconPacks:PackIconMaterial Kind="Star"
                                                             HorizontalAlignment="Right"
                                                             VerticalAlignment="Center"
                                                             Visibility="{Binding Value.SynthesisFavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
-                                                            Foreground="{StaticResource SynthesisBlue}" />
+                                                            Foreground="{StaticResource SynthesisBlueBrush}" />
                                 <TextBox HorizontalAlignment="Right"
-                                         Foreground="{StaticResource EliteOrange}"
+                                         Foreground="{StaticResource EliteOrangeBrush}"
                                          Background="Transparent"
                                          VerticalAlignment="Center"
                                          BorderBrush="Transparent"
@@ -280,14 +280,14 @@
                               Grid.Column="1"
                               ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show only for favorites?'}"
                               IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                    <iconPacks:PackIconMaterial Kind="Star" Foreground="{StaticResource EliteOrange}" />
+                    <iconPacks:PackIconMaterial Kind="Star" Foreground="{StaticResource EliteOrangeBrush}" />
                 </ToggleButton>
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Column="2"
                               IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
-                    <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrange}" />
+                    <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrangeBrush}" />
                 </ToggleButton>
             </Grid>
 
@@ -631,7 +631,7 @@
                             Width="40"
                             Style="{DynamicResource ChromelessButtonStyle}"
                             x:Name="CheckAllButton">
-                        <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrange}" />
+                        <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrangeBrush}" />
                     </Button>
                     <Button Grid.Column="3"
                             Grid.Row="1"
@@ -640,7 +640,7 @@
                             Width="40"
                             Style="{DynamicResource ChromelessButtonStyle}"
                             x:Name="UncheckAllButton">
-                        <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrange}" />
+                        <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrangeBrush}" />
                     </Button>
                 </Grid>
 
@@ -650,7 +650,7 @@
                           IsReadOnly="True"
                           FontFamily="./Resources/Fonts/#Euro Caps"
                           Background="Black"
-                          BorderBrush="{StaticResource EliteOrange}"
+                          BorderBrush="{StaticResource EliteOrangeBrush}"
                           HorizontalAlignment="Stretch"
                           ColumnWidth="*"
                           FontSize="14.5"
@@ -878,7 +878,7 @@
                                                       VerticalAlignment="Center"
                                                       IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                       Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="{TemplateBinding DataGridRow.Foreground}" />
+                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
                                         </ToggleButton>
                                         <ToggleButton x:Name="IgnoreBluebrintButton"
                                                       Width="40"
@@ -933,7 +933,7 @@
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"
                        Grid.Column="2"
-                       Foreground="{StaticResource EliteOrange}"
+                       Foreground="{StaticResource EliteOrangeBrush}"
                        Margin="10,0,0,0"
                        TextAlignment="Left"
                        VerticalAlignment="Center"

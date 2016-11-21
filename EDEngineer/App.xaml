@@ -20,6 +20,18 @@
                     Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
                 <ResourceDictionary Source="Resources/OriginTemplates.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+
+            <Color x:Key="EliteOrange">
+                #ff7100
+            </Color>
+
+            <Color x:Key="SynthesisBlue">
+                #9CBDD4
+            </Color>
+
+            <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
+            <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
+            
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
             <converters:IngredientToVisibilityConverter x:Key="IngredientToVisibility" />
@@ -32,13 +44,9 @@
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
-            
-            <SolidColorBrush x:Key="EliteOrange">
-                <SolidColorBrush.Color>#ff7100</SolidColorBrush.Color>
-            </SolidColorBrush>
-            <SolidColorBrush x:Key="SynthesisBlue">
-                <SolidColorBrush.Color>#9CBDD4</SolidColorBrush.Color>
-            </SolidColorBrush>
+            <converters:BooleanToSynthesisColorConverter x:Key="BooleanToSynthesisColor"
+                                                         SynthesisColor="{StaticResource SynthesisBlueBrush}"
+                                                         NormalColor="{StaticResource EliteOrangeBrush}"/>
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
@@ -468,7 +476,7 @@
                                     <Setter Property="Background" Value="Black" />
                                     <Setter Property="BorderBrush"
             							Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
-                                    <Setter Property="Foreground" Value="{StaticResource EliteOrange}" />
+                                    <Setter Property="Foreground" Value="{StaticResource EliteOrangeBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -479,7 +487,7 @@
             							Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
                                 </MultiTrigger>
                                 <DataTrigger Binding="{Binding Synthesis}" Value="True">
-                                    <Setter Property="Foreground" Value="{StaticResource SynthesisBlue}"/> 
+                                    <Setter Property="Foreground" Value="{StaticResource SynthesisBlueBrush}"/> 
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>
