@@ -1954,139 +1954,139 @@
       "ru": null
     },
     "+100% Fuel Efficiency": {
-      "es": null,
+      "es": "+100% Eficiencia de combustible",
       "de": "+100% Bonus Treibstoffeffizienz",
       "fr": null,
       "ru": null
     },
     "+100% Hull Strength": {
-      "es": null,
+      "es": "+100% Resistencia de casco",
       "de": "+100% Bonus Rumpfstärke",
       "fr": null,
       "ru": null
     },
     "+100% Jump Range": {
-      "es": null,
+      "es": "+100% Distancia de salto",
       "de": "+100% Bonus Entfernung",
       "fr": null,
       "ru": null
     },
     "+100% Repair Speed": {
-      "es": null,
+      "es": "+100% Velocidad de reparación",
       "de": "+100% Bonus Reparaturgeschwindigkeit",
       "fr": null,
       "ru": null
     },
     "+15% Dmg": {
-      "es": null,
+      "es": "+15% al daño",
       "de": "+15% Bonus Schaden",
       "fr": null,
       "ru": null
     },
     "+200% Fuel Efficiency": {
-      "es": null,
+      "es": "+200% Eficiencia de combustible",
       "de": "+200% Bonus Treibstoffeffizienz",
       "fr": null,
       "ru": null
     },
     "+25% Jump Range": {
-      "es": null,
+      "es": "+25% Distancia de salto",
       "de": "+25% Bonus Entfernung",
       "fr": null,
       "ru": null
     },
     "+30% Dmg": {
-      "es": null,
+      "es": "+30% al daño",
       "de": "+30% Bonus Schaden",
       "fr": null,
       "ru": null
     },
     "+50% Hull Strength": {
-      "es": null,
+      "es": "+50% Resistencia de casco",
       "de": "+50% Bonus Rumpfstärke",
       "fr": null,
       "ru": null
     },
     "+50% Jump Range": {
-      "es": null,
+      "es": "+50% Distancia de salto",
       "de": "+50% Bonus Entfernung",
       "fr": null,
       "ru": null
     },
     "+50% Repair Speed": {
-      "es": null,
+      "es": "+50% Velocidad de reparación",
       "de": "+50% Bonus Reparaturgeschwindigkeit",
       "fr": null,
       "ru": null
     },
     "AFM Refill": {
-      "es": null,
+      "es": "Recarga de UAM",
       "de": "AFW-Auffrischung",
       "fr": null,
       "ru": null
     },
     "Explosive Munitions": {
-      "es": null,
+      "es": "Munición explosiva",
       "de": "Explosivmunition",
       "fr": "Munitions Explosives",
       "ru": null
     },
     "FSD Injection": {
-      "es": null,
+      "es": "Inyección del MDD",
       "de": "FSA-Einspeisung",
       "fr": "Injection FSD",
       "ru": null
     },
     "High Velocity Munitions": {
-      "es": null,
+      "es": "Munición de alta velocidad",
       "de": "Hochgeschwindigkeitsmunition",
       "fr": "Munitions à Haute Vélocité",
       "ru": null
     },
     "Large Calibre Munitions": {
-      "es": null,
+      "es": "Munición de gran calibre",
       "de": "Großkalibrige Munition",
       "fr": "Munition de gros Calibre",
       "ru": null
     },
     "None": {
-      "es": null,
+      "es": "Ninguna",
       "de": "Keine",
       "fr": null,
       "ru": null
     },
     "Plasma Munitions": {
-      "es": null,
+      "es": "Munición de plasma",
       "de": "Plasmamunition",
       "fr": null,
       "ru": null
     },
     "Small Calibre Munitions": {
-      "es": null,
+      "es": "Munición de pequeño calibre",
       "de": "Kleinkalibrige Munition",
       "fr": null,
       "ru": null
     },
     "SRV Ammo Restock": {
-      "es": null,
+      "es": "Suministro de munición de VRS",
       "de": "SRV-Munitionsnachladung",
       "fr": null,
       "ru": null
     },
     "SRV Refuel": {
-      "es": null,
+      "es": "Repostaje del VRS",
       "de": "SRV-Auftankung",
       "fr": null,
       "ru": null
     },
     "SRV Repair": {
-      "es": null,
+      "es": "Reparación del VRS",
       "de": "SRV-Reparaturen",
       "fr": null,
       "ru": null
     },
     "@Synthesis": {
-      "es": null,
+      "es": "@Síntesis",
       "de": "@Synthese",
       "fr": null,
       "ru": null
