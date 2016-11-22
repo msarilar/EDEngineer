@@ -1,4 +1,4 @@
-﻿{
+{
   "LanguageInfos": {
     "en": {
       "TwoLetterISOLanguageName": "en",
@@ -546,13 +546,13 @@
     "Adaptive Encryptors Capture": {
       "es": "Captura de Encriptadores Adaptativos",
       "de": "Adaptive Verschlüsselungserfassung",
-      "fr": "Capture d'encrypteurs adaptatifs",
+      "fr": "Capture de cryptage évolutif",
       "ru": "Захват адаптивного шифровальщика"
     },
     "Anomalous Bulk Scan Data": {
       "es": "Datos de Escáner en Bruto Anómalos",
       "de": "Anormale Massen-Scan-Daten",
-      "fr": "Fichier volumineux d'analyse anormale",
+      "fr": "Fichier volumineux d'analyse anormal",
       "ru": "Аномальный массив данных сканирования"
     },
     "Anomalous FSD Telemetry": {
@@ -582,7 +582,7 @@
     "Atypical Disrupted Wake Echoes": {
       "es": "Ecos de Estelas Interrumpidas Atípicos",
       "de": "Atypische FSA-Stör-Aufzeichnungen",
-      "fr": "Echos de sillages perturbés atypique",
+      "fr": "Echos de sillages perturbés atypiques",
       "ru": "Атипичное эхо поврежденного следа"
     },
     "Atypical Encryption Archives": {
@@ -594,13 +594,13 @@
     "Basic Conductors": {
       "es": "Conductores Básicos",
       "de": "Einfache Leiter",
-      "fr": "conducteur simple",
+      "fr": "conducteurs simples",
       "ru": "Простые проводники"
     },
     "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
       "de": "Biotech-Leiter",
-      "fr": "Conducteur biotechnique",
+      "fr": "Conducteurs biotechniques",
       "ru": "Биотехнические проводники"
     },
     "Bromellite": {
@@ -630,19 +630,19 @@
     "Chemical Manipulators": {
       "es": "Manipuladores Químicos",
       "de": "Chemische Manipulatoren",
-      "fr": "Manipulateur chimique",
+      "fr": "Manipulateurs chimiques",
       "ru": "Манипуляторы для работы с химикатами"
     },
     "Chemical Processors": {
       "es": "Procesadores Químicos",
       "de": "Chemische Prozessoren",
-      "fr": "Processeur chimique",
+      "fr": "Processeurs chimiques",
       "ru": "Оборудование для химобработки"
     },
     "Chemical Storage Units": {
       "es": "Unidades de Almacenamiento Químico",
       "de": "Chemische Lagereinheiten",
-      "fr": "Unités de stockages chimiques",
+      "fr": "Unités de stockage chimique",
       "ru": "Контейнеры для химикатов"
     },
     "Chromium": {
@@ -660,7 +660,7 @@
     "Classified Scan Fragment": {
       "es": "Fragmento de Escáner Clasificado",
       "de": "Geheimes Scan Fragment",
-      "fr": "Fragment de Scan Classifié",
+      "fr": "Données d'analyse classifiées parcellaires",
       "ru": "Засекреченные фрагменты данных сканирования"
     },
     "CMM Composite": {
@@ -684,25 +684,25 @@
     "Conductive Ceramics": {
       "es": "Cerámicas Conductivas",
       "de": "Elektrokeramiken",
-      "fr": "Conducteur en céramique",
+      "fr": "Conducteurs en céramique",
       "ru": "Проводящая керамика"
     },
     "Conductive Components": {
       "es": "Componentes Conductivos",
       "de": "Leitfähige Komponenten",
-      "fr": "Composant conducteur",
+      "fr": "Composants conducteurs",
       "ru": "Проводящие компоненты"
     },
     "Conductive Polymers": {
       "es": "Polímeros Conductivos",
       "de": "Leitfähige Polymere",
-      "fr": "Conducteur en polymere",
+      "fr": "Conducteurs en polymères",
       "ru": "Проводящие полимеры"
     },
     "Configurable Components": {
       "es": "Componentes Configurables",
       "de": "Konfigurierbare Komponenten",
-      "fr": "Composant paramétrable",
+      "fr": "Composant paramétrables",
       "ru": "Настраиваемые компоненты"
     },
     "Core Dynamics Composites": {
@@ -756,7 +756,7 @@
     "Electrochemical Arrays": {
       "es": "Matriz Electroquímica",
       "de": "Elektrochemische Detektoren",
-      "fr": "Réseaux électrochimique",
+      "fr": "Réseaux électrochimiques",
       "ru": "Электрохимические массивы"
     },
     "Emergency Power Cells": {
@@ -924,7 +924,7 @@
     "Irregular Emission Data": {
       "es": "Datos de Emisión Irregulares",
       "de": "Irreguläre Emissionsdaten",
-      "fr": "Données d'émissions irrégulières",
+      "fr": "Données d'émissions aberrantes",
       "ru": "Нестандартные данные об излучении"
     },
     "Magnetic Emitter Coil": {
@@ -978,7 +978,7 @@
     "Military Grade Alloys": {
       "es": "Aleaciones de Grado Militar",
       "de": "Militärqualitätslegierungen",
-      "fr": "Alliage militaire",
+      "fr": "Alliages militaires",
       "ru": "Сплавы военного назначения"
     },
     "Military Supercapacitors": {
@@ -1038,7 +1038,7 @@
     "Open Symmetric Keys": {
       "es": "Claves Simétricas Abiertas",
       "de": "Offene symmetrische Schlüssel",
-      "fr": "Clés symétriques ouverte",
+      "fr": "clés symétriques ouvertes",
       "ru": "Открытые симметричные ключи"
     },
     "Osmium": {
@@ -1050,31 +1050,31 @@
     "Pattern Alpha Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Alpha",
       "de": "Alpha-Muster-Obeliskendaten",
-      "fr": null,
+      "fr": "Données d'obélisque de type alpha",
       "ru": null
     },
     "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
       "de": "Beta-Muster-Obeliskendaten",
-      "fr": null,
+      "fr":  "Données d'obélisque de type Beta ",
       "ru": null
     },
     "Pattern Delta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Delta",
       "de": "Delta-Muster-Obeliskendaten",
-      "fr": null,
+      "fr": "Données d'obélisque de type Delta ",
       "ru": null
     },
     "Pattern Epsilon Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Epsilon",
       "de": "Epsilon-Muster-Obeliskendaten",
-      "fr": null,
+      "fr": "Données d'obélisque de type Epsilon ",
       "ru": null
     },
     "Pattern Gamma Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Gamma",
       "de": "Gamma-Muster-Obeliskendaten",
-      "fr": null,
+      "fr": "Données d'obélisque de type Gamma ",
       "ru": null
     },
     "Peculiar Shield Frequency Data": {
@@ -1236,19 +1236,19 @@
     "Strange Wake Solutions": {
       "es": "Extrañas Soluciones de Estelas",
       "de": "Seltsame FSA-Zielorte",
-      "fr": "Solutions de sillage anormales",
+      "fr": "Solutions de sillages anormales",
       "ru": "Странные расчеты следа"
     },
     "Sulphur": {
       "es": "Azufre",
       "de": "Schwefel",
-      "fr": "Soufre",
+      "fr": "Souffre",
       "ru": "Сера"
     },
     "Tagged Encryption Codes": {
       "es": "Códigos de Encriptación Marcados",
       "de": "Getaggte Verschlüsselungscodes",
-      "fr": "Codes de cryptage marqué",
+      "fr": "Clés de cryptage balisées",
       "ru": "Меченые шифровальные коды"
     },
     "Technetium": {
@@ -1302,7 +1302,7 @@
     "Unidentified Scan Archives": {
       "es": "Archivos de Escáner no Identificados",
       "de": "Unidentifizierte Scan-Archive",
-      "fr": "Analyse d'archives non identifiées",
+      "fr":  "Données d'analyse archivées non identifiées",
       "ru": "Неопознанные архивы сканирования"
     },
     "Unknown Fragment": {
@@ -1314,13 +1314,13 @@
     "Untypical Shield Scans": {
       "es": "Escáner de Escudos Atípico",
       "de": "Untypische Schildscans",
-      "fr": "Analyses de bouclier atypique",
+      "fr": "Analyses de bouclier atypiques",
       "ru": "Нетипичные данные сканирования щитов"
     },
     "Unusual Encrypted Files": {
       "es": "Ficheros Encriptados Inusuales",
       "de": "Ungewöhnliche verschlüsselte Files",
-      "fr": "Fichiers cryptés insolites",
+      "fr": "Fichiers cryptés inhabituels",
       "ru": "Особые зашифрованные файлы"
     },
     "Vanadium": {
