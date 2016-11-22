@@ -444,7 +444,7 @@
     "Prospector Limpet Controller": {
       "es": "Lanzador Dron Prospector",
       "de": "Drohnensteuerung Erzsucher",
-      "fr": "Controleur de drones de prospection",
+      "fr": "Controleur de drônes de prospection",
       "ru": null
     },
     "Manifest Scanner": {
@@ -492,7 +492,7 @@
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
       "de": "Treibstofftransferierer-Drohnensteuerung",
-      "fr": "Controleur de drone de ravitaillement",
+      "fr": "Contrôleur de drone de ravitaillement",
       "ru": null
     },
     "Frame Shift Drive": {
@@ -522,7 +522,7 @@
     "Collector Limpet Controller": {
       "es": "Lanzador Dron Colector",
       "de": "Steuerung Sammeldrohne",
-      "fr": "Controleur de drone collecteur",
+      "fr": "Controleur de drône collecteur",
       "ru": null
     },
     "Shield Cell Bank": {
@@ -576,19 +576,19 @@
     "Articulation Motors": {
       "es": "Motores de Articulación",
       "de": "Gelenkmotoren",
-      "fr": "Moteur a articulutation",
+      "fr": "Moteur à articulation",
       "ru": "Шарнирные моторы"
     },
     "Atypical Disrupted Wake Echoes": {
       "es": "Ecos de Estelas Interrumpidas Atípicos",
       "de": "Atypische FSA-Stör-Aufzeichnungen",
-      "fr": "Échos de sillages perturbés atypique",
+      "fr": "Echos de sillages perturbés atypique",
       "ru": "Атипичное эхо поврежденного следа"
     },
     "Atypical Encryption Archives": {
       "es": "Archivos Encriptados Atípicos",
       "de": "Atypische Verschlüsselungsarchive",
-      "fr": "Archives crytpées atypiques",
+      "fr": "Archives cryptées atypiques",
       "ru": "Нетипичные архивы шифрования"
     },
     "Basic Conductors": {
@@ -702,7 +702,7 @@
     "Configurable Components": {
       "es": "Componentes Configurables",
       "de": "Konfigurierbare Komponenten",
-      "fr": "composant configurble",
+      "fr": "Composant configurable",
       "ru": "Настраиваемые компоненты"
     },
     "Core Dynamics Composites": {
@@ -786,7 +786,7 @@
     "Exquisite Focus Crystals": {
       "es": "Cristales de Enfoque Exquisitos",
       "de": "Erlesene Laserkristalle",
-      "fr": "Cristaux de focalisation sans defaut",
+      "fr": "Cristaux de focalisation sans défaut",
       "ru": "Отборные фокусировочные кристаллы"
     },
     "Filament Composites": {
@@ -822,7 +822,7 @@
     "Grid Resistors": {
       "es": "Red Resistiva",
       "de": "Gitterwiderstände",
-      "fr": "Resistance a grille",
+      "fr": "Résistance à grille",
       "ru": "Наборные резисторы"
     },
     "Hardware Diagnostic Sensor": {
@@ -846,7 +846,7 @@
     "Heat Exchangers": {
       "es": "Intercambiadores de Calor",
       "de": "Wärmeaustauscher",
-      "fr": "Échangeurs de chaleur",
+      "fr": "Echangeurs de chaleur",
       "ru": "Теплообменные агрегаты"
     },
     "Heat Resistant Ceramics": {
@@ -1038,7 +1038,7 @@
     "Open Symmetric Keys": {
       "es": "Claves Simétricas Abiertas",
       "de": "Offene symmetrische Schlüssel",
-      "fr": "clés symétriques ouverte",
+      "fr": "Clés symétriques ouverte",
       "ru": "Открытые симметричные ключи"
     },
     "Osmium": {
@@ -1290,7 +1290,7 @@
     "Tungsten": {
       "es": "Tungsteno",
       "de": "Wolfram",
-      "fr": "Tungstend",
+      "fr": "Tungsten",
       "ru": "Вольфрам"
     },
     "Unexpected Emission Data": {
@@ -1374,25 +1374,25 @@
     "Prospector LC": {
       "es": "LD Prospector",
       "de": "DS Erzsucher",
-      "fr": "Controleur de drones Prospecteurs",
+      "fr": "Contrôleur de drones Prospecteurs",
       "ru": null
     },
     "Fuel Transfer LC": {
       "es": "LD Repostaje",
       "de": "DS Treibstofftransferierer",
-      "fr": "Controleur de drones Ravitailleurs",
+      "fr": "Contrôleur de drones Ravitailleurs",
       "ru": null
     },
     "Hatch Breaker LC": {
       "es": "LD Extractor",
       "de": "DS Ladelukenöffner",
-      "fr": "Controleur de drones Perce-Soute",
+      "fr": "Contrôleur de drones Perce-Soute",
       "ru": null
     },
     "Collector LC": {
       "es": "LD Colector",
       "de": "DS Sammeldrohne",
-      "fr": "Controleur de drones Collecteurs",
+      "fr": "Contrôleur de drones Collecteurs",
       "ru": null
     },
     "AFMU": {
@@ -1458,7 +1458,7 @@
     "Unlock Window": {
       "es": "Desbloquear ventana",
       "de": "Fixierung aufheben",
-      "fr": "Débloquer la Fenetre",
+      "fr": "Débloquer la Fenêtre",
       "ru": null
     },
     "Show entries with no stock?": {
@@ -1524,7 +1524,7 @@
     "Lock Window": {
       "es": "Bloquear ventana",
       "de": "Fenster fixieren",
-      "fr": "Bloquer la fenetre",
+      "fr": "Bloquer la fenêtre",
       "ru": null
     },
     "Show": {
@@ -1536,13 +1536,13 @@
     "Toggle Window Mode (Locked/Unlocked)": {
       "es": "Cambiar el modo ventana (Bloqueado/Desbloqueado)",
       "de": "Fenster Modus umschalten (fixiert/freigegeben)",
-      "fr": "Mode de la fenetre (Bloquer/arriere plan)",
+      "fr": "Mode de la fenêtre (Bloquer/arrière plan)",
       "ru": null
     },
     "Reset Window Position": {
       "es": "Restablecer la posición de la ventana",
       "de": "Fensterposition zurücksetzen",
-      "fr": "Restaurer l'affichage de la fenetre",
+      "fr": "Restaurer l'affichage de la fenêtre",
       "ru": null
     },
     "Set Shortcut": {
@@ -1578,13 +1578,13 @@
     "Input a shortcut that's going to be used to show the window": {
       "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
       "de": "Geben Sie eine Tastenkombination ein, die das Fenster anzeigt",
-      "fr": "Configurer une touche pour afficher la fenetre",
+      "fr": "Configurer une touche pour afficher la fenêtre",
       "ru": null
     },
     "You can't use an empty shortcut": {
       "es": "No puedes usar un acceso directo vacío",
       "de": "Sie können keine leere Tastenkombination benutzen",
-      "fr": "Une touche doit etre choisie",
+      "fr": "Une touche doit être choisie",
       "ru": null
     },
     "Error": {
@@ -1614,7 +1614,7 @@
     "Unknown material, please contact the author ! {0}": {
       "es": "Material desconocido, contacta con el autor  ! {0}",
       "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor ! {0}",
-      "fr": "Materiau inconnu, contactez l'auteur ! {0}",
+      "fr": "Matériau inconnu, contactez l'auteur ! {0}",
       "ru": null
     },
     "Neither": {
@@ -1716,7 +1716,7 @@
     "Blueprint Ready": {
       "es": "Receta lista",
       "de": "Blaupause fertig",
-      "fr": "Recette Prete",
+      "fr": "Recette Prête",
       "ru": null
     },
     "Select Language": {
@@ -1806,13 +1806,13 @@
     "Destroyed Unknown Artefact": {
       "es": "Destrucción de Artefacto Desconocido",
       "de": "Zerstörtes Unbekanntes Artefakt",
-      "fr": "Artefact Inconnu Détruit / Fragment Inconnu",
+      "fr": "Artéfact Inconnu Détruit / Fragment Inconnu",
       "ru": null
     },
     "Ship scanning (combat ships)": {
       "es": "Escaneo de naves (naves de combate)",
       "de": "Schiff Scan (Kampfschiffe)",
-      "fr": "Scan de vaisseau de Combats",
+      "fr": "Scan de vaisseaux de Combat",
       "ru": null
     },
     "Deep space data beacon": {
@@ -1824,13 +1824,13 @@
     "Ship scanning (transport ships)": {
       "es": "Escaneo de naves (naves de transporte)",
       "de": "Schiff Scan (Transportschiffe)",
-      "fr": "Scan de vaisseau (Type : Transport)",
+      "fr": "Scan de vaisseaux (Type : Transport)",
       "ru": null
     },
     "High wake scanning": {
       "es": "Escaneo de estelas de salto",
       "de": "Sogwolkenscan (Hohe Energie)",
-      "fr": "scan de sillage a haute energie",
+      "fr": "scan de sillages à haute energie",
       "ru": null
     },
     "Surface data point": {
@@ -1842,13 +1842,13 @@
     "Ship scanning": {
       "es": "Escaneo de naves",
       "de": "Schiff Scan",
-      "fr": "Scan de vaisseau",
+      "fr": "Scan de vaisseaux",
       "ru": null
     },
     "Markets": {
       "es": "Mercados",
       "de": "Märkte",
-      "fr": "Marché",
+      "fr": "Marchés",
       "ru": null
     },
     "Markets near Akhenaten (High Tech/Refinery)": {
@@ -1920,7 +1920,7 @@
     "Materials Almost Full!": {
       "es": "Capacidad de materiales al límite.",
       "de": "Materialien Kapazität beinahe erreicht!",
-      "fr": "Capacité matériaux limité",
+      "fr": "Stockage matériaux presque plein",
       "ru": null
     },
     "You have only {0} slots left for your materials.": {
@@ -1974,13 +1974,13 @@
     "+100% Repair Speed": {
       "es": "+100% Velocidad de reparación",
       "de": "+100% Bonus Reparaturgeschwindigkeit",
-      "fr": "+100% vitesse de reparation",
+      "fr": "+100% vitesse de réparation",
       "ru": null
     },
     "+15% Dmg": {
       "es": "+15% al daño",
       "de": "+15% Bonus Schaden",
-      "fr": "+15% dégat",
+      "fr": "+15% dégâts",
       "ru": null
     },
     "+200% Fuel Efficiency": {
@@ -1998,7 +1998,7 @@
     "+30% Dmg": {
       "es": "+30% al daño",
       "de": "+30% Bonus Schaden",
-      "fr": "+30% dégat",
+      "fr": "+30% dégâts",
       "ru": null
     },
     "+50% Hull Strength": {
@@ -2016,7 +2016,7 @@
     "+50% Repair Speed": {
       "es": "+50% Velocidad de reparación",
       "de": "+50% Bonus Reparaturgeschwindigkeit",
-      "fr": "+50% vitesse de reparation",
+      "fr": "+50% vitesse de réparation",
       "ru": null
     },
     "AFM Refill": {
@@ -2046,7 +2046,7 @@
     "Large Calibre Munitions": {
       "es": "Munición de gran calibre",
       "de": "Großkalibrige Munition",
-      "fr": "Munition de gros Calibre",
+      "fr": "Munitions de gros Calibre",
       "ru": null
     },
     "None": {
@@ -2058,13 +2058,13 @@
     "Plasma Munitions": {
       "es": "Munición de plasma",
       "de": "Plasmamunition",
-      "fr": "munition plasma",
+      "fr": "Munitions plasma",
       "ru": null
     },
     "Small Calibre Munitions": {
       "es": "Munición de pequeño calibre",
       "de": "Kleinkalibrige Munition",
-      "fr": "Munition de petit calibre",
+      "fr": "Munitions de petit calibre",
       "ru": null
     },
     "SRV Ammo Restock": {
@@ -2088,7 +2088,7 @@
     "@Synthesis": {
       "es": "@Síntesis",
       "de": "@Synthese",
-      "fr": "@Synthese",
+      "fr": "@Synthèse",
       "ru": null
     }
   }
