@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.2.4",
+    "Content": "* Minor GUI animations to make it a bit more smooth (for example, when you select a blueprint in the right grid)\r\n\r\n* 100% finished french translation! Many thanks to Cmdr Bucho Xin Bu (@Buchodt), @calvin00 and @Giblood for the contributions and dedication!"
+  },
+  {
     "Version": "1.0.2.3",
     "Content": "* Added synthesis blueprints (thanks to @ravstar52 for providing the raw data!). They appear with a light blue color and you can distinguish the ingredients you have favorited from blueprints and from synthesis. In the Engineer filter, you have a new filter \"@Synthesis\" and new type filters are available too.\r\n\r\n* Updated localization"
   },
