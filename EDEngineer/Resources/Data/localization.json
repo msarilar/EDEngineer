@@ -1602,7 +1602,7 @@
     "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
       "es": "Debes utilizar una tecla normal para acompañar la tecla modificadora como (Ctrl+F10 or Shift+R)",
       "de": "Sie müssen eine reguläre Taste zusammen mit einer modifizierenden Taste verwenden wie (Strg+F10 or Shift+R)",
-      "fr": null,
+      "fr": "Vous devez utiliser une touche normale pour accompagner la touche de modification comme (Ctrl + F10 ou Maj + R)",
       "ru": null
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
@@ -2022,7 +2022,7 @@
     "AFM Refill": {
       "es": "Recarga de UAM",
       "de": "AFW-Auffrischung",
-      "fr": null,
+      "fr": "Unité de maintenance rechargée",
       "ru": null
     },
     "Explosive Munitions": {
