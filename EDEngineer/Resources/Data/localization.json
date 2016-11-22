@@ -660,7 +660,7 @@
     "Classified Scan Fragment": {
       "es": "Fragmento de Escáner Clasificado",
       "de": "Geheimes Scan Fragment",
-      "fr": null,
+      "fr": "Fragment de Scan Classifié",
       "ru": "Засекреченные фрагменты данных сканирования"
     },
     "CMM Composite": {
@@ -702,7 +702,7 @@
     "Configurable Components": {
       "es": "Componentes Configurables",
       "de": "Konfigurierbare Komponenten",
-      "fr": "Composant configurable",
+      "fr": "Composant paramétrable",
       "ru": "Настраиваемые компоненты"
     },
     "Core Dynamics Composites": {
@@ -858,7 +858,7 @@
     "Heat Vanes": {
       "es": "Palas Térmicas",
       "de": "Wärmeleitbleche",
-      "fr": "Vanne thermique",
+      "fr": "Vannes thermiques",
       "ru": "Тепловые заслонки"
     },
     "Heatsink Interlink": {
@@ -1242,7 +1242,7 @@
     "Sulphur": {
       "es": "Azufre",
       "de": "Schwefel",
-      "fr": "Sulphure",
+      "fr": "Soufre",
       "ru": "Сера"
     },
     "Tagged Encryption Codes": {
@@ -1290,7 +1290,7 @@
     "Tungsten": {
       "es": "Tungsteno",
       "de": "Wolfram",
-      "fr": "Tungsten",
+      "fr": "Tungstène",
       "ru": "Вольфрам"
     },
     "Unexpected Emission Data": {
