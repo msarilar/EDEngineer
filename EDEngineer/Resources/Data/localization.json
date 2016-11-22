@@ -1632,7 +1632,7 @@
     "Ignored": {
       "es": "Ignorado",
       "de": "Ignorierte",
-      "fr": "Ignorées",
+      "fr": "Ignorés",
       "ru": null
     },
     "Craftable": {
@@ -1741,7 +1741,7 @@
       "es": "Recompensa de misiones",
       "de": "Missions-Belohnungen",
       "fr": "Récompence de mission",
-      "ru": null
+      "ru": "Награда за миссиу"
     },
     "Mining (ice rings)": {
       "es": "Minería (anillos helados)",
@@ -1849,7 +1849,7 @@
       "es": "Mercados",
       "de": "Märkte",
       "fr": "Marchés",
-      "ru": null
+      "ru": "Рынки"
     },
     "Markets near Akhenaten (High Tech/Refinery)": {
       "es": "Mercados cerca de Akhenaten (Alta Tecnología/Refinería)",
