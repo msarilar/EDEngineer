@@ -30,13 +30,13 @@
     "Short Range Blaster": {
       "es": "Destructor de Corto Alcance",
       "de": "Kurzdistanzblaster",
-      "fr": null,
+      "fr": "Tir à Courte Portée",
       "ru": null
     },
     "Lightweight": {
       "es": "Aligerado",
       "de": "Leichte",
-      "fr": null,
+      "fr": "Léger",
       "ru": null
     },
     "Heavy Duty Hull Reinforcement": {
@@ -48,7 +48,7 @@
     "Drive Strengthening": {
       "es": "Fortalecimiento de Motor",
       "de": "Antriebsstärkung",
-      "fr": null,
+      "fr": "Renforcement du réacteur",
       "ru": null
     },
     "Efficient Weapon": {
@@ -60,7 +60,7 @@
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
       "de": "Leichtgewichtgeschütz",
-      "fr": null,
+      "fr": "Montage Léger",
       "ru": null
     },
     "Armoured ": {
@@ -78,7 +78,7 @@
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
       "de": "Robustes Gestell",
-      "fr": null,
+      "fr": "Montage Robuste",
       "ru": "Прочное Крепление"
     },
     "Longer Range FSD interdictor": {
@@ -228,7 +228,7 @@
     "High Charge Capacity ": {
       "es": "Alta Capacidad de Carga ",
       "de": "Hochleistungsfähige ",
-      "fr": null,
+      "fr": "Capacité Surchargée",
       "ru": null
     },
     "Rapid Charge ": {
@@ -246,19 +246,19 @@
     "Heavy Duty ": {
       "es": "Alta Resistencia ",
       "de": "Schwere ",
-      "fr": null,
+      "fr": "Renforts de coque lourd",
       "ru": null
     },
     "Charge Enhanced ": {
       "es": "Carga Mejorada ",
       "de": "Ladungsoptimierte ",
-      "fr": null,
+      "fr": "Répartiteur de puissance rapide",
       "ru": null
     },
     "Blast Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Explosiva",
       "de": "Detonationsresistente Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renforts de coque anti-explosion",
       "ru": null
     },
     "Double Shot": {
@@ -336,7 +336,7 @@
     "Hull Reinforcement Package": {
       "es": "Paquete de Refuerzo Estructural",
       "de": "Rumpfhüllenverstärkung",
-      "fr": null,
+      "fr": "Renforts de coque",
       "ru": null
     },
     "Cannon": {
@@ -390,7 +390,7 @@
     "Point Defence": {
       "es": "Defensa de Punto",
       "de": "Punktverteidigung",
-      "fr": null,
+      "fr": "Défense ponctuelle",
       "ru": "Точечная оборона"
     },
     "Shield Booster": {
@@ -408,7 +408,7 @@
     "Rail Gun": {
       "es": "Cañón de Riel",
       "de": "Schienenkanone",
-      "fr": null,
+      "fr": "Canon électrique",
       "ru": null
     },
     "Power Distributor": {
@@ -462,7 +462,7 @@
     "Heat Sink Launcher": {
       "es": "Eyector Térmico",
       "de": "Kühlkörperwerfer",
-      "fr": null,
+      "fr": "Dissipateur thermique",
       "ru": null
     },
     "Frame Shift Wake Scanner": {
@@ -528,7 +528,7 @@
     "Shield Cell Bank": {
       "es": "Células de Escudo",
       "de": "Schildzellenbank",
-      "fr": null,
+      "fr": "Cellules d'énergie",
       "ru": "Щитонакопитель"
     },
     "Aberrant Shield Pattern Analysis": {
@@ -708,7 +708,7 @@
     "Core Dynamics Composites": {
       "es": "Compuestos de Core Dynamics",
       "de": "Core Dynamics Kompositwerkstoffe",
-      "fr": null,
+      "fr": "Composites Core Dynamics",
       "ru": "Композиты Core Dynamics"
     },
     "Cracked Industrial Firmware": {
@@ -1362,43 +1362,43 @@
     "Hull": {
       "es": "Casco",
       "de": "Rumpfhülle",
-      "fr": null,
+      "fr": "Coque",
       "ru": null
     },
     "FSD Interdictor": {
       "es": "Interdictor",
       "de": "FSA-Unterbrecher",
-      "fr": null,
+      "fr": "Intercepteur FSD",
       "ru": null
     },
     "Prospector LC": {
       "es": "LD Prospector",
       "de": "DS Erzsucher",
-      "fr": null,
+      "fr": "Controleur de drones Prospecteurs",
       "ru": null
     },
     "Fuel Transfer LC": {
       "es": "LD Repostaje",
       "de": "DS Treibstofftransferierer",
-      "fr": null,
+      "fr": "Controleur de drones Ravitailleurs",
       "ru": null
     },
     "Hatch Breaker LC": {
       "es": "LD Extractor",
       "de": "DS Ladelukenöffner",
-      "fr": null,
+      "fr": "Controleur de drones Perce-Soute",
       "ru": null
     },
     "Collector LC": {
       "es": "LD Colector",
       "de": "DS Sammeldrohne",
-      "fr": null,
+      "fr": "Controleur de drones Collecteurs",
       "ru": null
     },
     "AFMU": {
       "es": "Unidad de Automantenimiento",
       "de": "AFWE",
-      "fr": null,
+      "fr": "MTA",
       "ru": null
     },
     "Data": {
@@ -1434,103 +1434,103 @@
     "Type": {
       "es": "Tipo",
       "de": "Typ",
-      "fr": null,
+      "fr": "Type",
       "ru": "Тип"
     },
     "Name": {
       "es": "Nombre",
       "de": "Name",
-      "fr": null,
+      "fr": "Nom",
       "ru": "Имя"
     },
     "Progress": {
       "es": "Progreso",
       "de": "Fortschritt",
-      "fr": null,
+      "fr": "Progression",
       "ru": "Прогресс"
     },
     "Last update: ": {
       "es": "Ultima actualización",
       "de": "Letzte Aktualisierung: ",
-      "fr": null,
+      "fr": "Dernière Mise à jour",
       "ru": null
     },
     "Unlock Window": {
       "es": "Desbloquear ventana",
       "de": "Fixierung aufheben",
-      "fr": null,
+      "fr": "Débloquer la Fenetre",
       "ru": null
     },
     "Show entries with no stock?": {
       "es": "¿Mostrar entradas sin stock?",
       "de": "Einträge ohne Bestand anzeigen?",
-      "fr": null,
+      "fr": "Afficher les entrées sans stock?",
       "ru": null
     },
     "Show only for favorites?": {
       "es": "¿Mostras sólo los favoritos?",
       "de": "Nur Favoriten anzeigen?",
-      "fr": null,
+      "fr": "Montrer uniquement les favoris?",
       "ru": null
     },
     "Grade Filter": {
       "es": "Filtro de Grados",
       "de": "Zugangsgrad Filter",
-      "fr": null,
+      "fr": "Filtre par Grades",
       "ru": null
     },
     "Engineer Filter": {
       "es": "Filtro de Ingenieros",
       "de": "Ingenieur Filter",
-      "fr": null,
+      "fr": "Filtre par Ingénieurs",
       "ru": null
     },
     "Type Filter": {
       "es": "Filtro de Tipos",
       "de": "Typ Filter",
-      "fr": null,
+      "fr": "Filtre par Type",
       "ru": null
     },
     "Ignored And Favorite Filter": {
       "es": "Filtro de Ignorados y Favoritos",
       "de": "Ignorierte und Favoriten Filter",
-      "fr": null,
+      "fr": "Filtre par Ignorés et Favoris",
       "ru": null
     },
     "Craftable Filter": {
       "es": "Filtro de Elaborados",
       "de": "Baubarkeit Filter",
-      "fr": null,
+      "fr": "Filtre par Craft disponible",
       "ru": null
     },
     "Ingredient Filter (Reversed)": {
       "es": "Filtro de Ingredientes (Inverso)",
       "de": "Bestandteile Filter (invers)",
-      "fr": null,
+      "fr": "Filtre par Ingrédients (Inversé)",
       "ru": null
     },
     ": can craft": {
       "es": ": elaborable",
       "de": ": baubar",
-      "fr": null,
+      "fr": ": craft disponible",
       "ru": ": можно изготовить"
     },
     "Reset": {
       "es": "Reiniciar",
       "de": "Zurücksetzen",
-      "fr": null,
+      "fr": "Reset",
       "ru": null
     },
     "Lock Window": {
       "es": "Bloquear ventana",
       "de": "Fenster fixieren",
-      "fr": null,
+      "fr": "Bloquer la fenetre",
       "ru": null
     },
     "Show": {
       "es": "Mostrar",
       "de": "Anzeigen",
-      "fr": null,
+      "fr": "Afficher",
       "ru": null
     },
     "Toggle Window Mode (Locked/Unlocked)": {
@@ -1542,61 +1542,61 @@
     "Reset Window Position": {
       "es": "Restablecer la posición de la ventana",
       "de": "Fensterposition zurücksetzen",
-      "fr": null,
+      "fr": "Restaurer l'affichage de la fenetre",
       "ru": null
     },
     "Set Shortcut": {
       "es": "Establecer acceso directo",
       "de": "Tastenkombination setzen",
-      "fr": null,
+      "fr": "Raccourcis",
       "ru": null
     },
     "Help": {
       "es": "Ayuda",
       "de": "Hilfe",
-      "fr": null,
+      "fr": "Aide",
       "ru": "Помощь"
     },
     "Quit": {
       "es": "Salir",
       "de": "Beenden",
-      "fr": null,
+      "fr": "Quitter",
       "ru": "Выйти"
     },
     "OK": {
       "es": "OK",
       "de": "OK",
-      "fr": null,
+      "fr": "OK",
       "ru": "ОК"
     },
     "Cancel": {
       "es": "Cancelar",
       "de": "Abbrechen",
-      "fr": null,
+      "fr": "Annuler",
       "ru": "Отмена"
     },
     "Input a shortcut that's going to be used to show the window": {
       "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
       "de": "Geben Sie eine Tastenkombination ein, die das Fenster anzeigt",
-      "fr": null,
+      "fr": "Configurer une touche pour afficher la fenetre",
       "ru": null
     },
     "You can't use an empty shortcut": {
       "es": "No puedes usar un acceso directo vacío",
       "de": "Sie können keine leere Tastenkombination benutzen",
-      "fr": null,
+      "fr": "Une touche doit etre choisie",
       "ru": null
     },
     "Error": {
       "es": "Error",
       "de": "Fehler",
-      "fr": null,
+      "fr": "Erreur",
       "ru": "Ошибка"
     },
     "The requested shortcut ({0}) is invalid": {
       "es": "El acceso directo solicitado ({0}) no es válido",
       "de": "Die gewünschte Tastenkombination ({0}) ist ungültig",
-      "fr": null,
+      "fr": "La touche demandée ({0}) est invalide",
       "ru": null
     },
     "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
@@ -1608,7 +1608,7 @@
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
       "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
-      "fr": null,
+      "fr": "Quelque chose c'est mal passé dans la lecture de votre log, merci d'ouvrir un ticket sur GitHub avec cette information :",
       "ru": null
     },
     "Unknown material, please contact the author ! {0}": {
@@ -1716,97 +1716,97 @@
     "Blueprint Ready": {
       "es": "Receta lista",
       "de": "Blaupause fertig",
-      "fr": null,
+      "fr": "Recette Prete",
       "ru": null
     },
     "Select Language": {
       "es": "Cambiar idioma",
       "de": "Sprache wählen",
-      "fr": null,
+      "fr": "Choisissez la langue",
       "ru": "Выбрать язык"
     },
     "Surface prospecting": {
       "es": "Prospección de superficie",
       "de": "Oberflächenabbau (SRV)",
-      "fr": null,
+      "fr": "Prospection de surface",
       "ru": null
     },
     "Mining": {
       "es": "Minería",
       "de": "Abbau",
-      "fr": null,
+      "fr": "Minage",
       "ru": null
     },
     "Mission reward": {
       "es": "Recompensa de misiones",
       "de": "Missions-Belohnungen",
-      "fr": null,
+      "fr": "Récompence de mission",
       "ru": null
     },
     "Mining (ice rings)": {
       "es": "Minería (anillos helados)",
       "de": "Abbau (Eis Ringe)",
-      "fr": null,
+      "fr": "Minage (anneaux glacés)",
       "ru": null
     },
     "Ship salvage (transport ships)": {
       "es": "Rescate de naves (naves de transporte)",
       "de": "Bergungsgut Schiffswrack (Transportschiffe)",
-      "fr": null,
+      "fr": "Restes de vaisseaux détruits (Type: Transport)",
       "ru": null
     },
     "Signal source (high security)": {
       "es": "Señales (seguridad alta)",
       "de": "Signalquelle (Hohe Sicherheit)",
-      "fr": null,
+      "fr": "Source de Signal (Haute Qualitée)",
       "ru": null
     },
     "Surface POI": {
       "es": "Puntos de interés de superficie",
       "de": "Planetenoberfläche POI",
-      "fr": null,
+      "fr": "POI en Surface",
       "ru": null
     },
     "Signal source": {
       "es": "Señales",
       "de": "Signalquelle",
-      "fr": null,
+      "fr": "Source de Signal",
       "ru": null
     },
     "Ship salvage (combat ships)": {
       "es": "Rescate de naves (naves de combate)",
       "de": "Bergungsgut Schiffswrack (Kampfschiffe)",
-      "fr": null,
+      "fr": "Restes de vaisseaux détruits (Type: Combat)",
       "ru": null
     },
     "Signal source (anarchy)": {
       "es": "Señales (anarquía)",
       "de": "Signalquelle (Anarchie)",
-      "fr": null,
+      "fr": "Source de signal (Système : Anarchique)",
       "ru": null
     },
     "Signal source (low security)": {
       "es": "Señales (seguridad baja)",
       "de": "Signalquelle (Niedrige Sicherheit)",
-      "fr": null,
+      "fr": "Source de signal (Système : Basse Sécuritée)",
       "ru": null
     },
     "Signal source (High grade emissions)": {
       "es": "Señales (alta calidad)",
       "de": "Signalquelle (Hochgradige Emissionen)",
-      "fr": null,
+      "fr": "Source de signal (Emissions de haute qualitée)",
       "ru": null
     },
     "Ship salvage (military & authority ships)": {
       "es": "Rescate de naves (naves militares y de la autoridad)",
       "de": "Bergungsgut Schiffswrack (Militär und Sicherheitsdienst)",
-      "fr": null,
+      "fr": "Restes de vaisseaux détruits (Type: Militaire & Autorité Système)",
       "ru": null
     },
     "Destroyed Unknown Artefact": {
       "es": "Destrucción de Artefacto Desconocido",
       "de": "Zerstörtes Unbekanntes Artefakt",
-      "fr": null,
+      "fr": "Artefact Inconnu Détruit / Fragment Inconnu",
       "ru": null
     },
     "Ship scanning (combat ships)": {
@@ -1824,7 +1824,7 @@
     "Ship scanning (transport ships)": {
       "es": "Escaneo de naves (naves de transporte)",
       "de": "Schiff Scan (Transportschiffe)",
-      "fr": null,
+      "fr": "Scan de vaisseau (Type : Transport)",
       "ru": null
     },
     "High wake scanning": {
@@ -1836,43 +1836,43 @@
     "Surface data point": {
       "es": "Punto de datos de superficie",
       "de": "POI-Datenpunkt",
-      "fr": null,
+      "fr": "POI",
       "ru": null
     },
     "Ship scanning": {
       "es": "Escaneo de naves",
       "de": "Schiff Scan",
-      "fr": null,
+      "fr": "Scan de vaisseau",
       "ru": null
     },
     "Markets": {
       "es": "Mercados",
       "de": "Märkte",
-      "fr": null,
+      "fr": "Marché",
       "ru": null
     },
     "Markets near Akhenaten (High Tech/Refinery)": {
       "es": "Mercados cerca de Akhenaten (Alta Tecnología/Refinería)",
       "de": "Märkte nahe Akhenaten (Hightech/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Akhenaten (Haute Technologie/Raffinerie)",
       "ru": null
     },
     "Markets near Stafkarl (Industrial/Refinery)": {
       "es": "Mercados cerca de Stafkarl (Industrial/Refinería)",
       "de": "Märkte nahe Stafkarl (Industrie/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Stafkarl (Industriel/Raffinerie)",
       "ru": null
     },
     "Markets near Run (Industrial/Refinery)": {
       "es": "Mercados cerca de Run (Industrial/Refinería)",
       "de": "Märkte nahe Run (Industrie/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Run (Industriel/Raffinerie)",
       "ru": null
     },
     "Markets near Lei Jing (Industrial/Refinery)": {
       "es": "Mercados cerca de Lei Jing (Industrial/Refinería)",
       "de": "Märkte nahe Lei Jing (Industrie/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Lei Jing (Industriel/Raffinerie)",
       "ru": null
     },
     "Markets near Myrbat (Industrial/Refinery)": {
@@ -1926,31 +1926,31 @@
     "You have only {0} slots left for your materials.": {
       "es": "Tienes {0} espacios para materiales.",
       "de": "Sie haben nur mehr {0} Kapazität für Materialien frei.",
-      "fr": null,
+      "fr": "Il vous reste seulement {0} emplacements pour vos matériaux." ,
       "ru": null
     },
     "Data Almost Full!": {
       "es": "Capacidad de datos al límite.",
       "de": "Datenspeicher beinahe voll!",
-      "fr": null,
+      "fr": "Volume de données presque plein !",
       "ru": null
     },
     "You have only {0} slots left for your data.": {
       "es": "Tienes {0} espacios para datos.",
       "de": "Sie haben nur mehr {0} Datenspeicher frei.",
-      "fr": null,
+      "fr": "Il vous reste seulement {0} emplacements pour vos données.",
       "ru": null
     },
     "Cargo Almost Full Warning": {
       "es": "Advertencia: Carga al límite",
       "de": "Warnung: Frachtraum beinahe voll",
-      "fr": null,
+      "fr": "Attention cargo presque plein !",
       "ru": null
     },
     "Ingredient not used in any blueprint!": {
       "es": "Elemento no usado en ninguna receta!",
       "de": "Bestandteil in keinem bekannten Bauplan!",
-      "fr": null,
+      "fr": "Materiaux utilisé dans aucune recette!",
       "ru": null
     },
     "+100% Fuel Efficiency": {
