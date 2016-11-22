@@ -31,13 +31,13 @@
       "es": "Destructor de Corto Alcance",
       "de": "Kurzdistanzblaster",
       "fr": "Tir à Courte Portée",
-      "ru": null
+      "ru": "Короткий выстрел"
     },
     "Lightweight": {
       "es": "Aligerado",
       "de": "Leichte",
       "fr": "Léger",
-      "ru": null
+      "ru": "Лёгкий"
     },
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
@@ -49,7 +49,7 @@
       "es": "Fortalecimiento de Motor",
       "de": "Antriebsstärkung",
       "fr": "Renforcement du réacteur",
-      "ru": null
+      "ru": "Прочный мотор"
     },
     "Efficient Weapon": {
       "es": "Arma Eficiente",
@@ -61,19 +61,19 @@
       "es": "Anclaje Ligero",
       "de": "Leichtgewichtgeschütz",
       "fr": "Montage Léger",
-      "ru": null
+      "ru": "Лёгкое устройство"
     },
     "Armoured ": {
       "es": "Blindado ",
       "de": "Gepanzert ",
       "fr": "Blindé",
-      "ru": null
+      "ru": "Брони́рованный"
     },
     "Reinforced": {
       "es": "Reforzado",
       "de": "Verstärkt",
       "fr": "Renforcé",
-      "ru": null
+      "ru": "Укреплёный"
     },
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
@@ -103,13 +103,13 @@
       "es": "Blindado",
       "de": "Abgeschirmt",
       "fr": "Renforcé",
-      "ru": null
+      "ru": "Укреплёный"
     },
     "Thermal Resistant ": {
       "es": "Resistencia Térmica ",
       "de": "Thermalresistente ",
       "fr": "Résistance thermique",
-      "ru": null
+      "ru": "Термически Укреплёный"
     },
     "Weapon Focused ": {
       "es": "Orientado a Armas ",
