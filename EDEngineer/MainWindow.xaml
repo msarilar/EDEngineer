@@ -202,7 +202,7 @@
             <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
                              From="0.0" To="1.0"
                              Completed="WindowActivatedCompleted"
-                             Duration="0:0:0.5" />
+                             Duration="0:0:0.3" />
         </Storyboard>
         <Storyboard x:Key="WindowDeactivated">
             <DoubleAnimation Storyboard.TargetProperty="(Window.Opacity)"
@@ -665,7 +665,11 @@
                           Style="{DynamicResource BlueprintGridStyle}">
                     <DataGrid.RowDetailsTemplate>
                         <DataTemplate>
-                            <Grid Background="#043A59">
+                            <Grid Background="#043A59"
+                                  Style="{StaticResource BlueprintDetailsGridStyle}">
+                                <Grid.LayoutTransform>
+                                    <ScaleTransform ScaleY="0"/>
+                                </Grid.LayoutTransform>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="0.5*" />
                                     <ColumnDefinition Width="0.5*" />
