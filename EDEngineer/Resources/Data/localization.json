@@ -1188,7 +1188,7 @@
     "Ruthenium": {
       "es": "Rutenio",
       "de": "Ruthenium",
-      "fr": "Rutheniume",
+      "fr": "Ruthenium",
       "ru": "Рутений"
     },
     "Salvaged Alloys": {
@@ -1410,19 +1410,19 @@
     "Commodity": {
       "es": "Mercancía",
       "de": "Handelsware",
-      "fr": "Cargaison",
+      "fr": "Marchandise",
       "ru": "Товар"
     },
     "Commodities": {
       "es": "Mercancías",
       "de": "Handelswaren",
-      "fr": "Cargaison",
+      "fr": "Marchandises",
       "ru": "Товары"
     },
     "Material": {
       "es": "Material",
       "de": "Material",
-      "fr": "Matériaux",
+      "fr": "Matériau",
       "ru": "Материал"
     },
     "Materials": {
@@ -1536,7 +1536,7 @@
     "Toggle Window Mode (Locked/Unlocked)": {
       "es": "Cambiar el modo ventana (Bloqueado/Desbloqueado)",
       "de": "Fenster Modus umschalten (fixiert/freigegeben)",
-      "fr": null,
+      "fr": "Mode de la fenetre (Bloquer/arriere plan)",
       "ru": null
     },
     "Reset Window Position": {
@@ -1608,13 +1608,13 @@
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
       "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
-      "fr": "Quelque chose c'est mal passé dans la lecture de votre log, merci d'ouvrir un ticket sur GitHub avec cette information :",
+      "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
       "ru": null
     },
     "Unknown material, please contact the author ! {0}": {
       "es": "Material desconocido, contacta con el autor  ! {0}",
       "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor ! {0}",
-      "fr": "Micromateriau inconnu, contactez l'auteur ! {0}",
+      "fr": "Materiau inconnu, contactez l'auteur ! {0}",
       "ru": null
     },
     "Neither": {
@@ -1626,7 +1626,7 @@
     "Favorite": {
       "es": "Favorito",
       "de": "Favoriten",
-      "fr": "Favorites",
+      "fr": "Favoris",
       "ru": "Избранное"
     },
     "Ignored": {
@@ -1650,7 +1650,7 @@
     "Missing Commodities": {
       "es": "Mercancía Perdida",
       "de": "Fehlende Handelswaren",
-      "fr": "Commodités Manquantes",
+      "fr": "Marchandise Manquantes",
       "ru": null
     },
     "All": {
@@ -1758,7 +1758,7 @@
     "Signal source (high security)": {
       "es": "Señales (seguridad alta)",
       "de": "Signalquelle (Hohe Sicherheit)",
-      "fr": "Source de Signal (Haute Qualitée)",
+      "fr": "Source de Signal (Système : Haute Sécurité)",
       "ru": null
     },
     "Surface POI": {
@@ -1818,7 +1818,7 @@
     "Deep space data beacon": {
       "es": "Baliza de datos en espacio profundo",
       "de": "Privatdaten-Signal (deep space)",
-      "fr": null,
+      "fr": "Balise de donnée (espace)",
       "ru": null
     },
     "Ship scanning (transport ships)": {
@@ -1830,7 +1830,7 @@
     "High wake scanning": {
       "es": "Escaneo de estelas de salto",
       "de": "Sogwolkenscan (Hohe Energie)",
-      "fr": null,
+      "fr": "scan de sillage a haute energie",
       "ru": null
     },
     "Surface data point": {
@@ -1878,49 +1878,49 @@
     "Markets near Myrbat (Industrial/Refinery)": {
       "es": "Mercados cerca de Myrbat (Industrial/Refinería)",
       "de": "Märkte nahe Myrbat (Industrie/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Myrbat (Industriel/Raffinerie)",
       "ru": null
     },
     "Markets near 70 Tauri (Industrial/Extraction)": {
       "es": "Mercados cerca de 70 Tauri (Industrial/Extracción)",
       "de": "Märkte nahe 70 Tauri (Industrie/Abbau)",
-      "fr": null,
+      "fr": "Marchés près de 70 Tauri (Industriel/Extraction)",
       "ru": null
     },
     "Markets near Leesti (Industrial/Refinery)": {
       "es": "Mercados cerca de Leesti (Industrial/Refinería)",
       "de": "Märkte nahe Leesti (Industrie/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Leesti (Industriel/Raffinerie)",
       "ru": null
     },
     "Markets near Lakota (Industrial/Extraction)": {
       "es": "Mercados cerca de Lakota (Industrial/Extracción)",
       "de": "Märkte nahe Lakota (Industrie/Abbau)",
-      "fr": null,
+      "fr": "Marchés près de Lakota (Industriel/Extraction)",
       "ru": null
     },
     "Markets near Cilbien Zu (Industrial/Extraction)": {
       "es": "Mercados cerca de Cilbien Zu (Industrial/Extracción)",
       "de": "Märkte nahe Cilbien Zu (Industrie/Abbau)",
-      "fr": null,
+      "fr": "Marchés près de Cilbien Zu (Industriel/Extraction)",
       "ru": null
     },
     "Markets near Heget (Industrial/Extraction)": {
       "es": "Mercados cerca de Heget (Industrial/Extracción)",
       "de": "Märkte nahe Heget (Industrie/Abbau)",
-      "fr": null,
+      "fr": "Marchés près de Heget (Industriel/Extraction)",
       "ru": null
     },
     "Markets near Eurybia (Extraction/Refinery)": {
       "es": "Mercados cerca de Eurybia (Extracción/Refinería)",
       "de": "Märkte nahe Eurybia (Abbau/Raffinerie)",
-      "fr": null,
+      "fr": "Marchés près de Eurybia (Extraction/Raffinerie)",
       "ru": null
     },
     "Materials Almost Full!": {
       "es": "Capacidad de materiales al límite.",
       "de": "Materialien Kapazität beinahe erreicht!",
-      "fr": null,
+      "fr": "Capacité matériaux limité",
       "ru": null
     },
     "You have only {0} slots left for your materials.": {
@@ -1956,67 +1956,67 @@
     "+100% Fuel Efficiency": {
       "es": "+100% Eficiencia de combustible",
       "de": "+100% Bonus Treibstoffeffizienz",
-      "fr": null,
+      "fr": "+100% Efficacité du carburant",
       "ru": null
     },
     "+100% Hull Strength": {
       "es": "+100% Resistencia de casco",
       "de": "+100% Bonus Rumpfstärke",
-      "fr": null,
+      "fr": "+100% bonus coque",
       "ru": null
     },
     "+100% Jump Range": {
       "es": "+100% Distancia de salto",
       "de": "+100% Bonus Entfernung",
-      "fr": null,
+      "fr": "+100% portée de saut",
       "ru": null
     },
     "+100% Repair Speed": {
       "es": "+100% Velocidad de reparación",
       "de": "+100% Bonus Reparaturgeschwindigkeit",
-      "fr": null,
+      "fr": "+100% vitesse de reparation",
       "ru": null
     },
     "+15% Dmg": {
       "es": "+15% al daño",
       "de": "+15% Bonus Schaden",
-      "fr": null,
+      "fr": "+15% dégat",
       "ru": null
     },
     "+200% Fuel Efficiency": {
       "es": "+200% Eficiencia de combustible",
       "de": "+200% Bonus Treibstoffeffizienz",
-      "fr": null,
+      "fr": "+200% Efficacité du carburant",
       "ru": null
     },
     "+25% Jump Range": {
       "es": "+25% Distancia de salto",
       "de": "+25% Bonus Entfernung",
-      "fr": null,
+      "fr": "+25% portée de saut",
       "ru": null
     },
     "+30% Dmg": {
       "es": "+30% al daño",
       "de": "+30% Bonus Schaden",
-      "fr": null,
+      "fr": "+30% dégat",
       "ru": null
     },
     "+50% Hull Strength": {
       "es": "+50% Resistencia de casco",
       "de": "+50% Bonus Rumpfstärke",
-      "fr": null,
+      "fr": "+50% bonus coque",
       "ru": null
     },
     "+50% Jump Range": {
       "es": "+50% Distancia de salto",
       "de": "+50% Bonus Entfernung",
-      "fr": null,
+      "fr": "+50% portée de saut",
       "ru": null
     },
     "+50% Repair Speed": {
       "es": "+50% Velocidad de reparación",
       "de": "+50% Bonus Reparaturgeschwindigkeit",
-      "fr": null,
+      "fr": "+50% vitesse de reparation",
       "ru": null
     },
     "AFM Refill": {
@@ -2052,19 +2052,19 @@
     "None": {
       "es": "Ninguna",
       "de": "Keine",
-      "fr": null,
+      "fr": "aucun",
       "ru": null
     },
     "Plasma Munitions": {
       "es": "Munición de plasma",
       "de": "Plasmamunition",
-      "fr": null,
+      "fr": "munition plasma",
       "ru": null
     },
     "Small Calibre Munitions": {
       "es": "Munición de pequeño calibre",
       "de": "Kleinkalibrige Munition",
-      "fr": null,
+      "fr": "Munition de petit calibre",
       "ru": null
     },
     "SRV Ammo Restock": {
@@ -2088,7 +2088,7 @@
     "@Synthesis": {
       "es": "@Síntesis",
       "de": "@Synthese",
-      "fr": null,
+      "fr": "@Synthese",
       "ru": null
     }
   }
