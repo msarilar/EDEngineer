@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -13,8 +14,8 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Localization;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
@@ -83,6 +84,12 @@ namespace EDEngineer
                                                  RefreshCargoSources();
                                              }
                                          };
+
+
+            Task.Factory.StartNew(() =>
+                                  {
+                                      Server.start(viewModel.CurrentCommander.Value.State);
+                                  });
         }
 
         public void RefreshCargoSources()

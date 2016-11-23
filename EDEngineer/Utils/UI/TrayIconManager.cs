@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using EDEngineer.Models.Localization;
+using EDEngineer.Localization;
 using EDEngineer.Utils.System;
 
 namespace EDEngineer.Utils.UI

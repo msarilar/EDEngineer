@@ -85,7 +85,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MahApps.Metro, Version=1.3.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
@@ -156,21 +156,9 @@
     <Compile Include="ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Filters\BlueprintFilter.cs" />
-    <Compile Include="Filters\CraftableFilter.cs" />
-    <Compile Include="Filters\EngineerFilter.cs" />
-    <Compile Include="Filters\GradeFilter.cs" />
-    <Compile Include="Filters\IgnoredFavoriteFilter.cs" />
-    <Compile Include="Filters\IngredientFilter.cs" />
-    <Compile Include="Models\EntryData.cs" />
-    <Compile Include="Models\Localization\Translation.cs" />
-    <Compile Include="Models\Localization\LanguageInfo.cs" />
-    <Compile Include="Models\Localization\Languages.cs" />
-    <Compile Include="Models\Operations\EngineerProgressOperation.cs" />
-    <Compile Include="Models\Operations\NoOperation.cs" />
-    <Compile Include="Models\Operations\SynthesisOperation.cs" />
-    <Compile Include="Models\Origin.cs" />
-    <Compile Include="Models\ReleaseNote.cs" />
+    <Compile Include="Localization\Translation.cs" />
+    <Compile Include="Localization\LanguageInfo.cs" />
+    <Compile Include="Localization\Languages.cs" />
     <Compile Include="ReleaseNotesWindow.xaml.cs">
       <DependentUpon>ReleaseNotesWindow.xaml</DependentUpon>
     </Compile>
@@ -178,8 +166,6 @@
       <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utils\BlueprintConverter.cs" />
-    <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
-    <Compile Include="Utils\PropertyChangedExtendedEventArgs.cs" />
     <Compile Include="Utils\System\IOUtils.cs" />
     <Compile Include="Utils\System\ReleaseNotesManager.cs" />
     <Compile Include="Utils\System\SettingsManager.cs" />
@@ -187,9 +173,6 @@
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />
     <Compile Include="Utils\System\LogWatcher.cs" />
-    <Compile Include="Properties\NotifyPropertyChangedInvocatorAttribute.cs" />
-    <Compile Include="Utils\Collections\SortedObservableDictionary.cs" />
-    <Compile Include="Filters\TypeFilter.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
     <Page Include="DesignTime\DesignViewModel.xaml">
@@ -230,23 +213,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowViewModel.cs" />
-    <Compile Include="Models\Blueprint.cs" />
-    <Compile Include="Models\BlueprintIngredient.cs" />
-    <Compile Include="Models\Kind.cs" />
-    <Compile Include="Models\Operations\CargoOperation.cs" />
-    <Compile Include="Models\Operations\DataOperation.cs" />
-    <Compile Include="Models\Operations\EngineerOperation.cs" />
-    <Compile Include="Models\Entry.cs" />
-    <Compile Include="Models\JournalEntry.cs" />
-    <Compile Include="Models\JournalEvent.cs" />
-    <Compile Include="Models\Operations\JournalOperation.cs" />
-    <Compile Include="Models\Operations\ManualChangeOperation.cs" />
-    <Compile Include="Models\Operations\MaterialOperation.cs" />
-    <Compile Include="Models\Operations\MissionCompletedOperation.cs" />
-    <Compile Include="Models\Rarity.cs" />
-    <Compile Include="Models\State.cs" />
-    <Compile Include="Utils\Collections\SortedObservableCollection.cs" />
-    <Compile Include="Utils\Collections\SortedObservableCounter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -332,6 +298,16 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EDEngineer.Models\EDEngineer.Models.csproj">
+      <Project>{7db8fc62-2ed9-414c-bf65-aff273ac66d8}</Project>
+      <Name>EDEngineer.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDEngineer.Server\EDEngineer.Server.fsproj">
+      <Project>{acdcf677-8237-435e-b67a-c1c6d409decb}</Project>
+      <Name>EDEngineer.Server</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

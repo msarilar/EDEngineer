@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using EDEngineer.Models.Localization;
+using EDEngineer.Localization;
 
 namespace EDEngineer
 {

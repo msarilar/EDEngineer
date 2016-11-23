@@ -5,10 +5,11 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
+using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Localization;
+using EDEngineer.Models.Barda;
+using EDEngineer.Models.Barda.Collections;
 using EDEngineer.Properties;
-using EDEngineer.Utils.Collections;
 using EDEngineer.Utils.System;
 
 namespace EDEngineer

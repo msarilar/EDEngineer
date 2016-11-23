@@ -1,6 +1,6 @@
 using System.Drawing;
 using System.Windows.Forms;
-using EDEngineer.Models.Localization;
+using EDEngineer.Localization;
 
 namespace EDEngineer.Utils.UI
 {
