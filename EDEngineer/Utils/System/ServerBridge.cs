@@ -15,7 +15,7 @@ namespace EDEngineer.Utils.System
             this.viewModel = viewModel;
         }
 
-        public void Start(int port)
+        public void Start(ushort port)
         {
             cts = new CancellationTokenSource();
 

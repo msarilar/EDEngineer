@@ -41,7 +41,6 @@ namespace EDEngineer.Models
                 .Sum();
         }
 
-
         public void LoadBaseData()
         {
             lock (stateLock)
