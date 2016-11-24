@@ -70,6 +70,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EDEngineer.Models\EDEngineer.Models.csproj">
+      <Project>{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}</Project>
+      <Name>EDEngineer.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EDEngineer\EDEngineer.csproj">
       <Project>{e6683085-6764-47ea-9bfe-962f993e4c57}</Project>
       <Name>EDEngineer</Name>

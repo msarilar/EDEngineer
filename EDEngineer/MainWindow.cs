@@ -88,7 +88,7 @@ namespace EDEngineer
 
             Task.Factory.StartNew(() =>
                                   {
-                                      Server.start(viewModel.CurrentCommander.Value.State);
+                                      Server.start(() => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State));
                                   });
         }
 
