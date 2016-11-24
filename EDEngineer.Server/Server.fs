@@ -66,5 +66,10 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
              NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
         ]
 
-    startWebServer { defaultConfig with cancellationToken = token } app
+    let localhost = Net.IPAddress.Parse("127.0.0.1")
+
+    startWebServer { 
+      defaultConfig with 
+        cancellationToken = token
+        bindings = [ HttpBinding.mk HTTP localhost port ] } app
     state
