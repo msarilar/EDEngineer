@@ -9,6 +9,8 @@ namespace EDEngineer.Models
 {
     public class State : INotifyPropertyChanged
     {
+        public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
+
         private readonly List<EntryData> entryDatas;
 
         private readonly object stateLock = new object();

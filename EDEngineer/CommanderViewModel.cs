@@ -145,7 +145,6 @@ namespace EDEngineer
 
             try
             {
-
                 var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText02);
 
                 var stringElements = toastXml.GetElementsByTagName("text");
@@ -213,14 +212,14 @@ namespace EDEngineer
                     JournalEvent = JournalEvent.ManualUserChange,
                     Name = entry.Data.Name
                 },
-                TimeStamp = SystemClock.Instance.Now
+                Timestamp = SystemClock.Instance.Now
             };
 
             var json = JsonConvert.SerializeObject(logEntry, journalEntryConverter);
 
             logEntry.OriginalJson = json;
 
-            logEntry.JournalOperation.Mutate(State);
+            MutateState(logEntry);
 
             return logEntry;
         }
@@ -233,14 +232,20 @@ namespace EDEngineer
                 Error = (o, e) => e.ErrorContext.Handled = true
             }))
                 .Where(e => e?.Relevant == true)
-                .OrderBy(e => e.TimeStamp)
+                .OrderBy(e => e.Timestamp)
                 .ToList();
 
-            foreach (var entry in entries.Where(entry => entry.TimeStamp >= LastUpdate).ToList())
+            foreach (var entry in entries.Where(entry => entry.Timestamp >= LastUpdate).ToList())
             {
-                entry.JournalOperation.Mutate(State);
-                LastUpdate = entry.TimeStamp;
+                MutateState(entry);
             }
+        }
+
+        private void MutateState(JournalEntry entry)
+        {
+            State.Operations.AddLast(entry);
+            entry.JournalOperation.Mutate(State);
+            LastUpdate = entry.Timestamp;
         }
 
         public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, CollectionViewSource source)

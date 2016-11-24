@@ -10,20 +10,26 @@ open Suave.Operators
 open Suave.Successful
 open Suave.RequestErrors
 open Newtonsoft.Json
+open NodaTime
+open NodaTime.Text
 
 open EDEngineer.Models.Barda.Collections
 open EDEngineer.Models
 
-type Cmdr<'TSuccess, 'TError> = 
-    | Found of 'TSuccess
-    | NotFound of 'TError
+type Cmdr<'TGood, 'TBad> = 
+  | Found of 'TGood
+  | Parsed of 'TGood
+  | NotFound of 'TBad
+  | BadString of 'TBad
 
 type CmdrBuilder() =
-    member this.Bind(v, f) =
-        match v with
-        | Found v -> f v
-        | NotFound commander -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
-    member this.Return value = value
+  member this.Bind(v, f) =
+    match v with
+      | Found v -> f v
+      | Parsed v -> f v
+      | NotFound commander -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
+      | BadString s -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
+  member this.Return value = value
 
 let cmdr = CmdrBuilder()
 
@@ -58,6 +64,32 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                              match state.Invoke().TryGetValue(commander) with
                              | (true, state) -> Found state
                              | (false, _)    -> NotFound commander
+
+    let timeRoute = fun s -> match s with
+                             | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
+                                          | e when e.Success = true -> Parsed e.Value
+                                          | _ -> BadString t
+                             | None -> Parsed Instant.MinValue
+
+    let listOperations commander =
+      request(fun request ->
+        let timestampString = match request.queryParam "last" with
+                              | Choice1Of2 s -> Some(s)
+                              | Choice2Of2 other -> None
+
+        cmdr {
+            let! timestamp = timeRoute timestampString
+            let! state = commanderRoute commander
+            return state.Operations
+                   |> List.ofSeq
+                   |> List.filter
+                     (fun e -> match e.Timestamp with
+                               | t when t >= timestamp -> true
+                               | _ -> false)
+                   |> json 
+                   |> OK
+        }
+      )
     
     let app =
       choose
@@ -89,6 +121,8 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                  let! state = commanderRoute commander
                  return cargoRoute(state, Some(Kind.Commodity))
              })
+
+             pathScan "/%s/operations" listOperations
              
              NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
         ]

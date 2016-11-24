@@ -4,7 +4,14 @@ namespace EDEngineer.Models.Operations
 {
     public class EngineerOperation : JournalOperation
     {
+        public string Blueprint { get; }
+
         public List<BlueprintIngredient> IngredientsConsumed { get; set; }
+
+        public EngineerOperation(string blueprintName)
+        {
+            Blueprint = blueprintName;
+        }
 
         public override void Mutate(State state)
         {

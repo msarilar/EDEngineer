@@ -84,6 +84,7 @@ namespace EDEngineer
                                                  RefreshCargoSources();
                                              }
                                          };
+            new ServerBridge(viewModel).Start(8083);
         }
 
         public void RefreshCargoSources()

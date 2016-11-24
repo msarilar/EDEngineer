@@ -9,10 +9,15 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public string OriginalJson { get; set; }
 
-        public Instant TimeStamp { get; set; }
+        [JsonIgnore]
+        public Instant Timestamp { get; set; }
+
+        [JsonProperty("Timestamp")]
+        public string TimestampString => Timestamp.ToString();
 
         public JournalOperation JournalOperation { get; set; }
 
+        [JsonIgnore]
         public bool Relevant => JournalOperation != null;
 
         protected bool Equals(JournalEntry other)

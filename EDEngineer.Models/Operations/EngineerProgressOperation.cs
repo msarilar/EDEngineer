@@ -4,15 +4,20 @@ namespace EDEngineer.Models.Operations
 {
     public class EngineerProgressOperation : JournalOperation
     {
-        public string Engineer { get; set; }
+        public string Engineer { get; }
+        public JournalOperation Operation { get; }
+
+        public EngineerProgressOperation(string engineer)
+        {
+            Engineer = engineer;
+            JournalOperation operation;
+            engineersProgressOperation.TryGetValue(Engineer, out operation);
+            Operation = operation;
+        }
 
         public override void Mutate(State state)
         {
-            JournalOperation operation;
-            if (engineersProgressOperation.TryGetValue(Engineer, out operation))
-            {
-                operation.Mutate(state);
-            }
+            Operation?.Mutate(state);
         }
 
         private static readonly Dictionary<string, JournalOperation> engineersProgressOperation = new Dictionary<string, JournalOperation>()
