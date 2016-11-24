@@ -84,19 +84,13 @@ namespace EDEngineer
                                                  RefreshCargoSources();
                                              }
                                          };
-
-
-            Task.Factory.StartNew(() =>
-                                  {
-                                      Server.start(() => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State));
-                                  });
         }
 
         public void RefreshCargoSources()
         {
             var commander = viewModel.CurrentCommander.Value;
 
-            var blueprintSource = new CollectionViewSource { Source = commander.Blueprints };
+            var blueprintSource = new CollectionViewSource { Source = commander.State.Blueprints };
             commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value));
             Blueprints.ItemsSource = blueprintSource.View;
 

@@ -19,6 +19,7 @@ namespace EDEngineer.Models
 
         public List<string> OriginDetails { get; set; }
 
+        [JsonIgnore]
         public IEnumerable<Origin> Origins => OriginDetails?.Select(detail => originMapping[detail]).Distinct() ?? new [] { Origin.Unknown };
 
         [JsonIgnore]

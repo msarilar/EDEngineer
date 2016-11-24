@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models.Barda;
 using EDEngineer.Models.Filters;
+using Newtonsoft.Json;
 
 namespace EDEngineer.Models
 {
@@ -19,9 +20,13 @@ namespace EDEngineer.Models
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
         public int Grade { get; set; }
 
+        [JsonIgnore]
         public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";
 
+        [JsonIgnore]
         public string TranslatedType => language.Translate(Type);
+
+        [JsonIgnore]
         public string TranslatedName => language.Translate(Name);
 
         public Blueprint(ILanguage language, string type, string name, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
@@ -67,6 +72,7 @@ namespace EDEngineer.Models
             }
         }
 
+        [JsonIgnore]
         public bool Favorite
         {
             get { return favorite; }
@@ -88,6 +94,7 @@ namespace EDEngineer.Models
             }
         }
 
+        [JsonIgnore]
         public bool Ignored
         {
             get { return ignored; }
@@ -99,13 +106,16 @@ namespace EDEngineer.Models
             }
         }
 
+        [JsonIgnore]
         public double Progress
         {
             get { return ComputeProgress(i => Math.Max(0, i.Entry.Count)); }
         }
 
+        [JsonIgnore]
         public int CanCraftCount => ComputeCraftCount(i => Math.Max(0, i.Entry.Count));
 
+        [JsonIgnore]
         public bool JustMissingCommodities
             => CanCraftCount == 0 &&
                 Ingredients.All(
@@ -125,6 +135,7 @@ namespace EDEngineer.Models
                     Math.Min(1, countExtractor(ingredient)/(double) ingredient.Size)/Ingredients.Count)*100;
         }
 
+        [JsonIgnore]
         public double ProgressSorting => CanCraftCount + Progress;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -139,11 +150,6 @@ namespace EDEngineer.Models
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        public bool SatisfyFilter(BlueprintFilter filter)
-        {
-            return filter.AppliesTo(this);
         }
     }
 }

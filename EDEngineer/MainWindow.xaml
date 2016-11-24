@@ -659,7 +659,7 @@
                           SelectionUnit="FullRow"
                           AutoGenerateColumns="False"
                           Loaded="BlueprintsDataGridLoaded"
-                          ItemsSource="{Binding Blueprints}"
+                          ItemsSource="{Binding State.Blueprints}"
                           DataContext="{Binding}"
                           Grid.Row="1"
                           Style="{DynamicResource BlueprintGridStyle}">

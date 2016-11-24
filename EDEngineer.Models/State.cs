@@ -12,6 +12,7 @@ namespace EDEngineer.Models
         private readonly List<EntryData> entryDatas;
 
         private readonly object stateLock = new object();
+        public List<Blueprint> Blueprints { get; set; }
 
         public State(List<EntryData> entryDatas, ILanguage languages)
         {
