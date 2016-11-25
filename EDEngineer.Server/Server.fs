@@ -16,7 +16,7 @@ open NodaTime.Text
 open EDEngineer.Models.Barda.Collections
 open EDEngineer.Models
 
-type Format = Default | Json | Xml | Csv
+type Format = Json | Xml | Csv
 
 type Cmdr<'TGood, 'TBad> = 
   | Found of 'TGood
@@ -97,35 +97,37 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
         }
       )
     
-    let FormatExtractor = fun(extension, request:HttpRequest) ->
-      let ex = match extension with
-               | ".json" -> KnownFormat Json
-               | ".csv"  -> KnownFormat Csv
-               | ".xml"  -> KnownFormat Xml
-               | ""      -> KnownFormat Default
-               | f       -> UnknownFormat f
+    let FormatExtractor = fun(extension) ->
+      match extension with
+      | "json" -> KnownFormat Json
+      | "csv"  -> KnownFormat Csv
+      | "xml"  -> KnownFormat Xml
+      | f      -> UnknownFormat f
 
-      match ex with
-        | KnownFormat Default ->
-              let accept = request.headers.Where(fun (k, v) -> k = "accept").Select(fun (k, v) -> v).First()
-              let accepts = accept.Split [|';'|]
-              let format = accepts |> List.ofSeq |> List.fold(fun acc elem -> match acc with
-                                                                              | Some(r) -> Some(r)
-                                                                              | _       -> match elem with
-                                                                                           | "text/json" -> Some(Json)
-                                                                                           | "text/csv"  -> Some(Csv)
-                                                                                           | "text/xml"  -> Some(Xml)
-                                                                                           | _           -> None) None
-              match format with
-              | Some(f) -> KnownFormat f
-              | _       -> KnownFormat Json
-        | KnownFormat e   -> KnownFormat e
-        | UnknownFormat f -> UnknownFormat f
+    let AcceptExtractor = fun(request:HttpRequest) ->
+      let accept = request.headers.Where(fun (k, v) -> k = "accept").Select(fun (k, v) -> v).First()
+      let accepts = accept.Split [|';'|]
+      let format = accepts |> List.ofSeq |> List.fold(fun acc elem -> match acc with
+                                                                      | Some(r) -> Some(r)
+                                                                      | _       -> match elem with
+                                                                                   | "text/json" -> Some(Json)
+                                                                                   | "text/csv"  -> Some(Csv)
+                                                                                   | "text/xml"  -> Some(Xml)
+                                                                                   | _           -> None) None
+      match format with
+      | Some(f) -> KnownFormat f
+      | _       -> KnownFormat Json
 
-    let test ex =
+    let test =
+      request(fun request ->
+          let format = AcceptExtractor request
+          format |> json |> OK
+      )
+
+    let test2 ex =
       request(fun request ->
           cmdr {
-              let! format = FormatExtractor(ex, request)
+              let! format = FormatExtractor(ex)
               return format |> json |> OK
           }
       )
@@ -162,8 +164,9 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
              })
 
              pathScan "/%s/operations" listOperations
-
-             pathScan "/kek%s" test
+             
+             path "/kek" >=> test
+             pathScan "/kek.%s" test2
              
              NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
         ]
