@@ -142,6 +142,12 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     | Json  -> json
     | Csv   -> csv
 
+  let MimeType = fun f ->
+    match f with
+    | Xml   -> Writers.setMimeType "application/xml; charset=utf-8"
+    | Json  -> Writers.setMimeType "application/json; charset=utf-8"
+    | Csv   -> Writers.setMimeType "application/csv; charset=utf-8"
+
   let app =
     choose
       [ GET >=> choose
@@ -149,21 +155,21 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               (request(fun request ->
                 cmdr {
                   let! f = FormatExtractor(format, request)
-                  return  referenceData state |> ingredients |> FormatPicker(f) |> OK
+                  return  referenceData state |> ingredients |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/blueprints%s" (fun (format) -> 
               (request(fun request ->
                 cmdr {
                   let! f = FormatExtractor(format, request)
-                  return  referenceData state |> blueprints |> FormatPicker(f) |> OK
+                  return  referenceData state |> blueprints |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/commanders%s" (fun (format) -> 
               (request(fun request ->
                 cmdr {
                   let! f = FormatExtractor(format, request)
-                  return  state.Invoke().Keys |> FormatPicker(f) |> OK
+                  return  state.Invoke().Keys |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
                
             pathScan "/%s/cargo%s" (fun (commander, format) -> 
@@ -171,7 +177,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                 cmdr {
                   let! s = commanderRoute commander
                   let! f = FormatExtractor(format, request)
-                  return (s, None) |> cargoExtractor |> FormatPicker(f) |> OK
+                  return (s, None) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/%s/materials%s" (fun (commander, format) -> 
@@ -179,7 +185,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                 cmdr {
                     let! s = commanderRoute commander
                     let! f = FormatExtractor(format, request)
-                    return (s, Some(Kind.Material)) |> cargoExtractor |> FormatPicker(f) |> OK
+                    return (s, Some(Kind.Material)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/%s/data%s" (fun (commander, format) -> 
@@ -187,7 +193,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                 cmdr {
                     let! s = commanderRoute commander
                     let! f = FormatExtractor(format, request)
-                    return (s, Some(Kind.Data)) |> cargoExtractor |> FormatPicker(f) |> OK
+                    return (s, Some(Kind.Data)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/%s/commodities%s" (fun (commander, format) -> 
@@ -195,7 +201,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                 cmdr {
                     let! s = commanderRoute commander
                     let! f = FormatExtractor(format, request)
-                    return (s, Some(Kind.Commodity)) |> cargoExtractor |> FormatPicker(f) |> OK
+                    return (s, Some(Kind.Commodity)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/%s/operations%s" (fun (commander, format) ->
@@ -215,7 +221,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                                       | t when t >= timestamp -> true
                                       | _                     -> false)
                           |> json 
-                          |> OK
+                          |> OK >=> MimeType(f)
                })))
              
             NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
