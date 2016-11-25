@@ -20,7 +20,7 @@ open EDEngineer.Models.Barda.Collections
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv
-type cargoType = { Name: string; Count: int }
+type cargoType = { Kind: string; Name: string; Count: int }
 
 type Cmdr<'TGood, 'TBad> = 
   | Found         of 'TGood
@@ -48,29 +48,32 @@ let cmdr = CmdrBuilder()
 let dataTableToCsv = fun(t:DataTable) ->
   use sWriter = new StringWriter()
   use cWriter = new CsvWriter(sWriter)
-  let columns = t.Columns.Cast<DataColumn>() |> List.ofSeq
-  let rows = t.Rows.Cast<DataRow>() |> List.ofSeq
+  let columns = t.Columns.Cast<DataColumn>()
+  let rows = t.Rows.Cast<DataRow>()
 
   cWriter.Configuration.Delimiter <- ";"
 
   columns
-    |> List.map (fun c -> cWriter.WriteField(c.ColumnName))
+    |> Seq.map (fun c -> cWriter.WriteField(c.ColumnName))
+    |> List.ofSeq
     |> ignore
 
   cWriter.NextRecord()
 
   rows
-    |> List.map (fun r -> 
+    |> Seq.map (fun r -> 
       columns
-        |> List.map(fun c -> 
+        |> Seq.map(fun c -> 
           let content = match r.[c.ColumnName] with
                         | :? array<string> as a -> String.Join(",", a)
                         | any -> any.ToString()
 
           cWriter.WriteField(content))
+        |> List.ofSeq
         |> ignore
       cWriter.NextRecord()
     )
+    |> List.ofSeq
     |> ignore
 
   sWriter.ToString()
@@ -84,24 +87,22 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
   let csv = fun s -> JsonConvert.DeserializeObject<DataTable>(json(s)) |> dataTableToCsv
     
   let ingredients = fun (state:State) -> state.Cargo
-                                         |> List.ofSeq
-                                         |> List.map (fun d -> d.Value.Data)
+                                         |> Seq.map (fun d -> d.Value.Data)
 
   let blueprints = fun (state:State) -> state.Blueprints
-                                        |> List.ofSeq
 
   let referenceData = fun (state:Func<IDictionary<string, State>>) -> state.Invoke().First().Value
 
   let cargoExtractor = fun (state:State, kind) -> state.Cargo
-                                                  |> List.ofSeq
-                                                  |> List.map (fun e -> e.Value)
-                                                  |> List.filter 
+                                                  |> Seq.map (fun e -> e.Value)
+                                                  |> Seq.filter 
                                                     (fun e -> match kind with
                                                               | Some(Kind.Commodity) -> e.Data.Kind = Kind.Commodity
                                                               | Some(Kind.Data)      -> e.Data.Kind = Kind.Data
                                                               | Some(Kind.Material)  -> e.Data.Kind = Kind.Material
                                                               | _                    -> true)
-                                                  |> List.map (fun e -> { Name = e.Data.Name; Count = e.Count })
+                                                  |> Seq.map (fun e -> { Kind = e.Data.Kind.ToString(); Name = e.Data.Name; Count = e.Count })
+                                                  |> List.ofSeq
 
   let commanderRoute = fun commander ->
                          match state.Invoke().TryGetValue(commander) with
@@ -121,8 +122,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     |> Seq.map (fun (k, v) -> v)
     |> Seq.head
     |> fun x -> x.Split [|';'|]
-    |> List.ofSeq
-    |> List.fold(fun acc elem -> match acc with
+    |> Seq.fold(fun acc elem -> match acc with
                                  | Some(r) -> Some(r)
                                  | _       -> match elem with
                                               | "text/json" -> Some(Json)
@@ -152,9 +152,9 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
 
   let MimeType = 
     function
-    | Xml   -> Writers.setMimeType "application/xml; charset=utf-8"
-    | Json  -> Writers.setMimeType "application/json; charset=utf-8"
-    | Csv   -> Writers.setMimeType "application/csv; charset=utf-8"
+    | Xml   -> Writers.setMimeType "text/xml; charset=utf-8"
+    | Json  -> Writers.setMimeType "text/json; charset=utf-8"
+    | Csv   -> Writers.setMimeType "text/csv; charset=utf-8"
 
   let app =
     choose
@@ -223,8 +223,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                   let! f = FormatExtractor request format
                   let! timestamp = timeRoute timestampString
                   return state.Operations
-                          |> List.ofSeq
-                          |> List.filter
+                          |> Seq.filter
                             (fun e -> match e.Timestamp with
                                       | t when t >= timestamp -> true
                                       | _                     -> false)
