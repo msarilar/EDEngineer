@@ -63,7 +63,10 @@ let dataTableToCsv = fun(t:DataTable) ->
     |> List.map (fun r -> 
       columns
         |> List.map(fun c -> 
-          let content = r.[c.ColumnName].ToString()
+          let content = match r.[c.ColumnName] with
+                        | :? array<string> as a -> String.Join(",", a)
+                        | any -> any.ToString()
+
           cWriter.WriteField(content))
         |> ignore
       cWriter.NextRecord()

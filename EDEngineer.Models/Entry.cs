@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models.Barda;
+using Newtonsoft.Json;
 
 namespace EDEngineer.Models
 {
@@ -36,6 +37,7 @@ namespace EDEngineer.Models
             }
         }
 
+        [JsonIgnore]
         public int FavoriteCount
         {
             get { return favoriteCount; }
@@ -52,6 +54,7 @@ namespace EDEngineer.Models
             }
         }
 
+        [JsonIgnore]
         public int SynthesisFavoriteCount
         {
             get { return synthesisFavoriteCount; }
