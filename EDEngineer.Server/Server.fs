@@ -41,139 +41,139 @@ let cmdr = CmdrBuilder()
 
 let start (token, port, state:Func<IDictionary<string, State>>) =
 
-    let json = fun s -> JsonConvert.SerializeObject(s, Formatting.Indented)
+  let json = fun s -> JsonConvert.SerializeObject(s, Formatting.Indented)
     
-    let ingredients = fun (state:State) -> state.Cargo
-                                           |> List.ofSeq
-                                           |> List.map (fun d -> d.Value.Data)
-
-    let blueprints = fun (state:State) -> state.Blueprints
+  let ingredients = fun (state:State) -> state.Cargo
                                           |> List.ofSeq
+                                          |> List.map (fun d -> d.Value.Data)
 
-    let referenceData = fun (state:Func<IDictionary<string, State>>) -> state.Invoke().First().Value
+  let blueprints = fun (state:State) -> state.Blueprints
+                                        |> List.ofSeq
 
-    let cargoExtractor = fun (commander:State, kind) -> commander.Cargo
-                                                        |> List.ofSeq
-                                                        |> List.filter 
-                                                          (fun e -> match kind with
-                                                                    | Some(Kind.Commodity) -> e.Value.Data.Kind = Kind.Commodity
-                                                                    | Some(Kind.Data)      -> e.Value.Data.Kind = Kind.Data
-                                                                    | Some(Kind.Material)  -> e.Value.Data.Kind = Kind.Material
-                                                                    | _                    -> true)
-                                                        |> List.map (fun e -> e.Value)
-                                                        |> List.map (fun e -> e.Data.Name, e.Count)
-                                                        |> dict
+  let referenceData = fun (state:Func<IDictionary<string, State>>) -> state.Invoke().First().Value
 
-    let cargoRoute = fun(state, kind) -> (state, kind) |> cargoExtractor |> json |> OK
+  let cargoExtractor = fun (commander:State, kind) -> commander.Cargo
+                                                      |> List.ofSeq
+                                                      |> List.filter 
+                                                        (fun e -> match kind with
+                                                                  | Some(Kind.Commodity) -> e.Value.Data.Kind = Kind.Commodity
+                                                                  | Some(Kind.Data)      -> e.Value.Data.Kind = Kind.Data
+                                                                  | Some(Kind.Material)  -> e.Value.Data.Kind = Kind.Material
+                                                                  | _                    -> true)
+                                                      |> List.map (fun e -> e.Value)
+                                                      |> List.map (fun e -> e.Data.Name, e.Count)
+                                                      |> dict
 
-    let commanderRoute = fun commander ->
-                             match state.Invoke().TryGetValue(commander) with
-                             | (true, state) -> Found state
-                             | (false, _)    -> NotFound commander
+  let cargoRoute = fun(state, kind) -> (state, kind) |> cargoExtractor |> json |> OK
 
-    let timeRoute = fun s -> match s with
-                             | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
-                                          | e when e.Success = true -> Parsed e.Value
-                                          | _                       -> BadString t
-                             | None    -> Parsed Instant.MinValue
+  let commanderRoute = fun commander ->
+                         match state.Invoke().TryGetValue(commander) with
+                         | (true, state) -> Found state
+                         | (false, _)    -> NotFound commander
 
-    let listOperations commander =
-      request(fun request ->
-        let timestampString = match request.queryParam "last" with
-                              | Choice1Of2 s     -> Some(s)
-                              | Choice2Of2 other -> None
+  let timeRoute = fun s -> match s with
+                            | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
+                                         | e when e.Success = true -> Parsed e.Value
+                                         | _                       -> BadString t
+                            | None    -> Parsed Instant.MinValue
 
-        cmdr {
-            let! timestamp = timeRoute timestampString
-            let! state = commanderRoute commander
-            return state.Operations
-                   |> List.ofSeq
-                   |> List.filter
-                     (fun e -> match e.Timestamp with
-                               | t when t >= timestamp -> true
-                               | _                     -> false)
-                   |> json 
-                   |> OK
-        }
-      )
+  let listOperations commander =
+    request(fun request ->
+      let timestampString = match request.queryParam "last" with
+                            | Choice1Of2 s     -> Some(s)
+                            | Choice2Of2 other -> None
+
+      cmdr {
+        let! timestamp = timeRoute timestampString
+        let! state = commanderRoute commander
+        return state.Operations
+               |> List.ofSeq
+               |> List.filter
+                 (fun e -> match e.Timestamp with
+                           | t when t >= timestamp -> true
+                           | _                     -> false)
+               |> json 
+               |> OK
+      }
+    )
     
-    let FormatExtractor = fun(extension) ->
-      match extension with
-      | "json" -> KnownFormat Json
-      | "csv"  -> KnownFormat Csv
-      | "xml"  -> KnownFormat Xml
-      | f      -> UnknownFormat f
+  let FormatExtractor = fun(extension) ->
+    match extension with
+    | "json" -> KnownFormat Json
+    | "csv"  -> KnownFormat Csv
+    | "xml"  -> KnownFormat Xml
+    | f      -> UnknownFormat f
 
-    let AcceptExtractor = fun(request:HttpRequest) ->
-      let accept = request.headers.Where(fun (k, v) -> k = "accept").Select(fun (k, v) -> v).First()
-      let accepts = accept.Split [|';'|]
-      let format = accepts |> List.ofSeq |> List.fold(fun acc elem -> match acc with
-                                                                      | Some(r) -> Some(r)
-                                                                      | _       -> match elem with
-                                                                                   | "text/json" -> Some(Json)
-                                                                                   | "text/csv"  -> Some(Csv)
-                                                                                   | "text/xml"  -> Some(Xml)
-                                                                                   | _           -> None) None
-      match format with
-      | Some(f) -> KnownFormat f
-      | _       -> KnownFormat Json
+  let AcceptExtractor = fun(request:HttpRequest) ->
+    let accept = request.headers.Where(fun (k, v) -> k = "accept").Select(fun (k, v) -> v).First()
+    let accepts = accept.Split [|';'|]
+    let format = accepts |> List.ofSeq |> List.fold(fun acc elem -> match acc with
+                                                                    | Some(r) -> Some(r)
+                                                                    | _       -> match elem with
+                                                                                  | "text/json" -> Some(Json)
+                                                                                  | "text/csv"  -> Some(Csv)
+                                                                                  | "text/xml"  -> Some(Xml)
+                                                                                  | _           -> None) None
+    match format with
+    | Some(f) -> f
+    | _       -> Json
 
-    let da = fun format -> format |> json |> OK
+  let da = fun format -> format |> json |> OK
 
-    let test da =
-      request(fun request ->
-          let format = AcceptExtractor request
-          da format
-      )
+  let test d =
+    request(fun request ->
+        let format = AcceptExtractor request
+        d format
+    )
 
-    let app =
-      choose
-        [ GET >=> choose
-           [ path "/ingredients" >=> 
-               request (fun _ -> referenceData state |> ingredients |> json |> OK)
-             path "/blueprints"  >=> 
-               request (fun _ -> referenceData state |> blueprints |> json |> OK)
-             path "/commanders"  >=> 
-               request (fun _ -> state.Invoke().Keys |> json |> OK)
+  let app =
+    choose
+      [ GET >=> choose
+          [ path "/ingredients" >=> 
+              request (fun _ -> referenceData state |> ingredients |> json |> OK)
+            path "/blueprints"  >=> 
+              request (fun _ -> referenceData state |> blueprints |> json |> OK)
+            path "/commanders"  >=> 
+              request (fun _ -> state.Invoke().Keys |> json |> OK)
                
-             pathScan "/%s/cargo" (fun (commander) -> 
-               cmdr {
-                 let! state = commanderRoute commander
-                 return cargoRoute(state, None)
-             })
-             pathScan "/%s/materials" (fun (commander) -> 
-               cmdr {
-                 let! state = commanderRoute commander
-                 return cargoRoute(state, Some(Kind.Material))
-             })
-             pathScan "/%s/data" (fun (commander) -> 
-               cmdr {
-                 let! state = commanderRoute commander
-                 return cargoRoute(state, Some(Kind.Data))
-             })
-             pathScan "/%s/commodities" (fun (commander) -> 
-               cmdr {
-                 let! state = commanderRoute commander
-                 return cargoRoute(state, Some(Kind.Commodity))
-             })
+            pathScan "/%s/cargo" (fun (commander) -> 
+              cmdr {
+                let! state = commanderRoute commander
+                return cargoRoute(state, None)
+            })
+            pathScan "/%s/materials" (fun (commander) -> 
+              cmdr {
+                let! state = commanderRoute commander
+                return cargoRoute(state, Some(Kind.Material))
+            })
+            pathScan "/%s/data" (fun (commander) -> 
+              cmdr {
+                let! state = commanderRoute commander
+                return cargoRoute(state, Some(Kind.Data))
+            })
+            pathScan "/%s/commodities" (fun (commander) -> 
+              cmdr {
+                let! state = commanderRoute commander
+                return cargoRoute(state, Some(Kind.Commodity))
+            })
 
-             pathScan "/%s/operations" listOperations
+            pathScan "/%s/operations" listOperations
              
-             path "/kek" >=> test da
-             pathScan "/%s/kek.%s" (fun (commander, format) ->
-                 cmdr {
-                     let! f = FormatExtractor format
-                     return da f
-                 }
-             )
+            path "/kek" >=> (test <| (fun f -> referenceData state |> ingredients |> json |> OK))
+            pathScan "/%s/kek.%s" (fun (commander, format) ->
+                cmdr {
+                  let! f = FormatExtractor format
+                  return da f
+                }
+            )
              
-             NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
-        ]
+            NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
+      ]
 
-    let localhost = Net.IPAddress.Parse("127.0.0.1")
+  let localhost = Net.IPAddress.Parse("127.0.0.1")
 
-    startWebServer { 
-      defaultConfig with 
-        cancellationToken = token
-        bindings = [ HttpBinding.mk HTTP localhost port ] } app
-    state
+  startWebServer { 
+    defaultConfig with 
+      cancellationToken = token
+      bindings = [ HttpBinding.mk HTTP localhost port ] } app
+  state
