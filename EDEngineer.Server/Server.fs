@@ -118,18 +118,12 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
       | Some(f) -> KnownFormat f
       | _       -> KnownFormat Json
 
-    let test =
+    let da = fun format -> format |> json |> OK
+
+    let test da =
       request(fun request ->
           let format = AcceptExtractor request
-          format |> json |> OK
-      )
-
-    let test2 ex =
-      request(fun request ->
-          cmdr {
-              let! format = FormatExtractor(ex)
-              return format |> json |> OK
-          }
+          da format
       )
 
     let app =
@@ -165,8 +159,13 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
 
              pathScan "/%s/operations" listOperations
              
-             path "/kek" >=> test
-             pathScan "/kek.%s" test2
+             path "/kek" >=> test da
+             pathScan "/%s/kek.%s" (fun (commander, format) ->
+                 cmdr {
+                     let! f = FormatExtractor format
+                     return da f
+                 }
+             )
              
              NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
         ]
