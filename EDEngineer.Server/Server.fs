@@ -47,6 +47,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
   let xml = fun s -> 
     let xmlDoc = (json(s) |> sprintf "{ \"ingredient\": %s }", "root") |> JsonConvert.DeserializeXmlNode
     xmlDoc.InnerXml
+  let csv = fun s -> json s
     
   let ingredients = fun (state:State) -> state.Cargo
                                           |> List.ofSeq
@@ -106,12 +107,11 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
       KnownFormat formatFromRequest
     | f                         -> RouteNotFound f
 
-  let da = fun format -> format |> json |> OK
-
   let FormatPicker = fun f ->
     match f with
-    | Xml -> xml
-    | _   -> json
+    | Xml   -> xml
+    | Json  -> json
+    | Csv   -> csv
 
   let app =
     choose
