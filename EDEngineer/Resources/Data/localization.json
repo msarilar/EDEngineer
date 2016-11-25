@@ -2092,19 +2092,19 @@
       "ru": "@Синтез"
     },
     "Launch Local API": {
-      "es": null,
+      "es": "Iniciar el servidor local de API",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Select the port for the local API server": {
-      "es": null,
+      "es": "Selecciona el puerto para el servidor local de API",
       "de": null,
       "fr": null,
       "ru": null
     },
     "Auto run server on EDEnginner startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
-      "es": null,
+      "es": "¿Deseas usar este puerto al ejecutar el servidor de EDEnginner? (si no está seleccionada esta opción el servidor podría detenerse cuando se bloquee o desbloquee la ventana)",
       "de": null,
       "fr": null,
       "ru": null
