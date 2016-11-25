@@ -47,39 +47,6 @@ type CmdrBuilder() =
 
 let cmdr = CmdrBuilder()
 
-let dataTableToCsv = fun(t:DataTable) ->
-  use sWriter = new StringWriter()
-  use cWriter = new CsvWriter(sWriter)
-  let columns = t.Columns.Cast<DataColumn>()
-  let rows = t.Rows.Cast<DataRow>()
-
-  cWriter.Configuration.Delimiter <- ";"
-
-  columns
-    |> Seq.map (fun c -> cWriter.WriteField(c.ColumnName))
-    |> List.ofSeq
-    |> ignore
-
-  cWriter.NextRecord()
-
-  rows
-    |> Seq.map (fun r -> 
-      columns
-        |> Seq.map(fun c -> 
-          let content = match r.[c.ColumnName] with
-                        | :? array<string> as a -> String.Join(",", a)
-                        | any -> any.ToString()
-
-          cWriter.WriteField(content))
-        |> List.ofSeq
-        |> ignore
-      cWriter.NextRecord()
-    )
-    |> List.ofSeq
-    |> ignore
-
-  sWriter.ToString()
-
 let start (token, port, state:Func<IDictionary<string, State>>) =
 
   let json = fun s -> JsonConvert.SerializeObject s
@@ -160,81 +127,81 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
 
   let app =
     choose
-      [ GET >=> choose
-          [ pathScan "/ingredients%s" (fun (format) -> 
-              (request(fun request ->
-                cmdr {
-                  let! f = FormatExtractor request format 
-                  return  referenceData state |> ingredients |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+      [ 
+        pathScan "/ingredients%s" (fun (format) -> 
+          (request(fun request ->
+            cmdr {
+              let! f = FormatExtractor request format 
+              return  referenceData state |> ingredients |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
 
-            pathScan "/blueprints%s" (fun (format) -> 
-              (request(fun request ->
-                cmdr {
-                  let! f = FormatExtractor request format
-                  return  referenceData state |> blueprints |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+        pathScan "/blueprints%s" (fun (format) -> 
+          (request(fun request ->
+            cmdr {
+              let! f = FormatExtractor request format
+              return  referenceData state |> blueprints |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
 
-            pathScan "/commanders%s" (fun (format) -> 
-              (request(fun request ->
-                cmdr {
-                  let! f = FormatExtractor request format
-                  return  state.Invoke().Keys |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+        pathScan "/commanders%s" (fun (format) -> 
+          (request(fun request ->
+            cmdr {
+              let! f = FormatExtractor request format
+              return  state.Invoke().Keys |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
                
-            pathScan "/%s/cargo%s" (fun (commander, format) -> 
-              (request(fun request ->
-                cmdr {
-                  let! s = commanderRoute commander
-                  let! f = FormatExtractor request format
-                  return (s, None) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+        pathScan "/%s/cargo%s" (fun (commander, format) -> 
+          (request(fun request ->
+            cmdr {
+              let! s = commanderRoute commander
+              let! f = FormatExtractor request format
+              return (s, None) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
 
-            pathScan "/%s/materials%s" (fun (commander, format) -> 
-              (request(fun request ->
-                cmdr {
-                    let! s = commanderRoute commander
-                    let! f = FormatExtractor request format
-                    return (s, Some(Kind.Material)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+        pathScan "/%s/materials%s" (fun (commander, format) -> 
+          (request(fun request ->
+            cmdr {
+                let! s = commanderRoute commander
+                let! f = FormatExtractor request format
+                return (s, Some(Kind.Material)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
 
-            pathScan "/%s/data%s" (fun (commander, format) -> 
-              (request(fun request ->
-                cmdr {
-                    let! s = commanderRoute commander
-                    let! f = FormatExtractor request format
-                    return (s, Some(Kind.Data)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+        pathScan "/%s/data%s" (fun (commander, format) -> 
+          (request(fun request ->
+            cmdr {
+                let! s = commanderRoute commander
+                let! f = FormatExtractor request format
+                return (s, Some(Kind.Data)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
 
-            pathScan "/%s/commodities%s" (fun (commander, format) -> 
-              (request(fun request ->
-                cmdr {
-                    let! s = commanderRoute commander
-                    let! f = FormatExtractor request format
-                    return (s, Some(Kind.Commodity)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
-                })))
+        pathScan "/%s/commodities%s" (fun (commander, format) -> 
+          (request(fun request ->
+            cmdr {
+                let! s = commanderRoute commander
+                let! f = FormatExtractor request format
+                return (s, Some(Kind.Commodity)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
 
-            pathScan "/%s/operations%s" (fun (commander, format) ->
-              (request(fun request ->
-                let timestampString = match request.queryParam "last" with
-                                      | Choice1Of2 s     -> Some(s)
-                                      | Choice2Of2 other -> None
+        pathScan "/%s/operations%s" (fun (commander, format) ->
+          (request(fun request ->
+            let timestampString = match request.queryParam "last" with
+                                  | Choice1Of2 s     -> Some(s)
+                                  | Choice2Of2 other -> None
 
-                cmdr {
-                  let! state = commanderRoute commander
-                  let! f = FormatExtractor request format
-                  let! timestamp = timeRoute timestampString
-                  return state.Operations
-                          |> Seq.filter
-                            (fun e -> match e.Timestamp with
-                                      | t when t >= timestamp -> true
-                                      | _                     -> false)
-                          |> FormatPicker(f) 
-                          |> OK >=> MimeType(f)
-               })))
+            cmdr {
+              let! state = commanderRoute commander
+              let! f = FormatExtractor request format
+              let! timestamp = timeRoute timestampString
+              return state.Operations
+                      |> Seq.filter
+                        (fun e -> match e.Timestamp with
+                                  | t when t >= timestamp -> true
+                                  | _                     -> false)
+                      |> FormatPicker(f) 
+                      |> OK >=> MimeType(f)
+            })))
              
-            NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
-      ]
+        NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
+      
 
   let localhost = Net.IPAddress.Parse("127.0.0.1")
 
