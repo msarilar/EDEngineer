@@ -41,7 +41,10 @@ let cmdr = CmdrBuilder()
 
 let start (token, port, state:Func<IDictionary<string, State>>) =
 
-  let json = fun s -> JsonConvert.SerializeObject(s, Formatting.Indented)
+  let json = fun s -> JsonConvert.SerializeObject s
+  let xml = fun s -> 
+    let xmlDoc = (json(s) |> sprintf "{ \"ingredient\": %s }", "root") |> JsonConvert.DeserializeXmlNode
+    xmlDoc.InnerXml
     
   let ingredients = fun (state:State) -> state.Cargo
                                           |> List.ofSeq
@@ -126,6 +129,11 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
         d format
     )
 
+  let FormatPicker = fun f ->
+    match f with
+    | Xml -> xml
+    | _   -> json
+
   let app =
     choose
       [ GET >=> choose
@@ -163,7 +171,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
             pathScan "/%s/kek.%s" (fun (commander, format) ->
                 cmdr {
                   let! f = FormatExtractor format
-                  return da f
+                  return referenceData state |> ingredients |> FormatPicker(f) |> OK
                 }
             )
              
