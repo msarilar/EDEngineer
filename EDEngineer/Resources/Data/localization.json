@@ -2102,6 +2102,12 @@
       "de": null,
       "fr": null,
       "ru": null
+    },
+    "Auto run server on EDEnginner startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }

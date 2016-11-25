@@ -1,6 +1,8 @@
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 using EDEngineer.Localization;
+using EDEngineer.Utils.System;
 
 namespace EDEngineer.Utils.UI
 {
@@ -10,13 +12,21 @@ namespace EDEngineer.Utils.UI
         {
             var translator = Languages.Instance;
 
+            var autoRunBox = new CheckBox()
+            {
+                Checked = SettingsManager.AutoRunServer,
+                Height = 50,
+                Text = translator.Translate("Auto run server on EDEnginner startup with this port? (if not ticked, the server will stop when you unlock/lock the window)"),
+                Dock = DockStyle.Top
+            };
+
             var textBox = new NumericUpDown()
             {
-                Width = 385,
                 TextAlign = HorizontalAlignment.Center,
                 Minimum = 1025,
                 Maximum = 65535,
-                Value = current
+                Value = current,
+                Dock = DockStyle.Top
             };
 
             textBox.Validating += (o, e) =>
@@ -37,8 +47,7 @@ namespace EDEngineer.Utils.UI
                 TextAlign = ContentAlignment.MiddleCenter,
                 Dock = DockStyle.Left
             };
-
-
+            
             var buttonCancel = new Button()
             {
                 DialogResult = DialogResult.Cancel,
@@ -49,22 +58,32 @@ namespace EDEngineer.Utils.UI
                 Dock = DockStyle.Right
             };
 
+            var buttonsPanel = new Panel()
+            {
+                Dock = DockStyle.Bottom,
+                Height = 50,
+            };
+
+            buttonsPanel.Controls.Add(buttonOk);
+            buttonsPanel.Controls.Add(buttonCancel);
+
             var f = new Form()
             {
                 FormBorderStyle = FormBorderStyle.FixedToolWindow,
                 Width = 400,
-                Height = 100,
+                Height = textBox.Height + autoRunBox.Height + buttonsPanel.Height + 30,
                 Text = translator.Translate("Select the port for the local API server")
             };
 
+            f.Controls.Add(autoRunBox);
             f.Controls.Add(textBox);
-            f.Controls.Add(buttonOk);
-            f.Controls.Add(buttonCancel);
+            f.Controls.Add(buttonsPanel);
 
             if (f.ShowDialog() == DialogResult.OK)
             {
                 if (ushort.TryParse(textBox.Text, out port))
                 {
+                    SettingsManager.AutoRunServer = autoRunBox.Checked;
                     return true;
                 }
             }

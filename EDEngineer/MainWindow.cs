@@ -85,7 +85,7 @@ namespace EDEngineer
                                                  RefreshCargoSources();
                                              }
                                          };
-            serverBridge = new ServerBridge(viewModel);
+            serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
         }
 
         public void RefreshCargoSources()

@@ -59,7 +59,7 @@
     <Setting Name="CargoAlmostFullWarningEnabled" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="ServerRun" Type="System.Boolean" Scope="User">
+    <Setting Name="AutoRunServer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="ServerPort" Type="System.UInt16" Scope="User">

@@ -27,18 +27,29 @@ namespace EDEngineer.Utils.System
             return Running;
         }
 
-        public ServerBridge(MainWindowViewModel viewModel)
+        public ServerBridge(MainWindowViewModel viewModel, bool autoRun)
         {
             this.viewModel = viewModel;
+
+            if (autoRun)
+            {
+                Start(SettingsManager.ServerPort);
+            }
         }
 
-        private void Start()
+        private void Start(ushort? autoRunPort = null)
         {
             ushort port;
-            if (!TryGetPort(out port))
+            if (autoRunPort.HasValue)
+            {
+                port = autoRunPort.Value;
+            }
+            else if (!TryGetPort(out port))
             {
                 return;
             }
+
+            SettingsManager.ServerPort = port;
 
             cts = new CancellationTokenSource();
 
