@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Barda\Collections\ISimpleDictionary.cs" />
+    <Compile Include="Barda\JsonUtils.cs" />
     <Compile Include="Barda\Collections\SortedObservableCollection.cs" />
     <Compile Include="Barda\Collections\SortedObservableCounter.cs" />
     <Compile Include="Barda\Collections\SortedObservableDictionary.cs" />

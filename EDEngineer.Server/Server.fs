@@ -22,6 +22,8 @@ open EDEngineer.Models
 type Format = Json | Xml | Csv
 type cargoType = { Kind: string; Name: string; Count: int }
 
+let inline (|?) (a) b = if a = null then b else a  
+
 type Cmdr<'TGood, 'TBad> = 
   | Found         of 'TGood
   | Parsed        of 'TGood
@@ -84,7 +86,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
   let xml = fun s ->
     let xmlDoc = (json(s) |> sprintf "{ \"item\": %s }", "root") |> JsonConvert.DeserializeXmlNode
     xmlDoc.InnerXml
-  let csv = fun s -> JsonConvert.DeserializeObject<DataTable>(json(s)) |> dataTableToCsv
+  let csv = fun s -> (json(s) |> sprintf "{ \"item\": %s }") |> JsonUtils.ToCsv
     
   let ingredients = fun (state:State) -> state.Cargo
                                          |> Seq.map (fun d -> d.Value.Data)
@@ -227,7 +229,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                             (fun e -> match e.Timestamp with
                                       | t when t >= timestamp -> true
                                       | _                     -> false)
-                          |> json 
+                          |> FormatPicker(f) 
                           |> OK >=> MimeType(f)
                })))
              
