@@ -171,6 +171,7 @@
     <Compile Include="Utils\System\ReleaseNotesManager.cs" />
     <Compile Include="Utils\System\ServerBridge.cs" />
     <Compile Include="Utils\System\SettingsManager.cs" />
+    <Compile Include="Utils\UI\ServerPortPrompt.cs" />
     <Compile Include="Utils\UI\ShortcutPrompt.cs" />
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />

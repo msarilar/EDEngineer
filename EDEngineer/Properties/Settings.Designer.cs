@@ -247,5 +247,29 @@ namespace EDEngineer.Properties {
                 this["CargoAlmostFullWarningEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ServerRun {
+            get {
+                return ((bool)(this["ServerRun"]));
+            }
+            set {
+                this["ServerRun"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public ushort ServerPort {
+            get {
+                return ((ushort)(this["ServerPort"]));
+            }
+            set {
+                this["ServerPort"] = value;
+            }
+        }
     }
 }

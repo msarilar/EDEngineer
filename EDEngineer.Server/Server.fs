@@ -78,7 +78,7 @@ let dataTableToCsv = fun(t:DataTable) ->
 let start (token, port, state:Func<IDictionary<string, State>>) =
 
   let json = fun s -> JsonConvert.SerializeObject s
-  let xml = fun s -> 
+  let xml = fun s ->
     let xmlDoc = (json(s) |> sprintf "{ \"item\": %s }", "root") |> JsonConvert.DeserializeXmlNode
     xmlDoc.InnerXml
   let csv = fun s -> JsonConvert.DeserializeObject<DataTable>(json(s)) |> dataTableToCsv
@@ -108,28 +108,33 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                          | (true, state) -> Found state
                          | (false, _)    -> NotFound commander
 
-  let timeRoute = fun s -> match s with
-                           | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
-                                        | e when e.Success = true -> Parsed e.Value
-                                        | _                       -> BadString t
-                           | None    -> Parsed Instant.MinValue
+
+  let timeRoute = function
+                  | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
+                               | e when e.Success = true -> Parsed e.Value
+                               | _                       -> BadString t
+                  | None    -> Parsed Instant.MinValue
 
   let AcceptExtractor = fun(request:HttpRequest) ->
-    let accept = request.headers.Where(fun (k, v) -> k = "accept").Select(fun (k, v) -> v).First()
-    let accepts = accept.Split [|';'|]
-    let format = accepts |> List.ofSeq |> List.fold(fun acc elem -> match acc with
-                                                                    | Some(r) -> Some(r)
-                                                                    | _       -> match elem with
-                                                                                  | "text/json" -> Some(Json)
-                                                                                  | "text/csv"  -> Some(Csv)
-                                                                                  | "text/xml"  -> Some(Xml)
-                                                                                  | _           -> None) None
-    match format with
-    | Some(f) -> f
-    | _       -> Json
-    
-  let FormatExtractor = fun(extension, request:HttpRequest) ->
-    match extension with
+    request.headers
+    |> Seq.filter (fun (k, v) -> k = "accept")
+    |> Seq.map (fun (k, v) -> v)
+    |> Seq.head
+    |> fun x -> x.Split [|';'|]
+    |> List.ofSeq
+    |> List.fold(fun acc elem -> match acc with
+                                 | Some(r) -> Some(r)
+                                 | _       -> match elem with
+                                              | "text/json" -> Some(Json)
+                                              | "text/csv"  -> Some(Csv)
+                                              | "text/xml"  -> Some(Xml)
+                                              | _           -> None) None
+    |> function
+      | Some(f) -> f
+      | _       -> Json
+
+  let FormatExtractor (request: HttpRequest) =
+    function
     | ".json"                   -> KnownFormat Json
     | ".csv"                    -> KnownFormat Csv
     | ".xml"                    -> KnownFormat Xml
@@ -139,14 +144,14 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
       KnownFormat formatFromRequest
     | f                         -> RouteNotFound f
 
-  let FormatPicker = fun f ->
-    match f with
+  let FormatPicker =
+    function
     | Xml   -> xml
     | Json  -> json
     | Csv   -> csv
 
-  let MimeType = fun f ->
-    match f with
+  let MimeType = 
+    function
     | Xml   -> Writers.setMimeType "application/xml; charset=utf-8"
     | Json  -> Writers.setMimeType "application/json; charset=utf-8"
     | Csv   -> Writers.setMimeType "application/csv; charset=utf-8"
@@ -157,21 +162,21 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
           [ pathScan "/ingredients%s" (fun (format) -> 
               (request(fun request ->
                 cmdr {
-                  let! f = FormatExtractor(format, request)
+                  let! f = FormatExtractor request format 
                   return  referenceData state |> ingredients |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/blueprints%s" (fun (format) -> 
               (request(fun request ->
                 cmdr {
-                  let! f = FormatExtractor(format, request)
+                  let! f = FormatExtractor request format
                   return  referenceData state |> blueprints |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
             pathScan "/commanders%s" (fun (format) -> 
               (request(fun request ->
                 cmdr {
-                  let! f = FormatExtractor(format, request)
+                  let! f = FormatExtractor request format
                   return  state.Invoke().Keys |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
                
@@ -179,7 +184,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               (request(fun request ->
                 cmdr {
                   let! s = commanderRoute commander
-                  let! f = FormatExtractor(format, request)
+                  let! f = FormatExtractor request format
                   return (s, None) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
@@ -187,7 +192,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               (request(fun request ->
                 cmdr {
                     let! s = commanderRoute commander
-                    let! f = FormatExtractor(format, request)
+                    let! f = FormatExtractor request format
                     return (s, Some(Kind.Material)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
@@ -195,7 +200,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               (request(fun request ->
                 cmdr {
                     let! s = commanderRoute commander
-                    let! f = FormatExtractor(format, request)
+                    let! f = FormatExtractor request format
                     return (s, Some(Kind.Data)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
@@ -203,7 +208,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               (request(fun request ->
                 cmdr {
                     let! s = commanderRoute commander
-                    let! f = FormatExtractor(format, request)
+                    let! f = FormatExtractor request format
                     return (s, Some(Kind.Commodity)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
                 })))
 
@@ -215,7 +220,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
 
                 cmdr {
                   let! state = commanderRoute commander
-                  let! f = FormatExtractor(format, request)
+                  let! f = FormatExtractor request format
                   let! timestamp = timeRoute timestampString
                   return state.Operations
                           |> List.ofSeq

@@ -28,6 +28,7 @@ namespace EDEngineer
     public partial class MainWindow
     {
         private readonly MainWindowViewModel viewModel;
+        private readonly ServerBridge serverBridge;
 
         public MainWindow()
         {
@@ -84,7 +85,7 @@ namespace EDEngineer
                                                  RefreshCargoSources();
                                              }
                                          };
-            new ServerBridge(viewModel).Start(8083);
+            serverBridge = new ServerBridge(viewModel);
         }
 
         public void RefreshCargoSources()
@@ -132,7 +133,9 @@ namespace EDEngineer
                 (o, e) => Close(), ConfigureShortcut, 
                 (o, e) => ToggleEditModeChecked(o, null),
                 (o, e) => ResetWindowPositionButtonClicked(o, null),
-                (o, e) => Languages.PromptLanguage(viewModel.Languages));
+                (o, e) => Languages.PromptLanguage(viewModel.Languages),
+                () => serverBridge.Toggle(),
+                serverBridge.Running);
 
             var shortcut = SettingsManager.Shortcut;
 
@@ -338,6 +341,7 @@ namespace EDEngineer
             }
 
             viewModel?.LogWatcher?.Dispose();
+            serverBridge?.Dispose();
         }
 
         private void WindowActivatedCompleted(object sender, EventArgs e)
@@ -382,6 +386,7 @@ namespace EDEngineer
         }
 
         private bool bypassPositionSave = false;
+
         private void ResetWindowPositionButtonClicked(object sender, RoutedEventArgs e)
         {
             SettingsManager.Dimensions.Reset();

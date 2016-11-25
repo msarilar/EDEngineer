@@ -774,7 +774,7 @@
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
-      "fr": "Données d'émissions brouillées exceptionnelles" ,
+      "fr": "Données d'émissions brouillées exceptionnelles",
       "ru": "Исключительные зашифрованные данные об изл."
     },
     "Exhaust Manifold": {
@@ -1056,7 +1056,7 @@
     "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
       "de": "Beta-Muster-Obeliskendaten",
-      "fr":  "Données d'obélisque de type Beta ",
+      "fr": "Données d'obélisque de type Beta ",
       "ru": null
     },
     "Pattern Delta Obelisk Data": {
@@ -1302,7 +1302,7 @@
     "Unidentified Scan Archives": {
       "es": "Archivos de Escáner no Identificados",
       "de": "Unidentifizierte Scan-Archive",
-      "fr":  "Données d'analyse archivées non identifiées",
+      "fr": "Données d'analyse archivées non identifiées",
       "ru": "Неопознанные архивы сканирования"
     },
     "Unknown Fragment": {
@@ -1926,7 +1926,7 @@
     "You have only {0} slots left for your materials.": {
       "es": "Tienes {0} espacios para materiales.",
       "de": "Sie haben nur mehr {0} Kapazität für Materialien frei.",
-      "fr": "Il vous reste seulement {0} emplacements pour vos matériaux." ,
+      "fr": "Il vous reste seulement {0} emplacements pour vos matériaux.",
       "ru": null
     },
     "Data Almost Full!": {
@@ -2089,6 +2089,18 @@
       "es": "@Síntesis",
       "de": "@Synthese",
       "fr": "@Synthèse",
+      "ru": null
+    },
+    "Launch Local API": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Select the port for the local API server": {
+      "es": null,
+      "de": null,
+      "fr": null,
       "ru": null
     }
   }
