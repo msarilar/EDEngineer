@@ -97,9 +97,9 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     
   let FormatExtractor = fun(extension, request:HttpRequest) ->
     match extension with
-    | "json" -> KnownFormat Json
-    | "csv"  -> KnownFormat Csv
-    | "xml"  -> KnownFormat Xml
+    | ".json" -> KnownFormat Json
+    | ".csv"  -> KnownFormat Csv
+    | ".xml"  -> KnownFormat Xml
     | s when s.StartsWith(".") -> UnknownFormat s
     | s when s = "" -> 
       let formatFromRequest = AcceptExtractor request
