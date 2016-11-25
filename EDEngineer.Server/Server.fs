@@ -34,7 +34,7 @@ type CmdrBuilder() =
       | KnownFormat v -> f v
       | NotFound commander -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
       | BadString s -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
-      | UnknownFormat s -> (sprintf "Unknown file format requested %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
+      | UnknownFormat s -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
   member this.Return value = value
 
 let cmdr = CmdrBuilder()
@@ -57,9 +57,9 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                                                         |> List.filter 
                                                           (fun e -> match kind with
                                                                     | Some(Kind.Commodity) -> e.Value.Data.Kind = Kind.Commodity
-                                                                    | Some(Kind.Data) -> e.Value.Data.Kind = Kind.Data
-                                                                    | Some(Kind.Material) -> e.Value.Data.Kind = Kind.Material
-                                                                    | _ -> true)
+                                                                    | Some(Kind.Data)      -> e.Value.Data.Kind = Kind.Data
+                                                                    | Some(Kind.Material)  -> e.Value.Data.Kind = Kind.Material
+                                                                    | _                    -> true)
                                                         |> List.map (fun e -> e.Value)
                                                         |> List.map (fun e -> e.Data.Name, e.Count)
                                                         |> dict
@@ -74,13 +74,13 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     let timeRoute = fun s -> match s with
                              | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
                                           | e when e.Success = true -> Parsed e.Value
-                                          | _ -> BadString t
-                             | None -> Parsed Instant.MinValue
+                                          | _                       -> BadString t
+                             | None    -> Parsed Instant.MinValue
 
     let listOperations commander =
       request(fun request ->
         let timestampString = match request.queryParam "last" with
-                              | Choice1Of2 s -> Some(s)
+                              | Choice1Of2 s     -> Some(s)
                               | Choice2Of2 other -> None
 
         cmdr {
@@ -91,7 +91,7 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
                    |> List.filter
                      (fun e -> match e.Timestamp with
                                | t when t >= timestamp -> true
-                               | _ -> false)
+                               | _                     -> false)
                    |> json 
                    |> OK
         }
@@ -100,10 +100,10 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     let FormatExtractor = fun(extension, request:HttpRequest) ->
       let ex = match extension with
                | ".json" -> KnownFormat Json
-               | ".csv" -> KnownFormat Csv
-               | ".xml" -> KnownFormat Xml
-               | "" -> KnownFormat Default
-               | f -> UnknownFormat f
+               | ".csv"  -> KnownFormat Csv
+               | ".xml"  -> KnownFormat Xml
+               | ""      -> KnownFormat Default
+               | f       -> UnknownFormat f
 
       match ex with
         | KnownFormat Default ->
@@ -111,15 +111,15 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               let accepts = accept.Split [|';'|]
               let format = accepts |> List.ofSeq |> List.fold(fun acc elem -> match acc with
                                                                               | Some(r) -> Some(r)
-                                                                              | _ -> match elem with
-                                                                                     | "text/json" -> Some(Json)
-                                                                                     | "text/csv" -> Some(Csv)
-                                                                                     | "text/xml" -> Some(Xml)
-                                                                                     | _ -> None) None
+                                                                              | _       -> match elem with
+                                                                                           | "text/json" -> Some(Json)
+                                                                                           | "text/csv"  -> Some(Csv)
+                                                                                           | "text/xml"  -> Some(Xml)
+                                                                                           | _           -> None) None
               match format with
               | Some(f) -> KnownFormat f
-              | _ -> KnownFormat Json
-        | KnownFormat e -> KnownFormat e
+              | _       -> KnownFormat Json
+        | KnownFormat e   -> KnownFormat e
         | UnknownFormat f -> UnknownFormat f
 
     let test ex =
