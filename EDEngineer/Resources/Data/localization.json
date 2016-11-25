@@ -31,25 +31,25 @@
       "es": "Destructor de Corto Alcance",
       "de": "Kurzdistanzblaster",
       "fr": "Tir à Courte Portée",
-      "ru": "Короткий выстрел"
+      "ru": "Бластер малого радиуса"
     },
     "Lightweight": {
       "es": "Aligerado",
       "de": "Leichte",
       "fr": "Léger",
-      "ru": "Лёгкий"
+      "ru": "Облегченный"
     },
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
       "de": "Schwere Rumpfhüllenverstärkung",
       "fr": "Renforts de coque lourd",
-      "ru": null
+      "ru": "Утяжеление усилителя корпуса"
     },
     "Drive Strengthening": {
       "es": "Fortalecimiento de Motor",
       "de": "Antriebsstärkung",
       "fr": "Renforcement du réacteur",
-      "ru": "Прочный мотор"
+      "ru": "Защищённый двигатель"
     },
     "Efficient Weapon": {
       "es": "Arma Eficiente",
@@ -61,7 +61,7 @@
       "es": "Anclaje Ligero",
       "de": "Leichtgewichtgeschütz",
       "fr": "Montage Léger",
-      "ru": "Лёгкое устройство"
+      "ru": "Легкое крепление"
     },
     "Armoured ": {
       "es": "Blindado ",
@@ -73,7 +73,7 @@
       "es": "Reforzado",
       "de": "Verstärkt",
       "fr": "Renforcé",
-      "ru": "Укреплённый"
+      "ru": "Усиленный"
     },
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
@@ -85,43 +85,43 @@
       "es": "Interdictor de MDD de Largo Alcance",
       "de": "Ferndistanz-FSA-Unterbrecher",
       "fr": "Intercepteur FSD longue portée",
-      "ru": null
+      "ru": "Увеличение дальности перехвата"
     },
     "Reinforced Shields": {
       "es": "Escudos Reforzados",
       "de": "Verstärkte Schilde",
       "fr": "Bouclier renforcé",
-      "ru": null
+      "ru": "Усиленный щит"
     },
     "Enhanced, Low Power Shields": {
       "es": "Escudos Mejorados de Baja Energía",
       "de": "Verbesserte Niedrigenergieschilde",
       "fr": "Boucliers amélioré à consommation réduite",
-      "ru": null
+      "ru": "Энергосберегающий щит"
     },
     "Shielded": {
       "es": "Blindado",
       "de": "Abgeschirmt",
       "fr": "Renforcé",
-      "ru": "Укреплённый"
+      "ru": "Бронированный"
     },
     "Thermal Resistant ": {
       "es": "Resistencia Térmica ",
       "de": "Thermalresistente ",
       "fr": "Résistance thermique",
-      "ru": "Термически укреплённый"
+      "ru": "Противотепловое усиление"
     },
     "Weapon Focused ": {
       "es": "Orientado a Armas ",
       "de": "Waffenfokussierte ",
       "fr": "Optimisé armes",
-      "ru": null
+      "ru": "Оружие-ориентированный"
     },
     "Blast Resistant ": {
       "es": "Blindaje Resistente a Explosiones ",
       "de": "Detonationsresistente ",
       "fr": "Anti-explosion",
-      "ru": null
+      "ru": "Противовзрывное усиление"
     },
     "High Capacity Magazine": {
       "es": "Cargador de Alta Capacidad",
@@ -133,7 +133,7 @@
       "es": "Resistencia Cinética ",
       "de": "Kinetikresistente ",
       "fr": "Résistance cinétique",
-      "ru": null
+      "ru": "Противокинетическое усиление"
     },
     "Focused Weapon": {
       "es": "Arma Concentrada",
@@ -145,7 +145,7 @@
       "es": "Escudos de Resistencia Térmica",
       "de": "Thermalresistente Schilde",
       "fr": "Bouclier à résistance thermique",
-      "ru": null
+      "ru": "Противотепловой щит"
     },
     "Rapid Fire Modification": {
       "es": "Modificación de Tiro Rápido",
@@ -163,7 +163,7 @@
       "es": "Capacidad de Munición",
       "de": "Munitionskapazität",
       "fr": "capacité de munition",
-      "ru": null
+      "ru": "Боезапас"
     },
     "Overcharged Weapon": {
       "es": "Arma Sobrecargada",
@@ -175,7 +175,7 @@
       "es": "Bajas Emisiones ",
       "de": "Emissionsoptimiertes ",
       "fr": "Basse émission",
-      "ru": null
+      "ru": "Снижение излучения"
     },
     "System Focused ": {
       "es": "Orientado a Sistemas ",
@@ -187,25 +187,25 @@
       "es": "Aligerado ",
       "de": "Leichtgewicht ",
       "fr": "Léger",
-      "ru": null
+      "ru": "Облегченный"
     },
     "Overcharged ": {
       "es": "Sobrecargado ",
       "de": "Überladungs",
       "fr": "Surchargé",
-      "ru": null
+      "ru": "Усиленный"
     },
     "Increased FSD Range": {
       "es": "Aumento de Alcance de MDD",
       "de": "Erhöhte FSA-Reichweite",
       "fr": "Portée FSD améliorée",
-      "ru": null
+      "ru": "Увеличенная дальность РСД"
     },
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
       "de": "Thermalresistente Rumpfhüllenverstärkung",
       "fr": "Renforts de coque antithermique",
-      "ru": null
+      "ru": "Противотепловое усиление"
     },
     "Dirty Drive Tuning": {
       "es": "Modificación de Motor Sucio",
@@ -223,43 +223,43 @@
       "es": "Refuerzo Estructural de Resistencia Cinética",
       "de": "Kinetikresistente Rumpfhüllenverstärkung",
       "fr": "Renforts de coque anti-cinétique",
-      "ru": null
+      "ru": "Противокинетическое усиление"
     },
     "High Charge Capacity ": {
       "es": "Alta Capacidad de Carga ",
       "de": "Hochleistungsfähige ",
       "fr": "Capacité Surchargée",
-      "ru": null
+      "ru": "Высокоёмкий"
     },
     "Rapid Charge ": {
       "es": "Recarga Rápida ",
       "de": "Ladungsoptimierte ",
       "fr": "Chargement rapide",
-      "ru": null
+      "ru": "Быстрозаряжающийся"
     },
     "Expanded FSD Interdictor Capture Arc": {
       "es": "Arco de Captura de Interdictor de MDD Extendido",
       "de": "Erweiterter Abfangkreisbogen für FSA-Unterbrecher",
       "fr": "Intercepteur FSD à angle de capture augmenté",
-      "ru": null
+      "ru": "Увеличение угла перехвата"
     },
     "Heavy Duty ": {
       "es": "Alta Resistencia ",
       "de": "Schwere ",
       "fr": "Renforts de coque lourd",
-      "ru": null
+      "ru": "Усиленный"
     },
     "Charge Enhanced ": {
       "es": "Carga Mejorada ",
       "de": "Ladungsoptimierte ",
       "fr": "Répartiteur de puissance rapide",
-      "ru": null
+      "ru": "Быстрозарядный"
     },
     "Blast Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Explosiva",
       "de": "Detonationsresistente Rumpfhüllenverstärkung",
       "fr": "Renforts de coque anti-explosion",
-      "ru": null
+      "ru": "Противовзрывное усиление корпуса"
     },
     "Double Shot": {
       "es": "Doble Disparo",
@@ -271,37 +271,37 @@
       "es": "Refuerzo Estructural Aligerado",
       "de": "Leichtgewicht-Rumpfhüllenverstärkung",
       "fr": "Renforcement de coque Léger",
-      "ru": null
+      "ru": "Облегчение усилителя корпуса"
     },
     "Resistance Augmented ": {
       "es": "Resistencia Aumentada ",
       "de": "Widerstandsverstärkter ",
       "fr": "Résistances Augmentés",
-      "ru": null
+      "ru": "Сбалансированное усиление"
     },
     "Specialised ": {
       "es": "Especializado ",
       "de": "Spezialisierte",
       "fr": "Specialisé",
-      "ru": null
+      "ru": "Специализированный"
     },
     "Shielded ": {
       "es": "Blindado",
       "de": "Abgeschirmte ",
       "fr": "Renforcé",
-      "ru": null
+      "ru": "Бронированный"
     },
     "Faster FSD Boot Sequence": {
       "es": "Secuencia de Inicio de MDD Rápida",
       "de": "Schnellere FSA-Ladesequenz",
       "fr": "Séquence de démarrage FSD accelerée",
-      "ru": null
+      "ru": "Ускорение перезапуска РСД"
     },
     "Shielded FSD": {
       "es": "MDD Blindado",
       "de": "Abgeschirmter FSA",
       "fr": "FSD Renforcé",
-      "ru": null
+      "ru": "Защищенный РСД"
     },
     "Clean Drive Tuning": {
       "es": "Modificación de Motor Limpio",
@@ -313,7 +313,7 @@
       "es": "Escudos de Resistencia Cinética",
       "de": "Kinetikresistente Schilde",
       "fr": "Bouclier à résistance Cinétique",
-      "ru": null
+      "ru": "Противокинетический щит"
     },
     "Plasma Accelerator": {
       "es": "Acelerador de Plasma",
@@ -445,7 +445,7 @@
       "es": "Lanzador Dron Prospector",
       "de": "Drohnensteuerung Erzsucher",
       "fr": "Controleur de drônes de prospection",
-      "ru": null
+      "ru": "Контроллер дронов геологов"
     },
     "Manifest Scanner": {
       "es": "Escáner de Carga",
@@ -493,7 +493,7 @@
       "es": "Lanzador Dron Combustible",
       "de": "Treibstofftransferierer-Drohnensteuerung",
       "fr": "Contrôleur de drone de ravitaillement",
-      "ru": null
+      "ru": "Контроллер дронов заправщиков"
     },
     "Frame Shift Drive": {
       "es": "Motor de Distorsión",
@@ -505,7 +505,7 @@
       "es": "Lanzador Dron Extractor",
       "de": "Steuereinheit Ladelukenöffner-Drohne",
       "fr": "Perce-Soute",
-      "ru": null
+      "ru": "Контроллер дронов взломщиков"
     },
     "Fuel Scoop": {
       "es": "Colector de Combustible",
@@ -523,7 +523,7 @@
       "es": "Lanzador Dron Colector",
       "de": "Steuerung Sammeldrohne",
       "fr": "Controleur de drône collecteur",
-      "ru": null
+      "ru": "Контроллер дронов сборщиков"
     },
     "Shield Cell Bank": {
       "es": "Células de Escudo",
@@ -667,7 +667,7 @@
       "es": "Compuesto CMM",
       "de": "CMM-Komposit",
       "fr": "composite MMC",
-      "ru": "СММ композит"
+      "ru": "СММ-композит"
     },
     "Compact Composites": {
       "es": "Compuestos Compactos",
@@ -1051,31 +1051,31 @@
       "es": "Datos de Obelisco de Patrón Alpha",
       "de": "Alpha-Muster-Obeliskendaten",
       "fr": "Données d'obélisque de type alpha",
-      "ru": null
+      "ru": "Данные с обелиска «Альфа»"
     },
     "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
       "de": "Beta-Muster-Obeliskendaten",
       "fr":  "Données d'obélisque de type Beta ",
-      "ru": null
+      "ru": "Данные с обелиска «Бета»"
     },
     "Pattern Delta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Delta",
       "de": "Delta-Muster-Obeliskendaten",
       "fr": "Données d'obélisque de type Delta ",
-      "ru": null
+      "ru": "Данные с обелиска «Дельта»"
     },
     "Pattern Epsilon Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Epsilon",
       "de": "Epsilon-Muster-Obeliskendaten",
       "fr": "Données d'obélisque de type Epsilon ",
-      "ru": null
+      "ru": "Данные с обелиска «Эпсилон»"
     },
     "Pattern Gamma Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Gamma",
       "de": "Gamma-Muster-Obeliskendaten",
       "fr": "Données d'obélisque de type Gamma ",
-      "ru": null
+      "ru": "Данные с обелиска «Гамма»"
     },
     "Peculiar Shield Frequency Data": {
       "es": "Datos de Frecuencias de Escudo Peculiares",
@@ -1273,7 +1273,7 @@
       "es": "Aleaciones Templadas",
       "de": "Vergütete Legierungen",
       "fr": "Alliages tempérés",
-      "ru": null
+      "ru": "Закаленные сплавы"
     },
     "Thermic Alloys": {
       "es": "Aleaciones Térmicas",
@@ -1357,13 +1357,13 @@
       "es": "Contramedida",
       "de": "EGM",
       "fr": "CME",
-      "ru": null
+      "ru": "ЭПД"
     },
     "Hull": {
       "es": "Casco",
       "de": "Rumpfhülle",
       "fr": "Coque",
-      "ru": null
+      "ru": "Корпус"
     },
     "FSD Interdictor": {
       "es": "Interdictor",
@@ -1375,25 +1375,25 @@
       "es": "LD Prospector",
       "de": "DS Erzsucher",
       "fr": "Contrôleur de drones Prospecteurs",
-      "ru": null
+      "ru": "Контроллер дронов геологов"
     },
     "Fuel Transfer LC": {
       "es": "LD Repostaje",
       "de": "DS Treibstofftransferierer",
       "fr": "Contrôleur de drones Ravitailleurs",
-      "ru": null
+      "ru": "Контроллер дронов заправщиков"
     },
     "Hatch Breaker LC": {
       "es": "LD Extractor",
       "de": "DS Ladelukenöffner",
       "fr": "Contrôleur de drones Perce-Soute",
-      "ru": null
+      "ru": "Контроллер дронов взломщиков"
     },
     "Collector LC": {
       "es": "LD Colector",
       "de": "DS Sammeldrohne",
       "fr": "Contrôleur de drones Collecteurs",
-      "ru": null
+      "ru": "Контроллер дронов сборщиков"
     },
     "AFMU": {
       "es": "Unidad de Automantenimiento",
@@ -1441,7 +1441,7 @@
       "es": "Nombre",
       "de": "Name",
       "fr": "Nom",
-      "ru": "Имя"
+      "ru": "Название"
     },
     "Progress": {
       "es": "Progreso",
@@ -1465,55 +1465,55 @@
       "es": "¿Mostrar entradas sin stock?",
       "de": "Einträge ohne Bestand anzeigen?",
       "fr": "Afficher les entrées sans stock?",
-      "ru": null
+      "ru": "Показывать пустые записи?"
     },
     "Show only for favorites?": {
       "es": "¿Mostras sólo los favoritos?",
       "de": "Nur Favoriten anzeigen?",
       "fr": "Montrer uniquement les favoris?",
-      "ru": null
+      "ru": "Показывать только для избранных?"
     },
     "Grade Filter": {
       "es": "Filtro de Grados",
       "de": "Zugangsgrad Filter",
       "fr": "Filtre par Grades",
-      "ru": null
+      "ru": "Фильтр по уровню"
     },
     "Engineer Filter": {
       "es": "Filtro de Ingenieros",
       "de": "Ingenieur Filter",
       "fr": "Filtre par Ingénieurs",
-      "ru": null
+      "ru": "Фильтр по инженеру"
     },
     "Type Filter": {
       "es": "Filtro de Tipos",
       "de": "Typ Filter",
       "fr": "Filtre par Type",
-      "ru": null
+      "ru": "Фильтр по типу"
     },
     "Ignored And Favorite Filter": {
       "es": "Filtro de Ignorados y Favoritos",
       "de": "Ignorierte und Favoriten Filter",
       "fr": "Filtre par Ignorés et Favoris",
-      "ru": null
+      "ru": "Фильтр по игнорируемым и избранным"
     },
     "Craftable Filter": {
       "es": "Filtro de Elaborados",
       "de": "Baubarkeit Filter",
       "fr": "Filtre par Craft disponible",
-      "ru": null
+      "ru": "Фильтр по доступности"
     },
     "Ingredient Filter (Reversed)": {
       "es": "Filtro de Ingredientes (Inverso)",
       "de": "Bestandteile Filter (invers)",
       "fr": "Filtre par Ingrédients (Inversé)",
-      "ru": null
+      "ru": "Фильтр по ингредиентам (Обратный)"
     },
     ": can craft": {
       "es": ": elaborable",
       "de": ": baubar",
       "fr": ": craft disponible",
-      "ru": ": можно изготовить"
+      "ru": ": можно создать"
     },
     "Reset": {
       "es": "Reiniciar",
@@ -1549,7 +1549,7 @@
       "es": "Establecer acceso directo",
       "de": "Tastenkombination setzen",
       "fr": "Raccourcis",
-      "ru": null
+      "ru": "Настройка комбинации клавиш"
     },
     "Help": {
       "es": "Ayuda",
@@ -1579,13 +1579,13 @@
       "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
       "de": "Geben Sie eine Tastenkombination ein, die das Fenster anzeigt",
       "fr": "Configurer une touche pour afficher la fenêtre",
-      "ru": null
+      "ru": "Нажмите комбинацию клавиш, которая будет раскрывать окно"
     },
     "You can't use an empty shortcut": {
       "es": "No puedes usar un acceso directo vacío",
       "de": "Sie können keine leere Tastenkombination benutzen",
       "fr": "Une touche doit être choisie",
-      "ru": null
+      "ru": "Вы не можете использовать пустую комбинацию клавиш"
     },
     "Error": {
       "es": "Error",
@@ -1597,19 +1597,19 @@
       "es": "El acceso directo solicitado ({0}) no es válido",
       "de": "Die gewünschte Tastenkombination ({0}) ist ungültig",
       "fr": "La touche demandée ({0}) est invalide",
-      "ru": null
+      "ru": "Указанное сочетание клавиш ({0}) недействительно"
     },
     "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
       "es": "Debes utilizar una tecla normal para acompañar la tecla modificadora como (Ctrl+F10 or Shift+R)",
       "de": "Sie müssen eine reguläre Taste zusammen mit einer modifizierenden Taste verwenden wie (Strg+F10 or Shift+R)",
       "fr": "Vous devez utiliser une touche normale pour accompagner la touche de modification comme (Ctrl + F10 ou Maj + R)",
-      "ru": null
+      "ru": "Вы должны использовать символьную клавишу вместе с клавишей-модификатором, например (Ctrl+F10 или Shift+R)"
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
       "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
       "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
-      "ru": null
+      "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией"
     },
     "Unknown material, please contact the author ! {0}": {
       "es": "Material desconocido, contacta con el autor  ! {0}",
@@ -1621,13 +1621,13 @@
       "es": "Ninguno",
       "de": "Weder noch",
       "fr": "Autres",
-      "ru": null
+      "ru": "Никакой"
     },
     "Favorite": {
       "es": "Favorito",
       "de": "Favoriten",
       "fr": "Favoris",
-      "ru": "Избранное"
+      "ru": "Избранные"
     },
     "Ignored": {
       "es": "Ignorado",
@@ -1663,13 +1663,13 @@
       "es": "Se ha producido un error:",
       "de": "Ein Fehler ist aufgetreten:",
       "fr": "Une erreur a été levée par l'application:",
-      "ru": null
+      "ru": "Приложением была выдана ошибка:"
     },
     "Unrecoverable Error": {
       "es": "Error Irrecuperable",
       "de": "Fataler Fehler",
       "fr": "Erreur Fatale",
-      "ru": null
+      "ru": "Неисправимая ошибка"
     },
     "Close": {
       "es": "Salir",
@@ -1705,7 +1705,7 @@
       "es": "No ha seleccionado un directorio de registro, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
       "de": "Sie haben kein Log Verzeichnis gewählt, EDEngineer wird die Bestandsänderungen nicht aktualisieren können. Sie können die App jedoch manuell benutzen.",
       "fr": "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
-      "ru": "Вы не выбрали папку с log файлом, EDEngineer не сможет отслеживать изменения. Но вы все еще можете вносить изменения вручную."null
+      "ru": "Вы не выбрали папку с log файлом, EDEngineer не сможет отслеживать изменения. Но вы все еще можете вносить изменения вручную."
     },
     "No folder in use ; click to change": {
       "es": "Ninguna carpeta en uso ; haz clic para cambiar",
@@ -1717,7 +1717,7 @@
       "es": "Receta lista",
       "de": "Blaupause fertig",
       "fr": "Recette Prête",
-      "ru": null
+      "ru": "Чертеж готов"
     },
     "Select Language": {
       "es": "Cambiar idioma",
@@ -1729,7 +1729,7 @@
       "es": "Prospección de superficie",
       "de": "Oberflächenabbau (SRV)",
       "fr": "Prospection de surface",
-      "ru": null
+      "ru": "Поверхность планет"
     },
     "Mining": {
       "es": "Minería",
@@ -1753,13 +1753,13 @@
       "es": "Rescate de naves (naves de transporte)",
       "de": "Bergungsgut Schiffswrack (Transportschiffe)",
       "fr": "Restes de vaisseaux détruits (Type: Transport)",
-      "ru": null
+      "ru": "Уничтожение корабля (транспортные)"
     },
     "Signal source (high security)": {
       "es": "Señales (seguridad alta)",
       "de": "Signalquelle (Hohe Sicherheit)",
       "fr": "Source de Signal (Système : Haute Sécurité)",
-      "ru": null
+      "ru": "Источник сигнала (высокий уровень безопасности)"
     },
     "Surface POI": {
       "es": "Puntos de interés de superficie",
@@ -1777,73 +1777,73 @@
       "es": "Rescate de naves (naves de combate)",
       "de": "Bergungsgut Schiffswrack (Kampfschiffe)",
       "fr": "Restes de vaisseaux détruits (Type: Combat)",
-      "ru": null
+      "ru": "Уничтожение корабля (боевые)"
     },
     "Signal source (anarchy)": {
       "es": "Señales (anarquía)",
       "de": "Signalquelle (Anarchie)",
       "fr": "Source de signal (Système : Anarchique)",
-      "ru": null
+      "ru": "Источник сигнала (анархия)"
     },
     "Signal source (low security)": {
       "es": "Señales (seguridad baja)",
       "de": "Signalquelle (Niedrige Sicherheit)",
       "fr": "Source de signal (Système : Basse Sécuritée)",
-      "ru": null
+      "ru": "Источник сигнала (низкий уровень безопасности)"
     },
     "Signal source (High grade emissions)": {
       "es": "Señales (alta calidad)",
       "de": "Signalquelle (Hochgradige Emissionen)",
       "fr": "Source de signal (Emissions de haute qualitée)",
-      "ru": null
+      "ru": "Источник сигнала (высокоуровневое излучение)"
     },
     "Ship salvage (military & authority ships)": {
       "es": "Rescate de naves (naves militares y de la autoridad)",
       "de": "Bergungsgut Schiffswrack (Militär und Sicherheitsdienst)",
       "fr": "Restes de vaisseaux détruits (Type: Militaire & Autorité Système)",
-      "ru": null
+      "ru": "Уничтожение корабля (военные и силы правопорядка)"
     },
     "Destroyed Unknown Artefact": {
       "es": "Destrucción de Artefacto Desconocido",
       "de": "Zerstörtes Unbekanntes Artefakt",
       "fr": "Artéfact Inconnu Détruit / Fragment Inconnu",
-      "ru": null
+      "ru": "Уничтоженный Неизвестный Артефакт"
     },
     "Ship scanning (combat ships)": {
       "es": "Escaneo de naves (naves de combate)",
       "de": "Schiff Scan (Kampfschiffe)",
       "fr": "Scan de vaisseaux de Combat",
-      "ru": null
+      "ru": "Сканирование корабля (боевые)"
     },
     "Deep space data beacon": {
       "es": "Baliza de datos en espacio profundo",
       "de": "Privatdaten-Signal (deep space)",
       "fr": "Balise de donnée (espace)",
-      "ru": null
+      "ru": "Данные маяка (дальний космос)"
     },
     "Ship scanning (transport ships)": {
       "es": "Escaneo de naves (naves de transporte)",
       "de": "Schiff Scan (Transportschiffe)",
       "fr": "Scan de vaisseaux (Type : Transport)",
-      "ru": null
+      "ru": "Сканирование корабля (транспортные)"
     },
     "High wake scanning": {
       "es": "Escaneo de estelas de salto",
       "de": "Sogwolkenscan (Hohe Energie)",
       "fr": "scan de sillages à haute energie",
-      "ru": null
+      "ru": "Сканирование высокочастотных следов РСД"
     },
     "Surface data point": {
       "es": "Punto de datos de superficie",
       "de": "POI-Datenpunkt",
       "fr": "POI",
-      "ru": null
+      "ru": "Наземные точки данных"
     },
     "Ship scanning": {
       "es": "Escaneo de naves",
       "de": "Schiff Scan",
       "fr": "Scan de vaisseaux",
-      "ru": null
+      "ru": "Сканирование корабля"
     },
     "Markets": {
       "es": "Mercados",
@@ -1921,13 +1921,13 @@
       "es": "Capacidad de materiales al límite.",
       "de": "Materialien Kapazität beinahe erreicht!",
       "fr": "Stockage matériaux presque plein",
-      "ru": null
+      "ru": "Хранилище материалов почти заполнено!"
     },
     "You have only {0} slots left for your materials.": {
       "es": "Tienes {0} espacios para materiales.",
       "de": "Sie haben nur mehr {0} Kapazität für Materialien frei.",
       "fr": "Il vous reste seulement {0} emplacements pour vos matériaux." ,
-      "ru": null
+      "ru": "Количество свободных слотов под материалы: {0}."
     },
     "Data Almost Full!": {
       "es": "Capacidad de datos al límite.",
@@ -1939,7 +1939,7 @@
       "es": "Tienes {0} espacios para datos.",
       "de": "Sie haben nur mehr {0} Datenspeicher frei.",
       "fr": "Il vous reste seulement {0} emplacements pour vos données.",
-      "ru": null
+      "ru": "Количество свободных слотов под данные: {0}."
     },
     "Cargo Almost Full Warning": {
       "es": "Advertencia: Carga al límite",
@@ -1957,67 +1957,67 @@
       "es": "+100% Eficiencia de combustible",
       "de": "+100% Bonus Treibstoffeffizienz",
       "fr": "+100% Efficacité du carburant",
-      "ru": null
+      "ru": "+100% к эффективности топлива"
     },
     "+100% Hull Strength": {
       "es": "+100% Resistencia de casco",
       "de": "+100% Bonus Rumpfstärke",
       "fr": "+100% bonus coque",
-      "ru": null
+      "ru": "+100% к прочности корпуса"
     },
     "+100% Jump Range": {
       "es": "+100% Distancia de salto",
       "de": "+100% Bonus Entfernung",
       "fr": "+100% portée de saut",
-      "ru": null
+      "ru": "+100% к дальности прыжка"
     },
     "+100% Repair Speed": {
       "es": "+100% Velocidad de reparación",
       "de": "+100% Bonus Reparaturgeschwindigkeit",
       "fr": "+100% vitesse de réparation",
-      "ru": null
+      "ru": "+100% к скорости ремонта"
     },
     "+15% Dmg": {
       "es": "+15% al daño",
       "de": "+15% Bonus Schaden",
       "fr": "+15% dégâts",
-      "ru": null
+      "ru": "+15% к урону"
     },
     "+200% Fuel Efficiency": {
       "es": "+200% Eficiencia de combustible",
       "de": "+200% Bonus Treibstoffeffizienz",
       "fr": "+200% Efficacité du carburant",
-      "ru": null
+      "ru": "+200% к эффективности топлива"
     },
     "+25% Jump Range": {
       "es": "+25% Distancia de salto",
       "de": "+25% Bonus Entfernung",
       "fr": "+25% portée de saut",
-      "ru": null
+      "ru": "+25% к дальности прыжка"
     },
     "+30% Dmg": {
       "es": "+30% al daño",
       "de": "+30% Bonus Schaden",
       "fr": "+30% dégâts",
-      "ru": null
+      "ru": "+30% к урону"
     },
     "+50% Hull Strength": {
       "es": "+50% Resistencia de casco",
       "de": "+50% Bonus Rumpfstärke",
       "fr": "+50% bonus coque",
-      "ru": null
+      "ru": "+50% к прочности корпуса"
     },
     "+50% Jump Range": {
       "es": "+50% Distancia de salto",
       "de": "+50% Bonus Entfernung",
       "fr": "+50% portée de saut",
-      "ru": null
+      "ru": "+50% к дальности прыжка"
     },
     "+50% Repair Speed": {
       "es": "+50% Velocidad de reparación",
       "de": "+50% Bonus Reparaturgeschwindigkeit",
       "fr": "+50% vitesse de réparation",
-      "ru": null
+      "ru": "+50% к скорости ремонта"
     },
     "AFM Refill": {
       "es": "Recarga de UAM",
@@ -2053,7 +2053,7 @@
       "es": "Ninguna",
       "de": "Keine",
       "fr": "aucun",
-      "ru": null
+      "ru": "Нет"
     },
     "Plasma Munitions": {
       "es": "Munición de plasma",
