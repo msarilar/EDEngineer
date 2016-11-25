@@ -19,24 +19,24 @@ open EDEngineer.Models
 type Format = Json | Xml | Csv
 
 type Cmdr<'TGood, 'TBad> = 
-  | Found of 'TGood
-  | Parsed of 'TGood
-  | KnownFormat of 'TGood
-  | NotFound of 'TBad
-  | BadString of 'TBad
+  | Found         of 'TGood
+  | Parsed        of 'TGood
+  | KnownFormat   of 'TGood
+  | NotFound      of 'TBad
+  | BadString     of 'TBad
   | UnknownFormat of 'TBad
   | RouteNotFound of 'TBad
 
 type CmdrBuilder() =
   member this.Bind(v, f) =
     match v with
-      | Found v -> f v
-      | Parsed v -> f v
-      | KnownFormat v -> f v
-      | NotFound commander -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
-      | BadString s -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
-      | UnknownFormat s -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
-      | RouteNotFound _ -> "Route not found ¯\_(ツ)_/¯" |> NOT_FOUND
+      | Found v             -> f v
+      | Parsed v            -> f v
+      | KnownFormat v       -> f v
+      | NotFound commander  -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
+      | BadString s         -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
+      | UnknownFormat s     -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
+      | RouteNotFound _     -> "Route not found ¯\_(ツ)_/¯" |> NOT_FOUND
   member this.Return value = value
 
 let cmdr = CmdrBuilder()
@@ -97,14 +97,14 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     
   let FormatExtractor = fun(extension, request:HttpRequest) ->
     match extension with
-    | ".json" -> KnownFormat Json
-    | ".csv"  -> KnownFormat Csv
-    | ".xml"  -> KnownFormat Xml
-    | s when s.StartsWith(".") -> UnknownFormat s
-    | s when s = "" -> 
+    | ".json"                   -> KnownFormat Json
+    | ".csv"                    -> KnownFormat Csv
+    | ".xml"                    -> KnownFormat Xml
+    | s when s.StartsWith(".")  -> UnknownFormat s
+    | s when s = ""             -> 
       let formatFromRequest = AcceptExtractor request
       KnownFormat formatFromRequest
-    | f      -> RouteNotFound f
+    | f                         -> RouteNotFound f
 
   let da = fun format -> format |> json |> OK
 
