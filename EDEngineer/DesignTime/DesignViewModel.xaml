@@ -1,6 +1,7 @@
 ﻿<DesignViewModel xmlns="clr-namespace:EDEngineer.DesignTime"
                  xmlns:system="clr-namespace:System;assembly=mscorlib"
                  xmlns:generic="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+                 xmlns:models="clr-namespace:EDEngineer.Models;assembly=EDEngineer.Models"
                  LogDirectory="C:\Users\Max\AppData\Local\EDEngineer">
     <DesignViewModel.Languages>
         <DesignLanguages>
@@ -39,7 +40,7 @@
                             <DesignState.Cargo>
                                 <Wrapper>
                                     <Wrapper.Value>
-                                        <DesignEntry xmlns:models="clr-namespace:EDEngineer.Models"
+                                        <DesignEntry 
                          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                          Count="524"
                          FavoriteCount="0">
@@ -51,7 +52,7 @@
                                 </Wrapper>
                                 <Wrapper>
                                     <Wrapper.Value>
-                                        <DesignEntry xmlns:models="clr-namespace:EDEngineer.Models"
+                                        <DesignEntry 
                          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                          Count="3"
                          FavoriteCount="1">

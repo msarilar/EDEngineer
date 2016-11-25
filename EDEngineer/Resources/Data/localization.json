@@ -774,7 +774,7 @@
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
-      "fr": "Données d'émissions brouillées exceptionnelles" ,
+      "fr": "Données d'émissions brouillées exceptionnelles",
       "ru": "Исключительные зашифрованные данные об изл."
     },
     "Exhaust Manifold": {
@@ -1302,7 +1302,7 @@
     "Unidentified Scan Archives": {
       "es": "Archivos de Escáner no Identificados",
       "de": "Unidentifizierte Scan-Archive",
-      "fr":  "Données d'analyse archivées non identifiées",
+      "fr": "Données d'analyse archivées non identifiées",
       "ru": "Неопознанные архивы сканирования"
     },
     "Unknown Fragment": {
@@ -2090,6 +2090,24 @@
       "de": "@Synthese",
       "fr": "@Synthèse",
       "ru": "@Синтез"
+    },
+    "Launch Local API": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Select the port for the local API server": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Auto run server on EDEnginner startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 using System.Windows.Data;
-using EDEngineer.Filters;
+using EDEngineer.Models.Filters;
 
 namespace EDEngineer.Converters
 {

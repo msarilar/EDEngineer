@@ -83,7 +83,27 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.Save();
             }
         }
-        
+
+        public static ushort ServerPort
+        {
+            get { return Properties.Settings.Default.ServerPort; }
+            set
+            {
+                Properties.Settings.Default.ServerPort = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        public static bool AutoRunServer
+        {
+            get { return Properties.Settings.Default.AutoRunServer; }
+            set
+            {
+                Properties.Settings.Default.AutoRunServer = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static string Shortcut
         {
             get

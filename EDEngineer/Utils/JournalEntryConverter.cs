@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
+using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Localization;
+using EDEngineer.Models.Barda.Collections;
 using EDEngineer.Models.Operations;
-using EDEngineer.Utils.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NodaTime.Text;
@@ -53,7 +53,7 @@ namespace EDEngineer.Utils
 
             var entry = new JournalEntry
             {
-                TimeStamp = InstantPattern.GeneralPattern.Parse((string)data["timestamp"]).Value,
+                Timestamp = InstantPattern.GeneralPattern.Parse((string)data["timestamp"]).Value,
                 OriginalJson = data.ToString()
             };
 
@@ -141,10 +141,7 @@ namespace EDEngineer.Utils
 
             if (progressInfo == "Unlocked")
             {
-                return new EngineerProgressOperation()
-                {
-                    Engineer = engineer
-                };
+                return new EngineerProgressOperation(engineer);
             }
 
             return null;
@@ -371,7 +368,8 @@ namespace EDEngineer.Utils
 
         private EngineerOperation ExtractEngineerOperation(JObject data)
         {
-            var operation = new EngineerOperation
+            var blueprintName = data["Blueprint"] ?? "";
+            var operation = new EngineerOperation((string) blueprintName)
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {
@@ -398,7 +396,7 @@ namespace EDEngineer.Utils
             var operation = (ManualChangeOperation) entry.JournalOperation;
             writer.WriteStartObject();
             writer.WritePropertyName("timestamp");
-            writer.WriteValue(entry.TimeStamp.ToString(InstantPattern.GeneralPattern.PatternText, CultureInfo.InvariantCulture));
+            writer.WriteValue(entry.Timestamp.ToString(InstantPattern.GeneralPattern.PatternText, CultureInfo.InvariantCulture));
             writer.WritePropertyName("event");
             writer.WriteValue(operation.JournalEvent.ToString());
             writer.WritePropertyName("Name");

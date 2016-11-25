@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using EDEngineer.Models.Localization;
+using EDEngineer.Localization;
 using EDEngineer.Utils.System;
 
 namespace EDEngineer.Utils.UI
@@ -13,9 +13,18 @@ namespace EDEngineer.Utils.UI
             EventHandler configureShortcutHandler,
             EventHandler unlockWindowHandler,
             EventHandler resetWindowHandler,
-            EventHandler selectLanguageHandler)
+            EventHandler selectLanguageHandler,
+            Func<bool> launchServerHandler,
+            bool serverRunning)
         {
-            var menu = BuildContextMenu(showHandler, quitHandler, configureShortcutHandler, unlockWindowHandler, resetWindowHandler, selectLanguageHandler);
+            var menu = BuildContextMenu(showHandler,
+                quitHandler,
+                configureShortcutHandler,
+                unlockWindowHandler,
+                resetWindowHandler, 
+                selectLanguageHandler,
+                launchServerHandler,
+                serverRunning);
             
             var icon = new NotifyIcon
             {
@@ -38,7 +47,9 @@ namespace EDEngineer.Utils.UI
             EventHandler configureShortcutHandler, 
             EventHandler unlockWindowHandler, 
             EventHandler resetWindowHandler,
-            EventHandler selectLanguageHandler)
+            EventHandler selectLanguageHandler,
+            Func<bool> launchServerHandler,
+            bool serverRunning)
         {
             var translator = Languages.Instance;
 
@@ -86,10 +97,20 @@ namespace EDEngineer.Utils.UI
                 SettingsManager.CargoAlmostFullWarningEnabled = enableCargoFullWarningItem.Checked;
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem);
+            var launchServerItem = new MenuItem
+            {
+                Checked = serverRunning
+            };
+
+            launchServerItem.Click += (o, e) =>
+            {
+                launchServerItem.Checked = launchServerHandler();
+            };
+
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem);
             };
 
             quitItem.Click += quitHandler;
@@ -105,6 +126,8 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add(selectLanguageItem);
             menu.MenuItems.Add("-");
+            menu.MenuItems.Add(launchServerItem);
+            menu.MenuItems.Add("-");
             menu.MenuItems.Add(helpItem);
             menu.MenuItems.Add(quitItem);
             return menu;
@@ -112,7 +135,7 @@ namespace EDEngineer.Utils.UI
 
         private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
                                          MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem,
-                                         MenuItem enableToastsItem, MenuItem enableCargoFullWarningItem)
+                                         MenuItem enableToastsItem, MenuItem enableCargoFullWarningItem, MenuItem launchServerItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -123,6 +146,7 @@ namespace EDEngineer.Utils.UI
             showItem.Text = translator.Translate("Show");
             enableToastsItem.Text = translator.Translate("Blueprint Ready");
             enableCargoFullWarningItem.Text = translator.Translate("Cargo Almost Full Warning");
+            launchServerItem.Text = translator.Translate("Launch Local API");
         }
     }
 }

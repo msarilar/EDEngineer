@@ -4,8 +4,8 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Data;
-using EDEngineer.Filters;
-using EDEngineer.Models.Localization;
+using EDEngineer.Localization;
+using EDEngineer.Models.Filters;
 
 namespace EDEngineer.Converters
 {

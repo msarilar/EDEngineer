@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Windows.Input;
-using EDEngineer.Models.Localization;
+using EDEngineer.Localization;
 using Application = System.Windows.Application;
 
 namespace EDEngineer.Utils.System

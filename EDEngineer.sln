@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDEngineer", "EDEngineer\ED
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDEngineerTests", "EDEngineerTests\EDEngineerTests.csproj", "{C985267E-DE63-4B75-AE8E-FCDEC41385C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDEngineer.Models", "EDEngineer.Models\EDEngineer.Models.csproj", "{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EDEngineer.Server", "EDEngineer.Server\EDEngineer.Server.fsproj", "{ACDCF677-8237-435E-B67A-C1C6D409DECB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,22 @@ Global
 		{C985267E-DE63-4B75-AE8E-FCDEC41385C3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C985267E-DE63-4B75-AE8E-FCDEC41385C3}.Release|x86.ActiveCfg = Release|Any CPU
 		{C985267E-DE63-4B75-AE8E-FCDEC41385C3}.Release|x86.Build.0 = Release|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{7DB8FC62-2ED9-414C-BF65-AFF273AC66D8}.Release|x86.Build.0 = Release|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Debug|x86.Build.0 = Debug|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Release|x86.ActiveCfg = Release|Any CPU
+		{ACDCF677-8237-435E-B67A-C1C6D409DECB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

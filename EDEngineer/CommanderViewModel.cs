@@ -8,8 +8,9 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Data;
 using Windows.UI.Notifications;
+using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Localization;
+using EDEngineer.Models.Barda;
 using EDEngineer.Models.Operations;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
@@ -23,7 +24,6 @@ namespace EDEngineer
     {
         public string CommanderName { get; }
         public State State { get; set; }
-        public List<Blueprint> Blueprints { get; set; }
         public BlueprintFilters Filters { get; set; }
 
         private readonly JournalEntryConverter journalEntryConverter;
@@ -82,7 +82,7 @@ namespace EDEngineer
             LoadState(logs);
 
             var datas = State.Cargo.Select(c => c.Value.Data);
-            var ingredientUsed = Blueprints.SelectMany(blueprint => blueprint.Ingredients);
+            var ingredientUsed = State.Blueprints.SelectMany(blueprint => blueprint.Ingredients);
             var ingredientUsedNames = ingredientUsed.Select(ingredient => ingredient.Entry.Data.Name).Distinct();
             var unusedIngredients = datas.Where(data => !ingredientUsedNames.Contains(data.Name));
 
@@ -96,7 +96,7 @@ namespace EDEngineer
         {
             if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
             {
-                foreach (var blueprint in Blueprints)
+                foreach (var blueprint in State.Blueprints)
                 {
                     blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
                 }
@@ -109,7 +109,7 @@ namespace EDEngineer
         {
             if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
             {
-                foreach (var blueprint in Blueprints)
+                foreach (var blueprint in State.Blueprints)
                 {
                     blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
                 }
@@ -145,7 +145,6 @@ namespace EDEngineer
 
             try
             {
-
                 var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText02);
 
                 var stringElements = toastXml.GetElementsByTagName("text");
@@ -213,14 +212,14 @@ namespace EDEngineer
                     JournalEvent = JournalEvent.ManualUserChange,
                     Name = entry.Data.Name
                 },
-                TimeStamp = SystemClock.Instance.Now
+                Timestamp = SystemClock.Instance.Now
             };
 
             var json = JsonConvert.SerializeObject(logEntry, journalEntryConverter);
 
             logEntry.OriginalJson = json;
 
-            logEntry.JournalOperation.Mutate(State);
+            MutateState(logEntry);
 
             return logEntry;
         }
@@ -233,14 +232,20 @@ namespace EDEngineer
                 Error = (o, e) => e.ErrorContext.Handled = true
             }))
                 .Where(e => e?.Relevant == true)
-                .OrderBy(e => e.TimeStamp)
+                .OrderBy(e => e.Timestamp)
                 .ToList();
 
-            foreach (var entry in entries.Where(entry => entry.TimeStamp >= LastUpdate).ToList())
+            foreach (var entry in entries.Where(entry => entry.Timestamp >= LastUpdate).ToList())
             {
-                entry.JournalOperation.Mutate(State);
-                LastUpdate = entry.TimeStamp;
+                MutateState(entry);
             }
+        }
+
+        private void MutateState(JournalEntry entry)
+        {
+            State.Operations.AddLast(entry);
+            entry.JournalOperation.Mutate(State);
+            LastUpdate = entry.Timestamp;
         }
 
         public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, CollectionViewSource source)
@@ -262,7 +267,7 @@ namespace EDEngineer
                 }
             };
 
-            Blueprints.ForEach(b => b.PropertyChanged += (o, e) =>
+            State.Blueprints.ForEach(b => b.PropertyChanged += (o, e) =>
             {
                 if (parentViewModel.ShowOnlyForFavorites && e.PropertyName == "Favorite")
                 {
@@ -277,7 +282,7 @@ namespace EDEngineer
         {
             var blueprintsJson = IOUtils.GetBlueprintsJson();
 
-            Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter));
+            State.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter));
             if (Settings.Default.Favorites == null)
             {
                 Settings.Default.Favorites = new StringCollection();
@@ -288,7 +293,7 @@ namespace EDEngineer
                 Settings.Default.Ignored = new StringCollection();
             }
 
-            foreach (var blueprint in Blueprints)
+            foreach (var blueprint in State.Blueprints)
             {
                 if (Settings.Default.Favorites.Contains($"{CommanderName}:{blueprint}"))
                 {
@@ -361,7 +366,7 @@ namespace EDEngineer
                 };
             }
 
-            Filters = new BlueprintFilters(Blueprints);
+            Filters = new BlueprintFilters(State.Blueprints);
         }
 
         public override string ToString()

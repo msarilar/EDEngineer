@@ -1,7 +1,8 @@
 using System;
 using System.Linq;
+using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Utils.Collections;
+using EDEngineer.Models.Barda.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -32,7 +33,7 @@ namespace EDEngineer.Utils
                 let size = (int) ingredient["Size"]
                 select new BlueprintIngredient(entries[name], size);
 
-            return new Blueprint(blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers);
+            return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers);
         }
 
         public override bool CanConvert(Type objectType)
