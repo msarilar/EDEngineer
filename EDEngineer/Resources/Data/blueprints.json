@@ -10807,7 +10807,24 @@
     "Type": "Fragment Cannon",
     "Name": "Double Shot",
     "Engineers": [ "Zacariah Nemo" ],
-    "Ingredients": [ ],
+    "Ingredients": [
+      {
+        "Name": "High Density Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Configurable Components",
+        "Size": 1
+      },
+      {
+        "Name": "Modified Embedded Firmware",
+        "Size": 1
+      },
+      {
+        "Name": "Micro-Weave Cooling Hoses",
+        "Size": 1
+      }
+    ],
     "Grade": 5
   },
   {
