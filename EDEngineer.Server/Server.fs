@@ -14,7 +14,6 @@ open Suave.RequestErrors
 open Newtonsoft.Json
 open NodaTime
 open NodaTime.Text
-open CsvHelper
 
 open EDEngineer.Models.Barda.Collections
 open EDEngineer.Models
