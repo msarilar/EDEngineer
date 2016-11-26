@@ -945,6 +945,7 @@
                        FontFamily="./Resources/Fonts/#Euro Caps">
                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization1:Languages.Instance}, ConverterParameter='Last update: ', FallbackValue='Last Update: '}" />
                 <Run Text="{Binding CurrentCommander.Value.LastUpdate, Converter={StaticResource InstantToString}}"></Run>
+                <Run Text=" (UTC)"/>
             </TextBlock>
             <Button HorizontalAlignment="Right"
                     FontSize="15"
