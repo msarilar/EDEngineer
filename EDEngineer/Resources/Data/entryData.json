@@ -891,7 +891,7 @@
   {
     "Name": "Unexpected Emission Data",
     "Rarity": "Standard",
-    "FormattedName": "unexpectedemissiondata",
+    "FormattedName": "emissiondata",
     "Kind": "Data",
     "OriginDetails": [ "Ship scanning (combat ships)", "Signal source" ]
   },
