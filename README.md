@@ -45,7 +45,7 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 ### Languages
 
 <p align="center">
-  <img src="http://i.imgur.com/7yyRzYZ.png" alt="Translation Progress"/>
+  <img src="http://i.imgur.com/pR2NMbr.png" alt="Translation Progress"/>
 </p>
 
 Español: OK
@@ -59,5 +59,5 @@ Français: OK
 > ~~Cette traduction est incomplète! Si vous la sélectionnez, seules des parties de l'application seront traduites.~~
 > ~~Tout ce qui n'a pas encore été traduit sera affiché en anglais.~~
 
-Русский:
-> Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке.
+Русский: OK
+> ~~Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке.~~
