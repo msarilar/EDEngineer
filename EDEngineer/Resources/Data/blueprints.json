@@ -13632,7 +13632,7 @@
   },
   {
     "Type": "Plasma Munitions",
-    "Name": "+15% Dmg",
+    "Name": "+15% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13656,7 +13656,7 @@
   },
   {
     "Type": "Plasma Munitions",
-    "Name": "+30% Dmg",
+    "Name": "+30% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13704,7 +13704,7 @@
   },
   {
     "Type": "Explosive Munitions",
-    "Name": "+15% Dmg",
+    "Name": "+15% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13728,7 +13728,7 @@
   },
   {
     "Type": "Explosive Munitions",
-    "Name": "+30% Dmg",
+    "Name": "+30% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13776,7 +13776,7 @@
   },
   {
     "Type": "Small Calibre Munitions",
-    "Name": "+15% Dmg",
+    "Name": "+15% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13804,7 +13804,7 @@
   },
   {
     "Type": "Small Calibre Munitions",
-    "Name": "+30% Dmg",
+    "Name": "+30% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13852,7 +13852,7 @@
   },
   {
     "Type": "High Velocity Munitions",
-    "Name": "+15% Dmg",
+    "Name": "+15% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13876,7 +13876,7 @@
   },
   {
     "Type": "High Velocity Munitions",
-    "Name": "+30% Dmg",
+    "Name": "+30% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13920,7 +13920,7 @@
   },
   {
     "Type": "Large Calibre Munitions",
-    "Name": "+15% Dmg",
+    "Name": "+15% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -13948,7 +13948,7 @@
   },
   {
     "Type": "Large Calibre Munitions",
-    "Name": "+30% Dmg",
+    "Name": "+30% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -14076,7 +14076,7 @@
   },
   {
     "Type": "SRV Ammo Restock",
-    "Name": "+15% Dmg",
+    "Name": "+15% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
@@ -14100,7 +14100,7 @@
   },
   {
     "Type": "SRV Ammo Restock",
-    "Name": "+30% Dmg",
+    "Name": "+30% Damage Boost",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {

@@ -1977,7 +1977,7 @@
       "fr": "+100% vitesse de réparation",
       "ru": "+100% к скорости ремонта"
     },
-    "+15% Dmg": {
+    "+15% Damage Boost": {
       "es": "+15% al daño",
       "de": "+15% Bonus Schaden",
       "fr": "+15% dégâts",
@@ -1995,7 +1995,7 @@
       "fr": "+25% portée de saut",
       "ru": "+25% к дальности прыжка"
     },
-    "+30% Dmg": {
+    "+30% Damage Boost": {
       "es": "+30% al daño",
       "de": "+30% Bonus Schaden",
       "fr": "+30% dégâts",
