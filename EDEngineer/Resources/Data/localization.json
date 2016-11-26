@@ -2093,19 +2093,19 @@
     },
     "Launch Local API": {
       "es": "Iniciar el servidor local de API",
-      "de": null,
+      "de": "Lokalen API Server starten",
       "fr": null,
       "ru": "Запустить локальный API сервер"
     },
     "Select the port for the local API server": {
       "es": "Selecciona el puerto para el servidor local de API",
-      "de": null,
+      "de": "Wählen Sie den Port für den lokalen API Server",
       "fr": null,
       "ru": "Выберите порт для локального API сервера"
     },
     "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
       "es": "¿Deseas usar este puerto al ejecutar el servidor de EDEngineer? (si no está seleccionada esta opción el servidor podría detenerse cuando se bloquee o desbloquee la ventana)",
-      "de": null,
+      "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
       "fr": null,
       "ru": "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)"
     }
