@@ -1,5 +1,13 @@
 ﻿[
   {
+    "Version": "1.0.3.2",
+    "Content": "* Filters are now correctly ordered when localized (an unlock/lock or restart is required to apply the ordering)\r\n* Fixed a localization issue in the Port Prompt for the API\r\n* Localized API results ! Just send the two letter ISO code for the desired language in the new `lang` parameter to get the result translated (example : `http://localhost:XXXX/{path}.{extension}?lang=de` for german results)"
+  },
+  {
+    "Version": "1.0.3.1",
+    "Content": "* Fixed an issue with Emission Data which made EDEngineer not correctly handle related logs"
+  },
+  {
     "Version": "1.0.3.0",
     "Content": "* Included a local API server (disabled by default) if you want to develop your own third-parties application or if you just want to export your commander's data! Supports Json (default), Xml and Csv. You can launch it via the tasktray icon, I strongly recommend taking a look at the documentation available in the GitHub project's wiki ! https://github.com/msarilar/EDEngineer/wiki \r\n* Added ingredients for blueprint Fragment Canon Double Shot G5\r\n\r\n * FULL russian localization now available! Many thanks to @Morozova, @Buchodt and @VChet for the great work. \r\n* Updated localization. Many thanks to @TCAS and @Scorprox for the great reactivity!"
   },
