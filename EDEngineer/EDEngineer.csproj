@@ -158,7 +158,6 @@
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Localization\Translation.cs" />
-    <Compile Include="Localization\LanguageInfo.cs" />
     <Compile Include="Localization\Languages.cs" />
     <Compile Include="ReleaseNotesWindow.xaml.cs">
       <DependentUpon>ReleaseNotesWindow.xaml</DependentUpon>

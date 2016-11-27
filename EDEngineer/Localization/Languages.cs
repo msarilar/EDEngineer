@@ -18,11 +18,13 @@ namespace EDEngineer.Localization
     {
         public static Languages Instance => instance ?? (instance = InitLanguages());
 
+        public LanguageInfo DefaultLanguage => LanguageInfos[DEFAULT_LANG];
+
         private const string DEFAULT_LANG = "en";
 
         private LanguageInfo currentLanguage;
         private static Languages instance;
-        public Dictionary<string, LanguageInfo> LanguageInfos { get; set; }
+        public IDictionary<string, LanguageInfo> LanguageInfos { get; set; }
         public Dictionary<string, Translation> Translations { get; set; }
 
         public LanguageInfo CurrentLanguage
@@ -138,10 +140,10 @@ namespace EDEngineer.Localization
             var text = parameter.ToString();
 
 #if DEBUG
-            if (!Translations.ContainsKey(text))
+            /*if (!Translations.ContainsKey(text))
             {
                 MessageBox.Show($"No localization for text : {text}");
-            }
+            }*/
 #endif
             string translatedText;
             if (!Translations.ContainsKey(text) || !Translations[text].TryGetValue(lang.TwoLetterISOLanguageName, out translatedText) || string.IsNullOrEmpty(translatedText))
@@ -170,6 +172,16 @@ namespace EDEngineer.Localization
         public string Translate(string text)
         {
             return (string) Convert(CurrentLanguage, null, text, null);
+        }
+
+        public string Translate(string text, LanguageInfo langInfo)
+        {
+            return (string) Convert(langInfo, null, text, null);
+        }
+
+        public bool TryGetLangInfo(string lang, out LanguageInfo langInfo)
+        {
+            return LanguageInfos.TryGetValue(lang, out langInfo);
         }
     }
 }

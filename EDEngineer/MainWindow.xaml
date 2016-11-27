@@ -819,7 +819,7 @@
                                             SortMemberPath="TranslatedName">
                             <DataGridTextColumn.Binding>
                                 <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Short Range Blaster">
-                                    <Binding Path="Name"/>
+                                    <Binding Path="BlueprintName"/>
                                     <Binding Path="DataContext.Languages.CurrentLanguage"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                 </MultiBinding>

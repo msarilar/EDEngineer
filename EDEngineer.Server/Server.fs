@@ -15,7 +15,7 @@ open Newtonsoft.Json
 open NodaTime
 open NodaTime.Text
 
-open EDEngineer.Models.Barda.Collections
+open EDEngineer.Models.Barda.Json
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv
@@ -24,13 +24,14 @@ type cargoType = { Kind: string; Name: string; Count: int }
 let inline (|?) (a) b = if a = null then b else a  
 
 type Cmdr<'TGood, 'TBad> = 
-  | Found         of 'TGood
-  | Parsed        of 'TGood
-  | KnownFormat   of 'TGood
-  | NotFound      of 'TBad
-  | BadString     of 'TBad
-  | UnknownFormat of 'TBad
-  | RouteNotFound of 'TBad
+  | Found           of 'TGood
+  | Parsed          of 'TGood
+  | KnownFormat     of 'TGood
+  | NotFound        of 'TBad
+  | BadString       of 'TBad
+  | UnknownFormat   of 'TBad
+  | RouteNotFound   of 'TBad
+  | UnknownLanguage of 'TBad
 
 type CmdrBuilder() =
   member this.Bind(v, f) =
@@ -42,17 +43,23 @@ type CmdrBuilder() =
       | BadString s         -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
       | UnknownFormat s     -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
       | RouteNotFound _     -> "Route not found ¯\_(ツ)_/¯" |> NOT_FOUND
+      | UnknownLanguage s   -> (sprintf "Unknown language requested %s へ[ •́ ‸ •̀ ]ʋ" s) |> BAD_REQUEST
   member this.Return value = value
 
 let cmdr = CmdrBuilder()
 
-let start (token, port, state:Func<IDictionary<string, State>>) =
+let start (token, port, translator:ILanguage, state:Func<IDictionary<string, State>>) =
 
-  let json = fun s -> JsonConvert.SerializeObject s
-  let xml = fun s ->
-    let xmlDoc = (json(s) |> sprintf "{ \"item\": %s }", "root") |> JsonConvert.DeserializeXmlNode
+  let JsonConfig = fun lang -> 
+    let settings = new JsonSerializerSettings (ContractResolver = new LocalizedContractResolver(translator, lang))
+    settings.Converters.Add(new LocalizedJsonConverter(translator, lang))
+    settings
+
+  let json = fun (s, l) -> JsonConvert.SerializeObject(s, JsonConfig(l))
+  let xml = fun (s, l) ->
+    let xmlDoc = (json(s, l) |> sprintf "{ \"item\": %s }", "root") |> JsonConvert.DeserializeXmlNode
     xmlDoc.InnerXml
-  let csv = fun s -> (json(s) |> sprintf "{ \"item\": %s }") |> JsonUtils.ToCsv
+  let csv = fun (s, l) -> (json(s, l) |> sprintf "{ \"item\": %s }") |> JsonUtils.ToCsv
     
   let ingredients = fun (state:State) -> state.Cargo
                                          |> Seq.map (fun d -> d.Value.Data)
@@ -123,29 +130,47 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
     | Xml   -> Writers.setMimeType "text/xml; charset=utf-8"
     | Json  -> Writers.setMimeType "text/json; charset=utf-8"
     | Csv   -> Writers.setMimeType "text/csv; charset=utf-8"
+    
+  let LanguageExtractor =
+    function
+    | Choice1Of2 s -> match translator.TryGetLangInfo(s) with
+                      | (true, l)  -> Found l
+                      | (false, l) -> UnknownLanguage s
+    | Choice2Of2 _ -> Found translator.DefaultLanguage
 
   let app =
     choose
       [ 
+        pathScan "/languages%s" (fun (format) -> 
+          (request(fun request ->
+            cmdr {
+              let! f = FormatExtractor request format
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              return (translator.LanguageInfos, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
+
         pathScan "/ingredients%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format 
-              return  referenceData state |> ingredients |> FormatPicker(f) |> OK >=> MimeType(f)
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              return (referenceData state |> ingredients, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/blueprints%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format
-              return  referenceData state |> blueprints |> FormatPicker(f) |> OK >=> MimeType(f)
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              return (referenceData state |> blueprints, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/commanders%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format
-              return  state.Invoke().Keys |> FormatPicker(f) |> OK >=> MimeType(f)
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              return (state.Invoke().Keys, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
                
         pathScan "/%s/cargo%s" (fun (commander, format) -> 
@@ -153,7 +178,8 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
             cmdr {
               let! s = commanderRoute commander
               let! f = FormatExtractor request format
-              return (s, None) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              return ((s, None) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/%s/materials%s" (fun (commander, format) -> 
@@ -161,7 +187,8 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
             cmdr {
                 let! s = commanderRoute commander
                 let! f = FormatExtractor request format
-                return (s, Some(Kind.Material)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return ((s, Some(Kind.Material)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/%s/data%s" (fun (commander, format) -> 
@@ -169,7 +196,8 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
             cmdr {
                 let! s = commanderRoute commander
                 let! f = FormatExtractor request format
-                return (s, Some(Kind.Data)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return ((s, Some(Kind.Data)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/%s/commodities%s" (fun (commander, format) -> 
@@ -177,7 +205,8 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
             cmdr {
                 let! s = commanderRoute commander
                 let! f = FormatExtractor request format
-                return (s, Some(Kind.Commodity)) |> cargoExtractor |> FormatPicker(f) |> OK >=> MimeType(f)
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return ((s, Some(Kind.Commodity)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/%s/operations%s" (fun (commander, format) ->
@@ -190,13 +219,13 @@ let start (token, port, state:Func<IDictionary<string, State>>) =
               let! state = commanderRoute commander
               let! f = FormatExtractor request format
               let! timestamp = timeRoute timestampString
-              return state.Operations
-                      |> Seq.filter
-                        (fun e -> match e.Timestamp with
-                                  | t when t >= timestamp -> true
-                                  | _                     -> false)
-                      |> FormatPicker(f) 
-                      |> OK >=> MimeType(f)
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              let operations = state.Operations
+                               |> Seq.filter
+                                 (fun e -> match e.Timestamp with
+                                           | t when t >= timestamp -> true
+                                           | _                     -> false)
+              return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
              
         NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]

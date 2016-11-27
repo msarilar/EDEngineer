@@ -1,4 +1,4 @@
-﻿namespace EDEngineer.Localization
+﻿namespace EDEngineer.Models
 {
     public class LanguageInfo
     {

@@ -15,7 +15,7 @@ namespace EDEngineer.Models
         private bool favorite;
         private bool ignored;
         public string Type { get; set; }
-        public string Name { get; set; }
+        public string BlueprintName { get; set; }
         public IReadOnlyCollection<string> Engineers { get; set; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
         public int Grade { get; set; }
@@ -27,13 +27,13 @@ namespace EDEngineer.Models
         public string TranslatedType => language.Translate(Type);
 
         [JsonIgnore]
-        public string TranslatedName => language.Translate(Name);
+        public string TranslatedName => language.Translate(BlueprintName);
 
-        public Blueprint(ILanguage language, string type, string name, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
+        public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {
             this.language = language;
             Type = type;
-            Name = name;
+            BlueprintName = blueprintName;
             Grade = grade;
             Engineers = engineers;
             Ingredients = ingredients;
@@ -143,7 +143,7 @@ namespace EDEngineer.Models
 
         public override string ToString()
         {
-            return $"G{Grade} [{Type}] {Name}";
+            return $"G{Grade} [{Type}] {BlueprintName}";
         }
 
         [NotifyPropertyChangedInvocator]

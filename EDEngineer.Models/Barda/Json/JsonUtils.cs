@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace EDEngineer.Models.Barda.Collections
+namespace EDEngineer.Models.Barda.Json
 {
     public static class JsonUtils
     {
@@ -32,8 +30,8 @@ namespace EDEngineer.Models.Barda.Collections
                 .Select(o => columns.Select(c => o.AncestorsAndSelf()
                                                   .OfType<JObject>()
                                                   .Select(parent => parent[c])
-                                                  .Where(v => v is JValue)
-                                                  .Select(v => (string) v)
+                                                  .Where(v => v is JValue || v is JArray)
+                                                  .Select(v => v is JValue ? (string) v : $"\"{string.Join(", ", ((JArray) v).ToList())}\"")
                                                   .FirstOrDefault())
                                     .Reverse()
                                     .SkipWhile(s => s == null)

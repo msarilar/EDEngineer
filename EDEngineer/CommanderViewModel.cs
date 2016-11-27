@@ -42,8 +42,7 @@ namespace EDEngineer
                 OnPropertyChanged();
             }
         }
-
-
+        
         public event PropertyChangedEventHandler PropertyChanged;
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -51,7 +50,7 @@ namespace EDEngineer
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private void LoadState(List<string> events)
+        private void LoadState(IEnumerable<string> events)
         {
             UnsubscribeToasts();
 
@@ -184,7 +183,7 @@ namespace EDEngineer
                 var stringElements = toastXml.GetElementsByTagName("text");
 
                 stringElements[0].AppendChild(toastXml.CreateTextNode(translator.Translate("Blueprint Ready")));
-                stringElements[1].AppendChild(toastXml.CreateTextNode($"{translator.Translate(blueprint.Name)} (G{blueprint.Grade})"));
+                stringElements[1].AppendChild(toastXml.CreateTextNode($"{translator.Translate(blueprint.BlueprintName)} (G{blueprint.Grade})"));
                 stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
 
                 var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
