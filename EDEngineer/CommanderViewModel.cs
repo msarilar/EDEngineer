@@ -75,7 +75,7 @@ namespace EDEngineer
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
             blueprintConverter = new BlueprintConverter(State.Cargo);
-            LoadBlueprints();
+            LoadBlueprints(languages);
 
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
@@ -278,7 +278,7 @@ namespace EDEngineer
             return source.View;
         }
 
-        private void LoadBlueprints()
+        private void LoadBlueprints(ILanguage languages)
         {
             var blueprintsJson = IOUtils.GetBlueprintsJson();
 
@@ -366,7 +366,7 @@ namespace EDEngineer
                 };
             }
 
-            Filters = new BlueprintFilters(State.Blueprints);
+            Filters = new BlueprintFilters(languages, State.Blueprints);
         }
 
         public override string ToString()

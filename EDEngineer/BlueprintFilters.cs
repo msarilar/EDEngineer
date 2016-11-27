@@ -22,7 +22,7 @@ namespace EDEngineer
         private List<IngredientFilter> IngredientFilters { get; }
         public IEnumerable<IGrouping<Kind, IngredientFilter>> GroupedIngredientFilters => IngredientFilters.GroupBy(f => f.Entry.Data.Kind); 
 
-        public BlueprintFilters(IReadOnlyCollection<Blueprint> availableBlueprints)
+        public BlueprintFilters(ILanguage language, IReadOnlyCollection<Blueprint> availableBlueprints)
         {
             GradeFilters = new List<GradeFilter>(availableBlueprints.GroupBy(b => b.Grade)
                 .Select(b => b.Key)
@@ -31,21 +31,21 @@ namespace EDEngineer
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()
-                .OrderBy(b => b)
+                .OrderBy(language.Translate)
                 .Select(g => new EngineerFilter(g, $"EF{g}") { Checked = true }));
 
             TypeFilters = new List<TypeFilter>(availableBlueprints.GroupBy(b => b.Type)
                 .Select(b => b.Key)
-                .OrderBy(b => b)
+                .OrderBy(language.Translate)
                 .Select(g => new TypeFilter(g, $"TF{g}") { Checked = true }));
 
             IngredientFilters = new List<IngredientFilter>(availableBlueprints.SelectMany(b => b.Ingredients)
                 .Select(ingredient => ingredient.Entry)
                 .Distinct()
-                .OrderBy(b => b.Data.Kind)
-                .ThenBy(b => b.Data.Name)
+                .OrderBy(b => language.Translate(b.Data.Kind.ToString()))
+                .ThenBy(b => language.Translate(b.Data.Name))
                 .Select(g => new IngredientFilter(g, $"IF{g.Data.Kind}-{g.Data.Name}") { Checked = false }));
-            
+
             IgnoredFavoriteFilters = new List<IgnoredFavoriteFilter>
             {
                 new IgnoredFavoriteFilter("Neither", blueprint => !blueprint.Ignored && !blueprint.Favorite, "IFFnone")
