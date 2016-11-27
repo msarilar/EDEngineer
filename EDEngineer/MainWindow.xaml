@@ -864,7 +864,7 @@
                                                 <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
                                             </TextBlock>
                                             <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                       Background="WhiteSmoke" Foreground="{TemplateBinding DataGridRow.Foreground}" />
+                                                                       Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
                                         </StackPanel>
                                     </Grid>
                                 </DataTemplate>
