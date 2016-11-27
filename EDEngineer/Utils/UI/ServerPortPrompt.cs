@@ -16,7 +16,7 @@ namespace EDEngineer.Utils.UI
             {
                 Checked = SettingsManager.AutoRunServer,
                 Height = 50,
-                Text = translator.Translate("Auto run server on EDEnginner startup with this port? (if not ticked, the server will stop when you unlock/lock the window)"),
+                Text = translator.Translate("Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)"),
                 Dock = DockStyle.Top
             };
 
