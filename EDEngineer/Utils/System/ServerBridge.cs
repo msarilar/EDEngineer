@@ -56,7 +56,7 @@ namespace EDEngineer.Utils.System
             Task.Factory.StartNew(() =>
             {
                 Server.start(cts.Token, port, viewModel.Languages, () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State));
-            }, cts.Token);
+            }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default);
 
             Running = true;
         }
