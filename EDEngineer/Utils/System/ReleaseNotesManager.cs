@@ -27,7 +27,7 @@ namespace EDEngineer.Utils.System
             {
                 oldVersion = new Version(1, 0, 0, 0);
             }
-            else if (oldVersion < new Version(1, 0, 27))
+            else if (oldVersion < new Version(1, 0, 0, 27))
             {
                 Properties.Settings.Default.ResetUI = true;
             }
