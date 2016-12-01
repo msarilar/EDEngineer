@@ -129,6 +129,8 @@ namespace EDEngineer.Utils
                     return ExtractEngineerProgress(data);
                 case JournalEvent.ScientificResearch:
                     return ExtractMaterialDiscarded(data);
+                case JournalEvent.Died:
+                    return new DeathOperation() { JournalEvent = JournalEvent.Died };
                 default:
                     return null;
             }

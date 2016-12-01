@@ -75,6 +75,7 @@
     <Compile Include="LanguageInfo.cs" />
     <Compile Include="Operations\CargoOperation.cs" />
     <Compile Include="Operations\DataOperation.cs" />
+    <Compile Include="Operations\DeathOperation.cs" />
     <Compile Include="Operations\EngineerOperation.cs" />
     <Compile Include="Operations\EngineerProgressOperation.cs" />
     <Compile Include="Operations\JournalOperation.cs" />

@@ -17,6 +17,7 @@ namespace EDEngineer.Models
         Synthesis,
         EngineerProgress,
         ScientificResearch,
-        LoadGame
+        LoadGame,
+        Died
     }
 }
