@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.3.3",
+    "Content": "* Take into account death events (clears up your commodities)\r\n\r\n* Fixed a display issue when selecting a blueprint (the progress bar went from orange to white which made it poorly visible)\r\n* Stop resetting the window position/size when updating !\r\n* Minor performance improvement when running the local API server"
+  },
+  {
     "Version": "1.0.3.2",
     "Content": "* Filters are now correctly ordered when localized (an unlock/lock or restart is required to apply the ordering)\r\n* Fixed a localization issue in the Port Prompt for the API\r\n* Localized API results ! Just send the two letter ISO code for the desired language in the new `lang` parameter to get the result translated (example : `http://localhost:XXXX/{path}.{extension}?lang=de` for german results)"
   },
