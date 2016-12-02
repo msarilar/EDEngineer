@@ -60,7 +60,7 @@
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
       "de": "Leichtgewichtgeschütz",
-      "fr": "Montage Léger",
+      "fr": "support Léger",
       "ru": "Легкое крепление"
     },
     "Armoured ": {
@@ -78,7 +78,7 @@
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
       "de": "Robustes Gestell",
-      "fr": "Montage Robuste",
+      "fr": "support Robuste",
       "ru": "Прочное крепление"
     },
     "Longer Range FSD interdictor": {
@@ -138,7 +138,7 @@
     "Focused Weapon": {
       "es": "Arma Concentrada",
       "de": "Waffenfokus",
-      "fr": "Arme efficace",
+      "fr": "Arme concentrée",
       "ru": "Сфокусированное оружие"
     },
     "Thermal Resistant Shields": {
@@ -150,13 +150,13 @@
     "Rapid Fire Modification": {
       "es": "Modificación de Tiro Rápido",
       "de": "Schnellfeuermodifikation",
-      "fr": "Modification tir rapide",
+      "fr": "Modification cadence rapide",
       "ru": "Увеличение скорострельности"
     },
     "Long Range Weapon": {
       "es": "Arma de Largo Alcance",
       "de": "Ferndistanzwaffe",
-      "fr": "Armes longue portée",
+      "fr": "Armes à longue portée",
       "ru": "Увеличенная дальность"
     },
     "Ammo Capacity": {
