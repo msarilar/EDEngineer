@@ -2,7 +2,7 @@
 
 EDEngineer is a basic app I've written to track materials, data and cargo acquired in Elite Dangerous. That way, we can also track progress of blueprints available from the Engineers. [Installer here](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe).
 
-You liked EDEngineer you want to buy me a beer?
+You liked EDEngineer so much you want to buy me a beer? Click this:
 
 <p align="center">
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YHNRFX3SKZGRS">
