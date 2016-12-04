@@ -271,5 +271,17 @@ namespace EDEngineer.Properties {
                 this["ServerPort"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CargoTabIndex {
+            get {
+                return ((int)(this["CargoTabIndex"]));
+            }
+            set {
+                this["CargoTabIndex"] = value;
+            }
+        }
     }
 }

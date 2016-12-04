@@ -297,7 +297,8 @@
                 <Grid/>
                 <Grid/>
             </UniformGrid>
-            <controls:MetroTabControl Grid.Row="1">
+            <controls:MetroTabControl Grid.Row="1"
+                                      SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
                         <Setter Property="HorizontalAlignment" Value="Center" />

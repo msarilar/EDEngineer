@@ -104,6 +104,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static int CargoTabIndex
+        {
+            get { return Properties.Settings.Default.CargoTabIndex; }
+            set
+            {
+                Properties.Settings.Default.CargoTabIndex = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static string Shortcut
         {
             get

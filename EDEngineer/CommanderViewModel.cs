@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -225,11 +226,13 @@ namespace EDEngineer
 
         public void ApplyEventsToSate(IEnumerable<string> allLogs)
         {
-            var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, new JsonSerializerSettings()
+            var settings = new JsonSerializerSettings()
             {
                 Converters = new List<JsonConverter>() { journalEntryConverter },
                 Error = (o, e) => e.ErrorContext.Handled = true
-            }))
+            };
+
+            var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, settings))
                 .Where(e => e?.Relevant == true)
                 .OrderBy(e => e.Timestamp)
                 .ToList();

@@ -125,6 +125,15 @@ namespace EDEngineer
             }
         }
 
+        public int CargoTabIndex
+        {
+            get { return SettingsManager.CargoTabIndex; }
+            set {
+                SettingsManager.CargoTabIndex = value;
+                OnPropertyChanged();
+            }
+        }
+
         public bool ShowOnlyForFavorites
         {
             get { return showOnlyForFavorites; }
