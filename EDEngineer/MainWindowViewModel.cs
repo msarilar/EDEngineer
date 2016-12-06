@@ -11,6 +11,7 @@ using EDEngineer.Models.Barda;
 using EDEngineer.Models.Barda.Collections;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
+using Newtonsoft.Json;
 
 namespace EDEngineer
 {
@@ -68,6 +69,9 @@ namespace EDEngineer
             var allLogs = LogWatcher.RetrieveAllLogs();
             Commanders.Clear();
 
+            var entryDatas =
+                JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
+
             foreach (var commander in allLogs.Keys)
             {
                 // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
@@ -76,13 +80,13 @@ namespace EDEngineer
                     continue;
                 }
 
-                var commanderState = new CommanderViewModel(commander, allLogs[commander], Languages);
+                var commanderState = new CommanderViewModel(commander, allLogs[commander], Languages, entryDatas);
                 Commanders[commander] = commanderState;
             }
 
             if (Commanders.Count == 0) // we found absolutely nothing
             {
-                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, new List<string>(), Languages);
+                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, new List<string>(), Languages, entryDatas);
             }
 
             CurrentCommander = Commanders.First();
@@ -102,7 +106,7 @@ namespace EDEngineer
                     }
                     else if(logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
                     {
-                        var commanderState = new CommanderViewModel(logs.Item1, logs.Item2, Languages);
+                        var commanderState = new CommanderViewModel(logs.Item1, logs.Item2, Languages, entryDatas);
                         Commanders[logs.Item1] = commanderState;
                     }
                 });
@@ -189,6 +193,22 @@ namespace EDEngineer
             {
                 ingredientFilter.Checked = false;
             }
+        }
+
+        public void ToggleHighlight(KeyValuePair<string, Entry> dataContext)
+        {
+            dataContext.Value.Highlighted = !dataContext.Value.Highlighted;
+
+            if (dataContext.Value.Highlighted)
+            {
+                Settings.Default.EntriesHighlighted.Add(dataContext.Value.Data.Name);
+            }
+            else
+            {
+                Settings.Default.EntriesHighlighted.Remove(dataContext.Value.Data.Name);
+            }
+
+            Settings.Default.Save();
         }
     }
 }

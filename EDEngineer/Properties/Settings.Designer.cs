@@ -283,5 +283,16 @@ namespace EDEngineer.Properties {
                 this["CargoTabIndex"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection EntriesHighlighted {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["EntriesHighlighted"]));
+            }
+            set {
+                this["EntriesHighlighted"] = value;
+            }
+        }
     }
 }

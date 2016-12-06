@@ -21,9 +21,9 @@
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
-            <Grid Background="Black"
-                  Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
-                  >
+            <Grid Background="Black"   
+                  MouseDown="UIElement_OnMouseLeftButtonDown"
+                  Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"
                              Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
@@ -65,25 +65,24 @@
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
-                <Border BorderBrush="{StaticResource EliteOrangeBrush}"
+                <Border BorderBrush="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
-                            <Image
-                                Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
-                                HorizontalAlignment="Left"
-                                Width="20"
-                                Height="20"
-                                Margin="3,0,3,0"
-                                RenderOptions.BitmapScalingMode="HighQuality"
-                                VerticalAlignment="Center" />
+                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                                   HorizontalAlignment="Left"
+                                   Width="20"
+                                   Height="20"
+                                   Margin="3,0,3,0"
+                                   RenderOptions.BitmapScalingMode="HighQuality"
+                                   VerticalAlignment="Center" />
                             <TextBlock FontFamily="./Resources/Fonts/#Euro Caps"
                                        FontSize="20"
                                        Margin="2,0,0,0"
                                        VerticalAlignment="Center"
-                                       Foreground="{StaticResource EliteOrangeBrush}" >
+                                       Foreground="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}" >
                                 <TextBlock.Text>
                                     <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Modular Terminals">
                                         <Binding Path="Value.Data.Name"/>
@@ -150,7 +149,7 @@
                                                             Visibility="{Binding Value.SynthesisFavoriteCount, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
                                                             Foreground="{StaticResource SynthesisBlueBrush}" />
                                 <TextBox HorizontalAlignment="Right"
-                                         Foreground="{StaticResource EliteOrangeBrush}"
+                                         Foreground="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
                                          Background="Transparent"
                                          VerticalAlignment="Center"
                                          BorderBrush="Transparent"

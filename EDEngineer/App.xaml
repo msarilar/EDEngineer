@@ -29,8 +29,13 @@
                 #9CBDD4
             </Color>
 
+            <Color x:Key="IngredientHighlighted">
+                #FFCA64
+            </Color>
+
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
             <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
+            <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
             
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
@@ -44,8 +49,11 @@
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
-            <converters:BooleanToSynthesisColorConverter x:Key="BooleanToSynthesisColor"
-                                                         SynthesisColor="{StaticResource SynthesisBlueBrush}"
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToSynthesisColor"
+                                                         SpecialColor="{StaticResource SynthesisBlueBrush}"
+                                                         NormalColor="{StaticResource EliteOrangeBrush}"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToHighlightColor"
+                                                         SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>

@@ -20,6 +20,7 @@ namespace EDEngineer.Models
         private int count;
         private int favoriteCount;
         private int synthesisFavoriteCount;
+        private bool highlighted;
 
         public int Count
         {
@@ -71,6 +72,22 @@ namespace EDEngineer.Models
             }
         }
 
+        [JsonIgnore]
+        public bool Highlighted
+        {
+            get { return highlighted; }
+            set
+            {
+                if (value == highlighted)
+                {
+                    return;
+                }
+
+                highlighted = value;
+                OnPropertyChanged();
+            }
+        }
+
         public override string ToString()
         {
             return Data.Name + "(" + Count + ")";
@@ -81,6 +98,10 @@ namespace EDEngineer.Models
         protected virtual void OnPropertyChanged(int oldValue, int newValue, [CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedExtendedEventArgs<int>(propertyName, oldValue, newValue));
+        }
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

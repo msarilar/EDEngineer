@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
@@ -408,6 +409,12 @@ namespace EDEngineer
         private void UncheckAllButtonClicked(object sender, RoutedEventArgs e)
         {
             viewModel.ChangeAllFilters(false);
+        }
+
+        private void UIElement_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var dataContext = ((Grid) sender).DataContext;
+            viewModel.ToggleHighlight((KeyValuePair<string, Entry>) dataContext);
         }
     }
 }

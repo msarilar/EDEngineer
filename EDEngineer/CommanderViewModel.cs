@@ -24,8 +24,8 @@ namespace EDEngineer
     public class CommanderViewModel : INotifyPropertyChanged
     {
         public string CommanderName { get; }
-        public State State { get; set; }
-        public BlueprintFilters Filters { get; set; }
+        public State State { get; }
+        public BlueprintFilters Filters { get; private set; }
 
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;
@@ -62,13 +62,31 @@ namespace EDEngineer
             ApplyEventsToSate(events);
 
             SubscribeToasts();
+
+            if (Settings.Default.EntriesHighlighted == null)
+            {
+                Settings.Default.EntriesHighlighted = new StringCollection();
+                Settings.Default.Save();
+            }
+            
+            var highlightedEntries = Settings.Default.EntriesHighlighted.Cast<string>().OrderBy(s => s).ToList();
+
+            var entries = State.Cargo.Select(kv => kv.Value).OrderBy(e => e.Data.Name).ToList();
+
+            for (int i = 0, j = 0; i < entries.Count && j < highlightedEntries.Count; i++)
+            {
+                if (entries[i].Data.Name == highlightedEntries[j])
+                {
+                    entries[i].Highlighted = true;
+                    j++;
+                }
+            }
         }
 
-        public CommanderViewModel(string commanderName, List<string> logs, Languages languages)
+        public CommanderViewModel(string commanderName, IEnumerable<string> logs, Languages languages, List<EntryData> entryDatas)
         {
             CommanderName = commanderName;
 
-            var entryDatas = JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
             var converter = new ItemNameConverter(entryDatas);
 
             State = new State(entryDatas, languages);
