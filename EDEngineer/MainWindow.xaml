@@ -661,11 +661,13 @@
                           Loaded="BlueprintsDataGridLoaded"
                           ItemsSource="{Binding State.Blueprints}"
                           DataContext="{Binding}"
+                          Focusable="False"
                           Grid.Row="1"
                           Style="{DynamicResource BlueprintGridStyle}">
                     <DataGrid.RowDetailsTemplate>
                         <DataTemplate>
                             <Grid Background="#043A59"
+                                  Focusable="False"
                                   Style="{StaticResource BlueprintDetailsGridStyle}">
                                 <Grid.LayoutTransform>
                                     <ScaleTransform ScaleY="0"/>
@@ -685,6 +687,7 @@
 
                                     <ItemsControl ItemsSource="{Binding Ingredients}"
                                                   Grid.Column="0"
+                                                  Focusable="False"
                                                   Margin="0,0,7,0"
                                                   FontSize="13">
                                         <ItemsControl.ItemTemplate>
