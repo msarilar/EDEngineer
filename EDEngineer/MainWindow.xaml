@@ -22,7 +22,7 @@
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
             <Grid Background="Black"   
-                  MouseDown="UIElement_OnMouseLeftButtonDown"
+                  MouseDown="IngredientOnMouseLeftButtonDown"
                   Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
                     <ToolTip Style="{StaticResource TooltipStyle}"

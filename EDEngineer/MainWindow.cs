@@ -411,7 +411,7 @@ namespace EDEngineer
             viewModel.ChangeAllFilters(false);
         }
 
-        private void UIElement_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void IngredientOnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             var dataContext = ((Grid) sender).DataContext;
             viewModel.ToggleHighlight((KeyValuePair<string, Entry>) dataContext);
