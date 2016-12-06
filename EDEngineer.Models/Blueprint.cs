@@ -14,6 +14,7 @@ namespace EDEngineer.Models
         private readonly ILanguage language;
         private bool favorite;
         private bool ignored;
+        private int shoppingListCount;
         public string Type { get; set; }
         public string BlueprintName { get; set; }
         public IReadOnlyCollection<string> Engineers { get; set; }
@@ -28,6 +29,20 @@ namespace EDEngineer.Models
 
         [JsonIgnore]
         public string TranslatedName => language.Translate(BlueprintName);
+
+        [JsonIgnore]
+        public int ShoppingListCount
+        {
+            get { return shoppingListCount; }
+
+            set
+            {
+                if (value == shoppingListCount)
+                    return;
+                shoppingListCount = value;
+                OnPropertyChanged();
+            }
+        }
 
         public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {

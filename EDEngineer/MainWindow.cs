@@ -416,5 +416,17 @@ namespace EDEngineer
             var dataContext = ((Grid) sender).DataContext;
             viewModel.ToggleHighlight((KeyValuePair<string, Entry>) dataContext);
         }
+
+        private void IncrementShoppingList(object sender, RoutedEventArgs e)
+        {
+            var tag = ((Button) sender).Tag;
+            viewModel.ShoppingListChange((Blueprint) tag, 1);
+        }
+
+        private void DecrementShoppingList(object sender, RoutedEventArgs e)
+        {
+            var tag = ((Button)sender).Tag;
+            viewModel.ShoppingListChange((Blueprint)tag, -1);
+        }
     }
 }
