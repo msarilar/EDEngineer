@@ -541,6 +541,7 @@
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="Auto" />
                                                     <RowDefinition Height="*" />
+                                                    <RowDefinition Height="*" />
                                                     <RowDefinition Height="Auto" />
                                                 </Grid.RowDefinitions>
                                                 <Button Command="ApplicationCommands.SelectAll" Focusable="False"
@@ -566,8 +567,17 @@
                                                         </Binding>
                                                     </DataGridColumnHeadersPresenter.Visibility>
                                                 </DataGridColumnHeadersPresenter>
-                                                <Grid Grid.ColumnSpan="2" Grid.Row="1">
-                                                    <ScrollContentPresenter x:Name="PART_ScrollContentPresenter"
+                                                
+                                                <Grid Grid.ColumnSpan="2" Grid.Row="1" Background="Red">
+                                                    <ContentPresenter 
+            											Grid.ColumnSpan="2"
+            											ContentTemplate="{TemplateBinding ContentTemplate}"
+            											Content="{TemplateBinding Tag}"
+            											ContentStringFormat="{TemplateBinding ContentStringFormat}" />
+                                                </Grid>
+
+                                                <Grid Grid.ColumnSpan="2" Grid.Row="2">
+                                                    <ScrollContentPresenter 
             											CanContentScroll="{TemplateBinding CanContentScroll}"
             											CanHorizontallyScroll="False"
             											Grid.ColumnSpan="2"
@@ -578,11 +588,11 @@
                                                 </Grid>
                                                 <ScrollBar x:Name="PART_VerticalScrollBar" Grid.Column="2"
             										Maximum="{TemplateBinding ScrollableHeight}"
-            										Orientation="Vertical" Grid.Row="1"
+            										Orientation="Vertical" Grid.Row="2"
             										Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
             										Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
             										ViewportSize="{TemplateBinding ViewportHeight}" />
-                                                <Grid Grid.Column="1" Grid.Row="2">
+                                                <Grid Grid.Column="1" Grid.Row="3">
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition
             												Width="{Binding NonFrozenColumnsViewportHorizontalOffset, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}}" />

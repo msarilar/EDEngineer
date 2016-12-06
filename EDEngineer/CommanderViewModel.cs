@@ -27,6 +27,8 @@ namespace EDEngineer
         public State State { get; }
         public BlueprintFilters Filters { get; private set; }
 
+        public IEnumerable<Blueprint> ShoppingList => State.Blueprints.Take(1);
+
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;
 

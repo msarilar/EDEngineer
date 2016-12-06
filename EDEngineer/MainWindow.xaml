@@ -660,6 +660,7 @@
                           AutoGenerateColumns="False"
                           Loaded="BlueprintsDataGridLoaded"
                           ItemsSource="{Binding State.Blueprints}"
+                          Tag="{Binding ShoppingList}"
                           DataContext="{Binding}"
                           Grid.Row="1"
                           Style="{DynamicResource BlueprintGridStyle}">
