@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.3.5",
+    "Content": "* EDEngineer will now ignore logs from the beta if you're in it"
+  },
+  {
     "Version": "1.0.3.4",
     "Content": "* You can now highlight ingredients by clicking on them for your own purpose (for example, to flag them for Community Goals or Engineer progress). It doesn't do anything apart from the highlight, and it persists between restarts!\r\n* The tab you selected (Commodities, Materials or Data) will be kept opened when you restart the application\r\n\r\n* French translation update, thanks to @calvin00"
   },
