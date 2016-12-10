@@ -275,7 +275,7 @@ namespace EDEngineer
                 var entry = ((KeyValuePair<string, Entry>)e.Item).Value;
 
                 e.Accepted = entry.Data.Kind == kind &&
-                       (parentViewModel.ShowZeroes || entry.Count > 0) &&
+                       (parentViewModel.ShowZeroes || entry.Count != 0) &&
                        (!parentViewModel.ShowOnlyForFavorites || favoritedBlueprints.Any(b => b.Ingredients.Any(i => i.Entry == entry)));
             };
 
