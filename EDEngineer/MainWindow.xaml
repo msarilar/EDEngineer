@@ -976,10 +976,16 @@
                               Style="{DynamicResource BlueprintGridStyle}"
                               HeadersVisibility="None"
                               RowDetailsVisibilityMode="Visible"
+                              CanUserSortColumns="False"
                               Focusable="False">
+                        <DataGrid.RowHeaderTemplate>
+                            <DataTemplate>
+                                <Grid IsHitTestVisible="False"></Grid>
+                            </DataTemplate>
+                        </DataGrid.RowHeaderTemplate>
                         <DataGrid.RowDetailsTemplate>
                             <DataTemplate>
-                                <Grid Background="#221e59"
+                                <Grid Background="#1D2242"
                                       Focusable="False"
                                       Style="{StaticResource ShoppingListDetailsGridStyle}">
                                     <Grid.LayoutTransform>
