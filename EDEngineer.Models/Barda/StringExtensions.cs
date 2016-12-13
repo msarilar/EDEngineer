@@ -6,7 +6,7 @@ namespace EDEngineer.Models.Barda
     {
         public static string Initials(this string self)
         {
-            var initials = self.Replace('-', ' ').Split(' ').Select(s => s[0]);
+            var initials = self.Replace('-', ' ').Split(' ').Where(s => s.Length > 0).Select(s => s[0]);
             return string.Join("", initials);
         }
     }
