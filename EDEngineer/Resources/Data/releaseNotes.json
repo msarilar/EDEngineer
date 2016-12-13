@@ -1,5 +1,13 @@
 ﻿[
   {
+    "Version": "1.0.3.5",
+    "Content": "* EDEngineer will now ignore logs from the beta if you're in it"
+  },
+  {
+    "Version": "1.0.3.4",
+    "Content": "* You can now highlight ingredients by clicking on them for your own purpose (for example, to flag them for Community Goals or Engineer progress). It doesn't do anything apart from the highlight, and it persists between restarts!\r\n* The tab you selected (Commodities, Materials or Data) will be kept opened when you restart the application\r\n\r\n* French translation update, thanks to @calvin00"
+  },
+  {
     "Version": "1.0.3.3",
     "Content": "* Take into account death events (clears up your commodities)\r\n\r\n* Fixed a display issue when selecting a blueprint (the progress bar went from orange to white which made it poorly visible)\r\n* Stop resetting the window position/size when updating !\r\n* Minor performance improvement when running the local API server"
   },

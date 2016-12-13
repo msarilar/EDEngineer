@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -117,12 +118,23 @@ namespace EDEngineer.Utils.System
                 {
                     gameLogLines.Add(line);
 
-                    if (watchForLoadGameEvent && line.Contains($@"""event"":""{JournalEvent.LoadGame}"""))
+                    if (!watchForLoadGameEvent)
+                    {
+                        continue;
+                    }
+
+                    if (VersionIsBeta(line))
+                    {
+                        fileCommanders.Remove(file);
+                        return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
+                    }
+
+                    if (line.Contains($@"""event"":""{JournalEvent.LoadGame}"""))
                     {
                         try
                         {
                             var data = JObject.Parse(line);
-                            fileCommanders[file] = (string) data["Commander"];
+                            fileCommanders[file] = (string)data["Commander"];
                         }
                         catch
                         {
@@ -143,6 +155,12 @@ namespace EDEngineer.Utils.System
             }
 
             return Tuple.Create(commanderName, gameLogLines);
+        }
+
+        private static bool VersionIsBeta(string line)
+        {
+            var lowered = line.ToLower(CultureInfo.InvariantCulture);
+            return lowered.Contains($@"""event"":""fileheader""") && lowered.Contains("beta");
         }
 
         public string ManualChangesDirectory { get; private set; }
