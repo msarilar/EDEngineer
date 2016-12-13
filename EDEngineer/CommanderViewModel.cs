@@ -316,9 +316,16 @@ namespace EDEngineer
                 Settings.Default.Ignored = new StringCollection();
             }
 
+            if (Settings.Default.ShoppingList == null)
+            {
+                Settings.Default.ShoppingList = new StringCollection();
+            }
+
             foreach (var blueprint in State.Blueprints)
             {
-                if (Settings.Default.Favorites.Contains($"{CommanderName}:{blueprint}"))
+                var text = $"{CommanderName}:{blueprint}";
+
+                if (Settings.Default.Favorites.Contains(text))
                 {
                     blueprint.Favorite = true;
                     favoritedBlueprints.Add(blueprint);
@@ -334,11 +341,11 @@ namespace EDEngineer
                     blueprint.Favorite = true;
                     favoritedBlueprints.Add(blueprint);
                     Settings.Default.Favorites.Remove($"{blueprint}");
-                    Settings.Default.Favorites.Add($"{CommanderName}:{blueprint}");
+                    Settings.Default.Favorites.Add(text);
                     Settings.Default.Save();
                 }
 
-                if (Settings.Default.Ignored.Contains($"{CommanderName}:{blueprint}"))
+                if (Settings.Default.Ignored.Contains(text))
                 {
                     blueprint.Ignored = true;
 
@@ -352,9 +359,11 @@ namespace EDEngineer
                 {
                     blueprint.Ignored = true;
                     Settings.Default.Ignored.Remove($"{blueprint}");
-                    Settings.Default.Ignored.Add($"{CommanderName}:{blueprint}");
+                    Settings.Default.Ignored.Add(text);
                     Settings.Default.Save();
                 }
+
+                blueprint.ShoppingListCount = Settings.Default.ShoppingList.Cast<string>().Count(l => l == text);
 
                 blueprint.PropertyChanged += (o, e) =>
                 {
@@ -382,6 +391,20 @@ namespace EDEngineer
                         else
                         {
                             Settings.Default.Ignored.Remove($"{CommanderName}:{blueprint}");
+                        }
+
+                        Settings.Default.Save();
+                    }
+                    else if (e.PropertyName == "ShoppingListCount")
+                    {
+                        while (Settings.Default.ShoppingList.Contains(text))
+                        {
+                            Settings.Default.ShoppingList.Remove(text);
+                        }
+
+                        for (var i = 0; i < blueprint.ShoppingListCount; i++)
+                        {
+                            Settings.Default.ShoppingList.Add(text);
                         }
 
                         Settings.Default.Save();
