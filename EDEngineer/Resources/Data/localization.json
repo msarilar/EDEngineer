@@ -1056,7 +1056,7 @@
     "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
       "de": "Beta-Muster-Obeliskendaten",
-      "fr":  "Données d'obélisque de type Beta ",
+      "fr": "Données d'obélisque de type Beta ",
       "ru": "Данные с обелиска «Бета»"
     },
     "Pattern Delta Obelisk Data": {
@@ -1926,7 +1926,7 @@
     "You have only {0} slots left for your materials.": {
       "es": "Tienes {0} espacios para materiales.",
       "de": "Sie haben nur mehr {0} Kapazität für Materialien frei.",
-      "fr": "Il vous reste seulement {0} emplacements pour vos matériaux." ,
+      "fr": "Il vous reste seulement {0} emplacements pour vos matériaux.",
       "ru": "Количество свободных слотов под материалы: {0}."
     },
     "Data Almost Full!": {
@@ -2108,6 +2108,18 @@
       "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
       "fr": "Lancer automatiquement le serveur au démarrage avec ce port? (sinon, le server s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
       "ru": "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)"
+    },
+    "Shopping List": {
+      "es": "",
+      "de": "",
+      "fr": "",
+      "ru": ""
+    },
+    "Add To Shopping List": {
+      "es": "",
+      "de": "",
+      "fr": "",
+      "ru": ""
     }
   }
 }
