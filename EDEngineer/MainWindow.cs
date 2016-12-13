@@ -281,7 +281,7 @@ namespace EDEngineer
             dataGrid.CellStyle = newStyle;
         }
 
-        bool transitionning = false;
+        private bool transitionning = false;
         private void HideWindow()
         {
             if (!transitionning)
