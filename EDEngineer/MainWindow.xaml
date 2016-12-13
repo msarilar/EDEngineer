@@ -764,11 +764,28 @@
                                                 <DataTemplate>
                                                     <Grid>
                                                         <iconPacks:PackIconMaterial Kind="Check"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
-                                                                                    Foreground="Green" />
+                                                                                    Foreground="Green" >
+                                                            <iconPacks:PackIconMaterial.Visibility>
+                                                                <MultiBinding Converter="{StaticResource IngredientToVisibility}"
+                                                                              FallbackValue="Modular Terminals"
+                                                                              Mode="OneWay">
+                                                                    <Binding Path="Entry.Count"/>
+                                                                    <Binding Path="Size"/>
+                                                                </MultiBinding>
+                                                            </iconPacks:PackIconMaterial.Visibility>
+                                                        </iconPacks:PackIconMaterial>
                                                         <iconPacks:PackIconMaterial Height="14" Kind="Close"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
-                                                                                    Foreground="Red" />
+                                                                                    Foreground="Red" >
+                                                            <iconPacks:PackIconMaterial.Visibility>
+                                                                <MultiBinding Converter="{StaticResource IngredientToVisibility}"
+                                                                              FallbackValue="Modular Terminals"
+                                                                              Mode="OneWay"
+                                                                              ConverterParameter="Inverted">
+                                                                    <Binding Path="Entry.Count"/>
+                                                                    <Binding Path="Size"/>
+                                                                </MultiBinding>
+                                                            </iconPacks:PackIconMaterial.Visibility>
+                                                        </iconPacks:PackIconMaterial>
                                                     </Grid>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
@@ -1077,13 +1094,30 @@
                                                           MinWidth="15.5"
                                                           MinHeight="15.5">
                                                         <iconPacks:PackIconMaterial Kind="Check"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
-                                                                                    Foreground="Green"/>
+                                                                                    Foreground="Green" >
+                                                            <iconPacks:PackIconMaterial.Visibility>
+                                                                <MultiBinding Converter="{StaticResource IngredientToVisibility}"
+                                                                              FallbackValue="Modular Terminals"
+                                                                              Mode="OneWay">
+                                                                    <Binding Path="Entry.Count"/>
+                                                                    <Binding Path="Size"/>
+                                                                </MultiBinding>
+                                                            </iconPacks:PackIconMaterial.Visibility>
+                                                        </iconPacks:PackIconMaterial>
                                                         <iconPacks:PackIconMaterial Kind="Close"
-                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
-                                                                                    Foreground="Red"
+                                                                                    Foreground="Red" 
                                                                                     Width="15"
-                                                                                    Height="15"/>
+                                                                                    Height="15">
+                                                            <iconPacks:PackIconMaterial.Visibility>
+                                                                <MultiBinding Converter="{StaticResource IngredientToVisibility}"
+                                                                              FallbackValue="Modular Terminals"
+                                                                              Mode="OneWay"
+                                                                              ConverterParameter="Inverted">
+                                                                    <Binding Path="Entry.Count"/>
+                                                                    <Binding Path="Size"/>
+                                                                </MultiBinding>
+                                                            </iconPacks:PackIconMaterial.Visibility>
+                                                        </iconPacks:PackIconMaterial>
                                                     </Grid>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
@@ -1155,112 +1189,39 @@
                             </DataTemplate>
                         </DataGrid.RowDetailsTemplate>
                         <DataGrid.Columns>
-                            <!-- GRADE -->
-                            <DataGridTextColumn Binding="{Binding Grade}"
-                                                IsReadOnly="True"
-                                                Width="30"
-                                                CanUserResize="False">
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="HorizontalAlignment" Value="Center" />
-                                        <Setter Property="VerticalAlignment" Value="Center" />
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <!-- TYPE -->
-                            <DataGridTextColumn IsReadOnly="True"
-                                                MinWidth="130"
-                                                MaxWidth="130"
-                                                CanUserResize="False"
-                                                SortMemberPath="TranslatedType">
-                                <DataGridTextColumn.Binding>
-                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Plasma Accelerator">
-                                        <Binding Path="Type"
-                                                 Converter="{StaticResource BlueprintNameShortener}"/>
-                                        <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                    </MultiBinding>
-                                </DataGridTextColumn.Binding>
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="TextWrapping" Value="Wrap" />
-                                        <Setter Property="TextAlignment" Value="Center" />
-                                        <Setter Property="HorizontalAlignment" Value="Center" />
-                                        <Setter Property="VerticalAlignment" Value="Center" />
-                                        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
-                                        <Setter Property="MaxHeight" Value="50" />
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <!-- NAME -->
-                            <DataGridTextColumn IsReadOnly="True"
-                                                Width="*"
-                                                CanUserResize="False"
-                                                SortMemberPath="TranslatedName">
-                                <DataGridTextColumn.Binding>
-                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
-                                        <Binding Path="BlueprintName"/>
-                                        <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                    </MultiBinding>
-                                </DataGridTextColumn.Binding>
-                                <DataGridTextColumn.ElementStyle>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="TextWrapping" Value="Wrap" />
-                                    </Style>
-                                </DataGridTextColumn.ElementStyle>
-                            </DataGridTextColumn>
-                            <!-- PROGRESS -->
                             <DataGridTemplateColumn IsReadOnly="True"
                                                     SortMemberPath="ProgressSorting"
-                                                    Width="Auto"
-                                                    MaxWidth="150"
+                                                    Width="*"
                                                     CanUserResize="False">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Grid>
-                                            <StackPanel Orientation="Vertical">
-                                                <TextBlock HorizontalAlignment="Center">
-                                                    <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                    <Run Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                                        RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                                        Converter={x:Static localization:Languages.Instance},
-                                                                        ConverterParameter=': can craft',
-                                                                        FallbackValue=': can craft'}" /> 
-                                                    <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
-                                                </TextBlock>
+                                        <Grid Height="40">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="50"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="50"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Grid.Column="1"
+                                                       VerticalAlignment="Center">
+                                                <TextBlock.Text>
+                                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
+                                                        <Binding Path="BlueprintName" />
+                                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}" />
+                                                    </MultiBinding>
+
+                                                </TextBlock.Text>
+                                            </TextBlock>
+                                            <StackPanel Orientation="Vertical"
+                                                        VerticalAlignment="Center"
+                                                        Grid.Column="2"
+                                                        Margin="20,0,0,0">
+                                                <TextBlock HorizontalAlignment="Center"
+                                                           Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
                                                 <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                           Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                                                           Background="WhiteSmoke" Foreground="DarkRed" />
                                             </StackPanel>
-                                        </Grid>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                            <!-- FAVORITE / IGNORED BUTTONS -->
-                            <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Grid>
-                                            <ToggleButton Width="40"
-                                                          Height="40"
-                                                          HorizontalAlignment="Left"
-                                                          Margin="10,0,0,0"
-                                                          VerticalAlignment="Center"
-                                                          IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                          Foreground="Black">
-                                                <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
-                                            </ToggleButton>
-                                            <ToggleButton x:Name="IgnoreBluebrintButton"
-                                                          Width="40"
-                                                          IsEnabled="False"
-                                                          Height="40"
-                                                          HorizontalAlignment="Right"
-                                                          Margin="0,0,10,0"
-                                                          VerticalAlignment="Center"
-                                                          IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                          Foreground="Black">
-                                                <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black" />
-                                            </ToggleButton>
                                         </Grid>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>

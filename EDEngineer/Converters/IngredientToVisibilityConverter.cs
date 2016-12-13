@@ -6,25 +6,26 @@ using EDEngineer.Models;
 
 namespace EDEngineer.Converters
 {
-    public class IngredientToVisibilityConverter : IValueConverter
+    public class IngredientToVisibilityConverter : IMultiValueConverter
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
-            var ingredient = (BlueprintIngredient) value;
+            var current = (int)values[0];
+            var target = (int)values[1];
             bool visible;
-            if (parameter != null && (string) parameter == "Inverted")
+            if (parameter != null && (string)parameter == "Inverted")
             {
-                visible = ingredient.Entry.Count < ingredient.Size;
+                visible = current < target;
             }
             else
             {
-                visible = ingredient.Entry.Count >= ingredient.Size;
+                visible = current >= target;
             }
 
             return visible ? Visibility.Visible : Visibility.Collapsed;
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        public object[] ConvertBack(object value, Type[] targetTypes, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }

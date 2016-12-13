@@ -18,7 +18,7 @@ namespace EDEngineer.Models
         public string BlueprintName { get; set; }
         public IReadOnlyCollection<string> Engineers { get; set; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
-        public int? Grade { get; set; }
+        public int Grade { get; set; }
 
         [JsonIgnore]
         public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";
@@ -43,7 +43,7 @@ namespace EDEngineer.Models
             }
         }
 
-        public Blueprint(ILanguage language, string type, string blueprintName, int? grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
+        public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {
             this.language = language;
             Type = type;

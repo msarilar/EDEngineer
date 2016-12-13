@@ -34,33 +34,28 @@ namespace EDEngineer
 
         public IEnumerator<Blueprint> GetEnumerator()
         {
-            var added = blueprints
+            var ingredients = blueprints
                 .SelectMany(b => Enumerable.Repeat(b, b.ShoppingListCount))
+                .SelectMany(b => b.Ingredients)
                 .ToList();
 
-            if (!added.Any())
+            if (!ingredients.Any())
             {
                 yield break;
             }
 
-            var metaBlueprint = new Blueprint(languages, "", "Shopping List", null, new BlueprintIngredient[0],
-                new string[0]);
-            metaBlueprint = added
-                .Aggregate(metaBlueprint, (acc, current) =>
-                                          {
-                                              acc.Ingredients = acc.Ingredients.Concat(current.Ingredients).ToList();
-                                              return acc;
-                                          });
+            var composition = ingredients.GroupBy(i => i.Entry.Data.Name)
+                                         .Select(
+                                             i =>
+                                                 new BlueprintIngredient(i.First().Entry,
+                                                     i.Sum(c => c.Size)))
+                                         .OrderBy(i => i.Entry.Data.Kind)
+                                         .ThenBy(i => languages.Translate(i.Entry.Data.Name))
+                                         .ToList();
 
-            metaBlueprint.Ingredients = metaBlueprint.Ingredients
-                                                     .GroupBy(i => i.Entry.Data.Name)
-                                                     .Select(
-                                                         i =>
-                                                             new BlueprintIngredient(i.First().Entry,
-                                                                 i.Sum(c => c.Size)))
-                                                     .OrderBy(i => i.Entry.Data.Kind)
-                                                     .ThenBy(i => languages.Translate(i.Entry.Data.Name))
-                                                     .ToList();
+            var metaBlueprint = new Blueprint(languages, "", "Shopping List", -1, composition,
+                new string[0]);
+
             yield return metaBlueprint;
         }
 
