@@ -27,7 +27,7 @@ namespace EDEngineer
             GradeFilters = new List<GradeFilter>(availableBlueprints.GroupBy(b => b.Grade)
                 .Select(b => b.Key)
                 .OrderBy(b => b)
-                .Select(g => new GradeFilter(g, $"GF{g}") {  Checked = true }));
+                .Select(g => new GradeFilter(g.GetValueOrDefault(), $"GF{g}") {  Checked = true }));
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()

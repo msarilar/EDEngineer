@@ -26,7 +26,7 @@ namespace EDEngineer
         public State State { get; }
         public BlueprintFilters Filters { get; private set; }
 
-        public List<Blueprint> ShoppingList => shoppingList.ToList();
+        public ShoppingListViewModel ShoppingList => shoppingList;
 
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;

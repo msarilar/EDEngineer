@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +26,12 @@ namespace EDEngineer
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        public List<Blueprint> List => this.ToList();
+
+        public List<Tuple<Blueprint, int>> Composition
+            => blueprints.Where(b => b.ShoppingListCount > 0)
+                         .Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList();
+
         public IEnumerator<Blueprint> GetEnumerator()
         {
             var added = blueprints
@@ -36,7 +43,7 @@ namespace EDEngineer
                 yield break;
             }
 
-            var metaBlueprint = new Blueprint(languages, "", "Shopping List", 0, new BlueprintIngredient[0],
+            var metaBlueprint = new Blueprint(languages, "", "Shopping List", null, new BlueprintIngredient[0],
                 new string[0]);
             metaBlueprint = added
                 .Aggregate(metaBlueprint, (acc, current) =>
@@ -44,8 +51,6 @@ namespace EDEngineer
                                               acc.Ingredients = acc.Ingredients.Concat(current.Ingredients).ToList();
                                               return acc;
                                           });
-            metaBlueprint.Grade = 0;
-            metaBlueprint.Engineers = new List<string>();
 
             metaBlueprint.Ingredients = metaBlueprint.Ingredients
                                                      .GroupBy(i => i.Entry.Data.Name)

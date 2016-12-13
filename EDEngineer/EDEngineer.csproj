@@ -85,7 +85,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -167,6 +167,7 @@
     </Compile>
     <Compile Include="ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
+    <Compile Include="Utils\StringExtensions.cs" />
     <Compile Include="Utils\System\IOUtils.cs" />
     <Compile Include="Utils\System\ReleaseNotesManager.cs" />
     <Compile Include="Utils\System\ServerBridge.cs" />

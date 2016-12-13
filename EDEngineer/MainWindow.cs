@@ -219,6 +219,16 @@ namespace EDEngineer
             viewModel.LoadState(true);
         }
 
+        private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var toggleButton = FindVisualParent<Button>(Mouse.DirectlyOver as DependencyObject);
+            if (toggleButton != null)
+            {
+                toggleButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Primitives.ButtonBase.ClickEvent));
+                e.Handled = true;
+            }
+        }
+
         private void PreviewMouseLeftButtonDownHandler(object sender, MouseButtonEventArgs e)
         {
             var cell = (DataGridCell) sender;
@@ -429,6 +439,12 @@ namespace EDEngineer
         {
             var tag = ((Button)sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint)tag, -1);
+        }
+
+        private void RemoveBlueprintShoppingList(object sender, RoutedEventArgs e)
+        {
+            var blueprint = (Blueprint) ((Button)sender).Tag;
+            viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
         }
     }
 }

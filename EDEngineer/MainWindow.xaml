@@ -664,6 +664,7 @@
                               HorizontalContentAlignment="Stretch"
                               HorizontalScrollBarVisibility="Hidden"
                               SelectionUnit="FullRow"
+                              PreviewMouseLeftButtonDown="DataGridOnPreviewMouseLeftButtonDown"
                               AutoGenerateColumns="False"
                               Loaded="DataGridLoaded"
                               ItemsSource="{Binding State.Blueprints}"
@@ -998,9 +999,11 @@
                               SelectionUnit="FullRow"
                               AutoGenerateColumns="False"
                               Margin="0,0,14,0"
-                              ItemsSource="{Binding ShoppingList}"
+                              Loaded="DataGridLoaded"
+                              ItemsSource="{Binding ShoppingList.List}"
                               DataContext="{Binding}"
                               Grid.Row="1"
+                              PreviewMouseLeftButtonDown="DataGridOnPreviewMouseLeftButtonDown"
                               SelectedIndex="{Binding ShoppingListItem, Mode=OneWay}"
                               Style="{DynamicResource BlueprintGridStyle}"
                               HeadersVisibility="None"
@@ -1112,6 +1115,58 @@
                                             </ItemsControl.ItemTemplate>
                                         </ItemsControl>
                                     </Grid>
+
+                                    <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.Composition, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                  Grid.Column="1"
+                                                  HorizontalAlignment="Right"
+                                                  FontSize="15">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Grid.ToolTip>
+                                                        <TextBlock Text="{Binding Item1.TranslatedString}"/>
+                                                    </Grid.ToolTip>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Button Content="-"
+                                                            Tag="{Binding Item1}"
+                                                            Click="DecrementShoppingList"
+                                                            Foreground="Red"
+                                                            FontWeight="Black"
+                                                            Style="{DynamicResource ChromelessButtonStyle}"
+                                                            Margin="5,0,5,0"
+                                                            Grid.Column="0" />
+                                                    <TextBlock Text="{Binding Item2}"
+                                                               Grid.Column="1" />
+                                                    <Button Content="+"
+                                                            Tag="{Binding Item1}"
+                                                            Click="IncrementShoppingList"
+                                                            FontWeight="Black"
+                                                            Foreground="Green"
+                                                            Margin="5,0,5,0"
+                                                            Style="{DynamicResource ChromelessButtonStyle}"
+                                                            Grid.Column="2" />
+                                                    <TextBlock Text="{Binding Item1.ShortString}"
+                                                               Grid.Column="3" />
+                                                    <Button Content="x"
+                                                            HorizontalAlignment="Right"
+                                                            Tag="{Binding Item1}"
+                                                            Style="{DynamicResource ChromelessButtonStyle}"
+                                                            Foreground="Red"
+                                                            FontWeight="Black"
+                                                            Margin="5,0,5,0"
+                                                            Click="RemoveBlueprintShoppingList"
+                                                            Grid.Column="4" />
+                                                    
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
                                 </Grid>
                             </DataTemplate>
                         </DataGrid.RowDetailsTemplate>
@@ -1213,6 +1268,7 @@
                                             </ToggleButton>
                                             <ToggleButton x:Name="IgnoreBluebrintButton"
                                                           Width="40"
+                                                          IsEnabled="False"
                                                           Height="40"
                                                           HorizontalAlignment="Right"
                                                           Margin="0,0,10,0"
