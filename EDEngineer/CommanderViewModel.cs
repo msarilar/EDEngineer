@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -27,11 +26,15 @@ namespace EDEngineer
         public State State { get; }
         public BlueprintFilters Filters { get; private set; }
 
+        public ShoppingListViewModel ShoppingList => shoppingList;
+
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;
 
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
+        private ShoppingListViewModel shoppingList;
+
         public Instant LastUpdate
         {
             get { return lastUpdate; }
@@ -313,9 +316,16 @@ namespace EDEngineer
                 Settings.Default.Ignored = new StringCollection();
             }
 
+            if (Settings.Default.ShoppingList == null)
+            {
+                Settings.Default.ShoppingList = new StringCollection();
+            }
+
             foreach (var blueprint in State.Blueprints)
             {
-                if (Settings.Default.Favorites.Contains($"{CommanderName}:{blueprint}"))
+                var text = $"{CommanderName}:{blueprint}";
+
+                if (Settings.Default.Favorites.Contains(text))
                 {
                     blueprint.Favorite = true;
                     favoritedBlueprints.Add(blueprint);
@@ -331,11 +341,11 @@ namespace EDEngineer
                     blueprint.Favorite = true;
                     favoritedBlueprints.Add(blueprint);
                     Settings.Default.Favorites.Remove($"{blueprint}");
-                    Settings.Default.Favorites.Add($"{CommanderName}:{blueprint}");
+                    Settings.Default.Favorites.Add(text);
                     Settings.Default.Save();
                 }
 
-                if (Settings.Default.Ignored.Contains($"{CommanderName}:{blueprint}"))
+                if (Settings.Default.Ignored.Contains(text))
                 {
                     blueprint.Ignored = true;
 
@@ -349,9 +359,11 @@ namespace EDEngineer
                 {
                     blueprint.Ignored = true;
                     Settings.Default.Ignored.Remove($"{blueprint}");
-                    Settings.Default.Ignored.Add($"{CommanderName}:{blueprint}");
+                    Settings.Default.Ignored.Add(text);
                     Settings.Default.Save();
                 }
+
+                blueprint.ShoppingListCount = Settings.Default.ShoppingList.Cast<string>().Count(l => l == text);
 
                 blueprint.PropertyChanged += (o, e) =>
                 {
@@ -383,11 +395,41 @@ namespace EDEngineer
 
                         Settings.Default.Save();
                     }
+                    else if (e.PropertyName == "ShoppingListCount")
+                    {
+                        while (Settings.Default.ShoppingList.Contains(text))
+                        {
+                            Settings.Default.ShoppingList.Remove(text);
+                        }
+
+                        for (var i = 0; i < blueprint.ShoppingListCount; i++)
+                        {
+                            Settings.Default.ShoppingList.Add(text);
+                        }
+
+                        Settings.Default.Save();
+                    }
                 };
             }
 
             Filters = new BlueprintFilters(languages, State.Blueprints);
+
+            shoppingList = new ShoppingListViewModel(State.Blueprints, languages);
         }
+
+
+        public void ShoppingListChange(Blueprint blueprint, int i)
+        {
+            if (blueprint.ShoppingListCount + i >= 0)
+            {
+                blueprint.ShoppingListCount += i;
+
+                OnPropertyChanged(nameof(ShoppingList));
+                OnPropertyChanged(nameof(ShoppingListItem));
+            }
+        }
+
+        public int ShoppingListItem => 0;
 
         public override string ToString()
         {

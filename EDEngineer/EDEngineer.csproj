@@ -165,7 +165,9 @@
     <Compile Include="SelectLanguageWindow.xaml.cs">
       <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
+    <Compile Include="Utils\StringExtensions.cs" />
     <Compile Include="Utils\System\IOUtils.cs" />
     <Compile Include="Utils\System\ReleaseNotesManager.cs" />
     <Compile Include="Utils\System\ServerBridge.cs" />

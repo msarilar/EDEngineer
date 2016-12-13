@@ -57,6 +57,7 @@
     <Compile Include="Barda\Collections\SortedObservableDictionary.cs" />
     <Compile Include="Barda\PropertyChangedExtendedEventArgs.cs" />
     <Compile Include="Barda\NotifyPropertyChangedInvocatorAttribute.cs" />
+    <Compile Include="Barda\StringExtensions.cs" />
     <Compile Include="Blueprint.cs" />
     <Compile Include="BlueprintIngredient.cs" />
     <Compile Include="Entry.cs" />

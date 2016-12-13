@@ -142,6 +142,7 @@ namespace EDEngineer
 
             HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(shortcut));
             Blueprints.UpdateLayout();
+            ShoppingList.UpdateLayout();
         }
 
         private void ConfigureShortcut(object sender, EventArgs e)
@@ -218,6 +219,16 @@ namespace EDEngineer
             viewModel.LoadState(true);
         }
 
+        private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var toggleButton = FindVisualParent<Button>(Mouse.DirectlyOver as DependencyObject);
+            if (toggleButton != null)
+            {
+                toggleButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Primitives.ButtonBase.ClickEvent));
+                e.Handled = true;
+            }
+        }
+
         private void PreviewMouseLeftButtonDownHandler(object sender, MouseButtonEventArgs e)
         {
             var cell = (DataGridCell) sender;
@@ -267,19 +278,20 @@ namespace EDEngineer
             }
         }
 
-        private void BlueprintsDataGridLoaded(object sender, RoutedEventArgs e)
+        private void DataGridLoaded(object sender, RoutedEventArgs e)
         {
+            var dataGrid = (System.Windows.Controls.DataGrid) sender;
             var newStyle = new Style
             {
-                BasedOn = Blueprints.CellStyle,
+                BasedOn = dataGrid.CellStyle,
                 TargetType = typeof (DataGridCell)
             };
 
             newStyle.Setters.Add(new EventSetter(PreviewMouseLeftButtonDownEvent, new MouseButtonEventHandler(PreviewMouseLeftButtonDownHandler)));
-            Blueprints.CellStyle = newStyle;
+            dataGrid.CellStyle = newStyle;
         }
 
-        bool transitionning = false;
+        private bool transitionning = false;
         private void HideWindow()
         {
             if (!transitionning)
@@ -415,6 +427,24 @@ namespace EDEngineer
         {
             var dataContext = ((Grid) sender).DataContext;
             viewModel.ToggleHighlight((KeyValuePair<string, Entry>) dataContext);
+        }
+
+        private void IncrementShoppingList(object sender, RoutedEventArgs e)
+        {
+            var tag = ((Button) sender).Tag;
+            viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint) tag, 1);
+        }
+
+        private void DecrementShoppingList(object sender, RoutedEventArgs e)
+        {
+            var tag = ((Button)sender).Tag;
+            viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint)tag, -1);
+        }
+
+        private void RemoveBlueprintShoppingList(object sender, RoutedEventArgs e)
+        {
+            var blueprint = (Blueprint) ((Button)sender).Tag;
+            viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
         }
     }
 }

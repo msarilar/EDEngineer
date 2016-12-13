@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models.Barda;
-using EDEngineer.Models.Filters;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Models
@@ -14,11 +13,12 @@ namespace EDEngineer.Models
         private readonly ILanguage language;
         private bool favorite;
         private bool ignored;
+        private int shoppingListCount;
         public string Type { get; set; }
         public string BlueprintName { get; set; }
         public IReadOnlyCollection<string> Engineers { get; set; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
-        public int Grade { get; set; }
+        public int? Grade { get; set; }
 
         [JsonIgnore]
         public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";
@@ -29,7 +29,21 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public string TranslatedName => language.Translate(BlueprintName);
 
-        public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
+        [JsonIgnore]
+        public int ShoppingListCount
+        {
+            get { return shoppingListCount; }
+
+            set
+            {
+                if (value == shoppingListCount)
+                    return;
+                shoppingListCount = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public Blueprint(ILanguage language, string type, string blueprintName, int? grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {
             this.language = language;
             Type = type;
@@ -145,6 +159,10 @@ namespace EDEngineer.Models
         {
             return $"G{Grade} [{Type}] {BlueprintName}";
         }
+
+        public string ShortString => $"G{Grade} {language.Translate(Type).Initials()} {language.Translate(BlueprintName).Initials()}";
+
+        public string TranslatedString => $"G{Grade} {language.Translate(Type)} {language.Translate(BlueprintName)}";
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
