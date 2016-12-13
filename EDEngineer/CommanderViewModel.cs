@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -27,11 +26,15 @@ namespace EDEngineer
         public State State { get; }
         public BlueprintFilters Filters { get; private set; }
 
+        public List<Blueprint> ShoppingList => shoppingList.ToList();
+
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;
 
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
+        private ShoppingListViewModel shoppingList;
+
         public Instant LastUpdate
         {
             get { return lastUpdate; }
@@ -387,6 +390,19 @@ namespace EDEngineer
             }
 
             Filters = new BlueprintFilters(languages, State.Blueprints);
+
+            shoppingList = new ShoppingListViewModel(State.Blueprints, languages);
+        }
+
+
+        public void ShoppingListChange(Blueprint blueprint, int i)
+        {
+            if (blueprint.ShoppingListCount + i >= 0)
+            {
+                blueprint.ShoppingListCount += i;
+
+                OnPropertyChanged(nameof(ShoppingList));
+            }
         }
 
         public override string ToString()

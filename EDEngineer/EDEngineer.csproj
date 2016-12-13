@@ -85,7 +85,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -165,6 +165,7 @@
     <Compile Include="SelectLanguageWindow.xaml.cs">
       <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\System\IOUtils.cs" />
     <Compile Include="Utils\System\ReleaseNotesManager.cs" />

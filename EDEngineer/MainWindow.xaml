@@ -644,336 +644,584 @@
                     </Button>
                 </Grid>
 
+                <Grid Grid.Row="1"
+                      Focusable="False">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
                 <!-- BLUEPRINTS -->
 
-                <DataGrid x:Name="Blueprints"
-                          IsReadOnly="True"
-                          FontFamily="./Resources/Fonts/#Euro Caps"
-                          Background="Black"
-                          BorderBrush="{StaticResource EliteOrangeBrush}"
-                          HorizontalAlignment="Stretch"
-                          ColumnWidth="*"
-                          FontSize="14.5"
-                          IsSynchronizedWithCurrentItem="False"
-                          HorizontalContentAlignment="Stretch"
-                          SelectionUnit="FullRow"
-                          AutoGenerateColumns="False"
-                          Loaded="BlueprintsDataGridLoaded"
-                          ItemsSource="{Binding State.Blueprints}"
-                          DataContext="{Binding}"
-                          Focusable="False"
-                          Grid.Row="1"
-                          Focusable="False"
-                          Style="{DynamicResource BlueprintGridStyle}">
+                    <DataGrid x:Name="Blueprints"
+                              IsReadOnly="True"
+                              FontFamily="./Resources/Fonts/#Euro Caps"
+                              Background="Black"
+                              BorderBrush="{StaticResource EliteOrangeBrush}"
+                              HorizontalAlignment="Stretch"
+                              ColumnWidth="*"
+                              FontSize="14.5"
+                              IsSynchronizedWithCurrentItem="False"
+                              HorizontalContentAlignment="Stretch"
+                              SelectionUnit="FullRow"
+                              AutoGenerateColumns="False"
+                              Loaded="BlueprintsDataGridLoaded"
+                              ItemsSource="{Binding State.Blueprints}"
+                              DataContext="{Binding}"
+                              Focusable="False"
+                              Grid.Row="0"
+                              Style="{DynamicResource BlueprintGridStyle}">
 
-                    <DataGrid.RowDetailsTemplate>
-                        <DataTemplate>
-                            <Grid Background="#043A59"
-                                  Focusable="False"
-                                  Style="{StaticResource BlueprintDetailsGridStyle}">
-                                <Grid.LayoutTransform>
-                                    <ScaleTransform ScaleY="0"/>
-                                </Grid.LayoutTransform>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.5*" />
-                                    <ColumnDefinition Width="0.5*" />
-                                </Grid.ColumnDefinitions>
-                                <Grid Grid.Column="0"
-                                      Margin="10,0,0,0">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="Auto" />
-                                    </Grid.ColumnDefinitions>
-
-                                    <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                  Grid.Column="0"
-                                                  Focusable="False"
-                                                  Margin="0,0,7,0"
-                                                  FontSize="13">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <TextBlock>
-                                                    <Run>
-                                                        <Run.Text>
-                                                            <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Material">
-                                                                <Binding Path="Entry.Data.Kind"/>
-                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
-				                                                            RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                            </MultiBinding>
-                                                        </Run.Text>
-                                                    </Run>
-                                                    <Run Text=":" />
-                                                </TextBlock>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-
-                                    <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                  Grid.Column="1"
-                                                  Margin="0,0,7,0"
-                                                  FontSize="13">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <TextBlock>
-                                                    <TextBlock.Text>
-                                                        <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Modular Terminals">
-                                                            <Binding Path="Entry.Data.Name"/>
-                                                            <Binding Path="DataContext.Languages.CurrentLanguage"
-				                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                        </MultiBinding>
-                                                    </TextBlock.Text>
-                                                </TextBlock>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-
-                                    <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                  Grid.Column="2"
-                                                  Margin="0,0,7,0"
-                                                  FontSize="13">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <TextBlock>
-                                                    <Run Text="(" />
-                                                    <Run Text="{Binding Entry.Count}" />
-                                                    <Run Text="/" />
-                                                    <Run Text="{Binding Size, Mode=OneWay}" />
-                                                    <Run Text=")" />
-                                                </TextBlock>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-
-                                    <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                  Grid.Column="3"
-                                                  Margin="0,0,7,0">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <Grid>
-                                                    <iconPacks:PackIconMaterial Kind="Check"
-                                                                                Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
-                                                                                Foreground="Green" />
-                                                    <iconPacks:PackIconMaterial Height="14" Kind="Close"
-                                                                                Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
-                                                                                Foreground="Red" />
-                                                </Grid>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-                                </Grid>
-
-                                <Grid Grid.Column="1"
-                                      Focusable="False">
+                        <DataGrid.RowDetailsTemplate>
+                            <DataTemplate>
+                                <Grid Background="#043A59"
+                                      Focusable="False"
+                                      Style="{StaticResource BlueprintDetailsGridStyle}">
+                                    <Grid.LayoutTransform>
+                                        <ScaleTransform ScaleY="0"/>
+                                    </Grid.LayoutTransform>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="0.5*" />
                                         <ColumnDefinition Width="0.5*" />
                                     </Grid.ColumnDefinitions>
                                     <Grid Grid.Column="0"
-                                          VerticalAlignment="Center"
-                                          HorizontalAlignment="Right">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto"/>
-                                            <RowDefinition Height="*"/>
-                                        </Grid.RowDefinitions>
+                                          Focusable="False"
+                                          Margin="10,0,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
 
-                                        <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                          Converter={x:Static localization1:Languages.Instance},
-                                                          ConverterParameter='Shopping List Count',
-                                                          FallbackValue='Shopping List Count'}"
-                                                   FontSize="13"
-                                                   HorizontalAlignment="Center"
-                                                   Grid.Row="0"/>
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="0"
+                                                      Focusable="False"
+                                                      Margin="0,0,7,0"
+                                                      FontSize="13">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock>
+                                                        <Run>
+                                                            <Run.Text>
+                                                                <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Material">
+                                                                    <Binding Path="Entry.Data.Kind"/>
+                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                                RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                </MultiBinding>
+                                                            </Run.Text>
+                                                        </Run>
+                                                        <Run Text=":" />
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
 
-                                        <Grid Grid.Row="1"
-                                              HorizontalAlignment="Center">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition/>
-                                            </Grid.ColumnDefinitions>
-                                            <Button x:Name="DecrementButton"
-                                                    Grid.Column="0"
-                                                    Margin="0 2 6 2"
-                                                    Focusable="False"
-                                                    Tag="{Binding}"
-                                                    Click="DecrementShoppingList"
-                                                    Style="{DynamicResource ChromelessButtonStyle}">
-                                                <Path x:Name="PolygonDown"
-                                                      Width="14"
-                                                      Height="3"
-                                                      Fill="{DynamicResource EliteOrangeBrush}"
-                                                      Data="F1 M 19,38L 57,38L 57,44L 19,44L 19,38 Z "
-                                                      Stretch="Fill" />
-                                            </Button>
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="1"
+                                                      Focusable="False"
+                                                      Margin="0,0,7,0"
+                                                      FontSize="13">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock>
+                                                        <TextBlock.Text>
+                                                            <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Modular Terminals">
+                                                                <Binding Path="Entry.Data.Name"/>
+                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                            </MultiBinding>
+                                                        </TextBlock.Text>
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
 
-                                            <TextBlock Grid.Column="1"
-                                                       Text="{Binding ShoppingListCount}"
-                                                       FontSize="16"
-                                                       Focusable="False"
-                                                       Foreground="{DynamicResource EliteOrangeBrush}"/>
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="2"
+                                                      Focusable="False"
+                                                      Margin="0,0,7,0"
+                                                      FontSize="13">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock>
+                                                        <Run Text="(" />
+                                                        <Run Text="{Binding Entry.Count}" />
+                                                        <Run Text="/" />
+                                                        <Run Text="{Binding Size, Mode=OneWay}" />
+                                                        <Run Text=")" />
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
 
-                                            <Button x:Name="IncrementButton"
-                                                    Grid.Column="2"
-                                                    Margin="6 2 2 2"
-                                                    Focusable="False"
-                                                    Tag="{Binding}"
-                                                    Click="IncrementShoppingList"
-                                                    Style="{DynamicResource ChromelessButtonStyle}">
-                                                <Path x:Name="PolygonUp"
-                                                      Width="14"
-                                                      Height="14"
-                                                      Fill="{DynamicResource EliteOrangeBrush}"
-                                                      Data="F1 M 35,19L 41,19L 41,35L 57,35L 57,41L 41,41L 41,57L 35,57L 35,41L 19,41L 19,35L 35,35L 35,19 Z "
-                                                      Stretch="Fill" />
-                                            </Button>
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="3"
+                                                      Focusable="False"
+                                                      Margin="0,0,7,0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <iconPacks:PackIconMaterial Kind="Check"
+                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
+                                                                                    Foreground="Green" />
+                                                        <iconPacks:PackIconMaterial Height="14" Kind="Close"
+                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
+                                                                                    Foreground="Red" />
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Grid>
+
+                                    <Grid Grid.Column="1"
+                                          Focusable="False">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.5*" />
+                                            <ColumnDefinition Width="0.5*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Right">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+
+                                            <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                              RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                              Converter={x:Static localization1:Languages.Instance},
+                                                              ConverterParameter='Shopping List Count',
+                                                              FallbackValue='Shopping List Count'}"
+                                                       FontSize="13"
+                                                       HorizontalAlignment="Center"
+                                                       Grid.Row="0"/>
+
+                                            <Grid Grid.Row="1"
+                                                  HorizontalAlignment="Center">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition/>
+                                                </Grid.ColumnDefinitions>
+                                                <Button x:Name="DecrementButton"
+                                                        Grid.Column="0"
+                                                        Margin="0 2 6 2"
+                                                        Focusable="False"
+                                                        Tag="{Binding}"
+                                                        Click="DecrementShoppingList"
+                                                        Style="{DynamicResource ChromelessButtonStyle}">
+                                                    <Path x:Name="PolygonDown"
+                                                          Width="14"
+                                                          Height="3"
+                                                          Fill="{DynamicResource EliteOrangeBrush}"
+                                                          Data="F1 M 19,38L 57,38L 57,44L 19,44L 19,38 Z "
+                                                          Stretch="Fill" />
+                                                </Button>
+
+                                                <TextBlock Grid.Column="1"
+                                                           Text="{Binding ShoppingListCount}"
+                                                           FontSize="16"
+                                                           Focusable="False"
+                                                           Foreground="{DynamicResource EliteOrangeBrush}"/>
+
+                                                <Button x:Name="IncrementButton"
+                                                        Grid.Column="2"
+                                                        Margin="6 2 2 2"
+                                                        Focusable="False"
+                                                        Tag="{Binding}"
+                                                        Click="IncrementShoppingList"
+                                                        Style="{DynamicResource ChromelessButtonStyle}">
+                                                    <Path x:Name="PolygonUp"
+                                                          Width="14"
+                                                          Height="14"
+                                                          Fill="{DynamicResource EliteOrangeBrush}"
+                                                          Data="F1 M 35,19L 41,19L 41,35L 57,35L 57,41L 41,41L 41,57L 35,57L 35,41L 19,41L 19,35L 35,35L 35,19 Z "
+                                                          Stretch="Fill" />
+                                                </Button>
+                                            </Grid>
                                         </Grid>
+                                        <ItemsControl Margin="0,0,10,0"
+                                                  FontSize="13"
+                                                  ItemsSource="{Binding Engineers}"
+                                                  HorizontalAlignment="Right"
+                                                  Grid.Column="1" />
                                     </Grid>
-                                    <ItemsControl Margin="0,0,10,0"
-                                              FontSize="13"
-                                              ItemsSource="{Binding Engineers}"
-                                              HorizontalAlignment="Right"
-                                              Grid.Column="1" />
                                 </Grid>
-                            </Grid>
-                        </DataTemplate>
-                    </DataGrid.RowDetailsTemplate>
-                    <DataGrid.Columns>
-                        <!-- GRADE -->
-                        <DataGridTextColumn Header="G"
-                                            Binding="{Binding Grade}"
-                                            IsReadOnly="True"
-                                            Width="30"
-                                            CanUserResize="False">
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="HorizontalAlignment" Value="Center" />
-                                    <Setter Property="VerticalAlignment" Value="Center" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <!-- TYPE -->
-                        <DataGridTextColumn IsReadOnly="True"
-                                            MinWidth="130"
-                                            MaxWidth="130"
-                                            CanUserResize="False"
-                                            SortMemberPath="TranslatedType">
-                            <DataGridTextColumn.Binding>
-                                <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Plasma Accelerator">
-                                    <Binding Path="Type"
-                                             Converter="{StaticResource BlueprintNameShortener}"/>
-                                    <Binding Path="DataContext.Languages.CurrentLanguage"
-                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                </MultiBinding>
-                            </DataGridTextColumn.Binding>
-                            <DataGridTextColumn.Header>
-                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                          Converter={x:Static localization1:Languages.Instance},
-                                                          ConverterParameter='Type',
-                                                          FallbackValue='Type'}"/>
-                            </DataGridTextColumn.Header>
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="TextWrapping" Value="Wrap" />
-                                    <Setter Property="TextAlignment" Value="Center" />
-                                    <Setter Property="HorizontalAlignment" Value="Center" />
-                                    <Setter Property="VerticalAlignment" Value="Center" />
-                                    <Setter Property="TextTrimming" Value="CharacterEllipsis" />
-                                    <Setter Property="MaxHeight" Value="50" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <!-- NAME -->
-                        <DataGridTextColumn IsReadOnly="True"
-                                            Width="*"
-                                            CanUserResize="False"
-                                            SortMemberPath="TranslatedName">
-                            <DataGridTextColumn.Binding>
-                                <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Short Range Blaster">
-                                    <Binding Path="BlueprintName"/>
-                                    <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                </MultiBinding>
-                            </DataGridTextColumn.Binding>
-                            <DataGridTextColumn.Header>
-                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                          Converter={x:Static localization1:Languages.Instance},
-                                                          ConverterParameter='Name',
-                                                          FallbackValue='Name'}"/>
-                            </DataGridTextColumn.Header>
-                            <DataGridTextColumn.ElementStyle>
-                                <Style TargetType="TextBlock">
-                                    <Setter Property="TextWrapping" Value="Wrap" />
-                                </Style>
-                            </DataGridTextColumn.ElementStyle>
-                        </DataGridTextColumn>
-                        <!-- PROGRESS -->
-                        <DataGridTemplateColumn IsReadOnly="True"
-                                                SortMemberPath="ProgressSorting"
-                                                Width="Auto"
-                                                MaxWidth="150"
+                            </DataTemplate>
+                        </DataGrid.RowDetailsTemplate>
+                        <DataGrid.Columns>
+                            <!-- GRADE -->
+                            <DataGridTextColumn Header="G"
+                                                Binding="{Binding Grade}"
+                                                IsReadOnly="True"
+                                                Width="30"
                                                 CanUserResize="False">
-                            <DataGridTemplateColumn.Header>
-                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                          RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                          Converter={x:Static localization1:Languages.Instance},
-                                                          ConverterParameter='Progress',
-                                                          FallbackValue='Progress'}"/>
-                            </DataGridTemplateColumn.Header>
-                            <DataGridTemplateColumn.CellTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <StackPanel Orientation="Vertical">
-                                            <TextBlock HorizontalAlignment="Center">
-                                                <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                <Run Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                                    RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                                    Converter={x:Static localization1:Languages.Instance},
-                                                                    ConverterParameter=': can craft',
-                                                                    FallbackValue=': can craft'}" /> 
-                                                <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
-                                            </TextBlock>
-                                            <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                       Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
-                                        </StackPanel>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <!-- TYPE -->
+                            <DataGridTextColumn IsReadOnly="True"
+                                                MinWidth="130"
+                                                MaxWidth="130"
+                                                CanUserResize="False"
+                                                SortMemberPath="TranslatedType">
+                                <DataGridTextColumn.Binding>
+                                    <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Plasma Accelerator">
+                                        <Binding Path="Type"
+                                                 Converter="{StaticResource BlueprintNameShortener}"/>
+                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                    </MultiBinding>
+                                </DataGridTextColumn.Binding>
+                                <DataGridTextColumn.Header>
+                                    <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                              RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                              Converter={x:Static localization1:Languages.Instance},
+                                                              ConverterParameter='Type',
+                                                              FallbackValue='Type'}"/>
+                                </DataGridTextColumn.Header>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextWrapping" Value="Wrap" />
+                                        <Setter Property="TextAlignment" Value="Center" />
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                                        <Setter Property="MaxHeight" Value="50" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <!-- NAME -->
+                            <DataGridTextColumn IsReadOnly="True"
+                                                Width="*"
+                                                CanUserResize="False"
+                                                SortMemberPath="TranslatedName">
+                                <DataGridTextColumn.Binding>
+                                    <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Short Range Blaster">
+                                        <Binding Path="BlueprintName"/>
+                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                    </MultiBinding>
+                                </DataGridTextColumn.Binding>
+                                <DataGridTextColumn.Header>
+                                    <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                              RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                              Converter={x:Static localization1:Languages.Instance},
+                                                              ConverterParameter='Name',
+                                                              FallbackValue='Name'}"/>
+                                </DataGridTextColumn.Header>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextWrapping" Value="Wrap" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <!-- PROGRESS -->
+                            <DataGridTemplateColumn IsReadOnly="True"
+                                                    SortMemberPath="ProgressSorting"
+                                                    Width="Auto"
+                                                    MaxWidth="150"
+                                                    CanUserResize="False">
+                                <DataGridTemplateColumn.Header>
+                                    <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                              RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                              Converter={x:Static localization1:Languages.Instance},
+                                                              ConverterParameter='Progress',
+                                                              FallbackValue='Progress'}"/>
+                                </DataGridTemplateColumn.Header>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock HorizontalAlignment="Center">
+                                                    <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
+                                                    <Run Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                                        RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                                        Converter={x:Static localization1:Languages.Instance},
+                                                                        ConverterParameter=': can craft',
+                                                                        FallbackValue=': can craft'}" /> 
+                                                    <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
+                                                </TextBlock>
+                                                <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
+                                                                           Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!-- FAVORITE / IGNORED BUTTONS -->
+                            <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <ToggleButton Width="40"
+                                                          Height="40"
+                                                          HorizontalAlignment="Left"
+                                                          Margin="10,0,0,0"
+                                                          VerticalAlignment="Center"
+                                                          IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          Foreground="Black">
+                                                <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                            </ToggleButton>
+                                            <ToggleButton x:Name="IgnoreBluebrintButton"
+                                                          Width="40"
+                                                          Height="40"
+                                                          HorizontalAlignment="Right"
+                                                          Margin="0,0,10,0"
+                                                          VerticalAlignment="Center"
+                                                          IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          Foreground="Black">
+                                                <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black" />
+                                            </ToggleButton>
+                                        </Grid>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <DataGrid x:Name="ShoppingList"
+                              IsReadOnly="True"
+                              FontFamily="./Resources/Fonts/#Euro Caps"
+                              Background="Black"
+                              BorderBrush="{StaticResource EliteOrangeBrush}"
+                              HorizontalAlignment="Stretch"
+                              ColumnWidth="*"
+                              FontSize="14.5"
+                              IsSynchronizedWithCurrentItem="False"
+                              HeadersVisibility="None"
+                              HorizontalContentAlignment="Stretch"
+                              SelectionUnit="FullRow"
+                              AutoGenerateColumns="False"
+                              Loaded="BlueprintsDataGridLoaded"
+                              ItemsSource="{Binding ShoppingList}"
+                              DataContext="{Binding}"
+                              Focusable="False"
+                              Grid.Row="1"
+                              Style="{DynamicResource BlueprintGridStyle}">
+
+                        <DataGrid.RowDetailsTemplate>
+                            <DataTemplate>
+                                <Grid Background="#043A59"
+                                      Focusable="False"
+                                      Style="{StaticResource BlueprintDetailsGridStyle}">
+                                    <Grid.LayoutTransform>
+                                        <ScaleTransform ScaleY="0"/>
+                                    </Grid.LayoutTransform>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.5*" />
+                                        <ColumnDefinition Width="0.5*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid Grid.Column="0"
+                                          Focusable="False"
+                                          Margin="10,0,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="0"
+                                                      Margin="0,0,7,0"
+                                                      Focusable="False"
+                                                      FontSize="13">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock>
+                                                        <Run>
+                                                            <Run.Text>
+                                                                <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Material">
+                                                                    <Binding Path="Entry.Data.Kind"/>
+                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                                RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                </MultiBinding>
+                                                            </Run.Text>
+                                                        </Run>
+                                                        <Run Text=":" />
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="1"
+                                                      Margin="0,0,7,0"
+                                                      Focusable="False"
+                                                      FontSize="13">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock>
+                                                        <TextBlock.Text>
+                                                            <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Modular Terminals">
+                                                                <Binding Path="Entry.Data.Name"/>
+                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                            </MultiBinding>
+                                                        </TextBlock.Text>
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="2"
+                                                      Margin="0,0,7,0"
+                                                      Focusable="False"
+                                                      FontSize="13">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock>
+                                                        <Run Text="(" />
+                                                        <Run Text="{Binding Entry.Count}" />
+                                                        <Run Text="/" />
+                                                        <Run Text="{Binding Size, Mode=OneWay}" />
+                                                        <Run Text=")" />
+                                                    </TextBlock>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+
+                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                                      Grid.Column="3"
+                                                      Focusable="False"
+                                                      Margin="0,0,7,0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <iconPacks:PackIconMaterial Kind="Check"
+                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
+                                                                                    Foreground="Green" />
+                                                        <iconPacks:PackIconMaterial Height="14" Kind="Close"
+                                                                                    Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
+                                                                                    Foreground="Red" />
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
                                     </Grid>
-                                </DataTemplate>
-                            </DataGridTemplateColumn.CellTemplate>
-                        </DataGridTemplateColumn>
-                        <!-- FAVORITE / IGNORED BUTTONS -->
-                        <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
-                            <DataGridTemplateColumn.CellTemplate>
-                                <DataTemplate>
-                                    <Grid>
-                                        <ToggleButton Width="40"
-                                                      Height="40"
-                                                      HorizontalAlignment="Left"
-                                                      Margin="10,0,0,0"
-                                                      VerticalAlignment="Center"
-                                                      IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                      Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
-                                        </ToggleButton>
-                                        <ToggleButton x:Name="IgnoreBluebrintButton"
-                                                      Width="40"
-                                                      Height="40"
-                                                      HorizontalAlignment="Right"
-                                                      Margin="0,0,10,0"
-                                                      VerticalAlignment="Center"
-                                                      IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                      Foreground="Black">
-                                            <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black" />
-                                        </ToggleButton>
-                                    </Grid>
-                                </DataTemplate>
-                            </DataGridTemplateColumn.CellTemplate>
-                        </DataGridTemplateColumn>
-                    </DataGrid.Columns>
-                </DataGrid>
+                                </Grid>
+                            </DataTemplate>
+                        </DataGrid.RowDetailsTemplate>
+                        <DataGrid.Columns>
+                            <!-- GRADE -->
+                            <DataGridTextColumn Binding="{Binding Grade}"
+                                                IsReadOnly="True"
+                                                Width="30"
+                                                CanUserResize="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <!-- TYPE -->
+                            <DataGridTextColumn IsReadOnly="True"
+                                                MinWidth="130"
+                                                MaxWidth="130"
+                                                CanUserResize="False"
+                                                SortMemberPath="TranslatedType">
+                                <DataGridTextColumn.Binding>
+                                    <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Plasma Accelerator">
+                                        <Binding Path="Type"
+                                                 Converter="{StaticResource BlueprintNameShortener}"/>
+                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                    </MultiBinding>
+                                </DataGridTextColumn.Binding>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextWrapping" Value="Wrap" />
+                                        <Setter Property="TextAlignment" Value="Center" />
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                        <Setter Property="TextTrimming" Value="CharacterEllipsis" />
+                                        <Setter Property="MaxHeight" Value="50" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <!-- NAME -->
+                            <DataGridTextColumn IsReadOnly="True"
+                                                Width="*"
+                                                CanUserResize="False"
+                                                SortMemberPath="TranslatedName">
+                                <DataGridTextColumn.Binding>
+                                    <MultiBinding Converter="{x:Static localization1:Languages.Instance}" FallbackValue="Short Range Blaster">
+                                        <Binding Path="BlueprintName"/>
+                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                    </MultiBinding>
+                                </DataGridTextColumn.Binding>
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextWrapping" Value="Wrap" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <!-- PROGRESS -->
+                            <DataGridTemplateColumn IsReadOnly="True"
+                                                    SortMemberPath="ProgressSorting"
+                                                    Width="Auto"
+                                                    MaxWidth="150"
+                                                    CanUserResize="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock HorizontalAlignment="Center">
+                                                    <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
+                                                    <Run Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                                        RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                                        Converter={x:Static localization1:Languages.Instance},
+                                                                        ConverterParameter=': can craft',
+                                                                        FallbackValue=': can craft'}" /> 
+                                                    <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
+                                                </TextBlock>
+                                                <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
+                                                                           Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                            </StackPanel>
+                                        </Grid>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!-- FAVORITE / IGNORED BUTTONS -->
+                            <DataGridTemplateColumn IsReadOnly="True" Width="100" CanUserResize="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <ToggleButton Width="40"
+                                                          Height="40"
+                                                          HorizontalAlignment="Left"
+                                                          Margin="10,0,0,0"
+                                                          VerticalAlignment="Center"
+                                                          IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          Foreground="Black">
+                                                <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                            </ToggleButton>
+                                            <ToggleButton x:Name="IgnoreBluebrintButton"
+                                                          Width="40"
+                                                          Height="40"
+                                                          HorizontalAlignment="Right"
+                                                          Margin="0,0,10,0"
+                                                          VerticalAlignment="Center"
+                                                          IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          Foreground="Black">
+                                                <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black" />
+                                            </ToggleButton>
+                                        </Grid>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+
             </Grid>
         </Grid>
 

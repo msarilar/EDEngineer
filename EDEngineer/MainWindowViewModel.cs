@@ -210,13 +210,5 @@ namespace EDEngineer
 
             Settings.Default.Save();
         }
-
-        public void ShoppingListChange(Blueprint blueprint, int i)
-        {
-            if (blueprint.ShoppingListCount + i >= 0)
-            {
-                blueprint.ShoppingListCount += i;
-            }
-        }
     }
 }

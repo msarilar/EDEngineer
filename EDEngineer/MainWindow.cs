@@ -142,6 +142,7 @@ namespace EDEngineer
 
             HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(shortcut));
             Blueprints.UpdateLayout();
+            ShoppingList.UpdateLayout();
         }
 
         private void ConfigureShortcut(object sender, EventArgs e)
@@ -269,14 +270,15 @@ namespace EDEngineer
 
         private void BlueprintsDataGridLoaded(object sender, RoutedEventArgs e)
         {
+            var dataGrid = (System.Windows.Controls.DataGrid) sender;
             var newStyle = new Style
             {
-                BasedOn = Blueprints.CellStyle,
+                BasedOn = dataGrid.CellStyle,
                 TargetType = typeof (DataGridCell)
             };
 
             newStyle.Setters.Add(new EventSetter(PreviewMouseLeftButtonDownEvent, new MouseButtonEventHandler(PreviewMouseLeftButtonDownHandler)));
-            Blueprints.CellStyle = newStyle;
+            dataGrid.CellStyle = newStyle;
         }
 
         bool transitionning = false;
@@ -420,13 +422,13 @@ namespace EDEngineer
         private void IncrementShoppingList(object sender, RoutedEventArgs e)
         {
             var tag = ((Button) sender).Tag;
-            viewModel.ShoppingListChange((Blueprint) tag, 1);
+            viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint) tag, 1);
         }
 
         private void DecrementShoppingList(object sender, RoutedEventArgs e)
         {
             var tag = ((Button)sender).Tag;
-            viewModel.ShoppingListChange((Blueprint)tag, -1);
+            viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint)tag, -1);
         }
     }
 }
