@@ -310,7 +310,6 @@
                     </Setter.Value>
                 </Setter>
                 <Setter Property="GridLinesVisibility" Value="None" />
-                <Setter Property="HeadersVisibility" Value="Column" />
                 <Setter Property="HorizontalGridLinesBrush" Value="{DynamicResource GrayBrush7}" />
                 <Setter Property="VerticalGridLinesBrush" Value="{DynamicResource GrayBrush7}" />
                 <Setter Property="MinRowHeight" Value="25" />
@@ -543,26 +542,11 @@
                                                     <RowDefinition Height="*" />
                                                     <RowDefinition Height="Auto" />
                                                 </Grid.RowDefinitions>
-                                                <Button Command="ApplicationCommands.SelectAll" Focusable="False"
-            										Style="{DynamicResource {ComponentResourceKey ResourceId=MetroDataGridSelectAllButtonStyle, TypeInTargetAssembly={x:Type DataGrid}}}"
-            										Width="{Binding CellsPanelHorizontalOffset, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}}">
-                                                    <Button.Visibility>
-                                                        <Binding Path="HeadersVisibility"
-            												RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}">
-                                                            <Binding.ConverterParameter>
-                                                                <DataGridHeadersVisibility>All</DataGridHeadersVisibility>
-                                                            </Binding.ConverterParameter>
-                                                        </Binding>
-                                                    </Button.Visibility>
-                                                </Button>
                                                 <DataGridColumnHeadersPresenter x:Name="PART_ColumnHeadersPresenter"
             										Grid.Column="1">
                                                     <DataGridColumnHeadersPresenter.Visibility>
                                                         <Binding Path="HeadersVisibility"
             												RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}">
-                                                            <Binding.ConverterParameter>
-                                                                <DataGridHeadersVisibility>Column</DataGridHeadersVisibility>
-                                                            </Binding.ConverterParameter>
                                                         </Binding>
                                                     </DataGridColumnHeadersPresenter.Visibility>
                                                 </DataGridColumnHeadersPresenter>
@@ -631,6 +615,38 @@
                                 <Storyboard>
                                     <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
                                         <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase EasingMode="EaseInOut" />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.ExitActions>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+            <Style TargetType="Grid" x:Key="ShoppingListDetailsGridStyle">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"                                      Value="True">
+                        <DataTrigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1">
+                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                <CubicEase EasingMode="EaseInOut" />
+                                            </EasingDoubleKeyFrame.EasingFunction>
+                                        </EasingDoubleKeyFrame>
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.EnterActions>
+                        <DataTrigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
+                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0">
                                             <EasingDoubleKeyFrame.EasingFunction>
                                                 <CubicEase EasingMode="EaseInOut" />
                                             </EasingDoubleKeyFrame.EasingFunction>

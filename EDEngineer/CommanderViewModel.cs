@@ -402,8 +402,11 @@ namespace EDEngineer
                 blueprint.ShoppingListCount += i;
 
                 OnPropertyChanged(nameof(ShoppingList));
+                OnPropertyChanged(nameof(ShoppingListItem));
             }
         }
+
+        public int ShoppingListItem => 0;
 
         public override string ToString()
         {

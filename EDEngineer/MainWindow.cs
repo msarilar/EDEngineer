@@ -268,7 +268,7 @@ namespace EDEngineer
             }
         }
 
-        private void BlueprintsDataGridLoaded(object sender, RoutedEventArgs e)
+        private void DataGridLoaded(object sender, RoutedEventArgs e)
         {
             var dataGrid = (System.Windows.Controls.DataGrid) sender;
             var newStyle = new Style

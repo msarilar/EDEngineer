@@ -11,7 +11,6 @@ namespace EDEngineer
     {
         private readonly ILanguage languages;
         private readonly List<Blueprint> blueprints;
-        private bool any;
 
         public ShoppingListViewModel(List<Blueprint> blueprints, ILanguage languages)
         {
@@ -32,30 +31,32 @@ namespace EDEngineer
                 .SelectMany(b => Enumerable.Repeat(b, b.ShoppingListCount))
                 .ToList();
 
-            if (added.Any())
+            if (!added.Any())
             {
-                var metaBlueprint = new Blueprint(languages, "Shopping", "Shopping List", 0, new BlueprintIngredient[0],
-                    new string[0]);
-                metaBlueprint = added
-                    .Aggregate(metaBlueprint, (acc, current) =>
-                    {
-                        acc.Ingredients = acc.Ingredients.Concat(current.Ingredients).ToList();
-                        return acc;
-                    });
-                metaBlueprint.BlueprintName = "Shopping List";
-                metaBlueprint.Type = "Shopping";
-                metaBlueprint.Grade = 0;
-                metaBlueprint.Engineers = new List<string>();
-
-                metaBlueprint.Ingredients = metaBlueprint.Ingredients
-                                                         .GroupBy(i => i.Entry.Data.Name)
-                                                         .Select(
-                                                             i =>
-                                                                 new BlueprintIngredient(i.First().Entry,
-                                                                     i.Sum(c => c.Size)))
-                                                         .ToList();
-                yield return metaBlueprint;
+                yield break;
             }
+
+            var metaBlueprint = new Blueprint(languages, "", "Shopping List", 0, new BlueprintIngredient[0],
+                new string[0]);
+            metaBlueprint = added
+                .Aggregate(metaBlueprint, (acc, current) =>
+                                          {
+                                              acc.Ingredients = acc.Ingredients.Concat(current.Ingredients).ToList();
+                                              return acc;
+                                          });
+            metaBlueprint.Grade = 0;
+            metaBlueprint.Engineers = new List<string>();
+
+            metaBlueprint.Ingredients = metaBlueprint.Ingredients
+                                                     .GroupBy(i => i.Entry.Data.Name)
+                                                     .Select(
+                                                         i =>
+                                                             new BlueprintIngredient(i.First().Entry,
+                                                                 i.Sum(c => c.Size)))
+                                                     .OrderBy(i => i.Entry.Data.Kind)
+                                                     .ThenBy(i => languages.Translate(i.Entry.Data.Name))
+                                                     .ToList();
+            yield return metaBlueprint;
         }
 
         IEnumerator IEnumerable.GetEnumerator()

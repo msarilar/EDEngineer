@@ -662,15 +662,16 @@
                               FontSize="14.5"
                               IsSynchronizedWithCurrentItem="False"
                               HorizontalContentAlignment="Stretch"
+                              HorizontalScrollBarVisibility="Hidden"
                               SelectionUnit="FullRow"
                               AutoGenerateColumns="False"
-                              Loaded="BlueprintsDataGridLoaded"
+                              Loaded="DataGridLoaded"
                               ItemsSource="{Binding State.Blueprints}"
                               DataContext="{Binding}"
                               Focusable="False"
                               Grid.Row="0"
-                              Style="{DynamicResource BlueprintGridStyle}">
-
+                              Style="{DynamicResource BlueprintGridStyle}"
+                              HeadersVisibility="All">
                         <DataGrid.RowDetailsTemplate>
                             <DataTemplate>
                                 <Grid Background="#043A59"
@@ -993,22 +994,23 @@
                               ColumnWidth="*"
                               FontSize="14.5"
                               IsSynchronizedWithCurrentItem="False"
-                              HeadersVisibility="None"
                               HorizontalContentAlignment="Stretch"
                               SelectionUnit="FullRow"
                               AutoGenerateColumns="False"
-                              Loaded="BlueprintsDataGridLoaded"
+                              Margin="0,0,14,0"
                               ItemsSource="{Binding ShoppingList}"
                               DataContext="{Binding}"
-                              Focusable="False"
                               Grid.Row="1"
-                              Style="{DynamicResource BlueprintGridStyle}">
-
+                              SelectedIndex="{Binding ShoppingListItem, Mode=OneWay}"
+                              Style="{DynamicResource BlueprintGridStyle}"
+                              HeadersVisibility="None"
+                              RowDetailsVisibilityMode="Visible"
+                              Focusable="False">
                         <DataGrid.RowDetailsTemplate>
                             <DataTemplate>
-                                <Grid Background="#043A59"
+                                <Grid Background="#221e59"
                                       Focusable="False"
-                                      Style="{StaticResource BlueprintDetailsGridStyle}">
+                                      Style="{StaticResource ShoppingListDetailsGridStyle}">
                                     <Grid.LayoutTransform>
                                         <ScaleTransform ScaleY="0"/>
                                     </Grid.LayoutTransform>
@@ -1093,13 +1095,18 @@
                                                       Margin="0,0,7,0">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <Grid>
+                                                    <Grid MaxWidth="15.5"
+                                                          MaxHeight="15.5"
+                                                          MinWidth="15.5"
+                                                          MinHeight="15.5">
                                                         <iconPacks:PackIconMaterial Kind="Check"
                                                                                     Visibility="{Binding Converter={StaticResource IngredientToVisibility}, Mode=OneWay}"
-                                                                                    Foreground="Green" />
-                                                        <iconPacks:PackIconMaterial Height="14" Kind="Close"
+                                                                                    Foreground="Green"/>
+                                                        <iconPacks:PackIconMaterial Kind="Close"
                                                                                     Visibility="{Binding Converter={StaticResource IngredientToVisibility}, ConverterParameter=Inverted, Mode=OneWay}"
-                                                                                    Foreground="Red" />
+                                                                                    Foreground="Red"
+                                                                                    Width="15"
+                                                                                    Height="15"/>
                                                     </Grid>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
