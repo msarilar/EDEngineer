@@ -38,6 +38,7 @@ namespace EDEngineer.Utils.System
                 watcher = null;
             }
 
+            periodicRefresher?.Stop();
             periodicRefresher?.Dispose();
 
             if (!Directory.Exists(logDirectory))

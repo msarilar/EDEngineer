@@ -64,7 +64,7 @@ namespace EDEngineer
         {
             LogDirectory = IOUtils.RetrieveLogDirectory(forcePickFolder, LogDirectory);
             LogWatcher?.Dispose();
-            LogWatcher = new LogWatcher(logDirectory);
+            LogWatcher = new LogWatcher(LogDirectory);
 
             var allLogs = LogWatcher.RetrieveAllLogs();
             Commanders.Clear();

@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
-using System.Windows.Input;
 using EDEngineer.Localization;
 using Application = System.Windows.Application;
 
