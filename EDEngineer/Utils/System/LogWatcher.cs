@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using EDEngineer.Models;
+using EDEngineer.Models.Barda.Json;
 using Newtonsoft.Json.Linq;
 
 namespace EDEngineer.Utils.System
@@ -193,6 +194,8 @@ namespace EDEngineer.Utils.System
 
             ManualChangesDirectory = IOUtils.GetManualChangesDirectory();
 
+            var commandersInGame = gameLogLines.Keys.ToHashSet();
+
             foreach (var file in Directory.GetFiles(ManualChangesDirectory).Where(f => f != null && Path.GetFileName(f).StartsWith("manualChanges.") && f.EndsWith(".json")).ToList())
             {
                 var fileName = Path.GetFileName(file);
@@ -212,9 +215,14 @@ namespace EDEngineer.Utils.System
 
                 }
 
+                // if there's commanders found in the logs and none of them corresponds to the current commander's manualChange, then skip it
+                if (commandersInGame.Any() && commandersInGame.All(x => x != commanderName))
+                {
+                    continue;
+                }
+
                 var content = File.ReadAllLines(file).ToList();
-
-
+                
                 if (!gameLogLines.ContainsKey(commanderName))
                 {
                     gameLogLines[commanderName] = content;
