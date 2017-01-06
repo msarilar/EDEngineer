@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.1",
+    "Content": "* Added new data from latest story arc development (unknown ship signature and unknown wake data)"
+  },
+  {
     "Version": "1.0.4.0",
     "Content": "* Shopping List now available : add a blueprint to the shopping list by clicking on the blueprint, and then clicking on the new button (bottom right of the blueprint's details)\r\n* Allow negative numbers to be shown when filtering \"Zero\" stock items"
   },

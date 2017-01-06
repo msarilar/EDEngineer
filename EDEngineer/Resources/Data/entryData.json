@@ -957,5 +957,19 @@
     "FormattedName": "zirconium",
     "Kind": "Material",
     "OriginDetails": [ "Surface prospecting", "Mining" ]
+  },
+  {
+    "Name": "Unknown Ship Signature",
+    "Rarity": "Rare",
+    "FormattedName": "unknownshipsignature",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Wake Data",
+    "Rarity": "VeryRare",
+    "FormattedName": "unknownwakedata",
+    "Kind": "Data",
+    "OriginDetails": null
   }
 ]

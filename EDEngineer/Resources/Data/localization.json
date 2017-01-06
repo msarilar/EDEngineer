@@ -2114,6 +2114,18 @@
       "de": "Einkaufsliste",
       "fr": "Liste de courses",
       "ru": "Список покупок"
+    },
+    "Unknown Ship Signature": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unknown Wake Data": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }
