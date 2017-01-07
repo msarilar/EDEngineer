@@ -85,6 +85,7 @@ namespace EDEngineer.Utils.System
                             fileInfos[fileName] = fileInfo;
                         }
 
+                        fileInfo.IsReadOnly = false;
                         fileInfo.Refresh();
                     }
                 };

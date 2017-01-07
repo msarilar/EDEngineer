@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.2",
+    "Content": "* Spanish translation update (thanks to @TCAS!)\r\n\r\n* Fixes an issue where the application would not track log updates for some users"
+  },
+  {
     "Version": "1.0.4.1",
     "Content": "* Added new data from latest story arc development (unknown ship signature and unknown wake data)"
   },
