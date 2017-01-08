@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.4.3",
-    "Content": "* The shopping list can now be resized at your convenience (won't be saved nor persist if you unlock/lock the window). Double click the red splitter to reset the position and make the shopping list row dynamic again (only visible if you have at least one item in your shopping list).\r\n* Added icon and better title to the window when it shows in your taskbar (only in unlocked mode)"
+    "Content": "* The shopping list can now be resized at your convenience (won't be saved nor persist if you unlock/lock the window). Double click the red splitter to reset the position and make the shopping list row dynamic again (only visible if you have at least one item in your shopping list).\r\n* Added icon and better title to the window when it shows in your taskbar (only in unlocked mode)\r\n\r\n\r\n\r\nPS: happy new year to everybody!"
   },
   {
     "Version": "1.0.4.2",
