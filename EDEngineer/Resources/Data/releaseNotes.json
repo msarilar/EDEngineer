@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.3",
+    "Content": "* The shopping list can now be resized at your convenience (won't be saved nor persist if you unlock/lock the window). Double click the red splitter to reset the position and make the shopping list row dynamic again (only visible if you have at least one item in your shopping list)."
+  },
+  {
     "Version": "1.0.4.2",
     "Content": "* Spanish translation update (thanks to @TCAS!)\r\n\r\n* Fixes an issue where the application would not track log updates for some users"
   },

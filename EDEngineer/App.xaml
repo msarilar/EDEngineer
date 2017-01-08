@@ -49,6 +49,7 @@
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
+            <converters:ListToVisibilityConverter x:Key="ListToVisibility" />
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToSynthesisColor"
                                                          SpecialColor="{StaticResource SynthesisBlueBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>

@@ -122,7 +122,7 @@ namespace EDEngineer
             if (AllowsTransparency)
             {
                 ToggleEditMode.Content = viewModel.Languages.Translate("Unlock Window");
-                Splitter.Visibility = Visibility.Hidden;
+                MainSplitter.Visibility = Visibility.Hidden;
             }
             else
             {
@@ -445,6 +445,13 @@ namespace EDEngineer
         {
             var blueprint = (Blueprint) ((Button)sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
+        }
+
+        private void ShoppingListSplitterDoubleClicked(object sender, MouseButtonEventArgs e)
+        {
+            BlueprintsRow.Height = new GridLength(1, GridUnitType.Star);
+            ShoppingListSplitterRow.Height = new GridLength(1, GridUnitType.Auto);
+            ShoppingListRow.Height = new GridLength(1, GridUnitType.Auto);
         }
     }
 }

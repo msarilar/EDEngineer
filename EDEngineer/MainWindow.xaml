@@ -419,7 +419,7 @@
         <GridSplitter Grid.Column="1"
                       Width="3"
                       Grid.Row="1"
-                      x:Name="Splitter"
+                      x:Name="MainSplitter"
                       HorizontalAlignment="Stretch" />
 
         <!-- RIGHT SIDE -->
@@ -647,11 +647,11 @@
                 <Grid Grid.Row="1"
                       Focusable="False">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*" x:Name="BlueprintsRow"/>
+                        <RowDefinition Height="Auto" x:Name="ShoppingListSplitterRow"/>
+                        <RowDefinition Height="Auto" x:Name="ShoppingListRow"/>
                     </Grid.RowDefinitions>
-                <!-- BLUEPRINTS -->
-
+                    <!-- BLUEPRINTS -->
                     <DataGrid x:Name="Blueprints"
                               IsReadOnly="True"
                               FontFamily="./Resources/Fonts/#Euro Caps"
@@ -971,6 +971,16 @@
                         </DataGrid.Columns>
                     </DataGrid>
 
+                    <!-- SPLITTER -->
+                    <GridSplitter Height="3"
+                                  Grid.Row="1"
+                                  Background="DarkRed"
+                                  x:Name="ShoppingListSplitter"
+                                  HorizontalAlignment="Stretch"
+                                  MouseDoubleClick="ShoppingListSplitterDoubleClicked"
+                                  Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}" />
+
+                    <!-- SHOPPING LIST -->
                     <DataGrid x:Name="ShoppingList"
                               IsReadOnly="True"
                               FontFamily="./Resources/Fonts/#Euro Caps"
@@ -986,8 +996,9 @@
                               Margin="0,0,14,0"
                               Loaded="DataGridLoaded"
                               ItemsSource="{Binding ShoppingList.List}"
+                              Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}"
                               DataContext="{Binding}"
-                              Grid.Row="1"
+                              Grid.Row="2"
                               PreviewMouseLeftButtonDown="DataGridOnPreviewMouseLeftButtonDown"
                               SelectedIndex="{Binding ShoppingListItem, Mode=OneWay}"
                               Style="{DynamicResource BlueprintGridStyle}"
