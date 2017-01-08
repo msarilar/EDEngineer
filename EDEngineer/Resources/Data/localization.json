@@ -2117,13 +2117,13 @@
     },
     "Unknown Ship Signature": {
       "es": "Señal de nave desconocida",
-      "de": null,
+      "de": "Unbekannte Schiffsignatur",
       "fr": null,
       "ru": null
     },
     "Unknown Wake Data": {
       "es": "Datos de estela desconocida",
-      "de": null,
+      "de": "Unbekannte Sogwolke",
       "fr": null,
       "ru": null
     }
