@@ -58,7 +58,13 @@ namespace EDEngineer.Models
             ["Markets near Lakota (Industrial/Extraction)"] = Origin.Market,
             ["Markets near Cilbien Zu (Industrial/Extraction)"] = Origin.Market,
             ["Markets near Heget (Industrial/Extraction)"] = Origin.Market,
-            ["Markets near Eurybia (Extraction/Refinery)"] = Origin.Market
+            ["Markets near Eurybia (Extraction/Refinery)"] = Origin.Market,
+            ["Needed for Marco Qwent (25)"] = Origin.NeededForEngineer,
+            ["Needed for Ram Tah (50)"] = Origin.NeededForEngineer,
+            ["Needed for Professor Palin (25)"] = Origin.NeededForEngineer,
+            ["Needed for Tiana Fortune (50)"] = Origin.NeededForEngineer,
+            ["Needed for The Sarge (50)"] = Origin.NeededForEngineer,
+            ["Needed for Bill Turner (50)"] = Origin.NeededForEngineer,
         };
     }
 }

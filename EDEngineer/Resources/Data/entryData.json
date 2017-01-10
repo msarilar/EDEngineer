@@ -4,7 +4,7 @@
     "Rarity": "Rare",
     "FormattedName": "aberrantshieldpatternanalysis",
     "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (combat ships)", "Mission reward" ]
+    "OriginDetails": [ "Ship scanning (combat ships)", "Mission reward", "Needed for The Sarge (50)" ]
   },
   {
     "Name": "Abnormal Compact Emission Data",
@@ -88,7 +88,7 @@
     "Rarity": null,
     "FormattedName": "bromellite",
     "Kind": "Commodity",
-    "OriginDetails": [ "Mining" ]
+    "OriginDetails": [ "Mining", "Needed for Bill Turner (50)" ]
   },
   {
     "Name": "Cadmium",
@@ -144,7 +144,7 @@
     "Rarity": "Standard",
     "FormattedName": "classifiedscandatabanks",
     "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (transport ships)", "Surface POI" ]
+    "OriginDetails": [ "Ship scanning (transport ships)", "Surface POI", "Needed for Ram Tah (50)" ]
   },
   {
     "Name": "Classified Scan Fragment",
@@ -235,7 +235,7 @@
     "Rarity": "Rare",
     "FormattedName": "decodedemissiondata",
     "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (combat ships)", "Mission reward" ]
+    "OriginDetails": [ "Ship scanning (combat ships)", "Mission reward", "Needed for Tiana Fortune (50)" ]
   },
   {
     "Name": "Distorted Shield Cycle Recordings",
@@ -550,7 +550,7 @@
     "Rarity": null,
     "FormattedName": "modularterminals",
     "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
+    "OriginDetails": [ "Mission reward", "Needed for Marco Qwent (25)" ]
   },
   {
     "Name": "Molybdenum",
@@ -907,7 +907,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "unknownenergysource",
     "Kind": "Material",
-    "OriginDetails": [ "Destroyed Unknown Artefact" ]
+    "OriginDetails": [ "Destroyed Unknown Artefact", "Needed for Professor Palin (25)" ]
   },
   {
     "Name": "Untypical Shield Scans",

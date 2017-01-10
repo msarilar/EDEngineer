@@ -270,5 +270,25 @@
         </Viewbox>
     </ControlTemplate>
 
+    <ControlTemplate x:Key="NeededForEngineer"
+                     TargetType="Frame">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer_1" Width="78.197" Height="76.232">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="0"/>
+                </Canvas.RenderTransform>
+                <Canvas.Resources/>
+                <!--Unknown tag: metadata-->
+                <!--Unknown tag: sodipodi:namedview-->
+                <Path Name="path3337"  Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M78.197 37.708l-3.726-16.331l-9.873-1.097l-2.511-3.15l1.131-9.865L48.122 0l-7.008 7.028h-4.031  L30.073 0L14.979 7.266l1.131 9.865l-2.511 3.15l-9.873 1.097L0 37.708l8.413 5.271l0.898 3.928l-5.299 8.397l10.45 13.098  l9.365-3.293l3.632 1.749l3.262 9.375h16.754l3.262-9.375l3.632-1.749l9.365 3.293l10.45-13.098l-5.299-8.397l0.897-3.928  L78.197 37.708z M66.833 54.897l-5.13 6.43l-7.693-2.705l-8.12 3.911l-2.68 7.699h-8.223l-2.68-7.699l-8.12-3.911l-7.693 2.705  l-5.13-6.43L15.717 48l-2.01-8.784l-6.908-4.329l1.829-8.017l8.109-0.901l5.617-7.046l-0.93-8.101l7.41-3.567l5.758 5.773h9.012  l5.757-5.773l7.411 3.566l-0.93 8.101l5.617 7.046l8.109 0.901l1.829 8.017l-6.91 4.329L62.481 48L66.833 54.897z M39.099 23.587  c-8.286 0-15 6.713-15 15s6.714 15 15 15s15-6.713 15-15S47.385 23.587 39.099 23.587z M39.099 49.087c-5.79 0-10.5-4.71-10.5-10.5  s4.71-10.5 10.5-10.5s10.5 4.71 10.5 10.5S44.889 49.087 39.099 49.087z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Viewbox>
+
+    </ControlTemplate>
+
 
 </ResourceDictionary>

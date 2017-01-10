@@ -35,6 +35,9 @@ namespace EDEngineer.Converters
                 case Origin.Unknown:
                     color = Colors.RoyalBlue;
                     break;
+                case Origin.NeededForEngineer:
+                    color = Colors.Red;
+                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }

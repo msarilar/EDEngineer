@@ -8,6 +8,7 @@ namespace EDEngineer.Models
         Salvage,
         Surface,
         Market,
+        NeededForEngineer,
         Unknown
     }
 }
