@@ -459,17 +459,18 @@
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <CheckBox Width="20"
-                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Width="100" >
-                                        <TextBlock.Text>
-                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
-                                                <Binding Converter="{StaticResource FilterToLabel}"/>
-                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                                    <CheckBox Width="120"
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" >
+                                        <TextBlock Width="100" >
+                                            <TextBlock.Text>
+                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                    <Binding Converter="{StaticResource FilterToLabel}"/>
+                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
 				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                            </MultiBinding>
-                                        </TextBlock.Text>
-                                    </TextBlock>
+                                                </MultiBinding>
+                                            </TextBlock.Text>
+                                        </TextBlock>
+                                    </CheckBox>
                                 </StackPanel>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
@@ -481,9 +482,8 @@
                                              Grid.Column="1">
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <CheckBox Width="20"
-                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
+                                <CheckBox Width="120"
+                                              IsChecked="{Binding Checked, Mode=TwoWay}" >
                                     <TextBlock Width="100" >
                                         <TextBlock.Text>
                                             <MultiBinding Converter="{x:Static localization:Languages.Instance}">
@@ -493,7 +493,7 @@
                                             </MultiBinding>
                                         </TextBlock.Text>
                                     </TextBlock>
-                                </StackPanel>
+                                </CheckBox>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
@@ -510,11 +510,9 @@
                         </controls:DropDownButton.ItemsPanel>
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal"
-                                            Width="220">
-                                    <CheckBox Width="20"
-                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock>
+                                <CheckBox Width="220"
+                                          IsChecked="{Binding Checked, Mode=TwoWay}" >
+                                    <TextBlock Width="200">
                                         <TextBlock.Text>
                                             <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                 <Binding Converter="{StaticResource FilterToLabel}"/>
@@ -523,7 +521,7 @@
                                             </MultiBinding>
                                         </TextBlock.Text>
                                     </TextBlock>
-                                </StackPanel>
+                                </CheckBox>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
@@ -534,19 +532,18 @@
                                              Grid.Column="0">
                         <controls:DropDownButton.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <CheckBox Width="20"
-                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                    <TextBlock Width="100" >
+                                <CheckBox MinWidth="120"
+                                          IsChecked="{Binding Checked, Mode=TwoWay}">
+                                    <TextBlock Width="100">
                                         <TextBlock.Text>
                                             <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                 <Binding Path="Label"/>
                                                 <Binding Path="DataContext.Languages.CurrentLanguage"
-				                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+				                                        RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                             </MultiBinding>
                                         </TextBlock.Text>
                                     </TextBlock>
-                                </StackPanel>
+                                </CheckBox>
                             </DataTemplate>
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
