@@ -60,12 +60,11 @@
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
-            <Style TargetType="ToolTip" x:Key="TooltipStyle">
-                <Style.Triggers>
-                    <Trigger Property="Tag" Value="{x:Null}">
-                        <Setter Property="Visibility" Value="Collapsed" />
-                    </Trigger>
-                </Style.Triggers>
+            <Style TargetType="ToolTip">
+                <Setter Property="Background" Value="{StaticResource EliteOrangeBrush}" />
+                <Setter Property="BorderBrush" Value="Black" />
+                <Setter Property="Foreground" Value="Black" />
+                <Setter Property="FontFamily" Value="./Resources/Fonts/#Euro Caps" />
             </Style>
 
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">

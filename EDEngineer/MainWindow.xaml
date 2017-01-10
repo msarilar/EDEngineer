@@ -26,11 +26,7 @@
                   MouseDown="IngredientOnMouseLeftButtonDown"
                   Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
-                    <ToolTip Style="{StaticResource TooltipStyle}"
-                             Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
-                             Background="{StaticResource EliteOrangeBrush}"
-                             BorderBrush="Black"
-                             StaysOpen="True"
+                    <ToolTip Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
                              DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
                         <Grid>
                             <Grid.RowDefinitions>
@@ -38,9 +34,7 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <TextBlock Foreground="Black"
-                                       FontWeight="Bold"
-                                       FontFamily="./Resources/Fonts/#Euro Caps"
+                            <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
                                        Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
                             <Border BorderThickness="1"
@@ -51,8 +45,7 @@
                                           Grid.Row="2">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
-                                        <TextBlock Foreground="Black"
-                                                   FontFamily="./Resources/Fonts/#Euro Caps">
+                                        <TextBlock>
                                             <TextBlock.Text>
                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Mission rewards">
                                                     <Binding Path=""/>
@@ -286,6 +279,7 @@
                               FontSize="16"
                               FontFamily="./Resources/Fonts/#Euro Caps"
                               Grid.Column="2"
+                              ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show information about resources?'}"
                               IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrangeBrush}" />
                 </ToggleButton>
@@ -642,6 +636,7 @@
                             Click="CheckAllButtonClicked"
                             Width="40"
                             Style="{DynamicResource ChromelessButtonStyle}"
+                            ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Check all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                             x:Name="CheckAllButton">
                         <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrangeBrush}" />
                     </Button>
@@ -651,6 +646,7 @@
                             Click="UncheckAllButtonClicked"
                             Width="40"
                             Style="{DynamicResource ChromelessButtonStyle}"
+                            ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Uncheck all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                             x:Name="UncheckAllButton">
                         <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrangeBrush}" />
                     </Button>
@@ -967,6 +963,7 @@
                                                           Margin="10,0,0,0"
                                                           VerticalAlignment="Center"
                                                           IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Favorite', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                                           Foreground="Black">
                                                 <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
                                             </ToggleButton>
@@ -977,6 +974,7 @@
                                                           Margin="0,0,10,0"
                                                           VerticalAlignment="Center"
                                                           IsChecked="{Binding Ignored, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                          ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ignored', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                                           Foreground="Black">
                                                 <iconPacks:PackIconMaterial Kind="CloseCircleOutline" Foreground="Black" />
                                             </ToggleButton>
