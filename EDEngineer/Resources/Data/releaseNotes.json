@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.4",
+    "Content": "* Removed commodities from the application since they're not needed in blueprints anymore; I'll add them back if they ever do actually come back!\r\n* Added a red gear icon for resources needed to unlock engineers\r\n* Added some more tooltips to the interface and unified their look (colors & font)\r\n* Simplified the progress column (the text over the progress bar on each blueprint)\r\n\r\n\r\nThe new patch brought new blueprints but I haven't the exact recipes. Anyone is welcome to come on GitHub and either post their screenshots or directly update the blueprints.json file! https://github.com/msarilar/EDEngineer/issues/93"
+  },
+  {
     "Version": "1.0.4.3",
     "Content": "* The shopping list can now be resized at your convenience (won't be saved nor persist if you unlock/lock the window). Double click the red splitter to reset the position and make the shopping list row dynamic again (only visible if you have at least one item in your shopping list).\r\n* Added icon and better title to the window when it shows in your taskbar (only in unlocked mode)\r\n\r\n\r\n\r\nPS: happy new year to everybody!"
   },
