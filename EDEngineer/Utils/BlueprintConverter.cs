@@ -31,6 +31,9 @@ namespace EDEngineer.Utils
                 from ingredient in data["Ingredients"]
                 let name = (string) ingredient["Name"]
                 let size = (int) ingredient["Size"]
+                // COMMODITY REMOVED
+                where entries[name].Data.Kind != Kind.Commodity
+                // ----
                 select new BlueprintIngredient(entries[name], size);
 
             return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers);

@@ -97,7 +97,9 @@ namespace EDEngineer
             commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value));
             Blueprints.ItemsSource = blueprintSource.View;
 
-            Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo });
+            // COMMODITY REMOVED
+            //Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo });
+
             Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo });
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo });
         }

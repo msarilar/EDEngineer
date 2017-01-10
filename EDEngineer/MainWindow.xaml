@@ -292,11 +292,19 @@
             </Grid>
 
             <!-- CURRENT CARGO -->
+            
+<!-- COMMODITY REMOVED      
             <UniformGrid Columns="3" Margin="5,0" Opacity="0" Grid.Row="1">
                 <Grid x:Name="c1"/>
                 <Grid/>
                 <Grid/>
             </UniformGrid>
+-->
+            <UniformGrid Columns="2" Margin="5,0" Opacity="0" Grid.Row="1">
+                <Grid x:Name="c1"/>
+                <Grid/>
+            </UniformGrid>
+
             <controls:MetroTabControl Grid.Row="1"
                                       SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
                 <TabControl.Resources>
@@ -304,6 +312,8 @@
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </TabControl.Resources>
+                
+<!-- COMMODITY REMOVED               
                 <controls:MetroTabItem FontFamily="./Resources/Fonts/#Euro Caps"
                                        Width="{Binding ElementName=c1, Path=ActualWidth}">
                     <controls:MetroTabItem.HeaderTemplate>
@@ -328,6 +338,7 @@
                         </ItemsControl>
                     </ScrollViewer>
                 </controls:MetroTabItem>
+-->                
                 <controls:MetroTabItem FontFamily="./Resources/Fonts/#Euro Caps"
                                        Header="{Binding}"
                                        Width="{Binding ElementName=c1, Path=ActualWidth}">
