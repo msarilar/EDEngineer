@@ -150,6 +150,7 @@
     <Compile Include="Converters\FilterToLabelConverter.cs" />
     <Compile Include="Converters\InstantToStringConverter.cs" />
     <Compile Include="Converters\IntegerToVisibilityConverter.cs" />
+    <Compile Include="Converters\IntegerToVisibilityConverterReversed.cs" />
     <Compile Include="Converters\ListToVisibilityConverter.cs" />
     <Compile Include="Converters\OriginToColorConverter.cs" />
     <Compile Include="Converters\OriginToControlTemplateConverter.cs" />

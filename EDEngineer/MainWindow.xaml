@@ -911,7 +911,7 @@
                             <!-- PROGRESS -->
                             <DataGridTemplateColumn IsReadOnly="True"
                                                     SortMemberPath="ProgressSorting"
-                                                    Width="Auto"
+                                                    Width="*"
                                                     MaxWidth="150"
                                                     CanUserResize="False">
                                 <DataGridTemplateColumn.Header>
@@ -925,15 +925,19 @@
                                     <DataTemplate>
                                         <Grid>
                                             <StackPanel Orientation="Vertical">
-                                                <TextBlock HorizontalAlignment="Center">
-                                                    <Run Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                    <Run Text="{Binding DataContext.Languages.CurrentLanguage,
-                                                                        RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
-                                                                        Converter={x:Static localization:Languages.Instance},
-                                                                        ConverterParameter=': can craft',
-                                                                        FallbackValue=': can craft'}" /> 
-                                                    <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
-                                                </TextBlock>
+                                                <Grid HorizontalAlignment="Center">
+                                                    <TextBlock Visibility="{Binding CanCraftCount, Converter={StaticResource IntegerToVisibility}}">
+                                                        <Run Text="{Binding DataContext.Languages.CurrentLanguage,
+                                                                            RelativeSource={RelativeSource AncestorType={x:Type local:MainWindow}},
+                                                                            Converter={x:Static localization:Languages.Instance},
+                                                                            ConverterParameter='can craft',
+                                                                            FallbackValue='can craft'}" /> 
+                                                        <Run Text="{Binding CanCraftCount, Mode=OneWay}" />
+                                                    </TextBlock>
+                                                    <TextBlock HorizontalAlignment="Center"
+                                                               Visibility="{Binding CanCraftCount, Converter={StaticResource IntegerToVisibilityReversed}}"
+                                                               Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}"/>
+                                                </Grid>
                                                 <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
                                                                            Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
                                             </StackPanel>

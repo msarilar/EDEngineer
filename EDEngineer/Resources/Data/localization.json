@@ -1509,11 +1509,11 @@
       "fr": "Filtre par Ingrédients (Inversé)",
       "ru": "Фильтр по ингредиентам (Обратный)"
     },
-    ": can craft": {
-      "es": ": elaborable",
-      "de": ": baubar",
-      "fr": ": dispos",
-      "ru": ": можно создать"
+    "can craft": {
+      "es": "elaborable",
+      "de": "baubar",
+      "fr": "dispos",
+      "ru": "можно создать"
     },
     "Reset": {
       "es": "Reiniciar",

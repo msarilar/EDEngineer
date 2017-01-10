@@ -45,6 +45,7 @@
             <converters:InstantToStringConverter x:Key="InstantToString" />
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
+            <converters:IntegerToVisibilityConverterReversed x:Key="IntegerToVisibilityReversed" />
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
