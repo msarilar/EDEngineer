@@ -31,7 +31,8 @@ namespace EDEngineer
                     return;
                 }
 
-                currentCommander = value; 
+                currentCommander = value;
+                SettingsManager.SelectedCommander = value.Key;
                 OnPropertyChanged();
             }
         }
@@ -89,7 +90,14 @@ namespace EDEngineer
                 Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, new List<string>(), Languages, entryDatas);
             }
 
-            CurrentCommander = Commanders.First();
+            if (Commanders.Any(k => k.Key == SettingsManager.SelectedCommander))
+            {
+                CurrentCommander = Commanders.First(k => k.Key == SettingsManager.SelectedCommander);
+            }
+            else
+            {
+                CurrentCommander = Commanders.First();
+            }
 
             LogWatcher.InitiateWatch(logs =>
             {

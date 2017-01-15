@@ -305,5 +305,17 @@ namespace EDEngineer.Properties {
                 this["ShoppingList"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string SelectedCommander {
+            get {
+                return ((string)(this["SelectedCommander"]));
+            }
+            set {
+                this["SelectedCommander"] = value;
+            }
+        }
     }
 }

@@ -114,6 +114,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static string SelectedCommander
+        {
+            get { return Properties.Settings.Default.SelectedCommander; }
+            set
+            {
+                Properties.Settings.Default.SelectedCommander = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static string Shortcut
         {
             get
