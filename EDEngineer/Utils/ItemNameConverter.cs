@@ -17,11 +17,21 @@ namespace EDEngineer.Utils
 
         private readonly Dictionary<string, string> localCache = new Dictionary<string, string>();
 
+        private HashSet<string> IgnoreList { get; } = new HashSet<string>()
+        {
+            "polymers"
+        };
+
         public bool TryGet(string key, out string name)
         {
             if (localCache.TryGetValue(key, out name))
             {
                 return true;
+            }
+
+            if (IgnoreList.Contains(key))
+            {
+                return false;
             }
 
             var formattedKey = key.ToLowerInvariant();
