@@ -1914,7 +1914,7 @@
   {
     "Type": "Rail Gun",
     "Name": "Short Range Blaster",
-    "Engineers": [ ],
+    "Engineers": [ "Tod McQuinn" ],
     "Ingredients": [
       {
         "Name": "Biotech Conductors",
@@ -3362,7 +3362,7 @@
   {
     "Type": "Burst Laser",
     "Name": "Focused Weapon",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "Military Supercapacitors",
@@ -5066,7 +5066,7 @@
   {
     "Type": "Burst Laser",
     "Name": "Sturdy Mount",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "High Density Composites",
@@ -6170,7 +6170,7 @@
   {
     "Type": "Rail Gun",
     "Name": "High Capacity Magazine",
-    "Engineers": [ ],
+    "Engineers": [ "Tod McQuinn" ],
     "Ingredients": [
       {
         "Name": "Mechanical Components",
@@ -6434,7 +6434,7 @@
   {
     "Type": "Mine Launcher",
     "Name": "Sturdy Mount",
-    "Engineers": [ ],
+    "Engineers": [ "Juri Ishmaak" ],
     "Ingredients": [
       {
         "Name": "High Density Composites",
@@ -7474,7 +7474,7 @@
   {
     "Type": "Mine Launcher",
     "Name": "High Capacity Magazine",
-    "Engineers": [ ],
+    "Engineers": [ "Juri Ishmaak" ],
     "Ingredients": [
       {
         "Name": "Mechanical Components",
@@ -7738,7 +7738,7 @@
   {
     "Type": "Torpedo Pylon",
     "Name": "Sturdy Mount",
-    "Engineers": [ ],
+    "Engineers": [ "Liz Ryder" ],
     "Ingredients": [
       {
         "Name": "High Density Composites",
@@ -7942,7 +7942,7 @@
   {
     "Type": "Missile Rack",
     "Name": "High Capacity Magazine",
-    "Engineers": [ ],
+    "Engineers": [ "Liz Ryder" ],
     "Ingredients": [
       {
         "Name": "Mechanical Components",
@@ -8410,7 +8410,7 @@
   {
     "Type": "Beam Laser",
     "Name": "Sturdy Mount",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "High Density Composites",
@@ -9114,7 +9114,7 @@
   {
     "Type": "Burst Laser",
     "Name": "Overcharged Weapon",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "Conductive Polymers",
@@ -9586,7 +9586,7 @@
   {
     "Type": "Beam Laser",
     "Name": "Short Range Blaster",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "Biotech Conductors",
@@ -12626,7 +12626,7 @@
   {
     "Type": "Rail Gun",
     "Name": "Sturdy Mount",
-    "Engineers": [ ],
+    "Engineers": [ "Tod McQuinn" ],
     "Ingredients": [
       {
         "Name": "High Density Composites",
@@ -12914,7 +12914,7 @@
   {
     "Type": "Burst Laser",
     "Name": "Efficient Weapon",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "Cadmium",
@@ -13338,7 +13338,7 @@
   {
     "Type": "Missile Rack",
     "Name": "Sturdy Mount",
-    "Engineers": [ ],
+    "Engineers": [ "Liz Ryder" ],
     "Ingredients": [
       {
         "Name": "High Density Composites",
@@ -13542,7 +13542,7 @@
   {
     "Type": "Burst Laser",
     "Name": "Short Range Blaster",
-    "Engineers": [ ],
+    "Engineers": [ "Broo Tarquin" ],
     "Ingredients": [
       {
         "Name": "Biotech Conductors",
@@ -13599,7 +13599,7 @@
       {
         "Name": "Niobium",
         "Size": 1
-      },
+      }
     ],
     "Grade": 2
   },

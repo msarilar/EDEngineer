@@ -15,7 +15,7 @@ namespace EDEngineer.Utils
 
         public EntryData this[string key] => entryDatas.First(e => e.Name == key);
 
-        private readonly Dictionary<string, string> localCache = new Dictionary<string, string>(); 
+        private readonly Dictionary<string, string> localCache = new Dictionary<string, string>();
 
         public bool TryGet(string key, out string name)
         {
