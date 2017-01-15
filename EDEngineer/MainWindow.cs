@@ -47,7 +47,7 @@ namespace EDEngineer
 
             try
             {
-                ReleaseNotesManager.ShowReleaseNotes();
+                ReleaseNotesManager.ShowReleaseNotesIfNecessary();
             }
             catch
             {
@@ -138,7 +138,13 @@ namespace EDEngineer
                 (o, e) => ResetWindowPositionButtonClicked(o, null),
                 (o, e) => Languages.PromptLanguage(viewModel.Languages),
                 () => serverBridge.Toggle(),
-                serverBridge.Running);
+                serverBridge.Running,
+                (o, e) =>
+                {
+                    HideWindow();
+                    ReleaseNotesManager.ShowReleaseNotes();
+                },
+                Properties.Settings.Default.CurrentVersion);
 
             var shortcut = SettingsManager.Shortcut;
 

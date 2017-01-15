@@ -8,7 +8,7 @@ namespace EDEngineer.Utils.System
 {
     public static class ReleaseNotesManager
     {
-        public static void ShowReleaseNotes()
+        public static void ShowReleaseNotesIfNecessary()
         {
             var oldVersionString = Properties.Settings.Default.CurrentVersion;
             var newVersionString = Properties.Settings.Default.Version;
@@ -34,12 +34,17 @@ namespace EDEngineer.Utils.System
 
             var newVersion = Version.Parse(newVersionString);
 
+            ShowReleaseNotes($"Release notes (new version: {newVersion}, old version: {oldVersion})");
+        }
+
+        public static void ShowReleaseNotes(string title = "Release Notes")
+        {
             var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(IOUtils.GetReleaseNotesJson());
 
-            var list =  releaseNotes.ToList();
+            var list = releaseNotes.ToList();
             if (list.Any())
             {
-                new ReleaseNotesWindow(list, $"Release notes (new version: {newVersion}, old version: {oldVersion})").ShowDialog();
+                new ReleaseNotesWindow(list, title).ShowDialog();
             }
         }
     }

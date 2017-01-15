@@ -15,7 +15,9 @@ namespace EDEngineer.Utils.UI
             EventHandler resetWindowHandler,
             EventHandler selectLanguageHandler,
             Func<bool> launchServerHandler,
-            bool serverRunning)
+            bool serverRunning,
+            EventHandler showReleaseNotesHandler,
+            string version)
         {
             var menu = BuildContextMenu(showHandler,
                 quitHandler,
@@ -24,7 +26,9 @@ namespace EDEngineer.Utils.UI
                 resetWindowHandler, 
                 selectLanguageHandler,
                 launchServerHandler,
-                serverRunning);
+                serverRunning,
+                showReleaseNotesHandler,
+                version);
             
             var icon = new NotifyIcon
             {
@@ -49,7 +53,9 @@ namespace EDEngineer.Utils.UI
             EventHandler resetWindowHandler,
             EventHandler selectLanguageHandler,
             Func<bool> launchServerHandler,
-            bool serverRunning)
+            bool serverRunning,
+            EventHandler showReleaseNotesHandler,
+            string version)
         {
             var translator = Languages.Instance;
 
@@ -70,6 +76,10 @@ namespace EDEngineer.Utils.UI
 
             var helpItem = new MenuItem();
             helpItem.Click += (o,e) => Process.Start("https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues");
+
+            var releaseNotesItem = new MenuItem();
+            releaseNotesItem.Click += showReleaseNotesHandler;
+            releaseNotesItem.Text = $"v{version}";
 
             var quitItem = new MenuItem();
  
@@ -129,6 +139,7 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(launchServerItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(helpItem);
+            menu.MenuItems.Add(releaseNotesItem);
             menu.MenuItems.Add(quitItem);
             return menu;
         }
