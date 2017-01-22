@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.6",
+    "Content": "* ~40 new blueprints added from 2.2.03! Thanks very much to @elijahgill for the work :)"
+  },
+  {
     "Version": "1.0.4.5",
     "Content": "* Added new blueprints from patch 2.3!\r\n* If you have multiple commander, the commander you selected will persist between restarts of EDEngineer\r\n* Added a release notes button in the task tray icon which also shows the current version\r\n* Filters can now be clicked to enable/disable them instead of just clicking on the checkbox\r\n\r\n* Fixed an issue with Polymers commodity which, when bought, would increase the Conductive Polymer count in the cargo"
   },
