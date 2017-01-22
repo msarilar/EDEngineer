@@ -784,6 +784,26 @@
     "Grade": 4
   },
   {
+    "Type": "Missile Rack",
+    "Name": "Lightweight Mount",
+    "Engineers": [ "Liz Ryder" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Power Plant",
     "Name": "Armoured ",
     "Engineers": [ "Felicity Farseer", "Marco Qwent", "Hera Tani" ],
@@ -1728,6 +1748,46 @@
     "Grade": 3
   },
   {
+    "Type": "Shield Booster",
+    "Name": "Thermal Resistant ",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 1
+      },
+      {
+        "Name": "Untypical Shield Scans",
+        "Size": 1
+      },
+      {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Shield Booster",
+    "Name": "Thermal Resistant ",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Heat Exchangers",
+        "Size": 1
+      },
+      {
+        "Name": "Aberrant Shield Pattern Analysis",
+        "Size": 1
+      },
+      {
+        "Name": "Exquisite Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Kill Warrant Scanner",
     "Name": "Reinforced",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
@@ -2176,6 +2236,26 @@
     "Grade": 4
   },
   {
+    "Type": "Mine Launcher",
+    "Name": "Lightweight Mount",
+    "Engineers": [ "Juri Ishmaak" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Beam Laser",
     "Name": "Lightweight Mount",
     "Engineers": [ "The Dweller", "Broo Tarquin" ],
@@ -2256,6 +2336,26 @@
     "Grade": 4
   },
   {
+    "Type": "Beam Laser",
+    "Name": "Lightweight Mount",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Armour",
     "Name": "Blast Resistant ",
     "Engineers": [ "Liz Ryder", "Selene Jean" ],
@@ -2310,6 +2410,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Armour",
+    "Name": "Blast Resistant ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Mercury",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Armour",
+    "Name": "Blast Resistant ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Ruthenium",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Prospector Limpet Controller",
@@ -2808,6 +2948,26 @@
     "Grade": 4
   },
   {
+    "Type": "Burst Laser",
+    "Name": "Lightweight Mount",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Shield Booster",
     "Name": "Kinetic Resistant ",
     "Engineers": [ "Felicity Farseer", "Lei Cheung", "Didi Vatermann" ],
@@ -2862,6 +3022,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Shield Booster",
+    "Name": "Kinetic Resistant ",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Untypical Shield Scans",
+        "Size": 1
+      },
+      {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Shield Booster",
+    "Name": "Kinetic Resistant ",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Aberrant Shield Pattern Analysis",
+        "Size": 1
+      },
+      {
+        "Name": "Exquisite Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Plasma Accelerator",
@@ -3960,6 +4160,26 @@
     "Grade": 4
   },
   {
+    "Type": "Missile Rack",
+    "Name": "Rapid Fire Modification",
+    "Engineers": [ "Liz Ryder" ],
+    "Ingredients": [
+      {
+        "Name": "Precipitated Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Configurable Components",
+        "Size": 1
+      },
+      {
+        "Name": "Technetium",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Cannon",
     "Name": "Long Range Weapon",
     "Engineers": [ "Tod McQuinn", "The Sarge" ],
@@ -4166,6 +4386,26 @@
       }
     ],
     "Grade": 4
+  },
+  {
+    "Type": "Burst Laser",
+    "Name": "Rapid Fire Modification",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Precipitated Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Configurable Components",
+        "Size": 1
+      },
+      {
+        "Name": "Technetium",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Pulse Laser",
@@ -4430,6 +4670,26 @@
       }
     ],
     "Grade": 4
+  },
+  {
+    "Type": "Rail Gun",
+    "Name": "Long Range Weapon",
+    "Engineers": [ "Tod McQuinn" ],
+    "Ingredients": [
+      {
+        "Name": "Biotech Conductors",
+        "Size": 1
+      },
+      {
+        "Name": "Thermic Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Cracked Industrial Firmware",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Fuel Transfer Limpet Controller",
@@ -4822,6 +5082,26 @@
       }
     ],
     "Grade": 4
+  },
+  {
+    "Type": "Rail Gun",
+    "Name": "Lightweight Mount",
+    "Engineers": [ "Tod McQuinn" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Plasma Accelerator",
@@ -6008,6 +6288,26 @@
     "Grade": 4
   },
   {
+    "Type": "Mine Launcher",
+    "Name": "Rapid Fire Modification",
+    "Engineers": [ "Juri Ishmaak" ],
+    "Ingredients": [
+      {
+        "Name": "Configurable Components",
+        "Size": 1
+      },
+      {
+        "Name": "Technetium",
+        "Size": 1
+      },
+      {
+        "Name": "Precipitated Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Fuel Scoop",
     "Name": "Shielded",
     "Engineers": [ "Bill Turner", "Lori Jameson" ],
@@ -6246,6 +6546,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Hull Reinforcement Package",
+    "Name": "Thermal Resistant Hull Reinforcement",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Heat Vanes",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Hull Reinforcement Package",
+    "Name": "Thermal Resistant Hull Reinforcement",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Heat Radiators",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Thrusters",
@@ -6530,6 +6870,26 @@
       }
     ],
     "Grade": 4
+  },
+  {
+    "Type": "Torpedo Pylon",
+    "Name": "Lightweight Mount",
+    "Engineers": [ "Liz Ryder" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Fragment Cannon",
@@ -6850,6 +7210,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Armour",
+    "Name": "Kinetic Resistant ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Proprietary Composites",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Armour",
+    "Name": "Kinetic Resistant ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Core Dynamics Composites",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Point Defence",
@@ -7654,6 +8054,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Hull Reinforcement Package",
+    "Name": "Kinetic Resistant Hull Reinforcement",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Proprietary Composites",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Hull Reinforcement Package",
+    "Name": "Kinetic Resistant Hull Reinforcement",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Core Dynamics Composites",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Torpedo Pylon",
@@ -9216,6 +9656,26 @@
     "Grade": 4
   },
   {
+    "Type": "Burst Laser",
+    "Name": "Long Range Weapon",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Biotech Conductors",
+        "Size": 1
+      },
+      {
+        "Name": "Thermic Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Cracked Industrial Firmware",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Life Support",
     "Name": "Shielded",
     "Engineers": [ "Bill Turner", "Lori Jameson" ],
@@ -10306,6 +10766,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Hull Reinforcement Package",
+    "Name": "Blast Resistant Hull Reinforcement",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Mercury",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Hull Reinforcement Package",
+    "Name": "Blast Resistant Hull Reinforcement",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Ruthenium",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Plasma Accelerator",
@@ -12728,6 +13228,26 @@
     "Grade": 4
   },
   {
+    "Type": "Beam Laser",
+    "Name": "Long Range Weapon",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Cracked Industrial Firmware",
+        "Size": 1
+      },
+      {
+        "Name": "Thermic Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Biotech Conductors",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Thrusters",
     "Name": "Clean Drive Tuning",
     "Engineers": [ "Felicity Farseer", "Elvira Martuuk", "Professor Palin" ],
@@ -13096,6 +13616,46 @@
     "Grade": 3
   },
   {
+    "Type": "Shield Booster",
+    "Name": "Blast Resistant ",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+      {
+        "Name": "Untypical Shield Scans",
+        "Size": 1
+      },
+      {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Shield Booster",
+    "Name": "Blast Resistant ",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+      {
+        "Name": "Aberrant Shield Pattern Analysis",
+        "Size": 1
+      },
+      {
+        "Name": "Exquisite Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Pulse Laser",
     "Name": "Lightweight Mount",
     "Engineers": [ "The Dweller", "Broo Tarquin" ],
@@ -13254,6 +13814,46 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Armour",
+    "Name": "Thermal Resistant ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Galvanising Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Heat Vanes",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Armour",
+    "Name": "Thermal Resistant ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Heat Radiators",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   },
   {
     "Type": "Missile Rack",
@@ -14270,5 +14870,181 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Efficient Weapon",
+    "Engineers": [ "The Dweller", "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Efficient Weapon",
+    "Engineers": [ "The Dweller", "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 1
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Efficient Weapon",
+    "Engineers": [ "The Dweller", "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Chromium",
+        "Size": 1
+      },
+      {
+        "Name": "Exceptional Scrambled Emission Data",
+        "Size": 1
+      },
+      {
+        "Name": "Heat Exchangers",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Efficient Weapon",
+    "Engineers": ["Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Heat Vanes",
+        "Size": 1
+      },
+      {
+        "Name": "Irregular Emission Data",
+        "Size": 1
+      },
+      {
+        "Name": "Selenium",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Efficient Weapon",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Cadmium",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Heat Radiators",
+        "Size": 1
+      },
+      {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Overcharged Weapon",
+    "Engineers": [ "The Dweller", "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Nickel",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Overcharged Weapon",
+    "Engineers": [ "The Dweller", "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Components",
+        "Size": 1
+      },
+      {
+        "Name": "Nickel",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Overcharged Weapon",
+    "Engineers": [ "The Dweller", "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Components",
+        "Size": 1
+      },
+      {
+        "Name": "Electrochemical Arrays",
+        "Size": 1
+      },
+      {
+        "Name": "Nickel",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Overcharged Weapon",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Polymer Capacitors",
+        "Size": 1
+      },
+      {
+        "Name": "Zinc",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Beam Laser",
+    "Name": "Overcharged Weapon",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Polymers",
+        "Size": 1
+      },
+      {
+        "Name": "Modified Embedded Firmware",
+        "Size": 1
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
   }
 ]
