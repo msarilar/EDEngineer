@@ -163,12 +163,16 @@ namespace EDEngineer
 
         public List<BlueprintFilter> AllFilters { get; }
 
+        private bool inclusive;
+        private readonly HashSet<Blueprint> excluded = new HashSet<Blueprint>(); 
+
         public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries)
         {
             foreach (var filter in AllFilters.Concat(IngredientFilters))
             {
                 filter.PropertyChanged += (o, e) =>
                 {
+                    inclusive = filter.Checked;
                     source.View.Refresh();
                     OnPropertyChanged(nameof(EngineerFilters));
                     OnPropertyChanged(nameof(GradeFilters));
@@ -197,6 +201,7 @@ namespace EDEngineer
                 {
                     if (e.PropertyName == "Favorite" || e.PropertyName == "Ignored")
                     {
+                        inclusive = true;
                         source.View.Refresh();
                     }
                 };
@@ -205,6 +210,16 @@ namespace EDEngineer
             source.Filter += (o,e) =>
             {
                 var blueprint = (Blueprint)e.Item;
+                if (inclusive)
+                {
+                    excluded.Clear();
+                }
+                else if(excluded.Contains(blueprint))
+                {
+                    e.Accepted = false;
+                    return;
+                }
+
                 var checkedIngredients = IngredientFilters.Where(f => f.Checked).ToList();
                 var satisfyIngredientFilters =  !checkedIngredients.Any() || checkedIngredients.Any(i => blueprint.Ingredients.Any(b => b.Entry == i.Entry));
 
@@ -214,6 +229,11 @@ namespace EDEngineer
                           TypeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           IgnoredFavoriteFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           CraftableFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint));
+
+                if (!ret)
+                {
+                    excluded.Add(blueprint);
+                }
 
                 e.Accepted = ret;
             };
