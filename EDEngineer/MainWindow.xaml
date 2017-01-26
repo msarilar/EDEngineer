@@ -667,6 +667,7 @@
                               FontSize="14.5"
                               IsSynchronizedWithCurrentItem="False"
                               HorizontalContentAlignment="Stretch"
+                              ScrollViewer.CanContentScroll="False"
                               HorizontalScrollBarVisibility="Hidden"
                               SelectionUnit="FullRow"
                               PreviewMouseLeftButtonDown="DataGridOnPreviewMouseLeftButtonDown"
