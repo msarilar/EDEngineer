@@ -14,7 +14,7 @@ You liked EDEngineer so much you want to buy me a beer? Click this:
 
 ##### **Warning:** Elite Dangerous started outputting logs only recently. It's very probable that the initial state of the app is wrong (negative numbers, missing entries, wrong numbers...) so you will have to manually change the quantities using the +/- buttons. These manual changes are recorded so you don't have to do it each time you start the app. After that, you are not supposed to use these +/- buttons. You can also directly edit the numbers without going through the buttons. Changes are saved and persist between updates. Even if you reinstall, they will remain in C:\Users\%USERNAME%\AppData\Local\EDEngineer !
 
-![Overview](http://i.imgur.com/tDNLdAS.png)
+![Overview](http://i.imgur.com/mZuvsyM.png)
 
 ### Install
 
@@ -35,19 +35,19 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 ### Additional Screenshots
 
 <p align="center">
-  <img src="http://i.imgur.com/4seMO8l.png" alt="Details"/>
+  <img src="http://i.imgur.com/jSsp7KR.png" alt="Details"/>
 </p>
 <p align="center">
-  <img src="http://i.imgur.com/jiHt4LI.png" alt="Filters"/>
+  <img src="http://i.imgur.com/vr9bIZ0.png" alt="Filters"/>
 </p>
 <p align="center">
-  <img src="http://i.imgur.com/td5H0OW.png" alt="Toast"/>
+  <img src="http://i.imgur.com/vLJZ92l.png" alt="Toast"/>
 </p>
 <p align="center">
   <img src="http://i.imgur.com/YBUPheF.png" alt="Toast"/>
 </p>
 <p align="center">
-  <img src="http://i.imgur.com/3sKXcYE.png" alt="Tray Icon"/>
+  <img src="http://i.imgur.com/YA1Xq3T.png" alt="Tray Icon"/>
 </p>
 
 ### Languages
