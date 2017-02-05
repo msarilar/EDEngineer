@@ -62,8 +62,17 @@ namespace EDEngineer.Models
                 Cargo.Increment(name, change);
             }
 
-            OnPropertyChanged(nameof(MaterialsCount));
-            OnPropertyChanged(nameof(DataCount));
+            switch (Cargo[name].Data.Kind)
+            {
+                case Kind.Data:
+                    OnPropertyChanged(nameof(DataCount));
+                    break;
+                case Kind.Material:
+                    OnPropertyChanged(nameof(MaterialsCount));
+                    break;
+            }
+
+            OnPropertyChanged(name);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

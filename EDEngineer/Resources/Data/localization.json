@@ -2163,11 +2163,101 @@
       "fr": "Nécessaire pour Bill Turner (50)",
       "ru": "необходимый для Bill Turner (50)"
     },
-    "Show information about resources": {
-      "es": "Mostrar información sobre recursos",
-      "de": "Informationen über Ressourcen anzeigen",
-      "fr": "Afficher les informations sur les ressources",
-      "ru": "Показать информацию о ресурсах"
+    "Show information about resources?": {
+      "es": "Mostrar información sobre recursos?",
+      "de": "Informationen über Ressourcen anzeigen?",
+      "fr": "Afficher les informations sur les ressources?",
+      "ru": "Показать информацию о ресурсах?"
+    },
+    "Check all filters": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Uncheck all filters": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Configure Thresholds": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Rarity": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Kind": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Search": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Apply threshold to selected items:": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Apply": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Rare": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Very Rare": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Very Common": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Common": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Standard": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Reached {0} {1} - threshold set at {2} (click this to configure your thresholds)": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Threshold Reached!": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }

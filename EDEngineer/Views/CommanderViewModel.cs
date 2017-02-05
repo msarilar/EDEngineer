@@ -1,13 +1,10 @@
-using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
-using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Data;
-using Windows.UI.Notifications;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Operations;
@@ -15,6 +12,7 @@ using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
+using EDEngineer.Views.Popups;
 using Newtonsoft.Json;
 using NodaTime;
 
@@ -34,6 +32,7 @@ namespace EDEngineer.Views
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
         private ShoppingListViewModel shoppingList;
+        private readonly CommanderToasts commanderToasts;
 
         public Instant LastUpdate
         {
@@ -56,15 +55,15 @@ namespace EDEngineer.Views
 
         private void LoadState(IEnumerable<string> events)
         {
-            UnsubscribeToasts();
+            commanderToasts.UnsubscribeToasts();
 
             // Clear state:
             State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
             LastUpdate = Instant.MinValue;
 
             ApplyEventsToSate(events);
-
-            SubscribeToasts();
+            ThresholdsManagerWindow.InitThresholds(State.Cargo);
+            commanderToasts.SubscribeToasts();
 
             if (Settings.Default.EntriesHighlighted == null)
             {
@@ -93,6 +92,7 @@ namespace EDEngineer.Views
             var converter = new ItemNameConverter(entryDatas);
 
             State = new State(entryDatas, languages);
+            commanderToasts = new CommanderToasts(State, CommanderName);
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
             blueprintConverter = new BlueprintConverter(State.Cargo);
@@ -110,116 +110,6 @@ namespace EDEngineer.Views
             foreach (var data in unusedIngredients)
             {
                 data.Unused = true;
-            }
-        }
-
-        private void UnsubscribeToasts()
-        {
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
-            {
-                foreach (var blueprint in State.Blueprints)
-                {
-                    blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
-                }
-
-                State.PropertyChanged -= StateCargoCountChanged;
-            }
-        }
-
-        private void SubscribeToasts()
-        {
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
-            {
-                foreach (var blueprint in State.Blueprints)
-                {
-                    blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
-                }
-
-                State.PropertyChanged += StateCargoCountChanged;
-            }
-        }
-
-        private void StateCargoCountChanged(object sender, PropertyChangedEventArgs e)
-        {
-            if (!SettingsManager.CargoAlmostFullWarningEnabled)
-            {
-                return;
-            }
-
-            var ratio = State.MaxMaterials - State.MaterialsCount;
-            string headerText, contentText;
-            var translator = Languages.Instance;
-            if (ratio <= 5 && e.PropertyName == "MaterialsCount")
-            {
-                headerText = translator.Translate("Materials Almost Full!");
-                contentText = string.Format(translator.Translate("You have only {0} slots left for your materials."), ratio);
-            }
-            else if ((ratio = State.MaxData - State.DataCount) <= 5 && e.PropertyName == "DataCount")
-            {
-                headerText = translator.Translate("Data Almost Full!");
-                contentText = string.Format(translator.Translate("You have only {0} slots left for your data."), ratio);
-            }
-            else
-            {
-                return;
-            }
-
-            try
-            {
-                var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText02);
-
-                var stringElements = toastXml.GetElementsByTagName("text");
-
-                stringElements[0].AppendChild(toastXml.CreateTextNode(headerText));
-                stringElements[1].AppendChild(toastXml.CreateTextNode(contentText));
-
-                var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
-
-                var imageElements = toastXml.GetElementsByTagName("image");
-                imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
-
-                var toast = new ToastNotification(toastXml);
-
-                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
-            }
-            catch (Exception)
-            {
-                // silently fail for platforms not supporting toasts
-            }
-        }
-
-        private void BlueprintOnFavoriteAvailable(object sender, EventArgs e)
-        {
-            if (!SettingsManager.BlueprintReadyToastEnabled)
-            {
-                return;
-            }
-
-            var blueprint = (Blueprint)sender;
-            try
-            {
-                var translator = Languages.Instance;
-
-                var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText04);
-
-                var stringElements = toastXml.GetElementsByTagName("text");
-
-                stringElements[0].AppendChild(toastXml.CreateTextNode(translator.Translate("Blueprint Ready")));
-                stringElements[1].AppendChild(toastXml.CreateTextNode($"{translator.Translate(blueprint.BlueprintName)} (G{blueprint.Grade})"));
-                stringElements[2].AppendChild(toastXml.CreateTextNode($"{string.Join(", ", blueprint.Engineers)}"));
-
-                var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
-
-                var imageElements = toastXml.GetElementsByTagName("image");
-                imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
-
-                var toast = new ToastNotification(toastXml);
-
-                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
-            }
-            catch (Exception)
-            {
-                // silently fail for platforms not supporting toasts
             }
         }
 

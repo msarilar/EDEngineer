@@ -141,6 +141,7 @@
     </ApplicationDefinition>
     <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
+    <Compile Include="Views\CommanderToasts.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
     <Compile Include="Converters\BlueprintNameShortener.cs" />

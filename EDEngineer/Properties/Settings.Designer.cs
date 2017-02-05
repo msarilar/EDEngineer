@@ -317,5 +317,17 @@ namespace EDEngineer.Properties {
                 this["SelectedCommander"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Thresholds {
+            get {
+                return ((string)(this["Thresholds"]));
+            }
+            set {
+                this["Thresholds"] = value;
+            }
+        }
     }
 }

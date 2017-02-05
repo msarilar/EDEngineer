@@ -1,5 +1,7 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace EDEngineer.Utils.System
 {
@@ -141,6 +143,26 @@ namespace EDEngineer.Utils.System
             set
             {
                 Properties.Settings.Default.Shortcut = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        public static Dictionary<string, int?> Thresholds
+        {
+            get
+            {
+                var serialized = Properties.Settings.Default.Thresholds;
+                if (serialized == null)
+                {
+                    return null;
+                }
+
+                return JsonConvert.DeserializeObject<Dictionary<string, int?>>(serialized);
+            }
+            set
+            {
+                var serialized = JsonConvert.SerializeObject(value);
+                Properties.Settings.Default.Thresholds = serialized;
                 Properties.Settings.Default.Save();
             }
         }
