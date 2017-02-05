@@ -13,25 +13,43 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*" />
-                <ColumnDefinition Width="0.25*" />
-                <ColumnDefinition Width="0.25*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-
-            <TextBox x:Name="SearchBox"
-                     Grid.Column="0"
-                     FontSize="16"
-                     Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     Style="{StaticResource PlaceHolderStyle}"
-                     Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Search'}" />
-
+            
+            <controls:DropDownButton ItemsSource="{Binding RarityFilters}"
+                                     x:Name="RarityFilters"
+                                     Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Rarity'}"
+                                     Grid.Column="0">
+                <controls:DropDownButton.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox Width="120"
+                                      IsChecked="{Binding Checked, Mode=TwoWay}">
+                                <TextBlock Width="100">
+                                    <TextBlock.Text>
+                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                            <Binding Converter="{StaticResource FilterToLabel}" />
+                                            <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </CheckBox>
+                        </StackPanel>
+                    </DataTemplate>
+                </controls:DropDownButton.ItemTemplate>
+            </controls:DropDownButton>
+            
             <controls:DropDownButton ItemsSource="{Binding KindFilters}"
-                                     Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Kind'}"
-
+                                     Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Kind'}"
+                                     x:Name="KindFilters"
                                      Grid.Column="1">
                 <controls:DropDownButton.ItemTemplate>
                     <DataTemplate>
@@ -53,30 +71,16 @@
                 </controls:DropDownButton.ItemTemplate>
             </controls:DropDownButton>
 
-            <controls:DropDownButton ItemsSource="{Binding RarityFilters}"
-                                     Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Rarity'}"
-                                     Grid.Column="2">
-                <controls:DropDownButton.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <CheckBox Width="120"
-                                      IsChecked="{Binding Checked, Mode=TwoWay}">
-                                <TextBlock Width="100">
-                                    <TextBlock.Text>
-                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
-                                            <Binding Converter="{StaticResource FilterToLabel}" />
-                                            <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}" />
-                                        </MultiBinding>
-                                    </TextBlock.Text>
-                                </TextBlock>
-                            </CheckBox>
-                        </StackPanel>
-                    </DataTemplate>
-                </controls:DropDownButton.ItemTemplate>
-            </controls:DropDownButton>
-        </Grid>
 
+            <TextBox x:Name="SearchBox"
+                     Grid.Column="2"
+                     FontSize="16"
+                     Text="{Binding SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Style="{StaticResource PlaceHolderStyle}"
+                     Tag="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Search'}" />
+
+        </Grid>
+        
         <DataGrid x:Name="ThresholdsGrid"
                   ItemsSource="{Binding Thresholds}"
                   AutoGenerateColumns="False"
@@ -86,7 +90,8 @@
                   Grid.Row="1"
                   DataGridCell.Selected="ThresholdsGridCellSelected">
             <DataGrid.Columns>
-                <DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="{Binding ActualWidth, Source={x:Reference Name=RarityFilters}}"
+                                        CanUserResize="False">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
@@ -99,7 +104,8 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="{Binding ActualWidth, Source={x:Reference Name=KindFilters}}"
+                                        CanUserResize="False">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <TextBlock>
@@ -129,7 +135,7 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-                <DataGridTextColumn Binding="{Binding Value.Threshold, TargetNullValue=∞, Converter={StaticResource IntOrNull}}"
+                <DataGridTextColumn Binding="{Binding Value.Threshold, TargetNullValue=∞, Converter={StaticResource IntOrNull}, Mode=TwoWay}"
                                     MinWidth="100"
                                     IsReadOnly="False">
                     <DataGridTextColumn.ElementStyle>
@@ -144,21 +150,46 @@
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.25*" />
-                <ColumnDefinition Width="0.25*" />
-                <ColumnDefinition Width="0.25*" />
-                <ColumnDefinition Width="0.25*" />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0"
+                       TextAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Apply threshold to selected items:'}"
+                       Margin="5"
+                       FontSize="16"/>
+            <TextBox Grid.Column="1"
+                     FontSize="16"
+                     TextAlignment="Center"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Stretch"
+                     Text="{Binding ValueToApply, TargetNullValue=∞, Converter={StaticResource IntOrNull}, Mode=TwoWay}"/>
+            <Button Grid.Column="2"
+                    x:Name="ApplyButton"
+                    Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Apply'}"
+                    Click="ApplyButtonClicked"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
             <Button x:Name="CancelButton"
                     HorizontalContentAlignment="Center"
                     Click="CancelButtonClicked"
                     HorizontalAlignment="Stretch"
-                    Grid.Column="2" />
+                    Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Cancel'}"
+                    Grid.Column="0" />
             <Button Click="OkButtonClicked"
                     HorizontalContentAlignment="Center"
                     x:Name="OkButton"
                     HorizontalAlignment="Stretch"
-                    Grid.Column="3" />
+                    Grid.Column="1"
+                    Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='OK'}"/>
         </Grid>
     </Grid>
 </controls:MetroWindow>

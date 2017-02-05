@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,15 +16,15 @@ namespace EDEngineer.Views.Popups
     /// </summary>
     public partial class ThresholdsManagerWindow
     {
+        private readonly ThresholdsManagerViewModel viewModel;
+
         public ThresholdsManagerWindow(Languages languages, ISimpleDictionary<string, Entry> thresholds, string commander)
         {
-            var viewModel = new ThresholdsManagerViewModel(languages, thresholds);
+            viewModel = new ThresholdsManagerViewModel(languages, thresholds);
             DataContext = viewModel;
 
             InitializeComponent();
 
-            CancelButton.Content = Languages.Instance.Translate("Cancel");
-            OkButton.Content = Languages.Instance.Translate("OK");
             Title = $"{Languages.Instance.Translate("Configure Thresholds")} - Cmdr {commander}";
         }
 
@@ -48,6 +49,14 @@ namespace EDEngineer.Views.Popups
             {
                 var grid = (DataGrid)sender;
                 grid.BeginEdit(e);
+            }
+        }
+
+        private void ApplyButtonClicked(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in ThresholdsGrid.SelectedItems.Cast<KeyValuePair<string, Entry>>())
+            {
+                item.Value.Threshold = viewModel.ValueToApply;
             }
         }
     }

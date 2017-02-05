@@ -23,6 +23,8 @@ namespace EDEngineer.Views.Popups
 
         public List<KindFilter> KindFilters { get; }
 
+        public int? ValueToApply { get; set; }
+
         public string SearchText
         {
             get { return searchText; }
