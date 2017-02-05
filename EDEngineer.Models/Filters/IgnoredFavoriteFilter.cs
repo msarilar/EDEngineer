@@ -4,7 +4,7 @@ namespace EDEngineer.Models.Filters
 {
     public class IgnoredFavoriteFilter : BlueprintFilter
     {
-        public string Label { get; }
+        public override string Label { get; }
         public Predicate<Blueprint> AppliesToDelegate { get; }
 
         public override bool AppliesTo(Blueprint blueprint)

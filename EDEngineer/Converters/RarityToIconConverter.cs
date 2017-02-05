@@ -17,15 +17,15 @@ namespace EDEngineer.Converters
             switch ((Rarity) value)
             {
                 case Rarity.VeryCommon:
-                    return "Resources/Images/very-common.png";
+                    return "/Resources/Images/very-common.png";
                 case Rarity.Common:
-                    return "Resources/Images/common.png";
+                    return "/Resources/Images/common.png";
                 case Rarity.Standard:
-                    return "Resources/Images/standard.png";
+                    return "/Resources/Images/standard.png";
                 case Rarity.Rare:
-                    return "Resources/Images/rare.png";
+                    return "/Resources/Images/rare.png";
                 case Rarity.VeryRare:
-                    return "Resources/Images/very-rare.png";
+                    return "/Resources/Images/very-rare.png";
                 default:
                     throw new NotImplementedException();
             }

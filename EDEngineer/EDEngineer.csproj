@@ -139,6 +139,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
@@ -156,6 +157,10 @@
     <Compile Include="Converters\OriginToControlTemplateConverter.cs" />
     <Compile Include="Converters\RarityToIconConverter.cs" />
     <Compile Include="DesignTime\DesignViewModel.cs" />
+    <Compile Include="Views\Popups\ThresholdsManagerViewModel.cs" />
+    <Compile Include="Views\Popups\ThresholdsManagerWindow.xaml.cs">
+      <DependentUpon>ThresholdsManagerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Popups\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
@@ -176,7 +181,6 @@
     <Compile Include="Utils\System\SettingsManager.cs" />
     <Compile Include="Utils\UI\ServerPortPrompt.cs" />
     <Compile Include="Utils\UI\ShortcutPrompt.cs" />
-    <Compile Include="Views\Popups\ThresholdManager.cs" />
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />
     <Compile Include="Utils\System\LogWatcher.cs" />
@@ -185,6 +189,10 @@
     <Page Include="DesignTime\DesignViewModel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Popups\ThresholdsManagerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Popups\ErrorWindow.xaml">
       <SubType>Designer</SubType>

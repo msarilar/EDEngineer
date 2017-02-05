@@ -4,6 +4,8 @@ namespace EDEngineer.Models.Filters
     {
         public int Grade { get; }
 
+        public override string Label => Grade.ToString();
+
         public override bool AppliesTo(Blueprint blueprint)
         {
             return blueprint.Grade == Grade;

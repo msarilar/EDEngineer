@@ -45,6 +45,7 @@
             <converters:InstantToStringConverter x:Key="InstantToString" />
             <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
+            <converters:IntOrNullConverter x:Key="IntOrNull" />
             <converters:IntegerToVisibilityConverterReversed x:Key="IntegerToVisibilityReversed" />
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
@@ -547,8 +548,7 @@
             										Grid.Column="1">
                                                     <DataGridColumnHeadersPresenter.Visibility>
                                                         <Binding Path="HeadersVisibility"
-            												RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}">
-                                                        </Binding>
+            												RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}" />
                                                     </DataGridColumnHeadersPresenter.Visibility>
                                                 </DataGridColumnHeadersPresenter>
                                                 <Grid Grid.ColumnSpan="2" Grid.Row="1">
@@ -658,6 +658,36 @@
                         </DataTrigger.ExitActions>
                     </DataTrigger>
                 </Style.Triggers>
+            </Style>
+
+            <Style x:Key="PlaceHolderStyle" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TextBox}">
+                            <Grid>
+                                <TextBox Text="{Binding Path=Text,
+                                                RelativeSource={RelativeSource TemplatedParent}, 
+                                                Mode=TwoWay,
+                                                UpdateSourceTrigger=PropertyChanged}"
+                                 x:Name="textSource" 
+                                 Background="Transparent" 
+                                 Panel.ZIndex="2" />
+                                <TextBox Text="{TemplateBinding Tag}" Background="{TemplateBinding Background}" Panel.ZIndex="1">
+                                    <TextBox.Style>
+                                        <Style TargetType="{x:Type TextBox}">
+                                            <Setter Property="Foreground" Value="Transparent"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Path=Text, Source={x:Reference textSource}}" Value="">
+                                                    <Setter Property="Foreground" Value="LightGray"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBox.Style>
+                                </TextBox>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

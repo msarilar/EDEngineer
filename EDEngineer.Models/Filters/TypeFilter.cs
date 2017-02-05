@@ -4,6 +4,8 @@ namespace EDEngineer.Models.Filters
     {
         public string Type { get; }
 
+        public override string Label => Type;
+
         public override bool AppliesTo(Blueprint blueprint)
         {
             return blueprint.Type == Type;

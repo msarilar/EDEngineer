@@ -39,6 +39,7 @@ namespace EDEngineer.Converters
                 default:
                     throw new NotImplementedException();
             }
+
             var filters = (IEnumerable<BlueprintFilter>) value;
 
             var blueprintFilters = filters as IList<BlueprintFilter> ?? filters.ToList();

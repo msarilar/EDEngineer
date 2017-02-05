@@ -21,6 +21,7 @@ namespace EDEngineer.Models
         private int favoriteCount;
         private int synthesisFavoriteCount;
         private bool highlighted;
+        private int? threshold;
 
         public int Count
         {
@@ -69,6 +70,22 @@ namespace EDEngineer.Models
                 var oldValue = synthesisFavoriteCount;
                 synthesisFavoriteCount = value;
                 OnPropertyChanged(oldValue, synthesisFavoriteCount);
+            }
+        }
+
+        [JsonIgnore]
+        public int? Threshold
+        {
+            get { return threshold; }
+            set
+            {
+                if (value == threshold)
+                {
+                    return;
+                }
+
+                threshold = value;
+                OnPropertyChanged();
             }
         }
 

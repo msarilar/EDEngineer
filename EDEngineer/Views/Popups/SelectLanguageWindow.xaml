@@ -73,7 +73,7 @@
                     Background="Blue"
                     Foreground="White"
                     x:Name="HelpTranslateButton"
-                    Click="HelpTranslateButtonClicked"></Button>
+                    Click="HelpTranslateButtonClicked" />
         </StackPanel>
         
         <Button Content="OK"

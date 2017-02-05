@@ -11,6 +11,8 @@ namespace EDEngineer.Models.Filters
             Entry = entry;
         }
 
+        public override string Label => Entry.Data.Name;
+
         public override bool AppliesTo(Blueprint blueprint)
         {
             return blueprint.Ingredients.Any(i => i.Entry == Entry);

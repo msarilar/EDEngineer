@@ -1,21 +1,20 @@
-using System;
+﻿using System;
 using System.Globalization;
 using System.Windows.Data;
-using EDEngineer.Models.Filters;
 
 namespace EDEngineer.Converters
 {
-    public class FilterToLabelConverter : IValueConverter
+    public class IntOrNullConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var filter = (ILabelledFilter) value;
-            return filter.Magic ? "All" : filter.Label;
+            return value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            throw new NotImplementedException();
+            int result;
+            return int.TryParse((string) value, out result) ? result : (int?) null;
         }
     }
 }

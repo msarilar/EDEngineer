@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filters\BlueprintFilter.cs" />
+    <Compile Include="Filters\ILabelledFilter.cs" />
+    <Compile Include="Filters\KindFilter.cs" />
+    <Compile Include="Filters\RarityFilter.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
     <Compile Include="Utils\Json\LocalizedContractResolver.cs" />
     <Compile Include="Utils\Json\LocalizedJsonConverter.cs" />
@@ -62,7 +66,7 @@
     <Compile Include="BlueprintIngredient.cs" />
     <Compile Include="Entry.cs" />
     <Compile Include="EntryData.cs" />
-    <Compile Include="Filters\BlueprintFilter.cs" />
+    <Compile Include="Filters\Filter.cs" />
     <Compile Include="Filters\CraftableFilter.cs" />
     <Compile Include="Filters\EngineerFilter.cs" />
     <Compile Include="Filters\GradeFilter.cs" />

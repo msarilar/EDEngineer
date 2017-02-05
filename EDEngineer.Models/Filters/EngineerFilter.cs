@@ -6,6 +6,8 @@ namespace EDEngineer.Models.Filters
     {
         public string Engineer { get; }
 
+        public override string Label => Engineer;
+
         public override bool AppliesTo(Blueprint blueprint)
         {
             return blueprint.Engineers.Contains(Engineer);

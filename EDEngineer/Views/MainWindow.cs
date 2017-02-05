@@ -132,9 +132,9 @@ namespace EDEngineer.Views
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
             }
 
-            icon = TrayIconManager.Init((o, e) => ShowWindow(), 
+            icon = TrayIconManager.Init((o, e) => ShowWindow(),
                 (o, e) => Close(),
-                ConfigureShortcut, 
+                ConfigureShortcut,
                 (o, e) => ToggleEditModeChecked(o, null),
                 (o, e) => ResetWindowPositionButtonClicked(o, null),
                 (o, e) => Languages.PromptLanguage(viewModel.Languages),
@@ -146,7 +146,11 @@ namespace EDEngineer.Views
                     ReleaseNotesManager.ShowReleaseNotes();
                 },
                 Properties.Settings.Default.CurrentVersion,
-                (o, e) => ThresholdManager.Configure());
+                (o, e) =>
+                {
+                    HideWindow();
+                    ThresholdsManagerWindow.ShowThresholds(viewModel.Languages, viewModel.CurrentCommander.Value.State.Cargo, viewModel.CurrentCommander.Key);
+                });
 
             var shortcut = SettingsManager.Shortcut;
 

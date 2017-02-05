@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace EDEngineer.Models.Operations
+﻿namespace EDEngineer.Models.Operations
 {
     public class CargoOperation : JournalOperation
     {

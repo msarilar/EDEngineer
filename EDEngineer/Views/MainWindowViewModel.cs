@@ -19,7 +19,7 @@ namespace EDEngineer.Views
     {
         public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; }  = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
 
-        public Languages Languages { get; private set; }
+        public Languages Languages { get; }
 
         public KeyValuePair<string, CommanderViewModel> CurrentCommander
         {
