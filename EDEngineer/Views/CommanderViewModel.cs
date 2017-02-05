@@ -10,15 +10,15 @@ using System.Windows.Data;
 using Windows.UI.Notifications;
 using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Barda;
 using EDEngineer.Models.Operations;
+using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
 using NodaTime;
 
-namespace EDEngineer
+namespace EDEngineer.Views
 {
     public class CommanderViewModel : INotifyPropertyChanged
     {

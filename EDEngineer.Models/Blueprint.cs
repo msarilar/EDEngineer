@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using EDEngineer.Models.Barda;
+using EDEngineer.Models.Utils;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Models

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EDEngineer.Models.Barda
+namespace EDEngineer.Models.Utils
 {
     [AttributeUsage(AttributeTargets.Method)]
     public sealed class NotifyPropertyChangedInvocatorAttribute : Attribute

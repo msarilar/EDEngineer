@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace EDEngineer.Models.Barda
+namespace EDEngineer.Models.Utils
 {
     public static class StringExtensions
     {

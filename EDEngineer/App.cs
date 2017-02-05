@@ -17,13 +17,13 @@ namespace EDEngineer
                     Current.MainWindow.Visibility = Visibility.Hidden;
                 }
                 
-                new ErrorWindow((Exception)e.ExceptionObject).ShowDialog();
+                new Views.Popups.ErrorWindow((Exception)e.ExceptionObject).ShowDialog();
                 Current.MainWindow?.Close();
             };
 
             Current.DispatcherUnhandledException += (o, e) =>
             {
-                new ErrorWindow(e.Exception).ShowDialog();
+                new Views.Popups.ErrorWindow(e.Exception).ShowDialog();
                 Current.MainWindow?.Close();
             };
         }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using EDEngineer.Models.Barda;
+using EDEngineer.Models.Utils;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Models

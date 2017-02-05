@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EDEngineer.Models.Barda.Collections
+namespace EDEngineer.Models.Utils.Collections
 {
     public class SortedObservableDictionary<TKey, TValue> : SortedObservableCollection<KeyValuePair<TKey, TValue>>, ISimpleDictionary<TKey, TValue>
     {

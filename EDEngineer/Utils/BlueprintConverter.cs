@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Barda.Collections;
+using EDEngineer.Models.Utils.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 

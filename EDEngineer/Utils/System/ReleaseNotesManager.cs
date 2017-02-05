@@ -44,7 +44,7 @@ namespace EDEngineer.Utils.System
             var list = releaseNotes.ToList();
             if (list.Any())
             {
-                new ReleaseNotesWindow(list, title).ShowDialog();
+                new Views.Popups.ReleaseNotesWindow(list, title).ShowDialog();
             }
         }
     }

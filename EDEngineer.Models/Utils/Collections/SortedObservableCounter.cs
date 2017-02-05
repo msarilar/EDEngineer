@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace EDEngineer.Models.Barda.Collections
+namespace EDEngineer.Models.Utils.Collections
 {
     public class SortedObservableCounter : SortedObservableDictionary<string, Entry>
     {

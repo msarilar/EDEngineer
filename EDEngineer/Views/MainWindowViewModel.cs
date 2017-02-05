@@ -7,13 +7,13 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Barda;
-using EDEngineer.Models.Barda.Collections;
+using EDEngineer.Models.Utils;
+using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
 
-namespace EDEngineer
+namespace EDEngineer.Views
 {
     public class MainWindowViewModel : INotifyPropertyChanged
     {

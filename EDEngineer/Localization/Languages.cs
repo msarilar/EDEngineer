@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Data;
 using EDEngineer.DesignTime;
 using EDEngineer.Models;
-using EDEngineer.Models.Barda;
+using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
@@ -76,7 +76,7 @@ namespace EDEngineer.Localization
 
         public static void PromptLanguage(Languages languages)
         {
-            new SelectLanguageWindow(languages).ShowDialog();
+            new Views.Popups.SelectLanguageWindow(languages).ShowDialog();
             Settings.Default.Language = languages.CurrentLanguage.TwoLetterISOLanguageName;
             Settings.Default.Save();
         }

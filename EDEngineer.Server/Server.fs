@@ -15,7 +15,7 @@ open Newtonsoft.Json
 open NodaTime
 open NodaTime.Text
 
-open EDEngineer.Models.Barda.Json
+open EDEngineer.Models.Utils.Json
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv

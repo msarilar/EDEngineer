@@ -6,11 +6,10 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Data;
 using EDEngineer.Models;
-using EDEngineer.Models.Barda;
 using EDEngineer.Models.Filters;
-using EDEngineer.Utils;
+using EDEngineer.Models.Utils;
 
-namespace EDEngineer
+namespace EDEngineer.Utils
 {
     public class BlueprintFilters : INotifyPropertyChanged
     {

@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -20,11 +19,12 @@ using EDEngineer.Models;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
+using EDEngineer.Views.Popups;
 using Application = System.Windows.Application;
 using Button = System.Windows.Controls.Button;
 using DataGridCell = System.Windows.Controls.DataGridCell;
 
-namespace EDEngineer
+namespace EDEngineer.Views
 {
     public partial class MainWindow
     {
@@ -133,7 +133,8 @@ namespace EDEngineer
             }
 
             icon = TrayIconManager.Init((o, e) => ShowWindow(), 
-                (o, e) => Close(), ConfigureShortcut, 
+                (o, e) => Close(),
+                ConfigureShortcut, 
                 (o, e) => ToggleEditModeChecked(o, null),
                 (o, e) => ResetWindowPositionButtonClicked(o, null),
                 (o, e) => Languages.PromptLanguage(viewModel.Languages),
@@ -144,7 +145,8 @@ namespace EDEngineer
                     HideWindow();
                     ReleaseNotesManager.ShowReleaseNotes();
                 },
-                Properties.Settings.Default.CurrentVersion);
+                Properties.Settings.Default.CurrentVersion,
+                (o, e) => ThresholdManager.Configure());
 
             var shortcut = SettingsManager.Shortcut;
 

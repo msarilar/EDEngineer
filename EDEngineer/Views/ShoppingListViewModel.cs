@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models;
 
-namespace EDEngineer
+namespace EDEngineer.Views
 {
     public class ShoppingListViewModel : INotifyPropertyChanged, IEnumerable<Blueprint>
     {

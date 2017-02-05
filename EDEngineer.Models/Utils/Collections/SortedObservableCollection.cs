@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 
-namespace EDEngineer.Models.Barda.Collections
+namespace EDEngineer.Models.Utils.Collections
 {
     public class SortedObservableCollection<T> : ObservableCollection<T>
     {

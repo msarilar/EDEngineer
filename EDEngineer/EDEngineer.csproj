@@ -139,8 +139,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BlueprintFilters.cs" />
-    <Compile Include="CommanderViewModel.cs" />
+    <Compile Include="Utils\BlueprintFilters.cs" />
+    <Compile Include="Views\CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
     <Compile Include="Converters\BlueprintNameShortener.cs" />
     <Compile Include="Converters\BooleanToOpacityConverter.cs" />
@@ -156,18 +156,18 @@
     <Compile Include="Converters\OriginToControlTemplateConverter.cs" />
     <Compile Include="Converters\RarityToIconConverter.cs" />
     <Compile Include="DesignTime\DesignViewModel.cs" />
-    <Compile Include="ErrorWindow.xaml.cs">
+    <Compile Include="Views\Popups\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Localization\Translation.cs" />
     <Compile Include="Localization\Languages.cs" />
-    <Compile Include="ReleaseNotesWindow.xaml.cs">
+    <Compile Include="Views\Popups\ReleaseNotesWindow.xaml.cs">
       <DependentUpon>ReleaseNotesWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SelectLanguageWindow.xaml.cs">
+    <Compile Include="Views\Popups\SelectLanguageWindow.xaml.cs">
       <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ShoppingListViewModel.cs" />
+    <Compile Include="Views\ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\StringExtensions.cs" />
     <Compile Include="Utils\System\IOUtils.cs" />
@@ -176,6 +176,7 @@
     <Compile Include="Utils\System\SettingsManager.cs" />
     <Compile Include="Utils\UI\ServerPortPrompt.cs" />
     <Compile Include="Utils\UI\ShortcutPrompt.cs" />
+    <Compile Include="Views\Popups\ThresholdManager.cs" />
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />
     <Compile Include="Utils\System\LogWatcher.cs" />
@@ -185,11 +186,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ErrorWindow.xaml">
+    <Page Include="Views\Popups\ErrorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -200,11 +201,11 @@
     <Compile Include="Converters\IngredientToVisibilityConverter.cs" />
     <Compile Include="Utils\ItemNameConverter.cs" />
     <Compile Include="Utils\JournalEntryConverter.cs" />
-    <Compile Include="MainWindow.cs">
+    <Compile Include="Views\MainWindow.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ReleaseNotesWindow.xaml">
+    <Page Include="Views\Popups\ReleaseNotesWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -212,13 +213,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SelectLanguageWindow.xaml">
+    <Page Include="Views\Popups\SelectLanguageWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="Views\MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

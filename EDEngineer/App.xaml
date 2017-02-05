@@ -5,7 +5,7 @@
     xmlns:custom="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     x:Class="EDEngineer.App"
-    StartupUri="MainWindow.xaml">
+    StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

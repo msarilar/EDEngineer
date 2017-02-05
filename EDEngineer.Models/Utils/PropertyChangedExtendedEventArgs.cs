@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace EDEngineer.Models.Barda
+namespace EDEngineer.Models.Utils
 {
     public class PropertyChangedExtendedEventArgs<T> : PropertyChangedEventArgs
     {

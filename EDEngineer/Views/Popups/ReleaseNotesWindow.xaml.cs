@@ -2,7 +2,7 @@
 using System.Windows;
 using EDEngineer.Models;
 
-namespace EDEngineer
+namespace EDEngineer.Views.Popups
 {
     /// <summary>
     /// Interaction logic for ReleaseNotesWindow.xaml

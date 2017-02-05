@@ -1,4 +1,4 @@
-namespace EDEngineer.Models.Barda.Collections
+namespace EDEngineer.Models.Utils.Collections
 {
     public interface ISimpleDictionary<in TKey, TValue>
     {

@@ -2,7 +2,7 @@ using System.Reflection;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace EDEngineer.Models.Barda.Json
+namespace EDEngineer.Models.Utils.Json
 {
     public class LocalizedContractResolver : DefaultContractResolver
     {

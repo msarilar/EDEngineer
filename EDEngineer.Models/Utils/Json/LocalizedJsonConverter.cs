@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace EDEngineer.Models.Barda.Json
+namespace EDEngineer.Models.Utils.Json
 {
     public class LocalizedJsonConverter : JsonConverter
     {
