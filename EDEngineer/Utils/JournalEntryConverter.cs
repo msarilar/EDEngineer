@@ -299,11 +299,13 @@ namespace EDEngineer.Utils
 
             foreach (var jToken in data["Materials"])
             {
-                var material = (JProperty) jToken;
-                string synthesisIngredientName;
-                if (!converter.TryGet(material.Name, out synthesisIngredientName))
+                dynamic cc = jToken;
+                string synthesisIngredientName = cc.Name;
+                int? count = cc.Value ?? cc.Count;
+
+                if (!converter.TryGet(synthesisIngredientName, out synthesisIngredientName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), material.Name));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), synthesisIngredientName));
                     continue;
                 }
 
@@ -315,7 +317,7 @@ namespace EDEngineer.Utils
                         synthesisOperation.SynthesisPartOperation.Add(new MaterialOperation()
                         {
                             MaterialName = synthesisIngredientName,
-                            Size = -1 * material.Value?.ToObject<int>() ?? -1
+                            Size = -1 * count ?? -1
                         });
 
                         break;
@@ -323,7 +325,7 @@ namespace EDEngineer.Utils
                         synthesisOperation.SynthesisPartOperation.Add(new DataOperation()
                         {
                             DataName = synthesisIngredientName,
-                            Size = -1 * material.Value?.ToObject<int>() ?? -1
+                            Size = -1 * count ?? -1
                         });
 
                         break;
@@ -331,7 +333,7 @@ namespace EDEngineer.Utils
                         synthesisOperation.SynthesisPartOperation.Add(new CargoOperation()
                         {
                             CommodityName = synthesisIngredientName,
-                            Size = -1 * material.Value?.ToObject<int>() ?? -1
+                            Size = -1 * count ?? -1
                         });
 
                         break;
@@ -377,7 +379,7 @@ namespace EDEngineer.Utils
                 {
                     dynamic cc = c;
                     string rewardName;
-                    return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName), rewardName, (int) cc.Value);
+                    return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName), rewardName, (int) (cc.Value ?? cc.Count));
                 }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
             };
 
