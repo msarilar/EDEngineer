@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.7",
+    "Content": "New advanced feature available : Thresholds ! (only available for users on Windows 8 or more recent)\r\nAccess the configuration window from your tasktray icon (right click => Configure Thresholds) and set the thresholds for each item.\r\nYou can set the values individually or apply a value to all selected rows (use Ctrl+A to select every visible row). When your cargo changes and the quantity is equal or above the thresholds, you'll get a warning in the form of a Windows Toast.\r\nIt can quickly become annoying so I would recommend a \"buffer\" approach by setting the limit to 30 (for example) and whenever the limit is reached you would discard the items so that you're at 20 of them (again, it's an example). If you keep it at 30 you'll constantly get annoyed by toast notifications whenever you pick up the item.\r\n\r\n\r\nThis update comes with a bunch of new text that has been kindly translated to german by user @Scorprox ! Many thanks to him.\r\n\r\nOther languages (russian/french/spanish) are still in need of translation so if you think you can help (and if you want to!), jump into the project's GitHub (https://github.com/msarilar/EDEngineer) and search for the file \"localization.json\" (or open the language selection window, there's a button that links to the GitHub's issue). Pull Requests are more than welcome :)"
+  },
+  {
     "Version": "1.0.4.6",
     "Content": "* ~40 new blueprints added from 2.2.03! Thanks very much to @elijahgill for the work :)"
   },

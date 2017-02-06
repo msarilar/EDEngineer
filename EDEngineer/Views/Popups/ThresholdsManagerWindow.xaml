@@ -16,6 +16,7 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <!-- FILTERS -->
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
@@ -81,6 +82,7 @@
 
         </Grid>
         
+        <!-- THRESHOLDS -->
         <DataGrid x:Name="ThresholdsGrid"
                   ItemsSource="{Binding Thresholds}"
                   AutoGenerateColumns="False"
@@ -158,6 +160,7 @@
             </DataGrid.Columns>
         </DataGrid>
 
+        <!-- APPLY VALUE TO SELECTED ROWS -->
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -183,6 +186,7 @@
                     Click="ApplyButtonClicked"/>
         </Grid>
 
+        <!-- OK/CANCEL BUTTONS -->
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*" />
@@ -190,6 +194,7 @@
             </Grid.ColumnDefinitions>
             <Button x:Name="CancelButton"
                     HorizontalContentAlignment="Center"
+                    Background="Bisque"
                     Click="CancelButtonClicked"
                     HorizontalAlignment="Stretch"
                     Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Cancel'}"
@@ -197,6 +202,7 @@
             <Button Click="OkButtonClicked"
                     HorizontalContentAlignment="Center"
                     x:Name="OkButton"
+                    Background="Aquamarine"
                     HorizontalAlignment="Stretch"
                     Grid.Column="1"
                     Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='OK'}"/>
