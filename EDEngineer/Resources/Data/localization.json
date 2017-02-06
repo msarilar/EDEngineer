@@ -2171,91 +2171,91 @@
     },
     "Check all filters": {
       "es": null,
-      "de": null,
+      "de": "Alle Filter anwählen",
       "fr": null,
       "ru": null
     },
     "Uncheck all filters": {
       "es": null,
-      "de": null,
+      "de": "Alle Filter abwählen",
       "fr": null,
       "ru": null
     },
     "Configure Thresholds": {
       "es": null,
-      "de": null,
+      "de": "Schwellwert einstellen",
       "fr": null,
       "ru": null
     },
     "Rarity": {
       "es": null,
-      "de": null,
+      "de": "Qualität",
       "fr": null,
       "ru": null
     },
     "Kind": {
       "es": null,
-      "de": null,
+      "de": "Art",
       "fr": null,
       "ru": null
     },
     "Search": {
       "es": null,
-      "de": null,
+      "de": "Suche",
       "fr": null,
       "ru": null
     },
     "Apply threshold to selected items:": {
       "es": null,
-      "de": null,
+      "de": "Schwellwert auf die Auswahl anwenden",
       "fr": null,
       "ru": null
     },
     "Apply": {
       "es": null,
-      "de": null,
+      "de": "anwenden",
       "fr": null,
       "ru": null
     },
     "Rare": {
       "es": null,
-      "de": null,
+      "de": "selten",
       "fr": null,
       "ru": null
     },
     "Very Rare": {
       "es": null,
-      "de": null,
+      "de": "sehr selten",
       "fr": null,
       "ru": null
     },
     "Very Common": {
       "es": null,
-      "de": null,
+      "de": "sehr häufig",
       "fr": null,
       "ru": null
     },
     "Common": {
       "es": null,
-      "de": null,
+      "de": "häufig",
       "fr": null,
       "ru": null
     },
     "Standard": {
       "es": null,
-      "de": null,
+      "de": "Standard",
       "fr": null,
       "ru": null
     },
     "Reached {0} {1} - threshold set at {2} (click this to configure your thresholds)": {
       "es": null,
-      "de": null,
+      "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2} (Klicke hier um Schwellwerte zu konfigurieren)",
       "fr": null,
       "ru": null
     },
     "Threshold Reached!": {
       "es": null,
-      "de": null,
+      "de": "Schwellwert erreicht!",
       "fr": null,
       "ru": null
     }
