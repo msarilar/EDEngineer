@@ -2172,13 +2172,13 @@
     "Check all filters": {
       "es": null,
       "de": "Alle Filter anwählen",
-      "fr": null,
+      "fr": "Tous les filtres",
       "ru": null
     },
     "Uncheck all filters": {
       "es": null,
       "de": "Alle Filter abwählen",
-      "fr": null,
+      "fr": "Aucun filtre",
       "ru": null
     },
     "Configure Thresholds": {
@@ -2190,7 +2190,7 @@
     "Rarity": {
       "es": null,
       "de": "Qualität",
-      "fr": null,
+      "fr": "Rareté",
       "ru": null
     },
     "Kind": {
@@ -2202,7 +2202,7 @@
     "Search": {
       "es": null,
       "de": "Suche",
-      "fr": null,
+      "fr": "Recherche",
       "ru": null
     },
     "Apply threshold to selected items:": {
@@ -2214,37 +2214,37 @@
     "Apply": {
       "es": null,
       "de": "anwenden",
-      "fr": null,
+      "fr": "Appliquer",
       "ru": null
     },
     "Rare": {
       "es": null,
       "de": "selten",
-      "fr": null,
+      "fr": "Rare",
       "ru": null
     },
     "Very Rare": {
       "es": null,
       "de": "sehr selten",
-      "fr": null,
+      "fr": "Très rare",
       "ru": null
     },
     "Very Common": {
       "es": null,
       "de": "sehr häufig",
-      "fr": null,
+      "fr": "Très commun",
       "ru": null
     },
     "Common": {
       "es": null,
       "de": "häufig",
-      "fr": null,
+      "fr": "Commun",
       "ru": null
     },
     "Standard": {
       "es": null,
       "de": "Standard",
-      "fr": null,
+      "fr": "Standard",
       "ru": null
     },
     "Reached {0} {1} - threshold set at {2} (click this to configure your thresholds)": {
