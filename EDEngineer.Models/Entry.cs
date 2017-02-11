@@ -36,6 +36,7 @@ namespace EDEngineer.Models
                 var oldValue = count;
                 count = value;
                 OnPropertyChanged(oldValue, count);
+                OnPropertyChanged("Recommended");
             }
         }
 
