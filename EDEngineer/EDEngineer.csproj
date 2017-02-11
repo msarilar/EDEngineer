@@ -85,7 +85,7 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -140,6 +140,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Converters\IntOrNullConverter.cs" />
+    <Compile Include="Converters\QuantityToColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
     <Compile Include="Views\CommanderToasts.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />

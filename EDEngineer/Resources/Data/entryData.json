@@ -1,975 +1,1467 @@
-﻿[
-  {
-    "Name": "Aberrant Shield Pattern Analysis",
-    "Rarity": "Rare",
-    "FormattedName": "aberrantshieldpatternanalysis",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (combat ships)", "Mission reward", "Needed for The Sarge (50)" ]
-  },
-  {
-    "Name": "Abnormal Compact Emission Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "compactemissionsdata",
-    "Kind": "Data",
-    "OriginDetails": [ "Deep space data beacon", "Ship scanning (combat ships)", "Mission reward" ]
-  },
-  {
-    "Name": "Adaptive Encryptors Capture",
-    "Rarity": "VeryRare",
-    "FormattedName": "adaptiveencryptorscapture",
-    "Kind": "Data",
-    "OriginDetails": [ "Mission reward", "Signal source" ]
-  },
-  {
-    "Name": "Anomalous Bulk Scan Data",
-    "Rarity": "VeryCommon",
-    "FormattedName": "anomalousbulkscandata",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (transport ships)", "Mission reward" ]
-  },
-  {
-    "Name": "Anomalous FSD Telemetry",
-    "Rarity": "Common",
-    "FormattedName": "anomalousfsdtelemetry",
-    "Kind": "Data",
-    "OriginDetails": [ "High wake scanning", "Mission reward" ]
-  },
-  {
-    "Name": "Antimony",
-    "Rarity": "VeryRare",
-    "FormattedName": "antimony",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Arsenic",
-    "Rarity": "Standard",
-    "FormattedName": "arsenic",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining", "Mission reward" ]
-  },
-  {
-    "Name": "Articulation Motors",
-    "Rarity": null,
-    "FormattedName": "articulationmotors",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Atypical Disrupted Wake Echoes",
-    "Rarity": "VeryCommon",
-    "FormattedName": "atypicaldisruptedwakeechoes",
-    "Kind": "Data",
-    "OriginDetails": [ "High wake scanning", "Mission reward" ]
-  },
-  {
-    "Name": "Atypical Encryption Archives",
-    "Rarity": "Rare",
-    "FormattedName": "atypicalencryptionarchives",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface POI" ]
-  },
-  {
-    "Name": "Basic Conductors",
-    "Rarity": "VeryCommon",
-    "FormattedName": "basicconductors",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)" ]
-  },
-  {
-    "Name": "Biotech Conductors",
-    "Rarity": "VeryRare",
-    "FormattedName": "biotechconductors",
-    "Kind": "Material",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Bromellite",
-    "Rarity": null,
-    "FormattedName": "bromellite",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mining", "Needed for Bill Turner (50)" ]
-  },
-  {
-    "Name": "Cadmium",
-    "Rarity": "Rare",
-    "FormattedName": "cadmium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining" ]
-  },
-  {
-    "Name": "Carbon",
-    "Rarity": "VeryCommon",
-    "FormattedName": "carbon",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Chemical Distillery",
-    "Rarity": "Standard",
-    "FormattedName": "chemicaldistillery",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (high security)" ]
-  },
-  {
-    "Name": "Chemical Manipulators",
-    "Rarity": "Rare",
-    "FormattedName": "chemicalmanipulators",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Surface POI" ]
-  },
-  {
-    "Name": "Chemical Processors",
-    "Rarity": "Common",
-    "FormattedName": "chemicalprocessors",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (high security)", "Mission reward" ]
-  },
-  {
-    "Name": "Chemical Storage Units",
-    "Rarity": "VeryCommon",
-    "FormattedName": "chemicalstorageunits",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)" ]
-  },
-  {
-    "Name": "Chromium",
-    "Rarity": "Common",
-    "FormattedName": "chromium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Classified Scan Databanks",
-    "Rarity": "Standard",
-    "FormattedName": "classifiedscandatabanks",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (transport ships)", "Surface POI", "Needed for Ram Tah (50)" ]
-  },
-  {
-    "Name": "Classified Scan Fragment",
-    "Rarity": "VeryRare",
-    "FormattedName": "classifiedscanfragment",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Mission reward" ]
-  },
-  {
-    "Name": "CMM Composite",
-    "Rarity": null,
-    "FormattedName": "cmmcomposite",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets" ]
-  },
-  {
-    "Name": "Compact Composites",
-    "Rarity": "VeryCommon",
-    "FormattedName": "compactcomposites",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source", "Surface POI" ]
-  },
-  {
-    "Name": "Compound Shielding",
-    "Rarity": "Rare",
-    "FormattedName": "compoundshielding",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (high security)", "Mission reward" ]
-  },
-  {
-    "Name": "Conductive Ceramics",
-    "Rarity": "Standard",
-    "FormattedName": "conductiveceramics",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (anarchy)" ]
-  },
-  {
-    "Name": "Conductive Components",
-    "Rarity": "Common",
-    "FormattedName": "conductivecomponents",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (anarchy)" ]
-  },
-  {
-    "Name": "Conductive Polymers",
-    "Rarity": "Rare",
-    "FormattedName": "conductivepolymers",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Surface POI", "Mission reward" ]
-  },
-  {
-    "Name": "Configurable Components",
-    "Rarity": "Rare",
-    "FormattedName": "configurablecomponents",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (low security)" ]
-  },
-  {
-    "Name": "Core Dynamics Composites",
-    "Rarity": "VeryRare",
-    "FormattedName": "fedcorecomposites",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (High grade emissions)" ]
-  },
-  {
-    "Name": "Cracked Industrial Firmware",
-    "Rarity": "Standard",
-    "FormattedName": "crackedindustrialfirmware",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Mission reward" ]
-  },
-  {
-    "Name": "Crystal Shards",
-    "Rarity": "VeryCommon",
-    "FormattedName": "crystalshards",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Surface POI" ]
-  },
-  {
-    "Name": "Datamined Wake Exceptions",
-    "Rarity": "VeryRare",
-    "FormattedName": "dataminedwakeexceptions",
-    "Kind": "Data",
-    "OriginDetails": [ "High wake scanning", "Mission reward" ]
-  },
-  {
-    "Name": "Decoded Emission Data",
-    "Rarity": "Rare",
-    "FormattedName": "decodedemissiondata",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (combat ships)", "Mission reward", "Needed for Tiana Fortune (50)" ]
-  },
-  {
-    "Name": "Distorted Shield Cycle Recordings",
-    "Rarity": "VeryCommon",
-    "FormattedName": "distortedshieldcyclerecordings",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (transport ships)", "Mission reward" ]
-  },
-  {
-    "Name": "Divergent Scan Data",
-    "Rarity": "Rare",
-    "FormattedName": "encodedscandata",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Mission reward" ]
-  },
-  {
-    "Name": "Eccentric Hyperspace Trajectories",
-    "Rarity": "Rare",
-    "FormattedName": "eccentrichyperspacetrajectories",
-    "Kind": "Data",
-    "OriginDetails": [ "High wake scanning" ]
-  },
-  {
-    "Name": "Electrochemical Arrays",
-    "Rarity": "Standard",
-    "FormattedName": "electrochemicalarrays",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Signal source (anarchy)" ]
-  },
-  {
-    "Name": "Emergency Power Cells",
-    "Rarity": null,
-    "FormattedName": "emergencypowercells",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Akhenaten (High Tech/Refinery)" ]
-  },
-  {
-    "Name": "Energy Grid Assembly",
-    "Rarity": null,
-    "FormattedName": "powergridassembly",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Stafkarl (Industrial/Refinery)" ]
-  },
-  {
-    "Name": "Exceptional Scrambled Emission Data",
-    "Rarity": "VeryCommon",
-    "FormattedName": "exceptionalscrambledemissiondata",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Exhaust Manifold",
-    "Rarity": null,
-    "FormattedName": "exhaustmanifold",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Run (Industrial/Refinery)" ]
-  },
-  {
-    "Name": "Exquisite Focus Crystals",
-    "Rarity": "VeryRare",
-    "FormattedName": "exquisitefocuscrystals",
-    "Kind": "Material",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Filament Composites",
-    "Rarity": "Common",
-    "FormattedName": "filamentcomposites",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Signal source" ]
-  },
-  {
-    "Name": "Flawed Focus Crystals",
-    "Rarity": "Common",
-    "FormattedName": "uncutfocuscrystals",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source" ]
-  },
-  {
-    "Name": "Focus Crystals",
-    "Rarity": "Standard",
-    "FormattedName": "focuscrystals",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (high security)" ]
-  },
-  {
-    "Name": "Galvanising Alloys",
-    "Rarity": "Common",
-    "FormattedName": "galvanisingalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Germanium",
-    "Rarity": "Common",
-    "FormattedName": "germanium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mission reward" ]
-  },
-  {
-    "Name": "Grid Resistors",
-    "Rarity": "VeryCommon",
-    "FormattedName": "gridresistors",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Hardware Diagnostic Sensor",
-    "Rarity": null,
-    "FormattedName": "hardwarediagnosticsensor",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Lei Jing (Industrial/Refinery)" ]
-  },
-  {
-    "Name": "Heat Conduction Wiring",
-    "Rarity": "VeryCommon",
-    "FormattedName": "heatconductionwiring",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Heat Dispersion Plate",
-    "Rarity": "Common",
-    "FormattedName": "heatdispersionplate",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Heat Exchangers",
-    "Rarity": "Standard",
-    "FormattedName": "heatexchangers",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (anarchy)" ]
-  },
-  {
-    "Name": "Heat Resistant Ceramics",
-    "Rarity": "Common",
-    "FormattedName": "heatresistantceramics",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)" ]
-  },
-  {
-    "Name": "Heat Vanes",
-    "Rarity": "Rare",
-    "FormattedName": "heatvanes",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Heatsink Interlink",
-    "Rarity": null,
-    "FormattedName": "heatsinkinterlink",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Myrbat (Industrial/Refinery)" ]
-  },
-  {
-    "Name": "High Density Composites",
-    "Rarity": "Standard",
-    "FormattedName": "highdensitycomposites",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Signal source (low security)" ]
-  },
-  {
-    "Name": "HN Shock Mount",
-    "Rarity": null,
-    "FormattedName": "hnshockmount",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets" ]
-  },
-  {
-    "Name": "Hybrid Capacitors",
-    "Rarity": "Common",
-    "FormattedName": "hybridcapacitors",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Imperial Shielding",
-    "Rarity": "VeryRare",
-    "FormattedName": "imperialshielding",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
-  },
-  {
-    "Name": "Improvised Components",
-    "Rarity": "VeryRare",
-    "FormattedName": "improvisedcomponents",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
-  },
-  {
-    "Name": "Inconsistent Shield Soak Analysis",
-    "Rarity": "Common",
-    "FormattedName": "inconsistentshieldsoakanalysis",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (transport ships)", "Mission reward" ]
-  },
-  {
-    "Name": "Insulating Membrane",
-    "Rarity": null,
-    "FormattedName": "insulatingmembrane",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets" ]
-  },
-  {
-    "Name": "Ion Distributor",
-    "Rarity": null,
-    "FormattedName": "iondistributor",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near 70 Tauri (Industrial/Extraction)" ]
-  },
-  {
-    "Name": "Iron",
-    "Rarity": "VeryCommon",
-    "FormattedName": "iron",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Irregular Emission Data",
-    "Rarity": "Common",
-    "FormattedName": "archivedemissiondata",
-    "Kind": "Data",
-    "OriginDetails": [ "Mission reward", "Signal source" ]
-  },
-  {
-    "Name": "Magnetic Emitter Coil",
-    "Rarity": null,
-    "FormattedName": "magneticemittercoil",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Leesti (Industrial/Refinery)" ]
-  },
-  {
-    "Name": "Manganese",
-    "Rarity": "Common",
-    "FormattedName": "manganese",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mission reward" ]
-  },
-  {
-    "Name": "Mechanical Components",
-    "Rarity": "Standard",
-    "FormattedName": "mechanicalcomponents",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source (low security)" ]
-  },
-  {
-    "Name": "Mechanical Equipment",
-    "Rarity": "Common",
-    "FormattedName": "mechanicalequipment",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source" ]
-  },
-  {
-    "Name": "Mechanical Scrap",
-    "Rarity": "VeryCommon",
-    "FormattedName": "mechanicalscrap",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (transport ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Mercury",
-    "Rarity": "Rare",
-    "FormattedName": "mercury",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Micro Controllers",
-    "Rarity": null,
-    "FormattedName": "microcontrollers",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets" ]
-  },
-  {
-    "Name": "Micro-Weave Cooling Hoses",
-    "Rarity": null,
-    "FormattedName": "micro-weavecoolinghoses",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Military Grade Alloys",
-    "Rarity": "VeryRare",
-    "FormattedName": "militarygradealloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
-  },
-  {
-    "Name": "Military Supercapacitors",
-    "Rarity": "VeryRare",
-    "FormattedName": "militarysupercapacitors",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Modified Consumer Firmware",
-    "Rarity": "Common",
-    "FormattedName": "modifiedconsumerfirmware",
-    "Kind": "Data",
-    "OriginDetails": [ "Mission reward", "Signal source", "Surface data point" ]
-  },
-  {
-    "Name": "Modified Embedded Firmware",
-    "Rarity": "VeryRare",
-    "FormattedName": "modifiedembeddedfirmware",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Mission reward" ]
-  },
-  {
-    "Name": "Modular Terminals",
-    "Rarity": null,
-    "FormattedName": "modularterminals",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward", "Needed for Marco Qwent (25)" ]
-  },
-  {
-    "Name": "Molybdenum",
-    "Rarity": "Rare",
-    "FormattedName": "molybdenum",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mission reward" ]
-  },
-  {
-    "Name": "Nanobreakers",
-    "Rarity": null,
-    "FormattedName": "nanobreakers",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Neofabric Insulation",
-    "Rarity": null,
-    "FormattedName": "neofabricinsulation",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Nickel",
-    "Rarity": "VeryCommon",
-    "FormattedName": "nickel",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Niobium",
-    "Rarity": "Standard",
-    "FormattedName": "niobium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mission reward" ]
-  },
-  {
-    "Name": "Open Symmetric Keys",
-    "Rarity": "Standard",
-    "FormattedName": "opensymmetrickeys",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Osmium",
-    "Rarity": null,
-    "FormattedName": "osmium",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mining" ]
-  },
-  {
-    "Name": "Pattern Alpha Obelisk Data",
-    "Rarity": "Standard",
-    "FormattedName": "ancientbiologicaldata",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
-    "Name": "Pattern Beta Obelisk Data",
-    "Rarity": "Common",
-    "FormattedName": "ancientculturaldata",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
-    "Name": "Pattern Delta Obelisk Data",
-    "Rarity": "Rare",
-    "FormattedName": "ancientlanguagedata",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
-    "Name": "Pattern Epsilon Obelisk Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "ancienttechnologicaldata",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
-    "Name": "Pattern Gamma Obelisk Data",
-    "Rarity": "VeryCommon",
-    "FormattedName": "ancienthistoricaldata",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
-    "Name": "Peculiar Shield Frequency Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "peculiarshieldfrequencydata",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning", "Mission reward" ]
-  },
-  {
-    "Name": "Pharmaceutical Isolators",
-    "Rarity": "VeryRare",
-    "FormattedName": "pharmaceuticalisolators",
-    "Kind": "Material",
-    "OriginDetails": [ "Mission reward", "Signal source (High grade emissions)" ]
-  },
-  {
-    "Name": "Phase Alloys",
-    "Rarity": "Standard",
-    "FormattedName": "phasealloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (low security)" ]
-  },
-  {
-    "Name": "Phosphorus",
-    "Rarity": "VeryCommon",
-    "FormattedName": "phosphorus",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Platinum",
-    "Rarity": null,
-    "FormattedName": "platinum",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mining" ]
-  },
-  {
-    "Name": "Polonium",
-    "Rarity": "VeryRare",
-    "FormattedName": "polonium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mission reward" ]
-  },
-  {
-    "Name": "Polymer Capacitors",
-    "Rarity": "Rare",
-    "FormattedName": "polymercapacitors",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Power Converter",
-    "Rarity": null,
-    "FormattedName": "powerconverter",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Lakota (Industrial/Extraction)" ]
-  },
-  {
-    "Name": "Power Transfer Bus",
-    "Rarity": null,
-    "FormattedName": "powertransferconduits",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Cilbien Zu (Industrial/Extraction)" ]
-  },
-  {
-    "Name": "Praseodymium",
-    "Rarity": null,
-    "FormattedName": "praseodymium",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mining" ]
-  },
-  {
-    "Name": "Precipitated Alloys",
-    "Rarity": "Standard",
-    "FormattedName": "precipitatedalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (military & authority ships)", "Mission reward" ]
-  },
-  {
-    "Name": "Proprietary Composites",
-    "Rarity": "Rare",
-    "FormattedName": "fedproprietarycomposites",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Proto Heat Radiators",
-    "Rarity": "VeryRare",
-    "FormattedName": "protoheatradiators",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
-  },
-  {
-    "Name": "Proto Light Alloys",
-    "Rarity": "Rare",
-    "FormattedName": "protolightalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
-  },
-  {
-    "Name": "Proto Radiolic Alloys",
-    "Rarity": "VeryRare",
-    "FormattedName": "protoradiolicalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)" ]
-  },
-  {
-    "Name": "Radiation Baffle",
-    "Rarity": null,
-    "FormattedName": "radiationbaffle",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Heget (Industrial/Extraction)" ]
-  },
-  {
-    "Name": "Refined Focus Crystals",
-    "Rarity": "Rare",
-    "FormattedName": "refinedfocuscrystals",
-    "Kind": "Material",
-    "OriginDetails": [ "Mission reward", "Signal source (high security)" ]
-  },
-  {
-    "Name": "Reinforced Mounting Plate",
-    "Rarity": null,
-    "FormattedName": "reinforcedmountingplate",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Markets near Eurybia (Extraction/Refinery)" ]
-  },
-  {
-    "Name": "Ruthenium",
-    "Rarity": "VeryRare",
-    "FormattedName": "ruthenium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Salvaged Alloys",
-    "Rarity": "VeryCommon",
-    "FormattedName": "salvagedalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source" ]
-  },
-  {
-    "Name": "Samarium",
-    "Rarity": null,
-    "FormattedName": "samarium",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mining" ]
-  },
-  {
-    "Name": "Security Firmware Patch",
-    "Rarity": "Rare",
-    "FormattedName": "securityfirmwarepatch",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Mission reward" ]
-  },
-  {
-    "Name": "Selenium",
-    "Rarity": "Standard",
-    "FormattedName": "selenium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mission reward" ]
-  },
-  {
-    "Name": "Shield Emitters",
-    "Rarity": "Common",
-    "FormattedName": "shieldemitters",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source" ]
-  },
-  {
-    "Name": "Shielding Sensors",
-    "Rarity": "Standard",
-    "FormattedName": "shieldingsensors",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (high security)", "Mission reward" ]
-  },
-  {
-    "Name": "Specialised Legacy Firmware",
-    "Rarity": "VeryCommon",
-    "FormattedName": "specialisedlegacyfirmware",
-    "Kind": "Data",
-    "OriginDetails": [ "Mission reward", "Surface data point", "Signal source" ]
-  },
-  {
-    "Name": "Strange Wake Solutions",
-    "Rarity": "Standard",
-    "FormattedName": "strangewakesolutions",
-    "Kind": "Data",
-    "OriginDetails": [ "High wake scanning", "Mission reward" ]
-  },
-  {
-    "Name": "Sulphur",
-    "Rarity": "VeryCommon",
-    "FormattedName": "sulphur",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Tagged Encryption Codes",
-    "Rarity": "Common",
-    "FormattedName": "taggedencryptioncodes",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Technetium",
-    "Rarity": "VeryRare",
-    "FormattedName": "technetium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Telemetry Suite",
-    "Rarity": null,
-    "FormattedName": "telemetrysuite",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
-    "Name": "Tellurium",
-    "Rarity": "VeryRare",
-    "FormattedName": "tellurium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Tempered Alloys",
-    "Rarity": "VeryCommon",
-    "FormattedName": "temperedalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)" ]
-  },
-  {
-    "Name": "Thermic Alloys",
-    "Rarity": "Rare",
-    "FormattedName": "thermicalloys",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Mission reward" ]
-  },
-  {
-    "Name": "Tin",
-    "Rarity": "Rare",
-    "FormattedName": "tin",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Tungsten",
-    "Rarity": "Standard",
-    "FormattedName": "tungsten",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Unexpected Emission Data",
-    "Rarity": "Standard",
-    "FormattedName": "emissiondata",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (combat ships)", "Signal source" ]
-  },
-  {
-    "Name": "Unidentified Scan Archives",
-    "Rarity": "Common",
-    "FormattedName": "unidentifiedscanarchives",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (transport ships)" ]
-  },
-  {
-    "Name": "Unknown Fragment",
-    "Rarity": "VeryRare",
-    "FormattedName": "unknownenergysource",
-    "Kind": "Material",
-    "OriginDetails": [ "Destroyed Unknown Artefact", "Needed for Professor Palin (25)" ]
-  },
-  {
-    "Name": "Untypical Shield Scans",
-    "Rarity": "Standard",
-    "FormattedName": "shielddensityreports",
-    "Kind": "Data",
-    "OriginDetails": [ "Ship scanning (combat ships)" ]
-  },
-  {
-    "Name": "Unusual Encrypted Files",
-    "Rarity": "VeryCommon",
-    "FormattedName": "unusualencryptedfiles",
-    "Kind": "Data",
-    "OriginDetails": [ "Surface data point", "Signal source", "Mission reward" ]
-  },
-  {
-    "Name": "Vanadium",
-    "Rarity": "Common",
-    "FormattedName": "vanadium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining (ice rings)" ]
-  },
-  {
-    "Name": "Worn Shield Emitters",
-    "Rarity": "VeryCommon",
-    "FormattedName": "wornshieldemitters",
-    "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source" ]
-  },
-  {
-    "Name": "Yttrium",
-    "Rarity": "Rare",
-    "FormattedName": "yttrium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Zinc",
-    "Rarity": "Common",
-    "FormattedName": "zinc",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting" ]
-  },
-  {
-    "Name": "Zirconium",
-    "Rarity": "Standard",
-    "FormattedName": "zirconium",
-    "Kind": "Material",
-    "OriginDetails": [ "Surface prospecting", "Mining" ]
-  },
-  {
-    "Name": "Unknown Ship Signature",
-    "Rarity": "Rare",
-    "FormattedName": "unknownshipsignature",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
-    "Name": "Unknown Wake Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "unknownwakedata",
-    "Kind": "Data",
-    "OriginDetails": null
+﻿[  
+  {  
+    "Name":"Aberrant Shield Pattern Analysis",
+    "OriginDetails":[  
+      "Ship scanning (combat ships)",
+      "Mission reward",
+      "Needed for The Sarge (50)"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"aberrantshieldpatternanalysis"
+  },
+  {  
+    "Name":"Abnormal Compact Emission Data",
+    "OriginDetails":[  
+      "Deep space data beacon",
+      "Ship scanning (combat ships)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"compactemissionsdata"
+  },
+  {  
+    "Name":"Adaptive Encryptors Capture",
+    "OriginDetails":[  
+      "Mission reward",
+      "Signal source"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"adaptiveencryptorscapture"
+  },
+  {  
+    "Name":"Anomalous Bulk Scan Data",
+    "OriginDetails":[  
+      "Ship scanning (transport ships)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"anomalousbulkscandata"
+  },
+  {  
+    "Name":"Anomalous FSD Telemetry",
+    "OriginDetails":[  
+      "High wake scanning",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"anomalousfsdtelemetry"
+  },
+  {  
+    "Name":"Antimony",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"antimony"
+  },
+  {  
+    "Name":"Arsenic",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"arsenic"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"articulationmotors",
+    "Name":"Articulation Motors"
+  },
+  {  
+    "Name":"Atypical Disrupted Wake Echoes",
+    "OriginDetails":[  
+      "High wake scanning",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"atypicaldisruptedwakeechoes"
+  },
+  {  
+    "Name":"Atypical Encryption Archives",
+    "OriginDetails":[  
+      "Surface POI"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"atypicalencryptionarchives"
+  },
+  {  
+    "Name":"Basic Conductors",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"basicconductors"
+  },
+  {  
+    "Name":"Biotech Conductors",
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"biotechconductors"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mining",
+      "Needed for Bill Turner (50)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"bromellite",
+    "Name":"Bromellite"
+  },
+  {  
+    "Name":"Cadmium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"cadmium"
+  },
+  {  
+    "Name":"Carbon",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"carbon"
+  },
+  {  
+    "Name":"Chemical Distillery",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (high security)"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"chemicaldistillery"
+  },
+  {  
+    "Name":"Chemical Manipulators",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Surface POI"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"chemicalmanipulators"
+  },
+  {  
+    "Name":"Chemical Processors",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (high security)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"chemicalprocessors"
+  },
+  {  
+    "Name":"Chemical Storage Units",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"chemicalstorageunits"
+  },
+  {  
+    "Name":"Chromium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"chromium"
+  },
+  {  
+    "Name":"Classified Scan Databanks",
+    "OriginDetails":[  
+      "Ship scanning (transport ships)",
+      "Surface POI",
+      "Needed for Ram Tah (50)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"classifiedscandatabanks"
+  },
+  {  
+    "Name":"Classified Scan Fragment",
+    "OriginDetails":[  
+      "Surface data point",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"classifiedscanfragment"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"cmmcomposite",
+    "Name":"CMM Composite"
+  },
+  {  
+    "Name":"Compact Composites",
+    "OriginDetails":[  
+      "Signal source",
+      "Surface POI"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"compactcomposites"
+  },
+  {  
+    "Name":"Compound Shielding",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source (high security)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"compoundshielding"
+  },
+  {  
+    "Name":"Conductive Ceramics",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (anarchy)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"conductiveceramics"
+  },
+  {  
+    "Name":"Conductive Components",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (anarchy)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"conductivecomponents"
+  },
+  {  
+    "Name":"Conductive Polymers",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Surface POI",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"conductivepolymers"
+  },
+  {  
+    "Name":"Configurable Components",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (low security)"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"configurablecomponents"
+  },
+  {  
+    "Name":"Core Dynamics Composites",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source (High grade emissions)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"fedcorecomposites"
+  },
+  {  
+    "Name":"Cracked Industrial Firmware",
+    "OriginDetails":[  
+      "Surface data point",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"crackedindustrialfirmware"
+  },
+  {  
+    "Name":"Crystal Shards",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Surface POI"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"crystalshards"
+  },
+  {  
+    "Name":"Datamined Wake Exceptions",
+    "OriginDetails":[  
+      "High wake scanning",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":50,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"dataminedwakeexceptions"
+  },
+  {  
+    "Name":"Decoded Emission Data",
+    "OriginDetails":[  
+      "Ship scanning (combat ships)",
+      "Mission reward",
+      "Needed for Tiana Fortune (50)"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"decodedemissiondata"
+  },
+  {  
+    "Name":"Distorted Shield Cycle Recordings",
+    "OriginDetails":[  
+      "Ship scanning (transport ships)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"distortedshieldcyclerecordings"
+  },
+  {  
+    "Name":"Divergent Scan Data",
+    "OriginDetails":[  
+      "Surface data point",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"encodedscandata"
+  },
+  {  
+    "Name":"Eccentric Hyperspace Trajectories",
+    "OriginDetails":[  
+      "High wake scanning"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"eccentrichyperspacetrajectories"
+  },
+  {  
+    "Name":"Electrochemical Arrays",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Signal source (anarchy)"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"electrochemicalarrays"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Akhenaten (High Tech/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"emergencypowercells",
+    "Name":"Emergency Power Cells"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Stafkarl (Industrial/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"powergridassembly",
+    "Name":"Energy Grid Assembly"
+  },
+  {  
+    "Name":"Exceptional Scrambled Emission Data",
+    "OriginDetails":[  
+      "Ship scanning",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"exceptionalscrambledemissiondata"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Run (Industrial/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"exhaustmanifold",
+    "Name":"Exhaust Manifold"
+  },
+  {  
+    "Name":"Exquisite Focus Crystals",
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"exquisitefocuscrystals"
+  },
+  {  
+    "Name":"Filament Composites",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Signal source"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"filamentcomposites"
+  },
+  {  
+    "Name":"Flawed Focus Crystals",
+    "OriginDetails":[  
+      "Signal source"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"uncutfocuscrystals"
+  },
+  {  
+    "Name":"Focus Crystals",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source (high security)"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"focuscrystals"
+  },
+  {  
+    "Name":"Galvanising Alloys",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"galvanisingalloys"
+  },
+  {  
+    "Name":"Germanium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"germanium"
+  },
+  {  
+    "Name":"Grid Resistors",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"gridresistors"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Lei Jing (Industrial/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"hardwarediagnosticsensor",
+    "Name":"Hardware Diagnostic Sensor"
+  },
+  {  
+    "Name":"Heat Conduction Wiring",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"heatconductionwiring"
+  },
+  {  
+    "Name":"Heat Dispersion Plate",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"heatdispersionplate"
+  },
+  {  
+    "Name":"Heat Exchangers",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (anarchy)"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"heatexchangers"
+  },
+  {  
+    "Name":"Heat Resistant Ceramics",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"heatresistantceramics"
+  },
+  {  
+    "Name":"Heat Vanes",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"heatvanes"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Myrbat (Industrial/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"heatsinkinterlink",
+    "Name":"Heatsink Interlink"
+  },
+  {  
+    "Name":"High Density Composites",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Signal source (low security)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"highdensitycomposites"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"hnshockmount",
+    "Name":"HN Shock Mount"
+  },
+  {  
+    "Name":"Hybrid Capacitors",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"hybridcapacitors"
+  },
+  {  
+    "Name":"Imperial Shielding",
+    "OriginDetails":[  
+      "Signal source (High grade emissions)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"imperialshielding"
+  },
+  {  
+    "Name":"Improvised Components",
+    "OriginDetails":[  
+      "Signal source (High grade emissions)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"improvisedcomponents"
+  },
+  {  
+    "Name":"Inconsistent Shield Soak Analysis",
+    "OriginDetails":[  
+      "Ship scanning (transport ships)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"inconsistentshieldsoakanalysis"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"insulatingmembrane",
+    "Name":"Insulating Membrane"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near 70 Tauri (Industrial/Extraction)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"iondistributor",
+    "Name":"Ion Distributor"
+  },
+  {  
+    "Name":"Iron",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":40,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"iron"
+  },
+  {  
+    "Name":"Irregular Emission Data",
+    "OriginDetails":[  
+      "Mission reward",
+      "Signal source"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"archivedemissiondata"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Leesti (Industrial/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"magneticemittercoil",
+    "Name":"Magnetic Emitter Coil"
+  },
+  {  
+    "Name":"Manganese",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"manganese"
+  },
+  {  
+    "Name":"Mechanical Components",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source (low security)"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"mechanicalcomponents"
+  },
+  {  
+    "Name":"Mechanical Equipment",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"mechanicalequipment"
+  },
+  {  
+    "Name":"Mechanical Scrap",
+    "OriginDetails":[  
+      "Ship salvage (transport ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"mechanicalscrap"
+  },
+  {  
+    "Name":"Mercury",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"mercury"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"microcontrollers",
+    "Name":"Micro Controllers"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"micro-weavecoolinghoses",
+    "Name":"Micro-Weave Cooling Hoses"
+  },
+  {  
+    "Name":"Military Grade Alloys",
+    "OriginDetails":[  
+      "Signal source (High grade emissions)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"militarygradealloys"
+  },
+  {  
+    "Name":"Military Supercapacitors",
+    "OriginDetails":[  
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"militarysupercapacitors"
+  },
+  {  
+    "Name":"Modified Consumer Firmware",
+    "OriginDetails":[  
+      "Mission reward",
+      "Signal source",
+      "Surface data point"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"modifiedconsumerfirmware"
+  },
+  {  
+    "Name":"Modified Embedded Firmware",
+    "OriginDetails":[  
+      "Surface data point",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"modifiedembeddedfirmware"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mission reward",
+      "Needed for Marco Qwent (25)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"modularterminals",
+    "Name":"Modular Terminals"
+  },
+  {  
+    "Name":"Molybdenum",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"molybdenum"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"nanobreakers",
+    "Name":"Nanobreakers"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"neofabricinsulation",
+    "Name":"Neofabric Insulation"
+  },
+  {  
+    "Name":"Nickel",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"nickel"
+  },
+  {  
+    "Name":"Niobium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"niobium"
+  },
+  {  
+    "Name":"Open Symmetric Keys",
+    "OriginDetails":[  
+      "Surface data point",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"opensymmetrickeys"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mining"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"osmium",
+    "Name":"Osmium"
+  },
+  {  
+    "Name":"Pattern Alpha Obelisk Data",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"ancientbiologicaldata"
+  },
+  {  
+    "Name":"Pattern Beta Obelisk Data",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"ancientculturaldata"
+  },
+  {  
+    "Name":"Pattern Delta Obelisk Data",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"ancientlanguagedata"
+  },
+  {  
+    "Name":"Pattern Epsilon Obelisk Data",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"ancienttechnologicaldata"
+  },
+  {  
+    "Name":"Pattern Gamma Obelisk Data",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"ancienthistoricaldata"
+  },
+  {  
+    "Name":"Peculiar Shield Frequency Data",
+    "OriginDetails":[  
+      "Ship scanning",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"peculiarshieldfrequencydata"
+  },
+  {  
+    "Name":"Pharmaceutical Isolators",
+    "OriginDetails":[  
+      "Mission reward",
+      "Signal source (High grade emissions)"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"pharmaceuticalisolators"
+  },
+  {  
+    "Name":"Phase Alloys",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source (low security)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"phasealloys"
+  },
+  {  
+    "Name":"Phosphorus",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"phosphorus"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mining"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"platinum",
+    "Name":"Platinum"
+  },
+  {  
+    "Name":"Polonium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"polonium"
+  },
+  {  
+    "Name":"Polymer Capacitors",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"polymercapacitors"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Lakota (Industrial/Extraction)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"powerconverter",
+    "Name":"Power Converter"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Cilbien Zu (Industrial/Extraction)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"powertransferconduits",
+    "Name":"Power Transfer Bus"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mining"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"praseodymium",
+    "Name":"Praseodymium"
+  },
+  {  
+    "Name":"Precipitated Alloys",
+    "OriginDetails":[  
+      "Ship salvage (military & authority ships)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"precipitatedalloys"
+  },
+  {  
+    "Name":"Proprietary Composites",
+    "OriginDetails":[  
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"fedproprietarycomposites"
+  },
+  {  
+    "Name":"Proto Heat Radiators",
+    "OriginDetails":[  
+      "Signal source (High grade emissions)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"protoheatradiators"
+  },
+  {  
+    "Name":"Proto Light Alloys",
+    "OriginDetails":[  
+      "Signal source (High grade emissions)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"protolightalloys"
+  },
+  {  
+    "Name":"Proto Radiolic Alloys",
+    "OriginDetails":[  
+      "Signal source (High grade emissions)"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"protoradiolicalloys"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Heget (Industrial/Extraction)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"radiationbaffle",
+    "Name":"Radiation Baffle"
+  },
+  {  
+    "Name":"Refined Focus Crystals",
+    "OriginDetails":[  
+      "Mission reward",
+      "Signal source (high security)"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"refinedfocuscrystals"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Markets near Eurybia (Extraction/Refinery)"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"reinforcedmountingplate",
+    "Name":"Reinforced Mounting Plate"
+  },
+  {  
+    "Name":"Ruthenium",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"ruthenium"
+  },
+  {  
+    "Name":"Salvaged Alloys",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"salvagedalloys"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mining"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"samarium",
+    "Name":"Samarium"
+  },
+  {  
+    "Name":"Security Firmware Patch",
+    "OriginDetails":[  
+      "Surface data point",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"securityfirmwarepatch"
+  },
+  {  
+    "Name":"Selenium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"selenium"
+  },
+  {  
+    "Name":"Shield Emitters",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"shieldemitters"
+  },
+  {  
+    "Name":"Shielding Sensors",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source (high security)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"shieldingsensors"
+  },
+  {  
+    "Name":"Specialised Legacy Firmware",
+    "OriginDetails":[  
+      "Mission reward",
+      "Surface data point",
+      "Signal source"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"specialisedlegacyfirmware"
+  },
+  {  
+    "Name":"Strange Wake Solutions",
+    "OriginDetails":[  
+      "High wake scanning",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"strangewakesolutions"
+  },
+  {  
+    "Name":"Sulphur",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":50,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"sulphur"
+  },
+  {  
+    "Name":"Tagged Encryption Codes",
+    "OriginDetails":[  
+      "Surface data point",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"taggedencryptioncodes"
+  },
+  {  
+    "Name":"Technetium",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"technetium"
+  },
+  {  
+    "Rarity":null,
+    "OriginDetails":[  
+      "Mission reward"
+    ],
+    "Kind":"Commodity",
+    "FormattedName":"telemetrysuite",
+    "Name":"Telemetry Suite"
+  },
+  {  
+    "Name":"Tellurium",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"tellurium"
+  },
+  {  
+    "Name":"Tempered Alloys",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"temperedalloys"
+  },
+  {  
+    "Name":"Thermic Alloys",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"thermicalloys"
+  },
+  {  
+    "Name":"Tin",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"tin"
+  },
+  {  
+    "Name":"Tungsten",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":30,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"tungsten"
+  },
+  {  
+    "Name":"Unexpected Emission Data",
+    "OriginDetails":[  
+      "Ship scanning (combat ships)",
+      "Signal source"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"emissiondata"
+  },
+  {  
+    "Name":"Unidentified Scan Archives",
+    "OriginDetails":[  
+      "Ship scanning (transport ships)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"Common",
+    "Kind":"Data",
+    "FormattedName":"unidentifiedscanarchives"
+  },
+  {  
+    "Name":"Unknown Fragment",
+    "OriginDetails":[  
+      "Destroyed Unknown Artefact",
+      "Needed for Professor Palin (25)"
+    ],
+    "RecommendedQuantity":0,
+    "Rarity":"VeryRare",
+    "Kind":"Material",
+    "FormattedName":"unknownenergysource"
+  },
+  {  
+    "Name":"Untypical Shield Scans",
+    "OriginDetails":[  
+      "Ship scanning (combat ships)"
+    ],
+    "RecommendedQuantity":40,
+    "Rarity":"Standard",
+    "Kind":"Data",
+    "FormattedName":"shielddensityreports"
+  },
+  {  
+    "Name":"Unusual Encrypted Files",
+    "OriginDetails":[  
+      "Surface data point",
+      "Signal source",
+      "Mission reward"
+    ],
+    "RecommendedQuantity":3,
+    "Rarity":"VeryCommon",
+    "Kind":"Data",
+    "FormattedName":"unusualencryptedfiles"
+  },
+  {  
+    "Name":"Vanadium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining (ice rings)"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"vanadium"
+  },
+  {  
+    "Name":"Worn Shield Emitters",
+    "OriginDetails":[  
+      "Ship salvage (combat ships)",
+      "Signal source"
+    ],
+    "RecommendedQuantity":5,
+    "Rarity":"VeryCommon",
+    "Kind":"Material",
+    "FormattedName":"wornshieldemitters"
+  },
+  {  
+    "Name":"Yttrium",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":10,
+    "Rarity":"Rare",
+    "Kind":"Material",
+    "FormattedName":"yttrium"
+  },
+  {  
+    "Name":"Zinc",
+    "OriginDetails":[  
+      "Surface prospecting"
+    ],
+    "RecommendedQuantity":15,
+    "Rarity":"Common",
+    "Kind":"Material",
+    "FormattedName":"zinc"
+  },
+  {  
+    "Name":"Zirconium",
+    "OriginDetails":[  
+      "Surface prospecting",
+      "Mining"
+    ],
+    "RecommendedQuantity":20,
+    "Rarity":"Standard",
+    "Kind":"Material",
+    "FormattedName":"zirconium"
+  },
+  {  
+    "Name":"Unknown Ship Signature",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"Rare",
+    "Kind":"Data",
+    "FormattedName":"unknownshipsignature"
+  },
+  {  
+    "Name":"Unknown Wake Data",
+    "OriginDetails":null,
+    "RecommendedQuantity":0,
+    "Rarity":"VeryRare",
+    "Kind":"Data",
+    "FormattedName":"unknownwakedata"
   }
 ]

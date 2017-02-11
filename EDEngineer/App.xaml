@@ -28,6 +28,12 @@
             <Color x:Key="SynthesisBlue">
                 #9CBDD4
             </Color>
+            <Color x:Key="TooManyBlue">
+                #AAFFAA
+            </Color>
+            <Color x:Key="NotEnoughRed">
+                #FF0000
+            </Color>
 
             <Color x:Key="IngredientHighlighted">
                 #FFCA64
@@ -36,7 +42,9 @@
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
             <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
-            
+            <SolidColorBrush x:Key="NotEnoughBrush" Color="{StaticResource NotEnoughRed}"/>
+            <SolidColorBrush x:Key="TooManyBrush" Color="{StaticResource TooManyBlue}"/>
+
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
             <converters:IngredientToVisibilityConverter x:Key="IngredientToVisibility" />
@@ -50,6 +58,10 @@
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
+            <converters:QuantityToColorConverter x:Key="QuantityToColor" 
+                                                 TooManyColor="{StaticResource TooManyBrush}"
+                                                 NormalColor="{StaticResource EliteOrangeBrush}"
+                                                 NotEnoughColor="{StaticResource NotEnoughBrush}"/>
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
             <converters:ListToVisibilityConverter x:Key="ListToVisibility" />
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToSynthesisColor"
@@ -58,7 +70,7 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToHighlightColor"
                                                          SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
-            
+
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
             <Style TargetType="ToolTip">

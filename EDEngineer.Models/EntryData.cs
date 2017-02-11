@@ -17,6 +17,8 @@ namespace EDEngineer.Models
         [JsonConverter(typeof (StringEnumConverter))]
         public Kind Kind { get; set; }
 
+        public int RecommendedQuantity { get; set; }
+
         public List<string> OriginDetails { get; set; }
 
         [JsonIgnore]

@@ -33,6 +33,7 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
@@ -56,10 +57,14 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
+                            <TextBlock FontWeight="Bold"
+                                       Text="{Binding DataContext.Value.Data.RecommendedQuantity}">                                
+                            </TextBlock>
+
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
-                <Border BorderBrush="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
+                <Border BorderBrush="{Binding Value.Recommended, Converter={StaticResource QuantityToColor}}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
                     <Grid HorizontalAlignment="Stretch">

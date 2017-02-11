@@ -90,6 +90,12 @@ namespace EDEngineer.Models
         }
 
         [JsonIgnore]
+        public int? Recommended
+        {
+            get { return count - Data.RecommendedQuantity; }
+        }
+
+        [JsonIgnore]
         public bool Highlighted
         {
             get { return highlighted; }
