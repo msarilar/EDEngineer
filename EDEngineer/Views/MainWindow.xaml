@@ -33,7 +33,6 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
-                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
@@ -57,10 +56,6 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
-                            <TextBlock FontWeight="Bold"
-                                       Text="{Binding DataContext.Value.Data.RecommendedQuantity}">                                
-                            </TextBlock>
-
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
@@ -161,6 +156,17 @@
                                          CaretBrush="White"
                                          FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
                                          Text="{Binding Value.Count, Mode=OneWay}" />
+                                <TextBox HorizontalAlignment="Right"
+                                         Foreground="{Binding Value.Recommended, Converter={StaticResource QuantityToColor}}"
+                                         Background="Transparent"
+                                         VerticalAlignment="Center"
+                                         BorderBrush="Transparent"
+                                         FontSize="20"
+                                         x:Name="RecommendedCountTextBox"
+                                         Tag="{Binding Value}"
+                                         CaretBrush="White"
+                                         FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
+                                         Text="{Binding Value.Recommended, Mode=OneWay}" />
                             </StackPanel>
                             <Button x:Name="IncrementButton"
                                     Grid.Column="2"
