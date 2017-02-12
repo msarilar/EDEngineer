@@ -237,7 +237,7 @@ namespace EDEngineer.Utils.System
                 // migrate old manualChanges.json files to new one:
                 if (manualChangesCommander == "json")
                 {
-                    File.Move(file, Path.Combine(ManualChangesDirectory, $"manualChanges.{commanderName}.json"));
+                    File.Move(file, Path.Combine(ManualChangesDirectory, $"manualChanges.{commanderName.Sanitize()}.json"));
                     File.Delete(file);
                 }
             }
