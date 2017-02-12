@@ -189,7 +189,7 @@ namespace EDEngineer.Views
             }
             else
             {
-                HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(SettingsManager.Shortcut));
+                HotkeyManager.RegisterHotKey(this, (Keys) new KeysConverter().ConvertFromString(SettingsManager.Shortcut));
             }
 
             ignoreShortcut = false;
