@@ -152,9 +152,21 @@ namespace EDEngineer.Views
                     ThresholdsManagerWindow.ShowThresholds(viewModel.Languages, viewModel.CurrentCommander.Value.State.Cargo, viewModel.CurrentCommander.Key);
                 });
 
-            var shortcut = SettingsManager.Shortcut;
 
-            HotkeyManager.RegisterHotKey(this, (Keys)new KeysConverter().ConvertFromString(shortcut));
+            try
+            {
+                var shortcut = SettingsManager.Shortcut;
+                var hotKey = (Keys) new KeysConverter().ConvertFromString(shortcut);
+
+                HotkeyManager.RegisterHotKey(this, hotKey);
+            }
+            catch
+            {
+                SettingsManager.Shortcut = null;
+                ConfigureShortcut(this, EventArgs.Empty);
+                ShowWindow();
+            }
+
             Blueprints.UpdateLayout();
             ShoppingList.UpdateLayout();
         }
