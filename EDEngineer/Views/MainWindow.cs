@@ -152,7 +152,6 @@ namespace EDEngineer.Views
                     ThresholdsManagerWindow.ShowThresholds(viewModel.Languages, viewModel.CurrentCommander.Value.State.Cargo, viewModel.CurrentCommander.Key);
                 });
 
-
             try
             {
                 var shortcut = SettingsManager.Shortcut;
@@ -206,7 +205,7 @@ namespace EDEngineer.Views
         }
 
         private BindingBase binding;
-        private void EntryCountTextBox_OnGotFocus(object sender, RoutedEventArgs e)
+        private void EntryCountTextBoxOnFocussed(object sender, RoutedEventArgs e)
         {
             var box = (System.Windows.Controls.TextBox)sender;
             binding = box.GetBindingExpression(System.Windows.Controls.TextBox.TextProperty).ParentBindingBase;

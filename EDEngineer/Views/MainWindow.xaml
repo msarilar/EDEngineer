@@ -148,7 +148,7 @@
                                          VerticalAlignment="Center"
                                          BorderBrush="Transparent"
                                          FontSize="20"
-                                         GotFocus="EntryCountTextBox_OnGotFocus"
+                                         GotFocus="EntryCountTextBoxOnFocussed"
                                          LostFocus="EntryCountTextBoxOnLostFocus"
                                          x:Name="EntryCountTextBox"
                                          Tag="{Binding Value}"
