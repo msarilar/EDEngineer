@@ -29,7 +29,7 @@
                 #9CBDD4
             </Color>
             <Color x:Key="TooManyBlue">
-                #AAFFAA
+                #CCFF99
             </Color>
             <Color x:Key="NotEnoughRed">
                 #FF0000
@@ -61,6 +61,11 @@
             <converters:QuantityToColorConverter x:Key="QuantityToColor" 
                                                  TooManyColor="{StaticResource TooManyBrush}"
                                                  NormalColor="{StaticResource EliteOrangeBrush}"
+                                                 NotEnoughColor="{StaticResource NotEnoughBrush}"/>
+
+            <converters:QuantityToBackgroundColorConverter x:Key="QuantityToBackgroundColor" 
+                                                 TooManyColor="{StaticResource TooManyBrush}"
+                                                 NormalColor="Black"
                                                  NotEnoughColor="{StaticResource NotEnoughBrush}"/>
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
             <converters:ListToVisibilityConverter x:Key="ListToVisibility" />
