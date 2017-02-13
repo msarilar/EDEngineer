@@ -9,9 +9,11 @@ namespace EDEngineer.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            var quantity = (int)value;
+
+            var quantity = (int?)value;            
             return 
-                quantity > 0 ? TooManyColor 
+                !quantity.HasValue ? NormalColor 
+                : quantity > 0 ? TooManyColor 
                 : quantity < 0 ? NotEnoughColor 
                 : NormalColor;
         }

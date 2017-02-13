@@ -59,7 +59,7 @@
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
-                <Border BorderBrush="{Binding Value.Recommended, Converter={StaticResource QuantityToColor}}"
+                <Border BorderBrush="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
                     <Grid HorizontalAlignment="Stretch">
