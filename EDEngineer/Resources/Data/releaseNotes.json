@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.4.9",
+    "Content": "* Minor fix for the handling of logs about Classified Scan Data and Classified Scan Fragment. Please check the amount of these two ingredient, they may have changed so you might want to fix them!"
+  },
+  {
     "Version": "1.0.4.8",
     "Content": "* Minor fix for when the shortcut you configured is not recognizable anymore (which can happen if you change your system language for instance). If that happens, you'll be prompted for a new one on startup."
   },

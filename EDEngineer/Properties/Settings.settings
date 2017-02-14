@@ -21,7 +21,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1.0.4.8</Value>
+      <Value Profile="(Default)">1.0.4.9</Value>
     </Setting>
     <Setting Name="WindowWidth" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
