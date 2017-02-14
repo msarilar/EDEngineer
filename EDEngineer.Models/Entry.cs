@@ -36,6 +36,7 @@ namespace EDEngineer.Models
                 var oldValue = count;
                 count = value;
                 OnPropertyChanged(oldValue, count);
+                OnPropertyChanged("Recommended");
             }
         }
 
@@ -86,7 +87,20 @@ namespace EDEngineer.Models
 
                 threshold = value;
                 OnPropertyChanged();
+                OnPropertyChanged("Recommended");
             }
+        }
+
+        [JsonIgnore]
+        public int? Recommended
+        {
+            get
+            {
+                if (Threshold.HasValue)
+                    return count - Threshold.GetValueOrDefault();
+                return null;
+            }
+
         }
 
         [JsonIgnore]

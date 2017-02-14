@@ -22,7 +22,7 @@
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
-            <Grid Background="Black"   
+            <Grid Background="{Binding Value.Recommended, Converter={StaticResource QuantityToBackgroundColor}}"   
                   MouseDown="IngredientOnMouseLeftButtonDown"
                   Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
@@ -62,7 +62,7 @@
                 <Border BorderBrush="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
-                    <Grid HorizontalAlignment="Stretch">
+                    <Grid HorizontalAlignment="Stretch" >
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
                             <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
@@ -156,6 +156,17 @@
                                          CaretBrush="White"
                                          FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
                                          Text="{Binding Value.Count, Mode=OneWay}" />
+                                <TextBox HorizontalAlignment="Right"
+                                         Foreground="{Binding Value.Recommended, Converter={StaticResource QuantityToColor}}"
+                                         Background="Transparent"
+                                         VerticalAlignment="Center"
+                                         BorderBrush="Transparent"
+                                         FontSize="20"
+                                         x:Name="RecommendedCountTextBox"
+                                         Tag="{Binding Value}"
+                                         CaretBrush="White"
+                                         FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
+                                         Text="{Binding Value.Recommended, Mode=OneWay}" />
                             </StackPanel>
                             <Button x:Name="IncrementButton"
                                     Grid.Column="2"
