@@ -142,14 +142,14 @@
   {
     "Name": "Classified Scan Databanks",
     "Rarity": "Standard",
-    "FormattedName": "classifiedscandatabanks",
+    "FormattedName": "scandatabanks",
     "Kind": "Data",
     "OriginDetails": [ "Ship scanning (transport ships)", "Surface POI", "Needed for Ram Tah (50)" ]
   },
   {
     "Name": "Classified Scan Fragment",
     "Rarity": "VeryRare",
-    "FormattedName": "classifiedscanfragment",
+    "FormattedName": "classifiedscandata",
     "Kind": "Data",
     "OriginDetails": [ "Surface data point", "Mission reward" ]
   },
