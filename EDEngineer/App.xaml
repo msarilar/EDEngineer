@@ -32,10 +32,16 @@
             <Color x:Key="IngredientHighlighted">
                 #FFCA64
             </Color>
+            
+            <Color x:Key="ThresholdReached">
+                #441e00
+            </Color>
 
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
             <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
+            <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
+            <SolidColorBrush x:Key="ThresholdReachedBrush" Color="{StaticResource ThresholdReached}"/>
             
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
@@ -52,12 +58,16 @@
             <converters:OriginToColorConverter x:Key="OriginToColor" />
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
             <converters:ListToVisibilityConverter x:Key="ListToVisibility" />
+            <converters:NullableToVisibilityConverter x:Key="NullableToVisibility" />
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToSynthesisColor"
                                                          SpecialColor="{StaticResource SynthesisBlueBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToHighlightColor"
                                                          SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
+            <converters:ThresholdToBackgroundColorConveter x:Key="ThresholdToBackgroundColor"
+                                                         ThresholdReachedColor="{StaticResource ThresholdReachedBrush}"
+                                                         NormalColor="{StaticResource TransparentBrush}"/>
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             

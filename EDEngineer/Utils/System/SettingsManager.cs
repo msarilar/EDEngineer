@@ -86,6 +86,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool ThresholdWarningEnabled
+        {
+            get { return Properties.Settings.Default.ThresholdWarningEnabled; }
+            set
+            {
+                Properties.Settings.Default.ThresholdWarningEnabled = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+        
         public static ushort ServerPort
         {
             get { return Properties.Settings.Default.ServerPort; }
