@@ -329,5 +329,17 @@ namespace EDEngineer.Properties {
                 this["Thresholds"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ThresholdWarningEnabled {
+            get {
+                return ((bool)(this["ThresholdWarningEnabled"]));
+            }
+            set {
+                this["ThresholdWarningEnabled"] = value;
+            }
+        }
     }
 }

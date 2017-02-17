@@ -2258,6 +2258,12 @@
       "de": "Schwellwert erreicht!",
       "fr": null,
       "ru": null
+    },
+    "Threshold Reached Warning": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }

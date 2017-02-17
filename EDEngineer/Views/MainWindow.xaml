@@ -62,6 +62,12 @@
                 <Border BorderBrush="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
+                    <Border.Background>
+                        <MultiBinding Converter="{StaticResource ThresholdToBackgroundColor}">
+                            <Binding Path="Value.Count"/>
+                            <Binding Path="Value.Threshold"/>
+                        </MultiBinding>
+                    </Border.Background>
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
@@ -156,6 +162,16 @@
                                          CaretBrush="White"
                                          FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
                                          Text="{Binding Value.Count, Mode=OneWay}" />
+                                <TextBlock HorizontalAlignment="Right"
+                                       Foreground="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
+                                       Background="Transparent"
+                                       VerticalAlignment="Center"
+                                       FontSize="20" 
+                                       Visibility="{Binding Value.Threshold, Converter={StaticResource NullableToVisibility}}"
+                                       FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render">
+                                    <Run Text="/"/>
+                                    <Run Text="{Binding Value.Threshold}"/>
+                                </TextBlock>
                             </StackPanel>
                             <Button x:Name="IncrementButton"
                                     Grid.Column="2"

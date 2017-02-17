@@ -187,6 +187,7 @@ namespace EDEngineer.Views
             var userChange = CurrentCommander.Value.UserChange(entry, i);
 
             var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"manualChanges.{CurrentCommander.Key.Sanitize()}.json");
+            new FileInfo(path) { IsReadOnly = false };
             File.AppendAllText(path, userChange.OriginalJson + Environment.NewLine);
         }
 

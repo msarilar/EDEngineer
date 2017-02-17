@@ -77,10 +77,7 @@ namespace EDEngineer.Utils.UI
             var setShortCutItem = new MenuItem();
             setShortCutItem.Click += configureShortcutHandler;
 
-            var configureThresholdsItem = new MenuItem()
-            {
-                Enabled = Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)
-            };
+            var configureThresholdsItem = new MenuItem();
             configureThresholdsItem.Click += configureThresholdsHandler;
 
             var helpItem = new MenuItem();
@@ -116,6 +113,18 @@ namespace EDEngineer.Utils.UI
                 SettingsManager.CargoAlmostFullWarningEnabled = enableCargoFullWarningItem.Checked;
             };
 
+            var enableThresholdWarningItem = new MenuItem
+            {
+                Checked = SettingsManager.ThresholdWarningEnabled && Environment.OSVersion.Version >= new Version(6, 2, 9200, 0),
+                Enabled = Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)
+            };
+
+            enableThresholdWarningItem.Click += (o, e) =>
+            {
+                enableThresholdWarningItem.Checked = !enableThresholdWarningItem.Checked;
+                SettingsManager.ThresholdWarningEnabled = enableThresholdWarningItem.Checked;
+            };
+
             var launchServerItem = new MenuItem
             {
                 Checked = serverRunning
@@ -126,10 +135,10 @@ namespace EDEngineer.Utils.UI
                 launchServerItem.Checked = launchServerHandler();
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem);
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem);
             };
 
             quitItem.Click += quitHandler;
@@ -141,6 +150,7 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(enableCargoFullWarningItem);
             menu.MenuItems.Add(enableBlueprintReadyItem);
+            menu.MenuItems.Add(enableThresholdWarningItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add(selectLanguageItem);
@@ -157,7 +167,7 @@ namespace EDEngineer.Utils.UI
         private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
                                          MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem,
                                          MenuItem enableToastsItem, MenuItem enableCargoFullWarningItem, MenuItem launchServerItem,
-                                         MenuItem configureThresholdsItem)
+                                         MenuItem configureThresholdsItem, MenuItem enableThresholdWarningItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -170,6 +180,7 @@ namespace EDEngineer.Utils.UI
             enableCargoFullWarningItem.Text = translator.Translate("Cargo Almost Full Warning");
             launchServerItem.Text = translator.Translate("Launch Local API");
             configureThresholdsItem.Text = translator.Translate("Configure Thresholds");
+            enableThresholdWarningItem.Text = translator.Translate("Threshold Reached Warning");
         }
     }
 }
