@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.5.0",
+    "Content": "* Thresholds feature improvements! When you set a threshold, you will see the value in the ingredient list : instead of seeing IRON 5, you will see IRON 5/10 if your threshold is set to 10.\r\n\r\nMoreover, if a threshold is reached then the background of the ingredient will be tinted to let you know it's over what you configured.\r\n\r\nUsers who did not have access to the feature because of their Windows version can now use it (even though they still won't have the toast notifications). Users who can have the toasts notification can disable them too if they find them too annoying (checkout the context menu of the tasktray icon!)\r\n\r\n\r\n\r\n* Handle a rare issue where manual changes couldn't be saved to file."
+  },
+  {
     "Version": "1.0.4.9",
     "Content": "* Minor fix for the handling of logs about Classified Scan Data and Classified Scan Fragment. Please check the amount of these two ingredient, they may have changed so you might want to fix them!"
   },
