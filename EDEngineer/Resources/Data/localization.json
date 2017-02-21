@@ -63,9 +63,9 @@
       "fr": "support Léger",
       "ru": "Легкое крепление"
     },
-    "Armoured ": {
-      "es": "Blindado ",
-      "de": "Gepanzert ",
+    "Armoured": {
+      "es": "Blindado",
+      "de": "Gepanzert",
       "fr": "Blindé",
       "ru": "Бронированный"
     },
@@ -105,21 +105,21 @@
       "fr": "Renforcé",
       "ru": "Бронированный"
     },
-    "Thermal Resistant ": {
-      "es": "Resistencia Térmica ",
-      "de": "Thermalresistente ",
+    "Thermal Resistant": {
+      "es": "Resistencia Térmica",
+      "de": "Thermalresistente",
       "fr": "Résistance thermique",
       "ru": "Противотепловое усиление"
     },
-    "Weapon Focused ": {
-      "es": "Orientado a Armas ",
-      "de": "Waffenfokussierte ",
+    "Weapon Focused": {
+      "es": "Orientado a Armas",
+      "de": "Waffenfokussierte",
       "fr": "Optimisé armes",
       "ru": "Оружие-ориентированный"
     },
-    "Blast Resistant ": {
-      "es": "Blindaje Resistente a Explosiones ",
-      "de": "Detonationsresistente ",
+    "Blast Resistant": {
+      "es": "Blindaje Resistente a Explosiones",
+      "de": "Detonationsresistente",
       "fr": "Anti-explosion",
       "ru": "Противовзрывное усиление"
     },
@@ -129,9 +129,9 @@
       "fr": "Chargeur grande capacité",
       "ru": "Вместительный магазин"
     },
-    "Kinetic Resistant ": {
-      "es": "Resistencia Cinética ",
-      "de": "Kinetikresistente ",
+    "Kinetic Resistant": {
+      "es": "Resistencia Cinética",
+      "de": "Kinetikresistente",
       "fr": "Résistance cinétique",
       "ru": "Противокинетическое усиление"
     },
@@ -171,26 +171,20 @@
       "fr": "Arme surchargée",
       "ru": "Усиленное оружие"
     },
-    "Low Emissions ": {
-      "es": "Bajas Emisiones ",
-      "de": "Emissionsoptimiertes ",
+    "Low Emissions": {
+      "es": "Bajas Emisiones",
+      "de": "Emissionsoptimiertes",
       "fr": "Basse émission",
       "ru": "Снижение излучения"
     },
-    "System Focused ": {
-      "es": "Orientado a Sistemas ",
-      "de": "Systemfokussierte ",
+    "System Focused": {
+      "es": "Orientado a Sistemas",
+      "de": "Systemfokussierte",
       "fr": "Optimisé systèmes",
       "ru": "Системо-ориентированный"
     },
-    "Lightweight ": {
-      "es": "Aligerado ",
-      "de": "Leichtgewicht ",
-      "fr": "Léger",
-      "ru": "Облегченный"
-    },
-    "Overcharged ": {
-      "es": "Sobrecargado ",
+    "Overcharged": {
+      "es": "Sobrecargado",
       "de": "Überladungs",
       "fr": "Surchargé",
       "ru": "Усиленный"
@@ -213,9 +207,9 @@
       "fr": "Optimisation de réacteur détériorante",
       "ru": "«Грязная» донастройка"
     },
-    "Engine Focused ": {
-      "es": "Orientado a Motor ",
-      "de": "Antriebsfokussierte ",
+    "Engine Focused": {
+      "es": "Orientado a Motor",
+      "de": "Antriebsfokussierte",
       "fr": "Optimisé moteur",
       "ru": "Двигатель-ориентированный"
     },
@@ -225,15 +219,15 @@
       "fr": "Renforts de coque anti-cinétique",
       "ru": "Противокинетическое усиление"
     },
-    "High Charge Capacity ": {
-      "es": "Alta Capacidad de Carga ",
-      "de": "Hochleistungsfähige ",
+    "High Charge Capacity": {
+      "es": "Alta Capacidad de Carga",
+      "de": "Hochleistungsfähige",
       "fr": "Capacité Surchargée",
       "ru": "Высокоёмкий"
     },
-    "Rapid Charge ": {
-      "es": "Recarga Rápida ",
-      "de": "Ladungsoptimierte ",
+    "Rapid Charge": {
+      "es": "Recarga Rápida",
+      "de": "Ladungsoptimierte",
       "fr": "Chargement rapide",
       "ru": "Быстрозаряжающийся"
     },
@@ -243,15 +237,15 @@
       "fr": "Intercepteur FSD à angle de capture augmenté",
       "ru": "Увеличение угла перехвата"
     },
-    "Heavy Duty ": {
-      "es": "Alta Resistencia ",
-      "de": "Schwere ",
+    "Heavy Duty": {
+      "es": "Alta Resistencia",
+      "de": "Schwere",
       "fr": "Renforts de coque lourd",
       "ru": "Усиленный"
     },
-    "Charge Enhanced ": {
-      "es": "Carga Mejorada ",
-      "de": "Ladungsoptimierte ",
+    "Charge Enhanced": {
+      "es": "Carga Mejorada",
+      "de": "Ladungsoptimierte",
       "fr": "Répartiteur de puissance rapide",
       "ru": "Быстрозарядный"
     },
@@ -273,21 +267,21 @@
       "fr": "Renforcement de coque Léger",
       "ru": "Облегчение усилителя корпуса"
     },
-    "Resistance Augmented ": {
-      "es": "Resistencia Aumentada ",
-      "de": "Widerstandsverstärkter ",
+    "Resistance Augmented": {
+      "es": "Resistencia Aumentada",
+      "de": "Widerstandsverstärkter",
       "fr": "Résistances Augmentés",
       "ru": "Сбалансированное усиление"
     },
-    "Specialised ": {
-      "es": "Especializado ",
+    "Specialised": {
+      "es": "Especializado",
       "de": "Spezialisierte",
       "fr": "Specialisé",
       "ru": "Специализированный"
     },
-    "Shielded ": {
+    "Shielded": {
       "es": "Blindado",
-      "de": "Abgeschirmte ",
+      "de": "Abgeschirmte",
       "fr": "Renforcé",
       "ru": "Бронированный"
     },
@@ -540,7 +534,7 @@
     "Abnormal Compact Emission Data": {
       "es": "Compresión de Datos de Transmisiones Anormal",
       "de": "Anormale Kompakte Emissionsdaten",
-      "fr": "Données d'émissions compactes anormales ",
+      "fr": "Données d'émissions compactes anormales",
       "ru": "Аномальные компактные данные об излучении"
     },
     "Adaptive Encryptors Capture": {
@@ -1056,25 +1050,25 @@
     "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
       "de": "Beta-Muster-Obeliskendaten",
-      "fr": "Données d'obélisque de type Beta ",
+      "fr": "Données d'obélisque de type Beta",
       "ru": "Данные с обелиска «Бета»"
     },
     "Pattern Delta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Delta",
       "de": "Delta-Muster-Obeliskendaten",
-      "fr": "Données d'obélisque de type Delta ",
+      "fr": "Données d'obélisque de type Delta",
       "ru": "Данные с обелиска «Дельта»"
     },
     "Pattern Epsilon Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Epsilon",
       "de": "Epsilon-Muster-Obeliskendaten",
-      "fr": "Données d'obélisque de type Epsilon ",
+      "fr": "Données d'obélisque de type Epsilon",
       "ru": "Данные с обелиска «Эпсилон»"
     },
     "Pattern Gamma Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Gamma",
       "de": "Gamma-Muster-Obeliskendaten",
-      "fr": "Données d'obélisque de type Gamma ",
+      "fr": "Données d'obélisque de type Gamma",
       "ru": "Данные с обелиска «Гамма»"
     },
     "Peculiar Shield Frequency Data": {
@@ -1449,9 +1443,9 @@
       "fr": "Progression",
       "ru": "Прогресс"
     },
-    "Last update: ": {
+    "Last update:": {
       "es": "Ultima actualización",
-      "de": "Letzte Aktualisierung: ",
+      "de": "Letzte Aktualisierung:",
       "fr": "Dernière Mise à jour",
       "ru": "Последнее обновление"
     },
