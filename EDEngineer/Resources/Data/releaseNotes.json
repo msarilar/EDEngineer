@@ -1,7 +1,11 @@
 ﻿[
   {
-    "Version": "1.0.5.1",
+    "Version": "1.0.5.2",
     "Content": "* Missing blueprint added: Armour Lightweight G4 & G5. Thanks a lot to @NamtarOberon who reported the missing blueprints and made the necessary changes to the application's source!\r\n* Made some fixes in already existing blueprints, you might have lost some favorites/ignored."
+  },
+  {
+    "Version": "1.0.5.1",
+    "Content": "* Hotfix for manual changes which could make the application crash for new users."
   },
   {
     "Version": "1.0.5.0",
