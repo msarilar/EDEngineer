@@ -5688,6 +5688,46 @@
     "Grade": 3
   },
   {
+    "Type": "Armour",
+    "Name": "Lightweight ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Proprietary Composites",
+        "Size": 1
+      },
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Armour",
+    "Name": "Lightweight ",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+      {
+        "Name": "Tin",
+        "Size": 1
+      },
+      {
+        "Name": "Military Grade Alloys",
+        "Size": 1
+      },
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Power Plant",
     "Name": "Overcharged ",
     "Engineers": [ "Felicity Farseer", "Marco Qwent", "Hera Tani" ],
