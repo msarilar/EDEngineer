@@ -180,8 +180,10 @@ namespace EDEngineer.Views
         public string CurrentComparer
         {
             get { return currentComparer; }
-            set {
+            set
+            {
                 currentComparer = value;
+                SettingsManager.Comparer = value;
                 OnPropertyChanged();
                 foreach (var state in Commanders.Select(c => c.Value.State))
                 {
