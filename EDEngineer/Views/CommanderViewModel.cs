@@ -91,7 +91,7 @@ namespace EDEngineer.Views
 
             var converter = new ItemNameConverter(entryDatas);
 
-            State = new State(entryDatas, languages);
+            State = new State(entryDatas, languages, SettingsManager.Comparer);
             commanderToasts = new CommanderToasts(State, CommanderName);
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);

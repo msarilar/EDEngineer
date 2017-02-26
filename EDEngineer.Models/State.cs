@@ -7,6 +7,8 @@ using EDEngineer.Models.Utils.Collections;
 
 namespace EDEngineer.Models
 {
+    using Comparer = Func<KeyValuePair<string, Entry>, KeyValuePair<string, Entry>, int>;
+
     public class State : INotifyPropertyChanged
     {
         public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
@@ -16,13 +18,26 @@ namespace EDEngineer.Models
         private readonly object stateLock = new object();
         public List<Blueprint> Blueprints { get; set; }
 
-        public State(List<EntryData> entryDatas, ILanguage languages)
+        private readonly IReadOnlyDictionary<string, Comparer> comparers;
+
+        public State(List<EntryData> entryDatas, ILanguage languages, string comparer)
         {
-            Cargo = new SortedObservableCounter((a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase));
+            comparers = new Dictionary<string, Comparer>()
+            {
+                ["Name"] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
+                ["Count"] = (a, b) => b.Value.Count.CompareTo(a.Value.Count)
+            };
+
+            Cargo = new SortedObservableCounter(comparers[comparer]);
             languages.PropertyChanged += (o, e) => Cargo.RefreshSort();
             
             this.entryDatas = entryDatas;
             LoadBaseData();
+        }
+
+        public void ChangeComparer(string newComparer)
+        {
+            Cargo.RefreshSort(comparers[newComparer]);
         }
 
         public SortedObservableCounter Cargo { get; }
@@ -72,6 +87,7 @@ namespace EDEngineer.Models
                     break;
             }
 
+            Cargo.SortInPlace();
             OnPropertyChanged(name);
         }
 

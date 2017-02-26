@@ -176,5 +176,24 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.Save();
             }
         }
+
+        public static string Comparer
+        {
+            get
+            {
+                var comparer = Properties.Settings.Default.Comparer;
+                if (string.IsNullOrEmpty(comparer))
+                {
+                    Comparer = comparer = "Name";
+                }
+
+                return comparer;
+            }
+            set
+            {
+                Properties.Settings.Default.Comparer = value;
+                Properties.Settings.Default.Save();
+            }
+        }
     }
 }

@@ -341,5 +341,17 @@ namespace EDEngineer.Properties {
                 this["ThresholdWarningEnabled"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Comparer {
+            get {
+                return ((string)(this["Comparer"]));
+            }
+            set {
+                this["Comparer"] = value;
+            }
+        }
     }
 }
