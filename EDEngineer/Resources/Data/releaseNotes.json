@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.5.3",
+    "Content": "* You can now sort your cargo by name or by count via a dropdown that has been added on top of your ingredients list.\r\n\r\n* Fixed an issue that affected the window location which would slightly move each time you started the application if you were using unlocked mode."
+  },
+  {
     "Version": "1.0.5.2",
     "Content": "* Missing blueprint added: Armour Lightweight G4 & G5. Thanks a lot to @NamtarOberon who reported the missing blueprints and made the necessary changes to the application's source!\r\n* Made some fixes in already existing blueprints, you might have lost some favorites/ignored."
   },
