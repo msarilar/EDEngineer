@@ -2258,6 +2258,12 @@
       "de": "Schwellwert erreicht Warnung",
       "fr": null,
       "ru": null
+    },
+    "Count": {
+      "es": "Número",
+      "de": "Anzahl",
+      "fr": "Nombre",
+      "ru": "Количество"
     }
   }
 }

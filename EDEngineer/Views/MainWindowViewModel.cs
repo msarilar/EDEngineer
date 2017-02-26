@@ -58,6 +58,7 @@ namespace EDEngineer.Views
         public MainWindowViewModel(Languages languages)
         {
             Languages = languages;
+            CurrentComparer = SettingsManager.Comparer;
             LoadState();
         }
 
@@ -126,6 +127,7 @@ namespace EDEngineer.Views
         private bool showOriginIcons = true;
 
         private KeyValuePair<string, CommanderViewModel> currentCommander;
+        private string currentComparer;
 
         public bool ShowZeroes
         {
@@ -163,6 +165,28 @@ namespace EDEngineer.Views
             {
                 showOriginIcons = value;
                 OnPropertyChanged();
+            }
+        }
+
+        public IEnumerable<string> Comparers
+        {
+            get
+            {
+                yield return "Name";
+                yield return "Count";
+            }
+        }
+
+        public string CurrentComparer
+        {
+            get { return currentComparer; }
+            set {
+                currentComparer = value;
+                OnPropertyChanged();
+                foreach (var state in Commanders.Select(c => c.Value.State))
+                {
+                    state.ChangeComparer(currentComparer);
+                }
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Forms;
+using EDEngineer.Models;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Utils.System
@@ -184,7 +185,7 @@ namespace EDEngineer.Utils.System
                 var comparer = Properties.Settings.Default.Comparer;
                 if (string.IsNullOrEmpty(comparer))
                 {
-                    Comparer = comparer = "Name";
+                    Comparer = comparer = State.NAME_COMPARER;
                 }
 
                 return comparer;

@@ -274,6 +274,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
@@ -299,6 +300,31 @@
                               IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrangeBrush}" />
                 </ToggleButton>
+                <Border BorderBrush="{StaticResource EliteOrangeBrush}"
+                        BorderThickness="2"
+                        Grid.Column="3">
+                    <ComboBox ItemsSource="{Binding Comparers}"
+                                SelectedItem="{Binding CurrentComparer, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                HorizontalContentAlignment="Center"
+                                Background="Black"
+                                Foreground="{StaticResource EliteOrangeBrush}"
+                                FontFamily="/Resources/Fonts/#Euro Caps">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Text>
+                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                            <Binding/>
+                                            <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                        RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>                    
+                </Border>
+
             </Grid>
 
             <!-- CURRENT CARGO -->

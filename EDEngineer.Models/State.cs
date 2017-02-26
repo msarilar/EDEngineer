@@ -11,6 +11,9 @@ namespace EDEngineer.Models
 
     public class State : INotifyPropertyChanged
     {
+        public const string NAME_COMPARER = "Name";
+        public const string COUNT_COMPARER = "Count";
+
         public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
 
         private readonly List<EntryData> entryDatas;
@@ -24,8 +27,8 @@ namespace EDEngineer.Models
         {
             comparers = new Dictionary<string, Comparer>()
             {
-                ["Name"] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
-                ["Count"] = (a, b) => b.Value.Count.CompareTo(a.Value.Count)
+                [NAME_COMPARER] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
+                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count)
             };
 
             Cargo = new SortedObservableCounter(comparers[comparer]);
