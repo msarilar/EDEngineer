@@ -104,8 +104,6 @@ namespace EDEngineer.Views
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo });
         }
 
-        private int ToolbarHeight => SystemInformation.CaptionHeight + 6; // couldn't find a proper property returning "29" which is the height I need
-
         private void MainWindowLoaded(object sender, RoutedEventArgs args)
         {
             var dimensions = SettingsManager.Dimensions;
@@ -408,12 +406,13 @@ namespace EDEngineer.Views
             if (!bypassPositionSave)
             {
                 var coords = PointToScreen(new Point(0, 0));
-                var modificator = AllowsTransparency ? 0 : ToolbarHeight;
+                var yModificator = AllowsTransparency ? 0 : SystemInformation.CaptionHeight + 8;
+                var xModificator = AllowsTransparency ? 0 : 8;
                 SettingsManager.Dimensions = new WindowDimensions()
                 {
                     Height = ActualHeight,
-                    Left = coords.X,
-                    Top = coords.Y - modificator,
+                    Left = coords.X - xModificator,
+                    Top = coords.Y - yModificator,
                     Width = ActualWidth,
                     LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
                     RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
