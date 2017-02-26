@@ -56,8 +56,9 @@ namespace EDEngineer.Views
         private void LoadState(IEnumerable<string> events)
         {
             commanderToasts.UnsubscribeToasts();
-
+            State.InitLoad();
             // Clear state:
+            
             State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
             LastUpdate = Instant.MinValue;
 
@@ -83,6 +84,9 @@ namespace EDEngineer.Views
                     j++;
                 }
             }
+
+            State.Cargo.RefreshSort();
+            State.CompleteLoad();
         }
 
         public CommanderViewModel(string commanderName, IEnumerable<string> logs, Languages languages, List<EntryData> entryDatas)

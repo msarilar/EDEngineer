@@ -73,6 +73,17 @@ namespace EDEngineer.Models
             }
         }
 
+        public void InitLoad()
+        {
+            loading = true;
+        }
+
+        public void CompleteLoad()
+        {
+            loading = false;
+        }
+
+        private bool loading;
         public void IncrementCargo(string name, int change)
         {
             lock (stateLock)
@@ -90,7 +101,11 @@ namespace EDEngineer.Models
                     break;
             }
 
-            Cargo.SortInPlace();
+            if (!loading)
+            {
+                Cargo.SortInPlace();
+            }
+
             OnPropertyChanged(name);
         }
 
