@@ -2125,37 +2125,37 @@
       "es": "Necesario para Marco Qwent (25)",
       "de": "Benötigt für Marco Qwent (25)",
       "fr": "Nécessaire pour Marco Qwent (25)",
-      "ru": "необходимый для Marco Qwent (25)"
+      "ru": "Необходимо для Marco Qwent (25)"
     },
     "Needed for Ram Tah (50)": {
       "es": "Necesario para Ram Tah (50)",
       "de": "Benötigt für Ram Tah (50)",
       "fr": "Nécessaire pour Ram Tah (50)",
-      "ru": "необходимый для Ram Tah (50)"
+      "ru": "Необходимо для Ram Tah (50)"
     },
     "Needed for Professor Palin (25)": {
       "es": "Necesario para Professor Palin (25)",
       "de": "Benötigt für Professor Palin (25)",
       "fr": "Nécessaire pour Professor Palin (25)",
-      "ru": "необходимый для Professor Palin (25)"
+      "ru": "Необходимо для Professor Palin (25)"
     },
     "Needed for Tiana Fortune (50)": {
       "es": "Necesario para Tiana Fortune (50)",
       "de": "Benötigt für Tiana Fortune (50)",
       "fr": "Nécessaire pour Tiana Fortune (50)",
-      "ru": "необходимый для Tiana Fortune (50)"
+      "ru": "Необходимо для Tiana Fortune (50)"
     },
     "Needed for The Sarge (50)": {
       "es": "Necesario para The Sarge (50)",
       "de": "Benötigt für The Sarge (50)",
       "fr": "Nécessaire pour The Sarge (50)",
-      "ru": "необходимый для The Sarge (50)"
+      "ru": "Необходимо для The Sarge (50)"
     },
     "Needed for Bill Turner (50)": {
       "es": "Necesario para Bill Turner (50)",
       "de": "Benötigt für Bill Turner (50)",
       "fr": "Nécessaire pour Bill Turner (50)",
-      "ru": "необходимый для Bill Turner (50)"
+      "ru": "Необходимо для Bill Turner (50)"
     },
     "Show information about resources?": {
       "es": "Mostrar información sobre recursos?",
@@ -2167,97 +2167,97 @@
       "es": null,
       "de": "Alle Filter anwählen",
       "fr": "Tous les filtres",
-      "ru": null
+      "ru": "Включить все фильтры"
     },
     "Uncheck all filters": {
       "es": null,
       "de": "Alle Filter abwählen",
       "fr": "Aucun filtre",
-      "ru": null
+      "ru": "Отключить все фильтры"
     },
     "Configure Thresholds": {
       "es": null,
       "de": "Schwellwert einstellen",
       "fr": null,
-      "ru": null
+      "ru": "Изменение ограничений"
     },
     "Rarity": {
       "es": null,
       "de": "Qualität",
       "fr": "Rareté",
-      "ru": null
+      "ru": "Редкость"
     },
     "Kind": {
       "es": null,
       "de": "Art",
       "fr": null,
-      "ru": null
+      "ru": "Вид"
     },
     "Search": {
       "es": null,
       "de": "Suche",
       "fr": "Recherche",
-      "ru": null
+      "ru": "Поиск"
     },
     "Apply threshold to selected items:": {
       "es": null,
       "de": "Schwellwert auf die Auswahl anwenden",
       "fr": null,
-      "ru": null
+      "ru": "Применить ограничения к выбранным пунктам:"
     },
     "Apply": {
       "es": null,
       "de": "anwenden",
       "fr": "Appliquer",
-      "ru": null
+      "ru": "Применить"
     },
     "Rare": {
       "es": null,
       "de": "selten",
       "fr": "Rare",
-      "ru": null
+      "ru": "Редкие"
     },
     "Very Rare": {
       "es": null,
       "de": "sehr selten",
       "fr": "Très rare",
-      "ru": null
+      "ru": "Очень редкие"
     },
     "Very Common": {
       "es": null,
       "de": "sehr häufig",
       "fr": "Très commun",
-      "ru": null
+      "ru": "Очень распространенные"
     },
     "Common": {
       "es": null,
       "de": "häufig",
       "fr": "Commun",
-      "ru": null
+      "ru": "Распространенные"
     },
     "Standard": {
       "es": null,
       "de": "Standard",
       "fr": "Standard",
-      "ru": null
+      "ru": "Обычные"
     },
     "Reached {0} {1} - threshold set at {2} (click this to configure your thresholds)": {
       "es": null,
       "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2} (Klicke hier um Schwellwerte zu konfigurieren)",
       "fr": null,
-      "ru": null
+      "ru": "Достигнуто {0} {1} - ограничение установленное на {2} (нажмите здесь, чтобы изменить ограничения)"
     },
     "Threshold Reached!": {
       "es": null,
       "de": "Schwellwert erreicht!",
       "fr": null,
-      "ru": null
+      "ru": "Достигнуто ограничение!"
     },
     "Threshold Reached Warning": {
       "es": null,
       "de": "Schwellwert erreicht Warnung",
       "fr": null,
-      "ru": null
+      "ru": "Предупреждение о достижении ограничения"
     },
     "Count": {
       "es": "Número",
