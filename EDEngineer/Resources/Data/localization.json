@@ -18,7 +18,7 @@
     "fr": {
       "TwoLetterISOLanguageName": "fr",
       "Name": "Français",
-      "NotReadyWarning": "Cette traduction est incomplète! Si vous le sélectionnez, seules des parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
+      "NotReadyWarning": "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
     },
     "ru": {
       "TwoLetterISOLanguageName": "ru",
@@ -60,7 +60,7 @@
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
       "de": "Leichtgewichtgeschütz",
-      "fr": "support Léger",
+      "fr": "Support léger",
       "ru": "Легкое крепление"
     },
     "Armoured": {
@@ -78,7 +78,7 @@
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
       "de": "Robustes Gestell",
-      "fr": "support Robuste",
+      "fr": "Support robuste",
       "ru": "Прочное крепление"
     },
     "Longer Range FSD interdictor": {
@@ -288,7 +288,7 @@
     "Faster FSD Boot Sequence": {
       "es": "Secuencia de Inicio de MDD Rápida",
       "de": "Schnellere FSA-Ladesequenz",
-      "fr": "Séquence de démarrage FSD accelerée",
+      "fr": "Chargement FSD acceleré",
       "ru": "Ускорение перезапуска РСД"
     },
     "Shielded FSD": {
@@ -1470,37 +1470,37 @@
     "Grade Filter": {
       "es": "Filtro de Grados",
       "de": "Zugangsgrad Filter",
-      "fr": "Filtre par Grades",
+      "fr": "Filtrer par Grades",
       "ru": "Фильтр по уровню"
     },
     "Engineer Filter": {
       "es": "Filtro de Ingenieros",
       "de": "Ingenieur Filter",
-      "fr": "Filtre par Ingénieurs",
+      "fr": "Filtrer par Ingénieurs",
       "ru": "Фильтр по инженеру"
     },
     "Type Filter": {
       "es": "Filtro de Tipos",
       "de": "Typ Filter",
-      "fr": "Filtre par Type",
+      "fr": "Filtrer par Type",
       "ru": "Фильтр по типу"
     },
     "Ignored And Favorite Filter": {
       "es": "Filtro de Ignorados y Favoritos",
       "de": "Ignorierte und Favoriten Filter",
-      "fr": "Filtre par Ignorés et Favoris",
+      "fr": "Filtrer par Ignorés et Favoris",
       "ru": "Фильтр по игнорируемым и избранным"
     },
     "Craftable Filter": {
       "es": "Filtro de Elaborados",
       "de": "Baubarkeit Filter",
-      "fr": "Filtre par Craft disponible",
+      "fr": "Filtrer par Craft disponible",
       "ru": "Фильтр по доступности"
     },
     "Ingredient Filter (Reversed)": {
       "es": "Filtro de Ingredientes (Inverso)",
       "de": "Bestandteile Filter (invers)",
-      "fr": "Filtre par Ingrédients (Inversé)",
+      "fr": "Filtrer par Ingrédients (Inversé)",
       "ru": "Фильтр по ингредиентам (Обратный)"
     },
     "can craft": {
@@ -2100,7 +2100,7 @@
     "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
       "es": "¿Deseas usar este puerto al ejecutar el servidor de EDEngineer? (si no está seleccionada esta opción el servidor podría detenerse cuando se bloquee o desbloquee la ventana)",
       "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
-      "fr": "Lancer automatiquement le serveur au démarrage avec ce port? (sinon, le server s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
+      "fr": "Lancer automatiquement le serveur au démarrage avec ce port ? (sinon, le serveur s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
       "ru": "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)"
     },
     "Shopping List": {
@@ -2160,7 +2160,7 @@
     "Show information about resources?": {
       "es": "Mostrar información sobre recursos?",
       "de": "Informationen über Ressourcen anzeigen?",
-      "fr": "Afficher les informations sur les ressources?",
+      "fr": "Afficher les informations sur les ressources ?",
       "ru": "Показать информацию о ресурсах?"
     },
     "Check all filters": {
@@ -2250,13 +2250,13 @@
     "Threshold Reached!": {
       "es": null,
       "de": "Schwellwert erreicht!",
-      "fr": null,
+      "fr": "Seuil atteint",
       "ru": "Достигнуто ограничение!"
     },
     "Threshold Reached Warning": {
       "es": null,
       "de": "Schwellwert erreicht Warnung",
-      "fr": null,
+      "fr": "Attention, seuil atteint",
       "ru": "Предупреждение о достижении ограничения"
     },
     "Count": {
