@@ -18,6 +18,8 @@ namespace EDEngineer.Models
         EngineerProgress,
         ScientificResearch,
         LoadGame,
-        Died
+        Died,
+        Materials,
+        Cargo
     }
 }

@@ -19,7 +19,8 @@ namespace EDEngineer.Utils
 
         private HashSet<string> IgnoreList { get; } = new HashSet<string>()
         {
-            "polymers"
+            "polymers",
+            "scrap"
         };
 
         public bool TryGet(string key, out string name)

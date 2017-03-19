@@ -131,9 +131,84 @@ namespace EDEngineer.Utils
                     return ExtractMaterialDiscarded(data);
                 case JournalEvent.Died:
                     return new DeathOperation() { JournalEvent = JournalEvent.Died };
+                case JournalEvent.Cargo:
+                    return ExtractCargoDump(data);
+                case JournalEvent.Materials:
+                    return ExtractMaterialsDump(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractMaterialsDump(JObject data)
+        {
+            var dump = new DumpOperation
+            {
+                ResetFilter = new HashSet<Kind>()
+                {
+                    Kind.Data,
+                    Kind.Material
+                },
+                DumpOperations = new List<MaterialOperation>()
+            };
+
+            foreach (var jToken in data["Raw"].Union(data["Manufactured"]).Union(data["Encoded"]))
+            {
+                dynamic cc = jToken;
+                string materialName = cc.Name;
+                int? count = cc.Value ?? cc.Count;
+                
+                if (!converter.TryGet(materialName, out materialName))
+                {
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
+                    continue;
+                }
+
+                var operation = new MaterialOperation()
+                {
+                    MaterialName = materialName,
+                    Size = count ?? 1
+                };
+
+                dump.DumpOperations.Add(operation);
+            }
+
+            return dump;
+        }
+
+        private JournalOperation ExtractCargoDump(JObject data)
+        {
+            var dump = new DumpOperation
+            {
+                ResetFilter = new HashSet<Kind>()
+                {
+                    Kind.Commodity
+                },
+                DumpOperations = new List<MaterialOperation>()
+            };
+
+            foreach (var jToken in data["Inventory"])
+            {
+                dynamic cc = jToken;
+                string materialName = cc.Name;
+                int? count = cc.Value ?? cc.Count;
+
+                if (!converter.TryGet(materialName, out materialName))
+                {
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
+                    continue;
+                }
+
+                var operation = new MaterialOperation()
+                {
+                    MaterialName = materialName,
+                    Size = count ?? 1
+                };
+
+                dump.DumpOperations.Add(operation);
+            }
+
+            return dump;
         }
 
         private JournalOperation ExtractEngineerProgress(JObject data)
@@ -228,7 +303,7 @@ namespace EDEngineer.Utils
             };
         }
 
-        private MissionCompletedOperation ExtractMissionCompleted(JObject data)
+        private JournalOperation ExtractMissionCompleted(JObject data)
         {
             JToken rewardData;
 
@@ -370,7 +445,7 @@ namespace EDEngineer.Utils
             }
         }
 
-        private EngineerOperation ExtractEngineerOperation(JObject data)
+        private JournalOperation ExtractEngineerOperation(JObject data)
         {
             var blueprintName = data["Blueprint"] ?? "";
             var operation = new EngineerOperation((string) blueprintName)
@@ -386,7 +461,7 @@ namespace EDEngineer.Utils
             return operation.IngredientsConsumed.Any() ? operation : null;
         }
 
-        private static ManualChangeOperation ExctractManualOperation(JObject data)
+        private static JournalOperation ExctractManualOperation(JObject data)
         {
             return new ManualChangeOperation
             {
