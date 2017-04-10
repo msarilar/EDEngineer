@@ -31,7 +31,7 @@ namespace EDEngineer.Models.Utils.Json
                                                   .OfType<JObject>()
                                                   .Select(parent => parent[c])
                                                   .Where(v => v is JValue || v is JArray)
-                                                  .Select(v => v is JValue ? (string) v : $"\"{string.Join(", ", ((JArray) v).ToList())}\"")
+                                                  .Select(v => v is JValue ? $"\"{(string) v}\"" : $"\"{string.Join(", ", ((JArray) v).ToList())}\"")
                                                   .FirstOrDefault())
                                     .Reverse()
                                     .SkipWhile(s => s == null)
