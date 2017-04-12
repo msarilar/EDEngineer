@@ -1,7 +1,11 @@
 ﻿[
   {
-    "Version": "1.0.5.5",
+    "Version": "1.0.5.6",
     "Content": "* Handle new 2.3 logs (the application should start faster)\r\n\r\n* Fixed escaping issue when exporting data in CSV format via the local API server\r\n* French and Russian localization update (thanks to @VChet and @Pierre-LouisTALBOT)\r\n\r\n\r\n *** NEW BLUEPRINTS *** \r\n If you find new blueprints, contributions are very welcome on GitHub ! The blueprint.json file is pretty easy to understand and you can update it directly in your browser.\r\n I will review the changes you did and if they're good then I will update the application with your contribution."
+  },
+  {
+    "Version": "1.0.5.5",
+    "Content": "* 2.3 logs beta (unreleased)"
   },
   {
     "Version": "1.0.5.4",
