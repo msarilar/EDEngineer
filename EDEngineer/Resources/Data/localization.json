@@ -2264,6 +2264,12 @@
       "de": "Anzahl",
       "fr": "Nombre",
       "ru": "Количество"
+    },
+    "Multiple Blueprints Ready": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }
