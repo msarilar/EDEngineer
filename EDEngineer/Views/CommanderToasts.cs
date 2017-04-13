@@ -1,24 +1,71 @@
 using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Windows;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using Windows.UI.Notifications;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Utils.System;
 using EDEngineer.Views.Popups;
+using Application = System.Windows.Application;
 
 namespace EDEngineer.Views
 {
-    public class CommanderToasts
+    public class CommanderToasts : IDisposable
     {
         private readonly State state;
         private readonly string commanderName;
+        private readonly BlockingCollection<ToastNotification> toasts = new BlockingCollection<ToastNotification>(); 
+        private readonly CancellationTokenSource tokenSource = new CancellationTokenSource();
 
         public CommanderToasts(State state, string commanderName)
         {
             this.state = state;
             this.commanderName = commanderName;
+            Task.Factory.StartNew(ConsumeToasts);
+        }
+
+        private void ConsumeToasts()
+        {
+            var toDisplay = new HashSet<ToastNotification>();
+            while (!tokenSource.Token.IsCancellationRequested)
+            {
+                Task.Delay(500).Wait();
+                ToastNotification item;
+                while (toasts.TryTake(out item, TimeSpan.Zero) && toDisplay.Add(item));
+
+                if (toDisplay.Count <= 2)
+                {
+                    foreach (var toast in toDisplay)
+                    {
+                        ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                    }
+                }
+                else
+                {
+                    var translator = Languages.Instance;
+
+                    var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText01);
+
+                    var stringElements = toastXml.GetElementsByTagName("text");
+
+                    stringElements[0].AppendChild(toastXml.CreateTextNode(translator.Translate("Multiple Blueprints Ready")));
+
+                    var imagePath = "file:///" + Path.GetFullPath("Resources/Images/elite-dangerous-clean.png");
+
+                    var imageElements = toastXml.GetElementsByTagName("image");
+                    imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
+
+                    var toast = new ToastNotification(toastXml);
+                    ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                }
+
+                toDisplay.Clear();
+            }
         }
 
         private void ThresholdToastCheck(string item)
@@ -146,7 +193,7 @@ namespace EDEngineer.Views
 
                 var toast = new ToastNotification(toastXml);
 
-                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                toasts.Add(toast);
             }
             catch (Exception)
             {
@@ -188,6 +235,11 @@ namespace EDEngineer.Views
             }
 
             ThresholdToastCheck(e.PropertyName);
+        }
+
+        public void Dispose()
+        {
+            tokenSource.Cancel();
         }
     }
 }

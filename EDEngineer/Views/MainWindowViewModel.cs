@@ -15,7 +15,7 @@ using Newtonsoft.Json;
 
 namespace EDEngineer.Views
 {
-    public class MainWindowViewModel : INotifyPropertyChanged
+    public class MainWindowViewModel : INotifyPropertyChanged, IDisposable
     {
         public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; }  = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
 
@@ -192,7 +192,7 @@ namespace EDEngineer.Views
             }
         }
 
-        public LogWatcher LogWatcher { get; private set; }
+        private LogWatcher LogWatcher { get; set; }
 
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -249,6 +249,15 @@ namespace EDEngineer.Views
             }
 
             Settings.Default.Save();
+        }
+
+        public void Dispose()
+        {
+            foreach (var commander in Commanders)
+            {
+                commander.Value.Dispose();
+            }
+            LogWatcher?.Dispose();
         }
     }
 }

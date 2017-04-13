@@ -376,7 +376,7 @@ namespace EDEngineer.Views
                 icon.Dispose();
             }
 
-            viewModel?.LogWatcher?.Dispose();
+            viewModel.Dispose();
             serverBridge?.Dispose();
         }
 

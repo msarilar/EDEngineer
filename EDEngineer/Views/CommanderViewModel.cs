@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
@@ -18,7 +19,7 @@ using NodaTime;
 
 namespace EDEngineer.Views
 {
-    public class CommanderViewModel : INotifyPropertyChanged
+    public class CommanderViewModel : INotifyPropertyChanged, IDisposable
     {
         public string CommanderName { get; }
         public State State { get; }
@@ -332,6 +333,11 @@ namespace EDEngineer.Views
         public override string ToString()
         {
             return $"CMDR {CommanderName}";
+        }
+
+        public void Dispose()
+        {
+            commanderToasts.Dispose();
         }
     }
 }
