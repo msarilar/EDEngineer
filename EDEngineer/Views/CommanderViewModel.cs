@@ -58,7 +58,7 @@ namespace EDEngineer.Views
 
         private void LoadState(IEnumerable<string> events)
         {
-            commanderToasts.UnsubscribeToasts();
+            commanderToasts?.UnsubscribeToasts();
             State.InitLoad();
             // Clear state:
             
@@ -67,7 +67,7 @@ namespace EDEngineer.Views
 
             ApplyEventsToSate(events);
             ThresholdsManagerWindow.InitThresholds(State.Cargo);
-            commanderToasts.SubscribeToasts();
+            commanderToasts?.SubscribeToasts();
 
             if (Settings.Default.EntriesHighlighted == null)
             {
@@ -100,7 +100,10 @@ namespace EDEngineer.Views
             var converter = new ItemNameConverter(entryDatas);
 
             State = new State(entryDatas, languages, SettingsManager.Comparer);
-            commanderToasts = new CommanderToasts(State, CommanderName);
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
+            {
+                commanderToasts = new CommanderToasts(State, CommanderName);
+            }
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
             blueprintConverter = new BlueprintConverter(State.Cargo);
@@ -340,7 +343,7 @@ namespace EDEngineer.Views
 
         public void Dispose()
         {
-            commanderToasts.Dispose();
+            commanderToasts?.Dispose();
         }
 
         public void ToggleHighlight(Entry entry)

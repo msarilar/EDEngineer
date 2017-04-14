@@ -26,10 +26,7 @@ namespace EDEngineer.Views
         {
             this.state = state;
             this.commanderName = commanderName;
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
-            {
-                Task.Factory.StartNew(ConsumeToasts);
-            }
+            Task.Factory.StartNew(ConsumeToasts);
         }
 
         private void ConsumeToasts()
@@ -206,28 +203,22 @@ namespace EDEngineer.Views
 
         public void UnsubscribeToasts()
         {
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
+            foreach (var blueprint in state.Blueprints)
             {
-                foreach (var blueprint in state.Blueprints)
-                {
-                    blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
-                }
-
-                state.PropertyChanged -= StateCargoCountChanged;
+                blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
             }
+
+            state.PropertyChanged -= StateCargoCountChanged;
         }
 
         public void SubscribeToasts()
         {
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
+            foreach (var blueprint in state.Blueprints)
             {
-                foreach (var blueprint in state.Blueprints)
-                {
-                    blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
-                }
-
-                state.PropertyChanged += StateCargoCountChanged;
+                blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
             }
+
+            state.PropertyChanged += StateCargoCountChanged;
         }
 
         private void StateCargoCountChanged(object sender, PropertyChangedEventArgs e)
