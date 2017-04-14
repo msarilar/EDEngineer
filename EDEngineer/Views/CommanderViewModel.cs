@@ -173,7 +173,7 @@ namespace EDEngineer.Views
         {
             State.Operations.AddLast(entry);
             entry.JournalOperation.Mutate(State);
-            LastUpdate = entry.Timestamp;
+            LastUpdate = Instant.Max(LastUpdate, entry.Timestamp);
         }
 
         public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, CollectionViewSource source)
