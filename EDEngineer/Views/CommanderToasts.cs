@@ -26,7 +26,10 @@ namespace EDEngineer.Views
         {
             this.state = state;
             this.commanderName = commanderName;
-            Task.Factory.StartNew(ConsumeToasts);
+            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
+            {
+                Task.Factory.StartNew(ConsumeToasts);
+            }
         }
 
         private void ConsumeToasts()
