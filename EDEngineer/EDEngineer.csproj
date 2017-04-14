@@ -140,8 +140,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Converters\IntOrNullConverter.cs" />
+    <Compile Include="Converters\IntToEnabledConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
-    <Compile Include="Converters\ThresholdToBackgroundColorConveter.cs" />
+    <Compile Include="Converters\ThresholdToBackgroundColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
     <Compile Include="Views\CommanderToasts.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />

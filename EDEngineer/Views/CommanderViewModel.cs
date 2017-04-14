@@ -25,7 +25,7 @@ namespace EDEngineer.Views
         public string CommanderName { get; }
         public State State { get; }
         public BlueprintFilters Filters { get; private set; }
-        public ObservableCollection<EntryData> HighlightedEntryData { get; } = new ObservableCollection<EntryData>();
+        public ObservableCollection<Entry> HighlightedEntryData { get; } = new ObservableCollection<Entry>();
 
         public ShoppingListViewModel ShoppingList => shoppingList;
 
@@ -84,7 +84,7 @@ namespace EDEngineer.Views
                 if (entries[i].Data.Name == highlightedEntries[j])
                 {
                     entries[i].Highlighted = true;
-                    HighlightedEntryData.Add(entries[i].Data);
+                    HighlightedEntryData.Add(entries[i]);
                     j++;
                 }
             }
@@ -343,19 +343,19 @@ namespace EDEngineer.Views
             commanderToasts.Dispose();
         }
 
-        public void ToggleHighlight(KeyValuePair<string, Entry> dataContext)
+        public void ToggleHighlight(Entry entry)
         {
-            dataContext.Value.Highlighted = !dataContext.Value.Highlighted;
+            entry.Highlighted = !entry.Highlighted;
 
-            if (dataContext.Value.Highlighted)
+            if (entry.Highlighted)
             {
-                Settings.Default.EntriesHighlighted.Add(dataContext.Value.Data.Name);
-                HighlightedEntryData.Add(dataContext.Value.Data);
+                Settings.Default.EntriesHighlighted.Add(entry.Data.Name);
+                HighlightedEntryData.Add(entry);
             }
             else
             {
-                Settings.Default.EntriesHighlighted.Remove(dataContext.Value.Data.Name);
-                HighlightedEntryData.Remove(dataContext.Value.Data);
+                Settings.Default.EntriesHighlighted.Remove(entry.Data.Name);
+                HighlightedEntryData.Remove(entry);
             }
 
             Settings.Default.Save();

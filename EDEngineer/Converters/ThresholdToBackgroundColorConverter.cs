@@ -5,7 +5,7 @@ using System.Windows.Media;
 
 namespace EDEngineer.Converters
 {
-    public class ThresholdToBackgroundColorConveter : IMultiValueConverter
+    public class ThresholdToBackgroundColorConverter : IMultiValueConverter
     {
         public SolidColorBrush ThresholdReachedColor { get; set; }
         public SolidColorBrush NormalColor { get; set; }

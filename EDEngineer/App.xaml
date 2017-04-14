@@ -37,11 +37,16 @@
                 #441e00
             </Color>
 
+            <Color x:Key="NotZero">
+                #CF2400
+            </Color>
+
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
             <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
             <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
             <SolidColorBrush x:Key="ThresholdReachedBrush" Color="{StaticResource ThresholdReached}"/>
+            <SolidColorBrush x:Key="NotZeroBrush" Color="{StaticResource NotZero}"/>
             
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
@@ -65,9 +70,10 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToHighlightColor"
                                                          SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
-            <converters:ThresholdToBackgroundColorConveter x:Key="ThresholdToBackgroundColor"
+            <converters:ThresholdToBackgroundColorConverter x:Key="ThresholdToBackgroundColor"
                                                          ThresholdReachedColor="{StaticResource ThresholdReachedBrush}"
                                                          NormalColor="{StaticResource TransparentBrush}"/>
+            <converters:IntToEnabledConverter x:Key="IntToEnabled"/>
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             

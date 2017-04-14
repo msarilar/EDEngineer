@@ -228,16 +228,19 @@ namespace EDEngineer.Views
             {
                 filter.Checked = newValue;
             }
+        }
 
-            foreach (var ingredientFilter in CurrentCommander.Value.Filters.GroupedIngredientFilters.SelectMany(g => g))
+        public void UnhighlightAllIngredients()
+        {
+            foreach (var entry in CurrentCommander.Value.HighlightedEntryData.ToList())
             {
-                ingredientFilter.Checked = false;
+                ToggleHighlight(entry);
             }
         }
 
-        public void ToggleHighlight(KeyValuePair<string, Entry> dataContext)
+        public void ToggleHighlight(Entry entry)
         {
-            CurrentCommander.Value.ToggleHighlight(dataContext);
+            CurrentCommander.Value.ToggleHighlight(entry);
         }
 
         public void Dispose()

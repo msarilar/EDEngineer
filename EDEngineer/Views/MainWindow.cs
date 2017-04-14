@@ -447,10 +447,15 @@ namespace EDEngineer.Views
             viewModel.ChangeAllFilters(false);
         }
 
+        private void UnhighlightAllButtonClicked(object sender, RoutedEventArgs e)
+        {
+            viewModel.UnhighlightAllIngredients();
+        }
+
         private void IngredientOnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var dataContext = ((Grid) sender).DataContext;
-            viewModel.ToggleHighlight((KeyValuePair<string, Entry>) dataContext);
+            var dataContext = (KeyValuePair<string, Entry>) ((Grid) sender).DataContext;
+            viewModel.ToggleHighlight(dataContext.Value);
         }
 
         private void IncrementShoppingList(object sender, RoutedEventArgs e)

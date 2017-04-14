@@ -488,7 +488,6 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
-                        <ColumnDefinition Width="40"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -613,82 +612,40 @@
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
-                    <controls:DropDownButton ItemsSource="{Binding Filters.GroupedIngredientFilters}"
-                                             Content="{Binding Filters.GroupedIngredientFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Ingredients', FallbackValue='Ingredient Filter (Reversed)'}"
-                                             Grid.Row="1"
-                                             x:Name="IngredientFiltersDropDown"
-                                             Grid.Column="2">
-                        <controls:DropDownButton.ItemContainerStyle>
-                            <Style TargetType="MenuItem">
-                                <Setter Property="Margin" Value="-30,0,-30,0" />
-                            </Style>
-                        </controls:DropDownButton.ItemContainerStyle>
-                        <controls:DropDownButton.ItemTemplate>
-                            <DataTemplate>
-                                <Expander Background="Transparent"
-                                          BorderBrush="Black">
-                                    <Expander.Header>
-                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}">
-                                            <Binding Path="Key"/>
-                                            <Binding Path="DataContext.Languages.CurrentLanguage"
-				                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                        </MultiBinding>
-                                    </Expander.Header>
-                                    <ItemsControl ItemsSource="{Binding}">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <Grid Width="Auto">
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="Auto" />
-                                                        <ColumnDefinition Width="*" />
-                                                    </Grid.ColumnDefinitions>
-                                                    <CheckBox Width="20"
-                                                              Grid.Column="0"
-                                                              IsChecked="{Binding Checked, Mode=TwoWay}" />
-                                                    <TextBlock Width="Auto"
-                                                               Grid.Column="1">
-                                                        <Run>
-                                                            <Run.Text>
-                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
-                                                                    <Binding Path="Entry.Data.Name"/>
-                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
-				                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                                </MultiBinding>
-                                                            </Run.Text>
-                                                        </Run>
-                                                        <Run Text=" (" />
-                                                        <Run Text="{Binding Entry.Count}" />
-                                                        <Run Text=")" />
-                                                    </TextBlock>
-                                                </Grid>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-                                </Expander>
-                            </DataTemplate>
-                        </controls:DropDownButton.ItemTemplate>
-                    </controls:DropDownButton>
+                    <Grid Grid.Row="1"
+                          Grid.Column="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0"
+                                HorizontalAlignment="Stretch"
+                                Click="CheckAllButtonClicked"
+                                Style="{DynamicResource ChromelessButtonStyle}"
+                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Check all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                                x:Name="CheckAllButton">
+                            <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrangeBrush}" />
+                        </Button>
+                        <Button Grid.Column="1"
+                                HorizontalAlignment="Stretch"
+                                Click="UncheckAllButtonClicked"
+                                Style="{DynamicResource ChromelessButtonStyle}"
+                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Uncheck all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                                x:Name="UncheckAllButton">
+                            <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrangeBrush}" />
+                        </Button>
+                        <Button Grid.Column="2"
+                                HorizontalAlignment="Stretch"
+                                IsEnabled="{Binding HighlightedEntryData.Count, Converter={StaticResource IntToEnabled}}"
+                                Click="UnhighlightAllButtonClicked"
+                                Style="{DynamicResource ChromelessButtonStyle}"
+                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unhighlight all ingredients', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                                x:Name="UnhighlightAllButton">
+                            <iconPacks:PackIconMaterial Kind="BlockHelper" Foreground="{StaticResource NotZeroBrush}" />
+                        </Button>
+                    </Grid>
 
-                    <Button Grid.Column="3"
-                            Grid.Row="0"
-                            HorizontalAlignment="Stretch"
-                            Click="CheckAllButtonClicked"
-                            Width="40"
-                            Style="{DynamicResource ChromelessButtonStyle}"
-                            ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Check all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
-                            x:Name="CheckAllButton">
-                        <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrangeBrush}" />
-                    </Button>
-                    <Button Grid.Column="3"
-                            Grid.Row="1"
-                            HorizontalAlignment="Stretch"
-                            Click="UncheckAllButtonClicked"
-                            Width="40"
-                            Style="{DynamicResource ChromelessButtonStyle}"
-                            ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Uncheck all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
-                            x:Name="UncheckAllButton">
-                        <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrangeBrush}" />
-                    </Button>
                 </Grid>
 
                 <Grid Grid.Row="1"

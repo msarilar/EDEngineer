@@ -19,8 +19,6 @@ namespace EDEngineer.Utils
         public List<TypeFilter> TypeFilters { get; }
         public List<IgnoredFavoriteFilter> IgnoredFavoriteFilters { get; }
         public List<CraftableFilter> CraftableFilters { get; }
-        private List<IngredientFilter> IngredientFilters { get; }
-        public IEnumerable<IGrouping<Kind, IngredientFilter>> GroupedIngredientFilters => IngredientFilters.GroupBy(f => f.Entry.Data.Kind); 
 
         public BlueprintFilters(ILanguage language, IReadOnlyCollection<Blueprint> availableBlueprints)
         {
@@ -38,13 +36,6 @@ namespace EDEngineer.Utils
                 .Select(b => b.Key)
                 .OrderBy(language.Translate)
                 .Select(g => new TypeFilter(g, $"TF{g}") { Checked = true }));
-
-            IngredientFilters = new List<IngredientFilter>(availableBlueprints.SelectMany(b => b.Ingredients)
-                .Select(ingredient => ingredient.Entry)
-                .Distinct()
-                .OrderBy(b => language.Translate(b.Data.Kind.ToString()))
-                .ThenBy(b => language.Translate(b.Data.Name))
-                .Select(g => new IngredientFilter(g, $"IF{g.Data.Kind}-{g.Data.Name}") { Checked = false }));
 
             IgnoredFavoriteFilters = new List<IgnoredFavoriteFilter>
             {
@@ -163,9 +154,9 @@ namespace EDEngineer.Utils
 
         public List<BlueprintFilter> AllFilters { get; }
 
-        public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries, ObservableCollection<EntryData> highlightedEntryData)
+        public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries, ObservableCollection<Entry> highlightedEntryData)
         {
-            foreach (var filter in AllFilters.Concat(IngredientFilters))
+            foreach (var filter in AllFilters)
             {
                 filter.PropertyChanged += (o, e) =>
                 {
@@ -210,14 +201,11 @@ namespace EDEngineer.Utils
             source.Filter += (o,e) =>
             {
                 var blueprint = (Blueprint)e.Item;
-                var checkedIngredients = IngredientFilters.Where(f => f.Checked).ToList();
-                var satisfyIngredientFilters =  !checkedIngredients.Any() || checkedIngredients.Any(i => blueprint.Ingredients.Any(b => b.Entry == i.Entry));
                 var satisfyHighlightedFilters = !highlightedEntryData.Any() ||
                                                 highlightedEntryData.Intersect(
-                                                    blueprint.Ingredients.Select(i => i.Entry.Data)).Any();
+                                                    blueprint.Ingredients.Select(i => i.Entry)).Any();
 
                 var ret = satisfyHighlightedFilters &&
-                          satisfyIngredientFilters &&
                           GradeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           EngineerFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           TypeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
