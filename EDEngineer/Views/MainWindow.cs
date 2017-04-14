@@ -94,7 +94,7 @@ namespace EDEngineer.Views
             var commander = viewModel.CurrentCommander.Value;
 
             var blueprintSource = new CollectionViewSource { Source = commander.State.Blueprints };
-            commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value));
+            commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value), commander.HighlightedEntryData);
             Blueprints.ItemsSource = blueprintSource.View;
 
             // COMMODITY REMOVED

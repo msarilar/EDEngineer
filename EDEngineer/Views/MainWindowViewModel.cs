@@ -237,18 +237,7 @@ namespace EDEngineer.Views
 
         public void ToggleHighlight(KeyValuePair<string, Entry> dataContext)
         {
-            dataContext.Value.Highlighted = !dataContext.Value.Highlighted;
-
-            if (dataContext.Value.Highlighted)
-            {
-                Settings.Default.EntriesHighlighted.Add(dataContext.Value.Data.Name);
-            }
-            else
-            {
-                Settings.Default.EntriesHighlighted.Remove(dataContext.Value.Data.Name);
-            }
-
-            Settings.Default.Save();
+            CurrentCommander.Value.ToggleHighlight(dataContext);
         }
 
         public void Dispose()

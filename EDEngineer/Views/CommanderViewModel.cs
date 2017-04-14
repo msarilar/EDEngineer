@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
@@ -24,6 +25,7 @@ namespace EDEngineer.Views
         public string CommanderName { get; }
         public State State { get; }
         public BlueprintFilters Filters { get; private set; }
+        public ObservableCollection<EntryData> HighlightedEntryData { get; } = new ObservableCollection<EntryData>();
 
         public ShoppingListViewModel ShoppingList => shoppingList;
 
@@ -82,6 +84,7 @@ namespace EDEngineer.Views
                 if (entries[i].Data.Name == highlightedEntries[j])
                 {
                     entries[i].Highlighted = true;
+                    HighlightedEntryData.Add(entries[i].Data);
                     j++;
                 }
             }
@@ -338,6 +341,24 @@ namespace EDEngineer.Views
         public void Dispose()
         {
             commanderToasts.Dispose();
+        }
+
+        public void ToggleHighlight(KeyValuePair<string, Entry> dataContext)
+        {
+            dataContext.Value.Highlighted = !dataContext.Value.Highlighted;
+
+            if (dataContext.Value.Highlighted)
+            {
+                Settings.Default.EntriesHighlighted.Add(dataContext.Value.Data.Name);
+                HighlightedEntryData.Add(dataContext.Value.Data);
+            }
+            else
+            {
+                Settings.Default.EntriesHighlighted.Remove(dataContext.Value.Data.Name);
+                HighlightedEntryData.Remove(dataContext.Value.Data);
+            }
+
+            Settings.Default.Save();
         }
     }
 }

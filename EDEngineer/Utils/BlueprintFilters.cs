@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Linq;
@@ -162,7 +163,7 @@ namespace EDEngineer.Utils
 
         public List<BlueprintFilter> AllFilters { get; }
 
-        public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries)
+        public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries, ObservableCollection<EntryData> highlightedEntryData)
         {
             foreach (var filter in AllFilters.Concat(IngredientFilters))
             {
@@ -176,6 +177,11 @@ namespace EDEngineer.Utils
                     OnPropertyChanged(nameof(IgnoredFavoriteFilters));
                 };
             }
+
+            highlightedEntryData.CollectionChanged += (o, e) =>
+            {
+                source.View.Refresh();
+            };
 
             foreach (var item in entries)
             {
@@ -206,8 +212,12 @@ namespace EDEngineer.Utils
                 var blueprint = (Blueprint)e.Item;
                 var checkedIngredients = IngredientFilters.Where(f => f.Checked).ToList();
                 var satisfyIngredientFilters =  !checkedIngredients.Any() || checkedIngredients.Any(i => blueprint.Ingredients.Any(b => b.Entry == i.Entry));
+                var satisfyHighlightedFilters = !highlightedEntryData.Any() ||
+                                                highlightedEntryData.Intersect(
+                                                    blueprint.Ingredients.Select(i => i.Entry.Data)).Any();
 
-                var ret = satisfyIngredientFilters &&
+                var ret = satisfyHighlightedFilters &&
+                          satisfyIngredientFilters &&
                           GradeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           EngineerFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           TypeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
