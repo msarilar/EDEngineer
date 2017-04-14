@@ -15087,4 +15087,1324 @@
     ],
     "Grade": 5
   }
+  {
+    "Type": "Sensors",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Lei Chung, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Lei Chung, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Electrochemical Arrays",
+        "Size": 1
+      },
+	  {
+        "Name": "Decoded Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Polymer Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Abnormal Compact Emissions Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Lei Chung, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Lei Chung, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Databanks",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 1
+      },
+	  {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Divergent Scan Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Components",
+        "Size": 1
+      },
+	  {
+        "Name": "Tin",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Fragment",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Light Weight Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Lei Chung, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Light Weight Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Lei Chung, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Salvaged Alloys",
+        "Size": 1
+      },
+	  {
+        "Name": "Manganese",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Light Weight Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Salvaged Alloys",
+        "Size": 1
+      },
+	  {
+        "Name": "Manganese",
+        "Size": 1
+      },
+	  {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Light Weight Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Juri Ishmaak, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Components",
+        "Size": 1
+      },
+	  {
+        "Name": "Phase Alloys",
+        "Size": 1
+      },
+	  {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Sensors",
+    "Name": "Light Weight Scanner",
+    "Engineers": [ "Lori Jameson, Bill Turner, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 1
+      },
+	  {
+        "Name": "Proto Light Alloys",
+        "Size": 1
+      },
+	  {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Bill Turner, Juri Ishmaak, Lei Chung, Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Juri Ishmaak, Lei Chung, Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Electrochemical Arrays",
+        "Size": 1
+      },
+	  {
+        "Name": "Decoded Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Polymer Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Abnormal Compact Emissions Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Bill Turner, Juri Ishmaak, Lei Chung, Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Juri Ishmaak, Lei Chung, Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Databanks",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 1
+      },
+	  {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Divergent Scan Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Components",
+        "Size": 1
+      },
+	  {
+        "Name": "Tin",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Fragment",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Bill Turner, Juri Ishmaak, Lei Chung, Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Juri Ishmaak, Lei Chung, Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Open Symmetric Keys",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 1
+      },
+	  {
+        "Name": "Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Atypical Encryption Archives",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Surface Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Lori Jameson, Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+	  {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Adaptive Encryptors Capture",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Electrochemical Arrays",
+        "Size": 1
+      },
+	  {
+        "Name": "Decoded Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Polymer Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Abnormal Compact Emissions Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Databanks",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 1
+      },
+	  {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Divergent Scan Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Components",
+        "Size": 1
+      },
+	  {
+        "Name": "Tin",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Fragment",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Open Symmetric Keys",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 1
+      },
+	  {
+        "Name": "Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Atypical Encryption Archives",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Manifest Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+	  {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Adaptive Encryptors Capture",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Electrochemical Arrays",
+        "Size": 1
+      },
+	  {
+        "Name": "Decoded Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Polymer Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Abnormal Compact Emissions Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Databanks",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 1
+      },
+	  {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Divergent Scan Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Components",
+        "Size": 1
+      },
+	  {
+        "Name": "Tin",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Fragment",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Open Symmetric Keys",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 1
+      },
+	  {
+        "Name": "Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Atypical Encryption Archives",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Kill Warrant Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+	  {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Adaptive Encryptors Capture",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 1
+      },
+	  {
+        "Name": "Hybrid Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Electrochemical Arrays",
+        "Size": 1
+      },
+	  {
+        "Name": "Decoded Emission Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Long Range Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Polymer Capacitors",
+        "Size": 1
+      },
+	  {
+        "Name": "Abnormal Compact Emissions Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      },
+	  {
+        "Name": "Germanium",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Databanks",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 1
+      },
+	  {
+        "Name": "Niobium",
+        "Size": 1
+      },
+	  {
+        "Name": "Divergent Scan Data",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Wide Angle Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Components",
+        "Size": 1
+      },
+	  {
+        "Name": "Tin",
+        "Size": 1
+      },
+	  {
+        "Name": "Classified Scan Fragment",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 1
+      },
+	  {
+        "Name": "Flawed Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Open Symmetric Keys",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 1
+      },
+	  {
+        "Name": "Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Atypical Encryption Archives",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  }
+  {
+    "Type": "Wake Scanner",
+    "Name": "Fast Scanner",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+	  {
+        "Name": "Refined Focus Crystals",
+        "Size": 1
+      },
+	  {
+        "Name": "Adaptive Encryptors Capture",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  }
 ]
