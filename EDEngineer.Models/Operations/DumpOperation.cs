@@ -11,6 +11,11 @@ namespace EDEngineer.Models.Operations
 
         public override void Mutate(State state)
         {
+            foreach (var item in state.Cargo.Where(item => ResetFilter.Contains(item.Value.Data.Kind)))
+            {
+                state.IncrementCargo(item.Key, -1 * item.Value.Count);
+            }
+
             foreach (var operation in DumpOperations)
             {
                 state.IncrementCargo(operation.MaterialName, operation.Size);

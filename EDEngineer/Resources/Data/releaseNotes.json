@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.6.4",
+    "Content": "* Various fixes related to the previous updates regarding logs not being taken into account and windows 7 users having errors"
+  },
+  {
     "Version": "1.0.6.0",
     "Content": "* Added new blueprints that are available in the 2.3 update, thanks a lot to @AndreyATGB for adding them to the application!\r\n* If more than two favourite blueprints are available at the same time, you'll get only one toast telling you that multiple blueprints are now craftable instead of potentially getting flooded by notifications.\r\n* Removed the Ingredient Filter ; it's now replaced with the highlighted ingredients feature. Highlight an ingredient to show blueprints that use it ; highlight multiple ingredients to see all the blueprints that use at least one of the highlighted ingredients.\r\n* Added a button to remove all highlighted ingredients (the red circle where the Ingredient Filters used to be)."
   },

@@ -156,16 +156,12 @@ namespace EDEngineer.Views
 
             var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, settings))
                 .Where(e => e?.Relevant == true)
-                .OrderByDescending(e => e.Timestamp)
+                .OrderBy(e => e.Timestamp)
                 .ToList();
 
             foreach (var entry in entries.Where(entry => entry.Timestamp >= LastUpdate).ToList())
             {
                 MutateState(entry);
-                if (entry.JournalOperation is DumpOperation)
-                {
-                    break;
-                }
             }
         }
 
