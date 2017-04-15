@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.6.5",
+    "Content": "* Added a scrollbar for the shopping list in case it gets too big.\r\n* Added a Silent Launch option in the context menu of the task tray icon. If you activate it, EDEngineer will start hidden.\r\n* Removed the persistence of highlighted ingredients as it's now a very specific filter. Users didn't notice they had highlighted ingredients and were wondering why blueprints weren't showing up. Each time you start the application, it will now forget which ingredient you highlighted.\r\n\r\n* Prepared localization for new text, if you feel up to the task don't hesitate to contribute to the localization.json file! You just have to fill the null values for your corresponding language."
+  },
+  {
     "Version": "1.0.6.4",
     "Content": "* Various fixes related to the previous updates regarding logs not being taken into account and windows 7 users having errors"
   },
