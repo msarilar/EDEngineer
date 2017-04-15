@@ -989,6 +989,8 @@
                                   HorizontalAlignment="Stretch"
                                   MouseDoubleClick="ShoppingListSplitterDoubleClicked"
                                   Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}" />
+
+                    <!-- SHOPPING LIST -->
                     <ScrollViewer Grid.Row="2"
                                   VerticalScrollBarVisibility="Auto"
                                   HorizontalScrollBarVisibility="Hidden">
@@ -1250,7 +1252,6 @@
                             </DataGrid.Columns>
                         </DataGrid>
                     </ScrollViewer>
-                    <!-- SHOPPING LIST -->
                 </Grid>
 
             </Grid>
