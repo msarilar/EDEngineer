@@ -15402,7 +15402,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Lori Jameson" ],
     "Ingredients": [
       {
         "Name": "Germanium",
@@ -15422,7 +15422,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Lori Jameson" ],
     "Ingredients": [
       {
         "Name": "Niobium",
@@ -15490,7 +15490,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Lori Jameson" ],
     "Ingredients": [
       {
         "Name": "Mechanical Equipment",
@@ -15510,7 +15510,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Lori Jameson" ],
     "Ingredients": [
       {
         "Name": "Mechanical Components",
@@ -15578,7 +15578,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Lori Jameson" ],
     "Ingredients": [
       {
         "Name": "Manganese",
@@ -15598,7 +15598,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Lori Jameson" ],
     "Ingredients": [
       {
         "Name": "Arsenic",
