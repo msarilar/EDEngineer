@@ -77,6 +77,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool SilentLaunch
+        {
+            get { return Properties.Settings.Default.SilentLaunch; }
+            set
+            {
+                Properties.Settings.Default.SilentLaunch = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static bool CargoAlmostFullWarningEnabled
         {
             get { return Properties.Settings.Default.CargoAlmostFullWarningEnabled; }

@@ -353,5 +353,17 @@ namespace EDEngineer.Properties {
                 this["Comparer"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool SilentLaunch {
+            get {
+                return ((bool)(this["SilentLaunch"]));
+            }
+            set {
+                this["SilentLaunch"] = value;
+            }
+        }
     }
 }

@@ -87,6 +87,11 @@ namespace EDEngineer.Views
                                              }
                                          };
             serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
+
+            if (SettingsManager.SilentLaunch)
+            {
+                Opacity = 0.001;
+            }
         }
 
         public void RefreshCargoSources()

@@ -125,6 +125,17 @@ namespace EDEngineer.Utils.UI
                 SettingsManager.ThresholdWarningEnabled = enableThresholdWarningItem.Checked;
             };
 
+            var enableSilentLaunch = new MenuItem
+            {
+                Checked = SettingsManager.SilentLaunch
+            };
+
+            enableSilentLaunch.Click += (o, e) =>
+            {
+                enableSilentLaunch.Checked = !enableSilentLaunch.Checked;
+                SettingsManager.SilentLaunch = enableSilentLaunch.Checked;
+            };
+
             var launchServerItem = new MenuItem
             {
                 Checked = serverRunning
@@ -135,10 +146,10 @@ namespace EDEngineer.Utils.UI
                 launchServerItem.Checked = launchServerHandler();
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem);
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem, enableSilentLaunch);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem, enableSilentLaunch);
             };
 
             quitItem.Click += quitHandler;
@@ -152,6 +163,7 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(enableBlueprintReadyItem);
             menu.MenuItems.Add(enableThresholdWarningItem);
             menu.MenuItems.Add("-");
+            menu.MenuItems.Add(enableSilentLaunch);
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add(selectLanguageItem);
             menu.MenuItems.Add(configureThresholdsItem);
@@ -167,7 +179,7 @@ namespace EDEngineer.Utils.UI
         private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
                                          MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem,
                                          MenuItem enableToastsItem, MenuItem enableCargoFullWarningItem, MenuItem launchServerItem,
-                                         MenuItem configureThresholdsItem, MenuItem enableThresholdWarningItem)
+                                         MenuItem configureThresholdsItem, MenuItem enableThresholdWarningItem, MenuItem enableSilentLaunch)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -181,6 +193,7 @@ namespace EDEngineer.Utils.UI
             launchServerItem.Text = translator.Translate("Launch Local API");
             configureThresholdsItem.Text = translator.Translate("Configure Thresholds");
             enableThresholdWarningItem.Text = translator.Translate("Threshold Reached Warning");
+            enableSilentLaunch.Text = translator.Translate("Silent Launch");
         }
     }
 }
