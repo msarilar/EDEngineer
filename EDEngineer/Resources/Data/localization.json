@@ -2276,6 +2276,36 @@
       "de": null,
       "fr": null,
       "ru": null
+    },
+    "Sensors": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Surface Scanner": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Wake Scanner": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Last update: ": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Silent Launch": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
     }
   }
 }
