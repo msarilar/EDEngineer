@@ -69,26 +69,6 @@ namespace EDEngineer.Views
             ThresholdsManagerWindow.InitThresholds(State.Cargo);
             commanderToasts?.SubscribeToasts();
 
-            if (Settings.Default.EntriesHighlighted == null)
-            {
-                Settings.Default.EntriesHighlighted = new StringCollection();
-                Settings.Default.Save();
-            }
-            
-            var highlightedEntries = Settings.Default.EntriesHighlighted.Cast<string>().OrderBy(s => s).ToList();
-
-            var entries = State.Cargo.Select(kv => kv.Value).OrderBy(e => e.Data.Name).ToList();
-
-            for (int i = 0, j = 0; i < entries.Count && j < highlightedEntries.Count; i++)
-            {
-                if (entries[i].Data.Name == highlightedEntries[j])
-                {
-                    entries[i].Highlighted = true;
-                    HighlightedEntryData.Add(entries[i]);
-                    j++;
-                }
-            }
-
             State.Cargo.RefreshSort();
             State.CompleteLoad();
         }
@@ -348,12 +328,10 @@ namespace EDEngineer.Views
 
             if (entry.Highlighted)
             {
-                Settings.Default.EntriesHighlighted.Add(entry.Data.Name);
                 HighlightedEntryData.Add(entry);
             }
             else
             {
-                Settings.Default.EntriesHighlighted.Remove(entry.Data.Name);
                 HighlightedEntryData.Remove(entry);
             }
 
