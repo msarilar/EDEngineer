@@ -32,11 +32,11 @@ namespace EDEngineer.Views
         private void ConsumeToasts()
         {
             var toDisplay = new HashSet<ToastNotification>();
+            var fiveSeconds = TimeSpan.FromSeconds(5);
             while (!tokenSource.Token.IsCancellationRequested)
             {
-                Task.Delay(500).Wait();
                 ToastNotification item;
-                while (toasts.TryTake(out item, TimeSpan.Zero) && toDisplay.Add(item));
+                while (toasts.TryTake(out item, fiveSeconds) && toDisplay.Add(item));
 
                 if (toDisplay.Count <= 2)
                 {
