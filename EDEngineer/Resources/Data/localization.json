@@ -279,12 +279,6 @@
       "fr": "Specialisé",
       "ru": "Специализированный"
     },
-    "Shielded": {
-      "es": "Blindado",
-      "de": "Abgeschirmte",
-      "fr": "Renforcé",
-      "ru": "Бронированный"
-    },
     "Faster FSD Boot Sequence": {
       "es": "Secuencia de Inicio de MDD Rápida",
       "de": "Schnellere FSA-Ladesequenz",
