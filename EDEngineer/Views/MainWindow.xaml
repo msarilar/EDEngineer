@@ -989,9 +989,10 @@
                                   HorizontalAlignment="Stretch"
                                   MouseDoubleClick="ShoppingListSplitterDoubleClicked"
                                   Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}" />
-
-                    <!-- SHOPPING LIST -->
-                    <DataGrid x:Name="ShoppingList"
+                    <ScrollViewer Grid.Row="2"
+                                  VerticalScrollBarVisibility="Auto"
+                                  HorizontalScrollBarVisibility="Hidden">
+                        <DataGrid x:Name="ShoppingList"
                               IsReadOnly="True"
                               FontFamily="/Resources/Fonts/#Euro Caps"
                               Background="Black"
@@ -1008,7 +1009,6 @@
                               ItemsSource="{Binding ShoppingList.List}"
                               Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}"
                               DataContext="{Binding}"
-                              Grid.Row="2"
                               PreviewMouseLeftButtonDown="DataGridOnPreviewMouseLeftButtonDown"
                               SelectedIndex="{Binding ShoppingListItem, Mode=OneWay}"
                               Style="{DynamicResource BlueprintGridStyle}"
@@ -1016,41 +1016,41 @@
                               RowDetailsVisibilityMode="Visible"
                               CanUserSortColumns="False"
                               Focusable="False">
-                        <DataGrid.RowHeaderTemplate>
-                            <DataTemplate>
-                                <Grid IsHitTestVisible="False" />
-                            </DataTemplate>
-                        </DataGrid.RowHeaderTemplate>
-                        <DataGrid.RowDetailsTemplate>
-                            <DataTemplate>
-                                <Grid Background="#1D2242"
+                            <DataGrid.RowHeaderTemplate>
+                                <DataTemplate>
+                                    <Grid IsHitTestVisible="False" />
+                                </DataTemplate>
+                            </DataGrid.RowHeaderTemplate>
+                            <DataGrid.RowDetailsTemplate>
+                                <DataTemplate>
+                                    <Grid Background="#1D2242"
                                       Focusable="False"
                                       Style="{StaticResource ShoppingListDetailsGridStyle}">
-                                    <Grid.LayoutTransform>
-                                        <ScaleTransform ScaleY="0"/>
-                                    </Grid.LayoutTransform>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.5*" />
-                                        <ColumnDefinition Width="0.5*" />
-                                    </Grid.ColumnDefinitions>
-                                    <Grid Grid.Column="0"
+                                        <Grid.LayoutTransform>
+                                            <ScaleTransform ScaleY="0"/>
+                                        </Grid.LayoutTransform>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="0.5*" />
+                                            <ColumnDefinition Width="0.5*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0"
                                           Focusable="False"
                                           Margin="10,0,0,0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                        </Grid.ColumnDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                            <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="0"
                                                       Margin="0,0,7,0"
                                                       Focusable="False"
                                                       FontSize="13">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock>
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock>
                                                         <Run>
                                                             <Run.Text>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
@@ -1061,108 +1061,108 @@
                                                             </Run.Text>
                                                         </Run>
                                                         <Run Text=":" />
-                                                    </TextBlock>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
+                                                        </TextBlock>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                            <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="1"
                                                       Margin="0,0,7,0"
                                                       Focusable="False"
                                                       FontSize="13">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock>
-                                                        <TextBlock.Text>
-                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
-                                                                <Binding Path="Entry.Data.Name"/>
-                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock>
+                                                            <TextBlock.Text>
+                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
+                                                                    <Binding Path="Entry.Data.Name"/>
+                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
 				                                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                            </MultiBinding>
-                                                        </TextBlock.Text>
-                                                    </TextBlock>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
+                                                                </MultiBinding>
+                                                            </TextBlock.Text>
+                                                        </TextBlock>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                            <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="2"
                                                       Margin="0,0,7,0"
                                                       Focusable="False"
                                                       FontSize="13">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <TextBlock>
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock>
                                                         <Run Text="(" />
                                                         <Run Text="{Binding Entry.Count}" />
                                                         <Run Text="/" />
                                                         <Run Text="{Binding Size, Mode=OneWay}" />
                                                         <Run Text=")" />
-                                                    </TextBlock>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
+                                                        </TextBlock>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
 
-                                        <ItemsControl ItemsSource="{Binding Ingredients}"
+                                            <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="3"
                                                       Focusable="False"
                                                       Margin="0,0,7,0">
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <Grid MaxWidth="15.5"
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid MaxWidth="15.5"
                                                           MaxHeight="15.5"
                                                           MinWidth="15.5"
                                                           MinHeight="15.5">
-                                                        <iconPacks:PackIconMaterial Kind="Check"
+                                                            <iconPacks:PackIconMaterial Kind="Check"
                                                                                     Foreground="Green" >
-                                                            <iconPacks:PackIconMaterial.Visibility>
-                                                                <MultiBinding Converter="{StaticResource IngredientToVisibility}"
+                                                                <iconPacks:PackIconMaterial.Visibility>
+                                                                    <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
                                                                               Mode="OneWay">
-                                                                    <Binding Path="Entry.Count"/>
-                                                                    <Binding Path="Size"/>
-                                                                </MultiBinding>
-                                                            </iconPacks:PackIconMaterial.Visibility>
-                                                        </iconPacks:PackIconMaterial>
-                                                        <iconPacks:PackIconMaterial Kind="Close"
+                                                                        <Binding Path="Entry.Count"/>
+                                                                        <Binding Path="Size"/>
+                                                                    </MultiBinding>
+                                                                </iconPacks:PackIconMaterial.Visibility>
+                                                            </iconPacks:PackIconMaterial>
+                                                            <iconPacks:PackIconMaterial Kind="Close"
                                                                                     Foreground="Red" 
                                                                                     Width="15"
                                                                                     Height="15">
-                                                            <iconPacks:PackIconMaterial.Visibility>
-                                                                <MultiBinding Converter="{StaticResource IngredientToVisibility}"
+                                                                <iconPacks:PackIconMaterial.Visibility>
+                                                                    <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
                                                                               Mode="OneWay"
                                                                               ConverterParameter="Inverted">
-                                                                    <Binding Path="Entry.Count"/>
-                                                                    <Binding Path="Size"/>
-                                                                </MultiBinding>
-                                                            </iconPacks:PackIconMaterial.Visibility>
-                                                        </iconPacks:PackIconMaterial>
-                                                    </Grid>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
-                                    </Grid>
+                                                                        <Binding Path="Entry.Count"/>
+                                                                        <Binding Path="Size"/>
+                                                                    </MultiBinding>
+                                                                </iconPacks:PackIconMaterial.Visibility>
+                                                            </iconPacks:PackIconMaterial>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+                                        </Grid>
 
-                                    <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.Composition, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                        <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.Composition, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
                                                   Grid.Column="1"
                                                   HorizontalAlignment="Right"
                                                   FontSize="15">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <Grid>
-                                                    <Grid.ToolTip>
-                                                        <TextBlock Text="{Binding Item1.TranslatedString}" />
-                                                    </Grid.ToolTip>
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="Auto" />
-                                                        <ColumnDefinition Width="Auto" />
-                                                        <ColumnDefinition Width="Auto" />
-                                                        <ColumnDefinition Width="Auto" />
-                                                        <ColumnDefinition Width="*" />
-                                                    </Grid.ColumnDefinitions>
-                                                    <Button Content="-"
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid>
+                                                        <Grid.ToolTip>
+                                                            <TextBlock Text="{Binding Item1.TranslatedString}" />
+                                                        </Grid.ToolTip>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="*" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Button Content="-"
                                                             Tag="{Binding Item1}"
                                                             Click="DecrementShoppingList"
                                                             Foreground="Red"
@@ -1173,10 +1173,10 @@
                                                             Style="{DynamicResource ChromelessButtonStyle}"
                                                             Margin="5,0,5,0"
                                                             Grid.Column="0" />
-                                                    <TextBlock Text="{Binding Item2}"
+                                                        <TextBlock Text="{Binding Item2}"
                                                                VerticalAlignment="Center"
                                                                Grid.Column="1" />
-                                                    <Button Content="+"
+                                                        <Button Content="+"
                                                             Tag="{Binding Item1}"
                                                             Click="IncrementShoppingList"
                                                             FontWeight="Black"
@@ -1187,10 +1187,10 @@
                                                             Margin="5,0,5,0"
                                                             Style="{DynamicResource ChromelessButtonStyle}"
                                                             Grid.Column="2" />
-                                                    <TextBlock Text="{Binding Item1.ShortString}"
+                                                        <TextBlock Text="{Binding Item1.ShortString}"
                                                                VerticalAlignment="Center"
                                                                Grid.Column="3" />
-                                                    <Button Content="x"
+                                                        <Button Content="x"
                                                             HorizontalAlignment="Right"
                                                             Tag="{Binding Item1}"
                                                             Style="{DynamicResource ChromelessButtonStyle}"
@@ -1202,53 +1202,55 @@
                                                             Click="RemoveBlueprintShoppingList"
                                                             Grid.Column="4" />
 
-                                                </Grid>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-                                </Grid>
-                            </DataTemplate>
-                        </DataGrid.RowDetailsTemplate>
-                        <DataGrid.Columns>
-                            <DataGridTemplateColumn IsReadOnly="True"
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Grid>
+                                </DataTemplate>
+                            </DataGrid.RowDetailsTemplate>
+                            <DataGrid.Columns>
+                                <DataGridTemplateColumn IsReadOnly="True"
                                                     SortMemberPath="ProgressSorting"
                                                     Width="*"
                                                     CanUserResize="False">
-                                <DataGridTemplateColumn.CellTemplate>
-                                    <DataTemplate>
-                                        <Grid Height="40">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="50"/>
-                                                <ColumnDefinition Width="Auto"/>
-                                                <ColumnDefinition Width="*"/>
-                                                <ColumnDefinition Width="50"/>
-                                            </Grid.ColumnDefinitions>
-                                            <TextBlock Grid.Column="1"
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Grid Height="40">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="50"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="50"/>
+                                                </Grid.ColumnDefinitions>
+                                                <TextBlock Grid.Column="1"
                                                        VerticalAlignment="Center">
-                                                <TextBlock.Text>
-                                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
-                                                        <Binding Path="BlueprintName" />
-                                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                    <TextBlock.Text>
+                                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Short Range Blaster">
+                                                            <Binding Path="BlueprintName" />
+                                                            <Binding Path="DataContext.Languages.CurrentLanguage"
                                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}" />
-                                                    </MultiBinding>
+                                                        </MultiBinding>
 
-                                                </TextBlock.Text>
-                                            </TextBlock>
-                                            <StackPanel Orientation="Vertical"
+                                                    </TextBlock.Text>
+                                                </TextBlock>
+                                                <StackPanel Orientation="Vertical"
                                                         VerticalAlignment="Center"
                                                         Grid.Column="2"
                                                         Margin="20,0,0,0">
-                                                <TextBlock HorizontalAlignment="Center"
+                                                    <TextBlock HorizontalAlignment="Center"
                                                            Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}" />
-                                                <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
+                                                    <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
                                                                            Background="WhiteSmoke" Foreground="DarkRed" />
-                                            </StackPanel>
-                                        </Grid>
-                                    </DataTemplate>
-                                </DataGridTemplateColumn.CellTemplate>
-                            </DataGridTemplateColumn>
-                        </DataGrid.Columns>
-                    </DataGrid>
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </ScrollViewer>
+                    <!-- SHOPPING LIST -->
                 </Grid>
 
             </Grid>
