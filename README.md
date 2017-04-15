@@ -12,8 +12,6 @@ You liked EDEngineer so much you want to buy me a beer? Click this:
 
 ## [**Common Issues and their fixes!**](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
 
-##### **Warning:** Elite Dangerous started outputting logs only recently. It's very probable that the initial state of the app is wrong (negative numbers, missing entries, wrong numbers...) so you will have to manually change the quantities using the +/- buttons. These manual changes are recorded so you don't have to do it each time you start the app. After that, you are not supposed to use these +/- buttons. You can also directly edit the numbers without going through the buttons. Changes are saved and persist between updates. Even if you reinstall, they will remain in C:\Users\%USERNAME%\AppData\Local\EDEngineer !
-
 ![Overview](http://i.imgur.com/mZuvsyM.png)
 
 ### Install
@@ -23,7 +21,7 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 ### Features
 
 1. A transparent overlay that runs continuously and updates in real time what your ship holds (based on logs outputted by the game)
-2. Automatically finds the log folder ; you can change it by clicking on the path (bottom of the overlay)
+2. Shopping List, Thresholds, alerts for when a favourite blueprint is ready, and many other quality of life items
 3. Show/Hide the overlay based on a global shortcut (default is Control + F10)
 4. A tray icon where you can configure the shortcut and exit the overlay
 5. All blueprints available in a handy sortable grid which you can filter too
