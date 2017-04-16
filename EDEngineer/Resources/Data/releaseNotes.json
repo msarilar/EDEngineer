@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.6.6",
+    "Content": "* Fixed an issue that made the application crash upon starting the game after EDEngineer.\r\n* Removed Tiara Fortune from the engineers that can craft Surface Scanner blueprints after grade 3, thanks to @Thurion for spotting the issue and fixing this!\r\nIssues in blueprint can be fixed pretty quickly so if you find any wrong information, you can report it and even fix it for every user :)"
+  },
+  {
     "Version": "1.0.6.5",
     "Content": "* Added a scrollbar for the shopping list in case it gets too big.\r\n* Added a Silent Launch option in the context menu of the task tray icon. If you activate it, EDEngineer will start hidden.\r\n* Removed the persistence of highlighted ingredients as it's now a very specific filter. Users didn't notice they had highlighted ingredients and were wondering why blueprints weren't showing up. Each time you start the application, it will now forget which ingredient you highlighted.\r\n\r\n* Prepared localization for new text, if you feel up to the task don't hesitate to contribute to the localization.json file! You just have to fill the null values for your corresponding language."
   },
