@@ -469,12 +469,22 @@ namespace EDEngineer.Views
         {
             var tag = ((Button)sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint)tag, -1);
+
+            if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
+            {
+                ShoppingListSplitterDoubleClicked(null, null);
+            }
         }
 
         private void RemoveBlueprintShoppingList(object sender, RoutedEventArgs e)
         {
             var blueprint = (Blueprint) ((Button)sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
+
+            if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
+            {
+                ShoppingListSplitterDoubleClicked(null, null);
+            }
         }
 
         private void ShoppingListSplitterDoubleClicked(object sender, MouseButtonEventArgs e)
