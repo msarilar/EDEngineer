@@ -16,7 +16,7 @@ You liked EDEngineer so much you want to buy me a beer? Click this:
 
 ### Install
 
-Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe) which will download the published application on github (it will check for update each time the application is started). Launch the game in windowed mode, launch EDEngineer. Change the shortcut if ctrl+F10 does not suit you (right click the tasktray icon to do so) and fix the cargo/materials/data numbers (by comparing counters one by one ; it's kind of tedious I agree, but it's a one time only operation!).
+Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe) which will download the published application on github (it will check for update each time the application is started). Launch the game in windowed mode, launch EDEngineer. Change the shortcut if ctrl+F10 does not suit you (right click the tasktray icon to do so).
 
 ### Features
 
@@ -29,29 +29,44 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 7. Persistent state : EDEngineer will remember which filters you applied and what blueprints are favorited/ignored
 8. Movable window mode and resizable panels (use the RESET button to reset the window location while in "unlocked" mode)
 9. Handles multiple commanders if you own multiple accounts
+10. Configure thresholds
 
 ### Additional Screenshots
 
+Shopping List:
 <p align="center">
   <img src="http://i.imgur.com/jSsp7KR.png" alt="Details"/>
 </p>
+
+Resized window to not show blueprint (more compact) with thresholds:
 <p align="center">
-  <img src="http://i.imgur.com/vr9bIZ0.png" alt="Filters"/>
+  <img src="http://i.imgur.com/1hoLVbP.png" alt="Compact"/>
 </p>
+
+Filters:
 <p align="center">
-  <img src="http://i.imgur.com/vLJZ92l.png" alt="Toast"/>
+  <img src="http://i.imgur.com/vLJZ92l.png" alt="Filters"/>
 </p>
+
+Example notification:
 <p align="center">
   <img src="http://i.imgur.com/YBUPheF.png" alt="Toast"/>
 </p>
+
+Command in tasktray icon context menu:
 <p align="center">
-  <img src="http://i.imgur.com/YA1Xq3T.png" alt="Tray Icon"/>
+  <img src="http://i.imgur.com/HJxkI80.png" alt="Tray Icon"/>
+</p>
+
+Threshold Configuration:
+<p align="center">
+  <img src="http://i.imgur.com/mIUFSaZ.png" alt="Thresholds"/>
 </p>
 
 ### Languages
 
 <p align="center">
-  <img src="http://i.imgur.com/pR2NMbr.png" alt="Translation Progress"/>
+  <img src="http://i.imgur.com/RSeyP36.png" alt="Translation Progress"/>
 </p>
 
 Español: OK
