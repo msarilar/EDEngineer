@@ -374,14 +374,10 @@ namespace EDEngineer.Views
 
         protected override void OnClosed(EventArgs e)
         {
-            if (handle != null)
-            {
-                HotkeyManager.UnregisterHotKey(this);
-                handle.RemoveHook(WndProc);
-                icon.Dispose();
-            }
-
-            viewModel.Dispose();
+            HotkeyManager.UnregisterHotKey(this);
+            handle?.RemoveHook(WndProc);
+            icon?.Dispose();
+            viewModel?.Dispose();
             serverBridge?.Dispose();
         }
 

@@ -43,9 +43,9 @@ namespace EDEngineer.Utils.System
             {
                 UnregisterHotKey(new WindowInteropHelper(window).Handle, 42);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.ToString());
+                // ignored
             }
         }
     }
