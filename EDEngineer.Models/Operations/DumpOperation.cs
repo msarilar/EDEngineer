@@ -11,14 +11,23 @@ namespace EDEngineer.Models.Operations
 
         public override void Mutate(State state)
         {
-            foreach (var item in state.Cargo.Where(item => ResetFilter.Contains(item.Value.Data.Kind)))
+            var dump = DumpOperations.ToDictionary(m => m.MaterialName, m => m.Size);
+            foreach (var item in state.Cargo.Where(item => ResetFilter.Contains(item.Value.Data.Kind)).ToList())
             {
-                state.IncrementCargo(item.Key, -1 * item.Value.Count);
-            }
+                var currentValue = item.Value.Count;
 
-            foreach (var operation in DumpOperations)
-            {
-                state.IncrementCargo(operation.MaterialName, operation.Size);
+                int toSetValue;
+                if (dump.TryGetValue(item.Key, out toSetValue))
+                {
+                    if (currentValue != toSetValue)
+                    {
+                        state.IncrementCargo(item.Key, toSetValue - currentValue);
+                    }
+                }
+                else if(currentValue != 0)
+                {
+                    state.IncrementCargo(item.Key, -1 * currentValue);
+                }
             }
         }
     }
