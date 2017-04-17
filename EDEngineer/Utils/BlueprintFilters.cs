@@ -24,7 +24,7 @@ namespace EDEngineer.Utils
 
         public string SearchText
         {
-            get { return searchText; }
+            get { return searchText?.Trim(); }
             set
             {
                 if (searchText != value)

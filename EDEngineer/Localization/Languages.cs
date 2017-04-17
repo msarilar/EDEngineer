@@ -14,7 +14,7 @@ using Newtonsoft.Json;
 
 namespace EDEngineer.Localization
 {
-    public class Languages : INotifyPropertyChanged, IValueConverter, IMultiValueConverter, ILanguage
+    public class Languages : IValueConverter, IMultiValueConverter, ILanguage
     {
         public static Languages Instance => instance ?? (instance = InitLanguages());
 

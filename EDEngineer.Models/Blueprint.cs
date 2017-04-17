@@ -72,7 +72,7 @@ namespace EDEngineer.Models
             }
         }
 
-        public string SearchableContent { get; }
+        public string SearchableContent { get; private set; }
 
         public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {
@@ -84,13 +84,8 @@ namespace EDEngineer.Models
             Engineers = engineers;
             Ingredients = ingredients;
 
-            var builder = new StringBuilder();
-            builder.Append(language.Translate(ShortenedType) + "|");
-            builder.Append(language.Translate(Type) + "|");
-            builder.Append(language.Translate(BlueprintName) + "|");
-            builder.Append("G" + Grade + "|");
-            builder.Append(string.Join("|", Engineers) + "|");
-            SearchableContent = builder.ToString();
+            SetupSearchableContent(language);
+            language.PropertyChanged += (o, e) => SetupSearchableContent(language);
 
             foreach (var ingredient in Ingredients)
             {
@@ -124,6 +119,17 @@ namespace EDEngineer.Models
                     }
                 };
             }
+        }
+
+        private void SetupSearchableContent(ILanguage language)
+        {
+            var builder = new StringBuilder();
+            builder.Append(language.Translate(ShortenedType) + "|");
+            builder.Append(language.Translate(Type) + "|");
+            builder.Append(language.Translate(BlueprintName) + "|");
+            builder.Append("G" + Grade + "|");
+            builder.Append(string.Join("|", Engineers) + "|");
+            SearchableContent = builder.ToString();
         }
 
         [JsonIgnore]
