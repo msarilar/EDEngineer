@@ -24,16 +24,19 @@ namespace EDEngineer.Utils
 
         public string SearchText
         {
-            get { return searchText?.Trim(); }
+            get { return searchText; }
             set
             {
                 if (searchText != value)
                 {
                     searchText = value;
+                    trimmedSearchText = value?.Trim();
                     OnPropertyChanged();
                 }
             }
         }
+
+        private string trimmedSearchText;
 
         public BlueprintFilters(ILanguage language, IReadOnlyCollection<Blueprint> availableBlueprints)
         {
@@ -225,8 +228,8 @@ namespace EDEngineer.Utils
             {
                 var blueprint = (Blueprint)e.Item;
 
-                var satisfySearchText = string.IsNullOrWhiteSpace(SearchText) ||
-                                        SearchText.Split(' ').All(t => 
+                var satisfySearchText = string.IsNullOrWhiteSpace(trimmedSearchText) ||
+                                        trimmedSearchText.Split(' ').All(t => 
                                         blueprint.SearchableContent.IndexOf(t.Trim(),
                                             StringComparison.InvariantCultureIgnoreCase) >= 0);
 

@@ -617,7 +617,7 @@
                              Grid.Row="1"
                              Grid.Column="2"
                              FontSize="12"
-                             Text="{Binding Filters.SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Delay=200}"
+                             Text="{Binding Filters.SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Delay=500}"
                              Style="{StaticResource PlaceHolderStyle}"
                              Tag="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Search', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                              ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
