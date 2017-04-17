@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.6.7",
+    "Content": "* Added a search box for blueprints:\r\nSearch visible blueprints (the ones that already satisfy your active filters) with terms separated by a space.\r\nExamples :\r\n>\"elvira shield 3\"\r\n>\"mc 5 efficient\"\r\n>\"plasma\"\r\n\r\n* Fixed a bug with the shopping list that would occur if you emptied it after resizing it (remember to double click the red splitter to make it behave like a magnet)"
+  },
+  {
     "Version": "1.0.6.6",
     "Content": "* Fixed an issue that made the application crash upon starting the game after EDEngineer.\r\n* Removed Tiara Fortune from the engineers that can craft Surface Scanner blueprints after grade 3, thanks to @Thurion for spotting the issue and fixing this!\r\nIssues in blueprint can be fixed pretty quickly so if you find any wrong information, you can report it and even fix it for every user :)"
   },

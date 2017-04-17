@@ -54,7 +54,6 @@
             <converters:FilterToLabelConverter x:Key="FilterToLabel" />
             <converters:AllFiltersToHeaderConverter x:Key="AllFiltersToHeader" />
             <converters:InstantToStringConverter x:Key="InstantToString" />
-            <converters:BlueprintNameShortener x:Key="BlueprintNameShortener" />
             <converters:IntegerToVisibilityConverter x:Key="IntegerToVisibility" />
             <converters:IntOrNullConverter x:Key="IntOrNull" />
             <converters:IntegerToVisibilityConverterReversed x:Key="IntegerToVisibilityReversed" />
@@ -685,16 +684,20 @@
                                                 RelativeSource={RelativeSource TemplatedParent}, 
                                                 Mode=TwoWay,
                                                 UpdateSourceTrigger=PropertyChanged}"
-                                 x:Name="textSource" 
-                                 Background="Transparent" 
-                                 Panel.ZIndex="2" />
-                                <TextBox Text="{TemplateBinding Tag}" Background="{TemplateBinding Background}" Panel.ZIndex="1">
+                                         Padding="5,0,0,0"
+                                         VerticalContentAlignment="Center"
+                                         x:Name="textSource" 
+                                         Background="Transparent" 
+                                         Panel.ZIndex="2" />
+                                <TextBox Text="{TemplateBinding Tag}" Background="{TemplateBinding Background}" Panel.ZIndex="1" Padding="5,0,0,0">
                                     <TextBox.Style>
                                         <Style TargetType="{x:Type TextBox}">
                                             <Setter Property="Foreground" Value="Transparent"/>
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding Path=Text, Source={x:Reference textSource}}" Value="">
                                                     <Setter Property="Foreground" Value="LightGray"/>
+                                                    <Setter Property="FontStyle" Value="Italic"/>
+                                                    <Setter Property="VerticalContentAlignment" Value="Center"/>
                                                 </DataTrigger>
                                             </Style.Triggers>
                                         </Style>

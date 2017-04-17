@@ -147,7 +147,6 @@
     <Compile Include="Views\CommanderToasts.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
-    <Compile Include="Converters\BlueprintNameShortener.cs" />
     <Compile Include="Converters\BooleanToOpacityConverter.cs" />
     <Compile Include="Converters\BooleanToSpecialColorConverter.cs" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />

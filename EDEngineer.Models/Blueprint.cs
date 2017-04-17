@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
 using EDEngineer.Models.Utils;
 using Newtonsoft.Json;
 
@@ -14,11 +15,39 @@ namespace EDEngineer.Models
         private bool favorite;
         private bool ignored;
         private int shoppingListCount;
-        public string Type { get; set; }
-        public string BlueprintName { get; set; }
-        public IReadOnlyCollection<string> Engineers { get; set; }
-        public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; set; }
-        public int Grade { get; set; }
+        public string Type { get; }
+
+        public string ShortenedType
+        {
+            get
+            {
+                switch (Type)
+                {
+                    case "Electronic Countermeasure":
+                        return "ECM";
+                    case "Hull Reinforcement Package":
+                        return "Hull";
+                    case "Frame Shift Drive Interdictor":
+                        return "FSD Interdictor";
+                    case "Prospector Limpet Controller":
+                        return "Prospector LC";
+                    case "Fuel Transfer Limpet Controller":
+                        return "Fuel Transfer LC";
+                    case "Hatch Breaker Limpet Controller":
+                        return "Hatch Breaker LC";
+                    case "Collector Limpet Controller":
+                        return "Collector LC";
+                    case "Auto Field-Maintenance Unit":
+                        return "AFMU";
+                    default:
+                        return Type;
+                }
+            }
+        }
+        public string BlueprintName { get; }
+        public IReadOnlyCollection<string> Engineers { get; }
+        public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; }
+        public int Grade { get; }
 
         [JsonIgnore]
         public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";
@@ -43,14 +72,25 @@ namespace EDEngineer.Models
             }
         }
 
+        public string SearchableContent { get; }
+
         public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {
             this.language = language;
+
             Type = type;
             BlueprintName = blueprintName;
             Grade = grade;
             Engineers = engineers;
             Ingredients = ingredients;
+
+            var builder = new StringBuilder();
+            builder.Append(language.Translate(ShortenedType) + "|");
+            builder.Append(language.Translate(Type) + "|");
+            builder.Append(language.Translate(BlueprintName) + "|");
+            builder.Append("G" + Grade + "|");
+            builder.Append(string.Join("|", Engineers) + "|");
+            SearchableContent = builder.ToString();
 
             foreach (var ingredient in Ingredients)
             {

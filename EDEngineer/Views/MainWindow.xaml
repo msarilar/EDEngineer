@@ -488,6 +488,7 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -612,23 +613,24 @@
                         </controls:DropDownButton.ItemTemplate>
                     </controls:DropDownButton>
 
-                    <Grid Grid.Row="1"
-                          Grid.Column="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <Button Grid.Column="0"
-                                HorizontalAlignment="Stretch"
-                                IsEnabled="{Binding HighlightedEntryData.Count, Converter={StaticResource IntToEnabled}}"
-                                Click="UnhighlightAllButtonClicked"
-                                Style="{DynamicResource ChromelessButtonStyle}"
-                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unhighlight all ingredients', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
-                                x:Name="UnhighlightAllButton">
-                            <iconPacks:PackIconMaterial Kind="BlockHelper" Foreground="{StaticResource NotZeroBrush}" />
-                        </Button>
-                        <Button Grid.Column="1"
+                    <TextBox x:Name="SearchBox"
+                             Grid.Row="1"
+                             Grid.Column="2"
+                             FontSize="12"
+                             Text="{Binding Filters.SearchText, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Delay=200}"
+                             Style="{StaticResource PlaceHolderStyle}"
+                             Tag="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Search', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                             ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
+
+                    <Grid Grid.Row="0"
+                          Grid.RowSpan="2"
+                          Grid.Column="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button Grid.Row="0"
                                 HorizontalAlignment="Stretch"
                                 Click="CheckAllButtonClicked"
                                 Style="{DynamicResource ChromelessButtonStyle}"
@@ -636,13 +638,22 @@
                                 x:Name="CheckAllButton">
                             <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrangeBrush}" />
                         </Button>
-                        <Button Grid.Column="2"
+                        <Button Grid.Row="1"
                                 HorizontalAlignment="Stretch"
                                 Click="UncheckAllButtonClicked"
                                 Style="{DynamicResource ChromelessButtonStyle}"
                                 ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Uncheck all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                 x:Name="UncheckAllButton">
                             <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrangeBrush}" />
+                        </Button>
+                        <Button Grid.Row="2"
+                                HorizontalAlignment="Stretch"
+                                IsEnabled="{Binding HighlightedEntryData.Count, Converter={StaticResource IntToEnabled}}"
+                                Click="UnhighlightAllButtonClicked"
+                                Style="{DynamicResource ChromelessButtonStyle}"
+                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unhighlight all ingredients', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                                x:Name="UnhighlightAllButton">
+                            <iconPacks:PackIconMaterial Kind="BlockHelper" Foreground="{StaticResource NotZeroBrush}" />
                         </Button>
                     </Grid>
 
@@ -862,8 +873,7 @@
                                                 SortMemberPath="TranslatedType">
                                 <DataGridTextColumn.Binding>
                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Plasma Accelerator">
-                                        <Binding Path="Type"
-                                                 Converter="{StaticResource BlueprintNameShortener}"/>
+                                        <Binding Path="ShortenedType"/>
                                         <Binding Path="DataContext.Languages.CurrentLanguage"
                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                     </MultiBinding>

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
@@ -14,11 +15,25 @@ namespace EDEngineer.Utils
 {
     public class BlueprintFilters : INotifyPropertyChanged
     {
+        private string searchText;
         public List<GradeFilter> GradeFilters { get; }
         public List<EngineerFilter> EngineerFilters { get; }
         public List<TypeFilter> TypeFilters { get; }
         public List<IgnoredFavoriteFilter> IgnoredFavoriteFilters { get; }
         public List<CraftableFilter> CraftableFilters { get; }
+
+        public string SearchText
+        {
+            get { return searchText; }
+            set
+            {
+                if (searchText != value)
+                {
+                    searchText = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public BlueprintFilters(ILanguage language, IReadOnlyCollection<Blueprint> availableBlueprints)
         {
@@ -156,6 +171,14 @@ namespace EDEngineer.Utils
 
         public void Monitor(CollectionViewSource source, IEnumerable<Entry> entries, ObservableCollection<Entry> highlightedEntryData)
         {
+            PropertyChanged += (o, e) =>
+            {
+                if (e.PropertyName == nameof(SearchText))
+                {
+                    source.View.Refresh();
+                }
+            };
+
             foreach (var filter in AllFilters)
             {
                 filter.PropertyChanged += (o, e) =>
@@ -201,11 +224,18 @@ namespace EDEngineer.Utils
             source.Filter += (o,e) =>
             {
                 var blueprint = (Blueprint)e.Item;
+
+                var satisfySearchText = string.IsNullOrWhiteSpace(SearchText) ||
+                                        SearchText.Split(' ').All(t => 
+                                        blueprint.SearchableContent.IndexOf(t.Trim(),
+                                            StringComparison.InvariantCultureIgnoreCase) >= 0);
+
                 var satisfyHighlightedFilters = !highlightedEntryData.Any() ||
                                                 highlightedEntryData.Intersect(
                                                     blueprint.Ingredients.Select(i => i.Entry)).Any();
 
-                var ret = satisfyHighlightedFilters &&
+                var ret = satisfySearchText &&
+                          satisfyHighlightedFilters &&
                           GradeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           EngineerFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           TypeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
