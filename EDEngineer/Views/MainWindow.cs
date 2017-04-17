@@ -90,7 +90,14 @@ namespace EDEngineer.Views
 
             if (SettingsManager.SilentLaunch)
             {
-                Opacity = 0.001;
+                if (Properties.Settings.Default.WindowUnlocked)
+                {
+                    WindowState = WindowState.Minimized;
+                }
+                else
+                {
+                    Opacity = 0.001;
+                }
             }
         }
 
