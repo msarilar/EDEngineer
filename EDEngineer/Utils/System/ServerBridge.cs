@@ -56,7 +56,11 @@ namespace EDEngineer.Utils.System
 
             Task.Factory.StartNew(() =>
             {
-                Server.start(cts.Token, port, viewModel.Languages, () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State));
+                Server.start(cts.Token,
+                    port,
+                    viewModel.Languages,
+                    () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State),
+                    () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList.Composition));
             }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default);
 
             Running = true;

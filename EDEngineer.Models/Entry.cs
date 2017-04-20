@@ -73,7 +73,6 @@ namespace EDEngineer.Models
             }
         }
 
-        [JsonIgnore]
         public int? Threshold
         {
             get { return threshold; }

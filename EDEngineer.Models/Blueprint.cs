@@ -215,5 +215,21 @@ namespace EDEngineer.Models
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public object ToSerializable()
+        {
+            return new
+            {
+                BlueprintName,
+                Type,
+                Grade, Engineers,
+                Ingredients = Ingredients.Select(i => new
+                {
+                    i.Size,
+                    i.Entry.Data.Name,
+                    i.Entry.Data.Kind
+                })
+            };
+        }
     }
 }

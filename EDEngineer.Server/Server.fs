@@ -20,6 +20,10 @@ open EDEngineer.Models
 
 type Format = Json | Xml | Csv
 type cargoType = { Kind: string; Name: string; Count: int }
+type ShoppingListItem = {
+    Blueprint:Object;
+    Count:int;
+}
 
 let inline (|?) (a) b = if a = null then b else a  
 
@@ -48,7 +52,7 @@ type CmdrBuilder() =
 
 let cmdr = CmdrBuilder()
 
-let start (token, port, translator:ILanguage, state:Func<IDictionary<string, State>>) =
+let start (token, port, translator:ILanguage, state:Func<IDictionary<string, State>>, shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>) =
 
   let JsonConfig = fun lang -> 
     let settings = new JsonSerializerSettings (ContractResolver = new LocalizedContractResolver(translator, lang))
@@ -79,11 +83,15 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                                                   |> Seq.map (fun e -> { Kind = e.Data.Kind.ToString(); Name = e.Data.Name; Count = e.Count })
                                                   |> List.ofSeq
 
-  let commanderRoute = fun commander ->
-                         match state.Invoke().TryGetValue(commander) with
-                         | (true, state) -> Found state
-                         | (false, _)    -> NotFound commander
+  let stateRoute = fun commander ->
+                     match state.Invoke().TryGetValue(commander) with
+                     | (true, state) -> Found state
+                     | (false, _)    -> NotFound commander
 
+  let shoppingListRoute = fun commander ->
+                            match shopppingLists.Invoke().TryGetValue(commander) with
+                            | (true, state) -> Found state
+                            | (false, _)    -> NotFound commander
 
   let timeRoute = function
                   | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
@@ -176,7 +184,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
         pathScan "/%s/cargo%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
-              let! s = commanderRoute commander
+              let! s = stateRoute commander
               let! f = FormatExtractor request format
               let! l = LanguageExtractor <| request.queryParam "lang"
               return ((s, None) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
@@ -185,7 +193,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
         pathScan "/%s/materials%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
-                let! s = commanderRoute commander
+                let! s = stateRoute commander
                 let! f = FormatExtractor request format
                 let! l = LanguageExtractor <| request.queryParam "lang"
                 return ((s, Some(Kind.Material)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
@@ -194,7 +202,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
         pathScan "/%s/data%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
-                let! s = commanderRoute commander
+                let! s = stateRoute commander
                 let! f = FormatExtractor request format
                 let! l = LanguageExtractor <| request.queryParam "lang"
                 return ((s, Some(Kind.Data)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
@@ -203,10 +211,22 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
         pathScan "/%s/commodities%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
-                let! s = commanderRoute commander
+                let! s = stateRoute commander
                 let! f = FormatExtractor request format
                 let! l = LanguageExtractor <| request.queryParam "lang"
                 return ((s, Some(Kind.Commodity)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
+
+        pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
+          let toShoppingListItem (i:Tuple<Blueprint, int>) =
+            { Blueprint = i.Item1.ToSerializable(); Count = i.Item2 }
+
+          (request(fun request ->
+            cmdr {
+                let! s = shoppingListRoute commander
+                let! f = FormatExtractor request format
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/%s/operations%s" (fun (commander, format) ->
@@ -216,7 +236,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                                   | Choice2Of2 other -> None
 
             cmdr {
-              let! state = commanderRoute commander
+              let! state = stateRoute commander
               let! f = FormatExtractor request format
               let! timestamp = timeRoute timestampString
               let! l = LanguageExtractor <| request.queryParam "lang"
