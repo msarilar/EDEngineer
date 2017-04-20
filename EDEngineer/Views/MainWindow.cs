@@ -23,8 +23,6 @@ using EDEngineer.Views.Popups;
 using Application = System.Windows.Application;
 using Button = System.Windows.Controls.Button;
 using DataGridCell = System.Windows.Controls.DataGridCell;
-using NotificationSettingsWindow = EDEngineer.Views.Notifications.NotificationSettingsWindow;
-using ThresholdsManagerWindow = EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow;
 
 namespace EDEngineer.Views
 {
@@ -162,11 +160,6 @@ namespace EDEngineer.Views
                 {
                     HideWindow();
                     ThresholdsManagerWindow.ShowThresholds(viewModel.Languages, viewModel.CurrentCommander.Value.State.Cargo, viewModel.CurrentCommander.Key);
-                },
-                (o, e) =>
-                {
-                    HideWindow();
-                    new NotificationSettingsWindow(viewModel.Languages).Show();
                 });
 
             try

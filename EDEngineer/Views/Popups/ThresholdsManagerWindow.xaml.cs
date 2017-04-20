@@ -7,7 +7,7 @@ using EDEngineer.Models;
 using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Utils.System;
 
-namespace EDEngineer.Views.Popups.Thresholds
+namespace EDEngineer.Views.Popups
 {
     /// <summary>
     /// Interaction logic for ErrorWindow.xaml

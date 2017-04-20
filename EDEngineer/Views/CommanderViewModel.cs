@@ -14,11 +14,9 @@ using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
-using EDEngineer.Views.Notifications;
 using EDEngineer.Views.Popups;
 using Newtonsoft.Json;
 using NodaTime;
-using ThresholdsManagerWindow = EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow;
 
 namespace EDEngineer.Views
 {
@@ -37,7 +35,7 @@ namespace EDEngineer.Views
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
         private ShoppingListViewModel shoppingList;
-        private readonly CommanderNotifications commanderNotifications;
+        private readonly CommanderToasts commanderToasts;
 
         public Instant LastUpdate
         {
@@ -60,7 +58,7 @@ namespace EDEngineer.Views
 
         private void LoadState(IEnumerable<string> events)
         {
-            commanderNotifications?.UnsubscribeToasts();
+            commanderToasts?.UnsubscribeToasts();
             State.InitLoad();
             // Clear state:
             
@@ -69,7 +67,7 @@ namespace EDEngineer.Views
 
             ApplyEventsToSate(events);
             ThresholdsManagerWindow.InitThresholds(State.Cargo);
-            commanderNotifications?.SubscribeToasts();
+            commanderToasts?.SubscribeToasts();
 
             State.Cargo.RefreshSort();
             State.CompleteLoad();
@@ -84,7 +82,7 @@ namespace EDEngineer.Views
             State = new State(entryDatas, languages, SettingsManager.Comparer);
             if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
             {
-                commanderNotifications = new CommanderNotifications(State);
+                commanderToasts = new CommanderToasts(State, CommanderName);
             }
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
@@ -321,7 +319,7 @@ namespace EDEngineer.Views
 
         public void Dispose()
         {
-            commanderNotifications?.Dispose();
+            commanderToasts?.Dispose();
         }
 
         public void ToggleHighlight(Entry entry)

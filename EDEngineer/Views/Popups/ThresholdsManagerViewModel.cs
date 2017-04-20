@@ -11,7 +11,7 @@ using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Models.Utils.Json;
 using EDEngineer.Utils;
 
-namespace EDEngineer.Views.Popups.Thresholds
+namespace EDEngineer.Views.Popups
 {
     public class ThresholdsManagerViewModel : INotifyPropertyChanged
     {

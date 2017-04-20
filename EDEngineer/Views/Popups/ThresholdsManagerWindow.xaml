@@ -1,4 +1,4 @@
-﻿<controls:MetroWindow x:Class="EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow"
+﻿<controls:MetroWindow x:Class="EDEngineer.Views.Popups.ThresholdsManagerWindow"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"

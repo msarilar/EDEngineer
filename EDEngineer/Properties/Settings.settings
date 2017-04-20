@@ -53,8 +53,11 @@
     <Setting Name="Language" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="NotificationKindCargoAlmostFull" Type="System.String" Scope="User">
-      <Value Profile="(Default)">None</Value>
+    <Setting Name="BlueprintReadyToastEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CargoAlmostFullWarningEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="AutoRunServer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -74,17 +77,14 @@
     <Setting Name="Thresholds" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="NotificationKindThresholdReached" Type="System.String" Scope="User">
-      <Value Profile="(Default)">None</Value>
+    <Setting Name="ThresholdWarningEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Comparer" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="SilentLaunch" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="NotificationKindBlueprintReady" Type="System.String" Scope="User">
-      <Value Profile="(Default)">None</Value>
     </Setting>
   </Settings>
 </SettingsFile>

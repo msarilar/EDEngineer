@@ -16408,7 +16408,7 @@
     "Grade": 5
   },
   {
-    "Type": "Unlock",
+    "Type": "unlock",
     "Name": "The Sarge",
     "Engineers": [ "The Sarge" ],
     "Ingredients": [ 
@@ -16420,7 +16420,7 @@
     "Grade": 1
   },
   {
-    "Type": "Unlock",
+    "Type": "unlock",
     "Name": "Bill Turner",
     "Engineers": [ "Bill Turner" ],
     "Ingredients": [
@@ -16432,7 +16432,7 @@
     "Grade": 1
   },
   {
-    "Type": "Unlock",
+    "Type": "unlock",
     "Name": "Ram Tah",
     "Engineers": [ "Ram Tah" ],
     "Ingredients": [
@@ -16444,7 +16444,7 @@
     "Grade": 1
   },
   {
-    "Type": "Unlock",
+    "Type": "unlock",
     "Name": "Tiana Fortune",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
@@ -16456,7 +16456,7 @@
     "Grade": 1
   },
   {
-    "Type": "Unlock",
+    "Type": "unlock",
     "Name": "Marco Qwent",
     "Engineers": [ "Marco Qwent" ],
     "Ingredients": [
@@ -16468,7 +16468,7 @@
     "Grade": 1
   },
   {
-    "Type": "Unlock",
+    "Type": "unlock",
     "Name": "Professor Palin",
     "Engineers": [ "Professor Palin" ],
     "Ingredients": [

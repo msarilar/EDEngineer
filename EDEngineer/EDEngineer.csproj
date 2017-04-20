@@ -115,7 +115,6 @@
     <Reference Include="System.Runtime">
       <HintPath>Resources\Dll\System.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="System.Speech" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
@@ -140,14 +139,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Converters\BooleanToEnumConverter.cs" />
     <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Converters\IntToEnabledConverter.cs" />
-    <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
     <Compile Include="Converters\ThresholdToBackgroundColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
-    <Compile Include="Views\Notifications\CommanderNotifications.cs" />
+    <Compile Include="Views\CommanderToasts.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
     <Compile Include="Converters\BooleanToOpacityConverter.cs" />
@@ -163,15 +160,8 @@
     <Compile Include="Converters\OriginToControlTemplateConverter.cs" />
     <Compile Include="Converters\RarityToIconConverter.cs" />
     <Compile Include="DesignTime\DesignViewModel.cs" />
-    <Compile Include="Views\Notifications\Notification.cs" />
-    <Compile Include="Views\Notifications\NotificationContentKind.cs" />
-    <Compile Include="Views\Notifications\NotificationKind.cs" />
-    <Compile Include="Views\Notifications\NotificationSettingsWindow.xaml.cs">
-      <DependentUpon>NotificationSettingsWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Notifications\NotificationSettingsViewModel.cs" />
-    <Compile Include="Views\Popups\Thresholds\ThresholdsManagerViewModel.cs" />
-    <Compile Include="Views\Popups\Thresholds\ThresholdsManagerWindow.xaml.cs">
+    <Compile Include="Views\Popups\ThresholdsManagerViewModel.cs" />
+    <Compile Include="Views\Popups\ThresholdsManagerWindow.xaml.cs">
       <DependentUpon>ThresholdsManagerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Popups\ErrorWindow.xaml.cs">
@@ -203,11 +193,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Notifications\NotificationSettingsWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Popups\Thresholds\ThresholdsManagerWindow.xaml">
+    <Page Include="Views\Popups\ThresholdsManagerWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -341,7 +327,6 @@
       <Name>EDEngineer.Server</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

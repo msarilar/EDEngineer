@@ -226,13 +226,25 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("None")]
-        public string NotificationKindCargoAlmostFull {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool BlueprintReadyToastEnabled {
             get {
-                return ((string)(this["NotificationKindCargoAlmostFull"]));
+                return ((bool)(this["BlueprintReadyToastEnabled"]));
             }
             set {
-                this["NotificationKindCargoAlmostFull"] = value;
+                this["BlueprintReadyToastEnabled"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool CargoAlmostFullWarningEnabled {
+            get {
+                return ((bool)(this["CargoAlmostFullWarningEnabled"]));
+            }
+            set {
+                this["CargoAlmostFullWarningEnabled"] = value;
             }
         }
         
@@ -309,13 +321,13 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("None")]
-        public string NotificationKindThresholdReached {
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ThresholdWarningEnabled {
             get {
-                return ((string)(this["NotificationKindThresholdReached"]));
+                return ((bool)(this["ThresholdWarningEnabled"]));
             }
             set {
-                this["NotificationKindThresholdReached"] = value;
+                this["ThresholdWarningEnabled"] = value;
             }
         }
         
@@ -340,18 +352,6 @@ namespace EDEngineer.Properties {
             }
             set {
                 this["SilentLaunch"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("None")]
-        public string NotificationKindBlueprintReady {
-            get {
-                return ((string)(this["NotificationKindBlueprintReady"]));
-            }
-            set {
-                this["NotificationKindBlueprintReady"] = value;
             }
         }
     }

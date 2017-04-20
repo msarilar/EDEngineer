@@ -18,8 +18,7 @@ namespace EDEngineer.Utils.UI
             bool serverRunning,
             EventHandler showReleaseNotesHandler,
             string version,
-            EventHandler configureThresholdsHandler,
-            EventHandler configureNotificationsHandler)
+            EventHandler configureThresholdsHandler)
         {
             var menu = BuildContextMenu(showHandler,
                 quitHandler,
@@ -31,8 +30,7 @@ namespace EDEngineer.Utils.UI
                 serverRunning,
                 showReleaseNotesHandler,
                 version,
-                configureThresholdsHandler,
-                configureNotificationsHandler);
+                configureThresholdsHandler);
             
             var icon = new NotifyIcon
             {
@@ -60,8 +58,7 @@ namespace EDEngineer.Utils.UI
             bool serverRunning,
             EventHandler showReleaseNotesHandler,
             string version,
-            EventHandler configureThresholdsHandler,
-            EventHandler configureNotificationsHandler)
+            EventHandler configureThresholdsHandler)
         {
             var translator = Languages.Instance;
 
@@ -83,9 +80,6 @@ namespace EDEngineer.Utils.UI
             var configureThresholdsItem = new MenuItem();
             configureThresholdsItem.Click += configureThresholdsHandler;
 
-            var configureNotificationsItem = new MenuItem();
-            configureNotificationsItem.Click += configureNotificationsHandler;
-
             var helpItem = new MenuItem();
             helpItem.Click += (o,e) => Process.Start("https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues");
 
@@ -94,6 +88,42 @@ namespace EDEngineer.Utils.UI
             releaseNotesItem.Text = $"v{version}";
 
             var quitItem = new MenuItem();
+ 
+            var enableBlueprintReadyItem = new MenuItem
+            {
+                Checked = SettingsManager.BlueprintReadyToastEnabled && Environment.OSVersion.Version >= new Version(6, 2, 9200, 0),
+                Enabled = Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)
+            };
+
+            enableBlueprintReadyItem.Click += (o, e) =>
+            {
+                enableBlueprintReadyItem.Checked = !enableBlueprintReadyItem.Checked;
+                SettingsManager.BlueprintReadyToastEnabled = enableBlueprintReadyItem.Checked;
+            };
+
+            var enableCargoFullWarningItem = new MenuItem
+            {
+                Checked = SettingsManager.CargoAlmostFullWarningEnabled && Environment.OSVersion.Version >= new Version(6, 2, 9200, 0),
+                Enabled = Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)
+            };
+
+            enableCargoFullWarningItem.Click += (o, e) =>
+            {
+                enableCargoFullWarningItem.Checked = !enableCargoFullWarningItem.Checked;
+                SettingsManager.CargoAlmostFullWarningEnabled = enableCargoFullWarningItem.Checked;
+            };
+
+            var enableThresholdWarningItem = new MenuItem
+            {
+                Checked = SettingsManager.ThresholdWarningEnabled && Environment.OSVersion.Version >= new Version(6, 2, 9200, 0),
+                Enabled = Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)
+            };
+
+            enableThresholdWarningItem.Click += (o, e) =>
+            {
+                enableThresholdWarningItem.Checked = !enableThresholdWarningItem.Checked;
+                SettingsManager.ThresholdWarningEnabled = enableThresholdWarningItem.Checked;
+            };
 
             var enableSilentLaunch = new MenuItem
             {
@@ -116,10 +146,10 @@ namespace EDEngineer.Utils.UI
                 launchServerItem.Checked = launchServerHandler();
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem);
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem, enableSilentLaunch);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, enableBlueprintReadyItem, enableCargoFullWarningItem, launchServerItem, configureThresholdsItem, enableThresholdWarningItem, enableSilentLaunch);
             };
 
             quitItem.Click += quitHandler;
@@ -129,7 +159,9 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(unlockItem);
             menu.MenuItems.Add(resetItem);
             menu.MenuItems.Add("-");
-            menu.MenuItems.Add(configureNotificationsItem);
+            menu.MenuItems.Add(enableCargoFullWarningItem);
+            menu.MenuItems.Add(enableBlueprintReadyItem);
+            menu.MenuItems.Add(enableThresholdWarningItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(enableSilentLaunch);
             menu.MenuItems.Add(setShortCutItem);
@@ -146,8 +178,8 @@ namespace EDEngineer.Utils.UI
 
         private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
                                          MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem,
-                                         MenuItem launchServerItem, MenuItem configureThresholdsItem, MenuItem enableSilentLaunch,
-                                         MenuItem configureNotificationsItem)
+                                         MenuItem enableToastsItem, MenuItem enableCargoFullWarningItem, MenuItem launchServerItem,
+                                         MenuItem configureThresholdsItem, MenuItem enableThresholdWarningItem, MenuItem enableSilentLaunch)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -156,11 +188,12 @@ namespace EDEngineer.Utils.UI
             resetItem.Text = translator.Translate("Reset Window Position");
             unlockItem.Text = translator.Translate("Toggle Window Mode (Locked/Unlocked)");
             showItem.Text = translator.Translate("Show");
+            enableToastsItem.Text = translator.Translate("Blueprint Ready");
+            enableCargoFullWarningItem.Text = translator.Translate("Cargo Almost Full Warning");
             launchServerItem.Text = translator.Translate("Launch Local API");
             configureThresholdsItem.Text = translator.Translate("Configure Thresholds");
+            enableThresholdWarningItem.Text = translator.Translate("Threshold Reached Warning");
             enableSilentLaunch.Text = translator.Translate("Silent Launch");
-            configureNotificationsItem.Text = translator.Translate("Configure Notifications");
-            
         }
     }
 }

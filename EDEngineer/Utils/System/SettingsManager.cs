@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Forms;
 using EDEngineer.Models;
-using EDEngineer.Views.Notifications;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Utils.System
@@ -69,6 +67,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool BlueprintReadyToastEnabled
+        {
+            get { return Properties.Settings.Default.BlueprintReadyToastEnabled; }
+            set
+            {
+                Properties.Settings.Default.BlueprintReadyToastEnabled = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static bool SilentLaunch
         {
             get { return Properties.Settings.Default.SilentLaunch; }
@@ -79,47 +87,22 @@ namespace EDEngineer.Utils.System
             }
         }
 
-        public static NotificationKind NotificationKindBlueprintReady
+        public static bool CargoAlmostFullWarningEnabled
         {
-            get
-            {
-                return
-                    (NotificationKind)
-                        Enum.Parse(typeof (NotificationKind), Properties.Settings.Default.NotificationKindBlueprintReady);
-            }
+            get { return Properties.Settings.Default.CargoAlmostFullWarningEnabled; }
             set
             {
-                Properties.Settings.Default.NotificationKindBlueprintReady = value.ToString("G");
+                Properties.Settings.Default.CargoAlmostFullWarningEnabled = value;
                 Properties.Settings.Default.Save();
             }
         }
 
-        public static NotificationKind NotificationKindCargoAlmostFull
+        public static bool ThresholdWarningEnabled
         {
-            get
-            {
-                return
-                    (NotificationKind)
-                        Enum.Parse(typeof(NotificationKind), Properties.Settings.Default.NotificationKindCargoAlmostFull);
-            }
+            get { return Properties.Settings.Default.ThresholdWarningEnabled; }
             set
             {
-                Properties.Settings.Default.NotificationKindCargoAlmostFull = value.ToString("G");
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        public static NotificationKind NotificationKindThresholdReached
-        {
-            get
-            {
-                return
-                    (NotificationKind)
-                        Enum.Parse(typeof(NotificationKind), Properties.Settings.Default.NotificationKindThresholdReached);
-            }
-            set
-            {
-                Properties.Settings.Default.NotificationKindThresholdReached = value.ToString("G");
+                Properties.Settings.Default.ThresholdWarningEnabled = value;
                 Properties.Settings.Default.Save();
             }
         }
