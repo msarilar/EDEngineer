@@ -28,12 +28,16 @@ namespace EDEngineer.Models
         private static readonly Dictionary<string, Origin> originMapping = new Dictionary<string, Origin>()
         {
             ["Mining"] = Origin.Mining,
-            ["Mission reward"] = Origin.Mission,
             ["Mining (ice rings)"] = Origin.Mining,
-            ["Ship salvage (transport ships)"] = Origin.Salvage,
-            ["Surface POI"] = Origin.Surface,
-            ["Signal source"] = Origin.Scan,
+
+            ["Mission reward"] = Origin.Mission,
+
             ["Ship salvage (combat ships)"] = Origin.Salvage,
+            ["Ship salvage (military & authority ships)"] = Origin.Salvage,
+            ["Ship salvage (transport ships)"] = Origin.Salvage,
+
+            ["High wake scanning"] = Origin.Scan,
+            ["Signal source"] = Origin.Scan,
             ["Signal source (high security)"] = Origin.Scan,
             ["Signal source (anarchy)"] = Origin.Scan,
             ["Signal source (low security)"] = Origin.Scan,
@@ -43,15 +47,18 @@ namespace EDEngineer.Models
             ["Signal source (High grade emissions, War/Civil war)"] = Origin.Scan,
             ["Signal source (High grade emissions, Outbreak)"] = Origin.Scan,
             ["Signal source (High grade emissions, Boom)"] = Origin.Scan,
-            ["Ship salvage (military & authority ships)"] = Origin.Salvage,
             ["Ship scanning"] = Origin.Scan,
             ["Ship scanning (combat ships)"] = Origin.Scan,
             ["Ship scanning (transport ships)"] = Origin.Scan,
+
             ["Surface data point"] = Origin.Surface,
             ["Surface prospecting"] = Origin.Surface,
+            ["Surface POI"] = Origin.Surface,
+
             ["Deep space data beacon"] = Origin.Scan,
+
             ["Destroyed Unknown Artefact"] = Origin.Unknown,
-            ["High wake scanning"] = Origin.Scan,
+
             ["Markets"] = Origin.Market,
             ["Markets near Akhenaten (High Tech/Refinery)"] = Origin.Market,
             ["Markets near Stafkarl (Industrial/Refinery)"] = Origin.Market,
@@ -64,6 +71,7 @@ namespace EDEngineer.Models
             ["Markets near Cilbien Zu (Industrial/Extraction)"] = Origin.Market,
             ["Markets near Heget (Industrial/Extraction)"] = Origin.Market,
             ["Markets near Eurybia (Extraction/Refinery)"] = Origin.Market,
+
             ["Needed for Marco Qwent (25)"] = Origin.NeededForEngineer,
             ["Needed for Ram Tah (50)"] = Origin.NeededForEngineer,
             ["Needed for Professor Palin (25)"] = Origin.NeededForEngineer,
