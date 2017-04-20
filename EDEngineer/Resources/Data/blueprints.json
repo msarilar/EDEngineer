@@ -16408,62 +16408,74 @@
     "Grade": 5
   },
   {
-    "Type": "The Sarge",
-    "Name": "unlock",
+    "Type": "unlock",
+    "Name": "The Sarge",
     "Engineers": [ "@Unlock" ],
-    "Ingredients": [
-    "Name": "Aberrant Shield Pattern Analysis",
-    "Size": 50
+    "Ingredients": [ 
+       {
+         "Name": "Aberrant Shield Pattern Analysis",
+         "Size": 50
+       }
     ],
     "Grade": 1
   },
   {
-    "Type": "Bill Turner",
-    "Name": "unlock",
+    "Type": "unlock",
+    "Name": "Bill Turner",
     "Engineers": [ "@Unlock" ],
     "Ingredients": [
-    "Name": "Bromellite",
-    "Size": 50
+	    {
+    		"Name": "Bromellite",
+    		"Size": 50
+	    }
     ],
     "Grade": 1
   },
   {
-    "Type": "Ram Tah",
-    "Name": "unlock",
+    "Type": "unlock",
+    "Name": "Ram Tah",
     "Engineers": [ "@Unlock" ],
     "Ingredients": [
-    "Name": "Classified Scan Databanks",
-    "Size": 50
+      {
+        "Name": "Classified Scan Databanks",
+        "Size": 50
+      }
     ],
     "Grade": 1
   },
   {
-    "Type": "Tiana Fortune",
-    "Name": "unlock",
+    "Type": "unlock",
+    "Name": "Tiana Fortune",
     "Engineers": [ "@Unlock" ],
     "Ingredients": [
-    "Name": "Decoded Emission Data",
-    "Size": 50
+      {
+        "Name": "Decoded Emission Data",
+        "Size": 50
+      }
     ],
     "Grade": 1
   },
   {
-    "Type": "Marco Qwent",
-    "Name": "unlock",
+    "Type": "unlock",
+    "Name": "Marco Qwent",
     "Engineers": [ "@Unlock" ],
     "Ingredients": [
-    "Name": "Modular Terminals",
-    "Size": 25
+      {
+        "Name": "Modular Terminals",
+        "Size": 25
+      }
     ],
     "Grade": 1
   },
   {
-    "Type": "Professor Palin",
-    "Name": "unlock",
+    "Type": "unlock",
+    "Name": "Professor Palin",
     "Engineers": [ "@Unlock" ],
     "Ingredients": [
-    "Name": "Unknown Fragment",
-    "Size": 25
+      {
+        "Name": "Unknown Fragment",
+        "Size": 25
+      }
     ],
     "Grade": 1
   }
