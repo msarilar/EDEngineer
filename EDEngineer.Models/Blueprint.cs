@@ -222,13 +222,7 @@ namespace EDEngineer.Models
             {
                 BlueprintName,
                 Type,
-                Grade, Engineers,
-                Ingredients = Ingredients.Select(i => new
-                {
-                    i.Size,
-                    i.Entry.Data.Name,
-                    i.Entry.Data.Kind
-                })
+                Grade
             };
         }
     }

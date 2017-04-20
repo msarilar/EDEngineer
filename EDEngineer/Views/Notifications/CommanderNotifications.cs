@@ -134,7 +134,7 @@ namespace EDEngineer.Views.Notifications
                 {
                     notification = new Notification(NotificationContentKind.BlueprintReady,
                         Languages.Instance.Translate("Multiple Blueprints Ready"),
-                        string.Format(Languages.Instance.Translate("{0} Blueprints are available to craft!"),
+                        string.Format(Languages.Instance.Translate("{0} blueprints are available to craft!"),
                             items.Count));
                 }
                 else

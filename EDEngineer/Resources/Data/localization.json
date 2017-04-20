@@ -2103,18 +2103,6 @@
       "fr": "Liste de courses",
       "ru": "Список покупок"
     },
-    "Unknown Ship Signature": {
-      "es": "Señal de nave desconocida",
-      "de": "Unbekannte Schiffsignatur",
-      "fr": null,
-      "ru": null
-    },
-    "Unknown Wake Data": {
-      "es": "Datos de estela desconocida",
-      "de": "Unbekannte Sogwolke",
-      "fr": null,
-      "ru": null
-    },
     "Needed for Marco Qwent (25)": {
       "es": "Necesario para Marco Qwent (25)",
       "de": "Benötigt für Marco Qwent (25)",
@@ -2156,6 +2144,24 @@
       "de": "Informationen über Ressourcen anzeigen?",
       "fr": "Afficher les informations sur les ressources ?",
       "ru": "Показать информацию о ресурсах?"
+    },
+    "Count": {
+      "es": "Número",
+      "de": "Anzahl",
+      "fr": "Nombre",
+      "ru": "Количество"
+    },
+    "Unknown Ship Signature": {
+      "es": "Señal de nave desconocida",
+      "de": "Unbekannte Schiffsignatur",
+      "fr": null,
+      "ru": null
+    },
+    "Unknown Wake Data": {
+      "es": "Datos de estela desconocida",
+      "de": "Unbekannte Sogwolke",
+      "fr": null,
+      "ru": null
     },
     "Check all filters": {
       "es": null,
@@ -2253,19 +2259,13 @@
       "fr": "Attention, seuil atteint",
       "ru": "Предупреждение о достижении ограничения"
     },
-    "Count": {
-      "es": "Número",
-      "de": "Anzahl",
-      "fr": "Nombre",
-      "ru": "Количество"
-    },
     "Multiple Blueprints Ready": {
       "es": null,
       "de": null,
       "fr": null,
       "ru": null
     },
-    "{0} Blueprints are available to craft!": {
+    "{0} blueprints are available to craft!": {
       "es": null,
       "de": null,
       "fr": null,
