@@ -1701,7 +1701,7 @@
       "fr": "Aucun répertoire ; cliquez ici pour changer",
       "ru": "Папка не указана ; нажмите для изменения"
     },
-    "Blueprint Ready": {
+    "Favorite Blueprint Ready": {
       "es": "Receta lista",
       "de": "Blaupause fertig",
       "fr": "Recette Prête",
@@ -2235,11 +2235,11 @@
       "fr": "Standard",
       "ru": "Обычные"
     },
-    "Reached {0} {1} - threshold set at {2} (click this to configure your thresholds)": {
+    "Reached {0} {1} - threshold set at {2}": {
       "es": null,
-      "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2} (Klicke hier um Schwellwerte zu konfigurieren)",
+      "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2}",
       "fr": null,
-      "ru": "Достигнуто {0} {1} - ограничение установленное на {2} (нажмите здесь, чтобы изменить ограничения)"
+      "ru": "Достигнуто {0} {1} - ограничение установленное на {2}"
     },
     "Threshold Reached!": {
       "es": null,
@@ -2260,6 +2260,12 @@
       "ru": "Количество"
     },
     "Multiple Blueprints Ready": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "{0} Blueprints are available to craft!": {
       "es": null,
       "de": null,
       "fr": null,
@@ -2302,6 +2308,66 @@
       "ru": null
     },
     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Configure Notifications": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Notifications": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Test Notification": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Toast": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Voice": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Long Range Scanner": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Wide Angle Scanner": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Light Weight Scanner": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Fast Scanner": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null
+    },
+    "Unlock": {
       "es": null,
       "de": null,
       "fr": null,

@@ -73,7 +73,9 @@
                                                          ThresholdReachedColor="{StaticResource ThresholdReachedBrush}"
                                                          NormalColor="{StaticResource TransparentBrush}"/>
             <converters:IntToEnabledConverter x:Key="IntToEnabled"/>
-            
+            <converters:BooleanToEnumConverter x:Key="BooleanToEnum"/>
+            <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
+
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
             <Style TargetType="ToolTip">
