@@ -207,7 +207,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "fedcorecomposites",
     "Kind": "Material",
-    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (High grade emissions)" ]
+    "OriginDetails": [ "Ship salvage (combat ships)", "Signal source (High grade emissions, Federation systems)" ]
   },
   {
     "Name": "Cracked Industrial Firmware",
@@ -417,14 +417,14 @@
     "Rarity": "VeryRare",
     "FormattedName": "imperialshielding",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, Empire systems)", "Mission reward" ]
   },
   {
     "Name": "Improvised Components",
     "Rarity": "VeryRare",
     "FormattedName": "improvisedcomponents",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, Civil unrest)", "Mission reward" ]
   },
   {
     "Name": "Inconsistent Shield Soak Analysis",
@@ -522,14 +522,14 @@
     "Rarity": "VeryRare",
     "FormattedName": "militarygradealloys",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, War/Civil war)", "Mission reward" ]
   },
   {
     "Name": "Military Supercapacitors",
     "Rarity": "VeryRare",
     "FormattedName": "militarysupercapacitors",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, War/Civil war)", "Mission reward" ]
   },
   {
     "Name": "Modified Consumer Firmware",
@@ -648,7 +648,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "pharmaceuticalisolators",
     "Kind": "Material",
-    "OriginDetails": [ "Mission reward", "Signal source (High grade emissions)" ]
+    "OriginDetails": [ "Mission reward", "Signal source (High grade emissions, Outbreak)" ]
   },
   {
     "Name": "Phase Alloys",
@@ -718,28 +718,28 @@
     "Rarity": "Rare",
     "FormattedName": "fedproprietarycomposites",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, Federation systems)", "Mission reward" ]
   },
   {
     "Name": "Proto Heat Radiators",
     "Rarity": "VeryRare",
     "FormattedName": "protoheatradiators",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, Boom)", "Mission reward" ]
   },
   {
     "Name": "Proto Light Alloys",
     "Rarity": "Rare",
     "FormattedName": "protolightalloys",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)", "Mission reward" ]
+    "OriginDetails": [ "Signal source (High grade emissions, Boom)", "Mission reward" ]
   },
   {
     "Name": "Proto Radiolic Alloys",
     "Rarity": "VeryRare",
     "FormattedName": "protoradiolicalloys",
     "Kind": "Material",
-    "OriginDetails": [ "Signal source (High grade emissions)" ]
+    "OriginDetails": [ "Signal source (High grade emissions, Boom)" ]
   },
   {
     "Name": "Radiation Baffle",
