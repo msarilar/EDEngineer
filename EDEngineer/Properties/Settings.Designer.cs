@@ -226,7 +226,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("None")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string NotificationKindCargoAlmostFull {
             get {
                 return ((string)(this["NotificationKindCargoAlmostFull"]));
@@ -309,7 +309,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("None")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string NotificationKindThresholdReached {
             get {
                 return ((string)(this["NotificationKindThresholdReached"]));
@@ -345,7 +345,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("None")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string NotificationKindBlueprintReady {
             get {
                 return ((string)(this["NotificationKindBlueprintReady"]));

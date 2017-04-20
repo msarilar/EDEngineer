@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using EDEngineer.Localization;
+using EDEngineer.Utils.System;
 
 namespace EDEngineer.Views.Notifications
 {
@@ -37,6 +38,23 @@ namespace EDEngineer.Views.Notifications
         private void NotificationSettingsWindowClosed(object sender, EventArgs e)
         {
             viewModel.Dispose();
+        }
+
+        public static void InitNotifications()
+        {
+            if (string.IsNullOrEmpty(Properties.Settings.Default.NotificationKindCargoAlmostFull))
+            {
+                SettingsManager.NotificationKindBlueprintReady = NotificationKind.None;
+                SettingsManager.NotificationKindThresholdReached = NotificationKind.None;
+                SettingsManager.NotificationKindCargoAlmostFull = NotificationKind.None;
+
+                new NotificationSettingsWindow(Languages.Instance).ShowDialog();
+            }
+        }
+
+        private void OkButtonClicked(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

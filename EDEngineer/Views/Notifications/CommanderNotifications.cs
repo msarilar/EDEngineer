@@ -123,7 +123,7 @@ namespace EDEngineer.Views.Notifications
             }
         }
 
-        private static List<Notification> AggregateNotifications(IGrouping<NotificationContentKind, Notification> @group)
+        private static IEnumerable<Notification> AggregateNotifications(IGrouping<NotificationContentKind, Notification> @group)
         {
             var items = @group.ToList();
 
@@ -133,7 +133,7 @@ namespace EDEngineer.Views.Notifications
                 if (@group.Key == NotificationContentKind.BlueprintReady)
                 {
                     notification = new Notification(NotificationContentKind.BlueprintReady,
-                        "Multiple Blueprints Ready",
+                        Languages.Instance.Translate("Multiple Blueprints Ready"),
                         string.Format(Languages.Instance.Translate("{0} Blueprints are available to craft!"),
                             items.Count));
                 }

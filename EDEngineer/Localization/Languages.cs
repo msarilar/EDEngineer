@@ -140,10 +140,10 @@ namespace EDEngineer.Localization
             var text = parameter.ToString();
 
 #if DEBUG
-            if (!Translations.ContainsKey(text))
+            /*if (!Translations.ContainsKey(text))
             {
-                // MessageBox.Show($"No localization for text : {text}");
-            }
+                MessageBox.Show($"No localization for text : {text}");
+            }*/
 #endif
 
             string translatedText;

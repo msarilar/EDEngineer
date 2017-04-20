@@ -57,6 +57,7 @@ namespace EDEngineer.Views
             }
 
             Languages.InitLanguages();
+            NotificationSettingsWindow.InitNotifications();
 
             InitializeComponent();
 

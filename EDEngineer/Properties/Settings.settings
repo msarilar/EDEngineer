@@ -54,7 +54,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="NotificationKindCargoAlmostFull" Type="System.String" Scope="User">
-      <Value Profile="(Default)">None</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="AutoRunServer" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -75,7 +75,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="NotificationKindThresholdReached" Type="System.String" Scope="User">
-      <Value Profile="(Default)">None</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="Comparer" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -84,7 +84,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="NotificationKindBlueprintReady" Type="System.String" Scope="User">
-      <Value Profile="(Default)">None</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>
