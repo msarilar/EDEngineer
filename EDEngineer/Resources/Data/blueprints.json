@@ -16406,5 +16406,77 @@
       }
     ],
     "Grade": 5
+  },
+  {
+    "Type": "unlock",
+    "Name": "The Sarge",
+    "Engineers": [ "The Sarge" ],
+    "Ingredients": [ 
+       {
+         "Name": "Aberrant Shield Pattern Analysis",
+         "Size": 50
+       }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Bill Turner",
+    "Engineers": [ "Bill Turner" ],
+    "Ingredients": [
+	    {
+    		"Name": "Bromellite",
+    		"Size": 50
+	    }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Ram Tah",
+    "Engineers": [ "Ram Tah" ],
+    "Ingredients": [
+      {
+        "Name": "Classified Scan Databanks",
+        "Size": 50
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Tiana Fortune",
+    "Engineers": [ "Tiana Fortune" ],
+    "Ingredients": [
+      {
+        "Name": "Decoded Emission Data",
+        "Size": 50
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Marco Qwent",
+    "Engineers": [ "Marco Qwent" ],
+    "Ingredients": [
+      {
+        "Name": "Modular Terminals",
+        "Size": 25
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Professor Palin",
+    "Engineers": [ "Professor Palin" ],
+    "Ingredients": [
+      {
+        "Name": "Unknown Fragment",
+        "Size": 25
+      }
+    ],
+    "Grade": 1
   }
 ]
