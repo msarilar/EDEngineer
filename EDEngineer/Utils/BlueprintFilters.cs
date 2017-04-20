@@ -30,7 +30,7 @@ namespace EDEngineer.Utils
                 if (searchText != value)
                 {
                     searchText = value;
-                    trimmedSearchText = value?.Trim();
+                    trimmedSearchText = value?.Trim().ToLowerInvariant();
                     OnPropertyChanged();
                 }
             }
@@ -231,7 +231,7 @@ namespace EDEngineer.Utils
                 var satisfySearchText = string.IsNullOrWhiteSpace(trimmedSearchText) ||
                                         trimmedSearchText.Split(' ').All(t => 
                                         blueprint.SearchableContent.IndexOf(t.Trim(),
-                                            StringComparison.InvariantCultureIgnoreCase) >= 0);
+                                            StringComparison.Ordinal) >= 0);
 
                 var satisfyHighlightedFilters = !highlightedEntryData.Any() ||
                                                 highlightedEntryData.Intersect(

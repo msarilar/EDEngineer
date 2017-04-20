@@ -84,8 +84,8 @@ namespace EDEngineer.Models
             Engineers = engineers;
             Ingredients = ingredients;
 
-            SetupSearchableContent(language);
-            language.PropertyChanged += (o, e) => SetupSearchableContent(language);
+            SetupSearchableContent();
+            language.PropertyChanged += (o, e) => SetupSearchableContent();
 
             foreach (var ingredient in Ingredients)
             {
@@ -121,7 +121,7 @@ namespace EDEngineer.Models
             }
         }
 
-        private void SetupSearchableContent(ILanguage language)
+        private void SetupSearchableContent()
         {
             var builder = new StringBuilder();
             builder.Append(language.Translate(ShortenedType) + "|");
@@ -129,7 +129,7 @@ namespace EDEngineer.Models
             builder.Append(language.Translate(BlueprintName) + "|");
             builder.Append("G" + Grade + "|");
             builder.Append(string.Join("|", Engineers) + "|");
-            SearchableContent = builder.ToString();
+            SearchableContent = builder.ToString().ToLowerInvariant();
         }
 
         [JsonIgnore]
