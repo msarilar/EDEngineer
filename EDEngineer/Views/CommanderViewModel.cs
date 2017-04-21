@@ -184,8 +184,12 @@ namespace EDEngineer.Views
         private void LoadBlueprints(ILanguage languages)
         {
             var blueprintsJson = IOUtils.GetBlueprintsJson();
+            var blueprints =
+                JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter)
+                           .Where(b => b.Ingredients.Any());
 
-            State.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter));
+
+            State.Blueprints = new List<Blueprint>(blueprints);
             if (Settings.Default.Favorites == null)
             {
                 Settings.Default.Favorites = new StringCollection();
