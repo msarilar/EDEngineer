@@ -15,7 +15,6 @@ using EDEngineer.Properties;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Views.Notifications;
-using EDEngineer.Views.Popups;
 using Newtonsoft.Json;
 using NodaTime;
 using ThresholdsManagerWindow = EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow;

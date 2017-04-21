@@ -20,6 +20,7 @@ namespace EDEngineer.Views.Notifications
         private readonly CommanderNotifications testCommanderNotifications;
         private readonly State testState;
         private readonly Random random;
+        private Tuple<string, string> selectedVoice;
         public Languages Languages { get; }
 
         public NotificationKind NotificationKindThresholdReached
@@ -55,6 +56,19 @@ namespace EDEngineer.Views.Notifications
             }
         }
 
+        public IEnumerable<Tuple<string, string>> Voices => testCommanderNotifications.AvailableLanguages();
+
+        public Tuple<string, string> SelectedVoice
+        {
+            get { return selectedVoice; }
+            set
+            {
+                selectedVoice = value;
+                OnPropertyChanged();
+                SettingsManager.NotificationVoice = value.Item2;
+            }
+        }
+
         public NotificationSettingsViewModel(Languages languages)
         {
             random = new Random();
@@ -69,6 +83,8 @@ namespace EDEngineer.Views.Notifications
             NotificationKindThresholdReached = SettingsManager.NotificationKindThresholdReached;
             NotificationKindCargoAlmostFull = SettingsManager.NotificationKindCargoAlmostFull;
             NotificationKindBlueprintReady = SettingsManager.NotificationKindBlueprintReady;
+
+            SelectedVoice = Voices.FirstOrDefault(v => v.Item2 == SettingsManager.NotificationVoice) ?? Voices.FirstOrDefault();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

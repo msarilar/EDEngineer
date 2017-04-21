@@ -15,6 +15,7 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <Border Grid.Row="0"
@@ -98,7 +99,27 @@
             </StackPanel>
         </Border>
         
-        <Button Grid.Row="3"
+        <StackPanel Grid.Row="3"
+                    Margin="10"
+                    Orientation="Vertical">
+            <TextBlock HorizontalAlignment="Center"
+                       Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Available Voices:'}"/>
+            <ComboBox HorizontalAlignment="Stretch"
+                      ItemsSource="{Binding Voices}"
+                      SelectedItem="{Binding SelectedVoice, Mode=TwoWay}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Item1}"/>
+                            <TextBlock Text=" - "/>
+                            <TextBlock Text="{Binding Item2}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        
+        <Button Grid.Row="4"
                 Margin="10"
                 Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='OK'}"
                 Click="OkButtonClicked"/>

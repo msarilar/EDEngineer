@@ -19,7 +19,6 @@ using EDEngineer.Models;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
-using EDEngineer.Views.Popups;
 using Application = System.Windows.Application;
 using Button = System.Windows.Controls.Button;
 using DataGridCell = System.Windows.Controls.DataGridCell;

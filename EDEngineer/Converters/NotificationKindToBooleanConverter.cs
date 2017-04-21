@@ -2,7 +2,6 @@ using System;
 using System.Globalization;
 using System.Windows.Data;
 using EDEngineer.Views.Notifications;
-using EDEngineer.Views.Popups;
 
 namespace EDEngineer.Converters
 {

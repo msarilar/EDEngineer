@@ -354,5 +354,17 @@ namespace EDEngineer.Properties {
                 this["NotificationKindBlueprintReady"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NotificationVoice {
+            get {
+                return ((string)(this["NotificationVoice"]));
+            }
+            set {
+                this["NotificationVoice"] = value;
+            }
+        }
     }
 }

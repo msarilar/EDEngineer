@@ -20,7 +20,7 @@ namespace EDEngineer.Views.Notifications
         private readonly BlockingCollection<Notification> notifications = new BlockingCollection<Notification>(); 
         private readonly CancellationTokenSource tokenSource = new CancellationTokenSource();
 
-        private SpeechSynthesizer speaker;
+        private readonly SpeechSynthesizer speaker;
 
         private readonly IReadOnlyDictionary<NotificationContentKind, Func<NotificationKind>> settings = new Dictionary
             <NotificationContentKind, Func<NotificationKind>>
@@ -35,26 +35,24 @@ namespace EDEngineer.Views.Notifications
             this.state = state;
             Task.Factory.StartNew(ConsumeNotifications);
             speaker = new SpeechSynthesizer();
-            HandleLanguageChanged(null, null);
+
+            if (string.IsNullOrEmpty(SettingsManager.NotificationVoice))
+            {
+                SettingsManager.NotificationVoice = AvailableLanguages().First().Item2;
+            }
         }
 
-        private void HandleLanguageChanged(object sender, PropertyChangedEventArgs e)
+        public IEnumerable<Tuple<string, string>> AvailableLanguages()
         {
-            var voice =
-                speaker.GetInstalledVoices()
-                       .FirstOrDefault(
-                           v =>
-                               v.VoiceInfo.Culture.TwoLetterISOLanguageName ==
-                               Languages.Instance.CurrentLanguage.TwoLetterISOLanguageName);
+            return from voice in speaker.GetInstalledVoices()
+            join lang in Languages.Instance.LanguageInfos
+                on voice.VoiceInfo.Culture.TwoLetterISOLanguageName equals lang.Value.TwoLetterISOLanguageName
+            select Tuple.Create(lang.Value.Name, voice.VoiceInfo.Name);
+        }
 
-            if (voice != null)
-            {
-                speaker.SelectVoice(voice.VoiceInfo.Name);
-            }
-            else
-            {
-                speaker = new SpeechSynthesizer();
-            }
+        public void SetVoice(string voice)
+        {
+            speaker.SelectVoice(voice);
         }
 
         private void ConsumeNotifications()
@@ -93,10 +91,11 @@ namespace EDEngineer.Views.Notifications
         private void SpeakVoice(Notification notification)
         {
             Task.Factory.StartNew(() =>
-                                  {
-                                      speaker.Speak(notification.Header);
-                                      speaker.Speak(notification.Content);
-                                  });
+            {
+                SetVoice(SettingsManager.NotificationVoice);
+                speaker.Speak(notification.Header);
+                speaker.Speak(notification.Content);
+            });
         }
 
         private static void ShowToast(Notification notification)
@@ -215,8 +214,6 @@ namespace EDEngineer.Views.Notifications
             }
 
             state.PropertyChanged -= StateCargoCountChanged;
-
-            Languages.Instance.PropertyChanged -= HandleLanguageChanged;
         }
 
         public void SubscribeToasts()
@@ -227,7 +224,6 @@ namespace EDEngineer.Views.Notifications
             }
 
             state.PropertyChanged += StateCargoCountChanged;
-            Languages.Instance.PropertyChanged += HandleLanguageChanged;
         }
 
         private void StateCargoCountChanged(object sender, PropertyChangedEventArgs e)

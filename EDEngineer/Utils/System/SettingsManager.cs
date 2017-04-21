@@ -123,6 +123,16 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.Save();
             }
         }
+
+        public static string NotificationVoice
+        {
+            get { return Properties.Settings.Default.NotificationVoice; }
+            set
+            {
+                Properties.Settings.Default.NotificationVoice = value;
+                Properties.Settings.Default.Save();
+            }
+        }
         
         public static ushort ServerPort
         {
