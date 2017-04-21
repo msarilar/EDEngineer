@@ -86,7 +86,7 @@
                          Margin="5"
                          IsChecked="{Binding NotificationKindThresholdReached, Converter={StaticResource BooleanToEnum}, ConverterParameter=None}"/>
                     <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Toast'}"
-                         Margin="5" x:Name="ToastRadioButton"
+                         Margin="5" x:Name="ThresholdToastRadioButton"
                          IsChecked="{Binding NotificationKindThresholdReached, Converter={StaticResource BooleanToEnum}, ConverterParameter=Toast}"/>
                     <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Voice'}"
                          Margin="5"

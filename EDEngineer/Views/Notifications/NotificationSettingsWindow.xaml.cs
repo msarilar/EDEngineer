@@ -17,7 +17,10 @@ namespace EDEngineer.Views.Notifications
             DataContext = viewModel;
             InitializeComponent();
 
-            ToastRadioButton.IsEnabled = Environment.OSVersion.Version >= new Version(6, 2, 9200, 0);
+            ThresholdToastRadioButton.IsEnabled = 
+                BlueprintToastRadioButton.IsEnabled =
+                CargoToastRadioButton.IsEnabled =
+                Environment.OSVersion.Version >= new Version(6, 2, 9200, 0);
         }
 
         private void FavoriteBlueprintTestClicked(object sender, RoutedEventArgs e)

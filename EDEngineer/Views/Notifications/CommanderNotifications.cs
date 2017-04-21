@@ -216,7 +216,7 @@ namespace EDEngineer.Views.Notifications
             state.PropertyChanged -= StateCargoCountChanged;
         }
 
-        public void SubscribeToasts()
+        public void SubscribeNotifications()
         {
             foreach (var blueprint in state.Blueprints)
             {

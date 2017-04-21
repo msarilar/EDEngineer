@@ -14,9 +14,6 @@ namespace EDEngineer.Views.Notifications
     public class NotificationSettingsViewModel : INotifyPropertyChanged, IDisposable
     {
         private NotificationKind notificationKind;
-        private bool thresholdReachedEnabled;
-        private bool cargoAlmostFullEnabled;
-        private bool FavoriteBlueprintEnabled;
         private readonly CommanderNotifications testCommanderNotifications;
         private readonly State testState;
         private readonly Random random;
@@ -78,7 +75,7 @@ namespace EDEngineer.Views.Notifications
             testState.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(IOUtils.GetBlueprintsJson(), new BlueprintConverter(testState.Cargo)));
 
             testCommanderNotifications = new CommanderNotifications(testState);
-            testCommanderNotifications.SubscribeToasts();
+            testCommanderNotifications.SubscribeNotifications();
 
             NotificationKindThresholdReached = SettingsManager.NotificationKindThresholdReached;
             NotificationKindCargoAlmostFull = SettingsManager.NotificationKindCargoAlmostFull;

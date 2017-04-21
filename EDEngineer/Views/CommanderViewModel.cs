@@ -68,7 +68,7 @@ namespace EDEngineer.Views
 
             ApplyEventsToSate(events);
             ThresholdsManagerWindow.InitThresholds(State.Cargo);
-            commanderNotifications?.SubscribeToasts();
+            commanderNotifications?.SubscribeNotifications();
 
             State.Cargo.RefreshSort();
             State.CompleteLoad();
@@ -81,10 +81,8 @@ namespace EDEngineer.Views
             var converter = new ItemNameConverter(entryDatas);
 
             State = new State(entryDatas, languages, SettingsManager.Comparer);
-            if (Environment.OSVersion.Version >= new Version(6, 2, 9200, 0)) // windows 8 or more recent
-            {
-                commanderNotifications = new CommanderNotifications(State);
-            }
+
+            commanderNotifications = new CommanderNotifications(State);
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
             blueprintConverter = new BlueprintConverter(State.Cargo);
