@@ -966,6 +966,97 @@
     "OriginDetails": null
   },
   {
+    "Name": "Meta-alloys",
+    "Rarity": "VeryRare",
+    "FormattedName": "metaalloys",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Maia, Darnielle's progress" ]
+  },
+  {
+    "Name": "Soontill Relics",
+    "Rarity": "Rare",
+    "FormattedName": "soontillrelics",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Ngurii, Cheranovsky City" ]
+  },
+  {
+    "Name": "Landmines",
+    "Rarity": null,
+    "FormattedName": "landmines",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Markets, Military (Surface)" ]
+  },
+  {
+    "Name": "Gold",
+    "Rarity": null,
+    "FormattedName": "gold",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Markets, Extraction/Refinery", "Minig (Metallic rings)" ]
+  },
+  {
+    "Name": "Painite",
+    "Rarity": null,
+    "FormattedName": "painite",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Minig (Metallic rings)" ]
+  },
+  {
+    "Name": "Kamitra Cigars",
+    "Rarity": "Rare",
+    "FormattedName": "kamitracigars",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Kamitra, Hammel Terminal" ]
+  },
+  {
+    "Name": "Fujin Tea",
+    "Rarity": "Rare",
+    "FormattedName": "fujintea",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Fujin, Futen Spaceport" ]
+  },
+  {
+    "Name": "Modular Terminals",
+    "Rarity": null,
+    "FormattedName": "modularterminals",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Mission reward" ]
+  },
+  {
+    "Name": "Xihe Companions",
+    "Rarity": "Rare",
+    "FormattedName": "xihecompanions",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Xihe, Zhen Dock" ]
+  },
+  {
+    "Name": "Lavian Brandy",
+    "Rarity": "Rare",
+    "FormattedName": "lavianbrandy",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Lave, Lave Station" ]
+  },
+  {
+    "Name": "Unknown Fragments",
+    "Rarity": "VeryRare",
+    "FormattedName": "unknownfragments",
+    "Kind": "Commodity",
+    "OriginDetails": [ "USS 100-150 ly from Mayaa (?)" ]
+  },
+  {
+    "Name": "Konnga Ale",
+    "Rarity": "Rare",
+    "FormattedName": "konngaale",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Kongga, Laplace Ring" ]
+  },
+  {
+    "Name": "Konnga Ale",
+    "Rarity": "Rare",
+    "FormattedName": "konngaale",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Kongga, Laplace Ring" ]
+  },
+  {
     "Name": "Unknown Wake Data",
     "Rarity": "VeryRare",
     "FormattedName": "unknownwakedata",
