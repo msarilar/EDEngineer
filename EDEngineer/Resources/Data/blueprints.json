@@ -16469,6 +16469,126 @@
   },
   {
     "Type": "unlock",
+    "Name": "Felicity Farseer",
+    "Engineers": [ "Felicity Farseer" ],
+    "Ingredients": [
+      {
+        "Name": "Meta-alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },	 
+  {
+    "Type": "unlock",
+    "Name": "Elvira Martuuk",
+    "Engineers": [ "Elvira Martuuk" ],
+    "Ingredients": [
+      {
+        "Name": "Soontill Relics",
+        "Size": 3
+      }
+    ],
+    "Grade": 1
+  },	 
+  {
+    "Type": "unlock",
+    "Name": "Liz Ryder",
+    "Engineers": [ "Liz Ryder" ],
+    "Ingredients": [
+      {
+        "Name": "Landmines",
+        "Size": 200
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Lei Cheung",
+    "Engineers": [ "Lei Cheung" ],
+    "Ingredients": [
+      {
+        "Name": "Gold",
+        "Size": 200
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Selene Jean",
+    "Engineers": [ "Selene Jean" ],
+    "Ingredients": [
+      {
+        "Name": "Painite",
+        "Size": 10
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Hera Tani",
+    "Engineers": [ "Hera Tani" ],
+    "Ingredients": [
+      {
+        "Name": "Kamitra Cigars",
+        "Size": 50
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Broo Tarquin",
+    "Engineers": [ "Broo Tarquin" ],
+    "Ingredients": [
+      {
+        "Name": "Fujin Tea",
+        "Size": 50
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Zacariah Nemo",
+    "Engineers": [ "Zacariah Nemo" ],
+    "Ingredients": [
+      {
+        "Name": "Xihe Companions",
+        "Size": 25
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Didi Vatermann",
+    "Engineers": [ "Didi Vatermann" ],
+    "Ingredients": [
+      {
+        "Name": "Lavian Brandy",
+        "Size": 50
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
+    "Name": "Lori Jameson",
+    "Engineers": [ "Lori Jameson" ],
+    "Ingredients": [
+      {
+        "Name": "Konnga Ale",
+        "Size": 25
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "unlock",
     "Name": "Professor Palin",
     "Engineers": [ "Professor Palin" ],
     "Ingredients": [
