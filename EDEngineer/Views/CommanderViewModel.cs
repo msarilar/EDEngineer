@@ -59,7 +59,7 @@ namespace EDEngineer.Views
 
         private void LoadState(IEnumerable<string> events)
         {
-            commanderNotifications?.UnsubscribeToasts();
+            commanderNotifications?.UnsubscribeNotifications();
             State.InitLoad();
             // Clear state:
             

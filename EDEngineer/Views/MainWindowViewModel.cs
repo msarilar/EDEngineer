@@ -26,7 +26,7 @@ namespace EDEngineer.Views
             get { return currentCommander; }
             set
             {
-                if (object.Equals(value, currentCommander))
+                if (Equals(value, currentCommander))
                 {
                     return;
                 }

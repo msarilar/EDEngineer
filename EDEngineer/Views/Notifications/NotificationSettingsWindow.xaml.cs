@@ -53,6 +53,23 @@ namespace EDEngineer.Views.Notifications
 
                 new NotificationSettingsWindow(Languages.Instance).ShowDialog();
             }
+            else if(Environment.OSVersion.Version < new Version(6, 2, 9200, 0))
+            {
+                if (SettingsManager.NotificationKindThresholdReached == NotificationKind.Toast)
+                {
+                    SettingsManager.NotificationKindThresholdReached = NotificationKind.None;
+                }
+
+                if (SettingsManager.NotificationKindBlueprintReady == NotificationKind.Toast)
+                {
+                    SettingsManager.NotificationKindBlueprintReady = NotificationKind.None;
+                }
+
+                if (SettingsManager.NotificationKindCargoAlmostFull == NotificationKind.Toast)
+                {
+                    SettingsManager.NotificationKindCargoAlmostFull = NotificationKind.None;
+                }
+            }
         }
 
         private void OkButtonClicked(object sender, RoutedEventArgs e)

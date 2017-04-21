@@ -143,7 +143,7 @@ namespace EDEngineer.Views.Notifications
 
         public void Dispose()
         {
-            testCommanderNotifications.UnsubscribeToasts();
+            testCommanderNotifications.UnsubscribeNotifications();
         }
     }
 }

@@ -50,7 +50,7 @@ namespace EDEngineer.Localization
 
         public static Languages InitLanguages()
         {
-            if ((bool)(DesignerProperties.IsInDesignModeProperty.GetMetadata(typeof(DependencyObject)).DefaultValue))
+            if ((bool)DesignerProperties.IsInDesignModeProperty.GetMetadata(typeof(DependencyObject)).DefaultValue)
             {
                 return new Languages();
             }

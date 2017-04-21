@@ -171,7 +171,7 @@ namespace EDEngineer.Views.Notifications
             }
         }
 
-        private void LimitToastCheck(string property)
+        private void CheckCargoAlmostFull(string property)
         {
             var translator = Languages.Instance;
 
@@ -206,7 +206,7 @@ namespace EDEngineer.Views.Notifications
             notifications.Add(new Notification(NotificationContentKind.BlueprintReady, headerText, contentText));
         }
 
-        public void UnsubscribeToasts()
+        public void UnsubscribeNotifications()
         {
             foreach (var blueprint in state.Blueprints)
             {
@@ -230,7 +230,7 @@ namespace EDEngineer.Views.Notifications
         {
             if (e.PropertyName == "MaterialsCount" || e.PropertyName == "DataCount")
             {
-                LimitToastCheck(e.PropertyName);
+                CheckCargoAlmostFull(e.PropertyName);
             }
 
             ThresholdNotificationCheck(e.PropertyName);

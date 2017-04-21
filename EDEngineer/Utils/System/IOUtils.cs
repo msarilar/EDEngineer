@@ -41,7 +41,7 @@ namespace EDEngineer.Utils.System
         public static string Sanitize(this string input)
         {
             return input.Select(name => name)
-                        .Aggregate(string.Empty, (acc, c) => acc + IOUtils.SanitizeChar(c));
+                        .Aggregate(string.Empty, (acc, c) => acc + SanitizeChar(c));
         }
 
         public static string Desanitize(this string input)

@@ -163,7 +163,7 @@ namespace EDEngineer.Utils.System
         private static bool VersionIsBeta(string line)
         {
             var lowered = line.ToLower(CultureInfo.InvariantCulture);
-            return lowered.Contains($@"""event"":""fileheader""") && lowered.Contains("beta");
+            return lowered.Contains(@"""event"":""fileheader""") && lowered.Contains("beta");
         }
 
         public string ManualChangesDirectory { get; private set; }
