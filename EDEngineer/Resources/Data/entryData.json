@@ -546,13 +546,6 @@
     "OriginDetails": [ "Surface data point", "Mission reward" ]
   },
   {
-    "Name": "Modular Terminals",
-    "Rarity": null,
-    "FormattedName": "modularterminals",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward", "Needed for Marco Qwent (25)" ]
-  },
-  {
     "Name": "Molybdenum",
     "Rarity": "Rare",
     "FormattedName": "molybdenum",
@@ -847,13 +840,6 @@
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
-    "Name": "Telemetry Suite",
-    "Rarity": null,
-    "FormattedName": "telemetrysuite",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
-  },
-  {
     "Name": "Tellurium",
     "Rarity": "VeryRare",
     "FormattedName": "tellurium",
@@ -901,13 +887,6 @@
     "FormattedName": "unidentifiedscanarchives",
     "Kind": "Data",
     "OriginDetails": [ "Ship scanning (transport ships)" ]
-  },
-  {
-    "Name": "Unknown Fragment",
-    "Rarity": "VeryRare",
-    "FormattedName": "unknownenergysource",
-    "Kind": "Material",
-    "OriginDetails": [ "Destroyed Unknown Artefact", "Needed for Professor Palin (25)" ]
   },
   {
     "Name": "Untypical Shield Scans",
@@ -966,101 +945,101 @@
     "OriginDetails": null
   },
   {
-    "Name": "Meta-alloys",
+    "Name": "Unknown Wake Data",
     "Rarity": "VeryRare",
+    "FormattedName": "unknownwakedata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Telemetry Suite",
+    "Rarity": null,
+    "FormattedName": "telemetrysuite",
+    "Kind": "Commodity",
+    "OriginDetails": [ "Mission reward" ]
+  },
+  {
+    "Name": "Meta-alloys",
+    "Rarity": null,
     "FormattedName": "metaalloys",
     "Kind": "Commodity",
-    "OriginDetails": [ "Maia, Darnielle's progress" ]
+    "OriginDetails": [ "Markets (Maia, Darnielle's progress)", "Needed for Felicity Farseer (1)" ]
   },
   {
     "Name": "Soontill Relics",
-    "Rarity": "Rare",
+    "Rarity": null,
     "FormattedName": "soontillrelics",
     "Kind": "Commodity",
-    "OriginDetails": [ "Ngurii, Cheranovsky City" ]
+    "OriginDetails": [ "Markets (Ngurii, Cheranovsky City)", "Needed for Elvira Martuuk (3)" ]
   },
   {
     "Name": "Landmines",
     "Rarity": null,
     "FormattedName": "landmines",
     "Kind": "Commodity",
-    "OriginDetails": [ "Markets, Military (Surface)" ]
+    "OriginDetails": [ "Markets (Military)", "Needed for Liz Ryder (200)" ]
   },
   {
     "Name": "Gold",
     "Rarity": null,
     "FormattedName": "gold",
     "Kind": "Commodity",
-    "OriginDetails": [ "Markets, Extraction/Refinery", "Minig (Metallic rings)" ]
+    "OriginDetails": [ "Markets (Extraction/Refinery)", "Mining (Metallic rings)", "Needed for Lei Cheung (200)" ]
   },
   {
     "Name": "Painite",
     "Rarity": null,
     "FormattedName": "painite",
     "Kind": "Commodity",
-    "OriginDetails": [ "Minig (Metallic rings)" ]
+    "OriginDetails": [ "Mining (Metallic rings)", "Needed for Selene Jean (10)" ]
   },
   {
     "Name": "Kamitra Cigars",
-    "Rarity": "Rare",
+    "Rarity": null,
     "FormattedName": "kamitracigars",
     "Kind": "Commodity",
-    "OriginDetails": [ "Kamitra, Hammel Terminal" ]
+    "OriginDetails": [ "Markets (Kamitra, Hammel Terminal)", "Needed for Hera Tani (50)" ]
   },
   {
     "Name": "Fujin Tea",
-    "Rarity": "Rare",
+    "Rarity": null,
     "FormattedName": "fujintea",
     "Kind": "Commodity",
-    "OriginDetails": [ "Fujin, Futen Spaceport" ]
+    "OriginDetails": [ "Markets (Fujin, Futen Spaceport)", "Needed for Broo Tarquin (50)" ]
   },
   {
     "Name": "Modular Terminals",
     "Rarity": null,
     "FormattedName": "modularterminals",
     "Kind": "Commodity",
-    "OriginDetails": [ "Mission reward" ]
+    "OriginDetails": [ "Mission reward", "Needed for Marco Qwent (25)" ]
   },
   {
     "Name": "Xihe Companions",
-    "Rarity": "Rare",
+    "Rarity": null,
     "FormattedName": "xihecompanions",
     "Kind": "Commodity",
-    "OriginDetails": [ "Xihe, Zhen Dock" ]
+    "OriginDetails": [ "Markets (Xihe, Zhen Dock)", "Needed for Zacariah Nemo (25)" ]
   },
   {
     "Name": "Lavian Brandy",
-    "Rarity": "Rare",
+    "Rarity": null,
     "FormattedName": "lavianbrandy",
     "Kind": "Commodity",
-    "OriginDetails": [ "Lave, Lave Station" ]
+    "OriginDetails": [ "Markets (Lave, Lave Station)", "Needed for Didi Vatermann (25)" ]
   },
   {
-    "Name": "Unknown Fragments",
+    "Name": "Unknown Fragment",
     "Rarity": "VeryRare",
-    "FormattedName": "unknownfragments",
-    "Kind": "Commodity",
-    "OriginDetails": [ "USS 100-150 ly from Mayaa (?)" ]
+    "FormattedName": "unknownenergysource",
+    "Kind": "Material",
+    "OriginDetails": [ "Destroyed Unknown Artefact", "Needed for Professor Palin (25)" ]
   },
   {
     "Name": "Konnga Ale",
-    "Rarity": "Rare",
+    "Rarity": null,
     "FormattedName": "konngaale",
     "Kind": "Commodity",
-    "OriginDetails": [ "Kongga, Laplace Ring" ]
-  },
-  {
-    "Name": "Konnga Ale",
-    "Rarity": "Rare",
-    "FormattedName": "konngaale",
-    "Kind": "Commodity",
-    "OriginDetails": [ "Kongga, Laplace Ring" ]
-  },
-  {
-    "Name": "Unknown Wake Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "unknownwakedata",
-    "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": [ "Markets (Kongga, Laplace Ring)", "Needed for Lori Jameson (25)" ]
   }
 ]
