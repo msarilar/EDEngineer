@@ -13,7 +13,9 @@ namespace EDEngineer.Views.Notifications
 {
     public class NotificationSettingsViewModel : INotifyPropertyChanged, IDisposable
     {
-        private NotificationKind notificationKind;
+        private NotificationKind notificationThreshold;
+        private NotificationKind notificationCargo;
+        private NotificationKind notificationBlueprint;
         private readonly CommanderNotifications testCommanderNotifications;
         private readonly State testState;
         private readonly Random random;
@@ -22,10 +24,10 @@ namespace EDEngineer.Views.Notifications
 
         public NotificationKind NotificationKindThresholdReached
         {
-            get { return notificationKind; }
+            get { return notificationThreshold; }
             set
             {
-                notificationKind = value;
+                notificationThreshold = value;
                 SettingsManager.NotificationKindThresholdReached = value;
                 OnPropertyChanged();
             }
@@ -33,10 +35,10 @@ namespace EDEngineer.Views.Notifications
 
         public NotificationKind NotificationKindCargoAlmostFull
         {
-            get { return notificationKind; }
+            get { return notificationCargo; }
             set
             {
-                notificationKind = value;
+                notificationCargo = value;
                 SettingsManager.NotificationKindCargoAlmostFull = value;
                 OnPropertyChanged();
             }
@@ -44,10 +46,10 @@ namespace EDEngineer.Views.Notifications
 
         public NotificationKind NotificationKindBlueprintReady
         {
-            get { return notificationKind; }
+            get { return notificationBlueprint; }
             set
             {
-                notificationKind = value;
+                notificationBlueprint = value;
                 SettingsManager.NotificationKindBlueprintReady = value;
                 OnPropertyChanged();
             }

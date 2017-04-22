@@ -12,12 +12,12 @@ namespace EDEngineer.Converters
             var parameterString = parameter as string;
             if (parameterString == null || value == null)
             {
-                return DependencyProperty.UnsetValue;
+                return false;
             }
 
             if (Enum.IsDefined(value.GetType(), value) == false)
             {
-                return DependencyProperty.UnsetValue;
+                return false;
             }
 
             var parameterValue = Enum.Parse(value.GetType(), parameterString);
@@ -30,7 +30,7 @@ namespace EDEngineer.Converters
             var parameterString = parameter as string;
             if (parameterString == null)
             {
-                return DependencyProperty.UnsetValue;
+                return null;
             }
 
             return Enum.Parse(targetType, parameterString);
