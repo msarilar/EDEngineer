@@ -15090,7 +15090,7 @@
   {
     "Type": "Sensors",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15102,7 +15102,7 @@
   {
     "Type": "Sensors",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani" ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15118,7 +15118,7 @@
   {
     "Type": "Sensors",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Hera Tani", "Lei Cheung", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15158,7 +15158,7 @@
   {
     "Type": "Sensors",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Tiana Fortune", "Lei Cheung" ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Niobium",
@@ -15178,7 +15178,7 @@
   {
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Mechanical Scrap",
@@ -15190,7 +15190,7 @@
   {
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Mechanical Scrap",
@@ -15206,7 +15206,7 @@
   {
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Hera Tani", "Lei Cheung"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Hera Tani", "Lei Cheung", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15246,7 +15246,7 @@
   {
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Tiana Fortune", "Lei Cheung" ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Mechanical Components",
@@ -15266,7 +15266,7 @@
   {
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -15278,7 +15278,7 @@
   {
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Tiana Fortune", "Hera Tani", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Salvaged Alloys",
@@ -15294,7 +15294,7 @@
   {
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Hera Tani", "Lei Cheung"  ],
+    "Engineers": [ "Lori Jameson", "Bill Turner", "Juri Ishmaak", "Tiana Fortune", "Hera Tani", "Lei Cheung", "Felicity Farseer"  ],
     "Ingredients": [
       {
         "Name": "Salvaged Alloys",
@@ -15334,7 +15334,7 @@
   {
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
-    "Engineers": [ "Lori Jameson", "Bill Turner", "Tiana Fortune", "Lei Cheung" ],
+    "Engineers": [ "Lori Jameson", "Juri Ishmaak", "Bill Turner", "Tiana Fortune", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Conductive Ceramics",
@@ -15354,7 +15354,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Hera Tani" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Hera Tani", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15366,7 +15366,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Hera Tani" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Hera Tani", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15382,7 +15382,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Tiana Fortune", "Hera Tani", "Lei Cheung", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Iron",
@@ -15402,7 +15402,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Hera Tani", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Germanium",
@@ -15422,7 +15422,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
-    "Engineers": [ "Lori Jameson", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Hera Tani", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Niobium",
@@ -15442,7 +15442,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Hera Tani", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Mechanical Scrap",
@@ -15454,7 +15454,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Hera Tani" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Hera Tani", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Mechanical Scrap",
@@ -15470,7 +15470,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Tiana Fortune", "Hera Tani", "Lei Cheung", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Mechanical Scrap",
@@ -15490,7 +15490,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Hera Tani", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Mechanical Equipment",
@@ -15510,7 +15510,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
-    "Engineers": [ "Lori Jameson", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Hera Tani", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Mechanical Components",
@@ -15530,7 +15530,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Felicity Farseer", "Hera Tani" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -15542,7 +15542,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Juri Ishmaak", "Lei Cheung", "Lori Jameson", "Tiana Fortune" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Hera Tani", "Lei Cheung", "Lori Jameson", "Tiana Fortune", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -15558,7 +15558,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Lori Jameson", "Tiana Fortune", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Tiana Fortune", "Hera Tani", "Lei Cheung", "Felicity Farseer" ],
     "Ingredients": [
       {
         "Name": "Phosphorus",
@@ -15578,7 +15578,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Lori Jameson", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Hera Tani", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Manganese",
@@ -15598,7 +15598,7 @@
   {
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
-    "Engineers": [ "Lori Jameson", "Hera Tani", "Lei Cheung" ],
+    "Engineers": [ "Bill Turner", "Juri Ishmaak", "Lori Jameson", "Hera Tani", "Lei Cheung" ],
     "Ingredients": [
       {
         "Name": "Arsenic",
