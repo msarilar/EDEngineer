@@ -340,5 +340,20 @@ namespace EDEngineer.Views
 
             Settings.Default.Save();
         }
+
+        public void HighlightShoppingListBlueprint(List<BlueprintIngredient> ingredients, Blueprint blueprint, bool highlighted)
+        {
+            foreach (
+                var ingredient in
+                    blueprint.Ingredients.Join(ingredients,
+                        ingredient => ingredient.Entry.Data.Name,
+                        ingredient => ingredient.Entry.Data.Name,
+                        (_, ingredient) => ingredient))
+            {
+                ingredient.ShoppingListHighlighted = highlighted;
+            }
+
+            blueprint.ShoppingListHighlighted = highlighted;
+        }
     }
 }

@@ -15,6 +15,7 @@ namespace EDEngineer.Models
         private bool favorite;
         private bool ignored;
         private int shoppingListCount;
+        private bool shoppingListHighlighted;
         public string Type { get; }
 
         public string ShortenedType
@@ -48,6 +49,19 @@ namespace EDEngineer.Models
         public IReadOnlyCollection<string> Engineers { get; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; }
         public int Grade { get; }
+
+        [JsonIgnore]
+        public bool ShoppingListHighlighted
+        {
+            get { return shoppingListHighlighted; }
+            set
+            {
+                if (value == shoppingListHighlighted)
+                    return;
+                shoppingListHighlighted = value;
+                OnPropertyChanged();
+            }
+        }
 
         [JsonIgnore]
         public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";

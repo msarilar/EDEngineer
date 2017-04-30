@@ -1019,7 +1019,7 @@
                               Margin="0,0,14,0"
                               Loaded="DataGridLoaded"
                               ItemsSource="{Binding ShoppingList.List}"
-                              Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}"
+                              Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}, Mode=OneWay}"
                               DataContext="{Binding}"
                               PreviewMouseLeftButtonDown="DataGridOnPreviewMouseLeftButtonDown"
                               SelectedIndex="{Binding ShoppingListItem, Mode=OneWay}"
@@ -1059,20 +1059,21 @@
                                                       Grid.Column="0"
                                                       Margin="0,0,7,0"
                                                       Focusable="False"
+                                                          x:Name="Titi"
                                                       FontSize="13">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock>
-                                                        <Run>
-                                                            <Run.Text>
-                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
-                                                                    <Binding Path="Entry.Data.Kind"/>
-                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
-				                                                                RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                                </MultiBinding>
-                                                            </Run.Text>
-                                                        </Run>
-                                                        <Run Text=":" />
+                                                        <TextBlock Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
+                                                            <Run>
+                                                                <Run.Text>
+                                                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
+                                                                        <Binding Path="Entry.Data.Kind"/>
+                                                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+				                                                                    RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                    </MultiBinding>
+                                                                </Run.Text>
+                                                            </Run>
+                                                            <Run Text=":" />
                                                         </TextBlock>
                                                     </DataTemplate>
                                                 </ItemsControl.ItemTemplate>
@@ -1085,7 +1086,7 @@
                                                       FontSize="13">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock>
+                                                        <TextBlock Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
                                                             <TextBlock.Text>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                                                     <Binding Path="Entry.Data.Name"/>
@@ -1105,12 +1106,12 @@
                                                       FontSize="13">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock>
-                                                        <Run Text="(" />
-                                                        <Run Text="{Binding Entry.Count}" />
-                                                        <Run Text="/" />
-                                                        <Run Text="{Binding Size, Mode=OneWay}" />
-                                                        <Run Text=")" />
+                                                        <TextBlock Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
+                                                            <Run Text="(" />
+                                                            <Run Text="{Binding Entry.Count}" />
+                                                            <Run Text="/" />
+                                                            <Run Text="{Binding Size, Mode=OneWay}" />
+                                                            <Run Text=")" />
                                                         </TextBlock>
                                                     </DataTemplate>
                                                 </ItemsControl.ItemTemplate>
@@ -1127,7 +1128,7 @@
                                                           MinWidth="15.5"
                                                           MinHeight="15.5">
                                                             <iconPacks:PackIconMaterial Kind="Check"
-                                                                                    Foreground="Green" >
+                                                                                        Foreground="Green" >
                                                                 <iconPacks:PackIconMaterial.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
@@ -1138,9 +1139,9 @@
                                                                 </iconPacks:PackIconMaterial.Visibility>
                                                             </iconPacks:PackIconMaterial>
                                                             <iconPacks:PackIconMaterial Kind="Close"
-                                                                                    Foreground="Red" 
-                                                                                    Width="15"
-                                                                                    Height="15">
+                                                                                        Foreground="Red" 
+                                                                                        Width="15"
+                                                                                        Height="15">
                                                                 <iconPacks:PackIconMaterial.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
@@ -1163,7 +1164,10 @@
                                                   FontSize="15">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <Grid>
+                                                    <Grid MouseEnter="ShoppingListBlueprintMouseEnter"
+                                                          MouseLeave="ShoppingListBlueprintMouseLeave"
+                                                          DataContext="{Binding}"
+                                                          Tag="{Binding Path=ItemsSource, ElementName=Titi}">
                                                         <Grid.ToolTip>
                                                             <TextBlock Text="{Binding Item1.TranslatedString}" />
                                                         </Grid.ToolTip>
@@ -1200,8 +1204,9 @@
                                                             Style="{DynamicResource ChromelessButtonStyle}"
                                                             Grid.Column="2" />
                                                         <TextBlock Text="{Binding Item1.ShortString}"
-                                                               VerticalAlignment="Center"
-                                                               Grid.Column="3" />
+                                                                   Foreground="{Binding Item1.ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}"
+                                                                   VerticalAlignment="Center"
+                                                                   Grid.Column="3" />
                                                         <Button Content="x"
                                                             HorizontalAlignment="Right"
                                                             Tag="{Binding Item1}"

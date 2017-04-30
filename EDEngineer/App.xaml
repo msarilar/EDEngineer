@@ -72,10 +72,16 @@
             <converters:ThresholdToBackgroundColorConverter x:Key="ThresholdToBackgroundColor"
                                                          ThresholdReachedColor="{StaticResource ThresholdReachedBrush}"
                                                          NormalColor="{StaticResource TransparentBrush}"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListHighlightColor"
+                                                         SpecialColor="{StaticResource EliteOrangeBrush}"
+                                                         NormalColor="Wheat"/>
             <converters:IntToEnabledConverter x:Key="IntToEnabled"/>
             <converters:BooleanToEnumConverter x:Key="BooleanToEnum"/>
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
+            <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
+
             
+
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
             <Style TargetType="ToolTip">

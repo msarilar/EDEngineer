@@ -22,6 +22,7 @@ using EDEngineer.Utils.UI;
 using Application = System.Windows.Application;
 using Button = System.Windows.Controls.Button;
 using DataGridCell = System.Windows.Controls.DataGridCell;
+using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using NotificationSettingsWindow = EDEngineer.Views.Notifications.NotificationSettingsWindow;
 using ThresholdsManagerWindow = EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow;
 
@@ -506,6 +507,20 @@ namespace EDEngineer.Views
             BlueprintsRow.Height = new GridLength(1, GridUnitType.Star);
             ShoppingListSplitterRow.Height = new GridLength(1, GridUnitType.Auto);
             ShoppingListRow.Height = new GridLength(1, GridUnitType.Auto);
+        }
+
+        private void ShoppingListBlueprintMouseEnter(object sender, MouseEventArgs e)
+        {
+            var blueprints = (List<BlueprintIngredient>) ((Grid) sender).Tag;
+            var blueprint = (Tuple<Blueprint, int>)((Grid)sender).DataContext;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, blueprint.Item1, true);
+        }
+
+        private void ShoppingListBlueprintMouseLeave(object sender, MouseEventArgs e)
+        {
+            var blueprints = (List<BlueprintIngredient>)((Grid)sender).Tag;
+            var blueprint = (Tuple<Blueprint, int>)((Grid)sender).DataContext;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, blueprint.Item1, false);
         }
     }
 }
