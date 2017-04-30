@@ -22,7 +22,7 @@
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
-            <Grid Background="Black"   
+            <Grid Background="{StaticResource BackgroundBrush}"   
                   MouseDown="IngredientOnMouseLeftButtonDown"
                   Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
@@ -222,7 +222,7 @@
     </Window.Resources>
 
     <Grid Opacity="0.9"
-          Background="Black"
+          Background="{StaticResource BackgroundBrush}"
           x:Name="ContentGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -306,7 +306,7 @@
                     <ComboBox ItemsSource="{Binding Comparers}"
                                 SelectedItem="{Binding CurrentComparer, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                 HorizontalContentAlignment="Center"
-                                Background="Black"
+                                Background="{StaticResource BackgroundBrush}"
                                 Foreground="{StaticResource EliteOrangeBrush}"
                                 FontFamily="/Resources/Fonts/#Euro Caps">
                         <ComboBox.ItemTemplate>
@@ -653,7 +653,7 @@
                                 Style="{DynamicResource ChromelessButtonStyle}"
                                 ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unhighlight all ingredients', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                 x:Name="UnhighlightAllButton">
-                            <iconPacks:PackIconMaterial Kind="BlockHelper" Foreground="{StaticResource NotZeroBrush}" />
+                            <iconPacks:PackIconMaterial Kind="BlockHelper" Foreground="Red" />
                         </Button>
                     </Grid>
 
@@ -670,7 +670,7 @@
                     <DataGrid x:Name="Blueprints"
                               IsReadOnly="True"
                               FontFamily="/Resources/Fonts/#Euro Caps"
-                              Background="Black"
+                              Background="{StaticResource BackgroundBrush}"
                               BorderBrush="{StaticResource EliteOrangeBrush}"
                               HorizontalAlignment="Stretch"
                               ColumnWidth="*"
@@ -1007,7 +1007,7 @@
                         <DataGrid x:Name="ShoppingList"
                               IsReadOnly="True"
                               FontFamily="/Resources/Fonts/#Euro Caps"
-                              Background="Black"
+                              Background="{StaticResource BackgroundBrush}"
                               BorderBrush="{StaticResource EliteOrangeBrush}"
                               HorizontalAlignment="Stretch"
                               FontSize="14.5"

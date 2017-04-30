@@ -36,9 +36,9 @@
             <Color x:Key="ThresholdReached">
                 #441e00
             </Color>
-
-            <Color x:Key="NotZero">
-                #CF2400
+            
+            <Color x:Key="Background">
+                #000000
             </Color>
 
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
@@ -46,7 +46,7 @@
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
             <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
             <SolidColorBrush x:Key="ThresholdReachedBrush" Color="{StaticResource ThresholdReached}"/>
-            <SolidColorBrush x:Key="NotZeroBrush" Color="{StaticResource NotZero}"/>
+            <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"/>
             
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
@@ -195,7 +195,7 @@
                     <Setter.Value>
                         <Style TargetType="{x:Type DataGridColumnHeader}">
                             <Setter Property="Foreground" Value="DarkCyan" />
-                            <Setter Property="Background" Value="#111111" />
+                            <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
                             <Setter Property="BorderBrush" Value="Transparent" />
                             <Setter Property="SeparatorBrush" Value="Transparent"/>
                             <Setter Property="BorderThickness" Value="0,0,0,3" />
@@ -205,7 +205,6 @@
                             <Setter Property="HorizontalContentAlignment" Value="Center" />
                             <Setter Property="VerticalContentAlignment" Value="Center" />
                             <Setter Property="Margin" Value="0" />
-                            <Setter Property="FontWeight" Value="Bold"/>
                             <Setter Property="MinHeight" Value="25" />
                             <Setter Property="MinWidth" Value="0" />
                             <Setter Property="Padding" Value="10,4,4,7" />
@@ -526,7 +525,7 @@
                                         <Condition Property="IsMouseOver" Value="False" />
                                         <Condition Property="IsSelected" Value="False" />
                                     </MultiTrigger.Conditions>
-                                    <Setter Property="Background" Value="Black" />
+                                    <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
                                     <Setter Property="BorderBrush"
             							Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
                                     <Setter Property="Foreground" Value="{StaticResource EliteOrangeBrush}" />
