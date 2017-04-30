@@ -79,9 +79,7 @@
             <converters:BooleanToEnumConverter x:Key="BooleanToEnum"/>
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
-
             
-
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
             
             <Style TargetType="ToolTip">
