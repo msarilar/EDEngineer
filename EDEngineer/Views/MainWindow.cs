@@ -511,16 +511,30 @@ namespace EDEngineer.Views
 
         private void ShoppingListBlueprintMouseEnter(object sender, MouseEventArgs e)
         {
-            var blueprints = (List<BlueprintIngredient>) ((Grid) sender).Tag;
+            var ingredients = (List<BlueprintIngredient>) ((Grid) sender).Tag;
             var blueprint = (Tuple<Blueprint, int>)((Grid)sender).DataContext;
-            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, blueprint.Item1, true);
+            viewModel.CurrentCommander.Value.HighlightShoppingListIngredient(ingredients, blueprint.Item1, true);
         }
 
         private void ShoppingListBlueprintMouseLeave(object sender, MouseEventArgs e)
         {
-            var blueprints = (List<BlueprintIngredient>)((Grid)sender).Tag;
+            var ingredients = (List<BlueprintIngredient>)((Grid)sender).Tag;
             var blueprint = (Tuple<Blueprint, int>)((Grid)sender).DataContext;
-            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, blueprint.Item1, false);
+            viewModel.CurrentCommander.Value.HighlightShoppingListIngredient(ingredients, blueprint.Item1, false);
+        }
+
+        private void ShoppingListIngredientMouseEnter(object sender, MouseEventArgs e)
+        {
+            var ingredient = (BlueprintIngredient) ((TextBlock) sender).DataContext;
+            var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, true);
+        }
+
+        private void ShoppingListIngredientMouseLeave(object sender, MouseEventArgs e)
+        {
+            var ingredient = (BlueprintIngredient)((TextBlock)sender).DataContext;
+            var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, false);
         }
     }
 }

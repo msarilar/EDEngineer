@@ -341,7 +341,7 @@ namespace EDEngineer.Views
             Settings.Default.Save();
         }
 
-        public void HighlightShoppingListBlueprint(List<BlueprintIngredient> ingredients, Blueprint blueprint, bool highlighted)
+        public void HighlightShoppingListIngredient(List<BlueprintIngredient> ingredients, Blueprint blueprint, bool highlighted)
         {
             foreach (
                 var ingredient in
@@ -354,6 +354,16 @@ namespace EDEngineer.Views
             }
 
             blueprint.ShoppingListHighlighted = highlighted;
+        }
+
+        public void HighlightShoppingListBlueprint(List<Tuple<Blueprint, int>> blueprints, BlueprintIngredient ingredient, bool highlighted)
+        {
+            foreach(var blueprint in blueprints.Select(i => i.Item1).Where(b => b.Ingredients.Any(i => i.Entry.Data.Name == ingredient.Entry.Data.Name)))
+            {
+                blueprint.ShoppingListHighlighted = highlighted;
+            }
+
+            ingredient.ShoppingListHighlighted = highlighted;
         }
     }
 }

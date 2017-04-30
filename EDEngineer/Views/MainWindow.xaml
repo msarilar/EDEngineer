@@ -1010,7 +1010,6 @@
                               Background="Black"
                               BorderBrush="{StaticResource EliteOrangeBrush}"
                               HorizontalAlignment="Stretch"
-                              ColumnWidth="*"
                               FontSize="14.5"
                               IsSynchronizedWithCurrentItem="False"
                               HorizontalContentAlignment="Stretch"
@@ -1055,15 +1054,20 @@
                                                 <ColumnDefinition Width="Auto" />
                                             </Grid.ColumnDefinitions>
 
+                                            <!-- KIND -->
                                             <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                      Grid.Column="0"
-                                                      Margin="0,0,7,0"
-                                                      Focusable="False"
-                                                          x:Name="Titi"
-                                                      FontSize="13">
+                                                          Grid.Column="0"
+                                                          Margin="0,0,7,0"
+                                                          Focusable="False"
+                                                          x:Name="ShoppingListIngredients"
+                                                          FontSize="13">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
+                                                        <TextBlock DataContext="{Binding}"
+                                                                   Tag="{Binding Path=ItemsSource, ElementName=ShoppingListComposition}"
+                                                                   MouseEnter="ShoppingListIngredientMouseEnter"
+                                                                   MouseLeave="ShoppingListIngredientMouseLeave"
+                                                                   Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
                                                             <Run>
                                                                 <Run.Text>
                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
@@ -1079,6 +1083,7 @@
                                                 </ItemsControl.ItemTemplate>
                                             </ItemsControl>
 
+                                            <!-- NAME -->
                                             <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="1"
                                                       Margin="0,0,7,0"
@@ -1086,7 +1091,11 @@
                                                       FontSize="13">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
+                                                        <TextBlock DataContext="{Binding}"
+                                                                   Tag="{Binding Path=ItemsSource, ElementName=ShoppingListComposition}"
+                                                                   MouseEnter="ShoppingListIngredientMouseEnter"
+                                                                   MouseLeave="ShoppingListIngredientMouseLeave"
+                                                                   Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
                                                             <TextBlock.Text>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                                                     <Binding Path="Entry.Data.Name"/>
@@ -1099,6 +1108,7 @@
                                                 </ItemsControl.ItemTemplate>
                                             </ItemsControl>
 
+                                            <!-- COUNT/NEEDED -->
                                             <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="2"
                                                       Margin="0,0,7,0"
@@ -1106,7 +1116,11 @@
                                                       FontSize="13">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <TextBlock Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
+                                                        <TextBlock DataContext="{Binding}"
+                                                                   Tag="{Binding Path=ItemsSource, ElementName=ShoppingListComposition}"
+                                                                   MouseEnter="ShoppingListIngredientMouseEnter"
+                                                                   MouseLeave="ShoppingListIngredientMouseLeave"
+                                                                   Foreground="{Binding ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}">
                                                             <Run Text="(" />
                                                             <Run Text="{Binding Entry.Count}" />
                                                             <Run Text="/" />
@@ -1117,6 +1131,7 @@
                                                 </ItemsControl.ItemTemplate>
                                             </ItemsControl>
 
+                                            <!-- READY/NOT READY -->
                                             <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="3"
                                                       Focusable="False"
@@ -1159,15 +1174,16 @@
                                         </Grid>
 
                                         <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.Composition, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
-                                                  Grid.Column="1"
-                                                  HorizontalAlignment="Right"
-                                                  FontSize="15">
+                                                      Grid.Column="1"
+                                                      HorizontalAlignment="Right"
+                                                      x:Name="ShoppingListComposition"
+                                                      FontSize="15">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
                                                     <Grid MouseEnter="ShoppingListBlueprintMouseEnter"
                                                           MouseLeave="ShoppingListBlueprintMouseLeave"
                                                           DataContext="{Binding}"
-                                                          Tag="{Binding Path=ItemsSource, ElementName=Titi}">
+                                                          Tag="{Binding Path=ItemsSource, ElementName=ShoppingListIngredients}">
                                                         <Grid.ToolTip>
                                                             <TextBlock Text="{Binding Item1.TranslatedString}" />
                                                         </Grid.ToolTip>
@@ -1228,7 +1244,6 @@
                             </DataGrid.RowDetailsTemplate>
                             <DataGrid.Columns>
                                 <DataGridTemplateColumn IsReadOnly="True"
-                                                    SortMemberPath="ProgressSorting"
                                                     Width="*"
                                                     CanUserResize="False">
                                     <DataGridTemplateColumn.CellTemplate>
@@ -1251,6 +1266,7 @@
 
                                                     </TextBlock.Text>
                                                 </TextBlock>
+
                                                 <StackPanel Orientation="Vertical"
                                                         VerticalAlignment="Center"
                                                         Grid.Column="2"
