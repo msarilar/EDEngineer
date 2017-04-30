@@ -43,38 +43,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDEngineer.exe" size="2158504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDEngineer.exe" size="2123176">
       <assemblyIdentity name="EDEngineer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>p++VcKCE0V8Nb3pKfbGr5OGcUFI2f9oLaDEvbkuZPLM=</dsig:DigestValue>
+        <dsig:DigestValue>0rJMisj2NEDdxIVz5WjlhIBFiesG2BLLBT+CQnGC8d4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDEngineer.Models.dll" size="50688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDEngineer.Models.dll" size="48640">
       <assemblyIdentity name="EDEngineer.Models" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>koPAXyDwIncwufgzTGFwYBIR916U9OCyCmrR0I/uQG4=</dsig:DigestValue>
+        <dsig:DigestValue>S6rh+2F8mNjzRIdM+VkDz4b/fyr53W8WLBTERC5IIus=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDEngineer.Server.dll" size="66048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EDEngineer.Server.dll" size="61440">
       <assemblyIdentity name="EDEngineer.Server" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/VKFHC/xTVW++Nhxd2bbBECcLt+eOjUEN7RvbK5gxL8=</dsig:DigestValue>
+        <dsig:DigestValue>cZreGLaBEFEms3XO0y9WAd3XOa+bzF11J9jw5J+d8fo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -227,4 +227,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=GAMBIT6\Max" issuerKeyHash="11f40001e3715b07597e0eddab9728f9e30cc302" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OhqrQDswhpelGe+Sm1C2jai+AhHSUjL8X2uQm5ul4YY=</DigestValue></Reference></SignedInfo><SignatureValue>Th/2yWULc8hSm1ygErMsqTFnJ8cr3M5Wn4uNCeM4vKC6Zf+gTnWtOtU2j6x/BZcFqkgqaKOp3KygipbSsjoAk1nGRPgId5tAEsvPA/aPpPzbhdvwlLz+BNNTbuTS6FxMBDcSL8UEs4GHBcFRs997z3wnldu4yykHtn9v+V/o+oY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s3Rgw7x2D3+SLtMKutluM5M8B4WEs+Ug20EfdfHXvLbLVmZQc6zcjTSNAVuXx+DFhTw7Xfvs5y0MXW10LdLfiKq6aazW3Jt9gKcxqv/3nADJB/f2RuyVbpmLpwbG5ZTjAKRvo+VM6u+VI5UIM66zasrgjqympr2YoaV4wjeSXk0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="86e1a59b9b906b5ffc3252d21102bea88db6509b92ef19a59786303b40ab1a3a" Description="" Url=""><as:assemblyIdentity name="EDEngineer.exe" version="1.0.7.2" publicKeyToken="c7c2cd04d2cdd815" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GAMBIT6\Max</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>u5MUaBMXxKGvkwdawtjB9ZDl/bRskFde6h8Y010+ieQ=</DigestValue></Reference></SignedInfo><SignatureValue>So1kGz0ZB6/LFN6NYfWv44qF50k9kTCa+bBsh+qOXF0k1aTFaQobJZr8qjeklCZJx+szF9tlitbgns8EuNq/zk3rbjpIseKOu9+Q9XeqI5dczhp//FvVbAScSrFwJ8lj/KbTkDEtFNboUo9CsmQ2P0VqZnknipHvWoZn4Y0/wpE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s3Rgw7x2D3+SLtMKutluM5M8B4WEs+Ug20EfdfHXvLbLVmZQc6zcjTSNAVuXx+DFhTw7Xfvs5y0MXW10LdLfiKq6aazW3Jt9gKcxqv/3nADJB/f2RuyVbpmLpwbG5ZTjAKRvo+VM6u+VI5UIM66zasrgjqympr2YoaV4wjeSXk0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQfKLD0d6RorlAQCjrdfkDHTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYARwBBAE0AQgBJAFQANgBcAE0AYQB4MB4XDTE2MTEwMTE1MDgxOVoXDTE3MTEwMTIxMDgxOVowITEfMB0GA1UEAx4WAEcAQQBNAEIASQBUADYAXABNAGEAeDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAs3Rgw7x2D3+SLtMKutluM5M8B4WEs+Ug20EfdfHXvLbLVmZQc6zcjTSNAVuXx+DFhTw7Xfvs5y0MXW10LdLfiKq6aazW3Jt9gKcxqv/3nADJB/f2RuyVbpmLpwbG5ZTjAKRvo+VM6u+VI5UIM66zasrgjqympr2YoaV4wjeSXk0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQA0l6SGR8ROw2A3Wxp1znVUThSCab6lWc0o/x6VJXn8PmxpvzLDNKqvz4PqP9GDv9DUiPSamsNCRA5yMmsIqD9q8bbtTRN6wYAtBwcP7tHi4OvYggM9UW3cBtJKBV9r+UvywN4847zsC3TPF0FgjEb3xqdCJEqYe3OXzdi0FLScSA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=GAMBIT6\Max" issuerKeyHash="11f40001e3715b07597e0eddab9728f9e30cc302" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>pcm2ynhMgx6VjsfxB4LQVVBqtxVDpcrCsC3NSaC9kRg=</DigestValue></Reference></SignedInfo><SignatureValue>SjYPOPgdb7sOswpzIq+mFrsLB4Pbv+jKQA0Fpb4AGH84S9oLZl9HrtEceYjsTvy+l1seioXcChJKzTkLhmjNm04eQLNCnP+FcZPRogXGpJWRKT+ISj19RYbavKZlt5hDZH2SwVjOOiKivl3gXbGsoLM/xTgsHPkgJ6Pr0FS6V50=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>s3Rgw7x2D3+SLtMKutluM5M8B4WEs+Ug20EfdfHXvLbLVmZQc6zcjTSNAVuXx+DFhTw7Xfvs5y0MXW10LdLfiKq6aazW3Jt9gKcxqv/3nADJB/f2RuyVbpmLpwbG5ZTjAKRvo+VM6u+VI5UIM66zasrgjqympr2YoaV4wjeSXk0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1891bda049cd2db0c2caa54315b76a5055d08207f1c78e951e834c78cab6c9a5" Description="" Url=""><as:assemblyIdentity name="EDEngineer.exe" version="1.0.7.2" publicKeyToken="c7c2cd04d2cdd815" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GAMBIT6\Max</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>++OVxTrx2cW3uprQjGWSRhxBydsuRG6gV/1IicHjjTE=</DigestValue></Reference></SignedInfo><SignatureValue>Io5iQmrKkFL65Vaov2Sit0NeK21ILWcJHgxbZsAoluYvaui7uKKfLZ2hsOyO5UaKwZQk6WNC4L5CafOTwaRvwi2OzrEaOMuWUfii90LwwRQRnwBC0ZKPuP8AlFuDA7S0Lxk8PVzeWq+uVMSJf1mta83KrB7vcM0gB2rcWAiKixY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>s3Rgw7x2D3+SLtMKutluM5M8B4WEs+Ug20EfdfHXvLbLVmZQc6zcjTSNAVuXx+DFhTw7Xfvs5y0MXW10LdLfiKq6aazW3Jt9gKcxqv/3nADJB/f2RuyVbpmLpwbG5ZTjAKRvo+VM6u+VI5UIM66zasrgjqympr2YoaV4wjeSXk0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBxTCCAS6gAwIBAgIQfKLD0d6RorlAQCjrdfkDHTANBgkqhkiG9w0BAQsFADAhMR8wHQYDVQQDHhYARwBBAE0AQgBJAFQANgBcAE0AYQB4MB4XDTE2MTEwMTE1MDgxOVoXDTE3MTEwMTIxMDgxOVowITEfMB0GA1UEAx4WAEcAQQBNAEIASQBUADYAXABNAGEAeDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAs3Rgw7x2D3+SLtMKutluM5M8B4WEs+Ug20EfdfHXvLbLVmZQc6zcjTSNAVuXx+DFhTw7Xfvs5y0MXW10LdLfiKq6aazW3Jt9gKcxqv/3nADJB/f2RuyVbpmLpwbG5ZTjAKRvo+VM6u+VI5UIM66zasrgjqympr2YoaV4wjeSXk0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQA0l6SGR8ROw2A3Wxp1znVUThSCab6lWc0o/x6VJXn8PmxpvzLDNKqvz4PqP9GDv9DUiPSamsNCRA5yMmsIqD9q8bbtTRN6wYAtBwcP7tHi4OvYggM9UW3cBtJKBV9r+UvywN4847zsC3TPF0FgjEb3xqdCJEqYe3OXzdi0FLScSA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
