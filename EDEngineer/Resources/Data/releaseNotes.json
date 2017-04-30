@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.2",
+    "Content": "* In the shopping list, you can now put your mouse over a blueprint to highlight the ingredients that compose it (and reversely).\r\n\r\n* Fixed the engineer list of Sensor and Scanner blueprints, thanks to @Thurion for spotting the issue and fixing it!\r\n\r\n* Polish localization is now available, thanks a lot to @gienkov for providing it all !"
+  },
+  {
     "Version": "1.0.7.0",
     "Content": "* Notifications overhaul : you can now configure your notifications (blueprint ready, cargo almost full and threshold reached) to use speech synthesis. There should be less spam of notifications if multiple events are triggered at the same time.\r\n* Faster text search when using the search\r\n\r\n* Added the high grade emissions locations to related materials, thanks to @Psieonic for adding this to the reference data !\r\n* Added recipes for engineers unlock, they work the same as any other blueprint (with type \"Unlock\") ; thanks to @vetall812 for adding this to the reference data !\r\n* Fixed the engineer's lists of many of the new sensors blueprints ; thanks to @AndreyATGB for spotting the issue and fixing it !\r\n\r\n* Fixed a black window bug with Silent Launch when the window was unlocked (now the window will be minimized on startup if you use silent launch combined with unlocked window)\r\n\r\n* API Server : Added thresholds to cargo list and a new route shopping-list"
   },
