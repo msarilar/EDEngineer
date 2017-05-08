@@ -100,6 +100,8 @@ namespace EDEngineer.Views
                 CurrentCommander = Commanders.First();
             }
 
+            CurrentCommander.Value.RefreshShoppingList();
+
             LogWatcher.InitiateWatch(logs =>
             {
                 Application.Current.Dispatcher.Invoke(() =>

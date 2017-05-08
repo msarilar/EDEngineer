@@ -365,5 +365,12 @@ namespace EDEngineer.Views
 
             ingredient.ShoppingListHighlighted = highlighted;
         }
+
+        public void RefreshShoppingList()
+        {
+            // relevant when live reloading a commander, because WPF didn't bind upon creating the object:
+            OnPropertyChanged(nameof(ShoppingList));
+            OnPropertyChanged(nameof(ShoppingListItem));
+        }
     }
 }
