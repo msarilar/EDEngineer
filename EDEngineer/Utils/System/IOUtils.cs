@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using EDEngineer.Localization;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using Application = System.Windows.Application;
 
 namespace EDEngineer.Utils.System
@@ -74,23 +75,27 @@ namespace EDEngineer.Utils.System
 
             if (forcePickFolder || logDirectory == null || !Directory.Exists(logDirectory))
             {
-                var dialog = new FolderBrowserDialog
+                var dialog = new CommonOpenFileDialog()
                 {
-                    Description = forcePickFolder ? 
+                    Title = forcePickFolder ?
                                 translator.Translate("Select a new log directory") :
-                                translator.Translate("Couldn't find the log folder for elite, you'll have to specify it")
+                                translator.Translate("Couldn't find the log folder for elite, you'll have to specify it"),
+                    AllowNonFileSystemItems = false,
+                    Multiselect = false,
+                    IsFolderPicker = true,
+                    EnsurePathExists = true
                 };
 
                 if (forcePickFolder && !string.IsNullOrEmpty(currentLogDirectory))
                 {
-                    dialog.SelectedPath = currentLogDirectory;
+                    dialog.InitialDirectory = currentLogDirectory;
                 }
 
                 var pickFolderResult = dialog.ShowDialog();
 
-                if (pickFolderResult == DialogResult.OK)
+                if (pickFolderResult == CommonFileDialogResult.Ok)
                 {
-                    if (!Directory.GetFiles(dialog.SelectedPath).Any(f => f != null &&
+                    if (!Directory.GetFiles(dialog.FileName).Any(f => f != null &&
                                                                           Path.GetFileName(f).StartsWith("Journal.") &&
                                                                           Path.GetFileName(f).EndsWith(".log")))
                     {
@@ -115,7 +120,7 @@ namespace EDEngineer.Utils.System
                         }
                     }
 
-                    logDirectory = dialog.SelectedPath;
+                    logDirectory = dialog.FileName;
                 }
                 else if (forcePickFolder)
                 {
