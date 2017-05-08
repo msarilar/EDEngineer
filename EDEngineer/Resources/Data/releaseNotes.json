@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.3",
+    "Content": "* Changed the log folder selection window to a more user-friendly one (used to be a tree view)\r\n* Reduced font size of ingredients in the left panel\r\n\r\n* @cocafr fixed a typo in the french localization related to Tempered Alloys"
+  },
+  {
     "Version": "1.0.7.2",
     "Content": "* In the shopping list, you can now put your mouse over a blueprint to highlight the ingredients that compose it (and reversely).\r\n\r\n* Fixed the engineer list of Sensor and Scanner blueprints, thanks to @Thurion for spotting the issue and fixing it!\r\n\r\n* Polish localization is now available, thanks a lot to @gienkov for providing it all !"
   },
