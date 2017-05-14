@@ -10,104 +10,54 @@
         Title="Graphics" Height="400" Width="400">
     <Grid Margin="3">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Margin="3" Grid.Row="0"
-              HorizontalAlignment="Stretch"
-              Background="BurlyWood">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0"
-                           HorizontalAlignment="Center"
-                           Text="Commanders Panel Font Size"/>
-            <Slider Margin="3" Grid.Row="1"
-                        Value="{Binding CommanderRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        </Grid>
-
         <Grid Margin="3"
-              Grid.Row="1">
+              Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             
-            <Grid Margin="3" Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Grid Margin="3" Grid.Row="0"
-                      HorizontalAlignment="Stretch"
-                      Background="Aquamarine">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0"
-                               HorizontalAlignment="Center"
-                               Text="Category Panel Font Size"/>
-                    <Slider Margin="3" Grid.Row="1"
-                            Value="{Binding IngredientKindRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                </Grid>
-                <Grid Margin="3" Grid.Row="1"
+            <Grid Margin="3"  Grid.Column="0"
                       HorizontalAlignment="Stretch"
                       Background="CadetBlue">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0"
-                               HorizontalAlignment="Center"
-                               Text="Ingredient Panel Font Size"/>
-                    <Slider Margin="3" Grid.Row="1"
-                            Value="{Binding IngredientRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                </Grid>
-            </Grid>
-
-            <Grid Margin="3" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
-                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0"
+                               HorizontalAlignment="Center"
+                               Text="Left Panel Font Size"/>
+                <Slider Margin="3" Grid.Row="1"
+                        Minimum="50" Maximum="200"
+                            Value="{Binding LeftRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
 
-                <Grid Margin="3" Grid.Row="0"
+
+            <Grid Margin="3" Grid.Row="0"
+                  Grid.Column="1"
                       HorizontalAlignment="Stretch"
                       Background="LawnGreen">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0"
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0"
                                HorizontalAlignment="Center"
-                               Text="Blueprints Panel Font Size"/>
-                    <Slider Margin="3" Grid.Row="1"
-                            Value="{Binding BlueprintRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                </Grid>
-                
-                <Grid Margin="3" Grid.Row="1"
-                      HorizontalAlignment="Stretch"
-                      Background="MediumSeaGreen">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0"
-                               HorizontalAlignment="Center"
-                               Text="Shopping List Panel Font Size"/>
-                    <Slider Margin="3" Grid.Row="1"
-                            Value="{Binding ShoppingListRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                </Grid>
+                               Text="Right Panel Font Size"/>
+                <Slider Margin="3" Grid.Row="1"
+                        Minimum="50" Maximum="200"
+                            Value="{Binding RightRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             </Grid>
         </Grid>
 
 
-        <Grid Margin="3" Grid.Row="2"
+        <Grid Margin="3" Grid.Row="1"
               Grid.ColumnSpan="2"
               HorizontalAlignment="Stretch"
               Background="RoyalBlue">
@@ -119,8 +69,14 @@
                        HorizontalAlignment="Center"
                        Text="Bottom Panel Font Size"/>
             <Slider Margin="3" Grid.Row="1"
+                        Minimum="50" Maximum="200"
                     Value="{Binding BottomRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
+        
+        <Button Grid.Row="2"
+                Content="Reset"
+                Background="OrangeRed"
+                Click="ButtonResetClicked"/>
 
         <Button Grid.Row="3"
                 Content="OK"

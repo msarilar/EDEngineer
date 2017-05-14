@@ -6,109 +6,62 @@ namespace EDEngineer.Views.Graphics
 {
     public class GraphicSettings : INotifyPropertyChanged
     {
+        private float rightRatio;
+        private float bottomRatio;
+        private float leftRatio;
+
         public GraphicSettings()
         {
-            commanderRatio = Properties.Settings.Default.CommanderFontRatio;
-            ingredientKindRatio = Properties.Settings.Default.IngredientKindFontRatio;
-            ingredientRatio = Properties.Settings.Default.IngredientFontRatio;
-            blueprintRatio = Properties.Settings.Default.BlueprintFontRatio;
-            shoppingListRatio = Properties.Settings.Default.ShoppingListFontRatio;
+            leftRatio = Properties.Settings.Default.LeftFontRatio;
+            rightRatio = Properties.Settings.Default.RightRatio;
             bottomRatio = Properties.Settings.Default.BottomFontRatio;
         }
 
         public void Sync()
         {
-            Properties.Settings.Default.CommanderFontRatio = commanderRatio;
-            Properties.Settings.Default.IngredientKindFontRatio = ingredientKindRatio;
-            Properties.Settings.Default.IngredientFontRatio = ingredientRatio;
-            Properties.Settings.Default.BlueprintFontRatio = blueprintRatio;
-            Properties.Settings.Default.ShoppingListFontRatio = shoppingListRatio;
+            Properties.Settings.Default.LeftFontRatio = leftRatio;
+            Properties.Settings.Default.RightRatio = rightRatio;
             Properties.Settings.Default.BottomFontRatio = bottomRatio;
 
             Properties.Settings.Default.Save();
         }
 
-        private float commanderRatio;
-
-        public float CommanderRatio
+        public void Reset()
         {
-            get { return commanderRatio; }
+            LeftRatio = 100;
+            RightRatio = 100;
+            BottomRatio = 100;
+        }
+
+        public float LeftRatio
+        {
+            get { return leftRatio; }
             set
             {
-                if (Math.Abs(commanderRatio - value) < 0.01)
+                if (Math.Abs(leftRatio - value) < 0.01)
                 {
                     return;
                 }
+
+                leftRatio = value;
                 OnPropertyChanged();
-                commanderRatio = value;
             }
         }
 
-        private float ingredientKindRatio;
-
-        public float IngredientKindRatio
+        public float RightRatio
         {
-            get { return ingredientKindRatio; }
+            get { return rightRatio; }
             set
             {
-                if (Math.Abs(ingredientKindRatio - value) < 0.01)
+                if (Math.Abs(rightRatio - value) < 0.01)
                 {
                     return;
                 }
+
+                rightRatio = value;
                 OnPropertyChanged();
-                ingredientKindRatio = value;
             }
         }
-
-        private float ingredientRatio;
-
-        public float IngredientRatio
-        {
-            get { return ingredientRatio; }
-            set
-            {
-                if (Math.Abs(ingredientRatio - value) < 0.01)
-                {
-                    return;
-                }
-                OnPropertyChanged();
-                ingredientRatio = value;
-            }
-        }
-
-        private float blueprintRatio;
-
-        public float BlueprintRatio
-        {
-            get { return blueprintRatio; }
-            set
-            {
-                if (Math.Abs(blueprintRatio - value) < 0.01)
-                {
-                    return;
-                }
-                OnPropertyChanged();
-                blueprintRatio = value;
-            }
-        }
-
-        private float shoppingListRatio;
-
-        public float ShoppingListRatio
-        {
-            get { return shoppingListRatio; }
-            set
-            {
-                if (Math.Abs(shoppingListRatio - value) < 0.01)
-                {
-                    return;
-                }
-                OnPropertyChanged();
-                shoppingListRatio = value;
-            }
-        }
-
-        private float bottomRatio;
 
         public float BottomRatio
         {
@@ -119,8 +72,9 @@ namespace EDEngineer.Views.Graphics
                 {
                     return;
                 }
-                OnPropertyChanged();
+
                 bottomRatio = value;
+                OnPropertyChanged();
             }
         }
 

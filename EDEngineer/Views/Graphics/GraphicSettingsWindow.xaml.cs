@@ -25,5 +25,10 @@ namespace EDEngineer.Views.Graphics
         {
             settings.Sync();
         }
+
+        private void ButtonResetClicked(object sender, RoutedEventArgs e)
+        {
+            settings.Reset();
+        }
     }
 }

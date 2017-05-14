@@ -370,60 +370,24 @@ namespace EDEngineer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float CommanderFontRatio {
+        public float LeftFontRatio {
             get {
-                return ((float)(this["CommanderFontRatio"]));
+                return ((float)(this["LeftFontRatio"]));
             }
             set {
-                this["CommanderFontRatio"] = value;
+                this["LeftFontRatio"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float IngredientKindFontRatio {
+        public float RightRatio {
             get {
-                return ((float)(this["IngredientKindFontRatio"]));
+                return ((float)(this["RightRatio"]));
             }
             set {
-                this["IngredientKindFontRatio"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float IngredientFontRatio {
-            get {
-                return ((float)(this["IngredientFontRatio"]));
-            }
-            set {
-                this["IngredientFontRatio"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float BlueprintFontRatio {
-            get {
-                return ((float)(this["BlueprintFontRatio"]));
-            }
-            set {
-                this["BlueprintFontRatio"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float ShoppingListFontRatio {
-            get {
-                return ((float)(this["ShoppingListFontRatio"]));
-            }
-            set {
-                this["ShoppingListFontRatio"] = value;
+                this["RightRatio"] = value;
             }
         }
         
