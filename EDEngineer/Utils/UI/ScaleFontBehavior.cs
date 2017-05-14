@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Interactivity;
@@ -8,6 +8,8 @@ using System.Windows.Media;
 
 namespace EDEngineer.Utils.UI
 {
+    using DependencyObjectAccessor = Tuple<string, Action<string>, double, Action<double>>;
+
     public class ScaleFontBehavior : Behavior<Grid>
     {
         private readonly Dictionary<string, double> fontSizes = new Dictionary<string, double>(); 
@@ -28,22 +30,32 @@ namespace EDEngineer.Utils.UI
 
         private void CalculateFontSize()
         {
-            var tbs = FindVisualChildren<TextBlock>(AssociatedObject);
-            foreach (var tb in tbs)
+            var textBlocks = FindVisualChildren<TextBlock>(AssociatedObject)
+                .Select(b => new DependencyObjectAccessor(b.Name, s => b.Name = s, b.FontSize, s => b.FontSize = s));
+            var textBoxes = FindVisualChildren<TextBox>(AssociatedObject)
+                .Select(b => new DependencyObjectAccessor(b.Name, s => b.Name = s, b.FontSize, s => b.FontSize = s));
+
+            foreach (var tb in textBlocks.Union(textBoxes))
             {
                 double fontSize;
-                if (!fontSizes.TryGetValue(tb.Name, out fontSize))
+                if (!fontSizes.TryGetValue(tb.Item1, out fontSize))
                 {
-                    if (tb.Name == string.Empty)
+                    string name;
+                    if (tb.Item1 == string.Empty)
                     {
-                        tb.Name = "_" + Guid.NewGuid().ToString().Replace("-", "");
+                        name = "_" + Guid.NewGuid().ToString().Replace("-", "");
+                        tb.Item2(name);
+                    }
+                    else
+                    {
+                        name = tb.Item1;
                     }
 
-                    fontSizes[tb.Name] = tb.FontSize;
-                    fontSize = tb.FontSize;
+                    fontSizes[name] = tb.Item3;
+                    fontSize = tb.Item3;
                 }
 
-                tb.FontSize = fontSize * FontRatio / 100d;
+                tb.Item4(fontSize * FontRatio / 100d);
             }
         }
 
