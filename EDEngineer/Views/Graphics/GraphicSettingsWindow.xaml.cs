@@ -10,9 +10,9 @@ namespace EDEngineer.Views.Graphics
     {
         private readonly GraphicSettings settings;
 
-        private readonly float beforeLeftRatio;
-        private readonly float beforeBottomRatio;
-        private readonly float beforeRightRatio;
+        private readonly double beforeLeftRatio;
+        private readonly double beforeBottomRatio;
+        private readonly double beforeRightRatio;
 
         public GraphicSettingsWindow(GraphicSettings settings)
         {

@@ -6,9 +6,9 @@ namespace EDEngineer.Views.Graphics
 {
     public class GraphicSettings : INotifyPropertyChanged
     {
-        private float rightRatio;
-        private float bottomRatio;
-        private float leftRatio;
+        private double rightRatio;
+        private double bottomRatio;
+        private double leftRatio;
 
         public GraphicSettings()
         {
@@ -17,7 +17,7 @@ namespace EDEngineer.Views.Graphics
             bottomRatio = Properties.Settings.Default.BottomFontRatio;
         }
 
-        public void Reset(float left, float right, float bottom)
+        public void Reset(double left, double right, double bottom)
         {
             LeftRatio = left;
             RightRatio = right;
@@ -33,7 +33,7 @@ namespace EDEngineer.Views.Graphics
             Properties.Settings.Default.Save();
         }
 
-        public float LeftRatio
+        public double LeftRatio
         {
             get { return leftRatio; }
             set
@@ -48,7 +48,7 @@ namespace EDEngineer.Views.Graphics
             }
         }
 
-        public float RightRatio
+        public double RightRatio
         {
             get { return rightRatio; }
             set
@@ -63,7 +63,7 @@ namespace EDEngineer.Views.Graphics
             }
         }
 
-        public float BottomRatio
+        public double BottomRatio
         {
             get { return bottomRatio; }
             set

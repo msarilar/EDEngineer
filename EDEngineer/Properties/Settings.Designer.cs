@@ -370,9 +370,9 @@ namespace EDEngineer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float LeftFontRatio {
+        public double LeftFontRatio {
             get {
-                return ((float)(this["LeftFontRatio"]));
+                return ((double)(this["LeftFontRatio"]));
             }
             set {
                 this["LeftFontRatio"] = value;
@@ -382,9 +382,9 @@ namespace EDEngineer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float RightRatio {
+        public double RightRatio {
             get {
-                return ((float)(this["RightRatio"]));
+                return ((double)(this["RightRatio"]));
             }
             set {
                 this["RightRatio"] = value;
@@ -394,9 +394,9 @@ namespace EDEngineer.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public float BottomFontRatio {
+        public double BottomFontRatio {
             get {
-                return ((float)(this["BottomFontRatio"]));
+                return ((double)(this["BottomFontRatio"]));
             }
             set {
                 this["BottomFontRatio"] = value;
