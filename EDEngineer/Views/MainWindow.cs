@@ -103,8 +103,6 @@ namespace EDEngineer.Views
                     Opacity = 0.001;
                 }
             }
-
-            new GraphicSettingsWindow(viewModel.GraphicSettings).Show();
         }
 
         public void RefreshCargoSources()
@@ -171,6 +169,10 @@ namespace EDEngineer.Views
                 {
                     HideWindow();
                     new NotificationSettingsWindow(viewModel.Languages).Show();
+                },
+                (o, e) =>
+                {
+                    new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog();
                 });
 
             try

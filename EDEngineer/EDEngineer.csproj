@@ -150,7 +150,6 @@
     </ApplicationDefinition>
     <Compile Include="Converters\BooleanToEnumConverter.cs" />
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
-    <Compile Include="Converters\FontRatioConverter.cs" />
     <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Converters\IntToEnabledConverter.cs" />
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />

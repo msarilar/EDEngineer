@@ -18,6 +18,7 @@ namespace EDEngineer.Utils.UI
         protected override void OnAttached()
         {
             AssociatedObject.SizeChanged += (s, e) => { CalculateFontSize(); };
+            AssociatedObject.LayoutUpdated += (s, e) => { CalculateFontSize(); };
         }
 
         protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)

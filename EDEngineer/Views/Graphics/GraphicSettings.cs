@@ -17,20 +17,20 @@ namespace EDEngineer.Views.Graphics
             bottomRatio = Properties.Settings.Default.BottomFontRatio;
         }
 
-        public void Sync()
+        public void Reset(float left, float right, float bottom)
+        {
+            LeftRatio = left;
+            RightRatio = right;
+            BottomRatio = bottom;
+        }
+
+        public void Save()
         {
             Properties.Settings.Default.LeftFontRatio = leftRatio;
             Properties.Settings.Default.RightRatio = rightRatio;
             Properties.Settings.Default.BottomFontRatio = bottomRatio;
 
             Properties.Settings.Default.Save();
-        }
-
-        public void Reset()
-        {
-            LeftRatio = 100;
-            RightRatio = 100;
-            BottomRatio = 100;
         }
 
         public float LeftRatio

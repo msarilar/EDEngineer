@@ -76,11 +76,30 @@
         <Button Grid.Row="2"
                 Content="Reset"
                 Background="OrangeRed"
+                Margin="2"
+                BorderBrush="Black"
+                BorderThickness="3"
                 Click="ButtonResetClicked"/>
 
-        <Button Grid.Row="3"
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                Content="Cancel"
+                Background="White"
+                Margin="2"
+                BorderBrush="Black"
+                BorderThickness="3"
+                Click="ButtonCancelClicked"/>
+            <Button Grid.Column="1"
                 Content="OK"
                 Background="Gray"
+                BorderBrush="Black"
+                Margin="2"
+                BorderThickness="3"
                 Click="ButtonOkClicked"/>
+        </Grid>
     </Grid>
 </Window>
