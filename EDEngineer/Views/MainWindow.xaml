@@ -12,13 +12,15 @@
         Topmost="True"
         WindowStyle="None"
         Background="Transparent"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:f="clr-namespace:EDEngineer.Utils.UI"
         AllowsTransparency="True"
         Icon="/Resources/Images/elite-dangerous-clean.png"
         d:DesignWidth="1152"
         d:DesignHeight="648"
         ShowInTaskbar="False"
         Loaded="MainWindowLoaded"
-        d:DataContext="{d:DesignData Source=DesignTime/DesignViewModel.xaml}"
+        d:DataContext="{d:DesignData Source=../DesignTime/DesignViewModel.xaml}"
         ResizeMode="CanResize">
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
@@ -232,7 +234,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="27" MaxHeight="27" />
+            <RowDefinition Height="Auto" MaxHeight="27" />
         </Grid.RowDefinitions>
 
         <!-- COMMANDERS -->
@@ -262,6 +264,10 @@
 
         <Grid Grid.Column="0"
               Grid.Row="1">
+            <i:Interaction.Behaviors>
+                <f:ScaleFontBehavior FontRatio="{Binding DataContext.GraphicSettings.LeftRatio, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
+            </i:Interaction.Behaviors>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -475,6 +481,9 @@
         <Grid Grid.Column="2"
               Grid.Row="1"
               DataContext="{Binding CurrentCommander.Value}">
+            <i:Interaction.Behaviors>
+                <f:ScaleFontBehavior FontRatio="{Binding DataContext.GraphicSettings.RightRatio, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
+            </i:Interaction.Behaviors>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -1293,6 +1302,9 @@
         <Grid Grid.Row="2"
               Grid.Column="0"
               Grid.ColumnSpan="3">
+            <i:Interaction.Behaviors>
+                <f:ScaleFontBehavior FontRatio="{Binding DataContext.GraphicSettings.BottomRatio, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
+            </i:Interaction.Behaviors>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />

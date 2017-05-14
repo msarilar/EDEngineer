@@ -366,5 +366,41 @@ namespace EDEngineer.Properties {
                 this["NotificationVoice"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public double LeftFontRatio {
+            get {
+                return ((double)(this["LeftFontRatio"]));
+            }
+            set {
+                this["LeftFontRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public double RightRatio {
+            get {
+                return ((double)(this["RightRatio"]));
+            }
+            set {
+                this["RightRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public double BottomFontRatio {
+            get {
+                return ((double)(this["BottomFontRatio"]));
+            }
+            set {
+                this["BottomFontRatio"] = value;
+            }
+        }
     }
 }

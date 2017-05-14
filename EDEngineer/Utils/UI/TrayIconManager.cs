@@ -19,7 +19,8 @@ namespace EDEngineer.Utils.UI
             EventHandler showReleaseNotesHandler,
             string version,
             EventHandler configureThresholdsHandler,
-            EventHandler configureNotificationsHandler)
+            EventHandler configureNotificationsHandler,
+            EventHandler configureGraphicsHandler)
         {
             var menu = BuildContextMenu(showHandler,
                 quitHandler,
@@ -32,7 +33,8 @@ namespace EDEngineer.Utils.UI
                 showReleaseNotesHandler,
                 version,
                 configureThresholdsHandler,
-                configureNotificationsHandler);
+                configureNotificationsHandler,
+                configureGraphicsHandler);
             
             var icon = new NotifyIcon
             {
@@ -61,7 +63,8 @@ namespace EDEngineer.Utils.UI
             EventHandler showReleaseNotesHandler,
             string version,
             EventHandler configureThresholdsHandler,
-            EventHandler configureNotificationsHandler)
+            EventHandler configureNotificationsHandler,
+            EventHandler configureGraphicsHandler)
         {
             var translator = Languages.Instance;
 
@@ -76,6 +79,9 @@ namespace EDEngineer.Utils.UI
 
             var selectLanguageItem = new MenuItem();
             selectLanguageItem.Click += selectLanguageHandler;
+
+            var configureGraphicsItem = new MenuItem();
+            configureGraphicsItem.Click += configureGraphicsHandler;
 
             var setShortCutItem = new MenuItem();
             setShortCutItem.Click += configureShortcutHandler;
@@ -116,10 +122,10 @@ namespace EDEngineer.Utils.UI
                 launchServerItem.Checked = launchServerHandler();
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem);
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
             };
 
             quitItem.Click += quitHandler;
@@ -130,11 +136,12 @@ namespace EDEngineer.Utils.UI
             menu.MenuItems.Add(resetItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(configureNotificationsItem);
+            menu.MenuItems.Add(configureThresholdsItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(enableSilentLaunch);
             menu.MenuItems.Add(setShortCutItem);
             menu.MenuItems.Add(selectLanguageItem);
-            menu.MenuItems.Add(configureThresholdsItem);
+            menu.MenuItems.Add(configureGraphicsItem);
             menu.MenuItems.Add("-");
             menu.MenuItems.Add(launchServerItem);
             menu.MenuItems.Add("-");
@@ -147,7 +154,7 @@ namespace EDEngineer.Utils.UI
         private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
                                          MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem,
                                          MenuItem launchServerItem, MenuItem configureThresholdsItem, MenuItem enableSilentLaunch,
-                                         MenuItem configureNotificationsItem)
+                                         MenuItem configureNotificationsItem, MenuItem configureGraphicsItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -160,7 +167,7 @@ namespace EDEngineer.Utils.UI
             configureThresholdsItem.Text = translator.Translate("Configure Thresholds");
             enableSilentLaunch.Text = translator.Translate("Silent Launch");
             configureNotificationsItem.Text = translator.Translate("Configure Notifications");
-            
+            configureGraphicsItem.Text = translator.Translate("Configure Graphics");
         }
     }
 }

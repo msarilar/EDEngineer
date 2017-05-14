@@ -694,7 +694,7 @@
                                          x:Name="textSource" 
                                          Background="Transparent" 
                                          Panel.ZIndex="2" />
-                                <TextBox Text="{TemplateBinding Tag}" Background="{TemplateBinding Background}" Panel.ZIndex="1" Padding="5,0,0,0">
+                                <TextBox Text="{TemplateBinding Tag}" FontSize="12" Background="{TemplateBinding Background}" Panel.ZIndex="1" Padding="5,0,0,0">
                                     <TextBox.Style>
                                         <Style TargetType="{x:Type TextBox}">
                                             <Setter Property="Foreground" Value="Transparent"/>

@@ -11,6 +11,7 @@ using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
+using EDEngineer.Views.Graphics;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Views
@@ -20,6 +21,8 @@ namespace EDEngineer.Views
         public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; }  = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
 
         public Languages Languages { get; }
+
+        public GraphicSettings GraphicSettings { get; }
 
         public KeyValuePair<string, CommanderViewModel> CurrentCommander
         {
@@ -58,6 +61,7 @@ namespace EDEngineer.Views
         public MainWindowViewModel(Languages languages)
         {
             Languages = languages;
+            GraphicSettings = new GraphicSettings();
             CurrentComparer = SettingsManager.Comparer;
             LoadState();
         }
