@@ -366,5 +366,77 @@ namespace EDEngineer.Properties {
                 this["NotificationVoice"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public float CommanderFontRatio {
+            get {
+                return ((float)(this["CommanderFontRatio"]));
+            }
+            set {
+                this["CommanderFontRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public float IngredientKindFontRatio {
+            get {
+                return ((float)(this["IngredientKindFontRatio"]));
+            }
+            set {
+                this["IngredientKindFontRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public float IngredientFontRatio {
+            get {
+                return ((float)(this["IngredientFontRatio"]));
+            }
+            set {
+                this["IngredientFontRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public float BlueprintFontRatio {
+            get {
+                return ((float)(this["BlueprintFontRatio"]));
+            }
+            set {
+                this["BlueprintFontRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public float ShoppingListFontRatio {
+            get {
+                return ((float)(this["ShoppingListFontRatio"]));
+            }
+            set {
+                this["ShoppingListFontRatio"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public float BottomFontRatio {
+            get {
+                return ((float)(this["BottomFontRatio"]));
+            }
+            set {
+                this["BottomFontRatio"] = value;
+            }
+        }
     }
 }

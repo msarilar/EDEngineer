@@ -150,12 +150,17 @@
     </ApplicationDefinition>
     <Compile Include="Converters\BooleanToEnumConverter.cs" />
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
+    <Compile Include="Converters\FontRatioConverter.cs" />
     <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Converters\IntToEnabledConverter.cs" />
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
     <Compile Include="Converters\ThresholdToBackgroundColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
+    <Compile Include="Views\Graphics\GraphicSettings.cs" />
+    <Compile Include="Views\Graphics\GraphicSettingsWindow.xaml.cs">
+      <DependentUpon>GraphicSettingsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Notifications\CommanderNotifications.cs" />
     <Compile Include="Views\CommanderViewModel.cs" />
     <Compile Include="Converters\AllFiltersToHeaderConverter.cs" />
@@ -209,6 +214,10 @@
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
     <Page Include="DesignTime\DesignViewModel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Graphics\GraphicSettingsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
