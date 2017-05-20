@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
 using EDEngineer.Localization;
 using EDEngineer.Utils.System;
@@ -8,14 +9,14 @@ namespace EDEngineer.Utils.UI
 {
     public static class TrayIconManager
     {
-        public static IDisposable Init(ContextMenu menu)
+        public static IDisposable Init(ContextMenuStrip menu)
         {
             var icon = new NotifyIcon
             {
                 Icon = Properties.Resources.elite_dangerous_icon,
                 Visible = true,
                 Text = "ED - Engineer",
-                ContextMenu = menu
+                ContextMenuStrip = menu
             };
 
             return Disposable.Create(() =>
@@ -26,7 +27,7 @@ namespace EDEngineer.Utils.UI
             });
         }
 
-        public static ContextMenu BuildContextMenu(EventHandler showHandler, 
+        public static ContextMenuStrip BuildContextMenu(EventHandler showHandler, 
             EventHandler quitHandler, 
             EventHandler configureShortcutHandler, 
             EventHandler unlockWindowHandler, 
@@ -42,42 +43,52 @@ namespace EDEngineer.Utils.UI
         {
             var translator = Languages.Instance;
 
-            var showItem = new MenuItem();
+            var showItem = new ToolStripMenuItem { Image = Properties.Resources.elite_dangerous_icon.ToBitmap() };
             showItem.Click += showHandler;
 
-            var unlockItem = new MenuItem();
+            var unlockItem = new ToolStripMenuItem { Image = Properties.Resources.menu_lock_unlock.ToBitmap() };
             unlockItem.Click += unlockWindowHandler;
 
-            var resetItem = new MenuItem();
+            var resetItem = new ToolStripMenuItem { Image = Properties.Resources.menu_reset_position.ToBitmap() };
             resetItem.Click += resetWindowHandler;
 
-            var selectLanguageItem = new MenuItem();
+            var selectLanguageItem = new ToolStripMenuItem { Image = Properties.Resources.menu_language.ToBitmap() };
             selectLanguageItem.Click += selectLanguageHandler;
 
-            var configureGraphicsItem = new MenuItem();
+            var configureGraphicsItem = new ToolStripMenuItem
+            {
+                Image = Properties.Resources.menu_graphic_settings.ToBitmap()
+            };
             configureGraphicsItem.Click += configureGraphicsHandler;
 
-            var setShortCutItem = new MenuItem();
+            var setShortCutItem = new ToolStripMenuItem { Image = Properties.Resources.menu_shortcut.ToBitmap() };
             setShortCutItem.Click += configureShortcutHandler;
 
-            var configureThresholdsItem = new MenuItem();
+            var configureThresholdsItem = new ToolStripMenuItem
+            {
+                Image = Properties.Resources.menu_thresholds.ToBitmap()
+            };
             configureThresholdsItem.Click += configureThresholdsHandler;
 
-            var configureNotificationsItem = new MenuItem();
+            var configureNotificationsItem = new ToolStripMenuItem
+            {
+                Image = Properties.Resources.menu_notifications.ToBitmap()
+            };
             configureNotificationsItem.Click += configureNotificationsHandler;
 
-            var helpItem = new MenuItem();
+            var helpItem = new ToolStripMenuItem { Image = Properties.Resources.menu_help.ToBitmap() };
             helpItem.Click += (o,e) => Process.Start("https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues");
 
-            var releaseNotesItem = new MenuItem();
+            var releaseNotesItem = new ToolStripMenuItem { Image = Properties.Resources.menu_release_notes.ToBitmap() };
             releaseNotesItem.Click += showReleaseNotesHandler;
             releaseNotesItem.Text = $"v{version}";
 
-            var quitItem = new MenuItem();
+            var quitItem = new ToolStripMenuItem { Image = Properties.Resources.menu_quit.ToBitmap() };
 
-            var enableSilentLaunch = new MenuItem
+            var enableSilentLaunch = new ToolStripMenuItem
             {
-                Checked = SettingsManager.SilentLaunch
+                Checked = SettingsManager.SilentLaunch,
+                Image = Properties.Resources.menu_silent_launch.ToBitmap()
             };
 
             enableSilentLaunch.Click += (o, e) =>
@@ -86,9 +97,10 @@ namespace EDEngineer.Utils.UI
                 SettingsManager.SilentLaunch = enableSilentLaunch.Checked;
             };
 
-            var launchServerItem = new MenuItem
+            var launchServerItem = new ToolStripMenuItem
             {
-                Checked = serverRunning
+                Checked = serverRunning,
+                Image = Properties.Resources.menu_api.ToBitmap()
             };
 
             launchServerItem.Click += (o, e) =>
@@ -104,31 +116,31 @@ namespace EDEngineer.Utils.UI
 
             quitItem.Click += quitHandler;
 
-            var menu = new ContextMenu();
-            menu.MenuItems.Add(showItem);
-            menu.MenuItems.Add(unlockItem);
-            menu.MenuItems.Add(resetItem);
-            menu.MenuItems.Add("-");
-            menu.MenuItems.Add(configureNotificationsItem);
-            menu.MenuItems.Add(configureThresholdsItem);
-            menu.MenuItems.Add("-");
-            menu.MenuItems.Add(enableSilentLaunch);
-            menu.MenuItems.Add(setShortCutItem);
-            menu.MenuItems.Add(selectLanguageItem);
-            menu.MenuItems.Add(configureGraphicsItem);
-            menu.MenuItems.Add("-");
-            menu.MenuItems.Add(launchServerItem);
-            menu.MenuItems.Add("-");
-            menu.MenuItems.Add(helpItem);
-            menu.MenuItems.Add(releaseNotesItem);
-            menu.MenuItems.Add(quitItem);
+            var menu = new ContextMenuStrip();
+            menu.Items.Add(showItem);
+            menu.Items.Add(unlockItem);
+            menu.Items.Add(resetItem);
+            menu.Items.Add("-");
+            menu.Items.Add(configureNotificationsItem);
+            menu.Items.Add(configureThresholdsItem);
+            menu.Items.Add("-");
+            menu.Items.Add(enableSilentLaunch);
+            menu.Items.Add(setShortCutItem);
+            menu.Items.Add(selectLanguageItem);
+            menu.Items.Add(configureGraphicsItem);
+            menu.Items.Add("-");
+            menu.Items.Add(launchServerItem);
+            menu.Items.Add("-");
+            menu.Items.Add(helpItem);
+            menu.Items.Add(releaseNotesItem);
+            menu.Items.Add(quitItem);
             return menu;
         }
 
-        private static void SetItemsText(MenuItem quitItem, Languages translator, MenuItem helpItem, MenuItem setShortCutItem,
-                                         MenuItem selectLanguageItem, MenuItem resetItem, MenuItem unlockItem, MenuItem showItem,
-                                         MenuItem launchServerItem, MenuItem configureThresholdsItem, MenuItem enableSilentLaunch,
-                                         MenuItem configureNotificationsItem, MenuItem configureGraphicsItem)
+        private static void SetItemsText(ToolStripMenuItem quitItem, Languages translator, ToolStripMenuItem helpItem, ToolStripMenuItem setShortCutItem,
+                                         ToolStripMenuItem selectLanguageItem, ToolStripMenuItem resetItem, ToolStripMenuItem unlockItem, ToolStripMenuItem showItem,
+                                         ToolStripMenuItem launchServerItem, ToolStripMenuItem configureThresholdsItem, ToolStripMenuItem enableSilentLaunch,
+                                         ToolStripMenuItem configureNotificationsItem, ToolStripMenuItem configureGraphicsItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");

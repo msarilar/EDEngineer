@@ -121,4 +121,40 @@
   <data name="elite_dangerous_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\elite-dangerous-icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu_api" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-api.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_graphic_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-graphic-settings.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-help.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_language" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-language.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_lock_unlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-lock-unlock.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_notifications" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-notifications.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-quit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_release_notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-release-notes.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_reset_position" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-reset-position.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_shortcut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-shortcut.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_silent_launch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-silent-launch.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu_thresholds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-thresholds.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

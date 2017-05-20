@@ -213,7 +213,6 @@
     <Compile Include="Utils\System\LogWatcher.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
-    <Compile Include="Utils\UI\WinformInteropControl.cs" />
     <Page Include="DesignTime\DesignViewModel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -313,6 +312,19 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\menu-silent-launch.ico" />
+    <None Include="Resources\menu-shortcut.ico" />
+    <None Include="Resources\menu-reset-position.ico" />
+    <None Include="Resources\menu-api.ico" />
+    <None Include="Resources\menu-language.png" />
+    <None Include="Resources\menu-thresholds.ico" />
+    <None Include="Resources\menu-release-notes.ico" />
+    <None Include="Resources\menu-quit.ico" />
+    <None Include="Resources\menu-notifications.ico" />
+    <None Include="Resources\menu-lock-unlock.ico" />
+    <None Include="Resources\menu-language.ico" />
+    <None Include="Resources\menu-help.ico" />
+    <None Include="Resources\menu-graphic-settings.ico" />
     <EmbeddedResource Include="Resources\Data\blueprints.json" />
     <Content Include="Resources\Images\elite-dangerous-clean.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

@@ -22,7 +22,7 @@ using EDEngineer.Utils.UI;
 using EDEngineer.Views.Popups.Graphics;
 using Application = System.Windows.Application;
 using WpfButton = System.Windows.Controls.Button;
-using WinformContextMenu = System.Windows.Forms.ContextMenu;
+using WinformContextMenu = System.Windows.Forms.ContextMenuStrip;
 using DataGridCell = System.Windows.Controls.DataGridCell;
 using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using NotificationSettingsWindow = EDEngineer.Views.Notifications.NotificationSettingsWindow;
@@ -544,7 +544,7 @@ namespace EDEngineer.Views
         private void SettingsButtonClicked(object sender, RoutedEventArgs e)
         {
             var p = PointToScreen(Mouse.GetPosition(this));
-            menu.Show(WinformInteropControl.GetAtPoint(p), System.Drawing.Point.Empty);
+            menu.Show(new System.Drawing.Point((int)p.X, (int)p.Y), ToolStripDropDownDirection.BelowRight);
         }
     }
 }
