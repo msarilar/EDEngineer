@@ -223,7 +223,7 @@
         </Storyboard>
     </Window.Resources>
 
-    <Grid Opacity="0.9"
+    <Grid Opacity="{Binding GraphicSettings.Opacity}"
           Background="{StaticResource BackgroundBrush}"
           x:Name="ContentGrid">
         <Grid.ColumnDefinitions>
@@ -641,28 +641,26 @@
                         </Grid.RowDefinitions>
                         <Button Grid.Row="0"
                                 HorizontalAlignment="Stretch"
+                                Click="SettingsButtonClicked"
+                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Settings', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
+                                Style="{DynamicResource ChromelessButtonStyle}">
+                            <iconPacks:PackIconMaterial Kind="Settings" Foreground="Magenta" />
+                        </Button>
+                        <Button Grid.Row="1"
+                                HorizontalAlignment="Stretch"
                                 Click="CheckAllButtonClicked"
                                 Style="{DynamicResource ChromelessButtonStyle}"
                                 ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Check all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                 x:Name="CheckAllButton">
                             <iconPacks:PackIconMaterial Kind="CheckAll" Foreground="{StaticResource EliteOrangeBrush}" />
                         </Button>
-                        <Button Grid.Row="1"
+                        <Button Grid.Row="2"
                                 HorizontalAlignment="Stretch"
                                 Click="UncheckAllButtonClicked"
                                 Style="{DynamicResource ChromelessButtonStyle}"
                                 ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Uncheck all filters', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                 x:Name="UncheckAllButton">
                             <iconPacks:PackIconMaterial Kind="TableColumnRemove" Foreground="{StaticResource EliteOrangeBrush}" />
-                        </Button>
-                        <Button Grid.Row="2"
-                                HorizontalAlignment="Stretch"
-                                IsEnabled="{Binding HighlightedEntryData.Count, Converter={StaticResource IntToEnabled}}"
-                                Click="UnhighlightAllButtonClicked"
-                                Style="{DynamicResource ChromelessButtonStyle}"
-                                ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unhighlight all ingredients', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
-                                x:Name="UnhighlightAllButton">
-                            <iconPacks:PackIconMaterial Kind="BlockHelper" Foreground="Red" />
                         </Button>
                     </Grid>
 

@@ -73,6 +73,7 @@ namespace EDEngineer.Utils.System
                 cts.Cancel();
             }
 
+            SettingsManager.AutoRunServer = false;
             Running = false;
         }
 

@@ -236,14 +236,6 @@ namespace EDEngineer.Views
             }
         }
 
-        public void UnhighlightAllIngredients()
-        {
-            foreach (var entry in CurrentCommander.Value.HighlightedEntryData.ToList())
-            {
-                ToggleHighlight(entry);
-            }
-        }
-
         public void ToggleHighlight(Entry entry)
         {
             CurrentCommander.Value.ToggleHighlight(entry);

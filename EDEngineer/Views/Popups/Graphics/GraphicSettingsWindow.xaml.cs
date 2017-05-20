@@ -13,6 +13,7 @@ namespace EDEngineer.Views.Popups.Graphics
         private readonly double beforeLeftRatio;
         private readonly double beforeBottomRatio;
         private readonly double beforeRightRatio;
+        private readonly double beforeOpacity;
 
         public GraphicSettingsWindow(GraphicSettings settings)
         {
@@ -22,6 +23,7 @@ namespace EDEngineer.Views.Popups.Graphics
             beforeLeftRatio = settings.LeftRatio;
             beforeRightRatio = settings.RightRatio;
             beforeBottomRatio = settings.BottomRatio;
+            beforeOpacity = settings.Opacity;
 
             InitializeComponent();
         }
@@ -34,7 +36,7 @@ namespace EDEngineer.Views.Popups.Graphics
 
         private void ButtonResetClicked(object sender, RoutedEventArgs e)
         {
-            settings.Reset(100, 100, 100);
+            settings.Reset(100, 100, 100, 0.9d);
         }
 
         private void ButtonCancelClicked(object sender, RoutedEventArgs e)
@@ -50,7 +52,7 @@ namespace EDEngineer.Views.Popups.Graphics
             }
             else
             {
-                settings.Reset(beforeLeftRatio, beforeRightRatio, beforeBottomRatio);
+                settings.Reset(beforeLeftRatio, beforeRightRatio, beforeBottomRatio, beforeOpacity);
             }
         }
     }

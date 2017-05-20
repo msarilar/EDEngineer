@@ -9,19 +9,22 @@ namespace EDEngineer.Views.Popups.Graphics
         private double rightRatio;
         private double bottomRatio;
         private double leftRatio;
+        private double opacity;
 
         public GraphicSettings()
         {
             leftRatio = Properties.Settings.Default.LeftFontRatio;
             rightRatio = Properties.Settings.Default.RightRatio;
             bottomRatio = Properties.Settings.Default.BottomFontRatio;
+            opacity = Properties.Settings.Default.Opacity;
         }
 
-        public void Reset(double left, double right, double bottom)
+        public void Reset(double left, double right, double bottom, double o)
         {
             LeftRatio = left;
             RightRatio = right;
             BottomRatio = bottom;
+            OpacityForEdit = o;
         }
 
         public void Save()
@@ -29,8 +32,41 @@ namespace EDEngineer.Views.Popups.Graphics
             Properties.Settings.Default.LeftFontRatio = leftRatio;
             Properties.Settings.Default.RightRatio = rightRatio;
             Properties.Settings.Default.BottomFontRatio = bottomRatio;
+            Properties.Settings.Default.Opacity = opacity;
 
             Properties.Settings.Default.Save();
+        }
+
+        public double Opacity
+        {
+            get
+            {
+                if (Properties.Settings.Default.WindowUnlocked)
+                {
+                    return 1;
+                }
+
+                return opacity;
+            }
+        }
+
+        public double OpacityForEdit
+        {
+            get
+            {
+                return opacity;
+            }
+            set
+            {
+                if (Math.Abs(opacity - value) < 0.01)
+                {
+                    return;
+                }
+
+                opacity = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(Opacity));
+            }
         }
 
         public double LeftRatio

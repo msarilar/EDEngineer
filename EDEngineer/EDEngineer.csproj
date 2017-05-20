@@ -213,6 +213,7 @@
     <Compile Include="Utils\System\LogWatcher.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
+    <Compile Include="Utils\UI\WinformInteropControl.cs" />
     <Page Include="DesignTime\DesignViewModel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

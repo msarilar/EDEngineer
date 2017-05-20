@@ -8,34 +8,8 @@ namespace EDEngineer.Utils.UI
 {
     public static class TrayIconManager
     {
-        public static IDisposable Init(EventHandler showHandler,
-            EventHandler quitHandler,
-            EventHandler configureShortcutHandler,
-            EventHandler unlockWindowHandler,
-            EventHandler resetWindowHandler,
-            EventHandler selectLanguageHandler,
-            Func<bool> launchServerHandler,
-            bool serverRunning,
-            EventHandler showReleaseNotesHandler,
-            string version,
-            EventHandler configureThresholdsHandler,
-            EventHandler configureNotificationsHandler,
-            EventHandler configureGraphicsHandler)
+        public static IDisposable Init(ContextMenu menu)
         {
-            var menu = BuildContextMenu(showHandler,
-                quitHandler,
-                configureShortcutHandler,
-                unlockWindowHandler,
-                resetWindowHandler, 
-                selectLanguageHandler,
-                launchServerHandler,
-                serverRunning,
-                showReleaseNotesHandler,
-                version,
-                configureThresholdsHandler,
-                configureNotificationsHandler,
-                configureGraphicsHandler);
-            
             var icon = new NotifyIcon
             {
                 Icon = Properties.Resources.elite_dangerous_icon,
@@ -52,7 +26,7 @@ namespace EDEngineer.Utils.UI
             });
         }
 
-        private static ContextMenu BuildContextMenu(EventHandler showHandler, 
+        public static ContextMenu BuildContextMenu(EventHandler showHandler, 
             EventHandler quitHandler, 
             EventHandler configureShortcutHandler, 
             EventHandler unlockWindowHandler, 

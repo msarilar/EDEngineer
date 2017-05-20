@@ -14,6 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid Margin="3"
@@ -31,8 +32,8 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Grid.Row="0"
-                               HorizontalAlignment="Center"
-                               Text="Left Panel Font Size"/>
+                           HorizontalAlignment="Center"
+                           Text="Left Panel Font Size"/>
                 <Slider Margin="3" Grid.Row="1"
                         Minimum="50" Maximum="200"
                             Value="{Binding LeftRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
@@ -72,8 +73,24 @@
                         Minimum="50" Maximum="200"
                     Value="{Binding BottomRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
-        
-        <Button Grid.Row="2"
+
+        <Grid Margin="3" Grid.Row="2"
+              Grid.ColumnSpan="2"
+              HorizontalAlignment="Stretch"
+              Background="Peru">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0"
+                       HorizontalAlignment="Center"
+                       Text="Opacity (only when window is Locked)"/>
+            <Slider Margin="3" Grid.Row="1"
+                        Minimum="0.1" Maximum="1"
+                    Value="{Binding OpacityForEdit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        </Grid>
+
+        <Button Grid.Row="3"
                 Content="Reset"
                 Background="OrangeRed"
                 Margin="2"
@@ -81,7 +98,7 @@
                 BorderThickness="3"
                 Click="ButtonResetClicked"/>
 
-        <Grid Grid.Row="3">
+        <Grid Grid.Row="4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>

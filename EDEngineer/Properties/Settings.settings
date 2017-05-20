@@ -98,5 +98,8 @@
     <Setting Name="BottomFontRatio" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
+    <Setting Name="Opacity" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.9</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -21,7 +21,8 @@ using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
 using EDEngineer.Views.Popups.Graphics;
 using Application = System.Windows.Application;
-using Button = System.Windows.Controls.Button;
+using WpfButton = System.Windows.Controls.Button;
+using WinformContextMenu = System.Windows.Forms.ContextMenu;
 using DataGridCell = System.Windows.Controls.DataGridCell;
 using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using NotificationSettingsWindow = EDEngineer.Views.Notifications.NotificationSettingsWindow;
@@ -146,7 +147,7 @@ namespace EDEngineer.Views
                 ResetWindowPositionButton.Visibility = Visibility.Visible;
             }
 
-            icon = TrayIconManager.Init((o, e) => ShowWindow(),
+            menu = TrayIconManager.BuildContextMenu((o, e) => ShowWindow(),
                 (o, e) => Close(),
                 ConfigureShortcut,
                 (o, e) => ToggleEditModeChecked(o, null),
@@ -174,6 +175,8 @@ namespace EDEngineer.Views
                 {
                     new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog();
                 });
+
+            icon = TrayIconManager.Init(menu);
 
             try
             {
@@ -252,13 +255,13 @@ namespace EDEngineer.Views
 
         private void IncrementButtonClicked(object sender, RoutedEventArgs e)
         {
-            var entry = (Entry) ((Button) sender).Tag;
+            var entry = (Entry) ((WpfButton) sender).Tag;
             viewModel.UserChange(entry, 1);
         }
 
         private void DecrementButtonClicked(object sender, RoutedEventArgs e)
         {
-            var entry = (Entry) ((Button) sender).Tag;
+            var entry = (Entry) ((WpfButton) sender).Tag;
             viewModel.UserChange(entry, -1);
         }
 
@@ -269,7 +272,7 @@ namespace EDEngineer.Views
 
         private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var toggleButton = FindVisualParent<Button>(Mouse.DirectlyOver as DependencyObject);
+            var toggleButton = FindVisualParent<WpfButton>(Mouse.DirectlyOver as DependencyObject);
             if (toggleButton != null)
             {
                 toggleButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Primitives.ButtonBase.ClickEvent));
@@ -373,6 +376,7 @@ namespace EDEngineer.Views
         
         private HwndSource handle;
         private IDisposable icon;
+        private WinformContextMenu menu;
         private bool ignoreShortcut = false;
 
         private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
@@ -468,11 +472,6 @@ namespace EDEngineer.Views
             viewModel.ChangeAllFilters(false);
         }
 
-        private void UnhighlightAllButtonClicked(object sender, RoutedEventArgs e)
-        {
-            viewModel.UnhighlightAllIngredients();
-        }
-
         private void IngredientOnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             var dataContext = (KeyValuePair<string, Entry>) ((Grid) sender).DataContext;
@@ -481,13 +480,13 @@ namespace EDEngineer.Views
 
         private void IncrementShoppingList(object sender, RoutedEventArgs e)
         {
-            var tag = ((Button) sender).Tag;
+            var tag = ((WpfButton) sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint) tag, 1);
         }
 
         private void DecrementShoppingList(object sender, RoutedEventArgs e)
         {
-            var tag = ((Button)sender).Tag;
+            var tag = ((WpfButton)sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint)tag, -1);
 
             if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
@@ -498,7 +497,7 @@ namespace EDEngineer.Views
 
         private void RemoveBlueprintShoppingList(object sender, RoutedEventArgs e)
         {
-            var blueprint = (Blueprint) ((Button)sender).Tag;
+            var blueprint = (Blueprint) ((WpfButton)sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
 
             if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
@@ -540,6 +539,12 @@ namespace EDEngineer.Views
             var ingredient = (BlueprintIngredient)((TextBlock)sender).DataContext;
             var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
             viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, false);
+        }
+
+        private void SettingsButtonClicked(object sender, RoutedEventArgs e)
+        {
+            var p = PointToScreen(Mouse.GetPosition(this));
+            menu.Show(WinformInteropControl.GetAtPoint(p), System.Drawing.Point.Empty);
         }
     }
 }
