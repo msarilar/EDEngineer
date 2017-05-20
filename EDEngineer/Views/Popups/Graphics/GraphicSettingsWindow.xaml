@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         WindowStyle="ToolWindow"
         SizeToContent="WidthAndHeight"
+        Topmost="True"
         mc:Ignorable="d"
         Title="Graphics" Height="400" Width="400">
     <Grid Margin="3">

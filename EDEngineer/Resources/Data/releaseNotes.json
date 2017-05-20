@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.4",
+    "Content": "* Added a graphic configuration window where you can configure font size per panel (left/right/bottom) as well as window Opacity (which is applied only when the Window is locked)\r\n* Added a purple gear to the main window where you can access the context menu which contains all settings\r\n\r\n* Fixed an issue with the local API server which would keep running automatically even after being stopped under certain circumstances\r\n\r\n* Full polish translation is now ready thanks to @gienkov !"
+  },
+  {
     "Version": "1.0.7.3",
     "Content": "* Changed the log folder selection window to a more user-friendly one (used to be a tree view)\r\n* Reduced font size of ingredients in the left panel\r\n\r\n* @cocafr fixed a typo in the french localization related to Tempered Alloys"
   },
