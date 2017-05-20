@@ -11,7 +11,7 @@ using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
-using EDEngineer.Views.Graphics;
+using EDEngineer.Views.Popups.Graphics;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Views
