@@ -1681,7 +1681,7 @@
       "es": "Ultima actualización",
       "de": "Letzte Aktualisierung:",
       "fr": "Dernière Mise à jour",
-      "ru": "Последнее обновление",
+      "ru": "Последнее обновление:",
       "pl": "Ostatnia aktualizacja:"
     },
     "Unlock Window": {
@@ -1863,7 +1863,7 @@
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
       "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
       "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
-      "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией",
+      "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
       "pl": "Coś poszło nie tak podczas parsowania twoich logów, stwórz issue na GitHub-ie z tą informacją :"
     },
     "Unknown material, please contact the author ! {0}": {
@@ -2514,14 +2514,14 @@
       "es": "Señal de nave desconocida",
       "de": "Unbekannte Schiffsignatur",
       "fr": null,
-      "ru": null,
+      "ru": "Данные сигнала НЛО",
       "pl": "Unknown Ship Signature"
     },
     "Unknown Wake Data": {
       "es": "Datos de estela desconocida",
       "de": "Unbekannte Sogwolke",
       "fr": null,
-      "ru": null,
+      "ru": "Данные следа НЛО",
       "pl": "Unknown Wake Data"
     },
     "Check all filters": {
@@ -2640,77 +2640,77 @@
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Готово несколько чертежей",
       "pl": "Wiele schematów gotowych do stworzenia"
     },
     "{0} blueprints are available to craft!": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Можно создать {0} чертежей!",
       "pl": "Można stworzyć {0} schematów!"
     },
     "Sensors": {
       "es": null,
       "de": null,
       "fr": "Capteurs",
-      "ru": null,
+      "ru": "Сенсоры",
       "pl": "Sensors"
     },
     "Surface Scanner": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сканер поверхности",
       "pl": "Surface Scanner"
     },
     "Wake Scanner": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сканер следа",
       "pl": "Wake Scanner"
     },
     "Last update: ": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Последнее обновление: ",
       "pl": "Ostatnia aktualizacja:"
     },
     "Silent Launch": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Скрытый запуск",
       "pl": "Ciche uruchomienie"
     },
     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii"
     },
     "Configure Notifications": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Настройка оповещений",
       "pl": "Skonfiguruj powiadomienia"
     },
     "Notifications": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Оповещения",
       "pl": "Powiadomienia"
     },
     "Test Notification": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Проверка оповещения",
       "pl": "Próbne powiadomienie"
     },
     "Toast": {
@@ -2724,49 +2724,49 @@
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Голос",
       "pl": "Głos"
     },
     "Long Range Scanner": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сканер увеличенной дальности",
       "pl": "Long Range Scanner"
     },
     "Wide Angle Scanner": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Широкоугольный сканер",
       "pl": "Wide Angle Scanner"
     },
     "Light Weight Scanner": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Облегченный сканер",
       "pl": "Light Weight Scanner"
     },
     "Fast Scanner": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Быстрый сканер",
       "pl": "Fast Scanner"
     },
     "Unlock": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Разблокировать",
       "pl": "Odblokowanie"
     },
     "Available Voices:": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Доступные голоса:",
       "pl": "Dostępne głosy:"
     }
   }
