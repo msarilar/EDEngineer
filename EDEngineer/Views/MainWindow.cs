@@ -194,6 +194,13 @@ namespace EDEngineer.Views
 
             Blueprints.UpdateLayout();
             ShoppingList.UpdateLayout();
+
+            if (!AllowsTransparency)
+            {
+                SizeChanged += (o, e) => SaveDimensions();
+                LocationChanged += (o, e) => SaveDimensions();
+                ShoppingListSplitter.DragCompleted += (o, e) => SaveDimensions();
+            }
         }
 
         private void ConfigureShortcut(object sender, EventArgs e)
@@ -227,7 +234,6 @@ namespace EDEngineer.Views
             {
                 e.Handled = true;
             }
-
         }
 
         private BindingBase binding;
@@ -426,33 +432,22 @@ namespace EDEngineer.Views
             w.Show();
         }
 
-        protected override void OnClosing(CancelEventArgs e)
+        private void SaveDimensions()
         {
-            if (!bypassPositionSave)
+            SettingsManager.Dimensions = new WindowDimensions()
             {
-                var coords = PointToScreen(new Point(0, 0));
-                var yModificator = AllowsTransparency ? 0 : SystemInformation.CaptionHeight + 8;
-                var xModificator = AllowsTransparency ? 0 : 8;
-                SettingsManager.Dimensions = new WindowDimensions()
-                {
-                    Height = ActualHeight,
-                    Left = coords.X - xModificator,
-                    Top = coords.Y - yModificator,
-                    Width = ActualWidth,
-                    LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
-                    RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
-                };
-            }
-
-            base.OnClosing(e);
+                Height = ActualHeight,
+                Left = Left,
+                Top = Top,
+                Width = ActualWidth,
+                LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
+                RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
+            };
         }
-
-        private bool bypassPositionSave = false;
 
         private void ResetWindowPositionButtonClicked(object sender, RoutedEventArgs e)
         {
             SettingsManager.Dimensions.Reset();
-            bypassPositionSave = true;
 
             Properties.Settings.Default.WindowUnlocked = false;
             Properties.Settings.Default.Save();
