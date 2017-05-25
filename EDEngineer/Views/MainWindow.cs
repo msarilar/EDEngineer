@@ -199,7 +199,7 @@ namespace EDEngineer.Views
             {
                 SizeChanged += (o, e) => SaveDimensions();
                 LocationChanged += (o, e) => SaveDimensions();
-                ShoppingListSplitter.DragCompleted += (o, e) => SaveDimensions();
+                MainSplitter.DragCompleted += (o, e) => SaveDimensions();
             }
         }
 
