@@ -68,6 +68,10 @@ namespace EDEngineer.Utils
                 new IgnoredFavoriteFilter("Ignored", blueprint => blueprint.Ignored, "IFFignored")
                 {
                     Checked = false,
+                },
+                new IgnoredFavoriteFilter("Shopping List", blueprint => blueprint.ShoppingListCount > 0, "IFFshoppingList")
+                {
+                    Checked = false,
                 }
             };
 
