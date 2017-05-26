@@ -198,7 +198,7 @@ namespace EDEngineer.Views
 
             if (!AllowsTransparency)
             {
-                saveDimensionScheduler = new PostponeScheduler(SaveDimensions);
+                saveDimensionScheduler = new PostponeScheduler(SaveDimensions, 500);
                 SizeChanged += (o, e) => saveDimensionScheduler.Schedule();
                 LocationChanged += (o, e) => saveDimensionScheduler.Schedule();
                 MainSplitter.DragCompleted += (o, e) => saveDimensionScheduler.Schedule();

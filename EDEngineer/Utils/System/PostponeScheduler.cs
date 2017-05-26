@@ -11,21 +11,39 @@ namespace EDEngineer.Utils.System
     /// </summary>
     public class PostponeScheduler : IDisposable
     {
+        private readonly double delayMilliseconds;
         private readonly Timer timer;
+        private bool running;
 
-        public PostponeScheduler(Action action, double delayMilliseconds = 300)
+        public PostponeScheduler(Action action, double delayMilliseconds)
         {
+            this.delayMilliseconds = delayMilliseconds;
             timer = new Timer(delayMilliseconds)
             {
                 AutoReset = false
             };
 
             var context = SynchronizationContext.Current;
-            timer.Elapsed += (o, e) => context.Post(s => action(), null);
+            timer.Elapsed += (o, e) =>
+                             {
+                                 context.Post(s => action(), null);
+                                 running = false;
+                             };
         }
 
         public void Schedule()
         {
+            if (!running)
+            {
+                timer.Interval = 1;
+            }
+            else
+            {
+                timer.Interval = delayMilliseconds;
+            }
+
+            running = true;
+
             timer.Stop();
             timer.Start();
         }

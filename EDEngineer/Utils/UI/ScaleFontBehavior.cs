@@ -22,7 +22,7 @@ namespace EDEngineer.Utils.UI
 
         public ScaleFontBehavior()
         {
-            scheduler = new PostponeScheduler(CalculateFontSize);
+            scheduler = new PostponeScheduler(CalculateFontSize, 100);
         }
 
         protected override void OnAttached()
