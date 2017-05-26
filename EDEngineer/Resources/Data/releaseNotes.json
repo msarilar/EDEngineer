@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.5",
+    "Content": "* New filter in the Ignored/Favourites category to show blueprints included in the shopping list\r\n* Various performance enhancements\r\n\r\n* Fixed an issue for users who use high DPI screens when saving the window position\r\n\r\n* Full russian translation provided by @VChet !"
+  },
+  {
     "Version": "1.0.7.4",
     "Content": "* Added a graphic configuration window where you can configure font size per panel (left/right/bottom) as well as window Opacity (which is applied only when the Window is locked)\r\n* Added a purple gear to the main window where you can access the context menu which contains all settings\r\n* Made the context menu a bit less austere with icons\r\n\r\n* Fixed an issue with the local API server which would keep running automatically even after being stopped under certain circumstances\r\n\r\n* Full polish translation is now ready thanks to @gienkov !"
   },

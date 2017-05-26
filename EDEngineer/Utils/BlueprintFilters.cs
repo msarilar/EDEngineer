@@ -71,7 +71,7 @@ namespace EDEngineer.Utils
                 },
                 new IgnoredFavoriteFilter("Shopping List", blueprint => blueprint.ShoppingListCount > 0, "IFFshoppingList")
                 {
-                    Checked = false,
+                    Checked = true,
                 }
             };
 
