@@ -34,6 +34,7 @@ namespace EDEngineer.Views
     {
         private readonly MainWindowViewModel viewModel;
         private readonly ServerBridge serverBridge;
+        private PostponeScheduler saveDimensionScheduler;
 
         public MainWindow()
         {
@@ -197,9 +198,10 @@ namespace EDEngineer.Views
 
             if (!AllowsTransparency)
             {
-                SizeChanged += (o, e) => SaveDimensions();
-                LocationChanged += (o, e) => SaveDimensions();
-                MainSplitter.DragCompleted += (o, e) => SaveDimensions();
+                saveDimensionScheduler = new PostponeScheduler(SaveDimensions);
+                SizeChanged += (o, e) => saveDimensionScheduler.Schedule();
+                LocationChanged += (o, e) => saveDimensionScheduler.Schedule();
+                MainSplitter.DragCompleted += (o, e) => saveDimensionScheduler.Schedule();
             }
         }
 
@@ -409,6 +411,7 @@ namespace EDEngineer.Views
             icon?.Dispose();
             viewModel?.Dispose();
             serverBridge?.Dispose();
+            saveDimensionScheduler?.Dispose();
         }
 
         private void WindowActivatedCompleted(object sender, EventArgs e)

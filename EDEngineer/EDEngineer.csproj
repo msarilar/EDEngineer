@@ -156,6 +156,7 @@
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
     <Compile Include="Converters\ThresholdToBackgroundColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
+    <Compile Include="Utils\System\PostponeScheduler.cs" />
     <Compile Include="Utils\UI\ScaleFontBehavior.cs" />
     <Compile Include="Views\Popups\Graphics\GraphicSettings.cs" />
     <Compile Include="Views\Popups\Graphics\GraphicSettingsWindow.xaml.cs">
