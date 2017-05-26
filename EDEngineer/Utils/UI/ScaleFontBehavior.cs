@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Interactivity;
 using System.Windows.Media;
+using EDEngineer.Utils.System;
 
 namespace EDEngineer.Utils.UI
 {
@@ -16,16 +17,29 @@ namespace EDEngineer.Utils.UI
 
         public double FontRatio { get { return (double)GetValue(FontRatioProperty); } set { SetValue(FontRatioProperty, value); } }
         public static readonly DependencyProperty FontRatioProperty = DependencyProperty.Register("FontRatio", typeof(double), typeof(ScaleFontBehavior), new PropertyMetadata(20d));
+        private readonly PostponeScheduler scheduler;
+        private bool disposed = false;
+
+        public ScaleFontBehavior()
+        {
+            scheduler = new PostponeScheduler(CalculateFontSize);
+        }
 
         protected override void OnAttached()
         {
-            AssociatedObject.SizeChanged += (s, e) => { CalculateFontSize(); };
-            AssociatedObject.LayoutUpdated += (s, e) => { CalculateFontSize(); };
+            AssociatedObject.SizeChanged += (s, e) => { if(!disposed) scheduler.Schedule(); };
+            AssociatedObject.LayoutUpdated += (s, e) => { if (!disposed) scheduler.Schedule(); };
         }
 
         protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
         {
-            CalculateFontSize();
+            scheduler.Schedule();
+        }
+
+        protected override void OnDetaching()
+        {
+            disposed = true;
+            scheduler.Dispose();
         }
 
         private void CalculateFontSize()
@@ -67,14 +81,16 @@ namespace EDEngineer.Utils.UI
                 var o = VisualTreeHelper.GetChild(obj, i);
                 if (o != null)
                 {
-                    if (o is T)
+                    var item = o as T;
+                    if (item != null)
                     {
-                        children.Add((T)o);
+                        children.Add(item);
                     }
 
                     children.AddRange(FindVisualChildren<T>(o));
                 }
             }
+
             return children;
         }
 
@@ -86,6 +102,7 @@ namespace EDEngineer.Utils.UI
             {
                 current = VisualTreeHelper.GetParent(current);
             }
+
             return current as T;
         }
     }
