@@ -3376,7 +3376,7 @@
     "Grade": 5
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -3388,7 +3388,7 @@
     "Grade": 1
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -3408,7 +3408,7 @@
     "Grade": 2
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -3432,7 +3432,7 @@
     "Grade": 3
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
@@ -3456,7 +3456,7 @@
     "Grade": 4
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
@@ -3688,7 +3688,7 @@
     "Grade": 5
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -3700,7 +3700,7 @@
     "Grade": 1
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -3720,7 +3720,7 @@
     "Grade": 2
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -3744,7 +3744,7 @@
     "Grade": 3
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
@@ -3768,7 +3768,7 @@
     "Grade": 4
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
@@ -7520,7 +7520,7 @@
     "Grade": 5
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -7532,7 +7532,7 @@
     "Grade": 1
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -7552,7 +7552,7 @@
     "Grade": 2
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [ "Tiana Fortune", "Bill Turner", "Lori Jameson" ],
     "Ingredients": [
@@ -7576,7 +7576,7 @@
     "Grade": 3
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
@@ -7600,7 +7600,7 @@
     "Grade": 4
   },
   {
-    "Type": "Frame Shift Wake Scanner",
+    "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [ "Tiana Fortune" ],
     "Ingredients": [
