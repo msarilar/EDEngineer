@@ -2638,42 +2638,42 @@
     },
     "Multiple Blueprints Ready": {
       "es": null,
-      "de": null,
+      "de": "verschiedene Baupläne fertig",
       "fr": null,
       "ru": "Готово несколько чертежей",
       "pl": "Wiele schematów gotowych do stworzenia"
     },
     "{0} blueprints are available to craft!": {
       "es": null,
-      "de": null,
+      "de": "{0} Baupläne stehen zur Herstellung zur Verfügung!" ,
       "fr": null,
       "ru": "Можно создать {0} чертежей!",
       "pl": "Można stworzyć {0} schematów!"
     },
     "Sensors": {
       "es": null,
-      "de": null,
+      "de": "Sensoren",
       "fr": "Capteurs",
       "ru": "Сенсоры",
       "pl": "Sensors"
     },
     "Surface Scanner": {
       "es": null,
-      "de": null,
+      "de": "Oberflächenscanner",
       "fr": null,
       "ru": "Сканер поверхности",
       "pl": "Surface Scanner"
     },
     "Wake Scanner": {
       "es": null,
-      "de": null,
+      "de": "Wolkenscanner",
       "fr": null,
       "ru": "Сканер следа",
       "pl": "Wake Scanner"
     },
     "Last update: ": {
       "es": null,
-      "de": null,
+      "de": "letztes Update",
       "fr": null,
       "ru": "Последнее обновление: ",
       "pl": "Ostatnia aktualizacja:"
@@ -2687,28 +2687,28 @@
     },
     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
       "es": null,
-      "de": null,
+      "de": "Suche nach verfügbaren Bauplänen",
       "fr": null,
       "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii"
     },
     "Configure Notifications": {
       "es": null,
-      "de": null,
+      "de": "Benachrichtigung Konfigurieren",
       "fr": null,
       "ru": "Настройка оповещений",
       "pl": "Skonfiguruj powiadomienia"
     },
     "Notifications": {
       "es": null,
-      "de": null,
+      "de": "Benachrichtigung",
       "fr": null,
       "ru": "Оповещения",
       "pl": "Powiadomienia"
     },
     "Test Notification": {
       "es": null,
-      "de": null,
+      "de": "Test-Benachrichtigung",
       "fr": null,
       "ru": "Проверка оповещения",
       "pl": "Próbne powiadomienie"
@@ -2722,49 +2722,49 @@
     },
     "Voice": {
       "es": null,
-      "de": null,
+      "de": "Stimme",
       "fr": null,
       "ru": "Голос",
       "pl": "Głos"
     },
     "Long Range Scanner": {
       "es": null,
-      "de": null,
+      "de": "Langstrecken-Scanner,
       "fr": null,
       "ru": "Сканер увеличенной дальности",
       "pl": "Long Range Scanner"
     },
     "Wide Angle Scanner": {
       "es": null,
-      "de": null,
+      "de": "Weitwinkel-Scanner",
       "fr": null,
       "ru": "Широкоугольный сканер",
       "pl": "Wide Angle Scanner"
     },
     "Light Weight Scanner": {
       "es": null,
-      "de": null,
+      "de": "Leichter Scanner",
       "fr": null,
       "ru": "Облегченный сканер",
       "pl": "Light Weight Scanner"
     },
     "Fast Scanner": {
       "es": null,
-      "de": null,
+      "de": "Schneller Scanner",
       "fr": null,
       "ru": "Быстрый сканер",
       "pl": "Fast Scanner"
     },
     "Unlock": {
       "es": null,
-      "de": null,
+      "de": "Aufschließen",
       "fr": null,
       "ru": "Разблокировать",
       "pl": "Odblokowanie"
     },
     "Available Voices:": {
       "es": null,
-      "de": null,
+      "de": "verfügbare Stimmen",
       "fr": null,
       "ru": "Доступные голоса:",
       "pl": "Dostępne głosy:"
