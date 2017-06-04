@@ -529,13 +529,6 @@
       "ru": "Теплоотводная катапульта",
       "pl": "Heat Sink Launcher"
     },
-    "Frame Shift Wake Scanner": {
-      "es": "Escáner de Estelas de Distorsión",
-      "de": "FS-Sogwolkenscanner",
-      "fr": "Scanner de sillages FSD",
-      "ru": "Сканер следа РСД",
-      "pl": "Frame Shift Wake Scanner"
-    },
     "Pulse Laser": {
       "es": "Láser de Pulso",
       "de": "Impulslaser",

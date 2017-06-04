@@ -174,7 +174,11 @@ namespace EDEngineer.Models
             get { return ignored; }
             set
             {
-                if (value == ignored) return;
+                if (value == ignored)
+                {
+                    return;
+                }
+
                 ignored = value;
                 OnPropertyChanged();
             }

@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.7",
+    "Content": "* Merged two different categories of blueprint that were supposed to be the same (Frame Shift Wake Scanner and Wake Scanner ; Wake Scanner is the final name). Thanks to @Velak for spotting the issue and fixing it!\r\n\r\n* German localization completed thanks to @nepomuk16321!"
+  },
+  {
     "Version": "1.0.7.5",
     "Content": "* New filter in the Ignored/Favourites category to show blueprints included in the shopping list\r\n* Various performance enhancements\r\n\r\n* Fixed an issue for users who use high DPI screens when saving the window position\r\n\r\n* Full russian translation provided by @VChet !"
   },
