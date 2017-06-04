@@ -2680,7 +2680,7 @@
     },
     "Silent Launch": {
       "es": null,
-      "de": null,
+      "de": "stiller Start",
       "fr": null,
       "ru": "Скрытый запуск",
       "pl": "Ciche uruchomienie"
@@ -2729,7 +2729,7 @@
     },
     "Long Range Scanner": {
       "es": null,
-      "de": "Langstrecken-Scanner,
+      "de": "Langstrecken-Scanner",
       "fr": null,
       "ru": "Сканер увеличенной дальности",
       "pl": "Long Range Scanner"
