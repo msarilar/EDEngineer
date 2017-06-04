@@ -8,6 +8,7 @@
         Title="ReleaseNotesWindow" 
         WindowStartupLocation="CenterScreen"
         MaxWidth="800"
+        MaxHeight="800"
         SizeToContent="WidthAndHeight">
     <Grid>
         <Grid.RowDefinitions>
@@ -26,12 +27,14 @@
             <TabControl.ContentTemplate>
                 <!-- this is the body of the TabItem template-->
                 <DataTemplate>
-                    <Grid Background="AliceBlue">
-                        <TextBlock Text="{Binding Content}"
-                                   Margin="10"
-                                   FontSize="14"
-                                   TextWrapping="Wrap"/>
-                    </Grid>
+                    <ScrollViewer>
+                        <Grid Background="AliceBlue">
+                            <TextBlock Text="{Binding Content}"
+                                       Margin="10"
+                                       FontSize="14"
+                                       TextWrapping="Wrap"/>
+                        </Grid>
+                    </ScrollViewer>
                 </DataTemplate>
             </TabControl.ContentTemplate>
         </controls:MetroTabControl>

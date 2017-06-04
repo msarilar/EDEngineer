@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.7.7",
-    "Content": "* Merged two different categories of blueprint that were supposed to be the same (Frame Shift Wake Scanner and Wake Scanner ; Wake Scanner is the final name). Thanks to @Velak for spotting the issue and fixing it!\r\n\r\n* German localization completed thanks to @nepomuk16321!"
+    "Content": "* Cleaned up old release notes, it was becoming a bit too bloated !\r\n\r\n* Merged two different categories of blueprint that were supposed to be the same (Frame Shift Wake Scanner and Wake Scanner ; Wake Scanner is the final name). Thanks to @Velak for spotting the issue and fixing it!\r\n\r\n* German localization completed thanks to @nepomuk16321!"
   },
   {
     "Version": "1.0.7.5",
@@ -21,275 +21,31 @@
   },
   {
     "Version": "1.0.7.0",
-    "Content": "* Notifications overhaul : you can now configure your notifications (blueprint ready, cargo almost full and threshold reached) to use speech synthesis. There should be less spam of notifications if multiple events are triggered at the same time.\r\n* Faster text search when using the search\r\n\r\n* Added the high grade emissions locations to related materials, thanks to @Psieonic for adding this to the reference data !\r\n* Added recipes for engineers unlock, they work the same as any other blueprint (with type \"Unlock\") ; thanks to @vetall812 for adding this to the reference data !\r\n* Fixed the engineer's lists of many of the new sensors blueprints ; thanks to @AndreyATGB for spotting the issue and fixing it !\r\n\r\n* Fixed a black window bug with Silent Launch when the window was unlocked (now the window will be minimized on startup if you use silent launch combined with unlocked window)\r\n\r\n* API Server : Added thresholds to cargo list and a new route shopping-list"
-  },
-  {
-    "Version": "1.0.6.7",
-    "Content": "* Added a search box for blueprints:\r\nSearch visible blueprints (the ones that already satisfy your active filters) with terms separated by a space.\r\nExamples :\r\n>\"elvira shield G3\"\r\n>\"mc 5 efficient\"\r\n>\"plasma\"\r\n\r\n* Fixed a bug with the shopping list that would occur if you emptied it after resizing it (remember to double click the red splitter to make it behave like a magnet)"
-  },
-  {
-    "Version": "1.0.6.6",
-    "Content": "* Fixed an issue that made the application crash upon starting the game after EDEngineer.\r\n* Removed Tiara Fortune from the engineers that can craft Surface Scanner blueprints after grade 3, thanks to @Thurion for spotting the issue and fixing this!\r\nIssues in blueprint can be fixed pretty quickly so if you find any wrong information, you can report it and even fix it for every user :)"
-  },
-  {
-    "Version": "1.0.6.5",
-    "Content": "* Added a scrollbar for the shopping list in case it gets too big.\r\n* Added a Silent Launch option in the context menu of the task tray icon. If you activate it, EDEngineer will start hidden.\r\n* Removed the persistence of highlighted ingredients as it's now a very specific filter. Users didn't notice they had highlighted ingredients and were wondering why blueprints weren't showing up. Each time you start the application, it will now forget which ingredient you highlighted.\r\n\r\n* Prepared localization for new text, if you feel up to the task don't hesitate to contribute to the localization.json file! You just have to fill the null values for your corresponding language."
-  },
-  {
-    "Version": "1.0.6.4",
-    "Content": "* Various fixes related to the previous updates regarding logs not being taken into account and windows 7 users having errors"
+    "Content": "#1.0.7.0\r\n* Notifications overhaul : you can now configure your notifications (blueprint ready, cargo almost full and threshold reached) to use speech synthesis. There should be less spam of notifications if multiple events are triggered at the same time.\r\n* Faster text search when using the search\r\n\r\n* Added the high grade emissions locations to related materials, thanks to @Psieonic for adding this to the reference data !\r\n* Added recipes for engineers unlock, they work the same as any other blueprint (with type \"Unlock\") ; thanks to @vetall812 for adding this to the reference data !\r\n* Fixed the engineer's lists of many of the new sensors blueprints ; thanks to @AndreyATGB for spotting the issue and fixing it !\r\n\r\n* Fixed a black window bug with Silent Launch when the window was unlocked (now the window will be minimized on startup if you use silent launch combined with unlocked window)\r\n\r\n* API Server : Added thresholds to cargo list and a new route shopping-list\r\n\r\n\r\n#1.0.6.7\r\n* Added a search box for blueprints:\r\nSearch visible blueprints (the ones that already satisfy your active filters) with terms separated by a space.\r\nExamples :\r\n>\"elvira shield G3\"\r\n>\"mc 5 efficient\"\r\n>\"plasma\"\r\n\r\n* Fixed a bug with the shopping list that would occur if you emptied it after resizing it (remember to double click the red splitter to make it behave like a magnet)\r\n\r\n\r\n#1.0.6.6\r\n* Fixed an issue that made the application crash upon starting the game after EDEngineer.\r\n* Removed Tiara Fortune from the engineers that can craft Surface Scanner blueprints after grade 3, thanks to @Thurion for spotting the issue and fixing this!\r\nIssues in blueprint can be fixed pretty quickly so if you find any wrong information, you can report it and even fix it for every user :)\r\n\r\n\r\n#1.0.6.5\r\n* Added a scrollbar for the shopping list in case it gets too big.\r\n* Added a Silent Launch option in the context menu of the task tray icon. If you activate it, EDEngineer will start hidden.\r\n* Removed the persistence of highlighted ingredients as it's now a very specific filter. Users didn't notice they had highlighted ingredients and were wondering why blueprints weren't showing up. Each time you start the application, it will now forget which ingredient you highlighted.\r\n\r\n* Prepared localization for new text, if you feel up to the task don't hesitate to contribute to the localization.json file! You just have to fill the null values for your corresponding language.\r\n\r\n\r\n#1.0.6.4\r\n* Various fixes related to the previous updates regarding logs not being taken into account and windows 7 users having errors\r\n\r\n\r\n"
   },
   {
     "Version": "1.0.6.0",
-    "Content": "* Added new blueprints that are available in the 2.3 update, thanks a lot to @AndreyATGB for adding them to the application!\r\n* If more than two Favorite blueprints are available at the same time, you'll get only one toast telling you that multiple blueprints are now craftable instead of potentially getting flooded by notifications.\r\n* Removed the Ingredient Filter ; it's now replaced with the highlighted ingredients feature. Highlight an ingredient to show blueprints that use it ; highlight multiple ingredients to see all the blueprints that use at least one of the highlighted ingredients.\r\n* Added a button to remove all highlighted ingredients (the red circle where the Ingredient Filters used to be)."
-  },
-  {
-    "Version": "1.0.5.6",
-    "Content": "* Handle new 2.3 logs (the application should start faster)\r\n\r\n* Fixed escaping issue when exporting data in CSV format via the local API server\r\n* French and Russian localization update (thanks to @VChet and @Pierre-LouisTALBOT)\r\n\r\n\r\n *** NEW BLUEPRINTS *** \r\n If you find new blueprints, contributions are very welcome on GitHub ! The blueprint.json file is pretty easy to understand and you can update it directly in your browser.\r\n I will review the changes you did and if they're good then I will update the application with your contribution."
-  },
-  {
-    "Version": "1.0.5.5",
-    "Content": "* 2.3 logs beta (unreleased)"
-  },
-  {
-    "Version": "1.0.5.4",
-    "Content": "* Hotfix for very slow startup time"
-  },
-  {
-    "Version": "1.0.5.3",
-    "Content": "* You can now sort your cargo by name or by count via a dropdown that has been added on top of your ingredients list.\r\n\r\n* Fixed an issue that affected the window location which would slightly move each time you started the application if you were using unlocked mode."
-  },
-  {
-    "Version": "1.0.5.2",
-    "Content": "* Missing blueprint added: Armour Lightweight G4 & G5. Thanks a lot to @NamtarOberon who reported the missing blueprints and made the necessary changes to the application's source!\r\n* Made some fixes in already existing blueprints, you might have lost some favorites/ignored."
-  },
-  {
-    "Version": "1.0.5.1",
-    "Content": "* Hotfix for manual changes which could make the application crash for new users."
+    "Content": "#1.0.6.0\r\n* Added new blueprints that are available in the 2.3 update, thanks a lot to @AndreyATGB for adding them to the application!\r\n* If more than two Favorite blueprints are available at the same time, you'll get only one toast telling you that multiple blueprints are now craftable instead of potentially getting flooded by notifications.\r\n* Removed the Ingredient Filter ; it's now replaced with the highlighted ingredients feature. Highlight an ingredient to show blueprints that use it ; highlight multiple ingredients to see all the blueprints that use at least one of the highlighted ingredients.\r\n* Added a button to remove all highlighted ingredients (the red circle where the Ingredient Filters used to be).\r\n\r\n\r\n#1.0.5.6\r\n* Handle new 2.3 logs (the application should start faster)\r\n\r\n* Fixed escaping issue when exporting data in CSV format via the local API server\r\n* French and Russian localization update (thanks to @VChet and @Pierre-LouisTALBOT)\r\n\r\n\r\n *** NEW BLUEPRINTS *** \r\n If you find new blueprints, contributions are very welcome on GitHub ! The blueprint.json file is pretty easy to understand and you can update it directly in your browser.\r\n I will review the changes you did and if they're good then I will update the application with your contribution.\r\n\r\n\r\n#1.0.5.5\r\n* 2.3 logs beta (unreleased)\r\n\r\n\r\n#1.0.5.4\r\n* Hotfix for very slow startup time\r\n\r\n\r\n#1.0.5.3\r\n* You can now sort your cargo by name or by count via a dropdown that has been added on top of your ingredients list.\r\n\r\n* Fixed an issue that affected the window location which would slightly move each time you started the application if you were using unlocked mode.\r\n\r\n\r\n#1.0.5.2\r\n* Missing blueprint added: Armour Lightweight G4 & G5. Thanks a lot to @NamtarOberon who reported the missing blueprints and made the necessary changes to the application's source!\r\n* Made some fixes in already existing blueprints, you might have lost some favorites/ignored.\r\n\r\n\r\n#1.0.5.1\r\n* Hotfix for manual changes which could make the application crash for new users.\r\n\r\n\r\n"
   },
   {
     "Version": "1.0.5.0",
-    "Content": "* Thresholds feature improvements! When you set a threshold, you will see the value in the ingredient list : instead of seeing IRON 5, you will see IRON 5/10 if your threshold is set to 10.\r\n\r\nMoreover, if a threshold is reached then the background of the ingredient will be tinted to let you know it's over what you configured.\r\n\r\nUsers who did not have access to the feature because of their Windows version can now use it (even though they still won't have the toast notifications). Users who can have the toasts notification can disable them too if they find them too annoying (checkout the context menu of the tasktray icon!)\r\n\r\n\r\n\r\n* Handle a rare issue where manual changes couldn't be saved to file."
-  },
-  {
-    "Version": "1.0.4.9",
-    "Content": "* Minor fix for the handling of logs about Classified Scan Data and Classified Scan Fragment. Please check the amount of these two ingredient, they may have changed so you might want to fix them!"
-  },
-  {
-    "Version": "1.0.4.8",
-    "Content": "* Minor fix for when the shortcut you configured is not recognizable anymore (which can happen if you change your system language for instance). If that happens, you'll be prompted for a new one on startup."
-  },
-  {
-    "Version": "1.0.4.7",
-    "Content": "New advanced feature available : Thresholds ! (only available for users on Windows 8 or more recent)\r\nAccess the configuration window from your tasktray icon (right click => Configure Thresholds) and set the thresholds for each item.\r\nYou can set the values individually or apply a value to all selected rows (use Ctrl+A to select every visible row). When your cargo changes and the quantity is equal or above the thresholds, you'll get a warning in the form of a Windows Toast.\r\nIt can quickly become annoying so I would recommend a \"buffer\" approach by setting the limit to 30 (for example) and whenever the limit is reached you would discard the items so that you're at 20 of them (again, it's an example). If you keep it at 30 you'll constantly get annoyed by toast notifications whenever you pick up the item.\r\n\r\n\r\nThis update comes with a bunch of new text that has been kindly translated to german by user @Scorprox ! Many thanks to him.\r\n\r\nOther languages (russian/french/spanish) are still in need of translation so if you think you can help (and if you want to!), jump into the project's GitHub (https://github.com/msarilar/EDEngineer) and search for the file \"localization.json\" (or open the language selection window, there's a button that links to the GitHub's issue). Pull Requests are more than welcome :)"
-  },
-  {
-    "Version": "1.0.4.6",
-    "Content": "* ~40 new blueprints added from 2.2.03! Thanks very much to @elijahgill for the work :)"
-  },
-  {
-    "Version": "1.0.4.5",
-    "Content": "* Added new blueprints from patch 2.3!\r\n* If you have multiple commander, the commander you selected will persist between restarts of EDEngineer\r\n* Added a release notes button in the task tray icon which also shows the current version\r\n* Filters can now be clicked to enable/disable them instead of just clicking on the checkbox\r\n\r\n* Fixed an issue with Polymers commodity which, when bought, would increase the Conductive Polymer count in the cargo"
-  },
-  {
-    "Version": "1.0.4.4",
-    "Content": "* Removed commodities from the application since they're not needed in blueprints anymore; I'll add them back if they ever do actually come back!\r\n* Added a red gear icon for resources needed to unlock engineers\r\n* Added some more tooltips to the interface and unified their look (colors & font)\r\n* Simplified the progress column (the text over the progress bar on each blueprint)\r\n\r\n\r\nThe new patch brought new blueprints but I haven't the exact recipes. Anyone is welcome to come on GitHub and either post their screenshots or directly update the blueprints.json file! https://github.com/msarilar/EDEngineer/issues/93"
-  },
-  {
-    "Version": "1.0.4.3",
-    "Content": "* The shopping list can now be resized at your convenience (won't be saved nor persist if you unlock/lock the window). Double click the red splitter to reset the position and make the shopping list row dynamic again (only visible if you have at least one item in your shopping list).\r\n* Added icon and better title to the window when it shows in your taskbar (only in unlocked mode)\r\n\r\n\r\n\r\nPS: happy new year to everybody!"
-  },
-  {
-    "Version": "1.0.4.2",
-    "Content": "* Spanish translation update (thanks to @TCAS!)\r\n\r\n* Fixes an issue where the application would not track log updates for some users"
-  },
-  {
-    "Version": "1.0.4.1",
-    "Content": "* Added new data from latest story arc development (unknown ship signature and unknown wake data)"
+    "Content": "#1.0.5.0\r\n* Thresholds feature improvements! When you set a threshold, you will see the value in the ingredient list : instead of seeing IRON 5, you will see IRON 5/10 if your threshold is set to 10.\r\n\r\nMoreover, if a threshold is reached then the background of the ingredient will be tinted to let you know it's over what you configured.\r\n\r\nUsers who did not have access to the feature because of their Windows version can now use it (even though they still won't have the toast notifications). Users who can have the toasts notification can disable them too if they find them too annoying (checkout the context menu of the tasktray icon!)\r\n\r\n\r\n\r\n* Handle a rare issue where manual changes couldn't be saved to file.\r\n\r\n\r\n#1.0.4.9\r\n* Minor fix for the handling of logs about Classified Scan Data and Classified Scan Fragment. Please check the amount of these two ingredient, they may have changed so you might want to fix them!\r\n\r\n\r\n#1.0.4.8\r\n* Minor fix for when the shortcut you configured is not recognizable anymore (which can happen if you change your system language for instance). If that happens, you'll be prompted for a new one on startup.\r\n\r\n\r\n#1.0.4.7\r\nNew advanced feature available : Thresholds ! (only available for users on Windows 8 or more recent)\r\nAccess the configuration window from your tasktray icon (right click => Configure Thresholds) and set the thresholds for each item.\r\nYou can set the values individually or apply a value to all selected rows (use Ctrl+A to select every visible row). When your cargo changes and the quantity is equal or above the thresholds, you'll get a warning in the form of a Windows Toast.\r\nIt can quickly become annoying so I would recommend a \"buffer\" approach by setting the limit to 30 (for example) and whenever the limit is reached you would discard the items so that you're at 20 of them (again, it's an example). If you keep it at 30 you'll constantly get annoyed by toast notifications whenever you pick up the item.\r\n\r\n\r\nThis update comes with a bunch of new text that has been kindly translated to german by user @Scorprox ! Many thanks to him.\r\n\r\nOther languages (russian/french/spanish) are still in need of translation so if you think you can help (and if you want to!), jump into the project's GitHub (https://github.com/msarilar/EDEngineer) and search for the file \"localization.json\" (or open the language selection window, there's a button that links to the GitHub's issue). Pull Requests are more than welcome :)\r\n\r\n\r\n#1.0.4.6\r\n* ~40 new blueprints added from 2.2.03! Thanks very much to @elijahgill for the work :)\r\n\r\n\r\n#1.0.4.5\r\n* Added new blueprints from patch 2.3!\r\n* If you have multiple commander, the commander you selected will persist between restarts of EDEngineer\r\n* Added a release notes button in the task tray icon which also shows the current version\r\n* Filters can now be clicked to enable/disable them instead of just clicking on the checkbox\r\n\r\n* Fixed an issue with Polymers commodity which, when bought, would increase the Conductive Polymer count in the cargo\r\n\r\n\r\n#1.0.4.4\r\n* Removed commodities from the application since they're not needed in blueprints anymore; I'll add them back if they ever do actually come back!\r\n* Added a red gear icon for resources needed to unlock engineers\r\n* Added some more tooltips to the interface and unified their look (colors & font)\r\n* Simplified the progress column (the text over the progress bar on each blueprint)\r\n\r\n\r\nThe new patch brought new blueprints but I haven't the exact recipes. Anyone is welcome to come on GitHub and either post their screenshots or directly update the blueprints.json file! https://github.com/msarilar/EDEngineer/issues/93\r\n\r\n\r\n#1.0.4.3\r\n* The shopping list can now be resized at your convenience (won't be saved nor persist if you unlock/lock the window). Double click the red splitter to reset the position and make the shopping list row dynamic again (only visible if you have at least one item in your shopping list).\r\n* Added icon and better title to the window when it shows in your taskbar (only in unlocked mode)\r\n\r\n\r\n\r\nPS: happy new year to everybody!\r\n\r\n\r\n#1.0.4.2\r\n* Spanish translation update (thanks to @TCAS!)\r\n\r\n* Fixes an issue where the application would not track log updates for some users\r\n\r\n\r\n#1.0.4.1\r\n* Added new data from latest story arc development (unknown ship signature and unknown wake data)\r\n\r\n\r\n"
   },
   {
     "Version": "1.0.4.0",
-    "Content": "* Shopping List now available : add a blueprint to the shopping list by clicking on the blueprint, and then clicking on the new button (bottom right of the blueprint's details)\r\n* Allow negative numbers to be shown when filtering \"Zero\" stock items"
-  },
-  {
-    "Version": "1.0.3.5",
-    "Content": "* EDEngineer will now ignore logs from the beta if you're in it"
-  },
-  {
-    "Version": "1.0.3.4",
-    "Content": "* You can now highlight ingredients by clicking on them for your own purpose (for example, to flag them for Community Goals or Engineer progress). It doesn't do anything apart from the highlight, and it persists between restarts!\r\n* The tab you selected (Commodities, Materials or Data) will be kept opened when you restart the application\r\n\r\n* French translation update, thanks to @calvin00"
-  },
-  {
-    "Version": "1.0.3.3",
-    "Content": "* Take into account death events (clears up your commodities)\r\n\r\n* Fixed a display issue when selecting a blueprint (the progress bar went from orange to white which made it poorly visible)\r\n* Stop resetting the window position/size when updating !\r\n* Minor performance improvement when running the local API server"
-  },
-  {
-    "Version": "1.0.3.2",
-    "Content": "* Filters are now correctly ordered when localized (an unlock/lock or restart is required to apply the ordering)\r\n* Fixed a localization issue in the Port Prompt for the API\r\n* Localized API results ! Just send the two letter ISO code for the desired language in the new `lang` parameter to get the result translated (example : `http://localhost:XXXX/{path}.{extension}?lang=de` for german results)"
-  },
-  {
-    "Version": "1.0.3.1",
-    "Content": "* Fixed an issue with Emission Data which made EDEngineer not correctly handle related logs"
+    "Content": "#1.0.4.0\r\n* Shopping List now available : add a blueprint to the shopping list by clicking on the blueprint, and then clicking on the new button (bottom right of the blueprint's details)\r\n* Allow negative numbers to be shown when filtering \"Zero\" stock items\r\n\r\n\r\n#1.0.3.5\r\n* EDEngineer will now ignore logs from the beta if you're in it\r\n\r\n\r\n#1.0.3.4\r\n* You can now highlight ingredients by clicking on them for your own purpose (for example, to flag them for Community Goals or Engineer progress). It doesn't do anything apart from the highlight, and it persists between restarts!\r\n* The tab you selected (Commodities, Materials or Data) will be kept opened when you restart the application\r\n\r\n* French translation update, thanks to @calvin00\r\n\r\n\r\n#1.0.3.3\r\n* Take into account death events (clears up your commodities)\r\n\r\n* Fixed a display issue when selecting a blueprint (the progress bar went from orange to white which made it poorly visible)\r\n* Stop resetting the window position/size when updating !\r\n* Minor performance improvement when running the local API server\r\n\r\n\r\n#1.0.3.2\r\n* Filters are now correctly ordered when localized (an unlock/lock or restart is required to apply the ordering)\r\n* Fixed a localization issue in the Port Prompt for the API\r\n* Localized API results ! Just send the two letter ISO code for the desired language in the new `lang` parameter to get the result translated (example : `http://localhost:XXXX/{path}.{extension}?lang=de` for german results)\r\n\r\n\r\n#1.0.3.1\r\n* Fixed an issue with Emission Data which made EDEngineer not correctly handle related logs\r\n\r\n\r\n"
   },
   {
     "Version": "1.0.3.0",
-    "Content": "* Included a local API server (disabled by default) if you want to develop your own third-parties application or if you just want to export your commander's data! Supports Json (default), Xml and Csv. You can launch it via the tasktray icon, I strongly recommend taking a look at the documentation available in the GitHub project's wiki ! https://github.com/msarilar/EDEngineer/wiki \r\n* Added ingredients for blueprint Fragment Canon Double Shot G5\r\n\r\n * FULL russian localization now available! Many thanks to @Morozova, @Buchodt and @VChet for the great work. \r\n* Updated localization. Many thanks to @TCAS and @Scorprox for the great reactivity!"
+    "Content": "#1.0.3.0\r\n* Included a local API server (disabled by default) if you want to develop your own third-parties application or if you just want to export your commander's data! Supports Json (default), Xml and Csv. You can launch it via the tasktray icon, I strongly recommend taking a look at the documentation available in the GitHub project's wiki ! https://github.com/msarilar/EDEngineer/wiki \r\n* Added ingredients for blueprint Fragment Canon Double Shot G5\r\n\r\n * FULL russian localization now available! Many thanks to @Morozova, @Buchodt and @VChet for the great work. \r\n* Updated localization. Many thanks to @TCAS and @Scorprox for the great reactivity!\r\n\r\n\r\n#1.0.2.4\r\n* Minor GUI animations to make it a bit more smooth (for example, when you select a blueprint in the right grid)\r\n\r\n* 100% finished french translation! Many thanks to Cmdr Bucho Xin Bu (@Buchodt), @calvin00 and @Giblood for the contributions and dedication!\r\n\r\n\r\n#1.0.2.3\r\n* Added synthesis blueprints (thanks to @ravstar52 for providing the raw data!). They appear with a light blue color and you can distinguish the ingredients you have favorited from blueprints and from synthesis. In the Engineer filter, you have a new filter \"@Synthesis\" and new type filters are available too.\r\n\r\n* Updated localization\r\n\r\n\r\n#1.0.2.2\r\n* Ingredients not used in a single blueprint now appear faded with a hint in the tooltip. Check it out!\r\n\r\n* Fixed an issue with commanders having special characters in their name (<, >, :, \", /, \\, |, ?, *)\r\n* Fixed an issue with users having multiple commanders which made the application not correctly update cargo (visually) after switching from active commander\r\n\r\n* French translation progress (not finished though) ; thanks to @calvin00 and @Giblood for the dedication! Almost there :)\r\n\r\n\r\n#1.0.2.1\r\n* Hotfix to avoid debug popups in the released version\r\n\r\n\r\n"
   },
   {
-    "Version": "1.0.2.4",
-    "Content": "* Minor GUI animations to make it a bit more smooth (for example, when you select a blueprint in the right grid)\r\n\r\n* 100% finished french translation! Many thanks to Cmdr Bucho Xin Bu (@Buchodt), @calvin00 and @Giblood for the contributions and dedication!"
+    "Version": "1.0.2.0",
+    "Content": "#1.0.2\r\n* Added material/data count. A warning will popup if you have 5 or less slots available, you can disable that warning in the tasktray icon context menu!\r\n* Added origin details to blueprints ingredients. Icons allow a quick view of the basic origin (market, mission, scan, surface, salvage, mining) and a tool tip will give more detail when you hover the ingredient (like \"Ship salvage (military & authority ships)\"). You can hide icons if it's too much visual noise via the new switch on top of the left panel.\r\n* Added an option to disable \"Blueprint Ready\" notifications in the context menu of the task tray icon (it's enabled by default)\r\n\r\n* Fixed an error in RamTah's blueprint which was missing CMM composite in its ingredient list. Please report any similar issue like this one if you see it!\r\n* Frontier's fixed an issue with \"Material Discovered\" event, it's now integrated in the app. Please double check materials/data you've recently discovered, the counter might be slightly off!\r\n* Fixed the \"Very Rare\" icon which was showing as \"Rare\"\r\n\r\n* FULL german translation available ! Many thanks to @Scorprox for his hard work and dedication\r\n* Spanish translations fixes, thanks a bunch to @TCAS !\r\n\r\n\r\n#1.0.1.3\r\n* Minor hotfix regarding previous patch (1.0.1.2)\r\n\r\n\r\n#1.0.1.2\r\n* Fixed a bug where the blueprints grid couldn't be sortable anymore by Type or Name\r\n* FULL spanish translation is finished! Many thanks to CMDR Aken (@omicrono) and CMDR TCAS (@TCAS) :)\r\n* Partial German translation (~40% complete) thanks to @rogerkilo and @Scorprox\r\n\r\n\r\n"
   },
   {
-    "Version": "1.0.2.3",
-    "Content": "* Added synthesis blueprints (thanks to @ravstar52 for providing the raw data!). They appear with a light blue color and you can distinguish the ingredients you have favorited from blueprints and from synthesis. In the Engineer filter, you have a new filter \"@Synthesis\" and new type filters are available too.\r\n\r\n* Updated localization"
-  },
-  {
-    "Version": "1.0.2.2",
-    "Content": "* Ingredients not used in a single blueprint now appear faded with a hint in the tooltip. Check it out!\r\n\r\n* Fixed an issue with commanders having special characters in their name (<, >, :, \", /, \\, |, ?, *)\r\n* Fixed an issue with users having multiple commanders which made the application not correctly update cargo (visually) after switching from active commander\r\n\r\n* French translation progress (not finished though) ; thanks to @calvin00 and @Giblood for the dedication! Almost there :)"
-  },
-  {
-    "Version": "1.0.2.1",
-    "Content": "* Hotfix to avoid debug popups in the released version"
-  },
-  {
-    "Version": "1.0.2",
-    "Content": "* Added material/data count. A warning will popup if you have 5 or less slots available, you can disable that warning in the tasktray icon context menu!\r\n* Added origin details to blueprints ingredients. Icons allow a quick view of the basic origin (market, mission, scan, surface, salvage, mining) and a tool tip will give more detail when you hover the ingredient (like \"Ship salvage (military & authority ships)\"). You can hide icons if it's too much visual noise via the new switch on top of the left panel.\r\n* Added an option to disable \"Blueprint Ready\" notifications in the context menu of the task tray icon (it's enabled by default)\r\n\r\n* Fixed an error in RamTah's blueprint which was missing CMM composite in its ingredient list. Please report any similar issue like this one if you see it!\r\n* Frontier's fixed an issue with \"Material Discovered\" event, it's now integrated in the app. Please double check materials/data you've recently discovered, the counter might be slightly off!\r\n* Fixed the \"Very Rare\" icon which was showing as \"Rare\"\r\n\r\n* FULL german translation available ! Many thanks to @Scorprox for his hard work and dedication\r\n* Spanish translations fixes, thanks a bunch to @TCAS !"
-  },
-  {
-    "Version": "1.0.1.3",
-    "Content": "* Minor hotfix regarding previous patch (1.0.1.2)"
-  },
-  {
-    "Version": "1.0.1.2",
-    "Content": "* Fixed a bug where the blueprints grid couldn't be sortable anymore by Type or Name\r\n* FULL spanish translation is finished! Many thanks to CMDR Aken (@omicrono) and CMDR TCAS (@TCAS) :)\r\n* Partial German translation (~40% complete) thanks to @rogerkilo and @Scorprox"
-  },
-  {
-    "Version": "1.0.1.1",
-    "Content": "* Fixed an issue linked to localization some Commanders experienced when using multiple accounts\r\n* The select language window is now showed on top of the overlay, not behind\r\n* Sharper rarity icons\r\n* Added Two buttons on the top right of the application (check all filters/uncheck all filters)"
-  },
-  {
-    "Version": "1.0.1",
-    "Content": "* Localization ! Pick your language the first time. You can switch in te tasktray icon afterwards. Translation contributions are welcome!\r\n* Fixed an issue for commanders with a dot (.) in their name\r\n* Fixed an issue for users who installed the application on a domain server where manual changes were never saved. If that is your situation, please uninstall, delete the entire folder located in \"C:\\Users\\%USERNAME%\\AppData\\Local\\EDEngineer\" and reinstall the application"
-  },
-  {
-    "Version": "1.0.0.31",
-    "Content": "* Persistent window state (locked / unlocked) between restarts\r\n* Salvaged your old favorites/ignored blueprints that were lost in the previous update!\r\n* Added a new Reset command in the tasktray icon in case your screen goes black. Checkout the Help command too!"
-  },
-  {
-    "Version": "1.0.0.30",
-    "Content": "Another hotfix for weird logs not containing any CMDR's information"
-  },
-  {
-    "Version": "1.0.0.29",
-    "Content": "Hotfix to handle weird logs some users have encountered."
-  },
-  {
-    "Version": "1.0.0.28",
-    "Content": "Fixed a small display issue with the \"Last Update\" timestamp that would't be correctly displayed"
-  },
-  {
-    "Version": "1.0.0.27",
-    "Content": "* Now supports multi commander ! (your GUI has been reset to avoid graphical issues since I've reworked the interface a bit in order to integrate that, sorry !)\r\n* Optimized log extraction, solve some issues with data acquisition issues (you might want to quickly check your data tab and see everything is still synchronized ; if it's not, you should fix it manually once and for all now)"
-  },
-  {
-    "Version": "1.0.0.26",
-    "Content": "Fixed a small issue with the Missing Commodity filter that would show blueprints not requiring commodities"
-  },
-  {
-    "Version": "1.0.0.25",
-    "Content": "Hotfix to correct the GUI. Your Window position and size has been reset (sorry!) to correct an issue that would make the entire overlay black otherwise"
-  },
-  {
-    "Version": "1.0.0.24",
-    "Content": "Fixed an issue that could make the GUI go entirely black due to 1.0.0.23 changes (check the release notes !)"
-  },
-  {
-    "Version": "1.0.0.23",
-    "Content": "* Minor UI rework\r\n* Added a command in the tasktray icon to unlock the window (in case you don't know where the overlay is anymore)\r\n* In unlocked mode, you can now distribute the size of the overlay between the two columns. Don't forget the RESET button in case you want to go back to the initial position!"
-  },
-  {
-    "Version": "1.0.0.22",
-    "Content": "Last update required to make the application support older version of Windows"
-  },
-  {
-    "Version": "1.0.0.21",
-    "Content": "Again, fixed the issue for old version of Windows"
-  },
-  {
-    "Version": "1.0.0.20",
-    "Content": "Fixed an issue that would occur on old version of Windows not supporting toasts when a favorite blueprint would become available to craft"
-  },
-  {
-    "Version": "1.0.0.19",
-    "Content": "* Handle unknown commodities:\r\n  * powertransferconduits (Power Transfer Bus)\r\n  * powergridassembly (Energy Grid Assembly)\r\n* Improve overall performance\r\n* Correctly handle synthesis operations\r\n* Correctly handle mining refined operations\r\n* Added an error window for unhandled errors so that you can submit it with an issue if the application crashes"
-  },
-  {
-    "Version": "1.0.0.18",
-    "Content": "* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data)\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned"
-  },
-  {
-    "Version": "1.0.0.17",
-    "Content": "Fixed an issue with engineer progress that would increase your cargo instead of reduce it by the amount of items necessary to unlock said engineer"
-  },
-  {
-    "Version": "1.0.0.16",
-    "Content": "* The software now correctly works even if no logs are found in the log directory\r\n* Fixed an issue that would make the application lose synchronization with the logs when the window was locked/unlocked\r\n* Added new filter for cargo : display only ingredients needed for favorites blueprints"
-  },
-  {
-    "Version": "1.0.0.15",
-    "Content": "* Fixed a bug that made the app incorrectly compute synthesis operations\r\n* Now correctly handle Engineer's unlock (when an engineer requires items to be unlocked, like Ram Tah and his 50 units of Classified Scan Databanks)"
-  },
-  {
-    "Version": "1.0.0.14",
-    "Content": "Quick patch to remove unwanted debug code that slipped in 1.0.0.13"
-  },
-  {
-    "Version": "1.0.0.13",
-    "Content": "Fixed issue which would make the application crash when it would read invalid json outputted by the game"
-  },
-  {
-    "Version": "1.0.0.12",
-    "Content": "Fixed issue with release notes not showing up"
-  },
-  {
-    "Version": "1.0.0.11",
-    "Content": "* Working release notes (don't panic if you see \"current version 1.0.0.0\", that's only the first time)\r\n* Favorited blueprints have their ingredients display a little star in your cargo list\r\n* New craftable filter for when only commodities are missing\r\n* Autoselect text when overriding cargo's count (protip: use TAB key to change currently editing entry)\r\n* New filter for ingredients (tick an ingredient to only see blueprints that require it)\r\n* Handle Material Discovery events (issue in Elite Dangerous itself, but I tried to handle it here as best as I could)"
-  },
-  {
-    "Version": "1.0.0.10",
-    "Content": "Fixed a bug in the monitoring of file with a temporary solution until I find what's wrong with .NET's FileSystemWatcher"
-  },
-  {
-    "Version": "1.0.0.9",
-    "Content": "* Improve the refresh rate of the data\r\n* Fixed a bug where if you had the zero as hidden, the acquisition of a material would make the application crash"
-  },
-  {
-    "Version": "1.0.0.8",
-    "Content": "Fix an issue which could make some blueprints not visible in the list"
-  },
-  {
-    "Version": "1.0.0.7",
-    "Content": "Take synthesis logs into account (they were not before, so if you do synthesis please check your materials)"
-  },
-  {
-    "Version": "1.0.0.6",
-    "Content": "Added new release notes popup when an update has been installed."
-  },
-  {
-    "Version": "1.0.0.5",
-    "Content": "* Fixed crash when parsing logs for entries that report material collection without size reported (probably old logs)\r\n* Unlocking the window now make it like a real \"normal\" window (minimize, maximize, appears in taskbar, etc...)\r\n\r\nUnknown materials added:\r\n* uncutfocuscrystals\r\n* fedcorecomposites\r\n* unknownenergysource"
-  },
-  {
-    "Version": "1.0.0.4",
-    "Content": "* Move/Resize window\r\n* Editable counters"
-  },
-  {
-    "Version": "1.0.0.3",
-    "Content": "Added missing data:\r\n* Pattern Alpha Obelisk Data\r\n* Pattern Beta Obelisk Data\r\n* Pattern Epsilon Obelisk Data\r\n* Pattern Gamma Obelisk Data\r\n* Pattern Delta Obelisk Data\r\n\r\nAdded missing material:\r\n* Proprietary Composites"
-  },
-  {
-    "Version": "1.0.0.2",
-    "Content": "2.2 blueprints added"
+    "Version": "1.0.1.0",
+    "Content": "#1.0.1.0\r\n* Localization ! Pick your language the first time. You can switch in te tasktray icon afterwards. Translation contributions are welcome!\r\n* Fixed an issue for commanders with a dot (.) in their name\r\n* Fixed an issue for users who installed the application on a domain server where manual changes were never saved. If that is your situation, please uninstall, delete the entire folder located in \"C:\\Users\\%USERNAME%\\AppData\\Local\\EDEngineer\" and reinstall the application\r\n\r\n\r\n#1.0.0.31\r\n* Persistent window state (locked / unlocked) between restarts\r\n* Salvaged your old favorites/ignored blueprints that were lost in the previous update!\r\n* Added a new Reset command in the tasktray icon in case your screen goes black. Checkout the Help command too!\r\n\r\n\r\n#1.0.0.30\r\nAnother hotfix for weird logs not containing any CMDR's information\r\n\r\n\r\n#1.0.0.29\r\nHotfix to handle weird logs some users have encountered.\r\n\r\n\r\n#1.0.0.28\r\nFixed a small display issue with the \"Last Update\" timestamp that would't be correctly displayed\r\n\r\n\r\n#1.0.0.27\r\n* Now supports multi commander ! (your GUI has been reset to avoid graphical issues since I've reworked the interface a bit in order to integrate that, sorry !)\r\n* Optimized log extraction, solve some issues with data acquisition issues (you might want to quickly check your data tab and see everything is still synchronized ; if it's not, you should fix it manually once and for all now)\r\n\r\n\r\n#1.0.0.26\r\nFixed a small issue with the Missing Commodity filter that would show blueprints not requiring commodities\r\n\r\n\r\n#1.0.0.25\r\nHotfix to correct the GUI. Your Window position and size has been reset (sorry!) to correct an issue that would make the entire overlay black otherwise\r\n\r\n\r\n#1.0.0.24\r\nFixed an issue that could make the GUI go entirely black due to 1.0.0.23 changes (check the release notes !)\r\n\r\n\r\n#1.0.0.23\r\n* Minor UI rework\r\n* Added a command in the tasktray icon to unlock the window (in case you don't know where the overlay is anymore)\r\n* In unlocked mode, you can now distribute the size of the overlay between the two columns. Don't forget the RESET button in case you want to go back to the initial position!\r\n\r\n\r\n#1.0.0.22\r\nLast update required to make the application support older version of Windows\r\n\r\n\r\n#1.0.0.21\r\nAgain, fixed the issue for old version of Windows\r\n\r\n\r\n#1.0.0.20\r\nFixed an issue that would occur on old version of Windows not supporting toasts when a favorite blueprint would become available to craft\r\n\r\n\r\n#1.0.0.19\r\n* Handle unknown commodities:\r\n  * powertransferconduits (Power Transfer Bus)\r\n  * powergridassembly (Energy Grid Assembly)\r\n* Improve overall performance\r\n* Correctly handle synthesis operations\r\n* Correctly handle mining refined operations\r\n* Added an error window for unhandled errors so that you can submit it with an issue if the application crashes\r\n\r\n\r\n#1.0.0.18\r\n* Now handle Scientific Community Goals (for instance the last one where you had to handover Pattern Obelisk Data)\r\n* Fixed a bug which made jettison decreases the number of cargo by one rather than the actual number of cargo jettisoned\r\n\r\n\r\n#1.0.0.17\r\nFixed an issue with engineer progress that would increase your cargo instead of reduce it by the amount of items necessary to unlock said engineer\r\n\r\n\r\n#1.0.0.16\r\n* The software now correctly works even if no logs are found in the log directory\r\n* Fixed an issue that would make the application lose synchronization with the logs when the window was locked/unlocked\r\n* Added new filter for cargo : display only ingredients needed for favorites blueprints\r\n\r\n\r\n#1.0.0.15\r\n* Fixed a bug that made the app incorrectly compute synthesis operations\r\n* Now correctly handle Engineer's unlock (when an engineer requires items to be unlocked, like Ram Tah and his 50 units of Classified Scan Databanks)\r\n\r\n\r\n#1.0.0.14\r\nQuick patch to remove unwanted debug code that slipped in 1.0.0.13\r\n\r\n\r\n#1.0.0.13\r\nFixed issue which would make the application crash when it would read invalid json outputted by the game\r\n\r\n\r\n#1.0.0.12\r\nFixed issue with release notes not showing up\r\n\r\n\r\n#1.0.0.11\r\n* Working release notes (don't panic if you see \"current version 1.0.0.0\", that's only the first time)\r\n* Favorited blueprints have their ingredients display a little star in your cargo list\r\n* New craftable filter for when only commodities are missing\r\n* Autoselect text when overriding cargo's count (protip: use TAB key to change currently editing entry)\r\n* New filter for ingredients (tick an ingredient to only see blueprints that require it)\r\n* Handle Material Discovery events (issue in Elite Dangerous itself, but I tried to handle it here as best as I could)\r\n\r\n\r\n#1.0.0.10\r\nFixed a bug in the monitoring of file with a temporary solution until I find what's wrong with .NET's FileSystemWatcher\r\n\r\n\r\n#1.0.0.9\r\n* Improve the refresh rate of the data\r\n* Fixed a bug where if you had the zero as hidden, the acquisition of a material would make the application crash\r\n\r\n\r\n#1.0.0.8\r\nFix an issue which could make some blueprints not visible in the list\r\n\r\n\r\n#1.0.0.7\r\nTake synthesis logs into account (they were not before, so if you do synthesis please check your materials)\r\n\r\n\r\n#1.0.0.6\r\nAdded new release notes popup when an update has been installed.\r\n\r\n\r\n#1.0.0.5\r\n* Fixed crash when parsing logs for entries that report material collection without size reported (probably old logs)\r\n* Unlocking the window now make it like a real \"normal\" window (minimize, maximize, appears in taskbar, etc...)\r\n\r\nUnknown materials added:\r\n* uncutfocuscrystals\r\n* fedcorecomposites\r\n* unknownenergysource\r\n\r\n\r\n#1.0.0.4\r\n* Move/Resize window\r\n* Editable counters\r\n\r\n\r\n#1.0.0.3\r\nAdded missing data:\r\n* Pattern Alpha Obelisk Data\r\n* Pattern Beta Obelisk Data\r\n* Pattern Epsilon Obelisk Data\r\n* Pattern Gamma Obelisk Data\r\n* Pattern Delta Obelisk Data\r\n\r\nAdded missing material:\r\n* Proprietary Composites\r\n\r\n\r\n#1.0.0.2\r\n2.2 blueprints added\r\n\r\n\r\n"
   }
 ]
 
