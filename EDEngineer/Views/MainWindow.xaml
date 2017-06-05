@@ -244,6 +244,7 @@
                     Visibility="{Binding Commanders.Count, Converter={StaticResource IntegerToVisibility}, Mode=OneWay, ConverterParameter=1}"
                     Height="35"
                     Grid.Row="0"
+                    Background="{StaticResource BlackBrush}"
                     Grid.ColumnSpan="3"
                     Margin="10,0,0,0">
             <TabControl.ContentTemplate>
@@ -275,7 +276,9 @@
 
             <!-- CARGO FILTERS -->
 
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0"
+                  Height="28"
+                  Visibility="{Binding CurrentCommander.Value.HighlightedEntryData.Count, Converter={StaticResource IntegerToVisibilityReversed}, Mode=OneWay}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -333,6 +336,25 @@
 
             </Grid>
 
+            <!-- HIGHLIGHTED RECAP -->
+
+            <Button Grid.Row="0"
+                    x:Name="UnhighlightButton"
+                    Click="UnhighlightButtonClicked"
+                    Style="{StaticResource UnhighlightButtonStyle}"
+                    Visibility="{Binding CurrentCommander.Value.HighlightedEntryData.Count, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}">
+                <Button.Content>
+                    <TextBlock Foreground="{StaticResource EliteOrangeBrush}"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontFamily="/Resources/Fonts/#Euro Caps"
+                               x:Name="UnhighlightButtonText">
+                        <Run Text="{Binding CurrentCommander.Value.HighlightedEntryData.Count, Mode=OneWay}"/>
+                        <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='filtered entries - click this to clear'}"></Run>
+                    </TextBlock>
+                </Button.Content>
+            </Button>
+
             <!-- CURRENT CARGO -->
             
 <!-- COMMODITY REMOVED      
@@ -348,6 +370,7 @@
             </UniformGrid>
 
             <controls:MetroTabControl Grid.Row="1"
+                                      Background="Black"
                                       SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
@@ -414,6 +437,7 @@
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
                                       x:Name="Materials"
+                                      ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
                                       ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>

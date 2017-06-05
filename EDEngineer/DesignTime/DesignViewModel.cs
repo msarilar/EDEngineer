@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using EDEngineer.Models;
 using NodaTime;
@@ -13,10 +14,9 @@ namespace EDEngineer.DesignTime
 
     public class DesignViewModel
     {
-        public ObservableCollection<DesignKeyValuePair> Commanders { get; set; }
+        public List<DesignKeyValuePair> Commanders { get; set; }
         public DesignKeyValuePair CurrentCommander { get; set; }
         public DesignLanguages Languages { get; set; }
-
         public string LogDirectory { get; set; }
     }
 
@@ -33,9 +33,10 @@ namespace EDEngineer.DesignTime
     public class DesignCommanderViewModel
     {
         public DesignState State { get; set; }
-        public ObservableCollection<DesignBluePrint> Blueprints { get; set; }
+        public List<DesignBluePrint> Blueprints { get; set; }
         public DesignInstant LastUpdate { get; set; }
-        public ObservableCollection<DesignFilter> GradeFilters { get; set; }
+        public List<DesignFilter> GradeFilters { get; set; }
+        public List<EntryData> HighlightedEntryData { get; set; }
         public string CommanderName { get; set; }
 
         public override string ToString()
@@ -86,6 +87,7 @@ namespace EDEngineer.DesignTime
         public Rarity Rarity { get; set; }
         public EntryData Data { get; set; }
         public int Count { get; set; }
+        public int Threshold { get; set; }
         public int FavoriteCount { get; set; }
     }
 

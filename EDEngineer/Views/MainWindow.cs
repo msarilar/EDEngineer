@@ -544,5 +544,10 @@ namespace EDEngineer.Views
             var p = PointToScreen(Mouse.GetPosition(this));
             menu.Show(new System.Drawing.Point((int)p.X, (int)p.Y), ToolStripDropDownDirection.BelowRight);
         }
+
+        private void UnhighlightButtonClicked(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.HighlightedEntryData.ToList().ForEach(entry => viewModel.ToggleHighlight(entry));
+        }
     }
 }

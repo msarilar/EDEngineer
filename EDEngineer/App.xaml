@@ -81,7 +81,7 @@
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
-            
+
             <Style TargetType="ToolTip">
                 <Setter Property="Background" Value="{StaticResource EliteOrangeBrush}" />
                 <Setter Property="BorderBrush" Value="Black" />
@@ -712,6 +712,39 @@
                         </ControlTemplate>
                     </Setter.Value>
                 </Setter>
+            </Style>
+
+            <Style x:Key="UnhighlightButtonStyle"
+                   TargetType="Button">
+                <Setter Property="Visibility" Value="Visible"/>
+                <Setter Property="Height" Value="28"/>
+                <Setter Property="BorderBrush" Value="{StaticResource IngredientHighlightedBrush}"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="Background" Value="Black"/>
+                <Style.Triggers>
+                    <Trigger Property="Visibility" Value="Visible">
+                        <Trigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                                             From="0"
+                                                             To="1"
+                                                             Duration="0:0:.3"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.EnterActions>
+                        <Trigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                                             From="1"
+                                                             To="0"
+                                                             Duration="0:0:.3"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </Trigger.ExitActions>
+                    </Trigger>
+                </Style.Triggers>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

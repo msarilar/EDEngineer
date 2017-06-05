@@ -2638,7 +2638,7 @@
     },
     "{0} blueprints are available to craft!": {
       "es": null,
-      "de": "{0} Baupläne stehen zur Herstellung zur Verfügung!" ,
+      "de": "{0} Baupläne stehen zur Herstellung zur Verfügung!",
       "fr": null,
       "ru": "Можно создать {0} чертежей!",
       "pl": "Można stworzyć {0} schematów!"
@@ -2761,6 +2761,13 @@
       "fr": null,
       "ru": "Доступные голоса:",
       "pl": "Dostępne głosy:"
+    },
+    "filtered entries - click this to clear": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
     }
   }
 }
