@@ -559,7 +559,7 @@
     },
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
-      "de": "Treibstofftransferierer-Drohnensteuerung",
+      "de": "Treibstofftransfer-Drohnensteuerung",
       "fr": "Contrôleur de drone de ravitaillement",
       "ru": "Контроллер дронов заправщиков",
       "pl": "Fuel Transfer Limpet Controller"
@@ -1595,7 +1595,7 @@
     },
     "Fuel Transfer LC": {
       "es": "LD Repostaje",
-      "de": "DS Treibstofftransferierer",
+      "de": "DS Treibstofftransfer",
       "fr": "Contrôleur de drones Ravitailleurs",
       "ru": "Контроллер дронов заправщиков",
       "pl": "Fuel Transfer LC"
@@ -1987,7 +1987,7 @@
     },
     "Favorite Blueprint Ready": {
       "es": "Receta lista",
-      "de": "Blaupause fertig",
+      "de": "Bauplan fertig",
       "fr": "Recette Prête",
       "ru": "Чертеж готов",
       "pl": "Ulubiony schemat gotowy"
@@ -2232,7 +2232,7 @@
     },
     "You have only {0} slots left for your materials.": {
       "es": "Tienes {0} espacios para materiales.",
-      "de": "Sie haben nur mehr {0} Kapazität für Materialien frei.",
+      "de": "Platz für Materialien nur noch {0}",
       "fr": "Il vous reste seulement {0} emplacements pour vos matériaux.",
       "ru": "Количество свободных слотов под материалы: {0}.",
       "pl": "Pozostało Ci tylko {0} wolnych miejsc na Twoje materiały."
@@ -2246,7 +2246,7 @@
     },
     "You have only {0} slots left for your data.": {
       "es": "Tienes {0} espacios para datos.",
-      "de": "Sie haben nur mehr {0} Datenspeicher frei.",
+      "de": "Sie haben nur noch {0} Datenspeicher frei.",
       "fr": "Il vous reste seulement {0} emplacements pour vos données.",
       "ru": "Количество свободных слотов под данные: {0}.",
       "pl": "Pozostało Ci tylko {0} wolnych miejsc na dane."
@@ -2547,7 +2547,7 @@
     },
     "Rarity": {
       "es": null,
-      "de": "Qualität",
+      "de": "Seltenheit",
       "fr": "Rareté",
       "ru": "Редкость",
       "pl": "Rzadkość"
@@ -2673,21 +2673,21 @@
     },
     "Last update: ": {
       "es": null,
-      "de": "letztes Update",
+      "de": "letzte Aktualisierung",
       "fr": null,
       "ru": "Последнее обновление: ",
       "pl": "Ostatnia aktualizacja:"
     },
     "Silent Launch": {
       "es": null,
-      "de": "stiller Start",
+      "de": "Start minimiert",
       "fr": null,
       "ru": "Скрытый запуск",
       "pl": "Ciche uruchomienie"
     },
     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
       "es": null,
-      "de": "Suche nach verfügbaren Bauplänen",
+      "de": "Suche nach verfügbaren Bauplänen (Begriff durch 'Leerzeichen' trennen",
       "fr": null,
       "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii"
@@ -2736,7 +2736,7 @@
     },
     "Wide Angle Scanner": {
       "es": null,
-      "de": "Weitwinkel-Scanner",
+      "de": "Weitwinkelscanner",
       "fr": null,
       "ru": "Широкоугольный сканер",
       "pl": "Wide Angle Scanner"
@@ -2750,14 +2750,14 @@
     },
     "Fast Scanner": {
       "es": null,
-      "de": "Schneller Scanner",
+      "de": "Schnellscanner",
       "fr": null,
       "ru": "Быстрый сканер",
       "pl": "Fast Scanner"
     },
     "Unlock": {
       "es": null,
-      "de": "Aufschließen",
+      "de": "Freischalten",
       "fr": null,
       "ru": "Разблокировать",
       "pl": "Odblokowanie"
