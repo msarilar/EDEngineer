@@ -272,7 +272,7 @@
     },
     "Expanded FSD Interdictor Capture Arc": {
       "es": "Arco de Captura de Interdictor de MDD Extendido",
-      "de": "Erweiterter Abfangkreisbogen für FSA-Unterbrecher",
+      "de": "Weitwinkel-FSA-Unterbrecher",
       "fr": "Intercepteur FSD à angle de capture augmenté",
       "ru": "Увеличение угла перехвата",
       "pl": "Expanded FSD Interdictor Capture Arc"
@@ -307,7 +307,7 @@
     },
     "Lightweight Hull Reinforcement": {
       "es": "Refuerzo Estructural Aligerado",
-      "de": "Leichtgewicht-Rumpfhüllenverstärkung",
+      "de": "Leichte Rumpfhüllenverstärkung",
       "fr": "Renforcement de coque Léger",
       "ru": "Облегчение усилителя корпуса",
       "pl": "Lightweight Hull Reinforcement"
@@ -1889,7 +1889,7 @@
     },
     "Ignored": {
       "es": "Ignorado",
-      "de": "Ignorierte",
+      "de": "Ignorieren",
       "fr": "Ignorés",
       "ru": "Игнорируемые",
       "pl": "Ignorowane"
@@ -2232,7 +2232,7 @@
     },
     "You have only {0} slots left for your materials.": {
       "es": "Tienes {0} espacios para materiales.",
-      "de": "Platz für Materialien nur noch {0}",
+      "de": "Kapazitäten für Materialien nur noch {0}",
       "fr": "Il vous reste seulement {0} emplacements pour vos matériaux.",
       "ru": "Количество свободных слотов под материалы: {0}.",
       "pl": "Pozostało Ci tylko {0} wolnych miejsc na Twoje materiały."
@@ -2687,7 +2687,7 @@
     },
     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
       "es": null,
-      "de": "Suche nach verfügbaren Bauplänen (Begriff durch 'Leerzeichen' trennen)",
+      "de": "Suche nach verfügbaren Bauplänen (Begriffe durch 'Leerzeichen' trennen)",
       "fr": null,
       "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii"
@@ -2715,7 +2715,7 @@
     },
     "Toast": {
       "es": null,
-      "de": null,
+      "de": "Toast",
       "fr": null,
       "ru": null,
       "pl": "Pop-up"
