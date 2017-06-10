@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.8",
+    "Content": "* Added a button that appears when you have at least one ingredient highlighted (left side panel) so you can quickly see if you have any (clicking on it will unhighlight entries)\r\n\r\n* German localization update courtesy of @nepomuk16321!"
+  },
+  {
     "Version": "1.0.7.7",
     "Content": "* Cleaned up old release notes, it was becoming a bit too bloated !\r\n\r\n* Merged two different categories of blueprint that were supposed to be the same (Frame Shift Wake Scanner and Wake Scanner ; Wake Scanner is the final name). Thanks to @Velak for spotting the issue and fixing it!\r\n\r\n* German localization completed thanks to @nepomuk16321!"
   },
