@@ -41,7 +41,7 @@
     },
     "Lightweight": {
       "es": "Aligerado",
-      "de": "Leichte",
+      "de": "Leicht",
       "fr": "Léger",
       "ru": "Облегченный",
       "pl": "Lightweight"
@@ -97,7 +97,7 @@
     },
     "Longer Range FSD interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
-      "de": "Ferndistanz-FSA-Unterbrecher",
+      "de": "Langstrecken-FSA-Unterbrecher",
       "fr": "Intercepteur FSD longue portée",
       "ru": "Увеличение дальности перехвата",
       "pl": "Longer Range FSD interdictor"
@@ -125,21 +125,21 @@
     },
     "Thermal Resistant": {
       "es": "Resistencia Térmica",
-      "de": "Thermalresistente",
+      "de": "Thermalresistent",
       "fr": "Résistance thermique",
       "ru": "Противотепловое усиление",
       "pl": "Thermal Resistant"
     },
     "Weapon Focused": {
       "es": "Orientado a Armas",
-      "de": "Waffenfokussierte",
+      "de": "Waffenfokussiert",
       "fr": "Optimisé armes",
       "ru": "Оружие-ориентированный",
       "pl": "Weapon Focused"
     },
     "Blast Resistant": {
       "es": "Blindaje Resistente a Explosiones",
-      "de": "Detonationsresistente",
+      "de": "Detonationsresistent",
       "fr": "Anti-explosion",
       "ru": "Противовзрывное усиление",
       "pl": "Blast Resistant"
@@ -153,7 +153,7 @@
     },
     "Kinetic Resistant": {
       "es": "Resistencia Cinética",
-      "de": "Kinetikresistente",
+      "de": "Kinetikresistent",
       "fr": "Résistance cinétique",
       "ru": "Противокинетическое усиление",
       "pl": "Kinetic Resistant"
@@ -181,7 +181,7 @@
     },
     "Long Range Weapon": {
       "es": "Arma de Largo Alcance",
-      "de": "Ferndistanzwaffe",
+      "de": "Langstreckenwaffe",
       "fr": "Armes à longue portée",
       "ru": "Увеличенная дальность",
       "pl": "Long Range Weapon"
@@ -202,14 +202,14 @@
     },
     "Low Emissions": {
       "es": "Bajas Emisiones",
-      "de": "Emissionsoptimiertes",
+      "de": "Emissionsoptimiert",
       "fr": "Basse émission",
       "ru": "Снижение излучения",
       "pl": "Low Emissions"
     },
     "System Focused": {
       "es": "Orientado a Sistemas",
-      "de": "Systemfokussierte",
+      "de": "Systemfokussiert",
       "fr": "Optimisé systèmes",
       "ru": "Системо-ориентированный",
       "pl": "System Focused"
@@ -244,7 +244,7 @@
     },
     "Engine Focused": {
       "es": "Orientado a Motor",
-      "de": "Antriebsfokussierte",
+      "de": "Antriebsfokussiert",
       "fr": "Optimisé moteur",
       "ru": "Двигатель-ориентированный",
       "pl": "Engine Focused"
@@ -258,14 +258,14 @@
     },
     "High Charge Capacity": {
       "es": "Alta Capacidad de Carga",
-      "de": "Hochleistungsfähige",
+      "de": "Hochleistungsfähig",
       "fr": "Capacité Surchargée",
       "ru": "Высокоёмкий",
       "pl": "High Charge Capacity"
     },
     "Rapid Charge": {
       "es": "Recarga Rápida",
-      "de": "Ladungsoptimierte",
+      "de": "Ladungsoptimiert",
       "fr": "Chargement rapide",
       "ru": "Быстрозаряжающийся",
       "pl": "Rapid Charge"
@@ -279,14 +279,14 @@
     },
     "Heavy Duty": {
       "es": "Alta Resistencia",
-      "de": "Schwere",
+      "de": "Schwer",
       "fr": "Renforts de coque lourd",
       "ru": "Усиленный",
       "pl": "Heavy Duty"
     },
     "Charge Enhanced": {
       "es": "Carga Mejorada",
-      "de": "Ladungsoptimierte",
+      "de": "Ladungsoptimiert",
       "fr": "Répartiteur de puissance rapide",
       "ru": "Быстрозарядный",
       "pl": "Charge Enhanced"
@@ -314,14 +314,14 @@
     },
     "Resistance Augmented": {
       "es": "Resistencia Aumentada",
-      "de": "Widerstandsverstärkter",
+      "de": "Widerstandsverstärkt",
       "fr": "Résistances Augmentés",
       "ru": "Сбалансированное усиление",
       "pl": "Resistance Augmented"
     },
     "Specialised": {
       "es": "Especializado",
-      "de": "Spezialisierte",
+      "de": "Spezialisiert",
       "fr": "Specialisé",
       "ru": "Специализированный",
       "pl": "Specialised"
@@ -566,7 +566,7 @@
     },
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
-      "de": "Steuereinheit Ladelukenöffner-Drohne",
+      "de": "Steuerung Ladelukenöffner-Drohne",
       "fr": "Perce-Soute",
       "ru": "Контроллер дронов взломщиков",
       "pl": "Hatch Breaker Limpet Controller"
@@ -1896,7 +1896,7 @@
     },
     "Non Craftable": {
       "es": "No Elaborable",
-      "de": "Nicht Baubare",
+      "de": "Nicht baubare",
       "fr": "Non Craftable",
       "ru": "Недоступны для изготовления",
       "pl": "Niemożliwe do stworzenia"
@@ -1973,7 +1973,7 @@
     },
     "No folder in use ; click to change": {
       "es": "Ninguna carpeta en uso ; haz clic para cambiar",
-      "de": "Kein Verzeichnis in Verwendung ; Klicken Sie zum ändern",
+      "de": "Kein Verzeichnis in Verwendung ; Klicken Sie zum Ändern",
       "fr": "Aucun répertoire ; cliquez ici pour changer",
       "ru": "Папка не указана ; нажмите для изменения",
       "pl": "Brak folderu w użyciu ; kliknij by zmienić"
@@ -2085,7 +2085,7 @@
     },
     "Destroyed Unknown Artefact": {
       "es": "Destrucción de Artefacto Desconocido",
-      "de": "Zerstörtes Unbekanntes Artefakt",
+      "de": "Zerstörtes unbekanntes Artefakt",
       "fr": "Artéfact Inconnu Détruit / Fragment Inconnu",
       "ru": "Уничтоженный Неизвестный Артефакт",
       "pl": "Zniszczenie Nieznanego Artefaktu (UA)"
@@ -2372,7 +2372,7 @@
     },
     "None": {
       "es": "Ninguna",
-      "de": "Keine",
+      "de": "Kein Bonus",
       "fr": "aucun",
       "ru": "Нет",
       "pl": "Nic"
@@ -2652,14 +2652,14 @@
     },
     "Surface Scanner": {
       "es": null,
-      "de": "Oberflächenscanner",
+      "de": "Oberflächen-Scanner",
       "fr": null,
       "ru": "Сканер поверхности",
       "pl": "Surface Scanner"
     },
     "Wake Scanner": {
       "es": null,
-      "de": "Wolkenscanner",
+      "de": "Sogwolkenscanner",
       "fr": null,
       "ru": "Сканер следа",
       "pl": "Wake Scanner"
@@ -2729,7 +2729,7 @@
     },
     "Wide Angle Scanner": {
       "es": null,
-      "de": "Weitwinkelscanner",
+      "de": "Weitwinkel-Scanner",
       "fr": null,
       "ru": "Широкоугольный сканер",
       "pl": "Wide Angle Scanner"
@@ -2743,7 +2743,7 @@
     },
     "Fast Scanner": {
       "es": null,
-      "de": "Schnellscanner",
+      "de": "Schneller Scanner",
       "fr": null,
       "ru": "Быстрый сканер",
       "pl": "Fast Scanner"
@@ -2764,7 +2764,7 @@
     },
     "filtered entries - click this to clear": {
       "es": null,
-      "de": null,
+      "de": "Gefilterte Einträge - Klick HIER um zu Löschen,
       "fr": null,
       "ru": null,
       "pl": null
