@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.7.9",
+    "Content": "* Fixed the ingredient for G3 Sensor Wide Angle, thanks to @spoonwzd for reporting the issue and thanks to @GrimbaldTheGrim for fixing it!\r\n* German localization update (missing translation added and various fixes), thanks to @nepomuk16321 for the contribution!"
+  },
+  {
     "Version": "1.0.7.8",
     "Content": "* Added a button that appears when you have at least one ingredient highlighted (left side panel) so you can quickly see if you have any (clicking on it will unhighlight entries)\r\n\r\n* German localization update courtesy of @nepomuk16321!"
   },
