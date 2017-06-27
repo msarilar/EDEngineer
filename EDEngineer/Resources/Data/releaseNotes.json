@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.8.0",
+    "Content": "* Added newest Thargoids discoveries to the app, thanks a lot to @JohnXaverius and Jezzer for the exhaustive screenshots and information!\r\n* Handle new journal operation for engineer contributions, I haven't really tested that one so let me know how if it goes wrong the next time you contribute to an engineer."
+  },
+  {
     "Version": "1.0.7.9",
     "Content": "* Fixed the ingredient for G3 Sensor Wide Angle, thanks to @spoonwzd for reporting the issue and thanks to @GrimbaldTheGrim for fixing it!\r\n* German localization update (missing translation added and various fixes), thanks to @nepomuk16321 for the contribution!"
   },
