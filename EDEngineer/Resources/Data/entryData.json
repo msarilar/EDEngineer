@@ -945,13 +945,6 @@
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Wake Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "unknownwakedata",
-    "Kind": "Data",
-    "OriginDetails": null
-  },
-  {
     "Name": "Telemetry Suite",
     "Rarity": null,
     "FormattedName": "telemetrysuite",
@@ -1041,5 +1034,62 @@
     "FormattedName": "konngaale",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Kongga, Laplace Ring)", "Needed for Lori Jameson (25)" ]
+  },
+
+  {
+    "Name": "Unknown Material Composition Data",
+    "Rarity": "Standard",
+    "FormattedName": "tg_compositiondata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Residue Data Analysis",
+    "Rarity": "Rare",
+    "FormattedName": "tg_residuedata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Structural Data",
+    "Rarity": "Common",
+    "FormattedName": "tg_structuraldata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Carapace",
+    "Rarity": "VeryRare",
+    "FormattedName": "unknowncarapace",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Energy Cell",
+    "Rarity": "Standard",
+    "FormattedName": "unknownenergycell",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Organic Circuitry",
+    "Rarity": "VeryRare",
+    "FormattedName": "unknownorganiccircuitry",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Technology Components",
+    "Rarity": "Rare",
+    "FormattedName": "unknowntechnologycomponents",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Unknown Wake Data",
+    "Rarity": "VeryRare",
+    "FormattedName": "unknownwakedata",
+    "Kind": "Data",
+    "OriginDetails": null
   }
 ]

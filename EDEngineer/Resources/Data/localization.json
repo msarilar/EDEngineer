@@ -2768,6 +2768,55 @@
       "fr": null,
       "ru": null,
       "pl": null
+    },
+    "Unknown Material Composition Data": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Unknown Residue Data Analysis": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Unknown Structural Data": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Unknown Carapace": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Unknown Energy Cell": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Unknown Organic Circuitry": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Unknown Technology Components": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
     }
   }
 }
