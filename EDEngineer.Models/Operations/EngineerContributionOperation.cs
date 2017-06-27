@@ -2,12 +2,12 @@ using System.Collections.Generic;
 
 namespace EDEngineer.Models.Operations
 {
-    public class EngineerProgressOperation : JournalOperation
+    public class EngineerContributionOperation : JournalOperation
     {
         public string Engineer { get; }
         public JournalOperation Operation { get; }
 
-        public EngineerProgressOperation(string engineer)
+        public EngineerContributionOperation(string engineer)
         {
             Engineer = engineer;
             JournalOperation operation;
@@ -32,16 +32,16 @@ namespace EDEngineer.Models.Operations
             ["Hera Tani"] = new NoOperation(),
             ["Juri Ishmaak"] = new NoOperation(),
             ["Selene Jean"] = new NoOperation(),
-            ["Marco Qwent"] = new CargoOperation() { CommodityName = "Modular Terminals", Size = -25, JournalEvent = JournalEvent.EngineerProgress },
-            ["Ram Tah"] = new DataOperation() { DataName = "Classified Scan Databanks", Size = -50, JournalEvent = JournalEvent.EngineerProgress },
+            ["Marco Qwent"] = new CargoOperation() { CommodityName = "Modular Terminals", Size = -25, JournalEvent = JournalEvent.EngineerContribution },
+            ["Ram Tah"] = new DataOperation() { DataName = "Classified Scan Databanks", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
             ["Broo Tarquin"] = new NoOperation(),
             ["Colonel Bris Dekker"] = new NoOperation(),
             ["Didi Vatermann"] = new NoOperation(),
-            ["Professor Palin"] = new MaterialOperation() {  MaterialName = "Unknown Fragment" , Size = -25, JournalEvent = JournalEvent.EngineerProgress },
+            ["Professor Palin"] = new MaterialOperation() {  MaterialName = "Unknown Fragment" , Size = -25, JournalEvent = JournalEvent.EngineerContribution },
             ["Lori Jameson"] = new NoOperation(),
-            ["Tiana Fortune"] = new DataOperation() { DataName = "Decoded Emission Data", Size = -50, JournalEvent = JournalEvent.EngineerProgress },
-            ["The Sarge"] = new DataOperation() { DataName = "Aberrant Shield Pattern Analysis", Size = -50, JournalEvent = JournalEvent.EngineerProgress },
-            ["Bill Turner"] = new CargoOperation() { CommodityName = "Bromellite", Size = -50, JournalEvent = JournalEvent.EngineerProgress }
+            ["Tiana Fortune"] = new DataOperation() { DataName = "Decoded Emission Data", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
+            ["The Sarge"] = new DataOperation() { DataName = "Aberrant Shield Pattern Analysis", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
+            ["Bill Turner"] = new CargoOperation() { CommodityName = "Bromellite", Size = -50, JournalEvent = JournalEvent.EngineerContribution }
         };
     }
 }

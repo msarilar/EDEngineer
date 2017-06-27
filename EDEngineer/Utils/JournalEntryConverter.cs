@@ -125,8 +125,8 @@ namespace EDEngineer.Utils
                     return ExtractEjectCargo(data);
                 case JournalEvent.Synthesis:
                     return ExtractSynthesis(data);
-                case JournalEvent.EngineerProgress:
-                    return ExtractEngineerProgress(data);
+                case JournalEvent.EngineerContribution:
+                    return ExtractEngineerContribution(data);
                 case JournalEvent.ScientificResearch:
                     return ExtractMaterialDiscarded(data);
                 case JournalEvent.Died:
@@ -212,17 +212,38 @@ namespace EDEngineer.Utils
             return dump;
         }
 
-        private JournalOperation ExtractEngineerProgress(JObject data)
+        private JournalOperation ExtractEngineerContribution(JObject data)
         {
-            var engineer = (string) data["Engineer"];
-            var progressInfo = (string) data["Progress"];
-
-            if (progressInfo == "Unlocked")
+            string name;
+            if (!converter.TryGet((string)data["Commodity"], out name) &&
+                !converter.TryGet((string)data["Encoded"], out name) &&
+                !converter.TryGet((string)data["Raw"], out name) &&
+                !converter.TryGet((string)data["Manufactured"], out name) &&
+                !converter.TryGet((string)data["Data"], out name) &&
+                !converter.TryGet((string)data["Commodity"], out name) &&
+                !converter.TryGet((string)data["Name"], out name))
             {
-                return new EngineerProgressOperation(engineer);
+                return null;
             }
 
-            return null;
+            var type = ((string) data["Type"]).ToLowerInvariant();
+            switch (type)
+            {
+                case "encoded":
+                    return new DataOperation()
+                    {
+                        DataName = name,
+                        Size = -1 * data["Quantity"]?.ToObject<int>() ?? 1
+                    };
+                case "commodity":
+                    return null; // ignore commodity
+                default:
+                    return new MaterialOperation
+                    {
+                        MaterialName = name,
+                        Size = -1 * data["Quantity"]?.ToObject<int>() ?? 1
+                    };
+            }
         }
 
         private JournalOperation ExtractMarketSell(JObject data)

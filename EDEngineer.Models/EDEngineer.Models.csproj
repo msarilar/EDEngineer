@@ -83,7 +83,7 @@
     <Compile Include="Operations\DataOperation.cs" />
     <Compile Include="Operations\DeathOperation.cs" />
     <Compile Include="Operations\EngineerOperation.cs" />
-    <Compile Include="Operations\EngineerProgressOperation.cs" />
+    <Compile Include="Operations\EngineerContributionOperation.cs" />
     <Compile Include="Operations\JournalOperation.cs" />
     <Compile Include="Operations\ManualChangeOperation.cs" />
     <Compile Include="Operations\MaterialOperation.cs" />
