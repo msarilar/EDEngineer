@@ -25,6 +25,12 @@ namespace EDEngineer.Utils
 
         public bool TryGet(string key, out string name)
         {
+            if (key == null)
+            {
+                name = null;
+                return false;
+            }
+
             if (localCache.TryGetValue(key, out name))
             {
                 return true;

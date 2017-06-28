@@ -216,6 +216,7 @@ namespace EDEngineer.Utils
         {
             string name;
             if (!converter.TryGet((string)data["Commodity"], out name) &&
+                !converter.TryGet((string)data["Material"], out name) &&
                 !converter.TryGet((string)data["Encoded"], out name) &&
                 !converter.TryGet((string)data["Raw"], out name) &&
                 !converter.TryGet((string)data["Manufactured"], out name) &&
@@ -230,6 +231,7 @@ namespace EDEngineer.Utils
             switch (type)
             {
                 case "encoded":
+                case "data":
                     return new DataOperation()
                     {
                         DataName = name,
@@ -237,7 +239,7 @@ namespace EDEngineer.Utils
                     };
                 case "commodity":
                     return null; // ignore commodity
-                default:
+                default: // materials
                     return new MaterialOperation
                     {
                         MaterialName = name,
