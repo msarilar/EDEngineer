@@ -1,35 +1,11 @@
 ﻿[
   {
+    "Version": "1.0.8.1",
+    "Content": "* Fixed an issue when handling the newest EngineerContribution logs"
+  },
+  {
     "Version": "1.0.8.0",
-    "Content": "* Added newest Thargoids discoveries to the app, thanks a lot to @JohnXaverius and Jezzer for the exhaustive screenshots and information!\r\n* Handle new journal operation for engineer contributions, I haven't really tested that one so let me know how if it goes wrong the next time you contribute to an engineer."
-  },
-  {
-    "Version": "1.0.7.9",
-    "Content": "* Fixed the ingredient for G3 Sensor Wide Angle, thanks to @spoonwzd for reporting the issue and thanks to @GrimbaldTheGrim for fixing it!\r\n* German localization update (missing translation added and various fixes), thanks to @nepomuk16321 for the contribution!"
-  },
-  {
-    "Version": "1.0.7.8",
-    "Content": "* Added a button that appears when you have at least one ingredient highlighted (left side panel) so you can quickly see if you have any (clicking on it will unhighlight entries)\r\n\r\n* German localization update courtesy of @nepomuk16321!"
-  },
-  {
-    "Version": "1.0.7.7",
-    "Content": "* Cleaned up old release notes, it was becoming a bit too bloated !\r\n\r\n* Merged two different categories of blueprint that were supposed to be the same (Frame Shift Wake Scanner and Wake Scanner ; Wake Scanner is the final name). Thanks to @Velak for spotting the issue and fixing it!\r\n\r\n* German localization completed thanks to @nepomuk16321!"
-  },
-  {
-    "Version": "1.0.7.5",
-    "Content": "* New filter in the Ignored/Favourites category to show blueprints included in the shopping list\r\n* Various performance enhancements\r\n\r\n* Fixed an issue for users who use high DPI screens when saving the window position\r\n\r\n* Full russian translation provided by @VChet !"
-  },
-  {
-    "Version": "1.0.7.4",
-    "Content": "* Added a graphic configuration window where you can configure font size per panel (left/right/bottom) as well as window Opacity (which is applied only when the Window is locked)\r\n* Added a purple gear to the main window where you can access the context menu which contains all settings\r\n* Made the context menu a bit less austere with icons\r\n\r\n* Fixed an issue with the local API server which would keep running automatically even after being stopped under certain circumstances\r\n\r\n* Full polish translation is now ready thanks to @gienkov !"
-  },
-  {
-    "Version": "1.0.7.3",
-    "Content": "* Changed the log folder selection window to a more user-friendly one (used to be a tree view)\r\n* Reduced font size of ingredients in the left panel\r\n\r\n* @cocafr fixed a typo in the french localization related to Tempered Alloys"
-  },
-  {
-    "Version": "1.0.7.2",
-    "Content": "* In the shopping list, you can now put your mouse over a blueprint to highlight the ingredients that compose it (and reversely).\r\n\r\n* Fixed the engineer list of Sensor and Scanner blueprints, thanks to @Thurion for spotting the issue and fixing it!\r\n\r\n* Polish localization is now available, thanks a lot to @gienkov for providing it all !"
+    "Content": "#1.0.8.0\r\n* Added newest Thargoids discoveries to the app, thanks a lot to @JohnXaverius and Jezzer for the exhaustive screenshots and information!\r\n* Handle new journal operation for engineer contributions, I haven't really tested that one so let me know how if it goes wrong the next time you contribute to an engineer.\r\n\r\n#1.0.7.9\r\n* Fixed the ingredient for G3 Sensor Wide Angle, thanks to @spoonwzd for reporting the issue and thanks to @GrimbaldTheGrim for fixing it!\r\n* German localization update (missing translation added and various fixes), thanks to @nepomuk16321 for the contribution!\r\n\r\n#1.0.7.8\r\n* Added a button that appears when you have at least one ingredient highlighted (left side panel) so you can quickly see if you have any (clicking on it will unhighlight entries)\r\n\r\n* German localization update courtesy of @nepomuk16321!\r\n\r\n#1.0.7.7\r\n* Cleaned up old release notes, it was becoming a bit too bloated !\r\n\r\n* Merged two different categories of blueprint that were supposed to be the same (Frame Shift Wake Scanner and Wake Scanner ; Wake Scanner is the final name). Thanks to @Velak for spotting the issue and fixing it!\r\n\r\n* German localization completed thanks to @nepomuk16321!\r\n\r\n#1.0.7.5\r\n* New filter in the Ignored/Favourites category to show blueprints included in the shopping list\r\n* Various performance enhancements\r\n\r\n* Fixed an issue for users who use high DPI screens when saving the window position\r\n\r\n* Full russian translation provided by @VChet !\r\n\r\n#1.0.7.4\r\n* Added a graphic configuration window where you can configure font size per panel (left/right/bottom) as well as window Opacity (which is applied only when the Window is locked)\r\n* Added a purple gear to the main window where you can access the context menu which contains all settings\r\n* Made the context menu a bit less austere with icons\r\n\r\n* Fixed an issue with the local API server which would keep running automatically even after being stopped under certain circumstances\r\n\r\n* Full polish translation is now ready thanks to @gienkov !\r\n\r\n#1.0.7.3\r\n* Changed the log folder selection window to a more user-friendly one (used to be a tree view)\r\n* Reduced font size of ingredients in the left panel\r\n\r\n* @cocafr fixed a typo in the french localization related to Tempered Alloys\r\n\r\n#1.0.7.2\r\n* In the shopping list, you can now put your mouse over a blueprint to highlight the ingredients that compose it (and reversely).\r\n\r\n* Fixed the engineer list of Sensor and Scanner blueprints, thanks to @Thurion for spotting the issue and fixing it!\r\n\r\n* Polish localization is now available, thanks a lot to @gienkov for providing it all !"
   },
   {
     "Version": "1.0.7.0",
