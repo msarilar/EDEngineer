@@ -71,7 +71,8 @@ namespace EDEngineer.Utils.UI
                 FormBorderStyle = FormBorderStyle.FixedToolWindow,
                 Width = 400,
                 Height = textBox.Height + autoRunBox.Height + buttonsPanel.Height + 30,
-                Text = translator.Translate("Select the port for the local API server")
+                Text = translator.Translate("Select the port for the local API server"),
+                TopMost = true
             };
 
             f.Controls.Add(autoRunBox);
