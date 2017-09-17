@@ -84,12 +84,12 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                                                   |> List.ofSeq
 
   let stateRoute = fun commander ->
-                     match state.Invoke().TryGetValue(commander) with
+                     match state.Invoke().TryGetValue(Uri.UnescapeDataString(commander)) with
                      | (true, state) -> Found state
                      | (false, _)    -> NotFound commander
 
   let shoppingListRoute = fun commander ->
-                            match shopppingLists.Invoke().TryGetValue(commander) with
+                            match shopppingLists.Invoke().TryGetValue(Uri.UnescapeDataString(commander)) with
                             | (true, state) -> Found state
                             | (false, _)    -> NotFound commander
 
