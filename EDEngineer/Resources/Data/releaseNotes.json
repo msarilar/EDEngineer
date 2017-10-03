@@ -1,5 +1,13 @@
 ﻿[
   {
+    "Version": "1.0.8.4",
+    "Content": "*"
+  },
+  {
+    "Version": "1.0.8.3",
+    "Content": "* Fixed the publisher name of the application"
+  },
+  {
     "Version": "1.0.8.2",
     "Content": "* Fixed an issue with the local API that would make Commanders with a space in their name have their data unavailable\r\n\r\n* German translation update, thanks a lot to @nepomuk16321 and sorry for the late deployment!"
   },

@@ -1502,12 +1502,12 @@
       "ru": "Неопознанные архивы сканирования",
       "pl": "Unidentified Scan Archives"
     },
-    "Unknown Fragment": {
+    "Sensor Fragment": {
       "es": "Fragmento Desconocido",
       "de": "Unbekanntes Fragment",
       "fr": "Fragment inconnu",
       "ru": "Неизвестный фрагмент",
-      "pl": "Unknown Fragment"
+      "pl": "Thargoid Fragment"
     },
     "Untypical Shield Scans": {
       "es": "Escáner de Escudos Atípico",
@@ -1859,7 +1859,7 @@
       "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
       "pl": "Coś poszło nie tak podczas parsowania twoich logów, stwórz issue na GitHub-ie z tą informacją :"
     },
-    "Unknown material, please contact the author ! {0}": {
+    "Thargoid material, please contact the author ! {0}": {
       "es": "Material desconocido, contacta con el autor  ! {0}",
       "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor ! {0}",
       "fr": "Matériau inconnu, contactez l'auteur ! {0}",
@@ -2503,19 +2503,19 @@
       "ru": "Количество",
       "pl": "Ilość"
     },
-    "Unknown Ship Signature": {
+    "Thargoid Ship Signature": {
       "es": "Señal de nave desconocida",
       "de": "Unbekannte Schiffsignatur",
       "fr": null,
       "ru": "Данные сигнала НЛО",
-      "pl": "Unknown Ship Signature"
+      "pl": "Thargoid Ship Signature"
     },
-    "Unknown Wake Data": {
+    "Thargoid Wake Data": {
       "es": "Datos de estela desconocida",
       "de": "Unbekannte Sogwolke",
       "fr": null,
       "ru": "Данные следа НЛО",
-      "pl": "Unknown Wake Data"
+      "pl": "Thargoid Wake Data"
     },
     "Check all filters": {
       "es": null,
@@ -2769,49 +2769,49 @@
       "ru": null,
       "pl": null
     },
-    "Unknown Material Composition Data": {
+    "Thargoid Material Composition Data": {
       "es": null,
       "de": "unbekannte Materialzusammensetzung",
       "fr": null,
       "ru": null,
       "pl": null
     },
-    "Unknown Residue Data Analysis": {
+    "Thargoid Residue Data": {
       "es": null,
       "de": "unbekannte Rückstandsdatenanalyse",
       "fr": null,
       "ru": null,
       "pl": null
     },
-    "Unknown Structural Data": {
+    "Thargoid Structural Data": {
       "es": null,
       "de": "unbekannte Strukturdaten",
       "fr": null,
       "ru": null,
       "pl": null
     },
-    "Unknown Carapace": {
+    "Thargoid Carapace": {
       "es": null,
       "de": "unbekannte Panzerung",
       "fr": null,
       "ru": null,
       "pl": null
     },
-    "Unknown Energy Cell": {
+    "Thargoid Energy Cell": {
       "es": null,
       "de": "unbekannte Energiezelle",
       "fr": null,
       "ru": null,
       "pl": null
     },
-    "Unknown Organic Circuitry": {
+    "Thargoid Organic Circuitry": {
       "es": null,
       "de": "unbekannte organische Struktur",
       "fr": null,
       "ru": null,
       "pl": null
     },
-    "Unknown Technology Components": {
+    "Thargoid Technological Components": {
       "es": null,
       "de": "unbekannte Technologie-Komponente",
       "fr": null,
