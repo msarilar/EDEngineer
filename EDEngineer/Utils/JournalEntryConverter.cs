@@ -159,9 +159,9 @@ namespace EDEngineer.Utils
                 string materialName;
                 int? count = cc.Value ?? cc.Count;
                 
-                if (!converter.TryGet(cc.Name.Value, out materialName))
+                if (!converter.TryGet((string) cc.Name, out materialName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name.Value));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name));
                     continue;
                 }
 
@@ -194,9 +194,9 @@ namespace EDEngineer.Utils
                 string materialName;
                 int? count = cc.Value ?? cc.Count;
 
-                if (!converter.TryGet(cc.Name.Value, out materialName))
+                if (!converter.TryGet((string) cc.Name, out materialName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name.Value));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name));
                     continue;
                 }
 
@@ -402,9 +402,9 @@ namespace EDEngineer.Utils
                 string synthesisIngredientName;
                 int? count = cc.Value ?? cc.Count;
 
-                if (!converter.TryGet(cc.Name.Value, out synthesisIngredientName))
+                if (!converter.TryGet((string) cc.Name, out synthesisIngredientName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name.Value));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name));
                     continue;
                 }
 

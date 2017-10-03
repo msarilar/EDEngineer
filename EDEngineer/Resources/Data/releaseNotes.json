@@ -1,7 +1,7 @@
 ﻿[
   {
     "Version": "1.0.8.4",
-    "Content": "*"
+    "Content": "* New materials and datas are available, as well as updated names for 2.4! Thanks to @HighwaymanEd and @JohnXaverius on GitHub for providing the new data, as well as GoldenPablo on discord for providing his logs and screenshots.\r\nYour thresholds had to be cleared for this update, sorry!\r\n\r\n* Fixed an issue with the warning message when EDEngineer doesn't recognize a material such that it will now show correctly the unknown code from the game logs.\r\n\r\n* Translations might need to be updated, and apparently new synthesis are available (see issue #255 on GitHub if you would like to help)"
   },
   {
     "Version": "1.0.8.3",
