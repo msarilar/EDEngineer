@@ -1090,5 +1090,19 @@
     "FormattedName": "unknownwakedata",
     "Kind": "Data",
     "OriginDetails": null
+  },
+  {
+    "Name": "Ship Flight Data",
+    "Rarity": "VeryRare",
+    "FormattedName": "tg_shipflightdata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Ship System Data",
+    "Rarity": "VeryRare",
+    "FormattedName": "tg_shipsystem",
+    "Kind": "Data",
+    "OriginDetails": null
   }
 ]
