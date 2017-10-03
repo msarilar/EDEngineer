@@ -140,9 +140,9 @@ namespace EDEngineer.Localization
             var text = parameter.ToString();
 
 #if DEBUG
-            /*if (!Translations.ContainsKey(text))
+            /*if (!Translations.ContainsKey(text) && text != "Konnga Ale" && text != "Lavian Brandy" && text != "Xihe Companions" && text != "Fujin Tea" && text != "Kamitra Cigars" && text != "Painite" && text != "Gold" && text != "Landmines" && text != "Meta-alloys" && text != "Soontill Relics")
             {
-                MessageBox.Show($"No localization for text : {text}");
+                // MessageBox.Show($"No localization for text : {text}");
             }*/
 #endif
 

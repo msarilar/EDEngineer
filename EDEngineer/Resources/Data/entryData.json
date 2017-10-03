@@ -938,8 +938,8 @@
     "OriginDetails": [ "Surface prospecting", "Mining" ]
   },
   {
-    "Name": "Unknown Ship Signature",
-    "Rarity": "Rare",
+    "Name": "Thargoid Ship Signature",
+    "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
     "OriginDetails": null
@@ -1022,7 +1022,7 @@
     "OriginDetails": [ "Markets (Lave, Lave Station)", "Needed for Didi Vatermann (25)" ]
   },
   {
-    "Name": "Unknown Fragment",
+    "Name": "Sensor Fragment",
     "Rarity": "VeryRare",
     "FormattedName": "unknownenergysource",
     "Kind": "Material",
@@ -1036,59 +1036,101 @@
     "OriginDetails": [ "Markets (Kongga, Laplace Ring)", "Needed for Lori Jameson (25)" ]
   },
   {
-    "Name": "Unknown Material Composition Data",
+    "Name": "Thargoid Material Composition Data",
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
     "Kind": "Data",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Residue Data Analysis",
+    "Name": "Thargoid Residue Data",
     "Rarity": "Rare",
     "FormattedName": "tg_residuedata",
     "Kind": "Data",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Structural Data",
+    "Name": "Thargoid Structural Data",
     "Rarity": "Common",
     "FormattedName": "tg_structuraldata",
     "Kind": "Data",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Carapace",
+    "Name": "Thargoid Carapace",
     "Rarity": "VeryRare",
     "FormattedName": "unknowncarapace",
     "Kind": "Material",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Energy Cell",
+    "Name": "Thargoid Energy Cell",
     "Rarity": "Standard",
     "FormattedName": "unknownenergycell",
     "Kind": "Material",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Organic Circuitry",
+    "Name": "Thargoid Organic Circuitry",
     "Rarity": "VeryRare",
     "FormattedName": "unknownorganiccircuitry",
     "Kind": "Material",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Technology Components",
+    "Name": "Thargoid Technological Components",
     "Rarity": "Rare",
     "FormattedName": "unknowntechnologycomponents",
     "Kind": "Material",
     "OriginDetails": null
   },
   {
-    "Name": "Unknown Wake Data",
-    "Rarity": "VeryRare",
+    "Name": "Thargoid Wake Data",
+    "Rarity": "Rare",
     "FormattedName": "unknownwakedata",
     "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Ship Flight Data",
+    "Rarity": "Rare",
+    "FormattedName": "tg_shipflightdata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Ship System Data",
+    "Rarity": "Rare",
+    "FormattedName": "tg_shipsystemsdata",
+    "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Wreckage Components",
+    "Rarity": "Standard",
+    "FormattedName": "tg_wreckagecomponents",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Bio-Mechanical Conduits",
+    "Rarity": "Standard",
+    "FormattedName": "tg_biomechanicalconduits",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Weapon Parts",
+    "Rarity": "Rare",
+    "FormattedName": "tg_weaponparts",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Propulsion Elements",
+    "Rarity": "VeryRare",
+    "FormattedName": "tg_propulsionelement",
+    "Kind": "Material",
     "OriginDetails": null
   }
 ]

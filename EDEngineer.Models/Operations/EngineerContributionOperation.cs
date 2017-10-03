@@ -37,7 +37,7 @@ namespace EDEngineer.Models.Operations
             ["Broo Tarquin"] = new NoOperation(),
             ["Colonel Bris Dekker"] = new NoOperation(),
             ["Didi Vatermann"] = new NoOperation(),
-            ["Professor Palin"] = new MaterialOperation() {  MaterialName = "Unknown Fragment" , Size = -25, JournalEvent = JournalEvent.EngineerContribution },
+            ["Professor Palin"] = new MaterialOperation() {  MaterialName = "Sensor Fragment" , Size = -25, JournalEvent = JournalEvent.EngineerContribution },
             ["Lori Jameson"] = new NoOperation(),
             ["Tiana Fortune"] = new DataOperation() { DataName = "Decoded Emission Data", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
             ["The Sarge"] = new DataOperation() { DataName = "Aberrant Shield Pattern Analysis", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
