@@ -1101,7 +1101,7 @@
   {
     "Name": "Ship System Data",
     "Rarity": "VeryRare",
-    "FormattedName": "tg_shipsystem",
+    "FormattedName": "tg_shipsystemsdata",
     "Kind": "Data",
     "OriginDetails": null
   }
