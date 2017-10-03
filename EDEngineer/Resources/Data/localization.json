@@ -1859,7 +1859,7 @@
       "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
       "pl": "Coś poszło nie tak podczas parsowania twoich logów, stwórz issue na GitHub-ie z tą informacją :"
     },
-    "Thargoid material, please contact the author ! {0}": {
+    "Unknown material, please contact the author ! {0}": {
       "es": "Material desconocido, contacta con el autor  ! {0}",
       "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor ! {0}",
       "fr": "Matériau inconnu, contactez l'auteur ! {0}",
