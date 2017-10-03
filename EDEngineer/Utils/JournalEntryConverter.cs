@@ -156,12 +156,12 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Raw"].Union(data["Manufactured"]).Union(data["Encoded"]))
             {
                 dynamic cc = jToken;
-                string materialName = cc.Name;
+                string materialName;
                 int? count = cc.Value ?? cc.Count;
                 
-                if (!converter.TryGet(materialName, out materialName))
+                if (!converter.TryGet(cc.Name.Value, out materialName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name.Value));
                     continue;
                 }
 
@@ -191,12 +191,12 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Inventory"])
             {
                 dynamic cc = jToken;
-                string materialName = cc.Name;
+                string materialName;
                 int? count = cc.Value ?? cc.Count;
 
-                if (!converter.TryGet(materialName, out materialName))
+                if (!converter.TryGet(cc.Name.Value, out materialName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name.Value));
                     continue;
                 }
 
@@ -399,12 +399,12 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Materials"])
             {
                 dynamic cc = jToken;
-                string synthesisIngredientName = cc.Name;
+                string synthesisIngredientName;
                 int? count = cc.Value ?? cc.Count;
 
-                if (!converter.TryGet(synthesisIngredientName, out synthesisIngredientName))
+                if (!converter.TryGet(cc.Name.Value, out synthesisIngredientName))
                 {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), synthesisIngredientName));
+                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name.Value));
                     continue;
                 }
 

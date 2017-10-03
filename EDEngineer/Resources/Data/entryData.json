@@ -939,7 +939,7 @@
   },
   {
     "Name": "Thargoid Ship Signature",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
     "OriginDetails": null
@@ -1086,23 +1086,51 @@
   },
   {
     "Name": "Thargoid Wake Data",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "unknownwakedata",
     "Kind": "Data",
     "OriginDetails": null
   },
   {
     "Name": "Ship Flight Data",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "tg_shipflightdata",
     "Kind": "Data",
     "OriginDetails": null
   },
   {
     "Name": "Ship System Data",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "tg_shipsystemsdata",
     "Kind": "Data",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Wreckage Components",
+    "Rarity": "Standard",
+    "FormattedName": "tg_wreckagecomponents",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Bio-Mechanical Conduits",
+    "Rarity": "Standard",
+    "FormattedName": "tg_biomechanicalconduits",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Weapon Parts",
+    "Rarity": "Rare",
+    "FormattedName": "tg_weaponparts",
+    "Kind": "Material",
+    "OriginDetails": null
+  },
+  {
+    "Name": "Propulsion Elements",
+    "Rarity": "VeryRare",
+    "FormattedName": "tg_propulsionelement",
+    "Kind": "Material",
     "OriginDetails": null
   }
 ]

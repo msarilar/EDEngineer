@@ -1507,7 +1507,7 @@
       "de": "Unbekanntes Fragment",
       "fr": "Fragment inconnu",
       "ru": "Неизвестный фрагмент",
-      "pl": "Thargoid Fragment"
+      "pl": "Sensor Fragment"
     },
     "Untypical Shield Scans": {
       "es": "Escáner de Escudos Atípico",
@@ -2826,6 +2826,48 @@
       "pl": null
     },
     "Ship System Data": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Wreckage Components": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Weapon Parts": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Bio-Mechanical Conduits": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Propulsion Elements": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Settings": {
+      "es": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null
+    },
+    "Configure Graphics": {
       "es": null,
       "de": null,
       "fr": null,
