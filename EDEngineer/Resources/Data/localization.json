@@ -225,7 +225,7 @@
       "es": "Aumento de Alcance de MDD",
       "de": "Erhöhte FSA-Reichweite",
       "fr": "Portée FSD améliorée",
-      "ru": "Увеличенная дальность РСД",
+      "ru": "Увеличенная дальность FSD",
       "pl": "Increased FSD Range"
     },
     "Thermal Resistant Hull Reinforcement": {
@@ -330,14 +330,14 @@
       "es": "Secuencia de Inicio de MDD Rápida",
       "de": "Schnellere FSA-Ladesequenz",
       "fr": "Chargement FSD acceleré",
-      "ru": "Ускорение перезапуска РСД",
+      "ru": "Ускорение перезапуска FSD",
       "pl": "Faster FSD Boot Sequence"
     },
     "Shielded FSD": {
       "es": "MDD Blindado",
       "de": "Abgeschirmter FSA",
       "fr": "FSD Renforcé",
-      "ru": "Защищенный РСД",
+      "ru": "Защищенный FSD",
       "pl": "Shielded FSD"
     },
     "Clean Drive Tuning": {
@@ -428,14 +428,14 @@
       "es": "Interdictor de MDD",
       "de": "FSA-Unterbrecher",
       "fr": "Interdicteur FSD",
-      "ru": "РСД перехватчик",
+      "ru": "FSD перехватчик",
       "pl": "Frame Shift Drive Interdictor"
     },
     "Shield Generator": {
       "es": "Generador de Escudos",
       "de": "Schildgenerator",
       "fr": "Générateur de Bouclier",
-      "ru": "Генератор щита",
+      "ru": "Щитогенератор",
       "pl": "Shield Generator"
     },
     "Point Defence": {
@@ -561,7 +561,7 @@
       "es": "Motor de Distorsión",
       "de": "Frameshiftantrieb",
       "fr": "FSD",
-      "ru": "Рамочно-Сместительный двигатель",
+      "ru": "FSD",
       "pl": "Frame Shift Drive"
     },
     "Hatch Breaker Limpet Controller": {
@@ -631,7 +631,7 @@
       "es": "Telemetría de MDD Anómala",
       "de": "Anormale FSA-Telemetrie",
       "fr": "Télémétrie FSD anormale",
-      "ru": "Аномальная телеметрия РСД",
+      "ru": "Аномальная телеметрия FSD",
       "pl": "Anomalous FSD Telemetry"
     },
     "Antimony": {
@@ -1506,7 +1506,7 @@
       "es": "Fragmento Desconocido",
       "de": "Unbekanntes Fragment",
       "fr": "Fragment inconnu",
-      "ru": "Неизвестный фрагмент",
+      "ru": "Обломок сенсора",
       "pl": "Sensor Fragment"
     },
     "Untypical Shield Scans": {
@@ -1576,7 +1576,7 @@
       "es": "Interdictor",
       "de": "FSA-Unterbrecher",
       "fr": "Intercepteur FSD",
-      "ru": "Перехватчик РСД",
+      "ru": "Перехватчик FSD",
       "pl": "FSD Interdictor"
     },
     "Prospector LC": {
@@ -2115,7 +2115,7 @@
       "es": "Escaneo de estelas de salto",
       "de": "Sogwolkenscan (Hohe Energie)",
       "fr": "scan de sillages à haute energie",
-      "ru": "Сканирование высокочастотных следов РСД",
+      "ru": "Сканирование высокочастотных следов FSD",
       "pl": "Skanowanie High Wake"
     },
     "Surface data point": {
@@ -2353,7 +2353,7 @@
       "es": "Inyección del MDD",
       "de": "FSA-Einspeisung",
       "fr": "Injection FSD",
-      "ru": "Вброс в РСД",
+      "ru": "Вброс в FSD",
       "pl": "FSD Injection"
     },
     "High Velocity Munitions": {
@@ -2507,14 +2507,14 @@
       "es": "Señal de nave desconocida",
       "de": "Unbekannte Schiffsignatur",
       "fr": null,
-      "ru": "Данные сигнала НЛО",
+      "ru": "Сигнатура таргоидского корабля",
       "pl": "Thargoid Ship Signature"
     },
     "Thargoid Wake Data": {
       "es": "Datos de estela desconocida",
       "de": "Unbekannte Sogwolke",
       "fr": null,
-      "ru": "Данные следа НЛО",
+      "ru": "Данные следа таргоидского корабля",
       "pl": "Thargoid Wake Data"
     },
     "Check all filters": {
@@ -2710,7 +2710,7 @@
       "es": null,
       "de": "Toast",
       "fr": null,
-      "ru": null,
+      "ru": "Toast",
       "pl": "Pop-up"
     },
     "Voice": {
@@ -2766,56 +2766,56 @@
       "es": null,
       "de": "Gefilterte Einträge - Klick HIER um zu Löschen",
       "fr": null,
-      "ru": null,
+      "ru": "отфильтрованные записи - нажмите для очистки",
       "pl": null
     },
     "Thargoid Material Composition Data": {
       "es": null,
       "de": "unbekannte Materialzusammensetzung",
       "fr": null,
-      "ru": null,
+      "ru": "Данные о составе таргоидских материалов",
       "pl": null
     },
     "Thargoid Residue Data": {
       "es": null,
       "de": "unbekannte Rückstandsdatenanalyse",
       "fr": null,
-      "ru": null,
+      "ru": "Данные об осадке таргоидского происхождения",
       "pl": null
     },
     "Thargoid Structural Data": {
       "es": null,
       "de": "unbekannte Strukturdaten",
       "fr": null,
-      "ru": null,
+      "ru": "Данные о структуре таргоидского объекта",
       "pl": null
     },
     "Thargoid Carapace": {
       "es": null,
       "de": "unbekannte Panzerung",
       "fr": null,
-      "ru": null,
+      "ru": "Таргоидский панцирь",
       "pl": null
     },
     "Thargoid Energy Cell": {
       "es": null,
       "de": "unbekannte Energiezelle",
       "fr": null,
-      "ru": null,
+      "ru": "Таргоидская энергоячейка",
       "pl": null
     },
     "Thargoid Organic Circuitry": {
       "es": null,
       "de": "unbekannte organische Struktur",
       "fr": null,
-      "ru": null,
+      "ru": "Таргоидская органическая схема",
       "pl": null
     },
     "Thargoid Technological Components": {
       "es": null,
       "de": "unbekannte Technologie-Komponente",
       "fr": null,
-      "ru": null,
+      "ru": "Компоненты таргоидской техники",
       "pl": null
     },
     "Ship Flight Data": {
@@ -2864,14 +2864,14 @@
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Настройки",
       "pl": null
     },
     "Configure Graphics": {
       "es": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Настройки графики",
       "pl": null
     }
   }
