@@ -2820,56 +2820,56 @@
     },
     "Ship Flight Data": {
       "es": null,
-      "de": null,
+      "de": "Schiff-Flug-Daten",
       "fr": null,
       "ru": null,
       "pl": null
     },
     "Ship System Data": {
       "es": null,
-      "de": null,
+      "de": "Schiff-System-Daten",
       "fr": null,
       "ru": null,
       "pl": null
     },
     "Wreckage Components": {
       "es": null,
-      "de": null,
+      "de": "Wrackteile",
       "fr": null,
       "ru": null,
       "pl": null
     },
     "Weapon Parts": {
       "es": null,
-      "de": null,
+      "de": "Waffenteile",
       "fr": null,
       "ru": null,
       "pl": null
     },
     "Bio-Mechanical Conduits": {
       "es": null,
-      "de": null,
+      "de": "Bio-mechanische Leitungen",
       "fr": null,
       "ru": null,
       "pl": null
     },
     "Propulsion Elements": {
       "es": null,
-      "de": null,
+      "de": "Antriebselemente",
       "fr": null,
       "ru": null,
       "pl": null
     },
     "Settings": {
       "es": null,
-      "de": null,
+      "de": "Einstellungen",
       "fr": null,
       "ru": "Настройки",
       "pl": null
     },
     "Configure Graphics": {
       "es": null,
-      "de": null,
+      "de": "Grafik einstellen",
       "fr": null,
       "ru": "Настройки графики",
       "pl": null
