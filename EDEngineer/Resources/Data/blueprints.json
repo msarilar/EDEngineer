@@ -14204,6 +14204,158 @@
     "Grade": 5
   },
   {
+    "Type": "Life Support",
+    "Name": "100% Refill",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Nickel",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Limpets",
+    "Name": "4 Limpets, Cargo Hold Required",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 10
+      },
+      {
+        "Name": "Nickel",
+        "Size": 10
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Chaff Launcher",
+    "Name": "50% Refill",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Compact Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Filament Composites",
+        "Size": 1
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Chaff Launcher",
+    "Name": "100% Refill",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Compact Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Filament Composites",
+        "Size": 2
+      },
+      {
+        "Name": "Thermic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Chaff Launcher",
+    "Name": "100% Refill, +2 Seconds Duration",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Compact Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Filament Composites",
+        "Size": 2
+      },
+      {
+        "Name": "Thermic Alloys",
+        "Size": 2
+      },
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Heat Sink Launcher",
+    "Name": "50% Refill",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Basic Conductors",
+        "Size": 2
+      },
+      {
+        "Name": "Heat Conduction Wiring",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Heat Sink Launcher",
+    "Name": "100% Refill, +15% Heat Dissipation",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Basic Conductors",
+        "Size": 2
+      },
+      {
+        "Name": "Heat Conduction Wiring",
+        "Size": 2
+      },
+      {
+        "Name": "Heat Exchangers",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Heat Sink Launcher",
+    "Name": "100% Refill, +30% Heat Dissipation",
+    "Engineers": [ "@Synthesis" ],
+    "Ingredients": [
+      {
+        "Name": "Basic Conductors",
+        "Size": 2
+      },
+      {
+        "Name": "Heat Conduction Wiring",
+        "Size": 2
+      },
+      {
+        "Name": "Heat Exchangers",
+        "Size": 2
+      },
+      {
+        "Name": "Proto Heat Radiators",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
     "Type": "FSD Injection",
     "Name": "+25% Jump Range",
     "Engineers": [ "@Synthesis" ],
