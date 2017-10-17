@@ -14204,7 +14204,7 @@
     "Grade": 5
   },
   {
-    "Type": "Life Support Refill",
+    "Type": "Life Support",
     "Name": "",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
@@ -14236,7 +14236,7 @@
     "Grade": 1
   },
   {
-    "Type": "Chaff Launcher Refill",
+    "Type": "Chaff Launcher",
     "Name": "50% Refill",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
@@ -14252,7 +14252,7 @@
     "Grade": 1
   },
   {
-    "Type": "Chaff Launcher Refill",
+    "Type": "Chaff Launcher",
     "Name": "100% Refill",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
@@ -14272,7 +14272,7 @@
     "Grade": 2
   },
   {
-    "Type": "Chaff Launcher Refill",
+    "Type": "Chaff Launcher",
     "Name": "100% Refill, +2 Seconds Duration",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
@@ -14296,7 +14296,7 @@
     "Grade": 3
   },
   {
-    "Type": "Heat Sink Launcher Refill",
+    "Type": "Heat Sink Launcher",
     "Name": "50% Refill",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
@@ -14312,7 +14312,7 @@
     "Grade": 1
   },
   {
-    "Type": "Heat Sink Launcher Refill",
+    "Type": "Heat Sink Launcher",
     "Name": "100% Refill, +15% Heat Dissipation",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
@@ -14332,7 +14332,7 @@
     "Grade": 2
   },
   {
-    "Type": "Heat Sink Launcher Refill",
+    "Type": "Heat Sink Launcher",
     "Name": "100% Refill, +30% Heat Dissipation",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
