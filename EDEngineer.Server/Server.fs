@@ -7,6 +7,7 @@ open System.Data
 open System.IO
 
 open Suave
+open Suave.CORS
 open Suave.Filters
 open Suave.Operators
 open Suave.Successful
@@ -43,7 +44,7 @@ type CmdrBuilder() =
       | Found v             -> f v
       | Parsed v            -> f v
       | KnownFormat v       -> f v
-      | NotFound commander  -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
+      | NotFound commander  -> (sprintf "Commander %s not found" commander) |> NOT_FOUND
       | BadString s         -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
       | UnknownFormat s     -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
       | RouteNotFound _     -> "Route not found ¯\_(ツ)_/¯" |> NOT_FOUND
@@ -53,7 +54,8 @@ type CmdrBuilder() =
 let cmdr = CmdrBuilder()
 
 let start (token, port, translator:ILanguage, state:Func<IDictionary<string, State>>, shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>) =
-
+  
+  let corsConfig = { defaultCORSConfig with allowedUris = InclusiveOption.Some [ "http://localhost:" + (port |> string) ] }
   let JsonConfig = fun lang -> 
     let settings = new JsonSerializerSettings (ContractResolver = new LocalizedContractResolver(translator, lang))
     settings.Converters.Add(new LocalizedJsonConverter(translator, lang))
@@ -248,7 +250,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
              
-        NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
+        NOT_FOUND "Route not found ¯\_(ツ)_/¯" ] >=> cors corsConfig 
       
 
   startWebServer { 
