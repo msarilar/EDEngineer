@@ -22,7 +22,7 @@ namespace EDEngineer.Views.Popups
 
         private void HelpTranslateButtonClicked(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://github.com/msarilar/EDEngineer/issues/32");
+            Process.Start("https://github.com/msarilar/EDEngineer/wiki/Helping-With-The-Localization");
         }
     }
 }

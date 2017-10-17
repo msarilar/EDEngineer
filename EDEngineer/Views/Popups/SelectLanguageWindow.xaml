@@ -17,6 +17,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <ListView Grid.Row="0"
                   ItemsSource="{Binding LanguageInfos.Values}"
@@ -68,18 +69,19 @@
                    Background="Black"
                    TextAlignment="Justify"
                    FontWeight="Bold"/>
-            <Button Content="Help Translate The Application"
-                    HorizontalAlignment="Stretch"
-                    Background="Blue"
-                    Foreground="White"
-                    x:Name="HelpTranslateButton"
-                    Click="HelpTranslateButtonClicked" />
         </StackPanel>
-        
+        <Button Content="Help Translate EDEngineer! >>"
+                HorizontalAlignment="Stretch"
+                Background="DarkBlue"
+                Foreground="White"
+                Grid.Row="2"
+                x:Name="HelpTranslateButton"
+                Click="HelpTranslateButtonClicked" />
+
         <Button Content="OK"
                 Background="Green"
                 HorizontalAlignment="Stretch"
-                Grid.Row="2"
+                Grid.Row="3"
                 x:Name="OkButton"
                 Click="OkButtonClicked"
                 FontSize="15"/>
