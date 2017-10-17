@@ -1170,9 +1170,9 @@
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
                                                         <Grid MaxWidth="15.5"
-                                                          MaxHeight="15.5"
+                                                          MaxHeight="15.6"
                                                           MinWidth="15.5"
-                                                          MinHeight="15.5">
+                                                          MinHeight="15.6">
                                                             <iconPacks:PackIconMaterial Kind="Check"
                                                                                         Foreground="Green" >
                                                                 <iconPacks:PackIconMaterial.Visibility>
@@ -1185,9 +1185,7 @@
                                                                 </iconPacks:PackIconMaterial.Visibility>
                                                             </iconPacks:PackIconMaterial>
                                                             <iconPacks:PackIconMaterial Kind="Close"
-                                                                                        Foreground="Red" 
-                                                                                        Width="15"
-                                                                                        Height="15">
+                                                                                        Foreground="Red" >
                                                                 <iconPacks:PackIconMaterial.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"

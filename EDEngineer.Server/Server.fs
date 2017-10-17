@@ -44,7 +44,7 @@ type CmdrBuilder() =
       | Found v             -> f v
       | Parsed v            -> f v
       | KnownFormat v       -> f v
-      | NotFound commander  -> (sprintf "Commander %s not found" commander) |> NOT_FOUND
+      | NotFound commander  -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
       | BadString s         -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
       | UnknownFormat s     -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
       | RouteNotFound _     -> "Route not found ¯\_(ツ)_/¯" |> NOT_FOUND
