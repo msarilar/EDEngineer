@@ -158,9 +158,9 @@
                                          FontSize="15"
                                          GotFocus="EntryCountTextBoxOnFocussed"
                                          LostFocus="EntryCountTextBoxOnLostFocus"
+                                         PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
                                          x:Name="EntryCountTextBox"
                                          Tag="{Binding Value}"
-                                         PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
                                          CaretBrush="White"
                                          FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
                                          Text="{Binding Value.Count, Mode=OneWay}" />
@@ -169,11 +169,24 @@
                                        Background="Transparent"
                                        VerticalAlignment="Center"
                                        FontSize="15" 
+                                       Text="/"
                                        Visibility="{Binding Value.Threshold, Converter={StaticResource NullableToVisibility}}"
                                        FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render">
-                                    <Run Text="/"/>
-                                    <Run Text="{Binding Value.Threshold}"/>
                                 </TextBlock>
+                                <TextBox HorizontalAlignment="Right"
+                                         Foreground="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
+                                         Background="Transparent"
+                                         VerticalAlignment="Center"
+                                         FontSize="15" 
+                                         GotFocus="EntryCountTextBoxOnFocussed"
+                                         LostFocus="ThresholdsTextBoxOnLostFocus"
+                                         PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
+                                         CaretBrush="White"
+                                         BorderBrush="Transparent"
+                                         Text="{Binding Value.Threshold}"
+                                         Tag="{Binding Value}"
+                                         Visibility="{Binding Value.Threshold, Converter={StaticResource NullableToVisibility}}"
+                                         FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"/>
                             </StackPanel>
                             <Button x:Name="IncrementButton"
                                     Grid.Column="2"

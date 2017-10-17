@@ -261,6 +261,23 @@ namespace EDEngineer.Views
             BindingOperations.SetBinding(box, System.Windows.Controls.TextBox.TextProperty, binding);
         }
 
+        private void ThresholdsTextBoxOnLostFocus(object sender, RoutedEventArgs e)
+        {
+            var box = (System.Windows.Controls.TextBox)sender;
+
+            int newCount;
+            if (int.TryParse(box.Text, out newCount))
+            {
+                var entry = (Entry)box.Tag;
+                entry.Threshold = newCount;
+                var thresholds = SettingsManager.Thresholds;
+                thresholds[entry.Data.Name] = newCount;
+                SettingsManager.Thresholds = thresholds;
+            }
+
+            BindingOperations.SetBinding(box, System.Windows.Controls.TextBox.TextProperty, binding);
+        }
+
         private void IncrementButtonClicked(object sender, RoutedEventArgs e)
         {
             var entry = (Entry) ((WpfButton) sender).Tag;
