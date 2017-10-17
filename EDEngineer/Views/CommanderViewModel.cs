@@ -113,7 +113,7 @@ namespace EDEngineer.Views
                     JournalEvent = JournalEvent.ManualUserChange,
                     Name = entry.Data.Name
                 },
-                Timestamp = SystemClock.Instance.Now
+                Timestamp = SystemClock.Instance.GetCurrentInstant()
             };
 
             var json = JsonConvert.SerializeObject(logEntry, journalEntryConverter);

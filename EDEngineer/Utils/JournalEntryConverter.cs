@@ -53,7 +53,7 @@ namespace EDEngineer.Utils
 
             var entry = new JournalEntry
             {
-                Timestamp = InstantPattern.GeneralPattern.Parse((string)data["timestamp"]).Value,
+                Timestamp = InstantPattern.General.Parse((string)data["timestamp"]).Value,
                 OriginalJson = data.ToString()
             };
 
@@ -499,7 +499,7 @@ namespace EDEngineer.Utils
             var operation = (ManualChangeOperation) entry.JournalOperation;
             writer.WriteStartObject();
             writer.WritePropertyName("timestamp");
-            writer.WriteValue(entry.Timestamp.ToString(InstantPattern.GeneralPattern.PatternText, CultureInfo.InvariantCulture));
+            writer.WriteValue(entry.Timestamp.ToString(InstantPattern.General.PatternText, CultureInfo.InvariantCulture));
             writer.WritePropertyName("event");
             writer.WriteValue(operation.JournalEvent.ToString());
             writer.WritePropertyName("Name");

@@ -94,7 +94,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                             | (false, _)    -> NotFound commander
 
   let timeRoute = function
-                  | Some(t) -> match InstantPattern.GeneralPattern.Parse(t) with
+                  | Some(t) -> match InstantPattern.General.Parse(t) with
                                | e when e.Success = true -> Parsed e.Value
                                | _                       -> BadString t
                   | None    -> Parsed Instant.MinValue
@@ -251,10 +251,8 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
         NOT_FOUND "Route not found ¯\_(ツ)_/¯" ]
       
 
-  let localhost = Net.IPAddress.Parse("127.0.0.1")
-
   startWebServer { 
     defaultConfig with 
       cancellationToken = token
-      bindings = [ HttpBinding.mk HTTP localhost port ] } app
+      bindings = [ HttpBinding.createSimple HTTP "127.0.0.1" port ] } app
   state
