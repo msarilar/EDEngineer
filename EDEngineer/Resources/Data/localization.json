@@ -2865,7 +2865,7 @@
       "es": "Señal de nave desconocida",
       "pt": "Assinatura de nave desconhecida",
       "de": "Unbekannte Schiffsignatur",
-      "fr": null,
+      "fr": "Signature de Vaisseau Thargoid",
       "ru": "Сигнатура таргоидского корабля",
       "pl": "Thargoid Ship Signature"
     },
@@ -2873,7 +2873,7 @@
       "es": "Datos de estela desconocida",
       "pt": "Dados de Rastro Desconhecido",
       "de": "Unbekannte Sogwolke",
-      "fr": null,
+      "fr": "Donnée de Sillage Thargoid",
       "ru": "Данные следа таргоидского корабля",
       "pl": "Thargoid Wake Data"
     },
@@ -2897,7 +2897,7 @@
       "es": null,
       "pt": "Configurar valores de limite",
       "de": "Schwellwert einstellen",
-      "fr": null,
+      "fr": "Configurer les Seuils",
       "ru": "Изменение ограничений",
       "pl": "Skonfiguruj wartości progowe"
     },
@@ -2913,7 +2913,7 @@
       "es": null,
       "pt": "Tipo",
       "de": "Art",
-      "fr": null,
+      "fr": "Type",
       "ru": "Вид",
       "pl": "Rodzaj"
     },
@@ -2929,7 +2929,7 @@
       "es": null,
       "pt": "Aplicar limite para itens selecionados",
       "de": "Schwellwert auf die Auswahl anwenden",
-      "fr": null,
+      "fr": "Appliquer le seuil aux éléments sélectionnés:",
       "ru": "Применить ограничения к выбранным пунктам:",
       "pl": "Zastosuj wartość progową do wybranych:"
     },
@@ -2985,7 +2985,7 @@
       "es": null,
       "pt": "Alcançou {0} {1} - limite definido em {2}",
       "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2}",
-      "fr": null,
+      "fr": "{0} {1} Atteint - Limite définie à {2}",
       "ru": "Достигнуто {0} {1} - ограничение установленное на {2}",
       "pl": "Osiągnięto {0} {1} - próg ustawiony na {2}"
     },
@@ -3009,7 +3009,7 @@
       "es": null,
       "pt": "Múltiplos Diagramas Prontos",
       "de": "verschiedene Baupläne fertig",
-      "fr": null,
+      "fr": "Multiple Plans de Fabrications Disponibles",
       "ru": "Готово несколько чертежей",
       "pl": "Wiele schematów gotowych do stworzenia"
     },
@@ -3017,7 +3017,7 @@
       "es": null,
       "pt": "{0} diagramas estão disponiveis para produção!",
       "de": "{0} Baupläne stehen zur Herstellung zur Verfügung!",
-      "fr": null,
+      "fr": "{0} plans de fabrications sont disponibles pour la production",
       "ru": "Можно создать {0} чертежей!",
       "pl": "Można stworzyć {0} schematów!"
     },
@@ -3033,7 +3033,7 @@
       "es": null,
       "pt": "Scanners de superfície",
       "de": "Oberflächen-Scanner",
-      "fr": null,
+      "fr": "Scanner de Surface",
       "ru": "Сканер поверхности",
       "pl": "Surface Scanner"
     },
@@ -3041,7 +3041,7 @@
       "es": null,
       "pt": "Scanner de rastro",
       "de": "Sogwolkenscanner",
-      "fr": null,
+      "fr": "Scanner de Sillage",
       "ru": "Сканер следа",
       "pl": "Wake Scanner"
     },
@@ -3049,7 +3049,7 @@
       "es": null,
       "pt": "Última atualização",
       "de": "letzte Aktualisierung",
-      "fr": null,
+      "fr": "Dernière mise à jour: ",
       "ru": "Последнее обновление: ",
       "pl": "Ostatnia aktualizacja:"
     },
@@ -3057,7 +3057,7 @@
       "es": null,
       "pt": "Iniciar Minimizado",
       "de": "Start minimiert",
-      "fr": null,
+      "fr": "Démarrage Silencieux",
       "ru": "Скрытый запуск",
       "pl": "Ciche uruchomienie"
     },
@@ -3065,7 +3065,7 @@
       "es": null,
       "pt": "Procure diagramas disponíveis (por Tipo, Nome, Grau ou Engenheiro) - separe os termos com um espaço para pesquisa multi-critério",
       "de": "Suche nach verfügbaren Bauplänen (Begriffe durch 'Leerzeichen' trennen)",
-      "fr": null,
+      "fr": "Rechercher les plans de fabrications visible (par Type, Nom, Grade ou Ingénieur) - séparez vos termes avec un espace pour une recharche multi-critères",
       "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii"
     },
@@ -3073,7 +3073,7 @@
       "es": null,
       "pt": "Configurar notificações",
       "de": "Benachrichtigung Konfigurieren",
-      "fr": null,
+      "fr": "Configurer les Notifications",
       "ru": "Настройка оповещений",
       "pl": "Skonfiguruj powiadomienia"
     },
@@ -3081,7 +3081,7 @@
       "es": null,
       "pt": "Notificações",
       "de": "Benachrichtigung",
-      "fr": null,
+      "fr": "Notifications",
       "ru": "Оповещения",
       "pl": "Powiadomienia"
     },
@@ -3089,7 +3089,7 @@
       "es": null,
       "pt": "Notificação de teste",
       "de": "Test-Benachrichtigung",
-      "fr": null,
+      "fr": "Tester la Notification",
       "ru": "Проверка оповещения",
       "pl": "Próbne powiadomienie"
     },
@@ -3097,7 +3097,7 @@
       "es": null,
       "pt": "Notificação",
       "de": "Toast",
-      "fr": null,
+      "fr": "Notification",
       "ru": "Toast",
       "pl": "Pop-up"
     },
@@ -3105,7 +3105,7 @@
       "es": null,
       "pt": "Voz",
       "de": "Stimme",
-      "fr": null,
+      "fr": "Voix",
       "ru": "Голос",
       "pl": "Głos"
     },
@@ -3113,7 +3113,7 @@
       "es": null,
       "pt": "Scanner de longo alcance",
       "de": "Langstrecken-Scanner",
-      "fr": null,
+      "fr": "Scanner Longue Portée",
       "ru": "Сканер увеличенной дальности",
       "pl": "Long Range Scanner"
     },
@@ -3121,7 +3121,7 @@
       "es": null,
       "pt": "Scanner de ângulo amplo",
       "de": "Weitwinkel-Scanner",
-      "fr": null,
+      "fr": "Scanner à Angle Large",
       "ru": "Широкоугольный сканер",
       "pl": "Wide Angle Scanner"
     },
@@ -3129,7 +3129,7 @@
       "es": null,
       "pt": "Scanner leve",
       "de": "Leichter Scanner",
-      "fr": null,
+      "fr": "Scanner Lèger",
       "ru": "Облегченный сканер",
       "pl": "Light Weight Scanner"
     },
@@ -3137,7 +3137,7 @@
       "es": null,
       "pt": "Scanner rápido",
       "de": "Schneller Scanner",
-      "fr": null,
+      "fr": "Scanner Rapide",
       "ru": "Быстрый сканер",
       "pl": "Fast Scanner"
     },
@@ -3145,7 +3145,7 @@
       "es": null,
       "pt": "Desbloquear",
       "de": "Freischalten",
-      "fr": null,
+      "fr": "Déverrouiller",
       "ru": "Разблокировать",
       "pl": "Odblokowanie"
     },
@@ -3153,7 +3153,7 @@
       "es": null,
       "pt": "Vozes disponiveis",
       "de": "verfügbare Stimmen",
-      "fr": null,
+      "fr": "Voix Disponibles",
       "ru": "Доступные голоса:",
       "pl": "Dostępne głosy:"
     },
@@ -3161,7 +3161,7 @@
       "es": null,
       "pt": "Entradas filtradas - Clique nela para limpar",
       "de": "Gefilterte Einträge - Klick HIER um zu Löschen",
-      "fr": null,
+      "fr": "entrées filtrées - cliquez ici pour nettoyer",
       "ru": "отфильтрованные записи - нажмите для очистки",
       "pl": null
     },
@@ -3169,7 +3169,7 @@
       "es": null,
       "pt": "Dados de composição de material Thargoid",
       "de": "unbekannte Materialzusammensetzung",
-      "fr": null,
+      "fr": "Donnée de Composition de Matérel Thargoid",
       "ru": "Данные о составе таргоидских материалов",
       "pl": null
     },
@@ -3177,7 +3177,7 @@
       "es": null,
       "pt": "Dados de resíduo Thargoid",
       "de": "unbekannte Rückstandsdatenanalyse",
-      "fr": null,
+      "fr": "Résidus de Données Thargoid",
       "ru": "Данные об осадке таргоидского происхождения",
       "pl": null
     },
@@ -3185,7 +3185,7 @@
       "es": null,
       "pt": "Dados de estrutura Thargoid",
       "de": "unbekannte Strukturdaten",
-      "fr": null,
+      "fr": "Données Structurelles Thargoid",
       "ru": "Данные о структуре таргоидского объекта",
       "pl": null
     },
@@ -3193,7 +3193,7 @@
       "es": null,
       "pt": "Carapaça Thargoid",
       "de": "unbekannte Panzerung",
-      "fr": null,
+      "fr": "Carapace Thargoid",
       "ru": "Таргоидский панцирь",
       "pl": null
     },
@@ -3201,7 +3201,7 @@
       "es": null,
       "pt": "Célula de energia Thargoid",
       "de": "unbekannte Energiezelle",
-      "fr": null,
+      "fr": "Cellule d'Énergie Thargoid",
       "ru": "Таргоидская энергоячейка",
       "pl": null
     },
@@ -3209,7 +3209,7 @@
       "es": null,
       "pt": "Circuito orgânico Thargoid",
       "de": "unbekannte organische Struktur",
-      "fr": null,
+      "fr": "Circuit Organique Thargoid",
       "ru": "Таргоидская органическая схема",
       "pl": null
     },
@@ -3217,7 +3217,7 @@
       "es": null,
       "pt": "Componente tecnológico Thargoid",
       "de": "unbekannte Technologie-Komponente",
-      "fr": null,
+      "fr": "Composants Technologique Thargoid",
       "ru": "Компоненты таргоидской техники",
       "pl": null
     },
@@ -3225,7 +3225,7 @@
       "es": null,
       "pt": "Dados de voo da nave",
       "de": "Schiff-Flug-Daten",
-      "fr": null,
+      "fr": "Donnée de Vol",
       "ru": null,
       "pl": null
     },
@@ -3233,7 +3233,7 @@
       "es": null,
       "pt": "Dados do sistema da nave",
       "de": "Schiff-System-Daten",
-      "fr": null,
+      "fr": "Données de Système de Navigation",
       "ru": null,
       "pl": null
     },
@@ -3249,7 +3249,7 @@
       "es": null,
       "pt": "Partes de armas",
       "de": "Waffenteile",
-      "fr": null,
+      "fr": "Éléments d'Arme",
       "ru": null,
       "pl": null
     },
@@ -3257,7 +3257,7 @@
       "es": null,
       "pt": "Condutores bio-mecânicos",
       "de": "Bio-mechanische Leitungen",
-      "fr": null,
+      "fr": "Conducteurs Bio-Mécanique",
       "ru": null,
       "pl": null
     },
@@ -3265,7 +3265,7 @@
       "es": null,
       "pt": "Elementos de propulsão",
       "de": "Antriebselemente",
-      "fr": null,
+      "fr": "Elements de Propulsion",
       "ru": null,
       "pl": null
     },
@@ -3273,7 +3273,7 @@
       "es": null,
       "pt": "Configurações",
       "de": "Einstellungen",
-      "fr": null,
+      "fr": "Paramètres",
       "ru": "Настройки",
       "pl": null
     },
@@ -3281,7 +3281,7 @@
       "es": null,
       "pt": "Configurar gráficos",
       "de": "Grafik einstellen",
-      "fr": null,
+      "fr": "Configuration Graphique",
       "ru": "Настройки графики",
       "pl": null
     },
@@ -3289,7 +3289,7 @@
       "es": null,
       "pt": "100% de Recarga",
       "de": null,
-      "fr": null,
+      "fr": "100% de Recharge",
       "ru": null,
       "pl": null
     },
@@ -3297,7 +3297,7 @@
       "es": null,
       "pt": "100% de Recarga, +15% de Dissipação de Calor",
       "de": null,
-      "fr": null,
+      "fr": "100% de Recharge, +15% de Dissipation de Chaleur",
       "ru": null,
       "pl": null
     },
@@ -3305,7 +3305,7 @@
       "es": null,
       "pt": "100% de Recarga, +2 Segundos de Duração",
       "de": null,
-      "fr": null,
+      "fr": "100% de Recharge, +2 Secondes de Durée",
       "ru": null,
       "pl": null
     },
@@ -3313,7 +3313,7 @@
       "es": null,
       "pt": "100% de Recarga, +30% de Dissipação de Calor",
       "de": null,
-      "fr": null,
+      "fr": "100% de Recharge, +30% de Dissipation de Chaleur",
       "ru": null,
       "pl": null
     },
@@ -3321,7 +3321,7 @@
       "es": null,
       "pt": "4 Drones, Porão de Carga Necessário ",
       "de": null,
-      "fr": null,
+      "fr": "4 Drones, Soute Requise",
       "ru": null,
       "pl": null
     },
@@ -3329,7 +3329,7 @@
       "es": null,
       "pt": "50% de Recarga",
       "de": null,
-      "fr": null,
+      "fr": "50% de Recharge",
       "ru": null,
       "pl": null
     },
@@ -3337,7 +3337,7 @@
       "es": null,
       "pt": "Chá de Fujin",
       "de": null,
-      "fr": null,
+      "fr": "Thé Fujin",
       "ru": null,
       "pl": null
     },
@@ -3345,7 +3345,7 @@
       "es": null,
       "pt": "Ouro",
       "de": null,
-      "fr": null,
+      "fr": "Or",
       "ru": null,
       "pl": null
     },
@@ -3353,7 +3353,7 @@
       "es": null,
       "pt": "Charutos de Kamitra",
       "de": null,
-      "fr": null,
+      "fr": "Cigares de Kamitra",
       "ru": null,
       "pl": null
     },
@@ -3369,7 +3369,7 @@
       "es": null,
       "pt": "Minas Terrestres",
       "de": null,
-      "fr": null,
+      "fr": "Mines Terrestres",
       "ru": null,
       "pl": null
     },
@@ -3385,7 +3385,7 @@
       "es": null,
       "pt": "Drones",
       "de": null,
-      "fr": null,
+      "fr": "Drones",
       "ru": null,
       "pl": null
     },
@@ -3393,7 +3393,7 @@
       "es": null,
       "pt": "Meta-Ligas",
       "de": null,
-      "fr": null,
+      "fr": "Meta-Alliages",
       "ru": null,
       "pl": null
     },
@@ -3401,7 +3401,7 @@
       "es": null,
       "pt": "Painita",
       "de": null,
-      "fr": null,
+      "fr": "Painite",
       "ru": null,
       "pl": null
     },
