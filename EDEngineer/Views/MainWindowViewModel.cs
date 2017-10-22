@@ -37,6 +37,8 @@ namespace EDEngineer.Views
                 currentCommander = value;
                 SettingsManager.SelectedCommander = value.Key;
                 OnPropertyChanged();
+
+                currentCommander.Value.RefreshShoppingList();
             }
         }
 
