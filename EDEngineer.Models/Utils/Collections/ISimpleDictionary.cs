@@ -11,6 +11,8 @@ namespace EDEngineer.Models.Utils.Collections
         }
 
         IEnumerable<TKey> Keys { get; } 
-        IEnumerable<TValue> Values { get; } 
+        IEnumerable<TValue> Values { get; }
+
+        bool ContainsKey(TKey key);
     }
 }

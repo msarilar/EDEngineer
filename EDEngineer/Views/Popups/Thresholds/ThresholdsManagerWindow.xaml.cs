@@ -55,9 +55,25 @@ namespace EDEngineer.Views.Popups.Thresholds
             }
             else
             {
+                var missingEntries = new List<string>();
                 foreach (var item in SettingsManager.Thresholds)
                 {
-                    thresholds[item.Key].Threshold = item.Value;
+                    if (thresholds.ContainsKey(item.Key))
+                    {
+                        thresholds[item.Key].Threshold = item.Value;
+                    }
+                    else
+                    {
+                        missingEntries.Add(item.Key);
+                    }
+                }
+
+                if (missingEntries.Any())
+                {
+                    var savedThresholds = SettingsManager.Thresholds;
+                    missingEntries.ForEach(x => savedThresholds.Remove(x));
+
+                    SettingsManager.Thresholds = savedThresholds;
                 }
             }
         }
