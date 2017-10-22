@@ -180,6 +180,7 @@ namespace EDEngineer.Views
             {
                 yield return "Name";
                 yield return "Count";
+                yield return "Thresholds";
             }
         }
 

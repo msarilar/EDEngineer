@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 
 namespace EDEngineer.Models
@@ -13,6 +14,7 @@ namespace EDEngineer.Models
     {
         public const string NAME_COMPARER = "Name";
         public const string COUNT_COMPARER = "Count";
+        public const string THRESHOLDS_COMPARER = "Thresholds";
 
         public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
 
@@ -28,7 +30,30 @@ namespace EDEngineer.Models
             comparers = new Dictionary<string, Comparer>()
             {
                 [NAME_COMPARER] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
-                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count)
+                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count),
+                [THRESHOLDS_COMPARER] = (a, b) =>
+                                        {
+                                            if (a.Value.Threshold.HasValue && !b.Value.Threshold.HasValue)
+                                            {
+                                                return -1;
+                                            }
+
+                                            if (!a.Value.Threshold.HasValue && b.Value.Threshold.HasValue)
+                                            {
+                                                return 1;
+                                            }
+
+                                            if (a.Value.Threshold.HasValue && b.Value.Threshold.HasValue)
+                                            {
+                                                return
+                                                    (b.Value.Count - b.Value.Threshold.Value).CompareTo(a.Value.Count -
+                                                                                                        a.Value
+                                                                                                         .Threshold
+                                                                                                         .Value);
+                                            }
+
+                                            return comparers[COUNT_COMPARER](a, b);
+                                        }
             };
 
             Cargo = new SortedObservableCounter(comparers[comparer]);

@@ -62,7 +62,7 @@
     <Compile Include="Utils\Collections\SortedObservableDictionary.cs" />
     <Compile Include="Utils\PropertyChangedExtendedEventArgs.cs" />
     <Compile Include="Utils\NotifyPropertyChangedInvocatorAttribute.cs" />
-    <Compile Include="Utils\StringExtensions.cs" />
+    <Compile Include="Utils\Extensions.cs" />
     <Compile Include="Blueprint.cs" />
     <Compile Include="BlueprintIngredient.cs" />
     <Compile Include="Entry.cs" />
