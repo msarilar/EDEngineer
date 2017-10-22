@@ -158,19 +158,16 @@ namespace EDEngineer.Views
                 serverBridge.Running,
                 (o, e) =>
                 {
-                    HideWindow();
                     ReleaseNotesManager.ShowReleaseNotes();
                 },
                 Properties.Settings.Default.CurrentVersion,
                 (o, e) =>
                 {
-                    HideWindow();
                     ThresholdsManagerWindow.ShowThresholds(viewModel.Languages, viewModel.CurrentCommander.Value.State.Cargo, viewModel.CurrentCommander.Key);
                 },
                 (o, e) =>
                 {
-                    HideWindow();
-                    new NotificationSettingsWindow(viewModel.Languages).Show();
+                    new NotificationSettingsWindow(viewModel.Languages).ShowDialog();
                 },
                 (o, e) =>
                 {

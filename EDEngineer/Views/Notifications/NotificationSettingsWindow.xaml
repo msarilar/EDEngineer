@@ -8,6 +8,7 @@
         Title="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Notifications'}"
         WindowStyle="ToolWindow"
         SizeToContent="WidthAndHeight"
+        Topmost="True"
         Closed="NotificationSettingsWindowClosed">
     <Grid Margin="10">
         <Grid.RowDefinitions>

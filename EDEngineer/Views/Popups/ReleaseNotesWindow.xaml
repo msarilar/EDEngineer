@@ -9,6 +9,7 @@
         WindowStartupLocation="CenterScreen"
         MaxWidth="800"
         MaxHeight="800"
+        Topmost="True"
         SizeToContent="WidthAndHeight">
     <Grid>
         <Grid.RowDefinitions>

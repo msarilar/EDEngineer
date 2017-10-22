@@ -7,6 +7,7 @@
                       xmlns:localization="clr-namespace:EDEngineer.Localization"
                       mc:Ignorable="d"
                       WindowStyle="ToolWindow"
+                      Topmost="True"
                       SizeToContent="WidthAndHeight">
     <Grid>
         <Grid.RowDefinitions>
