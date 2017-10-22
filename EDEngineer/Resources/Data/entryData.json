@@ -67,7 +67,7 @@
     "Rarity": "Rare",
     "FormattedName": "atypicalencryptionarchives",
     "Kind": "Data",
-    "OriginDetails": [ "Surface POI" ]
+    "OriginDetails": [ "Surface POI", "Signal source" ]
   },
   {
     "Name": "Basic Conductors",
