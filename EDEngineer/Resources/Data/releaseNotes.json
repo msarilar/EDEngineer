@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.8.7",
+    "Content": "* Added sorting by thresholds for your cargo (will show items in order of how their count is above of the configured thresholds for easier cleanup)\r\n* Stop hiding the window when opening a configuration popup dialog\r\n* Fixed a display issue with the shopping list when switching active commander\r\n* Added Signal Source to the list of origins for Atypical Encryption Archives\r\n\r\n* Portuguese translation update, thanks to @wesleymoura!\r\n* Missing french localization added, thanks to @fbrossar25 for the contribution!"
+  },
+  {
     "Version": "1.0.8.6",
     "Content": "* You can now edit thresholds in the main window (as long as there is a threshold)\r\n* The \"Help Translate\" button that shows when you pick a language now links to a dedicated page on the project's Wiki\r\n* Added CORS headers support for the API\r\n* Updated all external dependencies\r\n* Fixed an alignment issue with the red cross and green check when many items are added to the shopping list\r\n\r\n* NEW Synthesis added from the 2.4 update. Thanks a lot to @CMDR-Cometborne for providing everything needed!\r\n\r\n* NEW available language: brazilian portuguese. Thanks a ton to @rpivatto, @wesleymoura and CMDRs Moraes, Wladimir JRC and Warlord from brazilian minor faction Cobra Wing!\r\n* Russian localization update with lots of fixes and missing translations added. Many thanks to @VChet!\r\n* German localization update which adds most of the missing text to the application. Thanks a lot to @nepomuk16321!\r\n"
   },
