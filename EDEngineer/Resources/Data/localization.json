@@ -3290,7 +3290,7 @@
       "pt": "100% de Recarga",
       "de": null,
       "fr": "100% de Recharge",
-      "ru": null,
+      "ru": "100% заправка",
       "pl": null
     },
     "100% Refill, +15% Heat Dissipation": {
@@ -3298,7 +3298,7 @@
       "pt": "100% de Recarga, +15% de Dissipação de Calor",
       "de": null,
       "fr": "100% de Recharge, +15% de Dissipation de Chaleur",
-      "ru": null,
+      "ru": "100% заправка, +15% рассеивание тепла",
       "pl": null
     },
     "100% Refill, +2 Seconds Duration": {
@@ -3306,7 +3306,7 @@
       "pt": "100% de Recarga, +2 Segundos de Duração",
       "de": null,
       "fr": "100% de Recharge, +2 Secondes de Durée",
-      "ru": null,
+      "ru": "100% заправка, +2 секунды действия",
       "pl": null
     },
     "100% Refill, +30% Heat Dissipation": {
@@ -3314,7 +3314,7 @@
       "pt": "100% de Recarga, +30% de Dissipação de Calor",
       "de": null,
       "fr": "100% de Recharge, +30% de Dissipation de Chaleur",
-      "ru": null,
+      "ru": "100% заправка, +30% рассеивание тепла",
       "pl": null
     },
     "4 Limpets, Cargo Hold Required": {
@@ -3322,7 +3322,7 @@
       "pt": "4 Drones, Porão de Carga Necessário ",
       "de": null,
       "fr": "4 Drones, Soute Requise",
-      "ru": null,
+      "ru": "4 беспилотника, необходим грузовой отсек",
       "pl": null
     },
     "50% Refill": {
@@ -3330,7 +3330,7 @@
       "pt": "50% de Recarga",
       "de": null,
       "fr": "50% de Recharge",
-      "ru": null,
+      "ru": "50% заправка",
       "pl": null
     },
     "Fujin Tea": {
@@ -3338,7 +3338,7 @@
       "pt": "Chá de Fujin",
       "de": null,
       "fr": "Thé Fujin",
-      "ru": null,
+      "ru": "Чай Fujin",
       "pl": null
     },
     "Gold": {
@@ -3346,7 +3346,7 @@
       "pt": "Ouro",
       "de": null,
       "fr": "Or",
-      "ru": null,
+      "ru": "Золото",
       "pl": null
     },
     "Kamitra Cigars": {
@@ -3354,7 +3354,7 @@
       "pt": "Charutos de Kamitra",
       "de": null,
       "fr": "Cigares de Kamitra",
-      "ru": null,
+      "ru": "Сигары Kamitra",
       "pl": null
     },
     "Kongga Ale": {
@@ -3362,7 +3362,7 @@
       "pt": "Cerveja de Kongga",
       "de": null,
       "fr": "Bière de Kongga",
-      "ru": null,
+      "ru": "Эль Конгга",
       "pl": null
     },
     "Landmines": {
@@ -3370,7 +3370,7 @@
       "pt": "Minas Terrestres",
       "de": null,
       "fr": "Mines Terrestres",
-      "ru": null,
+      "ru": "Мины",
       "pl": null
     },
     "Lavian Brandy": {
@@ -3378,7 +3378,7 @@
       "pt": "Brandy Laviano",
       "de": null,
       "fr": "Cognac Lavien",
-      "ru": null,
+      "ru": "Лавианский бренди",
       "pl": null
     },
     "Limpets": {
@@ -3386,7 +3386,7 @@
       "pt": "Drones",
       "de": null,
       "fr": "Drones",
-      "ru": null,
+      "ru": "Беспилотники",
       "pl": null
     },
     "Meta-alloys": {
@@ -3394,7 +3394,7 @@
       "pt": "Meta-Ligas",
       "de": null,
       "fr": "Meta-Alliages",
-      "ru": null,
+      "ru": "Метасплавы",
       "pl": null
     },
     "Painite": {
@@ -3402,7 +3402,7 @@
       "pt": "Painita",
       "de": null,
       "fr": "Painite",
-      "ru": null,
+      "ru": "Пейнит",
       "pl": null
     },
     "Soontill Relics": {
@@ -3410,7 +3410,7 @@
       "pt": "Relíquias de Soontill",
       "de": null,
       "fr": "Relique de Soontill",
-      "ru": null,
+      "ru": "Реликты Сунтилла",
       "pl": null
     },
     "Xihe Companions": {
@@ -3418,7 +3418,7 @@
       "pt": "Companheiros Xihe",
       "de": null,
       "fr": "Compagnions Xihe",
-      "ru": null,
+      "ru": "Спутники Xihe",
       "pl": null
     }
   }
