@@ -3288,7 +3288,7 @@
     "100% Refill": {
       "es": null,
       "pt": "100% de Recarga",
-      "de": null,
+      "de": "100% Nachfüllung",
       "fr": "100% de Recharge",
       "ru": "100% заправка",
       "pl": null
@@ -3296,7 +3296,7 @@
     "100% Refill, +15% Heat Dissipation": {
       "es": null,
       "pt": "100% de Recarga, +15% de Dissipação de Calor",
-      "de": null,
+      "de": "100% Nachfüllung, +15% Wärmeableitung",
       "fr": "100% de Recharge, +15% de Dissipation de Chaleur",
       "ru": "100% заправка, +15% рассеивание тепла",
       "pl": null
@@ -3304,7 +3304,7 @@
     "100% Refill, +2 Seconds Duration": {
       "es": null,
       "pt": "100% de Recarga, +2 Segundos de Duração",
-      "de": null,
+      "de": "100% Nachfüllung, +2 Sekunden Dauer",
       "fr": "100% de Recharge, +2 Secondes de Durée",
       "ru": "100% заправка, +2 секунды действия",
       "pl": null
@@ -3312,7 +3312,7 @@
     "100% Refill, +30% Heat Dissipation": {
       "es": null,
       "pt": "100% de Recarga, +30% de Dissipação de Calor",
-      "de": null,
+      "de": "100% Nachfüllung, +30% Wärmeableitung",
       "fr": "100% de Recharge, +30% de Dissipation de Chaleur",
       "ru": "100% заправка, +30% рассеивание тепла",
       "pl": null
@@ -3320,7 +3320,7 @@
     "4 Limpets, Cargo Hold Required": {
       "es": null,
       "pt": "4 Drones, Porão de Carga Necessário ",
-      "de": null,
+      "de": "für Drohnen, Laderaum erforderlich",
       "fr": "4 Drones, Soute Requise",
       "ru": "4 беспилотника, необходим грузовой отсек",
       "pl": null
@@ -3328,7 +3328,7 @@
     "50% Refill": {
       "es": null,
       "pt": "50% de Recarga",
-      "de": null,
+      "de": "50% Nachfüllung",
       "fr": "50% de Recharge",
       "ru": "50% заправка",
       "pl": null
@@ -3336,7 +3336,7 @@
     "Fujin Tea": {
       "es": null,
       "pt": "Chá de Fujin",
-      "de": null,
+      "de": "Fujin-Tee",
       "fr": "Thé Fujin",
       "ru": "Чай Fujin",
       "pl": null
@@ -3344,7 +3344,7 @@
     "Gold": {
       "es": null,
       "pt": "Ouro",
-      "de": null,
+      "de": "Gold",
       "fr": "Or",
       "ru": "Золото",
       "pl": null
@@ -3352,7 +3352,7 @@
     "Kamitra Cigars": {
       "es": null,
       "pt": "Charutos de Kamitra",
-      "de": null,
+      "de": "Kamitra-Zigarren",
       "fr": "Cigares de Kamitra",
       "ru": "Сигары Kamitra",
       "pl": null
@@ -3416,7 +3416,7 @@
     "Xihe Companions": {
       "es": null,
       "pt": "Companheiros Xihe",
-      "de": "Haustiere aus Xihe",
+      "de": "Haustiere von Xihe",
       "fr": "Compagnions Xihe",
       "ru": "Спутники Xihe",
       "pl": null
