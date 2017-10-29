@@ -488,7 +488,8 @@
                                          x:Name="ShowAllMaterialsRadioButton"
                                          Checked="MaterialSubkindFilterChecked">
                                 <RadioButton.Content>
-                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='All'}"/>
+                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='All'}"
+                                               FontFamily="/Resources/Fonts/#Euro Caps"/>
                                 </RadioButton.Content>
                             </RadioButton>
                             <RadioButton Margin="10,6,10,6"
@@ -497,7 +498,8 @@
                                          x:Name="ShowOnlyRawMaterialsRadioButton"
                                          Checked="MaterialSubkindFilterChecked">
                                 <RadioButton.Content>
-                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Raw Only'}"/>
+                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Raw Only'}"
+                                               FontFamily="/Resources/Fonts/#Euro Caps"/>
                                 </RadioButton.Content>
                             </RadioButton>
                             <RadioButton Margin="10,6,10,6"
@@ -506,7 +508,8 @@
                                          x:Name="ShowOnlyManufacturedMaterialsButton"
                                          Checked="MaterialSubkindFilterChecked">
                                 <RadioButton.Content>
-                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Manufactured Only'}"/>
+                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Manufactured Only'}"
+                                               FontFamily="/Resources/Fonts/#Euro Caps"/>
                                 </RadioButton.Content>
                             </RadioButton>
                         </StackPanel>
