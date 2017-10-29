@@ -463,9 +463,9 @@
                     </controls:MetroTabItem.HeaderTemplate>
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                      x:Name="Materials"
-                                      ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
-                                      ItemTemplate="{StaticResource EntryTemplate}">
+                                          x:Name="Materials"
+                                          ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
+                                          ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -1196,24 +1196,23 @@
                                                       Margin="0,0,7,0">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
-                                                        <Grid MaxWidth="15.5"
-                                                          MaxHeight="15.6"
-                                                          MinWidth="15.5"
-                                                          MinHeight="15.6">
-                                                            <iconPacks:PackIconMaterial Kind="Check"
-                                                                                        Foreground="Green" >
-                                                                <iconPacks:PackIconMaterial.Visibility>
+                                                        <Grid>
+                                                            <TextBlock Text="✔️"
+                                                                       Foreground="Green"
+                                                                       FontSize="13">
+                                                                <TextBlock.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
                                                                               Mode="OneWay">
                                                                         <Binding Path="Entry.Count"/>
                                                                         <Binding Path="Size"/>
                                                                     </MultiBinding>
-                                                                </iconPacks:PackIconMaterial.Visibility>
-                                                            </iconPacks:PackIconMaterial>
-                                                            <iconPacks:PackIconMaterial Kind="Close"
-                                                                                        Foreground="Red" >
-                                                                <iconPacks:PackIconMaterial.Visibility>
+                                                                </TextBlock.Visibility>
+                                                            </TextBlock>
+                                                            <TextBlock Text="✖"
+                                                                       Foreground="Red"
+                                                                       FontSize="13">
+                                                                <TextBlock.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
                                                                               Mode="OneWay"
@@ -1221,8 +1220,8 @@
                                                                         <Binding Path="Entry.Count"/>
                                                                         <Binding Path="Size"/>
                                                                     </MultiBinding>
-                                                                </iconPacks:PackIconMaterial.Visibility>
-                                                            </iconPacks:PackIconMaterial>
+                                                                </TextBlock.Visibility>
+                                                            </TextBlock>
                                                         </Grid>
                                                     </DataTemplate>
                                                 </ItemsControl.ItemTemplate>
