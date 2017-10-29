@@ -18,7 +18,7 @@
     "de": {
       "TwoLetterISOLanguageName": "de",
       "Name": "Deutsch",
-      "NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie es auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
+      "NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie sie auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
     },
     "fr": {
       "TwoLetterISOLanguageName": "fr",
@@ -144,7 +144,7 @@
     "Thermal Resistant": {
       "es": "Resistencia Térmica",
       "pt": "Resistência Térmica",
-      "de": "Thermalresistent",
+      "de": "Hitzeresistent",
       "fr": "Résistance thermique",
       "ru": "Противотепловое усиление",
       "pl": "Thermal Resistant"
@@ -160,7 +160,7 @@
     "Blast Resistant": {
       "es": "Blindaje Resistente a Explosiones",
       "pt": "Resistente à Explosão",
-      "de": "Detonationsresistent",
+      "de": "Explosionsresistent",
       "fr": "Anti-explosion",
       "ru": "Противовзрывное усиление",
       "pl": "Blast Resistant"
@@ -168,7 +168,7 @@
     "High Capacity Magazine": {
       "es": "Cargador de Alta Capacidad",
       "pt": "Cartucho de Alta Capacidade",
-      "de": "Hochleistungsmagazin",
+      "de": "Größeres Magazin",
       "fr": "Chargeur grande capacité",
       "ru": "Вместительный магазин",
       "pl": "High Capacity Magazine"
@@ -192,7 +192,7 @@
     "Thermal Resistant Shields": {
       "es": "Escudos de Resistencia Térmica",
       "pt": "Escudos de Resistência Térmica",
-      "de": "Thermalresistente Schilde",
+      "de": "Hitzeresistente Schilde",
       "fr": "Bouclier à résistance thermique",
       "ru": "Противотепловой щит",
       "pl": "Thermal Resistant Shields"
@@ -224,7 +224,7 @@
     "Overcharged Weapon": {
       "es": "Arma Sobrecargada",
       "pt": "Arma Sobrecarregada",
-      "de": "Überladungswaffe",
+      "de": "Überladene Waffe",
       "fr": "Arme surchargée",
       "ru": "Усиленное оружие",
       "pl": "Overcharged Weapon"
@@ -248,7 +248,7 @@
     "Overcharged": {
       "es": "Sobrecargado",
       "pt": "Sobrecarregado",
-      "de": "Überladungs",
+      "de": "Überladen",
       "fr": "Surchargé",
       "ru": "Усиленный",
       "pl": "Overcharged"
@@ -264,7 +264,7 @@
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
       "pt": "Reforço de Casco Resistência Térmica",
-      "de": "Thermalresistente Rumpfhüllenverstärkung",
+      "de": "Hitzeresistente Rumpfhüllenverstärkung",
       "fr": "Renforts de coque antithermique",
       "ru": "Противотепловое усиление",
       "pl": "Thermal Resistant Hull Reinforcement"
@@ -304,7 +304,7 @@
     "Rapid Charge": {
       "es": "Recarga Rápida",
       "pt": "Carga Rápida",
-      "de": "Ladungsoptimiert",
+      "de": "Schnellladung",
       "fr": "Chargement rapide",
       "ru": "Быстрозаряжающийся",
       "pl": "Rapid Charge"
@@ -336,7 +336,7 @@
     "Blast Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Explosiva",
       "pt": "Reforço de Casco Resistente à Explosão",
-      "de": "Detonationsresistente Rumpfhüllenverstärkung",
+      "de": "Explosionsresistente Rumpfhüllenverstärkung",
       "fr": "Renforts de coque anti-explosion",
       "ru": "Противовзрывное усиление корпуса",
       "pl": "Blast Resistant Hull Reinforcement"
@@ -416,7 +416,7 @@
     "Electronic Countermeasure": {
       "es": "Contramedida Electrónica",
       "pt": "Contramedida Eletrônica",
-      "de": "Elektronische Gegenmaßnahmen",
+      "de": "Elektronische Gegenmaßnahme",
       "fr": "CME",
       "ru": "Электронное противодействие",
       "pl": "Electronic Countermeasure"
@@ -472,7 +472,7 @@
     "Power Plant": {
       "es": "Núcleo de Energía",
       "pt": "Gerador de Energia",
-      "de": "Kraftwerk",
+      "de": "Reaktor",
       "fr": "Générateur",
       "ru": "Силовая установка",
       "pl": "Power Plant"
@@ -512,7 +512,7 @@
     "Shield Booster": {
       "es": "Potenciador de Escudos",
       "pt": "Potenciador de Escudo",
-      "de": "Schild-Booster",
+      "de": "Schild-Verstärker",
       "fr": "Survolteur de Bouclier",
       "ru": "Усилитель щита",
       "pl": "Shield Booster"
@@ -520,7 +520,7 @@
     "Kill Warrant Scanner": {
       "es": "Escáner de Registro Criminal",
       "pt": "Scanner de Registro Criminal",
-      "de": "Tötungsbefehl-Scanner",
+      "de": "Tötungsbefehlscanner",
       "fr": "Scanner d'avis de recherches",
       "ru": "Сканер преступников",
       "pl": "Kill Warrant Scanner"
@@ -584,7 +584,7 @@
     "Manifest Scanner": {
       "es": "Escáner de Carga",
       "pt": "Scanner de Manifesto",
-      "de": "Verzeichnisscanner",
+      "de": "Ladungsscanner",
       "fr": "Scanner de soute",
       "ru": "Сканер накладной",
       "pl": "Manifest Scanner"
@@ -608,7 +608,7 @@
     "Pulse Laser": {
       "es": "Láser de Pulso",
       "pt": "Laser de Pulso",
-      "de": "Impulslaser",
+      "de": "Pulslaser",
       "fr": "Laser à Impulsion",
       "ru": "Импульсный лазер",
       "pl": "Pulse Laser"
@@ -632,7 +632,7 @@
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
       "pt": "Controlador de Drone Transferidor de Combustível",
-      "de": "Treibstofftransfer-Drohnensteuerung",
+      "de": "Treibstoffdrohnensteuerung",
       "fr": "Contrôleur de drone de ravitaillement",
       "ru": "Контроллер дронов заправщиков",
       "pl": "Fuel Transfer Limpet Controller"
@@ -648,7 +648,7 @@
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
       "pt": "Controlador de Drone Quebra-Escotilha",
-      "de": "Steuerung Ladelukenöffner-Drohne",
+      "de": "Ladelukenbrecherdrohnensteuerung",
       "fr": "Perce-Soute",
       "ru": "Контроллер дронов взломщиков",
       "pl": "Hatch Breaker Limpet Controller"
@@ -664,7 +664,7 @@
     "Torpedo Pylon": {
       "es": "Lanzatorpedos",
       "pt": "Pilone de Torpedo",
-      "de": "Torpedopylon",
+      "de": "Torpedopylone",
       "fr": "Torpilles",
       "ru": "Торпедная стойка",
       "pl": "Torpedo Pylon"
@@ -672,7 +672,7 @@
     "Collector Limpet Controller": {
       "es": "Lanzador Dron Colector",
       "pt": "Controlador de Drone Coletor",
-      "de": "Steuerung Sammeldrohne",
+      "de": "Sammeldrohnensteuerung",
       "fr": "Controleur de drône collecteur",
       "ru": "Контроллер дронов сборщиков",
       "pl": "Collector Limpet Controller"
@@ -680,7 +680,7 @@
     "Shield Cell Bank": {
       "es": "Células de Escudo",
       "pt": "Banco de Célula de Escudo",
-      "de": "Schildzellenbank",
+      "de": "Schildzellenbatterie",
       "fr": "Cellules d'énergie",
       "ru": "Щитонакопитель",
       "pl": "Shield Cell Bank"
@@ -768,7 +768,7 @@
     "Basic Conductors": {
       "es": "Conductores Básicos",
       "pt": "Condutores básicos",
-      "de": "Einfache Leiter",
+      "de": "Simple Leiter",
       "fr": "conducteurs simples",
       "ru": "Простые проводники",
       "pl": "Basic Conductors"
@@ -848,7 +848,7 @@
     "Classified Scan Databanks": {
       "es": "Datos de Escáner Clasificados",
       "pt": "Banco de Dados de Escaneamento Confidenciais",
-      "de": "Scan-Datenbanken unter Verschluss",
+      "de": "Klassifizierte Scan-Datenbanken",
       "fr": "Banques de données d'analyse classifiées",
       "ru": "Засекреченные базы данных сканирования",
       "pl": "Classified Scan Databanks"
@@ -856,7 +856,7 @@
     "Classified Scan Fragment": {
       "es": "Fragmento de Escáner Clasificado",
       "pt": "Fragmento de Escaneamento Confidenciais",
-      "de": "Geheimes Scan Fragment",
+      "de": "Klassifiziertes Scan-Fragment",
       "fr": "Données d'analyse classifiées parcellaires",
       "ru": "Засекреченные фрагменты данных сканирования",
       "pl": "Classified Scan Fragment"
@@ -872,7 +872,7 @@
     "Compact Composites": {
       "es": "Compuestos Compactos",
       "pt": "Compostos compactos",
-      "de": "Kompakt-Komposit",
+      "de": "Kompakte-Komposite",
       "fr": "Composites compacts",
       "ru": "Спрессованные композиты",
       "pl": "Compact Composites"
@@ -1328,7 +1328,7 @@
     "Nanobreakers": {
       "es": "Nanorrompedores",
       "pt": "Nanodisjuntores",
-      "de": "Nanozertrümmerer",
+      "de": "Nanosicherungen",
       "fr": "Nanodestructeurs",
       "ru": "Нанопрерыватели",
       "pl": "Nanobreakers"
@@ -1352,7 +1352,7 @@
     "Niobium": {
       "es": "Niobio",
       "pt": "Nióbio",
-      "de": "Niobium",
+      "de": "Niob",
       "fr": "Niobium",
       "ru": "Ниобий",
       "pl": "Niobium"
@@ -1416,7 +1416,7 @@
     "Peculiar Shield Frequency Data": {
       "es": "Datos de Frecuencias de Escudo Peculiares",
       "pt": "Dados da Frequência de Escudos Peculiares",
-      "de": "Verdächtige Schildfrequenz-Daten",
+      "de": "Eigenartige Schildfrequenz-Daten",
       "fr": "Données de Fréquences de bouclier Singulières",
       "ru": "Специфические данные о частоте щитов",
       "pl": "Peculiar Shield Frequency Data"
@@ -1792,7 +1792,7 @@
     "Hull": {
       "es": "Casco",
       "pt": "Casco",
-      "de": "Rumpfhülle",
+      "de": "Rumpf",
       "fr": "Coque",
       "ru": "Корпус",
       "pl": "Hull"
@@ -2936,7 +2936,7 @@
     "Apply": {
       "es": null,
       "pt": "Aplicar",
-      "de": "anwenden",
+      "de": "Anwenden",
       "fr": "Appliquer",
       "ru": "Применить",
       "pl": "Zastosuj"
@@ -3008,7 +3008,7 @@
     "Multiple Blueprints Ready": {
       "es": null,
       "pt": "Múltiplos Diagramas Prontos",
-      "de": "verschiedene Baupläne fertig",
+      "de": "verschiedene Baupläne bereit",
       "fr": "Multiple Plans de Fabrications Disponibles",
       "ru": "Готово несколько чертежей",
       "pl": "Wiele schematów gotowych do stworzenia"
@@ -3424,7 +3424,7 @@
     "Raw": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Roh",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3432,7 +3432,7 @@
     "Raw Only": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Nur roh",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3440,7 +3440,7 @@
     "Manufactured": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hergestellt",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3448,7 +3448,7 @@
     "Manufactured Only": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Nur hergestellt",
       "fr": null,
       "ru": null,
       "pl": null
