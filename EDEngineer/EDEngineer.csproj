@@ -158,6 +158,7 @@
     <Compile Include="Converters\IntToEnabledConverter.cs" />
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
+    <Compile Include="Converters\SubkindToIcon.cs" />
     <Compile Include="Converters\ThresholdToBackgroundColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
     <Compile Include="Utils\System\PostponeScheduler.cs" />
@@ -317,6 +318,8 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\manufactured.png" />
+    <Resource Include="Resources\Images\raw.png" />
     <None Include="Resources\menu-silent-launch.ico" />
     <None Include="Resources\menu-shortcut.ico" />
     <None Include="Resources\menu-reset-position.ico" />

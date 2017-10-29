@@ -130,14 +130,30 @@ namespace EDEngineer.Localization
                 return parameter;
             }
 
-            var lang = value as LanguageInfo;
-            
-            if (lang == null)
+            if (value == null)
             {
                 return null;
             }
 
-            var text = parameter.ToString();
+            LanguageInfo lang;
+            string text;
+
+            if (parameter == null)
+            {
+                lang = currentLanguage;
+                text = value.ToString();
+            }
+            else
+            {
+                lang = value as LanguageInfo;
+
+                if (lang == null)
+                {
+                    return null;
+                }
+
+                text = parameter.ToString();
+            }
 
 #if DEBUG
             /*if (!Translations.ContainsKey(text) && text != "Konnga Ale" && text != "Lavian Brandy" && text != "Xihe Companions" && text != "Fujin Tea" && text != "Kamitra Cigars" && text != "Painite" && text != "Gold" && text != "Landmines" && text != "Meta-alloys" && text != "Soontill Relics")

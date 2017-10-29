@@ -35,6 +35,7 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
@@ -43,8 +44,13 @@
                                     BorderBrush="Black"
                                     Grid.Row="1"
                                     Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
+                            <TextBlock FontWeight="Bold"
+                                       Text="{Binding DataContext.Value.Data.Subkind, Converter={x:Static localization:Languages.Instance}}"
+                                       Visibility="{Binding DataContext.Value.Data.Subkind, Converter={StaticResource NullableToVisibility}}"
+                                       Grid.Row="2">
+                            </TextBlock>
                             <ItemsControl ItemsSource="{Binding DataContext.Value.Data.OriginDetails}"
-                                          Grid.Row="2">
+                                          Grid.Row="3">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <TextBlock>
@@ -52,7 +58,7 @@
                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Mission rewards">
                                                     <Binding Path=""/>
                                                     <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                                 </MultiBinding>
                                             </TextBlock.Text></TextBlock>
                                     </DataTemplate>
@@ -93,6 +99,14 @@
                                     </MultiBinding>
                                 </TextBlock.Text>
                             </TextBlock>
+                            <Image Source="{Binding Value.Data.Subkind, Converter={StaticResource SubkindToIcon}}"
+                                   HorizontalAlignment="Left"
+                                   Width="20"
+                                   Height="20"
+                                   Margin="3,0,3,0"
+                                   RenderOptions.BitmapScalingMode="HighQuality"
+                                   Visibility="{Binding DataContext.ShowOriginIcons, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource BooleanToVisibility}}"
+                                   VerticalAlignment="Center" />
                         </StackPanel>
 
                         <Grid HorizontalAlignment="Right">

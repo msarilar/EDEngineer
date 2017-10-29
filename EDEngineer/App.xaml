@@ -47,8 +47,9 @@
             <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
             <SolidColorBrush x:Key="ThresholdReachedBrush" Color="{StaticResource ThresholdReached}"/>
             <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"/>
-            
+
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
+            <converters:SubkindToIcon x:Key="SubkindToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
             <converters:IngredientToVisibilityConverter x:Key="IngredientToVisibility" />
             <converters:FilterToLabelConverter x:Key="FilterToLabel" />
