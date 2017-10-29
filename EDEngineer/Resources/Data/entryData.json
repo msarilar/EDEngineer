@@ -39,6 +39,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "antimony",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -46,6 +47,7 @@
     "Rarity": "Standard",
     "FormattedName": "arsenic",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining", "Mission reward" ]
   },
   {
@@ -95,6 +97,7 @@
     "Rarity": "Rare",
     "FormattedName": "cadmium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining" ]
   },
   {
@@ -102,6 +105,7 @@
     "Rarity": "VeryCommon",
     "FormattedName": "carbon",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
   },
   {
@@ -137,6 +141,7 @@
     "Rarity": "Common",
     "FormattedName": "chromium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining (ice rings)" ]
   },
   {
@@ -333,6 +338,7 @@
     "Rarity": "Common",
     "FormattedName": "germanium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ]
   },
   {
@@ -452,6 +458,7 @@
     "Rarity": "VeryCommon",
     "FormattedName": "iron",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
   },
   {
@@ -473,6 +480,7 @@
     "Rarity": "Common",
     "FormattedName": "manganese",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ]
   },
   {
@@ -501,6 +509,7 @@
     "Rarity": "Rare",
     "FormattedName": "mercury",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -550,6 +559,7 @@
     "Rarity": "Rare",
     "FormattedName": "molybdenum",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ]
   },
   {
@@ -571,6 +581,7 @@
     "Rarity": "VeryCommon",
     "FormattedName": "nickel",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
   },
   {
@@ -578,6 +589,7 @@
     "Rarity": "Standard",
     "FormattedName": "niobium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ]
   },
   {
@@ -655,6 +667,7 @@
     "Rarity": "VeryCommon",
     "FormattedName": "phosphorus",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
   },
   {
@@ -669,6 +682,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "polonium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ]
   },
   {
@@ -760,6 +774,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "ruthenium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -788,6 +803,7 @@
     "Rarity": "Standard",
     "FormattedName": "selenium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ]
   },
   {
@@ -823,6 +839,7 @@
     "Rarity": "VeryCommon",
     "FormattedName": "sulphur",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
   },
   {
@@ -837,6 +854,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "technetium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -844,6 +862,7 @@
     "Rarity": "VeryRare",
     "FormattedName": "tellurium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -865,6 +884,7 @@
     "Rarity": "Rare",
     "FormattedName": "tin",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -872,6 +892,7 @@
     "Rarity": "Standard",
     "FormattedName": "tungsten",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -907,6 +928,7 @@
     "Rarity": "Common",
     "FormattedName": "vanadium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining (ice rings)" ]
   },
   {
@@ -921,6 +943,7 @@
     "Rarity": "Rare",
     "FormattedName": "yttrium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -928,6 +951,7 @@
     "Rarity": "Common",
     "FormattedName": "zinc",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting" ]
   },
   {
@@ -935,6 +959,7 @@
     "Rarity": "Standard",
     "FormattedName": "zirconium",
     "Kind": "Material",
+    "SubKind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining" ]
   },
   {
