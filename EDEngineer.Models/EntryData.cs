@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -23,10 +24,37 @@ namespace EDEngineer.Models
         public List<string> OriginDetails { get; set; }
 
         [JsonIgnore]
-        public IEnumerable<Origin> Origins => OriginDetails?.Select(detail => originMapping[detail]).Distinct() ?? new [] { Origin.Unknown };
+        public IEnumerable<Origin> Origins => OriginDetails?.Select(detail =>
+                originMapping.ContainsKey(detail) ? originMapping[detail] : GuessOrigin(detail))
+            .Distinct() ?? new [] { Origin.Unknown };
 
         [JsonIgnore]
         public bool Unused { get; set; }
+
+        private static Origin GuessOrigin(string text)
+        {
+            if (text.Contains("Markets"))
+            {
+                return Origin.Market;
+            }
+
+            if (text.Contains("Needed for"))
+            {
+                return Origin.NeededForEngineer;
+            }
+
+            if (text.Contains("Signal source"))
+            {
+                return Origin.Scan;
+            }
+
+            if (text.Contains("Mining"))
+            {
+                return Origin.Mining;
+            }
+
+            throw new InvalidOperationException($"Impossible to guess origin {text}");
+        }
 
         private static readonly Dictionary<string, Origin> originMapping = new Dictionary<string, Origin>()
         {
@@ -80,7 +108,7 @@ namespace EDEngineer.Models
             ["Needed for Professor Palin (25)"] = Origin.NeededForEngineer,
             ["Needed for Tiana Fortune (50)"] = Origin.NeededForEngineer,
             ["Needed for The Sarge (50)"] = Origin.NeededForEngineer,
-            ["Needed for Bill Turner (50)"] = Origin.NeededForEngineer,
+            ["Needed for Bill Turner (50)"] = Origin.NeededForEngineer
         };
     }
 }

@@ -87,7 +87,8 @@ namespace EDEngineer.Views
                                          {
                                              if (e.PropertyName == "ShowOnlyForFavorites" ||
                                                  e.PropertyName == "ShowZeroes" ||
-                                                 e.PropertyName == "CurrentCommander")
+                                                 e.PropertyName == "CurrentCommander" ||
+                                                 e.PropertyName == "MaterialSubkindFilter")
                                              {
                                                  RefreshCargoSources();
                                              }
@@ -562,6 +563,27 @@ namespace EDEngineer.Views
         private void UnhighlightButtonClicked(object sender, RoutedEventArgs e)
         {
             viewModel.CurrentCommander.Value.HighlightedEntryData.ToList().ForEach(entry => viewModel.ToggleHighlight(entry));
+        }
+
+        private void MaterialSubkindFilterChecked(object sender, RoutedEventArgs e)
+        {
+            if (viewModel == null)
+            {
+                return;
+            }
+
+            if (ShowAllMaterialsRadioButton.IsChecked == true)
+            {
+                viewModel.MaterialSubkindFilter = null;
+            }
+            else if (ShowOnlyManufacturedMaterialsButton.IsChecked == true)
+            {
+                viewModel.MaterialSubkindFilter = Subkind.Manufactured;
+            }
+            else if (ShowOnlyRawMaterialsRadioButton.IsChecked == true)
+            {
+                viewModel.MaterialSubkindFilter = Subkind.Raw;
+            }
         }
     }
 }

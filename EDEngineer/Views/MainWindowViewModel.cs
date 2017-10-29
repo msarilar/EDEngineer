@@ -133,6 +133,7 @@ namespace EDEngineer.Views
         private bool showZeroes = true;
         private bool showOnlyForFavorites;
         private bool showOriginIcons = true;
+        private Subkind? materialSubkindFilter = null;
 
         private KeyValuePair<string, CommanderViewModel> currentCommander;
         private string currentComparer;
@@ -143,6 +144,16 @@ namespace EDEngineer.Views
             set
             {
                 showZeroes = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public Subkind? MaterialSubkindFilter
+        {
+            get { return materialSubkindFilter; }
+            set
+            {
+                materialSubkindFilter = value;
                 OnPropertyChanged();
             }
         }

@@ -103,7 +103,7 @@
                                    HorizontalAlignment="Left"
                                    Width="20"
                                    Height="20"
-                                   Margin="3,0,3,0"
+                                   Margin="5,0,3,0"
                                    RenderOptions.BitmapScalingMode="HighQuality"
                                    Visibility="{Binding DataContext.ShowOriginIcons, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource BooleanToVisibility}}"
                                    VerticalAlignment="Center" />
@@ -461,18 +461,56 @@
                             </Grid>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
-                    <ScrollViewer>
-                        <ItemsControl Background="Transparent"
-                                          x:Name="Materials"
-                                          ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
-                                          ItemTemplate="{StaticResource EntryTemplate}">
-                            <ItemsControl.ItemContainerStyle>
-                                <Style>
-                                    <Setter Property="FrameworkElement.Margin" Value="3" />
-                                </Style>
-                            </ItemsControl.ItemContainerStyle>
-                        </ItemsControl>
-                    </ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <ScrollViewer Grid.Row="0">
+                            <ItemsControl Background="Transparent"
+                                              x:Name="Materials"
+                                              ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
+                                              ItemTemplate="{StaticResource EntryTemplate}">
+                                <ItemsControl.ItemContainerStyle>
+                                    <Style>
+                                        <Setter Property="FrameworkElement.Margin" Value="3" />
+                                    </Style>
+                                </ItemsControl.ItemContainerStyle>
+                            </ItemsControl>
+                        </ScrollViewer>
+                        <StackPanel Grid.Row="1"
+                                    Orientation="Horizontal"
+                                    HorizontalAlignment="Center">
+                            <RadioButton Margin="10,6,10,6"
+                                         Foreground="{StaticResource EliteOrangeBrush}"
+                                         Background="Transparent"
+                                         IsChecked="True"
+                                         x:Name="ShowAllMaterialsRadioButton"
+                                         Checked="MaterialSubkindFilterChecked">
+                                <RadioButton.Content>
+                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='All'}"/>
+                                </RadioButton.Content>
+                            </RadioButton>
+                            <RadioButton Margin="10,6,10,6"
+                                         Foreground="{StaticResource EliteOrangeBrush}"
+                                         Background="Transparent"
+                                         x:Name="ShowOnlyRawMaterialsRadioButton"
+                                         Checked="MaterialSubkindFilterChecked">
+                                <RadioButton.Content>
+                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Raw Only'}"/>
+                                </RadioButton.Content>
+                            </RadioButton>
+                            <RadioButton Margin="10,6,10,6"
+                                         Foreground="{StaticResource EliteOrangeBrush}"
+                                         Background="Transparent"
+                                         x:Name="ShowOnlyManufacturedMaterialsButton"
+                                         Checked="MaterialSubkindFilterChecked">
+                                <RadioButton.Content>
+                                    <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Manufactured Only'}"/>
+                                </RadioButton.Content>
+                            </RadioButton>
+                        </StackPanel>
+                    </Grid>
                 </controls:MetroTabItem>
                 <controls:MetroTabItem Header="{Binding}"
                                        FontFamily="/Resources/Fonts/#Euro Caps"
