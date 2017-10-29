@@ -20,7 +20,7 @@ open EDEngineer.Models.Utils.Json
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv
-type cargoType = { Kind: string; Name: string; Count: int }
+type cargoType = { Kind: string; Name: string; Count: int; Threshold: Nullable<int> }
 type ShoppingListItem = {
     Blueprint:Object;
     Count:int;
@@ -82,7 +82,12 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                                                               | Some(Kind.Data)      -> e.Data.Kind = Kind.Data
                                                               | Some(Kind.Material)  -> e.Data.Kind = Kind.Material
                                                               | _                    -> true)
-                                                  |> Seq.map (fun e -> { Kind = e.Data.Kind.ToString(); Name = e.Data.Name; Count = e.Count })
+                                                  |> Seq.map (fun e -> { 
+                                                                          Kind = e.Data.Kind.ToString();
+                                                                          Name = e.Data.Name;
+                                                                          Count = e.Count;
+                                                                          Threshold = e.Threshold;
+                                                                        })
                                                   |> List.ofSeq
 
   let stateRoute = fun commander ->
