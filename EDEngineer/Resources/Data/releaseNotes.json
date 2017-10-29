@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.8.8",
+    "Content": "* Raw/Manufactured filters for materials\r\n* Cargo export in the API now includes your configured thresholds\r\n\r\n* Fixed for good the green checkmark and red cross icons in the shopping list\r\n\r\n* German localization update, thanks to @nepomuk16321\r\n* Russian localization update, thanks to @VChet!\r\n* French localization update, thanks to @fbrossar25!\r\n"
+  },
+  {
     "Version": "1.0.8.7",
     "Content": "* Added sorting by thresholds for your cargo (will show items in order of how their count is above of the configured thresholds for easier cleanup)\r\n* Stop hiding the window when opening a configuration popup dialog\r\n* Fixed a display issue with the shopping list when switching active commander\r\n* Added Signal Source to the list of origins for Atypical Encryption Archives\r\n\r\n* Portuguese translation update, thanks to @wesleymoura!\r\n* Missing french localization added, thanks to @fbrossar25 for the contribution!"
   },
