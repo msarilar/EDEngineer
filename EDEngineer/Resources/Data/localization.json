@@ -18,7 +18,7 @@
     "de": {
       "TwoLetterISOLanguageName": "de",
       "Name": "Deutsch",
-      "NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie es auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
+      "NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie sie auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
     },
     "fr": {
       "TwoLetterISOLanguageName": "fr",
@@ -648,7 +648,7 @@
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
       "pt": "Controlador de Drone Quebra-Escotilha",
-      "de": "Steuerung Ladelukenöffner-Drohne",
+      "de": "Steuereinheit Ladelukenöffner-Drohne",
       "fr": "Perce-Soute",
       "ru": "Контроллер дронов взломщиков",
       "pl": "Hatch Breaker Limpet Controller"
@@ -1840,7 +1840,7 @@
     "AFMU": {
       "es": "Unidad de Automantenimiento",
       "pt": "UMTS",
-      "de": "AFWE",
+      "de": "AFW",
       "fr": "MTA",
       "ru": "БАПР",
       "pl": "AFMU"
@@ -2936,7 +2936,7 @@
     "Apply": {
       "es": null,
       "pt": "Aplicar",
-      "de": "anwenden",
+      "de": "Anwenden",
       "fr": "Appliquer",
       "ru": "Применить",
       "pl": "Zastosuj"
@@ -3424,7 +3424,7 @@
     "Raw": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "roh",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3432,7 +3432,7 @@
     "Raw Only": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "nur roh",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3440,7 +3440,7 @@
     "Manufactured": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "hergestellt",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3448,7 +3448,7 @@
     "Manufactured Only": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "nur hergestellt",
       "fr": null,
       "ru": null,
       "pl": null
