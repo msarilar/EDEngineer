@@ -3423,7 +3423,7 @@
     },
     "Raw": {
       "es": null,
-      "pt": null,
+      "pt": "Bruto",
       "de": "roh",
       "fr": null,
       "ru": null,
@@ -3431,7 +3431,7 @@
     },
     "Raw Only": {
       "es": null,
-      "pt": null,
+      "pt": "Apenas Bruto",
       "de": "nur roh",
       "fr": null,
       "ru": null,
@@ -3439,7 +3439,7 @@
     },
     "Manufactured": {
       "es": null,
-      "pt": null,
+      "pt": "Fabricado",
       "de": "hergestellt",
       "fr": null,
       "ru": null,
@@ -3447,7 +3447,7 @@
     },
     "Manufactured Only": {
       "es": null,
-      "pt": null,
+      "pt": "Apenas Fabricado",
       "de": "nur hergestellt",
       "fr": null,
       "ru": null,
