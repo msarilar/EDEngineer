@@ -2297,7 +2297,7 @@
       "es": "Recompensa de misiones",
       "pt": "Recompensa da missão",
       "de": "Missions-Belohnungen",
-      "fr": "Récompence de mission",
+      "fr": "Récompense de mission",
       "ru": "Награда за миссию",
       "pl": "Nagroda za ukończenie misji"
     },
@@ -3129,7 +3129,7 @@
       "es": null,
       "pt": "Scanner leve",
       "de": "Leichter Scanner",
-      "fr": "Scanner Lèger",
+      "fr": "Scanner Léger",
       "ru": "Облегченный сканер",
       "pl": "Light Weight Scanner"
     },
@@ -3425,7 +3425,7 @@
       "es": null,
       "pt": "Bruto",
       "de": "roh",
-      "fr": null,
+      "fr": "À l'état brut",
       "ru": null,
       "pl": null
     },
@@ -3433,7 +3433,7 @@
       "es": null,
       "pt": "Apenas Bruto",
       "de": "nur roh",
-      "fr": null,
+      "fr": "Uniquement à l'état brut",
       "ru": null,
       "pl": null
     },
@@ -3441,7 +3441,7 @@
       "es": null,
       "pt": "Fabricado",
       "de": "hergestellt",
-      "fr": null,
+      "fr": "Manufacturé(s)",
       "ru": null,
       "pl": null
     },
@@ -3449,7 +3449,7 @@
       "es": null,
       "pt": "Apenas Fabricado",
       "de": "nur hergestellt",
-      "fr": null,
+      "fr": "Uniquement manufacturé(s)",
       "ru": null,
       "pl": null
     }
