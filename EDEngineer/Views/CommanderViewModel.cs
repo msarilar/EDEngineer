@@ -28,14 +28,14 @@ namespace EDEngineer.Views
         public BlueprintFilters Filters { get; private set; }
         public ObservableCollection<Entry> HighlightedEntryData { get; } = new ObservableCollection<Entry>();
 
-        public ShoppingListViewModel ShoppingList => shoppingList;
+        public ShoppingList ShoppingList => shoppingList;
 
         private readonly JournalEntryConverter journalEntryConverter;
         private readonly BlueprintConverter blueprintConverter;
 
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
-        private ShoppingListViewModel shoppingList;
+        private ShoppingList shoppingList;
         private readonly CommanderNotifications commanderNotifications;
 
         public Instant LastUpdate
@@ -299,7 +299,7 @@ namespace EDEngineer.Views
 
             Filters = new BlueprintFilters(languages, State.Blueprints);
 
-            shoppingList = new ShoppingListViewModel(State.Blueprints, languages);
+            shoppingList = new ShoppingList(State.Blueprints, languages);
         }
 
 

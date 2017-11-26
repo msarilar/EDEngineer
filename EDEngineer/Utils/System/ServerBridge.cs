@@ -60,7 +60,7 @@ namespace EDEngineer.Utils.System
                     port,
                     viewModel.Languages,
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State),
-                    () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList.Composition));
+                    () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList));
             }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default);
 
             Running = true;

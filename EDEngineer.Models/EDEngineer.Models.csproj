@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EDEngineer.Models</RootNamespace>
     <AssemblyName>EDEngineer.Models</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,6 +54,7 @@
     <Compile Include="Filters\KindFilter.cs" />
     <Compile Include="Filters\RarityFilter.cs" />
     <Compile Include="Operations\DumpOperation.cs" />
+    <Compile Include="ShoppingList.cs" />
     <Compile Include="Subkind.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
     <Compile Include="Utils\Json\LocalizedContractResolver.cs" />

@@ -26,6 +26,11 @@ type ShoppingListItem = {
     Count:int;
 }
 
+type SimpleIngredient = {
+    Name: string;
+    Size: int;
+}
+
 let inline (|?) (a) b = if a = null then b else a  
 
 type Cmdr<'TGood, 'TBad> = 
@@ -53,7 +58,11 @@ type CmdrBuilder() =
 
 let cmdr = CmdrBuilder()
 
-let start (token, port, translator:ILanguage, state:Func<IDictionary<string, State>>, shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>) =
+let start (token,
+           port,
+           translator:ILanguage,
+           state:Func<IDictionary<string, State>>,
+           shopppingLists:Func<IDictionary<string, ShoppingList>>) =
   
   let corsConfig = { defaultCORSConfig with allowedUris = InclusiveOption.Some [ "http://localhost:" + (port |> string) ] }
   let JsonConfig = fun lang -> 
@@ -69,6 +78,12 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
     
   let ingredients = fun (state:State) -> state.Cargo
                                          |> Seq.map (fun d -> d.Value.Data)
+
+  let toSimpleIngredient = fun(ingredient:BlueprintIngredient) -> 
+    {
+      Name = ingredient.Entry.Data.Name;
+      Size = ingredient.Size;
+    }
 
   let blueprints = fun (state:State) -> state.Blueprints
 
@@ -224,16 +239,25 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                 return ((s, Some(Kind.Commodity)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
+        pathScan "/%s/shopping-list-ingredients%s" (fun (commander, format) -> 
+          (request(fun request ->
+            cmdr {
+                let! s = shoppingListRoute commander
+                let! f = FormatExtractor request format
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return (s |> Seq.collect (fun b -> b.Ingredients) |> Seq.map toSimpleIngredient, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
+
         pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
-          let toShoppingListItem (i:Tuple<Blueprint, int>) =
-            { Blueprint = i.Item1.ToSerializable(); Count = i.Item2 }
+          let toShoppingListItem ((blueprint, count): Blueprint * int) =
+            { Blueprint = blueprint.ToSerializable(); Count = count }
 
           (request(fun request ->
             cmdr {
                 let! s = shoppingListRoute commander
                 let! f = FormatExtractor request format
                 let! l = LanguageExtractor <| request.queryParam "lang"
-                return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+                return (s.Composition |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         pathScan "/%s/operations%s" (fun (commander, format) ->

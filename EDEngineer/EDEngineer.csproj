@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EDEngineer</RootNamespace>
     <AssemblyName>EDEngineer</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
@@ -71,7 +71,7 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>DC573713030330AA40E459D43902F1E0979E989F</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>F9A332F199D68CB66B8DA30E1536ABC05C0ADF37</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>EDEngineer_TemporaryKey.pfx</ManifestKeyFile>
@@ -205,7 +205,6 @@
     <Compile Include="Views\Popups\SelectLanguageWindow.xaml.cs">
       <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\StringExtensions.cs" />
     <Compile Include="Utils\System\IOUtils.cs" />
@@ -286,6 +285,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="EDEngineer_TemporaryKey.pfx" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
