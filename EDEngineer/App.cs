@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using Squirrel;
 
@@ -11,10 +12,7 @@ namespace EDEngineer
     {
         public App()
         {
-            using (var mgr = new UpdateManager("https://raw.githubusercontent.com/msarilar/EDEngineer/side-work/EDEngineer/releases/"))
-            {
-                mgr.UpdateApp().Wait();
-            }
+            CheckForUpdates();
 
             AppDomain.CurrentDomain.UnhandledException += (o, e) =>
             {
@@ -32,6 +30,14 @@ namespace EDEngineer
                 new Views.Popups.ErrorWindow(e.Exception).ShowDialog();
                 Current.MainWindow?.Close();
             };
+        }
+
+        public static async Task CheckForUpdates()
+        {
+            using (var mgr = await UpdateManager.GitHubUpdateManager("https://github.com/msarilar/EDEngineer"))
+            {
+                await mgr.UpdateApp();
+            }
         }
     }
 }
