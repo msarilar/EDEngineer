@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using Squirrel;
 
 namespace EDEngineer
 {
@@ -10,6 +11,11 @@ namespace EDEngineer
     {
         public App()
         {
+            using (var mgr = new UpdateManager(""))
+            {
+                mgr.UpdateApp().Wait();
+            }
+
             AppDomain.CurrentDomain.UnhandledException += (o, e) =>
             {
                 if (Current.MainWindow != null)
