@@ -11,7 +11,7 @@ namespace EDEngineer
     {
         public App()
         {
-            using (var mgr = new UpdateManager(""))
+            using (var mgr = new UpdateManager("https://raw.githubusercontent.com/msarilar/EDEngineer/side-work/EDEngineer/releases/"))
             {
                 mgr.UpdateApp().Wait();
             }
