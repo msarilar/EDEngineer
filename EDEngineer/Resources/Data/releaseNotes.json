@@ -1,9 +1,5 @@
 ﻿[
   {
-    "Version": "1.0.8.9",
-    "Content": "EDEngineer will now handle unkown log entries instead of showing the old popup. The unknown entries will appear in your material/data list.\r\n\r\nLocalization update, thanks a lot to these guys :\r\n* German: @KaiKiehl\r\n* Brazilian: @wesleymoura\r\n* French: @romainja"
-  },
-  {
     "Version": "1.0.8.8",
     "Content": "* Raw/Manufactured filters for materials\r\n* Cargo export in the API now includes your configured thresholds\r\n\r\n* Fixed for good the green checkmark and red cross icons in the shopping list\r\n\r\n* German localization update, thanks to @nepomuk16321\r\n* Russian localization update, thanks to @VChet!\r\n* French localization update, thanks to @fbrossar25!\r\n"
   },
