@@ -59,6 +59,7 @@
             <converters:IntOrNullConverter x:Key="IntOrNull" />
             <converters:IntegerToVisibilityConverterReversed x:Key="IntegerToVisibilityReversed" />
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+            <converters:KindToVisibility x:Key="KindToVisibility" />
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />

@@ -156,14 +156,8 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Raw"].Union(data["Manufactured"]).Union(data["Encoded"]))
             {
                 dynamic cc = jToken;
-                string materialName;
+                var materialName = converter.GetOrCreate((string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
-                
-                if (!converter.TryGet((string) cc.Name, out materialName))
-                {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name));
-                    continue;
-                }
 
                 var operation = new MaterialOperation()
                 {
@@ -191,14 +185,8 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Inventory"])
             {
                 dynamic cc = jToken;
-                string materialName;
+                var materialName = converter.GetOrCreate((string) cc.Name);
                 int? count = cc.Value ?? cc.Count;
-
-                if (!converter.TryGet((string) cc.Name, out materialName))
-                {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name));
-                    continue;
-                }
 
                 var operation = new MaterialOperation()
                 {
@@ -364,12 +352,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMaterialDiscarded(JObject data)
         {
-            string materialDiscardedName;
-            if (!converter.TryGet((string) data["Name"], out materialDiscardedName))
-            {
-                MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
-                return null;
-            }
+            var materialDiscardedName = converter.GetOrCreate((string)data["Name"]);
 
             if (((string) data["Category"]).ToLowerInvariant() == "encoded")
             {
@@ -399,14 +382,8 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Materials"])
             {
                 dynamic cc = jToken;
-                string synthesisIngredientName;
+                var synthesisIngredientName = converter.GetOrCreate((string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
-
-                if (!converter.TryGet((string) cc.Name, out synthesisIngredientName))
-                {
-                    MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), cc.Name));
-                    continue;
-                }
 
                 var entry = converter[synthesisIngredientName];
 
@@ -446,12 +423,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMaterialCollected(JObject data)
         {
-            string materialCollectedName;
-            if (!converter.TryGet((string) data["Name"], out materialCollectedName))
-            {
-                MessageBox.Show(string.Format(languages.Translate("Unknown material, please contact the author ! {0}"), (string)data["Name"]));
-                return null;
-            }
+            var materialCollectedName = converter.GetOrCreate((string)data["Name"]);
 
             if (((string) data["Category"]).ToLowerInvariant() == "encoded")
             {
