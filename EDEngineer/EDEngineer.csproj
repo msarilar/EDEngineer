@@ -71,10 +71,10 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>DC573713030330AA40E459D43902F1E0979E989F</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>BBCD1480DCA8061C2BF6F73B6102601933264C68</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>EDEngineer_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>EDEngineer_UpdatedKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -288,6 +288,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="EDEngineer_1_TemporaryKey.pfx" />
+    <None Include="EDEngineer_TemporaryKey.pfx" />
+    <None Include="EDEngineer_UpdatedKey.pfx" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
