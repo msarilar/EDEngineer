@@ -11,7 +11,7 @@ namespace EDEngineer.Converters
         {
             if (value == null)
             {
-                return "/Resources/Images/question-mark.png";
+                return null;
             }
 
             switch ((Rarity) value)

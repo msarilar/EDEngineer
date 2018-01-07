@@ -23,17 +23,6 @@ namespace EDEngineer.Utils
             "scrap"
         };
 
-        public string GetOrCreate(string key)
-        {
-            string value;
-            if (!TryGet(key, out value))
-            {
-                value = key;
-            }
-
-            return value;
-        }
-
         public bool TryGet(string key, out string name)
         {
             if (key == null)

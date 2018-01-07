@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using EDEngineer.Models.Utils.Json;
 
 namespace EDEngineer.Models.Operations
 {
@@ -29,13 +28,6 @@ namespace EDEngineer.Models.Operations
                 {
                     state.IncrementCargo(item.Key, -1 * currentValue);
                 }
-            }
-
-            var names = state.Cargo.Keys.ToHashSet();
-
-            foreach (var item in DumpOperations.Where(op => !names.Contains(op.MaterialName)))
-            {
-                state.IncrementCargo(item.MaterialName, item.Size);
             }
         }
     }

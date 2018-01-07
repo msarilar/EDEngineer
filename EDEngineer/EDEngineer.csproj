@@ -71,10 +71,10 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>3BB896CFA18887724A688FFD02B344A556C13991</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>DC573713030330AA40E459D43902F1E0979E989F</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>EDEngineer_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>EDEngineer_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -156,7 +156,6 @@
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
     <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Converters\IntToEnabledConverter.cs" />
-    <Compile Include="Converters\KindToVisibility.cs" />
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
     <Compile Include="Converters\SubkindToIcon.cs" />
@@ -287,7 +286,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="EDEngineer_1_TemporaryKey.pfx" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -320,7 +318,6 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\question-mark.png" />
     <Resource Include="Resources\Images\manufactured.png" />
     <Resource Include="Resources\Images\raw.png" />
     <None Include="Resources\menu-silent-launch.ico" />

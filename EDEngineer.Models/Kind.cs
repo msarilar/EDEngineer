@@ -11,9 +11,6 @@ namespace EDEngineer.Models
         Data,
 
         [Description("Commodity")]
-        Commodity,
-
-        [Description("Unknown")]
-        Unknown
+        Commodity
     }
 }

@@ -3452,14 +3452,6 @@
       "fr": "Uniquement manufacturé(s)",
       "ru": null,
       "pl": null
-    },
-    "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
-      "es": null,
-      "pt": null,
-      "de": null,
-      "fr": null,
-      "ru": null,
-      "pl": null
-    } 
+    }
   }
 }

@@ -157,7 +157,7 @@ namespace EDEngineer.Views
             {
                 var entry = ((KeyValuePair<string, Entry>)e.Item).Value;
 
-                e.Accepted = (entry.Data.Kind == kind || entry.Data.Kind == Kind.Unknown) &&
+                e.Accepted = entry.Data.Kind == kind &&
                        (parentViewModel.MaterialSubkindFilter == null || entry.Data.Kind == Kind.Data || parentViewModel.MaterialSubkindFilter == entry.Data.Subkind) &&
                        (parentViewModel.ShowZeroes || entry.Count != 0) &&
                        (!parentViewModel.ShowOnlyForFavorites || favoritedBlueprints.Any(b => b.Ingredients.Any(i => i.Entry == entry)));
