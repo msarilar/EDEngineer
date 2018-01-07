@@ -36,21 +36,26 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
+                                       Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
+                                       Visibility="{Binding DataContext.Value.Data.Kind, Converter={StaticResource KindToVisibility}}"/>
+                            <TextBlock FontWeight="Bold"
+                                       Grid.Row="1"
                                        Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
                                        Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
                             <Border BorderThickness="1"
                                     BorderBrush="Black"
-                                    Grid.Row="1"
+                                    Grid.Row="2"
                                     Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding DataContext.Value.Data.Subkind, Converter={x:Static localization:Languages.Instance}}"
                                        Visibility="{Binding DataContext.Value.Data.Subkind, Converter={StaticResource NullableToVisibility}}"
-                                       Grid.Row="2">
+                                       Grid.Row="3">
                             </TextBlock>
                             <ItemsControl ItemsSource="{Binding DataContext.Value.Data.OriginDetails}"
-                                          Grid.Row="3">
+                                          Grid.Row="4">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <TextBlock>

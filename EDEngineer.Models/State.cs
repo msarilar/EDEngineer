@@ -113,6 +113,16 @@ namespace EDEngineer.Models
         {
             lock (stateLock)
             {
+                if (!Cargo.ContainsKey(name))
+                {
+                    Cargo[name] = new Entry(new EntryData
+                    {
+                        FormattedName = name,
+                        Kind = Kind.Unknown,
+                        Name = name,
+                        Unused = true
+                    });
+                }
                 Cargo.Increment(name, change);
             }
 

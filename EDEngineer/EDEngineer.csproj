@@ -156,6 +156,7 @@
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
     <Compile Include="Converters\IntOrNullConverter.cs" />
     <Compile Include="Converters\IntToEnabledConverter.cs" />
+    <Compile Include="Converters\KindToVisibility.cs" />
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
     <Compile Include="Converters\SubkindToIcon.cs" />
@@ -286,6 +287,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="EDEngineer_1_TemporaryKey.pfx" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -318,6 +320,7 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\question-mark.png" />
     <Resource Include="Resources\Images\manufactured.png" />
     <Resource Include="Resources\Images\raw.png" />
     <None Include="Resources\menu-silent-launch.ico" />
