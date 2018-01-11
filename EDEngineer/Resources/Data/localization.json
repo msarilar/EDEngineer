@@ -2850,7 +2850,7 @@
       "pt": "Mostrar informação sobre recursos?",
       "de": "Informationen über Ressourcen anzeigen?",
       "fr": "Afficher les informations sur les ressources ?",
-      "ru": "Показать информацию о ресурсах?",
+      "ru": "Показывать информацию о ресурсах?",
       "pl": "Pokaż dodatkowe informacje o komponentach"
     },
     "Count": {
@@ -3226,7 +3226,7 @@
       "pt": "Dados de voo da nave",
       "de": "Schiff-Flug-Daten",
       "fr": "Donnée de Vol",
-      "ru": null,
+      "ru": "Данные полетов корабля",
       "pl": null
     },
     "Ship System Data": {
@@ -3234,7 +3234,7 @@
       "pt": "Dados do sistema da nave",
       "de": "Schiff-System-Daten",
       "fr": "Données de Système de Navigation",
-      "ru": null,
+      "ru": "Данные системы корабля",
       "pl": null
     },
     "Wreckage Components": {
@@ -3242,7 +3242,7 @@
       "pt": "Destroços de componentes",
       "de": "Wrackteile",
       "fr": "Composants d'Épave",
-      "ru": null,
+      "ru": "Компоненты обломков",
       "pl": null
     },
     "Weapon Parts": {
@@ -3250,7 +3250,7 @@
       "pt": "Partes de armas",
       "de": "Waffenteile",
       "fr": "Éléments d'Arme",
-      "ru": null,
+      "ru": "Части оружия",
       "pl": null
     },
     "Bio-Mechanical Conduits": {
@@ -3258,7 +3258,7 @@
       "pt": "Condutores bio-mecânicos",
       "de": "Bio-mechanische Leitungen",
       "fr": "Conducteurs Bio-Mécanique",
-      "ru": null,
+      "ru": "Биомеханические проводники",
       "pl": null
     },
     "Propulsion Elements": {
@@ -3266,7 +3266,7 @@
       "pt": "Elementos de propulsão",
       "de": "Antriebselemente",
       "fr": "Elements de Propulsion",
-      "ru": null,
+      "ru": "Пропульсивные элементы",
       "pl": null
     },
     "Settings": {
@@ -3426,7 +3426,7 @@
       "pt": "Bruto",
       "de": "roh",
       "fr": "À l'état brut",
-      "ru": null,
+      "ru": "Сырье",
       "pl": null
     },
     "Raw Only": {
@@ -3434,7 +3434,7 @@
       "pt": "Apenas Bruto",
       "de": "nur roh",
       "fr": "Uniquement à l'état brut",
-      "ru": null,
+      "ru": "Только сырье",
       "pl": null
     },
     "Manufactured": {
@@ -3442,7 +3442,7 @@
       "pt": "Fabricado",
       "de": "hergestellt",
       "fr": "Manufacturé(s)",
-      "ru": null,
+      "ru": "Промышленный",
       "pl": null
     },
     "Manufactured Only": {
@@ -3450,7 +3450,7 @@
       "pt": "Apenas Fabricado",
       "de": "nur hergestellt",
       "fr": "Uniquement manufacturé(s)",
-      "ru": null,
+      "ru": "Только промышленный",
       "pl": null
     },
     "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
@@ -3458,7 +3458,7 @@
       "pt": "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null
     } 
   }
