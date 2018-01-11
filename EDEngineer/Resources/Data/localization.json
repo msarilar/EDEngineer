@@ -943,7 +943,7 @@
     },
     "Datamined Wake Exceptions": {
       "es": "Excepciones en Análisis de Estelas",
-      "pt": "Esceções de Dados Processados de Rastros",
+      "pt": "Exceções de Dados Processados de Rastros",
       "de": "FSA-Daten-Cache-Ausnahmen",
       "fr": "Exploration de données de sillage anormales",
       "ru": "Искл. из глубинного анализа данных следа",
@@ -1007,7 +1007,7 @@
     },
     "Exceptional Scrambled Emission Data": {
       "es": "Datos de Transmisiones Codificadas Excepcionales",
-      "pt": "Exceções de Dados Processados de Rastros",
+      "pt": "Exceções nos Dados de Emissão Embaralhados",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
       "fr": "Données d'émissions brouillées exceptionnelles",
       "ru": "Исключительные зашифрованные данные об изл.",
@@ -3455,7 +3455,7 @@
     },
     "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
       "es": null,
-      "pt": null,
+      "pt": "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
       "de": null,
       "fr": null,
       "ru": null,
