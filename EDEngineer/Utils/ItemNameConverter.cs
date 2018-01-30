@@ -20,7 +20,8 @@ namespace EDEngineer.Utils
         private HashSet<string> IgnoreList { get; } = new HashSet<string>()
         {
             "polymers",
-            "scrap"
+            "scrap",
+            "wreckagecomponents"
         };
 
         public string GetOrCreate(string key)

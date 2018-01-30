@@ -309,7 +309,7 @@
             <!-- CARGO FILTERS -->
 
             <Grid Grid.Row="0"
-                  Height="28"
+                  Height="31"
                   Visibility="{Binding CurrentCommander.Value.HighlightedEntryData.Count, Converter={StaticResource IntegerToVisibilityReversed}, Mode=OneWay}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
