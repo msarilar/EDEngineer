@@ -3030,7 +3030,7 @@
       "pl": "Sensors"
     },
     "Surface Scanner": {
-      "es": "Escáner de Superficie,
+      "es": "Escáner de Superficie",
       "pt": "Scanners de superfície",
       "de": "Oberflächen-Scanner",
       "fr": "Scanner de Surface",
@@ -3460,6 +3460,6 @@
       "fr": null,
       "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null
-    } 
+    }
   }
 }
