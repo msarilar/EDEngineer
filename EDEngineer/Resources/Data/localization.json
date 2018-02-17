@@ -2878,7 +2878,7 @@
       "pl": "Thargoid Wake Data"
     },
     "Check all filters": {
-      "es": null,
+      "es": "Marcar todos los filtros",
       "pt": "Marcar todos os filtros",
       "de": "Alle Filter anwählen",
       "fr": "Tous les filtres",
@@ -2886,7 +2886,7 @@
       "pl": "Zaznacz wszystkie filtry"
     },
     "Uncheck all filters": {
-      "es": null,
+      "es": "Descarmar todos los filtros",
       "pt": "Desmarcar todos os filtros",
       "de": "Alle Filter abwählen",
       "fr": "Aucun filtre",
@@ -2894,7 +2894,7 @@
       "pl": "Odznacz wszystkie filtry"
     },
     "Configure Thresholds": {
-      "es": null,
+      "es": "Configurar límites",
       "pt": "Configurar valores de limite",
       "de": "Schwellwert einstellen",
       "fr": "Configurer les Seuils",
@@ -2902,7 +2902,7 @@
       "pl": "Skonfiguruj wartości progowe"
     },
     "Rarity": {
-      "es": null,
+      "es": "Rareza",
       "pt": "Raridade",
       "de": "Seltenheit",
       "fr": "Rareté",
@@ -2910,7 +2910,7 @@
       "pl": "Rzadkość"
     },
     "Kind": {
-      "es": null,
+      "es": "Tipo",
       "pt": "Tipo",
       "de": "Art",
       "fr": "Type",
@@ -2918,7 +2918,7 @@
       "pl": "Rodzaj"
     },
     "Search": {
-      "es": null,
+      "es": "Buscar",
       "pt": "Buscar",
       "de": "Suche",
       "fr": "Recherche",
@@ -2926,7 +2926,7 @@
       "pl": "Szukaj"
     },
     "Apply threshold to selected items:": {
-      "es": null,
+      "es": "Aplicar límite a los elementos seleccionados",
       "pt": "Aplicar limite para itens selecionados",
       "de": "Schwellwert auf die Auswahl anwenden",
       "fr": "Appliquer le seuil aux éléments sélectionnés:",
@@ -2934,7 +2934,7 @@
       "pl": "Zastosuj wartość progową do wybranych:"
     },
     "Apply": {
-      "es": null,
+      "es": "Aplicar",
       "pt": "Aplicar",
       "de": "Anwenden",
       "fr": "Appliquer",
@@ -2942,7 +2942,7 @@
       "pl": "Zastosuj"
     },
     "Rare": {
-      "es": null,
+      "es": "Raro",
       "pt": "Raro",
       "de": "selten",
       "fr": "Rare",
@@ -2950,7 +2950,7 @@
       "pl": "Rzadka"
     },
     "Very Rare": {
-      "es": null,
+      "es": "Muy Raro",
       "pt": "Muito raro",
       "de": "sehr selten",
       "fr": "Très rare",
@@ -2958,7 +2958,7 @@
       "pl": "Bardzo rzadka"
     },
     "Very Common": {
-      "es": null,
+      "es": "Muy Común",
       "pt": "Muito comum",
       "de": "sehr häufig",
       "fr": "Très commun",
@@ -2966,7 +2966,7 @@
       "pl": "Bardzo pospolita"
     },
     "Common": {
-      "es": null,
+      "es": "Común",
       "pt": "Comum",
       "de": "häufig",
       "fr": "Commun",
@@ -2974,7 +2974,7 @@
       "pl": "Pospolita"
     },
     "Standard": {
-      "es": null,
+      "es": "estándar",
       "pt": "Padrão",
       "de": "Standard",
       "fr": "Standard",
@@ -2982,7 +2982,7 @@
       "pl": "Standardowa"
     },
     "Reached {0} {1} - threshold set at {2}": {
-      "es": null,
+      "es": "Alcanzado {0} {1} - límite fijado en {2}",
       "pt": "Alcançou {0} {1} - limite definido em {2}",
       "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2}",
       "fr": "{0} {1} Atteint - Limite définie à {2}",
@@ -2990,7 +2990,7 @@
       "pl": "Osiągnięto {0} {1} - próg ustawiony na {2}"
     },
     "Threshold Reached!": {
-      "es": null,
+      "es": "¡Límite Alcanzado!",
       "pt": "Limite Alcançado!",
       "de": "Schwellwert erreicht!",
       "fr": "Seuil atteint",
@@ -2998,7 +2998,7 @@
       "pl": "Osiągnięto wartość progową!"
     },
     "Threshold Reached Warning": {
-      "es": null,
+      "es": "Aviso Límite Alcanzado",
       "pt": "Aviso Limite alcançado!",
       "de": "Schwellwert erreicht Warnung",
       "fr": "Attention, seuil atteint",
@@ -3006,7 +3006,7 @@
       "pl": "Ostrzeżenie o osiągnięciu limitu"
     },
     "Multiple Blueprints Ready": {
-      "es": null,
+      "es": "Múltiples Planos Listos",
       "pt": "Múltiplos Diagramas Prontos",
       "de": "verschiedene Baupläne fertig",
       "fr": "Multiple Plans de Fabrications Disponibles",
@@ -3014,7 +3014,7 @@
       "pl": "Wiele schematów gotowych do stworzenia"
     },
     "{0} blueprints are available to craft!": {
-      "es": null,
+      "es": "¡{0} planos están disponibles para crear!",
       "pt": "{0} diagramas estão disponiveis para produção!",
       "de": "{0} Baupläne stehen zur Herstellung zur Verfügung!",
       "fr": "{0} plans de fabrications sont disponibles pour la production",
@@ -3022,7 +3022,7 @@
       "pl": "Można stworzyć {0} schematów!"
     },
     "Sensors": {
-      "es": null,
+      "es": "Sensores",
       "pt": "Sensores",
       "de": "Sensoren",
       "fr": "Capteurs",
@@ -3030,7 +3030,7 @@
       "pl": "Sensors"
     },
     "Surface Scanner": {
-      "es": null,
+      "es": "Escáner de Superficie",
       "pt": "Scanners de superfície",
       "de": "Oberflächen-Scanner",
       "fr": "Scanner de Surface",
@@ -3038,7 +3038,7 @@
       "pl": "Surface Scanner"
     },
     "Wake Scanner": {
-      "es": null,
+      "es": "Escáner de Estela",
       "pt": "Scanner de rastro",
       "de": "Sogwolkenscanner",
       "fr": "Scanner de Sillage",
@@ -3046,7 +3046,7 @@
       "pl": "Wake Scanner"
     },
     "Last update: ": {
-      "es": null,
+      "es": "Última actualización: ",
       "pt": "Última atualização",
       "de": "letzte Aktualisierung",
       "fr": "Dernière mise à jour: ",
@@ -3054,7 +3054,7 @@
       "pl": "Ostatnia aktualizacja:"
     },
     "Silent Launch": {
-      "es": null,
+      "es": "Iniciar Minimizado",
       "pt": "Iniciar Minimizado",
       "de": "Start minimiert",
       "fr": "Démarrage Silencieux",
@@ -3070,7 +3070,7 @@
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii"
     },
     "Configure Notifications": {
-      "es": null,
+      "es": "Configurar Notificaciones",
       "pt": "Configurar notificações",
       "de": "Benachrichtigung Konfigurieren",
       "fr": "Configurer les Notifications",
@@ -3078,7 +3078,7 @@
       "pl": "Skonfiguruj powiadomienia"
     },
     "Notifications": {
-      "es": null,
+      "es": "Notificaciones",
       "pt": "Notificações",
       "de": "Benachrichtigung",
       "fr": "Notifications",
@@ -3086,7 +3086,7 @@
       "pl": "Powiadomienia"
     },
     "Test Notification": {
-      "es": null,
+      "es": "Notificación de Prueba",
       "pt": "Notificação de teste",
       "de": "Test-Benachrichtigung",
       "fr": "Tester la Notification",
@@ -3102,7 +3102,7 @@
       "pl": "Pop-up"
     },
     "Voice": {
-      "es": null,
+      "es": "Voz",
       "pt": "Voz",
       "de": "Stimme",
       "fr": "Voix",
@@ -3110,7 +3110,7 @@
       "pl": "Głos"
     },
     "Long Range Scanner": {
-      "es": null,
+      "es": "Escáner de Largo Alcance",
       "pt": "Scanner de longo alcance",
       "de": "Langstrecken-Scanner",
       "fr": "Scanner Longue Portée",
@@ -3134,7 +3134,7 @@
       "pl": "Light Weight Scanner"
     },
     "Fast Scanner": {
-      "es": null,
+      "es": "Escáner Rápido",
       "pt": "Scanner rápido",
       "de": "Schneller Scanner",
       "fr": "Scanner Rapide",
@@ -3142,7 +3142,7 @@
       "pl": "Fast Scanner"
     },
     "Unlock": {
-      "es": null,
+      "es": "Desbloquear",
       "pt": "Desbloquear",
       "de": "Freischalten",
       "fr": "Déverrouiller",
@@ -3150,7 +3150,7 @@
       "pl": "Odblokowanie"
     },
     "Available Voices:": {
-      "es": null,
+      "es": "Voces Disponibles",
       "pt": "Vozes disponiveis",
       "de": "verfügbare Stimmen",
       "fr": "Voix Disponibles",
@@ -3158,7 +3158,7 @@
       "pl": "Dostępne głosy:"
     },
     "filtered entries - click this to clear": {
-      "es": null,
+      "es": "entradas filtradas - haz clic aquí para limpiar",
       "pt": "Entradas filtradas - Clique nela para limpar",
       "de": "Gefilterte Einträge - Klick HIER um zu Löschen",
       "fr": "entrées filtrées - cliquez ici pour nettoyer",
@@ -3166,7 +3166,7 @@
       "pl": null
     },
     "Thargoid Material Composition Data": {
-      "es": null,
+      "es": "Datos de Composición de Material Thargoide",
       "pt": "Dados de composição de material Thargoid",
       "de": "unbekannte Materialzusammensetzung",
       "fr": "Donnée de Composition de Matérel Thargoid",
@@ -3174,7 +3174,7 @@
       "pl": null
     },
     "Thargoid Residue Data": {
-      "es": null,
+      "es": "Datos de Residuo Thargoide",
       "pt": "Dados de resíduo Thargoid",
       "de": "unbekannte Rückstandsdatenanalyse",
       "fr": "Résidus de Données Thargoid",
@@ -3182,7 +3182,7 @@
       "pl": null
     },
     "Thargoid Structural Data": {
-      "es": null,
+      "es": "Datos Estructurales Thargoide",
       "pt": "Dados de estrutura Thargoid",
       "de": "unbekannte Strukturdaten",
       "fr": "Données Structurelles Thargoid",
@@ -3198,7 +3198,7 @@
       "pl": null
     },
     "Thargoid Energy Cell": {
-      "es": null,
+      "es": "Célula de Energía Thargoide",
       "pt": "Célula de energia Thargoid",
       "de": "unbekannte Energiezelle",
       "fr": "Cellule d'Énergie Thargoid",
@@ -3206,7 +3206,7 @@
       "pl": null
     },
     "Thargoid Organic Circuitry": {
-      "es": null,
+      "es": "Circuito Orgánico Thargoide",
       "pt": "Circuito orgânico Thargoid",
       "de": "unbekannte organische Struktur",
       "fr": "Circuit Organique Thargoid",
@@ -3214,7 +3214,7 @@
       "pl": null
     },
     "Thargoid Technological Components": {
-      "es": null,
+      "es": "Componentes Tecnológicos Thargoide",
       "pt": "Componente tecnológico Thargoid",
       "de": "unbekannte Technologie-Komponente",
       "fr": "Composants Technologique Thargoid",
@@ -3254,7 +3254,7 @@
       "pl": null
     },
     "Bio-Mechanical Conduits": {
-      "es": null,
+      "es": "Conductos Bio-Mecánicos",
       "pt": "Condutores bio-mecânicos",
       "de": "Bio-mechanische Leitungen",
       "fr": "Conducteurs Bio-Mécanique",
@@ -3262,7 +3262,7 @@
       "pl": null
     },
     "Propulsion Elements": {
-      "es": null,
+      "es": "Elementos de Propulsión",
       "pt": "Elementos de propulsão",
       "de": "Antriebselemente",
       "fr": "Elements de Propulsion",
@@ -3270,7 +3270,7 @@
       "pl": null
     },
     "Settings": {
-      "es": null,
+      "es": "Ajustes",
       "pt": "Configurações",
       "de": "Einstellungen",
       "fr": "Paramètres",
@@ -3278,7 +3278,7 @@
       "pl": null
     },
     "Configure Graphics": {
-      "es": null,
+      "es": "Ajustes Gráficos",
       "pt": "Configurar gráficos",
       "de": "Grafik einstellen",
       "fr": "Configuration Graphique",
@@ -3286,7 +3286,7 @@
       "pl": null
     },
     "100% Refill": {
-      "es": null,
+      "es": "100% de Recarga",
       "pt": "100% de Recarga",
       "de": "100% Nachfüllung",
       "fr": "100% de Recharge",
@@ -3294,7 +3294,7 @@
       "pl": null
     },
     "100% Refill, +15% Heat Dissipation": {
-      "es": null,
+      "es": "100% de Recarga, +15% de Disipación de Calor",
       "pt": "100% de Recarga, +15% de Dissipação de Calor",
       "de": "100% Nachfüllung, +15% Wärmeableitung",
       "fr": "100% de Recharge, +15% de Dissipation de Chaleur",
@@ -3302,7 +3302,7 @@
       "pl": null
     },
     "100% Refill, +2 Seconds Duration": {
-      "es": null,
+      "es": "100% de Recarga, +2 Segundos de Duración",
       "pt": "100% de Recarga, +2 Segundos de Duração",
       "de": "100% Nachfüllung, +2 Sekunden Dauer",
       "fr": "100% de Recharge, +2 Secondes de Durée",
@@ -3310,7 +3310,7 @@
       "pl": null
     },
     "100% Refill, +30% Heat Dissipation": {
-      "es": null,
+      "es": "100% de Recarga, +30% de Disipación de Calor",
       "pt": "100% de Recarga, +30% de Dissipação de Calor",
       "de": "100% Nachfüllung, +30% Wärmeableitung",
       "fr": "100% de Recharge, +30% de Dissipation de Chaleur",
@@ -3318,7 +3318,7 @@
       "pl": null
     },
     "4 Limpets, Cargo Hold Required": {
-      "es": null,
+      "es": "4 Drones, Espacio de Carga Necesario",
       "pt": "4 Drones, Porão de Carga Necessário ",
       "de": "für Drohnen, Laderaum erforderlich",
       "fr": "4 Drones, Soute Requise",
@@ -3326,7 +3326,7 @@
       "pl": null
     },
     "50% Refill": {
-      "es": null,
+      "es": "50% de Recarga",
       "pt": "50% de Recarga",
       "de": "50% Nachfüllung",
       "fr": "50% de Recharge",
@@ -3334,7 +3334,7 @@
       "pl": null
     },
     "Fujin Tea": {
-      "es": null,
+      "es": "Té de Fujin",
       "pt": "Chá de Fujin",
       "de": "Fujin-Tee",
       "fr": "Thé Fujin",
@@ -3342,7 +3342,7 @@
       "pl": null
     },
     "Gold": {
-      "es": null,
+      "es": "Oro",
       "pt": "Ouro",
       "de": "Gold",
       "fr": "Or",
@@ -3358,7 +3358,7 @@
       "pl": null
     },
     "Kongga Ale": {
-      "es": null,
+      "es": "Cerveza de Kongga",
       "pt": "Cerveja de Kongga",
       "de": "Kongga-Bier",
       "fr": "Bière de Kongga",
@@ -3366,7 +3366,7 @@
       "pl": null
     },
     "Landmines": {
-      "es": null,
+      "es": "Minas Terrestres",
       "pt": "Minas Terrestres",
       "de": "Landminen",
       "fr": "Mines Terrestres",
@@ -3374,7 +3374,7 @@
       "pl": null
     },
     "Lavian Brandy": {
-      "es": null,
+      "es": "Brandy Laviano",
       "pt": "Brandy Laviano",
       "de": "Lave-Brandy",
       "fr": "Cognac Lavien",
@@ -3382,7 +3382,7 @@
       "pl": null
     },
     "Limpets": {
-      "es": null,
+      "es": "Drones",
       "pt": "Drones",
       "de": "Drohnen",
       "fr": "Drones",
@@ -3390,7 +3390,7 @@
       "pl": null
     },
     "Meta-alloys": {
-      "es": null,
+      "es": "Meta-aleaciones",
       "pt": "Meta-Ligas",
       "de": "Meta-Legierungen",
       "fr": "Meta-Alliages",
@@ -3406,7 +3406,7 @@
       "pl": null
     },
     "Soontill Relics": {
-      "es": null,
+      "es": "Reliquias de Soontill",
       "pt": "Relíquias de Soontill",
       "de": "Soontil Relikte",
       "fr": "Relique de Soontill",
@@ -3460,6 +3460,6 @@
       "fr": null,
       "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null
-    } 
+    }
   }
 }
