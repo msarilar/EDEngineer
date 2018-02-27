@@ -225,8 +225,8 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
             })))
 
         pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
-          let toShoppingListItem (i:Tuple<Blueprint, int>) =
-            { Blueprint = i.Item1.ToSerializable(); Count = i.Item2 }
+          let toShoppingListItem (b: Blueprint, count: int) =
+            { Blueprint = b; Count = count }
 
           (request(fun request ->
             cmdr {
