@@ -52,6 +52,7 @@
     <Compile Include="Filters\ILabelledFilter.cs" />
     <Compile Include="Filters\KindFilter.cs" />
     <Compile Include="Filters\RarityFilter.cs" />
+    <Compile Include="Group.cs" />
     <Compile Include="Operations\DumpOperation.cs" />
     <Compile Include="Subkind.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />

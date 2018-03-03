@@ -343,6 +343,7 @@
 
             <Button Grid.Row="0"
                     x:Name="UnhighlightButton"
+                    Height="31"
                     Click="UnhighlightButtonClicked"
                     Style="{StaticResource UnhighlightButtonStyle}"
                     Visibility="{Binding CurrentCommander.Value.HighlightedEntryData.Count, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}">
@@ -396,6 +397,26 @@
                                         <Setter Property="FrameworkElement.Margin" Value="3" />
                                     </Style>
                                 </ItemsControl.ItemContainerStyle>
+                                <ItemsControl.GroupStyle>
+                                    <GroupStyle>
+                                        <GroupStyle.ContainerStyle>
+                                            <Style TargetType="{x:Type GroupItem}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                                            <Expander Header="{Binding Name}"
+                                                                      IsExpanded="True"
+                                                                      Padding="0"
+                                                                      Style="{StaticResource IngredientGroupExpander}">
+                                                                <ItemsPresenter/>
+                                                            </Expander>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </GroupStyle.ContainerStyle>
+                                    </GroupStyle>
+                                </ItemsControl.GroupStyle>
                             </ItemsControl>
                         </ScrollViewer>
                         <StackPanel Grid.Row="1"
@@ -454,6 +475,26 @@
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
                                 </Style>
                             </ItemsControl.ItemContainerStyle>
+                            <ItemsControl.GroupStyle>
+                                <GroupStyle>
+                                    <GroupStyle.ContainerStyle>
+                                        <Style TargetType="{x:Type GroupItem}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                                        <Expander Header="{Binding Name}"
+                                                                  IsExpanded="True"
+                                                                  Padding="0"
+                                                                  Style="{StaticResource IngredientGroupExpander}">
+                                                            <ItemsPresenter/>
+                                                        </Expander>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </GroupStyle.ContainerStyle>
+                                </GroupStyle>
+                            </ItemsControl.GroupStyle>
                         </ItemsControl>
                     </ScrollViewer>
                 </controls:MetroTabItem>

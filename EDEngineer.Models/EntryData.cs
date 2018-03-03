@@ -21,6 +21,9 @@ namespace EDEngineer.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public Subkind? Subkind { get; set; }
 
+        [JsonConverter(typeof(StringEnumConverter))]
+        public Group Group { get; set; }
+
         public List<string> OriginDetails { get; set; }
 
         [JsonIgnore]
