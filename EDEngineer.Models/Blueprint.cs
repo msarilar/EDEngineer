@@ -53,7 +53,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool ShoppingListHighlighted
         {
-            get { return shoppingListHighlighted; }
+            get => shoppingListHighlighted;
             set
             {
                 if (value == shoppingListHighlighted)
@@ -75,7 +75,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public int ShoppingListCount
         {
-            get { return shoppingListCount; }
+            get => shoppingListCount;
 
             set
             {
@@ -149,7 +149,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool Favorite
         {
-            get { return favorite; }
+            get => favorite;
             set
             {
                 if (value == favorite) return;
@@ -171,7 +171,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool Ignored
         {
-            get { return ignored; }
+            get => ignored;
             set
             {
                 if (value == ignored)

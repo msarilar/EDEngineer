@@ -39,7 +39,7 @@ namespace EDEngineer.Views
 
         public Instant LastUpdate
         {
-            get { return lastUpdate; }
+            get => lastUpdate;
             set
             {
                 if (value == lastUpdate)
@@ -125,9 +125,9 @@ namespace EDEngineer.Views
 
         public void ApplyEventsToSate(IEnumerable<string> allLogs)
         {
-            var settings = new JsonSerializerSettings()
+            var settings = new JsonSerializerSettings
             {
-                Converters = new List<JsonConverter>() { journalEntryConverter },
+                Converters = new List<JsonConverter> { journalEntryConverter },
                 Error = (o, e) => e.ErrorContext.Handled = true
             };
 

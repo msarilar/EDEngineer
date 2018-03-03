@@ -24,7 +24,7 @@ namespace EDEngineer.Models
 
         public int Count
         {
-            get { return count; }
+            get => count;
             set
             {
                 if (value == count)
@@ -42,7 +42,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public int FavoriteCount
         {
-            get { return favoriteCount; }
+            get => favoriteCount;
             set
             {
                 if (value == favoriteCount)
@@ -59,7 +59,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public int SynthesisFavoriteCount
         {
-            get { return synthesisFavoriteCount; }
+            get => synthesisFavoriteCount;
             set
             {
                 if (value == synthesisFavoriteCount)
@@ -76,7 +76,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool Highlighted
         {
-            get { return highlighted; }
+            get => highlighted;
             set
             {
                 if (value == highlighted)
@@ -90,13 +90,7 @@ namespace EDEngineer.Models
         }
 
         [JsonIgnore]
-        public double CarryingProgress
-        {
-            get
-            {
-                return Count / (double) Data.Rarity.MaximumCapacity() * 100;
-            }
-        }
+        public double CarryingProgress => Count / (double) Data.Rarity.MaximumCapacity() * 100;
 
         public override string ToString()
         {

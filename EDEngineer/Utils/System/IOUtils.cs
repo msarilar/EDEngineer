@@ -12,7 +12,7 @@ namespace EDEngineer.Utils.System
 {
     public static class IOUtils
     {
-        private static readonly Dictionary<char, string> specialCharactersMapping = new Dictionary<char, string>()
+        private static readonly Dictionary<char, string> specialCharactersMapping = new Dictionary<char, string>
         {
             ['<'] = "&#60;",
             ['>'] = "&#62;",
@@ -30,8 +30,7 @@ namespace EDEngineer.Utils.System
 
         private static string SanitizeChar(char input)
         {
-            string output;
-            if (!specialCharactersMapping.TryGetValue(input, out output))
+            if (!specialCharactersMapping.TryGetValue(input, out var output))
             {
                 return input.ToString();
             }
@@ -75,7 +74,7 @@ namespace EDEngineer.Utils.System
 
             if (forcePickFolder || logDirectory == null || !Directory.Exists(logDirectory))
             {
-                var dialog = new CommonOpenFileDialog()
+                var dialog = new CommonOpenFileDialog
                 {
                     Title = forcePickFolder ?
                                 translator.Translate("Select a new log directory") :

@@ -29,10 +29,7 @@ namespace EDEngineer.Localization
 
         public LanguageInfo CurrentLanguage
         {
-            get
-            {
-                return currentLanguage;
-            }
+            get => currentLanguage;
             set
             {
                 currentLanguage = value;
@@ -162,8 +159,7 @@ namespace EDEngineer.Localization
             }*/
 #endif
 
-            string translatedText;
-            if (!Translations.ContainsKey(text) || !Translations[text].TryGetValue(lang.TwoLetterISOLanguageName, out translatedText) || string.IsNullOrEmpty(translatedText))
+            if (!Translations.ContainsKey(text) || !Translations[text].TryGetValue(lang.TwoLetterISOLanguageName, out var translatedText) || string.IsNullOrEmpty(translatedText))
             {
                 translatedText = text;
             }

@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Forms;
 using EDEngineer.Models;
 using EDEngineer.Views.Notifications;
-using Newtonsoft.Json;
 
 namespace EDEngineer.Utils.System
 {
@@ -54,7 +52,7 @@ namespace EDEngineer.Utils.System
                     rightSideWidth = Properties.Settings.Default.RightSideWidth;
                 }
 
-                return new WindowDimensions() { Height = height, Left = left, Top = top, Width = width, LeftSideWidth = leftSideWidth, RightSideWidth = rightSideWidth};
+                return new WindowDimensions { Height = height, Left = left, Top = top, Width = width, LeftSideWidth = leftSideWidth, RightSideWidth = rightSideWidth};
             }
             set
             {
@@ -71,7 +69,7 @@ namespace EDEngineer.Utils.System
 
         public static bool SilentLaunch
         {
-            get { return Properties.Settings.Default.SilentLaunch; }
+            get => Properties.Settings.Default.SilentLaunch;
             set
             {
                 Properties.Settings.Default.SilentLaunch = value;
@@ -81,7 +79,7 @@ namespace EDEngineer.Utils.System
 
         public static bool IngredientsGrouped
         {
-            get { return Properties.Settings.Default.IngredientsGrouped; }
+            get => Properties.Settings.Default.IngredientsGrouped;
             set
             {
                 Properties.Settings.Default.IngredientsGrouped = value;
@@ -91,12 +89,8 @@ namespace EDEngineer.Utils.System
 
         public static NotificationKind NotificationKindBlueprintReady
         {
-            get
-            {
-                return
-                    (NotificationKind)
-                        Enum.Parse(typeof (NotificationKind), Properties.Settings.Default.NotificationKindBlueprintReady);
-            }
+            get => (NotificationKind)
+                Enum.Parse(typeof (NotificationKind), Properties.Settings.Default.NotificationKindBlueprintReady);
             set
             {
                 Properties.Settings.Default.NotificationKindBlueprintReady = value.ToString("G");
@@ -106,7 +100,7 @@ namespace EDEngineer.Utils.System
 
         public static string NotificationVoice
         {
-            get { return Properties.Settings.Default.NotificationVoice; }
+            get => Properties.Settings.Default.NotificationVoice;
             set
             {
                 Properties.Settings.Default.NotificationVoice = value;
@@ -116,7 +110,7 @@ namespace EDEngineer.Utils.System
         
         public static ushort ServerPort
         {
-            get { return Properties.Settings.Default.ServerPort; }
+            get => Properties.Settings.Default.ServerPort;
             set
             {
                 Properties.Settings.Default.ServerPort = value;
@@ -126,7 +120,7 @@ namespace EDEngineer.Utils.System
 
         public static bool AutoRunServer
         {
-            get { return Properties.Settings.Default.AutoRunServer; }
+            get => Properties.Settings.Default.AutoRunServer;
             set
             {
                 Properties.Settings.Default.AutoRunServer = value;
@@ -136,7 +130,7 @@ namespace EDEngineer.Utils.System
 
         public static int CargoTabIndex
         {
-            get { return Properties.Settings.Default.CargoTabIndex; }
+            get => Properties.Settings.Default.CargoTabIndex;
             set
             {
                 Properties.Settings.Default.CargoTabIndex = value;
@@ -146,7 +140,7 @@ namespace EDEngineer.Utils.System
 
         public static string SelectedCommander
         {
-            get { return Properties.Settings.Default.SelectedCommander; }
+            get => Properties.Settings.Default.SelectedCommander;
             set
             {
                 Properties.Settings.Default.SelectedCommander = value;

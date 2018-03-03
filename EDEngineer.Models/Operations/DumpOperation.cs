@@ -17,15 +17,14 @@ namespace EDEngineer.Models.Operations
             {
                 var currentValue = item.Value.Count;
 
-                int toSetValue;
-                if (dump.TryGetValue(item.Key, out toSetValue))
+                if (dump.TryGetValue(item.Key, out var toSetValue))
                 {
                     if (currentValue != toSetValue)
                     {
                         state.IncrementCargo(item.Key, toSetValue - currentValue);
                     }
                 }
-                else if(currentValue != 0)
+                else if (currentValue != 0)
                 {
                     state.IncrementCargo(item.Key, -1 * currentValue);
                 }

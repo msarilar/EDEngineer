@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -203,7 +202,6 @@ namespace EDEngineer.Views
 
         private void ConfigureShortcut(object sender, EventArgs e)
         {
-            string shortcut;
             ignoreShortcut = true;
             if (Math.Abs(Opacity) > 0.99)
             {
@@ -211,7 +209,7 @@ namespace EDEngineer.Views
             }
 
             HotkeyManager.UnregisterHotKey(this);
-            if (ShortcutPrompt.ShowDialog(SettingsManager.Shortcut, out shortcut))
+            if (ShortcutPrompt.ShowDialog(SettingsManager.Shortcut, out var shortcut))
             {
                 SettingsManager.Shortcut = shortcut;
                 HotkeyManager.UnregisterHotKey(this);
@@ -247,8 +245,7 @@ namespace EDEngineer.Views
         {
             var box = (System.Windows.Controls.TextBox)sender;
 
-            int newCount;
-            if (int.TryParse(box.Text, out newCount))
+            if (int.TryParse(box.Text, out var newCount))
             {
                 var entry = (Entry)box.Tag;
                 viewModel.UserChange(entry, newCount - entry.Count);
@@ -323,8 +320,7 @@ namespace EDEngineer.Views
                     return null;
                 }
 
-                var parent = parentObject as T;
-                if (parent != null)
+                if (parentObject is T parent)
                 {
                     return parent;
                 }
@@ -346,7 +342,7 @@ namespace EDEngineer.Views
             dataGrid.CellStyle = newStyle;
         }
 
-        private bool transitionning = false;
+        private bool transitionning;
         private void HideWindow()
         {
             if (!transitionning)
@@ -381,7 +377,7 @@ namespace EDEngineer.Views
         private HwndSource handle;
         private IDisposable icon;
         private WinformContextMenu menu;
-        private bool ignoreShortcut = false;
+        private bool ignoreShortcut;
 
         private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
@@ -433,7 +429,7 @@ namespace EDEngineer.Views
 
         private void SaveDimensions()
         {
-            SettingsManager.Dimensions = new WindowDimensions()
+            SettingsManager.Dimensions = new WindowDimensions
             {
                 Height = ActualHeight,
                 Left = Left,

@@ -16,7 +16,7 @@ namespace EDEngineer.Models.Filters
 
         public bool Checked
         {
-            get { return @checked; }
+            get => @checked;
             set
             {
                 if (value == @checked) return;

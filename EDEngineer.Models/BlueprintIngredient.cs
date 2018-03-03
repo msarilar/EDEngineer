@@ -20,7 +20,7 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool ShoppingListHighlighted
         {
-            get { return shoppingListHighlighted; }
+            get => shoppingListHighlighted;
             set
             {
                 if (value == shoppingListHighlighted)

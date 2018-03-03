@@ -13,8 +13,7 @@ namespace EDEngineer.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            int result;
-            return int.TryParse((string) value, out result) ? result : (int?) null;
+            return int.TryParse((string)value, out var result) ? result : (int?)null;
         }
     }
 }

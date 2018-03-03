@@ -26,7 +26,7 @@ namespace EDEngineer.Views
 
         public KeyValuePair<string, CommanderViewModel> CurrentCommander
         {
-            get { return currentCommander; }
+            get => currentCommander;
             set
             {
                 if (Equals(value, currentCommander))
@@ -45,7 +45,7 @@ namespace EDEngineer.Views
         private string logDirectory;
         public string LogDirectory
         {
-            get { return logDirectory; }
+            get => logDirectory;
             set
             {
                 if (value == logDirectory)
@@ -135,14 +135,14 @@ namespace EDEngineer.Views
         private bool showOnlyForFavorites;
         private bool showOriginIcons = true;
         private bool ingredientsGrouped;
-        private Subkind? materialSubkindFilter = null;
+        private Subkind? materialSubkindFilter;
 
         private KeyValuePair<string, CommanderViewModel> currentCommander;
         private string currentComparer;
 
         public bool ShowZeroes
         {
-            get { return showZeroes; }
+            get => showZeroes;
             set
             {
                 showZeroes = value;
@@ -152,7 +152,7 @@ namespace EDEngineer.Views
 
         public Subkind? MaterialSubkindFilter
         {
-            get { return materialSubkindFilter; }
+            get => materialSubkindFilter;
             set
             {
                 materialSubkindFilter = value;
@@ -162,7 +162,7 @@ namespace EDEngineer.Views
 
         public int CargoTabIndex
         {
-            get { return SettingsManager.CargoTabIndex; }
+            get => SettingsManager.CargoTabIndex;
             set {
                 SettingsManager.CargoTabIndex = value;
                 OnPropertyChanged();
@@ -171,7 +171,7 @@ namespace EDEngineer.Views
 
         public bool ShowOnlyForFavorites
         {
-            get { return showOnlyForFavorites; }
+            get => showOnlyForFavorites;
             set
             {
                 showOnlyForFavorites = value;
@@ -181,7 +181,7 @@ namespace EDEngineer.Views
 
         public bool ShowOriginIcons
         {
-            get { return showOriginIcons; }
+            get => showOriginIcons;
             set
             {
                 showOriginIcons = value;
@@ -191,7 +191,7 @@ namespace EDEngineer.Views
 
         public bool IngredientsGrouped
         {
-            get { return ingredientsGrouped; }
+            get => ingredientsGrouped;
             set
             {
                 ingredientsGrouped = value;
@@ -212,7 +212,7 @@ namespace EDEngineer.Views
 
         public string CurrentComparer
         {
-            get { return currentComparer; }
+            get => currentComparer;
             set
             {
                 currentComparer = value;

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.WindowsRuntime;
-using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 
 namespace EDEngineer.Models
@@ -28,7 +26,7 @@ namespace EDEngineer.Models
 
         public State(List<EntryData> entryDatas, ILanguage languages, string comparer)
         {
-            comparers = new Dictionary<string, Comparer>()
+            comparers = new Dictionary<string, Comparer>
             {
                 [NAME_COMPARER] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
                 [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count),

@@ -15,10 +15,14 @@ namespace EDEngineer.Utils.UI
     {
         private readonly Dictionary<string, double> fontSizes = new Dictionary<string, double>(); 
 
-        public double FontRatio { get { return (double)GetValue(FontRatioProperty); } set { SetValue(FontRatioProperty, value); } }
+        public double FontRatio
+        {
+            get => (double)GetValue(FontRatioProperty);
+            set => SetValue(FontRatioProperty, value);
+        }
         public static readonly DependencyProperty FontRatioProperty = DependencyProperty.Register("FontRatio", typeof(double), typeof(ScaleFontBehavior), new PropertyMetadata(20d));
         private readonly PostponeScheduler scheduler;
-        private bool disposed = false;
+        private bool disposed;
 
         public ScaleFontBehavior()
         {
@@ -51,8 +55,7 @@ namespace EDEngineer.Utils.UI
 
             foreach (var tb in textBlocks.Union(textBoxes))
             {
-                double fontSize;
-                if (!fontSizes.TryGetValue(tb.Item1, out fontSize))
+                if (!fontSizes.TryGetValue(tb.Item1, out var fontSize))
                 {
                     string name;
                     if (tb.Item1 == string.Empty)
@@ -81,8 +84,7 @@ namespace EDEngineer.Utils.UI
                 var o = VisualTreeHelper.GetChild(obj, i);
                 if (o != null)
                 {
-                    var item = o as T;
-                    if (item != null)
+                    if (o is T item)
                     {
                         children.Add(item);
                     }

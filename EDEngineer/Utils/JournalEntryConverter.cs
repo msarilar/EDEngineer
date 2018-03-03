@@ -130,7 +130,7 @@ namespace EDEngineer.Utils
                 case JournalEvent.ScientificResearch:
                     return ExtractMaterialDiscarded(data);
                 case JournalEvent.Died:
-                    return new DeathOperation() { JournalEvent = JournalEvent.Died };
+                    return new DeathOperation { JournalEvent = JournalEvent.Died };
                 case JournalEvent.Materials:
                     return ExtractMaterialsDump(data);
                 case JournalEvent.MaterialTrade:
@@ -161,7 +161,7 @@ namespace EDEngineer.Utils
         {
             var dump = new DumpOperation
             {
-                ResetFilter = new HashSet<Kind>()
+                ResetFilter = new HashSet<Kind>
                 {
                     Kind.Data,
                     Kind.Material
@@ -175,7 +175,7 @@ namespace EDEngineer.Utils
                 var materialName = converter.GetOrCreate((string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
 
-                var operation = new MaterialOperation()
+                var operation = new MaterialOperation
                 {
                     MaterialName = materialName,
                     Size = count ?? 1
@@ -191,7 +191,7 @@ namespace EDEngineer.Utils
         {
             var dump = new DumpOperation
             {
-                ResetFilter = new HashSet<Kind>()
+                ResetFilter = new HashSet<Kind>
                 {
                     Kind.Commodity
                 },
@@ -204,7 +204,7 @@ namespace EDEngineer.Utils
                 var materialName = converter.GetOrCreate((string) cc.Name);
                 int? count = cc.Value ?? cc.Count;
 
-                var operation = new MaterialOperation()
+                var operation = new MaterialOperation
                 {
                     MaterialName = materialName,
                     Size = count ?? 1
@@ -218,8 +218,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractEngineerContribution(JObject data)
         {
-            string name;
-            if (!converter.TryGet((string)data["Commodity"], out name) &&
+            if (!converter.TryGet((string)data["Commodity"], out var name) &&
                 !converter.TryGet((string)data["Material"], out name) &&
                 !converter.TryGet((string)data["Encoded"], out name) &&
                 !converter.TryGet((string)data["Raw"], out name) &&
@@ -236,7 +235,7 @@ namespace EDEngineer.Utils
             {
                 case "encoded":
                 case "data":
-                    return new DataOperation()
+                    return new DataOperation
                     {
                         DataName = name,
                         Size = -1 * data["Quantity"]?.ToObject<int>() ?? 1
@@ -254,8 +253,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMarketSell(JObject data)
         {
-            string marketSellName;
-            if (!converter.TryGet((string) data["Type"], out marketSellName))
+            if (!converter.TryGet((string)data["Type"], out var marketSellName))
             {
                 return null;
             }
@@ -269,12 +267,11 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMiningRefined(JObject data)
         {
-            string miningRefinedName;
-            var type = (string) data["Type"];
+            var type = (string)data["Type"];
 
             type = type.Replace("$", "").Replace("_name;", ""); // "Type":"$samarium_name;" 
 
-            if (!converter.TryGet(type, out miningRefinedName))
+            if (!converter.TryGet(type, out var miningRefinedName))
             {
                 return null;
             }
@@ -288,8 +285,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMarketBuy(JObject data)
         {
-            string marketBuyName;
-            if (!converter.TryGet((string)data["Type"], out marketBuyName))
+            if (!converter.TryGet((string)data["Type"], out var marketBuyName))
             {
                 return null;
             }
@@ -303,8 +299,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractEjectCargo(JObject data)
         {
-            string ejectCargoName;
-            if (!converter.TryGet((string)data["Type"], out ejectCargoName))
+            if (!converter.TryGet((string)data["Type"], out var ejectCargoName))
             {
                 return null;
             }
@@ -318,8 +313,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractCollectCargo(JObject data)
         {
-            string collectCargoName;
-            if (!converter.TryGet((string) data["Type"], out collectCargoName))
+            if (!converter.TryGet((string)data["Type"], out var collectCargoName))
             {
                 return null;
             }
@@ -333,9 +327,8 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMissionCompleted(JObject data)
         {
-            JToken rewardData;
 
-            if (!data.TryGetValue("CommodityReward", out rewardData))
+            if (!data.TryGetValue("CommodityReward", out var rewardData))
             {
                 return null;
             }
@@ -343,13 +336,9 @@ namespace EDEngineer.Utils
             var missionCompleted = new MissionCompletedOperation
             {
                 CommodityRewards = rewardData
-                    .Select(c =>
-                    {
-                        string rewardName;
-                        return Tuple.Create(c,
-                            converter.TryGet((string) c["Name"], out rewardName),
-                            rewardName);
-                    })
+                    .Select(c => Tuple.Create(c,
+                                converter.TryGet((string)c["Name"], out var rewardName),
+                                rewardName))
                     .Where(c => c.Item2)
                     .Select(c =>
                     {
@@ -390,7 +379,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractSynthesis(JObject data)
         {
-            var synthesisOperation = new SynthesisOperation()
+            var synthesisOperation = new SynthesisOperation
             {
                 SynthesisPartOperation = new List<JournalOperation>()
             };
@@ -406,7 +395,7 @@ namespace EDEngineer.Utils
                 switch (entry.Kind)
                 {
                     case Kind.Material:
-                        synthesisOperation.SynthesisPartOperation.Add(new MaterialOperation()
+                        synthesisOperation.SynthesisPartOperation.Add(new MaterialOperation
                         {
                             MaterialName = synthesisIngredientName,
                             Size = -1 * count ?? -1
@@ -414,7 +403,7 @@ namespace EDEngineer.Utils
 
                         break;
                     case Kind.Data:
-                        synthesisOperation.SynthesisPartOperation.Add(new DataOperation()
+                        synthesisOperation.SynthesisPartOperation.Add(new DataOperation
                         {
                             DataName = synthesisIngredientName,
                             Size = -1 * count ?? -1
@@ -422,7 +411,7 @@ namespace EDEngineer.Utils
 
                         break;
                     case Kind.Commodity:
-                        synthesisOperation.SynthesisPartOperation.Add(new CargoOperation()
+                        synthesisOperation.SynthesisPartOperation.Add(new CargoOperation
                         {
                             CommodityName = synthesisIngredientName,
                             Size = -1 * count ?? -1
@@ -465,8 +454,7 @@ namespace EDEngineer.Utils
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {
                     dynamic cc = c;
-                    string rewardName;
-                    return Tuple.Create(converter.TryGet((string) cc.Name, out rewardName), rewardName, (int) (cc.Value ?? cc.Count));
+                    return Tuple.Create(converter.TryGet((string)cc.Name, out var rewardName), rewardName, (int)(cc.Value ?? cc.Count));
                 }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
             };
 

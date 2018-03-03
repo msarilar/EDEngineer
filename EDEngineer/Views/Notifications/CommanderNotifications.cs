@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Speech.Synthesis;
@@ -59,8 +58,7 @@ namespace EDEngineer.Views.Notifications
             var oneSecond = TimeSpan.FromSeconds(1);
             while (!tokenSource.Token.IsCancellationRequested)
             {
-                Notification item;
-                while (notifications.TryTake(out item, oneSecond) && toDisplay.Add(item));
+                while (notifications.TryTake(out var item, oneSecond) && toDisplay.Add(item)) ;
 
                 foreach (var group in toDisplay.GroupBy(n => n.ContentKind))
                 {

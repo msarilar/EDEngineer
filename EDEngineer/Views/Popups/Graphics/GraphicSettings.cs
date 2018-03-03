@@ -52,10 +52,7 @@ namespace EDEngineer.Views.Popups.Graphics
 
         public double OpacityForEdit
         {
-            get
-            {
-                return opacity;
-            }
+            get => opacity;
             set
             {
                 if (Math.Abs(opacity - value) < 0.01)
@@ -71,7 +68,7 @@ namespace EDEngineer.Views.Popups.Graphics
 
         public double LeftRatio
         {
-            get { return leftRatio; }
+            get => leftRatio;
             set
             {
                 if (Math.Abs(leftRatio - value) < 0.01)
@@ -86,7 +83,7 @@ namespace EDEngineer.Views.Popups.Graphics
 
         public double RightRatio
         {
-            get { return rightRatio; }
+            get => rightRatio;
             set
             {
                 if (Math.Abs(rightRatio - value) < 0.01)
@@ -101,7 +98,7 @@ namespace EDEngineer.Views.Popups.Graphics
 
         public double BottomRatio
         {
-            get { return bottomRatio; }
+            get => bottomRatio;
             set
             {
                 if (Math.Abs(bottomRatio - value) < 0.01)

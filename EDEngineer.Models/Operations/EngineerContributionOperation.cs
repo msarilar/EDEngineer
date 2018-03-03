@@ -10,8 +10,7 @@ namespace EDEngineer.Models.Operations
         public EngineerContributionOperation(string engineer)
         {
             Engineer = engineer;
-            JournalOperation operation;
-            engineersProgressOperation.TryGetValue(Engineer, out operation);
+            engineersProgressOperation.TryGetValue(Engineer, out var operation);
             Operation = operation;
         }
 
@@ -20,7 +19,7 @@ namespace EDEngineer.Models.Operations
             Operation?.Mutate(state);
         }
 
-        private static readonly Dictionary<string, JournalOperation> engineersProgressOperation = new Dictionary<string, JournalOperation>()
+        private static readonly Dictionary<string, JournalOperation> engineersProgressOperation = new Dictionary<string, JournalOperation>
         {
             ["Elivra Martuuk"] = new NoOperation(),
             ["The Dweller"] = new NoOperation(),
@@ -32,16 +31,16 @@ namespace EDEngineer.Models.Operations
             ["Hera Tani"] = new NoOperation(),
             ["Juri Ishmaak"] = new NoOperation(),
             ["Selene Jean"] = new NoOperation(),
-            ["Marco Qwent"] = new CargoOperation() { CommodityName = "Modular Terminals", Size = -25, JournalEvent = JournalEvent.EngineerContribution },
-            ["Ram Tah"] = new DataOperation() { DataName = "Classified Scan Databanks", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
+            ["Marco Qwent"] = new CargoOperation { CommodityName = "Modular Terminals", Size = -25, JournalEvent = JournalEvent.EngineerContribution },
+            ["Ram Tah"] = new DataOperation { DataName = "Classified Scan Databanks", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
             ["Broo Tarquin"] = new NoOperation(),
             ["Colonel Bris Dekker"] = new NoOperation(),
             ["Didi Vatermann"] = new NoOperation(),
-            ["Professor Palin"] = new MaterialOperation() {  MaterialName = "Sensor Fragment" , Size = -25, JournalEvent = JournalEvent.EngineerContribution },
+            ["Professor Palin"] = new MaterialOperation {  MaterialName = "Sensor Fragment" , Size = -25, JournalEvent = JournalEvent.EngineerContribution },
             ["Lori Jameson"] = new NoOperation(),
-            ["Tiana Fortune"] = new DataOperation() { DataName = "Decoded Emission Data", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
-            ["The Sarge"] = new DataOperation() { DataName = "Aberrant Shield Pattern Analysis", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
-            ["Bill Turner"] = new CargoOperation() { CommodityName = "Bromellite", Size = -50, JournalEvent = JournalEvent.EngineerContribution }
+            ["Tiana Fortune"] = new DataOperation { DataName = "Decoded Emission Data", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
+            ["The Sarge"] = new DataOperation { DataName = "Aberrant Shield Pattern Analysis", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
+            ["Bill Turner"] = new CargoOperation { CommodityName = "Bromellite", Size = -50, JournalEvent = JournalEvent.EngineerContribution }
         };
     }
 }

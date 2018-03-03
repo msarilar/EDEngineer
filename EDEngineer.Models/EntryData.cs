@@ -59,7 +59,7 @@ namespace EDEngineer.Models
             throw new InvalidOperationException($"Impossible to guess origin {text}");
         }
 
-        private static readonly Dictionary<string, Origin> originMapping = new Dictionary<string, Origin>()
+        private static readonly Dictionary<string, Origin> originMapping = new Dictionary<string, Origin>
         {
             ["Mining"] = Origin.Mining,
             ["Mining (ice rings)"] = Origin.Mining,

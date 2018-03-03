@@ -22,7 +22,7 @@ namespace EDEngineer.Views.Notifications
 
         public NotificationKind NotificationKindBlueprintReady
         {
-            get { return notificationBlueprint; }
+            get => notificationBlueprint;
             set
             {
                 notificationBlueprint = value;
@@ -35,7 +35,7 @@ namespace EDEngineer.Views.Notifications
 
         public Tuple<string, string> SelectedVoice
         {
-            get { return selectedVoice; }
+            get => selectedVoice;
             set
             {
                 selectedVoice = value;

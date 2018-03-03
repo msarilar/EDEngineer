@@ -11,7 +11,7 @@ namespace EDEngineer.Utils.UI
         {
             var translator = Languages.Instance;
 
-            var autoRunBox = new CheckBox()
+            var autoRunBox = new CheckBox
             {
                 Checked = SettingsManager.AutoRunServer,
                 Height = 50,
@@ -19,7 +19,7 @@ namespace EDEngineer.Utils.UI
                 Dock = DockStyle.Top
             };
 
-            var textBox = new NumericUpDown()
+            var textBox = new NumericUpDown
             {
                 TextAlign = HorizontalAlignment.Center,
                 Minimum = 1025,
@@ -30,14 +30,13 @@ namespace EDEngineer.Utils.UI
 
             textBox.Validating += (o, e) =>
                                   {
-                                      ushort p;
-                                      if (!ushort.TryParse(textBox.Text, out p))
+                                      if (!ushort.TryParse(textBox.Text, out var p))
                                       {
                                           e.Cancel = true;
                                       }
                                   };
 
-            var buttonOk = new Button()
+            var buttonOk = new Button
             {
                 DialogResult = DialogResult.OK,
                 FlatStyle = FlatStyle.Flat,
@@ -47,7 +46,7 @@ namespace EDEngineer.Utils.UI
                 Dock = DockStyle.Left
             };
             
-            var buttonCancel = new Button()
+            var buttonCancel = new Button
             {
                 DialogResult = DialogResult.Cancel,
                 FlatStyle = FlatStyle.Flat,
@@ -57,7 +56,7 @@ namespace EDEngineer.Utils.UI
                 Dock = DockStyle.Right
             };
 
-            var buttonsPanel = new Panel()
+            var buttonsPanel = new Panel
             {
                 Dock = DockStyle.Bottom,
                 Height = 50,
@@ -66,7 +65,7 @@ namespace EDEngineer.Utils.UI
             buttonsPanel.Controls.Add(buttonOk);
             buttonsPanel.Controls.Add(buttonCancel);
 
-            var f = new Form()
+            var f = new Form
             {
                 FormBorderStyle = FormBorderStyle.FixedToolWindow,
                 Width = 400,

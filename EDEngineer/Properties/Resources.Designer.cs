@@ -39,7 +39,7 @@ namespace EDEngineer.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EDEngineer.Properties.Resources", typeof(Resources).Assembly);
+                    var temp = new global::System.Resources.ResourceManager("EDEngineer.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -65,7 +65,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon elite_dangerous_icon {
             get {
-                object obj = ResourceManager.GetObject("elite_dangerous_icon", resourceCulture);
+                var obj = ResourceManager.GetObject("elite_dangerous_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_api {
             get {
-                object obj = ResourceManager.GetObject("menu_api", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_api", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_graphic_settings {
             get {
-                object obj = ResourceManager.GetObject("menu_graphic_settings", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_graphic_settings", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_help {
             get {
-                object obj = ResourceManager.GetObject("menu_help", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_help", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_language {
             get {
-                object obj = ResourceManager.GetObject("menu_language", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_language", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_lock_unlock {
             get {
-                object obj = ResourceManager.GetObject("menu_lock_unlock", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_lock_unlock", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_notifications {
             get {
-                object obj = ResourceManager.GetObject("menu_notifications", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_notifications", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -135,7 +135,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_quit {
             get {
-                object obj = ResourceManager.GetObject("menu_quit", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_quit", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -145,7 +145,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_release_notes {
             get {
-                object obj = ResourceManager.GetObject("menu_release_notes", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_release_notes", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -155,7 +155,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_reset_position {
             get {
-                object obj = ResourceManager.GetObject("menu_reset_position", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_reset_position", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_shortcut {
             get {
-                object obj = ResourceManager.GetObject("menu_shortcut", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_shortcut", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -175,7 +175,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_silent_launch {
             get {
-                object obj = ResourceManager.GetObject("menu_silent_launch", resourceCulture);
+                var obj = ResourceManager.GetObject("menu_silent_launch", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

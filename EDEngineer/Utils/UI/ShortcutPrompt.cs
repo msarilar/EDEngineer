@@ -10,7 +10,7 @@ namespace EDEngineer.Utils.UI
         {
             var translator = Languages.Instance;
 
-            var block = new TextBox()
+            var block = new TextBox
             {
                 Width = 385,
                 TextAlign = HorizontalAlignment.Center
@@ -35,7 +35,7 @@ namespace EDEngineer.Utils.UI
 
             block.Text = converter.ConvertToString(shortcut);
 
-            var buttonOk = new Button()
+            var buttonOk = new Button
             {
                 DialogResult = DialogResult.OK,
                 FlatStyle = FlatStyle.Flat,
@@ -46,7 +46,7 @@ namespace EDEngineer.Utils.UI
             };
 
 
-            var buttonCancel = new Button()
+            var buttonCancel = new Button
             {
                 DialogResult = DialogResult.Cancel,
                 FlatStyle = FlatStyle.Flat,
@@ -56,7 +56,7 @@ namespace EDEngineer.Utils.UI
                 Dock = DockStyle.Right
             };
 
-            var f = new Form()
+            var f = new Form
             {
                 FormBorderStyle = FormBorderStyle.FixedToolWindow,
                 Width = 400,

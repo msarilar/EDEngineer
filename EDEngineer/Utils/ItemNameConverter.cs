@@ -17,7 +17,7 @@ namespace EDEngineer.Utils
 
         private readonly Dictionary<string, string> localCache = new Dictionary<string, string>();
 
-        private HashSet<string> IgnoreList { get; } = new HashSet<string>()
+        private HashSet<string> IgnoreList { get; } = new HashSet<string>
         {
             "polymers",
             "scrap",
@@ -26,8 +26,7 @@ namespace EDEngineer.Utils
 
         public string GetOrCreate(string key)
         {
-            string value;
-            if (!TryGet(key, out value))
+            if (!TryGet(key, out var value))
             {
                 value = key;
             }

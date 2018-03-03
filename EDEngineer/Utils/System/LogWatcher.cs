@@ -63,7 +63,7 @@ namespace EDEngineer.Utils.System
 
         private void InitPeriodicRefresh()
         {
-            periodicRefresher = new Timer()
+            periodicRefresher = new Timer
             {
                 Interval = 2000
             };
@@ -78,8 +78,7 @@ namespace EDEngineer.Utils.System
                     // Elite Dangerous streams to file so no notification is given to the file system. We need to refresh the data to trigger the FileSystemWatcher:
                     foreach (var fileName in fileNames)
                     {
-                        FileInfo fileInfo;
-                        if (!fileInfos.TryGetValue(fileName, out fileInfo))
+                        if (!fileInfos.TryGetValue(fileName, out var fileInfo))
                         {
                             fileInfo = new FileInfo(fileName);
                             fileInfos[fileName] = fileInfo;
@@ -151,8 +150,7 @@ namespace EDEngineer.Utils.System
                 positions[file] = stream.Length;
             }
 
-            string commanderName;
-            if (!fileCommanders.TryGetValue(file, out commanderName))
+            if (!fileCommanders.TryGetValue(file, out var commanderName))
             {
                 commanderName = DEFAULT_COMMANDER_NAME;
             }

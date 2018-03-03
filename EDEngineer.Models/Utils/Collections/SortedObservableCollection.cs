@@ -47,7 +47,7 @@ namespace EDEngineer.Models.Utils.Collections
             }
         }
 
-        private bool sorting = false;
+        private bool sorting;
         public void SortInPlace()
         {
             sorting = true;

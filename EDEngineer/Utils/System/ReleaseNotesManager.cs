@@ -22,8 +22,7 @@ namespace EDEngineer.Utils.System
 
             Properties.Settings.Default.Save();
 
-            Version oldVersion;
-            if (!Version.TryParse(oldVersionString, out oldVersion))
+            if (!Version.TryParse(oldVersionString, out var oldVersion))
             {
                 oldVersion = new Version(1, 0, 0, 0);
             }
