@@ -27,7 +27,7 @@ namespace EDEngineer.Converters
                 case Rarity.VeryRare:
                     return "/Resources/Images/very-rare.png";
                 default:
-                    throw new NotImplementedException();
+                    return "/Resources/Images/question-mark.png";
             }
         }
 
