@@ -64,8 +64,9 @@ namespace EDEngineer.Views
         {
             Languages = languages;
             GraphicSettings = new GraphicSettings();
-            CurrentComparer = SettingsManager.Comparer;
+            IngredientsGrouped = SettingsManager.IngredientsGrouped;
             LoadState();
+            CurrentComparer = SettingsManager.Comparer;
         }
 
         public void LoadState(bool forcePickFolder = false)
@@ -133,6 +134,7 @@ namespace EDEngineer.Views
         private bool showZeroes = true;
         private bool showOnlyForFavorites;
         private bool showOriginIcons = true;
+        private bool ingredientsGrouped;
         private Subkind? materialSubkindFilter = null;
 
         private KeyValuePair<string, CommanderViewModel> currentCommander;
@@ -187,12 +189,24 @@ namespace EDEngineer.Views
             }
         }
 
+        public bool IngredientsGrouped
+        {
+            get { return ingredientsGrouped; }
+            set
+            {
+                ingredientsGrouped = value;
+                SettingsManager.IngredientsGrouped = value;
+                OnPropertyChanged();
+            }
+        }
+
         public IEnumerable<string> Comparers
         {
             get
             {
-                yield return "Name";
-                yield return "Count";
+                yield return State.NAME_COMPARER;
+                yield return State.COUNT_COMPARER;
+                yield return State.RARITY_COMPARER;
             }
         }
 
@@ -206,7 +220,19 @@ namespace EDEngineer.Views
                 OnPropertyChanged();
                 foreach (var state in Commanders.Select(c => c.Value.State))
                 {
-                    state.ChangeComparer(currentComparer);
+                    if (IngredientsGrouped)
+                    {
+                        state.ChangeComparer(currentComparer, (a, b) =>
+                            a.Data.Group == null && b.Data == null ? 0 :
+                            a.Data.Group == null ? 1 :
+                            b.Data.Group == null ? -1 :
+                            string.Compare(Languages.Translate(a.Data.Group.Description()),
+                                           Languages.Translate(b.Data.Group.Description()), StringComparison.InvariantCultureIgnoreCase));
+                    }
+                    else
+                    {
+                        state.ChangeComparer(currentComparer);
+                    }
                 }
             }
         }

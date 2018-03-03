@@ -59,7 +59,7 @@
   },
   {
     "Name": "Articulation Motors",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "articulationmotors",
     "Kind": "Commodity",
     "OriginDetails": [ "Mission reward" ]
@@ -100,7 +100,7 @@
   },
   {
     "Name": "Bromellite",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "bromellite",
     "Kind": "Commodity",
     "OriginDetails": [ "Mining", "Needed for Bill Turner (50)" ]
@@ -186,7 +186,7 @@
   },
   {
     "Name": "CMM Composite",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "cmmcomposite",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets" ]
@@ -322,14 +322,14 @@
   },
   {
     "Name": "Emergency Power Cells",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "emergencypowercells",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Akhenaten (High Tech/Refinery)" ]
   },
   {
     "Name": "Energy Grid Assembly",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "powergridassembly",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Stafkarl (Industrial/Refinery)" ]
@@ -344,7 +344,7 @@
   },
   {
     "Name": "Exhaust Manifold",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "exhaustmanifold",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Run (Industrial/Refinery)" ]
@@ -414,7 +414,7 @@
   },
   {
     "Name": "Hardware Diagnostic Sensor",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "hardwarediagnosticsensor",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Lei Jing (Industrial/Refinery)" ]
@@ -466,7 +466,7 @@
   },
   {
     "Name": "Heatsink Interlink",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "heatsinkinterlink",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Myrbat (Industrial/Refinery)" ]
@@ -482,7 +482,7 @@
   },
   {
     "Name": "HN Shock Mount",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "hnshockmount",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets" ]
@@ -524,14 +524,14 @@
   },
   {
     "Name": "Insulating Membrane",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "insulatingmembrane",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets" ]
   },
   {
     "Name": "Ion Distributor",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "iondistributor",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near 70 Tauri (Industrial/Extraction)" ]
@@ -555,7 +555,7 @@
   },
   {
     "Name": "Magnetic Emitter Coil",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "magneticemittercoil",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Leesti (Industrial/Refinery)" ]
@@ -607,14 +607,14 @@
   },
   {
     "Name": "Micro Controllers",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "microcontrollers",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets" ]
   },
   {
     "Name": "Micro-Weave Cooling Hoses",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "micro-weavecoolinghoses",
     "Kind": "Commodity",
     "OriginDetails": [ "Mission reward" ]
@@ -664,14 +664,14 @@
   },
   {
     "Name": "Nanobreakers",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "nanobreakers",
     "Kind": "Commodity",
     "OriginDetails": [ "Mission reward" ]
   },
   {
     "Name": "Neofabric Insulation",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "neofabricinsulation",
     "Kind": "Commodity",
     "OriginDetails": [ "Mission reward" ]
@@ -704,7 +704,7 @@
   },
   {
     "Name": "Osmium",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "osmium",
     "Kind": "Commodity",
     "OriginDetails": [ "Mining" ]
@@ -781,7 +781,7 @@
   },
   {
     "Name": "Platinum",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "platinum",
     "Kind": "Commodity",
     "OriginDetails": [ "Mining" ]
@@ -806,21 +806,21 @@
   },
   {
     "Name": "Power Converter",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "powerconverter",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Lakota (Industrial/Extraction)" ]
   },
   {
     "Name": "Power Transfer Bus",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "powertransferconduits",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Cilbien Zu (Industrial/Extraction)" ]
   },
   {
     "Name": "Praseodymium",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "praseodymium",
     "Kind": "Commodity",
     "OriginDetails": [ "Mining" ]
@@ -872,7 +872,7 @@
   },
   {
     "Name": "Radiation Baffle",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "radiationbaffle",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Heget (Industrial/Extraction)" ]
@@ -888,7 +888,7 @@
   },
   {
     "Name": "Reinforced Mounting Plate",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "reinforcedmountingplate",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets near Eurybia (Extraction/Refinery)" ]
@@ -922,7 +922,7 @@
   },
   {
     "Name": "Samarium",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "samarium",
     "Kind": "Commodity",
     "OriginDetails": [ "Mining" ]
@@ -1135,77 +1135,77 @@
   },
   {
     "Name": "Telemetry Suite",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "telemetrysuite",
     "Kind": "Commodity",
     "OriginDetails": [ "Mission reward" ]
   },
   {
     "Name": "Meta-alloys",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "metaalloys",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Maia, Darnielle's progress)", "Needed for Felicity Farseer (1)" ]
   },
   {
     "Name": "Soontill Relics",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "soontillrelics",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Ngurii, Cheranovsky City)", "Needed for Elvira Martuuk (3)" ]
   },
   {
     "Name": "Landmines",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "landmines",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Military)", "Needed for Liz Ryder (200)" ]
   },
   {
     "Name": "Gold",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "gold",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Extraction/Refinery)", "Mining (Metallic rings)", "Needed for Lei Cheung (200)" ]
   },
   {
     "Name": "Painite",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "painite",
     "Kind": "Commodity",
     "OriginDetails": [ "Mining (Metallic rings)", "Needed for Selene Jean (10)" ]
   },
   {
     "Name": "Kamitra Cigars",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "kamitracigars",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Kamitra, Hammel Terminal)", "Needed for Hera Tani (50)" ]
   },
   {
     "Name": "Fujin Tea",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "fujintea",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Fujin, Futen Spaceport)", "Needed for Broo Tarquin (50)" ]
   },
   {
     "Name": "Modular Terminals",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "modularterminals",
     "Kind": "Commodity",
     "OriginDetails": [ "Mission reward", "Needed for Marco Qwent (25)" ]
   },
   {
     "Name": "Xihe Companions",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "xihecompanions",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Xihe, Zhen Dock)", "Needed for Zacariah Nemo (25)" ]
   },
   {
     "Name": "Lavian Brandy",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "lavianbrandy",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Lave, Lave Station)", "Needed for Didi Vatermann (25)" ]
@@ -1220,7 +1220,7 @@
   },
   {
     "Name": "Kongga Ale",
-    "Rarity": null,
+    "Rarity": "None",
     "FormattedName": "konggaale",
     "Kind": "Commodity",
     "OriginDetails": [ "Markets (Kongga, Laplace Ring)", "Needed for Lori Jameson (25)" ]

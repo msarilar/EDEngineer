@@ -79,6 +79,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool IngredientsGrouped
+        {
+            get { return Properties.Settings.Default.IngredientsGrouped; }
+            set
+            {
+                Properties.Settings.Default.IngredientsGrouped = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static NotificationKind NotificationKindBlueprintReady
         {
             get

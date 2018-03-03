@@ -4,6 +4,7 @@
     xmlns:converters="clr-namespace:EDEngineer.Converters"
     xmlns:custom="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     x:Class="EDEngineer.App"
     StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
@@ -35,6 +36,10 @@
             
             <Color x:Key="Background">
                 #000000
+            </Color> 
+            
+            <Color x:Key="AccentBackground">
+                #441e00
             </Color>
 
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
@@ -42,6 +47,7 @@
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
             <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
             <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"/>
+            <SolidColorBrush x:Key="AccentBackgroundBrush" Color="{StaticResource AccentBackground}"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
@@ -73,6 +79,7 @@
             <converters:BooleanToEnumConverter x:Key="BooleanToEnum"/>
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
+            <converters:EnumToDescription x:Key="EnumToDescription"/>
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 
@@ -757,23 +764,20 @@
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type ToggleButton}">
-                            <Border Padding="{TemplateBinding Padding}">
-                                <Grid Background="Transparent" SnapsToDevicePixels="False">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="15"/>
-                                        <ColumnDefinition Width="*"/>
-                                    </Grid.ColumnDefinitions>
-                                    <Image x:Name="icon"
-                                           Source="https://raw.githubusercontent.com/chrisparnin/wpfPlusMinusExpander/master/Demo/Demo/Assets/closed.png"
-                                           Width="9"/>
-                                    <ContentPresenter Grid.Column="1" HorizontalAlignment="Left" Margin="4,0,0,0" RecognizesAccessKey="True" SnapsToDevicePixels="True" VerticalAlignment="Center"/>
-                                </Grid>
-                            </Border>
+                            <Grid Background="{StaticResource AccentBackgroundBrush}"
+                                  SnapsToDevicePixels="False">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <iconPacks:PackIconMaterial x:Name="icon" Kind="ChevronRight" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <ContentPresenter Grid.Column="1" HorizontalAlignment="Left" Margin="0" RecognizesAccessKey="True" SnapsToDevicePixels="True" VerticalAlignment="Center"/>
+                            </Grid>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsChecked" Value="true">
-                                    <Setter Property="Source"
+                                    <Setter Property="Kind"
                                             TargetName="icon"
-                                            Value="https://raw.githubusercontent.com/chrisparnin/wpfPlusMinusExpander/master/Demo/Demo/Assets/open.png"/>
+                                            Value="ChevronDown"/>
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -784,11 +788,32 @@
             <Style x:Key="IngredientGroupExpander"
                    TargetType="Expander">
                 <Setter Property="Foreground" Value="OrangeRed"/>
-                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="HeaderTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <Grid Background="{StaticResource AccentBackgroundBrush}"
+                                  Margin="0"
+                                  Width="{Binding
+                                            RelativeSource={RelativeSource
+                                            Mode=FindAncestor,
+                                            AncestorType={x:Type Expander}},
+                                            Path=ActualWidth}">
+                                <ContentPresenter Content="{Binding}"
+                                                  HorizontalAlignment="Center"
+                                                  Margin="-15,0,0,0"/>
+                            </Grid>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="Expander">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="3" SnapsToDevicePixels="true">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    Background="{TemplateBinding Background}"
+                                    CornerRadius="3"
+                                    SnapsToDevicePixels="true">
                                 <DockPanel>
                                     <ToggleButton x:Name="HeaderSite"
                                                   ContentTemplate="{TemplateBinding HeaderTemplate}"
@@ -807,7 +832,13 @@
                                                   Margin="1" MinWidth="0" MinHeight="0" Padding="{TemplateBinding Padding}"
                                                   Style="{StaticResource ExpanderDownHeaderStyle}"
                                                   VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                                    <ContentPresenter x:Name="ExpandSite" DockPanel.Dock="Bottom" Focusable="false" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" Visibility="Collapsed" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                    <ContentPresenter x:Name="ExpandSite"
+                                                      DockPanel.Dock="Bottom"
+                                                      Focusable="false"
+                                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                      Margin="{TemplateBinding Padding}"
+                                                      Visibility="Collapsed"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                                 </DockPanel>
                             </Border>
                             <ControlTemplate.Triggers>

@@ -177,7 +177,11 @@ namespace EDEngineer.Views
                 }
             });
 
-            source.View.GroupDescriptions.Add(new PropertyGroupDescription("Value.Data.Group"));
+            if (parentViewModel.IngredientsGrouped)
+            {
+                source.View.GroupDescriptions.Add(new PropertyGroupDescription("Value.Data.Group"));
+            }
+
             return source.View;
         }
 

@@ -4,9 +4,6 @@ namespace EDEngineer.Models
 {
     public enum Group
     {
-        [Description("Unknown")]
-        Unknown,
-
         [Description("Emission Data")]
         EmissionData,
 

@@ -11,7 +11,7 @@ namespace EDEngineer.Models
         public string Name { get; set; }
 
         [JsonConverter(typeof (StringEnumConverter))]
-        public Rarity? Rarity { get; set; }
+        public Rarity Rarity { get; set; }
 
         public string FormattedName { get; set; }
 
@@ -22,7 +22,7 @@ namespace EDEngineer.Models
         public Subkind? Subkind { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public Group Group { get; set; }
+        public Group? Group { get; set; }
 
         public List<string> OriginDetails { get; set; }
 

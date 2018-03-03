@@ -87,9 +87,15 @@ namespace EDEngineer.Views
                                              if (e.PropertyName == "ShowOnlyForFavorites" ||
                                                  e.PropertyName == "ShowZeroes" ||
                                                  e.PropertyName == "CurrentCommander" ||
-                                                 e.PropertyName == "MaterialSubkindFilter")
+                                                 e.PropertyName == "MaterialSubkindFilter" ||
+                                                 e.PropertyName == "IngredientsGrouped")
                                              {
                                                  RefreshCargoSources();
+                                             }
+
+                                             if (e.PropertyName == "IngredientsGrouped")
+                                             {
+                                                 viewModel.CurrentComparer = viewModel.CurrentComparer;
                                              }
                                          };
             serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);

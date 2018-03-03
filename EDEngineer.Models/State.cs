@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices.WindowsRuntime;
 using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 
@@ -14,6 +15,7 @@ namespace EDEngineer.Models
     {
         public const string NAME_COMPARER = "Name";
         public const string COUNT_COMPARER = "Count";
+        public const string RARITY_COMPARER = "Rarity";
 
         public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
 
@@ -29,7 +31,8 @@ namespace EDEngineer.Models
             comparers = new Dictionary<string, Comparer>()
             {
                 [NAME_COMPARER] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
-                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count)
+                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count),
+                [RARITY_COMPARER] = (a, b) => ((int) a.Value.Data.Rarity).CompareTo((int) b.Value.Data.Rarity)
             };
 
             Cargo = new SortedObservableCounter(comparers[comparer]);
@@ -39,9 +42,28 @@ namespace EDEngineer.Models
             LoadBaseData();
         }
 
-        public void ChangeComparer(string newComparer)
+        public void ChangeComparer(string newComparer, Func<Entry, Entry, int> priorityComparison = null)
         {
-            Cargo.RefreshSort(comparers[newComparer]);
+            Comparer comparer;
+            if (priorityComparison != null)
+            {
+                comparer = (a, b) =>
+                           {
+                               var priority = priorityComparison(a.Value, b.Value);
+                               if (priority == 0)
+                               {
+                                   return comparers[newComparer](a, b);
+                               }
+
+                               return priority;
+                           };
+            }
+            else
+            {
+                comparer = comparers[newComparer];
+            }
+
+            Cargo.RefreshSort(comparer);
         }
 
         public SortedObservableCounter Cargo { get; }

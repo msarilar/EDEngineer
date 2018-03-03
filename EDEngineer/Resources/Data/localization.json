@@ -3388,6 +3388,22 @@
       "fr": null,
       "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null
+    },
+	"Group ingredients?": {
+	  "es": null,
+	  "pt": null,
+	  "de": null,
+	  "fr": null,
+	  "ru": null,
+	  "pl": null
+	},
+    "Unknown": {
+	    "es": null,
+	    "pt": null,
+	    "de": null,
+	    "fr": null,
+	    "ru": null,
+	    "pl": null
     }
   }
 }

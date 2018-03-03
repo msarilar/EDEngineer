@@ -287,6 +287,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
@@ -312,9 +313,17 @@
                               IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrangeBrush}" />
                 </ToggleButton>
+                <ToggleButton HorizontalAlignment="Stretch"
+                              FontSize="16"
+                              FontFamily="/Resources/Fonts/#Euro Caps"
+                              Grid.Column="3"
+                              ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Group ingredients?'}"
+                              IsChecked="{Binding IngredientsGrouped, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <iconPacks:PackIconMaterial Kind="PackageVariantClosed" Foreground="{StaticResource EliteOrangeBrush}" />
+                </ToggleButton>
                 <Border BorderBrush="{StaticResource EliteOrangeBrush}"
                         BorderThickness="2"
-                        Grid.Column="3">
+                        Grid.Column="4">
                     <ComboBox ItemsSource="{Binding Comparers}"
                                 SelectedItem="{Binding CurrentComparer, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                 HorizontalContentAlignment="Center"
@@ -408,7 +417,7 @@
                                                                       IsExpanded="True"
                                                                       Padding="0"
                                                                       Style="{StaticResource IngredientGroupExpander}">
-                                                                <ItemsPresenter/>
+                                                                <ItemsPresenter Margin="0"/>
                                                             </Expander>
                                                         </ControlTemplate>
                                                     </Setter.Value>
@@ -482,11 +491,17 @@
                                             <Setter Property="Template">
                                                 <Setter.Value>
                                                     <ControlTemplate TargetType="{x:Type GroupItem}">
-                                                        <Expander Header="{Binding Name}"
-                                                                  IsExpanded="True"
+                                                        <Expander IsExpanded="True"
                                                                   Padding="0"
                                                                   Style="{StaticResource IngredientGroupExpander}">
-                                                            <ItemsPresenter/>
+                                                            <Expander.Header>
+                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                    <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
+                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                </MultiBinding>
+                                                            </Expander.Header>
+                                                            <ItemsPresenter Margin="0"/>
                                                         </Expander>
                                                     </ControlTemplate>
                                                 </Setter.Value>
