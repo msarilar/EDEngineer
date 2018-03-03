@@ -432,10 +432,16 @@
                                                 <Setter Property="Template">
                                                     <Setter.Value>
                                                         <ControlTemplate TargetType="{x:Type GroupItem}">
-                                                            <Expander Header="{Binding Name}"
-                                                                      IsExpanded="True"
+                                                            <Expander IsExpanded="True"
                                                                       Padding="0"
                                                                       Style="{StaticResource IngredientGroupExpander}">
+                                                                <Expander.Header>
+                                                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                        <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
+                                                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                    </MultiBinding>
+                                                                </Expander.Header>
                                                                 <ItemsPresenter Margin="0"/>
                                                             </Expander>
                                                         </ControlTemplate>
