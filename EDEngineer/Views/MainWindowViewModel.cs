@@ -223,7 +223,7 @@ namespace EDEngineer.Views
                     if (IngredientsGrouped)
                     {
                         state.ChangeComparer(currentComparer, (a, b) =>
-                            a.Data.Group == null && b.Data == null ? 0 :
+                            a.Data.Group == null && b.Data.Group == null ? 0 :
                             a.Data.Group == null ? 1 :
                             b.Data.Group == null ? -1 :
                             string.Compare(Languages.Translate(a.Data.Group.Description()),
