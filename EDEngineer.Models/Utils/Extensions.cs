@@ -42,5 +42,24 @@ namespace EDEngineer.Models.Utils
             var attribute = (DescriptionAttribute)fieldInfo.GetCustomAttribute(typeof(DescriptionAttribute));
             return attribute?.Description ?? value.ToString("G");
         }
+
+        public static int MaximumCapacity(this Rarity rarity)
+        {
+            switch (rarity)
+            {
+                case Rarity.VeryCommon:
+                    return 300;
+                case Rarity.Common:
+                    return 250;
+                case Rarity.Standard:
+                    return 200;
+                case Rarity.Rare:
+                    return 150;
+                case Rarity.VeryRare:
+                    return 100;
+                default:
+                    return 300;
+            }
+        }
     }
 }

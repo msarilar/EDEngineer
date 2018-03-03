@@ -80,6 +80,8 @@
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
             <converters:EnumToDescription x:Key="EnumToDescription"/>
+            <converters:RarityToMaximumCapacity x:Key="RarityToMaximumCapacity"/>
+            
             
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 

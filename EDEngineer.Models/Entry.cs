@@ -35,6 +35,7 @@ namespace EDEngineer.Models
                 var oldValue = count;
                 count = value;
                 OnPropertyChanged(oldValue, count);
+                OnPropertyChanged(nameof(CarryingProgress));
             }
         }
 
@@ -85,6 +86,15 @@ namespace EDEngineer.Models
 
                 highlighted = value;
                 OnPropertyChanged();
+            }
+        }
+
+        [JsonIgnore]
+        public double CarryingProgress
+        {
+            get
+            {
+                return Count / (double) Data.Rarity.MaximumCapacity() * 100;
             }
         }
 

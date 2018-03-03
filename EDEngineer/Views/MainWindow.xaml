@@ -37,6 +37,7 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
@@ -69,6 +70,12 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
+                            <TextBlock Grid.Row="5">
+                                <Run Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Carrying '}"></Run>
+                                <Run Text="{Binding DataContext.Value.Count}"/>
+                                <Run Text="/"/>
+                                <Run Text="{Binding DataContext.Value.Data.Rarity, Converter={StaticResource RarityToMaximumCapacity}}"/>
+                            </TextBlock>
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
@@ -76,8 +83,13 @@
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
                     <Grid HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
                         <StackPanel VerticalAlignment="Center"
-                                    Orientation="Horizontal">
+                                    Orientation="Horizontal"
+                                    Grid.Row="0">
                             <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                    HorizontalAlignment="Left"
                                    Width="20"
@@ -108,7 +120,8 @@
                                    VerticalAlignment="Center" />
                         </StackPanel>
 
-                        <Grid HorizontalAlignment="Right">
+                        <Grid HorizontalAlignment="Right"
+                              Grid.Row="0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition x:Name="PART_TextBoxColumn" Width="*" />
@@ -207,6 +220,12 @@
                                       Data="F1 M 19,38L 57,38L 57,44L 19,44L 19,38 Z "
                                       Stretch="Fill" />
                             </Button>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <controls:MetroProgressBar Value="{Binding Value.CarryingProgress, Mode=OneWay}"
+                                                       Background="Transparent"
+                                                       Foreground="{StaticResource EliteOrangeBrush}" />
                         </Grid>
                     </Grid>
                 </Border>
