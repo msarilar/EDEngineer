@@ -21,6 +21,7 @@ namespace EDEngineer.Models
         Died,
         Materials,
         Cargo,
-        MaterialTrade
+        MaterialTrade,
+        TechnologyBroker
     }
 }

@@ -135,9 +135,27 @@ namespace EDEngineer.Utils
                     return ExtractMaterialsDump(data);
                 case JournalEvent.MaterialTrade:
                     return ExtractMaterialTrade(data);
+                case JournalEvent.TechnologyBroker:
+                    return ExtractTechnologyBroker(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractTechnologyBroker(JObject data)
+        {
+            var operation = new EngineerOperation((string)data["ItemUnlocked"])
+            {
+                IngredientsConsumed = data["Ingredients"].Select(c =>
+                    {
+                        dynamic cc = c;
+                        return Tuple.Create(converter.TryGet((string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
+                    })
+                    .Where(c => c.Item1)
+                    .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
+            };
+
+            return operation.IngredientsConsumed.Any() ? operation : null;
         }
 
         private JournalOperation ExtractMaterialTrade(JObject data)
