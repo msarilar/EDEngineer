@@ -44,7 +44,7 @@
   },
   {
     "Name": "Arsenic",
-    "Rarity": "Standard",
+    "Rarity": "Common",
     "FormattedName": "arsenic",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -96,7 +96,7 @@
   },
   {
     "Name": "Cadmium",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "cadmium",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -591,7 +591,7 @@
   },
   {
     "Name": "Molybdenum",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "molybdenum",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -814,8 +814,16 @@
     "OriginDetails": [ "Markets near Eurybia (Extraction/Refinery)" ]
   },
   {
+	"Name": "Rhenium",
+	"Rarity": "VeryCommon",
+	"FormattedName": "rhenium",
+	"Kind": "Material",
+	"Subkind": "Raw",
+	"OriginDetails": [ "Surface prospecting", "Mining", "Mining (ice rings)" ]
+  },
+  {
     "Name": "Ruthenium",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "ruthenium",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -845,7 +853,7 @@
   },
   {
     "Name": "Selenium",
-    "Rarity": "Standard",
+    "Rarity": "Rare",
     "FormattedName": "selenium",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -898,7 +906,7 @@
   },
   {
     "Name": "Technetium",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "technetium",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -906,7 +914,7 @@
   },
   {
     "Name": "Tellurium",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "tellurium",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -930,7 +938,7 @@
   },
   {
     "Name": "Tin",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "tin",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -1006,7 +1014,7 @@
   },
   {
     "Name": "Zirconium",
-    "Rarity": "Standard",
+    "Rarity": "Rare",
     "FormattedName": "zirconium",
     "Kind": "Material",
     "Subkind": "Raw",
