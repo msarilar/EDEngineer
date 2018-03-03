@@ -20,6 +20,7 @@ namespace EDEngineer.Models
         LoadGame,
         Died,
         Materials,
-        Cargo
+        Cargo,
+        MaterialTrade
     }
 }

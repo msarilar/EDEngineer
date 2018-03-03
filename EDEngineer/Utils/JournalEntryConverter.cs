@@ -133,9 +133,28 @@ namespace EDEngineer.Utils
                     return new DeathOperation() { JournalEvent = JournalEvent.Died };
                 case JournalEvent.Materials:
                     return ExtractMaterialsDump(data);
+                case JournalEvent.MaterialTrade:
+                    return ExtractMaterialTrade(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractMaterialTrade(JObject data)
+        {
+            converter.TryGet((string)data["Received"]["Material"], out var ingredientAdded);
+            converter.TryGet((string) data["Paid"]["Material"], out var ingredientRemoved);
+
+            var addedQuantity = (int) data["Received"]["Quantity"];
+            var removedQuantity = (int)data["Paid"]["Quantity"];
+
+            return new MaterialTradeOperation
+            {
+                IngredientAdded = ingredientAdded,
+                IngredientRemoved = ingredientRemoved,
+                AddedQuantity = addedQuantity,
+                RemovedQuantity = removedQuantity
+            };
         }
 
         private JournalOperation ExtractMaterialsDump(JObject data)

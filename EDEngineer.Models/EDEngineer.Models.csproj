@@ -54,6 +54,7 @@
     <Compile Include="Filters\RarityFilter.cs" />
     <Compile Include="Group.cs" />
     <Compile Include="Operations\DumpOperation.cs" />
+    <Compile Include="Operations\MaterialTradeOperation.cs" />
     <Compile Include="Subkind.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
     <Compile Include="Utils\Json\LocalizedContractResolver.cs" />
