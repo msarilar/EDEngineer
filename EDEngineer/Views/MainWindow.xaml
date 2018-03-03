@@ -75,12 +75,6 @@
                 <Border BorderBrush="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
                         BorderThickness="1"
                         Opacity="{Binding Value.Data.Unused, Converter={StaticResource BooleanToOpacity}}">
-                    <Border.Background>
-                        <MultiBinding Converter="{StaticResource ThresholdToBackgroundColor}">
-                            <Binding Path="Value.Count"/>
-                            <Binding Path="Value.Threshold"/>
-                        </MultiBinding>
-                    </Border.Background>
                     <Grid HorizontalAlignment="Stretch">
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal">
@@ -183,29 +177,6 @@
                                          CaretBrush="White"
                                          FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"
                                          Text="{Binding Value.Count, Mode=OneWay}" />
-                                <TextBlock HorizontalAlignment="Right"
-                                       Foreground="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
-                                       Background="Transparent"
-                                       VerticalAlignment="Center"
-                                       FontSize="15" 
-                                       Text="/"
-                                       Visibility="{Binding Value.Threshold, Converter={StaticResource NullableToVisibility}}"
-                                       FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render">
-                                </TextBlock>
-                                <TextBox HorizontalAlignment="Right"
-                                         Foreground="{Binding Value.Highlighted, Converter={StaticResource BooleanToHighlightColor}}"
-                                         Background="Transparent"
-                                         VerticalAlignment="Center"
-                                         FontSize="15" 
-                                         GotFocus="EntryCountTextBoxOnFocussed"
-                                         LostFocus="ThresholdsTextBoxOnLostFocus"
-                                         PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
-                                         CaretBrush="White"
-                                         BorderBrush="Transparent"
-                                         Text="{Binding Value.Threshold}"
-                                         Tag="{Binding Value}"
-                                         Visibility="{Binding Value.Threshold, Converter={StaticResource NullableToVisibility}}"
-                                         FontFamily="/EDEngineer;component/NewFolder1/#Telegrama Render"/>
                             </StackPanel>
                             <Button x:Name="IncrementButton"
                                     Grid.Column="2"
@@ -387,15 +358,6 @@
                 </Button.Content>
             </Button>
 
-            <!-- CURRENT CARGO -->
-            
-<!-- COMMODITY REMOVED      
-            <UniformGrid Columns="3" Margin="5,0" Opacity="0" Grid.Row="1">
-                <Grid x:Name="c1"/>
-                <Grid/>
-                <Grid/>
-            </UniformGrid>
--->
             <UniformGrid Columns="2" Margin="5,0" Opacity="0" Grid.Row="1">
                 <Grid x:Name="c1"/>
                 <Grid/>
@@ -409,61 +371,14 @@
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </TabControl.Resources>
-                
-<!-- COMMODITY REMOVED               
-                <controls:MetroTabItem FontFamily="/Resources/Fonts/#Euro Caps"
-                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
-                    <controls:MetroTabItem.HeaderTemplate>
-                        <DataTemplate>
-                            <Grid Width="{Binding ElementName=c1, Path=ActualWidth}">
-                            <TextBlock HorizontalAlignment="Center"
-                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Commodities'}"/>
-                            </Grid>
-                        </DataTemplate>
-                    </controls:MetroTabItem.HeaderTemplate>
-                                
-                    <ScrollViewer>
-                        <ItemsControl Background="Transparent"
-                                    x:Name="Commodities"
-                                    ItemTemplate="{StaticResource EntryTemplate}"
-                                    ItemsSource="{Binding State.Cargo}">
-                            <ItemsControl.ItemContainerStyle>
-                                <Style>
-                                    <Setter Property="FrameworkElement.Margin" Value="3" />
-                                </Style>
-                            </ItemsControl.ItemContainerStyle>
-                        </ItemsControl>
-                    </ScrollViewer>
-                </controls:MetroTabItem>
--->                
+                              
                 <controls:MetroTabItem FontFamily="/Resources/Fonts/#Euro Caps"
                                        Header="{Binding}"
                                        Width="{Binding ElementName=c1, Path=ActualWidth}">
                     <controls:MetroTabItem.HeaderTemplate>
                         <DataTemplate>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <TextBlock Grid.Row="0"
-                                           HorizontalAlignment="Center"
-                                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"/>
-                                <controls:MetroProgressBar Grid.Row="1"
-                                                           Width="{Binding ElementName=c1, Path=ActualWidth}"
-                                                           Margin="5,0,5,0"
-                                                           Value="{Binding CurrentCommander.Value.State.MaterialsCount, Mode=OneWay}"
-                                                           Maximum="{Binding CurrentCommander.Value.State.MaxMaterials, Mode=OneWay}"
-                                                           Background="WhiteSmoke"/>
-                                <TextBlock Grid.Row="2"
-                                        FontSize="12"
-                                        HorizontalAlignment="Center">
-                                <Run Text="{Binding CurrentCommander.Value.State.MaterialsCount, Mode=OneWay}"/>
-                                <Run Text="/"/>
-                                <Run Text="{Binding CurrentCommander.Value.State.MaxMaterials, Mode=OneWay}"/>
-                                </TextBlock>
-                            </Grid>
+                            <TextBlock HorizontalAlignment="Center"
+                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
                     <Grid>
@@ -526,29 +441,8 @@
                                        Width="{Binding ElementName=c1, Path=ActualWidth}">
                     <controls:MetroTabItem.HeaderTemplate>
                         <DataTemplate>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <TextBlock Grid.Row="0"
-                                           HorizontalAlignment="Center"
-                                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"/>
-                                <controls:MetroProgressBar Grid.Row="1"
-                                                           Width="{Binding ElementName=c1, Path=ActualWidth}"
-                                                           Margin="5,0,5,0"
-                                                           Value="{Binding CurrentCommander.Value.State.DataCount, Mode=OneWay}"
-                                                           Maximum="{Binding CurrentCommander.Value.State.MaxData, Mode=OneWay}"
-                                                           Background="WhiteSmoke"/>
-                                <TextBlock Grid.Row="2"
-                                        FontSize="12"
-                                        HorizontalAlignment="Center">
-                                <Run Text="{Binding CurrentCommander.Value.State.DataCount, Mode=OneWay}"/>
-                                <Run Text="/"/>
-                                <Run Text="{Binding CurrentCommander.Value.State.MaxData, Mode=OneWay}"/>
-                                </TextBlock>
-                            </Grid>
+                            <TextBlock HorizontalAlignment="Center"
+                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
                     <ScrollViewer>

@@ -42,7 +42,6 @@
                                         <DesignEntry 
                          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                          Count="524"
-                                            Threshold="0"
                          FavoriteCount="0">
                                             <DesignEntry.Data>
                                                 <models:EntryData Rarity="Common" Name="Modular Terminals"/>
@@ -55,7 +54,6 @@
                                         <DesignEntry 
                          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                          Count="3"
-                                            Threshold="4"
                          FavoriteCount="1">
                                             <DesignEntry.Data>
                                                 <models:EntryData Rarity="Rare" Name="CMM Composite"/>

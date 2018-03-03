@@ -2533,46 +2533,6 @@
       "ru": "Рынки около Eurybia (Добывающие/Перерабатывающие)",
       "pl": "Rynki w pobliżu systemu Eurybia (Extraction/Refinery)"
     },
-    "Materials Almost Full!": {
-      "es": "Capacidad de materiales al límite.",
-      "pt": "Limite da capacidade de materiais quase atingido",
-      "de": "Materialien Kapazität beinahe erreicht!",
-      "fr": "Stockage matériaux presque plein",
-      "ru": "Хранилище материалов почти заполнено!",
-      "pl": "Limit miejsc na materiały prawie osiągnięty!"
-    },
-    "You have only {0} slots left for your materials.": {
-      "es": "Tienes {0} espacios para materiales.",
-      "pt": "Você tem {0} espaço para seus materiais",
-      "de": "Kapazitäten für Materialien nur noch {0}",
-      "fr": "Il vous reste seulement {0} emplacements pour vos matériaux.",
-      "ru": "Количество свободных слотов под материалы: {0}.",
-      "pl": "Pozostało Ci tylko {0} wolnych miejsc na Twoje materiały."
-    },
-    "Data Almost Full!": {
-      "es": "Capacidad de datos al límite.",
-      "pt": "Limite da capacidade de dados quase atingido",
-      "de": "Datenspeicher beinahe voll!",
-      "fr": "Volume de données presque plein !",
-      "ru": "Хранилище данных почти заполнено!",
-      "pl": "Miejsca na dane prawie pełne!"
-    },
-    "You have only {0} slots left for your data.": {
-      "es": "Tienes {0} espacios para datos.",
-      "pt": "Você tem {0} espaço para seus dados",
-      "de": "Sie haben nur noch {0} Datenspeicher frei.",
-      "fr": "Il vous reste seulement {0} emplacements pour vos données.",
-      "ru": "Количество свободных слотов под данные: {0}.",
-      "pl": "Pozostało Ci tylko {0} wolnych miejsc na dane."
-    },
-    "Cargo Almost Full Warning": {
-      "es": "Advertencia: Carga al límite",
-      "pt": "Atenção Carga Quase Completa",
-      "de": "Warnung: Frachtraum beinahe voll",
-      "fr": "Attention cargo presque plein !",
-      "ru": "Грузовой отсек почти полон!",
-      "pl": "Ostrzeżenie o pełnej ładowni"
-    },
     "Ingredient not used in any blueprint!": {
       "es": "Elemento no usado en ninguna receta!",
       "pt": "Ingrediente não utilizado em nenhum Diagrama",
@@ -2893,14 +2853,6 @@
       "ru": "Отключить все фильтры",
       "pl": "Odznacz wszystkie filtry"
     },
-    "Configure Thresholds": {
-      "es": "Configurar límites",
-      "pt": "Configurar valores de limite",
-      "de": "Schwellwert einstellen",
-      "fr": "Configurer les Seuils",
-      "ru": "Изменение ограничений",
-      "pl": "Skonfiguruj wartości progowe"
-    },
     "Rarity": {
       "es": "Rareza",
       "pt": "Raridade",
@@ -2924,14 +2876,6 @@
       "fr": "Recherche",
       "ru": "Поиск",
       "pl": "Szukaj"
-    },
-    "Apply threshold to selected items:": {
-      "es": "Aplicar límite a los elementos seleccionados",
-      "pt": "Aplicar limite para itens selecionados",
-      "de": "Schwellwert auf die Auswahl anwenden",
-      "fr": "Appliquer le seuil aux éléments sélectionnés:",
-      "ru": "Применить ограничения к выбранным пунктам:",
-      "pl": "Zastosuj wartość progową do wybranych:"
     },
     "Apply": {
       "es": "Aplicar",
@@ -2980,30 +2924,6 @@
       "fr": "Standard",
       "ru": "Обычные",
       "pl": "Standardowa"
-    },
-    "Reached {0} {1} - threshold set at {2}": {
-      "es": "Alcanzado {0} {1} - límite fijado en {2}",
-      "pt": "Alcançou {0} {1} - limite definido em {2}",
-      "de": "Erreicht wurde {0} {1} - Schwellwert gesetzt auf {2}",
-      "fr": "{0} {1} Atteint - Limite définie à {2}",
-      "ru": "Достигнуто {0} {1} - ограничение установленное на {2}",
-      "pl": "Osiągnięto {0} {1} - próg ustawiony na {2}"
-    },
-    "Threshold Reached!": {
-      "es": "¡Límite Alcanzado!",
-      "pt": "Limite Alcançado!",
-      "de": "Schwellwert erreicht!",
-      "fr": "Seuil atteint",
-      "ru": "Достигнуто ограничение!",
-      "pl": "Osiągnięto wartość progową!"
-    },
-    "Threshold Reached Warning": {
-      "es": "Aviso Límite Alcanzado",
-      "pt": "Aviso Limite alcançado!",
-      "de": "Schwellwert erreicht Warnung",
-      "fr": "Attention, seuil atteint",
-      "ru": "Предупреждение о достижении ограничения",
-      "pl": "Ostrzeżenie o osiągnięciu limitu"
     },
     "Multiple Blueprints Ready": {
       "es": "Múltiples Planos Listos",

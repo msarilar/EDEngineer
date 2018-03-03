@@ -45,60 +45,6 @@
                         Margin="2"/>
             </StackPanel>
         </Border>
-
-        <Border Grid.Row="1"
-                Margin="10"
-                BorderBrush="Green"
-                BorderThickness="2">
-            <StackPanel Orientation="Vertical">
-                <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Cargo Almost Full Warning'}"
-                       HorizontalAlignment="Center"/>
-                <StackPanel Orientation="Horizontal"
-                    Margin="10"
-                    HorizontalAlignment="Center">
-                    <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='None'}"
-                         Margin="5"
-                         IsChecked="{Binding NotificationKindCargoAlmostFull, Converter={StaticResource BooleanToEnum}, ConverterParameter=None}"/>
-                    <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Toast'}"
-                         Margin="5" x:Name="CargoToastRadioButton"
-                         IsChecked="{Binding NotificationKindCargoAlmostFull, Converter={StaticResource BooleanToEnum}, ConverterParameter=Toast}"/>
-                    <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Voice'}"
-                         Margin="5"
-                         IsChecked="{Binding NotificationKindCargoAlmostFull, Converter={StaticResource BooleanToEnum}, ConverterParameter=Voice}"/>
-                </StackPanel>
-                <Button Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Test Notification'}"
-                    Click="CargoAlmostFullTestClicked"
-                    IsEnabled="{Binding NotificationKindCargoAlmostFull, Converter={StaticResource NotificationKindToBoolean}}"
-                    Margin="2"/>
-            </StackPanel>
-        </Border>
-
-        <Border Grid.Row="2"
-                Margin="10"
-                BorderBrush="Red"
-                BorderThickness="2">
-            <StackPanel Orientation="Vertical">
-                <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Threshold Reached Warning'}"
-                       HorizontalAlignment="Center"/>
-            <StackPanel Orientation="Horizontal"
-                    Margin="10"
-                    HorizontalAlignment="Center">
-                    <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='None'}"
-                         Margin="5"
-                         IsChecked="{Binding NotificationKindThresholdReached, Converter={StaticResource BooleanToEnum}, ConverterParameter=None}"/>
-                    <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Toast'}"
-                         Margin="5" x:Name="ThresholdToastRadioButton"
-                         IsChecked="{Binding NotificationKindThresholdReached, Converter={StaticResource BooleanToEnum}, ConverterParameter=Toast}"/>
-                    <RadioButton Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Voice'}"
-                         Margin="5"
-                         IsChecked="{Binding NotificationKindThresholdReached, Converter={StaticResource BooleanToEnum}, ConverterParameter=Voice}"/>
-            </StackPanel>
-                <Button Content="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Test Notification'}"
-                    Click="ThresholdReachedTestClicked"
-                    IsEnabled="{Binding NotificationKindThresholdReached, Converter={StaticResource NotificationKindToBoolean}}"
-                    Margin="2"/>
-            </StackPanel>
-        </Border>
         
         <StackPanel Grid.Row="3"
                     Margin="10"

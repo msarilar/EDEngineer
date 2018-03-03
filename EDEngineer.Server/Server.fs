@@ -20,7 +20,7 @@ open EDEngineer.Models.Utils.Json
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv
-type cargoType = { Kind: string; Name: string; Count: int; Threshold: Nullable<int> }
+type cargoType = { Kind: string; Name: string; Count: int; }
 type ShoppingListItem = {
     Blueprint:Object;
     Count:int;
@@ -86,7 +86,6 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                                                                           Kind = e.Data.Kind.ToString();
                                                                           Name = e.Data.Name;
                                                                           Count = e.Count;
-                                                                          Threshold = e.Threshold;
                                                                         })
                                                   |> List.ofSeq
 

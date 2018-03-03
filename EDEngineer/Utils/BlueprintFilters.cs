@@ -84,12 +84,7 @@ namespace EDEngineer.Utils
                 new CraftableFilter("Non Craftable", blueprint => blueprint.CanCraftCount == 0, "CFnoncraftable")
                 {
                     Checked = true
-                },
-                /* COMMODITY REMOVED
-                new CraftableFilter("Missing Commodities", blueprint => blueprint.JustMissingCommodities, "CFmissingcommodities")
-                {
-                    Checked = true
-                }*/
+                }
             };
 
             AllFilters = GradeFilters.Cast<BlueprintFilter>()

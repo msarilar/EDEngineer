@@ -13,36 +13,12 @@ namespace EDEngineer.Views.Notifications
 {
     public class NotificationSettingsViewModel : INotifyPropertyChanged, IDisposable
     {
-        private NotificationKind notificationThreshold;
-        private NotificationKind notificationCargo;
         private NotificationKind notificationBlueprint;
         private readonly CommanderNotifications testCommanderNotifications;
         private readonly State testState;
         private readonly Random random;
         private Tuple<string, string> selectedVoice;
         public Languages Languages { get; }
-
-        public NotificationKind NotificationKindThresholdReached
-        {
-            get { return notificationThreshold; }
-            set
-            {
-                notificationThreshold = value;
-                SettingsManager.NotificationKindThresholdReached = value;
-                OnPropertyChanged();
-            }
-        }
-
-        public NotificationKind NotificationKindCargoAlmostFull
-        {
-            get { return notificationCargo; }
-            set
-            {
-                notificationCargo = value;
-                SettingsManager.NotificationKindCargoAlmostFull = value;
-                OnPropertyChanged();
-            }
-        }
 
         public NotificationKind NotificationKindBlueprintReady
         {
@@ -79,8 +55,6 @@ namespace EDEngineer.Views.Notifications
             testCommanderNotifications = new CommanderNotifications(testState);
             testCommanderNotifications.SubscribeNotifications();
 
-            NotificationKindThresholdReached = SettingsManager.NotificationKindThresholdReached;
-            NotificationKindCargoAlmostFull = SettingsManager.NotificationKindCargoAlmostFull;
             NotificationKindBlueprintReady = SettingsManager.NotificationKindBlueprintReady;
 
             SelectedVoice = Voices.FirstOrDefault(v => v.Item2 == SettingsManager.NotificationVoice) ?? Voices.FirstOrDefault();
@@ -98,36 +72,11 @@ namespace EDEngineer.Views.Notifications
             foreach (var entryData in testState.Cargo.Values)
             {
                 entryData.Count = 0;
-                entryData.Threshold = null;
             }
 
             foreach (var blueprint in testState.Blueprints)
             {
                 blueprint.Favorite = false;
-            }
-        }
-
-        public void TriggerThresholdReached()
-        {
-            ResetState();
-            var entry = testState.Cargo[random.Next(0, testState.Cargo.Count)].Value;
-            entry.Threshold = random.Next(10, 30);
-
-            testState.IncrementCargo(entry.Data.Name, random.Next(entry.Threshold.Value, entry.Threshold.Value + 5));
-        }
-
-        public void TriggerCargoAlmostFull()
-        {
-            ResetState();
-            if (random.Next(0, 2) == 0)
-            {
-                var material = testState.Cargo.Values.First(v => v.Data.Kind == Kind.Material);
-                testState.IncrementCargo(material.Data.Name, random.Next(995, 1000));
-            }
-            else
-            {
-                var data = testState.Cargo.Values.First(v => v.Data.Kind == Kind.Data);
-                testState.IncrementCargo(data.Data.Name, random.Next(495, 500));
             }
         }
 

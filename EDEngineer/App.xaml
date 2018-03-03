@@ -33,10 +33,6 @@
                 #FFCA64
             </Color>
             
-            <Color x:Key="ThresholdReached">
-                #441e00
-            </Color>
-            
             <Color x:Key="Background">
                 #000000
             </Color>
@@ -45,7 +41,6 @@
             <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
             <SolidColorBrush x:Key="TransparentBrush" Color="Transparent"/>
-            <SolidColorBrush x:Key="ThresholdReachedBrush" Color="{StaticResource ThresholdReached}"/>
             <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
@@ -71,9 +66,6 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToHighlightColor"
                                                          SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
-            <converters:ThresholdToBackgroundColorConverter x:Key="ThresholdToBackgroundColor"
-                                                         ThresholdReachedColor="{StaticResource ThresholdReachedBrush}"
-                                                         NormalColor="{StaticResource TransparentBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListHighlightColor"
                                                          SpecialColor="{StaticResource EliteOrangeBrush}"
                                                          NormalColor="Wheat"/>

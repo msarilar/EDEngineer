@@ -16,26 +16,13 @@ namespace EDEngineer.Views.Notifications
             viewModel = new NotificationSettingsViewModel(languages);
             DataContext = viewModel;
             InitializeComponent();
-
-            ThresholdToastRadioButton.IsEnabled = 
-                BlueprintToastRadioButton.IsEnabled =
-                CargoToastRadioButton.IsEnabled =
+            BlueprintToastRadioButton.IsEnabled =
                 Environment.OSVersion.Version >= new Version(6, 2, 9200, 0);
         }
 
         private void FavoriteBlueprintTestClicked(object sender, RoutedEventArgs e)
         {
             viewModel.TriggerFavoriteReady();
-        }
-
-        private void CargoAlmostFullTestClicked(object sender, RoutedEventArgs e)
-        {
-            viewModel.TriggerCargoAlmostFull();
-        }
-
-        private void ThresholdReachedTestClicked(object sender, RoutedEventArgs e)
-        {
-            viewModel.TriggerThresholdReached();
         }
 
         private void NotificationSettingsWindowClosed(object sender, EventArgs e)
@@ -45,29 +32,17 @@ namespace EDEngineer.Views.Notifications
 
         public static void InitNotifications()
         {
-            if (string.IsNullOrEmpty(Properties.Settings.Default.NotificationKindCargoAlmostFull))
+            if (string.IsNullOrEmpty(Properties.Settings.Default.NotificationKindBlueprintReady))
             {
                 SettingsManager.NotificationKindBlueprintReady = NotificationKind.None;
-                SettingsManager.NotificationKindThresholdReached = NotificationKind.None;
-                SettingsManager.NotificationKindCargoAlmostFull = NotificationKind.None;
 
                 new NotificationSettingsWindow(Languages.Instance).ShowDialog();
             }
             else if(Environment.OSVersion.Version < new Version(6, 2, 9200, 0))
             {
-                if (SettingsManager.NotificationKindThresholdReached == NotificationKind.Toast)
-                {
-                    SettingsManager.NotificationKindThresholdReached = NotificationKind.None;
-                }
-
                 if (SettingsManager.NotificationKindBlueprintReady == NotificationKind.Toast)
                 {
                     SettingsManager.NotificationKindBlueprintReady = NotificationKind.None;
-                }
-
-                if (SettingsManager.NotificationKindCargoAlmostFull == NotificationKind.Toast)
-                {
-                    SettingsManager.NotificationKindCargoAlmostFull = NotificationKind.None;
                 }
             }
         }

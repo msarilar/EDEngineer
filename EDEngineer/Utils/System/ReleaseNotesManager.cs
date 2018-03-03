@@ -31,10 +31,6 @@ namespace EDEngineer.Utils.System
             {
                 Properties.Settings.Default.ResetUI = true;
             }
-            else if (oldVersion < new Version(1, 0, 8, 4))
-            {
-                Properties.Settings.Default.Thresholds = null;
-            }
 
             var newVersion = Version.Parse(newVersionString);
 

@@ -131,9 +131,6 @@ namespace EDEngineer.Utils
                     return ExtractMaterialDiscarded(data);
                 case JournalEvent.Died:
                     return new DeathOperation() { JournalEvent = JournalEvent.Died };
-                /* COMMODITY REMOVED
-                 * case JournalEvent.Cargo:
-                    return ExtractCargoDump(data);*/
                 case JournalEvent.Materials:
                     return ExtractMaterialsDump(data);
                 default:

@@ -94,36 +94,6 @@ namespace EDEngineer.Utils.System
             }
         }
 
-        public static NotificationKind NotificationKindCargoAlmostFull
-        {
-            get
-            {
-                return
-                    (NotificationKind)
-                        Enum.Parse(typeof(NotificationKind), Properties.Settings.Default.NotificationKindCargoAlmostFull);
-            }
-            set
-            {
-                Properties.Settings.Default.NotificationKindCargoAlmostFull = value.ToString("G");
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        public static NotificationKind NotificationKindThresholdReached
-        {
-            get
-            {
-                return
-                    (NotificationKind)
-                        Enum.Parse(typeof(NotificationKind), Properties.Settings.Default.NotificationKindThresholdReached);
-            }
-            set
-            {
-                Properties.Settings.Default.NotificationKindThresholdReached = value.ToString("G");
-                Properties.Settings.Default.Save();
-            }
-        }
-
         public static string NotificationVoice
         {
             get { return Properties.Settings.Default.NotificationVoice; }
@@ -191,26 +161,6 @@ namespace EDEngineer.Utils.System
             set
             {
                 Properties.Settings.Default.Shortcut = value;
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        public static Dictionary<string, int?> Thresholds
-        {
-            get
-            {
-                var serialized = Properties.Settings.Default.Thresholds;
-                if (serialized == null)
-                {
-                    return null;
-                }
-
-                return JsonConvert.DeserializeObject<Dictionary<string, int?>>(serialized);
-            }
-            set
-            {
-                var serialized = JsonConvert.SerializeObject(value);
-                Properties.Settings.Default.Thresholds = serialized;
                 Properties.Settings.Default.Save();
             }
         }

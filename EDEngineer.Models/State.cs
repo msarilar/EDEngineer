@@ -14,7 +14,6 @@ namespace EDEngineer.Models
     {
         public const string NAME_COMPARER = "Name";
         public const string COUNT_COMPARER = "Count";
-        public const string THRESHOLDS_COMPARER = "Thresholds";
 
         public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
 
@@ -30,30 +29,7 @@ namespace EDEngineer.Models
             comparers = new Dictionary<string, Comparer>()
             {
                 [NAME_COMPARER] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
-                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count),
-                [THRESHOLDS_COMPARER] = (a, b) =>
-                                        {
-                                            if (a.Value.Threshold.HasValue && !b.Value.Threshold.HasValue)
-                                            {
-                                                return -1;
-                                            }
-
-                                            if (!a.Value.Threshold.HasValue && b.Value.Threshold.HasValue)
-                                            {
-                                                return 1;
-                                            }
-
-                                            if (a.Value.Threshold.HasValue && b.Value.Threshold.HasValue)
-                                            {
-                                                return
-                                                    (b.Value.Count - b.Value.Threshold.Value).CompareTo(a.Value.Count -
-                                                                                                        a.Value
-                                                                                                         .Threshold
-                                                                                                         .Value);
-                                            }
-
-                                            return comparers[COUNT_COMPARER](a, b);
-                                        }
+                [COUNT_COMPARER] = (a, b) => b.Value.Count.CompareTo(a.Value.Count)
             };
 
             Cargo = new SortedObservableCounter(comparers[comparer]);
@@ -69,22 +45,6 @@ namespace EDEngineer.Models
         }
 
         public SortedObservableCounter Cargo { get; }
-
-        public int MaterialsCount => EntryCount(Kind.Material);
-
-        public int DataCount => EntryCount(Kind.Data);
-
-        public int MaxMaterials { get; } = 1000;
-        public int MaxData { get; } = 500;
-
-        private int EntryCount(Kind kind)
-        {
-            return Cargo
-                .Where(i => i.Value.Data.Kind == kind)
-                .Where(i => i.Value.Count > 0)
-                .Select(i => i.Value.Count)
-                .Sum();
-        }
 
         public void LoadBaseData()
         {
@@ -124,16 +84,6 @@ namespace EDEngineer.Models
                     });
                 }
                 Cargo.Increment(name, change);
-            }
-
-            switch (Cargo[name].Data.Kind)
-            {
-                case Kind.Data:
-                    OnPropertyChanged(nameof(DataCount));
-                    break;
-                case Kind.Material:
-                    OnPropertyChanged(nameof(MaterialsCount));
-                    break;
             }
 
             if (!loading)

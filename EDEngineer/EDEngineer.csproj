@@ -160,7 +160,6 @@
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
     <Compile Include="Converters\SubkindToIcon.cs" />
-    <Compile Include="Converters\ThresholdToBackgroundColorConverter.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
     <Compile Include="Utils\System\PostponeScheduler.cs" />
     <Compile Include="Utils\UI\ScaleFontBehavior.cs" />
@@ -191,10 +190,6 @@
       <DependentUpon>NotificationSettingsWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Notifications\NotificationSettingsViewModel.cs" />
-    <Compile Include="Views\Popups\Thresholds\ThresholdsManagerViewModel.cs" />
-    <Compile Include="Views\Popups\Thresholds\ThresholdsManagerWindow.xaml.cs">
-      <DependentUpon>ThresholdsManagerWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Popups\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
@@ -231,10 +226,6 @@
     <Page Include="Views\Notifications\NotificationSettingsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\Popups\Thresholds\ThresholdsManagerWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Popups\ErrorWindow.xaml">
       <SubType>Designer</SubType>
@@ -286,6 +277,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="EDEngineer_1_TemporaryKey.pfx" />
     <None Include="EDEngineer_TemporaryKey.pfx" />
@@ -330,7 +322,6 @@
     <None Include="Resources\menu-reset-position.ico" />
     <None Include="Resources\menu-api.ico" />
     <None Include="Resources\menu-language.png" />
-    <None Include="Resources\menu-thresholds.ico" />
     <None Include="Resources\menu-release-notes.ico" />
     <None Include="Resources\menu-quit.ico" />
     <None Include="Resources\menu-notifications.ico" />

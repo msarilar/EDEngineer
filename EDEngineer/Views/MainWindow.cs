@@ -26,7 +26,6 @@ using WinformContextMenu = System.Windows.Forms.ContextMenuStrip;
 using DataGridCell = System.Windows.Controls.DataGridCell;
 using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using NotificationSettingsWindow = EDEngineer.Views.Notifications.NotificationSettingsWindow;
-using ThresholdsManagerWindow = EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow;
 
 namespace EDEngineer.Views
 {
@@ -115,10 +114,7 @@ namespace EDEngineer.Views
             var blueprintSource = new CollectionViewSource { Source = commander.State.Blueprints };
             commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value), commander.HighlightedEntryData);
             Blueprints.ItemsSource = blueprintSource.View;
-
-            // COMMODITY REMOVED
-            //Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo });
-
+            
             Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo });
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo });
         }
@@ -162,10 +158,6 @@ namespace EDEngineer.Views
                     ReleaseNotesManager.ShowReleaseNotes();
                 },
                 Properties.Settings.Default.CurrentVersion,
-                (o, e) =>
-                {
-                    ThresholdsManagerWindow.ShowThresholds(viewModel.Languages, viewModel.CurrentCommander.Value.State.Cargo, viewModel.CurrentCommander.Key);
-                },
                 (o, e) =>
                 {
                     new NotificationSettingsWindow(viewModel.Languages).ShowDialog();
@@ -254,23 +246,6 @@ namespace EDEngineer.Views
             {
                 var entry = (Entry)box.Tag;
                 viewModel.UserChange(entry, newCount - entry.Count);
-            }
-
-            BindingOperations.SetBinding(box, System.Windows.Controls.TextBox.TextProperty, binding);
-        }
-
-        private void ThresholdsTextBoxOnLostFocus(object sender, RoutedEventArgs e)
-        {
-            var box = (System.Windows.Controls.TextBox)sender;
-
-            int newCount;
-            if (int.TryParse(box.Text, out newCount))
-            {
-                var entry = (Entry)box.Tag;
-                entry.Threshold = newCount;
-                var thresholds = SettingsManager.Thresholds;
-                thresholds[entry.Data.Name] = newCount;
-                SettingsManager.Thresholds = thresholds;
             }
 
             BindingOperations.SetBinding(box, System.Windows.Controls.TextBox.TextProperty, binding);

@@ -226,18 +226,6 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string NotificationKindCargoAlmostFull {
-            get {
-                return ((string)(this["NotificationKindCargoAlmostFull"]));
-            }
-            set {
-                this["NotificationKindCargoAlmostFull"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool AutoRunServer {
             get {
@@ -292,30 +280,6 @@ namespace EDEngineer.Properties {
             }
             set {
                 this["SelectedCommander"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Thresholds {
-            get {
-                return ((string)(this["Thresholds"]));
-            }
-            set {
-                this["Thresholds"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string NotificationKindThresholdReached {
-            get {
-                return ((string)(this["NotificationKindThresholdReached"]));
-            }
-            set {
-                this["NotificationKindThresholdReached"] = value;
             }
         }
         

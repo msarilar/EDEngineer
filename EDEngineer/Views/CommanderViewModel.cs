@@ -17,7 +17,6 @@ using EDEngineer.Utils.System;
 using EDEngineer.Views.Notifications;
 using Newtonsoft.Json;
 using NodaTime;
-using ThresholdsManagerWindow = EDEngineer.Views.Popups.Thresholds.ThresholdsManagerWindow;
 
 namespace EDEngineer.Views
 {
@@ -67,7 +66,6 @@ namespace EDEngineer.Views
             LastUpdate = Instant.MinValue;
 
             ApplyEventsToSate(events);
-            ThresholdsManagerWindow.InitThresholds(State.Cargo);
             commanderNotifications?.SubscribeNotifications();
 
             State.Cargo.RefreshSort();

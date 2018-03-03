@@ -25,9 +25,7 @@ namespace EDEngineer.Views.Notifications
         private readonly IReadOnlyDictionary<NotificationContentKind, Func<NotificationKind>> settings = new Dictionary
             <NotificationContentKind, Func<NotificationKind>>
         {
-            [NotificationContentKind.BlueprintReady] = () => SettingsManager.NotificationKindBlueprintReady,
-            [NotificationContentKind.CargoAlmostFull] = () => SettingsManager.NotificationKindCargoAlmostFull,
-            [NotificationContentKind.ThresholdReached] = () => SettingsManager.NotificationKindThresholdReached,
+            [NotificationContentKind.BlueprintReady] = () => SettingsManager.NotificationKindBlueprintReady
         };
 
         public CommanderNotifications(State state)
@@ -147,54 +145,6 @@ namespace EDEngineer.Views.Notifications
             return items;
         }
 
-        private void ThresholdNotificationCheck(string item)
-        {
-            var translator = Languages.Instance;
-
-            if (!state.Cargo.ContainsKey(item))
-            {
-                return;
-            }
-
-            var entry = state.Cargo[item];
-
-            if (entry.Threshold.HasValue && entry.Threshold <= entry.Count)
-            {
-                var contentText = string.Format(
-                    translator.Translate(
-                        "Reached {0} {1} - threshold set at {2}"),
-                    entry.Count, translator.Translate(entry.Data.Name), entry.Threshold);
-
-                var headerText = translator.Translate("Threshold Reached!");
-
-                notifications.Add(new Notification(NotificationContentKind.ThresholdReached, headerText, contentText));
-            }
-        }
-
-        private void CheckCargoAlmostFull(string property)
-        {
-            var translator = Languages.Instance;
-
-            var ratio = state.MaxMaterials - state.MaterialsCount;
-            string headerText, contentText;
-            if (ratio <= 5 && property == "MaterialsCount")
-            {
-                headerText = translator.Translate("Materials Almost Full!");
-                contentText = string.Format(translator.Translate("You have only {0} slots left for your materials."), ratio);
-            }
-            else if ((ratio = state.MaxData - state.DataCount) <= 5 && property == "DataCount")
-            {
-                headerText = translator.Translate("Data Almost Full!");
-                contentText = string.Format(translator.Translate("You have only {0} slots left for your data."), ratio);
-            }
-            else
-            {
-                return;
-            }
-
-            notifications.Add(new Notification(NotificationContentKind.CargoAlmostFull, headerText, contentText));
-        }
-
         private void BlueprintOnFavoriteAvailable(object sender, EventArgs e)
         {
             var blueprint = (Blueprint)sender;
@@ -212,8 +162,6 @@ namespace EDEngineer.Views.Notifications
             {
                 blueprint.FavoriteAvailable -= BlueprintOnFavoriteAvailable;
             }
-
-            state.PropertyChanged -= StateCargoCountChanged;
         }
 
         public void SubscribeNotifications()
@@ -222,18 +170,6 @@ namespace EDEngineer.Views.Notifications
             {
                 blueprint.FavoriteAvailable += BlueprintOnFavoriteAvailable;
             }
-
-            state.PropertyChanged += StateCargoCountChanged;
-        }
-
-        private void StateCargoCountChanged(object sender, PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName == "MaterialsCount" || e.PropertyName == "DataCount")
-            {
-                CheckCargoAlmostFull(e.PropertyName);
-            }
-
-            ThresholdNotificationCheck(e.PropertyName);
         }
 
         public void Dispose()

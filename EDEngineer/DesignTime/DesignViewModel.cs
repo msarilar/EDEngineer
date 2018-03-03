@@ -87,7 +87,6 @@ namespace EDEngineer.DesignTime
         public Rarity Rarity { get; set; }
         public EntryData Data { get; set; }
         public int Count { get; set; }
-        public int Threshold { get; set; }
         public int FavoriteCount { get; set; }
     }
 

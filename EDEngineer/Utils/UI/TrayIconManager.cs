@@ -37,7 +37,6 @@ namespace EDEngineer.Utils.UI
             bool serverRunning,
             EventHandler showReleaseNotesHandler,
             string version,
-            EventHandler configureThresholdsHandler,
             EventHandler configureNotificationsHandler,
             EventHandler configureGraphicsHandler)
         {
@@ -63,12 +62,6 @@ namespace EDEngineer.Utils.UI
 
             var setShortCutItem = new ToolStripMenuItem { Image = Properties.Resources.menu_shortcut.ToBitmap() };
             setShortCutItem.Click += configureShortcutHandler;
-
-            var configureThresholdsItem = new ToolStripMenuItem
-            {
-                Image = Properties.Resources.menu_thresholds.ToBitmap()
-            };
-            configureThresholdsItem.Click += configureThresholdsHandler;
 
             var configureNotificationsItem = new ToolStripMenuItem
             {
@@ -108,10 +101,10 @@ namespace EDEngineer.Utils.UI
                 launchServerItem.Checked = launchServerHandler();
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, configureThresholdsItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
             };
 
             quitItem.Click += quitHandler;
@@ -122,7 +115,6 @@ namespace EDEngineer.Utils.UI
             menu.Items.Add(resetItem);
             menu.Items.Add("-");
             menu.Items.Add(configureNotificationsItem);
-            menu.Items.Add(configureThresholdsItem);
             menu.Items.Add("-");
             menu.Items.Add(enableSilentLaunch);
             menu.Items.Add(setShortCutItem);
@@ -139,8 +131,8 @@ namespace EDEngineer.Utils.UI
 
         private static void SetItemsText(ToolStripMenuItem quitItem, Languages translator, ToolStripMenuItem helpItem, ToolStripMenuItem setShortCutItem,
                                          ToolStripMenuItem selectLanguageItem, ToolStripMenuItem resetItem, ToolStripMenuItem unlockItem, ToolStripMenuItem showItem,
-                                         ToolStripMenuItem launchServerItem, ToolStripMenuItem configureThresholdsItem, ToolStripMenuItem enableSilentLaunch,
-                                         ToolStripMenuItem configureNotificationsItem, ToolStripMenuItem configureGraphicsItem)
+                                         ToolStripMenuItem launchServerItem, ToolStripMenuItem enableSilentLaunch, ToolStripMenuItem configureNotificationsItem,
+                                         ToolStripMenuItem configureGraphicsItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -150,7 +142,6 @@ namespace EDEngineer.Utils.UI
             unlockItem.Text = translator.Translate("Toggle Window Mode (Locked/Unlocked)");
             showItem.Text = translator.Translate("Show");
             launchServerItem.Text = translator.Translate("Launch Local API");
-            configureThresholdsItem.Text = translator.Translate("Configure Thresholds");
             enableSilentLaunch.Text = translator.Translate("Silent Launch");
             configureNotificationsItem.Text = translator.Translate("Configure Notifications");
             configureGraphicsItem.Text = translator.Translate("Configure Graphics");
