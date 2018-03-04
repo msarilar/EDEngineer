@@ -41,12 +41,30 @@
   },
   {
     "Name": "Antimony",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "antimony",
     "Kind": "Material",
     "Subkind": "Raw",
     "OriginDetails": [ "Surface prospecting" ],
-    "Group": "Category4"
+    "Group": "Category7"
+  },
+  {
+    "Name": "Lead",
+    "Rarity": "VeryCommon",
+    "FormattedName": "lead",
+    "Kind": "Material",
+    "Subkind": "Raw",
+    "OriginDetails": [ "Surface prospecting", "Mining" ],
+    "Group": "Category7"
+  },
+  {
+    "Name": "Boron",
+    "Rarity": "Standard",
+    "FormattedName": "boron",
+    "Kind": "Material",
+    "Subkind": "Raw",
+    "OriginDetails": [ "Surface prospecting", "Mining" ],
+    "Group": "Category7"
   },
   {
     "Name": "Arsenic",
@@ -598,7 +616,7 @@
   },
   {
     "Name": "Mercury",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "mercury",
     "Kind": "Material",
     "Subkind": "Raw",
@@ -788,12 +806,12 @@
   },
   {
     "Name": "Polonium",
-    "Rarity": "VeryRare",
+    "Rarity": "Rare",
     "FormattedName": "polonium",
     "Kind": "Material",
     "Subkind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mission reward" ],
-    "Group": "Category5"
+    "Group": "Category6"
   },
   {
     "Name": "Polymer Capacitors",
@@ -1119,12 +1137,12 @@
   },
   {
     "Name": "Zirconium",
-    "Rarity": "Rare",
+    "Rarity": "Common",
     "FormattedName": "zirconium",
     "Kind": "Material",
     "Subkind": "Raw",
     "OriginDetails": [ "Surface prospecting", "Mining" ],
-    "Group": "Category6"
+    "Group": "Category7"
   },
   {
     "Name": "Thargoid Ship Signature",

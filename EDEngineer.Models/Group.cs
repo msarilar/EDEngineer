@@ -40,6 +40,9 @@ namespace EDEngineer.Models
         [Description("Category 6")]
         Category6,
 
+        [Description("Category 7")]
+        Category7,
+
         [Description("Chemical")]
         Chemical,
 
