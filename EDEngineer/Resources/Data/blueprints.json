@@ -14361,8 +14361,12 @@
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
+        "Name": "Carbon",
+        "Size": 1
+      },
+      {
         "Name": "Vanadium",
-        "Size": 2
+        "Size": 1
       },
       {
         "Name": "Germanium",
@@ -14377,6 +14381,10 @@
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
       {
+        "Name": "Carbon",
+        "Size": 1
+      },
+      {
         "Name": "Vanadium",
         "Size": 1
       },
@@ -14386,7 +14394,7 @@
       },
       {
         "Name": "Cadmium",
-        "Size": 2
+        "Size": 1
       },
       {
         "Name": "Niobium",
@@ -14400,6 +14408,14 @@
     "Name": "+100% Jump Range",
     "Engineers": [ "@Synthesis" ],
     "Ingredients": [
+      {
+        "Name": "Carbon",
+        "Size": 1
+      },
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
       {
         "Name": "Arsenic",
         "Size": 1
