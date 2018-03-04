@@ -790,14 +790,39 @@
                                     <ColumnDefinition Width="15"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <iconPacks:PackIconMaterial Grid.Column="1" x:Name="icon" Kind="ChevronRight" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <iconPacks:PackIconMaterial RenderTransformOrigin="0.5, 0.5" Grid.Column="1" x:Name="icon" Kind="ChevronRight" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <iconPacks:PackIconMaterial.RenderTransform>
+                                        <TransformGroup>
+                                            <RotateTransform x:Name="rtAngle" Angle="90"/>
+                                        </TransformGroup>
+                                    </iconPacks:PackIconMaterial.RenderTransform>
+                                </iconPacks:PackIconMaterial>
                                 <ContentPresenter Grid.Column="2" HorizontalAlignment="Left" Margin="0" RecognizesAccessKey="True" SnapsToDevicePixels="True" VerticalAlignment="Center"/>
                             </Grid>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsChecked" Value="true">
-                                    <Setter Property="Kind"
-                                            TargetName="icon"
-                                            Value="ChevronDown"/>
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetName="rtAngle"
+                                                                 Storyboard.TargetProperty="Angle"
+                                                                 From="0"
+                                                                 To="90"
+                                                                 Duration="0:0:0.2"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetName="rtAngle"
+                                                                 Storyboard.TargetProperty="Angle"
+                                                                 From="90"
+                                                                 To="0"
+                                                                 Duration="0:0:0.2"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -857,13 +882,36 @@
                                                       Focusable="false"
                                                       HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                       Margin="{TemplateBinding Padding}"
-                                                      Visibility="Collapsed"
-                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                                      Visibility="Visible"
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+                                        <ContentPresenter.LayoutTransform>
+                                            <ScaleTransform x:Name="contentScale" ScaleY="1"/>
+                                        </ContentPresenter.LayoutTransform>
+                                    </ContentPresenter>
                                 </DockPanel>
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsExpanded" Value="true">
-                                    <Setter Property="Visibility" TargetName="ExpandSite" Value="Visible"/>
+                                    <Trigger.EnterActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetName="contentScale"
+                                                                 Storyboard.TargetProperty="ScaleY"
+                                                                 To="1"
+                                                                 Duration="0:0:0.05"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.EnterActions>
+                                    <Trigger.ExitActions>
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <DoubleAnimation Storyboard.TargetName="contentScale"
+                                                                 Storyboard.TargetProperty="ScaleY"
+                                                                 To="0"
+                                                                 Duration="0:0:0.05"/>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </Trigger.ExitActions>
                                 </Trigger>
                                 <Trigger Property="IsEnabled" Value="false">
                                     <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
