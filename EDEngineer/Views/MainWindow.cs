@@ -570,10 +570,5 @@ namespace EDEngineer.Views
             filter.Checked = !filter.Checked;
             e.Handled = true;
         }
-
-        private void SyncShoppingListPanelClicked(object sender, MouseButtonEventArgs e)
-        {
-            viewModel.CurrentCommander.Value.ShoppingList.SynchronizeWithLogs = !viewModel.CurrentCommander.Value.ShoppingList.SynchronizeWithLogs;
-        }
     }
 }

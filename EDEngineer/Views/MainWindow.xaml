@@ -1393,21 +1393,20 @@
 
                                                 <StackPanel Orientation="Vertical"
                                                             HorizontalAlignment="Center"
-                                                            Tag="{Binding}"
-                                                            MouseLeftButtonUp="SyncShoppingListPanelClicked"
                                                             Grid.Column="3"
-                                                            Margin="0,0,0,3">
+                                                            Margin="0,0,0,3"
+                                                            Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                                                     <StackPanel.ToolTip>
-                                                        <ToolTip>
-                                                            <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='EDEngineer will try to remove blueprints from your shopping list if you craft them in game'}"/>
+                                                        <ToolTip DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
+                                                            <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='EDEngineer will try to remove blueprints from your shopping list if you craft them in game'}"/>
                                                         </ToolTip>
                                                     </StackPanel.ToolTip>
                                                     <TextBlock Width="Auto"
                                                                Foreground="WhiteSmoke"
                                                                FontFamily="/Resources/Fonts/#Euro Caps"
                                                                HorizontalAlignment="Center"
-                                                               Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Sync?', FallbackValue='Sync?'}"/>
-                                                    <CheckBox IsChecked="{Binding Synced, Mode=TwoWay}"
+                                                               Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Sync?'}"/>
+                                                    <CheckBox IsChecked="{Binding DataContext.ShoppingList.SynchronizeWithLogs, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
                                                               HorizontalAlignment="Center"/>
                                                 </StackPanel>
                                             </Grid>
