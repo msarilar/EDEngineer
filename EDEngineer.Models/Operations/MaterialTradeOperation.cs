@@ -11,7 +11,7 @@ namespace EDEngineer.Models.Operations
         public override void Mutate(State state)
         {
             state.IncrementCargo(IngredientRemoved, -1 * RemovedQuantity);
-            state.IncrementCargo(IngredientAdded, -1 * AddedQuantity);
+            state.IncrementCargo(IngredientAdded, AddedQuantity);
         }
     }
 }
