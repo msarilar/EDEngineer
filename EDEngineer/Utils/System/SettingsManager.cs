@@ -87,6 +87,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool SyncShoppingList
+        {
+            get => Properties.Settings.Default.SyncShoppingList;
+            set
+            {
+                Properties.Settings.Default.SyncShoppingList = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+        
         public static NotificationKind NotificationKindBlueprintReady
         {
             get => (NotificationKind)

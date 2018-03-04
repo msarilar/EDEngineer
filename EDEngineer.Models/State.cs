@@ -11,7 +11,7 @@ namespace EDEngineer.Models
 
     public class State : INotifyPropertyChanged
     {
-        public event EventHandler<Tuple<string, List<BlueprintIngredient>>> BlueprintCrafted;
+        public event EventHandler<Tuple<BlueprintCategory, string, List<BlueprintIngredient>>> BlueprintCrafted;
         public const string NAME_COMPARER = "Name";
         public const string COUNT_COMPARER = "Count";
         public const string RARITY_COMPARER = "Rarity";
@@ -122,9 +122,9 @@ namespace EDEngineer.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public void OnBlueprintCrafted(string technicalName, List<BlueprintIngredient> ingredientsConsumed)
+        public void OnBlueprintCrafted(BlueprintCategory category, string technicalName, List<BlueprintIngredient> ingredientsConsumed)
         {
-            BlueprintCrafted?.Invoke(this, Tuple.Create(technicalName, ingredientsConsumed));
+            BlueprintCrafted?.Invoke(this, Tuple.Create(category, technicalName, ingredientsConsumed));
         }
     }
 }

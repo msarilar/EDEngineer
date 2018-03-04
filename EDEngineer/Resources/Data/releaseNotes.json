@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.9.4",
+    "Content": "* Various hotfixes following the previous update\r\n* Updated FSD injection synthesis ingredients\r\n* Fixed material traded event which wrongly updating the cargo\r\n* Added guardians ingredients and a new origin (Ancient/Guardian Ruins)\r\n* Added missing materials and fixed the categories\r\n* Added experimental effects\r\n* Added technologies (from technology broker)\r\n* Added a category filter (Module/Synthesis/Experimental Effects/Technologies/Engineer Unlock)\r\n* Synchronize your shopping list with what you craft:\r\n  > If EDEngineer is running when you craft a blueprint then it will try to find which blueprint in the shopping list needs to be removed\r\n  > If it can find it, it will decrease the amount in your shopping list\r\n  > If it can't, it won't do anything\r\n  > Won't work for Engineer Unlocks\r\n  > I'm not 100% confident it's bug free, you can enable/disable it with the checkbox in your Shopping List header"
+  },
+  {
     "Version": "1.0.9.1",
     "Content": "* Removed Thresholds and Total cargo carrying capacity as well as their associated notifications\r\n* Added Ruthenium ingredient and updated rarities on some ingredients\r\n* Ingredients can now be grouped in their category (you can disable this with a toggle button on top of the list)\r\n* Added a carrying capacity for each ingredient based on their rarity (progress bar and information in tooltip)\r\n* Added an option to sort by Rarity (on top of Name and Count)\r\n* Handle Material Trade event\r\n* Handle Technology Broker event\r\n\r\n* Update to spanish localization thanks to @jcmangado"
   },

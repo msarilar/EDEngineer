@@ -94,7 +94,6 @@
     <Compile Include="Operations\MaterialOperation.cs" />
     <Compile Include="Operations\MissionCompletedOperation.cs" />
     <Compile Include="Operations\NoOperation.cs" />
-    <Compile Include="Operations\SynthesisOperation.cs" />
     <Compile Include="Origin.cs" />
     <Compile Include="Rarity.cs" />
     <Compile Include="ReleaseNote.cs" />

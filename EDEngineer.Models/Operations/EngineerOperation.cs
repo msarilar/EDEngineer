@@ -4,13 +4,15 @@ namespace EDEngineer.Models.Operations
 {
     public class EngineerOperation : JournalOperation
     {
-        public string TechnicalModuleName { get; }
+        public BlueprintCategory Category { get; }
+        public string TechnicalName { get; }
 
         public List<BlueprintIngredient> IngredientsConsumed { get; set; }
 
-        public EngineerOperation(string technicalModuleName)
+        public EngineerOperation(BlueprintCategory category, string technicalName)
         {
-            TechnicalModuleName = technicalModuleName;
+            Category = category;
+            TechnicalName = technicalName;
         }
 
         public override void Mutate(State state)
@@ -20,10 +22,7 @@ namespace EDEngineer.Models.Operations
                 state.IncrementCargo(ingredient.Entry.Data.Name, -1 * ingredient.Size);
             }
 
-            if(!string.IsNullOrEmpty(TechnicalModuleName))
-            {
-                state.OnBlueprintCrafted(TechnicalModuleName, IngredientsConsumed);
-            }
+            state.OnBlueprintCrafted(Category, TechnicalName, IngredientsConsumed);
         }
     }
 }

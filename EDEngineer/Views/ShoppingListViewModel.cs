@@ -5,11 +5,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models;
+using EDEngineer.Utils.System;
 
 namespace EDEngineer.Views
 {
     public class ShoppingListViewModel : INotifyPropertyChanged, IEnumerable<Blueprint>
     {
+        private bool synchronizeWithLogs;
         private readonly ILanguage languages;
         private readonly List<Blueprint> blueprints;
 
@@ -31,6 +33,17 @@ namespace EDEngineer.Views
         public List<Tuple<Blueprint, int>> Composition
             => blueprints.Where(b => b.ShoppingListCount > 0)
                          .Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList();
+
+        public bool SynchronizeWithLogs
+        {
+            get => synchronizeWithLogs;
+            set
+            {
+                synchronizeWithLogs = value;
+                SettingsManager.SyncShoppingList = value;
+                OnPropertyChanged();
+            }
+        }
 
         public IEnumerator<Blueprint> GetEnumerator()
         {

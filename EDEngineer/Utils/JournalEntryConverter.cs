@@ -144,7 +144,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractTechnologyBroker(JObject data)
         {
-            var operation = new EngineerOperation(null)
+            var operation = new EngineerOperation(BlueprintCategory.Technology, null)
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                     {
@@ -397,9 +397,9 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractSynthesis(JObject data)
         {
-            var synthesisOperation = new SynthesisOperation
+            var synthesisOperation = new EngineerOperation(BlueprintCategory.Synthesis, null)
             {
-                SynthesisPartOperation = new List<JournalOperation>()
+                IngredientsConsumed = new List<BlueprintIngredient>()
             };
 
             foreach (var jToken in data["Materials"])
@@ -408,40 +408,11 @@ namespace EDEngineer.Utils
                 var synthesisIngredientName = converter.GetOrCreate((string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
 
-                var entry = converter[synthesisIngredientName];
-
-                switch (entry.Kind)
-                {
-                    case Kind.Material:
-                        synthesisOperation.SynthesisPartOperation.Add(new MaterialOperation
-                        {
-                            MaterialName = synthesisIngredientName,
-                            Size = -1 * count ?? -1
-                        });
-
-                        break;
-                    case Kind.Data:
-                        synthesisOperation.SynthesisPartOperation.Add(new DataOperation
-                        {
-                            DataName = synthesisIngredientName,
-                            Size = -1 * count ?? -1
-                        });
-
-                        break;
-                    case Kind.Commodity:
-                        synthesisOperation.SynthesisPartOperation.Add(new CargoOperation
-                        {
-                            CommodityName = synthesisIngredientName,
-                            Size = -1 * count ?? -1
-                        });
-
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
-                }
+                synthesisOperation.IngredientsConsumed.Add(new BlueprintIngredient(entries[synthesisIngredientName],
+                    count ?? 1));
             }
 
-            return synthesisOperation.SynthesisPartOperation.Any() ? synthesisOperation : null;
+            return synthesisOperation.IngredientsConsumed.Any() ? synthesisOperation : null;
         }
 
         private JournalOperation ExtractMaterialCollected(JObject data)
@@ -467,7 +438,7 @@ namespace EDEngineer.Utils
         private JournalOperation ExtractEngineerOperation(JObject data)
         {
             var blueprintName = data["Module"] ?? null;
-            var operation = new EngineerOperation((string) blueprintName)
+            var operation = new EngineerOperation(BlueprintCategory.Module, (string) blueprintName)
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {

@@ -90,7 +90,8 @@ namespace EDEngineer.Views
 
             LoadState(logs);
 
-            State.BlueprintCrafted += (o, e) => TryRemoveFromShoppingListByIngredients(e.Item1, e.Item2);
+            State.BlueprintCrafted += (o, e) => TryRemoveFromShoppingListByIngredients(e.Item1, e.Item2, e.Item3);
+            ShoppingList.SynchronizeWithLogs = SettingsManager.SyncShoppingList;
 
             var datas = State.Cargo.Select(c => c.Value.Data);
             var ingredientUsed = State.Blueprints.SelectMany(blueprint => blueprint.Ingredients);
@@ -308,14 +309,66 @@ namespace EDEngineer.Views
         }
 
 
-        public void TryRemoveFromShoppingListByIngredients(string technicalModuleName, List<BlueprintIngredient> blueprintIngredients)
+        public void TryRemoveFromShoppingListByIngredients(BlueprintCategory category, string technicalModuleName, List<BlueprintIngredient> blueprintIngredients)
         {
-            var blueprint = ShoppingList
+            if (!ShoppingList.SynchronizeWithLogs)
+            {
+                return;
+            }
+
+            var blueprints = ShoppingList
                 .Composition
                 .Select(x => x.Item1)
-                .FirstOrDefault(b => b.HasSameIngredients(blueprintIngredients) && b.Type.IsIn(technicalModuleName));
+                .ToList();
 
-            ShoppingListChange(blueprint, -1);
+            if (category == BlueprintCategory.Module)
+            {
+                var blueprint = blueprints.FirstOrDefault(b => b.Category == BlueprintCategory.Module &&
+                                                               b.Type.IsIn(technicalModuleName) &&
+                                                               b.HasSameIngredients(blueprintIngredients));
+                if (blueprint == null)
+                {
+                    var experimentals = blueprints.Where(b => b.Category == BlueprintCategory.Experimental).ToList();
+                    foreach (var experimental in experimentals)
+                    {
+                        foreach (var module in blueprints.Where(
+                            b => b.Category == BlueprintCategory.Module && b.Type.IsIn(technicalModuleName)))
+                        {
+                            var mergedIngredients = experimental.Ingredients.Concat(module.Ingredients).ToList();
+                            if (mergedIngredients.Count == blueprintIngredients.Count &&
+                                mergedIngredients.All(blueprintIngredients.Contains))
+                            {
+                                ShoppingListChange(experimental, -1);
+                                ShoppingListChange(module, -1);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    ShoppingListChange(blueprint, -1);
+                }
+            }
+            else
+            {
+                var blueprint = blueprints.FirstOrDefault(b =>
+                {
+                    if (b.Category != category)
+                    {
+                        return false;
+                    }
+
+                    switch (b.Category)
+                    {
+                        case BlueprintCategory.Synthesis:
+                        case BlueprintCategory.Technology:
+                            return b.HasSameIngredients(blueprintIngredients);
+                        default:
+                            return false;
+                    }
+                });
+                ShoppingListChange(blueprint, -1);
+            }
         }
 
         public void ShoppingListChange(Blueprint blueprint, int i)
