@@ -21,6 +21,7 @@ namespace EDEngineer.Utils
         public List<TypeFilter> TypeFilters { get; }
         public List<IgnoredFavoriteFilter> IgnoredFavoriteFilters { get; }
         public List<CraftableFilter> CraftableFilters { get; }
+        public List<CategoryFilter> CategoryFilters { get; }
 
         public string SearchText
         {
@@ -88,11 +89,17 @@ namespace EDEngineer.Utils
                 }
             };
 
+            CategoryFilters = Enum.GetValues(typeof(BlueprintCategory))
+                                  .Cast<BlueprintCategory>()
+                                  .Select(c => new CategoryFilter(c, $"BCF{c}"))
+                                  .ToList();
+
             AllFilters = GradeFilters.Cast<BlueprintFilter>()
                 .Union(EngineerFilters)
                 .Union(TypeFilters)
                 .Union(IgnoredFavoriteFilters)
-                .Union(CraftableFilters).ToList();
+                .Union(CraftableFilters)
+                .Union(CategoryFilters).ToList();
 
             LoadSavedFilters();
 
@@ -243,7 +250,8 @@ namespace EDEngineer.Utils
                           EngineerFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           TypeFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
                           IgnoredFavoriteFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
-                          CraftableFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint));
+                          CraftableFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)) &&
+                          (!CategoryFilters.Where(f => f.Checked).Any() || CategoryFilters.Where(f => f.Checked).Any(f => f.AppliesTo(blueprint)));
 
                 e.Accepted = ret;
             };

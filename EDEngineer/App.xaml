@@ -50,7 +50,7 @@
             <SolidColorBrush x:Key="AccentBackgroundBrush" Color="{StaticResource AccentBackground}"/>
 
             <SolidColorBrush x:Key="TechnologyBrush" Color="MediumVioletRed"/>
-            <SolidColorBrush x:Key="ExperimentalBrush" Color="GreenYellow"/>
+            <SolidColorBrush x:Key="ExperimentalBrush" Color="DarkOliveGreen"/>
             <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />

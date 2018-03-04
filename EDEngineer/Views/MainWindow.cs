@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using EDEngineer.Localization;
 using EDEngineer.Models;
+using EDEngineer.Models.Filters;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
@@ -561,6 +562,13 @@ namespace EDEngineer.Views
             {
                 viewModel.MaterialSubkindFilter = Subkind.Raw;
             }
+        }
+
+        private void CategoryFilterPanelClicked(object sender, MouseButtonEventArgs e)
+        {
+            var filter = ((CategoryFilter) ((StackPanel) sender).Tag);
+            filter.Checked = !filter.Checked;
+            e.Handled = true;
         }
     }
 }

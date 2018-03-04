@@ -574,6 +574,7 @@
                     <Grid.RowDefinitions>
                         <RowDefinition />
                         <RowDefinition />
+                        <RowDefinition />
                     </Grid.RowDefinitions>
                     <controls:DropDownButton ItemsSource="{Binding Filters.GradeFilters}"
                                              Content="{Binding Filters.GradeFilters, Converter={StaticResource AllFiltersToHeader}, ConverterParameter='Grade', FallbackValue='Grade Filter (4/5)'}"
@@ -736,6 +737,43 @@
                         </Button>
                     </Grid>
 
+                    <ItemsControl ItemsSource="{Binding Filters.CategoryFilters}"
+                                  Grid.Row="2"
+                                  Grid.ColumnSpan="4"
+                                  Grid.Column="0"
+                                  Background="#111111">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Rows="1"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical"
+                                            HorizontalAlignment="Center"
+                                            Tag="{Binding}"
+                                            MouseLeftButtonUp="CategoryFilterPanelClicked"
+                                            Margin="0,0,0,3">
+                                    <TextBlock Width="Auto"
+                                               Foreground="WhiteSmoke"
+                                               FontFamily="/Resources/Fonts/#Euro Caps"
+                                               HorizontalAlignment="Center">
+                                        <TextBlock.Text>
+                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                <Binding Path="Label" />
+                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                         RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                            </MultiBinding>
+                                        </TextBlock.Text>
+                                    </TextBlock>
+                                    <CheckBox Width="10"
+                                              Height="10"
+                                              IsChecked="{Binding Checked, Mode=TwoWay}"
+                                              HorizontalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
                 </Grid>
 
                 <Grid Grid.Row="1"

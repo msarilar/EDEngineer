@@ -16,6 +16,7 @@ namespace EDEngineer.Models.Filters
         public EngineerFilter(string engineer, string uniqueName) : base(uniqueName)
         {
             Engineer = engineer;
+            Checked = true;
         }
 
         public static EngineerFilter MagicFilter => new EngineerFilter(null, "EFmagic")

@@ -14,6 +14,7 @@ namespace EDEngineer.Models.Filters
         public TypeFilter(string type, string uniqueName) : base(uniqueName)
         {
             Type = type;
+            Checked = true;
         }
 
         public static TypeFilter MagicFilter => new TypeFilter(null, "TFmagic")
