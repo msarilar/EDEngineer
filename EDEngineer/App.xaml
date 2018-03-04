@@ -49,6 +49,10 @@
             <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource Background}"/>
             <SolidColorBrush x:Key="AccentBackgroundBrush" Color="{StaticResource AccentBackground}"/>
 
+            <SolidColorBrush x:Key="TechnologyBrush" Color="MediumVioletRed"/>
+            <SolidColorBrush x:Key="ExperimentalBrush" Color="GreenYellow"/>
+            <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
+
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
@@ -66,9 +70,13 @@
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
             <converters:ListToVisibilityConverter x:Key="ListToVisibility" />
             <converters:NullableToVisibilityConverter x:Key="NullableToVisibility" />
-            <converters:BooleanToSpecialColorConverter x:Key="BooleanToSynthesisColor"
-                                                         SpecialColor="{StaticResource SynthesisBlueBrush}"
-                                                         NormalColor="{StaticResource EliteOrangeBrush}"/>
+            <converters:BlueprintCategoryToColorConverter x:Key="BlueprintCategoryToColor"
+                                                          SynthesisColor="{StaticResource SynthesisBlueBrush}"
+                                                          ModuleColor="{StaticResource EliteOrangeBrush}"
+                                                          UnlockColor="{StaticResource UnlockBrush}"
+                                                          TechnologyColor="{StaticResource TechnologyBrush}"
+                                                          ExperimentalColor="{StaticResource ExperimentalBrush}"/>
+            
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToHighlightColor"
                                                          SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                          NormalColor="{StaticResource EliteOrangeBrush}"/>
@@ -539,8 +547,17 @@
                                     <Setter Property="Foreground"
             							Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
                                 </MultiTrigger>
-                                <DataTrigger Binding="{Binding Synthesis}" Value="True">
+                                <DataTrigger Binding="{Binding Category}" Value="Synthesis">
                                     <Setter Property="Foreground" Value="{StaticResource SynthesisBlueBrush}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Category}" Value="Experimental">
+                                    <Setter Property="Foreground" Value="{StaticResource ExperimentalBrush}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Category}" Value="Unlock">
+                                    <Setter Property="Foreground" Value="{StaticResource UnlockBrush}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding Category}" Value="Technology">
+                                    <Setter Property="Foreground" Value="{StaticResource TechnologyBrush}"/>
                                 </DataTrigger>
                             </Style.Triggers>
                         </Style>

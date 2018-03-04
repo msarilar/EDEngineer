@@ -1031,7 +1031,7 @@
                                                                Text="{Binding Progress, Mode=OneWay, Converter={StaticResource DoubleToPercent}}"/>
                                                 </Grid>
                                                 <controls:MetroProgressBar Value="{Binding Progress, Mode=OneWay}"
-                                                                           Background="WhiteSmoke" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                                                           Background="WhiteSmoke" Foreground="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}" />
                                             </StackPanel>
                                         </Grid>
                                     </DataTemplate>
@@ -1050,7 +1050,7 @@
                                                           IsChecked="{Binding Favorite, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                           ToolTip="{Binding DataContext.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Favorite', RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}"
                                                           Foreground="Black">
-                                                <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Synthesis, Converter={StaticResource BooleanToSynthesisColor}}" />
+                                                <iconPacks:PackIconMaterial Kind="Star" Foreground="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}" />
                                             </ToggleButton>
                                             <ToggleButton x:Name="IgnoreBluebrintButton"
                                                           Width="40"

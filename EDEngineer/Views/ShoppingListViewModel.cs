@@ -53,7 +53,11 @@ namespace EDEngineer.Views
                                          .ThenBy(i => languages.Translate(i.Entry.Data.Name))
                                          .ToList();
 
-            var metaBlueprint = new Blueprint(languages, "", "Shopping List", -1, composition,
+            var metaBlueprint = new Blueprint(languages,
+                "",
+                "Shopping List",
+                null,
+                composition,
                 new string[0]);
 
             yield return metaBlueprint;

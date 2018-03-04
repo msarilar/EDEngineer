@@ -39,7 +39,8 @@ namespace EDEngineer.Converters
                     color = Colors.Red;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException();
+                    color = Colors.RoyalBlue;
+                    break;
             }
 
             return new SolidColorBrush(color);

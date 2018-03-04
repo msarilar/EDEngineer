@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlueprintCategory.cs" />
     <Compile Include="Filters\BlueprintFilter.cs" />
     <Compile Include="Filters\ILabelledFilter.cs" />
     <Compile Include="Filters\KindFilter.cs" />

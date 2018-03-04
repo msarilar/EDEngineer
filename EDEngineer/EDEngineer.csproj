@@ -152,6 +152,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\BlueprintCategoryToColorConverter.cs" />
     <Compile Include="Converters\BooleanToEnumConverter.cs" />
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
     <Compile Include="Converters\EnumToDescription.cs" />

@@ -42,18 +42,19 @@ namespace EDEngineer.Utils
         {
             GradeFilters = new List<GradeFilter>(availableBlueprints.GroupBy(b => b.Grade)
                 .Select(b => b.Key)
+                .Where(b => b.HasValue)
                 .OrderBy(b => b)
-                .Select(g => new GradeFilter(g, $"GF{g}") {  Checked = true }));
+                .Select(g => new GradeFilter(g.GetValueOrDefault(), $"GF{g}") {  Checked = true }));
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()
                 .OrderBy(language.Translate)
-                .Select(g => new EngineerFilter(g, $"EF{g}") { Checked = true }));
+                .Select(e => new EngineerFilter(e, $"EF{e}") { Checked = true }));
 
             TypeFilters = new List<TypeFilter>(availableBlueprints.GroupBy(b => b.Type)
                 .Select(b => b.Key)
                 .OrderBy(language.Translate)
-                .Select(g => new TypeFilter(g, $"TF{g}") { Checked = true }));
+                .Select(t => new TypeFilter(t, $"TF{t}") { Checked = true }));
 
             IgnoredFavoriteFilters = new List<IgnoredFavoriteFilter>
             {

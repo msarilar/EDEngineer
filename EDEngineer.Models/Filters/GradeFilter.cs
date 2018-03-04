@@ -8,7 +8,7 @@ namespace EDEngineer.Models.Filters
 
         public override bool AppliesTo(Blueprint blueprint)
         {
-            return blueprint.Grade == Grade;
+            return blueprint.Grade == null || blueprint.Grade == Grade;
         }
 
         public GradeFilter(int grade, string uniqueName) : base(uniqueName)

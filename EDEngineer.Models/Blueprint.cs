@@ -48,7 +48,7 @@ namespace EDEngineer.Models
         public string BlueprintName { get; }
         public IReadOnlyCollection<string> Engineers { get; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; }
-        public int Grade { get; }
+        public int? Grade { get; }
 
         [JsonIgnore]
         public bool ShoppingListHighlighted
@@ -64,7 +64,33 @@ namespace EDEngineer.Models
         }
 
         [JsonIgnore]
-        public bool Synthesis => Engineers.FirstOrDefault() == "@Synthesis";
+        public BlueprintCategory Category
+        {
+            get
+            {
+                if (Engineers.FirstOrDefault() == "@Synthesis")
+                {
+                    return BlueprintCategory.Synthesis;
+                }
+
+                if (Type == "Unlock")
+                {
+                    return BlueprintCategory.Unlock;
+                }
+
+                if (Engineers.FirstOrDefault() == "@Technology")
+                {
+                    return BlueprintCategory.Technology;
+                }
+
+                if (Grade == null)
+                {
+                    return BlueprintCategory.Experimental;
+                }
+
+                return BlueprintCategory.Module;
+            }
+        }
 
         [JsonIgnore]
         public string TranslatedType => language.Translate(Type);
@@ -88,7 +114,7 @@ namespace EDEngineer.Models
 
         public string SearchableContent { get; private set; }
 
-        public Blueprint(ILanguage language, string type, string blueprintName, int grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
+        public Blueprint(ILanguage language, string type, string blueprintName, int? grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
         {
             this.language = language;
 
@@ -155,7 +181,7 @@ namespace EDEngineer.Models
                 if (value == favorite) return;
                 favorite = value;
 
-                if (Synthesis)
+                if (Category == BlueprintCategory.Synthesis)
                 {
                     Ingredients.Select(ingredient => ingredient.Entry).ToList().ForEach(entry => entry.SynthesisFavoriteCount += value ? 1 : -1);
                 }
