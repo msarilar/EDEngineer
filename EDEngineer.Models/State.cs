@@ -11,6 +11,7 @@ namespace EDEngineer.Models
 
     public class State : INotifyPropertyChanged
     {
+        public event EventHandler<List<BlueprintIngredient>> BlueprintCrafted;
         public const string NAME_COMPARER = "Name";
         public const string COUNT_COMPARER = "Count";
         public const string RARITY_COMPARER = "Rarity";
@@ -119,6 +120,11 @@ namespace EDEngineer.Models
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void OnBlueprintCrafted(List<BlueprintIngredient> ingredientsConsumed)
+        {
+            BlueprintCrafted?.Invoke(this, ingredientsConsumed);
         }
     }
 }

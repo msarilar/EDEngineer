@@ -19,6 +19,8 @@ namespace EDEngineer.Models.Operations
             {
                 state.IncrementCargo(ingredient.Entry.Data.Name, -1 * ingredient.Size);
             }
+
+            state.OnBlueprintCrafted(IngredientsConsumed);
         }
     }
 }

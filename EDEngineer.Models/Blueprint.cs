@@ -269,5 +269,10 @@ namespace EDEngineer.Models
                 Grade
             };
         }
+
+        public bool HasSameIngredients(List<BlueprintIngredient> ingredients)
+        {
+            return ingredients.Count == Ingredients.Count && ingredients.All(Ingredients.Contains);
+        }
     }
 }
