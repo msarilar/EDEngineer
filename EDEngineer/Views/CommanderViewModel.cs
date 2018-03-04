@@ -90,7 +90,7 @@ namespace EDEngineer.Views
 
             LoadState(logs);
 
-            State.BlueprintCrafted += (o, e) => TryRemoveFromShoppingListByIngredients(e);
+            State.BlueprintCrafted += (o, e) => TryRemoveFromShoppingListByIngredients(e.Item1, e.Item2);
 
             var datas = State.Cargo.Select(c => c.Value.Data);
             var ingredientUsed = State.Blueprints.SelectMany(blueprint => blueprint.Ingredients);
@@ -308,12 +308,12 @@ namespace EDEngineer.Views
         }
 
 
-        public void TryRemoveFromShoppingListByIngredients(List<BlueprintIngredient> blueprintIngredients)
+        public void TryRemoveFromShoppingListByIngredients(string technicalModuleName, List<BlueprintIngredient> blueprintIngredients)
         {
             var blueprint = ShoppingList
                 .Composition
                 .Select(x => x.Item1)
-                .FirstOrDefault(b => b.HasSameIngredients(blueprintIngredients));
+                .FirstOrDefault(b => b.HasSameIngredients(blueprintIngredients) && b.Type.IsIn(technicalModuleName));
 
             ShoppingListChange(blueprint, -1);
         }

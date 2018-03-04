@@ -13,6 +13,12 @@ namespace EDEngineer.Models.Utils
             return string.Join("", initials);
         }
 
+        public static bool IsIn(this string target, string field)
+        {
+            return field.ToLowerInvariant().Replace(" ", "").Replace("_", "")
+                 .Contains(target.ToLowerInvariant().Replace(" ", "").Replace("_", ""));
+        }
+
         public static TResult? Map<TInput, TResult>(this TInput? o, Func<TInput, TResult> evaluator)
             where TInput : struct
             where TResult : struct

@@ -144,7 +144,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractTechnologyBroker(JObject data)
         {
-            var operation = new EngineerOperation((string)data["ItemUnlocked"])
+            var operation = new EngineerOperation(null)
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                     {
@@ -466,7 +466,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractEngineerOperation(JObject data)
         {
-            var blueprintName = data["Blueprint"] ?? "";
+            var blueprintName = data["Module"] ?? null;
             var operation = new EngineerOperation((string) blueprintName)
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>

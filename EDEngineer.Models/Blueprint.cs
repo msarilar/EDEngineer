@@ -270,7 +270,7 @@ namespace EDEngineer.Models
             };
         }
 
-        public bool HasSameIngredients(List<BlueprintIngredient> ingredients)
+        public bool HasSameIngredients(IReadOnlyCollection<BlueprintIngredient> ingredients)
         {
             return ingredients.Count == Ingredients.Count && ingredients.All(Ingredients.Contains);
         }
