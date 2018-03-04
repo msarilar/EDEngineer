@@ -714,35 +714,35 @@
     "Rarity": "Standard",
     "FormattedName": "ancientbiologicaldata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": [ "Ancient/Guardian ruins" ]
   },
   {
     "Name": "Pattern Beta Obelisk Data",
     "Rarity": "Common",
     "FormattedName": "ancientculturaldata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": [ "Ancient/Guardian ruins" ]
   },
   {
     "Name": "Pattern Delta Obelisk Data",
     "Rarity": "Rare",
     "FormattedName": "ancientlanguagedata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": [ "Ancient/Guardian ruins" ]
   },
   {
     "Name": "Pattern Epsilon Obelisk Data",
     "Rarity": "VeryRare",
     "FormattedName": "ancienttechnologicaldata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": [ "Ancient/Guardian ruins" ]
   },
   {
     "Name": "Pattern Gamma Obelisk Data",
     "Rarity": "VeryCommon",
     "FormattedName": "ancienthistoricaldata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": [ "Ancient/Guardian ruins" ]
   },
   {
     "Name": "Peculiar Shield Frequency Data",
@@ -1330,5 +1330,67 @@
     "Kind": "Material",
     "Subkind": "Manufactured",
     "OriginDetails": null
-  }
+  },
+	{
+      "Name": "Guardian Weapon Blueprint Segment",
+      "Rarity": "Rare",
+      "FormattedName": "guardian_weaponblueprint",
+      "Kind": "Data",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	},
+	{
+      "Name": "Guardian Power Cell",
+      "Rarity": "VeryCommon",
+      "FormattedName": "guardian_powercell",
+      "Kind": "Material",
+      "Subkind": "Manufactured",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	},
+	{
+      "Name": "Guardian Technology Component",
+      "Rarity": "Standard",
+      "FormattedName": "guardian_techcomponent",
+      "Kind": "Material",
+      "Subkind": "Manufactured",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	},
+	{
+      "Name": "Guardian Power Conduit",
+      "Rarity": "Common",
+      "FormattedName": "guardian_powerconduit",
+      "Kind": "Material",
+      "Subkind": "Manufactured",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	},
+	{
+      "Name": "Guardian Sentinel Weapon Parts",
+      "Rarity": "Standard",
+      "FormattedName": "guardian_sentinel_weaponparts",
+      "Kind": "Material",
+      "Subkind": "Manufactured",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	},
+	{
+      "Name": "Guardian Module Blueprint Segment",
+      "Rarity": "VeryRare",
+      "FormattedName": "guardian_moduleblueprint",
+      "Kind": "Material",
+      "Subkind": "Manufactured",
+      "OriginDetails": null
+	},
+	{
+      "Name": "Guardian Sentinel Wreckage Components",
+      "Rarity": "VeryCommon",
+      "FormattedName": "guardian_sentinel_wreckagecomponents",
+      "Kind": "Material",
+      "Subkind": "Manufactured",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	},
+	{
+      "Name": "Guardian Vessel Blueprint Segment",
+      "Rarity": "Rare",
+      "FormattedName": "guardian_vesselblueprint",
+      "Kind": "Data",
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
+	}
 ]

@@ -9,6 +9,7 @@ namespace EDEngineer.Models
         Surface,
         Market,
         NeededForEngineer,
+        AncientGuardianRuins,
         Unknown
     }
 }

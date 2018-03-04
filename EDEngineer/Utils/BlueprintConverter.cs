@@ -23,7 +23,7 @@ namespace EDEngineer.Utils
 
             var blueprintName = (string) data["Name"];
             var blueprintType = (string)data["Type"];
-            var blueprintGrade = (int)data["Grade"];
+            var blueprintGrade = (int?)data["Grade"];
 
             var engineers = data["Engineers"].Select(engineer => (string) engineer).ToList();
 

@@ -38,6 +38,9 @@ namespace EDEngineer.Converters
                 case Origin.NeededForEngineer:
                     color = Colors.Red;
                     break;
+                case Origin.AncientGuardianRuins:
+                    color = Colors.SlateGray;
+                    break;
                 default:
                     color = Colors.RoyalBlue;
                     break;

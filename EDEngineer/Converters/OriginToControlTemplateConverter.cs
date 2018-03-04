@@ -29,8 +29,10 @@ namespace EDEngineer.Converters
                     return Application.Current.FindResource("OriginUnknown");
                 case Origin.NeededForEngineer:
                     return Application.Current.FindResource("NeededForEngineer");
+                case Origin.AncientGuardianRuins:
+                    return Application.Current.FindResource("AncientGuardianRuins");
                 default:
-                    throw new ArgumentOutOfRangeException();
+                    return Application.Current.FindResource("OriginUnknown");
             }
         }
 

@@ -290,5 +290,21 @@
 
     </ControlTemplate>
 
+    <ControlTemplate x:Key="AncientGuardianRuins"
+                     TargetType="Frame">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer_1" Width="18.46" Height="32">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="5"/>
+                </Canvas.RenderTransform>
+                <Canvas.Resources/>
+                <Path Name="path3338"  Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="M24.25 4.62L24.25 9.47L28.13 9.47L28.13 12.3L32 12.3L32 19.23L0 19.23L0 13.3L3.88 13.3L3.88 8.46L7.75 8.46L7.75 4.62L11.63 4.62L11.63 0.77L20.38 0.77L20.38 4.62L24.25 4.62ZM4.87 13.3L12.43 13.3L12.43 12.3L4.87 12.3L4.87 13.3ZM19.57 9.46L23.25 9.46L23.25 8.46L19.57 8.46L19.57 9.46Z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Viewbox>
 
+    </ControlTemplate>
 </ResourceDictionary>

@@ -111,7 +111,9 @@ namespace EDEngineer.Models
             ["Needed for Professor Palin (25)"] = Origin.NeededForEngineer,
             ["Needed for Tiana Fortune (50)"] = Origin.NeededForEngineer,
             ["Needed for The Sarge (50)"] = Origin.NeededForEngineer,
-            ["Needed for Bill Turner (50)"] = Origin.NeededForEngineer
+            ["Needed for Bill Turner (50)"] = Origin.NeededForEngineer,
+
+            ["Ancient/Guardian ruins"] = Origin.AncientGuardianRuins
         };
     }
 }
