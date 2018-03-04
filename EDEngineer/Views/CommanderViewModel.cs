@@ -367,7 +367,11 @@ namespace EDEngineer.Views
                             return false;
                     }
                 });
-                ShoppingListChange(blueprint, -1);
+
+                if (blueprint != null)
+                {
+                    ShoppingListChange(blueprint, -1);
+                }
             }
         }
 
