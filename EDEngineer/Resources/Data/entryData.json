@@ -1392,9 +1392,9 @@
       "Name": "Guardian Module Blueprint Segment",
       "Rarity": "VeryRare",
       "FormattedName": "guardian_moduleblueprint",
-      "Kind": "Material",
+      "Kind": "Data",
       "Subkind": "Manufactured",
-      "OriginDetails": null
+      "OriginDetails": [ "Ancient/Guardian ruins" ]
 	},
 	{
       "Name": "Guardian Sentinel Wreckage Components",
