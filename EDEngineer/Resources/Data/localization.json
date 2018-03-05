@@ -34,7 +34,7 @@
             "TwoLetterISOLanguageName": "ru",
             "Name": "Русский",
             "NotReadyWarning":
-                "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке."
+                "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на английском языке."
         },
         "pl": {
             "TwoLetterISOLanguageName": "pl",
@@ -873,7 +873,7 @@
       "pt": "Compostos CMM",
       "de": "CMM-Komposit",
       "fr": "composite MMC",
-      "ru": "СММ-композит",
+      "ru": "CMM-композит",
       "pl": "CMM Composite"
     },
     "Compact Composites": {
@@ -953,7 +953,7 @@
       "pt": "Exceções de Dados Processados de Rastros",
       "de": "FSA-Daten-Cache-Ausnahmen",
       "fr": "Exploration de données de sillage anormales",
-      "ru": "Искл. из глубинного анализа данных следа",
+      "ru": "Исключения из глубинного анализа данных следа",
       "pl": "Datamined Wake Exceptions"
     },
     "Decoded Emission Data": {
@@ -1017,7 +1017,7 @@
       "pt": "Exceções nos Dados de Emissão Embaralhados",
       "de": "Außergewöhnliche verschlüsselte Emissionsdaten",
       "fr": "Données d'émissions brouillées exceptionnelles",
-      "ru": "Исключительные зашифрованные данные об изл.",
+      "ru": "Исключительные зашифрованные данные об излучении",
       "pl": "Exceptional Scrambled Emission Data"
     },
     "Exhaust Manifold": {
@@ -1577,7 +1577,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Рений",
       "pl": null
     },
     "Salvaged Alloys": {
@@ -1633,7 +1633,7 @@
       "pt": "Firmware especializado antigo",
       "de": "Spezial-Legacy-Firmware",
       "fr": "Micrologiciel spécialisé périmé",
-      "ru": "Спец. микропрограммы предыдущего поколения",
+      "ru": "Специальные микропрограммы предыдущего поколения",
       "pl": "Specialised Legacy Firmware"
     },
     "Strange Wake Solutions": {
@@ -2204,7 +2204,7 @@
       "pt": "Tudo",
       "de": "Alle",
       "fr": "Tous",
-      "ru": "Всё",
+      "ru": "Все",
       "pl": "Wszystko"
     },
     "An error has been thrown by the application:": {
@@ -2563,7 +2563,7 @@
       "pt": "Ingrediente não utilizado em nenhum Diagrama",
       "de": "Bestandteil in keinem bekannten Bauplan!",
       "fr": "Materiau utilisé dans aucune recette!",
-      "ru": "Материал не используется в чертежах!",
+      "ru": "Ингредиент не используется в чертежах!",
       "pl": "Składnik nie jest używany w żadnym schemacie!"
     },
     "+100% Fuel Efficiency": {
@@ -3103,7 +3103,7 @@
       "pt": "Desbloquear",
       "de": "Freischalten",
       "fr": "Déverrouiller",
-      "ru": "Разблокировать",
+      "ru": "Расшифровка",
       "pl": "Odblokowanie"
     },
     "Available Voices:": {
@@ -3183,7 +3183,7 @@
       "pt": "Dados de voo da nave",
       "de": "Schiff-Flug-Daten",
       "fr": "Donnée de Vol",
-      "ru": "Данные полетов корабля",
+      "ru": "Полетные данные корабля",
       "pl": null
     },
     "Ship System Data": {
@@ -3191,7 +3191,7 @@
       "pt": "Dados do sistema da nave",
       "de": "Schiff-System-Daten",
       "fr": "Données de Système de Navigation",
-      "ru": "Данные системы корабля",
+      "ru": "Данные бортовых систем корабля",
       "pl": null
     },
     "Wreckage Components": {
@@ -3199,7 +3199,7 @@
       "pt": "Destroços de componentes",
       "de": "Wrackteile",
       "fr": "Composants d'Épave",
-      "ru": "Компоненты обломков",
+      "ru": "Обломки кораблекрушений",
       "pl": null
     },
     "Weapon Parts": {
@@ -3207,7 +3207,7 @@
       "pt": "Partes de armas",
       "de": "Waffenteile",
       "fr": "Éléments d'Arme",
-      "ru": "Части оружия",
+      "ru": "Детали вооружения",
       "pl": null
     },
     "Bio-Mechanical Conduits": {
@@ -3215,7 +3215,7 @@
       "pt": "Condutores bio-mecânicos",
       "de": "Bio-mechanische Leitungen",
       "fr": "Conducteurs Bio-Mécanique",
-      "ru": "Биомеханические проводники",
+      "ru": "Биомеханические энергопроводники",
       "pl": null
     },
     "Propulsion Elements": {
@@ -3223,7 +3223,7 @@
       "pt": "Elementos de propulsão",
       "de": "Antriebselemente",
       "fr": "Elements de Propulsion",
-      "ru": "Пропульсивные элементы",
+      "ru": "Реактивные элементы",
       "pl": null
     },
     "Settings": {
@@ -3383,7 +3383,7 @@
       "pt": "Bruto",
       "de": "roh",
       "fr": "À l'état brut",
-      "ru": "Сырье",
+      "ru": "Неочищенные минералы",
       "pl": null
     },
     "Raw Only": {
@@ -3391,7 +3391,7 @@
       "pt": "Apenas Bruto",
       "de": "nur roh",
       "fr": "Uniquement à l'état brut",
-      "ru": "Только сырье",
+      "ru": "Только неочищенные минералы",
       "pl": null
     },
     "Manufactured": {
@@ -3399,7 +3399,7 @@
       "pt": "Fabricado",
       "de": "hergestellt",
       "fr": "Manufacturé(s)",
-      "ru": "Промышленный",
+      "ru": "Компоненты",
       "pl": null
     },
     "Manufactured Only": {
@@ -3407,7 +3407,7 @@
       "pt": "Apenas Fabricado",
       "de": "nur hergestellt",
       "fr": "Uniquement manufacturé(s)",
-      "ru": "Только промышленный",
+      "ru": "Только компоненты",
       "pl": null
     },
     "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!":
@@ -3426,7 +3426,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Группировать ингредиенты?",
       "pl": null
     },
     "Unknown": {
@@ -3434,7 +3434,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Неизвестные",
       "pl": null
     },
     "Carrying ": {
@@ -3442,7 +3442,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "В наличии ",
       "pl": null
     },
     "Emission Data": {
@@ -3450,7 +3450,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Данные об излучениях",
       "pl": null
     },
     "Wake Scans": {
@@ -3458,7 +3458,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сканирования следа FSD",
       "pl": null
     },
     "Shield Data": {
@@ -3466,7 +3466,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Данные о щитах",
       "pl": null
     },
     "Encryption Files": {
@@ -3474,7 +3474,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Файлы шифрования",
       "pl": null
     },
     "Data Archives": {
@@ -3482,7 +3482,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Архивы данных",
       "pl": null
     },
     "Encoded Firmware": {
@@ -3490,7 +3490,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Закодированные микропрограммы",
       "pl": null
     },
     "Category 1": {
@@ -3498,7 +3498,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 1",
       "pl": null
     },
     "Category 2": {
@@ -3506,7 +3506,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 2",
       "pl": null
     },
     "Category 3": {
@@ -3514,7 +3514,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 3",
       "pl": null
     },
     "Category 4": {
@@ -3522,7 +3522,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 4",
       "pl": null
     },
     "Category 5": {
@@ -3530,7 +3530,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 5",
       "pl": null
     },
     "Category 6": {
@@ -3538,7 +3538,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 6",
       "pl": null
     },
     "Category 7": {
@@ -3546,7 +3546,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Категория 7",
       "pl": null
     },
     "Chemical": {
@@ -3554,7 +3554,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Химикаты",
       "pl": null
     },
     "Thermic": {
@@ -3562,7 +3562,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Термические сплавы",
       "pl": null
     },
     "Heat": {
@@ -3570,7 +3570,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Теплообмен",
       "pl": null
     },
     "Conductive": {
@@ -3578,7 +3578,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Проводники",
       "pl": null
     },
     "Capacitors": {
@@ -3586,7 +3586,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Конденсаторы",
       "pl": null
     },
     "Shielding": {
@@ -3594,7 +3594,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Защита",
       "pl": null
     },
     "Composite": {
@@ -3602,7 +3602,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Композиты",
       "pl": null
     },
     "Crystals": {
@@ -3610,7 +3610,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Кристаллы",
       "pl": null
     },
     "Alloys": {
@@ -3618,7 +3618,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сплавы",
       "pl": null
     },
     "Lead": {
@@ -3626,7 +3626,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Свинец",
       "pl": null
     },
     "Boron": {
@@ -3634,7 +3634,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Бор",
       "pl": null
     },
     "Guardian Weapon Blueprint Segment": {
@@ -3642,7 +3642,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Фрагмент чертежа оружия Стражей",
       "pl": null
     },
     "Guardian Power Cell": {
@@ -3650,7 +3650,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Энергоячейка Стражей",
       "pl": null
     },
     "Guardian Technology Component": {
@@ -3658,7 +3658,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Компоненты технологий Стражей",
       "pl": null
     },
     "Guardian Power Conduit": {
@@ -3666,7 +3666,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Энергопроводники Стражей",
       "pl": null
     },
     "Guardian Sentinel Weapon Parts": {
@@ -3674,7 +3674,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Детали вооружения Стражей",
       "pl": null
     },
     "Guardian Module Blueprint Segment": {
@@ -3682,7 +3682,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Фрагмент чертежа модуля Стражей",
       "pl": null
     },
     "Guardian Sentinel Wreckage Components": {
@@ -3690,7 +3690,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Обломки кораблекрушений Стража Sentinel",
       "pl": null
     },
     "Guardian Vessel Blueprint Segment": {
@@ -3698,7 +3698,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сегмент чертежа судна Стражей",
       "pl": null
     },
     "Human": {
@@ -4130,7 +4130,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "@Технология",
       "pl": null
     },
     "Module": {
@@ -4138,7 +4138,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Модули",
       "pl": null
     },
     "Synthesis": {
@@ -4146,7 +4146,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Синтез",
       "pl": null
     },
     "Experimental": {
@@ -4154,7 +4154,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Экспериментальные",
       "pl": null
     },
     "Technology": {
@@ -4162,7 +4162,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Технологии",
       "pl": null
     },
     "Ancient/Guardian ruins": {
@@ -4170,7 +4170,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Руины Стражей",
       "pl": null
     },
     "EDEngineer will try to remove blueprints from your shopping list if you craft them in game": {
@@ -4178,7 +4178,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
       "pl": null
     },
     "Thermal Spread": {
