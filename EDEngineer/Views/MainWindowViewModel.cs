@@ -65,7 +65,14 @@ namespace EDEngineer.Views
             Languages = languages;
             GraphicSettings = new GraphicSettings();
             IngredientsGrouped = SettingsManager.IngredientsGrouped;
+
+            if (!Comparers.Contains(SettingsManager.Comparer))
+            {
+                SettingsManager.Comparer = Comparers.First();
+            }
+
             LoadState();
+
             CurrentComparer = SettingsManager.Comparer;
         }
 
