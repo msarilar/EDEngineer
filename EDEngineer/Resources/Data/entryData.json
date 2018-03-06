@@ -1149,7 +1149,8 @@
     "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Telemetry Suite",
@@ -1248,21 +1249,24 @@
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Residue Data",
     "Rarity": "Rare",
     "FormattedName": "tg_residuedata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Structural Data",
     "Rarity": "Common",
     "FormattedName": "tg_structuraldata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Carapace",
@@ -1270,7 +1274,8 @@
     "FormattedName": "unknowncarapace",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Energy Cell",
@@ -1278,7 +1283,8 @@
     "FormattedName": "unknownenergycell",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Organic Circuitry",
@@ -1286,7 +1292,8 @@
     "FormattedName": "unknownorganiccircuitry",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Technological Components",
@@ -1294,14 +1301,16 @@
     "FormattedName": "unknowntechnologycomponents",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Wake Data",
     "Rarity": "Rare",
     "FormattedName": "unknownwakedata",
     "Kind": "Data",
-    "OriginDetails": null
+    "OriginDetails": null,
+    "Group": "Thargoid"
   },
   {
     "Name": "Ship Flight Data",
@@ -1354,7 +1363,8 @@
       "Rarity": "Rare",
       "FormattedName": "guardian_weaponblueprint",
       "Kind": "Data",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Power Cell",
@@ -1362,7 +1372,8 @@
       "FormattedName": "guardian_powercell",
       "Kind": "Material",
       "Subkind": "Manufactured",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Technology Component",
@@ -1370,7 +1381,8 @@
       "FormattedName": "guardian_techcomponent",
       "Kind": "Material",
       "Subkind": "Manufactured",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Power Conduit",
@@ -1378,7 +1390,8 @@
       "FormattedName": "guardian_powerconduit",
       "Kind": "Material",
       "Subkind": "Manufactured",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Sentinel Weapon Parts",
@@ -1386,14 +1399,16 @@
       "FormattedName": "guardian_sentinel_weaponparts",
       "Kind": "Material",
       "Subkind": "Manufactured",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Module Blueprint Segment",
       "Rarity": "VeryRare",
       "FormattedName": "guardian_moduleblueprint",
       "Kind": "Data",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Sentinel Wreckage Components",
@@ -1401,13 +1416,15 @@
       "FormattedName": "guardian_sentinel_wreckagecomponents",
       "Kind": "Material",
       "Subkind": "Manufactured",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	},
 	{
       "Name": "Guardian Vessel Blueprint Segment",
       "Rarity": "Rare",
       "FormattedName": "guardian_vesselblueprint",
       "Kind": "Data",
-      "OriginDetails": [ "Ancient/Guardian ruins" ]
+      "OriginDetails": [ "Ancient/Guardian ruins" ],
+      "Group": "Guardian"
 	}
 ]

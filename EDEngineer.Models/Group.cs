@@ -71,6 +71,12 @@ namespace EDEngineer.Models
         Crystals,
 
         [Description("Alloys")]
-        Alloys
+        Alloys,
+
+        [Description("Thargoid")]
+        Thargoid,
+
+        [Description("Guardian")]
+        Guardian
     }
 }
