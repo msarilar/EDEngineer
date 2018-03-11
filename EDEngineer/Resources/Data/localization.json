@@ -1040,7 +1040,7 @@
       "es": "Compuestos de Filamentos",
       "pt": "Compostos De Filamentos",
       "de": "Filament-Komposite",
-      "fr": "Filament composite",
+      "fr": "Composites filamentaires",
       "ru": "Волокнистые композиты",
       "pl": "Filament Composites"
     },
@@ -3425,7 +3425,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Groupe d'ingrédients ?",
       "ru": "Группировать ингредиенты?",
       "pl": null
     },
@@ -3433,7 +3433,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Inconnu",
       "ru": "Неизвестные",
       "pl": null
     },
@@ -3441,7 +3441,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Capacité",
       "ru": "В наличии ",
       "pl": null
     },
@@ -3449,7 +3449,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Données d'émission",
       "ru": "Данные об излучениях",
       "pl": null
     },
@@ -3457,7 +3457,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Données de sillages",
       "ru": "Сканирования следа FSD",
       "pl": null
     },
@@ -3465,7 +3465,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Système fréquences de boucliers",
       "ru": "Данные о щитах",
       "pl": null
     },
@@ -3473,7 +3473,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Clé de cryptage",
       "ru": "Файлы шифрования",
       "pl": null
     },
@@ -3481,7 +3481,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Données d'analyse",
       "ru": "Архивы данных",
       "pl": null
     },
@@ -3489,7 +3489,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Micrologiciel",
       "ru": "Закодированные микропрограммы",
       "pl": null
     },
@@ -3497,7 +3497,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 1",
       "ru": "Категория 1",
       "pl": null
     },
@@ -3505,7 +3505,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 2",
       "ru": "Категория 2",
       "pl": null
     },
@@ -3513,7 +3513,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 3",
       "ru": "Категория 3",
       "pl": null
     },
@@ -3521,7 +3521,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 4",
       "ru": "Категория 4",
       "pl": null
     },
@@ -3529,7 +3529,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 5",
       "ru": "Категория 5",
       "pl": null
     },
@@ -3537,7 +3537,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 6",
       "ru": "Категория 6",
       "pl": null
     },
@@ -3545,7 +3545,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Catégorie 7",
       "ru": "Категория 7",
       "pl": null
     },
@@ -3553,7 +3553,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Manipulateur Chimique",
       "ru": "Химикаты",
       "pl": null
     },
@@ -3561,7 +3561,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Alliage résistant à la chaleur",
       "ru": "Термические сплавы",
       "pl": null
     },
@@ -3569,7 +3569,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Échangeur de chaleur",
       "ru": "Теплообмен",
       "pl": null
     },
@@ -3577,7 +3577,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Conducteur",
       "ru": "Проводники",
       "pl": null
     },
@@ -3585,7 +3585,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Condensateur",
       "ru": "Конденсаторы",
       "pl": null
     },
@@ -3593,7 +3593,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Protection",
       "ru": "Защита",
       "pl": null
     },
@@ -3601,7 +3601,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Composite à haute densité",
       "ru": "Композиты",
       "pl": null
     },
@@ -3609,7 +3609,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Cristal de focalisation",
       "ru": "Кристаллы",
       "pl": null
     },
@@ -3617,7 +3617,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Alliage léger",
       "ru": "Сплавы",
       "pl": null
     },
