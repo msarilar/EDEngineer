@@ -3465,7 +3465,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Système fréquences de boucliers",
+      "fr": "Données de bouclier",
       "ru": "Данные о щитах",
       "pl": null
     },
@@ -3473,7 +3473,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Clé de cryptage",
+      "fr": "Fichiers cryptés",
       "ru": "Файлы шифрования",
       "pl": null
     },
@@ -3481,7 +3481,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Données d'analyse",
+      "fr": "Archives de données",
       "ru": "Архивы данных",
       "pl": null
     },
@@ -3489,7 +3489,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Micrologiciel",
+      "fr": "Micrologiciels encodés",
       "ru": "Закодированные микропрограммы",
       "pl": null
     },
@@ -3497,7 +3497,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 1",
+      "fr": "Matériaux bruts - Catégorie 1",
       "ru": "Категория 1",
       "pl": null
     },
@@ -3505,7 +3505,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 2",
+      "fr": "Matériaux bruts - Catégorie 2",
       "ru": "Категория 2",
       "pl": null
     },
@@ -3513,7 +3513,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 3",
+      "fr": "Matériaux bruts - Catégorie 3",
       "ru": "Категория 3",
       "pl": null
     },
@@ -3521,7 +3521,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 4",
+      "fr": "Matériaux bruts - Catégorie 4",
       "ru": "Категория 4",
       "pl": null
     },
@@ -3529,7 +3529,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 5",
+      "fr": "Matériaux bruts - Catégorie 5",
       "ru": "Категория 5",
       "pl": null
     },
@@ -3537,7 +3537,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 6",
+      "fr": "Matériaux bruts - Catégorie 6",
       "ru": "Категория 6",
       "pl": null
     },
@@ -3545,7 +3545,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Catégorie 7",
+      "fr": "Matériaux bruts - Catégorie 7",
       "ru": "Категория 7",
       "pl": null
     },
@@ -3553,7 +3553,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Manipulateur Chimique",
+      "fr": "Produits chimiques",
       "ru": "Химикаты",
       "pl": null
     },
@@ -3561,7 +3561,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Alliage résistant à la chaleur",
+      "fr": "Thermiques",
       "ru": "Термические сплавы",
       "pl": null
     },
@@ -3569,7 +3569,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Échangeur de chaleur",
+      "fr": "Chaleur",
       "ru": "Теплообмен",
       "pl": null
     },
@@ -3577,7 +3577,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Conducteur",
+      "fr": "Conducteurs",
       "ru": "Проводники",
       "pl": null
     },
@@ -3585,7 +3585,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Condensateur",
+      "fr": "Condensateurs",
       "ru": "Конденсаторы",
       "pl": null
     },
@@ -3601,7 +3601,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Composite à haute densité",
+      "fr": "Composites",
       "ru": "Композиты",
       "pl": null
     },
@@ -3609,7 +3609,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Cristal de focalisation",
+      "fr": "Cristaux",
       "ru": "Кристаллы",
       "pl": null
     },
@@ -3617,7 +3617,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": "Alliage léger",
+      "fr": "Alliages",
       "ru": "Сплавы",
       "pl": null
     },
