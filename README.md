@@ -10,9 +10,13 @@ You liked EDEngineer so much you want to buy me a beer? Click this:
   </a>
 </p>
 
-## [**Common Issues and their fixes!**](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
+## [**>> Common Issues and their fixes!**](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
 
-![Overview](http://i.imgur.com/mZuvsyM.png)
+### EDEngineer in Action courtesy of Cmdr Exigeous
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=pkr8wWW94dw"><img src="https://i.imgur.com/Gpp2Ihl.png" alt="Video Tutorial"></a>
+</p>
 
 ### Install
 
@@ -32,6 +36,8 @@ Install the [setup.exe](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngi
 10. Configure thresholds
 
 ### Additional Screenshots
+
+![Overview](http://i.imgur.com/mZuvsyM.png)
 
 Shopping List:
 <p align="center">
