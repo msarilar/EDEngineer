@@ -5,7 +5,7 @@ EDEngineer is a basic app I've written to track materials, data and cargo acquir
 You liked EDEngineer so much you want to buy me a beer? Click this:
 
 <p align="center">
-  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YHNRFX3SKZGRS">
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YHNRFX3SKZGRS" target="_blank">
     <img src="http://i.imgur.com/hWeG26O.png" alt="Details" height=50/>
   </a>
 </p>
