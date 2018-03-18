@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.0.9.9",
+    "Content": "* Added Top System Locations for each ingredient (currently based on your personal logs), check out the tooltip when hovering any ingredient!\r\n\r\n* French localization update thanks to @Catsbuggy\r\n\r\n\r\n> Toast Notifications don't work anymore (for when a favorite blueprint is ready). The feature broke with Windows Fall Creators Update and I haven't found a way to fix it yet, sorry!"
+  },
+  {
     "Version": "1.0.9.7",
     "Content": "* Fixed an issue with the shopping list synchronization\r\n* Added missing experimental effects\r\n* Small animations in the cargo list\r\n* Now handle the 3.0 Mission Completed events (wasn't aware it got changed)\r\n* Guardian Module Blueprint Segment is now a Data instead of a Material\r\n\r\n* Big russian localization update provided by @VChet"
   },

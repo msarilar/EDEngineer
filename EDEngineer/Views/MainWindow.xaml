@@ -1482,7 +1482,7 @@
                        VerticalAlignment="Center"
                        TextWrapping="Wrap"
                        FontFamily="/Resources/Fonts/#Euro Caps">
-                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='System: ', FallbackValue='System: '}" />
+                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='System:', FallbackValue='System: '}" />
                 <Run Text="{Binding CurrentCommander.Value.State.System}" />
             </TextBlock>
             <TextBlock HorizontalAlignment="Stretch"
