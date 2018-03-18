@@ -9,7 +9,7 @@ namespace EDEngineer.Models
 {
     using Comparer = Func<KeyValuePair<string, Entry>, KeyValuePair<string, Entry>, int>;
 
-    public class State : INotifyPropertyChanged
+    public class State : IState, INotifyPropertyChanged
     {
         public event EventHandler<Tuple<BlueprintCategory, string, List<BlueprintIngredient>>> BlueprintCrafted;
         public const string NAME_COMPARER = "Name";
@@ -25,8 +25,28 @@ namespace EDEngineer.Models
 
         private readonly IReadOnlyDictionary<string, Comparer> comparers;
 
+        public History History { get; }
+
+        public string System
+        {
+            get => system;
+            set
+            {
+                if (value == system)
+                {
+                    return;
+                }
+
+                History.System = value;
+                system = value;
+                OnPropertyChanged();
+            }
+        }
+
         public State(List<EntryData> entryDatas, ILanguage languages, string comparer)
         {
+            History = new History();
+            System = "Sol";
             comparers = new Dictionary<string, Comparer>
             {
                 [NAME_COMPARER] = (a, b) => string.Compare(languages.Translate(a.Key), languages.Translate(b.Key), StringComparison.InvariantCultureIgnoreCase),
@@ -90,6 +110,8 @@ namespace EDEngineer.Models
         }
 
         private bool loading;
+        private string system;
+
         public void IncrementCargo(string name, int change)
         {
             lock (stateLock)

@@ -150,6 +150,10 @@ namespace EDEngineer.Views
             State.Operations.AddLast(entry);
             entry.JournalOperation.Mutate(State);
             LastUpdate = Instant.Max(LastUpdate, entry.Timestamp);
+            if (entry.SystemRelevant)
+            {
+                entry.JournalOperation.Mutate(State.History);
+            }
         }
 
         public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, CollectionViewSource source)

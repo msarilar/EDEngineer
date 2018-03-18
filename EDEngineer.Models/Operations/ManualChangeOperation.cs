@@ -5,7 +5,7 @@ namespace EDEngineer.Models.Operations
         public string Name { get; set; }
         public int Count { get; set; }
 
-        public override void Mutate(State state)
+        public override void Mutate(IState state)
         {
             if (state.Cargo.ContainsKey(Name))
             {

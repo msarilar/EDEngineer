@@ -36,6 +36,9 @@
                     </DesignCommanderViewModel.LastUpdate>
                     <DesignCommanderViewModel.State>
                         <DesignState>
+                            <DesignState.System>
+                                <system:String>Sol</system:String>
+                            </DesignState.System>
                             <DesignState.Cargo>
                                 <Wrapper>
                                     <Wrapper.Value>

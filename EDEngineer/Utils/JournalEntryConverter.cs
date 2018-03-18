@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Operations;
+using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -81,6 +82,7 @@ namespace EDEngineer.Utils
             try
             {
                 entry.JournalOperation = ExtractOperation(data, journalEvent.Value);
+                entry.SystemRelevant = journalEvent.Value.IsLoot();
             }
             catch (Exception e)
             {
@@ -129,17 +131,23 @@ namespace EDEngineer.Utils
                     return ExtractEngineerContribution(data);
                 case JournalEvent.ScientificResearch:
                     return ExtractMaterialDiscarded(data);
-                case JournalEvent.Died:
-                    return new DeathOperation { JournalEvent = JournalEvent.Died };
                 case JournalEvent.Materials:
                     return ExtractMaterialsDump(data);
                 case JournalEvent.MaterialTrade:
                     return ExtractMaterialTrade(data);
                 case JournalEvent.TechnologyBroker:
                     return ExtractTechnologyBroker(data);
+                case JournalEvent.Location:
+                case JournalEvent.FSDJump:
+                    return ExtractSystemUpdated(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractSystemUpdated(JObject data)
+        {
+            return new SystemUpdatedOperation((string) data["StarSystem"]);
         }
 
         private JournalOperation ExtractTechnologyBroker(JObject data)

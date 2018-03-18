@@ -20,6 +20,9 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool Relevant => JournalOperation != null;
 
+        [JsonIgnore]
+        public bool SystemRelevant { get; set; }
+
         protected bool Equals(JournalEntry other)
         {
             return string.Equals(OriginalJson, other.OriginalJson);

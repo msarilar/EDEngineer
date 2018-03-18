@@ -6,7 +6,7 @@
 
         public int Size { get; set; }
 
-        public override void Mutate(State state)
+        public override void Mutate(IState state)
         {
             state.IncrementCargo(CommodityName, Size);
         }

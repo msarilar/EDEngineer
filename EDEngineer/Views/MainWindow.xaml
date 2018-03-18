@@ -26,7 +26,7 @@
         <DataTemplate x:Key="EntryTemplate">
             <Grid Background="{StaticResource BackgroundBrush}"   
                   MouseDown="IngredientOnMouseLeftButtonDown"
-                  Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
+                  Tag="{Binding DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
                     <ToolTip Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
                              DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
@@ -38,13 +38,16 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
-                                       Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
+                                       Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
                                        Visibility="{Binding DataContext.Value.Data.Kind, Converter={StaticResource KindToVisibility}}"/>
                             <TextBlock FontWeight="Bold"
                                        Grid.Row="1"
-                                       Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
+                                       Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
                                        Visibility="{Binding DataContext.Value.Data.Unused, Converter={StaticResource BooleanToVisibility}}"/>
                             <Border BorderThickness="1"
                                     BorderBrush="Black"
@@ -71,11 +74,25 @@
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
                             <TextBlock Grid.Row="5">
-                                <Run Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Carrying '}"></Run>
+                                <Run Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Carrying '}"></Run>
                                 <Run Text="{Binding DataContext.Value.Count}"/>
                                 <Run Text="/"/>
                                 <Run Text="{Binding DataContext.Value.Data.Rarity, Converter={StaticResource RarityToMaximumCapacity}}"/>
                             </TextBlock>
+                            <Border BorderThickness="1"
+                                    BorderBrush="Black"
+                                    Grid.Row="6"/>
+                            <TextBlock FontWeight="Bold"
+                                       Grid.Row="7"
+                                       Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Top Source Systems'}"/>
+                            <ItemsControl Grid.Row="8">
+                                <ItemsControl.ItemsSource>
+                                    <MultiBinding Converter="{StaticResource HistoryToTop5Converter}" FallbackValue="Sol (5)">
+                                        <Binding Path="Tag.CurrentCommander.Value.State.History"/>
+                                        <Binding Path="DataContext.Value.Data.Name"/>
+                                    </MultiBinding>
+                                </ItemsControl.ItemsSource>
+                            </ItemsControl>
                         </Grid>
                     </ToolTip>
                 </Grid.ToolTip>
@@ -1433,6 +1450,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
@@ -1458,6 +1476,18 @@
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"
                        Grid.Column="2"
+                       Foreground="{StaticResource TechnologyBrush}"
+                       Margin="10,0,0,0"
+                       TextAlignment="Left"
+                       VerticalAlignment="Center"
+                       TextWrapping="Wrap"
+                       FontFamily="/Resources/Fonts/#Euro Caps">
+                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='System: ', FallbackValue='System: '}" />
+                <Run Text="{Binding CurrentCommander.Value.State.System}" />
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Stretch"
+                       FontSize="16"
+                       Grid.Column="3"
                        Foreground="{StaticResource EliteOrangeBrush}"
                        Margin="10,0,0,0"
                        TextAlignment="Left"
@@ -1470,7 +1500,7 @@
             </TextBlock>
             <Button HorizontalAlignment="Right"
                     FontSize="15"
-                    Grid.Column="3"
+                    Grid.Column="4"
                     Foreground="DarkCyan"
                     Background="Transparent"
                     Margin="0,0,10,0"

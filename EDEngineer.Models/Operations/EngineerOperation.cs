@@ -15,7 +15,7 @@ namespace EDEngineer.Models.Operations
             TechnicalName = technicalName;
         }
 
-        public override void Mutate(State state)
+        public override void Mutate(IState state)
         {
             foreach (var ingredient in IngredientsConsumed)
             {

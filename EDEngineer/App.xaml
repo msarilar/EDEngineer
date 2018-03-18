@@ -89,8 +89,9 @@
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
             <converters:EnumToDescription x:Key="EnumToDescription"/>
             <converters:RarityToMaximumCapacity x:Key="RarityToMaximumCapacity"/>
-            
-            
+            <converters:HistoryToTop5Converter x:Key="HistoryToTop5Converter"/>
+
+
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 
             <Style TargetType="ToolTip">

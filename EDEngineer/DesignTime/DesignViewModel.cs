@@ -80,6 +80,7 @@ namespace EDEngineer.DesignTime
     public class DesignState
     {
         public ObservableCollection<Wrapper> Cargo { get; set; }
+        public string System { get; set; }
     }
 
     public class DesignEntry

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
@@ -65,6 +66,20 @@ namespace EDEngineer.Models.Utils
                 default:
                     return 300;
             }
+        }
+
+        private static readonly HashSet<JournalEvent> lootEvents = new HashSet<JournalEvent>
+        {
+            JournalEvent.CollectCargo,
+            JournalEvent.MarketBuy,
+            JournalEvent.MaterialCollected,
+            JournalEvent.MiningRefined,
+            JournalEvent.MissionCompleted
+        };
+
+        public static bool IsLoot(this JournalEvent journalEvent)
+        {
+            return lootEvents.Contains(journalEvent);
         }
     }
 }

@@ -18,10 +18,11 @@ namespace EDEngineer.Models
         EngineerContribution,
         ScientificResearch,
         LoadGame,
-        Died,
         Materials,
         Cargo,
         MaterialTrade,
-        TechnologyBroker
+        TechnologyBroker,
+        Location,
+        FSDJump
     }
 }

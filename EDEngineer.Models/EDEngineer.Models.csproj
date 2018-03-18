@@ -55,8 +55,11 @@
     <Compile Include="Filters\KindFilter.cs" />
     <Compile Include="Filters\RarityFilter.cs" />
     <Compile Include="Group.cs" />
+    <Compile Include="History.cs" />
+    <Compile Include="IState.cs" />
     <Compile Include="Operations\DumpOperation.cs" />
     <Compile Include="Operations\MaterialTradeOperation.cs" />
+    <Compile Include="Operations\SystemUpdatedOperation.cs" />
     <Compile Include="Subkind.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
     <Compile Include="Utils\Json\LocalizedContractResolver.cs" />
@@ -86,7 +89,6 @@
     <Compile Include="LanguageInfo.cs" />
     <Compile Include="Operations\CargoOperation.cs" />
     <Compile Include="Operations\DataOperation.cs" />
-    <Compile Include="Operations\DeathOperation.cs" />
     <Compile Include="Operations\EngineerOperation.cs" />
     <Compile Include="Operations\EngineerContributionOperation.cs" />
     <Compile Include="Operations\JournalOperation.cs" />

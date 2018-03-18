@@ -10,7 +10,7 @@ namespace EDEngineer.Models.Operations
 
         public HashSet<Kind> ResetFilter { get; set; }
 
-        public override void Mutate(State state)
+        public override void Mutate(IState state)
         {
             var dump = DumpOperations.ToDictionary(m => m.MaterialName, m => m.Size);
             foreach (var item in state.Cargo.Where(item => ResetFilter.Contains(item.Value.Data.Kind)).ToList())
