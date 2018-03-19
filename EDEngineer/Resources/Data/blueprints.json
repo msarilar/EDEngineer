@@ -2315,10 +2315,10 @@
     ],
     "Grade": 3
   },
-   {
+  {
     "Type": "Power Distributor",
     "Name": "Weapon Focused",
-    "Engineers": [      
+    "Engineers": [
       "The Dweller"
     ],
     "Ingredients": [
@@ -2333,14 +2333,14 @@
       {
         "Name": "Cadmium",
         "Size": 1
-      },      
+      }
     ],
     "Grade": 4
   },
-   {
+  {
     "Type": "Power Distributor",
     "Name": "Weapon Focused",
-    "Engineers": [      
+    "Engineers": [
       "The Dweller"
     ],
     "Ingredients": [
@@ -2355,7 +2355,7 @@
       {
         "Name": "Tellurium",
         "Size": 1
-      },      
+      }
     ],
     "Grade": 5
   },
@@ -6006,52 +6006,52 @@
     ],
     "Grade": 3
   },
-   {
-     "Type": "Power Plant",
-     "Name": "Low Emissions",
-     "Engineers": [
-       "Marco Qwent",
-       "Hera Tani"
-     ],
-     "Ingredients": [
-       {
-         "Name": "Germanium",
-         "Size": 1
-       },
-       {
-         "Name": "Unexpected Emission Data",
-         "Size": 1
-       },
-       {
-         "Name": "Heat Vanes",
-         "Size": 1
-       },      
-     ],
-     "Grade": 4
-   },
-   {
-     "Type": "Power Plant",
-     "Name": "Low Emissions",
-     "Engineers": [       
-       "Hera Tani"
-     ],
-     "Ingredients": [
-       {
-         "Name": "Niobium",
-         "Size": 1
-       },
-       {
-         "Name": "Decoded Emission Data",
-         "Size": 1
-       },
-       {
-         "Name": "Proto Heat Radiators",
-         "Size": 1
-       },      
-     ],
-     "Grade": 5
-   },
-   {
+  {
+    "Type": "Power Plant",
+    "Name": "Low Emissions",
+    "Engineers": [
+      "Marco Qwent",
+      "Hera Tani"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Germanium",
+        "Size": 1
+      },
+      {
+        "Name": "Unexpected Emission Data",
+        "Size": 1
+      },
+      {
+        "Name": "Heat Vanes",
+        "Size": 1
+      }
+    ],
+    "Grade": 4
+  },
+  {
+    "Type": "Power Plant",
+    "Name": "Low Emissions",
+    "Engineers": [
+      "Hera Tani"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Niobium",
+        "Size": 1
+      },
+      {
+        "Name": "Decoded Emission Data",
+        "Size": 1
+      },
+      {
+        "Name": "Proto Heat Radiators",
+        "Size": 1
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Burst Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
@@ -6354,11 +6354,11 @@
     ],
     "Grade": 3
   },
-   {
+  {
     "Type": "Power Distributor",
     "Name": "System Focused",
     "Engineers": [
-      "The Dweller",      
+      "The Dweller"
     ],
     "Ingredients": [
       {
@@ -6376,11 +6376,11 @@
     ],
     "Grade": 4
   },
-   {
+  {
     "Type": "Power Distributor",
     "Name": "System Focused",
     "Engineers": [
-      "The Dweller",      
+      "The Dweller"
     ],
     "Ingredients": [
       {
@@ -8309,11 +8309,11 @@
     ],
     "Grade": 3
   },
-   {
+  {
     "Type": "Power Distributor",
     "Name": "Engine Focused",
     "Engineers": [
-      "The Dweller",      
+      "The Dweller"
     ],
     "Ingredients": [
       {
@@ -8327,15 +8327,15 @@
       {
         "Name": "Polymer Capacitors",
         "Size": 1
-      },      
+      }
     ],
     "Grade": 4
   },
-   {
+  {
     "Type": "Power Distributor",
     "Name": "Engine Focused",
     "Engineers": [
-      "The Dweller",      
+      "The Dweller"
     ],
     "Ingredients": [
       {
@@ -8349,7 +8349,7 @@
       {
         "Name": "Military Supercapacitors",
         "Size": 1
-      },      
+      }
     ],
     "Grade": 5
   },
