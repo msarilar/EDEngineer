@@ -11,12 +11,40 @@ namespace EDEngineer.Models
 {
     public class Blueprint : INotifyPropertyChanged
     {
+        private static readonly Dictionary<string, string> technicalTypes = new Dictionary<string, string>
+        {
+            ["Frame Shift Drive"] = "hyperdrive",
+            ["Heat Sink Launcher"] = "heatsinklauncher",
+            ["Collector Limpet Controller"] = "dronecontrol_collection",
+            ["Prospector Limpet Controller"] = "dronecontrol", // _propsection?
+            ["Fuel Transfer Limpet Controller"] = "dronecontrol", // _fuel?
+            ["Hatch Breaker Limpet Controller"] = "dronecontrol", // _hatch?
+            ["Thrusters"] = "engine",
+            ["Pulse Laser"] = "pulselaser",
+            ["Beam Laser"] = "beamlaser",
+            ["Shield Booster"] = "shieldbooster",
+            ["Shield Generator"] = "shieldgenerator",
+            ["Sensors"] = "sensors",
+            ["Plasma Accelerator"] = "plasmaaccelerator",
+            ["Life Support"] = "lifesupport",
+            ["Hull Reinforcement Package"] = "hullreinforcement",
+            ["Power Distributor"] = "powerdistributor",
+            ["Power Plant"] = "powerplant",
+            ["Multi-cannon"] = "multicannon",
+            ["Kill Warrant Scanner"] = "crimescanner",
+            ["Rail Gun"] = "railgun",
+            ["Burst Laser"] = "pulselaserburst"
+        };
+
         private readonly ILanguage language;
         private bool favorite;
         private bool ignored;
         private int shoppingListCount;
         private bool shoppingListHighlighted;
         public string Type { get; }
+
+        [JsonIgnore]
+        public string TechnicalType => technicalTypes.TryGetValue(Type, out var result) ? result : Type;
 
         public string ShortenedType
         {

@@ -146,7 +146,10 @@ namespace EDEngineer.Models
 
         public void OnBlueprintCrafted(BlueprintCategory category, string technicalName, List<BlueprintIngredient> ingredientsConsumed)
         {
+            set.Add(technicalName);
             BlueprintCrafted?.Invoke(this, Tuple.Create(category, technicalName, ingredientsConsumed));
         }
+
+        public HashSet<string> set = new HashSet<string>();
     }
 }

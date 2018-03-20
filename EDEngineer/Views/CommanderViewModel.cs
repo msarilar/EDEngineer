@@ -328,7 +328,7 @@ namespace EDEngineer.Views
             if (category == BlueprintCategory.Module)
             {
                 var blueprint = blueprints.FirstOrDefault(b => b.Category == BlueprintCategory.Module &&
-                                                               b.Type.IsIn(technicalModuleName) &&
+                                                               b.TechnicalType.IsIn(technicalModuleName) &&
                                                                b.HasSameIngredients(blueprintIngredients));
                 if (blueprint == null)
                 {
@@ -336,7 +336,7 @@ namespace EDEngineer.Views
                     foreach (var experimental in experimentals)
                     {
                         foreach (var module in blueprints.Where(
-                            b => b.Category == BlueprintCategory.Module && b.Type.IsIn(technicalModuleName)))
+                            b => b.Category == BlueprintCategory.Module && b.TechnicalType.IsIn(technicalModuleName)))
                         {
                             var mergedIngredients = experimental.Ingredients.Concat(module.Ingredients).ToList();
                             if (mergedIngredients.Count == blueprintIngredients.Count &&
@@ -344,11 +344,17 @@ namespace EDEngineer.Views
                             {
                                 ShoppingListChange(experimental, -1);
                                 ShoppingListChange(module, -1);
+
+                                return;
                             }
                         }
                     }
+
+                    blueprint = blueprints.FirstOrDefault(b => b.Category == BlueprintCategory.Module &&
+                                                               b.HasSameIngredients(blueprintIngredients));
                 }
-                else
+
+                if (blueprint != null)
                 {
                     ShoppingListChange(blueprint, -1);
                 }
