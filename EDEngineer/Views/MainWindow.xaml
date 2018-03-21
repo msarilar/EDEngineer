@@ -1169,8 +1169,7 @@
                             <DataGrid.RowDetailsTemplate>
                                 <DataTemplate>
                                     <Grid Background="#1D2242"
-                                      Focusable="False"
-                                          Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualWidth}">
+                                      Focusable="False">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
