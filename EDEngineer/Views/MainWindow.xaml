@@ -1176,7 +1176,7 @@
                                         </Grid.LayoutTransform>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="0.5*" />
-                                            <ColumnDefinition Width="300" />
+                                            <ColumnDefinition Width="320" />
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0"
                                           Focusable="False"
@@ -1310,21 +1310,23 @@
                                                       x:Name="ShoppingListComposition"
                                                       FontSize="15"
                                                       Margin="0,5,0,0"
-                                                      Width="300">
+                                                      Width="320">
                                             <ItemsControl.ItemsPanel>
                                                 <ItemsPanelTemplate>
-                                                    <WrapPanel Orientation="Vertical"
-                                                               HorizontalAlignment="Right"
-                                                               />
+                                                    <WrapPanel Orientation="Horizontal"
+                                                               HorizontalAlignment="Right" />
                                                 </ItemsPanelTemplate>
                                             </ItemsControl.ItemsPanel>
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <Grid Margin="3,3,3,3">
+                                                    <Grid Margin="3,3,3,3"
+                                                          HorizontalAlignment="Left"
+                                                          Width="{Binding Width}">
                                                         <Grid.ToolTip>
                                                             <TextBlock Text="{Binding Tooltip}" />
                                                         </Grid.ToolTip>
-                                                        <Rectangle Fill="Transparent" />
+                                                        <Rectangle Fill="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}"
+                                                                   Opacity="0.1"/>
                                                         <Border BorderThickness="0.5"
                                                             BorderBrush="{Binding Highlighted, Converter={StaticResource BooleanToShoppingListBlockHighlightColor}}">
                                                             <StackPanel>

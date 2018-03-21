@@ -44,6 +44,7 @@ namespace EDEngineer.Views
                                              g.First().TranslatedString,
                                              g.Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList(),
                                              g.First().Category))
+                                 .OrderByDescending(b => b.Composition.Count)
                                  .ToList();
             }
         }

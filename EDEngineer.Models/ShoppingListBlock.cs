@@ -32,6 +32,7 @@ namespace EDEngineer.Models
         public string Tooltip { get; }
         public List<Tuple<Blueprint, int>> Composition { get; }
         public BlueprintCategory Category { get; }
+        public int Width => Composition.Count > 1 ? 300 : 96;
 
         public bool Highlighted
         {
