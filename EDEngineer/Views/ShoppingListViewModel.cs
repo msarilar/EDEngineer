@@ -34,14 +34,17 @@ namespace EDEngineer.Views
             => blueprints.Where(b => b.ShoppingListCount > 0)
                          .Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList();
 
-        public Dictionary<string, List<Tuple<Blueprint, int>>> T
+        public List<ShoppingListBlock> T
         {
             get
             {
                 return blueprints.GroupBy(b => Tuple.Create(b.Type, b.BlueprintName))
                                  .Where(g => g.Any(b => b.ShoppingListCount > 0))
-                                 .ToDictionary(g => g.First().ShortString,
-                                     g => g.Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList());
+                                 .Select(g => new ShoppingListBlock(g.First().ShortString,
+                                             g.First().TranslatedString,
+                                             g.Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList(),
+                                             g.First().Category))
+                                 .ToList();
             }
         }
 

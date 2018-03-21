@@ -280,7 +280,9 @@ namespace EDEngineer.Models
 
         public string ShortString => $"{Prefix} {language.Translate(Type).Initials()} {language.Translate(BlueprintName).Initials()}";
 
-        public string TranslatedString => $"{Prefix} {language.Translate(Type)} {language.Translate(BlueprintName)}";
+        public string TranslatedString => $"{language.Translate(Type)} {language.Translate(BlueprintName)}";
+
+        public string GradeString => Grade != null ? $"G{Grade}" : "🔹";
 
         private string Prefix
         {
@@ -297,7 +299,7 @@ namespace EDEngineer.Models
                     case BlueprintCategory.Unlock:
                         return $"ULK";
                     default:
-                        return $"G{Grade}";
+                        return $"";
                 }
             }
         }

@@ -53,8 +53,6 @@
             <SolidColorBrush x:Key="ExperimentalBrush" Color="DarkOliveGreen"/>
             <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
 
-            <converters:ShoppingListBlueprintSelector x:Key="ShoppingListBlueprintSelector"/>
-
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
@@ -85,6 +83,9 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListHighlightColor"
                                                          SpecialColor="{StaticResource EliteOrangeBrush}"
                                                          NormalColor="Wheat"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListBlockHighlightColor"
+                                                       SpecialColor="{StaticResource EliteOrangeBrush}"
+                                                       NormalColor="{StaticResource SynthesisBlueBrush}"/>
             <converters:IntToEnabledConverter x:Key="IntToEnabled"/>
             <converters:BooleanToEnumConverter x:Key="BooleanToEnum"/>
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>

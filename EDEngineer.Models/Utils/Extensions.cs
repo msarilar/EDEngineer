@@ -10,7 +10,7 @@ namespace EDEngineer.Models.Utils
     {
         public static string Initials(this string self)
         {
-            var initials = self.Replace('-', ' ').Split(' ').Where(s => s.Length > 0).Select(s => s[0]);
+            var initials = self.Replace('-', ' ').Replace('(', ' ').Replace(')', ' ').Split(' ').Where(s => s.Length > 0).Select(s => s[0]);
             return string.Join("", initials);
         }
 

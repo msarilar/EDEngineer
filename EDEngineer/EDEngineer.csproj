@@ -162,7 +162,6 @@
     <Compile Include="Converters\KindToVisibility.cs" />
     <Compile Include="Converters\NotificationKindToBooleanConverter.cs" />
     <Compile Include="Converters\NullableToVisibilityConverter.cs" />
-    <Compile Include="Converters\PremiumUserDataTemplateSelector.cs" />
     <Compile Include="Converters\RarityToMaximumCapacity.cs" />
     <Compile Include="Converters\SubkindToIcon.cs" />
     <Compile Include="Utils\BlueprintFilters.cs" />
