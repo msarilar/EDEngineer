@@ -53,6 +53,8 @@
             <SolidColorBrush x:Key="ExperimentalBrush" Color="DarkOliveGreen"/>
             <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
 
+            <converters:ShoppingListBlueprintSelector x:Key="ShoppingListBlueprintSelector"/>
+
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />

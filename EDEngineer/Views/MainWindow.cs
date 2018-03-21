@@ -521,15 +521,15 @@ namespace EDEngineer.Views
         private void ShoppingListIngredientMouseEnter(object sender, MouseEventArgs e)
         {
             var ingredient = (BlueprintIngredient) ((TextBlock) sender).DataContext;
-            var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
-            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, true);
+            var blueprints = (Dictionary<string, List<Tuple<Blueprint, int>>>)((TextBlock)sender).Tag;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints.SelectMany(b => b.Value).ToList(), ingredient, true);
         }
 
         private void ShoppingListIngredientMouseLeave(object sender, MouseEventArgs e)
         {
             var ingredient = (BlueprintIngredient)((TextBlock)sender).DataContext;
-            var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
-            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, false);
+            var blueprints = (Dictionary<string, List<Tuple<Blueprint, int>>>)((TextBlock)sender).Tag;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints.SelectMany(b => b.Value).ToList(), ingredient, false);
         }
 
         private void SettingsButtonClicked(object sender, RoutedEventArgs e)
