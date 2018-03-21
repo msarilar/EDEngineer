@@ -275,10 +275,10 @@ namespace EDEngineer.Models
 
         public override string ToString()
         {
-            return $"{Prefix} [{Type}] {BlueprintName}";
+            return $"G{Grade} [{Type}] {BlueprintName}";
         }
 
-        public string ShortString => $"{Prefix} {language.Translate(Type).Initials()} {language.Translate(BlueprintName).Initials()}";
+        public string ShortString => $"{Prefix}{language.Translate(Type).Initials()} {language.Translate(BlueprintName).Initials()}";
 
         public string TranslatedString => $"{language.Translate(Type)} {language.Translate(BlueprintName)}";
 
@@ -291,13 +291,13 @@ namespace EDEngineer.Models
                 switch (Category)
                 {
                     case BlueprintCategory.Synthesis:
-                        return $"SYN";
+                        return $"SYN ";
                     case BlueprintCategory.Experimental:
-                        return $"EXP";
+                        return $"EXP ";
                     case BlueprintCategory.Technology:
-                        return $"TEC";
+                        return $"TEC ";
                     case BlueprintCategory.Unlock:
-                        return $"ULK";
+                        return $"ULK ";
                     default:
                         return $"";
                 }

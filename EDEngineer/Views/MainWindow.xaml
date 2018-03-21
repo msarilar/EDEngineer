@@ -1327,6 +1327,17 @@
                                                         </Grid.ToolTip>
                                                         <Rectangle Fill="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}"
                                                                    Opacity="0.1"/>
+                                                        <Button Content="❌"
+                                                                Tag="{Binding Composition}"
+                                                                Style="{DynamicResource ChromelessButtonStyle}"
+                                                                Foreground="Red"
+                                                                FontWeight="Black"
+                                                                VerticalAlignment="Top"
+                                                                HorizontalAlignment="Right"
+                                                                FontSize="11"
+                                                                Margin="2"
+                                                                VerticalContentAlignment="Center"
+                                                                Click="RemoveShoppingListBlock" />
                                                         <Border BorderThickness="0.5"
                                                             BorderBrush="{Binding Highlighted, Converter={StaticResource BooleanToShoppingListBlockHighlightColor}}">
                                                             <StackPanel>
@@ -1367,24 +1378,12 @@
                                                                                         Margin="0,0,0,-5"
                                                                                         BorderBrush="{StaticResource SynthesisBlueBrush}"/>
                                                                                 <TextBlock Foreground="{Binding Item1.ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}"
-                                                                                           VerticalAlignment="Center"
-                                                                                           Grid.Column="1"
+                                                                                           VerticalAlignment="Top"
+                                                                                           Grid.Column="0"
                                                                                            Grid.Row="0"
-                                                                                           HorizontalAlignment="Right"
+                                                                                           HorizontalAlignment="Center"
                                                                                            Text="{Binding Item1.GradeString, Mode=OneWay}"
-                                                                                           Grid.ColumnSpan="2"/>
-                                                                                <Button Content="❌"
-                                                                                        Tag="{Binding Item1}"
-                                                                                        Style="{DynamicResource ChromelessButtonStyle}"
-                                                                                        Foreground="Red"
-                                                                                        FontWeight="Black"
-                                                                                        VerticalAlignment="Center"
-                                                                                        Grid.Row="0"
-                                                                                        FontSize="11"
-                                                                                        VerticalContentAlignment="Center"
-                                                                                        Margin="5,0,5,0"
-                                                                                        Click="RemoveBlueprintShoppingList"
-                                                                                        Grid.Column="3" />
+                                                                                           Grid.ColumnSpan="4"/>
                                                                                 <Button Content="-"
                                                                                         Tag="{Binding Item1}"
                                                                                         Click="DecrementShoppingList"
@@ -1412,7 +1411,8 @@
                                                                                         Foreground="Green"
                                                                                         Grid.Row="1"
                                                                                         Style="{DynamicResource ChromelessButtonStyle}"
-                                                                                        Grid.Column="3" />
+                                                                                        Grid.Column="3"
+                                                                                        Margin="5,0,5,0" />
                                                                             </Grid>
                                                                             <DataTemplate.Triggers>
                                                                                 <DataTrigger Binding="{Binding RelativeSource={RelativeSource PreviousData}}" Value="{x:Null}">

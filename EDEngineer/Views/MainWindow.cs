@@ -486,10 +486,13 @@ namespace EDEngineer.Views
             }
         }
 
-        private void RemoveBlueprintShoppingList(object sender, RoutedEventArgs e)
+        private void RemoveShoppingListBlock(object sender, RoutedEventArgs e)
         {
-            var blueprint = (Blueprint) ((WpfButton)sender).Tag;
-            viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
+            var blueprints = (List<Tuple<Blueprint, int>>) ((WpfButton)sender).Tag;
+            foreach (var blueprint in blueprints)
+            {
+                viewModel.CurrentCommander.Value.ShoppingListChange(blueprint.Item1, -1 * blueprint.Item1.ShoppingListCount);
+            }
 
             if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
             {
