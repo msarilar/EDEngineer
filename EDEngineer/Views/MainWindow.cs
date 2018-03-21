@@ -486,10 +486,13 @@ namespace EDEngineer.Views
             }
         }
 
-        private void RemoveBlueprintShoppingList(object sender, RoutedEventArgs e)
+        private void RemoveShoppingListBlock(object sender, RoutedEventArgs e)
         {
-            var blueprint = (Blueprint) ((WpfButton)sender).Tag;
-            viewModel.CurrentCommander.Value.ShoppingListChange(blueprint, -1 * blueprint.ShoppingListCount);
+            var blueprints = (List<Tuple<Blueprint, int>>) ((WpfButton)sender).Tag;
+            foreach (var blueprint in blueprints)
+            {
+                viewModel.CurrentCommander.Value.ShoppingListChange(blueprint.Item1, -1 * blueprint.Item1.ShoppingListCount);
+            }
 
             if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
             {
@@ -521,15 +524,15 @@ namespace EDEngineer.Views
         private void ShoppingListIngredientMouseEnter(object sender, MouseEventArgs e)
         {
             var ingredient = (BlueprintIngredient) ((TextBlock) sender).DataContext;
-            var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
-            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, true);
+            var blueprints = (List<ShoppingListBlock>)((TextBlock)sender).Tag;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints.SelectMany(b => b.Composition).ToList(), ingredient, true);
         }
 
         private void ShoppingListIngredientMouseLeave(object sender, MouseEventArgs e)
         {
             var ingredient = (BlueprintIngredient)((TextBlock)sender).DataContext;
-            var blueprints = (List<Tuple<Blueprint, int>>)((TextBlock)sender).Tag;
-            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints, ingredient, false);
+            var blueprints = (List<ShoppingListBlock>)((TextBlock)sender).Tag;
+            viewModel.CurrentCommander.Value.HighlightShoppingListBlueprint(blueprints.SelectMany(b => b.Composition).ToList(), ingredient, false);
         }
 
         private void SettingsButtonClicked(object sender, RoutedEventArgs e)

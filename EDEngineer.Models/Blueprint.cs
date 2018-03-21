@@ -195,7 +195,7 @@ namespace EDEngineer.Models
             builder.Append(language.Translate(ShortenedType) + "|");
             builder.Append(language.Translate(Type) + "|");
             builder.Append(language.Translate(BlueprintName) + "|");
-            builder.Append("G" + Grade + "|");
+            builder.Append(Grade == null ? Prefix : $"G{Grade}" + "|");
             builder.Append(string.Join("|", Engineers) + "|");
             SearchableContent = builder.ToString().ToLowerInvariant();
         }
@@ -278,9 +278,31 @@ namespace EDEngineer.Models
             return $"G{Grade} [{Type}] {BlueprintName}";
         }
 
-        public string ShortString => $"G{Grade} {language.Translate(Type).Initials()} {language.Translate(BlueprintName).Initials()}";
+        public string ShortString => $"{Prefix}{language.Translate(Type).Initials()} {language.Translate(BlueprintName).Initials()}";
 
-        public string TranslatedString => $"G{Grade} {language.Translate(Type)} {language.Translate(BlueprintName)}";
+        public string TranslatedString => $"{language.Translate(Type)} {language.Translate(BlueprintName)}";
+
+        public string GradeString => Grade != null ? $"G{Grade}" : "🔹";
+
+        private string Prefix
+        {
+            get
+            {
+                switch (Category)
+                {
+                    case BlueprintCategory.Synthesis:
+                        return $"SYN ";
+                    case BlueprintCategory.Experimental:
+                        return $"EXP ";
+                    case BlueprintCategory.Technology:
+                        return $"TEC ";
+                    case BlueprintCategory.Unlock:
+                        return $"ULK ";
+                    default:
+                        return $"";
+                }
+            }
+        }
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

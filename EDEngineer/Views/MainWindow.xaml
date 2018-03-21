@@ -170,7 +170,7 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
-                            
+
                             <ContentControl x:Name="PART_FloatingMessageContainer"
                                             Grid.Column="1"
                                             Style="{DynamicResource FloatingMessageContainerStyle}">
@@ -307,7 +307,7 @@
             <i:Interaction.Behaviors>
                 <f:ScaleFontBehavior FontRatio="{Binding DataContext.GraphicSettings.LeftRatio, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
             </i:Interaction.Behaviors>
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -379,7 +379,7 @@
                                 </TextBlock>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
-                    </ComboBox>                    
+                    </ComboBox>
                 </Border>
 
             </Grid>
@@ -417,7 +417,7 @@
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </TabControl.Resources>
-                              
+
                 <controls:MetroTabItem FontFamily="/Resources/Fonts/#Euro Caps"
                                        Header="{Binding}"
                                        Width="{Binding ElementName=c1, Path=ActualWidth}">
@@ -556,7 +556,7 @@
                     </ScrollViewer>
                 </controls:MetroTabItem>
             </controls:MetroTabControl>
-            </Grid>
+        </Grid>
 
         <!-- SPLITTER -->
         <GridSplitter Grid.Column="1"
@@ -1176,7 +1176,7 @@
                                         </Grid.LayoutTransform>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="0.5*" />
-                                            <ColumnDefinition Width="0.5*" />
+                                            <ColumnDefinition Width="320" />
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0"
                                           Focusable="False"
@@ -1304,68 +1304,126 @@
                                             </ItemsControl>
                                         </Grid>
 
-                                        <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.Composition, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                        <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.T, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
                                                       Grid.Column="1"
                                                       HorizontalAlignment="Right"
                                                       x:Name="ShoppingListComposition"
-                                                      FontSize="15">
+                                                      FontSize="15"
+                                                      Margin="0,5,0,0"
+                                                      Width="320">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <WrapPanel Orientation="Horizontal"
+                                                               HorizontalAlignment="Right" />
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
-                                                    <Grid MouseEnter="ShoppingListBlueprintMouseEnter"
-                                                          MouseLeave="ShoppingListBlueprintMouseLeave"
-                                                          DataContext="{Binding}"
-                                                          Tag="{Binding Path=ItemsSource, ElementName=ShoppingListIngredients}">
+                                                    <Grid Margin="3,3,3,3"
+                                                          HorizontalAlignment="Left"
+                                                          Width="{Binding Width}">
                                                         <Grid.ToolTip>
-                                                            <TextBlock Text="{Binding Item1.TranslatedString}" />
+                                                            <TextBlock Text="{Binding Tooltip}" />
                                                         </Grid.ToolTip>
-                                                        <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition Width="Auto" />
-                                                            <ColumnDefinition Width="Auto" />
-                                                            <ColumnDefinition Width="Auto" />
-                                                            <ColumnDefinition Width="Auto" />
-                                                            <ColumnDefinition Width="*" />
-                                                        </Grid.ColumnDefinitions>
-                                                        <Button Content="-"
-                                                            Tag="{Binding Item1}"
-                                                            Click="DecrementShoppingList"
-                                                            Foreground="Red"
-                                                            FontWeight="Black"
-                                                            VerticalAlignment="Center"
-                                                            VerticalContentAlignment="Center"
-                                                            FontSize="22"
-                                                            Style="{DynamicResource ChromelessButtonStyle}"
-                                                            Margin="5,0,5,0"
-                                                            Grid.Column="0" />
-                                                        <TextBlock Text="{Binding Item2}"
-                                                               VerticalAlignment="Center"
-                                                               Grid.Column="1" />
-                                                        <Button Content="+"
-                                                            Tag="{Binding Item1}"
-                                                            Click="IncrementShoppingList"
-                                                            FontWeight="Black"
-                                                            FontSize="22"
-                                                            VerticalAlignment="Center"
-                                                            VerticalContentAlignment="Center"
-                                                            Foreground="Green"
-                                                            Margin="5,0,5,0"
-                                                            Style="{DynamicResource ChromelessButtonStyle}"
-                                                            Grid.Column="2" />
-                                                        <TextBlock Text="{Binding Item1.ShortString}"
-                                                                   Foreground="{Binding Item1.ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}"
-                                                                   VerticalAlignment="Center"
-                                                                   Grid.Column="3" />
-                                                        <Button Content="x"
-                                                            HorizontalAlignment="Right"
-                                                            Tag="{Binding Item1}"
-                                                            Style="{DynamicResource ChromelessButtonStyle}"
-                                                            Foreground="Red"
-                                                            FontWeight="Black"
-                                                            VerticalAlignment="Center"
-                                                            VerticalContentAlignment="Center"
-                                                            Margin="5,0,5,0"
-                                                            Click="RemoveBlueprintShoppingList"
-                                                            Grid.Column="4" />
-
+                                                        <Rectangle Fill="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}"
+                                                                   Opacity="0.1"/>
+                                                        <Button Content="❌"
+                                                                Tag="{Binding Composition}"
+                                                                Style="{DynamicResource ChromelessButtonStyle}"
+                                                                Foreground="Red"
+                                                                FontWeight="Black"
+                                                                VerticalAlignment="Top"
+                                                                HorizontalAlignment="Right"
+                                                                FontSize="11"
+                                                                Margin="2"
+                                                                VerticalContentAlignment="Center"
+                                                                Click="RemoveShoppingListBlock" />
+                                                        <Border BorderThickness="0.5"
+                                                            BorderBrush="{Binding Highlighted, Converter={StaticResource BooleanToShoppingListBlockHighlightColor}}">
+                                                            <StackPanel>
+                                                                <TextBlock Text="{Binding Label}"
+                                                                           HorizontalAlignment="Center"
+                                                                           FontSize="13"/>
+                                                                <ItemsControl ItemsSource="{Binding Composition}"
+                                                                              HorizontalAlignment="Center">
+                                                                    <ItemsControl.ItemsPanel>
+                                                                        <ItemsPanelTemplate>
+                                                                            <StackPanel Orientation="Horizontal"/>
+                                                                        </ItemsPanelTemplate>
+                                                                    </ItemsControl.ItemsPanel>
+                                                                    <ItemsControl.ItemTemplate>
+                                                                        <DataTemplate>
+                                                                            <Grid MouseEnter="ShoppingListBlueprintMouseEnter"
+                                                                                  MouseLeave="ShoppingListBlueprintMouseLeave"
+                                                                                  DataContext="{Binding}"
+                                                                                  Margin="0,0,0,5"
+                                                                                  Tag="{Binding Path=ItemsSource, ElementName=ShoppingListIngredients}">
+                                                                                <Grid.RowDefinitions>
+                                                                                    <RowDefinition Height="15"/>
+                                                                                    <RowDefinition Height="20"/>
+                                                                                </Grid.RowDefinitions>
+                                                                                <Grid.ColumnDefinitions>
+                                                                                    <ColumnDefinition Width="Auto" />
+                                                                                    <ColumnDefinition Width="Auto" />
+                                                                                    <ColumnDefinition Width="Auto" />
+                                                                                    <ColumnDefinition Width="Auto" />
+                                                                                </Grid.ColumnDefinitions>
+                                                                                <Border Grid.Column="0"
+                                                                                        Grid.Row="1"
+                                                                                        x:Name="Separator"
+                                                                                        Width="1"
+                                                                                        BorderThickness="0.3"
+                                                                                        Height="15"
+                                                                                        VerticalAlignment="Bottom"
+                                                                                        Margin="0,0,0,-5"
+                                                                                        BorderBrush="{StaticResource SynthesisBlueBrush}"/>
+                                                                                <TextBlock Foreground="{Binding Item1.ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}"
+                                                                                           VerticalAlignment="Top"
+                                                                                           Grid.Column="0"
+                                                                                           Grid.Row="0"
+                                                                                           HorizontalAlignment="Center"
+                                                                                           Text="{Binding Item1.GradeString, Mode=OneWay}"
+                                                                                           Grid.ColumnSpan="4"/>
+                                                                                <Button Content="-"
+                                                                                        Tag="{Binding Item1}"
+                                                                                        Click="DecrementShoppingList"
+                                                                                        Foreground="Red"
+                                                                                        FontWeight="Black"
+                                                                                        Grid.Row="1"
+                                                                                        VerticalAlignment="Center"
+                                                                                        VerticalContentAlignment="Center"
+                                                                                        FontSize="22"
+                                                                                        Style="{DynamicResource ChromelessButtonStyle}"
+                                                                                        Margin="5,0,5,0"
+                                                                                        Grid.Column="1" />
+                                                                                <TextBlock Text="{Binding Item2}"
+                                                                                           VerticalAlignment="Center"
+                                                                                           Grid.Row="1"
+                                                                                           Margin="0,7,0,0"
+                                                                                           Grid.Column="2" />
+                                                                                <Button Content="+"
+                                                                                        Tag="{Binding Item1}"
+                                                                                        Click="IncrementShoppingList"
+                                                                                        FontWeight="Black"
+                                                                                        FontSize="22"
+                                                                                        VerticalAlignment="Center"
+                                                                                        VerticalContentAlignment="Center"
+                                                                                        Foreground="Green"
+                                                                                        Grid.Row="1"
+                                                                                        Style="{DynamicResource ChromelessButtonStyle}"
+                                                                                        Grid.Column="3"
+                                                                                        Margin="5,0,5,0" />
+                                                                            </Grid>
+                                                                            <DataTemplate.Triggers>
+                                                                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource PreviousData}}" Value="{x:Null}">
+                                                                                    <Setter Property="Visibility" TargetName="Separator" Value="Collapsed"/>
+                                                                                </DataTrigger>
+                                                                            </DataTemplate.Triggers>
+                                                                        </DataTemplate>
+                                                                    </ItemsControl.ItemTemplate>
+                                                                </ItemsControl>
+                                                            </StackPanel>
+                                                        </Border>
                                                     </Grid>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>

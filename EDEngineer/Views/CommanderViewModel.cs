@@ -350,8 +350,7 @@ namespace EDEngineer.Views
                         }
                     }
 
-                    blueprint = blueprints.FirstOrDefault(b => b.Category == BlueprintCategory.Module &&
-                                                               b.HasSameIngredients(blueprintIngredients));
+                    blueprint = blueprints.FirstOrDefault(b => b.HasSameIngredients(blueprintIngredients));
                 }
 
                 if (blueprint != null)

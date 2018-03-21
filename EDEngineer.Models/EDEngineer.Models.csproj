@@ -60,6 +60,7 @@
     <Compile Include="Operations\DumpOperation.cs" />
     <Compile Include="Operations\MaterialTradeOperation.cs" />
     <Compile Include="Operations\SystemUpdatedOperation.cs" />
+    <Compile Include="ShoppingListBlock.cs" />
     <Compile Include="Subkind.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
     <Compile Include="Utils\Json\LocalizedContractResolver.cs" />
