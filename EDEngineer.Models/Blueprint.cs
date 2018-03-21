@@ -195,7 +195,7 @@ namespace EDEngineer.Models
             builder.Append(language.Translate(ShortenedType) + "|");
             builder.Append(language.Translate(Type) + "|");
             builder.Append(language.Translate(BlueprintName) + "|");
-            builder.Append(Prefix + "|");
+            builder.Append(Grade == null ? Prefix : $"G{Grade}" + "|");
             builder.Append(string.Join("|", Engineers) + "|");
             SearchableContent = builder.ToString().ToLowerInvariant();
         }
