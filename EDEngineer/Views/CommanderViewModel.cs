@@ -93,6 +93,12 @@ namespace EDEngineer.Views
             State.BlueprintCrafted += (o, e) => TryRemoveFromShoppingListByIngredients(e.Item1, e.Item2, e.Item3);
             ShoppingList.SynchronizeWithLogs = SettingsManager.SyncShoppingList;
 
+            languages.PropertyChanged += (o, e) =>
+                                         {
+                                             OnPropertyChanged(nameof(ShoppingList));
+                                             OnPropertyChanged(nameof(ShoppingListItem));
+                                         };
+
             var datas = State.Cargo.Select(c => c.Value.Data);
             var ingredientUsed = State.Blueprints.SelectMany(blueprint => blueprint.Ingredients);
             var ingredientUsedNames = ingredientUsed.Select(ingredient => ingredient.Entry.Data.Name).Distinct();

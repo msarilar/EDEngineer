@@ -671,38 +671,6 @@
                     </DataTrigger>
                 </Style.Triggers>
             </Style>
-            <Style TargetType="Grid" x:Key="ShoppingListDetailsGridStyle">
-                <Style.Triggers>
-                    <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"                                      Value="True">
-                        <DataTrigger.EnterActions>
-                            <BeginStoryboard>
-                                <Storyboard>
-                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="1">
-                                            <EasingDoubleKeyFrame.EasingFunction>
-                                                <CubicEase EasingMode="EaseInOut" />
-                                            </EasingDoubleKeyFrame.EasingFunction>
-                                        </EasingDoubleKeyFrame>
-                                    </DoubleAnimationUsingKeyFrames>
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </DataTrigger.EnterActions>
-                        <DataTrigger.ExitActions>
-                            <BeginStoryboard>
-                                <Storyboard>
-                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="LayoutTransform.ScaleY">
-                                        <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0">
-                                            <EasingDoubleKeyFrame.EasingFunction>
-                                                <CubicEase EasingMode="EaseInOut" />
-                                            </EasingDoubleKeyFrame.EasingFunction>
-                                        </EasingDoubleKeyFrame>
-                                    </DoubleAnimationUsingKeyFrames>
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </DataTrigger.ExitActions>
-                    </DataTrigger>
-                </Style.Triggers>
-            </Style>
 
             <Style x:Key="PlaceHolderStyle" TargetType="{x:Type TextBox}" BasedOn="{StaticResource {x:Type TextBox}}">
                 <Setter Property="Template">

@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.0.0",
+    "Content": "* Shopping list redesign\r\n* Attempt at better synchronization between your shopping list and what you craft in game\r\n\r\n* Added missing blueprints (Grade 4 and 5 of Power plant's low emission and Distributor System/Weapon/Engine focused), thanks a lot to @svetislavn for the update!"
+  },
+  {
     "Version": "1.0.9.9",
     "Content": "* Added Top System Locations for each ingredient (currently based on your personal logs), check out the tooltip when hovering any ingredient!\r\n\r\n* French localization update thanks to @Catsbuggy\r\n\r\n\r\n> Toast Notifications don't work anymore (for when a favorite blueprint is ready). The feature broke with Windows Fall Creators Update and I haven't found a way to fix it yet, sorry!"
   },

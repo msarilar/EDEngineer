@@ -1170,13 +1170,10 @@
                                 <DataTemplate>
                                     <Grid Background="#1D2242"
                                       Focusable="False"
-                                      Style="{StaticResource ShoppingListDetailsGridStyle}">
-                                        <Grid.LayoutTransform>
-                                            <ScaleTransform ScaleY="0"/>
-                                        </Grid.LayoutTransform>
+                                          Width="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ActualWidth}">
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="0.5*" />
-                                            <ColumnDefinition Width="320" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <Grid Grid.Column="0"
                                           Focusable="False"
@@ -1304,7 +1301,7 @@
                                             </ItemsControl>
                                         </Grid>
 
-                                        <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.T, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                        <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.CompositionForGui, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
                                                       Grid.Column="1"
                                                       HorizontalAlignment="Right"
                                                       x:Name="ShoppingListComposition"

@@ -34,7 +34,7 @@ namespace EDEngineer.Views
             => blueprints.Where(b => b.ShoppingListCount > 0)
                          .Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList();
 
-        public List<ShoppingListBlock> T
+        public List<ShoppingListBlock> CompositionForGui
         {
             get
             {
