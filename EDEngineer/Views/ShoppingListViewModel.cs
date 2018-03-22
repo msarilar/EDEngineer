@@ -67,6 +67,7 @@ namespace EDEngineer.Views
                 else if (current.Composition.Count > 1)
                 {
                     result.Add(current);
+                    // find the first element of size 1 and add it if it exists:
                     for (var j = i + 1; j < list.Count; j++)
                     {
                         var next = list[j];
@@ -84,6 +85,8 @@ namespace EDEngineer.Views
                 else
                 {
                     result.Add(current);
+
+                    // find next item of intermediary size and add it if it exists:
                     for (var j = i + 1; j < list.Count; j++)
                     {
                         var next = list[j];
@@ -98,6 +101,7 @@ namespace EDEngineer.Views
                         }
                     }
 
+                    // since no intermediary size item could be found, let's find the next 2 one size items:
                     int? first = null;
                     for (var j = i + 1; j < list.Count; j++)
                     {
@@ -110,15 +114,19 @@ namespace EDEngineer.Views
                             }
                             else
                             {
+                                // swap first
                                 var temp = list[i + 1];
                                 list[i + 1] = list[first.Value];
                                 list[first.Value] = temp;
+
+                                // swap second
                                 temp = list[i + 2];
                                 list[i + 2] = list[j];
                                 list[j] = temp;
-                                i += 2;
                                 result.Add(list[first.Value]);
                                 result.Add(next);
+
+                                i += 2;
                                 break;
                             }
                         }
