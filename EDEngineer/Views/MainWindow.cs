@@ -573,5 +573,10 @@ namespace EDEngineer.Views
             filter.Checked = !filter.Checked;
             e.Handled = true;
         }
+
+        private void ShowAllGradesCheckedChange(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.ShowAllGradeChanges(((ToggleButton) sender).Tag as ShoppingListBlock);
+        }
     }
 }

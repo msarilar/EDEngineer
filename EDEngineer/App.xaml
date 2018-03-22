@@ -93,6 +93,7 @@
             <converters:EnumToDescription x:Key="EnumToDescription"/>
             <converters:RarityToMaximumCapacity x:Key="RarityToMaximumCapacity"/>
             <converters:HistoryToTop5Converter x:Key="HistoryToTop5Converter"/>
+            <converters:ShoppingListBlockToAllGradesVisibility x:Key="ShoppingListBlockToAllGradesVisibility"/>
 
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
@@ -102,6 +103,63 @@
                 <Setter Property="BorderBrush" Value="Black" />
                 <Setter Property="Foreground" Value="Black" />
                 <Setter Property="FontFamily" Value="./Resources/Fonts/#Euro Caps" />
+            </Style>
+
+            <Style x:Key="CircleToggleButton" TargetType="{x:Type ToggleButton}">
+                <Setter Property="Background" Value="{StaticResource TransparentBrush}" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="Padding" Value="1" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                            <Grid x:Name="grid" Background="{StaticResource TransparentBrush}">
+                                <Ellipse x:Name="ellipsebg"
+                                 Margin="4"
+                                 Stroke="{TemplateBinding Foreground}"
+                                 StrokeThickness="0"
+                                         Fill="{TemplateBinding Background}"
+                                 VerticalAlignment="Stretch" />
+                                <Ellipse x:Name="ellipse"
+                                 Margin="4"
+                                 Stroke="{TemplateBinding Foreground}"
+                                         Fill="{TemplateBinding Background}"
+                                 StrokeThickness="2"
+                                 VerticalAlignment="Stretch" />
+                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          Margin="{TemplateBinding Padding}" Name="icon"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="ellipsebg" Property="Fill" Value="{StaticResource AccentBackgroundBrush}" />
+                                    <Setter TargetName="ellipsebg" Property="Opacity" Value="0.2" />
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="ellipse" Property="Opacity" Value="1" />
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="False">
+                                    <Setter TargetName="ellipse" Property="Opacity" Value=".5" />
+                                </Trigger>
+                                <Trigger Property="IsKeyboardFocused" Value="true" />
+                                <Trigger Property="IsEnabled" Value="false"/>
+                                    <Trigger Property="IsKeyboardFocused"
+                                 Value="true" />
+                                <Trigger Property="ToggleButton.IsChecked"
+                                             Value="True" >
+                                    <Setter Property="Background" Value="{StaticResource EliteOrangeBrush}" />
+                                </Trigger>
+                                <Trigger Property="ToggleButton.IsChecked"
+                                         Value="False" >
+                                    <Setter Property="Background" Value="{StaticResource TransparentBrush}" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
             </Style>
 
             <Style x:Key="BlueprintGridStyle" TargetType="{x:Type DataGrid}">

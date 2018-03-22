@@ -13,11 +13,11 @@ namespace EDEngineer.Views
     {
         private bool synchronizeWithLogs;
         private readonly ILanguage languages;
-        private readonly List<Blueprint> blueprints;
+        private readonly List<IGrouping<Tuple<string, string>, Blueprint>> blueprints;
 
         public ShoppingListViewModel(List<Blueprint> blueprints, ILanguage languages)
         {
-            this.blueprints = blueprints;
+            this.blueprints = blueprints.GroupBy(b => Tuple.Create(b.Type, b.BlueprintName)).ToList();
             this.languages = languages;
         }
 
@@ -31,23 +31,100 @@ namespace EDEngineer.Views
         public List<Blueprint> List => this.ToList();
 
         public List<Tuple<Blueprint, int>> Composition
-            => blueprints.Where(b => b.ShoppingListCount > 0)
+            => blueprints.SelectMany(b => b).Where(b => b.ShoppingListCount > 0)
                          .Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList();
 
         public List<ShoppingListBlock> CompositionForGui
         {
             get
             {
-                return blueprints.GroupBy(b => Tuple.Create(b.Type, b.BlueprintName))
+                var allGrades = SettingsManager.ShowAllGrades;
+                var list = blueprints
                                  .Where(g => g.Any(b => b.ShoppingListCount > 0))
                                  .Select(g => new ShoppingListBlock(g.First().ShortString,
                                              g.First().TranslatedString,
                                              g.Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList(),
-                                             g.First().Category))
-                                 .OrderByDescending(b => b.Composition.Count)
-                                 .ThenBy(b => b.Category)
-                                 .ToList();
+                                             g.First().Category,
+                                             allGrades.Contains(g.First().ShortString))).ToList();
+
+                var result = SmartSort(list);
+
+                return result;
             }
+        }
+
+        private static List<ShoppingListBlock> SmartSort(List<ShoppingListBlock> list)
+        {
+            var result = new List<ShoppingListBlock>();
+            for (var i = 0; i < list.Count; i++)
+            {
+                var current = list[i];
+                if (current.Composition.Count > 3)
+                {
+                    result.Add(current);
+                }
+                else if (current.Composition.Count > 1)
+                {
+                    result.Add(current);
+                    for (var j = i + 1; j < list.Count; j++)
+                    {
+                        var next = list[j];
+                        if (next.Composition.Count == 1)
+                        {
+                            var temp = list[i + 1];
+                            list[i + 1] = next;
+                            list[j] = temp;
+                            result.Add(next);
+                            i++;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    result.Add(current);
+                    for (var j = i + 1; j < list.Count; j++)
+                    {
+                        var next = list[j];
+                        if (next.Composition.Count <= 3 && next.Composition.Count > 1)
+                        {
+                            var temp = list[i + 1];
+                            list[i + 1] = next;
+                            list[j] = temp;
+                            result.Add(next);
+                            i++;
+                            break;
+                        }
+                    }
+
+                    int? first = null;
+                    for (var j = i + 1; j < list.Count; j++)
+                    {
+                        var next = list[j];
+                        if (next.Composition.Count == 1)
+                        {
+                            if (first == null)
+                            {
+                                first = j;
+                            }
+                            else
+                            {
+                                var temp = list[i + 1];
+                                list[i + 1] = list[first.Value];
+                                list[first.Value] = temp;
+                                temp = list[i + 2];
+                                list[i + 2] = list[j];
+                                list[j] = temp;
+                                i += 2;
+                                result.Add(list[first.Value]);
+                                result.Add(next);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            return result;
         }
 
         public bool SynchronizeWithLogs
@@ -64,6 +141,7 @@ namespace EDEngineer.Views
         public IEnumerator<Blueprint> GetEnumerator()
         {
             var ingredients = blueprints
+                .SelectMany(b => b)
                 .SelectMany(b => Enumerable.Repeat(b, b.ShoppingListCount))
                 .SelectMany(b => b.Ingredients)
                 .ToList();

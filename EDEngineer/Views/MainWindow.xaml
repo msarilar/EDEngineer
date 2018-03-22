@@ -1334,6 +1334,18 @@
                                                                 Margin="2"
                                                                 VerticalContentAlignment="Center"
                                                                 Click="RemoveShoppingListBlock" />
+                                                        <ToggleButton IsChecked="{Binding ShowAllGrades, Mode=TwoWay}"
+                                                                      Checked="ShowAllGradesCheckedChange"
+                                                                      Unchecked="ShowAllGradesCheckedChange"
+                                                                      Tag="{Binding}"
+                                                                      Visibility="{Binding Converter={StaticResource ShoppingListBlockToAllGradesVisibility}}"
+                                                                      VerticalAlignment="Top"
+                                                                      HorizontalAlignment="Left"
+                                                                      Width="25"
+                                                                      Height="25"
+                                                                      Margin="2"
+                                                                      Style="{StaticResource CircleToggleButton}"
+                                                                      FontSize="11"/>
                                                         <Border BorderThickness="0.5"
                                                             BorderBrush="{Binding Highlighted, Converter={StaticResource BooleanToShoppingListBlockHighlightColor}}">
                                                             <StackPanel>

@@ -402,5 +402,16 @@ namespace EDEngineer.Properties {
                 this["SyncShoppingList"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.Specialized.StringCollection ShowAllGrades {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["ShowAllGrades"]));
+            }
+            set {
+                this["ShowAllGrades"] = value;
+            }
+        }
     }
 }

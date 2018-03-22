@@ -222,6 +222,11 @@ namespace EDEngineer.Views
                 Settings.Default.ShoppingList = new StringCollection();
             }
 
+            if (Settings.Default.ShowAllGrades == null)
+            {
+                Settings.Default.ShowAllGrades = new StringCollection();
+            }
+
             foreach (var blueprint in State.Blueprints)
             {
                 var text = $"{CommanderName}:{blueprint}";
@@ -457,6 +462,21 @@ namespace EDEngineer.Views
         public void RefreshShoppingList()
         {
             // relevant when live reloading a commander, because WPF didn't bind upon creating the object:
+            OnPropertyChanged(nameof(ShoppingList));
+            OnPropertyChanged(nameof(ShoppingListItem));
+        }
+
+        public void ShowAllGradeChanges(ShoppingListBlock shoppingListBlock)
+        {
+            if (shoppingListBlock.ShowAllGrades)
+            {
+                SettingsManager.AddToAllGrades(shoppingListBlock.Label);
+            }
+            else
+            {
+                SettingsManager.RemoveFromAllGrades(shoppingListBlock.Label);
+            }
+
             OnPropertyChanged(nameof(ShoppingList));
             OnPropertyChanged(nameof(ShoppingListItem));
         }

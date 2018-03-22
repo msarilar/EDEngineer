@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using System.Windows.Forms;
 using EDEngineer.Models;
@@ -196,6 +198,23 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.Comparer = value;
                 Properties.Settings.Default.Save();
             }
+        }
+
+        public static List<string> ShowAllGrades => Properties.Settings.Default.ShowAllGrades.Cast<string>().ToList();
+
+        public static void AddToAllGrades(string label)
+        {
+            if (!Properties.Settings.Default.ShowAllGrades.Contains(label))
+            {
+                Properties.Settings.Default.ShowAllGrades.Add(label);
+            }
+            Properties.Settings.Default.Save();
+        }
+
+        public static void RemoveFromAllGrades(string label)
+        {
+            Properties.Settings.Default.ShowAllGrades.Remove(label);
+            Properties.Settings.Default.Save();
         }
     }
 }
