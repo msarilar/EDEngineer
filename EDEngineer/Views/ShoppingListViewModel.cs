@@ -92,12 +92,15 @@ namespace EDEngineer.Views
                         var next = list[j];
                         if (next.Composition.Count <= 3 && next.Composition.Count > 1)
                         {
+                            found = true;
+
                             var temp = list[i + 1];
                             list[i + 1] = next;
                             list[j] = temp;
+
                             result.Add(next);
+
                             i++;
-                            found = true;
                             break;
                         }
                     }
@@ -129,8 +132,9 @@ namespace EDEngineer.Views
                                 temp = list[i + 2];
                                 list[i + 2] = list[j];
                                 list[j] = temp;
-                                result.Add(list[first.Value]);
-                                result.Add(next);
+
+                                result.Add(list[i + 1]);
+                                result.Add(list[i + 2]);
 
                                 i += 2;
                                 break;
