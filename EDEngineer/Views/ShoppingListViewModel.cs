@@ -85,7 +85,7 @@ namespace EDEngineer.Views
                 else
                 {
                     result.Add(current);
-
+                    var found = false;
                     // find next item of intermediary size and add it if it exists:
                     for (var j = i + 1; j < list.Count; j++)
                     {
@@ -97,8 +97,14 @@ namespace EDEngineer.Views
                             list[j] = temp;
                             result.Add(next);
                             i++;
+                            found = true;
                             break;
                         }
+                    }
+
+                    if (found)
+                    {
+                        continue;
                     }
 
                     // since no intermediary size item could be found, let's find the next 2 one size items:
@@ -131,16 +137,6 @@ namespace EDEngineer.Views
                             }
                         }
                     }
-                }
-            }
-
-            if (result.Count >= 2 && result.Count % 2 == 1)
-            {
-                if (result[result.Count - 1].Composition.Count > 3 && result[result.Count - 2].Composition.Count <= 3)
-                {
-                    var temp = result[result.Count - 2];
-                    result[result.Count - 2] = result[result.Count - 1];
-                    result[result.Count - 1] = temp;
                 }
             }
 

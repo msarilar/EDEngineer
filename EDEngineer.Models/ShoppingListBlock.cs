@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models.Utils.Collections;
 
 namespace EDEngineer.Models
 {
+    [DebuggerDisplay("{Label} {Composition.Count}")]
     public class ShoppingListBlock : INotifyPropertyChanged
     {
         private bool highlighted;
