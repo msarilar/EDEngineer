@@ -204,10 +204,7 @@ namespace EDEngineer.Utils.System
 
         public static void AddToAllGrades(string label)
         {
-            if (!Properties.Settings.Default.ShowAllGrades.Contains(label))
-            {
-                Properties.Settings.Default.ShowAllGrades.Add(label);
-            }
+            Properties.Settings.Default.ShowAllGrades.Add(label);
             Properties.Settings.Default.Save();
         }
 

@@ -574,9 +574,11 @@ namespace EDEngineer.Views
             e.Handled = true;
         }
 
-        private void ShowAllGradesCheckedChange(object sender, RoutedEventArgs e)
+        private void ShowAllGradesClicked(object sender, RoutedEventArgs e)
         {
-            viewModel.CurrentCommander.Value.ShowAllGradeChanges(((ToggleButton) sender).Tag as ShoppingListBlock);
+            var button = ((ToggleButton) sender);
+            viewModel.CurrentCommander.Value.ShowAllGradeChanges((ShoppingListBlock) button.Tag);
+            e.Handled = true;
         }
     }
 }

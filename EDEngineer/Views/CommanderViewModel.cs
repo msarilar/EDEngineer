@@ -468,6 +468,7 @@ namespace EDEngineer.Views
 
         public void ShowAllGradeChanges(ShoppingListBlock shoppingListBlock)
         {
+            shoppingListBlock.ShowAllGrades = !shoppingListBlock.ShowAllGrades;
             if (shoppingListBlock.ShowAllGrades)
             {
                 SettingsManager.AddToAllGrades(shoppingListBlock.Label);

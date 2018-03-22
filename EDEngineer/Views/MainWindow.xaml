@@ -1334,9 +1334,8 @@
                                                                 Margin="2"
                                                                 VerticalContentAlignment="Center"
                                                                 Click="RemoveShoppingListBlock" />
-                                                        <ToggleButton IsChecked="{Binding ShowAllGrades, Mode=TwoWay}"
-                                                                      Checked="ShowAllGradesCheckedChange"
-                                                                      Unchecked="ShowAllGradesCheckedChange"
+                                                        <ToggleButton IsChecked="{Binding ShowAllGrades, Mode=OneWay}"
+                                                                      Click="ShowAllGradesClicked"
                                                                       Tag="{Binding}"
                                                                       Visibility="{Binding Converter={StaticResource ShoppingListBlockToAllGradesVisibility}}"
                                                                       VerticalAlignment="Top"
