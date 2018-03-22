@@ -134,7 +134,7 @@ namespace EDEngineer.Views
                 }
             }
 
-            if (result.Count >= 2)
+            if (result.Count >= 2 && result.Count % 2 == 1)
             {
                 if (result[result.Count - 1].Composition.Count > 3 && result[result.Count - 2].Composition.Count <= 3)
                 {
