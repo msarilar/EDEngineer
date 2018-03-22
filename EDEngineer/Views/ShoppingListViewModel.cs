@@ -45,7 +45,8 @@ namespace EDEngineer.Views
                                              g.First().TranslatedString,
                                              g.Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList(),
                                              g.First().Category,
-                                             allGrades.Contains(g.First().ShortString))).ToList();
+                                             allGrades.Contains(g.First().ShortString)))
+                                 .ToList();
 
                 var result = SmartSort(list);
 
@@ -124,6 +125,17 @@ namespace EDEngineer.Views
                     }
                 }
             }
+
+            if (result.Count >= 2)
+            {
+                if (result[result.Count - 1].Composition.Count > 3 && result[result.Count - 2].Composition.Count <= 3)
+                {
+                    var temp = result[result.Count - 2];
+                    result[result.Count - 2] = result[result.Count - 1];
+                    result[result.Count - 1] = temp;
+                }
+            }
+
             return result;
         }
 

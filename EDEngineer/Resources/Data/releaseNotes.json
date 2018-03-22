@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.0.2",
+    "Content": "* Added buttons in the shopping list to expand/collapse multi-grade blueprints (double click the orange circles to see it in action)\r\n* Fixed an issue when parsing TechnologyBroker event"
+  },
+  {
     "Version": "1.1.0.0",
     "Content": "* Shopping list redesign\r\n* Attempt at better synchronization between your shopping list and what you craft in game\r\n\r\n* Added missing blueprints (Grade 4 and 5 of Power plant's low emission and Distributor System/Weapon/Engine focused), thanks a lot to @svetislavn for the update!"
   },

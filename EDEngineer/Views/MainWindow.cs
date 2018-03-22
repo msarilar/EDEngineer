@@ -16,6 +16,7 @@ using System.Windows.Media.Animation;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Filters;
+using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
@@ -488,7 +489,7 @@ namespace EDEngineer.Views
 
         private void RemoveShoppingListBlock(object sender, RoutedEventArgs e)
         {
-            var blueprints = (List<Tuple<Blueprint, int>>) ((WpfButton)sender).Tag;
+            var blueprints = (SortedObservableCollection<Tuple<Blueprint, int>>) ((WpfButton)sender).Tag;
             foreach (var blueprint in blueprints)
             {
                 viewModel.CurrentCommander.Value.ShoppingListChange(blueprint.Item1, -1 * blueprint.Item1.ShoppingListCount);
