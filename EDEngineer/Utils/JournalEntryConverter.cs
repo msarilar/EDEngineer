@@ -154,7 +154,7 @@ namespace EDEngineer.Utils
         {
             var operation = new EngineerOperation(BlueprintCategory.Technology, null)
             {
-                IngredientsConsumed = data["Ingredients"].Select(c =>
+                IngredientsConsumed = (data["Ingredients"] ?? data["Materials"]).Select(c =>
                     {
                         dynamic cc = c;
                         return Tuple.Create(converter.TryGet((string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
