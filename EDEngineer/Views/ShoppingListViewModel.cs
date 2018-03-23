@@ -146,6 +146,7 @@ namespace EDEngineer.Views
                     }
                 }
 
+                // if no complete line could be made, find the biggest remaining element and swap with current one:
                 if (!found && i < list.Count - 1)
                 {
                     int max = i + 1;
