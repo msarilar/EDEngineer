@@ -59,10 +59,12 @@ namespace EDEngineer.Views
             var result = new List<ShoppingListBlock>();
             for (var i = 0; i < list.Count; i++)
             {
+                var found = false;
                 var current = list[i];
                 if (current.Composition.Count > 3)
                 {
                     result.Add(current);
+                    found = true;
                 }
                 else if (current.Composition.Count > 1)
                 {
@@ -71,13 +73,14 @@ namespace EDEngineer.Views
                     for (var j = i + 1; j < list.Count; j++)
                     {
                         var next = list[j];
-                        if (next.Composition.Count == 1)
+                        if (next.Composition.Count <= 1)
                         {
                             var temp = list[i + 1];
                             list[i + 1] = next;
                             list[j] = temp;
                             result.Add(next);
                             i++;
+                            found = true;
                             break;
                         }
                     }
@@ -85,7 +88,6 @@ namespace EDEngineer.Views
                 else
                 {
                     result.Add(current);
-                    var found = false;
                     // find next item of intermediary size and add it if it exists:
                     for (var j = i + 1; j < list.Count; j++)
                     {
@@ -135,12 +137,32 @@ namespace EDEngineer.Views
 
                                 result.Add(list[i + 1]);
                                 result.Add(list[i + 2]);
-
                                 i += 2;
+
+                                found = true;
                                 break;
                             }
                         }
                     }
+                }
+
+                if (!found && i < list.Count - 1)
+                {
+                    int max = i + 1;
+                    for (var j = i + 1; j < list.Count; j++)
+                    {
+                        if (list[max].Composition.Count < list[j].Composition.Count)
+                        {
+                            max = j;
+                        }
+                    }
+
+                    var temp = list[max];
+                    list[max] = list[i];
+                    list[i] = temp;
+
+                    result.RemoveAt(i);
+                    result.Add(temp);
                 }
             }
 
