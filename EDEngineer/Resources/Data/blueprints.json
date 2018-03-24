@@ -34192,7 +34192,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Wing shield regeneration increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34216,7 +34227,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target wing shields regenerated",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34240,7 +34262,14 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+
+        "Property": "Damage increases with heat level",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34268,8 +34297,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
-
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target heat increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34293,7 +34332,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Heat reduced when striking a target",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34317,7 +34362,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34341,7 +34397,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34365,7 +34427,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34389,7 +34457,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34413,7 +34487,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Wing shield regeneration increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34437,7 +34522,23 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage partially kinetic",
+        "IsGood": true
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Damage",
+        "IsGood": true
+      },
+      {
+        "Effect": "3",
+        "Property": "Jitter",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34465,7 +34566,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Part of damage through shields",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34489,7 +34601,18 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target modules malfunctions",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Rate of Fire",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34517,7 +34640,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target heat increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34541,7 +34675,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34565,7 +34710,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34589,7 +34740,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34613,7 +34770,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34641,7 +34804,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34665,7 +34839,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Wing shield regeneration increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34693,7 +34878,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target signature increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34721,7 +34917,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Part of damage through shields",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34745,7 +34952,18 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target modules malfunctions",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Rate of Fire",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34773,7 +34991,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target heat increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34797,7 +35026,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34821,7 +35061,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34845,7 +35091,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34869,7 +35121,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34897,7 +35155,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34921,7 +35190,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Auto reload while firing",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -34945,7 +35220,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target armor hardness reduced",
+        "IsGood": true
+      },
+      {
+        "Effect": "-20%",
+        "Property": "Ammo Capacity",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -34973,7 +35259,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target signature increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35001,7 +35298,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target heat increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35029,7 +35337,23 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage partially thermal",
+        "IsGood": true
+      },
+      {
+        "Effect": "-5%",
+        "Property": "Rate of Fire",
+        "IsGood": false
+      },
+      {
+        "Effect": "+200%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35057,7 +35381,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "No damage to untargeted ships",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35081,7 +35411,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35105,7 +35441,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35129,7 +35471,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35153,7 +35501,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35181,7 +35540,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35205,7 +35575,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Auto reload while firing",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35233,7 +35609,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target gimbal/turret tracking reduced",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35261,7 +35643,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target pushed off course",
+        "IsGood": true
+      },
+      {
+        "Effect": "-17%",
+        "Property": "Shot Speed",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35289,7 +35682,18 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage partially explosive",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Rate of Fire",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35317,7 +35721,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "No damage to untargeted ships",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35345,7 +35755,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Shielded target heat increased",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35369,7 +35785,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35393,7 +35820,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35417,7 +35850,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35441,7 +35880,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35469,7 +35914,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35493,7 +35949,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target armor hardness reduced",
+        "IsGood": true
+      },
+      {
+        "Effect": "-20%",
+        "Property": "Ammo Capacity",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35521,7 +35988,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target sensor acuity reduced",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35545,7 +36018,13 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target speed reduced",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35573,7 +36052,23 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage partially thermal",
+        "IsGood": true
+      },
+      {
+        "Effect": "-5%",
+        "Property": "Rate of Fire",
+        "IsGood": false
+      },
+      {
+        "Effect": "+200%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35601,7 +36096,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Effectiveness increase against munitions",
+        "IsGood": true
+      },
+      {
+        "Effect": "-50%",
+        "Property": "Reload Time",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35625,7 +36131,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35649,7 +36166,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35673,7 +36196,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35697,7 +36226,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35725,7 +36260,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35749,7 +36295,13 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target speed reduced",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35777,7 +36329,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target signature increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35805,7 +36368,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage partially thermal",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35833,7 +36402,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Shielded target heat increased",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35857,7 +36432,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target module damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35879,13 +36460,30 @@
       {
         "Name": "Mechanical Equipment",
         "Size": 5
+
       },
       {
         "Name": "Configurable Components",
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target FSD reboots",
+        "IsGood": true
+      },
+      {
+        "Effect": "-30%",
+        "Property": "Damage",
+        "IsGood": false
+      },
+      {
+        "Effect": "-50%",
+        "Property": "Rate of Fire",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -35909,7 +36507,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35933,7 +36542,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35957,7 +36572,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -35981,7 +36602,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36009,7 +36636,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36033,7 +36671,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target FSD inhibited",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36061,7 +36705,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target module damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36089,7 +36739,13 @@
         "Size": 4
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target shield generator damaged",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36113,7 +36769,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36137,7 +36799,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36161,7 +36834,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36185,7 +36864,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36213,7 +36898,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target thrusters reboot",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36241,7 +36932,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage partially thermal",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36265,7 +36962,13 @@
         "Size": 4
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Area heat increased, sensors disrupted",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36293,7 +36996,13 @@
         "Size": 4
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target shield generator damaged",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36317,7 +37026,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Area FSDs reboot",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36345,7 +37060,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target signature increased",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -36369,7 +37095,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36393,7 +37125,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36417,7 +37160,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36441,7 +37190,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36469,7 +37224,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target sensor acuity reduced",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36497,7 +37258,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target gimbal/turret tracking reduced",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36521,7 +37288,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target loses target lock",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36545,7 +37318,13 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Damage increases with heat level",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36573,7 +37352,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Part of damage through shields",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -36601,7 +37391,23 @@
         "Size": 4
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Reload from ship fuel",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      },
+      {
+        "Effect": "-100%",
+        "Property": "Ammo Capacity",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -36625,7 +37431,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36649,7 +37466,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36673,7 +37496,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36697,7 +37526,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36725,7 +37560,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36749,7 +37595,23 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target shield cell disrupted",
+        "IsGood": true
+      },
+      {
+        "Effect": "-20%",
+        "Property": "Damage",
+        "IsGood": false
+      },
+      {
+        "Effect": "-40%",
+        "Property": "Thermal Load",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36777,7 +37639,28 @@
         "Size": 4
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Reload from ship fuel",
+        "IsGood": true
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Damage",
+        "IsGood": false
+      },
+      {
+        "Effect": "-40%",
+        "Property": "Thermal Load",
+        "IsGood": true
+      },
+      {
+        "Effect": "-100%",
+        "Property": "Ammo Capacity",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -36805,7 +37688,23 @@
         "Size": 5
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "✓",
+        "Property": "Target module damage",
+        "IsGood": true
+      },
+      {
+        "Effect": "-40%",
+        "Property": "Thermal Load",
+        "IsGood": true
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Reload Time",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -36829,7 +37728,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Damage",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36853,7 +37763,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36877,7 +37793,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36901,7 +37823,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36929,7 +37857,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Rate of Fire",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36954,7 +37893,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Heat Efficiency",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -36979,7 +37924,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37004,7 +37955,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Mass",
+        "IsGood": false
+      },
+      {
+        "Effect": "+5%",
+        "Property": "Power Generation",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37029,7 +37991,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37053,7 +38021,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-3%",
+        "Property": "Hull Boost",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Kinetic Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37077,7 +38056,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-3%",
+        "Property": "Hull Boost",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Explosive Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37101,7 +38091,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-3%",
+        "Property": "Hull Boost",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Thermal Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37125,7 +38126,28 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+8%",
+        "Property": "Hull Boost",
+        "IsGood": true
+      },
+      {
+        "Effect": "-3%",
+        "Property": "Kinetic Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-3%",
+        "Property": "Thermal Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-3%",
+        "Property": "Explosive Resistance",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37153,7 +38175,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-5%",
+        "Property": "Hull Reinforcement",
+        "IsGood": false
+      },
+      {
+        "Effect": "+2%",
+        "Property": "Kinetic Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37177,7 +38210,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-5%",
+        "Property": "Hull Reinforcement",
+        "IsGood": false
+      },
+      {
+        "Effect": "+2%",
+        "Property": "Explosive Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37205,7 +38249,18 @@
         "Size": 4
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-5%",
+        "Property": "Hull Reinforcement",
+        "IsGood": false
+      },
+      {
+        "Effect": "+2%",
+        "Property": "Thermal Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37229,7 +38284,28 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Hull Reinforcement",
+        "IsGood": true
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Kinetic Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Thermal Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Explosive Resistance",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37253,7 +38329,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37277,7 +38359,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37301,7 +38389,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37325,7 +38419,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+20%",
+        "Property": "Spin Up Time",
+        "IsGood": false
+      },
+      {
+        "Effect": "+5%",
+        "Property": "Shield Reinforcement",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37349,7 +38454,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Duration",
+        "IsGood": true
+      },
+      {
+        "Effect": "-5%",
+        "Property": "Shield Reinforcement",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37374,7 +38490,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-1%",
+        "Property": "Optimal Strength",
+        "IsGood": false
+      },
+      {
+        "Effect": "+2%",
+        "Property": "Kinetic Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37399,7 +38526,18 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-1%",
+        "Property": "Optimal Strength",
+        "IsGood": false
+      },
+      {
+        "Effect": "+2%",
+        "Property": "Thermal Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37428,7 +38566,18 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-1%",
+        "Property": "Optimal Strength",
+        "IsGood": false
+      },
+      {
+        "Effect": "+2%",
+        "Property": "Explosive Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37457,7 +38606,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37482,7 +38637,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37491,6 +38652,7 @@
     "Engineers": [
       "Felicity Farseer",
       "Lei Cheung",
+
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -37507,7 +38669,28 @@
         "Size": 2
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Optimal Strength",
+        "IsGood": true
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Kinetic Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Thermal Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Explosive Resistance",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37532,7 +38715,23 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+6%",
+        "Property": "Optimal Multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+25%",
+        "Property": "Distributor Draw",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37557,7 +38756,33 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+25%",
+        "Property": "Distributor Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Kinetic Resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Thermal Resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "+3%",
+        "Property": "Explosive Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37582,7 +38807,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-3%",
+        "Property": "Optimal Multiplier",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Thermal Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37607,7 +38843,33 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Regen Rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "+15%",
+        "Property": "Broken Regen Rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "-1%",
+        "Property": "Kinetic Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-1%",
+        "Property": "Thermal Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-1%",
+        "Property": "Explosive Resistance",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37632,7 +38894,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37657,12 +38925,17 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
     "Type": "Shield Generator",
-
     "Name": "Force Block",
     "Engineers": [
       "Elvira Martuuk",
@@ -37683,7 +38956,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-3%",
+        "Property": "Optimal Multiplier",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Kinetic Resistance",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37708,7 +38992,38 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-20%",
+        "Property": "Power Draw",
+        "IsGood": true
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Optimal Multiplier",
+        "IsGood": false
+      },
+      {
+        "Effect": "-20%",
+        "Property": "Distributor Draw",
+        "IsGood": true
+      },
+      {
+        "Effect": "-1%",
+        "Property": "Kinetic Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-1%",
+        "Property": "Thermal Resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "-1%",
+        "Property": "Explosive Resistance",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37734,7 +39049,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Maximum Fuel Per Jump",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37760,7 +39086,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+25%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37786,7 +39118,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37812,7 +39150,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-8%",
+        "Property": "Integrity",
+        "IsGood": false
+      },
+      {
+        "Effect": "+4%",
+        "Property": "Optimal Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37842,7 +39191,13 @@
         "Size": 3
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Thermal Load",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37867,7 +39222,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37892,7 +39253,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37917,7 +39284,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Optimal Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37942,7 +39315,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+4%",
+        "Property": "Optimal Multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Thermal Load",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -37967,7 +39351,18 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+5%",
+        "Property": "Mass",
+        "IsGood": false
+      },
+      {
+        "Effect": "-10%",
+        "Property": "Thermal Load",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -37992,7 +39387,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Power Draw",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -38017,7 +39418,38 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-4%",
+        "Property": "Weapons Capacity",
+        "IsGood": false
+      },
+      {
+        "Effect": "+4%",
+        "Property": "Weapons Recharge",
+        "IsGood": true
+      },
+      {
+        "Effect": "-4%",
+        "Property": "Engines Capacity",
+        "IsGood": false
+      },
+      {
+        "Effect": "+4%",
+        "Property": "Engines Recharge",
+        "IsGood": true
+      },
+      {
+        "Effect": "-4%",
+        "Property": "Systems Capacity",
+        "IsGood": false
+      },
+      {
+        "Effect": "+4%",
+        "Property": "Systems Recharge",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -38042,7 +39474,38 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+8%",
+        "Property": "Weapons Capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Weapons Recharge",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Engines Capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Engines Recharge",
+        "IsGood": false
+      },
+      {
+        "Effect": "+8%",
+        "Property": "Systems Capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "-2%",
+        "Property": "Systems Recharge",
+        "IsGood": false
+      }
+    ],
     "Grade": null
   },
   {
@@ -38067,7 +39530,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "-10%",
+        "Property": "Mass",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   },
   {
@@ -38092,7 +39561,13 @@
         "Size": 1
       }
     ],
-    "Effects": null,
+    "Effects": [
+      {
+        "Effect": "+15%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
     "Grade": null
   }
 ]

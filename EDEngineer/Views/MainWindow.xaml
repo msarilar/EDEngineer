@@ -947,8 +947,8 @@
                                     </Grid.LayoutTransform>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="0.3*" />
+                                        <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="0.3*" />
-                                        <ColumnDefinition Width="0.4*" />
                                     </Grid.ColumnDefinitions>
                                     <Grid Grid.Column="0"
                                           Focusable="False"
@@ -1059,7 +1059,8 @@
 
                                     <Grid Grid.Column="1"
                                           Focusable="False"
-                                          HorizontalAlignment="Center">
+                                          Margin="0,0,40,0"
+                                          HorizontalAlignment="Right">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="Auto" />
