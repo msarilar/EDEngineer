@@ -284,8 +284,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="EDEngineer_1_TemporaryKey.pfx" />
-    <None Include="EDEngineer_TemporaryKey.pfx" />
     <None Include="EDEngineer_UpdatedKey.pfx" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
