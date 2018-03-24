@@ -67,19 +67,5 @@ namespace EDEngineer.Models.Utils
                     return 300;
             }
         }
-
-        private static readonly HashSet<JournalEvent> lootEvents = new HashSet<JournalEvent>
-        {
-            JournalEvent.CollectCargo,
-            JournalEvent.MarketBuy,
-            JournalEvent.MaterialCollected,
-            JournalEvent.MiningRefined,
-            JournalEvent.MissionCompleted
-        };
-
-        public static bool IsLoot(this JournalEvent journalEvent)
-        {
-            return lootEvents.Contains(journalEvent);
-        }
     }
 }

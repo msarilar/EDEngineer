@@ -67,14 +67,14 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
     xmlDoc.InnerXml
   let csv = fun (s, l) -> (json(s, l) |> sprintf "{ \"item\": %s }") |> JsonUtils.ToCsv
     
-  let ingredients = fun (state:State) -> state.Cargo
+  let ingredients = fun (state:State) -> state.Cargo.Ingredients
                                          |> Seq.map (fun d -> d.Value.Data)
 
   let blueprints = fun (state:State) -> state.Blueprints
 
   let referenceData = fun (state:Func<IDictionary<string, State>>) -> state.Invoke().First().Value
 
-  let cargoExtractor = fun (state:State, kind) -> state.Cargo
+  let cargoExtractor = fun (state:State, kind) -> state.Cargo.Ingredients
                                                   |> Seq.map (fun e -> e.Value)
                                                   |> Seq.filter 
                                                     (fun e -> match kind with

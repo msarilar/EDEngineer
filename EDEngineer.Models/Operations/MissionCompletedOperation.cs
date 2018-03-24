@@ -6,7 +6,7 @@ namespace EDEngineer.Models.Operations
     {
         public List<CargoOperation> CommodityRewards { get; set; }
 
-        public override void Mutate(IState state)
+        public override void Mutate(State state)
         {
             foreach (var reward in CommodityRewards)
             {

@@ -119,11 +119,11 @@ namespace EDEngineer.Views
             var commander = viewModel.CurrentCommander.Value;
 
             var blueprintSource = new CollectionViewSource { Source = commander.State.Blueprints };
-            commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Select(c => c.Value), commander.HighlightedEntryData);
+            commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Ingredients.Select(c => c.Value), commander.HighlightedEntryData);
             Blueprints.ItemsSource = blueprintSource.View;
             
-            Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo });
-            Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo });
+            Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
+            Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
         }
 
         private void MainWindowLoaded(object sender, RoutedEventArgs args)

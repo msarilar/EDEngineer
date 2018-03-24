@@ -9,9 +9,9 @@ namespace EDEngineer.Models.Operations
             System = system;
         }
 
-        public override void Mutate(IState state)
+        public override void Mutate(State state)
         {
-            state.System = System;
+            state.History.System = System;
         }
     }
 }

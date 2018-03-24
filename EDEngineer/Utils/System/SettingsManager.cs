@@ -188,7 +188,7 @@ namespace EDEngineer.Utils.System
                 var comparer = Properties.Settings.Default.Comparer;
                 if (string.IsNullOrEmpty(comparer))
                 {
-                    Comparer = comparer = State.NAME_COMPARER;
+                    Comparer = comparer = StateCargo.NAME_COMPARER;
                 }
 
                 return comparer;

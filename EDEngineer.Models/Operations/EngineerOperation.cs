@@ -15,11 +15,11 @@ namespace EDEngineer.Models.Operations
             TechnicalName = technicalName;
         }
 
-        public override void Mutate(IState state)
+        public override void Mutate(State state)
         {
             foreach (var ingredient in IngredientsConsumed)
             {
-                state.IncrementCargo(ingredient.Entry.Data.Name, -1 * ingredient.Size);
+                state.Cargo.IncrementCargo(ingredient.Entry.Data.Name, -1 * ingredient.Size);
             }
 
             state.OnBlueprintCrafted(Category, TechnicalName, IngredientsConsumed);

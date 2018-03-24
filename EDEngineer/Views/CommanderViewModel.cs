@@ -59,17 +59,17 @@ namespace EDEngineer.Views
         private void LoadState(IEnumerable<string> events)
         {
             commanderNotifications?.UnsubscribeNotifications();
-            State.InitLoad();
+            State.Cargo.InitLoad();
             // Clear state:
             
-            State.Cargo.ToList().ForEach(k => State.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
+            State.Cargo.Ingredients.ToList().ForEach(k => State.Cargo.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
             LastUpdate = Instant.MinValue;
 
             ApplyEventsToSate(events);
             commanderNotifications?.SubscribeNotifications();
 
-            State.Cargo.RefreshSort();
-            State.CompleteLoad();
+            State.Cargo.Ingredients.RefreshSort();
+            State.Cargo.CompleteLoad();
         }
 
         public CommanderViewModel(string commanderName, IEnumerable<string> logs, Languages languages, List<EntryData> entryDatas)
@@ -78,12 +78,12 @@ namespace EDEngineer.Views
 
             var converter = new ItemNameConverter(entryDatas);
 
-            State = new State(entryDatas, languages, SettingsManager.Comparer);
+            State = new State(new StateCargo(entryDatas, languages, SettingsManager.Comparer));
 
             commanderNotifications = new CommanderNotifications(State);
 
-            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo, languages);
-            blueprintConverter = new BlueprintConverter(State.Cargo);
+            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo.Ingredients, languages);
+            blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
             LoadBlueprints(languages);
 
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
@@ -99,7 +99,7 @@ namespace EDEngineer.Views
                                              OnPropertyChanged(nameof(ShoppingListItem));
                                          };
 
-            var datas = State.Cargo.Select(c => c.Value.Data);
+            var datas = State.Cargo.Ingredients.Select(c => c.Value.Data);
             var ingredientUsed = State.Blueprints.SelectMany(blueprint => blueprint.Ingredients);
             var ingredientUsedNames = ingredientUsed.Select(ingredient => ingredient.Entry.Data.Name).Distinct();
             var unusedIngredients = datas.Where(data => !ingredientUsedNames.Contains(data.Name));
@@ -156,10 +156,6 @@ namespace EDEngineer.Views
             State.Operations.AddLast(entry);
             entry.JournalOperation.Mutate(State);
             LastUpdate = Instant.Max(LastUpdate, entry.Timestamp);
-            if (entry.SystemRelevant)
-            {
-                entry.JournalOperation.Mutate(State.History);
-            }
         }
 
         public ICollectionView FilterView(MainWindowViewModel parentViewModel, Kind kind, CollectionViewSource source)

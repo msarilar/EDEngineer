@@ -4,8 +4,13 @@ using EDEngineer.Models.Utils.Collections;
 
 namespace EDEngineer.Models
 {
-    public class History : IState
+    public class StateHistory
     {
+        public StateHistory()
+        {
+            System = "Sol";
+        }
+
         public string System { get; set; }
         public void IncrementCargo(string name, int change)
         {
@@ -30,11 +35,5 @@ namespace EDEngineer.Models
         }
 
         public Dictionary<string, Dictionary<string, int>> Loots { get; } = new Dictionary<string, Dictionary<string, int>>();
-
-        public SortedObservableCounter Cargo => throw new NotImplementedException();
-        public void OnBlueprintCrafted(BlueprintCategory category, string technicalName, List<BlueprintIngredient> ingredientsConsumed)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

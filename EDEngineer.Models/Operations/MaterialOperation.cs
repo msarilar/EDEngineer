@@ -6,9 +6,9 @@
 
         public int Size { get; set; }
 
-        public override void Mutate(IState state)
+        public override void Mutate(State state)
         {
-            state.IncrementCargo(MaterialName, Size);
+            state.Cargo.IncrementCargo(MaterialName, Size);
         }
     }
 }

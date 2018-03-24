@@ -211,9 +211,9 @@ namespace EDEngineer.Views
         {
             get
             {
-                yield return State.NAME_COMPARER;
-                yield return State.COUNT_COMPARER;
-                yield return State.RARITY_COMPARER;
+                yield return StateCargo.NAME_COMPARER;
+                yield return StateCargo.COUNT_COMPARER;
+                yield return StateCargo.RARITY_COMPARER;
             }
         }
 
@@ -225,7 +225,7 @@ namespace EDEngineer.Views
                 currentComparer = value;
                 SettingsManager.Comparer = value;
                 OnPropertyChanged();
-                foreach (var state in Commanders.Select(c => c.Value.State))
+                foreach (var state in Commanders.Select(c => c.Value.State.Cargo))
                 {
                     if (IngredientsGrouped)
                     {

@@ -10,12 +10,12 @@ namespace EDEngineer.Converters
     {
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
-            if (!(values[0] is History) || !(values[1] is string))
+            if (!(values[0] is StateHistory) || !(values[1] is string))
             {
                 return new[] { "?" };
             }
 
-            var history = (History)values[0];
+            var history = (StateHistory)values[0];
             var name = (string) values[1];
 
             if (!history.Loots.TryGetValue(name, out var locations))

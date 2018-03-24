@@ -82,7 +82,6 @@ namespace EDEngineer.Utils
             try
             {
                 entry.JournalOperation = ExtractOperation(data, journalEvent.Value);
-                entry.SystemRelevant = journalEvent.Value.IsLoot();
             }
             catch (Exception e)
             {

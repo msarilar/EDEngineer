@@ -15,7 +15,7 @@ namespace EDEngineer.Views.Notifications
     {
         private NotificationKind notificationBlueprint;
         private readonly CommanderNotifications testCommanderNotifications;
-        private readonly State testState;
+        private readonly State state;
         private readonly Random random;
         private Tuple<string, string> selectedVoice;
         public Languages Languages { get; }
@@ -49,10 +49,10 @@ namespace EDEngineer.Views.Notifications
             random = new Random();
             Languages = languages;
 
-            testState = new State(JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson()), languages, "Count");
-            testState.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(IOUtils.GetBlueprintsJson(), new BlueprintConverter(testState.Cargo)));
+            state = new State(new StateCargo(JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson()), languages, "Count"));
+            state.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(IOUtils.GetBlueprintsJson(), new BlueprintConverter(state.Cargo.Ingredients)));
 
-            testCommanderNotifications = new CommanderNotifications(testState);
+            testCommanderNotifications = new CommanderNotifications(state);
             testCommanderNotifications.SubscribeNotifications();
 
             NotificationKindBlueprintReady = SettingsManager.NotificationKindBlueprintReady;
@@ -69,12 +69,12 @@ namespace EDEngineer.Views.Notifications
 
         private void ResetState()
         {
-            foreach (var entryData in testState.Cargo.Values)
+            foreach (var entryData in state.Cargo.Ingredients.Values)
             {
                 entryData.Count = 0;
             }
 
-            foreach (var blueprint in testState.Blueprints)
+            foreach (var blueprint in state.Blueprints)
             {
                 blueprint.Favorite = false;
             }
@@ -83,12 +83,12 @@ namespace EDEngineer.Views.Notifications
         public void TriggerFavoriteReady()
         {
             ResetState();
-            var blueprint = testState.Blueprints.Skip(random.Next(0, testState.Blueprints.Count)).First();
+            var blueprint = state.Blueprints.Skip(random.Next(0, state.Blueprints.Count)).First();
             blueprint.Favorite = true;
 
             foreach (var ingredient in blueprint.Ingredients)
             {
-                testState.IncrementCargo(ingredient.Entry.Data.Name, ingredient.Size);
+                state.Cargo.IncrementCargo(ingredient.Entry.Data.Name, ingredient.Size);
             }
         }
 
