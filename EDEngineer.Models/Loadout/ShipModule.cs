@@ -21,10 +21,10 @@ namespace EDEngineer.Models.Loadout
             TechnicalType = type.ToLowerInvariant();
             TechnicalSlot = slot.ToLowerInvariant();
 
-            Slot = slot.ToReadable();
+            Slot = slot.ToReadable().Replace("Slot", "Slot ").Trim();
             BlueprintName = blueprintName.ToReadable();
             ExperimentalEffect = experimentalEffect.ToReadable();
-            Type = type.ToReadable();
+            Type = type.ToReadable().Replace("Hpt", "").Replace("Int", "").Replace("hpt", "").Replace("int", "").Trim();
             Grade = grade;
             Engineer = engineer;
             Modifiers = modifiers;

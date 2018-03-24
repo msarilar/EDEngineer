@@ -168,6 +168,11 @@ namespace EDEngineer.Utils.System
         public Dictionary<string, List<string>> RetrieveAllLogs()
         {
             var gameLogLines = new Dictionary<string, List<string>>();
+            if (!Directory.Exists(logDirectory))
+            {
+                return gameLogLines;
+            }
+
             foreach (
                 var file in
                     Directory.GetFiles(logDirectory)

@@ -576,7 +576,7 @@
                         </Grid.RowDefinitions>
 
                         <Grid Grid.Row="0"
-                              HorizontalAlignment="Center"
+                              HorizontalAlignment="Stretch"
                               VerticalAlignment="Top">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -1070,8 +1070,8 @@
                                                 <DataTemplate>
                                                     <TextBlock Text="{Binding Property}"
                                                                FontSize="13"
-                                                               FontWeight="Medium"
-                                                               Foreground="{Binding IsGood, Converter={StaticResource BooleanToGoodEffectColorConverter}}"/>
+                                                               FontWeight="Light"
+                                                               HorizontalAlignment="Left"/>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
                                         </ItemsControl>
@@ -1081,7 +1081,9 @@
                                                 <DataTemplate>
                                                     <TextBlock Text="{Binding Effect}"
                                                                FontSize="13"
-                                                               FontWeight="Medium"
+                                                               FontWeight="Light"
+                                                               FontFamily="Consolas"
+                                                               HorizontalAlignment="Right"
                                                                Margin="5,0,0,0"
                                                                Foreground="{Binding IsGood, Converter={StaticResource BooleanToGoodEffectColorConverter}}"/>
                                                 </DataTemplate>

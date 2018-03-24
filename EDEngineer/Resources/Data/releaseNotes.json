@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.0.7",
+    "Content": "* Loadout tab added\r\n* Blueprints effects added\r\n* Better algorithm for reorganizing shopping list tiles (there shouldn't be any more holes)\r\n* Expand/Collapse shopping list tile now disabled if it can't be collapsed (i.e. if there are 4 or more grades with positive counters)\r\n* Fixed an issue for when the log directory couldn't be retrieved"
+  },
+  {
     "Version": "1.1.0.2",
     "Content": "* Added buttons in the shopping list to expand/collapse multi-grade blueprints (double click the orange circles to see it in action)\r\n* Fixed an issue when parsing TechnologyBroker event"
   },

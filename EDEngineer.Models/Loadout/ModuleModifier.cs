@@ -5,19 +5,19 @@ namespace EDEngineer.Models.Loadout
 {
     public class ModuleModifier
     {
-        public ModuleModifier(string label, float value, float originalValue, bool lessIsGood)
+        public ModuleModifier(string label, float value, float? originalValue, bool lessIsGood)
         {
             Label = label.ToReadable();
             Value = value;
-            OriginalValue = originalValue;
+            OriginalValue = originalValue == 0 ? null : originalValue;
             LessIsGood = lessIsGood;
 
-            Change = OriginalValue == 0 ? (double?) null : Math.Round((Value - OriginalValue) / Math.Abs(OriginalValue) * 100);
+            Change = OriginalValue == 0 || OriginalValue == null ? (double?) null : Math.Round((Value - OriginalValue.Value) / Math.Abs(OriginalValue.Value) * 100);
         }
 
         public string Label { get; }
         public float Value { get; }
-        public float OriginalValue { get; }
+        public float? OriginalValue { get; }
         public bool LessIsGood { get; }
         public double? Change { get; }
     }

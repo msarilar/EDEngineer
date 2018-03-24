@@ -205,7 +205,7 @@ namespace EDEngineer.Utils
                    where modifier["Value"]?.Type == JTokenType.Float
                    let label = (string) modifier["Label"]
                    let value = (float) modifier["Value"]
-                   let originalValue = (float) modifier["OriginalValue"]
+                   let originalValue = (float?) modifier["OriginalValue"]
                    let lessIsGood = (int) modifier["LessIsGood"]
                    select new ModuleModifier(label, value, originalValue, lessIsGood == 1);
         }

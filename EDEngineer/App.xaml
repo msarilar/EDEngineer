@@ -1072,16 +1072,20 @@
                                                         HorizontalAlignment="Right"
                                                         Grid.Row="1">
                                                 <TextBlock HorizontalAlignment="Right"
-                                                           Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}">
-                                                    <Run Text="{Binding Value, Mode=OneWay}"/>
+                                                           Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
+                                                           Text="{Binding Value, Mode=OneWay, StringFormat=F2}"/>
+                                                <TextBlock HorizontalAlignment="Right"
+                                                           Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
+                                                           Visibility="{Binding Change, Converter={StaticResource NullableToVisibility}}">
                                                     <Run Text=" ("/>
                                                     <Run Text="{Binding Change, Mode=OneWay, Converter={StaticResource DoubleToPercent}, ConverterParameter='plus'}"/>
                                                     <Run Text=")"/>
                                                 </TextBlock>
                                                 <TextBlock HorizontalAlignment="Right"
-                                                           Foreground="White">
+                                                           Foreground="White"
+                                                           Visibility="{Binding OriginalValue, Converter={StaticResource NullableToVisibility}}">
                                                     <Run Text=" ["/>
-                                                    <Run Text="{Binding OriginalValue, Mode=OneWay}"/>
+                                                    <Run Text="{Binding OriginalValue, Mode=OneWay, StringFormat=F2}"/>
                                                     <Run Text="]"/>
                                                 </TextBlock>
                                             </StackPanel>
