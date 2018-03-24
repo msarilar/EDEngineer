@@ -8,7 +8,7 @@
 
         public override void Mutate(State state)
         {
-            state.Cargo.IncrementCargo(CommodityName, Size);
+            state.IncrementCargo(CommodityName, Size);
         }
     }
 }
