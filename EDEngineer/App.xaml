@@ -88,7 +88,12 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListBlockHighlightColor"
                                                        SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                        NormalColor="{StaticResource SynthesisBlueBrush}"/>
-            <converters:IntToEnabledConverter x:Key="IntToEnabled"/>
+            <converters:IntToEnabledConverter x:Key="IntToEnabled"
+                                              Threshold="0"
+                                              Comparison="DifferentThan"/>
+            <converters:IntToEnabledConverter x:Key="CompositionCountToEnabled"
+                                              Threshold="4"
+                                              Comparison="LessThan"/>
             <converters:BooleanToEnumConverter x:Key="BooleanToEnum"/>
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
@@ -158,6 +163,9 @@
                                 <Trigger Property="ToggleButton.IsChecked"
                                          Value="False" >
                                     <Setter Property="Background" Value="{StaticResource TransparentBrush}" />
+                                </Trigger>
+                                <Trigger Property="IsEnabled" Value="False">
+                                    <Setter Property="Background" Value="Gray" />
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>

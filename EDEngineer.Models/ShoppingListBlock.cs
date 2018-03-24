@@ -47,6 +47,8 @@ namespace EDEngineer.Models
 
         public List<Tuple<Blueprint, int>> HiddenBlueprints { get; } = new List<Tuple<Blueprint, int>>();
 
+        public int BlueprintsWithCount => Composition.Count(c => c.Item2 > 0);
+
         public bool Highlighted
         {
             get => highlighted;
