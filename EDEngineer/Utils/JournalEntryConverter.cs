@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using EDEngineer.Localization;
 using EDEngineer.Models;
+using EDEngineer.Models.Loadout;
 using EDEngineer.Models.Operations;
 using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
@@ -19,13 +20,15 @@ namespace EDEngineer.Utils
         private readonly ItemNameConverter converter;
         private readonly ISimpleDictionary<string, Entry> entries;
         private readonly Languages languages;
+        private readonly IEnumerable<Blueprint> blueprints;
         private static readonly HashSet<string> relevantJournalEvents = new HashSet<string>(Enum.GetNames(typeof(JournalEvent)));
 
-        public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries, Languages languages)
+        public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries, Languages languages, IEnumerable<Blueprint> blueprints)
         {
             this.converter = converter;
             this.entries = entries;
             this.languages = languages;
+            this.blueprints = blueprints;
         }
 
         public override bool CanWrite => true;
@@ -139,9 +142,57 @@ namespace EDEngineer.Utils
                 case JournalEvent.Location:
                 case JournalEvent.FSDJump:
                     return ExtractSystemUpdated(data);
+                case JournalEvent.Loadout:
+                    return ExtractLoadout(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractLoadout(JObject data)
+        {
+            var ship = (string) data["Ship"];
+            var shipName = (string)data["ShipName"];
+            var shipIdent = (string)data["ShipIdent"];
+            var shipValue = (int?)data["HullValue"];
+            var modulesValue = (int?)data["ModulesValue"];
+            var rebuy = (int?)data["Rebuy"];
+
+            var modules = new List<ShipModule>();
+            foreach (var module in data["Modules"])
+            {
+                var type = (string)module["Item"];
+                var slot = (string)module["Slot"];
+
+                Blueprint blueprint = null;
+                string experimentalEffect = null;
+
+                var engineering = module["Engineering"];
+                var modifiers = new List<ModuleModifier>();
+                if (engineering != null)
+                {
+                    experimentalEffect = (string)engineering["ExperimentalEffect"];
+                    var name = (string) engineering["BlueprintName"];
+                    foreach (var modifier in engineering["Modifiers"])
+                    {
+                        if (modifier["Value"]?.Type != JTokenType.Float)
+                        {
+                            continue;
+                        }
+
+                        var label = (string) modifier["Label"];
+                        var value = (float) modifier["Value"];
+                        var originalValue = (float) modifier["OriginalValue"];
+                        var lessIsGood = (int) modifier["LessIsGood"];
+                        modifiers.Add(new ModuleModifier(label, value, originalValue, lessIsGood == 1));
+                    }
+                }
+
+                modules.Add(new ShipModule(type, slot, blueprint, experimentalEffect, modifiers));
+            }
+
+
+            return new ShipLoadoutOperation(new ShipLoadout(ship, shipName, shipIdent, shipValue, modulesValue, rebuy, modules));
         }
 
         private JournalOperation ExtractSystemUpdated(JObject data)

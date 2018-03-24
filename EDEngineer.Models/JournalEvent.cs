@@ -23,6 +23,7 @@ namespace EDEngineer.Models
         MaterialTrade,
         TechnologyBroker,
         Location,
-        FSDJump
+        FSDJump,
+        Loadout
     }
 }

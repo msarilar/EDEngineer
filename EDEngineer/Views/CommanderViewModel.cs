@@ -81,10 +81,15 @@ namespace EDEngineer.Views
             State = new State(new StateCargo(entryDatas, languages, SettingsManager.Comparer));
 
             commanderNotifications = new CommanderNotifications(State);
-
-            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo.Ingredients, languages);
             blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
-            LoadBlueprints(languages);
+
+            var blueprintsJson = IOUtils.GetBlueprintsJson();
+            var blueprints =
+                JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter)
+                           .Where(b => b.Ingredients.Any());
+
+            journalEntryConverter = new JournalEntryConverter(converter, State.Cargo.Ingredients, languages, blueprints);
+            LoadBlueprints(languages, blueprints);
 
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
@@ -194,14 +199,8 @@ namespace EDEngineer.Views
             return source.View;
         }
 
-        private void LoadBlueprints(ILanguage languages)
+        private void LoadBlueprints(ILanguage languages, IEnumerable<Blueprint> blueprints)
         {
-            var blueprintsJson = IOUtils.GetBlueprintsJson();
-            var blueprints =
-                JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter)
-                           .Where(b => b.Ingredients.Any());
-
-
             State.Blueprints = new List<Blueprint>(blueprints);
             if (Settings.Default.Favorites == null)
             {

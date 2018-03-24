@@ -404,7 +404,7 @@
                 </Button.Content>
             </Button>
 
-            <UniformGrid Columns="2" Margin="5,0" Opacity="0" Grid.Row="1">
+            <UniformGrid Columns="3" Margin="5,0" Opacity="0" Grid.Row="1">
                 <Grid x:Name="c1"/>
                 <Grid/>
             </UniformGrid>
@@ -507,6 +507,171 @@
                         </StackPanel>
                     </Grid>
                 </controls:MetroTabItem>
+
+                <controls:MetroTabItem Header="{Binding}"
+                                       FontFamily="/Resources/Fonts/#Euro Caps"
+                                       HorizontalAlignment="Center"
+                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                    <controls:MetroTabItem.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center"
+                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Loadout'}"/>
+                        </DataTemplate>
+                    </controls:MetroTabItem.HeaderTemplate>
+                    <Grid Margin="15"
+                              DataContext="{Binding CurrentCommander.Value.State.Loadout}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Grid.Row="0"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Top">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="{Binding Loadout.Ship, Mode=OneWay}"
+                                       FontSize="26"
+                                       Foreground="White"
+                                       HorizontalAlignment="Center"
+                                       FontFamily="/Resources/Fonts/#Telegrama Render"
+                                       Visibility="{Binding Loadout.Ship, Converter={StaticResource NullableToVisibility}}"
+                                       Grid.Row="0"/>
+                            <TextBlock Text="{Binding Loadout.ShipName, Mode=OneWay}"
+                                       FontSize="20"
+                                       Foreground="White"
+                                       HorizontalAlignment="Center"
+                                       FontFamily="/Resources/Fonts/#Telegrama Render"
+                                       Visibility="{Binding Loadout.ShipName, Converter={StaticResource NullableToVisibility}}"
+                                       Grid.Row="1"/>
+                            <TextBlock Text="{Binding Loadout.ShipIdent, Mode=OneWay}"
+                                       FontSize="20"
+                                       Foreground="White"
+                                       HorizontalAlignment="Center"
+                                       FontFamily="/Resources/Fonts/#Telegrama Render"
+                                       Visibility="{Binding Loadout.ShipIdent, Converter={StaticResource NullableToVisibility}}"
+                                       Grid.Row="2"/>
+                        </Grid>
+
+
+                        <ScrollViewer Grid.Row="1">
+                            <ItemsControl ItemsSource="{Binding Loadout.Modules}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border BorderThickness="1"
+                                                Margin="5">
+                                            <Border.BorderBrush>
+                                                <RadialGradientBrush RadiusX="0.6" RadiusY="0.6">
+                                                    <GradientStop Color="{StaticResource EliteOrange}" Offset="1"/>
+                                                    <GradientStop Color="{StaticResource IngredientHighlighted}" Offset="0.99"/>
+                                                </RadialGradientBrush>
+                                            </Border.BorderBrush>
+                                            <Grid Margin="5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition/>
+                                                    <RowDefinition/>
+                                                </Grid.RowDefinitions>
+                                                <StackPanel Orientation="Vertical"
+                                                            Grid.Row="0">
+                                                    <TextBlock Text="{Binding Slot}"
+                                                               Foreground="White"/>
+                                                    <TextBlock Text="{Binding Type}"
+                                                               Foreground="White"/>
+                                                    <TextBlock Text="{Binding ExperimentalEffect}"
+                                                               Foreground="White"/>
+                                                </StackPanel>
+
+                                                <ScrollViewer Grid.Row="1"
+                                                              VerticalScrollBarVisibility="Hidden"
+                                                              HorizontalScrollBarVisibility="Auto"
+                                                              Template="{StaticResource ScrollViewerFlatTemplate}">
+                                                    <ItemsControl ItemsSource="{Binding Modifiers}">
+                                                        <ItemsControl.ItemsPanel>
+                                                            <ItemsPanelTemplate>
+                                                                <StackPanel Orientation="Horizontal"/>
+                                                            </ItemsPanelTemplate>
+                                                        </ItemsControl.ItemsPanel>
+                                                        <ItemsControl.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <Grid Margin="2,0,2,0">
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition/>
+                                                                        <ColumnDefinition/>
+                                                                    </Grid.ColumnDefinitions>
+                                                                    <Grid.RowDefinitions>
+                                                                        <RowDefinition/>
+                                                                        <RowDefinition/>
+                                                                        <RowDefinition/>
+                                                                    </Grid.RowDefinitions>
+                                                                    <Border x:Name="Separator"
+                                                                            Width="1"
+                                                                            Grid.RowSpan="3"
+                                                                            Grid.Column="0"
+                                                                            BorderThickness="0.3"
+                                                                            VerticalAlignment="Stretch"
+                                                                            BorderBrush="{StaticResource SynthesisBlueBrush}"/>
+                                                                    <TextBlock Text="{Binding Label}"
+                                                                               Grid.Column="1"
+                                                                               Grid.Row="0"
+                                                                               HorizontalAlignment="Right"
+                                                                               Foreground="White"/>
+                                                                    <TextBlock Text="{Binding Value}"
+                                                                               Grid.Column="1"
+                                                                               Grid.Row="1"
+                                                                               HorizontalAlignment="Right"
+                                                                               Foreground="White"/>
+                                                                    <TextBlock Text="{Binding OriginalValue}"
+                                                                               Grid.Column="1"
+                                                                               Grid.Row="2"
+                                                                               HorizontalAlignment="Right"
+                                                                               Foreground="White"/>
+                                                                </Grid>
+                                                                <DataTemplate.Triggers>
+                                                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource PreviousData}}" Value="{x:Null}">
+                                                                        <Setter Property="Visibility" TargetName="Separator" Value="Collapsed"/>
+                                                                    </DataTrigger>
+                                                                </DataTemplate.Triggers>
+                                                            </DataTemplate>
+                                                        </ItemsControl.ItemTemplate>
+                                                    </ItemsControl>
+                                                </ScrollViewer>
+                                            </Grid>
+                                        </Border>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+
+                        <StackPanel Grid.Row="2"
+                                    Orientation="Vertical"
+                                    HorizontalAlignment="Right">
+                            <TextBlock Foreground="White"
+                                        HorizontalAlignment="Right"
+                                        Visibility="{Binding Loadout.ShipValue, Converter={StaticResource NullableToVisibility}}">
+                                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ship Value:'}"/>
+                                <Run Text="{Binding Loadout.ShipValue, Mode=OneWay, StringFormat=N0}"/>
+                            </TextBlock>
+                            <TextBlock Foreground="White"
+                                        HorizontalAlignment="Right"
+                                        Visibility="{Binding Loadout.ModulesValue, Converter={StaticResource NullableToVisibility}}">
+                                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Modules Value:'}"/>
+                                <Run Text="{Binding Loadout.ModulesValue, Mode=OneWay, StringFormat=N0}" />
+                            </TextBlock>
+                            <TextBlock Foreground="White"
+                                        HorizontalAlignment="Right"
+                                        Visibility="{Binding Loadout.Rebuy, Converter={StaticResource NullableToVisibility}}">
+                                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Rebuy:'}"/>
+                                <Run Text="{Binding Loadout.Rebuy, Mode=OneWay, StringFormat=N0}"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </controls:MetroTabItem>
+                
                 <controls:MetroTabItem Header="{Binding}"
                                        FontFamily="/Resources/Fonts/#Euro Caps"
                                        HorizontalAlignment="Center"
@@ -1548,7 +1713,7 @@
                        TextWrapping="Wrap"
                        FontFamily="/Resources/Fonts/#Euro Caps">
                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='System:', FallbackValue='System: '}" />
-                <Run Text="{Binding CurrentCommander.Value.State.System}" />
+                <Run Text="{Binding CurrentCommander.Value.State.History.System}" />
             </TextBlock>
             <TextBlock HorizontalAlignment="Stretch"
                        FontSize="16"

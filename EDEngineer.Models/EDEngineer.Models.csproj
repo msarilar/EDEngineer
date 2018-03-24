@@ -55,6 +55,10 @@
     <Compile Include="Filters\KindFilter.cs" />
     <Compile Include="Filters\RarityFilter.cs" />
     <Compile Include="Group.cs" />
+    <Compile Include="Loadout\ModuleModifier.cs" />
+    <Compile Include="Loadout\ShipModule.cs" />
+    <Compile Include="Loadout\StateLoadout.cs" />
+    <Compile Include="Operations\ShipLoadoutOperation.cs" />
     <Compile Include="State.cs" />
     <Compile Include="StateHistory.cs" />
     <Compile Include="Operations\DumpOperation.cs" />
