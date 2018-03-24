@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 
 namespace EDEngineer.Models.Utils
 {
@@ -66,6 +67,33 @@ namespace EDEngineer.Models.Utils
                 default:
                     return 300;
             }
+        }
+
+        public static string ToReadable(this string str)
+        {
+            if (str == null)
+            {
+                return null;
+            }
+
+            var builder = new StringBuilder();
+            for (var i = 0; i < str.Length; i++)
+            {
+                if (str[i] == '_')
+                {
+                    builder.Append(" ");
+                    continue;
+                }
+
+                if (char.IsUpper(str[i]) && (i == 0 || str[i - 1] != ' '))
+                {
+                    builder.Append(" ");
+                }
+
+                builder.Append(str[i]);
+            }
+
+            return builder.ToString();
         }
     }
 }
