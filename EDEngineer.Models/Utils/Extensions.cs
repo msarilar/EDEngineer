@@ -85,9 +85,16 @@ namespace EDEngineer.Models.Utils
                     continue;
                 }
 
-                if (char.IsUpper(str[i]) && (i == 0 || str[i - 1] != ' '))
+                if (char.IsUpper(str[i])) 
                 {
-                    builder.Append(" ");
+                    if (i == 0 && !char.IsUpper(str[i + 1]))
+                    {
+                        builder.Append(" ");
+                    }
+                    else if (i > 0 && str[i - 1] != ' ' && !char.IsUpper(str[i - 1]))
+                    {
+                        builder.Append(" ");
+                    }
                 }
 
                 builder.Append(str[i]);

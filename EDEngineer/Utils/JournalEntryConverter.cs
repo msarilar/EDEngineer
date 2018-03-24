@@ -152,6 +152,11 @@ namespace EDEngineer.Utils
         private JournalOperation ExtractLoadout(JObject data)
         {
             var ship = (string) data["Ship"];
+            if (ship.ToLowerInvariant().Contains("fighter"))
+            {
+                return null;
+            }
+
             var shipName = (string)data["ShipName"];
             var shipIdent = (string)data["ShipIdent"];
             var shipValue = (int?)data["HullValue"];
@@ -177,19 +182,8 @@ namespace EDEngineer.Utils
                     experimentalEffect = (string)engineering["ExperimentalEffect_Localised"];
                     grade = (int) engineering["Level"];
                     blueprintName = (string) engineering["BlueprintName"];
-                    foreach (var modifier in engineering["Modifiers"])
-                    {
-                        if (modifier["Value"]?.Type != JTokenType.Float)
-                        {
-                            continue;
-                        }
-
-                        var label = (string) modifier["Label"];
-                        var value = (float) modifier["Value"];
-                        var originalValue = (float) modifier["OriginalValue"];
-                        var lessIsGood = (int) modifier["LessIsGood"];
-                        modifiers.Add(new ModuleModifier(label, value, originalValue, lessIsGood == 1));
-                    }
+                    var modifierSource = engineering["Modifiers"];
+                    modifiers.AddRange(ExtractModifiers(modifierSource));
                 }
 
                 modules.Add(new ShipModule(type, slot, blueprintName, grade, engineer, experimentalEffect, modifiers));
@@ -199,6 +193,23 @@ namespace EDEngineer.Utils
             return new ShipLoadoutOperation(new ShipLoadout(ship, shipName, shipIdent, shipValue, modulesValue, rebuy, modules.OrderBy(m => m.Category).ToList()));
         }
 
+        private static IEnumerable<ModuleModifier> ExtractModifiers(JToken modifierSource)
+        {
+            if (modifierSource == null)
+            {
+                return Enumerable.Empty<ModuleModifier>();
+            }
+
+            return from modifier
+                       in modifierSource
+                   where modifier["Value"]?.Type == JTokenType.Float
+                   let label = (string) modifier["Label"]
+                   let value = (float) modifier["Value"]
+                   let originalValue = (float) modifier["OriginalValue"]
+                   let lessIsGood = (int) modifier["LessIsGood"]
+                   select new ModuleModifier(label, value, originalValue, lessIsGood == 1);
+        }
+
         private JournalOperation ExtractSystemUpdated(JObject data)
         {
             return new SystemUpdatedOperation((string) data["StarSystem"]);
@@ -206,7 +217,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractTechnologyBroker(JObject data)
         {
-            var operation = new EngineerOperation(BlueprintCategory.Technology, null)
+            var operation = new EngineerOperation(BlueprintCategory.Technology, null, null, null, null, null, null)
             {
                 IngredientsConsumed = (data["Ingredients"] ?? data["Materials"]).Select(c =>
                     {
@@ -458,7 +469,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractSynthesis(JObject data)
         {
-            var synthesisOperation = new EngineerOperation(BlueprintCategory.Synthesis, null)
+            var synthesisOperation = new EngineerOperation(BlueprintCategory.Synthesis, null, null, null, null, null, null)
             {
                 IngredientsConsumed = new List<BlueprintIngredient>()
             };
@@ -498,14 +509,15 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractEngineerOperation(JObject data)
         {
-            var blueprintName = data["Module"] ?? null;
-            var operation = new EngineerOperation(BlueprintCategory.Module, (string) blueprintName)
+            var operation = new EngineerOperation(BlueprintCategory.Module, (string) data["BlueprintName"],
+                (string) data["Module"], (string) data["Slot"], (string)data["Engineer"], (int?)data["Level"], (string)data["ApplyExperimentalEffect"])
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {
                     dynamic cc = c;
                     return Tuple.Create(converter.TryGet((string)cc.Name, out var rewardName), rewardName, (int)(cc.Value ?? cc.Count));
-                }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
+                }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList(),
+                Modifiers = ExtractModifiers(data["Modifiers"]).ToList()
             };
 
             return operation.IngredientsConsumed.Any() ? operation : null;

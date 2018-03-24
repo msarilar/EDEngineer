@@ -96,7 +96,12 @@ namespace EDEngineer.Views
 
             LoadState(logs);
 
-            State.BlueprintCrafted += (o, e) => TryRemoveFromShoppingListByIngredients(e.Item1, e.Item2, e.Item3);
+            State.BlueprintCrafted += (o, e) =>
+                                      {
+                                          TryRemoveFromShoppingListByIngredients(e.Category, e.TechnicalSlot,
+                                              e.IngredientsConsumed);
+                                          State.Loadout.ApplyCraft(e);
+                                      };
             ShoppingList.SynchronizeWithLogs = SettingsManager.SyncShoppingList;
 
             languages.PropertyChanged += (o, e) =>

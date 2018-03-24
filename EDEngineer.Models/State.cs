@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using EDEngineer.Models.Loadout;
+using EDEngineer.Models.Operations;
 
 namespace EDEngineer.Models
 {
@@ -26,11 +27,11 @@ namespace EDEngineer.Models
         public StateHistory History { get; }
         public StateLoadout Loadout { get; }
 
-        public void OnBlueprintCrafted(BlueprintCategory category, string technicalName, List<BlueprintIngredient> ingredientsConsumed)
+        public void OnBlueprintCrafted(EngineerOperation operation)
         {
-            BlueprintCrafted?.Invoke(this, Tuple.Create(category, technicalName, ingredientsConsumed));
+            BlueprintCrafted?.Invoke(this, operation);
         }
 
-        public event EventHandler<Tuple<BlueprintCategory, string, List<BlueprintIngredient>>> BlueprintCrafted;
+        public event EventHandler<EngineerOperation> BlueprintCrafted;
     }
 }

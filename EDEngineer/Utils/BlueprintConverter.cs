@@ -22,7 +22,7 @@ namespace EDEngineer.Utils
             var data = JObject.Load(reader);
 
             var blueprintName = (string) data["Name"];
-            var blueprintType = (string)data["Type"];
+            var blueprintType = (string)data["TechnicalType"];
             var blueprintGrade = (int?)data["Grade"];
 
             var engineers = data["Engineers"].Select(engineer => (string) engineer).ToList();

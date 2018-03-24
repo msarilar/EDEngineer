@@ -1,14 +1,26 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using EDEngineer.Models.Utils;
 
 namespace EDEngineer.Models.Loadout
 {
-    public class ShipModule
+    public class ShipModule : INotifyPropertyChanged
     {
-        public ShipModule(string type, string slot, string blueprintName, int? grade, string engineer, string experimentalEffect, List<ModuleModifier> modifiers)
+        private string blueprintName;
+        private string experimentalEffect;
+        private int? grade;
+        private string engineer;
+        private List<ModuleModifier> modifiers;
+        public string TechnicalType { get; }
+        public string TechnicalSlot { get; }
+
+        public ShipModule(string type, string slot, string blueprintName, int? grade, string engineer,
+                          string experimentalEffect, List<ModuleModifier> modifiers)
         {
-            var technicalType = type.ToLowerInvariant();
-            var technicalSlot = slot.ToLowerInvariant();
+            TechnicalType = type.ToLowerInvariant();
+            TechnicalSlot = slot.ToLowerInvariant();
+
             Slot = slot.ToReadable();
             BlueprintName = blueprintName.ToReadable();
             ExperimentalEffect = experimentalEffect.ToReadable();
@@ -17,19 +29,19 @@ namespace EDEngineer.Models.Loadout
             Engineer = engineer;
             Modifiers = modifiers;
 
-            if (technicalSlot.StartsWith("slot"))
+            if (TechnicalSlot.StartsWith("slot"))
             {
                 Category = ModuleCategory.OptionalInternal;
             }
-            else if (technicalType.StartsWith("int_"))
+            else if (TechnicalType.StartsWith("int_"))
             {
                 Category = ModuleCategory.CoreInternal;
             }
-            else if (technicalSlot.StartsWith("tiny"))
+            else if (TechnicalSlot.StartsWith("tiny"))
             {
                 Category = ModuleCategory.Utility;
             }
-            else if (technicalType.StartsWith("hpt"))
+            else if (TechnicalType.StartsWith("hpt"))
             {
                 Category = ModuleCategory.Hardpoint;
             }
@@ -42,10 +54,63 @@ namespace EDEngineer.Models.Loadout
         public ModuleCategory Category { get; }
         public string Type { get; }
         public string Slot { get; }
-        public string BlueprintName { get; }
-        public string ExperimentalEffect { get; }
-        public int? Grade { get; }
-        public string Engineer { get; }
-        public List<ModuleModifier> Modifiers { get; }
+
+        public string BlueprintName
+        {
+            get => blueprintName;
+            set
+            {
+                blueprintName = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string ExperimentalEffect
+        {
+            get => experimentalEffect;
+            set
+            {
+                experimentalEffect = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public int? Grade
+        {
+            get => grade;
+            set
+            {
+                grade = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string Engineer
+        {
+            get => engineer;
+            set
+            {
+                engineer = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public List<ModuleModifier> Modifiers
+        {
+            get => modifiers;
+            set
+            {
+                modifiers = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
