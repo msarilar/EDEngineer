@@ -164,15 +164,19 @@ namespace EDEngineer.Utils
                 var type = (string)module["Item"];
                 var slot = (string)module["Slot"];
 
-                Blueprint blueprint = null;
                 string experimentalEffect = null;
+                int? grade = null;
+                string blueprintName = null;
+                string engineer = null;
 
                 var engineering = module["Engineering"];
                 var modifiers = new List<ModuleModifier>();
                 if (engineering != null)
                 {
-                    experimentalEffect = (string)engineering["ExperimentalEffect"];
-                    var name = (string) engineering["BlueprintName"];
+                    engineer = (string) engineering["Engineer"];
+                    experimentalEffect = (string)engineering["ExperimentalEffect_Localised"];
+                    grade = (int) engineering["Level"];
+                    blueprintName = (string) engineering["BlueprintName"];
                     foreach (var modifier in engineering["Modifiers"])
                     {
                         if (modifier["Value"]?.Type != JTokenType.Float)
@@ -188,11 +192,11 @@ namespace EDEngineer.Utils
                     }
                 }
 
-                modules.Add(new ShipModule(type, slot, blueprint, experimentalEffect, modifiers));
+                modules.Add(new ShipModule(type, slot, blueprintName, grade, engineer, experimentalEffect, modifiers));
             }
 
 
-            return new ShipLoadoutOperation(new ShipLoadout(ship, shipName, shipIdent, shipValue, modulesValue, rebuy, modules));
+            return new ShipLoadoutOperation(new ShipLoadout(ship, shipName, shipIdent, shipValue, modulesValue, rebuy, modules.OrderBy(m => m.Category).ToList()));
         }
 
         private JournalOperation ExtractSystemUpdated(JObject data)

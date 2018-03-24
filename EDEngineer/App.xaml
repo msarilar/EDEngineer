@@ -70,6 +70,8 @@
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
             <converters:ListToVisibilityConverter x:Key="ListToVisibility" />
             <converters:NullableToVisibilityConverter x:Key="NullableToVisibility" />
+            <converters:NullableToVisibilityConverter x:Key="ReversedNullableToVisibility"
+                                                      Reversed="True"/>
             <converters:BlueprintCategoryToColorConverter x:Key="BlueprintCategoryToColor"
                                                           SynthesisColor="{StaticResource SynthesisBlueBrush}"
                                                           ModuleColor="{StaticResource EliteOrangeBrush}"
@@ -94,6 +96,7 @@
             <converters:RarityToMaximumCapacity x:Key="RarityToMaximumCapacity"/>
             <converters:HistoryToTop5Converter x:Key="HistoryToTop5Converter"/>
             <converters:ShoppingListBlockToAllGradesVisibility x:Key="ShoppingListBlockToAllGradesVisibility"/>
+            <converters:ModuleModifierToColorConverter x:Key="ModuleModifierToColorConverter"/>
 
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
@@ -179,16 +182,16 @@
                                 <Setter.Value>
                                     <ControlTemplate TargetType="{x:Type DataGridCell}">
                                         <Border BorderBrush="{TemplateBinding BorderBrush}"
-            								BorderThickness="{TemplateBinding BorderThickness}"
-            								Background="{TemplateBinding Background}"
-            								SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            Background="{TemplateBinding Background}"
+                                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}">
                                             <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}"
-            									Content="{TemplateBinding Content}"
-            									ContentStringFormat="{TemplateBinding ContentStringFormat}"
-            									HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-            									Margin="{TemplateBinding Padding}"
-            									SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-            									VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                                Content="{TemplateBinding Content}"
+                                                ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                Margin="{TemplateBinding Padding}"
+                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                                         </Border>
                                     </ControlTemplate>
                                 </Setter.Value>
@@ -196,7 +199,7 @@
                             <Style.Triggers>
                                 <Trigger Property="IsSelected" Value="True">
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
                                 </Trigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -204,9 +207,9 @@
                                         <Condition Property="IsSelected" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-            							Value="{DynamicResource MetroDataGrid.HighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="Transparent" />
+                                        Value="Transparent" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -214,7 +217,7 @@
                                         <Condition Property="IsKeyboardFocusWithin" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.FocusBorderBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.FocusBorderBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -222,7 +225,7 @@
                                         <Condition Property="Selector.IsSelectionActive" Value="False" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightTextBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightTextBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -231,13 +234,13 @@
                                         <Condition Property="Selector.IsSelectionActive" Value="False" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-            							Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
                                 </MultiTrigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                                        Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
                                 </Trigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -245,7 +248,7 @@
                                         <Condition Property="IsSelected" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -254,9 +257,9 @@
                                         <Condition Property="IsSelected" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-            							Value="{DynamicResource MetroDataGrid.DisabledHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.DisabledHighlightBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.DisabledHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.DisabledHighlightBrush}" />
                                 </MultiTrigger>
                             </Style.Triggers>
                         </Style>
@@ -289,37 +292,37 @@
                                                 <ColumnDefinition Width="Auto" />
                                             </Grid.ColumnDefinitions>
                                             <Border x:Name="BackgroundBorder"
-            									BorderBrush="{TemplateBinding BorderBrush}"
-            									BorderThickness="{TemplateBinding BorderThickness}"
-            									Background="{TemplateBinding Background}" Grid.ColumnSpan="2" />
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                Background="{TemplateBinding Background}" Grid.ColumnSpan="2" />
                                             <custom:ContentControlEx x:Name="HeaderContent"
-            									ContentTemplate="{TemplateBinding ContentTemplate}"
-            									Content="{TemplateBinding Content}"
-            									ContentStringFormat="{TemplateBinding ContentStringFormat}"
-            									HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
-            									Padding="{TemplateBinding Padding}"
-            									RecognizesAccessKey="True"
-            									SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-            									VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                                ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                Content="{TemplateBinding Content}"
+                                                ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                                HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                Padding="{TemplateBinding Padding}"
+                                                RecognizesAccessKey="True"
+                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                                VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
                                             <Path x:Name="SortArrow" Grid.Column="1"
-            									Fill="{DynamicResource GrayBrush2}" Height="10" Margin="0,0,8,2"
-            									RenderTransformOrigin="0.5,0.5" Stretch="Fill" Visibility="Collapsed"
-            									VerticalAlignment="Center" Width="8" />
+                                                Fill="{DynamicResource GrayBrush2}" Height="10" Margin="0,0,8,2"
+                                                RenderTransformOrigin="0.5,0.5" Stretch="Fill" Visibility="Collapsed"
+                                                VerticalAlignment="Center" Width="8" />
                                             <Thumb x:Name="PART_LeftHeaderGripper" Background="Transparent"
-            									HorizontalAlignment="Left" HorizontalContentAlignment="Left">
+                                                HorizontalAlignment="Left" HorizontalContentAlignment="Left">
                                                 <Thumb.Style>
                                                     <Style TargetType="{x:Type Thumb}">
                                                         <Setter Property="Background"
-            												Value="{DynamicResource GrayBrush5}" />
+                                                            Value="{DynamicResource GrayBrush5}" />
                                                         <Setter Property="Cursor" Value="SizeWE" />
                                                         <Setter Property="Template">
                                                             <Setter.Value>
                                                                 <ControlTemplate TargetType="{x:Type Thumb}">
                                                                     <Border Background="Transparent"
-            															Padding="{TemplateBinding Padding}">
+                                                                        Padding="{TemplateBinding Padding}">
                                                                         <Rectangle Fill="{TemplateBinding Background}"
-            																HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-            																Width="1" />
+                                                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                            Width="1" />
                                                                     </Border>
                                                                 </ControlTemplate>
                                                             </Setter.Value>
@@ -329,20 +332,20 @@
                                                 </Thumb.Style>
                                             </Thumb>
                                             <Thumb x:Name="PART_RightHeaderGripper" Grid.Column="1"
-            									HorizontalAlignment="Right" HorizontalContentAlignment="Right">
+                                                HorizontalAlignment="Right" HorizontalContentAlignment="Right">
                                                 <Thumb.Style>
                                                     <Style TargetType="{x:Type Thumb}">
                                                         <Setter Property="Background"
-            												Value="{DynamicResource GrayBrush5}" />
+                                                            Value="{DynamicResource GrayBrush5}" />
                                                         <Setter Property="Cursor" Value="SizeWE" />
                                                         <Setter Property="Template">
                                                             <Setter.Value>
                                                                 <ControlTemplate TargetType="{x:Type Thumb}">
                                                                     <Border Background="Transparent"
-            															Padding="{TemplateBinding Padding}">
+                                                                        Padding="{TemplateBinding Padding}">
                                                                         <Rectangle Fill="{TemplateBinding Background}"
-            																HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-            																Width="1" />
+                                                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                            Width="1" />
                                                                     </Border>
                                                                 </ControlTemplate>
                                                             </Setter.Value>
@@ -355,18 +358,18 @@
                                         <ControlTemplate.Triggers>
                                             <Trigger Property="SortDirection" Value="Ascending">
                                                 <Setter Property="Data" TargetName="SortArrow"
-            										Value="F1M34,57L42,57 42,32.25 52,42.25 52,31.75 38,17.75 24,31.75 24,42.25 34,32.25 34,57z" />
+                                                    Value="F1M34,57L42,57 42,32.25 52,42.25 52,31.75 38,17.75 24,31.75 24,42.25 34,32.25 34,57z" />
                                                 <Setter Property="Visibility" TargetName="SortArrow" Value="Visible" />
                                             </Trigger>
                                             <Trigger Property="SortDirection" Value="Descending">
                                                 <Setter Property="Data" TargetName="SortArrow"
-            										Value="F1M42,19.0002L34,19.0002 34,43.7502 24,33.7502 24,44.2502 38,58.2502 52,44.2502 52,33.7502 42,43.7502 42,19.0002z" />
+                                                    Value="F1M42,19.0002L34,19.0002 34,43.7502 24,33.7502 24,44.2502 38,58.2502 52,44.2502 52,33.7502 42,43.7502 42,19.0002z" />
                                                 <Setter Property="Margin" TargetName="SortArrow" Value="0,0,8,0" />
                                                 <Setter Property="Visibility" TargetName="SortArrow" Value="Visible" />
                                             </Trigger>
                                             <Trigger Property="DisplayIndex" Value="0">
                                                 <Setter Property="Visibility" TargetName="PART_LeftHeaderGripper"
-            										Value="Collapsed" />
+                                                    Value="Collapsed" />
                                             </Trigger>
                                         </ControlTemplate.Triggers>
                                     </ControlTemplate>
@@ -382,7 +385,7 @@
                                 </MultiTrigger>
                                 <Trigger Property="IsEnabled" Value="False">
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                                        Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -396,7 +399,7 @@
                                 <Setter.Value>
                                     <ControlTemplate TargetType="{x:Type Separator}">
                                         <Rectangle Fill="{TemplateBinding Background}"
-            								Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" />
+                                            Height="{TemplateBinding Height}" Width="{TemplateBinding Width}" />
                                     </ControlTemplate>
                                 </Setter.Value>
                             </Setter>
@@ -421,24 +424,24 @@
                                     <ControlTemplate TargetType="{x:Type DataGridRowHeader}">
                                         <Grid>
                                             <Border BorderBrush="{TemplateBinding BorderBrush}"
-            									BorderThickness="{TemplateBinding BorderThickness}"
-            									Background="{TemplateBinding Background}"
-            									Margin="{TemplateBinding Margin}"
-            									Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                Background="{TemplateBinding Background}"
+                                                Margin="{TemplateBinding Margin}"
+                                                Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
                                                 <StackPanel Orientation="Horizontal">
                                                     <ContentPresenter
-            											ContentTemplate="{TemplateBinding ContentTemplate}"
-            											Content="{TemplateBinding Content}"
-            											ContentStringFormat="{TemplateBinding ContentStringFormat}"
-            											HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-            											RecognizesAccessKey="True"
-            											SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-            											VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                        Content="{TemplateBinding Content}"
+                                                        ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                        RecognizesAccessKey="True"
+                                                        SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                                                     <Control SnapsToDevicePixels="False"
-            											Template="{Binding ValidationErrorTemplate, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGridRow}}}">
+                                                        Template="{Binding ValidationErrorTemplate, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGridRow}}}">
                                                         <Control.Visibility>
                                                             <Binding Path="(Validation.HasError)"
-            													RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGridRow}}">
+                                                                RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGridRow}}">
                                                                 <Binding.Converter>
                                                                     <BooleanToVisibilityConverter />
                                                                 </Binding.Converter>
@@ -448,21 +451,21 @@
                                                 </StackPanel>
                                             </Border>
                                             <Thumb x:Name="PART_TopHeaderGripper" Background="Transparent"
-            									VerticalAlignment="Top" VerticalContentAlignment="Top">
+                                                VerticalAlignment="Top" VerticalContentAlignment="Top">
                                                 <Thumb.Style>
                                                     <Style TargetType="{x:Type Thumb}">
                                                         <Setter Property="Background"
-            												Value="{DynamicResource GrayBrush5}" />
+                                                            Value="{DynamicResource GrayBrush5}" />
                                                         <Setter Property="Cursor" Value="SizeNS" />
                                                         <Setter Property="Height" Value="6" />
                                                         <Setter Property="Template">
                                                             <Setter.Value>
                                                                 <ControlTemplate TargetType="{x:Type Thumb}">
                                                                     <Border Background="Transparent"
-            															Padding="{TemplateBinding Padding}">
+                                                                        Padding="{TemplateBinding Padding}">
                                                                         <Rectangle Fill="{TemplateBinding Background}"
-            																Height="1"
-            																VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                                                            Height="1"
+                                                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                                                                     </Border>
                                                                 </ControlTemplate>
                                                             </Setter.Value>
@@ -471,21 +474,21 @@
                                                 </Thumb.Style>
                                             </Thumb>
                                             <Thumb x:Name="PART_BottomHeaderGripper" VerticalAlignment="Bottom"
-            									VerticalContentAlignment="Bottom">
+                                                VerticalContentAlignment="Bottom">
                                                 <Thumb.Style>
                                                     <Style TargetType="{x:Type Thumb}">
                                                         <Setter Property="Background"
-            												Value="{DynamicResource GrayBrush5}" />
+                                                            Value="{DynamicResource GrayBrush5}" />
                                                         <Setter Property="Cursor" Value="SizeNS" />
                                                         <Setter Property="Height" Value="6" />
                                                         <Setter Property="Template">
                                                             <Setter.Value>
                                                                 <ControlTemplate TargetType="{x:Type Thumb}">
                                                                     <Border Background="Transparent"
-            															Padding="{TemplateBinding Padding}">
+                                                                        Padding="{TemplateBinding Padding}">
                                                                         <Rectangle Fill="{TemplateBinding Background}"
-            																Height="1"
-            																VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                                                            Height="1"
+                                                                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                                                                     </Border>
                                                                 </ControlTemplate>
                                                             </Setter.Value>
@@ -511,24 +514,24 @@
                         <Style TargetType="{x:Type DataGridRow}">
                             <Setter Property="DetailsVisibility" Value="Collapsed"/>
                             <Setter Property="custom:DataGridRowHelper.SelectionUnit"
-            					Value="{Binding SelectionUnit, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}}" />
+                                Value="{Binding SelectionUnit, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}}" />
                             <Setter Property="Margin" Value="0" />
                             <Setter Property="Validation.ErrorTemplate" Value="{x:Null}" />
                             <Setter Property="ValidationErrorTemplate">
                                 <Setter.Value>
                                     <ControlTemplate>
                                         <Grid Margin="2,0"
-            								ToolTip="{Binding DataContext.ErrorContent, RelativeSource={RelativeSource Self}}"
-            								VerticalAlignment="Center">
+                                            ToolTip="{Binding DataContext.ErrorContent, RelativeSource={RelativeSource Self}}"
+                                            VerticalAlignment="Center">
                                             <Path
-            									Data="M31.630585,39.233818L56.261485,14.603018C56.879785,13.984618,57.882285,13.984618,58.500685,14.603018L83.131485,39.233818C83.749885,39.852218,83.749885,40.854718,83.131485,41.473018L58.500685,66.103918C57.882385,66.722218,56.879785,66.722218,56.261485,66.103918L31.630585,41.473018C31.012285,40.854718,31.012285,39.852218,31.630585,39.233818z"
-            									Fill="{DynamicResource ControlsValidationBrush}" Height="20"
-            									Stretch="Uniform" Width="20" />
+                                                Data="M31.630585,39.233818L56.261485,14.603018C56.879785,13.984618,57.882285,13.984618,58.500685,14.603018L83.131485,39.233818C83.749885,39.852218,83.749885,40.854718,83.131485,41.473018L58.500685,66.103918C57.882385,66.722218,56.879785,66.722218,56.261485,66.103918L31.630585,41.473018C31.012285,40.854718,31.012285,39.852218,31.630585,39.233818z"
+                                                Fill="{DynamicResource ControlsValidationBrush}" Height="20"
+                                                Stretch="Uniform" Width="20" />
                                             <Path
-            									Data="M53.781741,31.196677C51.544017,31.196677 49.719241,33.021453 49.719241,35.259177 49.719241,37.496901 51.544017,39.321677 53.781741,39.321677 56.019465,39.321677 57.844241,37.496901 57.844241,35.259177 57.844241,33.021453 56.019465,31.196677 53.781741,31.196677z M49.687991,9.821677L49.719241,10.352927 50.937991,29.821677 56.625491,29.821677 57.875491,9.821677 49.687991,9.821677z"
-            									Fill="{DynamicResource ValidationTextBrush}"
-            									HorizontalAlignment="Center" Height="10" Stretch="Uniform"
-            									VerticalAlignment="Center" Width="10" />
+                                                Data="M53.781741,31.196677C51.544017,31.196677 49.719241,33.021453 49.719241,35.259177 49.719241,37.496901 51.544017,39.321677 53.781741,39.321677 56.019465,39.321677 57.844241,37.496901 57.844241,35.259177 57.844241,33.021453 56.019465,31.196677 53.781741,31.196677z M49.687991,9.821677L49.719241,10.352927 50.937991,29.821677 56.625491,29.821677 57.875491,9.821677 49.687991,9.821677z"
+                                                Fill="{DynamicResource ValidationTextBrush}"
+                                                HorizontalAlignment="Center" Height="10" Stretch="Uniform"
+                                                VerticalAlignment="Center" Width="10" />
                                         </Grid>
                                     </ControlTemplate>
                                 </Setter.Value>
@@ -560,11 +563,11 @@
                                         <Condition Property="IsSelected" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-            							Value="{DynamicResource MetroDataGrid.HighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.HighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightBrush}" />
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -572,11 +575,11 @@
                                         <Condition Property="IsMouseOver" Value="True" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-            							Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.HighlightTextBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
                                     <MultiTrigger.Conditions>
@@ -585,9 +588,9 @@
                                         <Condition Property="IsMouseOver" Value="False" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background"
-            							Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.InactiveSelectionHighlightBrush}" />
                                     <Setter Property="Foreground" Value="Wheat" />
                                 </MultiTrigger>
                                 <MultiTrigger>
@@ -598,7 +601,7 @@
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
                                     <Setter Property="BorderBrush"
-            							Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
+                                        Value="{DynamicResource MetroDataGrid.MouseOverHighlightBrush}" />
                                     <Setter Property="Foreground" Value="{StaticResource EliteOrangeBrush}" />
                                 </MultiTrigger>
                                 <MultiTrigger>
@@ -607,7 +610,7 @@
                                         <Condition Property="IsEnabled" Value="False" />
                                     </MultiTrigger.Conditions>
                                     <Setter Property="Foreground"
-            							Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                                        Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
                                 </MultiTrigger>
                                 <DataTrigger Binding="{Binding Category}" Value="Synthesis">
                                     <Setter Property="Foreground" Value="{StaticResource SynthesisBlueBrush}"/>
@@ -629,9 +632,9 @@
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type DataGrid}">
                             <Border BorderBrush="{TemplateBinding BorderBrush}"
-            					BorderThickness="{TemplateBinding BorderThickness}"
-            					Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}"
-            					SnapsToDevicePixels="True">
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}"
+                                SnapsToDevicePixels="True">
                                 <ScrollViewer x:Name="DG_ScrollViewer" Focusable="False">
                                     <ScrollViewer.Template>
                                         <ControlTemplate TargetType="{x:Type ScrollViewer}">
@@ -647,40 +650,40 @@
                                                     <RowDefinition Height="Auto" />
                                                 </Grid.RowDefinitions>
                                                 <DataGridColumnHeadersPresenter x:Name="PART_ColumnHeadersPresenter"
-            										Grid.Column="1">
+                                                    Grid.Column="1">
                                                     <DataGridColumnHeadersPresenter.Visibility>
                                                         <Binding Path="HeadersVisibility"
-            												RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}" />
+                                                            RelativeSource="{RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}" />
                                                     </DataGridColumnHeadersPresenter.Visibility>
                                                 </DataGridColumnHeadersPresenter>
                                                 <Grid Grid.ColumnSpan="2" Grid.Row="1">
                                                     <ScrollContentPresenter x:Name="PART_ScrollContentPresenter"
-            											CanContentScroll="{TemplateBinding CanContentScroll}"
-            											CanHorizontallyScroll="False"
-            											Grid.ColumnSpan="2"
-            											CanVerticallyScroll="False"
-            											ContentTemplate="{TemplateBinding ContentTemplate}"
-            											Content="{TemplateBinding Content}"
-            											ContentStringFormat="{TemplateBinding ContentStringFormat}" />
+                                                        CanContentScroll="{TemplateBinding CanContentScroll}"
+                                                        CanHorizontallyScroll="False"
+                                                        Grid.ColumnSpan="2"
+                                                        CanVerticallyScroll="False"
+                                                        ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                        Content="{TemplateBinding Content}"
+                                                        ContentStringFormat="{TemplateBinding ContentStringFormat}" />
                                                 </Grid>
                                                 <ScrollBar x:Name="PART_VerticalScrollBar" Grid.Column="2"
-            										Maximum="{TemplateBinding ScrollableHeight}"
-            										Orientation="Vertical" Grid.Row="1"
-            										Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
-            										Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
-            										ViewportSize="{TemplateBinding ViewportHeight}" />
+                                                    Maximum="{TemplateBinding ScrollableHeight}"
+                                                    Orientation="Vertical" Grid.Row="1"
+                                                    Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                                                    Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                                    ViewportSize="{TemplateBinding ViewportHeight}" />
                                                 <Grid Grid.Column="1" Grid.Row="2">
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition
-            												Width="{Binding NonFrozenColumnsViewportHorizontalOffset, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}}" />
+                                                            Width="{Binding NonFrozenColumnsViewportHorizontalOffset, RelativeSource={RelativeSource FindAncestor, AncestorLevel=1, AncestorType={x:Type DataGrid}}}" />
                                                         <ColumnDefinition Width="*" />
                                                     </Grid.ColumnDefinitions>
                                                     <ScrollBar x:Name="PART_HorizontalScrollBar" Grid.Column="1"
-            											Maximum="{TemplateBinding ScrollableWidth}"
-            											Orientation="Horizontal"
-            											Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
-            											Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
-            											ViewportSize="{TemplateBinding ViewportWidth}" />
+                                                        Maximum="{TemplateBinding ScrollableWidth}"
+                                                        Orientation="Horizontal"
+                                                        Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}"
+                                                        Value="{Binding HorizontalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                                        ViewportSize="{TemplateBinding ViewportWidth}" />
                                                 </Grid>
                                             </Grid>
                                         </ControlTemplate>
@@ -860,7 +863,7 @@
                 </Setter>
             </Style>
 
-            <Style x:Key="IngredientGroupExpander"
+            <Style x:Key="GroupExpander"
                    TargetType="Expander">
                 <Setter Property="Foreground" Value="OrangeRed"/>
                 <Setter Property="FontSize" Value="18"/>
@@ -951,103 +954,6 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            <Style TargetType="{x:Type ScrollBar}"
-                   x:Key="FlatScrollBar">
-                <Setter Property="Stylus.IsFlicksEnabled"
-            Value="false" />
-                <Setter Property="Foreground"
-            Value="#ADABAB" />
-                <Setter Property="Background"
-            Value="Transparent" />
-                <Setter Property="Width"
-            Value="7" />
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type ScrollBar}">
-                            <Grid x:Name="GridRoot"
-                        Width="7"
-                        Background="{TemplateBinding Background}">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="0.00001*" />
-                                </Grid.RowDefinitions>
-                                <Track x:Name="PART_Track"
-                            Grid.Row="0"
-                            IsDirectionReversed="true"
-                            Focusable="false">
-                                    <Track.Thumb>
-                                        <Thumb x:Name="Thumb"
-                                    Background="{TemplateBinding Foreground}"
-                                    Style="{DynamicResource ScrollBarTrackThumb}" />
-                                    </Track.Thumb>
-                                    <Track.IncreaseRepeatButton>
-                                        <RepeatButton x:Name="PageUp"
-                                            Command="ScrollBar.PageDownCommand"
-                                            Opacity="0"
-                                            Focusable="false" />
-                                    </Track.IncreaseRepeatButton>
-                                    <Track.DecreaseRepeatButton>
-                                        <RepeatButton x:Name="PageDown"
-                                            Command="ScrollBar.PageUpCommand"
-                                            Opacity="0"
-                                            Focusable="false" />
-                                    </Track.DecreaseRepeatButton>
-                                </Track>
-                            </Grid>
-                            <ControlTemplate.Triggers>
-                                <Trigger SourceName="Thumb"
-                                Property="IsMouseOver"
-                                Value="true">
-                                    <Setter Value="DarkGray"
-                                TargetName="Thumb"
-                                Property="Background" />
-                                </Trigger>
-                                <Trigger SourceName="Thumb"
-                                Property="IsDragging"
-                                Value="true">
-                                    <Setter Value="Gray"
-                                TargetName="Thumb"
-                                Property="Background" />
-                                </Trigger>
-
-                                <Trigger Property="IsEnabled"
-                                Value="false">
-                                    <Setter TargetName="Thumb"
-                                Property="Visibility"
-                                Value="Collapsed" />
-                                </Trigger>
-                                <Trigger Property="Orientation"
-                                Value="Horizontal">
-                                    <Setter TargetName="GridRoot"
-                                Property="LayoutTransform">
-                                        <Setter.Value>
-                                            <RotateTransform Angle="-90" />
-                                        </Setter.Value>
-                                    </Setter>
-                                    <Setter TargetName="PART_Track"
-                                Property="LayoutTransform">
-                                        <Setter.Value>
-                                            <RotateTransform Angle="-90" />
-                                        </Setter.Value>
-                                    </Setter>
-                                    <Setter Property="Width"
-                                Value="Auto" />
-                                    <Setter Property="Height"
-                                Value="8" />
-                                    <Setter TargetName="Thumb"
-                                Property="Tag"
-                                Value="Horizontal" />
-                                    <Setter TargetName="PageDown"
-                                Property="Command"
-                                Value="ScrollBar.PageLeftCommand" />
-                                    <Setter TargetName="PageUp"
-                                Property="Command"
-                                Value="ScrollBar.PageRightCommand" />
-                                </Trigger>
-                            </ControlTemplate.Triggers>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
 
             <ControlTemplate TargetType="{x:Type ScrollViewer}"
                              x:Key="ScrollViewerFlatTemplate">
@@ -1076,6 +982,101 @@
                                Style="{StaticResource FlatScrollBar}"/>
                 </Grid>
             </ControlTemplate>
+
+            <DataTemplate x:Key="ModuleTemplate">
+                <Border BorderThickness="1"
+                        Margin="5"
+                        BorderBrush="{StaticResource EliteOrangeBrush}">
+                    <Grid Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Frame Template="{StaticResource OriginUnknown}" 
+                               Width="18"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Foreground="RoyalBlue"
+                               Visibility="{Binding BlueprintName, Converter={StaticResource ReversedNullableToVisibility}}"
+                               Height="18"/>
+                        <Frame Template="{StaticResource NeededForEngineer}" 
+                               Width="18"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               Foreground="Red"
+                               Visibility="{Binding BlueprintName, Converter={StaticResource NullableToVisibility}}"
+                               Height="18"/>
+                        <StackPanel Orientation="Vertical"
+                        Grid.Row="0">
+                            <TextBlock Text="{Binding Slot}"
+                           Foreground="White"
+                                       FontSize="14"
+                                       HorizontalAlignment="Right"/>
+                            <TextBlock Text="{Binding Type}"
+                           Foreground="White"
+                                       HorizontalAlignment="Right"
+                                       FontSize="14"/>
+                            <TextBlock Foreground="{StaticResource EliteOrangeBrush}"
+                                       FontSize="14"
+                                       Visibility="{Binding BlueprintName, Converter={StaticResource NullableToVisibility}}">
+                                <Run Text="{Binding BlueprintName, Mode=OneWay}"/>
+                                <Run Text="G"/>
+                                <Run Text="{Binding Grade, Mode=OneWay}"/>
+                                <Run Text="("/>
+                                <Run Text="{Binding Engineer, Mode=OneWay}"/>
+                                <Run Text=")"/>
+                            </TextBlock>
+                            <TextBlock Text="{Binding ExperimentalEffect}"
+                           Foreground="{StaticResource ExperimentalBrush}"
+                                       FontSize="14"/>
+                        </StackPanel>
+
+                        <ItemsControl ItemsSource="{Binding Modifiers}"
+                                          Grid.Row="1"
+                                      FontSize="14">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border BorderThickness="0.5"
+                                            BorderBrush="White"
+                                            Margin="3">
+                                        <Grid Margin="2">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <Rectangle Grid.RowSpan="2"
+                                                       Fill="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
+                                                       Opacity="0.05"/>
+                                            <TextBlock Text="{Binding Label, Mode=OneWay}"
+                                                       Grid.Row="0"
+                                                       HorizontalAlignment="Center"
+                                                       Foreground="White"/>
+                                            <StackPanel Orientation="Horizontal"
+                                                        HorizontalAlignment="Right"
+                                                        Grid.Row="1">
+                                                <TextBlock Text="{Binding Value, Mode=OneWay}"
+                                                           HorizontalAlignment="Right"
+                                                           Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"/>
+                                                <TextBlock HorizontalAlignment="Right"
+                                                           Foreground="White">
+                                                    <Run Text=" ["/>
+                                                    <Run Text="{Binding OriginalValue, Mode=OneWay}"/>
+                                                    <Run Text="]"/>
+                                                </TextBlock>
+                                            </StackPanel>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </Grid>
+                </Border>
+            </DataTemplate>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

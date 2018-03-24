@@ -86,7 +86,8 @@ namespace EDEngineer.Views
             var blueprintsJson = IOUtils.GetBlueprintsJson();
             var blueprints =
                 JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter)
-                           .Where(b => b.Ingredients.Any());
+                           .Where(b => b.Ingredients.Any())
+                           .ToList();
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo.Ingredients, languages, blueprints);
             LoadBlueprints(languages, blueprints);

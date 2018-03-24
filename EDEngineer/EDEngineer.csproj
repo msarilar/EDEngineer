@@ -155,6 +155,7 @@
     <Compile Include="Converters\BlueprintCategoryToColorConverter.cs" />
     <Compile Include="Converters\BooleanToEnumConverter.cs" />
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
+    <Compile Include="Converters\ModuleModifierToColorConverter.cs" />
     <Compile Include="Converters\ShoppingListBlockToAllGradesVisibility.cs" />
     <Compile Include="Converters\EnumToDescription.cs" />
     <Compile Include="Converters\HistoryToTop5Converter.cs" />

@@ -451,7 +451,7 @@
                                                         <ControlTemplate TargetType="{x:Type GroupItem}">
                                                             <Expander IsExpanded="True"
                                                                       Padding="0"
-                                                                      Style="{StaticResource IngredientGroupExpander}">
+                                                                      Style="{StaticResource GroupExpander}">
                                                                 <Expander.Header>
                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                         <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
@@ -532,7 +532,6 @@
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="{Binding Loadout.Ship, Mode=OneWay}"
@@ -545,105 +544,56 @@
                             <TextBlock Text="{Binding Loadout.ShipName, Mode=OneWay}"
                                        FontSize="20"
                                        Foreground="White"
-                                       HorizontalAlignment="Center"
+                                       HorizontalAlignment="Left"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
                                        Visibility="{Binding Loadout.ShipName, Converter={StaticResource NullableToVisibility}}"
                                        Grid.Row="1"/>
                             <TextBlock Text="{Binding Loadout.ShipIdent, Mode=OneWay}"
                                        FontSize="20"
                                        Foreground="White"
-                                       HorizontalAlignment="Center"
+                                       HorizontalAlignment="Right"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
                                        Visibility="{Binding Loadout.ShipIdent, Converter={StaticResource NullableToVisibility}}"
-                                       Grid.Row="2"/>
+                                       Grid.Row="1"/>
                         </Grid>
-
-
                         <ScrollViewer Grid.Row="1">
-                            <ItemsControl ItemsSource="{Binding Loadout.Modules}">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <Border BorderThickness="1"
-                                                Margin="5">
-                                            <Border.BorderBrush>
-                                                <RadialGradientBrush RadiusX="0.6" RadiusY="0.6">
-                                                    <GradientStop Color="{StaticResource EliteOrange}" Offset="1"/>
-                                                    <GradientStop Color="{StaticResource IngredientHighlighted}" Offset="0.99"/>
-                                                </RadialGradientBrush>
-                                            </Border.BorderBrush>
-                                            <Grid Margin="5">
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition/>
-                                                    <RowDefinition/>
-                                                </Grid.RowDefinitions>
-                                                <StackPanel Orientation="Vertical"
-                                                            Grid.Row="0">
-                                                    <TextBlock Text="{Binding Slot}"
-                                                               Foreground="White"/>
-                                                    <TextBlock Text="{Binding Type}"
-                                                               Foreground="White"/>
-                                                    <TextBlock Text="{Binding ExperimentalEffect}"
-                                                               Foreground="White"/>
-                                                </StackPanel>
-
-                                                <ScrollViewer Grid.Row="1"
-                                                              VerticalScrollBarVisibility="Hidden"
-                                                              HorizontalScrollBarVisibility="Auto"
-                                                              Template="{StaticResource ScrollViewerFlatTemplate}">
-                                                    <ItemsControl ItemsSource="{Binding Modifiers}">
-                                                        <ItemsControl.ItemsPanel>
-                                                            <ItemsPanelTemplate>
-                                                                <StackPanel Orientation="Horizontal"/>
-                                                            </ItemsPanelTemplate>
-                                                        </ItemsControl.ItemsPanel>
-                                                        <ItemsControl.ItemTemplate>
-                                                            <DataTemplate>
-                                                                <Grid Margin="2,0,2,0">
-                                                                    <Grid.ColumnDefinitions>
-                                                                        <ColumnDefinition/>
-                                                                        <ColumnDefinition/>
-                                                                    </Grid.ColumnDefinitions>
-                                                                    <Grid.RowDefinitions>
-                                                                        <RowDefinition/>
-                                                                        <RowDefinition/>
-                                                                        <RowDefinition/>
-                                                                    </Grid.RowDefinitions>
-                                                                    <Border x:Name="Separator"
-                                                                            Width="1"
-                                                                            Grid.RowSpan="3"
-                                                                            Grid.Column="0"
-                                                                            BorderThickness="0.3"
-                                                                            VerticalAlignment="Stretch"
-                                                                            BorderBrush="{StaticResource SynthesisBlueBrush}"/>
-                                                                    <TextBlock Text="{Binding Label}"
-                                                                               Grid.Column="1"
-                                                                               Grid.Row="0"
-                                                                               HorizontalAlignment="Right"
-                                                                               Foreground="White"/>
-                                                                    <TextBlock Text="{Binding Value}"
-                                                                               Grid.Column="1"
-                                                                               Grid.Row="1"
-                                                                               HorizontalAlignment="Right"
-                                                                               Foreground="White"/>
-                                                                    <TextBlock Text="{Binding OriginalValue}"
-                                                                               Grid.Column="1"
-                                                                               Grid.Row="2"
-                                                                               HorizontalAlignment="Right"
-                                                                               Foreground="White"/>
-                                                                </Grid>
-                                                                <DataTemplate.Triggers>
-                                                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource PreviousData}}" Value="{x:Null}">
-                                                                        <Setter Property="Visibility" TargetName="Separator" Value="Collapsed"/>
-                                                                    </DataTrigger>
-                                                                </DataTemplate.Triggers>
-                                                            </DataTemplate>
-                                                        </ItemsControl.ItemTemplate>
-                                                    </ItemsControl>
-                                                </ScrollViewer>
-                                            </Grid>
-                                        </Border>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
+                            <ScrollViewer.Resources>
+                                <CollectionViewSource x:Key="GroupedModules"
+                                                      Source="{Binding Loadout.Modules}">
+                                    <CollectionViewSource.GroupDescriptions>
+                                        <PropertyGroupDescription PropertyName="Category" />
+                                    </CollectionViewSource.GroupDescriptions>
+                                </CollectionViewSource>
+                            </ScrollViewer.Resources>
+                            <ItemsControl ItemsSource="{Binding Source={StaticResource GroupedModules}}"
+                                          ItemTemplate="{StaticResource ModuleTemplate}"
+                                          >
+                                <ItemsControl.GroupStyle>
+                                    <GroupStyle>
+                                        <GroupStyle.ContainerStyle>
+                                            <Style TargetType="{x:Type GroupItem}">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type GroupItem}">
+                                                            <Expander IsExpanded="True"
+                                                                  Padding="0"
+                                                                  Style="{StaticResource GroupExpander}">
+                                                                <Expander.Header>
+                                                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                        <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
+                                                                        <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                    </MultiBinding>
+                                                                </Expander.Header>
+                                                                <ItemsPresenter Margin="0"/>
+                                                            </Expander>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </GroupStyle.ContainerStyle>
+                                    </GroupStyle>
+                                </ItemsControl.GroupStyle>
                             </ItemsControl>
                         </ScrollViewer>
 
@@ -700,7 +650,7 @@
                                                     <ControlTemplate TargetType="{x:Type GroupItem}">
                                                         <Expander IsExpanded="True"
                                                                   Padding="0"
-                                                                  Style="{StaticResource IngredientGroupExpander}">
+                                                                  Style="{StaticResource GroupExpander}">
                                                             <Expander.Header>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                     <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
