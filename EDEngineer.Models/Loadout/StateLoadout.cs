@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models.Operations;
@@ -8,6 +9,11 @@ namespace EDEngineer.Models.Loadout
 {
     public class StateLoadout : INotifyPropertyChanged
     {
+        public StateLoadout()
+        {
+            Loadout = new ShipLoadout("?", null, null, null, null, null, new List<ShipModule>());
+        }
+
         private ShipLoadout loadout;
 
         public ShipLoadout Loadout

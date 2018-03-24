@@ -77,6 +77,7 @@ namespace EDEngineer.Models
         public IReadOnlyCollection<string> Engineers { get; }
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; }
         public int? Grade { get; }
+        public IReadOnlyCollection<BlueprintEffect> Effects { get; }
 
         [JsonIgnore]
         public bool ShoppingListHighlighted
@@ -142,7 +143,13 @@ namespace EDEngineer.Models
 
         public string SearchableContent { get; private set; }
 
-        public Blueprint(ILanguage language, string type, string blueprintName, int? grade, IReadOnlyCollection<BlueprintIngredient> ingredients, IReadOnlyCollection<string> engineers)
+        public Blueprint(ILanguage language,
+            string type,
+            string blueprintName,
+            int? grade,
+            IReadOnlyCollection<BlueprintIngredient> ingredients,
+            IReadOnlyCollection<string> engineers,
+            IReadOnlyCollection<BlueprintEffect> effects)
         {
             this.language = language;
 
@@ -151,6 +158,7 @@ namespace EDEngineer.Models
             Grade = grade;
             Engineers = engineers;
             Ingredients = ingredients;
+            Effects = effects;
 
             SetupSearchableContent();
             language.PropertyChanged += (o, e) => SetupSearchableContent();

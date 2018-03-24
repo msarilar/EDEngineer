@@ -208,7 +208,8 @@ namespace EDEngineer.Views
                 "Shopping List",
                 null,
                 composition,
-                new string[0]);
+                new string[0],
+                Enumerable.Empty<BlueprintEffect>().ToList());
 
             yield return metaBlueprint;
         }

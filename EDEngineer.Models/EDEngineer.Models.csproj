@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlueprintCategory.cs" />
+    <Compile Include="BlueprintEffect.cs" />
     <Compile Include="Filters\BlueprintFilter.cs" />
     <Compile Include="Filters\CategoryFilter.cs" />
     <Compile Include="Filters\ILabelledFilter.cs" />

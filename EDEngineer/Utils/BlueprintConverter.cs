@@ -36,7 +36,13 @@ namespace EDEngineer.Utils
                 // ----
                 select new BlueprintIngredient(entries[name], size);
 
-            return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers);
+            var effects =
+                from json in data["Effects"]
+                let effect = (string)json["Effect"]
+                let property = (string)json["Name"]
+                select new BlueprintEffect(property, effect);
+
+            return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers, effects.ToList());
         }
 
         public override bool CanConvert(Type objectType)
