@@ -39,8 +39,9 @@ namespace EDEngineer.Utils
             var effects =
                 from json in data["Effects"]
                 let effect = (string)json["Effect"]
-                let property = (string)json["Name"]
-                select new BlueprintEffect(property, effect);
+                let property = (string)json["Property"]
+                let isGood = (bool)json["IsGood"]
+                select new BlueprintEffect(property, effect, isGood);
 
             return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers, effects.ToList());
         }

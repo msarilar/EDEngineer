@@ -946,8 +946,9 @@
                                         <ScaleTransform ScaleY="0"/>
                                     </Grid.LayoutTransform>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.5*" />
-                                        <ColumnDefinition Width="0.5*" />
+                                        <ColumnDefinition Width="0.3*" />
+                                        <ColumnDefinition Width="0.3*" />
+                                        <ColumnDefinition Width="0.4*" />
                                     </Grid.ColumnDefinitions>
                                     <Grid Grid.Column="0"
                                           Focusable="False"
@@ -1057,6 +1058,39 @@
                                     </Grid>
 
                                     <Grid Grid.Column="1"
+                                          Focusable="False"
+                                          HorizontalAlignment="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <ItemsControl ItemsSource="{Binding Effects}"
+                                                      Grid.Column="0">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Property}"
+                                                               FontSize="13"
+                                                               FontWeight="Medium"
+                                                               Foreground="{Binding IsGood, Converter={StaticResource BooleanToGoodEffectColorConverter}}"/>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                        <ItemsControl ItemsSource="{Binding Effects}"
+                                                      Grid.Column="1">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Effect}"
+                                                               FontSize="13"
+                                                               FontWeight="Medium"
+                                                               Margin="5,0,0,0"
+                                                               Foreground="{Binding IsGood, Converter={StaticResource BooleanToGoodEffectColorConverter}}"/>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </Grid>
+
+
+                                    <Grid Grid.Column="2"
                                           HorizontalAlignment="Right">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto" />

@@ -88,6 +88,9 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListBlockHighlightColor"
                                                        SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                        NormalColor="{StaticResource SynthesisBlueBrush}"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToGoodEffectColorConverter"
+                                                       SpecialColor="Green"
+                                                       NormalColor="Red"/>
             <converters:IntToEnabledConverter x:Key="IntToEnabled"
                                               Threshold="0"
                                               Comparison="DifferentThan"/>
