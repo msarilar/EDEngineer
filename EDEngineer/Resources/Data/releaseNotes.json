@@ -1,5 +1,13 @@
 ﻿[
   {
+    "Version": "1.1.0.9",
+    "Content": "* Blueprints' count in shopping list can now be edited directly by hand\r\n* Blueprints effects in the ship loadout should now show nicely (justfied alignment)"
+  },
+  {
+    "Version": "1.1.0.8",
+    "Content": "* Effects of experimental blueprints added"
+  },
+  {
     "Version": "1.1.0.7",
     "Content": "* Loadout tab added\r\n* Blueprints effects added\r\n* Better algorithm for reorganizing shopping list tiles (there shouldn't be any more holes)\r\n* Expand/Collapse shopping list tile now disabled if it can't be collapsed (i.e. if there are 4 or more grades with positive counters)\r\n* Fixed an issue for when the log directory couldn't be retrieved"
   },
