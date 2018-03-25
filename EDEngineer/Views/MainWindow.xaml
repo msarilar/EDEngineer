@@ -584,22 +584,22 @@
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="{Binding Loadout.Ship, Mode=OneWay}"
-                                       FontSize="26"
-                                       Foreground="White"
+                                       FontSize="22"
+                                       Foreground="AntiqueWhite"
                                        HorizontalAlignment="Center"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
                                        Visibility="{Binding Loadout.Ship, Converter={StaticResource NullableToVisibility}}"
                                        Grid.Row="0"/>
                             <TextBlock Text="{Binding Loadout.ShipName, Mode=OneWay}"
                                        FontSize="20"
-                                       Foreground="White"
+                                       Foreground="AntiqueWhite"
                                        HorizontalAlignment="Left"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
                                        Visibility="{Binding Loadout.ShipName, Converter={StaticResource NullableToVisibility}}"
                                        Grid.Row="1"/>
                             <TextBlock Text="{Binding Loadout.ShipIdent, Mode=OneWay}"
                                        FontSize="20"
-                                       Foreground="White"
+                                       Foreground="AntiqueWhite"
                                        HorizontalAlignment="Right"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
                                        Visibility="{Binding Loadout.ShipIdent, Converter={StaticResource NullableToVisibility}}"
@@ -649,19 +649,19 @@
                         <StackPanel Grid.Row="2"
                                     Orientation="Vertical"
                                     HorizontalAlignment="Right">
-                            <TextBlock Foreground="White"
+                            <TextBlock Foreground="Wheat"
                                         HorizontalAlignment="Right"
                                         Visibility="{Binding Loadout.ShipValue, Converter={StaticResource NullableToVisibility}}">
                                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ship Value:'}"/>
                                 <Run Text="{Binding Loadout.ShipValue, Mode=OneWay, StringFormat=N0}"/>
                             </TextBlock>
-                            <TextBlock Foreground="White"
+                            <TextBlock Foreground="Wheat"
                                         HorizontalAlignment="Right"
                                         Visibility="{Binding Loadout.ModulesValue, Converter={StaticResource NullableToVisibility}}">
                                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Modules Value:'}"/>
                                 <Run Text="{Binding Loadout.ModulesValue, Mode=OneWay, StringFormat=N0}" />
                             </TextBlock>
-                            <TextBlock Foreground="White"
+                            <TextBlock Foreground="Wheat"
                                         HorizontalAlignment="Right"
                                         Visibility="{Binding Loadout.Rebuy, Converter={StaticResource NullableToVisibility}}">
                                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Rebuy:'}"/>
@@ -1541,6 +1541,8 @@
                                                                                            VerticalAlignment="Top"
                                                                                            Grid.Column="0"
                                                                                            Grid.Row="0"
+                                                                                           Margin="-5,0,0,0"
+                                                                                           Padding="-5,0,-5,0"
                                                                                            HorizontalAlignment="Center"
                                                                                            Text="{Binding Item1.GradeString, Mode=OneWay}"
                                                                                            Grid.ColumnSpan="4"/>
@@ -1556,7 +1558,16 @@
                                                                                         Style="{DynamicResource ChromelessButtonStyle}"
                                                                                         Margin="5,0,5,0"
                                                                                         Grid.Column="1" />
-                                                                                <TextBlock Text="{Binding Item2}"
+                                                                                <TextBox Text="{Binding Item2, Mode=OneWay}"
+                                                                                         Tag="{Binding}"
+                                                                                         Foreground="Wheat"
+                                                                                         Background="Transparent"
+                                                                                         BorderThickness="0"
+                                                                                         Padding="-5,0,-5,0"
+                                                                                         HorizontalContentAlignment="Center"
+                                                                                         HorizontalAlignment="Center"
+                                                                                         CaretBrush="Wheat"
+                                                                                         LostFocus="ShoppingListCountTextLostFocus"
                                                                                            VerticalAlignment="Center"
                                                                                            Grid.Row="1"
                                                                                            Margin="0,7,0,0"

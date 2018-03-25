@@ -1020,11 +1020,11 @@
                         <StackPanel Orientation="Vertical"
                         Grid.Row="0">
                             <TextBlock Text="{Binding Slot}"
-                           Foreground="White"
+                           Foreground="Wheat"
                                        FontSize="14"
                                        HorizontalAlignment="Right"/>
                             <TextBlock Text="{Binding Type}"
-                           Foreground="White"
+                           Foreground="Wheat"
                                        HorizontalAlignment="Right"
                                        FontSize="14"/>
                             <TextBlock Foreground="{StaticResource EliteOrangeBrush}"
@@ -1048,13 +1048,13 @@
                                       FontSize="14">
                             <ItemsControl.ItemsPanel>
                                 <ItemsPanelTemplate>
-                                    <WrapPanel Orientation="Horizontal"/>
+                                    <TabPanel/>
                                 </ItemsPanelTemplate>
                             </ItemsControl.ItemsPanel>
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <Border BorderThickness="0.5"
-                                            BorderBrush="White"
+                                            BorderBrush="Wheat"
                                             Margin="3">
                                         <Grid Margin="2">
                                             <Grid.RowDefinitions>
@@ -1067,22 +1067,19 @@
                                             <TextBlock Text="{Binding Label, Mode=OneWay}"
                                                        Grid.Row="0"
                                                        HorizontalAlignment="Center"
-                                                       Foreground="White"/>
+                                                       Foreground="Wheat"/>
                                             <StackPanel Orientation="Horizontal"
-                                                        HorizontalAlignment="Right"
+                                                        HorizontalAlignment="Center"
                                                         Grid.Row="1">
-                                                <TextBlock HorizontalAlignment="Right"
-                                                           Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
+                                                <TextBlock Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
                                                            Text="{Binding Value, Mode=OneWay, StringFormat=F2}"/>
-                                                <TextBlock HorizontalAlignment="Right"
-                                                           Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
+                                                <TextBlock Foreground="{Binding Converter={StaticResource ModuleModifierToColorConverter}, Mode=OneWay}"
                                                            Visibility="{Binding Change, Converter={StaticResource NullableToVisibility}}">
                                                     <Run Text=" ("/>
                                                     <Run Text="{Binding Change, Mode=OneWay, Converter={StaticResource DoubleToPercent}, ConverterParameter='plus'}"/>
                                                     <Run Text=")"/>
                                                 </TextBlock>
-                                                <TextBlock HorizontalAlignment="Right"
-                                                           Foreground="White"
+                                                <TextBlock Foreground="Wheat"
                                                            Visibility="{Binding OriginalValue, Converter={StaticResource NullableToVisibility}}">
                                                     <Run Text=" ["/>
                                                     <Run Text="{Binding OriginalValue, Mode=OneWay, StringFormat=F2}"/>

@@ -581,5 +581,21 @@ namespace EDEngineer.Views
             viewModel.CurrentCommander.Value.ShowAllGradeChanges((ShoppingListBlock) button.Tag);
             e.Handled = true;
         }
+
+        private void ShoppingListCountTextLostFocus(object sender, RoutedEventArgs e)
+        {
+            var textBox = ((System.Windows.Controls.TextBox)sender);
+            var tuple = (Tuple<Blueprint, int>)textBox.Tag;
+
+            if (!int.TryParse(textBox.Text, out var newValue) || newValue < 0)
+            {
+                textBox.Text = tuple.Item2.ToString();
+            }
+            else
+            {
+                var diff = newValue - tuple.Item2;
+                viewModel.CurrentCommander.Value.ShoppingListChange(tuple.Item1, diff);
+            }
+        }
     }
 }
