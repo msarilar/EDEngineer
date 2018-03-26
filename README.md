@@ -10,7 +10,9 @@ You liked EDEngineer so much you want to buy me a beer? Click this:
   </a>
 </p>
 
-## [**>> Common Issues and their fixes!**](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
+## [**>> Installer here**](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe)
+## [**>> Common Issues and their fixes**](https://github.com/msarilar/EDEngineer/wiki/Troubleshooting-Issues)
+## [**>> How to contribute (adding blueprints/localization)**](https://github.com/msarilar/EDEngineer/wiki/Contributing)
 
 ### EDEngineer in Action courtesy of Cmdr Exigeous
 
