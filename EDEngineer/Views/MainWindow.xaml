@@ -946,8 +946,8 @@
                                         <ScaleTransform ScaleY="0"/>
                                     </Grid.LayoutTransform>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="0.3*" />
                                         <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="0.3*" />
                                         <ColumnDefinition Width="0.3*" />
                                     </Grid.ColumnDefinitions>
                                     <Grid Grid.Column="0"
