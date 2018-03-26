@@ -2169,7 +2169,7 @@
   },
   {
     "Type": "Frame Shift Drive Interdictor",
-    "Name": "Longer Range FSD interdictor",
+    "Name": "Long Range FSD Interdictor",
     "Engineers": [
       "Felicity Farseer",
       "Colonel Bris Dekker",
@@ -2207,7 +2207,7 @@
   },
   {
     "Type": "Frame Shift Drive Interdictor",
-    "Name": "Longer Range FSD interdictor",
+    "Name": "Long Range FSD Interdictor",
     "Engineers": [
       "Colonel Bris Dekker",
       "Tiana Fortune"
@@ -2221,10 +2221,6 @@
         "Name": "Tagged Encryption Codes",
         "Size": 1
       },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
-      }
     ],
     "Effects": [
       {
@@ -2252,7 +2248,7 @@
   },
   {
     "Type": "Frame Shift Drive Interdictor",
-    "Name": "Longer Range FSD interdictor",
+    "Name": "Long Range FSD Interdictor",
     "Engineers": [
       "Colonel Bris Dekker",
       "Tiana Fortune"
@@ -2270,10 +2266,6 @@
         "Name": "Open Symmetric Keys",
         "Size": 1
       },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
-      }
     ],
     "Effects": [
       {
@@ -2298,6 +2290,50 @@
       }
     ],
     "Grade": 3
+  },
+  {
+    "Type": "Frame Shift Drive Interdictor",
+    "Name": "Long Range FSD Interdictor",
+    "Engineers": [
+      "Colonel Bris Dekker",
+    ],
+    "Ingredients": [
+      {
+        "Name": "Unidentified Scan Archives",
+        "Size": 1
+      },
+      {
+        "Name": "Strange Wake Solutions",
+        "Size": 1
+      },
+      {
+        "Name": "Atypical Encryption Archives",
+        "Size": 1
+      },
+    ],
+    "Effects": [
+      {
+        "Effect": "+40%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Range",
+        "IsGood": true
+      },
+      {
+        "Effect": "-25%",
+        "Property": "Facing Limit",
+        "IsGood": false
+      },
+      {
+        "Effect": "+25%",
+        "Property": "Mass",
+        "IsGood": false
+      }
+    ],
+    "Grade": 4
   },
   {
     "Type": "Multi-cannon",
