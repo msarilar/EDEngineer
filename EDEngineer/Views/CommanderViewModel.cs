@@ -98,7 +98,7 @@ namespace EDEngineer.Views
 
             State.BlueprintCrafted += (o, e) =>
                                       {
-                                          TryRemoveFromShoppingListByIngredients(e.Category, e.TechnicalSlot,
+                                          TryRemoveFromShoppingListByIngredients(e.Category, e.TechnicalType,
                                               e.IngredientsConsumed);
                                           State.Loadout.ApplyCraft(e);
                                       };
