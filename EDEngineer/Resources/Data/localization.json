@@ -3424,7 +3424,7 @@
     "Group ingredients?": {
       "es": null,
       "pt": null,
-      "de": "Gruppenzutaten?"
+      "de": "Gruppenzutaten?",
       "fr": "Groupe d'ingrédients ?",
       "ru": "Группировать ингредиенты?",
       "pl": null
@@ -3432,7 +3432,7 @@
     "Unknown": {
       "es": null,
       "pt": null,
-      "de": "Unbekannt"
+      "de": "Unbekannt",
       "fr": "Inconnu",
       "ru": "Неизвестные",
       "pl": null
@@ -3448,7 +3448,7 @@
     "Emission Data": {
       "es": null,
       "pt": null,
-      "de": "Emissionsdaten"
+      "de": "Emissionsdaten",
       "fr": "Données d'émission",
       "ru": "Данные об излучениях",
       "pl": null
@@ -3456,7 +3456,7 @@
     "Wake Scans": {
       "es": null,
       "pt": null,
-      "de": "Sogwolken Scans"
+      "de": "Sogwolken Scans",
       "fr": "Données de sillages",
       "ru": "Сканирования следа FSD",
       "pl": null
@@ -3464,7 +3464,7 @@
     "Shield Data": {
       "es": null,
       "pt": null,
-      "de": "Schilddaten"
+      "de": "Schilddaten",
       "fr": "Données de bouclier",
       "ru": "Данные о щитах",
       "pl": null
@@ -3472,7 +3472,7 @@
     "Encryption Files": {
       "es": null,
       "pt": null,
-      "de": "Verschlüsselungsdaten"
+      "de": "Verschlüsselungsdaten",
       "fr": "Fichiers cryptés",
       "ru": "Файлы шифрования",
       "pl": null
@@ -3480,7 +3480,7 @@
     "Data Archives": {
       "es": null,
       "pt": null,
-      "de": "Datenarchive"
+      "de": "Datenarchive",
       "fr": "Archives de données",
       "ru": "Архивы данных",
       "pl": null
@@ -3488,7 +3488,7 @@
     "Encoded Firmware": {
       "es": null,
       "pt": null,
-      "de": "Codierte Firmware"
+      "de": "Codierte Firmware",
       "fr": "Micrologiciels encodés",
       "ru": "Закодированные микропрограммы",
       "pl": null
@@ -3496,7 +3496,7 @@
     "Category 1": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 1"
+      "de": "Kategorie 1",
       "fr": "Matériaux bruts - Catégorie 1",
       "ru": "Категория 1",
       "pl": null
@@ -3504,7 +3504,7 @@
     "Category 2": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 2"
+      "de": "Kategorie 2",
       "fr": "Matériaux bruts - Catégorie 2",
       "ru": "Категория 2",
       "pl": null
@@ -3512,7 +3512,7 @@
     "Category 3": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 3"
+      "de": "Kategorie 3",
       "fr": "Matériaux bruts - Catégorie 3",
       "ru": "Категория 3",
       "pl": null
@@ -3520,7 +3520,7 @@
     "Category 4": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 4"
+      "de": "Kategorie 4",
       "fr": "Matériaux bruts - Catégorie 4",
       "ru": "Категория 4",
       "pl": null
@@ -3528,7 +3528,7 @@
     "Category 5": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 5"
+      "de": "Kategorie 5",
       "fr": "Matériaux bruts - Catégorie 5",
       "ru": "Категория 5",
       "pl": null
@@ -3536,7 +3536,7 @@
     "Category 6": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 6"
+      "de": "Kategorie 6",
       "fr": "Matériaux bruts - Catégorie 6",
       "ru": "Категория 6",
       "pl": null
@@ -3544,7 +3544,7 @@
     "Category 7": {
       "es": null,
       "pt": null,
-      "de": "Kategorie 7"
+      "de": "Kategorie 7",
       "fr": "Matériaux bruts - Catégorie 7",
       "ru": "Категория 7",
       "pl": null
@@ -3552,7 +3552,7 @@
     "Chemical": {
       "es": null,
       "pt": null,
-      "de": "Chemikalien"
+      "de": "Chemikalien",
       "fr": "Produits chimiques",
       "ru": "Химикаты",
       "pl": null
@@ -3560,7 +3560,7 @@
     "Thermic": {
       "es": null,
       "pt": null,
-      "de": "Thermisch"
+      "de": "Thermisch",
       "fr": "Thermiques",
       "ru": "Термические сплавы",
       "pl": null
@@ -3568,7 +3568,7 @@
     "Heat": {
       "es": null,
       "pt": null,
-      "de": "Hitze"
+      "de": "Hitze",
       "fr": "Chaleur",
       "ru": "Теплообмен",
       "pl": null
@@ -3576,7 +3576,7 @@
     "Conductive": {
       "es": null,
       "pt": null,
-      "de": "Leiter"
+      "de": "Leiter",
       "fr": "Conducteurs",
       "ru": "Проводники",
       "pl": null
@@ -3584,7 +3584,7 @@
     "Capacitors": {
       "es": null,
       "pt": null,
-      "de": "Kondensatoren"
+      "de": "Kondensatoren",
       "fr": "Condensateurs",
       "ru": "Конденсаторы",
       "pl": null
@@ -3592,7 +3592,7 @@
     "Shielding": {
       "es": null,
       "pt": null,
-      "de": "Abschirming"
+      "de": "Abschirmung",
       "fr": "Protection",
       "ru": "Защита",
       "pl": null
@@ -3600,7 +3600,7 @@
     "Composite": {
       "es": null,
       "pt": null,
-      "de": "Komposite"
+      "de": "Komposite",
       "fr": "Composites",
       "ru": "Композиты",
       "pl": null
@@ -3608,7 +3608,7 @@
     "Crystals": {
       "es": null,
       "pt": null,
-      "de": "Kristalle"
+      "de": "Kristalle",
       "fr": "Cristaux",
       "ru": "Кристаллы",
       "pl": null
@@ -3616,7 +3616,7 @@
     "Alloys": {
       "es": null,
       "pt": null,
-      "de": "Legierungen"
+      "de": "Legierungen",
       "fr": "Alliages",
       "ru": "Сплавы",
       "pl": null
@@ -3624,7 +3624,7 @@
     "Lead": {
       "es": null,
       "pt": null,
-      "de": "Blei"
+      "de": "Blei",
       "fr": null,
       "ru": "Свинец",
       "pl": null
@@ -3632,7 +3632,7 @@
     "Boron": {
       "es": null,
       "pt": null,
-      "de": "Bor"
+      "de": "Bor",
       "fr": null,
       "ru": "Бор",
       "pl": null
@@ -3640,7 +3640,7 @@
     "Guardian Weapon Blueprint Segment": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Waffenbauplansegment"
+      "de": "Guardian-Waffenbauplansegment",
       "fr": null,
       "ru": "Фрагмент чертежа оружия Стражей",
       "pl": null
@@ -3648,7 +3648,7 @@
     "Guardian Power Cell": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Energiezelle"
+      "de": "Guardian-Energiezelle",
       "fr": null,
       "ru": "Энергоячейка Стражей",
       "pl": null
@@ -3656,7 +3656,7 @@
     "Guardian Technology Component": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Technologiekomponente"
+      "de": "Guardian-Technologiekomponente",
       "fr": null,
       "ru": "Компоненты технологий Стражей",
       "pl": null
@@ -3664,7 +3664,7 @@
     "Guardian Power Conduit": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Energieleiter"
+      "de": "Guardian-Energieleiter",
       "fr": null,
       "ru": "Энергопроводники Стражей",
       "pl": null
@@ -3672,7 +3672,7 @@
     "Guardian Sentinel Weapon Parts": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Wache-Waffenteile"
+      "de": "Guardian-Wache-Waffenteile",
       "fr": null,
       "ru": "Детали вооружения Стражей",
       "pl": null
@@ -3680,7 +3680,7 @@
     "Guardian Module Blueprint Segment": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Modulbauplansegment"
+      "de": "Guardian-Modulbauplansegment",
       "fr": null,
       "ru": "Фрагмент чертежа модуля Стражей",
       "pl": null
@@ -3688,7 +3688,7 @@
     "Guardian Sentinel Wreckage Components": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Wache Trümmerteile"
+      "de": "Guardian-Wache Trümmerteile",
       "fr": null,
       "ru": "Обломки кораблекрушений Стража Sentinel",
       "pl": null
@@ -3696,7 +3696,7 @@
     "Guardian Vessel Blueprint Segment": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Schiffsbauplansegment"
+      "de": "Guardian-Schiffsbauplansegment",
       "fr": null,
       "ru": "Сегмент чертежа судна Стражей",
       "pl": null
@@ -3704,7 +3704,7 @@
     "Human": {
       "es": null,
       "pt": null,
-      "de": "Menschlich"
+      "de": "Menschlich",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3712,7 +3712,7 @@
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
       "es": null,
       "pt": null,
-      "de": "Korrosionsresistentes Frachtegtell (2D and 4D)"
+      "de": "Korrosionsresistentes Frachtegtell (2D and 4D)",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3720,7 +3720,7 @@
     "Enzyme Missile Rack": {
       "es": null,
       "pt": null,
-      "de": "Enzym Raketenrampe"
+      "de": "Enzym Raketenrampe",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3728,7 +3728,7 @@
     "Guardian": {
       "es": null,
       "pt": null,
-      "de": "Guardian"
+      "de": "Guardian",
       "fr": null,
       "ru": null,
       "pl": null
@@ -3736,7 +3736,7 @@
     "Guardian Gauss Cannon (Fixed)": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Gausskannone (Fest)"
+      "de": "Guardian-Gausskannone (Fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
       "ru": null,
       "pl": null
@@ -3744,7 +3744,7 @@
     "Guardian Plasma Charger (Fixed)": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Plasmalader (Fest)"
+      "de": "Guardian-Plasmalader (Fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
       "ru": null,
       "pl": null
@@ -3752,7 +3752,7 @@
     "Guardian Plasma Charger (Turreted)": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Plasmalader (Turm)"
+      "de": "Guardian-Plasmalader (Turm)",
       "fr": "Chargeur à plasma - Guardians (Tourelle)",
       "ru": null,
       "pl": null
@@ -3760,7 +3760,7 @@
     "Guardian Hybrid Power Plant": {
       "es": null,
       "pt": null,
-      "de": "Guardian-Kraftwerk"
+      "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
       "ru": null,
       "pl": null
