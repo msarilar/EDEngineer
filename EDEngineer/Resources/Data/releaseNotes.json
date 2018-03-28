@@ -1,19 +1,7 @@
 ﻿[
   {
-    "Version": "1.1.0.9",
-    "Content": "* Blueprints' count in shopping list can now be edited directly by hand\r\n* Blueprints effects in the ship loadout should now show nicely (justfied alignment)"
-  },
-  {
-    "Version": "1.1.0.8",
-    "Content": "* Effects of experimental blueprints added"
-  },
-  {
-    "Version": "1.1.0.7",
-    "Content": "* Loadout tab added\r\n* Blueprints effects added\r\n* Better algorithm for reorganizing shopping list tiles (there shouldn't be any more holes)\r\n* Expand/Collapse shopping list tile now disabled if it can't be collapsed (i.e. if there are 4 or more grades with positive counters)\r\n* Fixed an issue for when the log directory couldn't be retrieved"
-  },
-  {
-    "Version": "1.1.0.2",
-    "Content": "* Added buttons in the shopping list to expand/collapse multi-grade blueprints (double click the orange circles to see it in action)\r\n* Fixed an issue when parsing TechnologyBroker event"
+    "Version": "1.1.1.0",
+    "Content": "# 1.1.1.0\r\n* Fixed an issue with the shopping list sync that could make it reduce another blueprint having the same ingredients as the one you crafted in game\r\n* Added a text for technologies to warn the user about commodities being required to craft them (not tracked anymore by EDEngineer but that might come back one day)\r\n* Some text align changes to make things a bit prettier\r\n* German localization update, thanks to @Pumpken\r\n\r\n# 1.1.0.9\r\n* Blueprints' count in shopping list can now be edited directly by hand\r\n* Blueprints effects in the ship loadout should now show nicely (justfied alignment)\r\n\r\n# 1.1.0.8\r\n* Effects of experimental blueprints added\r\n\r\n# 1.1.0.7\r\n* Loadout tab added\r\n* Blueprints effects added\r\n* Better algorithm for reorganizing shopping list tiles (there shouldn't be any more holes)\r\n* Expand/Collapse shopping list tile now disabled if it can't be collapsed (i.e. if there are 4 or more grades with positive counters)\r\n* Fixed an issue for when the log directory couldn't be retrieved\r\n\r\n# 1.1.0.2\r\n* Added buttons in the shopping list to expand/collapse multi-grade blueprints (double click the orange circles to see it in action)\r\n* Fixed an issue when parsing TechnologyBroker event\r\n"
   },
   {
     "Version": "1.1.0.0",
