@@ -2220,7 +2220,7 @@
       {
         "Name": "Tagged Encryption Codes",
         "Size": 1
-      },
+      }
     ],
     "Effects": [
       {
@@ -2265,7 +2265,7 @@
       {
         "Name": "Open Symmetric Keys",
         "Size": 1
-      },
+      }
     ],
     "Effects": [
       {
@@ -2295,7 +2295,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Long Range FSD Interdictor",
     "Engineers": [
-      "Colonel Bris Dekker",
+      "Colonel Bris Dekker"
     ],
     "Ingredients": [
       {
@@ -2309,7 +2309,7 @@
       {
         "Name": "Atypical Encryption Archives",
         "Size": 1
-      },
+      }
     ],
     "Effects": [
       {
@@ -36018,10 +36018,6 @@
       {
         "Name": "Hybrid Capacitors",
         "Size": 5
-      },
-      {
-        "Name": "Mechanical Scrap",
-        "Size": 5
       }
     ],
     "Effects": [
@@ -37253,10 +37249,6 @@
       },
       {
         "Name": "Hybrid Capacitors",
-        "Size": 5
-      },
-      {
-        "Name": "Mechanical Scrap",
         "Size": 5
       }
     ],
