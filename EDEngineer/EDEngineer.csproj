@@ -300,14 +300,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Resources\Data\entryData.json" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
-    <None Include="Resources\Data\releaseNotes.json" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
-    <None Include="Resources\Data\localization.json" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
-    <None Include="Resources\Data\blueprints.json" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
-    <EmbeddedResource Include="Resources\Data\entryData.json" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
-    <EmbeddedResource Include="Resources\Data\releaseNotes.json" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
-    <EmbeddedResource Include="Resources\Data\localization.json" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
-    <EmbeddedResource Include="Resources\Data\blueprints.json" Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
     <Resource Include="Resources\Fonts\telegrama.otf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -315,6 +307,18 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <EmbeddedResource Include="Resources\Data.zip" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <None Include="Resources\Data\entryData.json"/>
+    <None Include="Resources\Data\releaseNotes.json"/>
+    <None Include="Resources\Data\localization.json"/>
+    <None Include="Resources\Data\blueprints.json"/>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <EmbeddedResource Include="Resources\Data\entryData.json"/>
+    <EmbeddedResource Include="Resources\Data\releaseNotes.json"/>
+    <EmbeddedResource Include="Resources\Data\localization.json"/>
+    <EmbeddedResource Include="Resources\Data\blueprints.json"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

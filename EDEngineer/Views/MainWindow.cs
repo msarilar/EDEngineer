@@ -49,6 +49,7 @@ namespace EDEngineer.Views
                 Application.Current.Shutdown();
                 return;
             }
+            InitializeComponent();
             SettingsManager.Init();
 
             try
@@ -60,10 +61,7 @@ namespace EDEngineer.Views
                 // silently fail if release notes can't be shown
             }
 
-            Languages.InitLanguages();
             NotificationSettingsWindow.InitNotifications();
-
-            InitializeComponent();
 
             if (Properties.Settings.Default.WindowUnlocked)
             {
@@ -79,6 +77,13 @@ namespace EDEngineer.Views
                 Topmost = true;
                 ShowInTaskbar = false;
             }
+
+            var dimensions = SettingsManager.Dimensions;
+
+            Width = dimensions.Width;
+            Left = dimensions.Left;
+            Top = dimensions.Top;
+            Height = dimensions.Height;
 
             Task.Factory.StartNew(() =>
             {
@@ -106,7 +111,7 @@ namespace EDEngineer.Views
             {
                 DataContext = viewModel;
                 RefreshCargoSources();
-                PostLoad();
+                PostLoad(dimensions);
                 if (!SettingsManager.SilentLaunch)
                 {
                     var sb = (Storyboard)FindResource("HideSplash");
@@ -141,15 +146,8 @@ namespace EDEngineer.Views
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
         }
 
-        private void PostLoad()
+        private void PostLoad(WindowDimensions dimensions)
         {
-            var dimensions = SettingsManager.Dimensions;
-
-            Width = dimensions.Width;
-            Left = dimensions.Left;
-            Top = dimensions.Top;
-            Height = dimensions.Height;
-
             if (dimensions.LeftSideWidth != 1 || dimensions.RightSideWidth != 1)
             {
                 ContentGrid.ColumnDefinitions[0].Width = new GridLength(dimensions.LeftSideWidth, GridUnitType.Star);
