@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Security.AccessControl;
 using System.Windows.Forms;
 using EDEngineer.Localization;
 using Microsoft.WindowsAPICodePack.Dialogs;
@@ -138,40 +139,83 @@ namespace EDEngineer.Utils.System
             return logDirectory;
         }
 
-        public static string GetBlueprintsJson()
+#if !DEBUG
+        private static readonly string directory = Path.GetTempPath() + Guid.NewGuid();
+#endif
+        static IOUtils()
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.blueprints.json"))
+#if !DEBUG
+            var zipFile = Path.GetTempPath() + Guid.NewGuid() + ".zip";
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.zip"))
+            {
+                using (var bw = new FileStream(zipFile, FileMode.Create))
+                {
+                    //read until we reach the end of the file
+                    while (stream.Position < stream.Length)
+                    {
+                        //byte array to hold file bytes
+                        byte[] bits = new byte[stream.Length];
+                        //read in the bytes
+                        stream.Read(bits, 0, (int)stream.Length);
+                        //write out the bytes
+                        bw.Write(bits, 0, (int)stream.Length);
+                    }
+                }
+                stream.Close();
+            }
+
+            Directory.CreateDirectory(directory);
+            global::System.IO.Compression.ZipFile.ExtractToDirectory(zipFile, directory);
+            File.Delete(zipFile);
+
+            blueprintsJson = File.ReadAllText(Path.Combine(directory, "Data", "blueprints.json"));
+            releaseNotesJson = File.ReadAllText(Path.Combine(directory, "Data", "releaseNotes.json"));
+            localizationJson = File.ReadAllText(Path.Combine(directory, "Data", "localization.json"));
+            entryDatasJson = File.ReadAllText(Path.Combine(directory, "Data", "entryData.json"));
+
+            Directory.Delete(directory, true);
+#else
+            blueprintsJson = ReadResource("blueprints");
+            releaseNotesJson = ReadResource("releaseNotes");
+            localizationJson = ReadResource("localization");
+            entryDatasJson = ReadResource("entryData");
+#endif
+        }
+
+#if DEBUG
+        public static string ReadResource(string resource)
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
             using (var reader = new StreamReader(stream))
             {
                 return reader.ReadToEnd();
             }
+        }
+#endif
+
+        private static readonly string blueprintsJson;
+        private static readonly string releaseNotesJson;
+        private static readonly string localizationJson;
+        private static readonly string entryDatasJson;
+
+        public static string GetBlueprintsJson()
+        {
+            return blueprintsJson;
         }
 
         public static string GetReleaseNotesJson()
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.releaseNotes.json"))
-            using (var reader = new StreamReader(stream))
-            {
-                return reader.ReadToEnd();
-            }
+            return releaseNotesJson;
         }
 
         public static string GetLocalizationJson()
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.localization.json"))
-            using (var reader = new StreamReader(stream))
-            {
-                return reader.ReadToEnd();
-            }
+            return localizationJson;
         }
 
         public static string GetEntryDatasJson()
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.entryData.json"))
-            using (var reader = new StreamReader(stream))
-            {
-                return reader.ReadToEnd();
-            }
+            return entryDatasJson;
         }
 
         public static string GetManualChangesDirectory()
