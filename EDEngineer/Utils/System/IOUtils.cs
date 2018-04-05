@@ -150,14 +150,10 @@ namespace EDEngineer.Utils.System
             {
                 using (var bw = new FileStream(zipFile, FileMode.Create))
                 {
-                    //read until we reach the end of the file
                     while (stream.Position < stream.Length)
                     {
-                        //byte array to hold file bytes
-                        byte[] bits = new byte[stream.Length];
-                        //read in the bytes
+                        var bits = new byte[stream.Length];
                         stream.Read(bits, 0, (int)stream.Length);
-                        //write out the bytes
                         bw.Write(bits, 0, (int)stream.Length);
                     }
                 }
