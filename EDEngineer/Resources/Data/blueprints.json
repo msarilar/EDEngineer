@@ -34022,6 +34022,38 @@
     "Grade": null
   },
   {
+    "Type": "Guardian",
+    "Name": "Guardian FSD Booster",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Module Blueprint Segment",
+        "Size": 8
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 42
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 42
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 24
+      },
+      {
+        "Name": "HN Shock Mount",
+        "Size": 8
+      }
+    ],
+    "Effects": null,
+    "Grade": null
+  },
+
+  {
     "Type": "Human",
     "Name": "Meta Alloy Hull Reinforcement",
     "Engineers": [
