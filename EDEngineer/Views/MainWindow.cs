@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -32,8 +33,8 @@ namespace EDEngineer.Views
 {
     public partial class MainWindow
     {
-        private readonly MainWindowViewModel viewModel;
-        private readonly ServerBridge serverBridge;
+        private MainWindowViewModel viewModel;
+        private ServerBridge serverBridge;
         private PostponeScheduler saveDimensionScheduler;
 
         public MainWindow()
@@ -79,30 +80,44 @@ namespace EDEngineer.Views
                 ShowInTaskbar = false;
             }
 
-            viewModel = new MainWindowViewModel(Languages.Instance);
-            DataContext = viewModel;
+            Task.Factory.StartNew(() =>
+            {
+                viewModel = new MainWindowViewModel(Languages.Instance);
 
-            RefreshCargoSources();
-            viewModel.PropertyChanged += (o, e) =>
-                                         {
-                                             if (e.PropertyName == "ShowOnlyForFavorites" ||
-                                                 e.PropertyName == "ShowZeroes" ||
-                                                 e.PropertyName == "CurrentCommander" ||
-                                                 e.PropertyName == "MaterialSubkindFilter" ||
-                                                 e.PropertyName == "IngredientsGrouped")
+                viewModel.PropertyChanged += (o, e) =>
                                              {
-                                                 RefreshCargoSources();
-                                             }
+                                                 if (e.PropertyName == "ShowOnlyForFavorites" ||
+                                                     e.PropertyName == "ShowZeroes" ||
+                                                     e.PropertyName == "CurrentCommander" ||
+                                                     e.PropertyName == "MaterialSubkindFilter" ||
+                                                     e.PropertyName == "IngredientsGrouped")
+                                                 {
+                                                     RefreshCargoSources();
+                                                 }
 
-                                             if (e.PropertyName == "IngredientsGrouped")
-                                             {
-                                                 viewModel.CurrentComparer = viewModel.CurrentComparer;
-                                             }
-                                         };
-            serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
+                                                 if (e.PropertyName == "IngredientsGrouped")
+                                                 {
+                                                     viewModel.CurrentComparer = viewModel.CurrentComparer;
+                                                 }
+                                             };
+                serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
+
+            }).ContinueWith(t =>
+            {
+                DataContext = viewModel;
+                RefreshCargoSources();
+                PostLoad();
+                if (!SettingsManager.SilentLaunch)
+                {
+                    var sb = (Storyboard)FindResource("HideSplash");
+                    Storyboard.SetTarget(sb, Splash);
+                    sb.Begin();
+                }
+            }, TaskScheduler.FromCurrentSynchronizationContext());
 
             if (SettingsManager.SilentLaunch)
             {
+                Splash.Visibility = Visibility.Collapsed;
                 if (Properties.Settings.Default.WindowUnlocked)
                 {
                     WindowState = WindowState.Minimized;
@@ -126,7 +141,7 @@ namespace EDEngineer.Views
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
         }
 
-        private void MainWindowLoaded(object sender, RoutedEventArgs args)
+        private void PostLoad()
         {
             var dimensions = SettingsManager.Dimensions;
 
@@ -596,6 +611,11 @@ namespace EDEngineer.Views
                 var diff = newValue - tuple.Item2;
                 viewModel.CurrentCommander.Value.ShoppingListChange(tuple.Item1, diff);
             }
+        }
+
+        private void SplashHidden(object sender, EventArgs e)
+        {
+            Splash.Visibility = Visibility.Collapsed;
         }
     }
 }

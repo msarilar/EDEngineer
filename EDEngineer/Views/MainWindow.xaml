@@ -19,7 +19,6 @@
         d:DesignWidth="1152"
         d:DesignHeight="648"
         ShowInTaskbar="False"
-        Loaded="MainWindowLoaded"
         d:DataContext="{d:DesignData Source=../DesignTime/DesignViewModel.xaml}"
         ResizeMode="CanResize">
     <Window.Resources>
@@ -260,6 +259,12 @@
                              Completed="WindowDeactivatedCompleted"
                              Duration="0:0:0.3" />
         </Storyboard>
+        <Storyboard x:Key="HideSplash">
+            <DoubleAnimation Storyboard.TargetProperty="(Grid.Opacity)"
+                             From="1.0" To="0.0"
+                             Completed="SplashHidden"
+                             Duration="0:0:0.3" />
+        </Storyboard>
     </Window.Resources>
 
     <Grid Opacity="{Binding GraphicSettings.Opacity}"
@@ -276,6 +281,25 @@
             <RowDefinition Height="Auto" MaxHeight="27" />
         </Grid.RowDefinitions>
 
+        <Grid Grid.Column="0"
+              Grid.Row="0"
+              Grid.ColumnSpan="3"
+              Grid.RowSpan="3"
+              x:Name="Splash"
+              Canvas.ZIndex="100"
+              Background="Black">
+            <StackPanel Orientation="Vertical"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                <TextBlock Text="EDEngineer"
+                           Foreground="{StaticResource EliteOrangeBrush}" 
+                           FontFamily="/Resources/Fonts/#Euro Caps"
+                           HorizontalAlignment="Center"
+                           FontSize="100"/>
+                <controls:ProgressRing Foreground="{StaticResource AccentBackgroundBrush}" />
+            </StackPanel>
+        </Grid>
+
         <!-- COMMANDERS -->
 
         <TabControl ItemsSource="{Binding Commanders}"
@@ -283,6 +307,7 @@
                     Visibility="{Binding Commanders.Count, Converter={StaticResource IntegerToVisibility}, Mode=OneWay, ConverterParameter=1}"
                     Height="35"
                     Grid.Row="0"
+                    Grid.Column="0"
                     Background="{StaticResource BlackBrush}"
                     Grid.ColumnSpan="3"
                     Margin="10,0,0,0">
