@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>5</ApplicationRevision>
-    <ApplicationVersion>1.1.1.5</ApplicationVersion>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.1.1.6</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -531,10 +531,8 @@
     </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>if $(ConfigurationName) == Release (
-    powershell Compress-Archive -Path '$(ProjectDir)\Resources\Data' -DestinationPath '$(ProjectDir)\Resources\Data.zip' -Force
-    
-)</PreBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
