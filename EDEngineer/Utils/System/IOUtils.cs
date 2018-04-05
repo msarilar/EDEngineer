@@ -139,12 +139,12 @@ namespace EDEngineer.Utils.System
             return logDirectory;
         }
 
-/*#if !DEBUG
+#if !DEBUG
         private static readonly string directory = Path.GetTempPath() + Guid.NewGuid();
-#endif*/
+#endif
         static IOUtils()
         {
-/*#if !DEBUG
+#if !DEBUG
             var zipFile = Path.GetTempPath() + Guid.NewGuid() + ".zip";
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.zip"))
             {
@@ -170,15 +170,15 @@ namespace EDEngineer.Utils.System
             entryDatasJson = File.ReadAllText(Path.Combine(directory, "Data", "entryData.json"));
 
             Directory.Delete(directory, true);
-#else*/
+#else
             blueprintsJson = ReadResource("blueprints");
             releaseNotesJson = ReadResource("releaseNotes");
             localizationJson = ReadResource("localization");
             entryDatasJson = ReadResource("entryData");
-//#endif
+#endif
         }
 
-//#if DEBUG
+#if DEBUG
         public static string ReadResource(string resource)
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
@@ -187,7 +187,7 @@ namespace EDEngineer.Utils.System
                 return reader.ReadToEnd();
             }
         }
-//#endif
+#endif
 
         private static readonly string blueprintsJson;
         private static readonly string releaseNotesJson;
