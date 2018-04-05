@@ -138,47 +138,15 @@ namespace EDEngineer.Utils.System
             Properties.Settings.Default.Save();
             return logDirectory;
         }
-
-#if !DEBUG
-        private static readonly string directory = Path.GetTempPath() + Guid.NewGuid();
-#endif
+        
         static IOUtils()
         {
-#if !DEBUG
-            var zipFile = Path.GetTempPath() + Guid.NewGuid() + ".zip";
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("EDEngineer.Resources.Data.zip"))
-            {
-                using (var bw = new FileStream(zipFile, FileMode.Create))
-                {
-                    while (stream.Position < stream.Length)
-                    {
-                        var bits = new byte[stream.Length];
-                        stream.Read(bits, 0, (int)stream.Length);
-                        bw.Write(bits, 0, (int)stream.Length);
-                    }
-                }
-                stream.Close();
-            }
-
-            Directory.CreateDirectory(directory);
-            global::System.IO.Compression.ZipFile.ExtractToDirectory(zipFile, directory);
-            File.Delete(zipFile);
-
-            blueprintsJson = File.ReadAllText(Path.Combine(directory, "Data", "blueprints.json"));
-            releaseNotesJson = File.ReadAllText(Path.Combine(directory, "Data", "releaseNotes.json"));
-            localizationJson = File.ReadAllText(Path.Combine(directory, "Data", "localization.json"));
-            entryDatasJson = File.ReadAllText(Path.Combine(directory, "Data", "entryData.json"));
-
-            Directory.Delete(directory, true);
-#else
             blueprintsJson = ReadResource("blueprints");
             releaseNotesJson = ReadResource("releaseNotes");
             localizationJson = ReadResource("localization");
             entryDatasJson = ReadResource("entryData");
-#endif
         }
 
-#if DEBUG
         public static string ReadResource(string resource)
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
@@ -187,7 +155,6 @@ namespace EDEngineer.Utils.System
                 return reader.ReadToEnd();
             }
         }
-#endif
 
         private static readonly string blueprintsJson;
         private static readonly string releaseNotesJson;

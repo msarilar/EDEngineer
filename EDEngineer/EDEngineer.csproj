@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>3</ApplicationRevision>
-    <ApplicationVersion>1.1.1.3</ApplicationVersion>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.1.1.4</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -127,7 +127,6 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime">
       <HintPath>Resources\Dll\System.Runtime.dll</HintPath>
     </Reference>
@@ -306,15 +305,6 @@
     <Resource Include="Resources\Fonts\eurocaps.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <EmbeddedResource Include="Resources\Data.zip" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <None Include="Resources\Data\entryData.json" />
-    <None Include="Resources\Data\releaseNotes.json" />
-    <None Include="Resources\Data\localization.json" />
-    <None Include="Resources\Data\blueprints.json" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <EmbeddedResource Include="Resources\Data\entryData.json" />
     <EmbeddedResource Include="Resources\Data\releaseNotes.json" />
     <EmbeddedResource Include="Resources\Data\localization.json" />
