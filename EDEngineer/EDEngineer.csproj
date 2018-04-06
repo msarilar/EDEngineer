@@ -127,6 +127,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Runtime">
       <HintPath>Resources\Dll\System.Runtime.dll</HintPath>
     </Reference>
@@ -305,15 +306,24 @@
     <Resource Include="Resources\Fonts\eurocaps.ttf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <EmbeddedResource Include="Resources\Data\entryData.json" />
-    <EmbeddedResource Include="Resources\Data\releaseNotes.json" />
-    <EmbeddedResource Include="Resources\Data\localization.json" />
-    <EmbeddedResource Include="Resources\Data\blueprints.json" />
   </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <None Include="Resources\Data\entryData.json" />
+    <None Include="Resources\Data\releaseNotes.json" />
+    <None Include="Resources\Data\localization.json" />
+    <None Include="Resources\Data\blueprints.json" />
+  </ItemGroup> 
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+     <EmbeddedResource Include="Resources\Data\entryData.json" />
+     <EmbeddedResource Include="Resources\Data\releaseNotes.json" />
+     <EmbeddedResource Include="Resources\Data\localization.json" />
+     <EmbeddedResource Include="Resources\Data\blueprints.json" />
+</ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Data.zip" />
     <Resource Include="Resources\Images\common.png" />
     <Resource Include="Resources\Images\standard.png" />
     <Resource Include="Resources\Images\very-common.png" />
@@ -531,8 +541,7 @@
     </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
+    <PreBuildEvent>powershell Compress-Archive -Path '$(ProjectDir)\Resources\Data' -DestinationPath '$(ProjectDir)\Resources\Data.zip' -Force</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
