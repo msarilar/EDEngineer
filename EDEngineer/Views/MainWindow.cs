@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -85,10 +86,9 @@ namespace EDEngineer.Views
             Top = dimensions.Top;
             Height = dimensions.Height;
 
-            Task.Factory.StartNew(() =>
+            var task = Task.Factory.StartNew(() =>
             {
                 viewModel = new MainWindowViewModel(Languages.Instance);
-
                 viewModel.PropertyChanged += (o, e) =>
                                              {
                                                  if (e.PropertyName == "ShowOnlyForFavorites" ||
@@ -106,8 +106,15 @@ namespace EDEngineer.Views
                                                  }
                                              };
                 serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
+            });
 
-            }).ContinueWith(t =>
+            task.ContinueWith(t =>
+                              {
+                                  new Views.Popups.ErrorWindow(t.Exception?.Flatten() ?? new Exception("Unknown Error")).ShowDialog();
+                                  Close();
+                              }, CancellationToken.None, TaskContinuationOptions.OnlyOnFaulted, TaskScheduler.FromCurrentSynchronizationContext());
+            
+            task.ContinueWith(t =>
             {
                 DataContext = viewModel;
                 RefreshCargoSources();
@@ -118,7 +125,7 @@ namespace EDEngineer.Views
                     Storyboard.SetTarget(sb, Splash);
                     sb.Begin();
                 }
-            }, TaskScheduler.FromCurrentSynchronizationContext());
+            }, CancellationToken.None, TaskContinuationOptions.OnlyOnRanToCompletion, TaskScheduler.FromCurrentSynchronizationContext());
 
             if (SettingsManager.SilentLaunch)
             {
