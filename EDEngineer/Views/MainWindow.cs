@@ -85,7 +85,7 @@ namespace EDEngineer.Views
             Left = dimensions.Left;
             Top = dimensions.Top;
             Height = dimensions.Height;
-
+            IOUtils.RetrieveLogDirectory(false, null);
             var task = Task.Factory.StartNew(() =>
             {
                 viewModel = new MainWindowViewModel(Languages.Instance);
