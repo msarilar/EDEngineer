@@ -1200,8 +1200,8 @@
       "de": "Galvanisierende Legierungen",
       "fr": "Alliage galvanique",
       "ru": "Сплавы для гальванизации",
-      "pl": "Galvanising Alloys", 
-      "cs": "Galvanising Alloys" 
+      "pl": "Galvanising Alloys",
+      "cs": "Galvanising Alloys"
     },
     "Germanium": {
       "es": "Germanio",
@@ -1399,7 +1399,7 @@
       "fr": "Composants mécaniques",
       "ru": "Механические компоненты",
       "pl": "Mechanical Components",
-      "cs": "Mechanical Components"
+      "cs": "Mechanické komponenty"
     },
     "Mechanical Equipment": {
       "es": "Equipamiento Mecánico",
@@ -3127,7 +3127,7 @@
         "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)",
       "pl":
     "Automatycznie uruchamiaj serwer podczas włączania EDEngineer na tym porcie? (jeżeli nie zaznaczone, serwer zostanie zatrzymany kiedy odblokujesz/zablokujesz okno)",
-    "cs":  
+    "cs":
         "Automaticky špouštět server s tímto portem při zapnutí EDEngineera? (pokud není zašrtnuto, server se zastaví při odemčení/zamčení okna)"
     },
     "Shopping List": {
@@ -3137,7 +3137,7 @@
       "fr": "Liste de courses",
       "ru": "Список покупок",
       "pl": "Lista zakupów",
-      "cs": "Nákupní lístek"
+      "cs": "Nákupní seznam"
     },
     "Needed for Marco Qwent (25)": {
       "es": "Necesario para Marco Qwent (25)",
@@ -3200,7 +3200,7 @@
       "fr": "Afficher les informations sur les ressources ?",
       "ru": "Показывать информацию о ресурсах?",
       "pl": "Pokaż dodatkowe informacje o komponentach",
-      "cs": "Ukázat informace o zdrojích?"
+      "cs": "Zobrazit informace o tom, kde lze získat data/materiály?"
     },
     "Count": {
       "es": "Número",
@@ -3494,7 +3494,7 @@
       "fr": "Déverrouiller",
       "ru": "Расшифровка",
       "pl": "Odblokowanie",
-      "cs": "Odemčení"
+      "cs": "Odemknutí"
     },
     "Available Voices:": {
       "es": "Voces Disponibles",
@@ -3866,7 +3866,7 @@
       "fr": "Inconnu",
       "ru": "Неизвестные",
       "pl": null,
-      "cs": "Neznámá"
+      "cs": "Neznámé"
     },
     "Carrying ": {
       "es": null,
@@ -4172,7 +4172,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": "Lidé"
+      "cs": "Lidské"
     },
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
       "es": null,
@@ -4199,7 +4199,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": "Guardiáni"
+      "cs": "Guardiánské"
     },
     "Guardian Gauss Cannon (Fixed)": {
       "es": null,
@@ -4667,7 +4667,7 @@
       "fr": null,
       "ru": "Синтез",
       "pl": null,
-      "cs": "Synthéza"
+      "cs": "Syntéza"
     },
     "Experimental": {
       "es": null,
@@ -4910,7 +4910,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": "Thargoid"
+      "cs": "Thargoidské"
     },
     "Top Source Systems": {
       "es": null,
@@ -4919,7 +4919,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": "Top systém na zdroje"
+      "cs": "Získáno nejvíce v systému"
     },
     "System:": {
       "es": null,
