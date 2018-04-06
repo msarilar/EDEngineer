@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.1.7",
+    "Content": "* Added error handling to the splash screen in case there's a loading failure\r\n* More tweaks to the compressed json (let me know if your anti-virus doesn't like the fact that EDEngineer uses an embedded zip file)\r\n\r\n* Czech localization update thanks to @JohnXaverius"
+  },
+  {
     "Version": "1.1.1.1",
     "Content": "* Added a loading screen at startup\r\n* Compress resource files to reduce the size of the app\r\n\r\n* Removed duplicated ingredients in dazzle ship recipe, thanks to @corenting\r\n* Added Guardian FSD Booster blueprint, thanks to @CMDR-Cometborne\r\n\r\n* FULL czech localization provided by @JohnXaverius!"
   },

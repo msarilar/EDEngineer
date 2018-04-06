@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>6</ApplicationRevision>
-    <ApplicationVersion>1.1.1.6</ApplicationVersion>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.1.1.7</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -312,13 +312,13 @@
     <None Include="Resources\Data\releaseNotes.json" />
     <None Include="Resources\Data\localization.json" />
     <None Include="Resources\Data\blueprints.json" />
-  </ItemGroup> 
+  </ItemGroup>
   <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-     <EmbeddedResource Include="Resources\Data\entryData.json" />
-     <EmbeddedResource Include="Resources\Data\releaseNotes.json" />
-     <EmbeddedResource Include="Resources\Data\localization.json" />
-     <EmbeddedResource Include="Resources\Data\blueprints.json" />
-</ItemGroup>
+    <EmbeddedResource Include="Resources\Data\entryData.json" />
+    <EmbeddedResource Include="Resources\Data\releaseNotes.json" />
+    <EmbeddedResource Include="Resources\Data\localization.json" />
+    <EmbeddedResource Include="Resources\Data\blueprints.json" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
