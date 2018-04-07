@@ -461,15 +461,6 @@
     "Group": "Capacitors"
   },
   {
-    "Name": "Emergency Power Cells",
-    "Rarity": "None",
-    "FormattedName": "emergencypowercells",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Markets near Akhenaten (High Tech/Refinery)"
-    ]
-  },
-  {
     "Name": "Energy Grid Assembly",
     "Rarity": "None",
     "FormattedName": "powergridassembly",
@@ -489,15 +480,6 @@
       "Mission reward"
     ],
     "Group": "EmissionData"
-  },
-  {
-    "Name": "Exhaust Manifold",
-    "Rarity": "None",
-    "FormattedName": "exhaustmanifold",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Markets near Run (Industrial/Refinery)"
-    ]
   },
   {
     "Name": "Exquisite Focus Crystals",
@@ -582,15 +564,6 @@
       "Mission reward"
     ],
     "Group": "Capacitors"
-  },
-  {
-    "Name": "Hardware Diagnostic Sensor",
-    "Rarity": "None",
-    "FormattedName": "hardwarediagnosticsensor",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Markets near Lei Jing (Industrial/Refinery)"
-    ]
   },
   {
     "Name": "Heat Conduction Wiring",
@@ -731,15 +704,6 @@
       "Mission reward"
     ],
     "Group": "ShieldData"
-  },
-  {
-    "Name": "Insulating Membrane",
-    "Rarity": "None",
-    "FormattedName": "insulatingmembrane",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Markets"
-    ]
   },
   {
     "Name": "Ion Distributor",
@@ -921,15 +885,6 @@
     "Group": "Category2"
   },
   {
-    "Name": "Nanobreakers",
-    "Rarity": "None",
-    "FormattedName": "nanobreakers",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Mission reward"
-    ]
-  },
-  {
     "Name": "Neofabric Insulation",
     "Rarity": "None",
     "FormattedName": "neofabricinsulation",
@@ -974,15 +929,6 @@
       "Mission reward"
     ],
     "Group": "EncryptionFiles"
-  },
-  {
-    "Name": "Osmium",
-    "Rarity": "None",
-    "FormattedName": "osmium",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Mining"
-    ]
   },
   {
     "Name": "Pattern Alpha Obelisk Data",
@@ -1078,15 +1024,6 @@
     "Group": "Category2"
   },
   {
-    "Name": "Platinum",
-    "Rarity": "None",
-    "FormattedName": "platinum",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Mining"
-    ]
-  },
-  {
     "Name": "Polonium",
     "Rarity": "Rare",
     "FormattedName": "polonium",
@@ -1127,15 +1064,6 @@
     "Kind": "Commodity",
     "OriginDetails": [
       "Markets near Cilbien Zu (Industrial/Extraction)"
-    ]
-  },
-  {
-    "Name": "Praseodymium",
-    "Rarity": "None",
-    "FormattedName": "praseodymium",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Mining"
     ]
   },
   {
@@ -1262,15 +1190,6 @@
       "Signal source"
     ],
     "Group": "Alloys"
-  },
-  {
-    "Name": "Samarium",
-    "Rarity": "None",
-    "FormattedName": "samarium",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Mining"
-    ]
   },
   {
     "Name": "Security Firmware Patch",
@@ -1542,15 +1461,6 @@
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
     "Group": "Thargoid"
-  },
-  {
-    "Name": "Telemetry Suite",
-    "Rarity": "None",
-    "FormattedName": "telemetrysuite",
-    "Kind": "Commodity",
-    "OriginDetails": [
-      "Mission reward"
-    ]
   },
   {
     "Name": "Meta-alloys",
