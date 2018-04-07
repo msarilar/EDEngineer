@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>9</ApplicationRevision>
-    <ApplicationVersion>1.1.1.9</ApplicationVersion>
+    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationVersion>1.1.1.10</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -317,6 +317,10 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\common.png" />
+    <Resource Include="Resources\Images\standard.png" />
+    <Resource Include="Resources\Images\very-common.png" />
+    <Resource Include="Resources\Images\very-rare.png" />
     <Resource Include="Resources\Images\question-mark.png" />
     <Resource Include="Resources\Images\manufactured.png" />
     <Resource Include="Resources\Images\raw.png" />
