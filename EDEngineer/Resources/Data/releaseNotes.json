@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.1.11",
+    "Content": "* Added back commodity tracking (used for engineers unlocked and technologies). They were missing for a while so it's possible the tracking is a bit rusty so if you notice a desyn between your cargo and what's displayed in EDEngineer,\r\n open an issue on GitHub with your latest logs attached so I can have a look.\r\n* Fixed rarity icons that were missing\r\n\r\n* Guardian PD and Guardian Shard Cannons (turreted and fixed) blueprints, thanks to @CMDR-Cometborne for the update"
+  },
+  {
     "Version": "1.1.1.7",
     "Content": "* Added error handling to the splash screen in case there's a loading failure\r\n* More tweaks to the compressed json (let me know if your anti-virus doesn't like the fact that EDEngineer uses an embedded zip file)\r\n\r\n* Czech localization update thanks to @JohnXaverius"
   },
