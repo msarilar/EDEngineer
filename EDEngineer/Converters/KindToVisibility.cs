@@ -12,12 +12,15 @@ namespace EDEngineer.Converters
         {
             var kind = (Kind) value;
 
-            return kind == Kind.Unknown ? Visibility.Visible : Visibility.Collapsed;
+            return Inclusive == (kind == SpecialKind) ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }
+
+        public Kind SpecialKind { get; set; }
+        public bool Inclusive { get; set; }
     }
 }

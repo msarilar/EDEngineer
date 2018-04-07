@@ -43,7 +43,7 @@
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
-                                       Visibility="{Binding DataContext.Value.Data.Kind, Converter={StaticResource KindToVisibility}}"/>
+                                       Visibility="{Binding DataContext.Value.Data.Kind, Converter={StaticResource UnknownKindToVisible}}"/>
                             <TextBlock FontWeight="Bold"
                                        Grid.Row="1"
                                        Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ingredient not used in any blueprint!'}"
@@ -72,7 +72,8 @@
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
-                            <TextBlock Grid.Row="5">
+                            <TextBlock Grid.Row="5"
+                                       Visibility="{Binding Kind, Converter={StaticResource CommodityKindToCollapsed}}">
                                 <Run Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Carrying '}"></Run>
                                 <Run Text="{Binding DataContext.Value.Count}"/>
                                 <Run Text="/"/>
@@ -238,7 +239,8 @@
                             </Button>
                         </Grid>
 
-                        <Grid Grid.Row="1">
+                        <Grid Grid.Row="1"
+                              Visibility="{Binding Value.Data.Kind, Converter={StaticResource UnknownKindToVisible}}">
                             <controls:MetroProgressBar Value="{Binding Value.CarryingProgress, Mode=OneWay}"
                                                        Background="Transparent"
                                                        Foreground="{StaticResource EliteOrangeBrush}" />
@@ -328,7 +330,8 @@
         <!-- LEFT SIDE -->
 
         <Grid Grid.Column="0"
-              Grid.Row="1">
+              Grid.Row="1"
+              x:Name="LeftSideContainer">
             <i:Interaction.Behaviors>
                 <f:ScaleFontBehavior FontRatio="{Binding DataContext.GraphicSettings.LeftRatio, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" />
             </i:Interaction.Behaviors>
@@ -434,22 +437,26 @@
                 <Grid/>
             </UniformGrid>
 
+
+            <!-- MATERIALS / DATA / LOADOUT -->
             <controls:MetroTabControl Grid.Row="1"
-                                      Background="Black"
-                                      SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
+                                    Background="Black"
+                                      Margin="0,0,0,25"
+                                    SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
                     </Style>
                 </TabControl.Resources>
 
+                <!-- MATERIALS -->
                 <controls:MetroTabItem FontFamily="/Resources/Fonts/#Euro Caps"
-                                       Header="{Binding}"
-                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                                    Header="{Binding}"
+                                    Width="{Binding ElementName=c1, Path=ActualWidth}">
                     <controls:MetroTabItem.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock HorizontalAlignment="Center"
-                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"/>
+                                    Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
                     <Grid>
@@ -459,9 +466,9 @@
                         </Grid.RowDefinitions>
                         <ScrollViewer Grid.Row="0">
                             <ItemsControl Background="Transparent"
-                                              x:Name="Materials"
-                                              ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
-                                              ItemTemplate="{StaticResource EntryTemplate}">
+                                            x:Name="Materials"
+                                            ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
+                                            ItemTemplate="{StaticResource EntryTemplate}">
                                 <ItemsControl.ItemContainerStyle>
                                     <Style>
                                         <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -475,13 +482,13 @@
                                                     <Setter.Value>
                                                         <ControlTemplate TargetType="{x:Type GroupItem}">
                                                             <Expander IsExpanded="True"
-                                                                      Padding="0"
-                                                                      Style="{StaticResource GroupExpander}">
+                                                                    Padding="0"
+                                                                    Style="{StaticResource GroupExpander}">
                                                                 <Expander.Header>
                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                         <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
                                                                         <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                                RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                                                     </MultiBinding>
                                                                 </Expander.Header>
                                                                 <ItemsPresenter Margin="0"/>
@@ -496,57 +503,58 @@
                             </ItemsControl>
                         </ScrollViewer>
                         <StackPanel Grid.Row="1"
-                                    Orientation="Horizontal"
-                                    HorizontalAlignment="Center">
+                                Orientation="Horizontal"
+                                HorizontalAlignment="Center">
                             <RadioButton Margin="10,6,10,6"
-                                         Foreground="{StaticResource EliteOrangeBrush}"
-                                         Background="Transparent"
-                                         IsChecked="True"
-                                         x:Name="ShowAllMaterialsRadioButton"
-                                         Checked="MaterialSubkindFilterChecked">
+                                        Foreground="{StaticResource EliteOrangeBrush}"
+                                        Background="Transparent"
+                                        IsChecked="True"
+                                        x:Name="ShowAllMaterialsRadioButton"
+                                        Checked="MaterialSubkindFilterChecked">
                                 <RadioButton.Content>
                                     <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='All'}"
-                                               FontFamily="/Resources/Fonts/#Euro Caps"/>
+                                            FontFamily="/Resources/Fonts/#Euro Caps"/>
                                 </RadioButton.Content>
                             </RadioButton>
                             <RadioButton Margin="10,6,10,6"
-                                         Foreground="{StaticResource EliteOrangeBrush}"
-                                         Background="Transparent"
-                                         x:Name="ShowOnlyRawMaterialsRadioButton"
-                                         Checked="MaterialSubkindFilterChecked">
+                                        Foreground="{StaticResource EliteOrangeBrush}"
+                                        Background="Transparent"
+                                        x:Name="ShowOnlyRawMaterialsRadioButton"
+                                        Checked="MaterialSubkindFilterChecked">
                                 <RadioButton.Content>
                                     <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Raw Only'}"
-                                               FontFamily="/Resources/Fonts/#Euro Caps"/>
+                                            FontFamily="/Resources/Fonts/#Euro Caps"/>
                                 </RadioButton.Content>
                             </RadioButton>
                             <RadioButton Margin="10,6,10,6"
-                                         Foreground="{StaticResource EliteOrangeBrush}"
-                                         Background="Transparent"
-                                         x:Name="ShowOnlyManufacturedMaterialsButton"
-                                         Checked="MaterialSubkindFilterChecked">
+                                        Foreground="{StaticResource EliteOrangeBrush}"
+                                        Background="Transparent"
+                                        x:Name="ShowOnlyManufacturedMaterialsButton"
+                                        Checked="MaterialSubkindFilterChecked">
                                 <RadioButton.Content>
                                     <TextBlock Text="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Manufactured Only'}"
-                                               FontFamily="/Resources/Fonts/#Euro Caps"/>
+                                            FontFamily="/Resources/Fonts/#Euro Caps"/>
                                 </RadioButton.Content>
                             </RadioButton>
                         </StackPanel>
                     </Grid>
                 </controls:MetroTabItem>
-                
+
+                <!-- DATA -->
                 <controls:MetroTabItem Header="{Binding}"
-                                       FontFamily="/Resources/Fonts/#Euro Caps"
-                                       HorizontalAlignment="Center"
-                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                                    FontFamily="/Resources/Fonts/#Euro Caps"
+                                    HorizontalAlignment="Center"
+                                    Width="{Binding ElementName=c1, Path=ActualWidth}">
                     <controls:MetroTabItem.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock HorizontalAlignment="Center"
-                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"/>
+                                    Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Data'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
-                                    x:Name="Data"
-                                    ItemTemplate="{StaticResource EntryTemplate}">
+                                x:Name="Data"
+                                ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>
                                     <Setter Property="FrameworkElement.Margin" Value="3" />
@@ -560,13 +568,13 @@
                                                 <Setter.Value>
                                                     <ControlTemplate TargetType="{x:Type GroupItem}">
                                                         <Expander IsExpanded="True"
-                                                                  Padding="0"
-                                                                  Style="{StaticResource GroupExpander}">
+                                                                Padding="0"
+                                                                Style="{StaticResource GroupExpander}">
                                                             <Expander.Header>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                     <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
                                                                     <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                            RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                                                 </MultiBinding>
                                                             </Expander.Header>
                                                             <ItemsPresenter Margin="0"/>
@@ -582,14 +590,15 @@
                     </ScrollViewer>
                 </controls:MetroTabItem>
 
+                <!-- LOADOUT -->
                 <controls:MetroTabItem Header="{Binding}"
-                                       FontFamily="/Resources/Fonts/#Euro Caps"
-                                       HorizontalAlignment="Center"
-                                       Width="{Binding ElementName=c1, Path=ActualWidth}">
+                                    FontFamily="/Resources/Fonts/#Euro Caps"
+                                    HorizontalAlignment="Center"
+                                    Width="{Binding ElementName=c1, Path=ActualWidth}">
                     <controls:MetroTabItem.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock HorizontalAlignment="Center"
-                                       Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Loadout'}"/>
+                                    Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Loadout'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
                     <Grid DataContext="{Binding CurrentCommander.Value.State.Loadout}">
@@ -600,49 +609,49 @@
                         </Grid.RowDefinitions>
 
                         <Grid Grid.Row="0"
-                              HorizontalAlignment="Stretch"
-                              VerticalAlignment="Top">
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Top">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
 
                             <TextBlock Text="{Binding Loadout.Ship, Mode=OneWay}"
-                                       FontSize="22"
-                                       Foreground="AntiqueWhite"
-                                       HorizontalAlignment="Center"
-                                       FontFamily="/Resources/Fonts/#Telegrama Render"
-                                       Visibility="{Binding Loadout.Ship, Converter={StaticResource NullableToVisibility}}"
-                                       Grid.Row="0"/>
+                                    FontSize="22"
+                                    Foreground="AntiqueWhite"
+                                    HorizontalAlignment="Center"
+                                    FontFamily="/Resources/Fonts/#Telegrama Render"
+                                    Visibility="{Binding Loadout.Ship, Converter={StaticResource NullableToVisibility}}"
+                                    Grid.Row="0"/>
                             <TextBlock Text="{Binding Loadout.ShipName, Mode=OneWay}"
-                                       FontSize="20"
-                                       Margin="15,0,15,0"
-                                       Foreground="AntiqueWhite"
-                                       HorizontalAlignment="Left"
-                                       FontFamily="/Resources/Fonts/#Telegrama Render"
-                                       Visibility="{Binding Loadout.ShipName, Converter={StaticResource NullableToVisibility}}"
-                                       Grid.Row="1"/>
+                                    FontSize="20"
+                                    Margin="15,0,15,0"
+                                    Foreground="AntiqueWhite"
+                                    HorizontalAlignment="Left"
+                                    FontFamily="/Resources/Fonts/#Telegrama Render"
+                                    Visibility="{Binding Loadout.ShipName, Converter={StaticResource NullableToVisibility}}"
+                                    Grid.Row="1"/>
                             <TextBlock Text="{Binding Loadout.ShipIdent, Mode=OneWay}"
-                                       FontSize="20"
-                                       Margin="15,0,15,0"
-                                       Foreground="AntiqueWhite"
-                                       HorizontalAlignment="Right"
-                                       FontFamily="/Resources/Fonts/#Telegrama Render"
-                                       Visibility="{Binding Loadout.ShipIdent, Converter={StaticResource NullableToVisibility}}"
-                                       Grid.Row="1"/>
+                                    FontSize="20"
+                                    Margin="15,0,15,0"
+                                    Foreground="AntiqueWhite"
+                                    HorizontalAlignment="Right"
+                                    FontFamily="/Resources/Fonts/#Telegrama Render"
+                                    Visibility="{Binding Loadout.ShipIdent, Converter={StaticResource NullableToVisibility}}"
+                                    Grid.Row="1"/>
                         </Grid>
                         <ScrollViewer Grid.Row="1">
                             <ScrollViewer.Resources>
                                 <CollectionViewSource x:Key="GroupedModules"
-                                                      Source="{Binding Loadout.Modules}">
+                                                    Source="{Binding Loadout.Modules}">
                                     <CollectionViewSource.GroupDescriptions>
                                         <PropertyGroupDescription PropertyName="Category" />
                                     </CollectionViewSource.GroupDescriptions>
                                 </CollectionViewSource>
                             </ScrollViewer.Resources>
                             <ItemsControl ItemsSource="{Binding Source={StaticResource GroupedModules}}"
-                                          ItemTemplate="{StaticResource ModuleTemplate}"
-                                          >
+                                        ItemTemplate="{StaticResource ModuleTemplate}"
+                                        >
                                 <ItemsControl.GroupStyle>
                                     <GroupStyle>
                                         <GroupStyle.ContainerStyle>
@@ -651,13 +660,13 @@
                                                     <Setter.Value>
                                                         <ControlTemplate TargetType="{x:Type GroupItem}">
                                                             <Expander IsExpanded="True"
-                                                                  Padding="0"
-                                                                  Style="{StaticResource GroupExpander}">
+                                                                Padding="0"
+                                                                Style="{StaticResource GroupExpander}">
                                                                 <Expander.Header>
                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                         <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
                                                                         <Binding Path="DataContext.Languages.CurrentLanguage"
-                                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                            RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                                                     </MultiBinding>
                                                                 </Expander.Header>
                                                                 <ItemsPresenter Margin="0"/>
@@ -673,30 +682,59 @@
                         </ScrollViewer>
 
                         <StackPanel Grid.Row="2"
-                                    Orientation="Vertical"
-                                    HorizontalAlignment="Right">
+                                Orientation="Vertical"
+                                HorizontalAlignment="Right">
                             <TextBlock Foreground="Wheat"
-                                        HorizontalAlignment="Right"
-                                        Visibility="{Binding Loadout.ShipValue, Converter={StaticResource NullableToVisibility}}">
-                                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ship Value:'}"/>
-                                <Run Text="{Binding Loadout.ShipValue, Mode=OneWay, StringFormat=N0}"/>
+                                    HorizontalAlignment="Right"
+                                    Visibility="{Binding Loadout.ShipValue, Converter={StaticResource NullableToVisibility}}">
+                            <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Ship Value:'}"/>
+                            <Run Text="{Binding Loadout.ShipValue, Mode=OneWay, StringFormat=N0}"/>
                             </TextBlock>
                             <TextBlock Foreground="Wheat"
-                                        HorizontalAlignment="Right"
-                                        Visibility="{Binding Loadout.ModulesValue, Converter={StaticResource NullableToVisibility}}">
-                                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Modules Value:'}"/>
-                                <Run Text="{Binding Loadout.ModulesValue, Mode=OneWay, StringFormat=N0}" />
+                                    HorizontalAlignment="Right"
+                                    Visibility="{Binding Loadout.ModulesValue, Converter={StaticResource NullableToVisibility}}">
+                            <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Modules Value:'}"/>
+                            <Run Text="{Binding Loadout.ModulesValue, Mode=OneWay, StringFormat=N0}" />
                             </TextBlock>
                             <TextBlock Foreground="Wheat"
-                                        HorizontalAlignment="Right"
-                                        Visibility="{Binding Loadout.Rebuy, Converter={StaticResource NullableToVisibility}}">
-                                <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Rebuy:'}"/>
-                                <Run Text="{Binding Loadout.Rebuy, Mode=OneWay, StringFormat=N0}"/>
+                                    HorizontalAlignment="Right"
+                                    Visibility="{Binding Loadout.Rebuy, Converter={StaticResource NullableToVisibility}}">
+                            <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Rebuy:'}"/>
+                            <Run Text="{Binding Loadout.Rebuy, Mode=OneWay, StringFormat=N0}"/>
                             </TextBlock>
                         </StackPanel>
                     </Grid>
                 </controls:MetroTabItem>
             </controls:MetroTabControl>
+
+            <!-- COMMODITIES -->
+            <Expander IsExpanded="False"
+                    Padding="0"
+                    VerticalAlignment="Bottom"
+                    Grid.Row="1"
+                      Background="Black"
+                    Tag="{StaticResource ExperimentalBrush}"
+                    Height="Auto"
+                    Foreground="Black"
+                    Focusable="False"
+                    FontWeight="Bold"
+                    FontFamily="/Resources/Fonts/#Euro Caps"
+                    Header="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Commodities'}"
+                    Style="{StaticResource GroupExpander}">
+                <ScrollViewer >
+                    <ItemsControl Background="Transparent"
+                                x:Name="Commodities"
+                                FontWeight="Regular"
+                                ItemsSource="{Binding CurrentCommander.Value.State.Cargo}"
+                                ItemTemplate="{StaticResource EntryTemplate}">
+                        <ItemsControl.ItemContainerStyle>
+                            <Style>
+                                <Setter Property="FrameworkElement.Margin" Value="3" />
+                            </Style>
+                        </ItemsControl.ItemContainerStyle>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Expander>
         </Grid>
 
         <!-- SPLITTER -->

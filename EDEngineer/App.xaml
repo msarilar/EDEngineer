@@ -64,7 +64,12 @@
             <converters:IntOrNullConverter x:Key="IntOrNull" />
             <converters:IntegerToVisibilityConverterReversed x:Key="IntegerToVisibilityReversed" />
             <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
-            <converters:KindToVisibility x:Key="KindToVisibility" />
+            <converters:KindToVisibility x:Key="UnknownKindToVisible"
+                                         SpecialKind="Unknown"
+                                         Inclusive="True"/>
+            <converters:KindToVisibility x:Key="CommodityKindToCollapsed"
+                                         SpecialKind="Commodity"
+                                         Inclusive="False"/>
             <converters:OriginToControlTemplateConverter x:Key="OriginToControlTemplate" />
             <converters:OriginToColorConverter x:Key="OriginToColor" />
             <converters:BooleanToOpacityConverter x:Key="BooleanToOpacity" />
@@ -822,12 +827,13 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            
+
             <Style x:Key="ExpanderDownHeaderStyle" TargetType="{x:Type ToggleButton}">
+                <Setter Property="Tag" Value="{StaticResource AccentBackgroundBrush}"/>
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="{x:Type ToggleButton}">
-                            <Grid Background="{StaticResource AccentBackgroundBrush}"
+                            <Grid Background="{TemplateBinding Tag}"
                                   SnapsToDevicePixels="False">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="3"/>
@@ -837,7 +843,7 @@
                                 <iconPacks:PackIconMaterial RenderTransformOrigin="0.5, 0.5" Grid.Column="1" x:Name="icon" Kind="ChevronRight" VerticalAlignment="Center" HorizontalAlignment="Center">
                                     <iconPacks:PackIconMaterial.RenderTransform>
                                         <TransformGroup>
-                                            <RotateTransform x:Name="rtAngle" Angle="90"/>
+                                            <RotateTransform x:Name="rtAngle" Angle="0"/>
                                         </TransformGroup>
                                     </iconPacks:PackIconMaterial.RenderTransform>
                                 </iconPacks:PackIconMaterial>
@@ -877,11 +883,12 @@
             <Style x:Key="GroupExpander"
                    TargetType="Expander">
                 <Setter Property="Foreground" Value="OrangeRed"/>
+                <Setter Property="Tag" Value="{StaticResource AccentBackgroundBrush}"/>
                 <Setter Property="FontSize" Value="18"/>
                 <Setter Property="HeaderTemplate">
                     <Setter.Value>
                         <DataTemplate>
-                            <Grid Background="{StaticResource AccentBackgroundBrush}"
+                            <Grid Background="{TemplateBinding Tag}"
                                   Margin="0"
                                   Width="{Binding
                                             RelativeSource={RelativeSource
@@ -919,6 +926,7 @@
                                                   HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
                                                   IsChecked="{Binding IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
                                                   Margin="1" MinWidth="0" MinHeight="0" Padding="{TemplateBinding Padding}"
+                                                  Tag="{TemplateBinding Tag}"
                                                   Style="{StaticResource ExpanderDownHeaderStyle}"
                                                   VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
                                     <ContentPresenter x:Name="ExpandSite"
@@ -929,7 +937,7 @@
                                                       Visibility="Visible"
                                                       VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                                         <ContentPresenter.LayoutTransform>
-                                            <ScaleTransform x:Name="contentScale" ScaleY="1"/>
+                                            <ScaleTransform x:Name="contentScale" ScaleY="0"/>
                                         </ContentPresenter.LayoutTransform>
                                     </ContentPresenter>
                                 </DockPanel>
