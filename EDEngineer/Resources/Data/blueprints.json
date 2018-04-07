@@ -34053,6 +34053,99 @@
     "Grade": null
   },
   {
+    "Type": "Guardian",
+    "Name": "Guardian Power Distributor",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Module Blueprint Segment",
+        "Size": 4
+      },
+      {
+        "Name": "Pattern Alpha Obelisk Data",
+        "Size": 27
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 45
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 36
+      },
+      {
+        "Name": "Heatsink Interlink",
+        "Size": 6
+      }
+    ],
+    "Effects": null,
+    "Grade": null
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shard Cannon (Fixed)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 36
+      },
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 8
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 40
+      },
+      {
+        "Name": "Carbon",
+        "Size": 35
+      },
+      {
+        "Name": "Power Transfer Bus",
+        "Size": 12
+      }
+    ],
+    "Effects": null,
+    "Grade": null
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shard Cannon (Turreted)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 40
+      },
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 10
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 28
+      },
+      {
+        "Name": "Carbon",
+        "Size": 30
+      },
+      {
+        "Name": "Micro Controllers",
+        "Size": 12
+      }
+    ],
+    "Effects": null,
+    "Grade": null
+  },
+  {
     "Type": "Human",
     "Name": "Meta Alloy Hull Reinforcement",
     "Engineers": [
