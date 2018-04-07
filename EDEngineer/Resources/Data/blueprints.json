@@ -41,10 +41,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -83,10 +79,6 @@
       },
       {
         "Name": "Nickel",
-        "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
         "Size": 1
       }
     ],
@@ -127,10 +119,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -169,10 +157,6 @@
       },
       {
         "Name": "Cracked Industrial Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -235,10 +219,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -272,10 +252,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -311,10 +287,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -348,10 +320,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -411,10 +379,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -450,10 +414,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -487,10 +447,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -554,10 +510,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -596,10 +548,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -640,10 +588,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -682,10 +626,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -750,10 +690,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -792,10 +728,6 @@
       },
       {
         "Name": "Nickel",
-        "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
         "Size": 1
       }
     ],
@@ -836,10 +768,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -878,10 +806,6 @@
       },
       {
         "Name": "Cracked Industrial Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -953,10 +877,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -997,10 +917,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1040,10 +956,6 @@
       {
         "Name": "High Density Composites",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1082,10 +994,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
         "Size": 1
       }
     ],
@@ -1150,10 +1058,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1199,10 +1103,6 @@
       {
         "Name": "Heat Exchangers",
         "Size": 1
-      },
-      {
-        "Name": "Samarium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1247,10 +1147,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1294,10 +1190,6 @@
       },
       {
         "Name": "Unexpected Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -1367,10 +1259,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1416,10 +1304,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1463,10 +1347,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -1591,10 +1471,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1639,10 +1515,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -1689,10 +1561,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1736,10 +1604,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -1807,10 +1671,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1844,10 +1704,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -1883,10 +1739,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -1920,10 +1772,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -1993,10 +1841,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2040,10 +1884,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -2089,10 +1929,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2136,10 +1972,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -2377,10 +2209,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2421,10 +2249,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2464,10 +2288,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2506,10 +2326,6 @@
       },
       {
         "Name": "Cracked Industrial Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -2586,10 +2402,6 @@
       {
         "Name": "Phosphorus",
         "Size": 1
-      },
-      {
-        "Name": "Modular Terminals",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2635,10 +2447,6 @@
       },
       {
         "Name": "Phosphorus",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -2689,10 +2497,6 @@
       {
         "Name": "Manganese",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2741,10 +2545,6 @@
       },
       {
         "Name": "Improvised Components",
-        "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
         "Size": 1
       }
     ],
@@ -2836,10 +2636,6 @@
       {
         "Name": "Germanium",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2891,10 +2687,6 @@
       {
         "Name": "Precipitated Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Power Transfer Bus",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2944,10 +2736,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -2996,10 +2784,6 @@
       },
       {
         "Name": "Untypical Shield Scans",
-        "Size": 1
-      },
-      {
-        "Name": "Platinum",
         "Size": 1
       }
     ],
@@ -3072,10 +2856,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3109,10 +2889,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -3148,10 +2924,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3185,10 +2957,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -3241,15 +3009,10 @@
     "Ingredients": [
       {
         "Name": "Carbon",
-
         "Size": 1
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -3285,10 +3048,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3323,10 +3082,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3360,10 +3115,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -3429,10 +3180,6 @@
       {
         "Name": "Heat Conduction Wiring",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3464,6 +3211,7 @@
     "Ingredients": [
       {
         "Name": "Focus Crystals",
+
         "Size": 1
       },
       {
@@ -3472,10 +3220,6 @@
       },
       {
         "Name": "Heat Dispersion Plate",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -3620,10 +3364,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3660,10 +3400,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3698,10 +3434,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3735,10 +3467,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -3798,10 +3526,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3842,10 +3566,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3885,10 +3605,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -3927,10 +3643,6 @@
       },
       {
         "Name": "Cracked Industrial Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -4017,10 +3729,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4076,10 +3784,6 @@
       },
       {
         "Name": "Selenium",
-        "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
         "Size": 1
       }
     ],
@@ -4267,10 +3971,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4316,10 +4016,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4364,10 +4060,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4411,10 +4103,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -4484,10 +4172,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4533,10 +4217,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4580,10 +4260,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -4697,10 +4373,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4746,10 +4418,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4793,10 +4461,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -4914,10 +4578,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -4956,10 +4616,6 @@
       },
       {
         "Name": "Zirconium",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -5104,10 +4760,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5143,10 +4795,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -5184,10 +4832,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5222,10 +4866,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -5287,10 +4927,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5326,10 +4962,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -5367,10 +4999,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5381,7 +5009,6 @@
       },
       {
         "Effect": "+240%",
-
         "Property": "Integrity",
         "IsGood": true
       }
@@ -5406,10 +5033,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -5484,10 +5107,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5538,10 +5157,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5591,10 +5206,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5643,10 +5254,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -5723,10 +5330,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5742,6 +5345,7 @@
       }
     ],
     "Grade": 2
+
   },
   {
     "Type": "Manifest Scanner",
@@ -5762,10 +5366,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -5801,10 +5401,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5838,10 +5434,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -5901,10 +5493,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5950,10 +5538,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -5997,10 +5581,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -6120,10 +5700,6 @@
       {
         "Name": "Grid Resistors",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6163,10 +5739,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -6314,10 +5886,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6356,10 +5924,6 @@
       },
       {
         "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Platinum",
         "Size": 1
       }
     ],
@@ -6400,10 +5964,6 @@
       {
         "Name": "Polymer Capacitors",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6442,10 +6002,6 @@
       },
       {
         "Name": "Refined Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -6508,10 +6064,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6545,10 +6097,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -6584,10 +6132,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6621,10 +6165,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -6691,10 +6231,6 @@
       {
         "Name": "Germanium",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6736,10 +6272,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6779,10 +6311,6 @@
       {
         "Name": "Mercury",
         "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6821,10 +6349,6 @@
       },
       {
         "Name": "Untypical Shield Scans",
-        "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
         "Size": 1
       }
     ],
@@ -6891,10 +6415,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6931,10 +6451,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -6969,10 +6485,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7006,10 +6518,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -7074,10 +6582,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7118,10 +6622,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7161,10 +6661,6 @@
       {
         "Name": "Polymer Capacitors",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7203,10 +6699,6 @@
       },
       {
         "Name": "Refined Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -7276,10 +6768,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7319,10 +6807,6 @@
       },
       {
         "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Platinum",
         "Size": 1
       }
     ],
@@ -7364,10 +6848,6 @@
       {
         "Name": "Polymer Capacitors",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7406,10 +6886,6 @@
       },
       {
         "Name": "Refined Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -7476,10 +6952,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7516,10 +6988,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7527,7 +6995,6 @@
         "Effect": "-30%",
         "Property": "Integrity",
         "IsGood": false
-
       },
       {
         "Effect": "-65%",
@@ -7554,10 +7021,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -7592,10 +7055,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -7655,10 +7114,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7694,10 +7149,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7731,10 +7182,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -7796,10 +7243,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7836,10 +7279,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7874,10 +7313,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -7911,10 +7346,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -7974,10 +7405,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8021,10 +7448,6 @@
       },
       {
         "Name": "Heat Exchangers",
-        "Size": 1
-      },
-      {
-        "Name": "Samarium",
         "Size": 1
       }
     ],
@@ -8070,10 +7493,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8091,6 +7510,7 @@
         "Effect": "-35%",
         "Property": "Distributor Draw",
         "IsGood": true
+
       },
       {
         "Effect": "-53%",
@@ -8117,10 +7537,6 @@
       },
       {
         "Name": "Unexpected Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -8200,10 +7616,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8254,10 +7666,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8306,10 +7714,6 @@
       },
       {
         "Name": "Thermic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
         "Size": 1
       }
     ],
@@ -8448,10 +7852,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8500,10 +7900,6 @@
       },
       {
         "Name": "Sulphur",
-        "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
         "Size": 1
       }
     ],
@@ -8554,10 +7950,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8607,10 +7999,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8659,10 +8047,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -8721,10 +8105,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8775,10 +8155,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -8827,10 +8203,6 @@
       },
       {
         "Name": "Thermic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
         "Size": 1
       }
     ],
@@ -8964,10 +8336,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9012,10 +8380,6 @@
       },
       {
         "Name": "Sulphur",
-        "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
         "Size": 1
       }
     ],
@@ -9062,10 +8426,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9109,10 +8469,6 @@
       },
       {
         "Name": "Thermic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -9182,10 +8538,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9221,10 +8573,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9258,10 +8606,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -9331,10 +8675,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9380,10 +8720,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9427,10 +8763,6 @@
       },
       {
         "Name": "Modified Consumer Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Platinum",
         "Size": 1
       }
     ],
@@ -9546,10 +8878,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9585,10 +8913,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -9626,10 +8950,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9661,14 +8981,9 @@
       {
         "Name": "Molybdenum",
         "Size": 1
-
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -9726,10 +9041,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9763,10 +9074,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -9802,10 +9109,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9839,10 +9142,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -9902,10 +9201,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9951,10 +9246,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -9999,10 +9290,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10046,10 +9333,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -10119,10 +9402,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10168,10 +9447,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10215,10 +9490,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -10337,10 +9608,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10372,6 +9639,7 @@
       {
         "Name": "Conductive Components",
         "Size": 1
+
       },
       {
         "Name": "Electrochemical Arrays",
@@ -10379,10 +9647,6 @@
       },
       {
         "Name": "Nickel",
-        "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
         "Size": 1
       }
     ],
@@ -10423,10 +9687,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10465,10 +9725,6 @@
       },
       {
         "Name": "Zirconium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -10539,10 +9795,6 @@
       {
         "Name": "Irregular Emission Data",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10582,10 +9834,6 @@
       },
       {
         "Name": "Irregular Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Samarium",
         "Size": 1
       }
     ],
@@ -10739,10 +9987,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10788,10 +10032,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10836,10 +10076,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -10883,10 +10119,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -10966,10 +10198,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11019,10 +10247,6 @@
       },
       {
         "Name": "Specialised Legacy Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -11074,10 +10298,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11126,10 +10346,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Power Transfer Bus",
         "Size": 1
       }
     ],
@@ -11226,10 +10442,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11285,10 +10497,6 @@
       },
       {
         "Name": "Electrochemical Arrays",
-        "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
         "Size": 1
       }
     ],
@@ -11478,10 +10686,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11517,10 +10721,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -11558,10 +10758,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11596,10 +10792,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -11663,10 +10855,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11705,10 +10893,6 @@
       },
       {
         "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
         "Size": 1
       }
     ],
@@ -11793,7 +10977,6 @@
     "Effects": [
       {
         "Effect": "+15%",
-
         "Property": "All Resistances",
         "IsGood": true
       },
@@ -11858,10 +11041,6 @@
       {
         "Name": "Heat Conduction Wiring",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11901,10 +11080,6 @@
       },
       {
         "Name": "Selenium",
-        "Size": 1
-      },
-      {
-        "Name": "Emergency Power Cells",
         "Size": 1
       }
     ],
@@ -11946,10 +11121,6 @@
       {
         "Name": "Heat Dispersion Plate",
         "Size": 1
-      },
-      {
-        "Name": "Energy Grid Assembly",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -11988,10 +11159,6 @@
       },
       {
         "Name": "Tellurium",
-        "Size": 1
-      },
-      {
-        "Name": "Energy Grid Assembly",
         "Size": 1
       }
     ],
@@ -12070,10 +11237,6 @@
       {
         "Name": "Chemical Processors",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12121,10 +11284,6 @@
       {
         "Name": "Strange Wake Solutions",
         "Size": 1
-      },
-      {
-        "Name": "Modular Terminals",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12170,10 +11329,6 @@
       {
         "Name": "Manganese",
         "Size": 1
-      },
-      {
-        "Name": "Energy Grid Assembly",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12218,10 +11373,6 @@
       },
       {
         "Name": "Datamined Wake Exceptions",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -12301,10 +11452,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12350,10 +11497,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12398,10 +11541,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12445,10 +11584,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -12520,10 +11655,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12560,10 +11691,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12598,10 +11725,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -12638,14 +11761,11 @@
       {
         "Name": "Proto Radiolic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
       {
+
         "Effect": "-50%",
         "Property": "Integrity",
         "IsGood": false
@@ -12710,10 +11830,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12764,10 +11880,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12817,10 +11929,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -12869,10 +11977,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Power Transfer Bus",
         "Size": 1
       }
     ],
@@ -12957,10 +12061,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13011,10 +12111,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13063,10 +12159,6 @@
       },
       {
         "Name": "Thermic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
         "Size": 1
       }
     ],
@@ -13190,10 +12282,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13229,10 +12317,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13266,10 +12350,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -13344,10 +12424,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13398,10 +12474,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13451,10 +12523,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13503,10 +12571,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -13590,10 +12654,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13637,10 +12697,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "Bromellite",
         "Size": 1
       }
     ],
@@ -13815,10 +12871,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Modular Terminals",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13869,10 +12921,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -13898,7 +12946,6 @@
       },
       {
         "Effect": "+40%",
-
         "Property": "Thermal Load",
         "IsGood": false
       }
@@ -13922,10 +12969,6 @@
       },
       {
         "Name": "Selenium",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -13975,10 +13018,6 @@
       },
       {
         "Name": "Pharmaceutical Isolators",
-        "Size": 1
-      },
-      {
-        "Name": "Exhaust Manifold",
         "Size": 1
       }
     ],
@@ -14063,10 +13102,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14112,10 +13147,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14159,10 +13190,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -14276,10 +13303,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14325,10 +13348,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14372,10 +13391,6 @@
       },
       {
         "Name": "Proto Light Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -14504,10 +13519,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14558,10 +13569,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14611,10 +13618,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14663,10 +13666,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -14743,10 +13742,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14782,10 +13777,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -14823,10 +13814,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14862,10 +13849,6 @@
       {
         "Name": "Technetium",
         "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -14889,6 +13872,7 @@
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
+
     ],
     "Ingredients": [
       {
@@ -14946,10 +13930,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15005,10 +13985,6 @@
       },
       {
         "Name": "Electrochemical Arrays",
-        "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
         "Size": 1
       }
     ],
@@ -15200,10 +14176,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15242,10 +14214,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -15421,10 +14389,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15469,10 +14433,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -15519,10 +14479,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15566,10 +14522,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -15654,10 +14606,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15706,10 +14654,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -15760,10 +14704,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15812,10 +14752,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -15892,10 +14828,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15932,10 +14864,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -15969,10 +14897,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -16008,10 +14932,6 @@
       {
         "Name": "Technetium",
         "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16020,7 +14940,6 @@
         "Property": "Integrity",
         "IsGood": true
       },
-
       {
         "Effect": "+150%",
         "Property": "Mass",
@@ -16073,10 +14992,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16113,10 +15028,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16151,10 +15062,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16188,10 +15095,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -16261,10 +15164,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16308,10 +15207,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -16357,10 +15252,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16404,10 +15295,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -16492,10 +15379,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16546,10 +15429,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16599,10 +15478,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16651,10 +15526,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -16734,10 +15605,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16777,10 +15644,6 @@
       },
       {
         "Name": "Nickel",
-        "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
         "Size": 1
       }
     ],
@@ -16822,10 +15685,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16864,10 +15723,6 @@
       },
       {
         "Name": "Zirconium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -16941,10 +15796,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -16988,10 +15839,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -17146,6 +15993,7 @@
   },
   {
     "Type": "Torpedo Pylon",
+
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
@@ -17158,10 +16006,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
         "Size": 1
       }
     ],
@@ -17208,10 +16052,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17255,10 +16095,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -17379,10 +16215,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17424,10 +16256,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Modular Terminals",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17467,10 +16295,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Modular Terminals",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17509,10 +16333,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Emergency Power Cells",
         "Size": 1
       }
     ],
@@ -17592,10 +16412,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17646,10 +16462,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17699,10 +16511,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17751,10 +16559,6 @@
       },
       {
         "Name": "Proprietary Composites",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -17838,10 +16642,6 @@
       {
         "Name": "Grid Resistors",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -17885,10 +16685,6 @@
       },
       {
         "Name": "Sulphur",
-        "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
         "Size": 1
       }
     ],
@@ -17958,10 +16754,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18007,10 +16799,6 @@
       {
         "Name": "Heat Exchangers",
         "Size": 1
-      },
-      {
-        "Name": "Samarium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18055,10 +16843,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18102,10 +16886,6 @@
       },
       {
         "Name": "Unexpected Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -18181,10 +16961,6 @@
       {
         "Name": "Unusual Encrypted Files",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18225,10 +17001,6 @@
       {
         "Name": "Tagged Encryption Codes",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18267,10 +17039,6 @@
       },
       {
         "Name": "Strange Wake Solutions",
-        "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
         "Size": 1
       }
     ],
@@ -18376,10 +17144,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18415,10 +17179,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -18456,10 +17216,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18494,10 +17250,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -18567,10 +17319,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18616,10 +17364,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18664,10 +17408,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18711,10 +17451,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -18784,10 +17520,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18823,10 +17555,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18860,10 +17588,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -18934,10 +17658,6 @@
       {
         "Name": "Hybrid Capacitors",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -18983,10 +17703,6 @@
       {
         "Name": "Niobium",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19031,10 +17747,6 @@
       {
         "Name": "Tin",
         "Size": 1
-      },
-      {
-        "Name": "Emergency Power Cells",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19078,10 +17790,6 @@
       },
       {
         "Name": "Untypical Shield Scans",
-        "Size": 1
-      },
-      {
-        "Name": "Emergency Power Cells",
         "Size": 1
       }
     ],
@@ -19151,10 +17859,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19198,10 +17902,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -19247,10 +17947,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19294,10 +17990,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -19377,10 +18069,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19426,10 +18114,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19439,6 +18123,7 @@
         "IsGood": false
       },
       {
+
         "Effect": "+50%",
         "Property": "Damage",
         "IsGood": true
@@ -19473,10 +18158,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
         "Size": 1
       }
     ],
@@ -19521,10 +18202,6 @@
       },
       {
         "Name": "Zirconium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -19596,10 +18273,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19635,10 +18308,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -19676,10 +18345,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19714,10 +18379,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -19781,10 +18442,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19823,10 +18480,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -19867,10 +18520,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -19909,10 +18558,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -19982,10 +18627,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20026,10 +18667,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20069,10 +18706,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20111,10 +18744,6 @@
       },
       {
         "Name": "Zirconium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -20189,10 +18818,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20238,10 +18863,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20279,17 +18900,12 @@
         "Name": "Conductive Polymers",
         "Size": 1
       },
-
       {
         "Name": "Focus Crystals",
         "Size": 1
       },
       {
         "Name": "Modified Consumer Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Platinum",
         "Size": 1
       }
     ],
@@ -20403,10 +19019,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20442,10 +19054,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20479,10 +19087,6 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -20552,10 +19156,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20606,10 +19206,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20659,10 +19255,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20711,10 +19303,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Power Transfer Bus",
         "Size": 1
       }
     ],
@@ -20791,10 +19379,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20831,10 +19415,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20869,10 +19449,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -20906,10 +19482,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -20969,10 +19541,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21013,10 +19581,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21056,10 +19620,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21098,10 +19658,6 @@
       },
       {
         "Name": "Cracked Industrial Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -21176,10 +19732,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21228,10 +19780,6 @@
       },
       {
         "Name": "Specialised Legacy Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -21282,10 +19830,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21334,10 +19878,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Power Transfer Bus",
         "Size": 1
       }
     ],
@@ -21410,10 +19950,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21447,10 +19983,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -21486,10 +20018,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21523,10 +20051,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -21588,10 +20112,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21627,10 +20147,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -21668,10 +20184,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21706,10 +20218,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -21766,14 +20274,11 @@
     "Ingredients": [
       {
         "Name": "Chemical Processors",
+
         "Size": 1
       },
       {
         "Name": "Specialised Legacy Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
         "Size": 1
       }
     ],
@@ -21811,10 +20316,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21849,10 +20350,6 @@
       {
         "Name": "Hybrid Capacitors",
         "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -21886,10 +20383,6 @@
       },
       {
         "Name": "Exquisite Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
         "Size": 1
       }
     ],
@@ -21972,10 +20465,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22019,10 +20508,6 @@
       },
       {
         "Name": "Heat Exchangers",
-        "Size": 1
-      },
-      {
-        "Name": "Samarium",
         "Size": 1
       }
     ],
@@ -22068,10 +20553,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22115,10 +20596,6 @@
       },
       {
         "Name": "Unexpected Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -22186,10 +20663,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22223,10 +20696,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -22262,10 +20731,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22299,10 +20764,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -22371,10 +20832,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22419,16 +20876,11 @@
       {
         "Name": "Zirconium",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
       {
         "Effect": "+26%",
-
         "Property": "Explosive Resistance",
         "IsGood": true
       },
@@ -22580,10 +21032,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22627,10 +21075,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -22676,10 +21120,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22723,10 +21163,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -22798,10 +21234,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22838,10 +21270,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22876,10 +21304,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -22913,10 +21337,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -22978,10 +21398,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23018,10 +21434,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23057,10 +21469,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23095,10 +21503,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -23156,10 +21560,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23193,10 +21593,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -23232,10 +21628,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23269,10 +21661,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -23342,10 +21730,6 @@
       {
         "Name": "Mechanical Equipment",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23391,10 +21775,6 @@
       {
         "Name": "Mechanical Equipment",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23439,10 +21819,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23486,10 +21862,6 @@
       },
       {
         "Name": "Modified Embedded Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
         "Size": 1
       }
     ],
@@ -23561,10 +21933,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23601,10 +21969,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23640,10 +22004,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23678,10 +22038,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -23751,10 +22107,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23803,10 +22155,6 @@
       },
       {
         "Name": "Specialised Legacy Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -23857,10 +22205,6 @@
       {
         "Name": "Thermic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -23909,10 +22253,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Power Transfer Bus",
         "Size": 1
       }
     ],
@@ -23985,10 +22325,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24022,10 +22358,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -24061,10 +22393,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24099,12 +22427,9 @@
       {
         "Name": "Proto Radiolic Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
+
     "Effects": [
       {
         "Effect": "-50%",
@@ -24165,10 +22490,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24207,10 +22528,6 @@
       },
       {
         "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Telemetry Suite",
         "Size": 1
       }
     ],
@@ -24251,10 +22568,6 @@
       {
         "Name": "Proprietary Composites",
         "Size": 1
-      },
-      {
-        "Name": "Hardware Diagnostic Sensor",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24293,10 +22606,6 @@
       },
       {
         "Name": "Tin",
-        "Size": 1
-      },
-      {
-        "Name": "Hardware Diagnostic Sensor",
         "Size": 1
       }
     ],
@@ -24367,10 +22676,6 @@
       {
         "Name": "Phosphorus",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24411,10 +22716,6 @@
       {
         "Name": "Phosphorus",
         "Size": 1
-      },
-      {
-        "Name": "Modular Terminals",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24454,10 +22755,6 @@
       {
         "Name": "Refined Focus Crystals",
         "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24496,10 +22793,6 @@
       },
       {
         "Name": "Refined Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -24573,11 +22866,6 @@
       },
       {
         "Name": "Sulphur",
-
-        "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
         "Size": 1
       }
     ],
@@ -24624,10 +22912,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24672,10 +22956,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24719,10 +22999,6 @@
       },
       {
         "Name": "Thermic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -24802,10 +23078,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24851,10 +23123,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -24898,10 +23166,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -25029,10 +23293,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Nanobreakers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25081,10 +23341,6 @@
       },
       {
         "Name": "Exceptional Scrambled Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
         "Size": 1
       }
     ],
@@ -25174,10 +23430,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25226,10 +23478,6 @@
       },
       {
         "Name": "Sulphur",
-        "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
         "Size": 1
       }
     ],
@@ -25280,10 +23528,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25332,10 +23576,6 @@
       },
       {
         "Name": "Thermic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -25412,10 +23652,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25451,10 +23687,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -25492,10 +23724,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25530,10 +23758,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -25598,10 +23822,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25642,10 +23862,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25685,10 +23901,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25727,10 +23939,6 @@
       },
       {
         "Name": "Zirconium",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -25802,10 +24010,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25847,10 +24051,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25890,10 +24090,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -25932,10 +24128,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -26014,10 +24206,6 @@
       {
         "Name": "Grid Resistors",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26065,10 +24253,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Hardware Diagnostic Sensor",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26114,10 +24298,6 @@
       {
         "Name": "Hybrid Capacitors",
         "Size": 1
-      },
-      {
-        "Name": "Hardware Diagnostic Sensor",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26162,10 +24342,6 @@
       },
       {
         "Name": "Tellurium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -26240,10 +24416,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Praseodymium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26282,10 +24454,6 @@
       },
       {
         "Name": "Nickel",
-        "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
         "Size": 1
       }
     ],
@@ -26326,10 +24494,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Articulation Motors",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26369,10 +24533,6 @@
       {
         "Name": "Zirconium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26391,6 +24551,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
+
     ],
     "Grade": 5
   },
@@ -26434,10 +24595,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26471,10 +24628,6 @@
       },
       {
         "Name": "Shield Emitters",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -26510,10 +24663,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26547,10 +24696,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Reinforced Mounting Plate",
         "Size": 1
       }
     ],
@@ -26610,10 +24755,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26659,10 +24800,6 @@
       {
         "Name": "Heat Exchangers",
         "Size": 1
-      },
-      {
-        "Name": "Samarium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26700,7 +24837,6 @@
       {
         "Name": "Heat Vanes",
         "Size": 1
-
       },
       {
         "Name": "Irregular Emission Data",
@@ -26708,10 +24844,6 @@
       },
       {
         "Name": "Selenium",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -26756,10 +24888,6 @@
       },
       {
         "Name": "Unexpected Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -26843,10 +24971,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26894,10 +25018,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26943,10 +25063,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Bromellite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -26991,10 +25107,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -27074,10 +25186,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27123,10 +25231,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27171,10 +25275,6 @@
       {
         "Name": "Zinc",
         "Size": 1
-      },
-      {
-        "Name": "Osmium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27218,10 +25318,6 @@
       },
       {
         "Name": "Technetium",
-        "Size": 1
-      },
-      {
-        "Name": "Radiation Baffle",
         "Size": 1
       }
     ],
@@ -27301,10 +25397,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27350,10 +25442,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27397,10 +25485,6 @@
       },
       {
         "Name": "Modified Consumer Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Platinum",
         "Size": 1
       }
     ],
@@ -27521,10 +25605,6 @@
       {
         "Name": "Specialised Legacy Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Samarium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27575,10 +25655,6 @@
       {
         "Name": "Unexpected Emission Data",
         "Size": 1
-      },
-      {
-        "Name": "Power Converter",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27628,10 +25704,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Power Converter",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27680,10 +25752,6 @@
       },
       {
         "Name": "Tin",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -27758,10 +25826,6 @@
       {
         "Name": "Sulphur",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27807,10 +25871,6 @@
       {
         "Name": "Heat Exchangers",
         "Size": 1
-      },
-      {
-        "Name": "Samarium",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27855,10 +25915,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -27902,10 +25958,6 @@
       },
       {
         "Name": "Unexpected Emission Data",
-        "Size": 1
-      },
-      {
-        "Name": "Heatsink Interlink",
         "Size": 1
       }
     ],
@@ -27982,10 +26034,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28027,10 +26075,6 @@
       {
         "Name": "Selenium",
         "Size": 1
-      },
-      {
-        "Name": "Micro-Weave Cooling Hoses",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28070,10 +26114,6 @@
       {
         "Name": "Mercury",
         "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28112,10 +26152,6 @@
       },
       {
         "Name": "Untypical Shield Scans",
-        "Size": 1
-      },
-      {
-        "Name": "Ion Distributor",
         "Size": 1
       }
     ],
@@ -28186,10 +26222,6 @@
       {
         "Name": "Iron",
         "Size": 1
-      },
-      {
-        "Name": "Micro Controllers",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28229,10 +26261,6 @@
       },
       {
         "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -28375,10 +26403,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28423,10 +26447,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -28473,10 +26493,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28520,10 +26536,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -28597,10 +26609,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28640,10 +26648,6 @@
       {
         "Name": "Vanadium",
         "Size": 1
-      },
-      {
-        "Name": "Bromellite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28672,6 +26676,7 @@
       "Selene Jean"
     ],
     "Ingredients": [
+
       {
         "Name": "Galvanising Alloys",
         "Size": 1
@@ -28795,10 +26800,6 @@
       {
         "Name": "Shield Emitters",
         "Size": 1
-      },
-      {
-        "Name": "HN Shock Mount",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -28814,7 +26815,6 @@
       },
       {
         "Effect": "+30%",
-
         "Property": "Armour Piercing",
         "IsGood": true
       },
@@ -28844,10 +26844,6 @@
       },
       {
         "Name": "Tungsten",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -28892,10 +26888,6 @@
       },
       {
         "Name": "Zinc",
-        "Size": 1
-      },
-      {
-        "Name": "Osmium",
         "Size": 1
       }
     ],
@@ -29007,10 +26999,6 @@
       {
         "Name": "Salvaged Alloys",
         "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -29044,10 +27032,6 @@
       },
       {
         "Name": "Salvaged Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "CMM Composite",
         "Size": 1
       }
     ],
@@ -29083,10 +27067,6 @@
       {
         "Name": "Proto Light Alloys",
         "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -29120,10 +27100,6 @@
       },
       {
         "Name": "Proto Radiolic Alloys",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -29183,10 +27159,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Insulating Membrane",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -29227,10 +27199,6 @@
       {
         "Name": "Nickel",
         "Size": 1
-      },
-      {
-        "Name": "Neofabric Insulation",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -29270,10 +27238,6 @@
       {
         "Name": "Modified Consumer Firmware",
         "Size": 1
-      },
-      {
-        "Name": "Platinum",
-        "Size": 1
       }
     ],
     "Effects": [
@@ -29312,10 +27276,6 @@
       },
       {
         "Name": "Cracked Industrial Firmware",
-        "Size": 1
-      },
-      {
-        "Name": "Magnetic Emitter Coil",
         "Size": 1
       }
     ],
@@ -30940,6 +28900,7 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
+
       }
     ],
     "Effects": [
@@ -31038,7 +28999,6 @@
         "Effect": "+30%",
         "Property": "Power Draw",
         "IsGood": false
-
       },
       {
         "Effect": "-12%",
@@ -33088,6 +31048,7 @@
       },
       {
         "Effect": "+48%",
+
         "Property": "Scan Range",
         "IsGood": true
       },
@@ -34426,7 +32387,6 @@
     "Effects": [
       {
         "Effect": "✓",
-
         "Property": "Damage increases with heat level",
         "IsGood": true
       }
@@ -35297,6 +33257,7 @@
     "Engineers": [
       "The Dweller",
       "Broo Tarquin"
+
     ],
     "Ingredients": [
       {
@@ -36617,7 +34578,6 @@
       {
         "Name": "Mechanical Equipment",
         "Size": 5
-
       },
       {
         "Name": "Configurable Components",
@@ -37499,6 +35459,7 @@
       {
         "Name": "Niobium",
         "Size": 3
+
       },
       {
         "Name": "Configurable Components",
@@ -38805,7 +36766,6 @@
     "Engineers": [
       "Felicity Farseer",
       "Lei Cheung",
-
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -39656,6 +37616,7 @@
       {
         "Effect": "-2%",
         "Property": "Systems Recharge",
+
         "IsGood": false
       }
     ],
