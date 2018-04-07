@@ -592,8 +592,7 @@
                                        Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Loadout'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
-                    <Grid Margin="15"
-                              DataContext="{Binding CurrentCommander.Value.State.Loadout}">
+                    <Grid DataContext="{Binding CurrentCommander.Value.State.Loadout}">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
                             <RowDefinition Height="*"/>
@@ -617,6 +616,7 @@
                                        Grid.Row="0"/>
                             <TextBlock Text="{Binding Loadout.ShipName, Mode=OneWay}"
                                        FontSize="20"
+                                       Margin="15,0,15,0"
                                        Foreground="AntiqueWhite"
                                        HorizontalAlignment="Left"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
@@ -624,6 +624,7 @@
                                        Grid.Row="1"/>
                             <TextBlock Text="{Binding Loadout.ShipIdent, Mode=OneWay}"
                                        FontSize="20"
+                                       Margin="15,0,15,0"
                                        Foreground="AntiqueWhite"
                                        HorizontalAlignment="Right"
                                        FontFamily="/Resources/Fonts/#Telegrama Render"
@@ -984,15 +985,10 @@
                                             <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="Auto" />
                                         </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="Auto"/>
-                                        </Grid.RowDefinitions>
 
                                         <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="0"
                                                       Focusable="False"
-                                                      Grid.Row="0"
                                                       Margin="0,0,7,0"
                                                       FontSize="13">
                                             <ItemsControl.ItemTemplate>
@@ -1015,7 +1011,6 @@
 
                                         <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="1"
-                                                      Grid.Row="0"
                                                       Focusable="False"
                                                       Margin="0,0,7,0"
                                                       FontSize="13">
@@ -1037,7 +1032,6 @@
                                         <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="2"
                                                       Focusable="False"
-                                                      Grid.Row="0"
                                                       Margin="0,0,7,0"
                                                       FontSize="13">
                                             <ItemsControl.ItemTemplate>
@@ -1056,7 +1050,6 @@
                                         <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="3"
                                                       Focusable="False"
-                                                      Grid.Row="0"
                                                       Margin="0,0,7,0">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
@@ -1088,19 +1081,6 @@
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
                                         </ItemsControl>
-
-                                        <StackPanel Orientation="Horizontal"
-                                                    Grid.Row="1"
-                                                    Grid.ColumnSpan="4"
-                                                    Grid.Column="0"
-                                                    Margin="5"
-                                                    Visibility="{Binding Category, Converter={StaticResource CategoryToCommodityWarningVisibility}}">
-                                            <TextBlock Text="Also requires Commodities"
-                                                       Foreground="Crimson"/>
-                                            <iconPacks:PackIconMaterial Kind="CommentAlert"
-                                                                        Foreground="Crimson"
-                                                                        Margin="10,0,0,0"/>
-                                        </StackPanel>
                                     </Grid>
 
                                     <Grid Grid.Column="1"

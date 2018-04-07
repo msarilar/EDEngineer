@@ -24,6 +24,7 @@ namespace EDEngineer.Models
         TechnologyBroker,
         Location,
         FSDJump,
-        Loadout
+        Loadout,
+        Died
     }
 }

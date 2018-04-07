@@ -20,6 +20,9 @@ namespace EDEngineer.Models
         Rare,
 
         [Description("Very Rare")]
-        VeryRare
+        VeryRare,
+
+        [Description("Commodity")]
+        Commodity
     }
 }

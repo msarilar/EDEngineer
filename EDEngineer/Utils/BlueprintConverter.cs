@@ -31,9 +31,7 @@ namespace EDEngineer.Utils
                 from ingredient in data["Ingredients"]
                 let name = (string) ingredient["Name"]
                 let size = (int) ingredient["Size"]
-                // COMMODITY REMOVED
-                where entries[name].Data.Kind != Kind.Commodity
-                // ----
+                where entries[name].Data.Kind != Kind.Commodity || engineers.First() == "@Technology" || blueprintType == "Unlock"
                 select new BlueprintIngredient(entries[name], size);
 
             var effects =

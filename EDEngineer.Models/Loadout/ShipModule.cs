@@ -45,6 +45,10 @@ namespace EDEngineer.Models.Loadout
             {
                 Category = ModuleCategory.Hardpoint;
             }
+            else if (TechnicalType.Contains("armour"))
+            {
+                Category = ModuleCategory.CoreInternal;
+            }
             else
             {
                 Category = ModuleCategory.Other;

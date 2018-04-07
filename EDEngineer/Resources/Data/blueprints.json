@@ -18137,7 +18137,6 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
     "Engineers": [
-
       "Felicity Farseer",
       "Colonel Bris Dekker",
       "Tiana Fortune"
@@ -18297,7 +18296,9 @@
   {
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
-    "Engineers": [],
+    "Engineers": [
+      "Colonel Bris Dekker"
+    ],
     "Ingredients": [
       {
         "Name": "Classified Scan Fragment",

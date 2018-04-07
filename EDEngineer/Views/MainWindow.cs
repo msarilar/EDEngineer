@@ -149,7 +149,7 @@ namespace EDEngineer.Views
             commander.Filters.Monitor(blueprintSource, commander.State.Cargo.Ingredients.Select(c => c.Value), commander.HighlightedEntryData);
             Blueprints.ItemsSource = blueprintSource.View;
             
-            Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
+            Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material | Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
         }
 

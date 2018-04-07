@@ -77,6 +77,9 @@ namespace EDEngineer.Models
         Thargoid,
 
         [Description("Guardian")]
-        Guardian
+        Guardian,
+
+        [Description("Commodities")]
+        Commodities
     }
 }

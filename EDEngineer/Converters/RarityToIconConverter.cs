@@ -26,6 +26,8 @@ namespace EDEngineer.Converters
                     return "/Resources/Images/rare.png";
                 case Rarity.VeryRare:
                     return "/Resources/Images/very-rare.png";
+                case Rarity.Commodity:
+                    return "/Resources/Images/commodity.png";
                 default:
                     return "/Resources/Images/question-mark.png";
             }

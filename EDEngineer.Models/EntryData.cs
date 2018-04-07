@@ -7,10 +7,17 @@ namespace EDEngineer.Models
 {
     public class EntryData
     {
+        private Rarity rarity;
+        private Group? group;
+
         public string Name { get; set; }
 
-        [JsonConverter(typeof (StringEnumConverter))]
-        public Rarity Rarity { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
+        public Rarity Rarity
+        {
+            get => Kind == Kind.Commodity ? Rarity.Commodity : rarity;
+            set => rarity = value;
+        }
 
         public string FormattedName { get; set; }
 
@@ -21,7 +28,11 @@ namespace EDEngineer.Models
         public Subkind? Subkind { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public Group? Group { get; set; }
+        public Group? Group
+        {
+            get => Kind == Kind.Commodity ? Models.Group.Commodities : group;
+            set => group = value;
+        }
 
         public List<string> OriginDetails { get; set; }
 

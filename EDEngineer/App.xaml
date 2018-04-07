@@ -105,9 +105,8 @@
             <converters:HistoryToTop5Converter x:Key="HistoryToTop5Converter"/>
             <converters:ShoppingListBlockToAllGradesVisibility x:Key="ShoppingListBlockToAllGradesVisibility"/>
             <converters:ModuleModifierToColorConverter x:Key="ModuleModifierToColorConverter"/>
-            <converters:CategoryToCommodityWarningVisibility x:Key="CategoryToCommodityWarningVisibility"/>
 
-            
+
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 
             <Style TargetType="ToolTip">

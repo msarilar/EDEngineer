@@ -135,6 +135,8 @@ namespace EDEngineer.Utils
                     return ExtractMaterialDiscarded(data);
                 case JournalEvent.Materials:
                     return ExtractMaterialsDump(data);
+                case JournalEvent.Cargo:
+                    return ExtractCargoDump(data);
                 case JournalEvent.MaterialTrade:
                     return ExtractMaterialTrade(data);
                 case JournalEvent.TechnologyBroker:
@@ -144,9 +146,20 @@ namespace EDEngineer.Utils
                     return ExtractSystemUpdated(data);
                 case JournalEvent.Loadout:
                     return ExtractLoadout(data);
+                case JournalEvent.Died:
+                    return ExtractDied(data);
                 default:
                     return null;
             }
+        }
+
+        private JournalOperation ExtractDied(JObject _)
+        {
+            return new DumpOperation
+            {
+                ResetFilter = new HashSet<Kind> { Kind.Commodity },
+                DumpOperations = new List<MaterialOperation>()
+            };
         }
 
         private JournalOperation ExtractLoadout(JObject data)
@@ -292,12 +305,15 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Inventory"])
             {
                 dynamic cc = jToken;
-                var materialName = converter.GetOrCreate((string) cc.Name);
+                if (!converter.TryGet((string) cc.Name, out var commodityName))
+                {
+                    continue;
+                }
                 int? count = cc.Value ?? cc.Count;
 
                 var operation = new MaterialOperation
                 {
-                    MaterialName = materialName,
+                    MaterialName = commodityName,
                     Size = count ?? 1
                 };
 
@@ -315,7 +331,6 @@ namespace EDEngineer.Utils
                 !converter.TryGet((string)data["Raw"], out name) &&
                 !converter.TryGet((string)data["Manufactured"], out name) &&
                 !converter.TryGet((string)data["Data"], out name) &&
-                !converter.TryGet((string)data["Commodity"], out name) &&
                 !converter.TryGet((string)data["Name"], out name))
             {
                 return null;
@@ -332,7 +347,11 @@ namespace EDEngineer.Utils
                         Size = -1 * data["Quantity"]?.ToObject<int>() ?? 1
                     };
                 case "commodity":
-                    return null; // ignore commodity
+                    return new CargoOperation
+                    {
+                        CommodityName = name,
+                        Size = -1 * data["Quantity"]?.ToObject<int>() ?? 1
+                    };
                 default: // materials
                     return new MaterialOperation
                     {
