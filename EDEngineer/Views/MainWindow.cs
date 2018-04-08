@@ -125,6 +125,8 @@ namespace EDEngineer.Views
                     Storyboard.SetTarget(sb, Splash);
                     sb.Begin();
                 }
+
+                viewModel.InitiateWatch();
             }, CancellationToken.None, TaskContinuationOptions.OnlyOnRanToCompletion, TaskScheduler.FromCurrentSynchronizationContext());
 
             if (SettingsManager.SilentLaunch)

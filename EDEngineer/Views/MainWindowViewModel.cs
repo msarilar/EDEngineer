@@ -62,6 +62,8 @@ namespace EDEngineer.Views
 
         public MainWindowViewModel(Languages languages)
         {
+            entryDatas =
+                JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
             Languages = languages;
             GraphicSettings = new GraphicSettings();
             IngredientsGrouped = SettingsManager.IngredientsGrouped;
@@ -84,9 +86,6 @@ namespace EDEngineer.Views
 
             var allLogs = LogWatcher.RetrieveAllLogs();
             Commanders.Clear();
-
-            var entryDatas =
-                JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
 
             foreach (var commander in allLogs.Keys)
             {
@@ -115,27 +114,6 @@ namespace EDEngineer.Views
             }
 
             CurrentCommander.Value.RefreshShoppingList();
-
-            LogWatcher.InitiateWatch(logs =>
-            {
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    if (logs.Item2.Count == 0)
-                    {
-                        return;
-                    }
-
-                    if (Commanders.ContainsKey(logs.Item1))
-                    {
-                        Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
-                    }
-                    else if(logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
-                    {
-                        var commanderState = new CommanderViewModel(logs.Item1, logs.Item2, Languages, entryDatas);
-                        Commanders[logs.Item1] = commanderState;
-                    }
-                });
-            });
         }
 
         private bool showZeroes = true;
@@ -146,6 +124,7 @@ namespace EDEngineer.Views
 
         private KeyValuePair<string, CommanderViewModel> currentCommander;
         private string currentComparer;
+        private readonly List<EntryData> entryDatas;
 
         public bool ShowZeroes
         {
@@ -294,6 +273,30 @@ namespace EDEngineer.Views
                 commander.Value.Dispose();
             }
             LogWatcher?.Dispose();
+        }
+
+        public void InitiateWatch()
+        {
+            LogWatcher.InitiateWatch(logs =>
+            {
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    if (logs.Item2.Count == 0)
+                    {
+                        return;
+                    }
+
+                    if (Commanders.ContainsKey(logs.Item1))
+                    {
+                        Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
+                    }
+                    else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
+                    {
+                        var commanderState = new CommanderViewModel(logs.Item1, logs.Item2, Languages, entryDatas);
+                        Commanders[logs.Item1] = commanderState;
+                    }
+                });
+            });
         }
     }
 }
