@@ -46,7 +46,7 @@ namespace EDEngineer.Utils
             var cacheKey = Tuple.Create(kind, key);
             if (localCache.TryGetValue(cacheKey, out name))
             {
-                return true;
+                return name != null;
             }
 
             if (IgnoreList.Contains(key))
@@ -59,13 +59,9 @@ namespace EDEngineer.Utils
             var entry = entryDatas.FirstOrDefault(e => e.FormattedName == formattedKey && (e.Kind & kind) == e.Kind) ??
                         entryDatas.FirstOrDefault(e => e.FormattedName.Contains(formattedKey) && (e.Kind & kind) == e.Kind);
 
-            if (entry != null)
-            {
-                localCache[cacheKey] = name = entry.Name;
-                return true;
-            }
+            localCache[cacheKey] = name = entry?.Name;
 
-            return false;
+            return entry != null;
         }
     }
 }

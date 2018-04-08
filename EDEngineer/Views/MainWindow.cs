@@ -85,10 +85,10 @@ namespace EDEngineer.Views
             Left = dimensions.Left;
             Top = dimensions.Top;
             Height = dimensions.Height;
-            IOUtils.RetrieveLogDirectory(false, null);
+            var logDirectory = IOUtils.RetrieveLogDirectory(false, null);
             var task = Task.Factory.StartNew(() =>
             {
-                viewModel = new MainWindowViewModel(Languages.Instance);
+                viewModel = new MainWindowViewModel(Languages.Instance, logDirectory);
                 viewModel.PropertyChanged += (o, e) =>
                                              {
                                                  if (e.PropertyName == "ShowOnlyForFavorites" ||
@@ -293,7 +293,12 @@ namespace EDEngineer.Views
 
         private void ChangeFolderButtonClicked(object sender, RoutedEventArgs e)
         {
-            viewModel.LoadState(true);
+            var newDirectory = IOUtils.RetrieveLogDirectory(true, viewModel.LogDirectory);
+            if (newDirectory != viewModel.LogDirectory)
+            {
+                viewModel.LogDirectory = newDirectory;
+                viewModel.LoadState();
+            }
         }
 
         private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)

@@ -60,8 +60,9 @@ namespace EDEngineer.Views
             }
         }
 
-        public MainWindowViewModel(Languages languages)
+        public MainWindowViewModel(Languages languages, string directory)
         {
+            LogDirectory = directory;
             entryDatas =
                 JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
             Languages = languages;
@@ -78,9 +79,8 @@ namespace EDEngineer.Views
             CurrentComparer = SettingsManager.Comparer;
         }
 
-        public void LoadState(bool forcePickFolder = false)
+        public void LoadState()
         {
-            LogDirectory = IOUtils.RetrieveLogDirectory(forcePickFolder, LogDirectory);
             LogWatcher?.Dispose();
             LogWatcher = new LogWatcher(LogDirectory);
 
