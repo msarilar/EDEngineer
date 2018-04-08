@@ -240,7 +240,7 @@
                         </Grid>
 
                         <Grid Grid.Row="1"
-                              Visibility="{Binding Value.Data.Kind, Converter={StaticResource UnknownKindToVisible}}">
+                              Visibility="{Binding Value.Data.Kind, Converter={StaticResource CommodityKindToCollapsed}}">
                             <controls:MetroProgressBar Value="{Binding Value.CarryingProgress, Mode=OneWay}"
                                                        Background="Transparent"
                                                        Foreground="{StaticResource EliteOrangeBrush}" />
