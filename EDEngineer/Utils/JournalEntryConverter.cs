@@ -235,7 +235,7 @@ namespace EDEngineer.Utils
                 IngredientsConsumed = (data["Ingredients"] ?? data["Materials"]).Select(c =>
                     {
                         dynamic cc = c;
-                        return Tuple.Create(converter.TryGet((string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
+                        return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
                     })
                     .Where(c => c.Item1)
                     .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
@@ -246,8 +246,8 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMaterialTrade(JObject data)
         {
-            converter.TryGet((string)data["Received"]["Material"], out var ingredientAdded);
-            converter.TryGet((string) data["Paid"]["Material"], out var ingredientRemoved);
+            converter.TryGet(Kind.Data | Kind.Material, (string)data["Received"]["Material"], out var ingredientAdded);
+            converter.TryGet(Kind.Data | Kind.Material, (string) data["Paid"]["Material"], out var ingredientRemoved);
 
             var addedQuantity = (int) data["Received"]["Quantity"];
             var removedQuantity = (int)data["Paid"]["Quantity"];
@@ -276,7 +276,7 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Raw"].Union(data["Manufactured"]).Union(data["Encoded"]))
             {
                 dynamic cc = jToken;
-                var materialName = converter.GetOrCreate((string)cc.Name);
+                var materialName = converter.GetOrCreate(Kind.Data | Kind.Material, (string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
 
                 var operation = new MaterialOperation
@@ -305,7 +305,7 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Inventory"])
             {
                 dynamic cc = jToken;
-                if (!converter.TryGet((string) cc.Name, out var commodityName))
+                if (!converter.TryGet(Kind.Commodity, (string) cc.Name, out var commodityName))
                 {
                     continue;
                 }
@@ -325,13 +325,13 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractEngineerContribution(JObject data)
         {
-            if (!converter.TryGet((string)data["Commodity"], out var name) &&
-                !converter.TryGet((string)data["Material"], out name) &&
-                !converter.TryGet((string)data["Encoded"], out name) &&
-                !converter.TryGet((string)data["Raw"], out name) &&
-                !converter.TryGet((string)data["Manufactured"], out name) &&
-                !converter.TryGet((string)data["Data"], out name) &&
-                !converter.TryGet((string)data["Name"], out name))
+            if (!converter.TryGet(Kind.Commodity, (string)data["Commodity"], out var name) &&
+                !converter.TryGet(Kind.Material, (string)data["Material"], out name) &&
+                !converter.TryGet(Kind.Data, (string)data["Encoded"], out name) &&
+                !converter.TryGet(Kind.Material, (string)data["Raw"], out name) &&
+                !converter.TryGet(Kind.Material, (string)data["Manufactured"], out name) &&
+                !converter.TryGet(Kind.Data, (string)data["Data"], out name) &&
+                !converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)data["Name"], out name))
             {
                 return null;
             }
@@ -363,7 +363,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMarketSell(JObject data)
         {
-            if (!converter.TryGet((string)data["Type"], out var marketSellName))
+            if (!converter.TryGet(Kind.Commodity, (string)data["Type"], out var marketSellName))
             {
                 return null;
             }
@@ -381,7 +381,7 @@ namespace EDEngineer.Utils
 
             type = type.Replace("$", "").Replace("_name;", ""); // "Type":"$samarium_name;" 
 
-            if (!converter.TryGet(type, out var miningRefinedName))
+            if (!converter.TryGet(Kind.Material | Kind.Commodity, type, out var miningRefinedName))
             {
                 return null;
             }
@@ -395,7 +395,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMarketBuy(JObject data)
         {
-            if (!converter.TryGet((string)data["Type"], out var marketBuyName))
+            if (!converter.TryGet(Kind.Commodity, (string)data["Type"], out var marketBuyName))
             {
                 return null;
             }
@@ -409,7 +409,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractEjectCargo(JObject data)
         {
-            if (!converter.TryGet((string)data["Type"], out var ejectCargoName))
+            if (!converter.TryGet(Kind.Commodity, (string)data["Type"], out var ejectCargoName))
             {
                 return null;
             }
@@ -423,7 +423,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractCollectCargo(JObject data)
         {
-            if (!converter.TryGet((string)data["Type"], out var collectCargoName))
+            if (!converter.TryGet(Kind.Commodity, (string)data["Type"], out var collectCargoName))
             {
                 return null;
             }
@@ -446,7 +446,7 @@ namespace EDEngineer.Utils
             {
                 CommodityRewards = rewardData
                     .Select(c => Tuple.Create(c,
-                                converter.TryGet((string)c["Name"], out var rewardName),
+                                converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)c["Name"], out var rewardName),
                                 rewardName))
                     .Where(c => c.Item2)
                     .Select(c =>
@@ -466,7 +466,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMaterialDiscarded(JObject data)
         {
-            var materialDiscardedName = converter.GetOrCreate((string)data["Name"]);
+            var materialDiscardedName = converter.GetOrCreate(Kind.Data | Kind.Material, (string)data["Name"]);
 
             if (((string) data["Category"]).ToLowerInvariant() == "encoded")
             {
@@ -496,7 +496,7 @@ namespace EDEngineer.Utils
             foreach (var jToken in data["Materials"])
             {
                 dynamic cc = jToken;
-                var synthesisIngredientName = converter.GetOrCreate((string)cc.Name);
+                var synthesisIngredientName = converter.GetOrCreate(Kind.Material, (string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
 
                 synthesisOperation.IngredientsConsumed.Add(new BlueprintIngredient(entries[synthesisIngredientName],
@@ -508,7 +508,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMaterialCollected(JObject data)
         {
-            var materialCollectedName = converter.GetOrCreate((string)data["Name"]);
+            var materialCollectedName = converter.GetOrCreate(Kind.Data | Kind.Material, (string)data["Name"]);
 
             if (((string) data["Category"]).ToLowerInvariant() == "encoded")
             {
@@ -534,7 +534,7 @@ namespace EDEngineer.Utils
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {
                     dynamic cc = c;
-                    return Tuple.Create(converter.TryGet((string)cc.Name, out var rewardName), rewardName, (int)(cc.Value ?? cc.Count));
+                    return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var rewardName), rewardName, (int)(cc.Value ?? cc.Count));
                 }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList(),
                 Modifiers = ExtractModifiers(data["Modifiers"]).ToList()
             };

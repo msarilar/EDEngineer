@@ -12,7 +12,9 @@ namespace EDEngineer.Models.Operations
 
         public override void Mutate(State state)
         {
-            var dump = DumpOperations.ToDictionary(m => m.MaterialName, m => m.Size);
+            var dump = DumpOperations
+                .GroupBy(m => m.MaterialName)
+                .ToDictionary(m => m.Key, m => m.First().Size);
             foreach (var item in state.Cargo.Ingredients.Where(item => ResetFilter.Contains(item.Value.Data.Kind)).ToList())
             {
                 var currentValue = item.Value.Count;

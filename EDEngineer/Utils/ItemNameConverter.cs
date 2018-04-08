@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using EDEngineer.Models;
@@ -15,7 +16,7 @@ namespace EDEngineer.Utils
 
         public EntryData this[string key] => entryDatas.First(e => e.Name == key);
 
-        private readonly Dictionary<string, string> localCache = new Dictionary<string, string>();
+        private readonly Dictionary<Tuple<Kind, string>, string> localCache = new Dictionary<Tuple<Kind, string>, string>();
 
         private HashSet<string> IgnoreList { get; } = new HashSet<string>
         {
@@ -24,9 +25,9 @@ namespace EDEngineer.Utils
             "wreckagecomponents"
         };
 
-        public string GetOrCreate(string key)
+        public string GetOrCreate(Kind kind, string key)
         {
-            if (!TryGet(key, out var value))
+            if (!TryGet(kind, key, out var value))
             {
                 value = key;
             }
@@ -34,7 +35,7 @@ namespace EDEngineer.Utils
             return value;
         }
 
-        public bool TryGet(string key, out string name)
+        public bool TryGet(Kind kind, string key, out string name)
         {
             if (key == null)
             {
@@ -42,7 +43,8 @@ namespace EDEngineer.Utils
                 return false;
             }
 
-            if (localCache.TryGetValue(key, out name))
+            var cacheKey = Tuple.Create(kind, key);
+            if (localCache.TryGetValue(cacheKey, out name))
             {
                 return true;
             }
@@ -54,12 +56,12 @@ namespace EDEngineer.Utils
 
             var formattedKey = key.ToLowerInvariant();
 
-            var entry = entryDatas.FirstOrDefault(e => e.FormattedName == formattedKey) ??
-                        entryDatas.FirstOrDefault(e => e.FormattedName.Contains(formattedKey));
+            var entry = entryDatas.FirstOrDefault(e => e.FormattedName == formattedKey && (e.Kind & kind) == e.Kind) ??
+                        entryDatas.FirstOrDefault(e => e.FormattedName.Contains(formattedKey) && (e.Kind & kind) == e.Kind);
 
             if (entry != null)
             {
-                localCache[key] = name = entry.Name;
+                localCache[cacheKey] = name = entry.Name;
                 return true;
             }
 
