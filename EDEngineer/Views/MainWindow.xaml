@@ -1088,24 +1088,25 @@
                                         <ItemsControl ItemsSource="{Binding Ingredients}"
                                                       Grid.Column="3"
                                                       Focusable="False"
+                                                      FontSize="13"
                                                       Margin="0,0,7,0">
                                             <ItemsControl.ItemTemplate>
                                                 <DataTemplate>
                                                     <Grid>
-                                                        <iconPacks:PackIconMaterial Kind="Check"
-                                                                                    Foreground="Green" >
-                                                            <iconPacks:PackIconMaterial.Visibility>
+                                                        <TextBlock Text="✔️"
+                                                                       Foreground="Green">
+                                                            <TextBlock.Visibility>
                                                                 <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
                                                                               Mode="OneWay">
                                                                     <Binding Path="Entry.Count"/>
                                                                     <Binding Path="Size"/>
                                                                 </MultiBinding>
-                                                            </iconPacks:PackIconMaterial.Visibility>
-                                                        </iconPacks:PackIconMaterial>
-                                                        <iconPacks:PackIconMaterial Height="14" Kind="Close"
-                                                                                    Foreground="Red" >
-                                                            <iconPacks:PackIconMaterial.Visibility>
+                                                            </TextBlock.Visibility>
+                                                        </TextBlock>
+                                                        <TextBlock Text="✖"
+                                                                       Foreground="Red">
+                                                            <TextBlock.Visibility>
                                                                 <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
                                                                               Mode="OneWay"
@@ -1113,8 +1114,8 @@
                                                                     <Binding Path="Entry.Count"/>
                                                                     <Binding Path="Size"/>
                                                                 </MultiBinding>
-                                                            </iconPacks:PackIconMaterial.Visibility>
-                                                        </iconPacks:PackIconMaterial>
+                                                            </TextBlock.Visibility>
+                                                        </TextBlock>
                                                     </Grid>
                                                 </DataTemplate>
                                             </ItemsControl.ItemTemplate>
