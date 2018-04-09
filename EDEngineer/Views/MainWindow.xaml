@@ -77,7 +77,7 @@
                                 <Run Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Carrying '}"></Run>
                                 <Run Text="{Binding DataContext.Value.Count}"/>
                                 <Run Text="/"/>
-                                <Run Text="{Binding DataContext.Value.Data.Rarity, Converter={StaticResource RarityToMaximumCapacity}}"/>
+                                <Run Text="{Binding DataContext.Value.Data.MaximumCapacity}"/>
                             </TextBlock>
                             <Border BorderThickness="1"
                                     BorderBrush="Black"

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using EDEngineer.Models.Utils;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -9,6 +10,7 @@ namespace EDEngineer.Models
     {
         private Rarity rarity;
         private Group? group;
+        private int? maximumCapacity;
 
         public string Name { get; set; }
 
@@ -35,6 +37,12 @@ namespace EDEngineer.Models
         }
 
         public List<string> OriginDetails { get; set; }
+
+        public int MaximumCapacity
+        {
+            get => maximumCapacity ?? rarity.MaximumCapacity();
+            set => maximumCapacity = value;
+        }
 
         [JsonIgnore]
         public IEnumerable<Origin> Origins => OriginDetails?.Select(detail =>

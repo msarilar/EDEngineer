@@ -106,7 +106,6 @@
             <converters:NotificationKindToBooleanConverter x:Key="NotificationKindToBoolean"/>
             <converters:BooleanToFontWeightConverter x:Key="BooleanToFontWeight"/>
             <converters:EnumToDescription x:Key="EnumToDescription"/>
-            <converters:RarityToMaximumCapacity x:Key="RarityToMaximumCapacity"/>
             <converters:HistoryToTop5Converter x:Key="HistoryToTop5Converter"/>
             <converters:ShoppingListBlockToAllGradesVisibility x:Key="ShoppingListBlockToAllGradesVisibility"/>
             <converters:ModuleModifierToColorConverter x:Key="ModuleModifierToColorConverter"/>

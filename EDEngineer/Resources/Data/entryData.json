@@ -937,7 +937,8 @@
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
-    ]
+    ],
+    "MaximumCapacity": 150 
   },
   {
     "Name": "Pattern Beta Obelisk Data",
@@ -946,7 +947,8 @@
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
-    ]
+    ],
+    "MaximumCapacity": 150
   },
   {
     "Name": "Pattern Delta Obelisk Data",
@@ -955,7 +957,8 @@
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
-    ]
+    ],
+    "MaximumCapacity": 150
   },
   {
     "Name": "Pattern Epsilon Obelisk Data",
@@ -964,7 +967,8 @@
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
-    ]
+    ],
+    "MaximumCapacity": 150
   },
   {
     "Name": "Pattern Gamma Obelisk Data",
@@ -973,7 +977,8 @@
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
-    ]
+    ],
+    "MaximumCapacity": 150
   },
   {
     "Name": "Peculiar Shield Frequency Data",
