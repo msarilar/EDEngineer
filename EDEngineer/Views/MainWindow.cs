@@ -110,7 +110,7 @@ namespace EDEngineer.Views
 
             task.ContinueWith(t =>
                               {
-                                  new Views.Popups.ErrorWindow(t.Exception?.Flatten() ?? new Exception("Unknown Error")).ShowDialog();
+                                  new Popups.ErrorWindow(t.Exception?.Flatten() ?? new Exception("Unknown Error")).ShowDialog();
                                   Close();
                               }, CancellationToken.None, TaskContinuationOptions.OnlyOnFaulted, TaskScheduler.FromCurrentSynchronizationContext());
             
@@ -297,7 +297,9 @@ namespace EDEngineer.Views
             if (newDirectory != viewModel.LogDirectory)
             {
                 viewModel.LogDirectory = newDirectory;
-                viewModel.LoadState();
+                var w = new MainWindow();
+                Close();
+                w.Show();
             }
         }
 
