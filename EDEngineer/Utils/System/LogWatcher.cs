@@ -164,40 +164,36 @@ namespace EDEngineer.Utils.System
             return lowered.Contains(@"""event"":""fileheader""") && lowered.Contains("beta");
         }
 
-        public string ManualChangesDirectory { get; private set; }
+        public string ManualChangesDirectory { get; } = IOUtils.GetManualChangesDirectory();
         public Dictionary<string, List<string>> RetrieveAllLogs()
         {
             var gameLogLines = new Dictionary<string, List<string>>();
-            if (!Directory.Exists(logDirectory))
+            if (logDirectory != null && Directory.Exists(logDirectory))
             {
-                return gameLogLines;
-            }
-
-            foreach (
-                var file in
+                foreach (
+                    var file in
                     Directory.GetFiles(logDirectory)
-                        .Where(
-                            f =>
-                                f != null && Path.GetFileName(f).StartsWith("Journal.") &&
-                                Path.GetFileName(f).EndsWith(".log")))
-            {
-                var fileContents = ReadLinesWithoutLock(file);
-                if (fileContents.Item1 == DEFAULT_COMMANDER_NAME)
+                             .Where(
+                                 f =>
+                                     f != null && Path.GetFileName(f).StartsWith("Journal.") &&
+                                     Path.GetFileName(f).EndsWith(".log")))
                 {
-                    continue;
-                }
+                    var fileContents = ReadLinesWithoutLock(file);
+                    if (fileContents.Item1 == DEFAULT_COMMANDER_NAME)
+                    {
+                        continue;
+                    }
 
-                if (gameLogLines.ContainsKey(fileContents.Item1))
-                {
-                    gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
-                }
-                else
-                {
-                    gameLogLines[fileContents.Item1] = fileContents.Item2;
+                    if (gameLogLines.ContainsKey(fileContents.Item1))
+                    {
+                        gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
+                    }
+                    else
+                    {
+                        gameLogLines[fileContents.Item1] = fileContents.Item2;
+                    }
                 }
             }
-
-            ManualChangesDirectory = IOUtils.GetManualChangesDirectory();
 
             var commandersInGame = gameLogLines.Keys.ToHashSet();
 
