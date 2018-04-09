@@ -1479,15 +1479,15 @@
 
                                             <!-- READY/NOT READY -->
                                             <ItemsControl ItemsSource="{Binding Ingredients}"
-                                                      Grid.Column="3"
-                                                      Focusable="False"
-                                                      Margin="0,0,7,0">
+                                                          Grid.Column="3"
+                                                          Focusable="False"
+                                                          FontSize="13"
+                                                          Margin="0,0,7,0">
                                                 <ItemsControl.ItemTemplate>
                                                     <DataTemplate>
                                                         <Grid>
                                                             <TextBlock Text="✔️"
-                                                                       Foreground="Green"
-                                                                       FontSize="13">
+                                                                       Foreground="Green">
                                                                 <TextBlock.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
@@ -1498,8 +1498,7 @@
                                                                 </TextBlock.Visibility>
                                                             </TextBlock>
                                                             <TextBlock Text="✖"
-                                                                       Foreground="Red"
-                                                                       FontSize="13">
+                                                                       Foreground="Red">
                                                                 <TextBlock.Visibility>
                                                                     <MultiBinding Converter="{StaticResource IngredientToVisibility}"
                                                                               FallbackValue="Modular Terminals"
