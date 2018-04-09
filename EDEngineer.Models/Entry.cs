@@ -90,7 +90,7 @@ namespace EDEngineer.Models
         }
 
         [JsonIgnore]
-        public double CarryingProgress => Count / (double) Data.Rarity.MaximumCapacity() * 100;
+        public double CarryingProgress => Count / (double) Data.MaximumCapacity * 100;
 
         public override string ToString()
         {
