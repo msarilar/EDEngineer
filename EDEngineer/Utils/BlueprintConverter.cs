@@ -34,7 +34,7 @@ namespace EDEngineer.Utils
                 where entries[name].Data.Kind != Kind.Commodity || engineers.First() == "@Technology" || blueprintType == "Unlock"
                 select new BlueprintIngredient(entries[name], size);
 
-            var effects =
+            var effects = data["Effects"] == null ? Enumerable.Empty<BlueprintEffect>() :
                 from json in data["Effects"]
                 let effect = (string)json["Effect"]
                 let property = (string)json["Property"]

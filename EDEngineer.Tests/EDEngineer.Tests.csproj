@@ -45,12 +45,16 @@
     <Reference Include="Moq, Version=4.8.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.8.2\lib\net45\Moq.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="NFluent, Version=2.2.0.125, Culture=neutral, PublicKeyToken=18828b37b84b1437, processorArchitecture=MSIL">
       <HintPath>..\packages\NFluent.2.2.0\lib\net45\NFluent.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -62,12 +66,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReferenceDataIntegrityTests.cs" />
     <Compile Include="LogParsingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StrippedDownModels\BlueprintEffect.cs" />
+    <Compile Include="StrippedDownModels\BlueprintIngredient.cs" />
+    <Compile Include="StrippedDownModels\Blueprint.cs" />
+    <Compile Include="StrippedDownModels\EntryData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EDEngineer.Models\EDEngineer.Models.csproj">
+      <Project>{7db8fc62-2ed9-414c-bf65-aff273ac66d8}</Project>
+      <Name>EDEngineer.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDEngineer\EDEngineer.csproj">
+      <Project>{e6683085-6764-47ea-9bfe-962f993e4c57}</Project>
+      <Name>EDEngineer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3211,7 +3211,6 @@
     "Ingredients": [
       {
         "Name": "Focus Crystals",
-
         "Size": 1
       },
       {
@@ -5345,7 +5344,6 @@
       }
     ],
     "Grade": 2
-
   },
   {
     "Type": "Manifest Scanner",
@@ -7510,7 +7508,6 @@
         "Effect": "-35%",
         "Property": "Distributor Draw",
         "IsGood": true
-
       },
       {
         "Effect": "-53%",
@@ -8050,7 +8047,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -9639,7 +9635,6 @@
       {
         "Name": "Conductive Components",
         "Size": 1
-
       },
       {
         "Name": "Electrochemical Arrays",
@@ -11765,7 +11760,6 @@
     ],
     "Effects": [
       {
-
         "Effect": "-50%",
         "Property": "Integrity",
         "IsGood": false
@@ -13872,7 +13866,6 @@
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
-
     ],
     "Ingredients": [
       {
@@ -14334,7 +14327,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -15993,7 +15985,6 @@
   },
   {
     "Type": "Torpedo Pylon",
-
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
@@ -18123,7 +18114,6 @@
         "IsGood": false
       },
       {
-
         "Effect": "+50%",
         "Property": "Damage",
         "IsGood": true
@@ -20274,7 +20264,6 @@
     "Ingredients": [
       {
         "Name": "Chemical Processors",
-
         "Size": 1
       },
       {
@@ -20420,7 +20409,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -22429,7 +22417,6 @@
         "Size": 1
       }
     ],
-
     "Effects": [
       {
         "Effect": "-50%",
@@ -24551,7 +24538,6 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-
     ],
     "Grade": 5
   },
@@ -26676,7 +26662,6 @@
       "Selene Jean"
     ],
     "Ingredients": [
-
       {
         "Name": "Galvanising Alloys",
         "Size": 1
@@ -27314,7 +27299,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27333,7 +27317,6 @@
         "Size": 10
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27352,7 +27335,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27375,7 +27357,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27402,7 +27383,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27421,7 +27401,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27444,7 +27423,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27471,7 +27449,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27494,7 +27471,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27525,7 +27501,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27560,7 +27535,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27583,7 +27557,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27610,7 +27583,6 @@
         "Size": 4
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27637,7 +27609,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27664,7 +27635,6 @@
         "Size": 4
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27691,7 +27661,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27722,7 +27691,6 @@
         "Size": 5
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27745,7 +27713,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27776,7 +27743,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27811,7 +27777,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27830,7 +27795,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27857,7 +27821,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27884,7 +27847,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27907,7 +27869,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -27938,7 +27899,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -27969,7 +27929,6 @@
         "Size": 2
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -27996,7 +27955,6 @@
         "Size": 3
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -28027,7 +27985,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -28062,7 +28019,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -28081,7 +28037,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -28108,7 +28063,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -28135,7 +28089,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -28154,7 +28107,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -28181,7 +28133,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -28212,7 +28163,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -28231,7 +28181,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 1
   },
   {
@@ -28258,7 +28207,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 2
   },
   {
@@ -28285,7 +28233,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3
   },
   {
@@ -28900,7 +28847,6 @@
       {
         "Name": "Mechanical Scrap",
         "Size": 1
-
       }
     ],
     "Effects": [
@@ -31048,7 +30994,6 @@
       },
       {
         "Effect": "+48%",
-
         "Property": "Scan Range",
         "IsGood": true
       },
@@ -31568,9 +31513,7 @@
         "Name": "Aberrant Shield Pattern Analysis",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31583,9 +31526,7 @@
         "Name": "Bromellite",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31598,9 +31539,7 @@
         "Name": "Classified Scan Databanks",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31613,9 +31552,7 @@
         "Name": "Decoded Emission Data",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31628,9 +31565,7 @@
         "Name": "Modular Terminals",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31643,9 +31578,7 @@
         "Name": "Meta-alloys",
         "Size": 1
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31658,9 +31591,7 @@
         "Name": "Soontill Relics",
         "Size": 3
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31673,9 +31604,7 @@
         "Name": "Landmines",
         "Size": 200
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31688,9 +31617,7 @@
         "Name": "Gold",
         "Size": 200
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31703,9 +31630,7 @@
         "Name": "Painite",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31718,9 +31643,7 @@
         "Name": "Kamitra Cigars",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31733,9 +31656,7 @@
         "Name": "Fujin Tea",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31748,9 +31669,7 @@
         "Name": "Xihe Companions",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31763,9 +31682,7 @@
         "Name": "Lavian Brandy",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31778,9 +31695,7 @@
         "Name": "Kongga Ale",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -31793,9 +31708,7 @@
         "Name": "Sensor Fragment",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -31824,9 +31737,7 @@
         "Name": "Radiation Baffle",
         "Size": 30
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -31855,9 +31766,7 @@
         "Name": "Radiation Baffle",
         "Size": 6
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -31886,9 +31795,7 @@
         "Name": "Magnetic Emitter Coil",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -31917,9 +31824,7 @@
         "Name": "Micro-Weave Cooling Hoses",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -31948,9 +31853,7 @@
         "Name": "Articulation Motors",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -31979,9 +31882,7 @@
         "Name": "Energy Grid Assembly",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -32010,9 +31911,7 @@
         "Name": "HN Shock Mount",
         "Size": 8
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -32041,9 +31940,7 @@
         "Name": "Heatsink Interlink",
         "Size": 6
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -32072,9 +31969,7 @@
         "Name": "Power Transfer Bus",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -32103,9 +31998,7 @@
         "Name": "Micro Controllers",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -32134,9 +32027,7 @@
         "Name": "Reinforced Mounting Plate",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -32165,9 +32056,7 @@
         "Name": "CMM Composite",
         "Size": 8
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -32196,9 +32085,7 @@
         "Name": "Articulation Motors",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -32227,9 +32114,7 @@
         "Name": "Ion Distributor",
         "Size": 6
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -32258,9 +32143,7 @@
         "Name": "Power Converter",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Human",
@@ -32289,9 +32172,7 @@
         "Name": "Power Transfer Bus",
         "Size": 8
       }
-    ],
-    "Effects": null,
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32325,8 +32206,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32360,8 +32240,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32390,8 +32269,7 @@
         "Property": "Damage increases with heat level",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32429,8 +32307,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32459,8 +32336,7 @@
         "Property": "Heat reduced when striking a target",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32494,8 +32370,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32524,8 +32399,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32554,8 +32428,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -32584,8 +32457,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32619,8 +32491,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32659,8 +32530,7 @@
         "Property": "Jitter",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32698,8 +32568,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32733,8 +32602,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32772,8 +32640,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32807,8 +32674,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32837,8 +32703,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32867,8 +32732,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32897,8 +32761,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -32936,8 +32799,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -32971,8 +32833,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33010,8 +32871,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33049,8 +32909,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33084,8 +32943,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33123,8 +32981,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33158,8 +33015,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33188,8 +33044,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33218,8 +33073,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33248,8 +33102,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -33257,7 +33110,6 @@
     "Engineers": [
       "The Dweller",
       "Broo Tarquin"
-
     ],
     "Ingredients": [
       {
@@ -33288,8 +33140,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33318,8 +33169,7 @@
         "Property": "Auto reload while firing",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33353,8 +33203,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33392,8 +33241,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33431,8 +33279,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33475,8 +33322,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33509,8 +33355,7 @@
         "Property": "No damage to untargeted ships",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33539,8 +33384,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33569,8 +33413,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33599,8 +33442,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33634,8 +33476,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -33673,8 +33514,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33703,8 +33543,7 @@
         "Property": "Auto reload while firing",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33737,8 +33576,7 @@
         "Property": "Target gimbal/turret tracking reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33776,8 +33614,7 @@
         "Property": "Shot Speed",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33815,8 +33652,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33849,8 +33685,7 @@
         "Property": "No damage to untargeted ships",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33883,8 +33718,7 @@
         "Property": "Shielded target heat increased",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33918,8 +33752,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33948,8 +33781,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -33978,8 +33810,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -34008,8 +33839,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -34047,8 +33877,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34082,8 +33911,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34112,8 +33940,7 @@
         "Property": "Target sensor acuity reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34142,8 +33969,7 @@
         "Property": "Target speed reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34186,8 +34012,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34225,8 +34050,7 @@
         "Property": "Reload Time",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34260,8 +34084,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34290,8 +34113,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34320,8 +34142,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34350,8 +34171,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -34389,8 +34209,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34419,8 +34238,7 @@
         "Property": "Target speed reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34458,8 +34276,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34492,8 +34309,7 @@
         "Property": "Damage partially thermal",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34526,8 +34342,7 @@
         "Property": "Shielded target heat increased",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34556,8 +34371,7 @@
         "Property": "Target module damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34600,8 +34414,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34635,8 +34448,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34665,8 +34477,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34695,8 +34506,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34725,8 +34535,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -34764,8 +34573,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34794,8 +34602,7 @@
         "Property": "Target FSD inhibited",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34828,8 +34635,7 @@
         "Property": "Target module damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34862,8 +34668,7 @@
         "Property": "Target shield generator damaged",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34892,8 +34697,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34927,8 +34731,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34957,8 +34760,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -34987,8 +34789,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35021,8 +34822,7 @@
         "Property": "Target thrusters reboot",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35055,8 +34855,7 @@
         "Property": "Damage partially thermal",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35085,8 +34884,7 @@
         "Property": "Area heat increased, sensors disrupted",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35119,8 +34917,7 @@
         "Property": "Target shield generator damaged",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35149,8 +34946,7 @@
         "Property": "Area FSDs reboot",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35188,8 +34984,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35218,8 +35013,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35253,8 +35047,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35283,8 +35076,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -35313,8 +35105,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35343,8 +35134,7 @@
         "Property": "Target sensor acuity reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35377,8 +35167,7 @@
         "Property": "Target gimbal/turret tracking reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35407,8 +35196,7 @@
         "Property": "Target loses target lock",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35437,8 +35225,7 @@
         "Property": "Damage increases with heat level",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35459,7 +35246,6 @@
       {
         "Name": "Niobium",
         "Size": 3
-
       },
       {
         "Name": "Configurable Components",
@@ -35477,8 +35263,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35521,8 +35306,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35556,8 +35340,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35586,8 +35369,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35616,8 +35398,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35646,8 +35427,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -35685,8 +35465,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35725,8 +35504,7 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35774,8 +35552,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35818,8 +35595,7 @@
         "Property": "Reload Time",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35853,8 +35629,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35883,8 +35658,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35913,8 +35687,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35943,8 +35716,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -35982,8 +35754,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -36013,8 +35784,7 @@
         "Property": "Heat Efficiency",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -36044,8 +35814,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -36080,8 +35849,7 @@
         "Property": "Power Generation",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -36111,8 +35879,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Armour",
@@ -36146,8 +35913,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Armour",
@@ -36181,8 +35947,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Armour",
@@ -36216,8 +35981,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Armour",
@@ -36261,8 +36025,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -36300,8 +36063,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -36335,8 +36097,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -36374,8 +36135,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -36419,8 +36179,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -36449,8 +36208,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -36479,8 +36237,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -36509,8 +36266,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -36544,8 +36300,7 @@
         "Property": "Shield Reinforcement",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -36579,8 +36334,7 @@
         "Property": "Shield Reinforcement",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -36615,8 +36369,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -36651,8 +36404,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -36691,8 +36443,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -36726,8 +36477,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -36757,8 +36507,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -36803,8 +36552,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -36844,8 +36592,7 @@
         "Property": "Distributor Draw",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -36895,8 +36642,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -36931,8 +36677,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -36982,8 +36727,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -37013,8 +36757,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -37044,8 +36787,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -37080,8 +36822,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -37136,8 +36877,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -37173,8 +36913,7 @@
         "Property": "Maximum Fuel Per Jump",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -37205,8 +36944,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -37237,8 +36975,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -37274,8 +37011,7 @@
         "Property": "Optimal Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -37310,8 +37046,7 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -37341,8 +37076,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -37372,8 +37106,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -37403,8 +37136,7 @@
         "Property": "Optimal Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -37439,8 +37171,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -37475,8 +37206,7 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -37506,8 +37236,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -37562,8 +37291,7 @@
         "Property": "Systems Recharge",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -37616,11 +37344,9 @@
       {
         "Effect": "-2%",
         "Property": "Systems Recharge",
-
         "IsGood": false
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -37650,8 +37376,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -37681,7 +37406,6 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null
+    ]
   }
 ]
