@@ -62,6 +62,7 @@ namespace EDEngineer.Utils.System
             InitPeriodicRefresh();
         }
 
+        private FileInfo mostRecentLogFile;
         private void InitPeriodicRefresh()
         {
             periodicRefresher = new Timer
@@ -69,22 +70,22 @@ namespace EDEngineer.Utils.System
                 Interval = 2000
             };
 
+            mostRecentLogFile = Directory
+                .GetFiles(logDirectory)
+                .Where(f => f != null &&
+                            Path.GetFileName(f).StartsWith("Journal.") &&
+                            Path.GetFileName(f).EndsWith(".log"))
+                .Select(f => fileInfos.GetOrAdd(f, k => new FileInfo(k)))
+                .OrderByDescending(f => f.CreationTimeUtc)
+                .FirstOrDefault();
+
             periodicRefresher.Tick +=
                 (o, e) =>
                 {
-                    var file = Directory
-                        .GetFiles(logDirectory)
-                        .Where(f => f != null &&
-                                    Path.GetFileName(f).StartsWith("Journal.") &&
-                                    Path.GetFileName(f).EndsWith(".log"))
-                        .Select(f => fileInfos.GetOrAdd(f, k => new FileInfo(k)))
-                        .OrderByDescending(f => f.CreationTimeUtc)
-                        .FirstOrDefault();
-
-                    if (file != null)
+                    if (mostRecentLogFile != null)
                     {
-                        file.IsReadOnly = false;
-                        file.Refresh();
+                        mostRecentLogFile.IsReadOnly = false;
+                        mostRecentLogFile.Refresh();
                     }
                 };
 
@@ -152,6 +153,11 @@ namespace EDEngineer.Utils.System
             if (!fileCommanders.TryGetValue(file, out var commanderName))
             {
                 commanderName = DEFAULT_COMMANDER_NAME;
+            }
+
+            if (mostRecentLogFile != null && file != mostRecentLogFile.FullName)
+            {
+                mostRecentLogFile = new FileInfo(file);
             }
 
             return Tuple.Create(commanderName, gameLogLines);

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Security.AccessControl;
 using System.Windows.Forms;
 using EDEngineer.Localization;
 using Microsoft.WindowsAPICodePack.Dialogs;
