@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using EDEngineer.Models;
+using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Json;
 using Newtonsoft.Json.Linq;
 
@@ -71,21 +72,19 @@ namespace EDEngineer.Utils.System
             periodicRefresher.Tick +=
                 (o, e) =>
                 {
-                    var fileNames = Directory.GetFiles(logDirectory).Where(f => f != null &&
-                                                                            Path.GetFileName(f).StartsWith("Journal.") &&
-                                                                            Path.GetFileName(f).EndsWith(".log"));
+                    var file = Directory
+                        .GetFiles(logDirectory)
+                        .Where(f => f != null &&
+                                    Path.GetFileName(f).StartsWith("Journal.") &&
+                                    Path.GetFileName(f).EndsWith(".log"))
+                        .Select(f => fileInfos.GetOrAdd(f, k => new FileInfo(k)))
+                        .OrderByDescending(f => f.CreationTimeUtc)
+                        .FirstOrDefault();
 
-                    // Elite Dangerous streams to file so no notification is given to the file system. We need to refresh the data to trigger the FileSystemWatcher:
-                    foreach (var fileName in fileNames)
+                    if (file != null)
                     {
-                        if (!fileInfos.TryGetValue(fileName, out var fileInfo))
-                        {
-                            fileInfo = new FileInfo(fileName);
-                            fileInfos[fileName] = fileInfo;
-                        }
-
-                        fileInfo.IsReadOnly = false;
-                        fileInfo.Refresh();
+                        file.IsReadOnly = false;
+                        file.Refresh();
                     }
                 };
 

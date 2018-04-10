@@ -15,6 +15,18 @@ namespace EDEngineer.Models.Utils
             return string.Join("", initials);
         }
 
+        public static TValue GetOrAdd<TKey, TValue>(this Dictionary<TKey, TValue> dict,
+            TKey key,
+            Func<TKey, TValue> adder)
+        {
+            if (!dict.TryGetValue(key, out var result))
+            {
+                dict[key] = result = adder(key);
+            }
+
+            return result;
+        }
+
         public static bool IsIn(this string target, string field)
         {
             return field.ToLowerInvariant().Replace(" ", "").Replace("_", "")
