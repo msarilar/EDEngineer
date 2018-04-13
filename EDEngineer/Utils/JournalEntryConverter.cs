@@ -437,7 +437,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMissionCompleted(JObject data)
         {
-            if (!data.TryGetValue("MaterialsReward", out var rewardData))
+            if (!data.TryGetValue("MaterialsReward", out var rewardData) || !data.TryGetValue("CommodityReward", out rewardData))
             {
                 return null;
             }
