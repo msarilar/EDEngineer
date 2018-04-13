@@ -232,12 +232,17 @@ namespace EDEngineer.Utils
         {
             var operation = new EngineerOperation(BlueprintCategory.Technology, null, null, null, null, null, null)
             {
-                IngredientsConsumed = data["Materials"].Select(c =>
+                IngredientsConsumed = (data["Ingredients"]?.Select(c =>
+                    {
+                        dynamic cc = c;
+                        return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
+                    }) ?? Enumerable.Empty<Tuple<bool, string, int>>())
+                    .Union(data["Materials"]?.Select(c =>
                     {
                         dynamic cc = c;
                         var filter = cc.Category == "Encoded" ? Kind.Data : Kind.Material;
                         return Tuple.Create(converter.TryGet(filter, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
-                    })
+                    }) ?? Enumerable.Empty<Tuple<bool, string, int>>())
                     .Union(data["Commodities"]?.Select(c =>
                     {
                         dynamic cc = c;
