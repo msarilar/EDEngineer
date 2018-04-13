@@ -238,11 +238,11 @@ namespace EDEngineer.Utils
                         var filter = cc.Category == "Encoded" ? Kind.Data : Kind.Material;
                         return Tuple.Create(converter.TryGet(filter, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
                     })
-                    .Union(data["Commodities"].Select(c =>
+                    .Union(data["Commodities"]?.Select(c =>
                     {
                         dynamic cc = c;
                         return Tuple.Create(converter.TryGet(Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
-                    }))
+                    }) ?? Enumerable.Empty<Tuple<bool, string, int>>())
                     .Where(c => c.Item1)
                     .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
             };
