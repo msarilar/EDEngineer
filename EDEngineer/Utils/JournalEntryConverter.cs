@@ -443,17 +443,15 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractMissionCompleted(JObject data)
         {
-            if (!data.TryGetValue("MaterialsReward", out var rewardData) || !data.TryGetValue("CommodityReward", out rewardData))
-            {
-                return null;
-            }
-
             var missionCompleted = new MissionCompletedOperation
             {
-                CommodityRewards = rewardData
-                    .Select(c => Tuple.Create(c,
-                                converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)c["Name"], out var rewardName),
-                                rewardName))
+                CommodityRewards = (data["MaterialsReward"]
+                    ?.Select(c => Tuple.Create(c,
+                                converter.TryGet(Kind.Data | Kind.Material, (string)c["Name"], out var rewardName),
+                                rewardName)) ?? Enumerable.Empty<Tuple<JToken, bool, string>>())
+                    .Union(data["CommodityReward"]?.Select(c => Tuple.Create(c,
+                                    converter.TryGet(Kind.Commodity, (string)c["Name"], out var rewardName),
+                                    rewardName)) ?? Enumerable.Empty<Tuple<JToken, bool, string>>())
                     .Where(c => c.Item2)
                     .Select(c =>
                     {
