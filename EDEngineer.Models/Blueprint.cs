@@ -16,9 +16,9 @@ namespace EDEngineer.Models
             ["Frame Shift Drive"] = "hyperdrive",
             ["Heat Sink Launcher"] = "heatsinklauncher",
             ["Collector Limpet Controller"] = "dronecontrol_collection",
-            ["Prospector Limpet Controller"] = "dronecontrol", // _propsection?
-            ["Fuel Transfer Limpet Controller"] = "dronecontrol", // _fuel?
-            ["Hatch Breaker Limpet Controller"] = "dronecontrol", // _hatch?
+            ["Prospector Limpet Controller"] = "dronecontrol_prospector",
+            ["Fuel Transfer Limpet Controller"] = "dronecontrol_fuel",
+            ["Hatch Breaker Limpet Controller"] = "dronecontrol_resourcesiphon",
             ["Thrusters"] = "engine",
             ["Pulse Laser"] = "pulselaser",
             ["Beam Laser"] = "beamlaser",
