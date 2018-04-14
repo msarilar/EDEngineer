@@ -9,12 +9,12 @@ namespace EDEngineer.Views.Popups
     /// </summary>
     public partial class ErrorWindow
     {
-        public ErrorWindow(Exception exception)
+        public ErrorWindow(Exception exception, string title = "Unrecoverable Error")
         {
             InitializeComponent();
 
             ExceptionContent.Text = exception.ToString();
-            Title = Languages.Instance.Translate("Unrecoverable Error");
+            Title = Languages.Instance.Translate(title);
             CloseButton.Content = Languages.Instance.Translate("Close");
         }
 

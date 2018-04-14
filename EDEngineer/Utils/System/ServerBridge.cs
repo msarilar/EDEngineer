@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using EDEngineer.Utils.UI;
 using EDEngineer.Views;
+using EDEngineer.Views.Popups;
 
 namespace EDEngineer.Utils.System
 {
@@ -61,7 +62,20 @@ namespace EDEngineer.Utils.System
                     viewModel.Languages,
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State),
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList.Composition));
-            }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default);
+            }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default)
+            .ContinueWith(t =>
+            {
+                try
+                {
+                    Stop();
+                }
+                catch
+                {
+                    // ignore
+                }
+
+                new ErrorWindow(t.Exception, "Local Server API Error").ShowDialog();
+            }, CancellationToken.None, TaskContinuationOptions.OnlyOnFaulted, TaskScheduler.FromCurrentSynchronizationContext());
 
             Running = true;
         }
