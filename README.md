@@ -1,6 +1,6 @@
-# EDEngineer ![Sparkline](https://stars.medv.io/msarilar/EDEngineer.svg)
+# EDEngineer [![Sparkline](https://stars.medv.io/msarilar/EDEngineer.svg)](https://stars.medv.io/msarilar/EDEngineer)
 
-(https://stars.medv.io/msarilar/EDEngineer) [![Build Status](https://msarilar.visualstudio.com/_apis/public/build/definitions/5590a896-0cbd-4a16-9fd8-055e0ebba5b3/1/badge)](https://msarilar.visualstudio.com/EDEngineer/_build/index?definitionId=1)
+[![Build Status](https://msarilar.visualstudio.com/_apis/public/build/definitions/5590a896-0cbd-4a16-9fd8-055e0ebba5b3/1/badge)](https://msarilar.visualstudio.com/EDEngineer/_build/index?definitionId=1)
 
 EDEngineer is a basic app I've written to track materials, data and cargo acquired in Elite Dangerous. That way, we can also track progress of blueprints available from the Engineers. [Installer here](https://cdn.rawgit.com/msarilar/EDEngineer/master/EDEngineer/releases/setup.exe).
 
