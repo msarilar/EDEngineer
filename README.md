@@ -92,3 +92,5 @@ Français: OK
 
 Русский: OK
 > ~~Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на Английском языке.~~
+
+[![Sparkline](https://stars.medv.io/msarilar/EDEngineer.svg)](https://stars.medv.io/msarilar/EDEngineer)
