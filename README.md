@@ -1,4 +1,4 @@
-# EDEngineer
+# EDEngineer [![Sparkline](https://stars.medv.io/msarilar/EDEngineer.svg)](https://stars.medv.io/msarilar/EDEngineer)
 
 [![Build Status](https://msarilar.visualstudio.com/_apis/public/build/definitions/5590a896-0cbd-4a16-9fd8-055e0ebba5b3/1/badge)](https://msarilar.visualstudio.com/EDEngineer/_build/index?definitionId=1)
 
