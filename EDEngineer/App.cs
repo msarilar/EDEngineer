@@ -27,6 +27,13 @@ namespace EDEngineer
                 new Views.Popups.ErrorWindow(e.Exception).ShowDialog();
                 Current.MainWindow?.Close();
             };
+
+            Dispatcher.UnhandledException += (o, e) =>
+            {
+                e.Handled = true;
+                new Views.Popups.ErrorWindow(e.Exception).ShowDialog();
+                Current.MainWindow?.Close();
+            };
         }
     }
 }
