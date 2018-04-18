@@ -23,6 +23,7 @@ namespace EDEngineer
 
             Current.DispatcherUnhandledException += (o, e) =>
             {
+                e.Handled = true;
                 new Views.Popups.ErrorWindow(e.Exception).ShowDialog();
                 Current.MainWindow?.Close();
             };
