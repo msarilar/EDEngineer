@@ -6,7 +6,6 @@ using System.Linq;
 using System.Speech.Synthesis;
 using System.Threading;
 using System.Threading.Tasks;
-using Windows.UI.Notifications;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Utils.System;
@@ -94,8 +93,9 @@ namespace EDEngineer.Views.Notifications
             });
         }
 
-        private static void ShowToast(Notification notification)
+        private static void ShowToast(Notification _)
         {
+            /*
             try
             {
                 var toastXml = ToastNotificationManager.GetTemplateContent(ToastTemplateType.ToastImageAndText02);
@@ -115,7 +115,7 @@ namespace EDEngineer.Views.Notifications
             catch (Exception)
             {
                 // silently fail for platforms not supporting toasts
-            }
+            }*/
         }
 
         private static IEnumerable<Notification> AggregateNotifications(IGrouping<NotificationContentKind, Notification> @group)
