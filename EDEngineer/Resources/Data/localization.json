@@ -4098,7 +4098,7 @@
       "pt": null,
       "de": "Guardian-Waffenbauplansegment",
       "fr": null,
-      "ru": "Фрагмент чертежа оружия Стражей",
+      "ru": "Фрагмент чертежа оружия стражей",
       "pl": null,
       "cs": "Guardian Weapon Blueprint Segment"
     },
@@ -4107,7 +4107,7 @@
       "pt": null,
       "de": "Guardian-Energiezelle",
       "fr": null,
-      "ru": "Энергоячейка Стражей",
+      "ru": "Энергоячейка стражей",
       "pl": null,
       "cs": "Guardian Power Cell"
     },
@@ -4116,7 +4116,7 @@
       "pt": null,
       "de": "Guardian-Technologiekomponente",
       "fr": null,
-      "ru": "Компоненты технологий Стражей",
+      "ru": "Компоненты технологий стражей",
       "pl": null,
       "cs": "Guardian Technology Component"
     },
@@ -4125,7 +4125,7 @@
       "pt": null,
       "de": "Guardian-Energieleiter",
       "fr": null,
-      "ru": "Энергопроводники Стражей",
+      "ru": "Энергопроводники стражей",
       "pl": null,
       "cs": "Guardian Power Conduit"
     },
@@ -4134,7 +4134,7 @@
       "pt": null,
       "de": "Guardian-Wache-Waffenteile",
       "fr": null,
-      "ru": "Детали вооружения Стражей",
+      "ru": "Детали вооружения стража Sentinel",
       "pl": null,
       "cs": "Guardian Sentinel Weapon Parts"
     },
@@ -4143,7 +4143,7 @@
       "pt": null,
       "de": "Guardian-Modulbauplansegment",
       "fr": null,
-      "ru": "Фрагмент чертежа модуля Стражей",
+      "ru": "Фрагмент чертежа модуля стражей",
       "pl": null,
       "cs": "Guardian Module Blueprint Segment"
     },
@@ -4152,7 +4152,7 @@
       "pt": null,
       "de": "Guardian-Wache Trümmerteile",
       "fr": null,
-      "ru": "Обломки кораблекрушений Стража Sentinel",
+      "ru": "Обломки кораблекрушений стража Sentinel",
       "pl": null,
     "cs": "Guardian Sentinel Wreckage Components"
     },
@@ -4161,7 +4161,7 @@
       "pt": null,
       "de": "Guardian-Schiffsbauplansegment",
       "fr": null,
-      "ru": "Сегмент чертежа судна Стражей",
+      "ru": "Сегмент чертежа судна стражей",
       "pl": null,
       "cs": "Guardian Vessel Blueprint Segment"
     },
@@ -4170,7 +4170,7 @@
       "pt": null,
       "de": "Menschlich",
       "fr": null,
-      "ru": null,
+      "ru": "Технологии людей",
       "pl": null,
       "cs": "Lidské"
     },
@@ -4179,7 +4179,7 @@
       "pt": null,
       "de": "Korrosionsresistentes Frachtegtell (2D and 4D)",
       "fr": null,
-      "ru": null,
+      "ru": "Коррозийно-устойчивый грузовой стеллаж (2D и 4D)",
       "pl": null,
       "cs": "Corrosion Resistant Cargo Rack (2D and 4D)"
     },
@@ -4197,7 +4197,7 @@
       "pt": null,
       "de": "Guardian",
       "fr": null,
-      "ru": null,
+      "ru": "Технологии стражей",
       "pl": null,
       "cs": "Guardiánské"
     },
@@ -4323,7 +4323,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Тепловой удар",
       "pl": null,
       "cs": "Thermal Shock"
     },
@@ -4341,7 +4341,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сверхразмер",
       "pl": null,
       "cs": "Oversized"
     },
@@ -4350,7 +4350,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Урезанный вариант",
       "pl": null,
       "cs": "Stripped Down"
     },
@@ -4359,7 +4359,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Двойная прочность",
       "pl": null,
       "cs": "Double Braced"
     },
@@ -4368,7 +4368,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Контроль интенсивности",
       "pl": null,
       "cs": "Flow Control"
     },
@@ -4404,7 +4404,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сервосистема",
       "pl": null,
       "cs": "Multi-Servos"
     },
@@ -4413,7 +4413,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Эмиссионные припасы",
       "pl": null,
       "cs": "Emissive Munitions"
     },
@@ -4422,7 +4422,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Автоматическая система заряжания",
       "pl": null,
       "cs": "Auto Loader"
     },
@@ -4431,7 +4431,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Разъедающие боеприпасы",
       "pl": null,
       "cs": "Corrosive Shell"
     },
@@ -4440,7 +4440,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Зажигательные припасы",
       "pl": null,
       "cs": "Incendiary Rounds"
     },
@@ -4449,7 +4449,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Умные боеприпасы",
       "pl": null,
       "cs": "Smart Rounds"
     },
@@ -4557,7 +4557,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Боеприпасы с гравитационным захватом",
       "pl": null,
       "cs": "Mass Lock Munition"
     },
@@ -4566,7 +4566,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Бронебойные снаряды",
       "pl": null,
       "cs": "Penetrator Payload"
     },
@@ -4575,7 +4575,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Отраженный залп",
       "pl": null,
       "cs": "Reverberating Cascade"
     },
@@ -4620,7 +4620,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменный рельсовый заряд",
       "pl": null,
       "cs": "Plasma Slug"
     },
@@ -4629,7 +4629,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Ответный залп",
       "pl": null,
       "cs": "Feedback Cascade"
     },
@@ -4638,7 +4638,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Модуль сверхпробития",
       "pl": null,
       "cs": "Super Penetrator"
     },
@@ -4692,7 +4692,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": "Руины Стражей",
+      "ru": "Руины стражей",
       "pl": null,
       "cs": "Starobylé/Guardiánské ruiny"
     },
@@ -4710,7 +4710,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Рассеивание тепла",
       "pl": null,
       "cs": "Thermal Spread"
     },
@@ -4782,7 +4782,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Усиленная блокировка",
       "pl": null,
       "cs": "Force Block"
     },
@@ -4791,7 +4791,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Блокировка тепла",
       "pl": null,
       "cs": "Thermo Block"
     },
@@ -4818,7 +4818,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Высокая емкость",
       "pl": null,
       "cs": "Hi-cap"
     },
@@ -4827,7 +4827,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Мультипрошивка",
       "pl": null,
       "cs": "Multi-weave"
     },
@@ -4836,7 +4836,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Быстрый заряд",
       "pl": null,
       "cs": "Fast Charge"
     },
@@ -4845,7 +4845,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Пониженное потребление",
       "pl": null,
       "cs": "Lo-draw"
     },
@@ -4854,7 +4854,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Заряд повышенной мощности",
       "pl": null,
       "cs": "Deep Charge"
     },
@@ -4863,7 +4863,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Распределитель гравитации",
       "pl": null,
       "cs": "Mass Manager"
     },
@@ -4872,7 +4872,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Распределители тяги",
       "pl": null,
       "cs": "Drive Distributors"
     },
@@ -4881,7 +4881,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Ускорители",
       "pl": null,
       "cs": "Drag Drives"
     },
@@ -4908,7 +4908,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Технологии таргоидов",
       "pl": null,
       "cs": "Thargoidské"
     },
