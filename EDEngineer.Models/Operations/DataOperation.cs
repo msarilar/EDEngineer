@@ -6,7 +6,7 @@ namespace EDEngineer.Models.Operations
 
         public int Size { get; set; }
 
-        public override void Mutate(State state)
+        public override void Mutate(State.State state)
         {
             state.IncrementCargo(DataName, Size);
         }

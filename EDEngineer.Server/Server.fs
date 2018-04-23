@@ -17,6 +17,7 @@ open NodaTime
 open NodaTime.Text
 
 open EDEngineer.Models.Utils.Json
+open EDEngineer.Models.State
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv

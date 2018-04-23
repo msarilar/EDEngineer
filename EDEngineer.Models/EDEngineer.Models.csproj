@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="State\CommanderAggregation.cs" />
+    <Compile Include="State\StateAggregation.cs" />
     <Compile Include="BlueprintCategory.cs" />
     <Compile Include="BlueprintEffect.cs" />
     <Compile Include="Filters\BlueprintFilter.cs" />
@@ -61,8 +63,8 @@
     <Compile Include="Loadout\ShipModule.cs" />
     <Compile Include="Loadout\StateLoadout.cs" />
     <Compile Include="Operations\ShipLoadoutOperation.cs" />
-    <Compile Include="State.cs" />
-    <Compile Include="StateHistory.cs" />
+    <Compile Include="State\State.cs" />
+    <Compile Include="State\StateHistory.cs" />
     <Compile Include="Operations\DumpOperation.cs" />
     <Compile Include="Operations\MaterialTradeOperation.cs" />
     <Compile Include="Operations\SystemUpdatedOperation.cs" />
@@ -107,7 +109,7 @@
     <Compile Include="Origin.cs" />
     <Compile Include="Rarity.cs" />
     <Compile Include="ReleaseNote.cs" />
-    <Compile Include="StateCargo.cs" />
+    <Compile Include="State\StateCargo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

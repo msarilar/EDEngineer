@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using EDEngineer.Models.Utils.Collections;
+﻿using System.Collections.Generic;
 
-namespace EDEngineer.Models
+namespace EDEngineer.Models.State
 {
     public class StateHistory
     {

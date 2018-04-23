@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -291,18 +292,6 @@ namespace EDEngineer.Views
             viewModel.UserChange(entry, -1);
         }
 
-        private void ChangeFolderButtonClicked(object sender, RoutedEventArgs e)
-        {
-            var newDirectory = IOUtils.RetrieveLogDirectory(true, viewModel.LogDirectory);
-            if (newDirectory != viewModel.LogDirectory)
-            {
-                viewModel.LogDirectory = newDirectory;
-                var w = new MainWindow();
-                Close();
-                w.Show();
-            }
-        }
-
         private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             var toggleButton = FindVisualParent<WpfButton>(Mouse.DirectlyOver as DependencyObject);
@@ -430,12 +419,31 @@ namespace EDEngineer.Views
 
         protected override void OnClosed(EventArgs e)
         {
+            if (!skipSaveAggregation)
+            {
+                viewModel.SaveAggregation();
+            }
+
             HotkeyManager.UnregisterHotKey(this);
             handle?.RemoveHook(WndProc);
             icon?.Dispose();
             viewModel?.Dispose();
             serverBridge?.Dispose();
             saveDimensionScheduler?.Dispose();
+        }
+
+        private bool skipSaveAggregation = false;
+        private void ChangeFolderButtonClicked(object sender, RoutedEventArgs e)
+        {
+            var newDirectory = IOUtils.RetrieveLogDirectory(true, viewModel.LogDirectory);
+            if (newDirectory != viewModel.LogDirectory)
+            {
+                skipSaveAggregation = true;
+                viewModel.LogDirectory = newDirectory;
+                var w = new MainWindow();
+                Close();
+                w.Show();
+            }
         }
 
         private void WindowActivatedCompleted(object sender, EventArgs e)

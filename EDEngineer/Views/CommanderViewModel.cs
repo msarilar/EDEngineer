@@ -10,6 +10,7 @@ using System.Windows.Data;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Operations;
+using EDEngineer.Models.State;
 using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
 using EDEngineer.Utils;
@@ -30,7 +31,7 @@ namespace EDEngineer.Views
         public ShoppingListViewModel ShoppingList => shoppingList;
 
         private readonly JournalEntryConverter journalEntryConverter;
-        private readonly BlueprintConverter blueprintConverter;
+        private readonly JsonSerializerSettings settings;
 
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
@@ -56,7 +57,7 @@ namespace EDEngineer.Views
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private void LoadState(IEnumerable<string> events)
+        public void LoadLogs(IEnumerable<string> events)
         {
             commanderNotifications?.UnsubscribeNotifications();
             State.Cargo.InitLoad();
@@ -72,7 +73,7 @@ namespace EDEngineer.Views
             State.Cargo.CompleteLoad();
         }
 
-        public CommanderViewModel(string commanderName, IEnumerable<string> logs, Languages languages, List<EntryData> entryDatas)
+        public CommanderViewModel(string commanderName, Action<CommanderViewModel> loadAction, Languages languages, List<EntryData> entryDatas)
         {
             CommanderName = commanderName;
 
@@ -81,7 +82,7 @@ namespace EDEngineer.Views
             State = new State(new StateCargo(entryDatas, languages, SettingsManager.Comparer));
 
             commanderNotifications = new CommanderNotifications(State);
-            blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
+            var blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
 
             var blueprintsJson = IOUtils.GetBlueprintsJson();
             var blueprints =
@@ -90,17 +91,22 @@ namespace EDEngineer.Views
                            .ToList();
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo.Ingredients, languages, blueprints);
+            settings = new JsonSerializerSettings
+            {
+                Converters = new List<JsonConverter> { journalEntryConverter },
+                Error = (o, e) => e.ErrorContext.Handled = true
+            };
             LoadBlueprints(languages, blueprints);
 
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
-            LoadState(logs);
+            loadAction(this);
 
             State.BlueprintCrafted += (o, e) =>
                                       {
                                           TryRemoveFromShoppingListByIngredients(e.Category, e.TechnicalType,
                                               e.IngredientsConsumed);
-                                          State.Loadout.ApplyCraft(e);
+                                          State.ApplyCraft(e);
                                       };
             ShoppingList.SynchronizeWithLogs = SettingsManager.SyncShoppingList;
 
@@ -145,12 +151,6 @@ namespace EDEngineer.Views
 
         public void ApplyEventsToSate(IEnumerable<string> allLogs)
         {
-            var settings = new JsonSerializerSettings
-            {
-                Converters = new List<JsonConverter> { journalEntryConverter },
-                Error = (o, e) => e.ErrorContext.Handled = true
-            };
-
             var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, settings))
                 .Where(e => e?.Relevant == true)
                 .OrderBy(e => e.Timestamp)
@@ -481,6 +481,11 @@ namespace EDEngineer.Views
 
             OnPropertyChanged(nameof(ShoppingList));
             OnPropertyChanged(nameof(ShoppingListItem));
+        }
+
+        public void LoadAggregation(StateAggregation aggregation)
+        {
+            State.ApplyAggregation(aggregation);
         }
     }
 }

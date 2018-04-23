@@ -10,7 +10,7 @@ namespace EDEngineer.Models.Operations
 
         public HashSet<Kind> ResetFilter { get; set; }
 
-        public override void Mutate(State state)
+        public override void Mutate(State.State state)
         {
             var dump = DumpOperations
                 .GroupBy(m => m.MaterialName)

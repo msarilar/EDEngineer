@@ -8,7 +8,7 @@ namespace EDEngineer.Models.Operations
         public string IngredientAdded { get; set; }
         public int AddedQuantity { get; set; }
         
-        public override void Mutate(State state)
+        public override void Mutate(State.State state)
         {
             state.Cargo.IncrementCargo(IngredientRemoved, -1 * RemovedQuantity);
             state.Cargo.IncrementCargo(IngredientAdded, AddedQuantity);

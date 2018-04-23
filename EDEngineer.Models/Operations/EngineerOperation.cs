@@ -34,7 +34,7 @@ namespace EDEngineer.Models.Operations
             ExperimentalEffect = experimentalEffect;
         }
 
-        public override void Mutate(State state)
+        public override void Mutate(State.State state)
         {
             foreach (var ingredient in IngredientsConsumed)
             {

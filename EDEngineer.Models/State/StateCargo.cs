@@ -5,7 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models.Utils.Collections;
 
-namespace EDEngineer.Models
+namespace EDEngineer.Models.State
 {
     using Comparer = Func<KeyValuePair<string, Entry>, KeyValuePair<string, Entry>, int>;
 

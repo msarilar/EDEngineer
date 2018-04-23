@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Localization;
 using EDEngineer.Models;
+using EDEngineer.Models.State;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;

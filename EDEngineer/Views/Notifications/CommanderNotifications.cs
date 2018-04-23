@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Windows.UI.Notifications;
 using EDEngineer.Localization;
 using EDEngineer.Models;
+using EDEngineer.Models.State;
 using EDEngineer.Utils.System;
 
 namespace EDEngineer.Views.Notifications

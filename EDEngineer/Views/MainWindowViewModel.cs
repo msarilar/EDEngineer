@@ -7,12 +7,14 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using EDEngineer.Localization;
 using EDEngineer.Models;
+using EDEngineer.Models.State;
 using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Properties;
 using EDEngineer.Utils.System;
 using EDEngineer.Views.Popups.Graphics;
 using Newtonsoft.Json;
+using Duration = NodaTime.Duration;
 
 namespace EDEngineer.Views
 {
@@ -53,6 +55,8 @@ namespace EDEngineer.Views
                     return;
                 }
 
+                File.Delete(Path.Combine(LogWatcher.ManualChangesDirectory, $"aggregation.json"));
+
                 Settings.Default.LogDirectory = value;
                 Settings.Default.Save();
                 logDirectory = value;
@@ -62,7 +66,7 @@ namespace EDEngineer.Views
 
         public MainWindowViewModel(Languages languages, string directory)
         {
-            LogDirectory = directory;
+            logDirectory = directory;
             entryDatas =
                 JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson());
             Languages = languages;
@@ -79,29 +83,57 @@ namespace EDEngineer.Views
             CurrentComparer = SettingsManager.Comparer;
         }
 
-        public void LoadState()
+        private void LoadState()
         {
             LogWatcher?.Dispose();
             LogWatcher = new LogWatcher(LogDirectory);
 
-            var allLogs = LogWatcher.RetrieveAllLogs();
             Commanders.Clear();
 
-            foreach (var commander in allLogs.Keys)
+            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"aggregation.json");
+            aggregation = File.Exists(path)
+                ? JsonConvert.DeserializeObject<CommanderAggregation>(File.ReadAllText(path))
+                : null;
+
+            if (aggregation == null || !aggregation.Aggregations.Any())
             {
-                // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
-                if (allLogs[commander].Count <= 1)
+                var allLogs = LogWatcher.RetrieveAllLogs();
+
+                foreach (var commander in allLogs.Keys)
                 {
-                    continue;
+                    // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
+                    if (allLogs[commander].Count <= 1)
+                    {
+                        continue;
+                    }
+
+                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas);
+                    Commanders[commander] = commanderState;
+                }
+            }
+            else
+            {
+                foreach (var key in aggregation.Aggregations.Keys)
+                {
+                    var commanderState = new CommanderViewModel(key,
+                        c => c.LoadAggregation(aggregation.Aggregations[key]), Languages, entryDatas)
+                    {
+                        LastUpdate = aggregation.Aggregations[key].LastTimestamp
+                    };
+                    Commanders[key] = commanderState;
                 }
 
-                var commanderState = new CommanderViewModel(commander, allLogs[commander], Languages, entryDatas);
-                Commanders[commander] = commanderState;
+                var latestInstant = aggregation?.Aggregations.Values.Max(c => c.LastTimestamp);
+                var content = LogWatcher.GetFilesContentFrom(latestInstant);
+                foreach (var key in content.Keys)
+                {
+                    ApplyEvents(Tuple.Create(key, content[key]));
+                }
             }
 
             if (Commanders.Count == 0) // we found absolutely nothing
             {
-                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, new List<string>(), Languages, entryDatas);
+                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, c => {}, Languages, entryDatas);
             }
 
             if (Commanders.Any(k => k.Key == SettingsManager.SelectedCommander))
@@ -125,6 +157,7 @@ namespace EDEngineer.Views
         private KeyValuePair<string, CommanderViewModel> currentCommander;
         private string currentComparer;
         private readonly List<EntryData> entryDatas;
+        private CommanderAggregation aggregation;
 
         public bool ShowZeroes
         {
@@ -279,24 +312,43 @@ namespace EDEngineer.Views
         {
             LogWatcher.InitiateWatch(logs =>
             {
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    if (logs.Item2.Count == 0)
-                    {
-                        return;
-                    }
-
-                    if (Commanders.ContainsKey(logs.Item1))
-                    {
-                        Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
-                    }
-                    else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
-                    {
-                        var commanderState = new CommanderViewModel(logs.Item1, logs.Item2, Languages, entryDatas);
-                        Commanders[logs.Item1] = commanderState;
-                    }
-                });
+                Application.Current.Dispatcher.Invoke(() => { ApplyEvents(logs); });
             });
+        }
+
+        public void ApplyEvents(Tuple<string, List<string>> logs)
+        {
+            if (logs.Item2.Count == 0)
+            {
+                return;
+            }
+
+            if (Commanders.ContainsKey(logs.Item1))
+            {
+                Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
+            }
+            else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
+            {
+                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2), Languages, entryDatas);
+                Commanders[logs.Item1] = commanderState;
+            }
+        }
+
+        public void SaveAggregation()
+        {
+            var newAggregation = new CommanderAggregation
+            {
+                Aggregations = Commanders.ToDictionary(c => c.Key, c => c.Value.State.Aggregate(c.Value.LastUpdate.Plus(Duration.FromMilliseconds(1))))
+            };
+
+            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"aggregation.json");
+            var file = new FileInfo(path);
+            if (file.Exists)
+            {
+                file.IsReadOnly = false;
+            }
+
+            File.WriteAllText(path, JsonConvert.SerializeObject(newAggregation));
         }
     }
 }

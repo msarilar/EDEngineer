@@ -14,7 +14,7 @@ namespace EDEngineer.Models.Operations
             Operation = operation;
         }
 
-        public override void Mutate(State state)
+        public override void Mutate(State.State state)
         {
             Operation?.Mutate(state);
         }

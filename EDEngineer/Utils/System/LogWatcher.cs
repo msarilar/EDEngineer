@@ -9,6 +9,7 @@ using EDEngineer.Models;
 using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Json;
 using Newtonsoft.Json.Linq;
+using NodaTime;
 
 namespace EDEngineer.Utils.System
 {
@@ -58,8 +59,6 @@ namespace EDEngineer.Utils.System
             
             watcher.Changed += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
             watcher.Created += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
-
-            InitPeriodicRefresh();
         }
 
         private FileInfo mostRecentLogFile;
@@ -170,6 +169,7 @@ namespace EDEngineer.Utils.System
         }
 
         public string ManualChangesDirectory { get; } = IOUtils.GetManualChangesDirectory();
+
         public Dictionary<string, List<string>> RetrieveAllLogs()
         {
             var gameLogLines = new Dictionary<string, List<string>>();
@@ -253,6 +253,53 @@ namespace EDEngineer.Utils.System
         {
             periodicRefresher?.Dispose();
             watcher?.Dispose();
+        }
+
+        public Dictionary<string, List<string>> GetFilesContentFrom(Instant? latestInstant)
+        {
+            if (latestInstant.HasValue && logDirectory != null && Directory.Exists(logDirectory))
+            {
+                var files = Directory.GetFiles(logDirectory)
+                                     .Where(
+                                         f =>
+                                             f != null && Path.GetFileName(f).StartsWith("Journal.") &&
+                                             Path.GetFileName(f).EndsWith(".log")).Select(f => new FileInfo(f))
+                                     .ToList();
+
+                var moreRecentFiles =
+                    files.Where(f => f.LastWriteTimeUtc > latestInstant.Value.ToDateTimeUtc()).ToList();
+
+                if (moreRecentFiles.Any())
+                {
+                    return moreRecentFiles.Select(f => ReadLinesWithoutLock(f.FullName)).Aggregate(
+                        new Dictionary<string, List<string>>(),
+                        (current, content) =>
+                        {
+                            if (current.ContainsKey(content.Item1))
+                            {
+                                current[content.Item1].AddRange(content.Item2);
+                            }
+                            else
+                            {
+                                current[content.Item1] = content.Item2;
+                            }
+
+                            return current;
+                        });
+                }
+
+                if (files.Any())
+                {
+                    var content =
+                        ReadLinesWithoutLock(files.OrderByDescending(f => f.LastWriteTimeUtc).First().FullName);
+                    return new Dictionary<string, List<string>>
+                    {
+                        [content.Item1] = content.Item2
+                    };
+                }
+            }
+
+            return new Dictionary<string, List<string>>();
         }
     }
 }

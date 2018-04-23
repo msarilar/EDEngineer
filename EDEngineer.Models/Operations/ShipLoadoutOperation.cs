@@ -10,9 +10,9 @@ namespace EDEngineer.Models.Operations
             this.loadout = loadout;
         }
 
-        public override void Mutate(State state)
+        public override void Mutate(State.State state)
         {
-            state.Loadout.Update(loadout);
+            state.UpdateLoadout(loadout);
         }
     }
 }
