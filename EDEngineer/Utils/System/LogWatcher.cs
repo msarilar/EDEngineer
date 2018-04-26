@@ -59,6 +59,8 @@ namespace EDEngineer.Utils.System
             
             watcher.Changed += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
             watcher.Created += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
+
+            InitPeriodicRefresh();
         }
 
         private FileInfo mostRecentLogFile;
