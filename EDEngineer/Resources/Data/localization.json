@@ -4095,7 +4095,7 @@
     },
     "Guardian Weapon Blueprint Segment": {
       "es": null,
-      "pt": null,
+      "pt": "Segmento de Diagrama de Arma Guardian",
       "de": "Guardian-Waffenbauplansegment",
       "fr": null,
       "ru": "Фрагмент чертежа оружия стражей",
@@ -4104,7 +4104,7 @@
     },
     "Guardian Power Cell": {
       "es": null,
-      "pt": null,
+      "pt": "Bateria Guardian",
       "de": "Guardian-Energiezelle",
       "fr": null,
       "ru": "Энергоячейка стражей",
@@ -4113,7 +4113,7 @@
     },
     "Guardian Technology Component": {
       "es": null,
-      "pt": null,
+      "pt": "Componente de Tecnologia Guardian",
       "de": "Guardian-Technologiekomponente",
       "fr": null,
       "ru": "Компоненты технологий стражей",
@@ -4122,7 +4122,7 @@
     },
     "Guardian Power Conduit": {
       "es": null,
-      "pt": null,
+      "pt": "Condutores de Potência Guardian",
       "de": "Guardian-Energieleiter",
       "fr": null,
       "ru": "Энергопроводники стражей",
@@ -4131,7 +4131,7 @@
     },
     "Guardian Sentinel Weapon Parts": {
       "es": null,
-      "pt": null,
+      "pt": "Peças de Armas Sentinela Guardian",
       "de": "Guardian-Wache-Waffenteile",
       "fr": null,
       "ru": "Детали вооружения стража Sentinel",
@@ -4140,7 +4140,7 @@
     },
     "Guardian Module Blueprint Segment": {
       "es": null,
-      "pt": null,
+      "pt": "Segmento de Diagrama de Módulo Guardian",
       "de": "Guardian-Modulbauplansegment",
       "fr": null,
       "ru": "Фрагмент чертежа модуля стражей",
@@ -4149,7 +4149,7 @@
     },
     "Guardian Sentinel Wreckage Components": {
       "es": null,
-      "pt": null,
+      "pt": "Componentes de Destroços Sentinela Guardian",
       "de": "Guardian-Wache Trümmerteile",
       "fr": null,
       "ru": "Обломки кораблекрушений стража Sentinel",
@@ -4167,7 +4167,7 @@
     },
     "Human": {
       "es": null,
-      "pt": null,
+      "pt": "Humano",
       "de": "Menschlich",
       "fr": null,
       "ru": "Технологии людей",
@@ -4176,7 +4176,7 @@
     },
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
       "es": null,
-      "pt": null,
+      "pt": "Estante de Carga Anti-Corrosiva (2D e 4D)",
       "de": "Korrosionsresistentes Frachtegtell (2D and 4D)",
       "fr": null,
       "ru": "Коррозийно-устойчивый грузовой стеллаж (2D и 4D)",
@@ -4194,7 +4194,7 @@
     },
     "Guardian": {
       "es": null,
-      "pt": null,
+      "pt": "Guardian",
       "de": "Guardian",
       "fr": null,
       "ru": "Технологии стражей",
@@ -4203,7 +4203,7 @@
     },
     "Guardian Gauss Cannon (Fixed)": {
       "es": null,
-      "pt": null,
+      "pt": "Canhão Gauss Guardian (Fixa)",
       "de": "Guardian-Gausskannone (Fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
       "ru": null,
