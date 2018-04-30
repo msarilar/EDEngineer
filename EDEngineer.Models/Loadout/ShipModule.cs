@@ -15,16 +15,16 @@ namespace EDEngineer.Models.Loadout
         public string TechnicalType { get; }
         public string TechnicalSlot { get; }
 
-        public ShipModule(string type, string slot, string blueprintName, int? grade, string engineer,
+        public ShipModule(string technicalType, string technicalSlot, string blueprintName, int? grade, string engineer,
                           string experimentalEffect, List<ModuleModifier> modifiers)
         {
-            TechnicalType = type.ToLowerInvariant();
-            TechnicalSlot = slot.ToLowerInvariant();
+            TechnicalType = technicalType.ToLowerInvariant();
+            TechnicalSlot = technicalSlot.ToLowerInvariant();
 
-            Slot = slot.ToReadable().Replace("Slot", "Slot ").Trim();
+            Slot = technicalSlot.ToReadable().Replace("Slot", "Slot ").Trim();
             BlueprintName = blueprintName.ToReadable();
             ExperimentalEffect = experimentalEffect.ToReadable();
-            Type = type.ToReadable().Replace("Hpt", "").Replace("Int", "").Replace("hpt", "").Replace("int", "").Trim();
+            Type = technicalType.ToReadable().Replace("Hpt", "").Replace("Int", "").Replace("hpt", "").Replace("int", "").Trim();
             Grade = grade;
             Engineer = engineer;
             Modifiers = modifiers;
