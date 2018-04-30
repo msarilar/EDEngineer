@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.2.0",
+    "Content": "* Added material trader suggestions in the shopping list:\r\nShows material trading suggestion (taking into account your cargo and the entire shopping list).\r\nSuggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.\r\nOrange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).\r\n\r\n* Brazilian localization update, thanks to @KingRider\r\n* Russian localization update, thank to @VChet"
+  },
+  {
     "Version": "1.1.1.28",
     "Content": "* EDEngineer will save an aggregation of your logs upon quitting the application such that next time you launch the app it will load faster.\r\nIt's useful if you have lots of logs or want to clean your logs without losing system's history).\r\nThat file should be located in AppData if you want to delete it (for instance if you delete your logs to remove a Commander, you'll also need to delete the aggregation file).\r\n\r\n* Russian localization update, thanks to @VChet"
   },

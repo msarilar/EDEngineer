@@ -4920,6 +4920,15 @@
       "pl": null,
       "cs": null
     },
+    "Shows material trading suggestion (taking into account your cargo and the entire shopping list).": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
     "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
       "es": null,
       "pt": null,
