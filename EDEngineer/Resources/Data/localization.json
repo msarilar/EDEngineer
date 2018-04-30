@@ -327,7 +327,7 @@
       "fr": "Optimisé moteur",
       "ru": "Двигатель-ориентированный",
       "pl": "Engine Focused",
-    "cs": "Engine Focused"
+      "cs": "Engine Focused"
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
@@ -2038,7 +2038,7 @@
       "fr": "Coque",
       "ru": "Корпус",
       "pl": "Hull",
-    "cs": "Hull"
+      "cs": "Hull"
     },
     "FSD Interdictor": {
       "es": "Interdictor",
@@ -2560,8 +2560,8 @@
       "ru":
         "Вы не выбрали папку с log файлом, EDEngineer не сможет отслеживать изменения. Но вы все еще можете вносить изменения вручную.",
       "pl":
-    "Nie wybrałeś folderu z logami, EDEngineer nie będzie w stanie śledzić zmian. Nadal możesz korzystać z aplikacji manualnie.",
-    "cs":
+        "Nie wybrałeś folderu z logami, EDEngineer nie będzie w stanie śledzić zmian. Nadal możesz korzystać z aplikacji manualnie.",
+      "cs":
         "Nezvolil jste adresář s logy hry, EDEngineer nebude schopen automaticky provádět změny. Stále však můžete používat aplikaci a ručně zadávat hodnoty."
     },
     "No folder in use ; click to change": {
@@ -3126,8 +3126,8 @@
       "ru":
         "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)",
       "pl":
-    "Automatycznie uruchamiaj serwer podczas włączania EDEngineer na tym porcie? (jeżeli nie zaznaczone, serwer zostanie zatrzymany kiedy odblokujesz/zablokujesz okno)",
-    "cs":
+        "Automatycznie uruchamiaj serwer podczas włączania EDEngineer na tym porcie? (jeżeli nie zaznaczone, serwer zostanie zatrzymany kiedy odblokujesz/zablokujesz okno)",
+      "cs":
         "Automaticky špouštět server s tímto portem při zapnutí EDEngineera? (pokud není zašrtnuto, server se zastaví při odemčení/zamčení okna)"
     },
     "Shopping List": {
@@ -3403,8 +3403,8 @@
         "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl":
         "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii",
-    "cs":
-    "Hledat vyditelné plánky (podle typu, jména, grade nebo inženýra) - odděl hledané výrazy mezerou pro vyhledání všech výrazů najednou"
+      "cs":
+        "Hledat vyditelné plánky (podle typu, jména, grade nebo inženýra) - odděl hledané výrazy mezerou pro vyhledání všech výrazů najednou"
     },
     "Configure Notifications": {
       "es": "Configurar Notificaciones",
@@ -4154,7 +4154,7 @@
       "fr": null,
       "ru": "Обломки кораблекрушений стража Sentinel",
       "pl": null,
-    "cs": "Guardian Sentinel Wreckage Components"
+      "cs": "Guardian Sentinel Wreckage Components"
     },
     "Guardian Vessel Blueprint Segment": {
       "es": null,
@@ -4251,7 +4251,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Зенитная установка с дистанционным подрывом (фиксированный подвес)",
       "pl": null,
       "cs": "Remote Release Flechette Launcher (Fixed)"
     },
@@ -4260,7 +4260,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Зенитная установка с дистанционным подрывом (турельный подвес)",
       "pl": null,
       "cs": "Remote Release Flechette Launcher (Turreted)"
     },
@@ -4296,7 +4296,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Последовательность координации",
       "pl": null,
       "cs": "Concordant Sequence"
     },
@@ -4305,7 +4305,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Последовательность восстановления",
       "pl": null,
       "cs": "Regeneration Sequence"
     },
@@ -4314,7 +4314,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Проводник тепла",
       "pl": null,
       "cs": "Thermal Conduit"
     },
@@ -4332,7 +4332,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Теплоотдача",
       "pl": null,
       "cs": "Thermal Vent"
     },
@@ -4377,7 +4377,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Инерционный удар",
       "pl": null,
       "cs": "Inertial Impact"
     },
@@ -4386,7 +4386,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Последовательность фазирования",
       "pl": null,
       "cs": "Phasing Sequence"
     },
@@ -4395,7 +4395,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Отключающая сетка",
       "pl": null,
       "cs": "Scramble Spectrum"
     },
@@ -4458,7 +4458,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Рассеивающее поле",
       "pl": null,
       "cs": "Dispersal Field"
     },
@@ -4467,7 +4467,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Усиленные снаряды",
       "pl": null,
       "cs": "Force Shell"
     },
@@ -4476,7 +4476,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Снаряды большой мощности",
       "pl": null,
       "cs": "High Yield Shell"
     },
@@ -4485,7 +4485,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Термический залп",
       "pl": null,
       "cs": "Thermal Cascade"
     },
@@ -4494,7 +4494,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Ослепляющие снаряды",
       "pl": null,
       "cs": "Dazzle Shell"
     },
@@ -4503,7 +4503,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Замедляющие боеприпасы",
       "pl": null,
       "cs": "Drag Munition"
     },
@@ -4512,7 +4512,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Заслоняющие снаряды",
       "pl": null,
       "cs": "Screening Shell"
     },
@@ -4521,7 +4521,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Замедляющие боеприпасы (лоток с самонаведением)",
       "pl": null,
       "cs": "Drag Munition (Seeker only)"
     },
@@ -4530,7 +4530,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Вызывающие перегрузку боеприпасы",
       "pl": null,
       "cs": "Overload Munitions"
     },
@@ -4539,7 +4539,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Бронебойные боеголовки",
       "pl": null,
       "cs": "Penetrator Munitions (Dumbfire only)"
     },
@@ -4548,7 +4548,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Помеха для FSD",
       "pl": null,
       "cs": "FSD Interrupt (Dumbfire only)"
     },
@@ -4584,16 +4584,16 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Ионный дестабилизатор",
       "pl": null,
-    "cs": "Ion Disruptor"
+      "cs": "Ion Disruptor"
     },
     "Radiant Canister": {
       "es": null,
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Светящаяся кассета",
       "pl": null,
       "cs": "Radiant Canister"
     },
@@ -4602,7 +4602,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Рамоблокирующая кассета",
       "pl": null,
       "cs": "Shift-Lock Canister"
     },
@@ -4611,7 +4611,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Генератор помех для системы захвата цели",
       "pl": null,
       "cs": "Target Lock Breaker"
     },
@@ -4719,7 +4719,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Монстрация",
       "pl": null,
       "cs": "Monstered"
     },
@@ -4728,7 +4728,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Угловая броня",
       "pl": null,
       "cs": "Angled Plating"
     },
@@ -4737,7 +4737,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Многослойная броня",
       "pl": null,
       "cs": "Layered Plating"
     },
@@ -4746,7 +4746,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Отражающая броня",
       "pl": null,
       "cs": "Reflective Plating"
     },
@@ -4755,7 +4755,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Утолщенная броня",
       "pl": null,
       "cs": "Deep Plating"
     },
@@ -4764,7 +4764,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Босс-ячейки",
       "pl": null,
       "cs": "Boss Cells"
     },
@@ -4773,7 +4773,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Рециркуляционные ячейки",
       "pl": null,
       "cs": "Recycling Cells"
     },
@@ -4800,7 +4800,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Блокировка взрыва",
       "pl": null,
       "cs": "Blast Block"
     },
@@ -4809,7 +4809,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Суперконденсатор",
       "pl": null,
       "cs": "Super Capacitor"
     },
@@ -4890,7 +4890,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Сверхпроводники",
       "pl": null,
       "cs": "Super Conduits"
     },
@@ -4899,7 +4899,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Кассетный конденсатор",
       "pl": null,
       "cs": "Cluster Capacitor"
     },
@@ -4917,7 +4917,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Системы с обилием ресурсов",
       "pl": null,
       "cs": "Získáno nejvíce v systému"
     },
@@ -4926,7 +4926,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Система:",
       "pl": null,
       "cs": "Systém:"
     }
