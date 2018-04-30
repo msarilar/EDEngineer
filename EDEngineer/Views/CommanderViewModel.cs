@@ -321,7 +321,7 @@ namespace EDEngineer.Views
 
             Filters = new BlueprintFilters(languages, State.Blueprints);
 
-            shoppingList = new ShoppingListViewModel(State.Blueprints, languages);
+            shoppingList = new ShoppingListViewModel(State.Cargo, State.Blueprints, languages);
         }
 
 

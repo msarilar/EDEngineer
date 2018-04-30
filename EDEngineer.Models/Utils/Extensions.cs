@@ -15,6 +15,43 @@ namespace EDEngineer.Models.Utils
             return string.Join("", initials);
         }
 
+        public static bool In<T>(this T value, params T[] values)
+        {
+            return values.Contains(value);
+        }
+
+        public static int? Rank(this Rarity rarity)
+        {
+            switch (rarity)
+            {
+                case Rarity.VeryCommon:
+                    return 1;
+                case Rarity.Common:
+                    return 2;
+                case Rarity.Standard:
+                    return 3;
+                case Rarity.Rare:
+                    return 4;
+                case Rarity.VeryRare:
+                    return 5;
+                default:
+                case Rarity.None:
+                case Rarity.Commodity:
+                    return null;
+            }
+        }
+
+        public static TValue GetOrDefault<TKey, TValue>(this Dictionary<TKey, TValue> dict,
+                                                        TKey key)
+        {
+            if (!dict.ContainsKey(key))
+            {
+                return default(TValue);
+            }
+
+            return dict[key];
+        }
+
         public static TValue GetOrAdd<TKey, TValue>(this Dictionary<TKey, TValue> dict,
             TKey key,
             Func<TKey, TValue> adder)
@@ -43,6 +80,17 @@ namespace EDEngineer.Models.Utils
             }
 
             return evaluator(o.Value);
+        }
+
+        public static TResult Map<TInput, TResult>(this TInput o, Func<TInput, TResult> evaluator)
+            where TResult : class
+        {
+            if (o == null)
+            {
+                return null;
+            }
+
+            return evaluator(o);
         }
 
         public static string Description(this Enum value)

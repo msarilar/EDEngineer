@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models;
+using EDEngineer.Models.State;
+using EDEngineer.Models.Utils;
 using EDEngineer.Utils.System;
 
 namespace EDEngineer.Views
@@ -12,13 +14,26 @@ namespace EDEngineer.Views
     public class ShoppingListViewModel : INotifyPropertyChanged, IEnumerable<Blueprint>
     {
         private bool synchronizeWithLogs;
+        private readonly StateCargo stateCargo;
         private readonly ILanguage languages;
         private readonly List<IGrouping<Tuple<string, string>, Blueprint>> blueprints;
 
-        public ShoppingListViewModel(List<Blueprint> blueprints, ILanguage languages)
+        public ShoppingListViewModel(StateCargo stateCargo, List<Blueprint> blueprints, ILanguage languages)
         {
             this.blueprints = blueprints.GroupBy(b => Tuple.Create(b.Type, b.BlueprintName)).ToList();
+            this.stateCargo = stateCargo;
             this.languages = languages;
+
+            foreach (var ingredientsValue in stateCargo.Ingredients)
+            {
+                ingredientsValue.Value.PropertyChanged += (o, e) =>
+                                                          {
+                                                              if (e.PropertyName == "Count")
+                                                              {
+                                                                  OnPropertyChanged(nameof(MaterialTrades));
+                                                              }
+                                                          };
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -33,6 +48,12 @@ namespace EDEngineer.Views
         public List<Tuple<Blueprint, int>> Composition
             => blueprints.SelectMany(b => b).Where(b => b.ShoppingListCount > 0)
                          .Select(b => Tuple.Create(b, b.ShoppingListCount)).ToList();
+
+        public Dictionary<Tuple<EntryData, bool, int>, List<MaterialTrade>> MaterialTrades =>
+            MissingIngredients.Map(i => MaterialTrader.FindPossibleTrades(stateCargo, i, Deduction))
+                              ?.GroupBy(i => i.Needed)
+                              .OrderBy(i => languages.Translate(i.Key.Data.Name))
+                              .ToDictionary(i => Tuple.Create(i.Key.Data, i.First().WillBeEnough, i.First().Missing), i => i.OrderBy(j => j.Consumption).Take(4).ToList()); 
 
         public List<ShoppingListBlock> CompositionForGui
         {
@@ -180,6 +201,19 @@ namespace EDEngineer.Views
                 OnPropertyChanged();
             }
         }
+
+        public Dictionary<EntryData, int> Deduction =>
+            this.ToList()
+                .FirstOrDefault()
+                ?.Ingredients
+                .ToDictionary(i => i.Entry.Data, i => i.Size);
+
+        public Dictionary<Entry, int> MissingIngredients =>
+            this.ToList()
+                .FirstOrDefault()
+                ?.Ingredients
+                .Where(i => i.Size - i.Entry.Count > 0)
+                .ToDictionary(i => i.Entry, i => i.Size - i.Entry.Count);
 
         public IEnumerator<Blueprint> GetEnumerator()
         {

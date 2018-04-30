@@ -421,7 +421,7 @@ namespace EDEngineer.Views
         {
             if (!skipSaveAggregation)
             {
-                viewModel.SaveAggregation();
+                viewModel?.SaveAggregation();
             }
 
             HotkeyManager.UnregisterHotKey(this);

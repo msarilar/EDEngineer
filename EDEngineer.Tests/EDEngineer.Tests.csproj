@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MaterialTraderTests.cs" />
     <Compile Include="ReferenceDataIntegrityTests.cs" />
     <Compile Include="LogParsingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

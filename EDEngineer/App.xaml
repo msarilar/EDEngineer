@@ -52,6 +52,7 @@
             <SolidColorBrush x:Key="TechnologyBrush" Color="MediumVioletRed"/>
             <SolidColorBrush x:Key="ExperimentalBrush" Color="DarkOliveGreen"/>
             <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
+            <SolidColorBrush x:Key="GreenBrush" Color="Green"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
@@ -93,6 +94,15 @@
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToShoppingListBlockHighlightColor"
                                                        SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                        NormalColor="{StaticResource SynthesisBlueBrush}"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughColor"
+                                                       SpecialColor="{StaticResource ExperimentalBrush}"
+                                                       NormalColor="{StaticResource IngredientHighlightedBrush}"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughForegroundColor"
+                                                       SpecialColor="{StaticResource GreenBrush}"
+                                                       NormalColor="{StaticResource EliteOrangeBrush}"/>
+            <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughTextColor"
+                                                       SpecialColor="{StaticResource BackgroundBrush}"
+                                                       NormalColor="{StaticResource AccentBackgroundBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToGoodEffectColorConverter"
                                                        SpecialColor="Green"
                                                        NormalColor="Red"/>
@@ -888,12 +898,7 @@
                     <Setter.Value>
                         <DataTemplate>
                             <Grid Background="{TemplateBinding Tag}"
-                                  Margin="0"
-                                  Width="{Binding
-                                            RelativeSource={RelativeSource
-                                            Mode=FindAncestor,
-                                            AncestorType={x:Type Expander}},
-                                            Path=ActualWidth}">
+                                  Margin="30,0,0,0">
                                 <ContentPresenter Content="{Binding}"
                                                   HorizontalAlignment="Center"
                                                   Margin="-18,0,0,0"/>

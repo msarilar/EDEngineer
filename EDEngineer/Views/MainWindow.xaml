@@ -1389,8 +1389,10 @@
                                       Focusable="False">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
+                                        <!-- INGREDIENT COMPOSITION -->
                                         <Grid Grid.Column="0"
                                           Focusable="False"
                                           Margin="10,0,0,0">
@@ -1516,8 +1518,127 @@
                                             </ItemsControl>
                                         </Grid>
 
+                                        <!-- MATERIAL TRADER -->
+                                        <Grid Grid.Column="1"
+                                              Visibility="{Binding DataContext.ShoppingList.MaterialTrades.Count, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Converter={StaticResource IntegerToVisibility}}">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <StackPanel Orientation="Horizontal"
+                                                        Margin="3"
+                                                        Grid.Row="0"
+                                                        HorizontalAlignment="Center">
+                                                <TextBlock Text="Material Trader"/>
+
+                                                <iconPacks:PackIconMaterial Kind="InformationOutline"	
+                                                                            Foreground="Cyan"
+                                                                            Background="#1d2242"
+                                                                            Margin="10,0,0,0"
+                                                                            Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
+                                                    <iconPacks:PackIconMaterial.ToolTip>
+                                                        <ToolTip DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
+                                                            <StackPanel Orientation="Vertical">
+                                                                <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Shows material trading suggestion (taking into account your cargo and the entire shopping list).'}"
+                                                                           MaxWidth="500"
+                                                                           Margin="5"
+                                                                           TextWrapping="WrapWithOverflow"/>
+                                                                <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).'}"
+                                                                           MaxWidth="500"
+                                                                           Margin="5"
+                                                                           TextWrapping="WrapWithOverflow"/>
+                                                                <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.'}"
+                                                                           MaxWidth="500"
+                                                                           Margin="5"
+                                                                           TextWrapping="WrapWithOverflow"/>
+                                                            </StackPanel>
+                                                        </ToolTip>
+                                                    </iconPacks:PackIconMaterial.ToolTip>
+                                                </iconPacks:PackIconMaterial>
+                                            </StackPanel>
+                                            <ItemsControl Grid.Row="1"
+                                                      ItemsSource="{Binding DataContext.ShoppingList.MaterialTrades, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                      >
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Expander IsExpanded="False"
+                                                              Padding="0"
+                                                              Height="Auto"
+                                                              Focusable="False"
+                                                              Tag="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughColor}}"
+                                                              Foreground="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughTextColor}}"
+                                                              Background="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughForegroundColor}}"
+                                                              Style="{StaticResource GroupExpander}"
+                                                              FontSize="12">
+                                                            <Expander.Header>
+                                                                <StackPanel Orientation="Horizontal">
+                                                                    <TextBlock Text="{Binding Key.Item3}"/>
+                                                                    <TextBlock Margin="5,0,0,0">
+                                                                        <TextBlock.Text>
+                                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                                <Binding Path="Key.Item1.Name"/>
+                                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                                     RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                            </MultiBinding>
+                                                                        </TextBlock.Text>
+                                                                    </TextBlock>
+                                                                </StackPanel>
+                                                            </Expander.Header>
+                                                            <ItemsControl ItemsSource="{Binding Value}"
+                                                                      Margin="5">
+                                                                <ItemsControl.ItemTemplate>
+                                                                    <DataTemplate>
+                                                                        <Grid>
+                                                                            <Grid.RowDefinitions>
+                                                                                <RowDefinition/>
+                                                                                <RowDefinition/>
+                                                                            </Grid.RowDefinitions>
+                                                                            <StackPanel Orientation="Horizontal"
+                                                                                    Grid.Row="0">
+                                                                                <TextBlock Text="{Binding TradedNeeded, Mode=OneWay}"
+                                                                                       FontWeight="Bold"/>
+                                                                                <TextBlock Margin="5,0,0,0"
+                                                                                       FontWeight="Bold">
+                                                                                    <TextBlock.Text>
+                                                                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
+                                                                                            <Binding Path="Traded.Data.Name"/>
+                                                                                            <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                                                 RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                                        </MultiBinding>
+                                                                                    </TextBlock.Text>
+                                                                                </TextBlock>
+                                                                            </StackPanel>
+                                                                            <StackPanel Orientation="Horizontal"
+                                                                                        Grid.Row="1">
+                                                                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='You have:'}"/>
+                                                                                <TextBlock Text="{Binding Traded.Count, Mode=OneWay}"
+                                                                                           Margin="5,0,0,0"/>
+                                                                                <TextBlock Visibility="{Binding AlreadyNeeded, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}">
+                                                                                    <Run Text="-"/>
+                                                                                    <Run Text="{Binding AlreadyNeeded, Mode=OneWay}"/>
+                                                                                </TextBlock>
+                                                                                <TextBlock Visibility="{Binding AlreadyNeeded, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
+                                                                                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='(already needed)'}"
+                                                                                           Margin="5,0,0,0"/>
+                                                                                <TextBlock Margin="5,0,0,0">
+                                                                                    <Run Text="("/>
+                                                                                    <Run Text="{Binding Consumption, StringFormat={}{0:0}%, Mode=OneWay}"/>
+                                                                                    <Run Text=")"/>
+                                                                                </TextBlock>
+                                                                            </StackPanel>
+                                                                        </Grid>
+                                                                    </DataTemplate>
+                                                                </ItemsControl.ItemTemplate>
+                                                            </ItemsControl>
+                                                        </Expander>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+                                        </Grid>
+
+                                        <!-- BLUEPRINT COMPOSITION -->
                                         <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.CompositionForGui, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
-                                                      Grid.Column="1"
+                                                      Grid.Column="2"
                                                       HorizontalAlignment="Right"
                                                       x:Name="ShoppingListComposition"
                                                       FontSize="15"

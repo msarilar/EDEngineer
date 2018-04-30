@@ -49,7 +49,7 @@
                 "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno musí být přeloženo. To co přeloženo nebude, bude nadále v angličtině."
         }
     },
-    "Translations": {
+  "Translations": {
     "Short Range Blaster": {
       "es": "Destructor de Corto Alcance",
       "pt": "Disparo de Curto Alcance",
@@ -2395,18 +2395,15 @@
       "es": "Debes utilizar una tecla normal para acompañar la tecla modificadora como (Ctrl+F10 or Shift+R)",
       "pt": "Você deve usar uma tecla comum para acompanhar a tecla modificadora como (Ctrl+F10 ou Shift+R)",
       "de": "Sie müssen eine reguläre Taste zusammen mit einer modifizierenden Taste verwenden wie (Strg+F10 or Shift+R)",
-      "fr":
-        "Vous devez utiliser une touche normale pour accompagner la touche de modification comme (Ctrl + F10 ou Maj + R)",
+      "fr": "Vous devez utiliser une touche normale pour accompagner la touche de modification comme (Ctrl + F10 ou Maj + R)",
       "ru": "Вы должны использовать символьную клавишу вместе с клавишей-модификатором, например (Ctrl+F10 или Shift+R)",
       "pl": "Musisz skorzystać z regularnego klawisza towarzyszącemu modyfikatorowi (np. Ctrl+F10 lub Shift+R)",
       "cs": "Musíte použít standardní klávesu a pomocnou klávesu zároveň (např. Ctrl+F10 nebo Shift+R)"
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
-      "es":
-        "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
+      "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
       "pt": "Algo deu errado na análise de seus logs, abra um problema no GitHub com esta informação",
-      "de":
-        "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
+      "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
       "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
       "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
       "pl": "Coś poszło nie tak podczas parsowania twoich logów, stwórz issue na GitHub-ie z tą informacją :",
@@ -2547,22 +2544,14 @@
       "pl": "Ostrzeżenie",
       "cs": "Varování"
     },
-    "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.":
-    {
-      "es":
-        "No ha seleccionado un directorio de registro, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
-      "pt":
-        "Você não selecionou um diretório de registro, o EDEngineer não poderá acompanhar as alterações. Ainda assim, você ainda pode usar o aplicativo manualmente.",
-      "de":
-        "Sie haben kein Log Verzeichnis gewählt, EDEngineer wird die Bestandsänderungen nicht aktualisieren können. Sie können die App jedoch manuell benutzen.",
-      "fr":
-        "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
-      "ru":
-        "Вы не выбрали папку с log файлом, EDEngineer не сможет отслеживать изменения. Но вы все еще можете вносить изменения вручную.",
-      "pl":
-        "Nie wybrałeś folderu z logami, EDEngineer nie będzie w stanie śledzić zmian. Nadal możesz korzystać z aplikacji manualnie.",
-      "cs":
-        "Nezvolil jste adresář s logy hry, EDEngineer nebude schopen automaticky provádět změny. Stále však můžete používat aplikaci a ručně zadávat hodnoty."
+    "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
+      "es": "No ha seleccionado un directorio de registro, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
+      "pt": "Você não selecionou um diretório de registro, o EDEngineer não poderá acompanhar as alterações. Ainda assim, você ainda pode usar o aplicativo manualmente.",
+      "de": "Sie haben kein Log Verzeichnis gewählt, EDEngineer wird die Bestandsänderungen nicht aktualisieren können. Sie können die App jedoch manuell benutzen.",
+      "fr": "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
+      "ru": "Вы не выбрали папку с log файлом, EDEngineer не сможет отслеживать изменения. Но вы все еще можете вносить изменения вручную.",
+      "pl": "Nie wybrałeś folderu z logami, EDEngineer nie będzie w stanie śledzić zmian. Nadal możesz korzystać z aplikacji manualnie.",
+      "cs": "Nezvolil jste adresář s logy hry, EDEngineer nebude schopen automaticky provádět změny. Stále však můžete používat aplikaci a ručně zadávat hodnoty."
     },
     "No folder in use ; click to change": {
       "es": "Ninguna carpeta en uso ; haz clic para cambiar",
@@ -3113,22 +3102,14 @@
       "pl": "Wybierz port dla lokalnego serwera API",
       "cs": "Vyber port lokálního API serveru"
     },
-    "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)":
-    {
-      "es":
-        "¿Deseas usar este puerto al ejecutar el servidor de EDEngineer? (si no está seleccionada esta opción el servidor podría detenerse cuando se bloquee o desbloquee la ventana)",
-      "pt":
-        "Servidor de execução automática no EDEngineer, iniciar com esta porta? (se não estiver assinalado, o servidor pode parar quando a janela estiver bloqueada ou desbloqueada)",
-      "de":
-        "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
-      "fr":
-        "Lancer automatiquement le serveur au démarrage avec ce port ? (sinon, le serveur s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
-      "ru":
-        "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)",
-      "pl":
-        "Automatycznie uruchamiaj serwer podczas włączania EDEngineer na tym porcie? (jeżeli nie zaznaczone, serwer zostanie zatrzymany kiedy odblokujesz/zablokujesz okno)",
-      "cs":
-        "Automaticky špouštět server s tímto portem při zapnutí EDEngineera? (pokud není zašrtnuto, server se zastaví při odemčení/zamčení okna)"
+    "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
+      "es": "¿Deseas usar este puerto al ejecutar el servidor de EDEngineer? (si no está seleccionada esta opción el servidor podría detenerse cuando se bloquee o desbloquee la ventana)",
+      "pt": "Servidor de execução automática no EDEngineer, iniciar com esta porta? (se não estiver assinalado, o servidor pode parar quando a janela estiver bloqueada ou desbloqueada)",
+      "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
+      "fr": "Lancer automatiquement le serveur au démarrage avec ce port ? (sinon, le serveur s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
+      "ru": "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)",
+      "pl": "Automatycznie uruchamiaj serwer podczas włączania EDEngineer na tym porcie? (jeżeli nie zaznaczone, serwer zostanie zatrzymany kiedy odblokujesz/zablokujesz okno)",
+      "cs": "Automaticky špouštět server s tímto portem při zapnutí EDEngineera? (pokud není zašrtnuto, server se zastaví při odemčení/zamčení okna)"
     },
     "Shopping List": {
       "es": "Lista de la compra",
@@ -3391,20 +3372,14 @@
       "pl": "Ciche uruchomienie",
       "cs": "Tichý start"
     },
-    "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search":
-    {
+    "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
       "es": null,
-      "pt":
-        "Procure diagramas disponíveis (por Tipo, Nome, Grau ou Engenheiro) - separe os termos com um espaço para pesquisa multi-critério",
+      "pt": "Procure diagramas disponíveis (por Tipo, Nome, Grau ou Engenheiro) - separe os termos com um espaço para pesquisa multi-critério",
       "de": "Suche nach verfügbaren Bauplänen (Begriffe durch 'Leerzeichen' trennen)",
-      "fr":
-        "Rechercher les plans de fabrications visible (par Type, Nom, Grade ou Ingénieur) - séparez vos termes avec un espace pour une recharche multi-critères",
-      "ru":
-        "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
-      "pl":
-        "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii",
-      "cs":
-        "Hledat vyditelné plánky (podle typu, jména, grade nebo inženýra) - odděl hledané výrazy mezerou pro vyhledání všech výrazů najednou"
+      "fr": "Rechercher les plans de fabrications visible (par Type, Nom, Grade ou Ingénieur) - séparez vos termes avec un espace pour une recharche multi-critères",
+      "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
+      "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii",
+      "cs": "Hledat vyditelné plánky (podle typu, jména, grade nebo inženýra) - odděl hledané výrazy mezerou pro vyhledání všech výrazů najednou"
     },
     "Configure Notifications": {
       "es": "Configurar Notificaciones",
@@ -3838,15 +3813,12 @@
       "pl": null,
       "cs": "Pouze vyrobené(Manufact.only)"
     },
-    "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!":
-    {
+    "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
       "es": null,
-      "pt":
-        "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
+      "pt": "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
       "de": null,
       "fr": null,
-      "ru":
-        "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
+      "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null,
       "cs": "Nerozpoznaná ingredience (Zobrazené jméno je tak, jak se vyskytuje v logu). Prosím otevřete požadavek na GitHubu a dejte vědět autorovi správný název ingredience!"
     },
@@ -4929,6 +4901,42 @@
       "ru": "Система:",
       "pl": null,
       "cs": "Systém:"
+    },
+    "You have:": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "(already needed)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
     }
   }
 }
