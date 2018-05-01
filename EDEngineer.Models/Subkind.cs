@@ -7,7 +7,7 @@ namespace EDEngineer.Models
         [Description("Raw")]
         Raw,
 
-        [Description("Manufactured")]
+        [Description("Man")]
         Manufactured
     }
 }

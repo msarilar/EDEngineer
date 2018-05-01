@@ -29,6 +29,8 @@ namespace EDEngineer.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public Subkind? Subkind { get; set; }
 
+        public string KindStringForGui => Subkind?.ToString("G") ?? Kind.ToString("G");
+
         [JsonConverter(typeof(StringEnumConverter))]
         public Group? Group
         {

@@ -233,7 +233,9 @@ namespace EDEngineer.Views
                                              i =>
                                                  new BlueprintIngredient(i.First().Entry,
                                                      i.Sum(c => c.Size)))
-                                         .OrderBy(i => i.Entry.Data.Kind)
+                                         .OrderBy(i => i.Entry.Count - i.Size > 0 ? 1 : 0)
+                                         .ThenByDescending(i => i.Entry.Data.Subkind)
+                                         .ThenBy(i => i.Entry.Data.Kind)
                                          .ThenBy(i => languages.Translate(i.Entry.Data.Name))
                                          .ToList();
 

@@ -1035,7 +1035,7 @@
                                                         <Run>
                                                             <Run.Text>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
-                                                                    <Binding Path="Entry.Data.Kind"/>
+                                                                    <Binding Path="Entry.Data.KindStringForGui" Mode="OneWay"/>
                                                                     <Binding Path="DataContext.Languages.CurrentLanguage"
 				                                                                RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                                                 </MultiBinding>
@@ -1389,12 +1389,12 @@
                                       Focusable="False">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
                                         <!-- INGREDIENT COMPOSITION -->
                                         <Grid Grid.Column="0"
                                           Focusable="False"
+                                              HorizontalAlignment="Left"
                                           Margin="10,0,0,0">
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="Auto" />
@@ -1420,7 +1420,7 @@
                                                             <Run>
                                                                 <Run.Text>
                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Material">
-                                                                        <Binding Path="Entry.Data.Kind"/>
+                                                                        <Binding Path="Entry.Data.KindStringForGui" Mode="OneWay"/>
                                                                         <Binding Path="DataContext.Languages.CurrentLanguage"
 				                                                                    RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
                                                                     </MultiBinding>
@@ -1518,50 +1518,60 @@
                                             </ItemsControl>
                                         </Grid>
 
-                                        <!-- MATERIAL TRADER -->
+                                        
+
                                         <Grid Grid.Column="1"
-                                              Visibility="{Binding DataContext.ShoppingList.MaterialTrades.Count, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Converter={StaticResource IntegerToVisibility}}">
+                                              HorizontalAlignment="Right">
                                             <Grid.RowDefinitions>
-                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition/>
                                                 <RowDefinition/>
                                             </Grid.RowDefinitions>
-                                            <StackPanel Orientation="Horizontal"
+                                            <!-- MATERIAL TRADER -->
+                                            <Grid Grid.Row="0"
+                                                  Width="305"
+                                              HorizontalAlignment="Right"
+                                              Visibility="{Binding DataContext.ShoppingList.MaterialTrades.Count, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Converter={StaticResource IntegerToVisibility}}">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                    <RowDefinition/>
+                                                </Grid.RowDefinitions>
+                                                <StackPanel Orientation="Horizontal"
+                                                            HorizontalAlignment="Center"
                                                         Margin="3"
-                                                        Grid.Row="0"
-                                                        HorizontalAlignment="Center">
-                                                <TextBlock Text="Material Trader"/>
+                                                        Grid.Row="0">
+                                                    <TextBlock Text="Material Trader"/>
 
-                                                <iconPacks:PackIconMaterial Kind="InformationOutline"	
+                                                    <iconPacks:PackIconMaterial Kind="InformationOutline"	
                                                                             Foreground="Cyan"
                                                                             Background="#1d2242"
                                                                             Margin="10,0,0,0"
                                                                             Tag="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
-                                                    <iconPacks:PackIconMaterial.ToolTip>
-                                                        <ToolTip DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
-                                                            <StackPanel Orientation="Vertical">
-                                                                <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Shows material trading suggestion (taking into account your cargo and the entire shopping list).'}"
+                                                        <iconPacks:PackIconMaterial.ToolTip>
+                                                            <ToolTip DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Shows material trading suggestion (taking into account your cargo and the entire shopping list).'}"
                                                                            MaxWidth="500"
                                                                            Margin="5"
                                                                            TextWrapping="WrapWithOverflow"/>
-                                                                <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).'}"
+                                                                    <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).'}"
                                                                            MaxWidth="500"
                                                                            Margin="5"
                                                                            TextWrapping="WrapWithOverflow"/>
-                                                                <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.'}"
+                                                                    <TextBlock Text="{Binding Tag, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.'}"
                                                                            MaxWidth="500"
                                                                            Margin="5"
                                                                            TextWrapping="WrapWithOverflow"/>
-                                                            </StackPanel>
-                                                        </ToolTip>
-                                                    </iconPacks:PackIconMaterial.ToolTip>
-                                                </iconPacks:PackIconMaterial>
-                                            </StackPanel>
-                                            <ItemsControl Grid.Row="1"
+                                                                </StackPanel>
+                                                            </ToolTip>
+                                                        </iconPacks:PackIconMaterial.ToolTip>
+                                                    </iconPacks:PackIconMaterial>
+                                                </StackPanel>
+                                                <ItemsControl Grid.Row="1"
                                                       ItemsSource="{Binding DataContext.ShoppingList.MaterialTrades, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
-                                                      >
-                                                <ItemsControl.ItemTemplate>
-                                                    <DataTemplate>
-                                                        <Expander IsExpanded="False"
+                                                      HorizontalAlignment="Stretch">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <Expander IsExpanded="False"
                                                               Padding="0"
                                                               Height="Auto"
                                                               Focusable="False"
@@ -1570,97 +1580,96 @@
                                                               Background="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughForegroundColor}}"
                                                               Style="{StaticResource GroupExpander}"
                                                               FontSize="12">
-                                                            <Expander.Header>
-                                                                <StackPanel Orientation="Horizontal">
-                                                                    <TextBlock Text="{Binding Key.Item3}"/>
-                                                                    <TextBlock Margin="5,0,0,0">
-                                                                        <TextBlock.Text>
-                                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}">
-                                                                                <Binding Path="Key.Item1.Name"/>
-                                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                <Expander.Header>
+                                                                    <StackPanel Orientation="Horizontal">
+                                                                        <TextBlock Text="{Binding Key.Item3}"/>
+                                                                        <TextBlock Margin="5,0,0,0">
+                                                                            <TextBlock.Text>
+                                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                                    <Binding Path="Key.Item1.Name"/>
+                                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
                                                                                      RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                                            </MultiBinding>
-                                                                        </TextBlock.Text>
-                                                                    </TextBlock>
-                                                                </StackPanel>
-                                                            </Expander.Header>
-                                                            <ItemsControl ItemsSource="{Binding Value}"
+                                                                                </MultiBinding>
+                                                                            </TextBlock.Text>
+                                                                        </TextBlock>
+                                                                    </StackPanel>
+                                                                </Expander.Header>
+                                                                <ItemsControl ItemsSource="{Binding Value}"
                                                                       Margin="5">
-                                                                <ItemsControl.ItemTemplate>
-                                                                    <DataTemplate>
-                                                                        <Grid>
-                                                                            <Grid.RowDefinitions>
-                                                                                <RowDefinition/>
-                                                                                <RowDefinition/>
-                                                                            </Grid.RowDefinitions>
-                                                                            <StackPanel Orientation="Horizontal"
+                                                                    <ItemsControl.ItemTemplate>
+                                                                        <DataTemplate>
+                                                                            <Grid>
+                                                                                <Grid.RowDefinitions>
+                                                                                    <RowDefinition/>
+                                                                                    <RowDefinition/>
+                                                                                </Grid.RowDefinitions>
+                                                                                <StackPanel Orientation="Horizontal"
                                                                                     Grid.Row="0">
-                                                                                <TextBlock Text="{Binding TradedNeeded, Mode=OneWay}"
+                                                                                    <TextBlock Text="{Binding TradedNeeded, Mode=OneWay}"
                                                                                        FontWeight="Bold"/>
-                                                                                <TextBlock Margin="5,0,0,0"
+                                                                                    <TextBlock Margin="5,0,0,0"
                                                                                        FontWeight="Bold">
-                                                                                    <TextBlock.Text>
-                                                                                        <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
-                                                                                            <Binding Path="Traded.Data.Name"/>
-                                                                                            <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                                        <TextBlock.Text>
+                                                                                            <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
+                                                                                                <Binding Path="Traded.Data.Name"/>
+                                                                                                <Binding Path="DataContext.Languages.CurrentLanguage"
                                                                                                  RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                                                        </MultiBinding>
-                                                                                    </TextBlock.Text>
-                                                                                </TextBlock>
-                                                                            </StackPanel>
-                                                                            <StackPanel Orientation="Horizontal"
+                                                                                            </MultiBinding>
+                                                                                        </TextBlock.Text>
+                                                                                    </TextBlock>
+                                                                                </StackPanel>
+                                                                                <StackPanel Orientation="Horizontal"
                                                                                         Grid.Row="1">
-                                                                                <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='You have:'}"/>
-                                                                                <TextBlock Text="{Binding Traded.Count, Mode=OneWay}"
+                                                                                    <TextBlock Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='You have:'}"/>
+                                                                                    <TextBlock Text="{Binding Traded.Count, Mode=OneWay}"
                                                                                            Margin="5,0,0,0"/>
-                                                                                <TextBlock Visibility="{Binding AlreadyNeeded, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}">
+                                                                                    <TextBlock Visibility="{Binding AlreadyNeeded, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}">
                                                                                     <Run Text="-"/>
                                                                                     <Run Text="{Binding AlreadyNeeded, Mode=OneWay}"/>
-                                                                                </TextBlock>
-                                                                                <TextBlock Visibility="{Binding AlreadyNeeded, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
+                                                                                    </TextBlock>
+                                                                                    <TextBlock Visibility="{Binding AlreadyNeeded, Converter={StaticResource IntegerToVisibility}, Mode=OneWay}"
                                                                                            Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='(already needed)'}"
                                                                                            Margin="5,0,0,0"/>
-                                                                                <TextBlock Margin="5,0,0,0">
+                                                                                    <TextBlock Margin="5,0,0,0">
                                                                                     <Run Text="("/>
                                                                                     <Run Text="{Binding Consumption, StringFormat={}{0:0}%, Mode=OneWay}"/>
                                                                                     <Run Text=")"/>
-                                                                                </TextBlock>
-                                                                            </StackPanel>
-                                                                        </Grid>
-                                                                    </DataTemplate>
-                                                                </ItemsControl.ItemTemplate>
-                                                            </ItemsControl>
-                                                        </Expander>
-                                                    </DataTemplate>
-                                                </ItemsControl.ItemTemplate>
-                                            </ItemsControl>
-                                        </Grid>
-
-                                        <!-- BLUEPRINT COMPOSITION -->
-                                        <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.CompositionForGui, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
-                                                      Grid.Column="2"
-                                                      HorizontalAlignment="Right"
+                                                                                    </TextBlock>
+                                                                                </StackPanel>
+                                                                            </Grid>
+                                                                        </DataTemplate>
+                                                                    </ItemsControl.ItemTemplate>
+                                                                </ItemsControl>
+                                                            </Expander>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+                                            </Grid>
+                                            <!-- BLUEPRINT COMPOSITION -->
+                                            <ItemsControl ItemsSource="{Binding DataContext.ShoppingList.CompositionForGui, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                      Grid.Row="1"
                                                       x:Name="ShoppingListComposition"
                                                       FontSize="15"
+                                                          HorizontalAlignment="Center"
                                                       Margin="0,5,0,0"
                                                       Width="320">
-                                            <ItemsControl.ItemsPanel>
-                                                <ItemsPanelTemplate>
-                                                    <WrapPanel Orientation="Horizontal"
+                                                <ItemsControl.ItemsPanel>
+                                                    <ItemsPanelTemplate>
+                                                        <WrapPanel Orientation="Horizontal"
                                                                HorizontalAlignment="Right" />
-                                                </ItemsPanelTemplate>
-                                            </ItemsControl.ItemsPanel>
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <Grid Margin="3,3,3,3"
+                                                    </ItemsPanelTemplate>
+                                                </ItemsControl.ItemsPanel>
+                                                <ItemsControl.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Margin="3,3,3,3"
                                                           HorizontalAlignment="Left"
                                                           Width="{Binding Width}">
-                                                        <Grid.ToolTip>
-                                                            <TextBlock Text="{Binding Tooltip}" />
-                                                        </Grid.ToolTip>
-                                                        <Rectangle Fill="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}"
+                                                            <Grid.ToolTip>
+                                                                <TextBlock Text="{Binding Tooltip}" />
+                                                            </Grid.ToolTip>
+                                                            <Rectangle Fill="{Binding Category, Converter={StaticResource BlueprintCategoryToColor}}"
                                                                    Opacity="0.1"/>
-                                                        <Button Content="❌"
+                                                            <Button Content="❌"
                                                                 Tag="{Binding Composition}"
                                                                 Style="{DynamicResource ChromelessButtonStyle}"
                                                                 Foreground="Red"
@@ -1671,7 +1680,7 @@
                                                                 Margin="2"
                                                                 VerticalContentAlignment="Center"
                                                                 Click="RemoveShoppingListBlock" />
-                                                        <ToggleButton IsChecked="{Binding ShowAllGrades, Mode=OneWay}"
+                                                            <ToggleButton IsChecked="{Binding ShowAllGrades, Mode=OneWay}"
                                                                       Click="ShowAllGradesClicked"
                                                                       Tag="{Binding}"
                                                                       Visibility="{Binding Converter={StaticResource ShoppingListBlockToAllGradesVisibility}}"
@@ -1683,37 +1692,37 @@
                                                                       Margin="2"
                                                                       Style="{StaticResource CircleToggleButton}"
                                                                       FontSize="11"/>
-                                                        <Border BorderThickness="0.5"
+                                                            <Border BorderThickness="0.5"
                                                             BorderBrush="{Binding Highlighted, Converter={StaticResource BooleanToShoppingListBlockHighlightColor}}">
-                                                            <StackPanel>
-                                                                <TextBlock Text="{Binding Label}"
+                                                                <StackPanel>
+                                                                    <TextBlock Text="{Binding Label}"
                                                                            HorizontalAlignment="Center"
                                                                            FontSize="13"/>
-                                                                <ItemsControl ItemsSource="{Binding Composition}"
+                                                                    <ItemsControl ItemsSource="{Binding Composition}"
                                                                               HorizontalAlignment="Center">
-                                                                    <ItemsControl.ItemsPanel>
-                                                                        <ItemsPanelTemplate>
-                                                                            <StackPanel Orientation="Horizontal"/>
-                                                                        </ItemsPanelTemplate>
-                                                                    </ItemsControl.ItemsPanel>
-                                                                    <ItemsControl.ItemTemplate>
-                                                                        <DataTemplate>
-                                                                            <Grid MouseEnter="ShoppingListBlueprintMouseEnter"
+                                                                        <ItemsControl.ItemsPanel>
+                                                                            <ItemsPanelTemplate>
+                                                                                <StackPanel Orientation="Horizontal"/>
+                                                                            </ItemsPanelTemplate>
+                                                                        </ItemsControl.ItemsPanel>
+                                                                        <ItemsControl.ItemTemplate>
+                                                                            <DataTemplate>
+                                                                                <Grid MouseEnter="ShoppingListBlueprintMouseEnter"
                                                                                   MouseLeave="ShoppingListBlueprintMouseLeave"
                                                                                   DataContext="{Binding}"
                                                                                   Margin="0,0,0,5"
                                                                                   Tag="{Binding Path=ItemsSource, ElementName=ShoppingListIngredients}">
-                                                                                <Grid.RowDefinitions>
-                                                                                    <RowDefinition Height="15"/>
-                                                                                    <RowDefinition Height="20"/>
-                                                                                </Grid.RowDefinitions>
-                                                                                <Grid.ColumnDefinitions>
-                                                                                    <ColumnDefinition Width="Auto" />
-                                                                                    <ColumnDefinition Width="Auto" />
-                                                                                    <ColumnDefinition Width="Auto" />
-                                                                                    <ColumnDefinition Width="Auto" />
-                                                                                </Grid.ColumnDefinitions>
-                                                                                <Border Grid.Column="0"
+                                                                                    <Grid.RowDefinitions>
+                                                                                        <RowDefinition Height="15"/>
+                                                                                        <RowDefinition Height="20"/>
+                                                                                    </Grid.RowDefinitions>
+                                                                                    <Grid.ColumnDefinitions>
+                                                                                        <ColumnDefinition Width="Auto" />
+                                                                                        <ColumnDefinition Width="Auto" />
+                                                                                        <ColumnDefinition Width="Auto" />
+                                                                                        <ColumnDefinition Width="Auto" />
+                                                                                    </Grid.ColumnDefinitions>
+                                                                                    <Border Grid.Column="0"
                                                                                         Grid.Row="1"
                                                                                         x:Name="Separator"
                                                                                         Width="1"
@@ -1722,7 +1731,7 @@
                                                                                         VerticalAlignment="Bottom"
                                                                                         Margin="0,0,0,-5"
                                                                                         BorderBrush="{StaticResource SynthesisBlueBrush}"/>
-                                                                                <TextBlock Foreground="{Binding Item1.ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}"
+                                                                                    <TextBlock Foreground="{Binding Item1.ShoppingListHighlighted, Converter={StaticResource BooleanToShoppingListHighlightColor}}"
                                                                                            VerticalAlignment="Top"
                                                                                            Grid.Column="0"
                                                                                            Grid.Row="0"
@@ -1731,7 +1740,7 @@
                                                                                            HorizontalAlignment="Center"
                                                                                            Text="{Binding Item1.GradeString, Mode=OneWay}"
                                                                                            Grid.ColumnSpan="4"/>
-                                                                                <Button Content="-"
+                                                                                    <Button Content="-"
                                                                                         Tag="{Binding Item1}"
                                                                                         Click="DecrementShoppingList"
                                                                                         Foreground="Red"
@@ -1743,7 +1752,7 @@
                                                                                         Style="{DynamicResource ChromelessButtonStyle}"
                                                                                         Margin="5,0,5,0"
                                                                                         Grid.Column="1" />
-                                                                                <TextBox Text="{Binding Item2, Mode=OneWay}"
+                                                                                    <TextBox Text="{Binding Item2, Mode=OneWay}"
                                                                                          Tag="{Binding}"
                                                                                          Foreground="Wheat"
                                                                                          Background="Transparent"
@@ -1757,7 +1766,7 @@
                                                                                            Grid.Row="1"
                                                                                            Margin="0,7,0,0"
                                                                                            Grid.Column="2" />
-                                                                                <Button Content="+"
+                                                                                    <Button Content="+"
                                                                                         Tag="{Binding Item1}"
                                                                                         Click="IncrementShoppingList"
                                                                                         FontWeight="Black"
@@ -1769,27 +1778,30 @@
                                                                                         Style="{DynamicResource ChromelessButtonStyle}"
                                                                                         Grid.Column="3"
                                                                                         Margin="5,0,5,0" />
-                                                                            </Grid>
-                                                                            <DataTemplate.Triggers>
-                                                                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource PreviousData}}" Value="{x:Null}">
-                                                                                    <Setter Property="Visibility" TargetName="Separator" Value="Collapsed"/>
-                                                                                </DataTrigger>
-                                                                            </DataTemplate.Triggers>
-                                                                        </DataTemplate>
-                                                                    </ItemsControl.ItemTemplate>
-                                                                </ItemsControl>
-                                                            </StackPanel>
-                                                        </Border>
-                                                    </Grid>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
-                                    </Grid>
+                                                                                </Grid>
+                                                                                <DataTemplate.Triggers>
+                                                                                    <DataTrigger Binding="{Binding RelativeSource={RelativeSource PreviousData}}" Value="{x:Null}">
+                                                                                        <Setter Property="Visibility" TargetName="Separator" Value="Collapsed"/>
+                                                                                    </DataTrigger>
+                                                                                </DataTemplate.Triggers>
+                                                                            </DataTemplate>
+                                                                        </ItemsControl.ItemTemplate>
+                                                                    </ItemsControl>
+                                                                </StackPanel>
+                                                            </Border>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ItemsControl.ItemTemplate>
+                                            </ItemsControl>
+                                        </Grid>
+
+                                        </Grid>
                                 </DataTemplate>
                             </DataGrid.RowDetailsTemplate>
                             <DataGrid.Columns>
                                 <DataGridTemplateColumn IsReadOnly="True"
-                                                    Width="*"
+                                                    Width="Auto"
+                                                        MinWidth="600"
                                                     CanUserResize="False">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
