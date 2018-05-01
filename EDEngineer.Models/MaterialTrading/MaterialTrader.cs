@@ -124,6 +124,7 @@ namespace EDEngineer.Models
                     }
 
                     var willBeEnough = needed + deduced.GetOrDefault(otherGroup.Data) <= otherGroup.Count;
+
                     yield return new MaterialTrade(otherGroup, ingredient, needed, missingSize, willBeEnough, deduced.GetOrDefault(otherGroup.Data));
                 }
                 // ReSharper restore PossibleInvalidOperationException
