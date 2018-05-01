@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.2.2",
+    "Content": "* Made the material trader panel a bit cleaner\r\n* Added rarities (so you know what you're trading)\r\n* Added material trader location hints\r\n* In the shopping list, show missing items first\r\n* Instead of Material, show Encoded or Data in any blueprint detail (as well as the shopping list)\r\n\r\n* Fixed an issue in the ship loadout that made hardpoints appear in the Livery category"
+  },
+  {
     "Version": "1.1.2.0",
     "Content": "* Added material trader suggestions in the shopping list:\r\nShows material trading suggestion (taking into account your cargo and the entire shopping list).\r\nSuggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.\r\nOrange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).\r\n\r\n* Brazilian localization update, thanks to @KingRider\r\n* Russian localization update, thank to @VChet"
   },
