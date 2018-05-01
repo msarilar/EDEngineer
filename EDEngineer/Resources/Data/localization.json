@@ -4946,6 +4946,33 @@
       "ru": null,
       "pl": null,
       "cs": null
+    },
+    "Materials Trader found at industrial economies, only trades in manufactured materials.": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
     }
   }
 }

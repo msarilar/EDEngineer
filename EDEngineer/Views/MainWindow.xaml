@@ -1581,26 +1581,44 @@
                                                               Style="{StaticResource GroupExpander}"
                                                               FontSize="12">
                                                                 <Expander.Header>
-                                                                    <StackPanel Orientation="Horizontal"
+                                                                    <Grid HorizontalAlignment="Center"
+                                                                          Width="260">
+                                                                        <StackPanel Orientation="Horizontal"
+                                                                                HorizontalAlignment="Left"
                                                                                 Margin="3">
-                                                                        <Image Source="{Binding Key.Item1.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                                                                            <Image Source="{Binding Key.Item1.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                                                                HorizontalAlignment="Left"
                                                                                Width="18"
                                                                                Height="18"
                                                                                Margin="3,0,3,0"
                                                                                RenderOptions.BitmapScalingMode="HighQuality"
                                                                                VerticalAlignment="Center" />
-                                                                        <TextBlock Text="{Binding Key.Item3}"/>
-                                                                        <TextBlock Margin="5,0,0,0">
-                                                                            <TextBlock.Text>
-                                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
-                                                                                    <Binding Path="Key.Item1.Name"/>
-                                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                            <TextBlock Text="{Binding Key.Item3}"
+                                                                                       Margin="0,1,0,0"/>
+                                                                            <TextBlock Margin="5,1,0,0">
+                                                                                <TextBlock.Text>
+                                                                                    <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                                        <Binding Path="Key.Item1.Name"/>
+                                                                                        <Binding Path="DataContext.Languages.CurrentLanguage"
                                                                                      RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
-                                                                                </MultiBinding>
-                                                                            </TextBlock.Text>
-                                                                        </TextBlock>
-                                                                    </StackPanel>
+                                                                                    </MultiBinding>
+                                                                                </TextBlock.Text>
+                                                                            </TextBlock>
+                                                                        </StackPanel>
+
+                                                                        <iconPacks:PackIconMaterial Kind="InformationOutline"
+                                                                                                    HorizontalAlignment="Right"
+                                                                                                    VerticalAlignment="Center"
+                                                                                                    Foreground="{StaticResource EliteOrangeBrush}"
+                                                                                                    Background="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughColor}}"
+                                                                                                    >
+                                                                            <iconPacks:PackIconMaterial.ToolTip>
+                                                                                <ToolTip>
+                                                                                    <TextBlock Text="{Binding Key.Item1, Converter={StaticResource EntryDataToMaterialTraderLocation}}"/>
+                                                                                </ToolTip>
+                                                                            </iconPacks:PackIconMaterial.ToolTip>
+                                                                        </iconPacks:PackIconMaterial>
+                                                                    </Grid>
                                                                 </Expander.Header>
                                                                 <ItemsControl ItemsSource="{Binding Value}"
                                                                               Margin="5"

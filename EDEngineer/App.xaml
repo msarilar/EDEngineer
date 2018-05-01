@@ -116,6 +116,7 @@
             <converters:HistoryToTop5Converter x:Key="HistoryToTop5Converter"/>
             <converters:ShoppingListBlockToAllGradesVisibility x:Key="ShoppingListBlockToAllGradesVisibility"/>
             <converters:ModuleModifierToColorConverter x:Key="ModuleModifierToColorConverter"/>
+            <converters:EntryDataToMaterialTraderLocation x:Key="EntryDataToMaterialTraderLocation"/>
 
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
