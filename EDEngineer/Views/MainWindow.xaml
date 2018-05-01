@@ -1576,12 +1576,20 @@
                                                               Height="Auto"
                                                               Focusable="False"
                                                               Tag="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughColor}}"
-                                                              Foreground="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughTextColor}}"
-                                                              Background="{Binding Key.Item2, Converter={StaticResource BooleanToWillBeEnoughForegroundColor}}"
+                                                              Foreground="{StaticResource EliteOrangeBrush}"
+                                                              Background="{StaticResource BlackBrush}"
                                                               Style="{StaticResource GroupExpander}"
                                                               FontSize="12">
                                                                 <Expander.Header>
-                                                                    <StackPanel Orientation="Horizontal">
+                                                                    <StackPanel Orientation="Horizontal"
+                                                                                Margin="3">
+                                                                        <Image Source="{Binding Key.Item1.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                                                                               HorizontalAlignment="Left"
+                                                                               Width="18"
+                                                                               Height="18"
+                                                                               Margin="3,0,3,0"
+                                                                               RenderOptions.BitmapScalingMode="HighQuality"
+                                                                               VerticalAlignment="Center" />
                                                                         <TextBlock Text="{Binding Key.Item3}"/>
                                                                         <TextBlock Margin="5,0,0,0">
                                                                             <TextBlock.Text>
@@ -1595,7 +1603,8 @@
                                                                     </StackPanel>
                                                                 </Expander.Header>
                                                                 <ItemsControl ItemsSource="{Binding Value}"
-                                                                      Margin="5">
+                                                                              Margin="5"
+                                                                              Focusable="False">
                                                                     <ItemsControl.ItemTemplate>
                                                                         <DataTemplate>
                                                                             <Grid>
@@ -1605,10 +1614,19 @@
                                                                                 </Grid.RowDefinitions>
                                                                                 <StackPanel Orientation="Horizontal"
                                                                                     Grid.Row="0">
+                                                                                    <Image Source="{Binding Traded.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                                                                                           HorizontalAlignment="Left"
+                                                                                           Width="18"
+                                                                                           Height="18"
+                                                                                           Margin="3,0,3,0"
+                                                                                           RenderOptions.BitmapScalingMode="HighQuality"
+                                                                                           VerticalAlignment="Center" />
                                                                                     <TextBlock Text="{Binding TradedNeeded, Mode=OneWay}"
-                                                                                       FontWeight="Bold"/>
+                                                                                               VerticalAlignment="Center"
+                                                                                               FontWeight="Bold"/>
                                                                                     <TextBlock Margin="5,0,0,0"
-                                                                                       FontWeight="Bold">
+                                                                                               VerticalAlignment="Center"
+                                                                                               FontWeight="Bold">
                                                                                         <TextBlock.Text>
                                                                                             <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                                                                                 <Binding Path="Traded.Data.Name"/>

@@ -96,13 +96,10 @@
                                                        NormalColor="{StaticResource SynthesisBlueBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughColor"
                                                        SpecialColor="{StaticResource ExperimentalBrush}"
-                                                       NormalColor="{StaticResource IngredientHighlightedBrush}"/>
+                                                       NormalColor="{StaticResource AccentBackgroundBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughForegroundColor"
                                                        SpecialColor="{StaticResource GreenBrush}"
                                                        NormalColor="{StaticResource EliteOrangeBrush}"/>
-            <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughTextColor"
-                                                       SpecialColor="{StaticResource BackgroundBrush}"
-                                                       NormalColor="{StaticResource AccentBackgroundBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToGoodEffectColorConverter"
                                                        SpecialColor="Green"
                                                        NormalColor="Red"/>
