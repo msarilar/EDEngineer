@@ -112,7 +112,7 @@ namespace EDEngineer.Models
                     int needed;
                     if (rankDifference > 0)
                     {
-                        needed = (int)(2 * missingSize * Math.Pow(3, rankDifference));
+                        needed = 2 * (int) Math.Ceiling(missingSize / Math.Pow(3, rankDifference - 1));
                     }
                     else if (rankDifference == 0)
                     {
