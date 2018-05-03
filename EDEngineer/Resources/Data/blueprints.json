@@ -27283,7 +27283,7 @@
     ],
     "Grade": 5
   },
-    {
+  {
     "Type": "Guardian Plasma Charger Munitions",
     "Name": "None",
     "Engineers": [
@@ -27333,7 +27333,7 @@
         "Size": 2
       },
       {
-        "Name": "Guardian Technology Component"
+        "Name": "Guardian Technology Component",
         "Size": 2
       }
     ],
@@ -27367,7 +27367,7 @@
         "Size": 2
       },
       {
-        "Name": Guardian Sentinel Weapon Parts",
+        "Name": "Guardian Sentinel Weapon Parts",
         "Size": 3
       }
     ],
@@ -27447,6 +27447,7 @@
       {
         "Name": "Filament Composites",
         "Size": 6
+      },
       {
         "Name": "Focus Crystals",
         "Size": 10
@@ -27615,10 +27616,10 @@
         "Name": "Arsenic",
         "Size": 1
       },
-	  {
-	   "Name": "Sensor Fragment",
-	   "Size": 3
-	  },
+      {
+        "Name": "Sensor Fragment",
+        "Size": 3
+      },
       {
         "Name": "Thargoid Technological Components",
         "Size": 4
@@ -27632,11 +27633,11 @@
   },
   {
     "Type": "Enzyme Missile Launcher Munitions",
-	"Name": "None",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Iron",
         "Size": 3
@@ -27649,10 +27650,10 @@
         "Name": "Bio-Mechanical Conduits",
         "Size": 4
       },
-	  {
-	   "Name": "Propulsion Elements",
-	   "Size": 3
-	  },
+      {
+        "Name": "Propulsion Elements",
+        "Size": 3
+      },
       {
         "Name": "Weapon Parts",
         "Size": 3
@@ -27666,11 +27667,11 @@
   },
   {
     "Type": "Enzyme Missile Launcher Munitions",
-	"Name": "+15% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+15% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Sulphur",
         "Size": 6
@@ -27683,10 +27684,10 @@
         "Name": "Bio-Mechanical Conduits",
         "Size": 5
       },
-	  {
-	   "Name": "Propulsion Elements",
-	   "Size": 6
-	  },
+      {
+        "Name": "Propulsion Elements",
+        "Size": 6
+      },
       {
         "Name": "Weapon Parts",
         "Size": 4
@@ -27700,11 +27701,11 @@
   },
   {
     "Type": "Enzyme Missile Launcher Munitions",
-	"Name": "+30% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+30% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Phosphorus",
         "Size": 5
@@ -27717,10 +27718,10 @@
         "Name": "Bio-Mechanical Conduits",
         "Size": 6
       },
-	  {
-	   "Name": "Propulsion Elements",
-	   "Size": 6
-	  },
+      {
+        "Name": "Propulsion Elements",
+        "Size": 6
+      },
       {
         "Name": "Weapon Parts",
         "Size": 5
@@ -27734,11 +27735,11 @@
   },
   {
     "Type": "Flechette Launcher Munitions",
-	"Name": "None",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Tungsten",
         "Size": 1
@@ -27747,10 +27748,10 @@
         "Name": "Electrochemical Arrays",
         "Size": 3
       },
-	  {
-	   "Name": "Mechanical Components",
-	   "Size": 2
-	  },
+      {
+        "Name": "Mechanical Components",
+        "Size": 2
+      },
       {
         "Name": "Boron",
         "Size": 2
@@ -27760,11 +27761,11 @@
   },
   {
     "Type": "Flechette Launcher Munitions",
-	"Name": "+5% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+5% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Tungsten",
         "Size": 4
@@ -27773,10 +27774,10 @@
         "Name": "Electrochemical Arrays",
         "Size": 6
       },
-	  {
-	   "Name": "Mechanical Components",
-	   "Size": 4
-	  },
+      {
+        "Name": "Mechanical Components",
+        "Size": 4
+      },
       {
         "Name": "Boron",
         "Size": 4
@@ -27786,11 +27787,11 @@
   },
   {
     "Type": "Flechette Launcher Munitions",
-	"Name": "+10% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+10% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Tungsten",
         "Size": 6
@@ -27799,10 +27800,10 @@
         "Name": "Electrochemical Arrays",
         "Size": 9
       },
-	  {
-	   "Name": "Mechanical Components",
-	   "Size": 5
-	  },
+      {
+        "Name": "Mechanical Components",
+        "Size": 5
+      },
       {
         "Name": "Boron",
         "Size": 6
@@ -27812,11 +27813,11 @@
   },
   {
     "Type": "Guardian Shard Cannon Munitions",
-	"Name": "None",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Carbon",
         "Size": 3
@@ -27829,10 +27830,10 @@
         "Name": "Crystal Shards",
         "Size": 3
       },
-	  {
-	   "Name": "Guardian Power Cell",
-	   "Size": 3
-	  },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 3
+      },
       {
         "Name": "Guardian Sentinel Wreckage Components",
         "Size": 5
@@ -27842,11 +27843,11 @@
   },
   {
     "Type": "Guardian Shard Cannon Munitions",
-	"Name": "+15% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+15% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Crystal Shards",
         "Size": 4
@@ -27864,11 +27865,11 @@
   },
   {
     "Type": "Guardian Shard Cannon Munitions",
-	"Name": "+30% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+30% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Carbon",
         "Size": 8
@@ -27890,11 +27891,11 @@
   },
   {
     "Type": "AX Explosive Munitions",
-	"Name": "None",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Carbon",
         "Size": 4
@@ -27916,11 +27917,11 @@
   },
   {
     "Type": "AX Explosive Munitions",
-	"Name": "+5% Damage",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+5% Damage",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Sulphur",
         "Size": 6
@@ -27937,20 +27938,20 @@
         "Name": "Propulsion Elements",
         "Size": 4
       },
-	  {
-	    "Name": "ThargoidOrganic Circuitry",
-		"Size": 4
-	  }
+      {
+        "Name": "Thargoid Organic Circuitry",
+        "Size": 4
+      }
     ],
     "Grade": 2
   },
   {
     "Type": "AX Explosive Munitions",
-	"Name": "+10% Damage Boost",
-	"Engineers": [
-	  "@Synthesis"
-	],
-	"Ingredients": [
+    "Name": "+10% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
       {
         "Name": "Tungsten",
         "Size": 5
@@ -27963,10 +27964,10 @@
         "Name": "Bio-Mechanical Conduits",
         "Size": 5
       },
-	  {
-	   "Name": "Polonium",
-	   "Size": 2
-	  },
+      {
+        "Name": "Polonium",
+        "Size": 2
+      },
       {
         "Name": "Propulsion Elements",
         "Size": 5

@@ -94,6 +94,9 @@ namespace EDEngineer.Tests
             var ingredients = blueprints.SelectMany(b => b.Ingredients).Select(i => i.Name).ToHashSet();
             var materials = entries.Select(e => e.Name).ToHashSet();
 
+            var unknownIngredients = ingredients.Where(i => !materials.Contains(i)).ToList();
+            Check.That(unknownIngredients).IsEmpty();
+
             Check.That(ingredients).ContainsOnlyElementsThatMatch(i => materials.Contains(i));
         }
 
