@@ -91,9 +91,16 @@ namespace EDEngineer.Views
             Commanders.Clear();
 
             var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"aggregation.json");
-            aggregation = File.Exists(path)
-                ? JsonConvert.DeserializeObject<CommanderAggregation>(File.ReadAllText(path))
-                : null;
+            try
+            {
+                aggregation = File.Exists(path)
+                    ? JsonConvert.DeserializeObject<CommanderAggregation>(File.ReadAllText(path))
+                    : null;
+            }
+            catch
+            {
+                aggregation = null;
+            }
 
             if (aggregation == null || !aggregation.Aggregations.Any())
             {
