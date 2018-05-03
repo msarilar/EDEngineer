@@ -8,7 +8,9 @@ namespace EDEngineer.Models.Filters
 
         public override bool AppliesTo(Blueprint blueprint)
         {
-            return blueprint.Type == Type;
+            return Type == "@Synthesis" && blueprint.Category == BlueprintCategory.Synthesis ||
+                   Type == "@Technology" && blueprint.Category == BlueprintCategory.Technology ||
+                   blueprint.Type == Type;
         }
 
         public TypeFilter(string type, string uniqueName) : base(uniqueName)

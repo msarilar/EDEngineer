@@ -49,13 +49,17 @@ namespace EDEngineer.Utils
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()
+                .Except("@Synthesis", "@Technology")
                 .OrderBy(language.Translate)
                 .Select(e => new EngineerFilter(e, $"EF{e}") { Checked = true }));
 
-            TypeFilters = new List<TypeFilter>(availableBlueprints.GroupBy(b => b.Type)
-                .Select(b => b.Key)
-                .OrderBy(language.Translate)
-                .Select(t => new TypeFilter(t, $"TF{t}") { Checked = true }));
+            TypeFilters = new List<TypeFilter>(availableBlueprints
+                                               .Where(b => b.Category != BlueprintCategory.Synthesis &&
+                                                           b.Category != BlueprintCategory.Technology)
+                                               .GroupBy(b => b.Type)
+                                               .Select(b => b.Key)
+                                               .OrderBy(language.Translate)
+                                               .Select(t => new TypeFilter(t, $"TF{t}") { Checked = true }));
 
             IgnoredFavoriteFilters = new List<IgnoredFavoriteFilter>
             {
@@ -151,6 +155,12 @@ namespace EDEngineer.Utils
 
             var magicGradeFilter = GradeFilter.MagicFilter;
             GradeFilters.Insert(0, magicGradeFilter);
+
+            var synthesisTypeFilter = new TypeFilter("@Synthesis", "TFSynthesis") { Checked = true };
+            TypeFilters.Add(synthesisTypeFilter);
+
+            var technologyTypeFilter = new TypeFilter("@Technology", "TFTechnology") { Checked = true };
+            TypeFilters.Add(technologyTypeFilter);
 
             magicGradeFilter.PropertyChanged += (o, e) =>
             {

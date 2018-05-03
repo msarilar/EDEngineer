@@ -20,6 +20,11 @@ namespace EDEngineer.Models.Utils
             return values.Contains(value);
         }
 
+        public static IEnumerable<T> Except<T>(this IEnumerable<T> list, params T[] values)
+        {
+            return list.Except(values.AsEnumerable());
+        }
+
         public static int? Rank(this Rarity rarity)
         {
             switch (rarity)
