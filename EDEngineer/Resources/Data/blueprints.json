@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "Type": "Plasma Accelerator",
     "Name": "Short Range Blaster",
@@ -27282,6 +27282,701 @@
       }
     ],
     "Grade": 5
+  },
+    {
+    "Type": "Guardian Plasma Charger Munitions",
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Chromium",
+        "Size": 3
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 3
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 4
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Guardian Plasma Charger Munitions",
+    "Name": "+15% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Chromium",
+        "Size": 4
+      },
+      {
+        "Name": "Heat Exchangers",
+        "Size": 2
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Technology Component"
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Guardian Plasma Charger Munitions",
+    "Name": "+30% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Chromium",
+        "Size": 6
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      },
+      {
+        "Name": "Heat Exchangers",
+        "Size": 4
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 2
+      },
+      {
+        "Name": Guardian Sentinel Weapon Parts",
+        "Size": 3
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Guardian Gauss Cannon Munitions",
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 3
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 3
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 4
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Guardian Gauss Cannon Munitions",
+    "Name": "+15% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 5
+      },
+      {
+        "Name": "Heat Resistant Ceramics",
+        "Size": 3
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 5
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 4
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 3
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Guardian Gauss Cannon Munitions",
+    "Name": "+30% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Manganese",
+        "Size": 8
+      },
+      {
+        "Name": "Heat Resistant Ceramics",
+        "Size": 4
+      },
+      {
+        "Name": "Filament Composites",
+        "Size": 6
+      {
+        "Name": "Focus Crystals",
+        "Size": 10
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "AX Small Calibre Munitions",
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Nickel",
+        "Size": 1
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 2
+      },
+      {
+        "Name": "Weapon Parts",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "AX Small Calibre Munitions",
+    "Name": "+5% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 2
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 2
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      },
+      {
+        "Name": "Sensor Fragment",
+        "Size": 3
+      },
+      {
+        "Name": "Weapon Parts",
+        "Size": 4
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "AX Small Calibre Munitions",
+    "Name": "+10% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 3
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 2
+      },
+      {
+        "Name": "Zirconium",
+        "Size": 2
+      },
+      {
+        "Name": "Sensor Fragment",
+        "Size": 4
+      },
+      {
+        "Name": "Thargoid Carapace",
+        "Size": 2
+      },
+      {
+        "Name": "Weapon Parts",
+        "Size": 6
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "AX Remote Flak Munitions",
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Nickel",
+        "Size": 4
+      },
+      {
+        "Name": "Carbon",
+        "Size": 3
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "AX Remote Flak Munitions",
+    "Name": "+5% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Tin",
+        "Size": 2
+      },
+      {
+        "Name": "Zinc",
+        "Size": 3
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+      {
+        "Name": "Thargoid Technological Components",
+        "Size": 3
+      },
+      {
+        "Name": "Wreckage Components",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "AX Remote Flak Munitions",
+    "Name": "+10% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Zinc",
+        "Size": 8
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 2
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 1
+      },
+	  {
+	   "Name": "Sensor Fragment",
+	   "Size": 3
+	  },
+      {
+        "Name": "Thargoid Technological Components",
+        "Size": 4
+      },
+      {
+        "Name": "Wreckage Components",
+        "Size": 1
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Enzyme Missile Launcher Munitions",
+	"Name": "None",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Iron",
+        "Size": 3
+      },
+      {
+        "Name": "Sulphur",
+        "Size": 3
+      },
+      {
+        "Name": "Bio-Mechanical Conduits",
+        "Size": 4
+      },
+	  {
+	   "Name": "Propulsion Elements",
+	   "Size": 3
+	  },
+      {
+        "Name": "Weapon Parts",
+        "Size": 3
+      },
+      {
+        "Name": "Lead",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Enzyme Missile Launcher Munitions",
+	"Name": "+15% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 6
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 4
+      },
+      {
+        "Name": "Bio-Mechanical Conduits",
+        "Size": 5
+      },
+	  {
+	   "Name": "Propulsion Elements",
+	   "Size": 6
+	  },
+      {
+        "Name": "Weapon Parts",
+        "Size": 4
+      },
+      {
+        "Name": "Lead",
+        "Size": 4
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Enzyme Missile Launcher Munitions",
+	"Name": "+30% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Phosphorus",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 4
+      },
+      {
+        "Name": "Bio-Mechanical Conduits",
+        "Size": 6
+      },
+	  {
+	   "Name": "Propulsion Elements",
+	   "Size": 6
+	  },
+      {
+        "Name": "Weapon Parts",
+        "Size": 5
+      },
+      {
+        "Name": "Lead",
+        "Size": 6
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Flechette Launcher Munitions",
+	"Name": "None",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      },
+      {
+        "Name": "Electrochemical Arrays",
+        "Size": 3
+      },
+	  {
+	   "Name": "Mechanical Components",
+	   "Size": 2
+	  },
+      {
+        "Name": "Boron",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Flechette Launcher Munitions",
+	"Name": "+5% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Tungsten",
+        "Size": 4
+      },
+      {
+        "Name": "Electrochemical Arrays",
+        "Size": 6
+      },
+	  {
+	   "Name": "Mechanical Components",
+	   "Size": 4
+	  },
+      {
+        "Name": "Boron",
+        "Size": 4
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Flechette Launcher Munitions",
+	"Name": "+10% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Tungsten",
+        "Size": 6
+      },
+      {
+        "Name": "Electrochemical Arrays",
+        "Size": 9
+      },
+	  {
+	   "Name": "Mechanical Components",
+	   "Size": 5
+	  },
+      {
+        "Name": "Boron",
+        "Size": 6
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "Guardian Shard Cannon Munitions",
+	"Name": "None",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Carbon",
+        "Size": 3
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 2
+      },
+      {
+        "Name": "Crystal Shards",
+        "Size": 3
+      },
+	  {
+	   "Name": "Guardian Power Cell",
+	   "Size": 3
+	  },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 5
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Guardian Shard Cannon Munitions",
+	"Name": "+15% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Crystal Shards",
+        "Size": 4
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 2
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Guardian Shard Cannon Munitions",
+	"Name": "+30% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Carbon",
+        "Size": 8
+      },
+      {
+        "Name": "Selenium",
+        "Size": 3
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 4
+      },
+      {
+        "Name": "Crystal Shards",
+        "Size": 8
+      }
+    ],
+    "Grade": 3
+  },
+  {
+    "Type": "AX Explosive Munitions",
+	"Name": "None",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Carbon",
+        "Size": 4
+      },
+      {
+        "Name": "Iron",
+        "Size": 3
+      },
+      {
+        "Name": "Nickel",
+        "Size": 3
+      },
+      {
+        "Name": "Propulsion Elements",
+        "Size": 3
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "AX Explosive Munitions",
+	"Name": "+5% Damage",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Sulphur",
+        "Size": 6
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 6
+      },
+      {
+        "Name": "Mercury",
+        "Size": 2
+      },
+      {
+        "Name": "Propulsion Elements",
+        "Size": 4
+      },
+	  {
+	    "Name": "ThargoidOrganic Circuitry",
+		"Size": 4
+	  }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "AX Explosive Munitions",
+	"Name": "+10% Damage Boost",
+	"Engineers": [
+	  "@Synthesis"
+	],
+	"Ingredients": [
+      {
+        "Name": "Tungsten",
+        "Size": 5
+      },
+      {
+        "Name": "Mercury",
+        "Size": 4
+      },
+      {
+        "Name": "Bio-Mechanical Conduits",
+        "Size": 5
+      },
+	  {
+	   "Name": "Polonium",
+	   "Size": 2
+	  },
+      {
+        "Name": "Propulsion Elements",
+        "Size": 5
+      },
+      {
+        "Name": "Ship Flight Data",
+        "Size": 6
+      }
+    ],
+    "Grade": 3
   },
   {
     "Type": "Life Support",
