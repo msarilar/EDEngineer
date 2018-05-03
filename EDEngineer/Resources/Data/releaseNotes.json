@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.2.3",
+    "Content": "* Made the Material Trader indicators more readable\r\n* Handle an issue that could occur on startup after EDEngineer did not properly exit\r\n* Synthesis and Technology filters moved from Engineer filters to Types filters\r\n\r\n* New AX/Guardian Synthesis kindly added by @Tigir"
+  },
+  {
     "Version": "1.1.2.2",
     "Content": "* Made the material trader panel a bit cleaner\r\n* Added rarities (so you know what you're trading)\r\n* Added material trader location hints\r\n* In the shopping list, show missing items first\r\n* Instead of Material, show Raw or Manufactured in any blueprint detail (as well as the shopping list)\r\n\r\n* Fixed an issue in the ship loadout that made hardpoints appear in the Livery category\r\n* Fixed an issue in the calculation of material trading for out-of-group materials"
   },
