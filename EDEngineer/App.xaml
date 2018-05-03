@@ -53,6 +53,7 @@
             <SolidColorBrush x:Key="ExperimentalBrush" Color="DarkOliveGreen"/>
             <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
             <SolidColorBrush x:Key="GreenBrush" Color="Green"/>
+            <SolidColorBrush x:Key="MaterialTraderWillBeEnoughBrush" Color="DarkSlateGray"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
@@ -95,11 +96,8 @@
                                                        SpecialColor="{StaticResource IngredientHighlightedBrush}"
                                                        NormalColor="{StaticResource SynthesisBlueBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughColor"
-                                                       SpecialColor="{StaticResource ExperimentalBrush}"
+                                                       SpecialColor="{StaticResource MaterialTraderWillBeEnoughBrush}"
                                                        NormalColor="{StaticResource AccentBackgroundBrush}"/>
-            <converters:BooleanToSpecialColorConverter x:Key="BooleanToWillBeEnoughForegroundColor"
-                                                       SpecialColor="{StaticResource GreenBrush}"
-                                                       NormalColor="{StaticResource EliteOrangeBrush}"/>
             <converters:BooleanToSpecialColorConverter x:Key="BooleanToGoodEffectColorConverter"
                                                        SpecialColor="Green"
                                                        NormalColor="Red"/>

@@ -1579,7 +1579,7 @@
                                                               Foreground="{StaticResource EliteOrangeBrush}"
                                                               Background="{StaticResource BlackBrush}"
                                                               Style="{StaticResource GroupExpander}"
-                                                              FontSize="12">
+                                                              FontSize="13">
                                                                 <Expander.Header>
                                                                     <Grid HorizontalAlignment="Center"
                                                                           Width="260">
@@ -1594,8 +1594,9 @@
                                                                                RenderOptions.BitmapScalingMode="HighQuality"
                                                                                VerticalAlignment="Center" />
                                                                             <TextBlock Text="{Binding Key.Item3}"
-                                                                                       Margin="0,1,0,0"/>
-                                                                            <TextBlock Margin="5,1,0,0">
+                                                                                       Margin="0,2,0,0"/>
+                                                                            <TextBlock Margin="5,2,0,0"
+                                                                                       FontWeight="ExtraLight">
                                                                                 <TextBlock.Text>
                                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                                         <Binding Path="Key.Item1.Name"/>
@@ -1640,11 +1641,9 @@
                                                                                            RenderOptions.BitmapScalingMode="HighQuality"
                                                                                            VerticalAlignment="Center" />
                                                                                     <TextBlock Text="{Binding TradedNeeded, Mode=OneWay}"
-                                                                                               VerticalAlignment="Center"
-                                                                                               FontWeight="Bold"/>
+                                                                                               VerticalAlignment="Center"/>
                                                                                     <TextBlock Margin="5,0,0,0"
-                                                                                               VerticalAlignment="Center"
-                                                                                               FontWeight="Bold">
+                                                                                               VerticalAlignment="Center">
                                                                                         <TextBlock.Text>
                                                                                             <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Modular Terminals">
                                                                                                 <Binding Path="Traded.Data.Name"/>
