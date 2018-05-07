@@ -1,4 +1,4 @@
-﻿namespace EDEngineer.Models
+﻿namespace EDEngineer.Models.MaterialTrading
 {
     public class MaterialTrade
     {

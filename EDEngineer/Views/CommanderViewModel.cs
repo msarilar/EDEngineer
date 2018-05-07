@@ -324,7 +324,6 @@ namespace EDEngineer.Views
             shoppingList = new ShoppingListViewModel(State.Cargo, State.Blueprints, languages);
         }
 
-
         public void TryRemoveFromShoppingListByIngredients(BlueprintCategory category, string technicalModuleName, List<BlueprintIngredient> blueprintIngredients)
         {
             if (!ShoppingList.SynchronizeWithLogs)

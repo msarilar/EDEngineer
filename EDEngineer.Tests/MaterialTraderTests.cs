@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using EDEngineer.Models;
+using EDEngineer.Models.MaterialTrading;
 using EDEngineer.Models.State;
 using EDEngineer.Models.Utils;
 using EDEngineer.Utils.System;

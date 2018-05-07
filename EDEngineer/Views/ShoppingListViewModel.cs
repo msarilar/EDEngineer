@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using EDEngineer.Models;
+using EDEngineer.Models.MaterialTrading;
 using EDEngineer.Models.State;
 using EDEngineer.Models.Utils;
 using EDEngineer.Utils.System;

@@ -266,10 +266,13 @@ namespace EDEngineer.Utils.System
                                          f =>
                                              f != null && Path.GetFileName(f).StartsWith("Journal.") &&
                                              Path.GetFileName(f).EndsWith(".log")).Select(f => new FileInfo(f))
+                                     .OrderByDescending(f => f.LastWriteTimeUtc)
                                      .ToList();
 
                 var moreRecentFiles =
-                    files.Where(f => f.LastWriteTimeUtc > latestInstant.Value.ToDateTimeUtc()).ToList();
+                    files.TakeWhile((f, i) => i == 0 || f.LastWriteTimeUtc > latestInstant.Value.ToDateTimeUtc() ||
+                                              files[i - 1].LastWriteTimeUtc > latestInstant.Value.ToDateTimeUtc())
+                         .ToList();
 
                 if (moreRecentFiles.Any())
                 {

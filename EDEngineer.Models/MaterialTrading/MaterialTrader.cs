@@ -4,7 +4,7 @@ using System.Linq;
 using EDEngineer.Models.State;
 using EDEngineer.Models.Utils;
 
-namespace EDEngineer.Models
+namespace EDEngineer.Models.MaterialTrading
 {
     public static class MaterialTrader
     {
