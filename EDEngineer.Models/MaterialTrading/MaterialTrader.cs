@@ -13,6 +13,9 @@ namespace EDEngineer.Models.MaterialTrading
             var ingredients = cargo.Ingredients.Values
                                    .Where(i => i.Count > 0 && 
                                                i.Data.Group.HasValue && 
+                                               i.Data.Group != Group.Thargoid &&
+                                               i.Data.Group != Group.Guardian &&
+                                               i.Data.Group != Group.Commodities &&
                                                i.Data.Rarity.Rank() != null &&
                                                !missingIngredients.ContainsKey(i)).ToList();
 

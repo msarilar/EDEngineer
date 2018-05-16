@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.2.5",
+    "Content": "* Material Trader suggestions won't include non-tradable ingredients (like thargoid ingredients or others)"
+  },
+  {
     "Version": "1.1.2.4",
     "Content": "* Fixed an issue with multi-commanders disappearing. If you still don't see your multiple commanders, please delete the aggregation.json file located in your AppData/Roaming/EDEngineer directory.\r\n* Fixed Thargoid Carapace rarity (Common instead of Very Rare) which impacts the maximum number you can carry."
   },
