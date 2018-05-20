@@ -4909,7 +4909,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Máš"
     },
     "(already needed)": {
       "es": null,
@@ -4918,7 +4918,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "(také potřebuješ)"
     },
     "Shows material trading suggestion (taking into account your cargo and the entire shopping list).": {
       "es": null,
@@ -4927,7 +4927,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Zobrazuje návrh obchodování s materiálem (s ohledem na vaše cargo a celý nákupní seznam)."
     },
     "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
       "es": null,
@@ -4936,7 +4936,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Návrhy jsou seřazeny podle toho, jak velký bude obchod v porovnání s materiály ve tvém cargu. Mínus případné položky, které jsou zapotřebí v nákupním seznamu."
     },
     "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
       "es": null,
@@ -4945,7 +4945,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Oranžové položky označují návrhy obchodu, které zcela nesplní tvůj požadavek, ale může ti pomoci."
     },
     "Materials Trader found at industrial economies, only trades in manufactured materials.": {
       "es": null,
@@ -4954,7 +4954,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Obchodník s materiály se může necházet v systémech s 'Industrial' ekonomikou, obchoduje pouze s vyrobenými materiály (Biotech conductors, Compound shielding atd.)."
     },
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
       "es": null,
@@ -4963,7 +4963,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Obchodník s materiály se může necházet v systémech s 'Extraction' a 'Rafinery ekonomikou', obchoduje pouze se surovými materiály, které se získávají na povrchu planet a při težbě v prstencích."
     },
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
       "es": null,
@@ -4972,7 +4972,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Obchodník s materiály se může necházet v systémech s 'High Tech' a 'Military ekonomikou', obchoduje pouze s daty."
     }
   }
 }
