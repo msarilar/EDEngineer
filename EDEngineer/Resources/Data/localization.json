@@ -1772,7 +1772,7 @@
     },
     "Rhenium": {
       "es": null,
-      "pt": null,
+      "pt": "Rênio",
       "de": null,
       "fr": null,
       "ru": "Рений",
@@ -3509,7 +3509,7 @@
     },
     "Thargoid Structural Data": {
       "es": "Datos Estructurales Thargoide",
-      "pt": "Dados de estrutura Thargoid",
+      "pt": "Dados de Estrutura Thargoid",
       "de": "unbekannte Strukturdaten",
       "fr": "Données Structurelles Thargoid",
       "ru": "Данные о структуре таргоидского объекта",
@@ -3527,7 +3527,7 @@
     },
     "Thargoid Energy Cell": {
       "es": "Célula de Energía Thargoide",
-      "pt": "Célula de energia Thargoid",
+      "pt": "Célula de Energia Thargoid",
       "de": "unbekannte Energiezelle",
       "fr": "Cellule d'Énergie Thargoid",
       "ru": "Таргоидская энергоячейка",
@@ -3536,7 +3536,7 @@
     },
     "Thargoid Organic Circuitry": {
       "es": "Circuito Orgánico Thargoide",
-      "pt": "Circuito orgânico Thargoid",
+      "pt": "Circuito Orgânico Thargoid",
       "de": "unbekannte organische Struktur",
       "fr": "Circuit Organique Thargoid",
       "ru": "Таргоидская органическая схема",
@@ -3545,7 +3545,7 @@
     },
     "Thargoid Technological Components": {
       "es": "Componentes Tecnológicos Thargoide",
-      "pt": "Componente tecnológico Thargoid",
+      "pt": "Componente Tecnológico Thargoid",
       "de": "unbekannte Technologie-Komponente",
       "fr": "Composants Technologique Thargoid",
       "ru": "Компоненты таргоидской техники",
@@ -3590,7 +3590,7 @@
     },
     "Bio-Mechanical Conduits": {
       "es": "Conductos Bio-Mecánicos",
-      "pt": "Condutores bio-mecânicos",
+      "pt": "Condutores Bio-mecânicos",
       "de": "Bio-mechanische Leitungen",
       "fr": "Conducteurs Bio-Mécanique",
       "ru": "Биомеханические энергопроводники",
@@ -3599,7 +3599,7 @@
     },
     "Propulsion Elements": {
       "es": "Elementos de Propulsión",
-      "pt": "Elementos de propulsão",
+      "pt": "Elementos de Propulsão",
       "de": "Antriebselemente",
       "fr": "Elements de Propulsion",
       "ru": "Реактивные элементы",
@@ -3833,7 +3833,7 @@
     },
     "Unknown": {
       "es": null,
-      "pt": null,
+      "pt": "Desconhecido",
       "de": "Unbekannt",
       "fr": "Inconnu",
       "ru": "Неизвестные",
@@ -3905,7 +3905,7 @@
     },
     "Category 1": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 1",
       "de": "Kategorie 1",
       "fr": "Matériaux bruts - Catégorie 1",
       "ru": "Категория 1",
@@ -3914,7 +3914,7 @@
     },
     "Category 2": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 2",
       "de": "Kategorie 2",
       "fr": "Matériaux bruts - Catégorie 2",
       "ru": "Категория 2",
@@ -3923,7 +3923,7 @@
     },
     "Category 3": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 3",
       "de": "Kategorie 3",
       "fr": "Matériaux bruts - Catégorie 3",
       "ru": "Категория 3",
@@ -3932,7 +3932,7 @@
     },
     "Category 4": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 4",
       "de": "Kategorie 4",
       "fr": "Matériaux bruts - Catégorie 4",
       "ru": "Категория 4",
@@ -3941,7 +3941,7 @@
     },
     "Category 5": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 5",
       "de": "Kategorie 5",
       "fr": "Matériaux bruts - Catégorie 5",
       "ru": "Категория 5",
@@ -3950,7 +3950,7 @@
     },
     "Category 6": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 6",
       "de": "Kategorie 6",
       "fr": "Matériaux bruts - Catégorie 6",
       "ru": "Категория 6",
@@ -3959,7 +3959,7 @@
     },
     "Category 7": {
       "es": null,
-      "pt": null,
+      "pt": "Categoria 7",
       "de": "Kategorie 7",
       "fr": "Matériaux bruts - Catégorie 7",
       "ru": "Категория 7",
@@ -3977,7 +3977,7 @@
     },
     "Thermic": {
       "es": null,
-      "pt": null,
+      "pt": "Térmico",
       "de": "Thermisch",
       "fr": "Thermiques",
       "ru": "Термические сплавы",
@@ -4040,7 +4040,7 @@
     },
     "Alloys": {
       "es": null,
-      "pt": null,
+      "pt": "Ligas",
       "de": "Legierungen",
       "fr": "Alliages",
       "ru": "Сплавы",
@@ -4049,7 +4049,7 @@
     },
     "Lead": {
       "es": null,
-      "pt": null,
+      "pt": "Chumbo",
       "de": "Blei",
       "fr": null,
       "ru": "Свинец",
@@ -4058,7 +4058,7 @@
     },
     "Boron": {
       "es": null,
-      "pt": null,
+      "pt": "Boro",
       "de": "Bor",
       "fr": null,
       "ru": "Бор",
@@ -4157,7 +4157,7 @@
     },
     "Enzyme Missile Rack": {
       "es": null,
-      "pt": null,
+      "pt": "Estante de Mísseis Enzimáticos",
       "de": "Enzym Raketenrampe",
       "fr": null,
       "ru": null,
@@ -4184,7 +4184,7 @@
     },
     "Guardian Plasma Charger (Fixed)": {
       "es": null,
-      "pt": null,
+      "pt": "Carregador de Plasma Guardian (Fixa)",
       "de": "Guardian-Plasmalader (Fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
       "ru": null,
@@ -4193,7 +4193,7 @@
     },
     "Guardian Plasma Charger (Turreted)": {
       "es": null,
-      "pt": null,
+      "pt": "Carregador de Plasma Guardian (Torretada)",
       "de": "Guardian-Plasmalader (Turm)",
       "fr": "Chargeur à plasma - Guardians (Tourelle)",
       "ru": null,
@@ -4202,7 +4202,7 @@
     },
     "Guardian Hybrid Power Plant": {
       "es": null,
-      "pt": null,
+      "pt": "Gerador de Energia Guardian",
       "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
       "ru": null,
@@ -4220,7 +4220,7 @@
     },
     "Remote Release Flechette Launcher (Fixed)": {
       "es": null,
-      "pt": null,
+      "pt": "Lançador de dardos de Liberação Remota (Fixa)",
       "de": null,
       "fr": null,
       "ru": "Зенитная установка с дистанционным подрывом (фиксированный подвес)",
@@ -4229,7 +4229,7 @@
     },
     "Remote Release Flechette Launcher (Turreted)": {
       "es": null,
-      "pt": null,
+      "pt": "Lançador de dardos de Liberação Remota (Torretada)",
       "de": null,
       "fr": null,
       "ru": "Зенитная установка с дистанционным подрывом (турельный подвес)",
@@ -4238,7 +4238,7 @@
     },
     "Shock Cannon (Fixed)": {
       "es": null,
-      "pt": null,
+      "pt": "Canhão Elétrico (Fixa)",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4247,7 +4247,7 @@
     },
     "Shock Cannon (Gimballed)": {
       "es": null,
-      "pt": null,
+      "pt": "Canhão Elétrico (Guiada)",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4256,7 +4256,7 @@
     },
     "Shock Cannon (Turreted)": {
       "es": null,
-      "pt": null,
+      "pt": "Canhão Elétrico (Torretada)",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4625,7 +4625,7 @@
     },
     "Module": {
       "es": null,
-      "pt": null,
+      "pt": "Módulo",
       "de": null,
       "fr": null,
       "ru": "Модули",
@@ -4643,7 +4643,7 @@
     },
     "Experimental": {
       "es": null,
-      "pt": null,
+      "pt": "Experimental",
       "de": null,
       "fr": null,
       "ru": "Экспериментальные",
@@ -4877,7 +4877,7 @@
     },
     "Thargoid": {
       "es": null,
-      "pt": null,
+      "pt": "Thargoid",
       "de": null,
       "fr": null,
       "ru": "Технологии таргоидов",
