@@ -3127,7 +3127,6 @@
       },
       {
         "Name": "Shield Emitters",
-
         "Size": 1
       }
     ],
@@ -5213,7 +5212,6 @@
         "IsGood": true
       },
       {
-
         "Effect": "+2%",
         "Property": "Rate of Fire",
         "IsGood": true
@@ -7309,7 +7307,6 @@
       {
         "Effect": "+40%",
         "Property": "Power Draw",
-
         "IsGood": false
       },
       {
@@ -8262,7 +8259,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3,
     "CoriolisGuid": "93c43a5d-106c-4481-b50b-c46311607209"
   },
@@ -9392,7 +9388,6 @@
         "Property": "Power Draw",
         "IsGood": false
       },
-
       {
         "Effect": "+300%",
         "Property": "Integrity",
@@ -11468,7 +11463,6 @@
         "Effect": "+40%",
         "Property": "Power Generation",
         "IsGood": true
-
       }
     ],
     "Grade": 5,
@@ -13526,7 +13520,6 @@
       {
         "Name": "Tungsten",
         "Size": 1
-
       },
       {
         "Name": "Zinc",
@@ -14700,7 +14693,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3,
     "CoriolisGuid": "84b2fe9b-5c82-4b3c-8181-7c15aeb9ecf9"
   },
@@ -15607,7 +15599,6 @@
       },
       {
         "Effect": "-20%",
-
         "Property": "Thermal Load",
         "IsGood": true
       },
@@ -17532,8 +17523,7 @@
         "IsGood": false
       }
     ],
-    "Grade": 5,
-    "CoriolisGuid": null
+    "Grade": 5
   },
   {
     "Type": "Fuel Transfer Limpet Controller",
@@ -17670,7 +17660,6 @@
     ],
     "Grade": 4,
     "CoriolisGuid": "3a57effa-ccac-448d-8d1c-3e0966042e24"
-
   },
   {
     "Type": "Fuel Transfer Limpet Controller",
@@ -19762,7 +19751,6 @@
     ],
     "Grade": 3,
     "CoriolisGuid": "f3338d38-f944-4841-b350-09755e1b615d"
-
   },
   {
     "Type": "Fragment Cannon",
@@ -20978,7 +20966,6 @@
         "Size": 1
       }
     ],
-    "Effects": null,
     "Grade": 3,
     "CoriolisGuid": "cc81fa92-d36d-4619-98f9-4202d475b2d8"
   },
@@ -21856,7 +21843,6 @@
     "Effects": [
       {
         "Effect": "-30%",
-
         "Property": "Integrity",
         "IsGood": false
       },
@@ -23944,7 +23930,6 @@
       {
         "Effect": "-16%",
         "Property": "Boot Time",
-
         "IsGood": true
       },
       {
@@ -26026,7 +26011,6 @@
       {
         "Effect": "+100%",
         "Property": "Mass",
-
         "IsGood": false
       }
     ],
@@ -28059,9 +28043,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Guardian Plasma Charger Munitions",
@@ -28091,9 +28073,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Guardian Plasma Charger Munitions",
@@ -28104,7 +28084,6 @@
     "Ingredients": [
       {
         "Name": "Chromium",
-
         "Size": 6
       },
       {
@@ -28128,9 +28107,7 @@
         "Size": 3
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Guardian Gauss Cannon Munitions",
@@ -28156,9 +28133,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Guardian Gauss Cannon Munitions",
@@ -28188,9 +28163,7 @@
         "Size": 3
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Guardian Gauss Cannon Munitions",
@@ -28216,9 +28189,7 @@
         "Size": 10
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "AX Small Calibre Munitions",
@@ -28244,9 +28215,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "AX Small Calibre Munitions",
@@ -28276,9 +28245,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "AX Small Calibre Munitions",
@@ -28312,9 +28279,7 @@
         "Size": 6
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "AX Remote Flak Munitions",
@@ -28336,9 +28301,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "AX Remote Flak Munitions",
@@ -28368,9 +28331,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "AX Remote Flak Munitions",
@@ -28404,9 +28365,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Enzyme Missile Launcher Munitions",
@@ -28440,9 +28399,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Enzyme Missile Launcher Munitions",
@@ -28476,9 +28433,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Enzyme Missile Launcher Munitions",
@@ -28512,9 +28467,7 @@
         "Size": 6
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Flechette Launcher Munitions",
@@ -28540,9 +28493,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Flechette Launcher Munitions",
@@ -28568,9 +28519,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Flechette Launcher Munitions",
@@ -28596,9 +28545,7 @@
         "Size": 6
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Guardian Shard Cannon Munitions",
@@ -28628,9 +28575,7 @@
         "Size": 5
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Guardian Shard Cannon Munitions",
@@ -28652,9 +28597,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Guardian Shard Cannon Munitions",
@@ -28680,9 +28623,7 @@
         "Size": 8
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "AX Explosive Munitions",
@@ -28708,9 +28649,7 @@
         "Size": 3
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "AX Explosive Munitions",
@@ -28740,9 +28679,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "AX Explosive Munitions",
@@ -28776,9 +28713,7 @@
         "Size": 6
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Life Support",
@@ -28796,9 +28731,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Limpets",
@@ -28816,9 +28749,7 @@
         "Size": 10
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Chaff Launcher",
@@ -28836,9 +28767,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Chaff Launcher",
@@ -28860,9 +28789,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Chaff Launcher",
@@ -28888,9 +28815,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Heat Sink Launcher",
@@ -28908,9 +28833,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Heat Sink Launcher",
@@ -28932,9 +28855,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Heat Sink Launcher",
@@ -28960,9 +28881,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "FSD Injection",
@@ -28984,9 +28903,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "FSD Injection",
@@ -29016,9 +28933,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "FSD Injection",
@@ -29052,9 +28967,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Plasma Munitions",
@@ -29076,9 +28989,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Plasma Munitions",
@@ -29104,9 +29015,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Plasma Munitions",
@@ -29132,9 +29041,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Explosive Munitions",
@@ -29160,9 +29067,7 @@
         "Size": 4
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Explosive Munitions",
@@ -29188,9 +29093,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Explosive Munitions",
@@ -29220,9 +29123,7 @@
         "Size": 5
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Small Calibre Munitions",
@@ -29244,9 +29145,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Small Calibre Munitions",
@@ -29276,9 +29175,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Small Calibre Munitions",
@@ -29312,9 +29209,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "High Velocity Munitions",
@@ -29332,9 +29227,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "High Velocity Munitions",
@@ -29360,9 +29253,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "High Velocity Munitions",
@@ -29388,9 +29279,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Large Calibre Munitions",
@@ -29412,9 +29301,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "Large Calibre Munitions",
@@ -29444,9 +29331,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "Large Calibre Munitions",
@@ -29476,9 +29361,7 @@
         "Size": 2
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "AFM Refill",
@@ -29504,9 +29387,7 @@
         "Size": 3
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "AFM Refill",
@@ -29536,9 +29417,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "AFM Refill",
@@ -29572,9 +29451,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "SRV Ammo Restock",
@@ -29592,9 +29469,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "SRV Ammo Restock",
@@ -29620,9 +29495,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "SRV Ammo Restock",
@@ -29648,9 +29521,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "SRV Repair",
@@ -29668,9 +29539,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "SRV Repair",
@@ -29696,9 +29565,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "SRV Repair",
@@ -29728,9 +29595,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "SRV Refuel",
@@ -29748,9 +29613,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 1,
-    "CoriolisGuid": null
+    "Grade": 1
   },
   {
     "Type": "SRV Refuel",
@@ -29776,9 +29639,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 2,
-    "CoriolisGuid": null
+    "Grade": 2
   },
   {
     "Type": "SRV Refuel",
@@ -29804,9 +29665,7 @@
         "Size": 1
       }
     ],
-    "Effects": null,
-    "Grade": 3,
-    "CoriolisGuid": null
+    "Grade": 3
   },
   {
     "Type": "Beam Laser",
@@ -30336,7 +30195,6 @@
     "Name": "Long Range Scanner",
     "Engineers": [
       "Lori Jameson",
-
       "Bill Turner",
       "Juri Ishmaak",
       "Tiana Fortune",
@@ -32429,7 +32287,6 @@
     ],
     "Ingredients": [
       {
-
         "Name": "Phosphorus",
         "Size": 1
       },
@@ -33173,10 +33030,7 @@
         "Name": "Aberrant Shield Pattern Analysis",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33189,10 +33043,7 @@
         "Name": "Bromellite",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33205,10 +33056,7 @@
         "Name": "Classified Scan Databanks",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33221,10 +33069,7 @@
         "Name": "Decoded Emission Data",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33237,10 +33082,7 @@
         "Name": "Modular Terminals",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33253,10 +33095,7 @@
         "Name": "Meta-alloys",
         "Size": 1
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33269,10 +33108,7 @@
         "Name": "Soontill Relics",
         "Size": 3
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33285,10 +33121,7 @@
         "Name": "Landmines",
         "Size": 200
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33301,10 +33134,7 @@
         "Name": "Gold",
         "Size": 200
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33317,10 +33147,7 @@
         "Name": "Painite",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33333,10 +33160,7 @@
         "Name": "Kamitra Cigars",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33349,10 +33173,7 @@
         "Name": "Fujin Tea",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33365,10 +33186,7 @@
         "Name": "Xihe Companions",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33381,10 +33199,7 @@
         "Name": "Lavian Brandy",
         "Size": 50
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33397,10 +33212,7 @@
         "Name": "Kongga Ale",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Unlock",
@@ -33413,10 +33225,7 @@
         "Name": "Sensor Fragment",
         "Size": 25
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33445,10 +33254,7 @@
         "Name": "Radiation Baffle",
         "Size": 30
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33477,10 +33283,7 @@
         "Name": "Radiation Baffle",
         "Size": 6
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33509,10 +33312,7 @@
         "Name": "Magnetic Emitter Coil",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33541,10 +33341,7 @@
         "Name": "Micro-Weave Cooling Hoses",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33573,10 +33370,7 @@
         "Name": "Articulation Motors",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33605,10 +33399,7 @@
         "Name": "Energy Grid Assembly",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33637,10 +33428,7 @@
         "Name": "HN Shock Mount",
         "Size": 8
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33669,10 +33457,7 @@
         "Name": "Heatsink Interlink",
         "Size": 6
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33701,10 +33486,7 @@
         "Name": "Power Transfer Bus",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Guardian",
@@ -33733,10 +33515,7 @@
         "Name": "Micro Controllers",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33765,10 +33544,7 @@
         "Name": "Reinforced Mounting Plate",
         "Size": 12
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33797,10 +33573,7 @@
         "Name": "CMM Composite",
         "Size": 8
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33829,10 +33602,7 @@
         "Name": "Articulation Motors",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33861,10 +33631,7 @@
         "Name": "Ion Distributor",
         "Size": 6
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33893,10 +33660,7 @@
         "Name": "Power Converter",
         "Size": 10
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Human",
@@ -33925,10 +33689,7 @@
         "Name": "Power Transfer Bus",
         "Size": 8
       }
-    ],
-    "Effects": null,
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -33962,9 +33723,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -33998,9 +33757,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34029,9 +33786,7 @@
         "Property": "Damage increases with heat level",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34069,9 +33824,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34100,9 +33853,7 @@
         "Property": "Heat reduced when striking a target",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34136,9 +33887,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34167,9 +33916,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34198,9 +33945,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Beam Laser",
@@ -34229,9 +33974,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34265,9 +34008,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34306,9 +34047,7 @@
         "Property": "Jitter",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34346,9 +34085,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34382,9 +34119,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34422,9 +34157,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34458,9 +34191,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34489,9 +34220,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34520,9 +34249,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34551,9 +34278,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Burst Laser",
@@ -34591,9 +34316,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34608,7 +34331,6 @@
         "Size": 5
       },
       {
-
         "Name": "Modified Embedded Firmware",
         "Size": 3
       },
@@ -34628,9 +34350,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34668,9 +34388,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34708,9 +34426,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34744,9 +34460,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34784,9 +34498,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34820,9 +34532,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34851,9 +34561,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34882,9 +34590,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34913,9 +34619,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Pulse Laser",
@@ -34953,9 +34657,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -34984,9 +34686,7 @@
         "Property": "Auto reload while firing",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35020,9 +34720,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35060,9 +34758,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35100,9 +34796,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35145,9 +34839,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35180,9 +34872,7 @@
         "Property": "No damage to untargeted ships",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35211,9 +34901,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35242,9 +34930,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35273,9 +34959,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35309,9 +34993,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Multi-cannon",
@@ -35349,9 +35031,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35380,9 +35060,7 @@
         "Property": "Auto reload while firing",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35415,9 +35093,7 @@
         "Property": "Target gimbal/turret tracking reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35455,9 +35131,7 @@
         "Property": "Shot Speed",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35495,9 +35169,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35530,9 +35202,7 @@
         "Property": "No damage to untargeted ships",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35565,9 +35235,7 @@
         "Property": "Shielded target heat increased",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35601,9 +35269,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35632,9 +35298,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35663,9 +35327,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35694,9 +35356,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Cannon",
@@ -35734,9 +35394,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35770,9 +35428,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35801,9 +35457,7 @@
         "Property": "Target sensor acuity reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35832,9 +35486,7 @@
         "Property": "Target speed reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35877,9 +35529,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35917,9 +35567,7 @@
         "Property": "Reload Time",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35953,9 +35601,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -35984,9 +35630,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -36015,9 +35659,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -36046,9 +35688,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Fragment Cannon",
@@ -36086,9 +35726,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36117,9 +35755,7 @@
         "Property": "Target speed reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36157,9 +35793,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36192,9 +35826,7 @@
         "Property": "Damage partially thermal",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36227,9 +35859,7 @@
         "Property": "Shielded target heat increased",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36258,9 +35888,7 @@
         "Property": "Target module damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36303,9 +35931,7 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36339,9 +35965,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36370,9 +35994,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36401,9 +36023,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36432,9 +36052,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Missile Rack",
@@ -36472,9 +36090,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36503,9 +36119,7 @@
         "Property": "Target FSD inhibited",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36538,9 +36152,7 @@
         "Property": "Target module damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36573,9 +36185,7 @@
         "Property": "Target shield generator damaged",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36604,9 +36214,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36640,9 +36248,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36671,9 +36277,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Torpedo Pylon",
@@ -36702,9 +36306,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36737,9 +36339,7 @@
         "Property": "Target thrusters reboot",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36772,9 +36372,7 @@
         "Property": "Damage partially thermal",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36800,13 +36398,10 @@
     "Effects": [
       {
         "Effect": "✓",
-
         "Property": "Area heat increased, sensors disrupted",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36839,9 +36434,7 @@
         "Property": "Target shield generator damaged",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36870,9 +36463,7 @@
         "Property": "Area FSDs reboot",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36910,9 +36501,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36941,9 +36530,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -36977,9 +36564,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -37008,9 +36593,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Mine Launcher",
@@ -37039,9 +36622,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37070,9 +36651,7 @@
         "Property": "Target sensor acuity reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37105,9 +36684,7 @@
         "Property": "Target gimbal/turret tracking reduced",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37136,9 +36713,7 @@
         "Property": "Target loses target lock",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37167,9 +36742,7 @@
         "Property": "Damage increases with heat level",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37207,9 +36780,7 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37252,9 +36823,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37288,9 +36857,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37319,9 +36886,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37350,9 +36915,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37381,9 +36944,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Plasma Accelerator",
@@ -37421,9 +36982,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37462,9 +37021,7 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37512,9 +37069,7 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37557,9 +37112,7 @@
         "Property": "Reload Time",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37593,9 +37146,7 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37624,9 +37175,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37655,9 +37204,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37686,9 +37233,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Rail Gun",
@@ -37726,9 +37271,7 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -37758,9 +37301,7 @@
         "Property": "Heat Efficiency",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -37790,9 +37331,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -37827,9 +37366,7 @@
         "Property": "Power Generation",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Plant",
@@ -37859,9 +37396,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Armour",
@@ -37895,9 +37430,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Armour",
@@ -37931,9 +37464,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Armour",
@@ -37967,9 +37498,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Armour",
@@ -38013,9 +37542,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -38053,9 +37580,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -38089,9 +37614,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -38129,9 +37652,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -38175,9 +37696,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -38206,9 +37725,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -38237,9 +37754,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -38268,9 +37783,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -38304,9 +37817,7 @@
         "Property": "Shield Reinforcement",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Cell Bank",
@@ -38340,9 +37851,7 @@
         "Property": "Shield Reinforcement",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -38377,9 +37886,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -38414,9 +37921,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -38455,9 +37960,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -38491,9 +37994,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -38523,9 +38024,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Booster",
@@ -38570,9 +38069,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38612,9 +38109,7 @@
         "Property": "Distributor Draw",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38664,9 +38159,7 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38701,9 +38194,7 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38753,9 +38244,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38785,9 +38274,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38817,9 +38304,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38854,9 +38339,7 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Shield Generator",
@@ -38911,9 +38394,7 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -38949,9 +38430,7 @@
         "Property": "Maximum Fuel Per Jump",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -38960,7 +38439,6 @@
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
-
       "Colonel Bris Dekker"
     ],
     "Ingredients": [
@@ -38983,9 +38461,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -39016,9 +38492,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -39054,9 +38528,7 @@
         "Property": "Optimal Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Frame Shift Drive",
@@ -39091,9 +38563,7 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -39123,9 +38593,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -39155,9 +38623,7 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -39187,9 +38653,7 @@
         "Property": "Optimal Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -39224,9 +38688,7 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Thrusters",
@@ -39261,9 +38723,7 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -39293,9 +38753,7 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -39350,9 +38808,7 @@
         "Property": "Systems Recharge",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -39407,9 +38863,7 @@
         "Property": "Systems Recharge",
         "IsGood": false
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -39439,9 +38893,7 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   },
   {
     "Type": "Power Distributor",
@@ -39471,8 +38923,6 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ],
-    "Grade": null,
-    "CoriolisGuid": null
+    ]
   }
 ]
