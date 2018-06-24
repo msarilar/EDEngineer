@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.2.6",
+    "Content": "* Added Engineers system in the blueprint list (mouse over an engineer to get his system, planet and base)\r\n* Added a PATCH method to update the ShoppingList from the local API using Coriolis Guids\r\n\r\n* Added Life Support Reinforced G5\r\n\r\n* Czech localization update, thanks to @JohnXaverius for the contribution!\r\n* Portuguese localization update, thanks to @KingRider for the contribution!\r\n* German localization update, thanks to @nepomuk16321 for the contribution!"
+  },
+  {
     "Version": "1.1.2.5",
     "Content": "* Material Trader suggestions won't include non-tradable ingredients (like thargoid ingredients or others)"
   },
