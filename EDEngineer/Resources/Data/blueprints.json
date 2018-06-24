@@ -17597,6 +17597,40 @@
     "Grade": 4
   },
   {
+    "Type": "Life Support",
+    "Name": "Reinforced",
+    "Engineers": [
+      "Lori Jameson"
+    ],
+    "Ingredients": [
+      {
+        "Name": "High Density Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Molybdenum",
+        "Size": 1
+      },
+      {
+        "Name": "Technetium",
+        "Size": 1
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+300%",
+        "Property": "Integrity",
+        "IsGood": true
+      },
+      {
+        "Effect": "+150%",
+        "Property": "Mass",
+        "IsGood": false
+      }
+    ],
+    "Grade": 5
+  },
+  {
     "Type": "Shield Booster",
     "Name": "Heavy Duty",
     "Engineers": [
