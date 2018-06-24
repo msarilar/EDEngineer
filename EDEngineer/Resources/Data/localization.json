@@ -3843,7 +3843,7 @@
     "Carrying ": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Trasportieren ",
       "fr": "Capacité",
       "ru": "В наличии ",
       "pl": null,
@@ -4212,7 +4212,7 @@
     "Meta Alloy Hull Reinforcement": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Meta-Legierung-Hüllenverstärkung",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4221,7 +4221,7 @@
     "Remote Release Flechette Launcher (Fixed)": {
       "es": null,
       "pt": "Lançador de dardos de Liberação Remota (Fixa)",
-      "de": null,
+      "de": "ferngesteuerter Flechettenwerfer (Fest)",
       "fr": null,
       "ru": "Зенитная установка с дистанционным подрывом (фиксированный подвес)",
       "pl": null,
@@ -4230,7 +4230,7 @@
     "Remote Release Flechette Launcher (Turreted)": {
       "es": null,
       "pt": "Lançador de dardos de Liberação Remota (Torretada)",
-      "de": null,
+      "de": "ferngesteuerter Flechettenwerfer (Turm)",
       "fr": null,
       "ru": "Зенитная установка с дистанционным подрывом (турельный подвес)",
       "pl": null,
@@ -4239,7 +4239,7 @@
     "Shock Cannon (Fixed)": {
       "es": null,
       "pt": "Canhão Elétrico (Fixa)",
-      "de": null,
+      "de": "Schock Kanone (Fest)",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4248,7 +4248,7 @@
     "Shock Cannon (Gimballed)": {
       "es": null,
       "pt": "Canhão Elétrico (Guiada)",
-      "de": null,
+      "de": "Schock Kanone (Kardanisch)",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4257,7 +4257,7 @@
     "Shock Cannon (Turreted)": {
       "es": null,
       "pt": "Canhão Elétrico (Torretada)",
-      "de": null,
+      "de": "Schock Kanone (Turm)",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4266,7 +4266,7 @@
     "Concordant Sequence": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "gleichsinnige Sequenz",
       "fr": null,
       "ru": "Последовательность координации",
       "pl": null,
@@ -4275,7 +4275,7 @@
     "Regeneration Sequence": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "regenerierende Sequenz",
       "fr": null,
       "ru": "Последовательность восстановления",
       "pl": null,
@@ -4284,7 +4284,7 @@
     "Thermal Conduit": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hitzerohr",
       "fr": null,
       "ru": "Проводник тепла",
       "pl": null,
@@ -4293,7 +4293,7 @@
     "Thermal Shock": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hitzeschock",
       "fr": null,
       "ru": "Тепловой удар",
       "pl": null,
@@ -4311,7 +4311,7 @@
     "Oversized": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Übergroß",
       "fr": null,
       "ru": "Сверхразмер",
       "pl": null,
@@ -4320,7 +4320,7 @@
     "Stripped Down": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Zerlegt",
       "fr": null,
       "ru": "Урезанный вариант",
       "pl": null,
@@ -4329,7 +4329,7 @@
     "Double Braced": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "doppelt versteift",
       "fr": null,
       "ru": "Двойная прочность",
       "pl": null,
@@ -4338,7 +4338,7 @@
     "Flow Control": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ablaufsteuerung",
       "fr": null,
       "ru": "Контроль интенсивности",
       "pl": null,
@@ -4347,7 +4347,7 @@
     "Inertial Impact": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Trägheitseinfluss",
       "fr": null,
       "ru": "Инерционный удар",
       "pl": null,
@@ -4356,7 +4356,7 @@
     "Phasing Sequence": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Phasensequenz",
       "fr": null,
       "ru": "Последовательность фазирования",
       "pl": null,
@@ -4365,7 +4365,7 @@
     "Scramble Spectrum": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mischungsbandbreite",
       "fr": null,
       "ru": "Отключающая сетка",
       "pl": null,
@@ -4374,7 +4374,7 @@
     "Multi-Servos": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Multi-Servos",
       "fr": null,
       "ru": "Сервосистема",
       "pl": null,
@@ -4383,7 +4383,7 @@
     "Emissive Munitions": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Emissive Munition",
       "fr": null,
       "ru": "Эмиссионные припасы",
       "pl": null,
@@ -4392,7 +4392,7 @@
     "Auto Loader": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Selbstlader",
       "fr": null,
       "ru": "Автоматическая система заряжания",
       "pl": null,
@@ -4401,7 +4401,7 @@
     "Corrosive Shell": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ätzende Hülle",
       "fr": null,
       "ru": "Разъедающие боеприпасы",
       "pl": null,
@@ -4410,7 +4410,7 @@
     "Incendiary Rounds": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Brandherde",
       "fr": null,
       "ru": "Зажигательные припасы",
       "pl": null,
@@ -4428,7 +4428,7 @@
     "Dispersal Field": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ausbreitungsfeld",
       "fr": null,
       "ru": "Рассеивающее поле",
       "pl": null,
@@ -4437,7 +4437,7 @@
     "Force Shell": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Krafthülle",
       "fr": null,
       "ru": "Усиленные снаряды",
       "pl": null,
@@ -4599,7 +4599,7 @@
     "Feedback Cascade": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Feedback Cascade",
       "fr": null,
       "ru": "Ответный залп",
       "pl": null,
@@ -4608,7 +4608,7 @@
     "Super Penetrator": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Super Penetrator",
       "fr": null,
       "ru": "Модуль сверхпробития",
       "pl": null,
@@ -4617,7 +4617,7 @@
     "@Technology": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "@Technologie",
       "fr": null,
       "ru": "@Технология",
       "pl": null,
@@ -4626,7 +4626,7 @@
     "Module": {
       "es": null,
       "pt": "Módulo",
-      "de": null,
+      "de": "Module",
       "fr": null,
       "ru": "Модули",
       "pl": null,
@@ -4635,7 +4635,7 @@
     "Synthesis": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Synthese",
       "fr": null,
       "ru": "Синтез",
       "pl": null,
@@ -4644,7 +4644,7 @@
     "Experimental": {
       "es": null,
       "pt": "Experimental",
-      "de": null,
+      "de": "Experimentell",
       "fr": null,
       "ru": "Экспериментальные",
       "pl": null,
@@ -4653,7 +4653,7 @@
     "Technology": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Technologie",
       "fr": null,
       "ru": "Технологии",
       "pl": null,
@@ -4662,7 +4662,7 @@
     "Ancient/Guardian ruins": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Uralte/Guardian Ruinen",
       "fr": null,
       "ru": "Руины стражей",
       "pl": null,
@@ -4671,7 +4671,7 @@
     "EDEngineer will try to remove blueprints from your shopping list if you craft them in game": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
       "fr": null,
       "ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
       "pl": null,
@@ -4680,7 +4680,7 @@
     "Thermal Spread": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Wärmeverteilung",
       "fr": null,
       "ru": "Рассеивание тепла",
       "pl": null,
@@ -4689,7 +4689,7 @@
     "Monstered": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "monströs",
       "fr": null,
       "ru": "Монстрация",
       "pl": null,
@@ -4698,7 +4698,7 @@
     "Angled Plating": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Abgewinkelte Beschichtung",
       "fr": null,
       "ru": "Угловая броня",
       "pl": null,
@@ -4707,7 +4707,7 @@
     "Layered Plating": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mehrschichtige Beschichtung",
       "fr": null,
       "ru": "Многослойная броня",
       "pl": null,
@@ -4716,7 +4716,7 @@
     "Reflective Plating": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Reflektierende Beschichtung",
       "fr": null,
       "ru": "Отражающая броня",
       "pl": null,
@@ -4725,7 +4725,7 @@
     "Deep Plating": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Tiefenbeschichtung",
       "fr": null,
       "ru": "Утолщенная броня",
       "pl": null,
@@ -4734,7 +4734,7 @@
     "Boss Cells": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Boss-Zellen",
       "fr": null,
       "ru": "Босс-ячейки",
       "pl": null,
@@ -4743,7 +4743,7 @@
     "Recycling Cells": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Recycling-Zellen",
       "fr": null,
       "ru": "Рециркуляционные ячейки",
       "pl": null,
@@ -4752,7 +4752,7 @@
     "Force Block": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kraftsperre",
       "fr": null,
       "ru": "Усиленная блокировка",
       "pl": null,
@@ -4761,7 +4761,7 @@
     "Thermo Block": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Wärmesperre",
       "fr": null,
       "ru": "Блокировка тепла",
       "pl": null,
@@ -4770,7 +4770,7 @@
     "Blast Block": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Explosionssperre",
       "fr": null,
       "ru": "Блокировка взрыва",
       "pl": null,
@@ -4779,7 +4779,7 @@
     "Super Capacitor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Superkondensator",
       "fr": null,
       "ru": "Суперконденсатор",
       "pl": null,
@@ -4788,7 +4788,7 @@
     "Hi-cap": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hi-cap",
       "fr": null,
       "ru": "Высокая емкость",
       "pl": null,
@@ -4797,7 +4797,7 @@
     "Multi-weave": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mehrfachgewebe",
       "fr": null,
       "ru": "Мультипрошивка",
       "pl": null,
@@ -4806,7 +4806,7 @@
     "Fast Charge": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schnellladung",
       "fr": null,
       "ru": "Быстрый заряд",
       "pl": null,
@@ -4815,7 +4815,7 @@
     "Lo-draw": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Lo-draw",
       "fr": null,
       "ru": "Пониженное потребление",
       "pl": null,
@@ -4824,7 +4824,7 @@
     "Deep Charge": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Tiefenladung",
       "fr": null,
       "ru": "Заряд повышенной мощности",
       "pl": null,
@@ -4833,7 +4833,7 @@
     "Mass Manager": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Massenmanager",
       "fr": null,
       "ru": "Распределитель гравитации",
       "pl": null,
@@ -4842,7 +4842,7 @@
     "Drive Distributors": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Antriebsverteiler",
       "fr": null,
       "ru": "Распределители тяги",
       "pl": null,
@@ -4851,7 +4851,7 @@
     "Drag Drives": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Drag Drives",
       "fr": null,
       "ru": "Ускорители",
       "pl": null,
@@ -4860,7 +4860,7 @@
     "Super Conduits": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Superschläuche",
       "fr": null,
       "ru": "Сверхпроводники",
       "pl": null,
@@ -4869,7 +4869,7 @@
     "Cluster Capacitor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Cluster Kondensator",
       "fr": null,
       "ru": "Кассетный конденсатор",
       "pl": null,
@@ -4878,7 +4878,7 @@
     "Thargoid": {
       "es": null,
       "pt": "Thargoid",
-      "de": null,
+      "de": "Thargoid",
       "fr": null,
       "ru": "Технологии таргоидов",
       "pl": null,
@@ -4887,7 +4887,7 @@
     "Top Source Systems": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Top Quellsysteme",
       "fr": null,
       "ru": "Системы с обилием ресурсов",
       "pl": null,
@@ -4896,7 +4896,7 @@
     "System:": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "System:",
       "fr": null,
       "ru": "Система:",
       "pl": null,
@@ -4905,7 +4905,7 @@
     "You have:": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Du hast:",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4914,7 +4914,7 @@
     "(already needed)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "(bereits benötigt)",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4923,7 +4923,7 @@
     "Shows material trading suggestion (taking into account your cargo and the entire shopping list).": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4932,7 +4932,7 @@
     "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4941,7 +4941,7 @@
     "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4950,7 +4950,7 @@
     "Materials Trader found at industrial economies, only trades in manufactured materials.": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4959,7 +4959,7 @@
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4968,7 +4968,7 @@
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
       "fr": null,
       "ru": null,
       "pl": null,
