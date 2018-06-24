@@ -78,6 +78,7 @@ namespace EDEngineer.Models
         public IReadOnlyCollection<BlueprintIngredient> Ingredients { get; }
         public int? Grade { get; }
         public IReadOnlyCollection<BlueprintEffect> Effects { get; }
+        public Guid? CoriolisGuid { get; set; }
 
         [JsonIgnore]
         public bool ShoppingListHighlighted
@@ -149,7 +150,8 @@ namespace EDEngineer.Models
             int? grade,
             IReadOnlyCollection<BlueprintIngredient> ingredients,
             IReadOnlyCollection<string> engineers,
-            IReadOnlyCollection<BlueprintEffect> effects)
+            IReadOnlyCollection<BlueprintEffect> effects,
+            Guid? coriolisGuid)
         {
             this.language = language;
 
@@ -159,6 +161,7 @@ namespace EDEngineer.Models
             Engineers = engineers;
             Ingredients = ingredients;
             Effects = effects;
+            CoriolisGuid = coriolisGuid;
 
             SetupSearchableContent();
             language.PropertyChanged += (o, e) => SetupSearchableContent();

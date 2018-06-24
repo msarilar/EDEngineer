@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using EDEngineer.Localization;
 using EDEngineer.Models;
+using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -41,7 +42,10 @@ namespace EDEngineer.Utils
                 let isGood = (bool)json["IsGood"]
                 select new BlueprintEffect(property, effect, isGood);
 
-            return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers, effects.ToList());
+            var token = (string) data["CoriolisGuid"];
+            var coriolisGuid = token == null ? (Guid?) null : Guid.Parse(token);
+
+            return new Blueprint(Languages.Instance, blueprintType, blueprintName, blueprintGrade, ingredients.ToList(), engineers, effects.ToList(), coriolisGuid);
         }
 
         public override bool CanConvert(Type objectType)

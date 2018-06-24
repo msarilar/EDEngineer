@@ -246,7 +246,8 @@ namespace EDEngineer.Views
                 null,
                 composition,
                 new string[0],
-                Enumerable.Empty<BlueprintEffect>().ToList());
+                Enumerable.Empty<BlueprintEffect>().ToList(),
+                null);
 
             yield return metaBlueprint;
         }

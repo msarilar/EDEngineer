@@ -30,31 +30,42 @@ type ShoppingListItem = {
 let inline (|?) (a) b = if a = null then b else a  
 
 type Cmdr<'TGood, 'TBad> = 
-  | Found           of 'TGood
-  | Parsed          of 'TGood
-  | KnownFormat     of 'TGood
-  | NotFound        of 'TBad
-  | BadString       of 'TBad
-  | UnknownFormat   of 'TBad
-  | RouteNotFound   of 'TBad
-  | UnknownLanguage of 'TBad
+  | Found            of 'TGood
+  | Parsed           of 'TGood
+  | KnownFormat      of 'TGood
+  | Parameter        of 'TGood
+  | NotFound         of 'TBad
+  | MissingParameter of 'TBad
+  | BadParameter     of 'TBad
+  | BadString        of 'TBad
+  | UnknownFormat    of 'TBad
+  | RouteNotFound    of 'TBad
+  | UnknownLanguage  of 'TBad
 
 type CmdrBuilder() =
   member this.Bind(v, f) =
     match v with
       | Found v             -> f v
+      | Parameter v         -> f v
       | Parsed v            -> f v
       | KnownFormat v       -> f v
-      | NotFound commander  -> (sprintf "Commander %s not found (๑´╹‸╹`๑)" commander) |> NOT_FOUND
-      | BadString s         -> (sprintf "Couldn't parse time %s ヘ（。□°）ヘ" s) |> BAD_REQUEST
-      | UnknownFormat s     -> (sprintf "Unknown file format requested %s (╬ ꒪Д꒪)ノ" s) |> BAD_REQUEST
-      | RouteNotFound _     -> "Route not found ¯\_(ツ)_/¯" |> NOT_FOUND
-      | UnknownLanguage s   -> (sprintf "Unknown language requested %s へ[ •́ ‸ •̀ ]ʋ" s) |> BAD_REQUEST
+      | NotFound commander  -> (sprintf "Commander %s not found" commander) |> NOT_FOUND
+      | BadString s         -> (sprintf "Couldn't parse time %s" s) |> BAD_REQUEST
+      | MissingParameter s  -> (sprintf "Couldn't find required parameter %s" s) |> BAD_REQUEST
+      | BadParameter v      -> (sprintf "Parameter has an incorrect value %s" v) |> BAD_REQUEST
+      | UnknownFormat s     -> (sprintf "Unknown file format requested %s" s) |> BAD_REQUEST
+      | RouteNotFound _     -> "Route not found" |> NOT_FOUND
+      | UnknownLanguage s   -> (sprintf "Unknown language requested %s" s) |> BAD_REQUEST
   member this.Return value = value
 
 let cmdr = CmdrBuilder()
 
-let start (token, port, translator:ILanguage, state:Func<IDictionary<string, State>>, shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>) =
+let start (token,
+           port,
+           translator:ILanguage,
+           state:Func<IDictionary<string, State>>,
+           shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>,
+           changeShoppingList:Action<string, Blueprint, int>) =
   
   let corsConfig = { defaultCORSConfig with allowedUris = InclusiveOption.Some [ "http://localhost:" + (port |> string) ] }
   let JsonConfig = fun lang -> 
@@ -89,6 +100,24 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                                                                           Count = e.Count;
                                                                         })
                                                   |> List.ofSeq
+  let toGuid str =
+    match Guid.TryParse str with
+    | (true, guid) -> Some guid
+    | (_, _) -> None
+
+  let toInt str =
+    match Int32.TryParse str with
+    | (true, intValue) -> Some intValue
+    | (_, _) -> None
+
+  let requestParameter =
+    fun (request:HttpRequest) parameter transformation ->
+      match request.fieldData parameter with
+      | Choice1Of2 value ->
+        match transformation value with
+        | Some result -> Parameter result
+        | None -> BadParameter value
+      | Choice2Of2 _ -> MissingParameter parameter
 
   let stateRoute = fun commander ->
                      match state.Invoke().TryGetValue(Uri.UnescapeDataString(commander)) with
@@ -156,7 +185,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
   let app =
     choose
       [ 
-        pathScan "/languages%s" (fun (format) -> 
+        GET >=> pathScan "/languages%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format
@@ -164,7 +193,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return (translator.LanguageInfos, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/ingredients%s" (fun (format) -> 
+        GET >=> pathScan "/ingredients%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format 
@@ -172,7 +201,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return (referenceData state |> ingredients, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/blueprints%s" (fun (format) -> 
+        GET >=> pathScan "/blueprints%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format
@@ -180,7 +209,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return (referenceData state |> blueprints, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/commanders%s" (fun (format) -> 
+        GET >=> pathScan "/commanders%s" (fun (format) -> 
           (request(fun request ->
             cmdr {
               let! f = FormatExtractor request format
@@ -188,7 +217,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return (state.Invoke().Keys, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
                
-        pathScan "/%s/cargo%s" (fun (commander, format) -> 
+        GET >=> pathScan "/%s/cargo%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
               let! s = stateRoute commander
@@ -197,7 +226,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return ((s, None) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/%s/materials%s" (fun (commander, format) -> 
+        GET >=> pathScan "/%s/materials%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
                 let! s = stateRoute commander
@@ -206,7 +235,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                 return ((s, Some(Kind.Material)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/%s/data%s" (fun (commander, format) -> 
+        GET >=> pathScan "/%s/data%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
                 let! s = stateRoute commander
@@ -215,7 +244,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                 return ((s, Some(Kind.Data)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/%s/commodities%s" (fun (commander, format) -> 
+        GET >=> pathScan "/%s/commodities%s" (fun (commander, format) -> 
           (request(fun request ->
             cmdr {
                 let! s = stateRoute commander
@@ -224,7 +253,32 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                 return ((s, Some(Kind.Commodity)) |> cargoExtractor, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
+        PATCH >=> pathScan "/%s/shopping-list" (fun commander ->
+          (request(fun request ->
+            cmdr {
+               let! s = stateRoute commander
+
+               let findBlueprint =
+                 fun guid ->
+                  let matchingBlueprints = s.Blueprints |> Seq.filter (fun b -> b.CoriolisGuid.HasValue && b.CoriolisGuid.Value = guid)
+                  match matchingBlueprints |> List.ofSeq with
+                  | [] -> None
+                  | v::[] -> Some v
+                  | v::_ -> Some v
+
+               let! blueprint = requestParameter request "uuid" (toGuid >> Option.bind findBlueprint)
+               let! size = requestParameter request "size" toInt
+
+               match blueprint.ShoppingListCount + size with
+               | diff when diff >= 0 ->
+                 changeShoppingList.Invoke(commander, blueprint, size)
+                 return NO_CONTENT
+               | _ ->
+                 let blueprintString = blueprint.ToString()
+                 return (sprintf "Tried to change shopping list by %i but result would be negative (Blueprint %s)" size blueprintString) |> BAD_REQUEST
+            })))
+
+        GET >=> pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
           let toShoppingListItem (blueprint: Blueprint, count: int) =
             { Blueprint = blueprint.ToSerializable(); Count = count }
 
@@ -236,7 +290,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
                 return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        pathScan "/%s/operations%s" (fun (commander, format) ->
+        GET >=> pathScan "/%s/operations%s" (fun (commander, format) ->
           (request(fun request ->
             let timestampString = match request.queryParam "last" with
                                   | Choice1Of2 s     -> Some(s)
@@ -255,8 +309,7 @@ let start (token, port, translator:ILanguage, state:Func<IDictionary<string, Sta
               return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
              
-        NOT_FOUND "Route not found ¯\_(ツ)_/¯" ] >=> cors corsConfig 
-      
+        NOT_FOUND "Route not found ¯\_(ツ)_/¯" ] >=> cors corsConfig
 
   startWebServer { 
     defaultConfig with 

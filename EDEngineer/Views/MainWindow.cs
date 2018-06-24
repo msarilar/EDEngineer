@@ -106,7 +106,6 @@ namespace EDEngineer.Views
                                                      viewModel.CurrentComparer = viewModel.CurrentComparer;
                                                  }
                                              };
-                serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
             });
 
             task.ContinueWith(t =>
@@ -117,6 +116,7 @@ namespace EDEngineer.Views
             
             task.ContinueWith(t =>
             {
+                serverBridge = new ServerBridge(viewModel, SettingsManager.AutoRunServer);
                 DataContext = viewModel;
                 RefreshCargoSources();
                 PostLoad(dimensions);
