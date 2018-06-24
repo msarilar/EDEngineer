@@ -115,7 +115,7 @@
             <converters:ShoppingListBlockToAllGradesVisibility x:Key="ShoppingListBlockToAllGradesVisibility"/>
             <converters:ModuleModifierToColorConverter x:Key="ModuleModifierToColorConverter"/>
             <converters:EntryDataToMaterialTraderLocation x:Key="EntryDataToMaterialTraderLocation"/>
-
+            <converters:EngineerToSystem x:Key="EngineerToSystem"/>
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 

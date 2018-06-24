@@ -158,6 +158,7 @@
     <Compile Include="Converters\BlueprintCategoryToColorConverter.cs" />
     <Compile Include="Converters\BooleanToEnumConverter.cs" />
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
+    <Compile Include="Converters\EngineerToSystem.cs" />
     <Compile Include="Converters\EntryDataToMaterialTraderLocation.cs" />
     <Compile Include="Converters\ModuleModifierToColorConverter.cs" />
     <Compile Include="Converters\ShoppingListBlockToAllGradesVisibility.cs" />

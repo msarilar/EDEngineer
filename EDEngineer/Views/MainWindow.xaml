@@ -1169,7 +1169,14 @@
                                                       Grid.Row="0"
                                                       ItemsSource="{Binding Engineers}"
                                                       HorizontalAlignment="Right"
-                                                      VerticalAlignment="Top" />
+                                                      VerticalAlignment="Top" >
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding}"
+                                                               ToolTip="{Binding Converter={StaticResource EngineerToSystem}}"/>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
                                         <Button x:Name="IncrementButton"
                                                 Focusable="False"
                                                 Margin="0,5,0,0"
