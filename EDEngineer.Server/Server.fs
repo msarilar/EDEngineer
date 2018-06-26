@@ -318,9 +318,12 @@ let start (token,
         OPTIONS >=>
             fun context ->
                 context |> (
-                    OK "CORS approved" )
+                    OK "CORS approved"
+                    >=> addHeader "Access-Control-Allow-Method" "GET, PATCH, OPTIONS" )
 
-        NOT_FOUND "Route not found" ] >=> setHeader "Access-Control-Allow-Origin" "*" >=> cors corsConfig
+        NOT_FOUND "Route not found" ]
+           >=> addHeader "Access-Control-Allow-Origin" "*"
+           >=> cors corsConfig
 
   startWebServer { 
     defaultConfig with 
