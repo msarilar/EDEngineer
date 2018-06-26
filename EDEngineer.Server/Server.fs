@@ -319,7 +319,7 @@ let start (token,
             fun context ->
                 context |> (
                     OK "CORS approved"
-                    >=> addHeader "Access-Control-Allow-Method" "GET, PATCH, OPTIONS" )
+                    >=> addHeader "Access-Control-Allow-Methods" "GET, PATCH, OPTIONS" )
 
         NOT_FOUND "Route not found" ]
            >=> addHeader "Access-Control-Allow-Origin" "*"
