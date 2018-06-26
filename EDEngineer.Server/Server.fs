@@ -300,7 +300,7 @@ let start (token,
           (request(fun request ->
             let timestampString = match request.queryParam "last" with
                                   | Choice1Of2 s     -> Some(s)
-                                  | Choice2Of2 other -> None
+                                  | Choice2Of2 _ -> None
 
             cmdr {
               let! state = stateRoute commander
@@ -314,7 +314,12 @@ let start (token,
                                            | _                     -> false)
               return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
-             
+
+        OPTIONS >=>
+            fun context ->
+                context |> (
+                    OK "CORS approved" )
+
         NOT_FOUND "Route not found" ] >=> setHeader "Access-Control-Allow-Origin" "*" >=> cors corsConfig
 
   startWebServer { 

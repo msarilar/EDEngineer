@@ -94,7 +94,10 @@ namespace EDEngineer.Utils.System
 
         public void Dispose()
         {
-            Stop();
+            if (cts?.IsCancellationRequested == false)
+            {
+                cts.Cancel();
+            }
         }
 
         private bool TryGetPort(out ushort port)
