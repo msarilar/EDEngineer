@@ -8,7 +8,7 @@ namespace EDEngineer.Views.Notifications
     /// <summary>
     /// Interaction logic for NotificationSettings.xaml
     /// </summary>
-    public partial class NotificationSettingsWindow
+    public partial class NotificationSettingsWindow : System.Windows.Window
     {
         private readonly NotificationSettingsViewModel viewModel;
         public NotificationSettingsWindow(Languages languages)

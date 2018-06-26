@@ -998,6 +998,7 @@
                               ItemsSource="{Binding State.Blueprints}"
                               DataContext="{Binding}"
                               Focusable="False"
+                              Sorting="BlueprintsSorting"
                               Grid.Row="0"
                               Style="{DynamicResource BlueprintGridStyle}"
                               HeadersVisibility="All">
@@ -1214,7 +1215,7 @@
                             <DataGridTextColumn Header="G"
                                                 Binding="{Binding Grade}"
                                                 IsReadOnly="True"
-                                                Width="30"
+                                                Width="60"
                                                 CanUserResize="False">
                                 <DataGridTextColumn.ElementStyle>
                                     <Style TargetType="TextBlock">

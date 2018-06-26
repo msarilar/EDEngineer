@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -19,12 +20,14 @@ using System.Windows.Media.Animation;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Filters;
+using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
 using EDEngineer.Views.Popups.Graphics;
 using Application = System.Windows.Application;
+using DataGrid = System.Windows.Controls.DataGrid;
 using WpfButton = System.Windows.Controls.Button;
 using WinformContextMenu = System.Windows.Forms.ContextMenuStrip;
 using DataGridCell = System.Windows.Controls.DataGridCell;
@@ -33,7 +36,7 @@ using NotificationSettingsWindow = EDEngineer.Views.Notifications.NotificationSe
 
 namespace EDEngineer.Views
 {
-    public partial class MainWindow
+    public partial class MainWindow : System.Windows.Window
     {
         private MainWindowViewModel viewModel;
         private ServerBridge serverBridge;
@@ -640,5 +643,88 @@ namespace EDEngineer.Views
         {
             Splash.Visibility = Visibility.Collapsed;
         }
+
+        private void BlueprintsSorting(object sender, DataGridSortingEventArgs e)
+        {
+            string realHeader;
+            if (headers.ContainsKey(e.Column))
+            {
+                realHeader = headers[e.Column];
+            }
+            else
+            {
+                if (e.Column.Header is TextBlock textBlock)
+                {
+                    headers[e.Column] = realHeader = textBlock.Text;
+                }
+                else
+                {
+                    headers[e.Column] = realHeader = e.Column.Header.ToString();
+                }
+            }
+
+            var view = CollectionViewSource.GetDefaultView(Blueprints.Items);
+            var sortingOn = view.SortDescriptions.ToList();
+
+            var path = e.Column.SortMemberPath;
+            var currentSorting = sortingOn.FirstOrDefault(p => p.PropertyName == path);
+            if (currentSorting.PropertyName != null)
+            {
+                int currentColumnSortRank;
+                if (currentSorting.Direction == ListSortDirection.Descending && lastColumnSorted == e.Column)
+                {
+                    view.SortDescriptions.Clear();
+                    foreach (var c in Blueprints.Columns)
+                    {
+                        if (headers.ContainsKey(c))
+                        {
+                            c.Header = headers[c];
+                        }
+                    }
+
+                    sortedColumns = currentColumnSortRank = 1;
+                }
+                else
+                {
+                    currentColumnSortRank = e.Column.Header.ToString().Count(c => c == '↑' || c == '↓');
+                    view.SortDescriptions.Remove(currentSorting);
+                }
+
+                ListSortDirection newDirection;
+                string newHeader;
+                switch (currentSorting.Direction)
+                {
+                    case ListSortDirection.Descending:
+                        newDirection = ListSortDirection.Ascending;
+                        var upArrows = string.Concat(Enumerable.Repeat("↑", currentColumnSortRank));
+                        newHeader = $"{upArrows}{realHeader}";
+                        break;
+                    case ListSortDirection.Ascending:
+                    default:
+                        newDirection = ListSortDirection.Descending;
+                        var downArrows = string.Concat(Enumerable.Repeat("↓", currentColumnSortRank));
+                        newHeader = $"{downArrows}{realHeader}";
+                        break;
+                }
+
+                e.Column.Header = newHeader;
+                view.SortDescriptions.Add(new SortDescription(path, newDirection));
+            }
+            else
+            {
+                sortedColumns++;
+                var upArrows = string.Concat(Enumerable.Repeat("↑", sortedColumns));
+                e.Column.Header = $"{upArrows}{realHeader}";
+                view.SortDescriptions.Add(new SortDescription(path, ListSortDirection.Ascending));
+            }
+
+            view.Refresh();
+            lastColumnSorted = e.Column;
+            e.Handled = true;
+        }
+
+        private int sortedColumns = 0;
+        private DataGridColumn lastColumnSorted = null;
+        private readonly Dictionary<DataGridColumn, string> headers = new Dictionary<DataGridColumn, string>();
     }
 }
