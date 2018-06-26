@@ -9,6 +9,7 @@ open System.IO
 open Suave
 open Suave.CORS
 open Suave.Filters
+open Suave.Writers
 open Suave.Operators
 open Suave.Successful
 open Suave.RequestErrors
@@ -67,7 +68,10 @@ let start (token,
            shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>,
            changeShoppingList:Action<string, Blueprint, int>) =
   
-  let corsConfig = { defaultCORSConfig with allowedUris = InclusiveOption.Some [ "http://localhost:" + (port |> string) ] }
+  let corsConfig = {
+    defaultCORSConfig with
+      allowedUris = InclusiveOption.Some [ "http://localhost:" + (port |> string) ]
+  }
   let JsonConfig = fun lang -> 
     let settings = new JsonSerializerSettings (ContractResolver = new LocalizedContractResolver(translator, lang))
     settings.Converters.Add(new LocalizedJsonConverter(translator, lang))
@@ -136,18 +140,20 @@ let start (token,
                   | None    -> Parsed Instant.MinValue
 
   let AcceptExtractor = fun(request:HttpRequest) ->
-    request.headers
-    |> Seq.filter (fun (k, v) -> k = "accept")
-    |> Seq.map (fun (k, v) -> v)
-    |> Seq.head
-    |> fun x -> x.Split [|';'|]
-    |> Seq.fold(fun acc elem -> match acc with
+    let findFormat (x: string) =
+        x.Split [|';'|]
+        |> Seq.fold(fun acc elem -> match acc with
                                  | Some(r) -> Some(r)
                                  | _       -> match elem with
                                               | "text/json" -> Some(Json)
                                               | "text/csv"  -> Some(Csv)
                                               | "text/xml"  -> Some(Xml)
                                               | _           -> None) None
+    request.headers
+    |> Seq.filter (fun (k, v) -> k = "accept")
+    |> Seq.map (fun (k, v) -> v)
+    |> Seq.tryHead
+    |> Option.bind findFormat
     |> function
       | Some(f) -> f
       | _       -> Json
@@ -309,7 +315,7 @@ let start (token,
               return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
              
-        NOT_FOUND "Route not found ¯\_(ツ)_/¯" ] >=> cors corsConfig
+        NOT_FOUND "Route not found" ] >=> setHeader "Access-Control-Allow-Origin" "*" >=> cors corsConfig
 
   startWebServer { 
     defaultConfig with 
