@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.2.8",
+    "Content": "* Added advanced sorting to the blueprint list : you can cumulate column sorting (e.g. sort by name, then by grade etc...) ; the rank are represented by arrows (first column ordering is one arrow, then two arrows, and so on). Revert back to sorting with one column by sorting two times the same column\r\n\r\n* Fixed headers in the API response to comply with CORS"
+  },
+  {
     "Version": "1.1.2.6",
     "Content": "* Added Engineers system in the blueprint list (mouse over an engineer to get his system, planet and base)\r\n* Added a PATCH method to update the ShoppingList from the local API using Coriolis Guids\r\n\r\n* Added Life Support Reinforced G5\r\n\r\n* Czech localization update, thanks to @JohnXaverius for the contribution!\r\n* Portuguese localization update, thanks to @KingRider for the contribution!\r\n* German localization update, thanks to @nepomuk16321 for the contribution!"
   },
