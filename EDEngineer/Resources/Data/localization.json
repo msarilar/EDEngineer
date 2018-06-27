@@ -4160,7 +4160,7 @@
       "pt": "Estante de Mísseis Enzimáticos",
       "de": "Enzym Raketenrampe",
       "fr": null,
-      "ru": null,
+      "ru": "Блок энзимных ракет",
       "pl": null,
       "cs": "Enzyme Missile Rack"
     },
@@ -4178,7 +4178,7 @@
       "pt": "Canhão Gauss Guardian (Fixa)",
       "de": "Guardian-Gausskannone (Fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
-      "ru": null,
+      "ru": "Пушка Гаусса стражей (фиксированное)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed)"
     },
@@ -4187,7 +4187,7 @@
       "pt": "Carregador de Plasma Guardian (Fixa)",
       "de": "Guardian-Plasmalader (Fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
-      "ru": null,
+      "ru": "Плазменная пушка стражей (фиксированное)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed)"
     },
@@ -4196,7 +4196,7 @@
       "pt": "Carregador de Plasma Guardian (Torretada)",
       "de": "Guardian-Plasmalader (Turm)",
       "fr": "Chargeur à plasma - Guardians (Tourelle)",
-      "ru": null,
+      "ru": "Плазменная пушка стражей (турель)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted)"
     },
@@ -4205,7 +4205,7 @@
       "pt": "Gerador de Energia Guardian",
       "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
-      "ru": null,
+      "ru": "Силовая установка стражей",
       "pl": null,
       "cs": "Guardian Hybrid Power Plant"
     },
@@ -4214,7 +4214,7 @@
       "pt": null,
       "de": "Meta-Legierung-Hüllenverstärkung",
       "fr": null,
-      "ru": null,
+      "ru": "Метасплавное усиление корпуса",
       "pl": null,
       "cs": "Meta Alloy Hull Reinforcement"
     },
@@ -4223,7 +4223,7 @@
       "pt": "Lançador de dardos de Liberação Remota (Fixa)",
       "de": "ferngesteuerter Flechettenwerfer (Fest)",
       "fr": null,
-      "ru": "Зенитная установка с дистанционным подрывом (фиксированный подвес)",
+      "ru": "Зенитная установка с дистанционным подрывом (фиксированное)",
       "pl": null,
       "cs": "Remote Release Flechette Launcher (Fixed)"
     },
@@ -4232,7 +4232,7 @@
       "pt": "Lançador de dardos de Liberação Remota (Torretada)",
       "de": "ferngesteuerter Flechettenwerfer (Turm)",
       "fr": null,
-      "ru": "Зенитная установка с дистанционным подрывом (турельный подвес)",
+      "ru": "Зенитная установка с дистанционным подрывом (турель)",
       "pl": null,
       "cs": "Remote Release Flechette Launcher (Turreted)"
     },
@@ -4241,7 +4241,7 @@
       "pt": "Canhão Elétrico (Fixa)",
       "de": "Schock Kanone (Fest)",
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (фиксированное)",
       "pl": null,
       "cs": "Shock Cannon (Fixed)"
     },
@@ -4250,7 +4250,7 @@
       "pt": "Canhão Elétrico (Guiada)",
       "de": "Schock Kanone (Kardanisch)",
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (на карданной подвеске)",
       "pl": null,
       "cs": "Shock Cannon (Gimballed)"
     },
@@ -4259,7 +4259,7 @@
       "pt": "Canhão Elétrico (Torretada)",
       "de": "Schock Kanone (Turm)",
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (турель)",
       "pl": null,
       "cs": "Shock Cannon (Turreted)"
     },
@@ -4907,7 +4907,7 @@
       "pt": null,
       "de": "Du hast:",
       "fr": null,
-      "ru": null,
+      "ru": "В наличии:",
       "pl": null,
       "cs": "Máš"
     },
@@ -4916,7 +4916,7 @@
       "pt": null,
       "de": "(bereits benötigt)",
       "fr": null,
-      "ru": null,
+      "ru": "(уже необходимо)",
       "pl": null,
       "cs": "(také potřebuješ)"
     },
@@ -4925,7 +4925,7 @@
       "pt": null,
       "de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
       "fr": null,
-      "ru": null,
+      "ru": "Показывает предложения по торговле материалами (учитывая ваш груз и весь список покупок).",
       "pl": null,
       "cs": "Zobrazuje návrh obchodování s materiálem (s ohledem na vaše cargo a celý nákupní seznam)."
     },
@@ -4934,7 +4934,7 @@
       "pt": null,
       "de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
       "fr": null,
-      "ru": null,
+      "ru": "Предложения сортируются по величине торговли по сравнению с вашим грузом, минус возможная сумма, уже необходимая в списке покупок.",
       "pl": null,
       "cs": "Návrhy jsou seřazeny podle toho, jak velký bude obchod v porovnání s materiály ve tvém cargu. Mínus případné položky, které jsou zapotřebí v nákupním seznamu."
     },
@@ -4943,7 +4943,7 @@
       "pt": null,
       "de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
       "fr": null,
-      "ru": null,
+      "ru": "Оранжевые записи указывают предложения по торговле, которые не полностью отвечают требованиям (но могут помочь).",
       "pl": null,
       "cs": "Oranžové položky označují návrhy obchodu, které zcela nesplní tvůj požadavek, ale může ti pomoci."
     },
@@ -4952,7 +4952,7 @@
       "pt": null,
       "de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
       "fr": null,
-      "ru": null,
+      "ru": "Торговец материалами в системах с промышленной экономикой, обменивает только промышленные материалы.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'Industrial' ekonomikou, obchoduje pouze s vyrobenými materiály (Biotech conductors, Compound shielding atd.)."
     },
@@ -4961,7 +4961,7 @@
       "pt": null,
       "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
       "fr": null,
-      "ru": null,
+      "ru": "Торговец материалами в системах с добычей ископаемых и переработкой, обменивает только сырьевые элементы.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'Extraction' a 'Rafinery ekonomikou', obchoduje pouze se surovými materiály, které se získávají na povrchu planet a při težbě v prstencích."
     },
@@ -4970,7 +4970,7 @@
       "pt": null,
       "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
       "fr": null,
-      "ru": null,
+      "ru": "Торговец материалами в системах с высокотехнологичной и военной экономикой, обменивает только зашифрованные данные.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'High Tech' a 'Military ekonomikou', obchoduje pouze s daty."
     }
