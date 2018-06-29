@@ -33236,11 +33236,11 @@
     "Ingredients": [
       {
         "Name": "Meta-alloys",
-        "Size": 28
+        "Size": 16
       },
       {
         "Name": "Iron",
-        "Size": 30
+        "Size": 26
       },
       {
         "Name": "Chemical Manipulators",
@@ -33252,7 +33252,7 @@
       },
       {
         "Name": "Radiation Baffle",
-        "Size": 30
+        "Size": 22
       }
     ]
   },
@@ -33265,19 +33265,19 @@
     "Ingredients": [
       {
         "Name": "Tungsten",
-        "Size": 35
+        "Size": 15
       },
       {
         "Name": "Thargoid Energy Cell",
-        "Size": 30
+        "Size": 16
       },
       {
         "Name": "Thargoid Organic Circuitry",
-        "Size": 36
+        "Size": 18
       },
       {
         "Name": "Molybdenum",
-        "Size": 34
+        "Size": 16
       },
       {
         "Name": "Radiation Baffle",
@@ -33294,44 +33294,102 @@
     "Ingredients": [
       {
         "Name": "Guardian Weapon Blueprint Segment",
-        "Size": 4
+        "Size": 1
       },
       {
         "Name": "Guardian Power Cell",
-        "Size": 36
+        "Size": 18
       },
       {
         "Name": "Guardian Technology Component",
-        "Size": 42
+        "Size": 20
       },
       {
         "Name": "Manganese",
-        "Size": 30
+        "Size": 15
       },
       {
         "Name": "Magnetic Emitter Coil",
-        "Size": 10
+        "Size": 6
       }
     ]
   },
   {
     "Type": "Guardian",
-    "Name": "Guardian Plasma Charger (Fixed)",
+    "Name": "Guardian Hull Reinforcement",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Module Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 21
+      },
+      {
+        "Name": "Pattern Beta Obelisk Data",
+        "Size": 16
+      },
+      {
+        "Name": "Pattern Gamma Obelisk Data",
+        "Size": 16
+      },
+      {
+        "Name": "Reinforced Mounting Plate",
+        "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Module Reinforcement",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Module Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 18
+      },
+      {
+        "Name": "Pattern Epsilon Obelisk Data",
+        "Size": 15
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 20
+      },
+      {
+        "Name": "Reinforced Mounting Plate",
+        "Size": 9
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Plasma Charger (Fixed, Large)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
         "Name": "Guardian Weapon Blueprint Segment",
-        "Size": 8
+        "Size": 1
       },
       {
         "Name": "Guardian Power Conduit",
-        "Size": 38
+        "Size": 28
       },
       {
         "Name": "Guardian Sentinel Weapon Parts",
-        "Size": 34
+        "Size": 20
       },
       {
         "Name": "Chromium",
@@ -33339,36 +33397,94 @@
       },
       {
         "Name": "Micro-Weave Cooling Hoses",
-        "Size": 12
+        "Size": 10
       }
     ]
   },
   {
     "Type": "Guardian",
-    "Name": "Guardian Plasma Charger (Turreted)",
+    "Name": "Guardian Plasma Charger (Fixed, Medium)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
         "Name": "Guardian Weapon Blueprint Segment",
-        "Size": 10
+        "Size": 1
       },
       {
         "Name": "Guardian Power Conduit",
-        "Size": 42
+        "Size": 18
       },
       {
         "Name": "Guardian Sentinel Weapon Parts",
-        "Size": 39
+        "Size": 16
       },
       {
         "Name": "Chromium",
-        "Size": 33
+        "Size": 14
+      },
+      {
+        "Name": "Micro-Weave Cooling Hoses",
+        "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Plasma Charger (Turreted, Large)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 20
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 24
+      },
+      {
+        "Name": "Chromium",
+        "Size": 26
       },
       {
         "Name": "Articulation Motors",
         "Size": 10
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Plasma Charger (Turreted, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 21
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 20
+      },
+      {
+        "Name": "Chromium",
+        "Size": 16
+      },
+      {
+        "Name": "Articulation Motors",
+        "Size": 8
       }
     ]
   },
@@ -33381,19 +33497,19 @@
     "Ingredients": [
       {
         "Name": "Guardian Module Blueprint Segment",
-        "Size": 4
+        "Size": 1
       },
       {
         "Name": "Guardian Power Conduit",
-        "Size": 36
+        "Size": 18
       },
       {
         "Name": "Pattern Epsilon Obelisk Data",
-        "Size": 42
+        "Size": 21
       },
       {
         "Name": "Heat Resistant Ceramics",
-        "Size": 30
+        "Size": 15
       },
       {
         "Name": "Energy Grid Assembly",
@@ -33410,15 +33526,15 @@
     "Ingredients": [
       {
         "Name": "Guardian Module Blueprint Segment",
-        "Size": 8
+        "Size": 1
       },
       {
         "Name": "Guardian Power Cell",
-        "Size": 42
+        "Size": 21
       },
       {
         "Name": "Guardian Technology Component",
-        "Size": 42
+        "Size": 21
       },
       {
         "Name": "Focus Crystals",
@@ -33439,19 +33555,19 @@
     "Ingredients": [
       {
         "Name": "Guardian Module Blueprint Segment",
-        "Size": 4
+        "Size": 1
       },
       {
         "Name": "Pattern Alpha Obelisk Data",
-        "Size": 27
+        "Size": 20
       },
       {
         "Name": "Guardian Power Cell",
-        "Size": 45
+        "Size": 24
       },
       {
         "Name": "Phase Alloys",
-        "Size": 36
+        "Size": 18
       },
       {
         "Name": "Heatsink Interlink",
@@ -33461,26 +33577,55 @@
   },
   {
     "Type": "Guardian",
-    "Name": "Guardian Shard Cannon (Fixed)",
+    "Name": "Guardian Shard Cannon (Fixed, Large)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
         "Name": "Guardian Technology Component",
-        "Size": 36
+        "Size": 28
       },
       {
         "Name": "Guardian Weapon Blueprint Segment",
-        "Size": 8
+        "Size": 1
       },
       {
         "Name": "Guardian Sentinel Wreckage Components",
-        "Size": 40
+        "Size": 20
       },
       {
         "Name": "Carbon",
-        "Size": 35
+        "Size": 20
+      },
+      {
+        "Name": "Micro Controllers",
+        "Size": 18
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shard Cannon (Fixed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 18
+      },
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 20
+      },
+      {
+        "Name": "Carbon",
+        "Size": 14
       },
       {
         "Name": "Power Transfer Bus",
@@ -33490,30 +33635,88 @@
   },
   {
     "Type": "Guardian",
-    "Name": "Guardian Shard Cannon (Turreted)",
+    "Name": "Guardian Shard Cannon (Turreted, Large)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
-        "Name": "Guardian Technology Component",
-        "Size": 40
-      },
-      {
         "Name": "Guardian Weapon Blueprint Segment",
-        "Size": 10
+        "Size": 2
       },
       {
         "Name": "Guardian Sentinel Wreckage Components",
-        "Size": 28
+        "Size": 20
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 26
       },
       {
         "Name": "Carbon",
-        "Size": 30
+        "Size": 28
       },
       {
         "Name": "Micro Controllers",
         "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shard Cannon (Turreted, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 2
+      },
+      {
+        "Name": "Guardian Sentinel Wreckage Components",
+        "Size": 16
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 20
+      },
+      {
+        "Name": "Carbon",
+        "Size": 15
+      },
+      {
+        "Name": "Micro Controllers",
+        "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shield Reinforcement",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Module Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 17
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 20
+      },
+      {
+        "Name": "Pattern Delta Obelisk Data",
+        "Size": 24
+      },
+      {
+        "Name": "Hardware Diagnostic Sensor",
+        "Size": 8
       }
     ]
   },
@@ -33526,15 +33729,15 @@
     "Ingredients": [
       {
         "Name": "Meta-alloys",
-        "Size": 28
+        "Size": 16
       },
       {
         "Name": "Focus Crystals",
-        "Size": 30
+        "Size": 15
       },
       {
         "Name": "Aberrant Shield Pattern Analysis",
-        "Size": 26
+        "Size": 22
       },
       {
         "Name": "Configurable Components",
@@ -33555,19 +33758,19 @@
     "Ingredients": [
       {
         "Name": "Rhenium",
-        "Size": 28
+        "Size": 22
       },
       {
         "Name": "Iron",
-        "Size": 40
+        "Size": 30
       },
       {
         "Name": "Molybdenum",
-        "Size": 36
+        "Size": 24
       },
       {
         "Name": "Germanium",
-        "Size": 32
+        "Size": 26
       },
       {
         "Name": "CMM Composite",
@@ -33584,19 +33787,19 @@
     "Ingredients": [
       {
         "Name": "Rhenium",
-        "Size": 28
+        "Size": 20
       },
       {
         "Name": "Iron",
-        "Size": 36
+        "Size": 28
       },
       {
         "Name": "Molybdenum",
-        "Size": 32
+        "Size": 28
       },
       {
         "Name": "Germanium",
-        "Size": 34
+        "Size": 24
       },
       {
         "Name": "Articulation Motors",
@@ -33606,26 +33809,55 @@
   },
   {
     "Type": "Human",
-    "Name": "Shock Cannon (Fixed)",
+    "Name": "Shock Cannon (Fixed, Large)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
         "Name": "Vanadium",
-        "Size": 30
+        "Size": 28
       },
       {
         "Name": "Tungsten",
-        "Size": 30
+        "Size": 26
       },
       {
         "Name": "Rhenium",
-        "Size": 36
+        "Size": 24
       },
       {
         "Name": "Technetium",
-        "Size": 30
+        "Size": 26
+      },
+      {
+        "Name": "Power Converter",
+        "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Human",
+    "Name": "Shock Cannon (Fixed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 24
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 26
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 20
+      },
+      {
+        "Name": "Technetium",
+        "Size": 28
       },
       {
         "Name": "Ion Distributor",
@@ -33635,18 +33867,47 @@
   },
   {
     "Type": "Human",
-    "Name": "Shock Cannon (Gimballed)",
+    "Name": "Shock Cannon (Gimballed, Large)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
         "Name": "Tungsten",
-        "Size": 32
+        "Size": 24
       },
       {
         "Name": "Rhenium",
-        "Size": 30
+        "Size": 24
+      },
+      {
+        "Name": "Technetium",
+        "Size": 22
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 28
+      },
+      {
+        "Name": "Power Transfer Bus",
+        "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Human",
+    "Name": "Shock Cannon (Gimballed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Tungsten",
+        "Size": 22
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 20
       },
       {
         "Name": "Technetium",
@@ -33654,7 +33915,7 @@
       },
       {
         "Name": "Vanadium",
-        "Size": 36
+        "Size": 24
       },
       {
         "Name": "Power Converter",
@@ -33664,22 +33925,51 @@
   },
   {
     "Type": "Human",
-    "Name": "Shock Cannon (Turreted)",
+    "Name": "Shock Cannon (Turreted, Large)",
     "Engineers": [
       "@Technology"
     ],
     "Ingredients": [
       {
         "Name": "Vanadium",
-        "Size": 30
+        "Size": 26
       },
       {
         "Name": "Tungsten",
-        "Size": 32
+        "Size": 28
       },
       {
         "Name": "Rhenium",
-        "Size": 30
+        "Size": 22
+      },
+      {
+        "Name": "Technetium",
+        "Size": 24
+      },
+      {
+        "Name": "Ion Distributor",
+        "Size": 10
+      }
+    ]
+  },
+  {
+    "Type": "Human",
+    "Name": "Shock Cannon (Turreted, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 24
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 22
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 20
       },
       {
         "Name": "Technetium",
