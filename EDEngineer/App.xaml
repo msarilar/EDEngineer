@@ -56,6 +56,7 @@
             <SolidColorBrush x:Key="MaterialTraderWillBeEnoughBrush" Color="DarkSlateGray"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
+            <converters:ApiRunningToIndicatorConverter x:Key="ApiRunningToIndicator" />
             <converters:SubkindToIcon x:Key="SubkindToIcon" />
             <converters:DoubleToPercentConverter x:Key="DoubleToPercent" />
             <converters:IngredientToVisibilityConverter x:Key="IngredientToVisibility" />

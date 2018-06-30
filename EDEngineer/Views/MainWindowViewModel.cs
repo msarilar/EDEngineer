@@ -64,6 +64,12 @@ namespace EDEngineer.Views
             }
         }
 
+        public bool ApiOn
+        {
+            get => apiOn;
+            set { apiOn = value; OnPropertyChanged(); }
+        }
+
         public MainWindowViewModel(Languages languages, string directory)
         {
             logDirectory = directory;
@@ -165,6 +171,7 @@ namespace EDEngineer.Views
         private string currentComparer;
         private readonly List<EntryData> entryDatas;
         private CommanderAggregation aggregation;
+        private bool apiOn;
 
         public bool ShowZeroes
         {

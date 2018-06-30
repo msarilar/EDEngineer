@@ -1,54 +1,46 @@
 {
-    "LanguageInfos": {
-        "en": {
-            "TwoLetterISOLanguageName": "en",
-            "Name": "English",
-            "NotReadyWarning":
-                "This translation is incomplete ! If you select it, only parts of the application will be translated. Everything that hasn't been translated yet will be displayed in English."
-        },
-        "es": {
-            "TwoLetterISOLanguageName": "es",
-            "Name": "Español",
-            "NotReadyWarning":
-                "¡Esta traducción está incompleta! Si lo selecciona, sólo se traducirán partes de la aplicación. Todo lo que aún no se ha traducido se mostrará en inglés."
-        },
-        "pt": {
-            "TwoLetterISOLanguageName": "pt",
-            "Name": "Português",
-            "NotReadyWarning":
-                "Esta tradução está incompleta! Se selecionár-la, somente serão traduzidos partes da aplicação. Tudo o que ainda não foi traduzido ficará em inglês."
-        },
-        "de": {
-            "TwoLetterISOLanguageName": "de",
-            "Name": "Deutsch",
-            "NotReadyWarning":
-                "Diese Übersetzung ist unvollständig! Wenn Sie sie auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
-        },
-        "fr": {
-            "TwoLetterISOLanguageName": "fr",
-            "Name": "Français",
-            "NotReadyWarning":
-                "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
-        },
-        "ru": {
-            "TwoLetterISOLanguageName": "ru",
-            "Name": "Русский",
-            "NotReadyWarning":
-                "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на английском языке."
-        },
-        "pl": {
-            "TwoLetterISOLanguageName": "pl",
-            "Name": "Polski",
-            "NotReadyWarning":
-                "To tłumaczenie nie jest w pełni ukończone ! Jeżeli wybierzesz to tłumaczenie, tylko część aplikacji zostanie przetłumaczona. Wszystkie nieprzetłumaczone wpisy zostaną wyświetlone w j. angielskim."
-        },
-        "cs": {
-            "TwoLetterISOLanguageName": "cs",
-            "Name": "Česky",
-            "NotReadyWarning":
-                "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno musí být přeloženo. To co přeloženo nebude, bude nadále v angličtině."
-        }
+  "LanguageInfos": {
+    "en": {
+      "TwoLetterISOLanguageName": "en",
+      "Name": "English",
+      "NotReadyWarning": "This translation is incomplete ! If you select it, only parts of the application will be translated. Everything that hasn't been translated yet will be displayed in English."
     },
+    "es": {
+      "TwoLetterISOLanguageName": "es",
+      "Name": "Español",
+      "NotReadyWarning": "¡Esta traducción está incompleta! Si lo selecciona, sólo se traducirán partes de la aplicación. Todo lo que aún no se ha traducido se mostrará en inglés."
+    },
+    "pt": {
+      "TwoLetterISOLanguageName": "pt",
+      "Name": "Português",
+      "NotReadyWarning": "Esta tradução está incompleta! Se selecionár-la, somente serão traduzidos partes da aplicação. Tudo o que ainda não foi traduzido ficará em inglês."
+    },
+    "de": {
+      "TwoLetterISOLanguageName": "de",
+      "Name": "Deutsch",
+      "NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie sie auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
+    },
+    "fr": {
+      "TwoLetterISOLanguageName": "fr",
+      "Name": "Français",
+      "NotReadyWarning": "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
+    },
+    "ru": {
+      "TwoLetterISOLanguageName": "ru",
+      "Name": "Русский",
+      "NotReadyWarning": "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на английском языке."
+    },
+    "pl": {
+      "TwoLetterISOLanguageName": "pl",
+      "Name": "Polski",
+      "NotReadyWarning": "To tłumaczenie nie jest w pełni ukończone ! Jeżeli wybierzesz to tłumaczenie, tylko część aplikacji zostanie przetłumaczona. Wszystkie nieprzetłumaczone wpisy zostaną wyświetlone w j. angielskim."
+    },
+    "cs": {
+      "TwoLetterISOLanguageName": "cs",
+      "Name": "Česky",
+      "NotReadyWarning": "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno musí být přeloženo. To co přeloženo nebude, bude nadále v angličtině."
+    }
+  },
   "Translations": {
     "Short Range Blaster": {
       "es": "Destructor de Corto Alcance",
@@ -4973,6 +4965,24 @@
       "ru": "Торговец материалами в системах с высокотехнологичной и военной экономикой, обменивает только зашифрованные данные.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'High Tech' a 'Military ekonomikou', obchoduje pouze s daty."
+    },
+    "API ON": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "API OFF": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
     }
   }
 }

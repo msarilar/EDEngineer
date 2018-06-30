@@ -1921,6 +1921,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
@@ -1967,9 +1968,40 @@
                 <Run Text="{Binding CurrentCommander.Value.LastUpdate, Converter={StaticResource InstantToString}}" />
                 <Run Text=" (UTC)"/>
             </TextBlock>
+            <StackPanel Grid.Column="4"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal"
+                        VerticalAlignment="Center">
+                <Image Source="{Binding ApiOn, Converter={StaticResource ApiRunningToIndicator}}"
+                       Width="20"
+                       Height="20"
+                       VerticalAlignment="Center"
+                       Margin="3,0,3,0"
+                       RenderOptions.BitmapScalingMode="HighQuality" />
+
+                <TextBlock FontSize="16"
+                           Foreground="{StaticResource ExperimentalBrush}"
+                           Margin="10,0,0,0"
+                           TextAlignment="Left"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap"
+                           FontFamily="/Resources/Fonts/#Euro Caps"
+                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='API ON'}"
+                           Visibility="{Binding ApiOn, Converter={StaticResource BooleanToVisibility}}"/>
+
+                <TextBlock FontSize="16"
+                           Foreground="{StaticResource IngredientHighlightedBrush}"
+                           Margin="10,0,0,0"
+                           TextAlignment="Left"
+                           VerticalAlignment="Center"
+                           TextWrapping="Wrap"
+                           FontFamily="/Resources/Fonts/#Euro Caps"
+                           Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='API OFF'}"
+                           Visibility="{Binding ApiOn, Converter={StaticResource BooleanToVisibility}, ConverterParameter='Inverted'}"/>
+            </StackPanel>
             <Button HorizontalAlignment="Right"
                     FontSize="15"
-                    Grid.Column="4"
+                    Grid.Column="5"
                     Foreground="DarkCyan"
                     Background="Transparent"
                     Margin="0,0,10,0"

@@ -54,7 +54,7 @@ namespace EDEngineer.Utils.System
             SettingsManager.ServerPort = port;
 
             cts = new CancellationTokenSource();
-
+            viewModel.ApiOn = true;
             Task.Factory.StartNew(() =>
             {
                 Server.start(cts.Token,
@@ -66,6 +66,13 @@ namespace EDEngineer.Utils.System
             }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default)
             .ContinueWith(t =>
             {
+                if (t.Exception is AggregateException agg &&
+                    agg.InnerExceptions.Count == 1 &&
+                    agg.InnerExceptions[0] is OperationCanceledException)
+                {
+                    return;
+                }
+
                 try
                 {
                     Stop();
@@ -83,6 +90,7 @@ namespace EDEngineer.Utils.System
 
         public void Stop()
         {
+            viewModel.ApiOn = false;
             if (cts?.IsCancellationRequested == false)
             {
                 cts.Cancel();
