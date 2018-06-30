@@ -144,12 +144,12 @@ let start (token,
     let findFormat (x: string) =
         x.Split [|';'|]
         |> Seq.fold(fun acc elem -> match acc with
-                                 | Some(r) -> Some(r)
-                                 | _       -> match elem with
-                                              | "text/json" -> Some(Json)
-                                              | "text/csv"  -> Some(Csv)
-                                              | "text/xml"  -> Some(Xml)
-                                              | _           -> None) None
+                                    | Some(r) -> Some(r)
+                                    | _       -> match elem with
+                                                 | "text/json" -> Some(Json)
+                                                 | "text/csv"  -> Some(Csv)
+                                                 | "text/xml"  -> Some(Xml)
+                                                 | _           -> None) None
     request.headers
     |> Seq.filter (fun (k, v) -> k = "accept")
     |> Seq.map (fun (k, v) -> v)
