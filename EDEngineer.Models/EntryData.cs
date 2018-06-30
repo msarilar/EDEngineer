@@ -125,6 +125,7 @@ namespace EDEngineer.Models
             ["Markets near Cilbien Zu (Industrial/Extraction)"] = Origin.Market,
             ["Markets near Heget (Industrial/Extraction)"] = Origin.Market,
             ["Markets near Eurybia (Extraction/Refinery)"] = Origin.Market,
+            ["Markets (Kanwar Gateway, Xiripa)"] = Origin.Market,
 
             ["Needed for Marco Qwent (25)"] = Origin.NeededForEngineer,
             ["Needed for Ram Tah (50)"] = Origin.NeededForEngineer,

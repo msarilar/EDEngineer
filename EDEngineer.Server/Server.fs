@@ -70,6 +70,7 @@ let start (token,
   
   let corsConfig = {
     defaultCORSConfig with
+      allowedMethods = InclusiveOption.Some [ HttpMethod.GET; HttpMethod.PATCH ]
       allowedUris = InclusiveOption.Some [ "http://localhost:" + (port |> string) ]
   }
   let JsonConfig = fun lang -> 

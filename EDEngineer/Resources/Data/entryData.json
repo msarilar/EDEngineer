@@ -1590,6 +1590,15 @@
     ]
   },
   {
+    "Name": "Hardware Diagnostic Sensor",
+    "Rarity": "None",
+    "FormattedName": "diagnosticsensor",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Markets (Kanwar Gateway, Xiripa)"
+    ]
+  },
+  {
     "Name": "Thargoid Material Composition Data",
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
