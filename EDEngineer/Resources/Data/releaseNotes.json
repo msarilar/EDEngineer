@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.3.0",
+    "Content": "* Added API ON/OFF indicator at the bottom of the window\r\n* Removed pesky error message when you stopped the API\r\n\r\n* Massive Blueprint Update thanks to @CMDR-Cometborne :\r\n\t* New Blueprints:\r\n\t\t* Guardian Hull Reinforcement\r\n\t\t* Guardian Plasma Charger (Turreted, Large)\r\n\t\t* Guardian Shard Cannon (Fixed, Medium)\r\n\t\t* Guardian Shard Cannon (Turreted, Medium)\r\n\t\t* Guardian Shield Reinforcement\r\n\t\t* Shock Cannon (Fixed, Medium)\r\n\t\t* Shock Cannon (Gimballed, Medium)\r\n\t\t* Shock Cannon (Turreted, Medium)\r\n\t* Updated requirements of existing blueprints\r\n\r\n* Russian localization update, thanks to @VChet!"
+  },
+  {
     "Version": "1.1.2.8",
     "Content": "* Added advanced sorting to the blueprint list : you can cumulate column sorting (e.g. sort by name, then by grade etc...) ; the rank are represented by arrows (first column ordering is one arrow, then two arrows, and so on). Revert back to sorting with one column by sorting two times the same column\r\n\r\n* Fixed headers in the API response to comply with CORS"
   },
