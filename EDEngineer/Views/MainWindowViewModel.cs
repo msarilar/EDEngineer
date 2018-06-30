@@ -103,7 +103,6 @@ namespace EDEngineer.Views
                     ? JsonConvert.DeserializeObject<CommanderAggregation>(File.ReadAllText(path))
                     : null;
 
-                // ReSharper disable once PossibleNullReferenceException
                 // ReSharper disable once ReturnValueOfPureMethodIsNotUsed
                 aggregation?.Aggregations.Select(a => a.Value.LastTimestamp.ToDateTimeUtc()).ToList();
             }
