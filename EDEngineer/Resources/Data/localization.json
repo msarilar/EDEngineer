@@ -1765,7 +1765,7 @@
     "Rhenium": {
       "es": null,
       "pt": "Rênio",
-      "de": null,
+      "de": "Rhenium",
       "fr": null,
       "ru": "Рений",
       "pl": null,
@@ -3808,7 +3808,7 @@
     "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
       "es": null,
       "pt": "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
-      "de": null,
+      "de": "Unbekannter Bestandteil (zeigt den Namen, wie er in den Protokollen erscheint). Bitte öffnen Sie ein GitHub-Issue, um den Autor wissen zu lassen, wie dieser wirklich heißt!",
       "fr": null,
       "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null,
@@ -4294,7 +4294,7 @@
     "Thermal Vent": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Thermische Entlastung",
       "fr": null,
       "ru": "Теплоотдача",
       "pl": null,
@@ -4582,7 +4582,7 @@
     "Plasma Slug": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Plasmaprojektil",
       "fr": null,
       "ru": "Плазменный рельсовый заряд",
       "pl": null,
@@ -4969,7 +4969,7 @@
     "API ON": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "API AN",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -4978,7 +4978,7 @@
     "API OFF": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "API AUS",
       "fr": null,
       "ru": null,
       "pl": null,
