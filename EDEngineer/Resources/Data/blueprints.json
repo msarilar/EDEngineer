@@ -34013,7 +34013,8 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "b556c19a-e756-45b1-846f-9ddc61af18a9"
   },
   {
     "Type": "Beam Laser",
@@ -34047,7 +34048,8 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "3bece1bb-7c31-4735-8c18-54dc4a0057bc"
   },
   {
     "Type": "Beam Laser",
@@ -34076,7 +34078,8 @@
         "Property": "Damage increases with heat level",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "4e4e1f59-6762-47ff-b1fa-40ca43304698"
   },
   {
     "Type": "Beam Laser",
@@ -34114,7 +34117,8 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "fe8b4daa-e65d-464c-811d-400d3632a3d6"
   },
   {
     "Type": "Beam Laser",
@@ -34143,7 +34147,8 @@
         "Property": "Heat reduced when striking a target",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "70f11414-7904-405c-92db-806178ee9df4"
   },
   {
     "Type": "Beam Laser",
@@ -34177,7 +34182,8 @@
         "Property": "Damage",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "ceb5c729-4565-4869-ade8-5ee897e8b410"
   },
   {
     "Type": "Beam Laser",
@@ -34206,7 +34212,8 @@
         "Property": "Mass",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "dfc22aad-48b8-4f8d-af16-ec3b978fc8b6"
   },
   {
     "Type": "Beam Laser",
@@ -34235,7 +34242,8 @@
         "Property": "Integrity",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "32cb80c0-bb11-49ea-ae21-4c94eb5f9195"
   },
   {
     "Type": "Beam Laser",
@@ -34264,7 +34272,8 @@
         "Property": "Power Draw",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "441e1d85-5174-4172-85ea-caee8d3c632d"
   },
   {
     "Type": "Burst Laser",
@@ -34337,7 +34346,8 @@
         "Property": "Jitter",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "6eda22d3-8049-4bab-a125-762b12fa576a"
   },
   {
     "Type": "Burst Laser",
@@ -34375,7 +34385,8 @@
         "Property": "Damage",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "47254ea9-c88f-43e0-9166-d1796649917b"
   },
   {
     "Type": "Burst Laser",
@@ -34409,7 +34420,8 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "4f42cb92-4440-4295-ada9-fcca788a65b8"
   },
   {
     "Type": "Burst Laser",
@@ -34606,7 +34618,8 @@
         "Property": "Rate of Fire",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "fd62292f-f5ed-4728-bc8a-3ae215ced386"
   },
   {
     "Type": "Pulse Laser",
@@ -34678,7 +34691,8 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "16c9ed0f-63c0-4ff2-b2e0-59bbb294632d"
   },
   {
     "Type": "Pulse Laser",
@@ -34976,7 +34990,8 @@
         "Property": "Auto reload while firing",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "640d6dde-f497-42cd-8bc9-73ab3fa1b43a"
   },
   {
     "Type": "Multi-cannon",
@@ -35010,7 +35025,8 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "a6faa870-ff89-4e48-b607-424e065cbd43"
   },
   {
     "Type": "Multi-cannon",
@@ -35129,7 +35145,8 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "3526773e-a814-4bec-afbf-30db79a3e239"
   },
   {
     "Type": "Multi-cannon",
@@ -35162,7 +35179,8 @@
         "Property": "No damage to untargeted ships",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "2a3d8519-27af-44f2-a50b-33095964d1cc"
   },
   {
     "Type": "Multi-cannon",
@@ -35383,7 +35401,8 @@
         "Property": "Target gimbal/turret tracking reduced",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "0e2dbd63-335d-4dca-8050-c7ca8ddc56b0"
   },
   {
     "Type": "Cannon",
@@ -35421,7 +35440,8 @@
         "Property": "Shot Speed",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "62056851-d2f2-474d-ba77-66c030c900e9"
   },
   {
     "Type": "Cannon",
@@ -35459,7 +35479,8 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "a950b42c-204f-4775-a0c5-21bfcec1fd14"
   },
   {
     "Type": "Cannon",
@@ -35525,7 +35546,8 @@
         "Property": "Shielded target heat increased",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "e5c8cab4-7a2f-450d-a937-2d0d8b9e3714"
   },
   {
     "Type": "Cannon",
@@ -35747,7 +35769,8 @@
         "Property": "Target sensor acuity reduced",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "0a1e29ee-2fc7-4cbd-bbda-e8803c3e03ac"
   },
   {
     "Type": "Fragment Cannon",
@@ -35776,7 +35799,8 @@
         "Property": "Target speed reduced",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "ca4cd540-660a-4fba-b38d-179f72125819"
   },
   {
     "Type": "Fragment Cannon",
@@ -35857,7 +35881,8 @@
         "Property": "Reload Time",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "9cf533fc-ccb1-4c92-8b6b-dd700af2988a"
   },
   {
     "Type": "Fragment Cannon",
@@ -36116,7 +36141,8 @@
         "Property": "Damage partially thermal",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "c157bbd1-a14d-4aa2-9081-94cbfbdee558"
   },
   {
     "Type": "Missile Rack",
@@ -36178,7 +36204,8 @@
         "Property": "Target module damage",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "35578402-1bc7-4d19-828b-af31ebd79866"
   },
   {
     "Type": "Missile Rack",
@@ -36221,7 +36248,8 @@
         "Property": "Rate of Fire",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "c1400054-1c2b-487c-8854-7a22d96d4cd2"
   },
   {
     "Type": "Missile Rack",
@@ -36409,7 +36437,8 @@
         "Property": "Target FSD inhibited",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "9e8635af-4077-4d7a-98dd-5220c8722688"
   },
   {
     "Type": "Torpedo Pylon",
@@ -36442,7 +36471,8 @@
         "Property": "Target module damage",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "5d25c5bc-4b45-4119-bd87-71bfd0f85957"
   },
   {
     "Type": "Torpedo Pylon",
@@ -36475,7 +36505,8 @@
         "Property": "Target shield generator damaged",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "c03e2f4f-9520-44bb-9a1f-7a917e8e3a48"
   },
   {
     "Type": "Torpedo Pylon",
@@ -36629,7 +36660,8 @@
         "Property": "Target thrusters reboot",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "d84e40ca-afc1-4b01-9940-034152d288e7"
   },
   {
     "Type": "Mine Launcher",
@@ -36691,7 +36723,8 @@
         "Property": "Area heat increased, sensors disrupted",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "51f84837-e9a5-432c-a125-d4322099266c"
   },
   {
     "Type": "Mine Launcher",
@@ -36753,7 +36786,8 @@
         "Property": "Area FSDs reboot",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "1f7b0deb-e023-43e5-96f6-ebf60d683e8b"
   },
   {
     "Type": "Mine Launcher",
@@ -37003,7 +37037,8 @@
         "Property": "Target loses target lock",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "4cf42ed8-574f-4bb8-a1f2-ee154475b463"
   },
   {
     "Type": "Plasma Accelerator",
@@ -37113,7 +37148,8 @@
         "Property": "Ammo Capacity",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "58a7b1b6-57b9-40f2-9a5a-712a5388a5eb"
   },
   {
     "Type": "Plasma Accelerator",
@@ -37311,7 +37347,8 @@
         "Property": "Thermal Load",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "3c153755-3d2c-4832-bb73-d6b3d0e99a71"
   },
   {
     "Type": "Rail Gun",
@@ -37402,7 +37439,8 @@
         "Property": "Reload Time",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "4bb4ec50-40fb-473d-abaf-4fc386aa889c"
   },
   {
     "Type": "Rail Gun",
@@ -37591,7 +37629,8 @@
         "Property": "Heat Efficiency",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "6cda2960-a05b-4dd1-978c-202d746e47bc"
   },
   {
     "Type": "Power Plant",
@@ -37656,7 +37695,8 @@
         "Property": "Power Generation",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "12a57a09-0e05-41a9-9824-14a3618e7a0f"
   },
   {
     "Type": "Power Plant",
@@ -37720,7 +37760,8 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "e8631809-2915-4373-905c-8dcf3bda6921"
   },
   {
     "Type": "Armour",
@@ -37754,7 +37795,8 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "cdd19fcc-74b4-463a-a8f1-2e9909da664f"
   },
   {
     "Type": "Armour",
@@ -37788,7 +37830,8 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "6c88aa33-01db-4eda-928e-6ca8b9b1bc3d"
   },
   {
     "Type": "Armour",
@@ -37832,7 +37875,8 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "b51706cc-d412-4559-8654-f812d2eb44b9"
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -38107,7 +38151,8 @@
         "Property": "Shield Reinforcement",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "87ed0cec-9624-4ecb-8ffb-cc941464e8d2"
   },
   {
     "Type": "Shield Cell Bank",
@@ -38141,7 +38186,8 @@
         "Property": "Shield Reinforcement",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "c8aa2134-3153-47b8-a367-9c5dbb9c557d"
   },
   {
     "Type": "Shield Booster",
@@ -38176,7 +38222,8 @@
         "Property": "Kinetic Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "cb95d9b4-a945-491d-95ad-e230c0454cd9"
   },
   {
     "Type": "Shield Booster",
@@ -38211,7 +38258,8 @@
         "Property": "Thermal Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "c3340df8-c6da-49c9-b236-8f1cc4209088"
   },
   {
     "Type": "Shield Booster",
@@ -38250,7 +38298,8 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "eb1c4a92-03ef-4263-8051-9ac91b2d43b2"
   },
   {
     "Type": "Shield Booster",
@@ -38359,7 +38408,8 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "4197c308-a3df-442a-91c2-db856b4f57cf"
   },
   {
     "Type": "Shield Generator",
@@ -38399,7 +38449,8 @@
         "Property": "Distributor Draw",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "603c1ba6-45e6-4401-af56-639c3e7c9b79"
   },
   {
     "Type": "Shield Generator",
@@ -38449,7 +38500,8 @@
         "Property": "Explosive Resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "dd46c8be-730c-4671-87fe-f98b181b66cf"
   },
   {
     "Type": "Shield Generator",
@@ -38534,7 +38586,8 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "42c5e92d-ccab-435a-b2c6-fd268d39d6f5"
   },
   {
     "Type": "Shield Generator",
@@ -38684,7 +38737,8 @@
         "Property": "Explosive Resistance",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "66a39288-59d7-4cfb-914d-354a200c0210"
   },
   {
     "Type": "Frame Shift Drive",
@@ -38720,7 +38774,8 @@
         "Property": "Maximum Fuel Per Jump",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "56f1e58d-2044-4a31-8b54-ad0f99dfd64e"
   },
   {
     "Type": "Frame Shift Drive",
@@ -38818,7 +38873,8 @@
         "Property": "Optimal Mass",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "4d7d30c3-970b-4c6e-a507-89ac7e6441bd"
   },
   {
     "Type": "Frame Shift Drive",
@@ -38943,7 +38999,8 @@
         "Property": "Optimal Mass",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "bd3c1991-370e-4b9d-b8cd-d5dec3260647"
   },
   {
     "Type": "Thrusters",
@@ -38978,7 +39035,8 @@
         "Property": "Thermal Load",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "68998b16-7b65-4f58-8bc0-6e0f2686c367"
   },
   {
     "Type": "Thrusters",
@@ -39098,7 +39156,8 @@
         "Property": "Systems Recharge",
         "IsGood": true
       }
-    ]
+    ],
+    "CoriolisGuid": "b5bb35a1-e851-4d37-8f26-8fe828f84c95"
   },
   {
     "Type": "Power Distributor",
@@ -39153,7 +39212,8 @@
         "Property": "Systems Recharge",
         "IsGood": false
       }
-    ]
+    ],
+    "CoriolisGuid": "c4231886-f988-4a31-a749-2a58550f9e44"
   },
   {
     "Type": "Power Distributor",
