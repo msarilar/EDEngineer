@@ -1920,7 +1920,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
@@ -1975,6 +1975,7 @@
             <StackPanel Grid.Column="4"
                         HorizontalAlignment="Center"
                         Orientation="Horizontal"
+                        Margin="10,0,0,0"
                         VerticalAlignment="Top">
                 <Image Source="{Binding ApiOn, Converter={StaticResource ApiRunningToIndicator}}"
                        Width="20"
