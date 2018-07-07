@@ -1925,18 +1925,22 @@
             </Grid.ColumnDefinitions>
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
+                    VerticalAlignment="Top"
                     Content="{Binding DataContext.Languages.CurrentLanguage, 
                 RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, 
                 Converter={x:Static localization:Languages.Instance}, 
                 ConverterParameter='Reset',
                 FallbackValue='Reset'}"
                     Visibility="Collapsed"
+                    VerticalContentAlignment="Center"
                     FontFamily="/Resources/Fonts/#Euro Caps"
                     x:Name="ResetWindowPositionButton"
                     Click="ResetWindowPositionButtonClicked"
                     Grid.Column="0" />
             <Button HorizontalAlignment="Stretch"
                     FontSize="14"
+                    VerticalAlignment="Top"
+                    VerticalContentAlignment="Center"
                     FontFamily="/Resources/Fonts/#Euro Caps"
                     x:Name="ToggleEditMode"
                     Content="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unlock Window', FallbackValue='Unlock Window'}"
@@ -1949,7 +1953,7 @@
                        Foreground="{StaticResource TechnologyBrush}"
                        Margin="10,0,0,0"
                        TextAlignment="Left"
-                       VerticalAlignment="Center"
+                       VerticalAlignment="Top"
                        TextWrapping="Wrap"
                        FontFamily="/Resources/Fonts/#Euro Caps">
                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='System:', FallbackValue='System: '}" />
@@ -1961,7 +1965,7 @@
                        Foreground="{StaticResource EliteOrangeBrush}"
                        Margin="10,0,0,0"
                        TextAlignment="Left"
-                       VerticalAlignment="Center"
+                       VerticalAlignment="Top"
                        TextWrapping="Wrap"
                        FontFamily="/Resources/Fonts/#Euro Caps">
                 <Run Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Last update: ', FallbackValue='Last Update: '}" />
@@ -1971,7 +1975,7 @@
             <StackPanel Grid.Column="4"
                         HorizontalAlignment="Center"
                         Orientation="Horizontal"
-                        VerticalAlignment="Center">
+                        VerticalAlignment="Top">
                 <Image Source="{Binding ApiOn, Converter={StaticResource ApiRunningToIndicator}}"
                        Width="20"
                        Height="20"
@@ -1983,7 +1987,7 @@
                            Foreground="{StaticResource ExperimentalBrush}"
                            Margin="10,0,0,0"
                            TextAlignment="Left"
-                           VerticalAlignment="Center"
+                           VerticalAlignment="Top"
                            TextWrapping="Wrap"
                            FontFamily="/Resources/Fonts/#Euro Caps"
                            Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='API ON'}"
@@ -1993,7 +1997,7 @@
                            Foreground="{StaticResource IngredientHighlightedBrush}"
                            Margin="10,0,0,0"
                            TextAlignment="Left"
-                           VerticalAlignment="Center"
+                           VerticalAlignment="Top"
                            TextWrapping="Wrap"
                            FontFamily="/Resources/Fonts/#Euro Caps"
                            Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='API OFF'}"
@@ -2004,6 +2008,8 @@
                     Grid.Column="5"
                     Foreground="DarkCyan"
                     Background="Transparent"
+                    VerticalContentAlignment="Center"
+                    VerticalAlignment="Top"
                     Margin="0,0,10,0"
                     Style="{DynamicResource ChromelessButtonStyle}"
                     Click="ChangeFolderButtonClicked"
