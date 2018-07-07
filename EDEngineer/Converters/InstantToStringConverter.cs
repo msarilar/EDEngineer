@@ -14,7 +14,7 @@ namespace EDEngineer.Converters
             {
                 var culture = CultureInfo.GetCultureInfo(Languages.Instance.CurrentLanguage.TwoLetterISOLanguageName);
                 
-                return instant.ToString("ddd-MMM-yyyy HH:mm:ss", culture);
+                return instant.ToString("dd MMM yyyy HH:mm:ss", culture);
             }
 
             return null;
