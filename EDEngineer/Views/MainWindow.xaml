@@ -304,28 +304,37 @@
 
         <!-- COMMANDERS -->
 
-        <TabControl ItemsSource="{Binding Commanders}"
-                    SelectedItem="{Binding CurrentCommander, Mode=TwoWay}"
-                    Visibility="{Binding Commanders.Count, Converter={StaticResource IntegerToVisibility}, Mode=OneWay, ConverterParameter=1}"
-                    Height="35"
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    Background="{StaticResource BlackBrush}"
-                    Grid.ColumnSpan="3"
-                    Margin="10,0,0,0">
-            <TabControl.ContentTemplate>
-                <DataTemplate>
-                    <TabItem Height="0" />
-                </DataTemplate>
-            </TabControl.ContentTemplate>
-            <TabControl.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding Value}"
-                               FontFamily="/Resources/Fonts/#Euro Caps"
-                               FontSize="25" />
-                </DataTemplate>
-            </TabControl.ItemTemplate>
-        </TabControl>
+        <Expander IsExpanded="False"
+                  Padding="0"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="3"
+                  FontFamily="/Resources/Fonts/#Euro Caps"
+                  Style="{StaticResource GroupExpander}"
+                  Background="Black"
+                  Tag="{StaticResource TransparentBrush}"
+                  Foreground="CornflowerBlue"
+                  Header="View Commanders">
+            <TabControl ItemsSource="{Binding Commanders}"
+                        SelectedItem="{Binding CurrentCommander, Mode=TwoWay}"
+                        Height="35"
+                        HorizontalAlignment="Center"
+                        Background="{StaticResource BlackBrush}"
+                        Margin="10,0,0,0">
+                <TabControl.ContentTemplate>
+                    <DataTemplate>
+                        <TabItem Height="0" />
+                    </DataTemplate>
+                </TabControl.ContentTemplate>
+                <TabControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Value}"
+                                   FontFamily="/Resources/Fonts/#Euro Caps"
+                                   FontSize="25" />
+                    </DataTemplate>
+                </TabControl.ItemTemplate>
+            </TabControl>
+        </Expander>
 
         <!-- LEFT SIDE -->
 
