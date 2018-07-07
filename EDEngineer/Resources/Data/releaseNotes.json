@@ -1,31 +1,11 @@
 ﻿[
   {
+    "Version": "1.1.3.1",
+    "Content": ""
+  },
+  {
     "Version": "1.1.3.0",
-    "Content": "* Added API ON/OFF indicator at the bottom of the window\r\n* Removed pesky error message when you stopped the API\r\n\r\n* Massive Blueprint Update thanks to @CMDR-Cometborne :\r\n\t* New Blueprints:\r\n\t\t* Guardian Hull Reinforcement\r\n\t\t* Guardian Plasma Charger (Turreted, Large)\r\n\t\t* Guardian Shard Cannon (Fixed, Medium)\r\n\t\t* Guardian Shard Cannon (Turreted, Medium)\r\n\t\t* Guardian Shield Reinforcement\r\n\t\t* Shock Cannon (Fixed, Medium)\r\n\t\t* Shock Cannon (Gimballed, Medium)\r\n\t\t* Shock Cannon (Turreted, Medium)\r\n\t* Updated requirements of existing blueprints\r\n\r\n* Russian localization update, thanks to @VChet!"
-  },
-  {
-    "Version": "1.1.2.8",
-    "Content": "* Added advanced sorting to the blueprint list : you can cumulate column sorting (e.g. sort by name, then by grade etc...) ; the rank are represented by arrows (first column ordering is one arrow, then two arrows, and so on). Revert back to sorting with one column by sorting two times the same column\r\n\r\n* Fixed headers in the API response to comply with CORS"
-  },
-  {
-    "Version": "1.1.2.6",
-    "Content": "* Added Engineers system in the blueprint list (mouse over an engineer to get his system, planet and base)\r\n* Added a PATCH method to update the ShoppingList from the local API using Coriolis Guids\r\n\r\n* Added Life Support Reinforced G5\r\n\r\n* Czech localization update, thanks to @JohnXaverius for the contribution!\r\n* Portuguese localization update, thanks to @KingRider for the contribution!\r\n* German localization update, thanks to @nepomuk16321 for the contribution!"
-  },
-  {
-    "Version": "1.1.2.5",
-    "Content": "* Material Trader suggestions won't include non-tradable ingredients (like thargoid ingredients or others)"
-  },
-  {
-    "Version": "1.1.2.4",
-    "Content": "* Fixed an issue with multi-commanders disappearing. If you still don't see your multiple commanders, please delete the aggregation.json file located in your AppData/Roaming/EDEngineer directory.\r\n* Fixed Thargoid Carapace rarity (Common instead of Very Rare) which impacts the maximum number you can carry."
-  },
-  {
-    "Version": "1.1.2.3",
-    "Content": "* Made the Material Trader indicators more readable\r\n* Handle an issue that could occur on startup after EDEngineer did not properly exit\r\n* Synthesis and Technology filters moved from Engineer filters to Types filters\r\n\r\n* New AX/Guardian Synthesis kindly added by @Tigir"
-  },
-  {
-    "Version": "1.1.2.2",
-    "Content": "* Made the material trader panel a bit cleaner\r\n* Added rarities (so you know what you're trading)\r\n* Added material trader location hints\r\n* In the shopping list, show missing items first\r\n* Instead of Material, show Raw or Manufactured in any blueprint detail (as well as the shopping list)\r\n\r\n* Fixed an issue in the ship loadout that made hardpoints appear in the Livery category\r\n* Fixed an issue in the calculation of material trading for out-of-group materials"
+    "Content": "#1.1.3.0\r\n* Added API ON/OFF indicator at the bottom of the window\r\n* Removed pesky error message when you stopped the API\r\n\r\n* Massive Blueprint Update thanks to @CMDR-Cometborne :\r\n\t* New Blueprints:\r\n\t\t* Guardian Hull Reinforcement\r\n\t\t* Guardian Plasma Charger (Turreted, Large)\r\n\t\t* Guardian Shard Cannon (Fixed, Medium)\r\n\t\t* Guardian Shard Cannon (Turreted, Medium)\r\n\t\t* Guardian Shield Reinforcement\r\n\t\t* Shock Cannon (Fixed, Medium)\r\n\t\t* Shock Cannon (Gimballed, Medium)\r\n\t\t* Shock Cannon (Turreted, Medium)\r\n\t* Updated requirements of existing blueprints\r\n\r\n* Russian localization update, thanks to @VChet!\r\n\r\n#1.1.2.8\r\n* Added advanced sorting to the blueprint list : you can cumulate column sorting (e.g. sort by name, then by grade etc...) ; the rank are represented by arrows (first column ordering is one arrow, then two arrows, and so on). Revert back to sorting with one column by sorting two times the same column\r\n\r\n* Fixed headers in the API response to comply with CORS\r\n\r\n#1.1.2.6\r\n* Added Engineers system in the blueprint list (mouse over an engineer to get his system, planet and base)\r\n* Added a PATCH method to update the ShoppingList from the local API using Coriolis Guids\r\n\r\n* Added Life Support Reinforced G5\r\n\r\n* Czech localization update, thanks to @JohnXaverius for the contribution!\r\n* Portuguese localization update, thanks to @KingRider for the contribution!\r\n* German localization update, thanks to @nepomuk16321 for the contribution!\r\n\r\n#1.1.2.5\r\n* Material Trader suggestions won't include non-tradable ingredients (like thargoid ingredients or others)\r\n\r\n#1.1.2.4\r\n* Fixed an issue with multi-commanders disappearing. If you still don't see your multiple commanders, please delete the aggregation.json file located in your AppData/Roaming/EDEngineer directory.\r\n* Fixed Thargoid Carapace rarity (Common instead of Very Rare) which impacts the maximum number you can carry.\r\n\r\n#1.1.2.3\r\n* Made the Material Trader indicators more readable\r\n* Handle an issue that could occur on startup after EDEngineer did not properly exit\r\n* Synthesis and Technology filters moved from Engineer filters to Types filters\r\n\r\n* New AX/Guardian Synthesis kindly added by @Tigir\r\n\r\n#1.1.2.2\r\n* Made the material trader panel a bit cleaner\r\n* Added rarities (so you know what you're trading)\r\n* Added material trader location hints\r\n* In the shopping list, show missing items first\r\n* Instead of Material, show Raw or Manufactured in any blueprint detail (as well as the shopping list)\r\n\r\n* Fixed an issue in the ship loadout that made hardpoints appear in the Livery category\r\n* Fixed an issue in the calculation of material trading for out-of-group materials\r\n"
   },
   {
     "Version": "1.1.2.0",
