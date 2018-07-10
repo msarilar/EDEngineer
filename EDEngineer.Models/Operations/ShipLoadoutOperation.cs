@@ -1,5 +1,4 @@
 using EDEngineer.Models.Loadout;
-using EDEngineer.Models.State;
 
 namespace EDEngineer.Models.Operations
 {
@@ -11,7 +10,7 @@ namespace EDEngineer.Models.Operations
             this.loadout = loadout;
         }
 
-        public override void Mutate(IState state)
+        public override void Mutate(State.State state)
         {
             state.UpdateLoadout(loadout);
         }

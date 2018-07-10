@@ -1,5 +1,3 @@
-using EDEngineer.Models.State;
-
 namespace EDEngineer.Models.Operations
 {
     public class ManualChangeOperation : JournalOperation
@@ -7,9 +5,9 @@ namespace EDEngineer.Models.Operations
         public string Name { get; set; }
         public int Count { get; set; }
 
-        public override void Mutate(IState state)
+        public override void Mutate(State.State state)
         {
-            if (state.Contains(Name))
+            if (state.Cargo.Ingredients.ContainsKey(Name))
             {
                 state.IncrementCargo(Name, Count);
             }

@@ -1,4 +1,3 @@
-using EDEngineer.Models.State;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
@@ -9,6 +8,6 @@ namespace EDEngineer.Models.Operations
         [JsonConverter(typeof(StringEnumConverter))]
         public JournalEvent JournalEvent { get; set; }
 
-        public abstract void Mutate(IState state);
+        public abstract void Mutate(State.State state);
     }
 }
