@@ -70,7 +70,7 @@
       <HintPath>..\packages\NodaTime.2.3.0\lib\net45\NodaTime.dll</HintPath>
     </Reference>
     <Reference Include="Suave">
-      <HintPath>..\packages\Suave.2.2.1\lib\net40\Suave.dll</HintPath>
+      <HintPath>..\packages\Suave.2.4.3\lib\net461\Suave.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
