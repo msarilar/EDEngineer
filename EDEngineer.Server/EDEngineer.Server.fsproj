@@ -9,10 +9,11 @@
     <OutputType>Library</OutputType>
     <RootNamespace>EDEngineer.Server</RootNamespace>
     <AssemblyName>EDEngineer.Server</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Name>EDEngineer.Server</Name>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,23 +59,21 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
-      <HintPath>..\packages\FSharp.Core.4.3.4\lib\net45\FSharp.Core.dll</HintPath>
+      <HintPath>..\packages\FSharp.Core.4.5.0\lib\net45\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="Google.DataTable.Net.Wrapper">
       <HintPath>..\packages\Google.DataTable.Net.Wrapper.3.1.2.0\lib\Google.DataTable.Net.Wrapper.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="mscorlib" />
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NodaTime">
-      <HintPath>..\packages\NodaTime.2.2.1\lib\net45\NodaTime.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\NodaTime.2.3.0\lib\net45\NodaTime.dll</HintPath>
     </Reference>
     <Reference Include="Suave">
       <HintPath>..\packages\Suave.2.2.1\lib\net40\Suave.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
