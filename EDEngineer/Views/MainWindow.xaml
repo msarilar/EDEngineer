@@ -982,7 +982,9 @@
                 </Grid>
 
                 <Grid Grid.Row="1"
-                      Focusable="False">
+                      Focusable="False"
+                      x:Name="RightGrid"
+                      VerticalAlignment="Stretch">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" x:Name="BlueprintsRow"/>
                         <RowDefinition Height="Auto" x:Name="ShoppingListSplitterRow"/>
@@ -1535,13 +1537,11 @@
                                             </ItemsControl>
                                         </Grid>
 
-                                        
-
                                         <Grid Grid.Column="1"
                                               HorizontalAlignment="Right">
                                             <Grid.RowDefinitions>
-                                                <RowDefinition/>
-                                                <RowDefinition/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="*"/>
                                             </Grid.RowDefinitions>
                                             <!-- MATERIAL TRADER -->
                                             <Grid Grid.Row="0"
@@ -1603,7 +1603,7 @@
                                                                         <StackPanel Orientation="Horizontal"
                                                                                 HorizontalAlignment="Left"
                                                                                 Margin="3">
-                                                                            <Image Source="{Binding Key.Item1.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                                                                            <Image Source="{Binding Key.Item1.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                                                                HorizontalAlignment="Left"
                                                                                Width="18"
                                                                                Height="18"

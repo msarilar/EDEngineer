@@ -316,6 +316,15 @@ let start (token,
               return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
+        GET >=> pathScan "/%s/chart" (fun commander ->
+          (request(fun request ->
+            cmdr {
+              let! state = stateRoute commander
+              let! l = LanguageExtractor <| request.queryParam "lang"
+
+              return "" |> OK
+            })))
+
         OPTIONS >=>
             fun context ->
                 context |> (
