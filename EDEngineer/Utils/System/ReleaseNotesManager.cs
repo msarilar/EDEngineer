@@ -39,7 +39,7 @@ namespace EDEngineer.Utils.System
 
         public static void ShowReleaseNotes(string title = "Release Notes")
         {
-            var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(IO.GetReleaseNotesJson());
+            var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(Helpers.GetReleaseNotesJson());
 
             var list = releaseNotes.ToList();
             if (list.Any())

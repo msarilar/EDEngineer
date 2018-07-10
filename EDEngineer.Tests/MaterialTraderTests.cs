@@ -4,6 +4,7 @@ using EDEngineer.Models;
 using EDEngineer.Models.MaterialTrading;
 using EDEngineer.Models.State;
 using EDEngineer.Models.Utils;
+using EDEngineer.Utils.System;
 using Moq;
 using Newtonsoft.Json;
 using NFluent;
@@ -20,7 +21,7 @@ namespace EDEngineer.Tests
         [SetUp]
         public void Setup()
         {
-            entries = JsonConvert.DeserializeObject<List<EntryData>>(IO.GetEntryDatasJson());
+            entries = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
             cargo = new StateCargo(entries, Mock.Of<ILanguage>(), StateCargo.COUNT_COMPARER);
         }
 

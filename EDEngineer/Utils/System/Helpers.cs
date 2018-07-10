@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 using EDEngineer.Localization;
 using Microsoft.WindowsAPICodePack.Dialogs;
@@ -10,6 +11,48 @@ namespace EDEngineer.Utils.System
 {
     public static class Helpers
     {
+        static Helpers()
+        {
+            blueprintsJson = ReadResource("blueprints");
+            releaseNotesJson = ReadResource("releaseNotes");
+            localizationJson = ReadResource("localization");
+            entryDatasJson = ReadResource("entryData");
+        }
+
+        public static string ReadResource(string resource)
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
+            using (var reader = new StreamReader(stream))
+            {
+                return reader.ReadToEnd();
+            }
+        }
+
+        private static readonly string blueprintsJson;
+        private static readonly string releaseNotesJson;
+        private static readonly string localizationJson;
+        private static readonly string entryDatasJson;
+
+        public static string GetBlueprintsJson()
+        {
+            return blueprintsJson;
+        }
+
+        public static string GetReleaseNotesJson()
+        {
+            return releaseNotesJson;
+        }
+
+        public static string GetLocalizationJson()
+        {
+            return localizationJson;
+        }
+
+        public static string GetEntryDatasJson()
+        {
+            return entryDatasJson;
+        }
+
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)
         {
             var translator = Languages.Instance;

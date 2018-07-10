@@ -4,6 +4,7 @@ using EDEngineer.Localization;
 using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Json;
 using EDEngineer.Tests.StrippedDownModels;
+using EDEngineer.Utils.System;
 using Newtonsoft.Json;
 using NFluent;
 using NUnit.Framework;
@@ -16,7 +17,7 @@ namespace EDEngineer.Tests
         [Test]
         public void Can_load_blueprints()
         {
-            Check.ThatCode(() => JsonConvert.DeserializeObject<List<Blueprint>>(IO.GetBlueprintsJson(), new JsonSerializerSettings
+            Check.ThatCode(() => JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson(), new JsonSerializerSettings
             {
                 MissingMemberHandling = MissingMemberHandling.Error
             })).DoesNotThrow();
@@ -25,7 +26,7 @@ namespace EDEngineer.Tests
         [Test]
         public void Blueprints_are_properly_indented()
         {
-            var json = IO.GetBlueprintsJson();
+            var json = Helpers.GetBlueprintsJson();
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(json);
             var serialized = JsonConvert.SerializeObject(blueprints, new JsonSerializerSettings
             {
@@ -45,7 +46,7 @@ namespace EDEngineer.Tests
                 "Limpets"
             };
 
-            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(IO.GetBlueprintsJson());
+            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
             var singleTypes = blueprints.GroupBy(b => b.Type).Where(kv => !exclusionList.Contains(kv.Key) && kv.Count() == 1);
             Check.That(singleTypes).IsEmpty();
         }
@@ -79,7 +80,7 @@ namespace EDEngineer.Tests
                 "Zacariah Nemo"
             };
 
-            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(IO.GetBlueprintsJson());
+            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
             var engineers = blueprints.SelectMany(b => b.Engineers).ToHashSet();
 
             Check.That(engineers).ContainsOnlyElementsThatMatch(s => existingEngineers.Contains(s));
@@ -88,8 +89,8 @@ namespace EDEngineer.Tests
         [Test]
         public void Blueprints_ingredients_exist()
         {
-            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(IO.GetBlueprintsJson());
-            var entries = JsonConvert.DeserializeObject<List<EntryData>>(IO.GetEntryDatasJson());
+            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
+            var entries = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
 
             var ingredients = blueprints.SelectMany(b => b.Ingredients).Select(i => i.Name).ToHashSet();
             var materials = entries.Select(e => e.Name).ToHashSet();
@@ -103,7 +104,7 @@ namespace EDEngineer.Tests
         [Test]
         public void Can_load_ingredients()
         {
-            Check.ThatCode(() => JsonConvert.DeserializeObject<List<EntryData>>(IO.GetEntryDatasJson(), new JsonSerializerSettings
+            Check.ThatCode(() => JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson(), new JsonSerializerSettings
             {
                 MissingMemberHandling = MissingMemberHandling.Error,
                 NullValueHandling = NullValueHandling.Ignore
@@ -113,7 +114,7 @@ namespace EDEngineer.Tests
         [Test]
         public void Ingredients_are_properly_indented()
         {
-            var json = IO.GetEntryDatasJson();
+            var json = Helpers.GetEntryDatasJson();
             var entries = JsonConvert.DeserializeObject<List<EntryData>>(json);
             var serialized = JsonConvert.SerializeObject(entries, new JsonSerializerSettings
             {
@@ -127,7 +128,7 @@ namespace EDEngineer.Tests
         [Test]
         public void Can_load_localization()
         {
-            Check.ThatCode(() => JsonConvert.DeserializeObject<Languages>(IO.GetLocalizationJson(), new JsonSerializerSettings
+            Check.ThatCode(() => JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson(), new JsonSerializerSettings
             {
                 MissingMemberHandling = MissingMemberHandling.Error,
                 NullValueHandling = NullValueHandling.Include
@@ -137,7 +138,7 @@ namespace EDEngineer.Tests
         [Test]
         public void No_missing_string_format_indicators()
         {
-            var localization = JsonConvert.DeserializeObject<Languages>(IO.GetLocalizationJson());
+            var localization = JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson());
             Check.That(localization.Translations
                                    .Where(kv => kv.Key.Contains("{0}") &&
                                                 kv.Value.Any(t => t.Value != null && !t.Value.Contains("{0}"))))

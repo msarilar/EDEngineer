@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 
 namespace EDEngineer.Models.Utils
 {
@@ -48,48 +47,6 @@ namespace EDEngineer.Models.Utils
                     specialCharactersMappingReversed[k]);
             });
             return input;
-        }
-
-        static IO()
-        {
-            blueprintsJson = ReadResource("blueprints");
-            releaseNotesJson = ReadResource("releaseNotes");
-            localizationJson = ReadResource("localization");
-            entryDatasJson = ReadResource("entryData");
-        }
-
-        public static string ReadResource(string resource)
-        {
-            using (var stream = Assembly.GetEntryAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
-            using (var reader = new StreamReader(stream))
-            {
-                return reader.ReadToEnd();
-            }
-        }
-
-        private static readonly string blueprintsJson;
-        private static readonly string releaseNotesJson;
-        private static readonly string localizationJson;
-        private static readonly string entryDatasJson;
-
-        public static string GetBlueprintsJson()
-        {
-            return blueprintsJson;
-        }
-
-        public static string GetReleaseNotesJson()
-        {
-            return releaseNotesJson;
-        }
-
-        public static string GetLocalizationJson()
-        {
-            return localizationJson;
-        }
-
-        public static string GetEntryDatasJson()
-        {
-            return entryDatasJson;
         }
 
         public static string GetManualChangesDirectory()

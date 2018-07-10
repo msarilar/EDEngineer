@@ -74,7 +74,7 @@ namespace EDEngineer.Views
         {
             logDirectory = directory;
             entryDatas =
-                JsonConvert.DeserializeObject<List<EntryData>>(IO.GetEntryDatasJson());
+                JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
             Languages = languages;
             GraphicSettings = new GraphicSettings();
             IngredientsGrouped = SettingsManager.IngredientsGrouped;
