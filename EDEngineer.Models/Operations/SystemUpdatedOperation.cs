@@ -1,3 +1,5 @@
+using EDEngineer.Models.State;
+
 namespace EDEngineer.Models.Operations
 {
     public class SystemUpdatedOperation : JournalOperation
@@ -9,9 +11,9 @@ namespace EDEngineer.Models.Operations
             System = system;
         }
 
-        public override void Mutate(State.State state)
+        public override void Mutate(IState state)
         {
-            state.History.System = System;
+            state.SetSystem(System);
         }
     }
 }

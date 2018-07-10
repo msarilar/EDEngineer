@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using EDEngineer.Models.State;
 
 namespace EDEngineer.Models.Operations
 {
@@ -14,7 +15,7 @@ namespace EDEngineer.Models.Operations
             Operation = operation;
         }
 
-        public override void Mutate(State.State state)
+        public override void Mutate(IState state)
         {
             Operation?.Mutate(state);
         }

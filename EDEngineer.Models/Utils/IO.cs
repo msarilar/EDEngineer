@@ -60,7 +60,7 @@ namespace EDEngineer.Models.Utils
 
         public static string ReadResource(string resource)
         {
-            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
+            using (var stream = Assembly.GetEntryAssembly().GetManifestResourceStream($"EDEngineer.Resources.Data.{resource}.json"))
             using (var reader = new StreamReader(stream))
             {
                 return reader.ReadToEnd();

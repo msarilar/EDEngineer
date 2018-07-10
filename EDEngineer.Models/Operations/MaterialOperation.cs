@@ -1,4 +1,6 @@
-﻿namespace EDEngineer.Models.Operations
+﻿using EDEngineer.Models.State;
+
+namespace EDEngineer.Models.Operations
 {
     public class MaterialOperation : JournalOperation
     {
@@ -6,9 +8,9 @@
 
         public int Size { get; set; }
 
-        public override void Mutate(State.State state)
+        public override void Mutate(IState state)
         {
-            state.IncrementCargo(MaterialName, Size);
+            state.IncrementCargoWithHistory(MaterialName, Size);
         }
     }
 }

@@ -66,7 +66,9 @@ let start (token,
            translator:ILanguage,
            state:Func<IDictionary<string, State>>,
            shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>,
-           changeShoppingList:Action<string, Blueprint, int>) =
+           changeShoppingList:Action<string, Blueprint, int>,
+           jsonSettingsGetter:Func<string, JsonSerializerSettings>,
+           logDirectory:string) =
   
   let corsConfig = {
     defaultCORSConfig with
@@ -321,8 +323,10 @@ let start (token,
             cmdr {
               let! state = stateRoute commander
               let! l = LanguageExtractor <| request.queryParam "lang"
+              let settings = jsonSettingsGetter.Invoke(commander)
 
-              return "" |> OK
+              let result = CommanderChart.chart commander logDirectory settings
+              return result |> OK
             })))
 
         OPTIONS >=>

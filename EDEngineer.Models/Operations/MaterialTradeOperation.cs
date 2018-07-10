@@ -1,3 +1,5 @@
+using EDEngineer.Models.State;
+
 namespace EDEngineer.Models.Operations
 {
     public class MaterialTradeOperation : JournalOperation
@@ -8,10 +10,10 @@ namespace EDEngineer.Models.Operations
         public string IngredientAdded { get; set; }
         public int AddedQuantity { get; set; }
         
-        public override void Mutate(State.State state)
+        public override void Mutate(IState state)
         {
-            state.Cargo.IncrementCargo(IngredientRemoved, -1 * RemovedQuantity);
-            state.Cargo.IncrementCargo(IngredientAdded, AddedQuantity);
+            state.IncrementCargo(IngredientRemoved, -1 * RemovedQuantity);
+            state.IncrementCargo(IngredientAdded, AddedQuantity);
         }
     }
 }

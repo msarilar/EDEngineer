@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using EDEngineer.Models.State;
 
 namespace EDEngineer.Models.Operations
 {
@@ -6,7 +7,7 @@ namespace EDEngineer.Models.Operations
     {
         public List<CargoOperation> CommodityRewards { get; set; }
 
-        public override void Mutate(State.State state)
+        public override void Mutate(IState state)
         {
             foreach (var reward in CommodityRewards)
             {

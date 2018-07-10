@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using EDEngineer.Models.Loadout;
+using EDEngineer.Models.State;
 
 namespace EDEngineer.Models.Operations
 {
@@ -33,11 +34,11 @@ namespace EDEngineer.Models.Operations
             ExperimentalEffect = experimentalEffect;
         }
 
-        public override void Mutate(State.State state)
+        public override void Mutate(IState state)
         {
             foreach (var ingredient in IngredientsConsumed)
             {
-                state.Cargo.IncrementCargo(ingredient.Entry.Data.Name, -1 * ingredient.Size);
+                state.IncrementCargoWithHistory(ingredient.Entry.Data.Name, -1 * ingredient.Size);
             }
 
             state.OnBlueprintCrafted(this);

@@ -31,7 +31,7 @@ namespace EDEngineer.Views
         public ShoppingListViewModel ShoppingList => shoppingList;
 
         private readonly JournalEntryConverter journalEntryConverter;
-        private readonly JsonSerializerSettings settings;
+        public JsonSerializerSettings JsonSettings { get; }
 
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
@@ -91,7 +91,7 @@ namespace EDEngineer.Views
                            .ToList();
 
             journalEntryConverter = new JournalEntryConverter(converter, State.Cargo.Ingredients, languages, blueprints);
-            settings = new JsonSerializerSettings
+            JsonSettings = new JsonSerializerSettings
             {
                 Converters = new List<JsonConverter> { journalEntryConverter },
                 Error = (o, e) => e.ErrorContext.Handled = true
@@ -151,7 +151,7 @@ namespace EDEngineer.Views
 
         public void ApplyEventsToSate(IEnumerable<string> allLogs)
         {
-            var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, settings))
+            var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, JsonSettings))
                 .Where(e => e?.Relevant == true)
                 .OrderBy(e => e.Timestamp)
                 .ToList();

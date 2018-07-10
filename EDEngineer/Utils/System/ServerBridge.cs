@@ -62,7 +62,9 @@ namespace EDEngineer.Utils.System
                     viewModel.Languages,
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State),
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList.Composition),
-                    (c, b, i) => viewModel.Commanders[c].ShoppingListChange(b, i));
+                    (c, b, i) => viewModel.Commanders[c].ShoppingListChange(b, i),
+                    c => viewModel.Commanders[c].JsonSettings,
+                    viewModel.LogDirectory);
             }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default)
             .ContinueWith(t =>
             {

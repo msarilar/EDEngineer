@@ -19,7 +19,6 @@ namespace EDEngineer.Utils
         private readonly ItemNameConverter converter;
         private readonly ISimpleDictionary<string, Entry> entries;
         private readonly Languages languages;
-        private readonly IEnumerable<Blueprint> blueprints;
         private static readonly HashSet<string> relevantJournalEvents = new HashSet<string>(Enum.GetNames(typeof(JournalEvent)));
 
         public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries, Languages languages, IEnumerable<Blueprint> blueprints)
@@ -27,7 +26,6 @@ namespace EDEngineer.Utils
             this.converter = converter;
             this.entries = entries;
             this.languages = languages;
-            this.blueprints = blueprints;
         }
 
         public override bool CanWrite => true;
