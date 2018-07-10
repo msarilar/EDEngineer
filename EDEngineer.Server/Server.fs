@@ -329,6 +329,18 @@ let start (token,
               return result |> OK
             })))
 
+        GET >=> pathScan "/%s/chartData%s" (fun (commander, format) ->
+          (request(fun request ->
+            cmdr {
+              let! state = stateRoute commander
+              let! f = FormatExtractor request format
+              let! l = LanguageExtractor <| request.queryParam "lang"
+              let settings = jsonSettingsGetter.Invoke(commander)
+
+              let result = CommanderChart.chartData commander logDirectory settings translator l
+              return (result, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
+
         OPTIONS >=>
             fun context ->
                 context |> (

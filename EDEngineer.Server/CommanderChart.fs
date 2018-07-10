@@ -5,8 +5,6 @@ open Newtonsoft.Json
 open EDEngineer.Models.Utils
 open EDEngineer.Models
 open EDEngineer.Models.Operations
-open EDEngineer.Models.State
-open NodaTime
 open XPlot.Plotly
 open System
 open System.Collections.Generic
