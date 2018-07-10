@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using EDEngineer.Models.Loadout;
-using EDEngineer.Models.Utils;
 
 namespace EDEngineer.Models.Operations
 {

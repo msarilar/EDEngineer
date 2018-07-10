@@ -73,12 +73,14 @@
     <Compile Include="ShoppingListBlock.cs" />
     <Compile Include="Subkind.cs" />
     <Compile Include="Utils\Collections\ISimpleDictionary.cs" />
+    <Compile Include="Utils\IO.cs" />
     <Compile Include="Utils\Json\LocalizedContractResolver.cs" />
     <Compile Include="Utils\Json\LocalizedJsonConverter.cs" />
     <Compile Include="Utils\Json\JsonUtils.cs" />
     <Compile Include="Utils\Collections\SortedObservableCollection.cs" />
     <Compile Include="Utils\Collections\SortedObservableCounter.cs" />
     <Compile Include="Utils\Collections\SortedObservableDictionary.cs" />
+    <Compile Include="Utils\LogWatcher.cs" />
     <Compile Include="Utils\PropertyChangedExtendedEventArgs.cs" />
     <Compile Include="Utils\NotifyPropertyChangedInvocatorAttribute.cs" />
     <Compile Include="Utils\Extensions.cs" />

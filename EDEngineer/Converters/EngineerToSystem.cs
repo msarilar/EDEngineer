@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Data;
-using EDEngineer.Localization;
-using EDEngineer.Models;
 
 namespace EDEngineer.Converters
 {

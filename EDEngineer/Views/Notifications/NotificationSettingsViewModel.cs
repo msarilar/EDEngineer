@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.State;
+using EDEngineer.Models.Utils;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using Newtonsoft.Json;
@@ -50,8 +51,8 @@ namespace EDEngineer.Views.Notifications
             random = new Random();
             Languages = languages;
 
-            state = new State(new StateCargo(JsonConvert.DeserializeObject<List<EntryData>>(IOUtils.GetEntryDatasJson()), languages, "Count"));
-            state.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(IOUtils.GetBlueprintsJson(), new BlueprintConverter(state.Cargo.Ingredients)));
+            state = new State(new StateCargo(JsonConvert.DeserializeObject<List<EntryData>>(IO.GetEntryDatasJson()), languages, "Count"));
+            state.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(IO.GetBlueprintsJson(), new BlueprintConverter(state.Cargo.Ingredients)));
 
             testCommanderNotifications = new CommanderNotifications(state);
             testCommanderNotifications.SubscribeNotifications();

@@ -84,7 +84,7 @@ namespace EDEngineer.Views
             commanderNotifications = new CommanderNotifications(State);
             var blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
 
-            var blueprintsJson = IOUtils.GetBlueprintsJson();
+            var blueprintsJson = IO.GetBlueprintsJson();
             var blueprints =
                 JsonConvert.DeserializeObject<List<Blueprint>>(blueprintsJson, blueprintConverter)
                            .Where(b => b.Ingredients.Any())

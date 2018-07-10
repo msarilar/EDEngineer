@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using EDEngineer.Models;
+using EDEngineer.Models.Utils;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Utils.System
@@ -38,7 +39,7 @@ namespace EDEngineer.Utils.System
 
         public static void ShowReleaseNotes(string title = "Release Notes")
         {
-            var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(IOUtils.GetReleaseNotesJson());
+            var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(IO.GetReleaseNotesJson());
 
             var list = releaseNotes.ToList();
             if (list.Any())

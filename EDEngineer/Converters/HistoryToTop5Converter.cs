@@ -2,7 +2,6 @@ using System;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
-using EDEngineer.Models;
 using EDEngineer.Models.State;
 
 namespace EDEngineer.Converters

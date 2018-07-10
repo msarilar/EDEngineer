@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -20,14 +19,12 @@ using System.Windows.Media.Animation;
 using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Filters;
-using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
 using EDEngineer.Views.Popups.Graphics;
 using Application = System.Windows.Application;
-using DataGrid = System.Windows.Controls.DataGrid;
 using WpfButton = System.Windows.Controls.Button;
 using WinformContextMenu = System.Windows.Forms.ContextMenuStrip;
 using DataGridCell = System.Windows.Controls.DataGridCell;
@@ -89,7 +86,7 @@ namespace EDEngineer.Views
             Left = dimensions.Left;
             Top = dimensions.Top;
             Height = dimensions.Height;
-            var logDirectory = IOUtils.RetrieveLogDirectory(false, null);
+            var logDirectory = Helpers.RetrieveLogDirectory(false, null);
             var task = Task.Factory.StartNew(() =>
             {
                 viewModel = new MainWindowViewModel(Languages.Instance, logDirectory);
@@ -438,7 +435,7 @@ namespace EDEngineer.Views
         private bool skipSaveAggregation = false;
         private void ChangeFolderButtonClicked(object sender, RoutedEventArgs e)
         {
-            var newDirectory = IOUtils.RetrieveLogDirectory(true, viewModel.LogDirectory);
+            var newDirectory = Helpers.RetrieveLogDirectory(true, viewModel.LogDirectory);
             if (newDirectory != viewModel.LogDirectory)
             {
                 skipSaveAggregation = true;

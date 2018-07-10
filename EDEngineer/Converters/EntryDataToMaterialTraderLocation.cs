@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Globalization;
 using System.Windows.Data;
-using System.Windows.Media;
 using EDEngineer.Localization;
 using EDEngineer.Models;
-using EDEngineer.Models.Loadout;
 
 namespace EDEngineer.Converters
 {

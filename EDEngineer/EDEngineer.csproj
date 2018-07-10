@@ -213,7 +213,7 @@
     <Compile Include="Views\ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\StringExtensions.cs" />
-    <Compile Include="Utils\System\IOUtils.cs" />
+    <Compile Include="Utils\System\Helpers.cs" />
     <Compile Include="Utils\System\ReleaseNotesManager.cs" />
     <Compile Include="Utils\System\ServerBridge.cs" />
     <Compile Include="Utils\System\SettingsManager.cs" />
@@ -221,7 +221,6 @@
     <Compile Include="Utils\UI\ShortcutPrompt.cs" />
     <Compile Include="Utils\UI\TrayIconManager.cs" />
     <Compile Include="Utils\System\Diposable.cs" />
-    <Compile Include="Utils\System\LogWatcher.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
     <Page Include="DesignTime\DesignViewModel.xaml">

@@ -9,7 +9,6 @@ using EDEngineer.DesignTime;
 using EDEngineer.Models;
 using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
-using EDEngineer.Utils.System;
 using Newtonsoft.Json;
 
 namespace EDEngineer.Localization
@@ -52,7 +51,7 @@ namespace EDEngineer.Localization
                 return new Languages();
             }
 
-            var json = IOUtils.GetLocalizationJson();
+            var json = IO.GetLocalizationJson();
             var languages = JsonConvert.DeserializeObject<Languages>(json);
 
             var total = CheckForExistingTranslation(languages);

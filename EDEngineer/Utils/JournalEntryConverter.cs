@@ -7,7 +7,6 @@ using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.Loadout;
 using EDEngineer.Models.Operations;
-using EDEngineer.Models.Utils;
 using EDEngineer.Models.Utils.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
