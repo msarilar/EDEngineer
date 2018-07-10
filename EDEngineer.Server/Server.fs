@@ -3,8 +3,6 @@
 open System
 open System.Collections.Generic
 open System.Linq
-open System.Data
-open System.IO
 
 open Suave
 open Suave.CORS

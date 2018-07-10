@@ -39,13 +39,11 @@ let chartData commander logDirectory (settings:JsonSerializerSettings) (language
         item.JournalOperation.Changes
         |> Seq.fold microFolder map
 
-    let data =
-        logWatcher.RetrieveAllLogs().[commander]
-        |> Seq.map (fun l -> JsonConvert.DeserializeObject<JournalEntry>(l, settings))
-        |> Seq.filter (fun e -> e.Relevant = true && e.JournalOperation.Changes <> null && not (e.JournalOperation :? DumpOperation)&& not (e.JournalOperation :? ManualChangeOperation))
-        |> Seq.fold folder Map.empty<string, Record list>
-
-    data
+    logWatcher.RetrieveAllLogs().[commander]
+    |> Seq.map (fun l -> JsonConvert.DeserializeObject<JournalEntry>(l, settings))
+    |> Seq.filter (fun e -> e.Relevant = true && e.JournalOperation.Changes <> null && not (e.JournalOperation :? DumpOperation)&& not (e.JournalOperation :? ManualChangeOperation))
+    |> Seq.fold folder Map.empty<string, Record list>
+    |> Map.toSeq
 
 let chart commander logDirectory (settings:JsonSerializerSettings) (languages:ILanguage) (l:LanguageInfo) =
     let toBar name (values:seq<Record>) =
@@ -77,7 +75,6 @@ let chart commander logDirectory (settings:JsonSerializerSettings) (languages:IL
 
     let data =
         chartData commander logDirectory settings languages l
-        |> Map.toSeq
         |> Seq.map (fun (k, values) -> toScatter k values)
 
     let styledLayout =
