@@ -10,6 +10,10 @@ namespace EDEngineer.Models.Operations
 
         public HashSet<Kind> ResetFilter { get; set; }
 
+
+        public override Dictionary<string, int> Changes =>
+            DumpOperations.SelectMany(o => o.Changes).GroupBy(o => o.Key).ToDictionary(o => o.Key, o => o.Select(x => x.Value).Sum());
+
         public override void Mutate(State.State state)
         {
             var dump = DumpOperations

@@ -325,7 +325,7 @@ let start (token,
               let! l = LanguageExtractor <| request.queryParam "lang"
               let settings = jsonSettingsGetter.Invoke(commander)
 
-              let result = CommanderChart.chart commander logDirectory settings
+              let result = CommanderChart.chart commander logDirectory settings translator l
               return result |> OK
             })))
 

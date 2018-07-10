@@ -19,6 +19,8 @@ namespace EDEngineer.Models.Operations
             Operation?.Mutate(state);
         }
 
+        public override Dictionary<string, int> Changes => Operation?.Changes ?? new Dictionary<string, int>();
+
         private static readonly Dictionary<string, JournalOperation> engineersProgressOperation = new Dictionary<string, JournalOperation>
         {
             ["Elivra Martuuk"] = new NoOperation(),

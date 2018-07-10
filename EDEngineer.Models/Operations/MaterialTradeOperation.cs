@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace EDEngineer.Models.Operations
 {
     public class MaterialTradeOperation : JournalOperation
@@ -13,5 +15,11 @@ namespace EDEngineer.Models.Operations
             state.IncrementCargo(IngredientRemoved, -1 * RemovedQuantity);
             state.IncrementCargo(IngredientAdded, AddedQuantity);
         }
+
+        public override Dictionary<string, int> Changes => new Dictionary<string, int>
+        {
+            [IngredientRemoved] = -1 * RemovedQuantity,
+            [IngredientAdded] = AddedQuantity,
+        };
     }
 }

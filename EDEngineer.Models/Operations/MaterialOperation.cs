@@ -1,4 +1,6 @@
-﻿namespace EDEngineer.Models.Operations
+﻿using System.Collections.Generic;
+
+namespace EDEngineer.Models.Operations
 {
     public class MaterialOperation : JournalOperation
     {
@@ -10,5 +12,10 @@
         {
             state.IncrementCargo(MaterialName, Size);
         }
+
+        public override Dictionary<string, int> Changes => new Dictionary<string, int>
+        {
+            [MaterialName] = Size
+        };
     }
 }

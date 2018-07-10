@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace EDEngineer.Models.Operations
 {
     public class NoOperation : JournalOperation
@@ -6,5 +8,7 @@ namespace EDEngineer.Models.Operations
         {
             // NOP
         }
+
+        public override Dictionary<string, int> Changes { get; } = new Dictionary<string, int>();
     }
 }

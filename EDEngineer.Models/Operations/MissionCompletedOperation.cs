@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace EDEngineer.Models.Operations
 {
@@ -13,5 +14,11 @@ namespace EDEngineer.Models.Operations
                 reward.Mutate(state);
             }
         }
+
+        public override Dictionary<string, int> Changes =>
+            CommodityRewards
+                .SelectMany(c => c.Changes)
+                .GroupBy(c => c.Key)
+                .ToDictionary(c => c.Key, c => c.Select(x => x.Value).Sum());
     }
 }

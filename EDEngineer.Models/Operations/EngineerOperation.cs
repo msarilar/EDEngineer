@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using EDEngineer.Models.Loadout;
 
 namespace EDEngineer.Models.Operations
@@ -42,5 +43,8 @@ namespace EDEngineer.Models.Operations
 
             state.OnBlueprintCrafted(this);
         }
+
+        public override Dictionary<string, int> Changes =>
+            IngredientsConsumed.ToDictionary(i => i.Entry.Data.Name, i => -1 * i.Size);
     }
 }

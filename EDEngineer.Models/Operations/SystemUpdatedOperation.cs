@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace EDEngineer.Models.Operations
 {
     public class SystemUpdatedOperation : JournalOperation
@@ -13,5 +15,7 @@ namespace EDEngineer.Models.Operations
         {
             state.SetSystem(System);
         }
+
+        public override Dictionary<string, int> Changes { get; } = new Dictionary<string, int>();
     }
 }

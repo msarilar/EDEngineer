@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using EDEngineer.Models.Loadout;
 
 namespace EDEngineer.Models.Operations
@@ -14,5 +15,7 @@ namespace EDEngineer.Models.Operations
         {
             state.UpdateLoadout(loadout);
         }
+
+        public override Dictionary<string, int> Changes { get; } = new Dictionary<string, int>();
     }
 }

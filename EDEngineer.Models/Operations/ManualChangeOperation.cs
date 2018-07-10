@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace EDEngineer.Models.Operations
 {
     public class ManualChangeOperation : JournalOperation
@@ -12,5 +14,10 @@ namespace EDEngineer.Models.Operations
                 state.IncrementCargo(Name, Count);
             }
         }
+
+        public override Dictionary<string, int> Changes => new Dictionary<string, int>
+        {
+            [Name] = Count
+        };
     }
 }

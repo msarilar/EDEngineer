@@ -56,14 +56,10 @@
     <Compile Include="Server.fs" />
     <None Include="Script.fsx" />
     <Content Include="packages.config" />
-    <Content Include="Google.DataTable.Net.Wrapper.XML" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
       <HintPath>..\packages\FSharp.Core.4.5.0\lib\net45\FSharp.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.DataTable.Net.Wrapper">
-      <HintPath>..\packages\Google.DataTable.Net.Wrapper.3.1.2.0\lib\Google.DataTable.Net.Wrapper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="mscorlib" />
@@ -81,8 +77,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml" />
-    <Reference Include="XPlot.GoogleCharts">
-      <HintPath>..\packages\XPlot.GoogleCharts.1.4.5\lib\net45\XPlot.GoogleCharts.dll</HintPath>
+    <Reference Include="XPlot.Plotly">
+      <HintPath>..\packages\XPlot.Plotly.1.4.5\lib\net45\XPlot.Plotly.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
