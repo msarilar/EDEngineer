@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.3.4",
+    "Content": "* Added a chart for cargo history : run the local API and click on the Cargo History entry in the menu. Go to /chartData instead if you want a raw json to exploit the data yourself. It can be slow to generate according to how many logs you have! Keep in mind this is a bit experimental so usability might not be much refined."
+  },
+  {
     "Version": "1.1.3.3",
     "Content": "* Added expander to show/hide commanders available to EDEngineer\r\n* Better last update text in bottom row\r\n* Fixed vertical alignment of bottom row when the window wasn't wide enough (text would disappear)\r\n\r\n* Can now import experimentals from Coriolis, thanks to @willyb321 !\r\n* German localization update, thanks to @MBGTBenjamin !"
   },

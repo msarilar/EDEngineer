@@ -330,7 +330,7 @@ let start (token,
         GET >=> pathScan "/%s/chartData%s" (fun (commander, format) ->
           (request(fun request ->
             cmdr {
-              let! state = stateRoute commander
+              let! _ = stateRoute commander
               let! f = FormatExtractor request format
               let! l = LanguageExtractor <| request.queryParam "lang"
               let settings = jsonSettingsGetter.Invoke(commander)
