@@ -41,7 +41,13 @@ let chartData commander logDirectory (settings:JsonSerializerSettings) (language
 
     logWatcher.RetrieveAllLogs().[commander]
     |> Seq.map (fun l -> JsonConvert.DeserializeObject<JournalEntry>(l, settings))
-    |> Seq.filter (fun e -> e.Relevant = true && e.JournalOperation.Changes <> null && not (e.JournalOperation :? DumpOperation)&& not (e.JournalOperation :? ManualChangeOperation))
+    |> Seq.filter (fun e ->
+        e <> null &&
+        e.JournalOperation <> null &&
+        e.Relevant = true &&
+        e.JournalOperation.Changes <> null &&
+        not (e.JournalOperation :? DumpOperation) &&
+        not (e.JournalOperation :? ManualChangeOperation))
     |> Seq.fold folder Map.empty<string, Record list>
     |> Map.toSeq
 
