@@ -37,7 +37,8 @@ namespace EDEngineer.Utils.UI
             EventHandler showReleaseNotesHandler,
             string version,
             EventHandler configureNotificationsHandler,
-            EventHandler configureGraphicsHandler)
+            EventHandler configureGraphicsHandler,
+            EventHandler openChartHandler)
         {
             var translator = Languages.Instance;
 
@@ -89,6 +90,12 @@ namespace EDEngineer.Utils.UI
                 SettingsManager.SilentLaunch = enableSilentLaunch.Checked;
             };
 
+            var openChartItem = new ToolStripMenuItem
+            {
+                Image = Properties.Resources.menu_chart.ToBitmap(),
+                Enabled = serverRunning
+            };
+
             var launchServerItem = new ToolStripMenuItem
             {
                 Checked = serverRunning,
@@ -97,13 +104,15 @@ namespace EDEngineer.Utils.UI
 
             launchServerItem.Click += (o, e) =>
             {
-                launchServerItem.Checked = launchServerHandler();
+                openChartItem.Enabled = launchServerItem.Checked = launchServerHandler();
             };
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
+            openChartItem.Click += openChartHandler;
+
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem, openChartItem);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem, openChartItem);
             };
 
             quitItem.Click += quitHandler;
@@ -121,6 +130,7 @@ namespace EDEngineer.Utils.UI
             menu.Items.Add(configureGraphicsItem);
             menu.Items.Add("-");
             menu.Items.Add(launchServerItem);
+            menu.Items.Add(openChartItem);
             menu.Items.Add("-");
             menu.Items.Add(helpItem);
             menu.Items.Add(releaseNotesItem);
@@ -131,7 +141,7 @@ namespace EDEngineer.Utils.UI
         private static void SetItemsText(ToolStripMenuItem quitItem, Languages translator, ToolStripMenuItem helpItem, ToolStripMenuItem setShortCutItem,
                                          ToolStripMenuItem selectLanguageItem, ToolStripMenuItem resetItem, ToolStripMenuItem unlockItem, ToolStripMenuItem showItem,
                                          ToolStripMenuItem launchServerItem, ToolStripMenuItem enableSilentLaunch, ToolStripMenuItem configureNotificationsItem,
-                                         ToolStripMenuItem configureGraphicsItem)
+                                         ToolStripMenuItem configureGraphicsItem, ToolStripMenuItem openChartItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -144,6 +154,7 @@ namespace EDEngineer.Utils.UI
             enableSilentLaunch.Text = translator.Translate("Silent Launch");
             configureNotificationsItem.Text = translator.Translate("Configure Notifications");
             configureGraphicsItem.Text = translator.Translate("Configure Graphics");
+            openChartItem.Text = translator.Translate("Cargo History (require API)");
         }
     }
 }

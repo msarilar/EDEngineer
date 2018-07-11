@@ -337,6 +337,7 @@
     <None Include="Resources\menu-help.ico" />
     <None Include="Resources\menu-graphic-settings.ico" />
     <Resource Include="Resources\Images\commodity.png" />
+    <None Include="Resources\menu-chart.ico" />
     <Content Include="Resources\Images\elite-dangerous-clean.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

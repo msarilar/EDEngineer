@@ -19,7 +19,7 @@ namespace EDEngineer.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -39,7 +39,7 @@ namespace EDEngineer.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    var temp = new global::System.Resources.ResourceManager("EDEngineer.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("EDEngineer.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -65,7 +65,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon elite_dangerous_icon {
             get {
-                var obj = ResourceManager.GetObject("elite_dangerous_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("elite_dangerous_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -75,7 +75,17 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_api {
             get {
-                var obj = ResourceManager.GetObject("menu_api", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_api", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon menu_chart {
+            get {
+                object obj = ResourceManager.GetObject("menu_chart", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -85,7 +95,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_graphic_settings {
             get {
-                var obj = ResourceManager.GetObject("menu_graphic_settings", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_graphic_settings", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -95,7 +105,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_help {
             get {
-                var obj = ResourceManager.GetObject("menu_help", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_help", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -105,7 +115,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_language {
             get {
-                var obj = ResourceManager.GetObject("menu_language", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_language", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -115,7 +125,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_lock_unlock {
             get {
-                var obj = ResourceManager.GetObject("menu_lock_unlock", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_lock_unlock", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -125,7 +135,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_notifications {
             get {
-                var obj = ResourceManager.GetObject("menu_notifications", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_notifications", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -135,7 +145,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_quit {
             get {
-                var obj = ResourceManager.GetObject("menu_quit", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_quit", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -145,7 +155,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_release_notes {
             get {
-                var obj = ResourceManager.GetObject("menu_release_notes", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_release_notes", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -155,7 +165,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_reset_position {
             get {
-                var obj = ResourceManager.GetObject("menu_reset_position", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_reset_position", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -165,7 +175,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_shortcut {
             get {
-                var obj = ResourceManager.GetObject("menu_shortcut", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_shortcut", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -175,7 +185,7 @@ namespace EDEngineer.Properties {
         /// </summary>
         internal static System.Drawing.Icon menu_silent_launch {
             get {
-                var obj = ResourceManager.GetObject("menu_silent_launch", resourceCulture);
+                object obj = ResourceManager.GetObject("menu_silent_launch", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

@@ -196,6 +196,11 @@ namespace EDEngineer.Views
                 (o, e) =>
                 {
                     new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog();
+                },
+                (o, e) =>
+                {
+                    var url = $"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart";
+                    System.Diagnostics.Process.Start(url);
                 });
 
             icon = TrayIconManager.Init(menu);

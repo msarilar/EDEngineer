@@ -124,6 +124,9 @@
   <data name="menu_api" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-api.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-chart.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu_graphic_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-graphic-settings.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
