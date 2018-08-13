@@ -36967,6 +36967,10 @@
       {
         "Name": "Hybrid Capacitors",
         "Size": 5
+      },
+      {
+        "Name": "Mechanical Components",
+        "Size": 5
       }
     ],
     "Effects": [
