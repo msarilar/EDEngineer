@@ -406,6 +406,14 @@ namespace EDEngineer.Views
             }
         }
 
+        public void ClearShoppingList()
+        {
+            foreach (var tuple in ShoppingList.Composition.ToList())
+            {
+                ShoppingListChange(tuple.Item1, tuple.Item2 * -1);
+            }
+        }
+
         public int ShoppingListItem => 0;
 
         public override string ToString()

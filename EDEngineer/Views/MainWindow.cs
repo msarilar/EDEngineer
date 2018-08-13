@@ -497,6 +497,11 @@ namespace EDEngineer.Views
             w.Show();
         }
 
+        private void ClearShoppingListButtonClicked(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.ClearShoppingList();
+        }
+
         private void CheckAllButtonClicked(object sender, RoutedEventArgs e)
         {
             viewModel.ChangeAllFilters(true);
