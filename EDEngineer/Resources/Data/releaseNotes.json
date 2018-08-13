@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.3.6",
+    "Content": "* Added a Clear button to the shopping list : clicking it will entirely delete your shopping list (currently no way to undo so be careful)\r\n\r\n* Fixed blueprint Plasma Accelerator - Dazzle Shell : added missing 5 Mechanical Components to the recipe : thanks to @Derriick for fixing it"
+  },
+  {
     "Version": "1.1.3.4",
     "Content": "* Added a chart for cargo history : run the local API and click on the Cargo History entry in the menu. Go to /chartData instead if you want a raw json to exploit the data yourself. It can be slow to generate according to how many logs you have! Keep in mind this is a bit experimental so usability might not be much refined."
   },
