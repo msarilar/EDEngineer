@@ -28039,7 +28039,7 @@
         "Size": 3
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 4
       }
     ],
@@ -28129,7 +28129,7 @@
         "Size": 3
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 4
       }
     ],
@@ -28571,7 +28571,7 @@
         "Size": 3
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 5
       }
     ],
@@ -33287,7 +33287,7 @@
   },
   {
     "Type": "Guardian",
-    "Name": "Guardian Gauss Cannon (Fixed)",
+    "Name": "Guardian Gauss Cannon (Fixed, Medium)",
     "Engineers": [
       "@Technology"
     ],
@@ -33316,6 +33316,31 @@
   },
   {
     "Type": "Guardian",
+    "Name": "Guardian Gauss Cannon (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Wreckage Components",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 15
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
     "Name": "Guardian Hull Reinforcement",
     "Engineers": [
       "@Technology"
@@ -33326,7 +33351,7 @@
         "Size": 1
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 21
       },
       {
@@ -33355,7 +33380,7 @@
         "Size": 1
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 18
       },
       {
@@ -33432,6 +33457,31 @@
   },
   {
     "Type": "Guardian",
+    "Name": "Guardian Plasma Charger (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 15
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
     "Name": "Guardian Plasma Charger (Turreted, Large)",
     "Engineers": [
       "@Technology"
@@ -33485,6 +33535,31 @@
       {
         "Name": "Articulation Motors",
         "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Plasma Charger (Turreted, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 15
       }
     ]
   },
@@ -33591,7 +33666,7 @@
         "Size": 1
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 20
       },
       {
@@ -33620,7 +33695,7 @@
         "Size": 1
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 20
       },
       {
@@ -33630,6 +33705,31 @@
       {
         "Name": "Power Transfer Bus",
         "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shard Cannon (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Technology Components",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 15
       }
     ]
   },
@@ -33645,7 +33745,7 @@
         "Size": 2
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 20
       },
       {
@@ -33674,7 +33774,7 @@
         "Size": 2
       },
       {
-        "Name": "Guardian Sentinel Wreckage Components",
+        "Name": "Guardian Wreckage Components",
         "Size": 16
       },
       {
@@ -33688,6 +33788,31 @@
       {
         "Name": "Micro Controllers",
         "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Guardian Shard Cannon (Turreted, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 15
       }
     ]
   },
@@ -33717,6 +33842,93 @@
       {
         "Name": "Hardware Diagnostic Sensor",
         "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Javelin (Fighter)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 25
+      },
+      {
+        "Name": "Guardian Wreckage Components",
+        "Size": 18
+      },
+      {
+        "Name": "Guardian Vessel Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Pattern Epsilon Obelisk Data",
+        "Size": 26
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 25
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Lance (Fighter)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 25
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 18
+      },
+      {
+        "Name": "Guardian Vessel Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Pattern Epsilon Obelisk Data",
+        "Size": 26
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 25
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Trident (Fighter)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 25
+      },
+      {
+        "Name": "Guardian Vessel Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Pattern Epsilon Obelisk Data",
+        "Size": 26
+      },
+      {
+        "Name": "Pattern Beta Obelisk Data",
+        "Size": 18
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 25
       }
     ]
   },
@@ -33867,6 +34079,35 @@
   },
   {
     "Type": "Human",
+    "Name": "Shock Cannon (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 8
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 10
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 8
+      },
+      {
+        "Name": "Technetium",
+        "Size": 12
+      },
+      {
+        "Name": "Power Converter",
+        "Size": 4
+      }
+    ]
+  },
+  {
+    "Type": "Human",
     "Name": "Shock Cannon (Gimballed, Large)",
     "Engineers": [
       "@Technology"
@@ -33925,6 +34166,35 @@
   },
   {
     "Type": "Human",
+    "Name": "Shock Cannon (Gimballed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 11
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 8
+      },
+      {
+        "Name": "Technetium",
+        "Size": 10
+      },
+      {
+        "Name": "Power Transfer Bus",
+        "Size": 4
+      }
+    ]
+  },
+  {
+    "Type": "Human",
     "Name": "Shock Cannon (Turreted, Large)",
     "Engineers": [
       "@Technology"
@@ -33978,6 +34248,35 @@
       {
         "Name": "Power Transfer Bus",
         "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Human",
+    "Name": "Shock Cannon (Turreted, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Vanadium",
+        "Size": 8
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 12
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 10
+      },
+      {
+        "Name": "Technetium",
+        "Size": 10
+      },
+      {
+        "Name": "Ion Distributor",
+        "Size": 4
       }
     ]
   },
