@@ -70,7 +70,7 @@ namespace EDEngineer.Views
             set { apiOn = value; OnPropertyChanged(); }
         }
 
-        public MainWindowViewModel(Languages languages, string directory)
+        public MainWindowViewModel(Languages languages, string directory, bool fresh)
         {
             logDirectory = directory;
             entryDatas =
@@ -84,32 +84,19 @@ namespace EDEngineer.Views
                 SettingsManager.Comparer = Comparers.First();
             }
 
-            LoadState();
+            LoadState(fresh);
 
             CurrentComparer = SettingsManager.Comparer;
         }
 
-        private void LoadState()
+        private void LoadState(bool fresh)
         {
             LogWatcher?.Dispose();
             LogWatcher = new LogWatcher(LogDirectory);
 
             Commanders.Clear();
 
-            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"aggregation.json");
-            try
-            {
-                aggregation = File.Exists(path)
-                    ? JsonConvert.DeserializeObject<CommanderAggregation>(File.ReadAllText(path))
-                    : null;
-
-                // ReSharper disable once ReturnValueOfPureMethodIsNotUsed
-                aggregation?.Aggregations.Select(a => a.Value.LastTimestamp.ToDateTimeUtc()).ToList();
-            }
-            catch
-            {
-                aggregation = null;
-            }
+            var aggregation = fresh ? GetAggregation() : null;
 
             if (aggregation == null || !aggregation.Aggregations.Any())
             {
@@ -164,6 +151,27 @@ namespace EDEngineer.Views
             CurrentCommander.Value.RefreshShoppingList();
         }
 
+        private static CommanderAggregation GetAggregation()
+        {
+            CommanderAggregation aggregation;
+            var path = Path.Combine(LogWatcher.ManualChangesDirectory, $"aggregation.json");
+            try
+            {
+                aggregation = File.Exists(path)
+                    ? JsonConvert.DeserializeObject<CommanderAggregation>(File.ReadAllText(path))
+                    : null;
+
+                // ReSharper disable once ReturnValueOfPureMethodIsNotUsed
+                aggregation?.Aggregations.Select(a => a.Value.LastTimestamp.ToDateTimeUtc()).ToList();
+            }
+            catch
+            {
+                aggregation = null;
+            }
+
+            return aggregation;
+        }
+
         private bool showZeroes = true;
         private bool showOnlyForFavorites;
         private bool showOriginIcons = true;
@@ -173,7 +181,6 @@ namespace EDEngineer.Views
         private KeyValuePair<string, CommanderViewModel> currentCommander;
         private string currentComparer;
         private readonly List<EntryData> entryDatas;
-        private CommanderAggregation aggregation;
         private bool apiOn;
 
         public bool ShowZeroes
