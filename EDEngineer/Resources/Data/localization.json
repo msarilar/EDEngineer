@@ -4973,7 +4973,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "API zapnuto"
     },
     "API OFF": {
       "es": null,
@@ -4982,7 +4982,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "API vypnuto"
     }
   }
 }
