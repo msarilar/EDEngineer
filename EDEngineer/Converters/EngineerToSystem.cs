@@ -37,6 +37,10 @@ namespace EDEngineer.Converters
                 case "Didi Vatermann": return "Leesti (Leesti 1 A, Leesti)";
                 case "The Dweller": return "Wyrd (Wyrd A 2, Black Hide)";
                 case "Broo Tarquin": return "Muang (Muang 5 a, Broo's Legacy)";
+                case "Petra Olmanova": return "Asura (Asura 1 d, Sanctuary)";
+                case "Marsha Hicks": return "Tir (Tir A 2, The Watchtower)";
+                case "Etienne Dorn": return "Los (Los A 2 b, Kraken's Retreat)";
+                case "Mel Brandon": return "Luchtaine (Luchtaine A 1 c, The Brig)";
                 default: return "N/A";
             }
         }
