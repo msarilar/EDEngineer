@@ -1590,6 +1590,35 @@
     ]
   },
   {
+    "Name": "Progenitor Cells",
+    "Rarity": "None",
+    "FormattedName": "progenitorcells",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Markets (High Tech)",
+      "Needed for Petra Olmanova (200)"
+    ]
+  },
+  {
+    "Name": "Osmium",
+    "Rarity": "None",
+    "FormattedName": "osmium",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Mining (Metallic rings)",
+      "Needed for Marsha Hicks (10)"
+    ]
+  },
+  {
+    "Name": "Occupied Escape Pod",
+    "Rarity": "None",
+    "FormattedName": "occupiedcryopod",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Needed for Etienne Dorn (25)"
+    ]
+  },
+  {
     "Name": "Hardware Diagnostic Sensor",
     "Rarity": "None",
     "FormattedName": "diagnosticsensor",

@@ -188,7 +188,8 @@
     "Type": "Electronic Countermeasure",
     "Name": "Lightweight",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -483,6 +484,7 @@
     "Name": "Heavy Duty Hull Reinforcement",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -1256,6 +1258,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -1679,7 +1682,8 @@
     "Type": "Chaff Launcher",
     "Name": "Reinforced",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -2893,7 +2897,8 @@
     "Type": "Point Defence",
     "Name": "Reinforced",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -3083,7 +3088,8 @@
     "Type": "Point Defence",
     "Name": "Shielded",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -4242,6 +4248,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -4655,6 +4662,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -6184,7 +6192,8 @@
     "Type": "Heat Sink Launcher",
     "Name": "Reinforced",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah,"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -7768,6 +7777,7 @@
     "Name": "Rapid Fire Modification",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -8243,7 +8253,8 @@
     "Type": "Heat Sink Launcher",
     "Name": "Ammo Capacity",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -8721,6 +8732,7 @@
     "Engineers": [
       "Bill Turner",
       "Lori Jameson"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -9238,7 +9250,8 @@
     "Type": "Electronic Countermeasure",
     "Name": "Shielded",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -11092,6 +11105,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -12320,6 +12334,7 @@
     "Name": "Rapid Fire Modification",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -12928,6 +12943,7 @@
     "Name": "Thermal Resistant Hull Reinforcement",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -13385,6 +13401,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13601,6 +13618,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -14490,6 +14508,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -14677,7 +14696,8 @@
     "Type": "Point Defence",
     "Name": "Ammo Capacity",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -15711,6 +15731,7 @@
     "Name": "High Capacity Magazine",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16144,6 +16165,7 @@
     "Name": "Kinetic Resistant Hull Reinforcement",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -16358,6 +16380,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16768,6 +16791,7 @@
     "Name": "High Capacity Magazine",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -18895,6 +18919,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -20446,7 +20471,8 @@
     "Type": "Heat Sink Launcher",
     "Name": "Shielded",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -20950,6 +20976,37 @@
     "Type": "Chaff Launcher",
     "Name": "Ammo Capacity",
     "Engineers": [
+      "Petra Olmanova"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Reload Time",
+        "IsGood": false
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Mass",
+        "IsGood": false
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Ammo Maximum",
+        "IsGood": true
+      }
+    ],
+    "Grade": 1,
+  },
+  {
+    "Type": "Chaff Launcher",
+    "Name": "Ammo Capacity",
+    "Engineers": [
       "Ram Tah"
     ],
     "Ingredients": [
@@ -21178,7 +21235,8 @@
     "Type": "Heat Sink Launcher",
     "Name": "Lightweight",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -21342,6 +21400,7 @@
     "Name": "Blast Resistant Hull Reinforcement",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -22100,7 +22159,8 @@
     "Type": "Electronic Countermeasure",
     "Name": "Reinforced",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -22885,7 +22945,8 @@
     "Type": "Point Defence",
     "Name": "Lightweight",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -23049,6 +23110,7 @@
     "Name": "Lightweight Hull Reinforcement",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -25211,7 +25273,8 @@
     "Type": "Chaff Launcher",
     "Name": "Shielded",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -27270,7 +27333,8 @@
     "Name": "Thermal Resistant",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -27459,6 +27523,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -27674,7 +27739,8 @@
     "Type": "Chaff Launcher",
     "Name": "Lightweight",
     "Engineers": [
-      "Ram Tah"
+      "Ram Tah",
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -36347,6 +36413,7 @@
     "Name": "Drag Munition (Seeker only)",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36376,6 +36443,7 @@
     "Name": "Emissive Munitions",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36414,6 +36482,7 @@
     "Name": "Overload Munitions",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36448,6 +36517,7 @@
     "Name": "Thermal Cascade",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36481,6 +36551,7 @@
     "Name": "Penetrator Munitions (Dumbfire only)",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36511,6 +36582,7 @@
     "Name": "FSD Interrupt (Dumbfire only)",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36555,6 +36627,7 @@
     "Name": "Oversized",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36589,6 +36662,7 @@
     "Name": "Stripped Down",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36618,6 +36692,7 @@
     "Name": "Flow Control",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36647,6 +36722,7 @@
     "Name": "Double Braced",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36676,6 +36752,7 @@
     "Name": "Multi-Servos",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36714,6 +36791,7 @@
     "Name": "Mass Lock Munition",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36744,6 +36822,7 @@
     "Name": "Penetrator Payload",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36778,6 +36857,7 @@
     "Name": "Reverberating Cascade",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36812,6 +36892,7 @@
     "Name": "Flow Control",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36841,6 +36922,7 @@
     "Name": "Oversized",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36875,6 +36957,7 @@
     "Name": "Stripped Down",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36904,6 +36987,7 @@
     "Name": "Double Braced",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36933,6 +37017,7 @@
     "Name": "Ion Disruptor",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -36967,6 +37052,7 @@
     "Name": "Overload Munitions",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37000,6 +37086,7 @@
     "Name": "Radiant Canister",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37030,6 +37117,7 @@
     "Name": "Reverberating Cascade",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37063,6 +37151,7 @@
     "Name": "Shift-Lock Canister",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37093,6 +37182,7 @@
     "Name": "Emissive Munitions",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37131,6 +37221,7 @@
     "Name": "Flow Control",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37160,6 +37251,7 @@
     "Name": "Oversized",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37194,6 +37286,7 @@
     "Name": "Stripped Down",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -37223,6 +37316,7 @@
     "Name": "Double Braced",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -38037,6 +38131,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -38072,6 +38167,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -38107,6 +38203,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -38142,6 +38239,7 @@
     "Engineers": [
       "Liz Ryder",
       "Selene Jean"
+      "Petra Olmanova"
     ],
     "Ingredients": [
       {
@@ -38186,6 +38284,7 @@
     "Name": "Angled Plating",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -38224,6 +38323,7 @@
     "Name": "Layered Plating",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -38258,6 +38358,7 @@
     "Name": "Reflective Plating",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -38296,6 +38397,7 @@
     "Name": "Deep Plating",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
