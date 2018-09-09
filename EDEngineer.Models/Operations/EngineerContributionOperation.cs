@@ -42,10 +42,10 @@ namespace EDEngineer.Models.Operations
             ["Lori Jameson"] = new NoOperation(),
             ["Tiana Fortune"] = new DataOperation { DataName = "Decoded Emission Data", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
             ["The Sarge"] = new DataOperation { DataName = "Aberrant Shield Pattern Analysis", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
-            ["Bill Turner"] = new CargoOperation { CommodityName = "Bromellite", Size = -50, JournalEvent = JournalEvent.EngineerContribution }
-            ["Petra Olmanova"] = new CargoOperation { CommodityName = "Progenitor Cells", Size = -200, JournalEvent = JournalEvent.EngineerContribution }
-            ["Marsha Hicks"] = new CargoOperation { CommodityName = "Osmium", Size = -10, JournalEvent = JournalEvent.EngineerContribution }
-            ["Etienne Dorn"] = new CargoOperation { CommodityName = "Occupied Escape Pod", Size = -25, JournalEvent = JournalEvent.EngineerContribution }
+            ["Bill Turner"] = new CargoOperation { CommodityName = "Bromellite", Size = -50, JournalEvent = JournalEvent.EngineerContribution },
+            ["Petra Olmanova"] = new CargoOperation { CommodityName = "Progenitor Cells", Size = -200, JournalEvent = JournalEvent.EngineerContribution },
+            ["Marsha Hicks"] = new CargoOperation { CommodityName = "Osmium", Size = -10, JournalEvent = JournalEvent.EngineerContribution },
+            ["Etienne Dorn"] = new CargoOperation { CommodityName = "Occupied Escape Pod", Size = -25, JournalEvent = JournalEvent.EngineerContribution },
             ["Mel Brandon"] = new NoOperation(),
         };
     }

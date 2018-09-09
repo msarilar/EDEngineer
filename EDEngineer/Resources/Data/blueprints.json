@@ -4661,7 +4661,7 @@
     "Name": "Blast Resistant",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -6192,7 +6192,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Reinforced",
     "Engineers": [
-      "Ram Tah,"
+      "Ram Tah",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -8731,7 +8731,7 @@
     "Name": "Shielded",
     "Engineers": [
       "Bill Turner",
-      "Lori Jameson"
+      "Lori Jameson",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -11104,7 +11104,7 @@
     "Name": "Lightweight",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -14507,7 +14507,7 @@
     "Name": "Kinetic Resistant",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -18918,7 +18918,7 @@
     "Name": "Heavy Duty",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -21001,7 +21001,7 @@
         "IsGood": true
       }
     ],
-    "Grade": 1,
+    "Grade": 1
   },
   {
     "Type": "Chaff Launcher",
@@ -38130,7 +38130,7 @@
     "Name": "Angled Plating",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -38166,7 +38166,7 @@
     "Name": "Layered Plating",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -38202,7 +38202,7 @@
     "Name": "Reflective Plating",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
@@ -38238,7 +38238,7 @@
     "Name": "Deep Plating",
     "Engineers": [
       "Liz Ryder",
-      "Selene Jean"
+      "Selene Jean",
       "Petra Olmanova"
     ],
     "Ingredients": [
