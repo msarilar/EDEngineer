@@ -1615,7 +1615,9 @@
     "FormattedName": "occupiedcryopod",
     "Kind": "Commodity",
     "OriginDetails": [
-      "Needed for Etienne Dorn (25)"
+      "Needed for Etienne Dorn (25)",
+      "Degraded Emissions Signal Sources",
+      "Distress Call POI in Luchtaine"
     ]
   },
   {
