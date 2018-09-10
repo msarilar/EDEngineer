@@ -3,6 +3,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -352,6 +353,7 @@
     "Type": "Life Support",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Lori Jameson"
     ],
@@ -1464,6 +1466,7 @@
     "Type": "Power Plant",
     "Name": "Armoured",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -1846,6 +1849,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -3417,6 +3421,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -3586,6 +3591,7 @@
     "Type": "Rail Gun",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -3772,6 +3778,7 @@
     "Type": "Power Distributor",
     "Name": "Weapon Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -5435,6 +5442,7 @@
     "Type": "Manifest Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -6002,6 +6010,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -6550,6 +6559,7 @@
     "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -7102,6 +7112,7 @@
     "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -7402,6 +7413,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -8862,6 +8874,7 @@
     "Type": "Rail Gun",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -9620,6 +9633,7 @@
     "Type": "Rail Gun",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -9826,6 +9840,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -10016,6 +10031,7 @@
     "Type": "Power Plant",
     "Name": "Low Emissions",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -10662,6 +10678,7 @@
     "Type": "Power Distributor",
     "Name": "System Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -11293,6 +11310,7 @@
     "Type": "Power Plant",
     "Name": "Overcharged",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -12701,6 +12719,7 @@
     "Type": "Rail Gun",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -14237,6 +14256,7 @@
     "Type": "Power Distributor",
     "Name": "Engine Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -15177,6 +15197,7 @@
     "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -15346,6 +15367,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -16596,6 +16618,7 @@
     "Type": "Power Distributor",
     "Name": "High Charge Capacity",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -17941,6 +17964,7 @@
     "Type": "Life Support",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Lori Jameson"
     ],
@@ -19514,6 +19538,7 @@
     "Type": "Life Support",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Lori Jameson"
     ],
@@ -19881,6 +19906,7 @@
     "Type": "Manifest Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -20807,6 +20833,7 @@
     "Type": "Power Distributor",
     "Name": "Charge Enhanced",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -21030,6 +21057,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -21614,6 +21642,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -21819,6 +21848,7 @@
     "Type": "Manifest Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -22710,6 +22740,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -24062,6 +24093,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -24665,6 +24697,7 @@
     "Type": "Power Distributor",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -25868,6 +25901,7 @@
     "Type": "Rail Gun",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -30134,6 +30168,7 @@
     "Type": "Sensors",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -30348,6 +30383,7 @@
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -30562,6 +30598,7 @@
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -30776,6 +30813,7 @@
     "Type": "Surface Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Lei Cheung",
@@ -30965,6 +31003,7 @@
     "Type": "Surface Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Hera Tani",
@@ -31154,6 +31193,7 @@
     "Type": "Surface Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Lei Cheung",
@@ -31343,6 +31383,7 @@
     "Type": "Manifest Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31537,6 +31578,7 @@
     "Type": "Manifest Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31731,6 +31773,7 @@
     "Type": "Manifest Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31925,6 +31968,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32119,6 +32163,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32313,6 +32358,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32507,6 +32553,7 @@
     "Type": "Wake Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32701,6 +32748,7 @@
     "Type": "Wake Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32895,6 +32943,7 @@
     "Type": "Wake Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -37345,6 +37394,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Dazzle Shell",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37378,6 +37428,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Dispersal Field",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37411,6 +37462,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Target Lock Breaker",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37441,6 +37493,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Thermal Conduit",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37470,6 +37523,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Phasing Sequence",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37508,6 +37562,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Plasma Slug",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37552,6 +37607,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Oversized",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37586,6 +37642,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Flow Control",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37615,6 +37672,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Stripped Down",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37644,6 +37702,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Double Braced",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37673,6 +37732,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Multi-Servos",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -37711,6 +37771,7 @@
     "Type": "Rail Gun",
     "Name": "Feedback Cascade",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37751,6 +37812,7 @@
     "Type": "Rail Gun",
     "Name": "Plasma Slug",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37799,6 +37861,7 @@
     "Type": "Rail Gun",
     "Name": "Super Penetrator",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37843,6 +37906,7 @@
     "Type": "Rail Gun",
     "Name": "Oversized",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37877,6 +37941,7 @@
     "Type": "Rail Gun",
     "Name": "Flow Control",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37906,6 +37971,7 @@
     "Type": "Rail Gun",
     "Name": "Stripped Down",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37935,6 +38001,7 @@
     "Type": "Rail Gun",
     "Name": "Double Braced",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -37964,6 +38031,7 @@
     "Type": "Rail Gun",
     "Name": "Multi-Servos",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -38002,6 +38070,7 @@
     "Type": "Power Plant",
     "Name": "Thermal Spread",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -38033,6 +38102,7 @@
     "Type": "Power Plant",
     "Name": "Stripped Down",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -38063,6 +38133,7 @@
     "Type": "Power Plant",
     "Name": "Monstered",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -38099,6 +38170,7 @@
     "Type": "Power Plant",
     "Name": "Double Braced",
     "Engineers": [
+      "Etienne Dorn",
       "Felicity Farseer",
       "Marco Qwent",
       "Hera Tani"
@@ -39482,6 +39554,7 @@
     "Type": "Power Distributor",
     "Name": "Flow Control",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -39512,6 +39585,7 @@
     "Type": "Power Distributor",
     "Name": "Super Conduits",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -39568,6 +39642,7 @@
     "Type": "Power Distributor",
     "Name": "Cluster Capacitor",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -39624,6 +39699,7 @@
     "Type": "Power Distributor",
     "Name": "Stripped Down",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
@@ -39654,6 +39730,7 @@
     "Type": "Power Distributor",
     "Name": "Double Braced",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller",
       "Marco Qwent",
       "Hera Tani"
