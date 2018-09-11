@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Data;
@@ -156,6 +157,20 @@ namespace EDEngineer.Localization
             /*if (!Translations.ContainsKey(text) && text != "Konnga Ale" && text != "Lavian Brandy" && text != "Xihe Companions" && text != "Fujin Tea" && text != "Kamitra Cigars" && text != "Painite" && text != "Gold" && text != "Landmines" && text != "Meta-alloys" && text != "Soontill Relics")
             {
                 // MessageBox.Show($"No localization for text : {text}");
+                z.Add(text);
+                var t = string.Join(Environment.NewLine, z.Select(x =>
+                                                          {
+                                                              return $"\"{x}\": {{" + Environment.NewLine +
+                                                                     "    \"es\": null," + Environment.NewLine +
+                                                                     "    \"pt\": null," + Environment.NewLine +
+                                                                     "    \"de\": null," + Environment.NewLine +
+                                                                     "    \"fr\": null," + Environment.NewLine +
+                                                                     "    \"ru\": null," + Environment.NewLine +
+                                                                     "    \"pl\": null," + Environment.NewLine +
+                                                                     "    \"cs\": null" + Environment.NewLine +
+                                                                     "},";
+                                                          }));
+                Console.WriteLine(t);
             }*/
 #endif
 
@@ -166,6 +181,8 @@ namespace EDEngineer.Localization
 
             return translatedText;
         }
+
+        HashSet<string> z = new HashSet<string>();
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {

@@ -4983,6 +4983,519 @@
       "ru": null,
       "pl": null,
       "cs": "API vypnuto"
+    },
+    "Long Range FSD Interdictor": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Gauss Cannon Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "AX Small Calibre Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "+5% Damage Boost": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "+10% Damage Boost": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "AX Remote Flak Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Enzyme Missile Launcher Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Flechette Launcher Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "AX Explosive Munitions": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "+5% Damage": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Gauss Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Gauss Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Hull Reinforcement": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Module Reinforcement": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Fixed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Turreted, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Turreted, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Turreted, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian FSD Booster": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Power Distributor": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Fixed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Turreted, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Turreted, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Turreted, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shield Reinforcement": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Javelin (Fighter)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Lance (Fighter)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Trident (Fighter)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Fixed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Gimballed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Gimballed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Gimballed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Turreted, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Turreted, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Turreted, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Ship Value:": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Modules Value:": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Rebuy:": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Loadout": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Cargo History (require API)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Hardpoints": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Utilities": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Core Internal": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Optional Internal": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Others/Livery": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Occupied Escape Pod": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Progenitor Cells": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Sync?": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Wreckage Components": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
     }
   }
 }

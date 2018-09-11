@@ -10,7 +10,7 @@ namespace EDEngineer.Utils.System
 {
     public static class SettingsManager
     {
-        public static bool Init()
+        public static void Init()
         {
             if (Properties.Settings.Default.UpgradeRequired)
             {
@@ -18,11 +18,7 @@ namespace EDEngineer.Utils.System
                 Properties.Settings.Default.UpgradeRequired = false;
 
                 Properties.Settings.Default.Save();
-
-                return true;
             }
-
-            return false;
         }
 
         public static void Reset(this WindowDimensions dimensions)

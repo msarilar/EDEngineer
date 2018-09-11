@@ -52,7 +52,7 @@ namespace EDEngineer.Views
                 return;
             }
             InitializeComponent();
-            var fresh = SettingsManager.Init();
+            SettingsManager.Init();
 
             try
             {
@@ -89,7 +89,7 @@ namespace EDEngineer.Views
             var logDirectory = Helpers.RetrieveLogDirectory(false, null);
             var task = Task.Factory.StartNew(() =>
             {
-                viewModel = new MainWindowViewModel(Languages.Instance, logDirectory, fresh);
+                viewModel = new MainWindowViewModel(Languages.Instance, logDirectory);
                 viewModel.PropertyChanged += (o, e) =>
                                              {
                                                  if (e.PropertyName == "ShowOnlyForFavorites" ||
