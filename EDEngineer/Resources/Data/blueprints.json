@@ -2067,6 +2067,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Long Range FSD Interdictor",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Colonel Bris Dekker",
       "Tiana Fortune"
@@ -2426,6 +2427,7 @@
     "Type": "Shield Generator",
     "Name": "Reinforced Shields",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -2660,6 +2662,7 @@
     "Type": "Shield Generator",
     "Name": "Enhanced, Low Power Shields",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -3232,6 +3235,7 @@
     "Type": "Shield Booster",
     "Name": "Thermal Resistant",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -4465,6 +4469,7 @@
     "Type": "Beam Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -5619,6 +5624,7 @@
     "Type": "Burst Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -5825,6 +5831,7 @@
     "Type": "Shield Booster",
     "Name": "Kinetic Resistant",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -6372,6 +6379,7 @@
     "Type": "Shield Generator",
     "Name": "Thermal Resistant Shields",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -6736,6 +6744,7 @@
     "Type": "Burst Laser",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -6927,6 +6936,7 @@
     "Type": "Pulse Laser",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -8299,6 +8309,7 @@
     "Type": "Burst Laser",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -8535,6 +8546,7 @@
     "Type": "Pulse Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -10237,6 +10249,7 @@
     "Type": "Burst Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -10453,6 +10466,7 @@
     "Type": "Pulse Laser",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -11517,6 +11531,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Increased FSD Range",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -14759,6 +14774,7 @@
     "Type": "Pulse Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -16015,6 +16031,7 @@
     "Type": "Pulse Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -17076,6 +17093,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Rapid Charge",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -17407,6 +17425,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Colonel Bris Dekker",
       "Tiana Fortune"
@@ -17771,6 +17790,7 @@
     "Type": "Beam Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -18154,6 +18174,7 @@
     "Type": "Shield Booster",
     "Name": "Heavy Duty",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -19157,6 +19178,7 @@
     "Type": "Burst Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -19348,6 +19370,7 @@
     "Type": "Burst Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -20103,6 +20126,7 @@
     "Type": "Beam Laser",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -23362,6 +23386,7 @@
     "Type": "Shield Booster",
     "Name": "Resistance Augmented",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -23988,6 +24013,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Specialised",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -24928,6 +24954,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Faster FSD Boot Sequence",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -25507,6 +25534,7 @@
     "Type": "Pulse Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -25714,6 +25742,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Shielded FSD",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -26155,6 +26184,7 @@
     "Type": "Beam Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -26604,6 +26634,7 @@
     "Type": "Burst Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -26810,6 +26841,7 @@
     "Type": "Shield Generator",
     "Name": "Kinetic Resistant Shields",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -27004,6 +27036,7 @@
     "Type": "Shield Booster",
     "Name": "Blast Resistant",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -27196,6 +27229,7 @@
     "Type": "Pulse Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -27974,6 +28008,7 @@
     "Type": "Burst Laser",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -29808,6 +29843,7 @@
     "Type": "Beam Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -30014,6 +30050,7 @@
     "Type": "Beam Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34436,6 +34473,7 @@
     "Type": "Beam Laser",
     "Name": "Concordant Sequence",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34471,6 +34509,7 @@
     "Type": "Beam Laser",
     "Name": "Regeneration Sequence",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34506,6 +34545,7 @@
     "Type": "Beam Laser",
     "Name": "Thermal Conduit",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34536,6 +34576,7 @@
     "Type": "Beam Laser",
     "Name": "Thermal Shock",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34575,6 +34616,7 @@
     "Type": "Beam Laser",
     "Name": "Thermal Vent",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34605,6 +34647,7 @@
     "Type": "Beam Laser",
     "Name": "Oversized",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34640,6 +34683,7 @@
     "Type": "Beam Laser",
     "Name": "Stripped Down",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34670,6 +34714,7 @@
     "Type": "Beam Laser",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34700,6 +34745,7 @@
     "Type": "Beam Laser",
     "Name": "Flow Control",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34730,6 +34776,7 @@
     "Type": "Burst Laser",
     "Name": "Concordant Sequence",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34764,6 +34811,7 @@
     "Type": "Burst Laser",
     "Name": "Inertial Impact",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34804,6 +34852,7 @@
     "Type": "Burst Laser",
     "Name": "Phasing Sequence",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34843,6 +34892,7 @@
     "Type": "Burst Laser",
     "Name": "Scramble Spectrum",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34878,6 +34928,7 @@
     "Type": "Burst Laser",
     "Name": "Thermal Shock",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34916,6 +34967,7 @@
     "Type": "Burst Laser",
     "Name": "Oversized",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34950,6 +35002,7 @@
     "Type": "Burst Laser",
     "Name": "Stripped Down",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -34979,6 +35032,7 @@
     "Type": "Burst Laser",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35008,6 +35062,7 @@
     "Type": "Burst Laser",
     "Name": "Flow Control",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35037,6 +35092,7 @@
     "Type": "Burst Laser",
     "Name": "Multi-Servos",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35076,6 +35132,7 @@
     "Type": "Pulse Laser",
     "Name": "Concordant Sequence",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35110,6 +35167,7 @@
     "Type": "Pulse Laser",
     "Name": "Emissive Munitions",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35149,6 +35207,7 @@
     "Type": "Pulse Laser",
     "Name": "Phasing Sequence",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35187,6 +35246,7 @@
     "Type": "Pulse Laser",
     "Name": "Scramble Spectrum",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35221,6 +35281,7 @@
     "Type": "Pulse Laser",
     "Name": "Thermal Shock",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35259,6 +35320,7 @@
     "Type": "Pulse Laser",
     "Name": "Oversized",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35293,6 +35355,7 @@
     "Type": "Pulse Laser",
     "Name": "Stripped Down",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35322,6 +35385,7 @@
     "Type": "Pulse Laser",
     "Name": "Flow Control",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35351,6 +35415,7 @@
     "Type": "Pulse Laser",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -35380,6 +35445,7 @@
     "Type": "Pulse Laser",
     "Name": "Multi-Servos",
     "Engineers": [
+      "Mel Brandon",
       "The Dweller",
       "Broo Tarquin"
     ],
@@ -38582,6 +38648,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -38611,6 +38678,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Flow Control",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -38640,6 +38708,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Stripped Down",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -38669,6 +38738,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Boss Cells",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -38704,6 +38774,7 @@
     "Type": "Shield Cell Bank",
     "Name": "Recycling Cells",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lori Jameson"
     ],
@@ -38739,6 +38810,7 @@
     "Type": "Shield Booster",
     "Name": "Force Block",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -38775,6 +38847,7 @@
     "Type": "Shield Booster",
     "Name": "Thermo Block",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -38811,6 +38884,7 @@
     "Type": "Shield Booster",
     "Name": "Blast Block",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -38851,6 +38925,7 @@
     "Type": "Shield Booster",
     "Name": "Flow Control",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -38885,6 +38960,7 @@
     "Type": "Shield Booster",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -38915,6 +38991,7 @@
     "Type": "Shield Booster",
     "Name": "Super Capacitor",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Lei Cheung",
       "Didi Vatermann"
@@ -38961,6 +39038,7 @@
     "Type": "Shield Generator",
     "Name": "Hi-cap",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39002,6 +39080,7 @@
     "Type": "Shield Generator",
     "Name": "Multi-weave",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39053,6 +39132,7 @@
     "Type": "Shield Generator",
     "Name": "Thermo Block",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39088,6 +39168,7 @@
     "Type": "Shield Generator",
     "Name": "Fast Charge",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39139,6 +39220,7 @@
     "Type": "Shield Generator",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39169,6 +39251,7 @@
     "Type": "Shield Generator",
     "Name": "Stripped Down",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39199,6 +39282,7 @@
     "Type": "Shield Generator",
     "Name": "Force Block",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39234,6 +39318,7 @@
     "Type": "Shield Generator",
     "Name": "Lo-draw",
     "Engineers": [
+      "Mel Brandon",
       "Elvira Martuuk",
       "Lei Cheung",
       "Didi Vatermann"
@@ -39290,6 +39375,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Deep Charge",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -39327,6 +39413,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Double Braced",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -39358,6 +39445,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Stripped Down",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -39389,6 +39477,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Mass Manager",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
@@ -39426,6 +39515,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Thermal Spread",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk",
       "Professor Palin",
