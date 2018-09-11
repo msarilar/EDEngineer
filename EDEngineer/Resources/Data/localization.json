@@ -4125,7 +4125,7 @@
       "pt": null,
       "de": "Guardian-Schiffsbauplansegment",
       "fr": null,
-      "ru": "Сегмент чертежа судна стражей",
+      "ru": "Фрагмент чертежа судна стражей",
       "pl": null,
       "cs": "Guardian Vessel Blueprint Segment"
     },
@@ -4971,7 +4971,7 @@
       "pt": null,
       "de": "API AN",
       "fr": null,
-      "ru": null,
+      "ru": "API ВКЛ",
       "pl": null,
       "cs": "API zapnuto"
     },
@@ -4980,7 +4980,7 @@
       "pt": null,
       "de": "API AUS",
       "fr": null,
-      "ru": null,
+      "ru": "API ВЫКЛ",
       "pl": null,
       "cs": "API vypnuto"
     },
@@ -4989,7 +4989,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "FSD-перехватчик большой дальности",
       "pl": null,
       "cs": null
     },
@@ -4998,7 +4998,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Боеприпасы для плазменных пушек стражей",
       "pl": null,
       "cs": null
     },
@@ -5007,7 +5007,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Боеприпасы для пушек Гаусса стражей",
       "pl": null,
       "cs": null
     },
@@ -5016,7 +5016,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Мелкокалиберные боеприпасы АИ",
       "pl": null,
       "cs": null
     },
@@ -5025,7 +5025,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "+5% к урону",
       "pl": null,
       "cs": null
     },
@@ -5034,7 +5034,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "+10% к урону",
       "pl": null,
       "cs": null
     },
@@ -5043,7 +5043,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Зенитные снаряды с дистанционным подрывом АИ",
       "pl": null,
       "cs": null
     },
@@ -5052,7 +5052,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Боеприпасы для энзимных ракетных установок",
       "pl": null,
       "cs": null
     },
@@ -5061,7 +5061,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Стреловидные боеприпасы",
       "pl": null,
       "cs": null
     },
@@ -5070,7 +5070,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Боеприпасы для осколочных орудий стражей",
       "pl": null,
       "cs": null
     },
@@ -5079,7 +5079,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Взрывчатые боеприпасы АИ",
       "pl": null,
       "cs": null
     },
@@ -5088,7 +5088,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "+5% к урону",
       "pl": null,
       "cs": null
     },
@@ -5097,7 +5097,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Пушка Гаусса стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5106,7 +5106,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Пушка Гаусса стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5115,7 +5115,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Набор для усиления корпуса стражей",
       "pl": null,
       "cs": null
     },
@@ -5124,7 +5124,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Набор для усиления модуля стражей",
       "pl": null,
       "cs": null
     },
@@ -5133,7 +5133,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменная пушка стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5142,7 +5142,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменная пушка стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5151,7 +5151,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменная пушка стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5160,7 +5160,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменная пушка стражей (турель, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5169,7 +5169,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменная пушка стражей (турель, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5178,7 +5178,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Плазменная пушка стражей (турель, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5187,7 +5187,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Ускоритель FSD стражей",
       "pl": null,
       "cs": null
     },
@@ -5196,7 +5196,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Распределитель питания стражей",
       "pl": null,
       "cs": null
     },
@@ -5205,7 +5205,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5214,7 +5214,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5223,7 +5223,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5232,7 +5232,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (турель, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5241,7 +5241,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (турель, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5250,7 +5250,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (турель, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5259,7 +5259,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Набор для усиления щита стражей",
       "pl": null,
       "cs": null
     },
@@ -5268,7 +5268,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Javelin (Истребитель)",
       "pl": null,
       "cs": null
     },
@@ -5277,7 +5277,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Lance (Истребитель)",
       "pl": null,
       "cs": null
     },
@@ -5286,7 +5286,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Trident (Истребитель)",
       "pl": null,
       "cs": null
     },
@@ -5295,7 +5295,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5304,7 +5304,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (фиксированное, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5313,7 +5313,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (фиксированное, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5322,7 +5322,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (на карданной подвеске, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5331,7 +5331,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (на карданной подвеске, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5340,7 +5340,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (на карданной подвеске, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5349,7 +5349,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (турель, большой слот)",
       "pl": null,
       "cs": null
     },
@@ -5358,7 +5358,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (турель, средний слот)",
       "pl": null,
       "cs": null
     },
@@ -5367,7 +5367,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Шоковое орудие (турель, малый слот)",
       "pl": null,
       "cs": null
     },
@@ -5376,7 +5376,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Стоимость корабля:",
       "pl": null,
       "cs": null
     },
@@ -5385,7 +5385,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Стоимость модулей:",
       "pl": null,
       "cs": null
     },
@@ -5394,7 +5394,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Страховка:",
       "pl": null,
       "cs": null
     },
@@ -5403,7 +5403,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Оснащение",
       "pl": null,
       "cs": null
     },
@@ -5412,7 +5412,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "История грузов (необходимо API)",
       "pl": null,
       "cs": null
     },
@@ -5421,7 +5421,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Орудийные гнезда",
       "pl": null,
       "cs": null
     },
@@ -5430,7 +5430,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Крепления утилит",
       "pl": null,
       "cs": null
     },
@@ -5439,7 +5439,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Зарезервированные слоты",
       "pl": null,
       "cs": null
     },
@@ -5448,7 +5448,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Опциональные модули",
       "pl": null,
       "cs": null
     },
@@ -5457,7 +5457,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Прочее/Декали",
       "pl": null,
       "cs": null
     },
@@ -5466,7 +5466,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Спасательная капсула с пассажиром",
       "pl": null,
       "cs": null
     },
@@ -5475,7 +5475,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Прогениторные клетки",
       "pl": null,
       "cs": null
     },
@@ -5484,7 +5484,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Синхронизировать?",
       "pl": null,
       "cs": null
     },
@@ -5493,7 +5493,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Обломки часовых стражей",
       "pl": null,
       "cs": null
     }
