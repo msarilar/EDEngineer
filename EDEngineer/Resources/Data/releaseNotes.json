@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.3.12",
+    "Content": "* German localization update provided by @MaximumWoahverdrive, thanks for the contribution"
+  },
+  {
     "Version": "1.1.3.11",
     "Content": "* Entire russian localization completed by @VChet! Thanks a lot for the great contributions"
   },
