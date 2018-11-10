@@ -11,6 +11,7 @@ using EDEngineer.Localization;
 using EDEngineer.Models;
 using EDEngineer.Models.State;
 using EDEngineer.Utils.System;
+using System.Reflection;
 
 namespace EDEngineer.Views.Notifications
 {
@@ -111,7 +112,8 @@ namespace EDEngineer.Views.Notifications
                 imageElements[0].Attributes.GetNamedItem("src").NodeValue = imagePath;
 
                 var toast = new ToastNotification(toastXml);
-                ToastNotificationManager.CreateToastNotifier("EDEngineer").Show(toast);
+                var id = Assembly.GetExecutingAssembly().GetType().GUID.ToString();
+                ToastNotificationManager.CreateToastNotifier(id).Show(toast);
             }
             catch (Exception)
             {
