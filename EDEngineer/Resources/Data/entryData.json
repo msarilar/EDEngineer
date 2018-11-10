@@ -1731,13 +1731,14 @@
   },
   {
     "Name": "Guardian Weapon Blueprint Segment",
-    "Rarity": "Rare",
+    "Rarity": "VeryRare",
     "FormattedName": "guardian_weaponblueprint",
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "Guardian",
+    "MaximumCapacity": 150
   },
   {
     "Name": "Guardian Power Cell",
@@ -1791,7 +1792,8 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "Guardian",
+    "MaximumCapacity": 150
   },
   {
     "Name": "Guardian Wreckage Components",
@@ -1806,7 +1808,7 @@
   },
   {
     "Name": "Guardian Vessel Blueprint Segment",
-    "Rarity": "Rare",
+    "Rarity": "VeryRare",
     "FormattedName": "guardian_vesselblueprint",
     "Kind": "Data",
     "OriginDetails": [
