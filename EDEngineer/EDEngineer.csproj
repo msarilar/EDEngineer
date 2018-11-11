@@ -315,6 +315,7 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\menu-reload.ico" />
     <Resource Include="Resources\Images\api-on.png" />
     <Resource Include="Resources\Images\api-off.png" />
     <Resource Include="Resources\Images\common.png" />

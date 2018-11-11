@@ -148,6 +148,9 @@
   <data name="menu_release_notes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-release-notes.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="menu_reload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-reload.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu_reset_position" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-reset-position.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

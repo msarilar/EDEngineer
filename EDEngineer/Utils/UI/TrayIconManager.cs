@@ -38,7 +38,8 @@ namespace EDEngineer.Utils.UI
             string version,
             EventHandler configureNotificationsHandler,
             EventHandler configureGraphicsHandler,
-            EventHandler openChartHandler)
+            EventHandler openChartHandler,
+            EventHandler clearAggregationHandler)
         {
             var translator = Languages.Instance;
 
@@ -109,10 +110,17 @@ namespace EDEngineer.Utils.UI
 
             openChartItem.Click += openChartHandler;
 
-            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem, openChartItem);
+            var clearAggregationItem = new ToolStripMenuItem
+            {
+                Image = Properties.Resources.menu_reload.ToBitmap()
+            };
+
+            clearAggregationItem.Click += clearAggregationHandler;
+
+            SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem, openChartItem, clearAggregationItem);
             translator.PropertyChanged += (o, e) =>
             {
-                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem, openChartItem);
+                SetItemsText(quitItem, translator, helpItem, setShortCutItem, selectLanguageItem, resetItem, unlockItem, showItem, launchServerItem, enableSilentLaunch, configureNotificationsItem, configureGraphicsItem, openChartItem, clearAggregationItem);
             };
 
             quitItem.Click += quitHandler;
@@ -135,13 +143,15 @@ namespace EDEngineer.Utils.UI
             menu.Items.Add(helpItem);
             menu.Items.Add(releaseNotesItem);
             menu.Items.Add(quitItem);
+            menu.Items.Add("-");
+            menu.Items.Add(clearAggregationItem);
             return menu;
         }
 
         private static void SetItemsText(ToolStripMenuItem quitItem, Languages translator, ToolStripMenuItem helpItem, ToolStripMenuItem setShortCutItem,
                                          ToolStripMenuItem selectLanguageItem, ToolStripMenuItem resetItem, ToolStripMenuItem unlockItem, ToolStripMenuItem showItem,
                                          ToolStripMenuItem launchServerItem, ToolStripMenuItem enableSilentLaunch, ToolStripMenuItem configureNotificationsItem,
-                                         ToolStripMenuItem configureGraphicsItem, ToolStripMenuItem openChartItem)
+                                         ToolStripMenuItem configureGraphicsItem, ToolStripMenuItem openChartItem, ToolStripMenuItem clearAggregationItem)
         {
             quitItem.Text = translator.Translate("Quit");
             helpItem.Text = translator.Translate("Help");
@@ -155,6 +165,7 @@ namespace EDEngineer.Utils.UI
             configureNotificationsItem.Text = translator.Translate("Configure Notifications");
             configureGraphicsItem.Text = translator.Translate("Configure Graphics");
             openChartItem.Text = translator.Translate("Cargo History (require API)");
+            clearAggregationItem.Text = translator.Translate("Reload all data");
         }
     }
 }

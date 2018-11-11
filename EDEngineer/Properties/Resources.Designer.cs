@@ -163,6 +163,16 @@ namespace EDEngineer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon menu_reload {
+            get {
+                object obj = ResourceManager.GetObject("menu_reload", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon menu_reset_position {
             get {
                 object obj = ResourceManager.GetObject("menu_reset_position", resourceCulture);

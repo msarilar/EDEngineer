@@ -413,5 +413,17 @@ namespace EDEngineer.Properties {
                 this["ShowAllGrades"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ClearAggregation {
+            get {
+                return ((bool)(this["ClearAggregation"]));
+            }
+            set {
+                this["ClearAggregation"] = value;
+            }
+        }
     }
 }
