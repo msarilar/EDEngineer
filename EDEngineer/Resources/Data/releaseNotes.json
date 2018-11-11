@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.0",
+    "Content": "* Added a new menu entry to fully reload your logs in the application if you ever encounter oddities in your material list\r\n\r\n* Fix materials for large shard premium reload blueprint, thanks to @CMDR-Cometborne\r\n* All guardian blueprint segments are classified as very rare, thanks to @CMDR-Cometborne\r\n* Attempt at fixing Toast, thanks to @MaximumWoahverdrive"
+  },
+  {
     "Version": "1.1.3.12",
     "Content": "* German localization update provided by @MaximumWoahverdrive, thanks for the contribution"
   },
