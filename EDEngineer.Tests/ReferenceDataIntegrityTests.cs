@@ -34,7 +34,7 @@ namespace EDEngineer.Tests
                 NullValueHandling = NullValueHandling.Ignore
             });
 
-            Check.That(serialized).IsEqualTo(json);
+            Check.That(serialized + System.Environment.NewLine).IsEqualTo(json);
         }
 
         [Test]
@@ -126,7 +126,7 @@ namespace EDEngineer.Tests
                 NullValueHandling = NullValueHandling.Ignore
             });
 
-            Check.That(serialized).IsEqualTo(json);
+            Check.That(serialized + System.Environment.NewLine).IsEqualTo(json);
         }
 
         [Test]
