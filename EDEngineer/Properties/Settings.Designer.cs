@@ -94,7 +94,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.1.3.12")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.1.4.0")]
         public string Version {
             get {
                 return ((string)(this["Version"]));
@@ -411,6 +411,18 @@ namespace EDEngineer.Properties {
             }
             set {
                 this["ShowAllGrades"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool ClearAggregation {
+            get {
+                return ((bool)(this["ClearAggregation"]));
+            }
+            set {
+                this["ClearAggregation"] = value;
             }
         }
     }

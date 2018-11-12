@@ -96,7 +96,17 @@ namespace EDEngineer.Views
 
             Commanders.Clear();
 
-            var aggregation = GetAggregation();
+            CommanderAggregation aggregation = null;
+
+            if (Settings.Default.ClearAggregation)
+            {
+                Settings.Default.ClearAggregation = false;
+                Settings.Default.Save();
+            }
+            else
+            {
+                aggregation = GetAggregation();
+            }
 
             if (aggregation == null || !aggregation.Aggregations.Any())
             {

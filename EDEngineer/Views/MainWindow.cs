@@ -201,7 +201,8 @@ namespace EDEngineer.Views
                 {
                     var url = $"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart";
                     System.Diagnostics.Process.Start(url);
-                });
+                },
+                (o, e) => ClearAggregationAndRestart(o, null));
 
             icon = TrayIconManager.Init(menu);
 
@@ -465,6 +466,16 @@ namespace EDEngineer.Views
         private void ToggleEditModeChecked(object sender, RoutedEventArgs e)
         {
             Properties.Settings.Default.WindowUnlocked = !Properties.Settings.Default.WindowUnlocked;
+            Properties.Settings.Default.Save();
+
+            var w = new MainWindow();
+            Close();
+            w.Show();
+        }
+
+        private void ClearAggregationAndRestart(object sender, RoutedEventArgs e)
+        {
+            Properties.Settings.Default.ClearAggregation = true;
             Properties.Settings.Default.Save();
 
             var w = new MainWindow();
