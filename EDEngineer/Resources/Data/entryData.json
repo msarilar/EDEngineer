@@ -938,6 +938,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -948,6 +949,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -958,6 +960,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -968,6 +971,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -978,6 +982,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -1465,7 +1470,10 @@
     "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Ship scanning (Thargoid interceptors)"
+    ]
   },
   {
     "Name": "Meta-alloys",
@@ -1634,21 +1642,30 @@
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Base scanning (Thargoid uplink devices)"
+    ]
   },
   {
     "Name": "Thargoid Residue Data",
     "Rarity": "Rare",
     "FormattedName": "tg_residuedata",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Base scanning (Thargoid uplink devices)"
+    ]
   },
   {
     "Name": "Thargoid Structural Data",
     "Rarity": "Common",
     "FormattedName": "tg_structuraldata",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Base scanning (Thargoid uplink devices)"
+    ]
   },
   {
     "Name": "Thargoid Carapace",
@@ -1656,7 +1673,10 @@
     "FormattedName": "unknowncarapace",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Energy Cell",
@@ -1664,7 +1684,10 @@
     "FormattedName": "unknownenergycell",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Organic Circuitry",
@@ -1672,7 +1695,10 @@
     "FormattedName": "unknownorganiccircuitry",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Technological Components",
@@ -1680,54 +1706,84 @@
     "FormattedName": "unknowntechnologycomponents",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Wake Data",
     "Rarity": "Rare",
     "FormattedName": "unknownwakedata",
     "Kind": "Data",
+    "OriginDetails": [
+      "High wake scanning (Thargoid interceptors)"
+    ],
     "Group": "Thargoid"
   },
   {
     "Name": "Ship Flight Data",
     "Rarity": "Rare",
     "FormattedName": "tg_shipflightdata",
-    "Kind": "Data"
+    "Kind": "Data",
+    "OriginDetails": [
+      "Ship scanning (Thargoid interceptors)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Ship System Data",
     "Rarity": "Rare",
     "FormattedName": "tg_shipsystemsdata",
-    "Kind": "Data"
+    "Kind": "Data",
+    "OriginDetails": [
+      "Ship scanning (Thargoid interceptors)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Wreckage Components",
     "Rarity": "Standard",
     "FormattedName": "tg_wreckagecomponents",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Bio-Mechanical Conduits",
     "Rarity": "Standard",
     "FormattedName": "tg_biomechanicalconduits",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Weapon Parts",
     "Rarity": "Rare",
     "FormattedName": "tg_weaponparts",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Propulsion Elements",
     "Rarity": "VeryRare",
     "FormattedName": "tg_propulsionelement",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Guardian Weapon Blueprint Segment",
