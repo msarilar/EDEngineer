@@ -4125,7 +4125,7 @@
       "pt": null,
       "de": "Guardian-Schiffsbauplansegment",
       "fr": null,
-      "ru": "Сегмент чертежа судна стражей",
+      "ru": "Фрагмент чертежа судна стражей",
       "pl": null,
       "cs": "Guardian Vessel Blueprint Segment"
     },
@@ -4285,7 +4285,7 @@
     "Thermal Shock": {
       "es": null,
       "pt": null,
-      "de": "Hitzeschock",
+      "de": "Thermischer Schock",
       "fr": null,
       "ru": "Тепловой удар",
       "pl": null,
@@ -4303,7 +4303,7 @@
     "Oversized": {
       "es": null,
       "pt": null,
-      "de": "Übergroß",
+      "de": "Übergröße",
       "fr": null,
       "ru": "Сверхразмер",
       "pl": null,
@@ -4312,7 +4312,7 @@
     "Stripped Down": {
       "es": null,
       "pt": null,
-      "de": "Zerlegt",
+      "de": "Reduktion",
       "fr": null,
       "ru": "Урезанный вариант",
       "pl": null,
@@ -4321,7 +4321,7 @@
     "Double Braced": {
       "es": null,
       "pt": null,
-      "de": "doppelt versteift",
+      "de": "Doppelt Versteift",
       "fr": null,
       "ru": "Двойная прочность",
       "pl": null,
@@ -4330,7 +4330,7 @@
     "Flow Control": {
       "es": null,
       "pt": null,
-      "de": "Ablaufsteuerung",
+      "de": "Flusssteuerung",
       "fr": null,
       "ru": "Контроль интенсивности",
       "pl": null,
@@ -4375,7 +4375,7 @@
     "Emissive Munitions": {
       "es": null,
       "pt": null,
-      "de": "Emissive Munition",
+      "de": "Emissionsgranate",
       "fr": null,
       "ru": "Эмиссионные припасы",
       "pl": null,
@@ -4384,7 +4384,7 @@
     "Auto Loader": {
       "es": null,
       "pt": null,
-      "de": "Selbstlader",
+      "de": "Auto-Laden",
       "fr": null,
       "ru": "Автоматическая система заряжания",
       "pl": null,
@@ -4393,7 +4393,7 @@
     "Corrosive Shell": {
       "es": null,
       "pt": null,
-      "de": "Ätzende Hülle",
+      "de": "Korrosionsgranate",
       "fr": null,
       "ru": "Разъедающие боеприпасы",
       "pl": null,
@@ -4402,7 +4402,7 @@
     "Incendiary Rounds": {
       "es": null,
       "pt": null,
-      "de": "Brandherde",
+      "de": "Hitzesalven",
       "fr": null,
       "ru": "Зажигательные припасы",
       "pl": null,
@@ -4411,7 +4411,7 @@
     "Smart Rounds": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Intelligente Munition",
       "fr": null,
       "ru": "Умные боеприпасы",
       "pl": null,
@@ -4420,7 +4420,7 @@
     "Dispersal Field": {
       "es": null,
       "pt": null,
-      "de": "Ausbreitungsfeld",
+      "de": "Streuungsfeld",
       "fr": null,
       "ru": "Рассеивающее поле",
       "pl": null,
@@ -4429,7 +4429,7 @@
     "Force Shell": {
       "es": null,
       "pt": null,
-      "de": "Krafthülle",
+      "de": "Impulsgranate",
       "fr": null,
       "ru": "Усиленные снаряды",
       "pl": null,
@@ -4438,7 +4438,7 @@
     "High Yield Shell": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hocheffizienzgranate",
       "fr": null,
       "ru": "Снаряды большой мощности",
       "pl": null,
@@ -4447,7 +4447,7 @@
     "Thermal Cascade": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Thermalkaskade",
       "fr": null,
       "ru": "Термический залп",
       "pl": null,
@@ -4456,7 +4456,7 @@
     "Dazzle Shell": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Blendgranate",
       "fr": null,
       "ru": "Ослепляющие снаряды",
       "pl": null,
@@ -4465,7 +4465,7 @@
     "Drag Munition": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ableitungsmunition",
       "fr": null,
       "ru": "Замедляющие боеприпасы",
       "pl": null,
@@ -4474,7 +4474,7 @@
     "Screening Shell": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Sperrgranate",
       "fr": null,
       "ru": "Заслоняющие снаряды",
       "pl": null,
@@ -4483,7 +4483,7 @@
     "Drag Munition (Seeker only)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ableitungsmunition (nur Suchraketen)",
       "fr": null,
       "ru": "Замедляющие боеприпасы (лоток с самонаведением)",
       "pl": null,
@@ -4492,7 +4492,7 @@
     "Overload Munitions": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Überladungsmunition",
       "fr": null,
       "ru": "Вызывающие перегрузку боеприпасы",
       "pl": null,
@@ -4501,7 +4501,7 @@
     "Penetrator Munitions (Dumbfire only)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Penetrationsmunition",
       "fr": null,
       "ru": "Бронебойные боеголовки",
       "pl": null,
@@ -4510,7 +4510,7 @@
     "FSD Interrupt (Dumbfire only)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "FSA-Unterbrechung (nur Dumbfire)",
       "fr": null,
       "ru": "Помеха для FSD",
       "pl": null,
@@ -4519,7 +4519,7 @@
     "Mass Lock Munition": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Massesperremunition",
       "fr": null,
       "ru": "Боеприпасы с гравитационным захватом",
       "pl": null,
@@ -4528,7 +4528,7 @@
     "Penetrator Payload": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Penetrationsmunition",
       "fr": null,
       "ru": "Бронебойные снаряды",
       "pl": null,
@@ -4537,7 +4537,7 @@
     "Reverberating Cascade": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Rückstrahlkaskade",
       "fr": null,
       "ru": "Отраженный залп",
       "pl": null,
@@ -4546,7 +4546,7 @@
     "Ion Disruptor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ionen-Disruption",
       "fr": null,
       "ru": "Ионный дестабилизатор",
       "pl": null,
@@ -4555,7 +4555,7 @@
     "Radiant Canister": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Strahlenbehältnis",
       "fr": null,
       "ru": "Светящаяся кассета",
       "pl": null,
@@ -4564,7 +4564,7 @@
     "Shift-Lock Canister": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Frameshift-Blocker",
       "fr": null,
       "ru": "Рамоблокирующая кассета",
       "pl": null,
@@ -4591,7 +4591,7 @@
     "Feedback Cascade": {
       "es": null,
       "pt": null,
-      "de": "Feedback Cascade",
+      "de": "Rückkopplungskaskade",
       "fr": null,
       "ru": "Ответный залп",
       "pl": null,
@@ -4600,7 +4600,7 @@
     "Super Penetrator": {
       "es": null,
       "pt": null,
-      "de": "Super Penetrator",
+      "de": "Super-Durchdringer",
       "fr": null,
       "ru": "Модуль сверхпробития",
       "pl": null,
@@ -4717,7 +4717,7 @@
     "Deep Plating": {
       "es": null,
       "pt": null,
-      "de": "Tiefenbeschichtung",
+      "de": "Tiefenüberzug",
       "fr": null,
       "ru": "Утолщенная броня",
       "pl": null,
@@ -4771,7 +4771,7 @@
     "Super Capacitor": {
       "es": null,
       "pt": null,
-      "de": "Superkondensator",
+      "de": "Superkondensatoren",
       "fr": null,
       "ru": "Суперконденсатор",
       "pl": null,
@@ -4798,7 +4798,7 @@
     "Fast Charge": {
       "es": null,
       "pt": null,
-      "de": "Schnellladung",
+      "de": "Schnelllader",
       "fr": null,
       "ru": "Быстрый заряд",
       "pl": null,
@@ -4825,7 +4825,7 @@
     "Mass Manager": {
       "es": null,
       "pt": null,
-      "de": "Massenmanager",
+      "de": "Massemanager",
       "fr": null,
       "ru": "Распределитель гравитации",
       "pl": null,
@@ -4843,7 +4843,7 @@
     "Drag Drives": {
       "es": null,
       "pt": null,
-      "de": "Drag Drives",
+      "de": "Drag Antriebe",
       "fr": null,
       "ru": "Ускорители",
       "pl": null,
@@ -4852,7 +4852,7 @@
     "Super Conduits": {
       "es": null,
       "pt": null,
-      "de": "Superschläuche",
+      "de": "Superleiter",
       "fr": null,
       "ru": "Сверхпроводники",
       "pl": null,
@@ -4971,7 +4971,7 @@
       "pt": null,
       "de": "API AN",
       "fr": null,
-      "ru": null,
+      "ru": "API ВКЛ",
       "pl": null,
       "cs": "API zapnuto"
     },
@@ -4980,9 +4980,531 @@
       "pt": null,
       "de": "API AUS",
       "fr": null,
-      "ru": null,
+      "ru": "API ВЫКЛ",
       "pl": null,
       "cs": "API vypnuto"
+    },
+    "Long Range FSD Interdictor": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "FSD-перехватчик большой дальности",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmaladermunition",
+      "fr": null,
+      "ru": "Боеприпасы для плазменных пушек стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Gauss Cannon Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Gausskannonenmunition",
+      "fr": null,
+      "ru": "Боеприпасы для пушек Гаусса стражей",
+      "pl": null,
+      "cs": null
+    },
+    "AX Small Calibre Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Kleinkalibrige Munition (AX)",
+      "fr": null,
+      "ru": "Мелкокалиберные боеприпасы АИ",
+      "pl": null,
+      "cs": null
+    },
+    "+5% Damage Boost": {
+      "es": null,
+      "pt": null,
+      "de": "Bonus Schaden: +5%",
+      "fr": null,
+      "ru": "+5% к урону",
+      "pl": null,
+      "cs": null
+    },
+    "+10% Damage Boost": {
+      "es": null,
+      "pt": null,
+      "de": "Bonus Schaden: +10%",
+      "fr": null,
+      "ru": "+10% к урону",
+      "pl": null,
+      "cs": null
+    },
+    "AX Remote Flak Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Munition für Ferngezündete Flak (AX)",
+      "fr": null,
+      "ru": "Зенитные снаряды с дистанционным подрывом АИ",
+      "pl": null,
+      "cs": null
+    },
+    "Enzyme Missile Launcher Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Enzymraketenwerfermunition",
+      "fr": null,
+      "ru": "Боеприпасы для энзимных ракетных установок",
+      "pl": null,
+      "cs": null
+    },
+    "Flechette Launcher Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Flechettewerfermunition",
+      "fr": null,
+      "ru": "Стреловидные боеприпасы",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanonenmunition",
+      "fr": null,
+      "ru": "Боеприпасы для осколочных орудий стражей",
+      "pl": null,
+      "cs": null
+    },
+    "AX Explosive Munitions": {
+      "es": null,
+      "pt": null,
+      "de": "Explosivmunition (AX)",
+      "fr": null,
+      "ru": "Взрывчатые боеприпасы АИ",
+      "pl": null,
+      "cs": null
+    },
+    "+5% Damage": {
+      "es": null,
+      "pt": null,
+      "de": "Bonus Schaden: +5%",
+      "fr": null,
+      "ru": "+5% к урону",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Gauss Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
+      "fr": null,
+      "ru": "Пушка Гаусса стражей (фиксированное, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Gauss Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
+      "fr": null,
+      "ru": "Пушка Гаусса стражей (фиксированное, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Hull Reinforcement": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Rumpfhüllenverstärkung",
+      "fr": null,
+      "ru": "Набор для усиления корпуса стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Module Reinforcement": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Modulverstärkung",
+      "fr": null,
+      "ru": "Набор для усиления модуля стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Fixed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
+      "fr": null,
+      "ru": "Плазменная пушка стражей (фиксированное, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmalader (Fest) (Klasse: 2)",
+      "fr": null,
+      "ru": "Плазменная пушка стражей (фиксированное, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmalader (Fest) (Klasse: 1)",
+      "fr": null,
+      "ru": "Плазменная пушка стражей (фиксированное, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Turreted, Large)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmalader (Turm) (Klasse: 3)",
+      "fr": null,
+      "ru": "Плазменная пушка стражей (турель, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Turreted, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmalader (Turm) (Klasse: 2)",
+      "fr": null,
+      "ru": "Плазменная пушка стражей (турель, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Plasma Charger (Turreted, Small)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Plasmalader (Turm) (Klasse: 1)",
+      "fr": null,
+      "ru": "Плазменная пушка стражей (турель, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian FSD Booster": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Frameshiftantrieb-Booster",
+      "fr": null,
+      "ru": "Ускоритель FSD стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Power Distributor": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Energieverteiler",
+      "fr": null,
+      "ru": "Распределитель питания стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Fixed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanone (Fest) (Klasse: 3)",
+      "fr": null,
+      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanone (Fest) (Klasse: 2)",
+      "fr": null,
+      "ru": "Осколочное орудие стражей (фиксированное, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanone (Fest) (Klasse: 1)",
+      "fr": null,
+      "ru": "Осколочное орудие стражей (фиксированное, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Turreted, Large)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanone (Turm) (Klasse: 3)",
+      "fr": null,
+      "ru": "Осколочное орудие стражей (турель, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Turreted, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanone (Turm) (Klasse: 2)",
+      "fr": null,
+      "ru": "Осколочное орудие стражей (турель, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shard Cannon (Turreted, Small)": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Fragmentkanone (Turm) (Klasse: 1)",
+      "fr": null,
+      "ru": "Осколочное орудие стражей (турель, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Shield Reinforcement": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Schildverstärkung",
+      "fr": null,
+      "ru": "Набор для усиления щита стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Javelin (Fighter)": {
+      "es": null,
+      "pt": null,
+      "de": "Javelin (Fighter)",
+      "fr": null,
+      "ru": "Javelin (Истребитель)",
+      "pl": null,
+      "cs": null
+    },
+    "Lance (Fighter)": {
+      "es": null,
+      "pt": null,
+      "de": "Lance (Fighter)",
+      "fr": null,
+      "ru": "Lance (Истребитель)",
+      "pl": null,
+      "cs": null
+    },
+    "Trident (Fighter)": {
+      "es": null,
+      "pt": null,
+      "de": "Trident (Fighter)",
+      "fr": null,
+      "ru": "Trident (Истребитель)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Fixed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (фиксированное, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (фиксированное, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Gimballed, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (на карданной подвеске, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Gimballed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (на карданной подвеске, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Gimballed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (на карданной подвеске, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Turreted, Large)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (турель, большой слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Turreted, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (турель, средний слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Shock Cannon (Turreted, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": "Шоковое орудие (турель, малый слот)",
+      "pl": null,
+      "cs": null
+    },
+    "Ship Value:": {
+      "es": null,
+      "pt": null,
+      "de": "Wert dieses Shiffs",
+      "fr": null,
+      "ru": "Стоимость корабля:",
+      "pl": null,
+      "cs": null
+    },
+    "Modules Value:": {
+      "es": null,
+      "pt": null,
+      "de": "Wert der Module",
+      "fr": null,
+      "ru": "Стоимость модулей:",
+      "pl": null,
+      "cs": null
+    },
+    "Rebuy:": {
+      "es": null,
+      "pt": null,
+      "de": "Ersatzwert",
+      "fr": null,
+      "ru": "Страховка:",
+      "pl": null,
+      "cs": null
+    },
+    "Loadout": {
+      "es": null,
+      "pt": null,
+      "de": "Ausrüstung",
+      "fr": null,
+      "ru": "Оснащение",
+      "pl": null,
+      "cs": null
+    },
+    "Cargo History (require API)": {
+      "es": null,
+      "pt": null,
+      "de": "Fracht Historie (Benötigt API)",
+      "fr": null,
+      "ru": "История грузов (необходимо API)",
+      "pl": null,
+      "cs": null
+    },
+    "Hardpoints": {
+      "es": null,
+      "pt": null,
+      "de": "Aufhängungen",
+      "fr": null,
+      "ru": "Орудийные гнезда",
+      "pl": null,
+      "cs": null
+    },
+    "Utilities": {
+      "es": null,
+      "pt": null,
+      "de": "Werkzeuge",
+      "fr": null,
+      "ru": "Крепления утилит",
+      "pl": null,
+      "cs": null
+    },
+    "Core Internal": {
+      "es": null,
+      "pt": null,
+      "de": "Intern (Basis)",
+      "fr": null,
+      "ru": "Зарезервированные слоты",
+      "pl": null,
+      "cs": null
+    },
+    "Optional Internal": {
+      "es": null,
+      "pt": null,
+      "de": "Intern (Optional)",
+      "fr": null,
+      "ru": "Опциональные модули",
+      "pl": null,
+      "cs": null
+    },
+    "Others/Livery": {
+      "es": null,
+      "pt": null,
+      "de": "Diverses/Lackierung",
+      "fr": null,
+      "ru": "Прочее/Декали",
+      "pl": null,
+      "cs": null
+    },
+    "Occupied Escape Pod": {
+      "es": null,
+      "pt": null,
+      "de": "Besetzte Rettungskapsel",
+      "fr": null,
+      "ru": "Спасательная капсула с пассажиром",
+      "pl": null,
+      "cs": null
+    },
+    "Progenitor Cells": {
+      "es": null,
+      "pt": null,
+      "de": "Vorläuferzellen",
+      "fr": null,
+      "ru": "Прогениторные клетки",
+      "pl": null,
+      "cs": null
+    },
+    "Sync?": {
+      "es": null,
+      "pt": null,
+      "de": "Synchronisieren?",
+      "fr": null,
+      "ru": "Синхронизировать?",
+      "pl": null,
+      "cs": null
+    },
+    "Guardian Wreckage Components": {
+      "es": null,
+      "pt": null,
+      "de": "Guardian-Wrackteilkomponenten",
+      "fr": null,
+      "ru": "Обломки часовых стражей",
+      "pl": null,
+      "cs": null
+    },
+    "Reload all data": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
     }
   }
 }

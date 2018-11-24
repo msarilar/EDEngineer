@@ -70,7 +70,7 @@ namespace EDEngineer.Views
             set { apiOn = value; OnPropertyChanged(); }
         }
 
-        public MainWindowViewModel(Languages languages, string directory, bool fresh)
+        public MainWindowViewModel(Languages languages, string directory)
         {
             logDirectory = directory;
             entryDatas =
@@ -84,19 +84,29 @@ namespace EDEngineer.Views
                 SettingsManager.Comparer = Comparers.First();
             }
 
-            LoadState(fresh);
+            LoadState();
 
             CurrentComparer = SettingsManager.Comparer;
         }
 
-        private void LoadState(bool fresh)
+        private void LoadState()
         {
             LogWatcher?.Dispose();
             LogWatcher = new LogWatcher(LogDirectory);
 
             Commanders.Clear();
 
-            var aggregation = fresh ? GetAggregation() : null;
+            CommanderAggregation aggregation = null;
+
+            if (Settings.Default.ClearAggregation)
+            {
+                Settings.Default.ClearAggregation = false;
+                Settings.Default.Save();
+            }
+            else
+            {
+                aggregation = GetAggregation();
+            }
 
             if (aggregation == null || !aggregation.Aggregations.Any())
             {

@@ -938,6 +938,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -948,6 +949,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -958,6 +960,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -968,6 +971,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -978,6 +982,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
+    "Group": "Guardian",
     "MaximumCapacity": 150
   },
   {
@@ -1465,7 +1470,10 @@
     "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Ship scanning (Thargoid interceptors)"
+    ]
   },
   {
     "Name": "Meta-alloys",
@@ -1590,6 +1598,37 @@
     ]
   },
   {
+    "Name": "Progenitor Cells",
+    "Rarity": "None",
+    "FormattedName": "progenitorcells",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Markets (High Tech)",
+      "Needed for Petra Olmanova (200)"
+    ]
+  },
+  {
+    "Name": "Osmium",
+    "Rarity": "None",
+    "FormattedName": "osmium",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Mining (Metallic rings)",
+      "Needed for Marsha Hicks (10)"
+    ]
+  },
+  {
+    "Name": "Occupied Escape Pod",
+    "Rarity": "None",
+    "FormattedName": "occupiedcryopod",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Needed for Etienne Dorn (25)",
+      "Degraded Emissions Signal Sources",
+      "Distress Call POI in Luchtaine"
+    ]
+  },
+  {
     "Name": "Hardware Diagnostic Sensor",
     "Rarity": "None",
     "FormattedName": "diagnosticsensor",
@@ -1603,21 +1642,30 @@
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Base scanning (Thargoid uplink devices)"
+    ]
   },
   {
     "Name": "Thargoid Residue Data",
     "Rarity": "Rare",
     "FormattedName": "tg_residuedata",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Base scanning (Thargoid uplink devices)"
+    ]
   },
   {
     "Name": "Thargoid Structural Data",
     "Rarity": "Common",
     "FormattedName": "tg_structuraldata",
     "Kind": "Data",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Base scanning (Thargoid uplink devices)"
+    ]
   },
   {
     "Name": "Thargoid Carapace",
@@ -1625,7 +1673,10 @@
     "FormattedName": "unknowncarapace",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Energy Cell",
@@ -1633,7 +1684,10 @@
     "FormattedName": "unknownenergycell",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Organic Circuitry",
@@ -1641,7 +1695,10 @@
     "FormattedName": "unknownorganiccircuitry",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Technological Components",
@@ -1649,64 +1706,95 @@
     "FormattedName": "unknowntechnologycomponents",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid"
+    "Group": "Thargoid",
+    "OriginDetails": [
+      "Thargoid scavengers"
+    ]
   },
   {
     "Name": "Thargoid Wake Data",
     "Rarity": "Rare",
     "FormattedName": "unknownwakedata",
     "Kind": "Data",
+    "OriginDetails": [
+      "High wake scanning (Thargoid interceptors)"
+    ],
     "Group": "Thargoid"
   },
   {
     "Name": "Ship Flight Data",
     "Rarity": "Rare",
     "FormattedName": "tg_shipflightdata",
-    "Kind": "Data"
+    "Kind": "Data",
+    "OriginDetails": [
+      "Ship scanning (Thargoid interceptors)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Ship System Data",
     "Rarity": "Rare",
     "FormattedName": "tg_shipsystemsdata",
-    "Kind": "Data"
+    "Kind": "Data",
+    "OriginDetails": [
+      "Ship scanning (Thargoid interceptors)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Wreckage Components",
     "Rarity": "Standard",
     "FormattedName": "tg_wreckagecomponents",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Bio-Mechanical Conduits",
     "Rarity": "Standard",
     "FormattedName": "tg_biomechanicalconduits",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Weapon Parts",
     "Rarity": "Rare",
     "FormattedName": "tg_weaponparts",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Propulsion Elements",
     "Rarity": "VeryRare",
     "FormattedName": "tg_propulsionelement",
     "Kind": "Material",
-    "Subkind": "Manufactured"
+    "Subkind": "Manufactured",
+    "OriginDetails": [
+      "Ship salvage (Thargoid ships)"
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Guardian Weapon Blueprint Segment",
-    "Rarity": "Rare",
+    "Rarity": "VeryRare",
     "FormattedName": "guardian_weaponblueprint",
     "Kind": "Data",
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "Guardian",
+    "MaximumCapacity": 150
   },
   {
     "Name": "Guardian Power Cell",
@@ -1760,7 +1848,8 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "Guardian",
+    "MaximumCapacity": 150
   },
   {
     "Name": "Guardian Wreckage Components",
@@ -1775,7 +1864,7 @@
   },
   {
     "Name": "Guardian Vessel Blueprint Segment",
-    "Rarity": "Rare",
+    "Rarity": "VeryRare",
     "FormattedName": "guardian_vesselblueprint",
     "Kind": "Data",
     "OriginDetails": [

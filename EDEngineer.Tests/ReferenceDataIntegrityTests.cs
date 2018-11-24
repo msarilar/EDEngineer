@@ -77,7 +77,11 @@ namespace EDEngineer.Tests
                 "The Sarge",
                 "Tiana Fortune",
                 "Tod McQuinn",
-                "Zacariah Nemo"
+                "Zacariah Nemo",
+                "Petra Olmanova",
+                "Marsha Hicks",
+                "Etienne Dorn",
+                "Mel Brandon"
             };
 
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
