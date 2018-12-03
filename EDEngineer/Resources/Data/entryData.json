@@ -1723,7 +1723,7 @@
   },
   {
     "Name": "Ship Flight Data",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "tg_shipflightdata",
     "Kind": "Data",
     "OriginDetails": [
