@@ -28359,7 +28359,10 @@
       {
         "Name": "Focus Crystals",
         "Size": 10
-      }
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 6
     ],
     "Grade": 3
   },
