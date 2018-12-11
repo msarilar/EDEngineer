@@ -30888,7 +30888,7 @@
   },
   {
     "Type": "Surface Scanner",
-    "Name": "Long Range Scanner",
+    "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
       "Etienne Dorn",
       "Bill Turner",
@@ -30896,260 +30896,58 @@
       "Lei Cheung",
       "Lori Jameson",
       "Tiana Fortune",
-      "Hera Tani",
-      "Felicity Farseer"
+      "Felicity Farseer",
+      "Hera Tani"
     ],
     "Ingredients": [
       {
-        "Name": "Iron",
+        "Name": "Mechanical Scrap",
         "Size": 1
       }
     ],
     "Effects": [
       {
-        "Effect": "+40%",
-        "Property": "Scan Range",
+        "Effect": "+10%",
+        "Property": "Probe Radius",
         "IsGood": true
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Surface Scanner",
+    "Name": "Expanded Probe Scanning Radius",
+    "Engineers": [
+      "Bill Turner",
+      "Juri Ishmaak",
+      "Hera Tani",
+      "Lei Cheung",
+      "Lori Jameson",
+      "Tiana Fortune",
+      "Felicity Farseer"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 1
       },
+      {
+        "Name": "Germanium",
+        "Size": 1
+      }
+    ],
+    "Effects": [
       {
         "Effect": "+20%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 1,
-    "CoriolisGuid": "c35f597e-dac8-4e38-8648-e2cb0018006c"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Long Range Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lei Cheung",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Hera Tani",
-      "Felicity Farseer"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Hybrid Capacitors",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+80%",
-        "Property": "Scan Range",
+        "Property": "Probe Radius",
         "IsGood": true
-      },
-      {
-        "Effect": "+40%",
-        "Property": "Mass",
-        "IsGood": false
       }
     ],
-    "Grade": 2,
-    "CoriolisGuid": "5d607664-6ec6-4fdd-b692-4d3621c76150"
+    "Grade": 2
   },
   {
     "Type": "Surface Scanner",
-    "Name": "Long Range Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Hera Tani",
-      "Lei Cheung",
-      "Felicity Farseer"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Iron",
-        "Size": 1
-      },
-      {
-        "Name": "Hybrid Capacitors",
-        "Size": 1
-      },
-      {
-        "Name": "Unexpected Emission Data",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+120%",
-        "Property": "Scan Range",
-        "IsGood": true
-      },
-      {
-        "Effect": "+60%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 3,
-    "CoriolisGuid": "e438dda9-1b0d-47e0-be07-295c17b56c2b"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Long Range Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lori Jameson",
-      "Hera Tani",
-      "Lei Cheung"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Germanium",
-        "Size": 1
-      },
-      {
-        "Name": "Electrochemical Arrays",
-        "Size": 1
-      },
-      {
-        "Name": "Decoded Emission Data",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+160%",
-        "Property": "Scan Range",
-        "IsGood": true
-      },
-      {
-        "Effect": "+80%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 4,
-    "CoriolisGuid": "07ea5b4c-8ea7-44fb-8b0b-d38149dff798"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Long Range Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lori Jameson",
-      "Hera Tani",
-      "Lei Cheung"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Niobium",
-        "Size": 1
-      },
-      {
-        "Name": "Polymer Capacitors",
-        "Size": 1
-      },
-      {
-        "Name": "Abnormal Compact Emission Data",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+200%",
-        "Property": "Scan Range",
-        "IsGood": true
-      },
-      {
-        "Effect": "+100%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 5,
-    "CoriolisGuid": "885ea8d3-3b00-481c-894c-e8ea8dd9f7e5"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Wide Angle Scanner",
-    "Engineers": [
-      "Etienne Dorn",
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Hera Tani",
-      "Lei Cheung",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Felicity Farseer"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Mechanical Scrap",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+40%",
-        "Property": "Scan Angle",
-        "IsGood": true
-      },
-      {
-        "Effect": "+20%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 1,
-    "CoriolisGuid": "74d12e8c-a62a-4812-b7f4-9e3356963206"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Wide Angle Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lei Cheung",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Hera Tani",
-      "Felicity Farseer"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Mechanical Scrap",
-        "Size": 1
-      },
-      {
-        "Name": "Germanium",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+80%",
-        "Property": "Scan Angle",
-        "IsGood": true
-      },
-      {
-        "Effect": "+40%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 2,
-    "CoriolisGuid": "4e76da64-72ea-4112-a5e8-4c14fc2efe57"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Wide Angle Scanner",
+    "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
       "Bill Turner",
       "Juri Ishmaak",
@@ -31169,28 +30967,22 @@
         "Size": 1
       },
       {
-        "Name": "Classified Scan Databanks",
+        "Name": "Phase Alloys",
         "Size": 1
       }
     ],
     "Effects": [
       {
-        "Effect": "+120%",
-        "Property": "Scan Angle",
+        "Effect": "+30%",
+        "Property": "Probe Radius",
         "IsGood": true
-      },
-      {
-        "Effect": "+60%",
-        "Property": "Mass",
-        "IsGood": false
       }
     ],
-    "Grade": 3,
-    "CoriolisGuid": "e09980d9-b243-4d0f-8645-441552acb58e"
+    "Grade": 3
   },
   {
     "Type": "Surface Scanner",
-    "Name": "Wide Angle Scanner",
+    "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
       "Bill Turner",
       "Juri Ishmaak",
@@ -31208,28 +31000,22 @@
         "Size": 1
       },
       {
-        "Name": "Divergent Scan Data",
+        "Name": "Proto Light Alloys",
         "Size": 1
       }
     ],
     "Effects": [
       {
-        "Effect": "+160%",
-        "Property": "Scan Angle",
+        "Effect": "+40%",
+        "Property": "Probe Radius",
         "IsGood": true
-      },
-      {
-        "Effect": "+80%",
-        "Property": "Mass",
-        "IsGood": false
       }
     ],
-    "Grade": 4,
-    "CoriolisGuid": "ed5c2046-bb49-4e48-8799-8c96db420359"
+    "Grade": 4
   },
   {
     "Type": "Surface Scanner",
-    "Name": "Wide Angle Scanner",
+    "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
       "Bill Turner",
       "Juri Ishmaak",
@@ -31247,214 +31033,18 @@
         "Size": 1
       },
       {
-        "Name": "Classified Scan Fragment",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+200%",
-        "Property": "Scan Angle",
-        "IsGood": true
-      },
-      {
-        "Effect": "+100%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 5,
-    "CoriolisGuid": "2b315099-a97d-43a8-958e-3c26c97b4421"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Fast Scanner",
-    "Engineers": [
-      "Etienne Dorn",
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lei Cheung",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Felicity Farseer",
-      "Hera Tani"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Phosphorus",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+20%",
-        "Property": "Scan Rate",
-        "IsGood": true
-      },
-      {
-        "Effect": "+20%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 1,
-    "CoriolisGuid": "97940d61-5b9a-4b0e-8cfd-33f2175b956a"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Fast Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Hera Tani",
-      "Lei Cheung",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Felicity Farseer"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Phosphorus",
-        "Size": 1
-      },
-      {
-        "Name": "Flawed Focus Crystals",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+35%",
-        "Property": "Scan Rate",
-        "IsGood": true
-      },
-      {
-        "Effect": "+40%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 2,
-    "CoriolisGuid": "d5c0c74d-a4ff-45ed-a732-3c68aded4e06"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Fast Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lori Jameson",
-      "Tiana Fortune",
-      "Hera Tani",
-      "Lei Cheung",
-      "Felicity Farseer"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Phosphorus",
-        "Size": 1
-      },
-      {
-        "Name": "Flawed Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Open Symmetric Keys",
+        "Name": "Proto Radiolic Alloys",
         "Size": 1
       }
     ],
     "Effects": [
       {
         "Effect": "+50%",
-        "Property": "Scan Rate",
+        "Property": "Probe Radius",
         "IsGood": true
-      },
-      {
-        "Effect": "+60%",
-        "Property": "Mass",
-        "IsGood": false
       }
     ],
-    "Grade": 3,
-    "CoriolisGuid": "ca9fc2bb-948e-43f4-b2f2-7bea95509d63"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Fast Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lori Jameson",
-      "Hera Tani",
-      "Lei Cheung"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Manganese",
-        "Size": 1
-      },
-      {
-        "Name": "Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Atypical Encryption Archives",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+65%",
-        "Property": "Scan Rate",
-        "IsGood": true
-      },
-      {
-        "Effect": "+80%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 4,
-    "CoriolisGuid": "ef254d05-630e-41b4-9e0f-d6ea0002b1fc"
-  },
-  {
-    "Type": "Surface Scanner",
-    "Name": "Fast Scanner",
-    "Engineers": [
-      "Bill Turner",
-      "Juri Ishmaak",
-      "Lori Jameson",
-      "Hera Tani",
-      "Lei Cheung"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Arsenic",
-        "Size": 1
-      },
-      {
-        "Name": "Refined Focus Crystals",
-        "Size": 1
-      },
-      {
-        "Name": "Adaptive Encryptors Capture",
-        "Size": 1
-      }
-    ],
-    "Effects": [
-      {
-        "Effect": "+80%",
-        "Property": "Scan Rate",
-        "IsGood": true
-      },
-      {
-        "Effect": "+100%",
-        "Property": "Mass",
-        "IsGood": false
-      }
-    ],
-    "Grade": 5,
-    "CoriolisGuid": "5938bc5c-cd01-4429-a04c-33f53b6b7027"
+    "Grade": 5
   },
   {
     "Type": "Manifest Scanner",
