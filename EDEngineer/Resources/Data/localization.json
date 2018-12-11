@@ -3788,7 +3788,7 @@
       "cs": "Pouze surové(Raw only)"
     },
     "Manufactured": {
-      "es": null,
+      "es": "Manufacturado(s)",
       "pt": "Fabricado",
       "de": "hergestellt",
       "fr": "Manufacturé(s)",
@@ -3797,7 +3797,7 @@
       "cs": "Vyrobené(Manufactured)"
     },
     "Manufactured Only": {
-      "es": null,
+      "es": "Solo manufacturado(s)",
       "pt": "Apenas Fabricado",
       "de": "nur hergestellt",
       "fr": "Uniquement manufacturé(s)",
@@ -3806,7 +3806,7 @@
       "cs": "Pouze vyrobené(Manufact.only)"
     },
     "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
-      "es": null,
+      "es": "Ingrediente no reconocido (mostrando el nombre como aparece en los logs). Por favor abra un asunto en GitHub para notificar al autor cuál es el nombre real the este ingrediente!",
       "pt": "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
       "de": "Unbekannter Bestandteil (zeigt den Namen, wie er in den Protokollen erscheint). Bitte öffnen Sie ein GitHub-Issue, um den Autor wissen zu lassen, wie dieser wirklich heißt!",
       "fr": null,
@@ -3815,7 +3815,7 @@
       "cs": "Nerozpoznaná ingredience (Zobrazené jméno je tak, jak se vyskytuje v logu). Prosím otevřete požadavek na GitHubu a dejte vědět autorovi správný název ingredience!"
     },
     "Group ingredients?": {
-      "es": null,
+      "es": "Grupo de ingredientes?",
       "pt": null,
       "de": "Gruppenzutaten?",
       "fr": "Groupe d'ingrédients ?",
@@ -3824,7 +3824,7 @@
       "cs": "Seskupovat ingredience?"
     },
     "Unknown": {
-      "es": null,
+      "es": "Desconocido",
       "pt": "Desconhecido",
       "de": "Unbekannt",
       "fr": "Inconnu",
@@ -3833,7 +3833,7 @@
       "cs": "Neznámé"
     },
     "Carrying ": {
-      "es": null,
+      "es": "Transportando",
       "pt": null,
       "de": "Trasportieren ",
       "fr": "Capacité",
@@ -3842,7 +3842,7 @@
       "cs": "Vlastněno "
     },
     "Emission Data": {
-      "es": null,
+      "es": "Datos de emisión",
       "pt": null,
       "de": "Emissionsdaten",
       "fr": "Données d'émission",
@@ -3851,7 +3851,7 @@
       "cs": "Emission Data"
     },
     "Wake Scans": {
-      "es": null,
+      "es": "Escaneos de estela",
       "pt": null,
       "de": "Sogwolken Scans",
       "fr": "Données de sillages",
@@ -3860,7 +3860,7 @@
       "cs": "Wake Scans"
     },
     "Shield Data": {
-      "es": null,
+      "es": "Datos de escudo",
       "pt": null,
       "de": "Schilddaten",
       "fr": "Données de bouclier",
@@ -3869,7 +3869,7 @@
       "cs": "Shield Data"
     },
     "Encryption Files": {
-      "es": null,
+      "es": "Archivos de encriptación",
       "pt": null,
       "de": "Verschlüsselungsdaten",
       "fr": "Fichiers cryptés",
@@ -3878,7 +3878,7 @@
       "cs": "Encryption Files"
     },
     "Data Archives": {
-      "es": null,
+      "es": "Archivos de datos",
       "pt": null,
       "de": "Datenarchive",
       "fr": "Archives de données",
@@ -3896,7 +3896,7 @@
       "cs": "Encoded Firmware"
     },
     "Category 1": {
-      "es": null,
+      "es": "Categoría 1",
       "pt": "Categoria 1",
       "de": "Kategorie 1",
       "fr": "Matériaux bruts - Catégorie 1",
@@ -3905,7 +3905,7 @@
       "cs": "Kategorie 1"
     },
     "Category 2": {
-      "es": null,
+      "es": "Categoría 2",
       "pt": "Categoria 2",
       "de": "Kategorie 2",
       "fr": "Matériaux bruts - Catégorie 2",
@@ -3914,7 +3914,7 @@
       "cs": "Kategorie 2"
     },
     "Category 3": {
-      "es": null,
+      "es": "Categoría 3",
       "pt": "Categoria 3",
       "de": "Kategorie 3",
       "fr": "Matériaux bruts - Catégorie 3",
@@ -3923,7 +3923,7 @@
       "cs": "Kategorie 3"
     },
     "Category 4": {
-      "es": null,
+      "es": "Categoría 4",
       "pt": "Categoria 4",
       "de": "Kategorie 4",
       "fr": "Matériaux bruts - Catégorie 4",
@@ -3932,7 +3932,7 @@
       "cs": "Kategorie 4"
     },
     "Category 5": {
-      "es": null,
+      "es": "Categoría 5",
       "pt": "Categoria 5",
       "de": "Kategorie 5",
       "fr": "Matériaux bruts - Catégorie 5",
@@ -3941,7 +3941,7 @@
       "cs": "Kategorie 5"
     },
     "Category 6": {
-      "es": null,
+      "es": "Categoría 6",
       "pt": "Categoria 6",
       "de": "Kategorie 6",
       "fr": "Matériaux bruts - Catégorie 6",
@@ -3950,7 +3950,7 @@
       "cs": "Kategorie 6"
     },
     "Category 7": {
-      "es": null,
+      "es": "Categoría 7",
       "pt": "Categoria 7",
       "de": "Kategorie 7",
       "fr": "Matériaux bruts - Catégorie 7",
@@ -3959,7 +3959,7 @@
       "cs": "Kategorie 7"
     },
     "Chemical": {
-      "es": null,
+      "es": "Químico",
       "pt": null,
       "de": "Chemikalien",
       "fr": "Produits chimiques",
@@ -3968,7 +3968,7 @@
       "cs": "Chemické (Chemical)"
     },
     "Thermic": {
-      "es": null,
+      "es": "Térmico",
       "pt": "Térmico",
       "de": "Thermisch",
       "fr": "Thermiques",
@@ -3977,7 +3977,7 @@
       "cs": "Termické (Thermic)"
     },
     "Heat": {
-      "es": null,
+      "es": "Calor",
       "pt": null,
       "de": "Hitze",
       "fr": "Chaleur",
@@ -3986,7 +3986,7 @@
       "cs": "Tepelné (Heat)"
     },
     "Conductive": {
-      "es": null,
+      "es": "Conductivo",
       "pt": null,
       "de": "Leiter",
       "fr": "Conducteurs",
@@ -3995,7 +3995,7 @@
       "cs": "Konduktivní (Conductive)"
     },
     "Capacitors": {
-      "es": null,
+      "es": "Condensadores",
       "pt": null,
       "de": "Kondensatoren",
       "fr": "Condensateurs",
@@ -4004,7 +4004,7 @@
       "cs": "Kondenzátory (Capacitors)"
     },
     "Shielding": {
-      "es": null,
+      "es": "Protección",
       "pt": null,
       "de": "Abschirmung",
       "fr": "Protection",
@@ -4013,7 +4013,7 @@
       "cs": "Stínění (Shielding)"
     },
     "Composite": {
-      "es": null,
+      "es": "Compuesto",
       "pt": null,
       "de": "Komposite",
       "fr": "Composites",
@@ -4022,7 +4022,7 @@
       "cs": "Kompozity (Composite)"
     },
     "Crystals": {
-      "es": null,
+      "es": "Cristales",
       "pt": null,
       "de": "Kristalle",
       "fr": "Cristaux",
@@ -4031,7 +4031,7 @@
       "cs": "Krystaly (Crystals)"
     },
     "Alloys": {
-      "es": null,
+      "es": "Aleaciones",
       "pt": "Ligas",
       "de": "Legierungen",
       "fr": "Alliages",
@@ -4040,7 +4040,7 @@
       "cs": "Slitiny (Alloys)"
     },
     "Lead": {
-      "es": null,
+      "es": "Plomo",
       "pt": "Chumbo",
       "de": "Blei",
       "fr": null,
@@ -4049,7 +4049,7 @@
       "cs": "Lead"
     },
     "Boron": {
-      "es": null,
+      "es": "Boro",
       "pt": "Boro",
       "de": "Bor",
       "fr": null,
@@ -4130,7 +4130,7 @@
       "cs": "Guardian Vessel Blueprint Segment"
     },
     "Human": {
-      "es": null,
+      "es": "Humano",
       "pt": "Humano",
       "de": "Menschlich",
       "fr": null,
@@ -4139,7 +4139,7 @@
       "cs": "Lidské"
     },
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
-      "es": null,
+      "es": "Bodega de carga resistente a corrosión (2D y 4D)",
       "pt": "Estante de Carga Anti-Corrosiva (2D e 4D)",
       "de": "Korrosionsresistentes Frachtegtell (2D and 4D)",
       "fr": null,
@@ -4157,7 +4157,7 @@
       "cs": "Enzyme Missile Rack"
     },
     "Guardian": {
-      "es": null,
+      "es": "Guardián",
       "pt": "Guardian",
       "de": "Guardian",
       "fr": null,
@@ -4166,7 +4166,7 @@
       "cs": "Guardiánské"
     },
     "Guardian Gauss Cannon (Fixed)": {
-      "es": null,
+      "es": "Cañón Gauss Guardián (Fijo)",
       "pt": "Canhão Gauss Guardian (Fixa)",
       "de": "Guardian-Gausskannone (Fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
@@ -4175,7 +4175,7 @@
       "cs": "Guardian Gauss Cannon (Fixed)"
     },
     "Guardian Plasma Charger (Fixed)": {
-      "es": null,
+      "es": "Cargador de Plasma Guardián (Fijo)",
       "pt": "Carregador de Plasma Guardian (Fixa)",
       "de": "Guardian-Plasmalader (Fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
@@ -4184,7 +4184,7 @@
       "cs": "Guardian Plasma Charger (Fixed)"
     },
     "Guardian Plasma Charger (Turreted)": {
-      "es": null,
+      "es": "Cargador de Plasma Guardián (Torreta)",
       "pt": "Carregador de Plasma Guardian (Torretada)",
       "de": "Guardian-Plasmalader (Turm)",
       "fr": "Chargeur à plasma - Guardians (Tourelle)",
@@ -4193,7 +4193,7 @@
       "cs": "Guardian Plasma Charger (Turreted)"
     },
     "Guardian Hybrid Power Plant": {
-      "es": null,
+      "es": "Núcleo de energía Guardián",
       "pt": "Gerador de Energia Guardian",
       "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
@@ -4229,7 +4229,7 @@
       "cs": "Remote Release Flechette Launcher (Turreted)"
     },
     "Shock Cannon (Fixed)": {
-      "es": null,
+      "es": "Cañon de choque (Fijo)",
       "pt": "Canhão Elétrico (Fixa)",
       "de": "Schock Kanone (Fest)",
       "fr": null,
@@ -4238,7 +4238,7 @@
       "cs": "Shock Cannon (Fixed)"
     },
     "Shock Cannon (Gimballed)": {
-      "es": null,
+      "es": "Cañon de choque (Guiado)",
       "pt": "Canhão Elétrico (Guiada)",
       "de": "Schock Kanone (Kardanisch)",
       "fr": null,
@@ -4247,7 +4247,7 @@
       "cs": "Shock Cannon (Gimballed)"
     },
     "Shock Cannon (Turreted)": {
-      "es": null,
+      "es": "Cañon de choque (Torreta)",
       "pt": "Canhão Elétrico (Torretada)",
       "de": "Schock Kanone (Turm)",
       "fr": null,
@@ -4256,7 +4256,7 @@
       "cs": "Shock Cannon (Turreted)"
     },
     "Concordant Sequence": {
-      "es": null,
+      "es": "Secuencia Concordante",
       "pt": null,
       "de": "gleichsinnige Sequenz",
       "fr": null,
@@ -4265,7 +4265,7 @@
       "cs": "Concordant Sequence"
     },
     "Regeneration Sequence": {
-      "es": null,
+      "es": "Secuencia de Regeneración",
       "pt": null,
       "de": "regenerierende Sequenz",
       "fr": null,
@@ -4274,7 +4274,7 @@
       "cs": "Regeneration Sequence"
     },
     "Thermal Conduit": {
-      "es": null,
+      "es": "Conductor Térmico",
       "pt": null,
       "de": "Hitzerohr",
       "fr": null,
@@ -4283,7 +4283,7 @@
       "cs": "Thermal Conduit"
     },
     "Thermal Shock": {
-      "es": null,
+      "es": "Choque Térmico",
       "pt": null,
       "de": "Thermischer Schock",
       "fr": null,
@@ -4292,7 +4292,7 @@
       "cs": "Thermal Shock"
     },
     "Thermal Vent": {
-      "es": null,
+      "es": "Respiradero Térmico",
       "pt": null,
       "de": "Thermische Entlastung",
       "fr": null,
@@ -4301,7 +4301,7 @@
       "cs": "Thermal Vent"
     },
     "Oversized": {
-      "es": null,
+      "es": "Sobredimensionado",
       "pt": null,
       "de": "Übergröße",
       "fr": null,
@@ -4310,7 +4310,7 @@
       "cs": "Oversized"
     },
     "Stripped Down": {
-      "es": null,
+      "es": "Despojado",
       "pt": null,
       "de": "Reduktion",
       "fr": null,
@@ -4337,7 +4337,7 @@
       "cs": "Flow Control"
     },
     "Inertial Impact": {
-      "es": null,
+      "es": "Impacto Inercial",
       "pt": null,
       "de": "Trägheitseinfluss",
       "fr": null,
@@ -4382,7 +4382,7 @@
       "cs": "Emissive Munitions"
     },
     "Auto Loader": {
-      "es": null,
+      "es": "Cargador automático",
       "pt": null,
       "de": "Auto-Laden",
       "fr": null,
@@ -4400,7 +4400,7 @@
       "cs": "Corrosive Shell"
     },
     "Incendiary Rounds": {
-      "es": null,
+      "es": "Rondas Incendiarias",
       "pt": null,
       "de": "Hitzesalven",
       "fr": null,
@@ -4409,7 +4409,7 @@
       "cs": "Incendiary Rounds"
     },
     "Smart Rounds": {
-      "es": null,
+      "es": "Rondas Inteligentes",
       "pt": null,
       "de": "Intelligente Munition",
       "fr": null,
@@ -4418,7 +4418,7 @@
       "cs": "Smart Rounds"
     },
     "Dispersal Field": {
-      "es": null,
+      "es": "Campo de Dispersión",
       "pt": null,
       "de": "Streuungsfeld",
       "fr": null,
@@ -4427,7 +4427,7 @@
       "cs": "Dispersal Field"
     },
     "Force Shell": {
-      "es": null,
+      "es": "Escudo de Fuerza",
       "pt": null,
       "de": "Impulsgranate",
       "fr": null,
@@ -4445,7 +4445,7 @@
       "cs": "High Yield Shell"
     },
     "Thermal Cascade": {
-      "es": null,
+      "es": "Cascada Térmica",
       "pt": null,
       "de": "Thermalkaskade",
       "fr": null,
@@ -4607,7 +4607,7 @@
       "cs": "Super Penetrator"
     },
     "@Technology": {
-      "es": null,
+      "es": "@Tecnología",
       "pt": null,
       "de": "@Technologie",
       "fr": null,
@@ -4616,7 +4616,7 @@
       "cs": "@Technologie"
     },
     "Module": {
-      "es": null,
+      "es": "Módulo",
       "pt": "Módulo",
       "de": "Module",
       "fr": null,
@@ -4625,7 +4625,7 @@
       "cs": "Moduly"
     },
     "Synthesis": {
-      "es": null,
+      "es": "Síntesis",
       "pt": null,
       "de": "Synthese",
       "fr": null,
@@ -4634,7 +4634,7 @@
       "cs": "Syntéza"
     },
     "Experimental": {
-      "es": null,
+      "es": "Experimental",
       "pt": "Experimental",
       "de": "Experimentell",
       "fr": null,
@@ -4643,7 +4643,7 @@
       "cs": "Experimentální"
     },
     "Technology": {
-      "es": null,
+      "es": "Tecnología",
       "pt": null,
       "de": "Technologie",
       "fr": null,
@@ -4652,7 +4652,7 @@
       "cs": "Technologie"
     },
     "Ancient/Guardian ruins": {
-      "es": null,
+      "es": "Ruinas Antíguas/Guardianes",
       "pt": null,
       "de": "Uralte/Guardian Ruinen",
       "fr": null,
@@ -4661,7 +4661,7 @@
       "cs": "Starobylé/Guardiánské ruiny"
     },
     "EDEngineer will try to remove blueprints from your shopping list if you craft them in game": {
-      "es": null,
+      "es": "EDEngineer intentará eliminar planos de tu lista si los creas en el juego",
       "pt": null,
       "de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
       "fr": null,
@@ -4688,7 +4688,7 @@
       "cs": "Monstered"
     },
     "Angled Plating": {
-      "es": null,
+      "es": "Blindaje Angulado",
       "pt": null,
       "de": "Abgewinkelte Beschichtung",
       "fr": null,
@@ -4697,7 +4697,7 @@
       "cs": "Angled Plating"
     },
     "Layered Plating": {
-      "es": null,
+      "es": "Blindaje Compuesto",
       "pt": null,
       "de": "Mehrschichtige Beschichtung",
       "fr": null,
@@ -4706,7 +4706,7 @@
       "cs": "Layered Plating"
     },
     "Reflective Plating": {
-      "es": null,
+      "es": "Blindaje Reflectante",
       "pt": null,
       "de": "Reflektierende Beschichtung",
       "fr": null,
@@ -4715,7 +4715,7 @@
       "cs": "Reflective Plating"
     },
     "Deep Plating": {
-      "es": null,
+      "es": "Blindaje Profundo",
       "pt": null,
       "de": "Tiefenüberzug",
       "fr": null,
@@ -4733,7 +4733,7 @@
       "cs": "Boss Cells"
     },
     "Recycling Cells": {
-      "es": null,
+      "es": "Celdas de Reciclaje",
       "pt": null,
       "de": "Recycling-Zellen",
       "fr": null,
@@ -4769,7 +4769,7 @@
       "cs": "Blast Block"
     },
     "Super Capacitor": {
-      "es": null,
+      "es": "Super Condensador",
       "pt": null,
       "de": "Superkondensatoren",
       "fr": null,
@@ -4796,7 +4796,7 @@
       "cs": "Multi-weave"
     },
     "Fast Charge": {
-      "es": null,
+      "es": "Carga Rápida",
       "pt": null,
       "de": "Schnelllader",
       "fr": null,
@@ -4814,7 +4814,7 @@
       "cs": "Lo-draw"
     },
     "Deep Charge": {
-      "es": null,
+      "es": "Carga Profunda",
       "pt": null,
       "de": "Tiefenladung",
       "fr": null,
@@ -4823,7 +4823,7 @@
       "cs": "Deep Charge"
     },
     "Mass Manager": {
-      "es": null,
+      "es": "Gestor de Masa",
       "pt": null,
       "de": "Massemanager",
       "fr": null,
@@ -4832,7 +4832,7 @@
       "cs": "Mass Manager"
     },
     "Drive Distributors": {
-      "es": null,
+      "es": "Distribuidores de Empuje",
       "pt": null,
       "de": "Antriebsverteiler",
       "fr": null,
@@ -4841,7 +4841,7 @@
       "cs": "Drive Distributors"
     },
     "Drag Drives": {
-      "es": null,
+      "es": "Impulsores de Arrastre",
       "pt": null,
       "de": "Drag Antriebe",
       "fr": null,
@@ -4850,7 +4850,7 @@
       "cs": "Drag Drives"
     },
     "Super Conduits": {
-      "es": null,
+      "es": "Superconductores",
       "pt": null,
       "de": "Superleiter",
       "fr": null,
@@ -4859,7 +4859,7 @@
       "cs": "Super Conduits"
     },
     "Cluster Capacitor": {
-      "es": null,
+      "es": "Condensador de Cluster",
       "pt": null,
       "de": "Cluster Kondensator",
       "fr": null,
@@ -4868,7 +4868,7 @@
       "cs": "Cluster Capacitor"
     },
     "Thargoid": {
-      "es": null,
+      "es": "Targoide",
       "pt": "Thargoid",
       "de": "Thargoid",
       "fr": null,
@@ -4886,7 +4886,7 @@
       "cs": "Získáno nejvíce v systému"
     },
     "System:": {
-      "es": null,
+      "es": "Sistema:",
       "pt": null,
       "de": "System:",
       "fr": null,
@@ -4895,7 +4895,7 @@
       "cs": "Systém:"
     },
     "You have:": {
-      "es": null,
+      "es": "Tienes:",
       "pt": null,
       "de": "Du hast:",
       "fr": null,
@@ -4904,7 +4904,7 @@
       "cs": "Máš"
     },
     "(already needed)": {
-      "es": null,
+      "es": "(Es Necesario)",
       "pt": null,
       "de": "(bereits benötigt)",
       "fr": null,
@@ -4913,7 +4913,7 @@
       "cs": "(také potřebuješ)"
     },
     "Shows material trading suggestion (taking into account your cargo and the entire shopping list).": {
-      "es": null,
+      "es": "Muestra sugerencia de comercio de materiales (teniendo en cuenta tu carga y la lista de componentes completa).",
       "pt": null,
       "de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
       "fr": null,
@@ -4922,7 +4922,7 @@
       "cs": "Zobrazuje návrh obchodování s materiálem (s ohledem na vaše cargo a celý nákupní seznam)."
     },
     "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
-      "es": null,
+      "es": "Las sugerencias están ordenadas por el tamaño de la transacción comparado con tu carga, menos una cantidad eventual necesaria para la lista de componentes.",
       "pt": null,
       "de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
       "fr": null,
@@ -4931,7 +4931,7 @@
       "cs": "Návrhy jsou seřazeny podle toho, jak velký bude obchod v porovnání s materiály ve tvém cargu. Mínus případné položky, které jsou zapotřebí v nákupním seznamu."
     },
     "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
-      "es": null,
+      "es": "Las entradas naranjas indican una sugerencia de comercio que no completará tus requisitos (pero puede que ayude).",
       "pt": null,
       "de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
       "fr": null,
@@ -4940,7 +4940,7 @@
       "cs": "Oranžové položky označují návrhy obchodu, které zcela nesplní tvůj požadavek, ale může ti pomoci."
     },
     "Materials Trader found at industrial economies, only trades in manufactured materials.": {
-      "es": null,
+      "es": "Los comerciantes de materiales encontrados en las economías industriales, solo hacen transacciones con materiales manufacturados.",
       "pt": null,
       "de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
       "fr": null,
@@ -4949,7 +4949,7 @@
       "cs": "Obchodník s materiály se může necházet v systémech s 'Industrial' ekonomikou, obchoduje pouze s vyrobenými materiály (Biotech conductors, Compound shielding atd.)."
     },
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
-      "es": null,
+      "es": "Los comerciantes de materiales encontrados en las economías de estracción y refinería, solo hacen transacciones con materias primas encontradas en superficies de planetas y anillos planetarios.",
       "pt": null,
       "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
       "fr": null,
@@ -4958,7 +4958,7 @@
       "cs": "Obchodník s materiály se může necházet v systémech s 'Extraction' a 'Rafinery ekonomikou', obchoduje pouze se surovými materiály, které se získávají na povrchu planet a při težbě v prstencích."
     },
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
-      "es": null,
+      "es": "Los comerciantes de materiales encontrados en las economías de alta tecnología y militares, solo hacen transacciones con materiales codificados.",
       "pt": null,
       "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
       "fr": null,
@@ -4967,7 +4967,7 @@
       "cs": "Obchodník s materiály se může necházet v systémech s 'High Tech' a 'Military ekonomikou', obchoduje pouze s daty."
     },
     "API ON": {
-      "es": null,
+      "es": "API encendida",
       "pt": null,
       "de": "API AN",
       "fr": null,
@@ -4976,7 +4976,7 @@
       "cs": "API zapnuto"
     },
     "API OFF": {
-      "es": null,
+      "es": "API apagada",
       "pt": null,
       "de": "API AUS",
       "fr": null,
@@ -4994,7 +4994,7 @@
       "cs": "Long Range FSD Interdictor"
     },
     "Guardian Plasma Charger Munitions": {
-      "es": null,
+      "es": "Munición de Cargador de Plasma Guardián",
       "pt": null,
       "de": "Guardian-Plasmaladermunition",
       "fr": null,
@@ -5003,7 +5003,7 @@
       "cs": "Munice do Guardian Plasma Charger"
     },
     "Guardian Gauss Cannon Munitions": {
-      "es": null,
+      "es": "Munición de Cañón Gauss Guardián",
       "pt": null,
       "de": "Guardian-Gausskannonenmunition",
       "fr": null,
@@ -5012,7 +5012,7 @@
       "cs": "Munice do Guardian Gauss Cannon"
     },
     "AX Small Calibre Munitions": {
-      "es": null,
+      "es": "Munición AX de calibre pequeño",
       "pt": null,
       "de": "Kleinkalibrige Munition (AX)",
       "fr": null,
@@ -5021,7 +5021,7 @@
       "cs": "Munice malé ráže do AX zbraní (AX MC)"
     },
     "+5% Damage Boost": {
-      "es": null,
+      "es": "Aumento de Daño +5%",
       "pt": null,
       "de": "Bonus Schaden: +5%",
       "fr": null,
@@ -5030,7 +5030,7 @@
       "cs": "+5% boost k poškození"
     },
     "+10% Damage Boost": {
-      "es": null,
+      "es": "Aumento de Daño +10%",
       "pt": null,
       "de": "Bonus Schaden: +10%",
       "fr": null,
@@ -5084,7 +5084,7 @@
       "cs": "Explozivní munice do AX zbraní (rakety)"
     },
     "+5% Damage": {
-      "es": null,
+      "es": "+5% Daño",
       "pt": null,
       "de": "Bonus Schaden: +5%",
       "fr": null,
