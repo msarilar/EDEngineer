@@ -1470,10 +1470,10 @@
     "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Meta-alloys",
@@ -1642,30 +1642,30 @@
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Residue Data",
     "Rarity": "Rare",
     "FormattedName": "tg_residuedata",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Structural Data",
     "Rarity": "Common",
     "FormattedName": "tg_structuraldata",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Carapace",
@@ -1673,10 +1673,10 @@
     "FormattedName": "unknowncarapace",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Energy Cell",
@@ -1684,10 +1684,10 @@
     "FormattedName": "unknownenergycell",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Organic Circuitry",
@@ -1695,10 +1695,10 @@
     "FormattedName": "unknownorganiccircuitry",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Technological Components",
@@ -1706,10 +1706,10 @@
     "FormattedName": "unknowntechnologycomponents",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "Thargoid"
   },
   {
     "Name": "Thargoid Wake Data",
