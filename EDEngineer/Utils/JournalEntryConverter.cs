@@ -301,6 +301,15 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractCargoDump(JObject data)
         {
+            // ED version 3.3 (December 11th 2018) made some breaking changes:
+            //  - Cargo event was added after buying/selling/scooping/ejecting commodities/limpets
+            //  - But unfortunately this Cargo event is different to normal Cargo event and does not contain the Inventory key (so it needs to be ignored)
+            //  - Note that when cmdr is loaded/game is started, Cargo event DOES contain the Inventory field
+            if (data["Inventory"] == null)
+            {
+                return null;
+            }
+
             var dump = new DumpOperation
             {
                 ResetFilter = new HashSet<Kind>
