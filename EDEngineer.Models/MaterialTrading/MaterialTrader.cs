@@ -12,7 +12,7 @@ namespace EDEngineer.Models.MaterialTrading
         {
             var ingredients = cargo.Ingredients.Values
                                    .Where(i => i.Count > 0 && 
-                                               i.Data.IsTradeable() &&
+                                               i.Data.CanBeTraded &&
                                                !missingIngredients.ContainsKey(i)).ToList();
 
             var allTrades = AllTrades(missingIngredients, ingredients, deduced).ToList();
@@ -70,7 +70,7 @@ namespace EDEngineer.Models.MaterialTrading
                 var ingredient = missingIngredient.Key;
                 var missingSize = missingIngredient.Value;
 
-                if (missingSize <= 0 || !ingredient.Data.IsTradeable())
+                if (missingSize <= 0 || !ingredient.Data.CanBeTraded)
                 {
                     continue;
                 }
