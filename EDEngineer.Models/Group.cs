@@ -73,11 +73,17 @@ namespace EDEngineer.Models
         [Description("Alloys")]
         Alloys,
 
-        [Description("Thargoid")]
-        Thargoid,
+        [Description("Thargoid Ship")]
+        ThargoidShip,
 
-        [Description("Guardian")]
-        Guardian,
+        [Description("Thargoid Site")]
+        ThargoidSite,
+
+        [Description("Guardian Ruins")]
+        GuardianRuins,
+
+        [Description("Guardian Ruins (Active)")]
+        GuardianRuinsActive,
 
         [Description("Commodities")]
         Commodities

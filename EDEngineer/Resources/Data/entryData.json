@@ -938,53 +938,53 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuins",
     "MaximumCapacity": 150
   },
-  {
-    "Name": "Pattern Beta Obelisk Data",
-    "Rarity": "Common",
-    "FormattedName": "ancientculturaldata",
-    "Kind": "Data",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian",
-    "MaximumCapacity": 150
-  },
-  {
-    "Name": "Pattern Delta Obelisk Data",
-    "Rarity": "Rare",
-    "FormattedName": "ancientlanguagedata",
-    "Kind": "Data",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian",
-    "MaximumCapacity": 150
-  },
-  {
-    "Name": "Pattern Epsilon Obelisk Data",
-    "Rarity": "VeryRare",
-    "FormattedName": "ancienttechnologicaldata",
-    "Kind": "Data",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian",
-    "MaximumCapacity": 150
-  },
-  {
-    "Name": "Pattern Gamma Obelisk Data",
-    "Rarity": "VeryCommon",
-    "FormattedName": "ancienthistoricaldata",
-    "Kind": "Data",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian",
-    "MaximumCapacity": 150
-  },
+	{
+		"Name": "Pattern Beta Obelisk Data",
+		"Rarity": "Common",
+		"FormattedName": "ancientculturaldata",
+		"Kind": "Data",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuins",
+		"MaximumCapacity": 150
+	},
+	{
+		"Name": "Pattern Delta Obelisk Data",
+		"Rarity": "Rare",
+		"FormattedName": "ancientlanguagedata",
+		"Kind": "Data",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuins",
+		"MaximumCapacity": 150
+	},
+	{
+		"Name": "Pattern Epsilon Obelisk Data",
+		"Rarity": "VeryRare",
+		"FormattedName": "ancienttechnologicaldata",
+		"Kind": "Data",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuins",
+		"MaximumCapacity": 150
+	},
+	{
+		"Name": "Pattern Gamma Obelisk Data",
+		"Rarity": "VeryCommon",
+		"FormattedName": "ancienthistoricaldata",
+		"Kind": "Data",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuins",
+		"MaximumCapacity": 150
+	},
   {
     "Name": "Peculiar Shield Frequency Data",
     "Rarity": "VeryRare",
@@ -1473,7 +1473,7 @@
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Meta-alloys",
@@ -1576,17 +1576,18 @@
       "Needed for Didi Vatermann (25)"
     ]
   },
-  {
-    "Name": "Sensor Fragment",
-    "Rarity": "VeryRare",
-    "FormattedName": "unknownenergysource",
-    "Kind": "Material",
-    "Subkind": "Manufactured",
-    "OriginDetails": [
-      "Destroyed Unknown Artefact",
-      "Needed for Professor Palin (25)"
-    ]
-  },
+	{
+		"Name": "Sensor Fragment",
+		"Rarity": "VeryRare",
+		"FormattedName": "unknownenergysource",
+		"Kind": "Material",
+		"Subkind": "Manufactured",
+		"OriginDetails": [
+			"Thargoid Scavengers, Destroyed Thargoid Sensor",
+			"Needed for Professor Palin (25)"
+		],
+		"Group": "ThargoidSite"
+	},
   {
     "Name": "Kongga Ale",
     "Rarity": "None",
@@ -1645,7 +1646,7 @@
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Residue Data",
@@ -1655,7 +1656,7 @@
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Structural Data",
@@ -1665,7 +1666,7 @@
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Carapace",
@@ -1676,7 +1677,7 @@
     "OriginDetails": [
       "Thargoid scavengers"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Energy Cell",
@@ -1687,7 +1688,7 @@
     "OriginDetails": [
       "Thargoid scavengers"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Organic Circuitry",
@@ -1698,7 +1699,7 @@
     "OriginDetails": [
       "Thargoid scavengers"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Technological Components",
@@ -1709,7 +1710,7 @@
     "OriginDetails": [
       "Thargoid scavengers"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Wake Data",
@@ -1719,7 +1720,7 @@
     "OriginDetails": [
       "High wake scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Ship Flight Data",
@@ -1729,7 +1730,7 @@
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Ship System Data",
@@ -1739,7 +1740,7 @@
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Wreckage Components",
@@ -1750,7 +1751,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Bio-Mechanical Conduits",
@@ -1761,7 +1762,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Weapon Parts",
@@ -1772,7 +1773,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Propulsion Elements",
@@ -1783,7 +1784,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Guardian Weapon Blueprint Segment",
@@ -1793,83 +1794,83 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuinsActive",
     "MaximumCapacity": 150
   },
-  {
-    "Name": "Guardian Power Cell",
-    "Rarity": "VeryCommon",
-    "FormattedName": "guardian_powercell",
-    "Kind": "Material",
-    "Subkind": "Manufactured",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian"
-  },
-  {
-    "Name": "Guardian Technology Component",
-    "Rarity": "Standard",
-    "FormattedName": "guardian_techcomponent",
-    "Kind": "Material",
-    "Subkind": "Manufactured",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian"
-  },
-  {
-    "Name": "Guardian Power Conduit",
-    "Rarity": "Common",
-    "FormattedName": "guardian_powerconduit",
-    "Kind": "Material",
-    "Subkind": "Manufactured",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian"
-  },
-  {
-    "Name": "Guardian Sentinel Weapon Parts",
-    "Rarity": "Standard",
-    "FormattedName": "guardian_sentinel_weaponparts",
-    "Kind": "Material",
-    "Subkind": "Manufactured",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian"
-  },
-  {
-    "Name": "Guardian Module Blueprint Segment",
-    "Rarity": "VeryRare",
-    "FormattedName": "guardian_moduleblueprint",
-    "Kind": "Data",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian",
-    "MaximumCapacity": 150
-  },
-  {
-    "Name": "Guardian Wreckage Components",
-    "Rarity": "VeryCommon",
-    "FormattedName": "guardian_sentinel_wreckagecomponents",
-    "Kind": "Material",
-    "Subkind": "Manufactured",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian"
-  },
-  {
-    "Name": "Guardian Vessel Blueprint Segment",
-    "Rarity": "VeryRare",
-    "FormattedName": "guardian_vesselblueprint",
-    "Kind": "Data",
-    "OriginDetails": [
-      "Ancient/Guardian ruins"
-    ],
-    "Group": "Guardian"
-  }
+	{
+		"Name": "Guardian Power Cell",
+		"Rarity": "VeryCommon",
+		"FormattedName": "guardian_powercell",
+		"Kind": "Material",
+		"Subkind": "Manufactured",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive"
+	},
+	{
+		"Name": "Guardian Technology Component",
+		"Rarity": "Standard",
+		"FormattedName": "guardian_techcomponent",
+		"Kind": "Material",
+		"Subkind": "Manufactured",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive"
+	},
+	{
+		"Name": "Guardian Power Conduit",
+		"Rarity": "Common",
+		"FormattedName": "guardian_powerconduit",
+		"Kind": "Material",
+		"Subkind": "Manufactured",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive"
+	},
+	{
+		"Name": "Guardian Sentinel Weapon Parts",
+		"Rarity": "Standard",
+		"FormattedName": "guardian_sentinel_weaponparts",
+		"Kind": "Material",
+		"Subkind": "Manufactured",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive"
+	},
+	{
+		"Name": "Guardian Module Blueprint Segment",
+		"Rarity": "VeryRare",
+		"FormattedName": "guardian_moduleblueprint",
+		"Kind": "Data",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive",
+		"MaximumCapacity": 150
+	},
+	{
+		"Name": "Guardian Wreckage Components",
+		"Rarity": "VeryCommon",
+		"FormattedName": "guardian_sentinel_wreckagecomponents",
+		"Kind": "Material",
+		"Subkind": "Manufactured",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive"
+	},
+	{
+		"Name": "Guardian Vessel Blueprint Segment",
+		"Rarity": "VeryRare",
+		"FormattedName": "guardian_vesselblueprint",
+		"Kind": "Data",
+		"OriginDetails": [
+			"Ancient/Guardian ruins"
+		],
+		"Group": "GuardianRuinsActive"
+	}
 ]

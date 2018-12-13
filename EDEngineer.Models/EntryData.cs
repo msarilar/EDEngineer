@@ -54,6 +54,14 @@ namespace EDEngineer.Models
         [JsonIgnore]
         public bool Unused { get; set; }
 
+        public bool IsTradeable()
+        {
+            return
+                Rarity.Rank().HasValue &&
+                Group.HasValue &&
+                !Group.In(Models.Group.ThargoidShip, Models.Group.ThargoidSite, Models.Group.GuardianRuins, Models.Group.GuardianRuinsActive, Models.Group.Commodities);
+        }
+
         private static Origin GuessOrigin(string text)
         {
             if (text.Contains("Markets"))
