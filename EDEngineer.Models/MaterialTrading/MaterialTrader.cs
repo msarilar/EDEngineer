@@ -12,11 +12,7 @@ namespace EDEngineer.Models.MaterialTrading
         {
             var ingredients = cargo.Ingredients.Values
                                    .Where(i => i.Count > 0 && 
-                                               i.Data.Group.HasValue && 
-                                               i.Data.Group != Group.Thargoid &&
-                                               i.Data.Group != Group.Guardian &&
-                                               i.Data.Group != Group.Commodities &&
-                                               i.Data.Rarity.Rank() != null &&
+                                               i.Data.IsTradeable() &&
                                                !missingIngredients.ContainsKey(i)).ToList();
 
             var allTrades = AllTrades(missingIngredients, ingredients, deduced).ToList();
@@ -74,10 +70,7 @@ namespace EDEngineer.Models.MaterialTrading
                 var ingredient = missingIngredient.Key;
                 var missingSize = missingIngredient.Value;
 
-                if (missingSize <= 0 ||
-                    !ingredient.Data.Group.HasValue ||
-                    ingredient.Data.Group.In(Group.Thargoid, Group.Guardian, Group.Commodities) ||
-                    !ingredient.Data.Rarity.Rank().HasValue)
+                if (missingSize <= 0 || !ingredient.Data.IsTradeable())
                 {
                     continue;
                 }
