@@ -4250,7 +4250,7 @@
 			"es": "Cañon de choque (Fijo)",
 			"pt": "Canhão Elétrico (Fixa)",
 			"de": "Schock Kanone (Fest)",
-			"fr": null,
+			"fr": "Canon à éclat (Fixe)",
 			"ru": "Шоковое орудие (фиксированное)",
 			"pl": null,
 			"cs": "Shock Cannon (Fixed)"
@@ -4259,7 +4259,7 @@
 			"es": "Cañon de choque (Guiado)",
 			"pt": "Canhão Elétrico (Guiada)",
 			"de": "Schock Kanone (Kardanisch)",
-			"fr": null,
+			"fr": "Canon à éclat (Gimbal)",
 			"ru": "Шоковое орудие (на карданной подвеске)",
 			"pl": null,
 			"cs": "Shock Cannon (Gimballed)"
@@ -4268,7 +4268,7 @@
 			"es": "Cañon de choque (Torreta)",
 			"pt": "Canhão Elétrico (Torretada)",
 			"de": "Schock Kanone (Turm)",
-			"fr": null,
+			"fr": "Canon à éclat (Tourelle),
 			"ru": "Шоковое орудие (турель)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted)"
@@ -4628,7 +4628,7 @@
 			"es": "@Tecnología",
 			"pt": null,
 			"de": "@Technologie",
-			"fr": null,
+			"fr": "@Technologie",
 			"ru": "@Технология",
 			"pl": null,
 			"cs": "@Technologie"
@@ -4637,7 +4637,7 @@
 			"es": "Módulo",
 			"pt": "Módulo",
 			"de": "Module",
-			"fr": null,
+			"fr": "Module",
 			"ru": "Модули",
 			"pl": null,
 			"cs": "Moduly"
@@ -4646,7 +4646,7 @@
 			"es": "Síntesis",
 			"pt": null,
 			"de": "Synthese",
-			"fr": null,
+			"fr": "Synthèse",
 			"ru": "Синтез",
 			"pl": null,
 			"cs": "Syntéza"
@@ -4655,7 +4655,7 @@
 			"es": "Experimental",
 			"pt": "Experimental",
 			"de": "Experimentell",
-			"fr": null,
+			"fr": "Expérimental",
 			"ru": "Экспериментальные",
 			"pl": null,
 			"cs": "Experimentální"
@@ -4664,7 +4664,7 @@
 			"es": "Tecnología",
 			"pt": null,
 			"de": "Technologie",
-			"fr": null,
+			"fr": "Technologie",
 			"ru": "Технологии",
 			"pl": null,
 			"cs": "Technologie"
@@ -4673,7 +4673,7 @@
 			"es": "Ruinas Antíguas/Guardianes",
 			"pt": null,
 			"de": "Uralte/Guardian Ruinen",
-			"fr": null,
+			"fr": "Ruines Guardians",
 			"ru": "Руины стражей",
 			"pl": null,
 			"cs": "Starobylé/Guardiánské ruiny"
@@ -4682,7 +4682,7 @@
 			"es": "EDEngineer intentará eliminar planos de tu lista si los creas en el juego",
 			"pt": null,
 			"de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
-			"fr": "EDEngineer va essayer de retirer les plans de votre liste de shopping si vous les assemblez dans le jeu",
+			"fr": "EDEngineer va essayer de retirer les plans de votre liste de courses si vous les assemblez dans le jeu",
 			"ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
 			"pl": null,
 			"cs": "EDEngineer se pokusí odebrat plánky z vašeho nákupního seznamu, když je aplikujete ve hře"
@@ -4952,7 +4952,7 @@
 			"es": "Muestra sugerencia de comercio de materiales (teniendo en cuenta tu carga y la lista de componentes completa).",
 			"pt": null,
 			"de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
-			"fr": "Montrer les suggestions d'échange (en prennant en compte le contenu de votre cargo et de votre liste de shopping).",
+			"fr": "Montrer les suggestions d'échange (en prennant en compte le contenu de votre cargo et de votre liste de courses).",
 			"ru": "Показывает предложения по торговле материалами (учитывая ваш груз и весь список покупок).",
 			"pl": null,
 			"cs": "Zobrazuje návrh obchodování s materiálem (s ohledem na vaše cargo a celý nákupní seznam)."
@@ -4961,7 +4961,7 @@
 			"es": "Las sugerencias están ordenadas por el tamaño de la transacción comparado con tu carga, menos una cantidad eventual necesaria para la lista de componentes.",
 			"pt": null,
 			"de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
-			"fr": "Les suggestions sont classées en fonction de l’importance de l’échange par rapport à votre cargaison, moins un nombre éventuel déjà nécessaire dans la liste d’achats.",
+			"fr": "Les suggestions sont classées en fonction de l’importance de l’échange par rapport à votre cargaison, moins un nombre éventuel déjà nécessaire dans la liste de courses.",
 			"ru": "Предложения сортируются по величине торговли по сравнению с вашим грузом, минус возможная сумма, уже необходимая в списке покупок.",
 			"pl": null,
 			"cs": "Návrhy jsou seřazeny podle toho, jak velký bude obchod v porovnání s materiály ve tvém cargu. Mínus případné položky, které jsou zapotřebí v nákupním seznamu."
@@ -5033,7 +5033,7 @@
 			"es": "Munición de Cargador de Plasma Guardián",
 			"pt": null,
 			"de": "Guardian-Plasmaladermunition",
-			"fr": null,
+			"fr": "Munitions de Chargeur Plasma Guardians"
 			"ru": "Боеприпасы для плазменных пушек стражей",
 			"pl": null,
 			"cs": "Munice do Guardian Plasma Charger"
@@ -5042,7 +5042,7 @@
 			"es": "Munición de Cañón Gauss Guardián",
 			"pt": null,
 			"de": "Guardian-Gausskannonenmunition",
-			"fr": null,
+			"fr": "Munitions de Canon Gauss Guardians,
 			"ru": "Боеприпасы для пушек Гаусса стражей",
 			"pl": null,
 			"cs": "Munice do Guardian Gauss Cannon"
@@ -5132,7 +5132,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
-			"fr": null,
+			"fr": "Canon Gauss Guardians (Fixe, Moyen)",
 			"ru": "Пушка Гаусса стражей (фиксированное, средний слот)",
 			"pl": null,
 			"cs": "Guardian Gauss Cannon (Fixed, Medium)"
@@ -5141,7 +5141,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
-			"fr": null,
+			"fr": "Canon Gauss Guardians (Fixe, Petit)",
 			"ru": "Пушка Гаусса стражей (фиксированное, малый слот)",
 			"pl": null,
 			"cs": "Guardian Gauss Cannon (Fixed, Small)"
@@ -5150,7 +5150,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Rumpfhüllenverstärkung",
-			"fr": null,
+			"fr": "Renforcement de coque Guardians",
 			"ru": "Набор для усиления корпуса стражей",
 			"pl": null,
 			"cs": "Guardian Hull Reinforcement"
@@ -5159,16 +5159,16 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Modulverstärkung",
-			"fr": null,
+			"fr": "Renforcement de modules Guardians",
 			"ru": "Набор для усиления модуля стражей",
 			"pl": null,
 			"cs": "Guardian Module Reinforcement"
 		},
 		"Guardian Plasma Charger (Fixed, Large)": {
-			"es": null,
+ 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
-			"fr": null,
+			"fr": "Chargeur Plasma Guardians (Fixe, Large)",
 			"ru": "Плазменная пушка стражей (фиксированное, большой слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Fixed, Large)"
@@ -5177,7 +5177,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Fest) (Klasse: 2)",
-			"fr": null,
+			"fr": "Chargeur Plasma Guardians (Fixe, Moyen)",
 			"ru": "Плазменная пушка стражей (фиксированное, средний слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Fixed, Medium)"
@@ -5186,7 +5186,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Fest) (Klasse: 1)",
-			"fr": null,
+			"fr": "Chargeur Plasma Guardians (Fixe, Petit)",
 			"ru": "Плазменная пушка стражей (фиксированное, малый слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Fixed, Small)"
@@ -5195,7 +5195,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Turm) (Klasse: 3)",
-			"fr": null,
+			"fr": "Chargeur Plasma Guardians (Tourelle, Large)",
 			"ru": "Плазменная пушка стражей (турель, большой слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Turreted, Large)"
@@ -5204,7 +5204,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Turm) (Klasse: 2)",
-			"fr": null,
+                        "fr": "Chargeur Plasma Guardians (Tourelle, Moyen)",
 			"ru": "Плазменная пушка стражей (турель, средний слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Turreted, Medium)"
@@ -5213,7 +5213,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Turm) (Klasse: 1)",
-			"fr": null,
+			"fr": "Chargeur Plasma Guardians (Tourelle, Petit)",
 			"ru": "Плазменная пушка стражей (турель, малый слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Turreted, Small)"
@@ -5231,7 +5231,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Energieverteiler",
-			"fr": null,
+			"fr": "Répartiteur de puissance Guardians,
 			"ru": "Распределитель питания стражей",
 			"pl": null,
 			"cs": "Guardian Power Distributor"
@@ -5330,7 +5330,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
- 			"fr": null,
+ 			"fr": "Canon à éclat (Fixe, Large)",
 			"ru": "Осколочное орудие стражей (фиксированное, большой слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Fixed, Large)"
@@ -5339,7 +5339,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Canon à éclat (Fixe, Moyen)",
 			"ru": "Шоковое орудие (фиксированное, средний слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Fixed, Medium)"
@@ -5348,7 +5348,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Canon à éclat (Fixe, Petit)",
 			"ru": "Шоковое орудие (фиксированное, малый слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Fixed, Small)"
@@ -5357,16 +5357,16 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+ 			"fr": "Canon à éclat (Gimbal, Large)",
 			"ru": "Шоковое орудие (на карданной подвеске, большой слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Gimballed, Large)"
 		},
 		"Shock Cannon (Gimballed, Medium)": {
  			"es": null,
-			"pt": null,
+ 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Canon à éclat (Gimbal, Moyen)",
 			"ru": "Шоковое орудие (на карданной подвеске, средний слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Gimballed, Medium)"
@@ -5375,7 +5375,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+ 			"fr": "Canon à éclat (Gimbal, Petit)",
 			"ru": "Шоковое орудие (на карданной подвеске, малый слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Gimballed, Small)"
@@ -5384,16 +5384,16 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Canon à éclat (Tourelle, Large)",
 			"ru": "Шоковое орудие (турель, большой слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted, Large)"
 		},
 		"Shock Cannon (Turreted, Medium)": {
-			"es": null,
-			"pt": null,
-			"de": null,
-			"fr": null,
+ 			"es": null,
+ 			"pt": null,
+ 			"de": null,
+ 			"fr": "Canon à éclat (Tourelle, Moyen)",
 			"ru": "Шоковое орудие (турель, средний слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted, Medium)"
@@ -5402,14 +5402,14 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
-			"ru": "Шоковое орудие (турель, малый слот)",
+ 			"fr": "Canon à éclat (Tourelle, Petit)",
+ 			"ru": "Шоковое орудие (турель, малый слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted, Small)"
 		},
 		"Ship Value:": {
-			"es": null,
-			"pt": null,
+ 			"es": null,
+ 			"pt": null,
 			"de": "Wert dieses Shiffs",
 			"fr": "Valeur des vaisseaux",
 			"ru": "Стоимость корабля:",
@@ -5417,29 +5417,29 @@
 			"cs": "Cena lodi:"
 		},
 		"Modules Value:": {
-			"es": null,
+                        "es": null,
 			"pt": null,
 			"de": "Wert der Module",
-			"fr": "Valeur des modules",
-			"ru": "Стоимость модулей:",
+ 			"fr": "Valeur des modules",
+ 			"ru": "Стоимость модулей:",
 			"pl": null,
 			"cs": "Cena modulů:"
 		},
 		"Rebuy:": {
 			"es": null,
 			"pt": null,
-			"de": "Ersatzwert",
+  			"de": "Ersatzwert",
 			"fr": "Racheter",
-			"ru": "Страховка:",
-			"pl": null,
+ 			"ru": "Страховка:",
+ 			"pl": null,
 			"cs": "Rebuy:"
 		},
 		"Loadout": {
-			"es": null,
+ 			"es": null,
 			"pt": null,
 			"de": "Ausrüstung",
 			"fr": "Equipement",
-			"ru": "Оснащение",
+ 			"ru": "Оснащение",
 			"pl": null,
 			"cs": "Výzbroj"
 		},
@@ -5457,7 +5457,7 @@
 			"pt": null,
 			"de": "Aufhängungen",
 			"fr": "Points d'emport",
-			"ru": "Орудийные гнезда",
+ 			"ru": "Орудийные гнезда",
 			"pl": null,
 			"cs": "Hardpoints"
 		},
@@ -5466,7 +5466,7 @@
 			"pt": null,
 			"de": "Werkzeuge",
 			"fr": "Supports Utilitaires",
-			"ru": "Крепления утилит",
+ 			"ru": "Крепления утилит",
 			"pl": null,
 			"cs": "Utilities"
 		},
@@ -5492,10 +5492,10 @@
 			"es": null,
 			"pt": null,
 			"de": "Diverses/Lackierung",
-			"fr": "Autre/Livrée",
+			"fr": "Autres/Livrée",
 			"ru": "Прочее/Декали",
 			"pl": null,
-			"cs": "Ostatní/Livery"
+ 			"cs": "Ostatní/Livery"
 		},
 		"Occupied Escape Pod": {
 			"es": null,
@@ -5524,21 +5524,21 @@
 			"pl": null,
 			"cs": "Synchronizovat?"
 		},
-		"Guardian Wreckage Components": {
-			"es": "Restos de Accidentes de Guardián",
+		 "Guardian Wreckage Components": {
+ 			"es": "Restos de Accidentes de Guardián",
 			"pt": null,
 			"de": "Guardian-Wrackteilkomponenten",
- 			"fr": "Débris d'épave Guardians",
+  			"fr": "Débris d'épave Guardians",
 			"ru": "Обломки часовых стражей",
 			"pl": null,
 			"cs": "Guardian Wreckage Components"
 		},
 		"Reload all data": {
-			"es": null,
+ 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": "Recharger toutes les données",
-			"ru": null,
+ 			"fr": "Recharger toutes les données",
+ 			"ru": null,
 			"pl": null,
 			"cs": "Znovu načíst všechna data"
 		}
