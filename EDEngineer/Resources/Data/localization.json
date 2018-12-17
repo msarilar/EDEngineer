@@ -1766,7 +1766,7 @@
 			"es": null,
 			"pt": "Rênio",
 			"de": "Rhenium",
-			"fr": null,
+			"fr": "Rhénium",
 			"ru": "Рений",
 			"pl": null,
 			"cs": "Rhenium"
@@ -4682,7 +4682,7 @@
 			"es": "EDEngineer intentará eliminar planos de tu lista si los creas en el juego",
 			"pt": null,
 			"de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
-			"fr": null,
+			"fr": "EDEngineer va essayer de retirer les plans de votre liste de shopping si vous les assemblez dans le jeu",
 			"ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
 			"pl": null,
 			"cs": "EDEngineer se pokusí odebrat plánky z vašeho nákupního seznamu, když je aplikujete ve hře"
@@ -4691,7 +4691,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Wärmeverteilung",
-			"fr": null,
+			"fr": "Dissipation thermique",
 			"ru": "Рассеивание тепла",
 			"pl": null,
 			"cs": "Thermal Spread"
@@ -4880,7 +4880,7 @@
 			"es": "Condensador de Cluster",
 			"pt": null,
 			"de": "Cluster Kondensator",
-			"fr": null,
+			 "fr": null,
 			"ru": "Кассетный конденсатор",
 			"pl": null,
 			"cs": "Cluster Capacitor"
@@ -4889,7 +4889,7 @@
 			"es": "Thargoide",
 			"pt": "Thargoid",
 			"de": "Thargoid",
-			"fr": null,
+			"fr": "Thargoid",
 			"ru": "Технологии таргоидов",
 			"pl": null,
 			"cs": "Thargoidské"
@@ -4898,7 +4898,7 @@
 			"es": "Nave Thargoide",
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Vaisseau Thargoid",
 			"ru": null,
 			"pl": null,
 			"cs": null
@@ -4907,7 +4907,7 @@
 			"es": "Sitio Thargoide",
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Site Thargoid",
 			"ru": null,
 			"pl": null,
 			"cs": null
@@ -4916,7 +4916,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Top Quellsysteme",
-			"fr": null,
+			"fr": "Principaux systèmes source",
 			"ru": "Системы с обилием ресурсов",
 			"pl": null,
 			"cs": "Získáno nejvíce v systému"
@@ -4925,7 +4925,7 @@
 			"es": "Sistema:",
 			"pt": null,
 			"de": "System:",
-			"fr": null,
+			"fr": "Système",
 			"ru": "Система:",
 			"pl": null,
 			"cs": "Systém:"
@@ -4934,7 +4934,7 @@
 			"es": "Tienes:",
 			"pt": null,
 			"de": "Du hast:",
-			"fr": null,
+			"fr": "Vous avez:",
 			"ru": "В наличии:",
 			"pl": null,
 			"cs": "Máš"
@@ -4943,7 +4943,7 @@
 			"es": "(Es Necesario)",
 			"pt": null,
 			"de": "(bereits benötigt)",
-			"fr": null,
+			"fr": "(déjà nécéssaire"),
 			"ru": "(уже необходимо)",
 			"pl": null,
 			"cs": "(také potřebuješ)"
@@ -4952,7 +4952,7 @@
 			"es": "Muestra sugerencia de comercio de materiales (teniendo en cuenta tu carga y la lista de componentes completa).",
 			"pt": null,
 			"de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
-			"fr": null,
+			"fr": "Montrer les suggestions d'échange (en prennant en compte le contenu de votre cargo et de votre liste de shopping).",
 			"ru": "Показывает предложения по торговле материалами (учитывая ваш груз и весь список покупок).",
 			"pl": null,
 			"cs": "Zobrazuje návrh obchodování s materiálem (s ohledem na vaše cargo a celý nákupní seznam)."
@@ -4961,7 +4961,7 @@
 			"es": "Las sugerencias están ordenadas por el tamaño de la transacción comparado con tu carga, menos una cantidad eventual necesaria para la lista de componentes.",
 			"pt": null,
 			"de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
-			"fr": null,
+			"fr": "Les suggestions sont classées en fonction de l’importance de l’échange par rapport à votre cargaison, moins un nombre éventuel déjà nécessaire dans la liste d’achats.",
 			"ru": "Предложения сортируются по величине торговли по сравнению с вашим грузом, минус возможная сумма, уже необходимая в списке покупок.",
 			"pl": null,
 			"cs": "Návrhy jsou seřazeny podle toho, jak velký bude obchod v porovnání s materiály ve tvém cargu. Mínus případné položky, které jsou zapotřebí v nákupním seznamu."
@@ -4970,7 +4970,7 @@
 			"es": "Las entradas naranjas indican una sugerencia de comercio que no completará tus requisitos (pero puede que ayude).",
 			"pt": null,
 			"de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
-			"fr": null,
+			"fr": "Les entrées en orange indiquent une suggestion d’échange qui ne répondra pas complètement à vos besoins (mais qui pourrait aider).",
 			"ru": "Оранжевые записи указывают предложения по торговле, которые не полностью отвечают требованиям (но могут помочь).",
 			"pl": null,
 			"cs": "Oranžové položky označují návrhy obchodu, které zcela nesplní tvůj požadavek, ale může ti pomoci."
@@ -4979,7 +4979,7 @@
 			"es": "Los comerciantes de materiales encontrados en las economías industriales, solo hacen transacciones con materiales manufacturados.",
 			"pt": null,
 			"de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
-			"fr": null,
+			"fr": "Les commerçants de matériaux trouvés dans les économies industrielles, échangent seulement des matériaux manufacturés.",
 			"ru": "Торговец материалами в системах с промышленной экономикой, обменивает только промышленные материалы.",
 			"pl": null,
 			"cs": "Obchodník s materiály se může necházet v systémech s 'Industrial' ekonomikou, obchoduje pouze s vyrobenými materiály (Biotech conductors, Compound shielding atd.)."
@@ -4988,7 +4988,7 @@
 			"es": "Los comerciantes de materiales encontrados en las economías de estracción y refinería, solo hacen transacciones con materias primas encontradas en superficies de planetas y anillos planetarios.",
 			"pt": null,
 			"de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
-			"fr": null,
+			"fr": "Les commerçants de matériaux trouvés dans les économies d’extraction et de raffinerie, n'échangent que des matières premières trouvées sur des surfaces planétaires et des anneaux planétaires.",
 			"ru": "Торговец материалами в системах с добычей ископаемых и переработкой, обменивает только сырьевые элементы.",
 			"pl": null,
 			"cs": "Obchodník s materiály se může necházet v systémech s 'Extraction' a 'Rafinery ekonomikou', obchoduje pouze se surovými materiály, které se získávají na povrchu planet a při težbě v prstencích."
@@ -4997,7 +4997,7 @@
 			"es": "Los comerciantes de materiales encontrados en las economías de alta tecnología y militares, solo hacen transacciones con materiales codificados.",
 			"pt": null,
 			"de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
-			"fr": null,
+			"fr": "Les commerçants de matériaux trouvés dans les économies High Tech et Militaraires, ne négocie que des matériaux encodés.",
 			"ru": "Торговец материалами в системах с высокотехнологичной и военной экономикой, обменивает только зашифрованные данные.",
 			"pl": null,
 			"cs": "Obchodník s materiály se může necházet v systémech s 'High Tech' a 'Military ekonomikou', obchoduje pouze s daty."
@@ -5006,7 +5006,7 @@
 			"es": "API encendida",
 			"pt": null,
 			"de": "API AN",
-			"fr": null,
+			"fr": "API ON",
 			"ru": "API ВКЛ",
 			"pl": null,
 			"cs": "API zapnuto"
@@ -5015,7 +5015,7 @@
 			"es": "API apagada",
 			"pt": null,
 			"de": "API AUS",
-			"fr": null,
+			"fr": "API OFF",
 			"ru": "API ВЫКЛ",
 			"pl": null,
 			"cs": "API vypnuto"
@@ -5024,7 +5024,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Intercepteur FSD longue portée",
 			"ru": "FSD-перехватчик большой дальности",
 			"pl": null,
 			"cs": "Long Range FSD Interdictor"
@@ -5053,23 +5053,23 @@
 			"de": "Kleinkalibrige Munition (AX)",
 			"fr": null,
 			"ru": "Мелкокалиберные боеприпасы АИ",
-			"pl": null,
+ 			"pl": null,
 			"cs": "Munice malé ráže do AX zbraní (AX MC)"
 		},
 		"+5% Damage Boost": {
 			"es": "Aumento de Daño +5%",
 			"pt": null,
 			"de": "Bonus Schaden: +5%",
-			"fr": null,
+			"fr": "+5% de boost de dommage",
 			"ru": "+5% к урону",
-			"pl": null,
+ 			"pl": null,
 			"cs": "+5% boost k poškození"
 		},
 		"+10% Damage Boost": {
 			"es": "Aumento de Daño +10%",
 			"pt": null,
 			"de": "Bonus Schaden: +10%",
-			"fr": null,
+			"fr": "+10% de boost de dommage",
 			"ru": "+10% к урону",
 			"pl": null,
 			"cs": "+10% boost k poškození"
@@ -5123,7 +5123,7 @@
 			"es": "+5% Daño",
 			"pt": null,
 			"de": "Bonus Schaden: +5%",
-			"fr": null,
+			"fr": "+5% de dommage",
 			"ru": "+5% к урону",
 			"pl": null,
 			"cs": "+5% poškození"
@@ -5222,7 +5222,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Frameshiftantrieb-Booster",
-			"fr": null,
+			"fr": "Boosteur FSD Guardians",
 			"ru": "Ускоритель FSD стражей",
 			"pl": null,
 			"cs": "Guardian FSD Booster"
@@ -5294,7 +5294,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Schildverstärkung",
-			"fr": null,
+			"fr": "Renforcement de bouclier Guardian",
 			"ru": "Набор для усиления щита стражей",
 			"pl": null,
 			"cs": "Guardian Shield Reinforcement"
@@ -5303,7 +5303,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Javelin (Fighter)",
-			"fr": null,
+			"fr": "Javelin (chasseur)",
 			"ru": "Javelin (Истребитель)",
 			"pl": null,
 			"cs": "Javelin (Fighter)"
@@ -5312,7 +5312,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Lance (Fighter)",
-			"fr": null,
+			"fr": "Lance (chasseur)",
 			"ru": "Lance (Истребитель)",
 			"pl": null,
 			"cs": "Lance (Fighter)"
@@ -5321,7 +5321,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Trident (Fighter)",
-			"fr": null,
+ 			"fr": "Trident (chasseur)",
 			"ru": "Trident (Истребитель)",
 			"pl": null,
 			"cs": "Trident (Fighter)"
@@ -5330,7 +5330,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+ 			"fr": null,
 			"ru": "Осколочное орудие стражей (фиксированное, большой слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Fixed, Large)"
@@ -5363,7 +5363,7 @@
 			"cs": "Shock Cannon (Gimballed, Large)"
 		},
 		"Shock Cannon (Gimballed, Medium)": {
-			"es": null,
+ 			"es": null,
 			"pt": null,
 			"de": null,
 			"fr": null,
@@ -5411,7 +5411,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Wert dieses Shiffs",
-			"fr": null,
+			"fr": "Valeur des vaisseaux",
 			"ru": "Стоимость корабля:",
 			"pl": null,
 			"cs": "Cena lodi:"
@@ -5420,7 +5420,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Wert der Module",
-			"fr": null,
+			"fr": "Valeur des modules",
 			"ru": "Стоимость модулей:",
 			"pl": null,
 			"cs": "Cena modulů:"
@@ -5429,7 +5429,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Ersatzwert",
-			"fr": null,
+			"fr": "Racheter",
 			"ru": "Страховка:",
 			"pl": null,
 			"cs": "Rebuy:"
@@ -5438,7 +5438,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Ausrüstung",
-			"fr": null,
+			"fr": "Equipement",
 			"ru": "Оснащение",
 			"pl": null,
 			"cs": "Výzbroj"
@@ -5447,7 +5447,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Fracht Historie (Benötigt API)",
-			"fr": null,
+			"fr": "Historique du cargo",
 			"ru": "История грузов (необходимо API)",
 			"pl": null,
 			"cs": "Historie nákladu (vyžaduje API)"
@@ -5456,7 +5456,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Aufhängungen",
-			"fr": null,
+			"fr": "Points d'emport",
 			"ru": "Орудийные гнезда",
 			"pl": null,
 			"cs": "Hardpoints"
@@ -5465,7 +5465,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Werkzeuge",
-			"fr": null,
+			"fr": "Supports Utilitaires",
 			"ru": "Крепления утилит",
 			"pl": null,
 			"cs": "Utilities"
@@ -5474,7 +5474,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Intern (Basis)",
-			"fr": null,
+			"fr": "Interne Primordiaux",
 			"ru": "Зарезервированные слоты",
 			"pl": null,
 			"cs": "Core Internal"
@@ -5483,7 +5483,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Intern (Optional)",
-			"fr": null,
+			"fr": "Interne Optionnels",
 			"ru": "Опциональные модули",
 			"pl": null,
 			"cs": "Optional Internal"
@@ -5492,7 +5492,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Diverses/Lackierung",
-			"fr": null,
+			"fr": "Autre/Livrée",
 			"ru": "Прочее/Декали",
 			"pl": null,
 			"cs": "Ostatní/Livery"
@@ -5501,7 +5501,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Besetzte Rettungskapsel",
-			"fr": null,
+			"fr": "Capsule de sauvetage occupée",
 			"ru": "Спасательная капсула с пассажиром",
 			"pl": null,
 			"cs": "Occupied Escape Pod"
@@ -5519,7 +5519,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Synchronisieren?",
-			"fr": null,
+			"fr": "Synchroniser?",
 			"ru": "Синхронизировать?",
 			"pl": null,
 			"cs": "Synchronizovat?"
@@ -5528,7 +5528,7 @@
 			"es": "Restos de Accidentes de Guardián",
 			"pt": null,
 			"de": "Guardian-Wrackteilkomponenten",
-			"fr": null,
+ 			"fr": "Débris d'épave Guardians",
 			"ru": "Обломки часовых стражей",
 			"pl": null,
 			"cs": "Guardian Wreckage Components"
@@ -5537,7 +5537,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
-			"fr": null,
+			"fr": "Recharger toutes les données",
 			"ru": null,
 			"pl": null,
 			"cs": "Znovu načíst všechna data"
