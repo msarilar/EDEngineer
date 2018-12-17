@@ -1,46 +1,46 @@
 {
-  "LanguageInfos": {
-    "en": {
-      "TwoLetterISOLanguageName": "en",
-      "Name": "English",
-      "NotReadyWarning": "This translation is incomplete ! If you select it, only parts of the application will be translated. Everything that hasn't been translated yet will be displayed in English."
-    },
-    "es": {
-      "TwoLetterISOLanguageName": "es",
-      "Name": "Español",
-      "NotReadyWarning": "¡Esta traducción está incompleta! Si lo selecciona, sólo se traducirán partes de la aplicación. Todo lo que aún no se ha traducido se mostrará en inglés."
-    },
-    "pt": {
-      "TwoLetterISOLanguageName": "pt",
-      "Name": "Português",
-      "NotReadyWarning": "Esta tradução está incompleta! Se selecionár-la, somente serão traduzidos partes da aplicação. Tudo o que ainda não foi traduzido ficará em inglês."
-    },
-    "de": {
-      "TwoLetterISOLanguageName": "de",
-      "Name": "Deutsch",
-      "NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie sie auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
-    },
-    "fr": {
-      "TwoLetterISOLanguageName": "fr",
-      "Name": "Français",
-      "NotReadyWarning": "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
-    },
-    "ru": {
-      "TwoLetterISOLanguageName": "ru",
-      "Name": "Русский",
-      "NotReadyWarning": "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на английском языке."
-    },
-    "pl": {
-      "TwoLetterISOLanguageName": "pl",
-      "Name": "Polski",
-      "NotReadyWarning": "To tłumaczenie nie jest w pełni ukończone ! Jeżeli wybierzesz to tłumaczenie, tylko część aplikacji zostanie przetłumaczona. Wszystkie nieprzetłumaczone wpisy zostaną wyświetlone w j. angielskim."
-    },
-    "cs": {
-      "TwoLetterISOLanguageName": "cs",
-      "Name": "Česky",
-      "NotReadyWarning": "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno musí být přeloženo. To co přeloženo nebude, bude nadále v angličtině."
-    }
-  },
+	"LanguageInfos": {
+		"en": {
+			"TwoLetterISOLanguageName": "en",
+			"Name": "English",
+			"NotReadyWarning": "This translation is incomplete ! If you select it, only parts of the application will be translated. Everything that hasn't been translated yet will be displayed in English."
+		},
+		"es": {
+			"TwoLetterISOLanguageName": "es",
+			"Name": "Español",
+			"NotReadyWarning": "¡Esta traducción está incompleta! Si lo selecciona, sólo se traducirán partes de la aplicación. Todo lo que aún no se ha traducido se mostrará en inglés."
+		},
+		"pt": {
+			"TwoLetterISOLanguageName": "pt",
+			"Name": "Português",
+			"NotReadyWarning": "Esta tradução está incompleta! Se selecionár-la, somente serão traduzidos partes da aplicação. Tudo o que ainda não foi traduzido ficará em inglês."
+		},
+		"de": {
+			"TwoLetterISOLanguageName": "de",
+			"Name": "Deutsch",
+			"NotReadyWarning": "Diese Übersetzung ist unvollständig! Wenn Sie sie auswählen, werden nur Teile der Anwendung übersetzt. Alles, was noch nicht übersetzt wurde, wird auf Englisch angezeigt."
+		},
+		"fr": {
+			"TwoLetterISOLanguageName": "fr",
+			"Name": "Français",
+			"NotReadyWarning": "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
+		},
+		"ru": {
+			"TwoLetterISOLanguageName": "ru",
+			"Name": "Русский",
+			"NotReadyWarning": "Этот перевод является неполным! Если вы выберете его - будет переведена только часть приложения. Недостающий перевод будет отображаться на английском языке."
+		},
+		"pl": {
+			"TwoLetterISOLanguageName": "pl",
+			"Name": "Polski",
+			"NotReadyWarning": "To tłumaczenie nie jest w pełni ukończone ! Jeżeli wybierzesz to tłumaczenie, tylko część aplikacji zostanie przetłumaczona. Wszystkie nieprzetłumaczone wpisy zostaną wyświetlone w j. angielskim."
+		},
+		"cs": {
+			"TwoLetterISOLanguageName": "cs",
+			"Name": "Česky",
+			"NotReadyWarning": "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno musí být přeloženo. To co přeloženo nebude, bude nadále v angličtině."
+		}
+	},
 	"Translations": {
 		"Short Range Blaster": {
 			"es": "Destructor de Corto Alcance",
@@ -4079,7 +4079,7 @@
 			"es": "Componente Tecnológico de Guardián",
 			"pt": "Componente de Tecnologia Guardian",
 			"de": "Guardian-Technologiekomponente",
-			"fr": "Composants technologique Guardians,
+			"fr": "Composants technologique Guardians",
 			"ru": "Компоненты технологий стражей",
 			"pl": null,
 			"cs": "Guardian Technology Component"
@@ -4115,7 +4115,7 @@
 			"es": "Restos de accidentes de Guardián",
 			"pt": "Componentes de Destroços Sentinela Guardian",
 			"de": "Guardian-Wache Trümmerteile",
-			"fr": "Débris d'épave Guardians,
+			"fr": "Débris d'épave Guardians",
 			"ru": "Обломки кораблекрушений стража Sentinel",
 			"pl": null,
 			"cs": "Guardian Sentinel Wreckage Components"
@@ -4133,7 +4133,7 @@
 			"es": "Humano",
 			"pt": "Humano",
 			"de": "Menschlich",
-			"fr": "Humain,
+			"fr": "Humain",
 			"ru": "Технологии людей",
 			"pl": null,
 			"cs": "Lidské"
@@ -4204,7 +4204,7 @@
 		"Guardian Plasma Charger (Turreted)": {
 			"es": "Cargador de Plasma Guardián (Torreta)",
 			"pt": "Carregador de Plasma Guardian (Torretada)",
- 			"de": "Guardian-Plasmalader (Turm)",
+			"de": "Guardian-Plasmalader (Turm)",
 			"fr": "Chargeur à plasma - Guardians (Tourelle)",
 			"ru": "Плазменная пушка стражей (турель)",
 			"pl": null,
@@ -4268,7 +4268,7 @@
 			"es": "Cañon de choque (Torreta)",
 			"pt": "Canhão Elétrico (Torretada)",
 			"de": "Schock Kanone (Turm)",
-			"fr": "Canon à éclat (Tourelle),
+			"fr": "Canon à éclat (Tourelle)",
 			"ru": "Шоковое орудие (турель)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted)"
@@ -4880,7 +4880,7 @@
 			"es": "Condensador de Cluster",
 			"pt": null,
 			"de": "Cluster Kondensator",
-			 "fr": null,
+			"fr": null,
 			"ru": "Кассетный конденсатор",
 			"pl": null,
 			"cs": "Cluster Capacitor"
@@ -4943,7 +4943,7 @@
 			"es": "(Es Necesario)",
 			"pt": null,
 			"de": "(bereits benötigt)",
-			"fr": "(déjà nécéssaire"),
+			"fr": "(déjà nécéssaire)",
 			"ru": "(уже необходимо)",
 			"pl": null,
 			"cs": "(také potřebuješ)"
@@ -5033,7 +5033,7 @@
 			"es": "Munición de Cargador de Plasma Guardián",
 			"pt": null,
 			"de": "Guardian-Plasmaladermunition",
-			"fr": "Munitions de Chargeur Plasma Guardians"
+			"fr": "Munitions de Chargeur Plasma Guardians",
 			"ru": "Боеприпасы для плазменных пушек стражей",
 			"pl": null,
 			"cs": "Munice do Guardian Plasma Charger"
@@ -5042,7 +5042,7 @@
 			"es": "Munición de Cañón Gauss Guardián",
 			"pt": null,
 			"de": "Guardian-Gausskannonenmunition",
-			"fr": "Munitions de Canon Gauss Guardians,
+			"fr": "Munitions de Canon Gauss Guardians",
 			"ru": "Боеприпасы для пушек Гаусса стражей",
 			"pl": null,
 			"cs": "Munice do Guardian Gauss Cannon"
@@ -5053,7 +5053,7 @@
 			"de": "Kleinkalibrige Munition (AX)",
 			"fr": null,
 			"ru": "Мелкокалиберные боеприпасы АИ",
- 			"pl": null,
+			"pl": null,
 			"cs": "Munice malé ráže do AX zbraní (AX MC)"
 		},
 		"+5% Damage Boost": {
@@ -5062,7 +5062,7 @@
 			"de": "Bonus Schaden: +5%",
 			"fr": "+5% de boost de dommage",
 			"ru": "+5% к урону",
- 			"pl": null,
+			"pl": null,
 			"cs": "+5% boost k poškození"
 		},
 		"+10% Damage Boost": {
@@ -5165,7 +5165,7 @@
 			"cs": "Guardian Module Reinforcement"
 		},
 		"Guardian Plasma Charger (Fixed, Large)": {
- 			"es": null,
+			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
 			"fr": "Chargeur Plasma Guardians (Fixe, Large)",
@@ -5204,7 +5204,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Plasmalader (Turm) (Klasse: 2)",
-                        "fr": "Chargeur Plasma Guardians (Tourelle, Moyen)",
+			"fr": "Chargeur Plasma Guardians (Tourelle, Moyen)",
 			"ru": "Плазменная пушка стражей (турель, средний слот)",
 			"pl": null,
 			"cs": "Guardian Plasma Charger (Turreted, Medium)"
@@ -5231,7 +5231,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Guardian-Energieverteiler",
-			"fr": "Répartiteur de puissance Guardians,
+			"fr": "Répartiteur de puissance Guardians",
 			"ru": "Распределитель питания стражей",
 			"pl": null,
 			"cs": "Guardian Power Distributor"
@@ -5321,7 +5321,7 @@
 			"es": null,
 			"pt": null,
 			"de": "Trident (Fighter)",
- 			"fr": "Trident (chasseur)",
+			"fr": "Trident (chasseur)",
 			"ru": "Trident (Истребитель)",
 			"pl": null,
 			"cs": "Trident (Fighter)"
@@ -5330,7 +5330,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
- 			"fr": "Canon à éclat (Fixe, Large)",
+			"fr": "Canon à éclat (Fixe, Large)",
 			"ru": "Осколочное орудие стражей (фиксированное, большой слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Fixed, Large)"
@@ -5357,14 +5357,14 @@
 			"es": null,
 			"pt": null,
 			"de": null,
- 			"fr": "Canon à éclat (Gimbal, Large)",
+			"fr": "Canon à éclat (Gimbal, Large)",
 			"ru": "Шоковое орудие (на карданной подвеске, большой слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Gimballed, Large)"
 		},
 		"Shock Cannon (Gimballed, Medium)": {
- 			"es": null,
- 			"pt": null,
+			"es": null,
+			"pt": null,
 			"de": null,
 			"fr": "Canon à éclat (Gimbal, Moyen)",
 			"ru": "Шоковое орудие (на карданной подвеске, средний слот)",
@@ -5375,7 +5375,7 @@
 			"es": null,
 			"pt": null,
 			"de": null,
- 			"fr": "Canon à éclat (Gimbal, Petit)",
+			"fr": "Canon à éclat (Gimbal, Petit)",
 			"ru": "Шоковое орудие (на карданной подвеске, малый слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Gimballed, Small)"
@@ -5390,10 +5390,10 @@
 			"cs": "Shock Cannon (Turreted, Large)"
 		},
 		"Shock Cannon (Turreted, Medium)": {
- 			"es": null,
- 			"pt": null,
- 			"de": null,
- 			"fr": "Canon à éclat (Tourelle, Moyen)",
+			"es": null,
+			"pt": null,
+			"de": null,
+			"fr": "Canon à éclat (Tourelle, Moyen)",
 			"ru": "Шоковое орудие (турель, средний слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted, Medium)"
@@ -5402,14 +5402,14 @@
 			"es": null,
 			"pt": null,
 			"de": null,
- 			"fr": "Canon à éclat (Tourelle, Petit)",
- 			"ru": "Шоковое орудие (турель, малый слот)",
+			"fr": "Canon à éclat (Tourelle, Petit)",
+			"ru": "Шоковое орудие (турель, малый слот)",
 			"pl": null,
 			"cs": "Shock Cannon (Turreted, Small)"
 		},
 		"Ship Value:": {
- 			"es": null,
- 			"pt": null,
+			"es": null,
+			"pt": null,
 			"de": "Wert dieses Shiffs",
 			"fr": "Valeur des vaisseaux",
 			"ru": "Стоимость корабля:",
@@ -5417,29 +5417,29 @@
 			"cs": "Cena lodi:"
 		},
 		"Modules Value:": {
-                        "es": null,
+			"es": null,
 			"pt": null,
 			"de": "Wert der Module",
- 			"fr": "Valeur des modules",
- 			"ru": "Стоимость модулей:",
+			"fr": "Valeur des modules",
+			"ru": "Стоимость модулей:",
 			"pl": null,
 			"cs": "Cena modulů:"
 		},
 		"Rebuy:": {
 			"es": null,
 			"pt": null,
-  			"de": "Ersatzwert",
+			"de": "Ersatzwert",
 			"fr": "Racheter",
- 			"ru": "Страховка:",
- 			"pl": null,
+			"ru": "Страховка:",
+			"pl": null,
 			"cs": "Rebuy:"
 		},
 		"Loadout": {
- 			"es": null,
+			"es": null,
 			"pt": null,
 			"de": "Ausrüstung",
 			"fr": "Equipement",
- 			"ru": "Оснащение",
+			"ru": "Оснащение",
 			"pl": null,
 			"cs": "Výzbroj"
 		},
@@ -5457,7 +5457,7 @@
 			"pt": null,
 			"de": "Aufhängungen",
 			"fr": "Points d'emport",
- 			"ru": "Орудийные гнезда",
+			"ru": "Орудийные гнезда",
 			"pl": null,
 			"cs": "Hardpoints"
 		},
@@ -5466,7 +5466,7 @@
 			"pt": null,
 			"de": "Werkzeuge",
 			"fr": "Supports Utilitaires",
- 			"ru": "Крепления утилит",
+			"ru": "Крепления утилит",
 			"pl": null,
 			"cs": "Utilities"
 		},
@@ -5495,7 +5495,7 @@
 			"fr": "Autres/Livrée",
 			"ru": "Прочее/Декали",
 			"pl": null,
- 			"cs": "Ostatní/Livery"
+			"cs": "Ostatní/Livery"
 		},
 		"Occupied Escape Pod": {
 			"es": null,
@@ -5524,21 +5524,21 @@
 			"pl": null,
 			"cs": "Synchronizovat?"
 		},
-		 "Guardian Wreckage Components": {
- 			"es": "Restos de Accidentes de Guardián",
+		"Guardian Wreckage Components": {
+			"es": "Restos de Accidentes de Guardián",
 			"pt": null,
 			"de": "Guardian-Wrackteilkomponenten",
-  			"fr": "Débris d'épave Guardians",
+			"fr": "Débris d'épave Guardians",
 			"ru": "Обломки часовых стражей",
 			"pl": null,
 			"cs": "Guardian Wreckage Components"
 		},
 		"Reload all data": {
- 			"es": null,
+			"es": null,
 			"pt": null,
 			"de": null,
- 			"fr": "Recharger toutes les données",
- 			"ru": null,
+			"fr": "Recharger toutes les données",
+			"ru": null,
 			"pl": null,
 			"cs": "Znovu načíst všechna data"
 		}
