@@ -36,7 +36,7 @@
                            HorizontalAlignment="Center"
                            Text="Left Panel Font Size"/>
                 <Slider Margin="3" Grid.Row="1"
-                        Minimum="50" Maximum="200"
+                        Minimum="60" Maximum="200"
                             Value="{Binding LeftRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             </Grid>
 
@@ -53,7 +53,7 @@
                                HorizontalAlignment="Center"
                                Text="Right Panel Font Size"/>
                 <Slider Margin="3" Grid.Row="1"
-                        Minimum="50" Maximum="200"
+                        Minimum="60" Maximum="200"
                             Value="{Binding RightRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             </Grid>
         </Grid>
@@ -71,7 +71,7 @@
                        HorizontalAlignment="Center"
                        Text="Bottom Panel Font Size"/>
             <Slider Margin="3" Grid.Row="1"
-                        Minimum="50" Maximum="200"
+                        Minimum="60" Maximum="200"
                     Value="{Binding BottomRatio, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
