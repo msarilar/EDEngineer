@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.2",
+    "Content": "* Added an Export/Import settings window to the menu allowing you to save your settings to file and load them somewhere else\r\n* Fixed a bug that made the application crash when reducing the font size on the right panel to the minimum"
+  },
+  {
     "Version": "1.1.4.1",
     "Content": "Lots of contributions for this update, thanks a ton to the kind souls who submit pull requests to keep the application up to date!\r\n\r\nHave a lovely end of the year holidays everyone!\r\n\r\n=====\r\n\r\n* @CMDR-Cometborne :\r\nadded group Guardian/Thargoid to all unknowns\r\nadded hints where/how to get Thargoid stuff\r\nCorrect rarity value of Ship Flight Data\r\nAll existing DSS blueprints have been replace with a single new blueprint named expanded probe scanning radius\r\n\r\n* @CmdrWode :\r\nSplit both Guardian and Thargoid items into two subgroups (4 groups total)\r\nFix to deal with Cargo events that contain no Inventory field\r\n\r\n* @JohnXaverius :\r\nczech localization update\r\n\r\n* @enachos71 :\r\nGuardian Gauss Cannon Munitions was missing Guardian Technology Components, 6 needed in the blueprint\r\n\r\n* @TheBlackbird123 :\r\nspanish localization update"
   },

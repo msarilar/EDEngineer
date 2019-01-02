@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Forms;
 using EDEngineer.Models.Utils;
@@ -40,7 +41,11 @@ namespace EDEngineer.Views.Popups
                     try
                     {
                         var newSettings = JsonConvert.DeserializeObject<Settings>(File.ReadAllText(dialog.FileName));
-                        foreach (var property in typeof(Settings).GetProperties().Where(p => p.CanWrite))
+                        foreach (var property in typeof(Settings)
+                                                 .GetProperties(
+                                                     BindingFlags.DeclaredOnly |
+                                                     BindingFlags.Instance |
+                                                     BindingFlags.Public).Where(p => p.CanWrite && p.Name != "Version" && p.Name != "CurrentVersion"))
                         {
                             try
                             {
@@ -80,9 +85,18 @@ namespace EDEngineer.Views.Popups
                         Formatting = Formatting.Indented
                     };
 
+                    Settings.Default.UpgradeRequired = true;
                     File.WriteAllText(dialog.FileName, JsonConvert.SerializeObject(Settings.Default, settings));
                 }
             }
+        }
+
+        private void ResetSettingsButtonClicked(object sender, RoutedEventArgs e)
+        {
+            Settings.Default.Reset();
+            Settings.Default.Save();
+            Close();
+            loadedCallback();
         }
     }
 }

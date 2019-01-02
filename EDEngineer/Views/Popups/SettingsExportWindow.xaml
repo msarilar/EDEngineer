@@ -13,9 +13,10 @@
         Width="300">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.4*"/>
-            <RowDefinition Height="0.4*"/>
-            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0"
@@ -35,6 +36,14 @@
         </Grid>
 
         <Grid Grid.Row="2"
+              Background="LightPink">
+            <Button Content="Reset ALL Settings"
+                    BorderThickness="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Click="ResetSettingsButtonClicked"/>
+        </Grid>
+
+        <Grid Grid.Row="3"
               Background="MistyRose">
             <Button Content="Close"
                     BorderThickness="1"
