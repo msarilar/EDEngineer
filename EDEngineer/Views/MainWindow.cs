@@ -23,6 +23,7 @@ using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
+using EDEngineer.Views.Popups;
 using EDEngineer.Views.Popups.Graphics;
 using Application = System.Windows.Application;
 using WpfButton = System.Windows.Controls.Button;
@@ -184,25 +185,16 @@ namespace EDEngineer.Views
                 (o, e) => Languages.PromptLanguage(viewModel.Languages),
                 () => serverBridge.Toggle(),
                 serverBridge.Running,
-                (o, e) =>
-                {
-                    ReleaseNotesManager.ShowReleaseNotes();
-                },
+                (o, e) => { ReleaseNotesManager.ShowReleaseNotes(); },
                 Properties.Settings.Default.CurrentVersion,
+                (o, e) => { new NotificationSettingsWindow(viewModel.Languages).ShowDialog(); },
+                (o, e) => { new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog(); },
                 (o, e) =>
                 {
-                    new NotificationSettingsWindow(viewModel.Languages).ShowDialog();
+                    System.Diagnostics.Process.Start($"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart");
                 },
-                (o, e) =>
-                {
-                    new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog();
-                },
-                (o, e) =>
-                {
-                    var url = $"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart";
-                    System.Diagnostics.Process.Start(url);
-                },
-                (o, e) => ClearAggregationAndRestart(o, null));
+                (o, e) => ClearAggregationAndRestart(o, null),
+                (o, e) => { new SettingsExportWindow(Restart).ShowDialog(); });
 
             icon = TrayIconManager.Init(menu);
 
@@ -446,9 +438,7 @@ namespace EDEngineer.Views
             {
                 skipSaveAggregation = true;
                 viewModel.LogDirectory = newDirectory;
-                var w = new MainWindow();
-                Close();
-                w.Show();
+                Restart();
             }
         }
 
@@ -468,9 +458,7 @@ namespace EDEngineer.Views
             Properties.Settings.Default.WindowUnlocked = !Properties.Settings.Default.WindowUnlocked;
             Properties.Settings.Default.Save();
 
-            var w = new MainWindow();
-            Close();
-            w.Show();
+            Restart();
         }
 
         private void ClearAggregationAndRestart(object sender, RoutedEventArgs e)
@@ -478,6 +466,11 @@ namespace EDEngineer.Views
             Properties.Settings.Default.ClearAggregation = true;
             Properties.Settings.Default.Save();
 
+            Restart();
+        }
+
+        private void Restart()
+        {
             var w = new MainWindow();
             Close();
             w.Show();
@@ -503,9 +496,7 @@ namespace EDEngineer.Views
             Properties.Settings.Default.WindowUnlocked = false;
             Properties.Settings.Default.Save();
 
-            var w = new MainWindow();
-            Close();
-            w.Show();
+            Restart();
         }
 
         private void ClearShoppingListButtonClicked(object sender, RoutedEventArgs e)

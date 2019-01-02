@@ -210,6 +210,10 @@
     <Compile Include="Views\Popups\SelectLanguageWindow.xaml.cs">
       <DependentUpon>SelectLanguageWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Popups\SettingsExportWindow.xaml.cs">
+      <DependentUpon>SettingsExportWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Popups\ToolWindow.cs" />
     <Compile Include="Views\ShoppingListViewModel.cs" />
     <Compile Include="Utils\BlueprintConverter.cs" />
     <Compile Include="Utils\StringExtensions.cs" />
@@ -266,6 +270,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Popups\SettingsExportWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Views\MainWindowViewModel.cs" />
@@ -315,6 +323,8 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\menu-export.ico" />
+    <None Include="Resources\menu_settings_export.ico" />
     <Resource Include="Resources\menu-reload.ico" />
     <Resource Include="Resources\Images\api-on.png" />
     <Resource Include="Resources\Images\api-off.png" />

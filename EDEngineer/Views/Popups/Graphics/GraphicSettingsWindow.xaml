@@ -1,9 +1,10 @@
-﻿<Window x:Class="EDEngineer.Views.Popups.Graphics.GraphicSettingsWindow"
+﻿<popups:ToolWindow x:Class="EDEngineer.Views.Popups.Graphics.GraphicSettingsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         Closed="GraphicSettingsWindowClosed"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:popups="clr-namespace:EDEngineer.Views.Popups"
         WindowStyle="ToolWindow"
         SizeToContent="WidthAndHeight"
         Topmost="True"
@@ -120,4 +121,5 @@
                 Click="ButtonOkClicked"/>
         </Grid>
     </Grid>
-</Window>
+</popups:ToolWindow>
+

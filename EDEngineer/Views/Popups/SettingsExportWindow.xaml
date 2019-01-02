@@ -1,0 +1,46 @@
+﻿<popups:ToolWindow x:Class="EDEngineer.Views.Popups.SettingsExportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:popups="clr-namespace:EDEngineer.Views.Popups"
+        WindowStyle="ToolWindow"
+        mc:Ignorable="d"
+        Title="Settings"
+        SizeToContent="Height"
+        Topmost="True"
+        Height="300"
+        Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0"
+              Background="Teal">
+            <Button Content="Export Current Settings..."
+                    HorizontalAlignment="Center"
+                    BorderThickness="1"
+                    VerticalAlignment="Center" Click="ExportSettingsButtonClicked"/>
+        </Grid>
+
+        <Grid Grid.Row="1"
+              Background="LightYellow">
+            <Button Content="Load Settings..."
+                    BorderThickness="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Click="LoadSettingsButtonClicked"/>
+        </Grid>
+
+        <Grid Grid.Row="2"
+              Background="MistyRose">
+            <Button Content="Close"
+                    BorderThickness="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Click="CloseButtonClicked"/>
+        </Grid>
+    </Grid>
+</popups:ToolWindow>
+
