@@ -1173,7 +1173,8 @@
       "pt": "Cristais de Focalização Falhos",
       "de": "Fehlerhafte Fokuskristalle",
       "fr": "Cristaux de focalisation imparfaits",
-      "ru": "Wadliwe Kryształy Skupiające
+      "ru": "Поврежденные фокусировочные кристаллы",
+      "pl": "Wadliwe Kryształy Skupiające",
       "cs": "Flawed Focus Crystals"
     },
     "Focus Crystals": {
@@ -1758,7 +1759,7 @@
       "de": "Ruthenium",
       "fr": "Ruthenium",
       "ru": "Рутений",
-      "pl": "Ruthenium",
+      "pl": "Ruten",
       "cs": "Ruthenium"
     },
     "Rhenium": {
@@ -1848,7 +1849,7 @@
       "de": "Schwefel",
       "fr": "Souffre",
       "ru": "Сера",
-      "pl": "Sulfur
+      "pl": "Sulfur",
       "cs": "Sulphur"
     },
     "Tagged Encryption Codes": {
@@ -1884,7 +1885,7 @@
       "de": "Tellur",
       "fr": "Tellure",
       "ru": "Теллурий",
-      "pl": "Tellurium",
+      "pl": "Tellur",
       "cs": "Tellurium"
     },
     "Tempered Alloys": {
@@ -1893,7 +1894,7 @@
       "de": "Vergütete Legierungen",
       "fr": "Alliages trempés",
       "ru": "Закаленные сплавы",
-      "pl": "Tempered Alloys",
+      "pl": "Hartowane Stopy",
       "cs": "Tempered Alloys"
     },
     "Thermic Alloys": {
@@ -1902,7 +1903,7 @@
       "de": "Thermische Legierungen",
       "fr": "Alliages thermiques",
       "ru": "Термические сплавы",
-      "pl": "Thermic Alloys",
+      "pl": "Stopy Termiczne",
       "cs": "Thermic Alloys"
     },
     "Tin": {
@@ -1911,7 +1912,7 @@
       "de": "Zinn",
       "fr": "Etain",
       "ru": "Олово",
-      "pl": "Cyna
+      "pl": "Cyna",
       "cs": "Tin"
     },
     "Tungsten": {
@@ -1920,7 +1921,7 @@
       "de": "Wolfram",
       "fr": "Tungstène",
       "ru": "Вольфрам",
-      "pl": "Tungsten",
+      "pl": "Wolfram",
       "cs": "Tungsten"
     },
     "Unexpected Emission Data": {
@@ -1947,7 +1948,7 @@
       "de": "Unbekanntes Fragment",
       "fr": "Fragment inconnu",
       "ru": "Обломок сенсора",
-      "pl": "Sensor Fragment",
+      "pl": "Fragmenty Sensorów",
       "cs": "Sensor Fragment"
     },
     "Untypical Shield Scans": {
@@ -1956,7 +1957,7 @@
       "de": "Untypische Schildscans",
       "fr": "Analyses de bouclier atypiques",
       "ru": "Нетипичные данные сканирования щитов",
-      "pl": "Untypical Shield Scans",
+      "pl": "Nietypowe Skany Osłon",
       "cs": "Untypical Shield Scans"
     },
     "Unusual Encrypted Files": {
@@ -1965,7 +1966,7 @@
       "de": "Ungewöhnliche verschlüsselte Files",
       "fr": "Fichiers cryptés inhabituels",
       "ru": "Особые зашифрованные файлы",
-      "pl": "Unusual Encrypted Files",
+      "pl": "Niezwykłe Szyfrowane Dane",
       "cs": "Unusual Encrypted Files"
     },
     "Vanadium": {
@@ -1974,7 +1975,7 @@
       "de": "Vanadium",
       "fr": "Vanadium",
       "ru": "Ванадий",
-      "pl": "Vanadium",
+      "pl": "Wanad",
       "cs": "Vanadium"
     },
     "Worn Shield Emitters": {
@@ -1983,7 +1984,7 @@
       "de": "Gebrauchte Schildemitter",
       "fr": "Émetteurs de bouclier usé",
       "ru": "Изношенные щитоизлучатели",
-      "pl": "Worn Shield Emitters",
+      "pl": "Używane Emitery Osłon",
       "cs": "Worn Shield Emitters"
     },
     "Yttrium": {
@@ -2001,7 +2002,7 @@
       "de": "Zink",
       "fr": "Zinc",
       "ru": "Цинк",
-      "pl": "Zinc",
+      "pl": "Cynk",
       "cs": "Zinc"
     },
     "Zirconium": {
@@ -2010,7 +2011,7 @@
       "de": "Zirconium",
       "fr": "Zirconium",
       "ru": "Цирконий",
-      "pl": "Zirconium",
+      "pl": "Cyrkon",
       "cs": "Zirconium"
     },
     "ECM": {
@@ -2028,7 +2029,7 @@
       "de": "Rumpfhülle",
       "fr": "Coque",
       "ru": "Корпус",
-      "pl": "Hull",
+      "pl": "Kadłub",
       "cs": "Hull"
     },
     "FSD Interdictor": {
@@ -2181,7 +2182,7 @@
       "de": "Einträge ohne Bestand anzeigen?",
       "fr": "Afficher les entrées sans stock?",
       "ru": "Показывать пустые записи?",
-      "pl": "Pokaż składniki bez zapasów?",
+      "pl": "Pokazać składniki bez zapasów?",
       "cs": "Zobrazit položky, které nemám ve skladu?"
     },
     "Show only for favorites?": {
@@ -3000,7 +3001,7 @@
       "de": "Hochgeschwindigkeitsmunition",
       "fr": "Munitions à Haute Vélocité",
       "ru": "Высокоскоростные боеприпасы",
-      "pl": "High Velocity Munitions",
+      "pl": "Amunicja o Wysokiej Prędkości",
       "cs": "High Velocity Munitions"
     },
     "Large Calibre Munitions": {
@@ -3009,7 +3010,7 @@
       "de": "Großkalibrige Munition",
       "fr": "Munitions de gros Calibre",
       "ru": "Крупнокалиберные боеприпасы",
-      "pl": "Large Calibre Munitions",
+      "pl": "Amunicja Dużego Kalibru",
       "cs": "Large Calibre Munitions"
     },
     "None": {
@@ -3027,7 +3028,7 @@
       "de": "Plasmamunition",
       "fr": "Munitions plasma",
       "ru": "Плазменные боеприпасы",
-      "pl": "Plasma Munitions",
+      "pl": "Amunicja Plazmowa",
       "cs": "Plasma Munitions"
     },
     "Small Calibre Munitions": {
@@ -3036,7 +3037,7 @@
       "de": "Kleinkalibrige Munition",
       "fr": "Munitions de petit calibre",
       "ru": "Мелкокалиберные боеприпасы",
-      "pl": "Small Calibre Munitions",
+      "pl": "Amunicja Małego Kalibru",
       "cs": "Small Calibre Munitions"
     },
     "SRV Ammo Restock": {
@@ -3189,7 +3190,7 @@
       "de": "Unbekannte Schiffsignatur",
       "fr": "Signature de Vaisseau Thargoid",
       "ru": "Сигнатура таргоидского корабля",
-      "pl": "Thargoid Ship Signature",
+      "pl": "Sygnatura Statku Thargoid'ów",
       "cs": "Thargoid Ship Signature"
     },
     "Thargoid Wake Data": {
@@ -3324,7 +3325,7 @@
       "de": "Sensoren",
       "fr": "Capteurs",
       "ru": "Сенсоры",
-      "pl": "Sensors",
+      "pl": "Sensory",
       "cs": "Sensors"
     },
     "Surface Scanner": {
@@ -3333,7 +3334,7 @@
       "de": "Oberflächen-Scanner",
       "fr": "Scanner de Surface",
       "ru": "Сканер поверхности",
-      "pl": "Surface Scanner",
+      "pl": "Skaner Powierzchni",
       "cs": "Surface Scanner"
     },
     "Wake Scanner": {
@@ -3423,7 +3424,7 @@
       "de": "Langstrecken-Scanner",
       "fr": "Scanner Longue Portée",
       "ru": "Сканер увеличенной дальности",
-      "pl": "Long Range Scanner",
+      "pl": "Skaner Dalekiego Zasięgu",
       "cs": "Long Range Scanner"
     },
     "Wide Angle Scanner": {
@@ -3432,7 +3433,7 @@
       "de": "Weitwinkel-Scanner",
       "fr": "Scanner à Angle Large",
       "ru": "Широкоугольный сканер",
-      "pl": "Wide Angle Scanner",
+      "pl": "Skaner Szerokokątny",
       "cs": "Wide Angle Scanner"
     },
     "Light Weight Scanner": {
@@ -3450,7 +3451,7 @@
       "de": "Schneller Scanner",
       "fr": "Scanner Rapide",
       "ru": "Быстрый сканер",
-      "pl": "Fast Scanner",
+      "pl": "Szybki Skaner",
       "cs": "Fast Scanner"
     },
     "Unlock": {
@@ -3477,7 +3478,7 @@
       "de": "Gefilterte Einträge - Klick HIER um zu Löschen",
       "fr": "entrées filtrées - cliquez ici pour nettoyer",
       "ru": "отфильтрованные записи - нажмите для очистки",
-      "pl": null,
+      "pl": "Filtrowane wpisy - Kliknij to żeby wyczyścić",
       "cs": "Filtrované záznamy - klikni pro vyčistění"
     },
     "Thargoid Material Composition Data": {
@@ -3549,7 +3550,7 @@
       "de": "Schiff-Flug-Daten",
       "fr": "Donnée de Vol",
       "ru": "Полетные данные корабля",
-      "pl": null,
+      "pl": "Dane lotu Statku",
       "cs": "Ship Flight Data"
     },
     "Ship System Data": {
@@ -3558,7 +3559,7 @@
       "de": "Schiff-System-Daten",
       "fr": "Données de Système de Navigation",
       "ru": "Данные бортовых систем корабля",
-      "pl": null,
+      "pl": "Dane Systemów Statku",
       "cs": "Ship System Data"
     },
     "Wreckage Components": {
@@ -3576,7 +3577,7 @@
       "de": "Waffenteile",
       "fr": "Éléments d'Arme",
       "ru": "Детали вооружения",
-      "pl": null,
+      "pl": "Części Broni",
       "cs": "Weapon Parts"
     },
     "Bio-Mechanical Conduits": {
@@ -3603,7 +3604,7 @@
       "de": "Einstellungen",
       "fr": "Paramètres",
       "ru": "Настройки",
-      "pl": null,
+      "pl": "Ustawienia",
       "cs": "Nastavení"
     },
     "Configure Graphics": {
@@ -3612,7 +3613,7 @@
       "de": "Grafik einstellen",
       "fr": "Configuration Graphique",
       "ru": "Настройки графики",
-      "pl": null,
+      "pl": "Konfiguj Grafikę",
       "cs": "Nastav grafiku"
     },
     "100% Refill": {
@@ -3621,7 +3622,7 @@
       "de": "100% Nachfüllung",
       "fr": "100% de Recharge",
       "ru": "100% заправка",
-      "pl": null,
+      "pl": "100% uzupełnienia",
       "cs": "100% doplnění"
     },
     "100% Refill, +15% Heat Dissipation": {
@@ -3684,7 +3685,7 @@
       "de": "Gold",
       "fr": "Or",
       "ru": "Золото",
-      "pl": null,
+      "pl": "Złoto",
       "cs": "Gold"
     },
     "Kamitra Cigars": {
@@ -3711,7 +3712,7 @@
       "de": "Landminen",
       "fr": "Mines Terrestres",
       "ru": "Мины",
-      "pl": null,
+      "pl": "Miny Lądowe",
       "cs": "Landmines"
     },
     "Lavian Brandy": {
@@ -3729,7 +3730,7 @@
       "de": "Drohnen",
       "fr": "Drones",
       "ru": "Беспилотники",
-      "pl": null,
+      "pl": "Drony",
       "cs": "Limpety"
     },
     "Meta-alloys": {
@@ -3774,7 +3775,7 @@
       "de": "roh",
       "fr": "À l'état brut",
       "ru": "Неочищенные минералы",
-      "pl": null,
+      "pl": "Surowe",
       "cs": "Surové (Raw)"
     },
     "Raw Only": {
@@ -3783,7 +3784,7 @@
       "de": "nur roh",
       "fr": "Uniquement à l'état brut",
       "ru": "Только неочищенные минералы",
-      "pl": null,
+      "pl": "Tylko surowe",
       "cs": "Pouze surové(Raw only)"
     },
     "Manufactured": {
@@ -3828,7 +3829,7 @@
       "de": "Unbekannt",
       "fr": "Inconnu",
       "ru": "Неизвестные",
-      "pl": null,
+      "pl": "Nieznane",
       "cs": "Neznámé"
     },
     "Carrying ": {
@@ -3864,7 +3865,7 @@
       "de": "Schilddaten",
       "fr": "Données de bouclier",
       "ru": "Данные о щитах",
-      "pl": null,
+      "pl": "Dane osłon",
       "cs": "Shield Data"
     },
     "Encryption Files": {
@@ -3882,7 +3883,7 @@
       "de": "Datenarchive",
       "fr": "Archives de données",
       "ru": "Архивы данных",
-      "pl": null,
+      "pl": 'Archiwa Danych",
       "cs": "Data Archives"
     },
     "Encoded Firmware": {
@@ -3900,7 +3901,7 @@
       "de": "Kategorie 1",
       "fr": "Matériaux bruts - Catégorie 1",
       "ru": "Категория 1",
-      "pl": null,
+      "pl": "Kategoria 1",
       "cs": "Kategorie 1"
     },
     "Category 2": {
@@ -3909,7 +3910,7 @@
       "de": "Kategorie 2",
       "fr": "Matériaux bruts - Catégorie 2",
       "ru": "Категория 2",
-      "pl": null,
+      "pl": "Kategoria 2",
       "cs": "Kategorie 2"
     },
     "Category 3": {
@@ -3918,7 +3919,7 @@
       "de": "Kategorie 3",
       "fr": "Matériaux bruts - Catégorie 3",
       "ru": "Категория 3",
-      "pl": null,
+      "pl": "Katerogia 3",
       "cs": "Kategorie 3"
     },
     "Category 4": {
@@ -3927,7 +3928,7 @@
       "de": "Kategorie 4",
       "fr": "Matériaux bruts - Catégorie 4",
       "ru": "Категория 4",
-      "pl": null,
+      "pl": "Kategoria 4",
       "cs": "Kategorie 4"
     },
     "Category 5": {
@@ -3936,7 +3937,7 @@
       "de": "Kategorie 5",
       "fr": "Matériaux bruts - Catégorie 5",
       "ru": "Категория 5",
-      "pl": null,
+      "pl": "Kategoria 5",
       "cs": "Kategorie 5"
     },
     "Category 6": {
@@ -3945,7 +3946,7 @@
       "de": "Kategorie 6",
       "fr": "Matériaux bruts - Catégorie 6",
       "ru": "Категория 6",
-      "pl": null,
+      "pl": "Kategoria 6",
       "cs": "Kategorie 6"
     },
     "Category 7": {
@@ -3954,7 +3955,7 @@
       "de": "Kategorie 7",
       "fr": "Matériaux bruts - Catégorie 7",
       "ru": "Категория 7",
-      "pl": null,
+      "pl": "Kategoria 7",
       "cs": "Kategorie 7"
     },
     "Chemical": {
@@ -3981,7 +3982,7 @@
       "de": "Hitze",
       "fr": "Chaleur",
       "ru": "Теплообмен",
-      "pl": null,
+      "pl": "Ciepło",
       "cs": "Tepelné (Heat)"
     },
     "Conductive": {
@@ -3990,7 +3991,7 @@
       "de": "Leiter",
       "fr": "Conducteurs",
       "ru": "Проводники",
-      "pl": null,
+      "pl": "Przewodzące",
       "cs": "Konduktivní (Conductive)"
     },
     "Capacitors": {
@@ -3999,7 +4000,7 @@
       "de": "Kondensatoren",
       "fr": "Condensateurs",
       "ru": "Конденсаторы",
-      "pl": null,
+      "pl": "Kondensatory",
       "cs": "Kondenzátory (Capacitors)"
     },
     "Shielding": {
@@ -4026,7 +4027,7 @@
       "de": "Kristalle",
       "fr": "Cristaux",
       "ru": "Кристаллы",
-      "pl": null,
+      "pl": "Kryształy",
       "cs": "Krystaly (Crystals)"
     },
     "Alloys": {
@@ -4071,7 +4072,7 @@
       "de": "Guardian-Energiezelle",
       "fr": null,
       "ru": "Энергоячейка стражей",
-      "pl": null,
+      "pl": "Ogniwa Mocy Strażników",
       "cs": "Guardian Power Cell"
     },
     "Guardian Technology Component": {
@@ -4134,7 +4135,7 @@
       "de": "Menschlich",
       "fr": null,
       "ru": "Технологии людей",
-      "pl": null,
+      "pl": "Człowiek",
       "cs": "Lidské"
     },
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
@@ -4161,7 +4162,7 @@
       "de": "Guardian",
       "fr": null,
       "ru": "Технологии стражей",
-      "pl": null,
+      "pl": "Strażnik",
       "cs": "Guardiánské"
     },
     "Guardian Ruins": {
@@ -4170,7 +4171,7 @@
       "de": null,
       "fr": null,
       "ru": null,
-      "pl": null,
+      "pl": "Ruiny Strażników",
       "cs": null
     },
     "Guardian Ruins (Active)": {
@@ -4179,7 +4180,7 @@
       "de": null,
       "fr": null,
       "ru": null,
-      "pl": null,
+      "pl": "Ruiny Strażników (Aktywne)",
       "cs": null
     },
     "Guardian Gauss Cannon (Fixed)": {
@@ -5412,7 +5413,7 @@
       "de": "Wert dieses Shiffs",
       "fr": null,
       "ru": "Стоимость корабля:",
-      "pl": null,
+      "pl": "Wartość Statku",
       "cs": "Cena lodi:"
     },
     "Modules Value:": {
@@ -5421,7 +5422,7 @@
       "de": "Wert der Module",
       "fr": null,
       "ru": "Стоимость модулей:",
-      "pl": null,
+      "pl": "Wartość Modułów",
       "cs": "Cena modulů:"
     },
     "Rebuy:": {
@@ -5448,7 +5449,7 @@
       "de": "Fracht Historie (Benötigt API)",
       "fr": null,
       "ru": "История грузов (необходимо API)",
-      "pl": null,
+      "pl": "Historia Ładunku (Wymaga API)",
       "cs": "Historie nákladu (vyžaduje API)"
     },
     "Hardpoints": {
@@ -5502,7 +5503,7 @@
       "de": "Besetzte Rettungskapsel",
       "fr": null,
       "ru": "Спасательная капсула с пассажиром",
-      "pl": null,
+      "pl": "Zajęta kapsuła ratunkowa",
       "cs": "Occupied Escape Pod"
     },
     "Progenitor Cells": {
@@ -5520,7 +5521,7 @@
       "de": "Synchronisieren?",
       "fr": null,
       "ru": "Синхронизировать?",
-      "pl": null,
+      "pl": "Synchronizować?",
       "cs": "Synchronizovat?"
     },
     "Guardian Wreckage Components": {
@@ -5538,7 +5539,7 @@
       "de": null,
       "fr": null,
       "ru": null,
-      "pl": null,
+      "pl": "Przeładuj wszystkie dane",
       "cs": "Znovu načíst všechna data"
     },
     "Export/Import Settings": {
@@ -5547,7 +5548,7 @@
       "de": null,
       "fr": null,
       "ru": null,
-      "pl": null,
+      "pl": "Eksportuj/Importuj Ustawienia",
       "cs": null
     }
   }
