@@ -43,10 +43,18 @@ namespace EDEngineer.Views.Notifications
 
         public IEnumerable<Tuple<string, string>> AvailableLanguages()
         {
-            return from voice in speaker.GetInstalledVoices()
-            join lang in Languages.Instance.LanguageInfos
-                on voice.VoiceInfo.Culture.TwoLetterISOLanguageName equals lang.Value.TwoLetterISOLanguageName
-            select Tuple.Create(lang.Value.Name, voice.VoiceInfo.Name);
+            try
+            {
+                return from voice in speaker.GetInstalledVoices()
+                       join lang in Languages.Instance.LanguageInfos
+                           on voice.VoiceInfo.Culture.TwoLetterISOLanguageName equals lang
+                                                                                      .Value.TwoLetterISOLanguageName
+                       select Tuple.Create(lang.Value.Name, voice.VoiceInfo.Name);
+            }
+            catch
+            {
+                return new[] { Tuple.Create<string, string>(null, null) };
+            }
         }
 
         public void SetVoice(string voice)
@@ -88,12 +96,15 @@ namespace EDEngineer.Views.Notifications
 
         private void SpeakVoice(Notification notification)
         {
-            Task.Factory.StartNew(() =>
+            if (!string.IsNullOrEmpty(SettingsManager.NotificationVoice))
             {
-                SetVoice(SettingsManager.NotificationVoice);
-                speaker.Speak(notification.Header);
-                speaker.Speak(notification.Content);
-            });
+                Task.Factory.StartNew(() =>
+                {
+                    SetVoice(SettingsManager.NotificationVoice);
+                    speaker.Speak(notification.Header);
+                    speaker.Speak(notification.Content);
+                });
+            }
         }
 
         private static void ShowToast(Notification notification)
