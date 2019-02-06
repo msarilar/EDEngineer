@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.3",
+    "Content": "* Fixed an issue with speech synthesis that could make the application fail to start\r\n\r\n* Polish localization update thanks to @Nicked111 \r\n* Portuguese localization update thanks to @MegaMMC"
+  },
+  {
     "Version": "1.1.4.2",
     "Content": "* Added an Export/Import settings window to the menu allowing you to save your settings to file and load them somewhere else\r\n* Fixed a bug that made the application crash when reducing the font size on the right panel to the minimum"
   },
