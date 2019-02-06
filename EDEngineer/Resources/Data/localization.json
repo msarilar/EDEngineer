@@ -3816,7 +3816,7 @@
     },
     "Group ingredients?": {
       "es": "Grupo de ingredientes?",
-      "pt": null,
+      "pt": "Grupo de ingredientes",
       "de": "Gruppenzutaten?",
       "fr": "Groupe d'ingrédients ?",
       "ru": "Группировать ингредиенты?",
@@ -3834,7 +3834,7 @@
     },
     "Carrying ": {
       "es": "Transportando",
-      "pt": null,
+      "pt": "Transportando",
       "de": "Trasportieren ",
       "fr": "Capacité",
       "ru": "В наличии ",
@@ -3843,7 +3843,7 @@
     },
     "Emission Data": {
       "es": "Datos de emisión",
-      "pt": null,
+      "pt": "Dados de emissão",
       "de": "Emissionsdaten",
       "fr": "Données d'émission",
       "ru": "Данные об излучениях",
@@ -3861,7 +3861,7 @@
     },
     "Shield Data": {
       "es": "Datos de escudo",
-      "pt": null,
+      "pt": "Dados de escudo",
       "de": "Schilddaten",
       "fr": "Données de bouclier",
       "ru": "Данные о щитах",
@@ -3870,7 +3870,7 @@
     },
     "Encryption Files": {
       "es": "Archivos de encriptación",
-      "pt": null,
+      "pt": "Arquivos de encriptação",
       "de": "Verschlüsselungsdaten",
       "fr": "Fichiers cryptés",
       "ru": "Файлы шифрования",
@@ -3879,7 +3879,7 @@
     },
     "Data Archives": {
       "es": "Archivos de datos",
-      "pt": null,
+      "pt": "Arquivos de dados",
       "de": "Datenarchive",
       "fr": "Archives de données",
       "ru": "Архивы данных",
@@ -3888,7 +3888,7 @@
     },
     "Encoded Firmware": {
       "es": null,
-      "pt": null,
+      "pt": "Firmware codificado",
       "de": "Codierte Firmware",
       "fr": "Micrologiciels encodés",
       "ru": "Закодированные микропрограммы",
@@ -3960,7 +3960,7 @@
     },
     "Chemical": {
       "es": "Químico",
-      "pt": null,
+      "pt": "Químico",
       "de": "Chemikalien",
       "fr": "Produits chimiques",
       "ru": "Химикаты",
@@ -3978,7 +3978,7 @@
     },
     "Heat": {
       "es": "Calor",
-      "pt": null,
+      "pt": "Calor",
       "de": "Hitze",
       "fr": "Chaleur",
       "ru": "Теплообмен",
@@ -3987,7 +3987,7 @@
     },
     "Conductive": {
       "es": "Conductivo",
-      "pt": null,
+      "pt": "Condutivo",
       "de": "Leiter",
       "fr": "Conducteurs",
       "ru": "Проводники",
@@ -3996,7 +3996,7 @@
     },
     "Capacitors": {
       "es": "Condensadores",
-      "pt": null,
+      "pt": "Capacitores",
       "de": "Kondensatoren",
       "fr": "Condensateurs",
       "ru": "Конденсаторы",
@@ -4014,7 +4014,7 @@
     },
     "Composite": {
       "es": "Compuesto",
-      "pt": null,
+      "pt": "Composto",
       "de": "Komposite",
       "fr": "Composites",
       "ru": "Композиты",
@@ -4023,7 +4023,7 @@
     },
     "Crystals": {
       "es": "Cristales",
-      "pt": null,
+      "pt": "Cristais",
       "de": "Kristalle",
       "fr": "Cristaux",
       "ru": "Кристаллы",
@@ -4167,7 +4167,7 @@
     },
     "Guardian Ruins": {
       "es": "Ruinas Guardianes",
-      "pt": null,
+      "pt": "Ruínas Guardian",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4176,7 +4176,7 @@
     },
     "Guardian Ruins (Active)": {
       "es": "Ruinas Guardianes (Activas)",
-      "pt": null,
+      "pt": "Ruínas Guardian (Ativa)",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4293,7 +4293,7 @@
     },
     "Thermal Conduit": {
       "es": "Conductor Térmico",
-      "pt": null,
+      "pt": "Condutor Térmico",
       "de": "Hitzerohr",
       "fr": null,
       "ru": "Проводник тепла",
@@ -4302,7 +4302,7 @@
     },
     "Thermal Shock": {
       "es": "Choque Térmico",
-      "pt": null,
+      "pt": "Choque Térmico",
       "de": "Thermischer Schock",
       "fr": null,
       "ru": "Тепловой удар",
@@ -4311,7 +4311,7 @@
     },
     "Thermal Vent": {
       "es": "Respiradero Térmico",
-      "pt": null,
+      "pt": "Ventoinha Térmica",
       "de": "Thermische Entlastung",
       "fr": null,
       "ru": "Теплоотдача",
