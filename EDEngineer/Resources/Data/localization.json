@@ -2159,10 +2159,10 @@
       "cs": "Postup"
     },
     "Last update:": {
-      "es": "Ultima actualización",
-      "pt": "Última Atualização",
+      "es": "Ultima actualización:",
+      "pt": "Última Atualização:",
       "de": "Letzte Aktualisierung:",
-      "fr": "Dernière Mise à jour",
+      "fr": "Dernière Mise à jour:",
       "ru": "Последнее обновление:",
       "pl": "Ostatnia aktualizacja:",
       "cs": "Ostatní aktualizace:"
@@ -2394,7 +2394,7 @@
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
-      "pt": "Algo deu errado na análise de seus logs, abra um problema no GitHub com esta informação",
+      "pt": "Algo deu errado na análise de seus logs, abra um problema no GitHub com esta informação :",
       "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
       "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
       "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
@@ -3348,12 +3348,12 @@
     },
     "Last update: ": {
       "es": "Última actualización: ",
-      "pt": "Última atualização",
-      "de": "letzte Aktualisierung",
+      "pt": "Última atualização: ",
+      "de": "letzte Aktualisierung: ",
       "fr": "Dernière mise à jour: ",
       "ru": "Последнее обновление: ",
-      "pl": "Ostatnia aktualizacja:",
-      "cs": "Poslední aktualizace:"
+      "pl": "Ostatnia aktualizacja: ",
+      "cs": "Poslední aktualizace: "
     },
     "Silent Launch": {
       "es": "Iniciar Minimizado",
@@ -3464,10 +3464,10 @@
       "cs": "Odemknutí"
     },
     "Available Voices:": {
-      "es": "Voces Disponibles",
-      "pt": "Vozes disponiveis",
-      "de": "verfügbare Stimmen",
-      "fr": "Voix Disponibles",
+      "es": "Voces Disponibles:",
+      "pt": "Vozes disponiveis:",
+      "de": "verfügbare Stimmen:",
+      "fr": "Voix Disponibles:",
       "ru": "Доступные голоса:",
       "pl": "Dostępne głosy:",
       "cs": "Dostupné hlasy:"
@@ -3852,7 +3852,7 @@
     },
     "Wake Scans": {
       "es": "Escaneos de estela",
-      "pt": null,
+      "pt": "Escaneamento de Rastro",
       "de": "Sogwolken Scans",
       "fr": "Données de sillages",
       "ru": "Сканирования следа FSD",
@@ -3960,7 +3960,7 @@
     },
     "Chemical": {
       "es": "Químico",
-      "pt": "Químico",
+      "pt": "Químicos",
       "de": "Chemikalien",
       "fr": "Produits chimiques",
       "ru": "Химикаты",
@@ -3969,7 +3969,7 @@
     },
     "Thermic": {
       "es": "Térmico",
-      "pt": "Térmico",
+      "pt": "Térmicos",
       "de": "Thermisch",
       "fr": "Thermiques",
       "ru": "Термические сплавы",
@@ -3987,7 +3987,7 @@
     },
     "Conductive": {
       "es": "Conductivo",
-      "pt": "Condutivo",
+      "pt": "Condutivos",
       "de": "Leiter",
       "fr": "Conducteurs",
       "ru": "Проводники",
@@ -4005,7 +4005,7 @@
     },
     "Shielding": {
       "es": "Protección",
-      "pt": null,
+      "pt": "Blindagem",
       "de": "Abschirmung",
       "fr": "Protection",
       "ru": "Защита",
@@ -4014,7 +4014,7 @@
     },
     "Composite": {
       "es": "Compuesto",
-      "pt": "Composto",
+      "pt": "Compostos",
       "de": "Komposite",
       "fr": "Composites",
       "ru": "Композиты",
@@ -4221,7 +4221,7 @@
     },
     "Meta Alloy Hull Reinforcement": {
       "es": null,
-      "pt": null,
+      "pt": "Conjunto de Reforço de Casco",
       "de": "Meta-Legierung-Hüllenverstärkung",
       "fr": null,
       "ru": "Метасплавное усиление корпуса",
@@ -4626,7 +4626,7 @@
     },
     "@Technology": {
       "es": "@Tecnología",
-      "pt": null,
+      "pt": "@Tecnologia",
       "de": "@Technologie",
       "fr": null,
       "ru": "@Технология",
@@ -4644,7 +4644,7 @@
     },
     "Synthesis": {
       "es": "Síntesis",
-      "pt": null,
+      "pt": "Síntese",
       "de": "Synthese",
       "fr": null,
       "ru": "Синтез",
@@ -4662,7 +4662,7 @@
     },
     "Technology": {
       "es": "Tecnología",
-      "pt": null,
+      "pt": "Tecnologia",
       "de": "Technologie",
       "fr": null,
       "ru": "Технологии",
@@ -4671,7 +4671,7 @@
     },
     "Ancient/Guardian ruins": {
       "es": "Ruinas Antíguas/Guardianes",
-      "pt": null,
+      "pt": "Reínas Antigas/Guardian",
       "de": "Uralte/Guardian Ruinen",
       "fr": null,
       "ru": "Руины стражей",
@@ -4680,7 +4680,7 @@
     },
     "EDEngineer will try to remove blueprints from your shopping list if you craft them in game": {
       "es": "EDEngineer intentará eliminar planos de tu lista si los creas en el juego",
-      "pt": null,
+      "pt": "O EDEngineer tentará remover blueprints da sua lista de compras se você as fazer no jogo",
       "de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
       "fr": null,
       "ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
@@ -4842,7 +4842,7 @@
     },
     "Mass Manager": {
       "es": "Gestor de Masa",
-      "pt": null,
+      "pt": "Gestor de Massa",
       "de": "Massemanager",
       "fr": null,
       "ru": "Распределитель гравитации",
@@ -4896,7 +4896,7 @@
     },
     "Thargoid Ship": {
       "es": "Nave Thargoide",
-      "pt": null,
+      "pt": "Nave Thargoid",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4905,7 +4905,7 @@
     },
     "Thargoid Site": {
       "es": "Sitio Thargoide",
-      "pt": null,
+      "pt": "Construção Thargoid",
       "de": null,
       "fr": null,
       "ru": null,
@@ -4923,7 +4923,7 @@
     },
     "System:": {
       "es": "Sistema:",
-      "pt": null,
+      "pt": "Sistema:",
       "de": "System:",
       "fr": null,
       "ru": "Система:",
@@ -4932,16 +4932,16 @@
     },
     "You have:": {
       "es": "Tienes:",
-      "pt": null,
+      "pt": "Você tem:",
       "de": "Du hast:",
       "fr": null,
       "ru": "В наличии:",
       "pl": null,
-      "cs": "Máš"
+      "cs": "Máš:"
     },
     "(already needed)": {
       "es": "(Es Necesario)",
-      "pt": null,
+      "pt": "(Já necessário)",
       "de": "(bereits benötigt)",
       "fr": null,
       "ru": "(уже необходимо)",
@@ -4950,7 +4950,7 @@
     },
     "Shows material trading suggestion (taking into account your cargo and the entire shopping list).": {
       "es": "Muestra sugerencia de comercio de materiales (teniendo en cuenta tu carga y la lista de componentes completa).",
-      "pt": null,
+      "pt": "Mostra sugestão de negociação de material (levando em conta sua carga e toda a lista de compras)",
       "de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
       "fr": null,
       "ru": "Показывает предложения по торговле материалами (учитывая ваш груз и весь список покупок).",
@@ -4959,7 +4959,7 @@
     },
     "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
       "es": "Las sugerencias están ordenadas por el tamaño de la transacción comparado con tu carga, menos una cantidad eventual necesaria para la lista de componentes.",
-      "pt": null,
+      "pt": "As sugestões são classificadas pelo tamanho da troca comparado à sua carga, menos uma quantia eventual já necessária na lista de compras.",
       "de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
       "fr": null,
       "ru": "Предложения сортируются по величине торговли по сравнению с вашим грузом, минус возможная сумма, уже необходимая в списке покупок.",
@@ -4968,7 +4968,7 @@
     },
     "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
       "es": "Las entradas naranjas indican una sugerencia de comercio que no completará tus requisitos (pero puede que ayude).",
-      "pt": null,
+      "pt": "As entradas em laranja indicam uma sugestão de negociação que não atenderá completamente a sua necessidade (mas pode ajudar).",
       "de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
       "fr": null,
       "ru": "Оранжевые записи указывают предложения по торговле, которые не полностью отвечают требованиям (но могут помочь).",
@@ -4977,7 +4977,7 @@
     },
     "Materials Trader found at industrial economies, only trades in manufactured materials.": {
       "es": "Los comerciantes de materiales encontrados en las economías industriales, solo hacen transacciones con materiales manufacturados.",
-      "pt": null,
+      "pt": "Os comerciantes de materiais encontrados em economias industriais, apenas comercializam materiais manufaturados.",
       "de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
       "fr": null,
       "ru": "Торговец материалами в системах с промышленной экономикой, обменивает только промышленные материалы.",
@@ -4986,7 +4986,7 @@
     },
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
       "es": "Los comerciantes de materiales encontrados en las economías de estracción y refinería, solo hacen transacciones con materias primas encontradas en superficies de planetas y anillos planetarios.",
-      "pt": null,
+      "pt": "Os comerciantes de materiais encontrados em economias de extração e refinaria, apenas comercializam materiais brutos encontrados na superfície de planetas ou em anéis planetários.",
       "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
       "fr": null,
       "ru": "Торговец материалами в системах с добычей ископаемых и переработкой, обменивает только сырьевые элементы.",
@@ -4995,7 +4995,7 @@
     },
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
       "es": "Los comerciantes de materiales encontrados en las economías de alta tecnología y militares, solo hacen transacciones con materiales codificados.",
-      "pt": null,
+      "pt": "Os comerciantes de materiais encontrados em economias de Alta Tecnologia e Militar, apenas comercializam materiais codificados.",
       "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
       "fr": null,
       "ru": "Торговец материалами в системах с высокотехнологичной и военной экономикой, обменивает только зашифрованные данные.",
@@ -5004,7 +5004,7 @@
     },
     "API ON": {
       "es": "API encendida",
-      "pt": null,
+      "pt": "API Ativa",
       "de": "API AN",
       "fr": null,
       "ru": "API ВКЛ",
@@ -5013,7 +5013,7 @@
     },
     "API OFF": {
       "es": "API apagada",
-      "pt": null,
+      "pt": "API Inativa",
       "de": "API AUS",
       "fr": null,
       "ru": "API ВЫКЛ",
@@ -5022,7 +5022,7 @@
     },
     "Long Range FSD Interdictor": {
       "es": null,
-      "pt": null,
+      "pt": "Interditor de MDD de Longo Alcance",
       "de": null,
       "fr": null,
       "ru": "FSD-перехватчик большой дальности",
@@ -5058,7 +5058,7 @@
     },
     "+5% Damage Boost": {
       "es": "Aumento de Daño +5%",
-      "pt": null,
+      "pt": "Aumento de Dano de +5%",
       "de": "Bonus Schaden: +5%",
       "fr": null,
       "ru": "+5% к урону",
@@ -5067,7 +5067,7 @@
     },
     "+10% Damage Boost": {
       "es": "Aumento de Daño +10%",
-      "pt": null,
+      "pt": "Aumento de Dano de +10%",
       "de": "Bonus Schaden: +10%",
       "fr": null,
       "ru": "+10% к урону",
@@ -5121,7 +5121,7 @@
     },
     "+5% Damage": {
       "es": "+5% Daño",
-      "pt": null,
+      "pt": "+5% de Dano",
       "de": "Bonus Schaden: +5%",
       "fr": null,
       "ru": "+5% к урону",
@@ -5409,26 +5409,26 @@
     },
     "Ship Value:": {
       "es": null,
-      "pt": null,
-      "de": "Wert dieses Shiffs",
+      "pt": "Valor da Nave:",
+      "de": "Wert dieses Shiffs:",
       "fr": null,
       "ru": "Стоимость корабля:",
-      "pl": "Wartość Statku",
+      "pl": "Wartość Statku:",
       "cs": "Cena lodi:"
     },
     "Modules Value:": {
       "es": null,
-      "pt": null,
-      "de": "Wert der Module",
+      "pt": "Valor dos Módulos:",
+      "de": "Wert der Module:",
       "fr": null,
       "ru": "Стоимость модулей:",
-      "pl": "Wartość Modułów",
+      "pl": "Wartość Modułów:",
       "cs": "Cena modulů:"
     },
     "Rebuy:": {
       "es": null,
-      "pt": null,
-      "de": "Ersatzwert",
+      "pt": "Recompra:",
+      "de": "Ersatzwert:",
       "fr": null,
       "ru": "Страховка:",
       "pl": null,
@@ -5436,7 +5436,7 @@
     },
     "Loadout": {
       "es": null,
-      "pt": null,
+      "pt": "Equipamento",
       "de": "Ausrüstung",
       "fr": null,
       "ru": "Оснащение",
@@ -5445,7 +5445,7 @@
     },
     "Cargo History (require API)": {
       "es": null,
-      "pt": null,
+      "pt": "Histórico de Carga (requer API)",
       "de": "Fracht Historie (Benötigt API)",
       "fr": null,
       "ru": "История грузов (необходимо API)",
@@ -5454,7 +5454,7 @@
     },
     "Hardpoints": {
       "es": null,
-      "pt": null,
+      "pt": "Encaixes",
       "de": "Aufhängungen",
       "fr": null,
       "ru": "Орудийные гнезда",
@@ -5463,7 +5463,7 @@
     },
     "Utilities": {
       "es": null,
-      "pt": null,
+      "pt": "Encaixes de Apoio",
       "de": "Werkzeuge",
       "fr": null,
       "ru": "Крепления утилит",
@@ -5472,7 +5472,7 @@
     },
     "Core Internal": {
       "es": null,
-      "pt": null,
+      "pt": "Internos Principais",
       "de": "Intern (Basis)",
       "fr": null,
       "ru": "Зарезервированные слоты",
@@ -5481,7 +5481,7 @@
     },
     "Optional Internal": {
       "es": null,
-      "pt": null,
+      "pt": "Internos Opcionais",
       "de": "Intern (Optional)",
       "fr": null,
       "ru": "Опциональные модули",
@@ -5490,7 +5490,7 @@
     },
     "Others/Livery": {
       "es": null,
-      "pt": null,
+      "pt": "Projeto",
       "de": "Diverses/Lackierung",
       "fr": null,
       "ru": "Прочее/Декали",
@@ -5508,7 +5508,7 @@
     },
     "Progenitor Cells": {
       "es": null,
-      "pt": null,
+      "pt": "Células progenitoras",
       "de": "Vorläuferzellen",
       "fr": null,
       "ru": "Прогениторные клетки",
@@ -5517,7 +5517,7 @@
     },
     "Sync?": {
       "es": null,
-      "pt": null,
+      "pt": "Sincronizar?",
       "de": "Synchronisieren?",
       "fr": null,
       "ru": "Синхронизировать?",
@@ -5535,7 +5535,7 @@
     },
     "Reload all data": {
       "es": null,
-      "pt": null,
+      "pt": "Recarregar todos os dados",
       "de": null,
       "fr": null,
       "ru": null,
@@ -5544,7 +5544,7 @@
     },
     "Export/Import Settings": {
       "es": null,
-      "pt": null,
+      "pt": "Exportar/Importar Configurações",
       "de": null,
       "fr": null,
       "ru": null,
