@@ -5021,7 +5021,7 @@
       "cs": "API vypnuto"
     },
     "Long Range FSD Interdictor": {
-      "es": null,
+      "es": "Interdictor de MDD de Largo Alcance",
       "pt": "Interditor de MDD de Longo Alcance",
       "de": null,
       "fr": null,
@@ -5075,7 +5075,7 @@
       "cs": "+10% boost k poškození"
     },
     "AX Remote Flak Munitions": {
-      "es": null,
+      "es": "Munición AX Antiaérea Remota",
       "pt": null,
       "de": "Munition für Ferngezündete Flak (AX)",
       "fr": null,
@@ -5084,7 +5084,7 @@
       "cs": "Munice do AX Remote Flaku"
     },
     "Enzyme Missile Launcher Munitions": {
-      "es": null,
+      "es": "Munición de Lanzamisiles de Enzimas",
       "pt": null,
       "de": "Enzymraketenwerfermunition",
       "fr": null,
@@ -5093,7 +5093,7 @@
       "cs": "Munice do Enzyme Missile Launcher"
     },
     "Flechette Launcher Munitions": {
-      "es": null,
+      "es": "Munición de Lanzador de Flechettes",
       "pt": null,
       "de": "Flechettewerfermunition",
       "fr": null,
@@ -5111,7 +5111,7 @@
       "cs": "Munice do Guardian Shard Cannon"
     },
     "AX Explosive Munitions": {
-      "es": null,
+      "es": "Munición AX Explosiva",
       "pt": null,
       "de": "Explosivmunition (AX)",
       "fr": null,
@@ -5147,7 +5147,7 @@
       "cs": "Guardian Gauss Cannon (Fixed, Small)"
     },
     "Guardian Hull Reinforcement": {
-      "es": null,
+      "es": "Potenciador de Casco Guardián",
       "pt": null,
       "de": "Guardian-Rumpfhüllenverstärkung",
       "fr": null,
@@ -5156,7 +5156,7 @@
       "cs": "Guardian Hull Reinforcement"
     },
     "Guardian Module Reinforcement": {
-      "es": null,
+      "es": "Refuerzo de Modulo Guardián",
       "pt": null,
       "de": "Guardian-Modulverstärkung",
       "fr": null,
@@ -5219,7 +5219,7 @@
       "cs": "Guardian Plasma Charger (Turreted, Small)"
     },
     "Guardian FSD Booster": {
-      "es": null,
+      "es": "Potenciador de Motor de Distórsion Guardián",
       "pt": null,
       "de": "Guardian-Frameshiftantrieb-Booster",
       "fr": null,
@@ -5228,7 +5228,7 @@
       "cs": "Guardian FSD Booster"
     },
     "Guardian Power Distributor": {
-      "es": null,
+      "es": "Distribuidor de Energia Guardián",
       "pt": null,
       "de": "Guardian-Energieverteiler",
       "fr": null,
@@ -5291,7 +5291,7 @@
       "cs": "Guardian Shard Cannon (Turreted, Small)"
     },
     "Guardian Shield Reinforcement": {
-      "es": null,
+      "es": "Refuerzo de Escudo Guardián",
       "pt": null,
       "de": "Guardian-Schildverstärkung",
       "fr": null,
@@ -5408,7 +5408,7 @@
       "cs": "Shock Cannon (Turreted, Small)"
     },
     "Ship Value:": {
-      "es": null,
+      "es": "Valor de la Nave",
       "pt": "Valor da Nave:",
       "de": "Wert dieses Shiffs:",
       "fr": null,
@@ -5417,7 +5417,7 @@
       "cs": "Cena lodi:"
     },
     "Modules Value:": {
-      "es": null,
+      "es": "Valor de Módulos",
       "pt": "Valor dos Módulos:",
       "de": "Wert der Module:",
       "fr": null,
@@ -5426,7 +5426,7 @@
       "cs": "Cena modulů:"
     },
     "Rebuy:": {
-      "es": null,
+      "es": "Recompra",
       "pt": "Recompra:",
       "de": "Ersatzwert:",
       "fr": null,
@@ -5435,7 +5435,7 @@
       "cs": "Rebuy:"
     },
     "Loadout": {
-      "es": null,
+      "es": "Equipamiento",
       "pt": "Equipamento",
       "de": "Ausrüstung",
       "fr": null,
@@ -5444,7 +5444,7 @@
       "cs": "Výzbroj"
     },
     "Cargo History (require API)": {
-      "es": null,
+      "es": "Historial de Carga (Requiere API)",
       "pt": "Histórico de Carga (requer API)",
       "de": "Fracht Historie (Benötigt API)",
       "fr": null,
@@ -5453,7 +5453,7 @@
       "cs": "Historie nákladu (vyžaduje API)"
     },
     "Hardpoints": {
-      "es": null,
+      "es": "Anclajes",
       "pt": "Encaixes",
       "de": "Aufhängungen",
       "fr": null,
@@ -5462,7 +5462,7 @@
       "cs": "Hardpoints"
     },
     "Utilities": {
-      "es": null,
+      "es": "Anclajes de Apoyo",
       "pt": "Encaixes de Apoio",
       "de": "Werkzeuge",
       "fr": null,
@@ -5471,7 +5471,7 @@
       "cs": "Utilities"
     },
     "Core Internal": {
-      "es": null,
+      "es": "Internos Principales",
       "pt": "Internos Principais",
       "de": "Intern (Basis)",
       "fr": null,
@@ -5480,7 +5480,7 @@
       "cs": "Core Internal"
     },
     "Optional Internal": {
-      "es": null,
+      "es": "Internos Ocionales",
       "pt": "Internos Opcionais",
       "de": "Intern (Optional)",
       "fr": null,
@@ -5498,7 +5498,7 @@
       "cs": "Ostatní/Livery"
     },
     "Occupied Escape Pod": {
-      "es": null,
+      "es": "Capsula de ecape ocupada",
       "pt": null,
       "de": "Besetzte Rettungskapsel",
       "fr": null,
@@ -5516,7 +5516,7 @@
       "cs": "Progenitor Cells"
     },
     "Sync?": {
-      "es": null,
+      "es": "Sincronizar?",
       "pt": "Sincronizar?",
       "de": "Synchronisieren?",
       "fr": null,
@@ -5534,7 +5534,7 @@
       "cs": "Guardian Wreckage Components"
     },
     "Reload all data": {
-      "es": null,
+      "es": "Recargar todos los datos",
       "pt": "Recarregar todos os dados",
       "de": null,
       "fr": null,
@@ -5543,7 +5543,7 @@
       "cs": "Znovu načíst všechna data"
     },
     "Export/Import Settings": {
-      "es": null,
+      "es": "Exportar/Importar Configuraciones",
       "pt": "Exportar/Importar Configurações",
       "de": null,
       "fr": null,
