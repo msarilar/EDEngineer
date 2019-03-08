@@ -4062,7 +4062,7 @@
       "pt": "Segmento de Diagrama de Arma Guardian",
       "de": "Guardian-Waffenbauplansegment",
       "fr": null,
-      "ru": "Фрагмент чертежа оружия стражей",
+      "ru": "Фрагмент чертежа оружия Стражей",
       "pl": null,
       "cs": "Guardian Weapon Blueprint Segment"
     },
@@ -4071,7 +4071,7 @@
       "pt": "Bateria Guardian",
       "de": "Guardian-Energiezelle",
       "fr": null,
-      "ru": "Энергоячейка стражей",
+      "ru": "Энергоячейка Стражей",
       "pl": "Ogniwa Mocy Strażników",
       "cs": "Guardian Power Cell"
     },
@@ -4080,7 +4080,7 @@
       "pt": "Componente de Tecnologia Guardian",
       "de": "Guardian-Technologiekomponente",
       "fr": null,
-      "ru": "Компоненты технологий стражей",
+      "ru": "Компоненты технологий Стражей",
       "pl": null,
       "cs": "Guardian Technology Component"
     },
@@ -4089,7 +4089,7 @@
       "pt": "Condutores de Potência Guardian",
       "de": "Guardian-Energieleiter",
       "fr": null,
-      "ru": "Энергопроводники стражей",
+      "ru": "Энергопроводники Стражей",
       "pl": null,
       "cs": "Guardian Power Conduit"
     },
@@ -4098,7 +4098,7 @@
       "pt": "Peças de Armas Sentinela Guardian",
       "de": "Guardian-Wache-Waffenteile",
       "fr": null,
-      "ru": "Детали вооружения стража Sentinel",
+      "ru": "Детали вооружения часовых Стражей",
       "pl": null,
       "cs": "Guardian Sentinel Weapon Parts"
     },
@@ -4107,7 +4107,7 @@
       "pt": "Segmento de Diagrama de Módulo Guardian",
       "de": "Guardian-Modulbauplansegment",
       "fr": null,
-      "ru": "Фрагмент чертежа модуля стражей",
+      "ru": "Фрагмент чертежа модуля Стражей",
       "pl": null,
       "cs": "Guardian Module Blueprint Segment"
     },
@@ -4116,7 +4116,7 @@
       "pt": "Componentes de Destroços Sentinela Guardian",
       "de": "Guardian-Wache Trümmerteile",
       "fr": null,
-      "ru": "Обломки кораблекрушений стража Sentinel",
+      "ru": "Обломки часовых Стражей",
       "pl": null,
       "cs": "Guardian Sentinel Wreckage Components"
     },
@@ -4125,7 +4125,7 @@
       "pt": null,
       "de": "Guardian-Schiffsbauplansegment",
       "fr": null,
-      "ru": "Фрагмент чертежа судна стражей",
+      "ru": "Фрагмент чертежа судна Стражей",
       "pl": null,
       "cs": "Guardian Vessel Blueprint Segment"
     },
@@ -4134,7 +4134,7 @@
       "pt": "Humano",
       "de": "Menschlich",
       "fr": null,
-      "ru": "Технологии людей",
+      "ru": "Люди",
       "pl": "Człowiek",
       "cs": "Lidské"
     },
@@ -4161,7 +4161,7 @@
       "pt": "Guardian",
       "de": "Guardian",
       "fr": null,
-      "ru": "Технологии стражей",
+      "ru": "Стражи",
       "pl": "Strażnik",
       "cs": "Guardiánské"
     },
@@ -4170,7 +4170,7 @@
       "pt": "Ruínas Guardian",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Руины Стражей",
       "pl": "Ruiny Strażników",
       "cs": null
     },
@@ -4179,7 +4179,7 @@
       "pt": "Ruínas Guardian (Ativa)",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Руины Стражей (Активные)",
       "pl": "Ruiny Strażników (Aktywne)",
       "cs": null
     },
@@ -4188,7 +4188,7 @@
       "pt": "Canhão Gauss Guardian (Fixa)",
       "de": "Guardian-Gausskannone (Fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
-      "ru": "Пушка Гаусса стражей (фиксированное)",
+      "ru": "Пушка Гаусса Стражей (фиксированное)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed)"
     },
@@ -4197,7 +4197,7 @@
       "pt": "Carregador de Plasma Guardian (Fixa)",
       "de": "Guardian-Plasmalader (Fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
-      "ru": "Плазменная пушка стражей (фиксированное)",
+      "ru": "Плазменная пушка Стражей (фиксированное)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed)"
     },
@@ -4206,7 +4206,7 @@
       "pt": "Carregador de Plasma Guardian (Torretada)",
       "de": "Guardian-Plasmalader (Turm)",
       "fr": "Chargeur à plasma - Guardians (Tourelle)",
-      "ru": "Плазменная пушка стражей (турель)",
+      "ru": "Плазменная пушка Стражей (турель)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted)"
     },
@@ -4215,7 +4215,7 @@
       "pt": "Gerador de Energia Guardian",
       "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
-      "ru": "Силовая установка стражей",
+      "ru": "Силовая установка Стражей",
       "pl": null,
       "cs": "Guardian Hybrid Power Plant"
     },
@@ -4674,7 +4674,7 @@
       "pt": "Reínas Antigas/Guardian",
       "de": "Uralte/Guardian Ruinen",
       "fr": null,
-      "ru": "Руины стражей",
+      "ru": "Руины Стражей",
       "pl": null,
       "cs": "Starobylé/Guardiánské ruiny"
     },
@@ -4890,7 +4890,7 @@
       "pt": "Thargoid",
       "de": "Thargoid",
       "fr": null,
-      "ru": "Технологии таргоидов",
+      "ru": "Таргоиды",
       "pl": null,
       "cs": "Thargoidské"
     },
@@ -4899,7 +4899,7 @@
       "pt": "Nave Thargoid",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Корабль Таргоидов",
       "pl": null,
       "cs": null
     },
@@ -4908,7 +4908,7 @@
       "pt": "Construção Thargoid",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "База Таргоидов",
       "pl": null,
       "cs": null
     },
@@ -5034,7 +5034,7 @@
       "pt": null,
       "de": "Guardian-Plasmaladermunition",
       "fr": null,
-      "ru": "Боеприпасы для плазменных пушек стражей",
+      "ru": "Боеприпасы для плазменных пушек Стражей",
       "pl": null,
       "cs": "Munice do Guardian Plasma Charger"
     },
@@ -5043,7 +5043,7 @@
       "pt": null,
       "de": "Guardian-Gausskannonenmunition",
       "fr": null,
-      "ru": "Боеприпасы для пушек Гаусса стражей",
+      "ru": "Боеприпасы для пушек Гаусса Стражей",
       "pl": null,
       "cs": "Munice do Guardian Gauss Cannon"
     },
@@ -5106,7 +5106,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanonenmunition",
       "fr": null,
-      "ru": "Боеприпасы для осколочных орудий стражей",
+      "ru": "Боеприпасы для осколочных орудий Стражей",
       "pl": null,
       "cs": "Munice do Guardian Shard Cannon"
     },
@@ -5133,7 +5133,7 @@
       "pt": null,
       "de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
       "fr": null,
-      "ru": "Пушка Гаусса стражей (фиксированное, средний слот)",
+      "ru": "Пушка Гаусса Стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed, Medium)"
     },
@@ -5142,7 +5142,7 @@
       "pt": null,
       "de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
       "fr": null,
-      "ru": "Пушка Гаусса стражей (фиксированное, малый слот)",
+      "ru": "Пушка Гаусса Стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed, Small)"
     },
@@ -5151,7 +5151,7 @@
       "pt": null,
       "de": "Guardian-Rumpfhüllenverstärkung",
       "fr": null,
-      "ru": "Набор для усиления корпуса стражей",
+      "ru": "Набор для усиления корпуса Стражей",
       "pl": null,
       "cs": "Guardian Hull Reinforcement"
     },
@@ -5160,7 +5160,7 @@
       "pt": null,
       "de": "Guardian-Modulverstärkung",
       "fr": null,
-      "ru": "Набор для усиления модуля стражей",
+      "ru": "Набор для усиления модуля Стражей",
       "pl": null,
       "cs": "Guardian Module Reinforcement"
     },
@@ -5169,7 +5169,7 @@
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
       "fr": null,
-      "ru": "Плазменная пушка стражей (фиксированное, большой слот)",
+      "ru": "Плазменная пушка Стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed, Large)"
     },
@@ -5178,7 +5178,7 @@
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 2)",
       "fr": null,
-      "ru": "Плазменная пушка стражей (фиксированное, средний слот)",
+      "ru": "Плазменная пушка Стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed, Medium)"
     },
@@ -5187,7 +5187,7 @@
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 1)",
       "fr": null,
-      "ru": "Плазменная пушка стражей (фиксированное, малый слот)",
+      "ru": "Плазменная пушка Стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed, Small)"
     },
@@ -5196,7 +5196,7 @@
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 3)",
       "fr": null,
-      "ru": "Плазменная пушка стражей (турель, большой слот)",
+      "ru": "Плазменная пушка Стражей (турель, большой слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted, Large)"
     },
@@ -5205,7 +5205,7 @@
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 2)",
       "fr": null,
-      "ru": "Плазменная пушка стражей (турель, средний слот)",
+      "ru": "Плазменная пушка Стражей (турель, средний слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted, Medium)"
     },
@@ -5214,7 +5214,7 @@
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 1)",
       "fr": null,
-      "ru": "Плазменная пушка стражей (турель, малый слот)",
+      "ru": "Плазменная пушка Стражей (турель, малый слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted, Small)"
     },
@@ -5223,7 +5223,7 @@
       "pt": null,
       "de": "Guardian-Frameshiftantrieb-Booster",
       "fr": null,
-      "ru": "Ускоритель FSD стражей",
+      "ru": "Ускоритель FSD Стражей",
       "pl": null,
       "cs": "Guardian FSD Booster"
     },
@@ -5232,7 +5232,7 @@
       "pt": null,
       "de": "Guardian-Energieverteiler",
       "fr": null,
-      "ru": "Распределитель питания стражей",
+      "ru": "Распределитель питания Стражей",
       "pl": null,
       "cs": "Guardian Power Distributor"
     },
@@ -5241,7 +5241,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 3)",
       "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
+      "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Fixed, Large)"
     },
@@ -5250,7 +5250,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 2)",
       "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, средний слот)",
+      "ru": "Осколочное орудие Стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Fixed, Medium)"
     },
@@ -5259,7 +5259,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 1)",
       "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, малый слот)",
+      "ru": "Осколочное орудие Стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Fixed, Small)"
     },
@@ -5268,7 +5268,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 3)",
       "fr": null,
-      "ru": "Осколочное орудие стражей (турель, большой слот)",
+      "ru": "Осколочное орудие Стражей (турель, большой слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Turreted, Large)"
     },
@@ -5277,7 +5277,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 2)",
       "fr": null,
-      "ru": "Осколочное орудие стражей (турель, средний слот)",
+      "ru": "Осколочное орудие Стражей (турель, средний слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Turreted, Medium)"
     },
@@ -5286,7 +5286,7 @@
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 1)",
       "fr": null,
-      "ru": "Осколочное орудие стражей (турель, малый слот)",
+      "ru": "Осколочное орудие Стражей (турель, малый слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Turreted, Small)"
     },
@@ -5295,7 +5295,7 @@
       "pt": null,
       "de": "Guardian-Schildverstärkung",
       "fr": null,
-      "ru": "Набор для усиления щита стражей",
+      "ru": "Набор для усиления щита Стражей",
       "pl": null,
       "cs": "Guardian Shield Reinforcement"
     },
@@ -5331,7 +5331,7 @@
       "pt": null,
       "de": null,
       "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
+      "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": "Shock Cannon (Fixed, Large)"
     },
@@ -5529,7 +5529,7 @@
       "pt": null,
       "de": "Guardian-Wrackteilkomponenten",
       "fr": null,
-      "ru": "Обломки часовых стражей",
+      "ru": "Обломки часовых Стражей",
       "pl": null,
       "cs": "Guardian Wreckage Components"
     },
@@ -5538,7 +5538,7 @@
       "pt": "Recarregar todos os dados",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Перезагрузить все данные",
       "pl": "Przeładuj wszystkie dane",
       "cs": "Znovu načíst všechna data"
     },
@@ -5547,7 +5547,7 @@
       "pt": "Exportar/Importar Configurações",
       "de": null,
       "fr": null,
-      "ru": null,
+      "ru": "Экспорт/Импорт настроек",
       "pl": "Eksportuj/Importuj Ustawienia",
       "cs": null
     }
