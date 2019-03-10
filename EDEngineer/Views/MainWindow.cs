@@ -483,6 +483,16 @@ namespace EDEngineer.Views
             viewModel.CurrentCommander.Value.ClearShoppingList();
         }
 
+        private void ImportShoppingList(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.ImportShoppingList();
+        }
+
+        private void ExportShoppingList(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.ExportShoppingList();
+        }
+
         private void CheckAllButtonClicked(object sender, RoutedEventArgs e)
         {
             viewModel.ChangeAllFilters(true);
@@ -714,5 +724,7 @@ namespace EDEngineer.Views
         private int sortedColumns = 0;
         private DataGridColumn lastColumnSorted = null;
         private readonly Dictionary<DataGridColumn, string> headers = new Dictionary<DataGridColumn, string>();
+
+       
     }
 }

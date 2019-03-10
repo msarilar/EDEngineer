@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -49,7 +50,7 @@ namespace EDEngineer.Views
                 OnPropertyChanged();
             }
         }
-        
+
         public event PropertyChangedEventHandler PropertyChanged;
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -62,7 +63,7 @@ namespace EDEngineer.Views
             commanderNotifications?.UnsubscribeNotifications();
             State.Cargo.InitLoad();
             // Clear state:
-            
+
             State.Cargo.Ingredients.ToList().ForEach(k => State.Cargo.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
             LastUpdate = Instant.MinValue;
 
@@ -406,6 +407,57 @@ namespace EDEngineer.Views
             }
         }
 
+        public void ImportShoppingList()
+        {
+            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
+
+            var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
+
+            // var import = "[{\"Type\":\"\",\"ShortenedType\":\"\",\"BlueprintName\":\"Shopping List\",\"Engineers\":[],\"Ingredients\":[{\"Entry\":{\"Data\":{\"Name\":\"Shielding Sensors\",\"Rarity\":\"Standard\",\"FormattedName\":\"shieldingsensors\",\"Kind\":\"Material\",\"Subkind\":\"Manufactured\",\"KindStringForGui\":\"Manufactured\",\"Group\":\"Shielding\",\"OriginDetails\":[\"Ship salvage (combat ships)\",\"Signal source (high security)\",\"Mission reward\"],\"MaximumCapacity\":200,\"CanBeTraded\":true},\"Count\":12},\"Size\":2},{\"Entry\":{\"Data\":{\"Name\":\"Carbon\",\"Rarity\":\"VeryCommon\",\"FormattedName\":\"carbon\",\"Kind\":\"Material\",\"Subkind\":\"Raw\",\"KindStringForGui\":\"Raw\",\"Group\":\"Category1\",\"OriginDetails\":[\"Surface prospecting\",\"Mining\",\"Mining (ice rings)\"],\"MaximumCapacity\":300,\"CanBeTraded\":true},\"Count\":158},\"Size\":2},{\"Entry\":{\"Data\":{\"Name\":\"Zinc\",\"Rarity\":\"Common\",\"FormattedName\":\"zinc\",\"Kind\":\"Material\",\"Subkind\":\"Raw\",\"KindStringForGui\":\"Raw\",\"Group\":\"Category4\",\"OriginDetails\":[\"Surface prospecting\"],\"MaximumCapacity\":250,\"CanBeTraded\":true},\"Count\":34},\"Size\":2}],\"Grade\":null,\"Effects\":[],\"CoriolisGuid\":null,\"SearchableContent\":\"||shopping list|exp |\",\"ShortString\":\"EXP  SL\",\"TranslatedString\":\" Shopping List\",\"GradeString\":\"}]";
+            //var shoppingList = JsonConvert.DeserializeObject<List<Blueprint>>(fileContents);
+            var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
+            //  Settings.Default.ShoppingList = shoppingList;
+
+            // this.shoppingList = new ShoppingListViewModel(State.Cargo, shoppingList, this.shoppingList.Languages);
+            ClearShoppingList();
+
+            var blueprints = State.Blueprints;
+            foreach (var item in shoppingList)
+            {
+                var itemName = item.Split(':');
+                var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
+                if (bluePrint != null)
+                {
+                    ShoppingListChange(bluePrint, 1);
+                }
+            }
+            
+            Settings.Default.Save();
+
+            RefreshShoppingList();
+        }
+
+        public void ExportShoppingList()
+        {
+            //var serialisedShoppingList = JsonConvert.SerializeObject(ShoppingList);
+            var serialisedShoppingList = JsonConvert.SerializeObject(Settings.Default.ShoppingList);
+            Console.WriteLine(serialisedShoppingList);
+
+            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
+
+            var path = Path.Combine(saveDirectory, $"shoppingList.json");
+            try
+            {
+                File.WriteAllText(path, serialisedShoppingList);
+                ClearShoppingList();
+                Settings.Default.Save();
+            }
+            catch
+            {
+
+            }
+        }
+
         public void ClearShoppingList()
         {
             foreach (var tuple in ShoppingList.Composition.ToList())
@@ -464,7 +516,7 @@ namespace EDEngineer.Views
 
         public void HighlightShoppingListBlueprint(List<Tuple<Blueprint, int>> blueprints, BlueprintIngredient ingredient, bool highlighted)
         {
-            foreach(var blueprint in blueprints.Select(i => i.Item1).Where(b => b.Ingredients.Any(i => i.Entry.Data.Name == ingredient.Entry.Data.Name)))
+            foreach (var blueprint in blueprints.Select(i => i.Item1).Where(b => b.Ingredients.Any(i => i.Entry.Data.Name == ingredient.Entry.Data.Name)))
             {
                 blueprint.ShoppingListHighlighted = highlighted;
             }

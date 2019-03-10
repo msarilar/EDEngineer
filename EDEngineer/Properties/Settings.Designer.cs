@@ -425,5 +425,17 @@ namespace EDEngineer.Properties {
                 this["ClearAggregation"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string ShoppingListDirectory {
+            get {
+                return ((string)(this["ShoppingListDirectory"]));
+            }
+            set {
+                this["ShoppingListDirectory"] = value;
+            }
+        }
     }
 }
