@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.4",
+    "Content": "* Portuguese localization update thanks to @MegaMMC\r\n* Spanish localization update thanks to @Tihersarc\r\n* Russian and French localization update thanks to @VChet\r\n* @CMDR-Cometborne updated the blueprints offered by the Colonia engineers, including the new blueprints exclusive to Colonia (SCB G4, life support G5) !"
+  },
+  {
     "Version": "1.1.4.3",
     "Content": "* Fixed an issue with speech synthesis that could make the application fail to start\r\n\r\n* Polish localization update thanks to @Nicked111 \r\n* Portuguese localization update thanks to @MegaMMC"
   },
