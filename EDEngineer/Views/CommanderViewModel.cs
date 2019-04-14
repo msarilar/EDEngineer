@@ -410,36 +410,54 @@ namespace EDEngineer.Views
         public void ImportShoppingList()
         {
             var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
-
             var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
-
-            // var import = "[{\"Type\":\"\",\"ShortenedType\":\"\",\"BlueprintName\":\"Shopping List\",\"Engineers\":[],\"Ingredients\":[{\"Entry\":{\"Data\":{\"Name\":\"Shielding Sensors\",\"Rarity\":\"Standard\",\"FormattedName\":\"shieldingsensors\",\"Kind\":\"Material\",\"Subkind\":\"Manufactured\",\"KindStringForGui\":\"Manufactured\",\"Group\":\"Shielding\",\"OriginDetails\":[\"Ship salvage (combat ships)\",\"Signal source (high security)\",\"Mission reward\"],\"MaximumCapacity\":200,\"CanBeTraded\":true},\"Count\":12},\"Size\":2},{\"Entry\":{\"Data\":{\"Name\":\"Carbon\",\"Rarity\":\"VeryCommon\",\"FormattedName\":\"carbon\",\"Kind\":\"Material\",\"Subkind\":\"Raw\",\"KindStringForGui\":\"Raw\",\"Group\":\"Category1\",\"OriginDetails\":[\"Surface prospecting\",\"Mining\",\"Mining (ice rings)\"],\"MaximumCapacity\":300,\"CanBeTraded\":true},\"Count\":158},\"Size\":2},{\"Entry\":{\"Data\":{\"Name\":\"Zinc\",\"Rarity\":\"Common\",\"FormattedName\":\"zinc\",\"Kind\":\"Material\",\"Subkind\":\"Raw\",\"KindStringForGui\":\"Raw\",\"Group\":\"Category4\",\"OriginDetails\":[\"Surface prospecting\"],\"MaximumCapacity\":250,\"CanBeTraded\":true},\"Count\":34},\"Size\":2}],\"Grade\":null,\"Effects\":[],\"CoriolisGuid\":null,\"SearchableContent\":\"||shopping list|exp |\",\"ShortString\":\"EXP  SL\",\"TranslatedString\":\" Shopping List\",\"GradeString\":\"}]";
-            //var shoppingList = JsonConvert.DeserializeObject<List<Blueprint>>(fileContents);
             var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
-            //  Settings.Default.ShoppingList = shoppingList;
-
-            // this.shoppingList = new ShoppingListViewModel(State.Cargo, shoppingList, this.shoppingList.Languages);
-            ClearShoppingList();
 
             var blueprints = State.Blueprints;
-            foreach (var item in shoppingList)
+
+            if (shoppingList != null && shoppingList.Count > 0)
             {
-                var itemName = item.Split(':');
-                var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
-                if (bluePrint != null)
+                // Configure the message box to be displayed
+                string messageBoxText = "Do you want to clear the shopping list before import?";
+                string caption = "Shopping List Import";
+                MessageBoxButton button = MessageBoxButton.YesNoCancel;
+                MessageBoxImage icon = MessageBoxImage.Warning;
+
+                // Display message box
+                MessageBoxResult result = MessageBox.Show(messageBoxText, caption, button, icon);
+
+                // Process message box results
+                switch (result)
                 {
-                    ShoppingListChange(bluePrint, 1);
+                    case MessageBoxResult.Yes:
+                        ClearShoppingList();
+                        break;
+                    case MessageBoxResult.No:
+                        // User pressed No, so just load into shopping list without clearing
+                        break;
+                    case MessageBoxResult.Cancel:
+                        // User pressed Cancel button so skip out of Import
+                        return;
                 }
+
+                foreach (var item in shoppingList)
+                {
+                    var itemName = item.Split(':');
+                    var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
+                    if (bluePrint != null)
+                    {
+                        ShoppingListChange(bluePrint, 1);
+                    }
+                }
+
+                Settings.Default.Save();
             }
-            
-            Settings.Default.Save();
 
             RefreshShoppingList();
         }
 
         public void ExportShoppingList()
         {
-            //var serialisedShoppingList = JsonConvert.SerializeObject(ShoppingList);
             var serialisedShoppingList = JsonConvert.SerializeObject(Settings.Default.ShoppingList);
             Console.WriteLine(serialisedShoppingList);
 
@@ -448,8 +466,9 @@ namespace EDEngineer.Views
             var path = Path.Combine(saveDirectory, $"shoppingList.json");
             try
             {
-                File.WriteAllText(path, serialisedShoppingList);
-                ClearShoppingList();
+                Helpers.SaveShoppingList(saveDirectory, serialisedShoppingList);
+                //File.WriteAllText(path, serialisedShoppingList);
+                //ClearShoppingList();
                 Settings.Default.Save();
             }
             catch

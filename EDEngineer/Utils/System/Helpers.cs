@@ -224,20 +224,6 @@ namespace EDEngineer.Utils.System
         public static string RetrieveShoppingList(string currentShoppingListDirectory)
         {
             var translator = Languages.Instance;
-            // string shoppingListDirectory = null;
-
-            //if (!forcePickFolder)
-            //{
-            //    shoppingListDirectory = Properties.Settings.Default.ShoppingListDirectory;
-            //    if (string.IsNullOrEmpty(shoppingListDirectory))
-            //    {
-            //        var userProfile = Environment.GetEnvironmentVariable("USERPROFILE");
-            //        if (userProfile != null)
-            //        {
-            //            shoppingListDirectory = Path.Combine(userProfile, @"saved games\Frontier Developments\Elite Dangerous Shopping Lists");
-            //        }
-            //    }
-            //}
 
             if (Directory.Exists(currentShoppingListDirectory))
             {
@@ -259,49 +245,38 @@ namespace EDEngineer.Utils.System
                         var contents = File.ReadAllText(dialog.FileName);
                         return contents;
                     }
-
-                    //if (!Directory.GetFiles(dialog.FileName).Any(f => f != null &&
-                    //                                                      Path.GetFileName(f).StartsWith("Journal.") &&
-                    //                                                      Path.GetFileName(f).EndsWith(".log")))
-                    //{
-                    //    var result =
-                    //        MessageBox.Show(
-                    //            translator.Translate("Selected directory doesn't seem to contain any log file ; are you sure?"),
-                    //            translator.Translate("Warning"), MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Warning);
-
-                    //    if (result == DialogResult.Retry)
-                    //    {
-                    //        RetrieveLogDirectory(forcePickFolder, null);
-                    //    }
-
-                    //    if (result == DialogResult.Abort)
-                    //    {
-                    //        if (forcePickFolder)
-                    //        {
-                    //            return currentShoppingListDirectory;
-                    //        }
-
-                    //        Application.Current.Shutdown();
-                    //    }
-                    //}
-
-                    // shoppingListDirectory = dialog.FileName;
                 }
-                //else if (forcePickFolder)
-                //{
-                //    return currentShoppingListDirectory;
-                //}
-                //else
-                //{
-                //    MessageBox.Show(translator.Translate("You did not select a shopping list directory, EDEngineer won't be able to export shopping lists."),
-                //        translator.Translate("Warning"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //    shoppingListDirectory = @"\" + translator.Translate("No folder in use ; click to change");
-                //}
             }
 
-            // Properties.Settings.Default.ShoppingListDirectory = shoppingListDirectory;
-            // Properties.Settings.Default.Save();
             return string.Empty;
+        }
+
+        public static void SaveShoppingList(string currentShoppingListDirectory, string contents)
+        {
+            var translator = Languages.Instance;
+
+            if (Directory.Exists(currentShoppingListDirectory))
+            {
+                var dialog = new CommonSaveFileDialog
+                {
+                    Title = translator.Translate("Select a shopping list file to export over, or enter new name for a new file"),
+                    EnsurePathExists = true,
+                    DefaultDirectory = currentShoppingListDirectory,
+                    DefaultFileName = "ShoppingList.json",
+                    DefaultExtension = ".json",
+                    OverwritePrompt = true
+                };
+
+                dialog.Filters.Add(new CommonFileDialogFilter("Shopping List Files (*.json)", ".json"));
+                dialog.Filters.Add(new CommonFileDialogFilter("All Files (*.*)", ".*"));
+
+                var pickFileResult = dialog.ShowDialog();
+
+                if (pickFileResult == CommonFileDialogResult.Ok)
+                {
+                    File.WriteAllText(dialog.FileName, contents);
+                }
+            }
         }
     }
 }
