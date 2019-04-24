@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.5",
+    "Content": "* Fixed a bug that could occur when loading the initial journal entry (caused by latest patch)"
+  },
+  {
     "Version": "1.1.4.4",
     "Content": "* Portuguese localization update thanks to @MegaMMC\r\n* Spanish localization update thanks to @Tihersarc\r\n* Russian and French localization update thanks to @VChet\r\n* @CMDR-Cometborne updated the blueprints offered by the Colonia engineers, including the new blueprints exclusive to Colonia (SCB G4, life support G5) !"
   },

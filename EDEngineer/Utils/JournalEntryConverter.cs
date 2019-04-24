@@ -100,7 +100,7 @@ namespace EDEngineer.Utils
             return entry;
         }
 
-        private JournalOperation ExtractOperation(JObject data, JournalEvent journalEvent)
+        public JournalOperation ExtractOperation(JObject data, JournalEvent journalEvent)
         {
             switch (journalEvent)
             {
@@ -186,7 +186,7 @@ namespace EDEngineer.Utils
 
                 var engineering = module["Engineering"];
                 var modifiers = new List<ModuleModifier>();
-                if (engineering != null)
+                if (engineering != null && engineering.Count() > 0)
                 {
                     engineer = (string) engineering["Engineer"];
                     experimentalEffect = (string)engineering["ExperimentalEffect_Localised"];
