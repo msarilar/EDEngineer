@@ -227,6 +227,7 @@
     <Compile Include="Utils\System\Diposable.cs" />
     <Compile Include="Utils\System\HotkeyManager.cs" />
     <Compile Include="Utils\WindowDimensions.cs" />
+    <Compile Include="Views\XamlHelpers.cs" />
     <Page Include="DesignTime\DesignViewModel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

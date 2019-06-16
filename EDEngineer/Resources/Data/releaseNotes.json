@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.6",
+    "Content": "* Fixed an issue that could trigger a crash of the app when hovering the shopping list blueprints/ingredients\r\n* Added a print button to the shopping list which will render it to an image file"
+  },
+  {
     "Version": "1.1.4.5",
     "Content": "* Fixed a bug that could occur when loading the initial journal entry (caused by latest patch)"
   },

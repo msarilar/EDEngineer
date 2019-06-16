@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -10,11 +11,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Interop;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
 using EDEngineer.Localization;
 using EDEngineer.Models;
@@ -292,7 +291,7 @@ namespace EDEngineer.Views
 
         private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var toggleButton = FindVisualParent<WpfButton>(Mouse.DirectlyOver as DependencyObject);
+            var toggleButton = XamlHelpers.FindVisualParent<WpfButton>(Mouse.DirectlyOver as DependencyObject);
             if (toggleButton != null)
             {
                 toggleButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Primitives.ButtonBase.ClickEvent));
@@ -305,7 +304,7 @@ namespace EDEngineer.Views
             var cell = (DataGridCell) sender;
             if (cell.Column.Header == null)
             {
-                var toggleButton = FindVisualParent<ToggleButton>(Mouse.DirectlyOver as DependencyObject);
+                var toggleButton = XamlHelpers.FindVisualParent<ToggleButton>(Mouse.DirectlyOver as DependencyObject);
                 if (toggleButton?.IsChecked != null)
                 {
                     toggleButton.IsChecked = !toggleButton.IsChecked.Value;
@@ -314,37 +313,12 @@ namespace EDEngineer.Views
             }
             else if (!cell.IsEditing)
             {
-                var row = FindVisualParent<DataGridRow>(cell);
+                var row = XamlHelpers.FindVisualParent<DataGridRow>(cell);
                 if (row != null)
                 {
                     row.IsSelected = !row.IsSelected;
                     e.Handled = true;
                 }
-            }
-        }
-
-        private static T FindVisualParent<T>(DependencyObject child) where T : DependencyObject
-        {
-            while (true)
-            {
-                if (child is Run)
-                {
-                    return null;
-                }
-
-                var parentObject = VisualTreeHelper.GetParent(child);
-
-                if (parentObject == null)
-                {
-                    return null;
-                }
-
-                if (parentObject is T parent)
-                {
-                    return parent;
-                }
-
-                child = parentObject;
             }
         }
 
@@ -497,6 +471,11 @@ namespace EDEngineer.Views
             Properties.Settings.Default.Save();
 
             Restart();
+        }
+
+        private void PrintShoppingListButtonClicked(object sender, RoutedEventArgs e)
+        {
+            XamlHelpers.SaveToPng(ShoppingList, Path.ChangeExtension(Path.GetTempFileName(), "png"));
         }
 
         private void ClearShoppingListButtonClicked(object sender, RoutedEventArgs e)
