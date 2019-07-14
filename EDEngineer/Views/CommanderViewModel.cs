@@ -440,20 +440,25 @@ namespace EDEngineer.Views
                         return;
                 }
 
-                foreach (var item in shoppingList)
-                {
-                    var itemName = item.Split(':');
-                    var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
-                    if (bluePrint != null)
-                    {
-                        ShoppingListChange(bluePrint, 1);
-                    }
-                }
+                LoadShoppingListItems(shoppingList, blueprints);
 
                 Settings.Default.Save();
             }
 
             RefreshShoppingList();
+        }
+
+        private void LoadShoppingListItems(StringCollection shoppingListItems, List<Blueprint> blueprints)
+        {
+            foreach (var item in shoppingListItems)
+            {
+                var itemName = item.Split(':');
+                var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
+                if (bluePrint != null)
+                {
+                    ShoppingListChange(bluePrint, 1);
+                }
+            }
         }
 
         public void ExportShoppingList()
@@ -548,6 +553,12 @@ namespace EDEngineer.Views
             // relevant when live reloading a commander, because WPF didn't bind upon creating the object:
             OnPropertyChanged(nameof(ShoppingList));
             OnPropertyChanged(nameof(ShoppingListItem));
+        }
+
+        public void RefreshShoppingList( StringCollection shoppingList)
+        {
+            var blueprints = State.Blueprints;
+            LoadShoppingListItems(shoppingList, blueprints);
         }
 
         public void ShowAllGradeChanges(ShoppingListBlock shoppingListBlock)

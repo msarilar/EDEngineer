@@ -9,10 +9,11 @@
         Title="Settings"
         SizeToContent="Height"
         Topmost="True"
-        Height="300"
+        Height="380"
         Width="300">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="0.3*"/>
@@ -28,6 +29,14 @@
         </Grid>
 
         <Grid Grid.Row="1"
+              Background="LightBlue">
+            <Button Content="Load Shopping List..."
+                    BorderThickness="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Click="LoadShoppingListButtonClicked"/>
+        </Grid>
+
+        <Grid Grid.Row="2"
               Background="LightYellow">
             <Button Content="Load Settings..."
                     BorderThickness="1"
@@ -35,7 +44,7 @@
                     VerticalAlignment="Center" Click="LoadSettingsButtonClicked"/>
         </Grid>
 
-        <Grid Grid.Row="2"
+        <Grid Grid.Row="3"
               Background="LightPink">
             <Button Content="Reset ALL Settings"
                     BorderThickness="1"
@@ -43,7 +52,7 @@
                     VerticalAlignment="Center" Click="ResetSettingsButtonClicked"/>
         </Grid>
 
-        <Grid Grid.Row="3"
+        <Grid Grid.Row="4"
               Background="MistyRose">
             <Button Content="Close"
                     BorderThickness="1"

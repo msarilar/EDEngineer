@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
@@ -193,7 +194,7 @@ namespace EDEngineer.Views
                     System.Diagnostics.Process.Start($"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart");
                 },
                 (o, e) => ClearAggregationAndRestart(o, null),
-                (o, e) => { new SettingsExportWindow(Restart).ShowDialog(); });
+                (o, e) => { new SettingsExportWindow(Restart, RefreshShoppingList).ShowDialog(); });
 
             icon = TrayIconManager.Init(menu);
 
@@ -448,6 +449,12 @@ namespace EDEngineer.Views
             var w = new MainWindow();
             Close();
             w.Show();
+        }
+
+        private void RefreshShoppingList(StringCollection shoppingList)
+        {
+            viewModel.CurrentCommander.Value.ClearShoppingList();
+            viewModel.CurrentCommander.Value.RefreshShoppingList(shoppingList);
         }
 
         private void SaveDimensions()

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -6,6 +7,7 @@ using System.Windows;
 using System.Windows.Forms;
 using EDEngineer.Models.Utils;
 using EDEngineer.Properties;
+using EDEngineer.Utils.System;
 using Newtonsoft.Json;
 using MessageBox = System.Windows.Forms.MessageBox;
 
@@ -17,16 +19,34 @@ namespace EDEngineer.Views.Popups
     public partial class SettingsExportWindow
     {
         private readonly Action loadedCallback;
+        private readonly Action<StringCollection> refreshCallback;
 
-        public SettingsExportWindow(Action loadedCallback)
+        public SettingsExportWindow(Action loadedCallback, Action<StringCollection> refreshCallback)
         {
             this.loadedCallback = loadedCallback;
+            this.refreshCallback = refreshCallback;
             InitializeComponent();
         }
 
         private void CloseButtonClicked(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void LoadShoppingListButtonClicked(object sender, RoutedEventArgs e)
+        {
+            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
+            var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
+            var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
+
+            //if (shoppingList != null && shoppingList.Count > 0)
+            //{
+            //    Settings.Default.ShoppingList = shoppingList;
+
+            //    Settings.Default.Save();
+            //}
+
+            refreshCallback(shoppingList);
         }
 
         private void LoadSettingsButtonClicked(object sender, RoutedEventArgs e)
