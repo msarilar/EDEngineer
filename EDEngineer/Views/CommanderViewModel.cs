@@ -559,6 +559,7 @@ namespace EDEngineer.Views
         {
             var blueprints = State.Blueprints;
             LoadShoppingListItems(shoppingList, blueprints);
+            Settings.Default.Save();
         }
 
         public void ShowAllGradeChanges(ShoppingListBlock shoppingListBlock)
