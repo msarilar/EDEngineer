@@ -4592,7 +4592,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Disjoncteur de verrouillage de cible",
       "ru": "Генератор помех для системы захвата цели",
       "pl": null,
       "cs": "Target Lock Breaker"
@@ -5510,7 +5510,7 @@
       "es": null,
       "pt": "Células progenitoras",
       "de": "Vorläuferzellen",
-      "fr": null,
+      "fr": "Cellules progénitrices",
       "ru": "Прогениторные клетки",
       "pl": null,
       "cs": "Progenitor Cells"
@@ -5546,7 +5546,7 @@
       "es": "Exportar/Importar Configuraciones",
       "pt": "Exportar/Importar Configurações",
       "de": null,
-      "fr": null,
+      "fr": "Exporter/Importer la Configuration",
       "ru": "Экспорт/Импорт настроек",
       "pl": "Eksportuj/Importuj Ustawienia",
       "cs": null
