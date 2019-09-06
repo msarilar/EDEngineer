@@ -938,7 +938,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuins",
     "MaximumCapacity": 150
   },
   {
@@ -949,7 +949,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuins",
     "MaximumCapacity": 150
   },
   {
@@ -960,7 +960,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuins",
     "MaximumCapacity": 150
   },
   {
@@ -971,7 +971,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuins",
     "MaximumCapacity": 150
   },
   {
@@ -982,7 +982,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuins",
     "MaximumCapacity": 150
   },
   {
@@ -1470,10 +1470,10 @@
     "Rarity": "Standard",
     "FormattedName": "unknownshipsignature",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
-    ]
+    ],
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Meta-alloys",
@@ -1583,9 +1583,10 @@
     "Kind": "Material",
     "Subkind": "Manufactured",
     "OriginDetails": [
-      "Destroyed Unknown Artefact",
+      "Thargoid Scavengers, Destroyed Thargoid Sensor",
       "Needed for Professor Palin (25)"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Kongga Ale",
@@ -1642,30 +1643,30 @@
     "Rarity": "Standard",
     "FormattedName": "tg_compositiondata",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Residue Data",
     "Rarity": "Rare",
     "FormattedName": "tg_residuedata",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Structural Data",
     "Rarity": "Common",
     "FormattedName": "tg_structuraldata",
     "Kind": "Data",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Base scanning (Thargoid uplink devices)"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Carapace",
@@ -1673,10 +1674,10 @@
     "FormattedName": "unknowncarapace",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Energy Cell",
@@ -1684,10 +1685,10 @@
     "FormattedName": "unknownenergycell",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Organic Circuitry",
@@ -1695,10 +1696,10 @@
     "FormattedName": "unknownorganiccircuitry",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Technological Components",
@@ -1706,10 +1707,10 @@
     "FormattedName": "unknowntechnologycomponents",
     "Kind": "Material",
     "Subkind": "Manufactured",
-    "Group": "Thargoid",
     "OriginDetails": [
       "Thargoid scavengers"
-    ]
+    ],
+    "Group": "ThargoidSite"
   },
   {
     "Name": "Thargoid Wake Data",
@@ -1719,17 +1720,17 @@
     "OriginDetails": [
       "High wake scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Ship Flight Data",
-    "Rarity": "Rare",
+    "Rarity": "Standard",
     "FormattedName": "tg_shipflightdata",
     "Kind": "Data",
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Ship System Data",
@@ -1739,7 +1740,7 @@
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Wreckage Components",
@@ -1750,7 +1751,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Bio-Mechanical Conduits",
@@ -1761,7 +1762,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Weapon Parts",
@@ -1772,7 +1773,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Propulsion Elements",
@@ -1783,7 +1784,7 @@
     "OriginDetails": [
       "Ship salvage (Thargoid ships)"
     ],
-    "Group": "Thargoid"
+    "Group": "ThargoidShip"
   },
   {
     "Name": "Guardian Weapon Blueprint Segment",
@@ -1793,7 +1794,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuinsActive",
     "MaximumCapacity": 150
   },
   {
@@ -1805,7 +1806,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "GuardianRuinsActive"
   },
   {
     "Name": "Guardian Technology Component",
@@ -1816,7 +1817,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "GuardianRuinsActive"
   },
   {
     "Name": "Guardian Power Conduit",
@@ -1827,7 +1828,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "GuardianRuinsActive"
   },
   {
     "Name": "Guardian Sentinel Weapon Parts",
@@ -1838,7 +1839,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "GuardianRuinsActive"
   },
   {
     "Name": "Guardian Module Blueprint Segment",
@@ -1848,7 +1849,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian",
+    "Group": "GuardianRuinsActive",
     "MaximumCapacity": 150
   },
   {
@@ -1860,7 +1861,7 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "GuardianRuinsActive"
   },
   {
     "Name": "Guardian Vessel Blueprint Segment",
@@ -1870,6 +1871,6 @@
     "OriginDetails": [
       "Ancient/Guardian ruins"
     ],
-    "Group": "Guardian"
+    "Group": "GuardianRuinsActive"
   }
 ]

@@ -1,35 +1,31 @@
 ﻿[
   {
+    "Version": "1.1.4.6",
+    "Content": "* Fixed an issue that could trigger a crash of the app when hovering the shopping list blueprints/ingredients\r\n* Added a print button to the shopping list which will render it to an image file"
+  },
+  {
+    "Version": "1.1.4.5",
+    "Content": "* Fixed a bug that could occur when loading the initial journal entry (caused by latest patch)"
+  },
+  {
+    "Version": "1.1.4.4",
+    "Content": "* Portuguese localization update thanks to @MegaMMC\r\n* Spanish localization update thanks to @Tihersarc\r\n* Russian and French localization update thanks to @VChet\r\n* @CMDR-Cometborne updated the blueprints offered by the Colonia engineers, including the new blueprints exclusive to Colonia (SCB G4, life support G5) !"
+  },
+  {
+    "Version": "1.1.4.3",
+    "Content": "* Fixed an issue with speech synthesis that could make the application fail to start\r\n\r\n* Polish localization update thanks to @Nicked111 \r\n* Portuguese localization update thanks to @MegaMMC"
+  },
+  {
+    "Version": "1.1.4.2",
+    "Content": "* Added an Export/Import settings window to the menu allowing you to save your settings to file and load them somewhere else\r\n* Fixed a bug that made the application crash when reducing the font size on the right panel to the minimum"
+  },
+  {
+    "Version": "1.1.4.1",
+    "Content": "Lots of contributions for this update, thanks a ton to the kind souls who submit pull requests to keep the application up to date!\r\n\r\nHave a lovely end of the year holidays everyone!\r\n\r\n=====\r\n\r\n* @CMDR-Cometborne :\r\nadded group Guardian/Thargoid to all unknowns\r\nadded hints where/how to get Thargoid stuff\r\nCorrect rarity value of Ship Flight Data\r\nAll existing DSS blueprints have been replace with a single new blueprint named expanded probe scanning radius\r\n\r\n* @CmdrWode :\r\nSplit both Guardian and Thargoid items into two subgroups (4 groups total)\r\nFix to deal with Cargo events that contain no Inventory field\r\n\r\n* @JohnXaverius :\r\nczech localization update\r\n\r\n* @enachos71 :\r\nGuardian Gauss Cannon Munitions was missing Guardian Technology Components, 6 needed in the blueprint\r\n\r\n* @TheBlackbird123 :\r\nspanish localization update"
+  },
+  {
     "Version": "1.1.4.0",
-    "Content": "* Added a new menu entry to fully reload your logs in the application if you ever encounter oddities in your material list\r\n\r\n* Fix materials for large shard premium reload blueprint, thanks to @CMDR-Cometborne\r\n* All guardian blueprint segments are classified as very rare, thanks to @CMDR-Cometborne\r\n* Fixed Meta Alloy Hull Reinforcements unlock Requirements, thanks to @MaximumWoahverdrive\r\n* Attempt at fixing Toast, thanks to @MaximumWoahverdrive"
-  },
-  {
-    "Version": "1.1.3.12",
-    "Content": "* German localization update provided by @MaximumWoahverdrive, thanks for the contribution"
-  },
-  {
-    "Version": "1.1.3.11",
-    "Content": "* Entire russian localization completed by @VChet! Thanks a lot for the great contributions"
-  },
-  {
-    "Version": "1.1.3.10",
-    "Content": "* Massive Colonia Engineers update provided by @CMDR-Cometborne, thanks a lot to him! Details:\r\n* Petra Olmanova, Marsha Hicks, Etienne Dorn and Mel Brandon added\r\n* Added their locations\r\n* Added new blueprint (Chaff Launcher Ammo Capacity)\r\n* Added commodities related to the new engineers (Progenitor Cells, Osmium, Occupied Escape Pod)\r\n\r\n* Minor Czech localization update, thanks to @JohnXaverius"
-  },
-  {
-    "Version": "1.1.3.8",
-    "Content": "New technology broker unlocks for 3.2 / Beyond Chapter 3:\r\n\r\n* Guardian Gauss Cannon (Fixed)\r\n* Guardian Plasma Charger (Fixed, Turreted)\r\n* Guardian Shard Cannon (Fixed, Turreted)\r\n* Javelin, Lance, Trident (Fighters)\r\n* Shock Cannon (Fixed, Gimballed, Turreted)\r\n\r\nThanks a lot to @CMDR-Cometborne for providing all the data!"
-  },
-  {
-    "Version": "1.1.3.6",
-    "Content": "* Added a Clear button to the shopping list : clicking it will entirely delete your shopping list (currently no way to undo so be careful)\r\n\r\n* Fixed blueprint Plasma Accelerator - Dazzle Shell : added missing 5 Mechanical Components to the recipe : thanks to @Derriick for fixing it"
-  },
-  {
-    "Version": "1.1.3.4",
-    "Content": "* Added a chart for cargo history : run the local API and click on the Cargo History entry in the menu. Go to /chartData instead if you want a raw json to exploit the data yourself. It can be slow to generate according to how many logs you have! Keep in mind this is a bit experimental so usability might not be much refined."
-  },
-  {
-    "Version": "1.1.3.3",
-    "Content": "* Added expander to show/hide commanders available to EDEngineer\r\n* Better last update text in bottom row\r\n* Fixed vertical alignment of bottom row when the window wasn't wide enough (text would disappear)\r\n\r\n* Can now import experimentals from Coriolis, thanks to @willyb321 !\r\n* German localization update, thanks to @MBGTBenjamin !"
+    "Content": "#1.1.4.0\r\n\r\n* Added a new menu entry to fully reload your logs in the application if you ever encounter oddities in your material list\r\n\r\n* Fix materials for large shard premium reload blueprint, thanks to @CMDR-Cometborne\r\n* All guardian blueprint segments are classified as very rare, thanks to @CMDR-Cometborne\r\n* Fixed Meta Alloy Hull Reinforcements unlock Requirements, thanks to @MaximumWoahverdrive\r\n* Attempt at fixing Toast, thanks to @MaximumWoahverdrive\r\n\r\n#1.1.3.12\r\n\r\n* German localization update provided by @MaximumWoahverdrive, thanks for the contribution\r\n\r\n#1.1.3.11\r\n\r\n* Entire russian localization completed by @VChet! Thanks a lot for the great contributions\r\n\r\n#1.1.3.10\r\n\r\n* Massive Colonia Engineers update provided by @CMDR-Cometborne, thanks a lot to him! Details:\r\n* Petra Olmanova, Marsha Hicks, Etienne Dorn and Mel Brandon added\r\n* Added their locations\r\n* Added new blueprint (Chaff Launcher Ammo Capacity)\r\n* Added commodities related to the new engineers (Progenitor Cells, Osmium, Occupied Escape Pod)\r\n\r\n* Minor Czech localization update, thanks to @JohnXaverius\r\n\r\n#1.1.3.8\r\n\r\nNew technology broker unlocks for 3.2 / Beyond Chapter 3:\r\n\r\n* Guardian Gauss Cannon (Fixed)\r\n* Guardian Plasma Charger (Fixed, Turreted)\r\n* Guardian Shard Cannon (Fixed, Turreted)\r\n* Javelin, Lance, Trident (Fighters)\r\n* Shock Cannon (Fixed, Gimballed, Turreted)\r\n\r\nThanks a lot to @CMDR-Cometborne for providing all the data!\r\n\r\n#1.1.3.6\r\n\r\n* Added a Clear button to the shopping list : clicking it will entirely delete your shopping list (currently no way to undo so be careful)\r\n\r\n* Fixed blueprint Plasma Accelerator - Dazzle Shell : added missing 5 Mechanical Components to the recipe : thanks to @Derriick for fixing it\r\n\r\n#1.1.3.4\r\n\r\n* Added a chart for cargo history : run the local API and click on the Cargo History entry in the menu. Go to /chartData instead if you want a raw json to exploit the data yourself. It can be slow to generate according to how many logs you have! Keep in mind this is a bit experimental so usability might not be much refined.\r\n\r\n#1.1.3.3\r\n\r\n* Added expander to show/hide commanders available to EDEngineer\r\n* Better last update text in bottom row\r\n* Fixed vertical alignment of bottom row when the window wasn't wide enough (text would disappear)\r\n\r\n* Can now import experimentals from Coriolis, thanks to @willyb321 !\r\n* German localization update, thanks to @MBGTBenjamin !\r\n"
   },
   {
     "Version": "1.1.3.0",

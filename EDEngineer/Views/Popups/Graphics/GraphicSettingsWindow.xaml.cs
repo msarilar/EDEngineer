@@ -6,7 +6,7 @@ namespace EDEngineer.Views.Popups.Graphics
     /// <summary>
     /// Interaction logic for GraphicSettingsWindow.xaml
     /// </summary>
-    public partial class GraphicSettingsWindow : System.Windows.Window
+    public partial class GraphicSettingsWindow
     {
         private readonly GraphicSettings settings;
 

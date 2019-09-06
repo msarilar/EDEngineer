@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -10,11 +11,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Interop;
-using System.Windows.Media;
 using System.Windows.Media.Animation;
 using EDEngineer.Localization;
 using EDEngineer.Models;
@@ -23,6 +22,7 @@ using EDEngineer.Models.Utils.Collections;
 using EDEngineer.Utils;
 using EDEngineer.Utils.System;
 using EDEngineer.Utils.UI;
+using EDEngineer.Views.Popups;
 using EDEngineer.Views.Popups.Graphics;
 using Application = System.Windows.Application;
 using WpfButton = System.Windows.Controls.Button;
@@ -184,25 +184,16 @@ namespace EDEngineer.Views
                 (o, e) => Languages.PromptLanguage(viewModel.Languages),
                 () => serverBridge.Toggle(),
                 serverBridge.Running,
-                (o, e) =>
-                {
-                    ReleaseNotesManager.ShowReleaseNotes();
-                },
+                (o, e) => { ReleaseNotesManager.ShowReleaseNotes(); },
                 Properties.Settings.Default.CurrentVersion,
+                (o, e) => { new NotificationSettingsWindow(viewModel.Languages).ShowDialog(); },
+                (o, e) => { new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog(); },
                 (o, e) =>
                 {
-                    new NotificationSettingsWindow(viewModel.Languages).ShowDialog();
+                    System.Diagnostics.Process.Start($"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart");
                 },
-                (o, e) =>
-                {
-                    new GraphicSettingsWindow(viewModel.GraphicSettings).ShowDialog();
-                },
-                (o, e) =>
-                {
-                    var url = $"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart";
-                    System.Diagnostics.Process.Start(url);
-                },
-                (o, e) => ClearAggregationAndRestart(o, null));
+                (o, e) => ClearAggregationAndRestart(o, null),
+                (o, e) => { new SettingsExportWindow(Restart).ShowDialog(); });
 
             icon = TrayIconManager.Init(menu);
 
@@ -300,7 +291,7 @@ namespace EDEngineer.Views
 
         private void DataGridOnPreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            var toggleButton = FindVisualParent<WpfButton>(Mouse.DirectlyOver as DependencyObject);
+            var toggleButton = XamlHelpers.FindVisualParent<WpfButton>(Mouse.DirectlyOver as DependencyObject);
             if (toggleButton != null)
             {
                 toggleButton.RaiseEvent(new RoutedEventArgs(System.Windows.Controls.Primitives.ButtonBase.ClickEvent));
@@ -313,7 +304,7 @@ namespace EDEngineer.Views
             var cell = (DataGridCell) sender;
             if (cell.Column.Header == null)
             {
-                var toggleButton = FindVisualParent<ToggleButton>(Mouse.DirectlyOver as DependencyObject);
+                var toggleButton = XamlHelpers.FindVisualParent<ToggleButton>(Mouse.DirectlyOver as DependencyObject);
                 if (toggleButton?.IsChecked != null)
                 {
                     toggleButton.IsChecked = !toggleButton.IsChecked.Value;
@@ -322,37 +313,12 @@ namespace EDEngineer.Views
             }
             else if (!cell.IsEditing)
             {
-                var row = FindVisualParent<DataGridRow>(cell);
+                var row = XamlHelpers.FindVisualParent<DataGridRow>(cell);
                 if (row != null)
                 {
                     row.IsSelected = !row.IsSelected;
                     e.Handled = true;
                 }
-            }
-        }
-
-        private static T FindVisualParent<T>(DependencyObject child) where T : DependencyObject
-        {
-            while (true)
-            {
-                if (child is Run)
-                {
-                    return null;
-                }
-
-                var parentObject = VisualTreeHelper.GetParent(child);
-
-                if (parentObject == null)
-                {
-                    return null;
-                }
-
-                if (parentObject is T parent)
-                {
-                    return parent;
-                }
-
-                child = parentObject;
             }
         }
 
@@ -446,9 +412,7 @@ namespace EDEngineer.Views
             {
                 skipSaveAggregation = true;
                 viewModel.LogDirectory = newDirectory;
-                var w = new MainWindow();
-                Close();
-                w.Show();
+                Restart();
             }
         }
 
@@ -468,9 +432,7 @@ namespace EDEngineer.Views
             Properties.Settings.Default.WindowUnlocked = !Properties.Settings.Default.WindowUnlocked;
             Properties.Settings.Default.Save();
 
-            var w = new MainWindow();
-            Close();
-            w.Show();
+            Restart();
         }
 
         private void ClearAggregationAndRestart(object sender, RoutedEventArgs e)
@@ -478,6 +440,11 @@ namespace EDEngineer.Views
             Properties.Settings.Default.ClearAggregation = true;
             Properties.Settings.Default.Save();
 
+            Restart();
+        }
+
+        private void Restart()
+        {
             var w = new MainWindow();
             Close();
             w.Show();
@@ -503,9 +470,12 @@ namespace EDEngineer.Views
             Properties.Settings.Default.WindowUnlocked = false;
             Properties.Settings.Default.Save();
 
-            var w = new MainWindow();
-            Close();
-            w.Show();
+            Restart();
+        }
+
+        private void PrintShoppingListButtonClicked(object sender, RoutedEventArgs e)
+        {
+            XamlHelpers.SaveToPng(ShoppingList, Path.ChangeExtension(Path.GetTempFileName(), "png"));
         }
 
         private void ClearShoppingListButtonClicked(object sender, RoutedEventArgs e)

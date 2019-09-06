@@ -23,7 +23,7 @@
     "fr": {
       "TwoLetterISOLanguageName": "fr",
       "Name": "Français",
-      "NotReadyWarning": "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
+      "NotReadyWarning": "Cette traduction est incomplète! Si vous la sélectionnez, seules certaines parties (pourcentage indiqué) de l'application seront traduites. Tout ce qui n'a pas encore été traduit sera affiché en anglais."
     },
     "ru": {
       "TwoLetterISOLanguageName": "ru",
@@ -57,7 +57,7 @@
       "de": "Leicht",
       "fr": "Léger",
       "ru": "Облегченный",
-      "pl": "Lightweight",
+      "pl": "Lekki",
       "cs": "Lightweight"
     },
     "Heavy Duty Hull Reinforcement": {
@@ -75,7 +75,7 @@
       "de": "Antriebsstärkung",
       "fr": "Renforcement du réacteur",
       "ru": "Защищённый двигатель",
-      "pl": "Drive Strengthening",
+      "pl": "Wzmocnienie napędu",
       "cs": "Drive Strengthening"
     },
     "Efficient Weapon": {
@@ -84,7 +84,7 @@
       "de": "Waffeneffizienz",
       "fr": "Arme efficace",
       "ru": "Эффективное оружие",
-      "pl": "Efficient Weapon",
+      "pl": "Wydajna Broń",
       "cs": "Efficient Weapon"
     },
     "Lightweight Mount": {
@@ -102,7 +102,7 @@
       "de": "Gepanzert",
       "fr": "Blindé",
       "ru": "Бронированный",
-      "pl": "Armoured",
+      "pl": "Opancerzony",
       "cs": "Armoured"
     },
     "Reinforced": {
@@ -111,7 +111,7 @@
       "de": "Verstärkt",
       "fr": "Renforcé",
       "ru": "Усиленный",
-      "pl": "Reinforced",
+      "pl": "Wzmocnione",
       "cs": "Reinforced"
     },
     "Sturdy Mount": {
@@ -138,7 +138,7 @@
       "de": "Verstärkte Schilde",
       "fr": "Bouclier renforcé",
       "ru": "Усиленный щит",
-      "pl": "Reinforced Shields",
+      "pl": "Wzmocnione Osłony",
       "cs": "Reinforced Shields"
     },
     "Enhanced, Low Power Shields": {
@@ -147,7 +147,7 @@
       "de": "Verbesserte Niedrigenergieschilde",
       "fr": "Boucliers amélioré à consommation réduite",
       "ru": "Энергосберегающий щит",
-      "pl": "Enhanced, Low Power Shields",
+      "pl": "Wzmocnione Osłony Niskiej Mocy",
       "cs": "Enhanced, Low Power Shields"
     },
     "Shielded": {
@@ -156,7 +156,7 @@
       "de": "Abgeschirmt",
       "fr": "Renforcé",
       "ru": "Бронированный",
-      "pl": "Shielded",
+      "pl": "Osłonięte",
       "cs": "Shielded"
     },
     "Thermal Resistant": {
@@ -165,7 +165,7 @@
       "de": "Thermalresistent",
       "fr": "Résistance thermique",
       "ru": "Противотепловое усиление",
-      "pl": "Thermal Resistant",
+      "pl": "Odporny Na Temperaturę",
       "cs": "Thermal Resistant"
     },
     "Weapon Focused": {
@@ -183,7 +183,7 @@
       "de": "Detonationsresistent",
       "fr": "Anti-explosion",
       "ru": "Противовзрывное усиление",
-      "pl": "Blast Resistant",
+      "pl": "Odporny Na Wybuchy",
       "cs": "Blast Resistant"
     },
     "High Capacity Magazine": {
@@ -237,7 +237,7 @@
       "de": "Langstreckenwaffe",
       "fr": "Armes à longue portée",
       "ru": "Увеличенная дальность",
-      "pl": "Long Range Weapon",
+      "pl": "Broń Dalekiego Zasięgu",
       "cs": "Long Range Weapon"
     },
     "Ammo Capacity": {
@@ -255,7 +255,7 @@
       "de": "Überladungswaffe",
       "fr": "Arme surchargée",
       "ru": "Усиленное оружие",
-      "pl": "Overcharged Weapon",
+      "pl": "Przeładowana Broń",
       "cs": "Overcharged Weapon"
     },
     "Low Emissions": {
@@ -282,7 +282,7 @@
       "de": "Überladungs",
       "fr": "Surchargé",
       "ru": "Усиленный",
-      "pl": "Overcharged",
+      "pl": "Przeładowane",
       "cs": "Overcharged"
     },
     "Increased FSD Range": {
@@ -291,7 +291,7 @@
       "de": "Erhöhte FSA-Reichweite",
       "fr": "Portée FSD améliorée",
       "ru": "Увеличенная дальность FSD",
-      "pl": "Increased FSD Range",
+      "pl": "Zwiększony zasięg FSD",
       "cs": "Increased FSD Range"
     },
     "Thermal Resistant Hull Reinforcement": {
@@ -345,7 +345,7 @@
       "de": "Ladungsoptimiert",
       "fr": "Chargement rapide",
       "ru": "Быстрозаряжающийся",
-      "pl": "Rapid Charge",
+      "pl": "Szybkie Ładowanie",
       "cs": "Rapid Charge"
     },
     "Expanded FSD Interdictor Capture Arc": {
@@ -417,7 +417,7 @@
       "de": "Spezialisiert",
       "fr": "Specialisé",
       "ru": "Специализированный",
-      "pl": "Specialised",
+      "pl": "Specjalistyczne",
       "cs": "Specialised"
     },
     "Faster FSD Boot Sequence": {
@@ -435,7 +435,7 @@
       "de": "Abgeschirmter FSA",
       "fr": "FSD Renforcé",
       "ru": "Защищенный FSD",
-      "pl": "Shielded FSD",
+      "pl": "Osłonięty FSD",
       "cs": "Shielded FSD"
     },
     "Clean Drive Tuning": {
@@ -453,7 +453,7 @@
       "de": "Kinetikresistente Schilde",
       "fr": "Bouclier à résistance Cinétique",
       "ru": "Противокинетический щит",
-      "pl": "Kinetic Resistant Shields",
+      "pl": "Tarcze Odporne na Obrażenia Kinetyczne",
       "cs": "Kinetic Resistant Shields"
     },
     "Plasma Accelerator": {
@@ -462,7 +462,7 @@
       "de": "Plasmabeschleuniger",
       "fr": "Accelerateur à Plasma",
       "ru": "Ускоритель плазмы",
-      "pl": "Plasma Accelerator",
+      "pl": "Akcelerator Plazmy",
       "cs": "Plasma Accelerator"
     },
     "Electronic Countermeasure": {
@@ -471,7 +471,7 @@
       "de": "Elektronische Gegenmaßnahmen",
       "fr": "CME",
       "ru": "Электронное противодействие",
-      "pl": "Electronic Countermeasure",
+      "pl": "Elektroniczne Środki Zaradcze",
       "cs": "Electronic Countermeasure"
     },
     "Life Support": {
@@ -480,7 +480,7 @@
       "de": "Lebenserhaltung",
       "fr": "Systèmes de Survie",
       "ru": "Система жизнеобеспечения",
-      "pl": "Life Support",
+      "pl": "Podtrzymywanie Życia",
       "cs": "Life Support"
     },
     "Hull Reinforcement Package": {
@@ -499,7 +499,7 @@
       "de": "Kanone",
       "fr": "Canon",
       "ru": "Орудие",
-      "pl": "Cannon",
+      "pl": "Działo",
       "cs": "Cannon"
     },
     "Thrusters": {
@@ -508,7 +508,7 @@
       "de": "Schubdüsen",
       "fr": "Moteurs",
       "ru": "Маневровые двигатели",
-      "pl": "Thrusters",
+      "pl": "Silniki",
       "cs": "Thrusters"
     },
     "Multi-cannon": {
@@ -535,7 +535,7 @@
       "de": "Kraftwerk",
       "fr": "Générateur",
       "ru": "Силовая установка",
-      "pl": "Power Plant",
+      "pl": "Elektrownia",
       "cs": "Power Plant"
     },
     "Chaff Launcher": {
@@ -562,7 +562,7 @@
       "de": "Schildgenerator",
       "fr": "Générateur de Bouclier",
       "ru": "Щитогенератор",
-      "pl": "Shield Generator",
+      "pl": "Generator Osłon",
       "cs": "Shield Generator"
     },
     "Point Defence": {
@@ -571,7 +571,7 @@
       "de": "Punktverteidigung",
       "fr": "Défense ponctuelle",
       "ru": "Точечная оборона",
-      "pl": "Point Defence",
+      "pl": "Obrona Punktowa",
       "cs": "Point Defence"
     },
     "Shield Booster": {
@@ -580,7 +580,7 @@
       "de": "Schild-Booster",
       "fr": "Survolteur de Bouclier",
       "ru": "Усилитель щита",
-      "pl": "Shield Booster",
+      "pl": "Wzmacniacz Osłon",
       "cs": "Shield Booster"
     },
     "Kill Warrant Scanner": {
@@ -607,7 +607,7 @@
       "de": "Energieverteiler",
       "fr": "Répartiteur de Puissance",
       "ru": "Распределитель питания",
-      "pl": "Power Distributor",
+      "pl": "Dystrybutor Mocy",
       "cs": "Power Distributor"
     },
     "Fragment Cannon": {
@@ -625,7 +625,7 @@
       "de": "Minenwerfer",
       "fr": "Lanceur de mines",
       "ru": "Минирующее устройство",
-      "pl": "Mine Launcher",
+      "pl": "Wyrzutnia Min",
       "cs": "Mine Launcher"
     },
     "Beam Laser": {
@@ -634,7 +634,7 @@
       "de": "Strahlenlaser",
       "fr": "Rayon Laser",
       "ru": "Пучковый лазер",
-      "pl": "Beam Laser",
+      "pl": "Laser Wiązkowy",
       "cs": "Beam Laser"
     },
     "Armour": {
@@ -643,7 +643,7 @@
       "de": "Panzerung",
       "fr": "Armure",
       "ru": "Броня",
-      "pl": "Armour",
+      "pl": "Opancerzenie",
       "cs": "Armour"
     },
     "Prospector Limpet Controller": {
@@ -679,7 +679,7 @@
       "de": "Kühlkörperwerfer",
       "fr": "Dissipateur thermique",
       "ru": "Теплоотводная катапульта",
-      "pl": "Heat Sink Launcher",
+      "pl": "Wyrzutnia Radiatora",
       "cs": "Heat Sink Launcher"
     },
     "Pulse Laser": {
@@ -688,7 +688,7 @@
       "de": "Impulslaser",
       "fr": "Laser à Impulsion",
       "ru": "Импульсный лазер",
-      "pl": "Pulse Laser",
+      "pl": "Laser Pulsacyjny",
       "cs": "Pulse Laser"
     },
     "Refinery": {
@@ -697,7 +697,7 @@
       "de": "Raffinerie",
       "fr": "Raffinerie",
       "ru": "Очиститель",
-      "pl": "Refinery",
+      "pl": "Rafineria",
       "cs": "Refinery"
     },
     "Auto Field-Maintenance Unit": {
@@ -778,7 +778,7 @@
       "de": "Abweichende Schildeinsatz-Analysen",
       "fr": "Analyse de modèle de bouclier aberrante",
       "ru": "Анализ аномального поведения щита",
-      "pl": "Aberrant Shield Pattern Analysis",
+      "pl": "Nieprawidłowa Analiza Wzoru Tarczy",
       "cs": "Aberrant Shield Pattern Analysis"
     },
     "Abnormal Compact Emission Data": {
@@ -814,7 +814,7 @@
       "de": "Anormale FSA-Telemetrie",
       "fr": "Télémétrie FSD anormale",
       "ru": "Аномальная телеметрия FSD",
-      "pl": "Anomalous FSD Telemetry",
+      "pl": "Anomalna Telemetria FSD",
       "cs": "Anomalous FSD Telemetry"
     },
     "Antimony": {
@@ -823,7 +823,7 @@
       "de": "Antimon",
       "fr": "Antimoine",
       "ru": "Сурьма",
-      "pl": "Antimony",
+      "pl": "Antymon",
       "cs": "Antimony"
     },
     "Arsenic": {
@@ -832,7 +832,7 @@
       "de": "Arsen",
       "fr": "Arsenic",
       "ru": "Мышьяк",
-      "pl": "Arsenic",
+      "pl": "Arszenik",
       "cs": "Arsenic"
     },
     "Articulation Motors": {
@@ -868,7 +868,7 @@
       "de": "Einfache Leiter",
       "fr": "conducteurs simples",
       "ru": "Простые проводники",
-      "pl": "Basic Conductors",
+      "pl": "Podstawowe Przewodniki",
       "cs": "Basic Conductors"
     },
     "Biotech Conductors": {
@@ -895,7 +895,7 @@
       "de": "Kadmium",
       "fr": "Cadmium",
       "ru": "Кадмий",
-      "pl": "Cadmium",
+      "pl": "Kadm",
       "cs": "Cadmium"
     },
     "Carbon": {
@@ -904,7 +904,7 @@
       "de": "Kohlenstoff",
       "fr": "Carbone",
       "ru": "Углерод",
-      "pl": "Carbon",
+      "pl": "Węgiel",
       "cs": "Carbon"
     },
     "Chemical Distillery": {
@@ -913,7 +913,7 @@
       "de": "Chemiedestillerie",
       "fr": "Distilerie chimique",
       "ru": "Оборудование для перегонки химикатов",
-      "pl": "Chemical Distillery",
+      "pl": "Destylarnia Chemiczna",
       "cs": "Chemical Distillery"
     },
     "Chemical Manipulators": {
@@ -949,7 +949,7 @@
       "de": "Chrom",
       "fr": "Chrome",
       "ru": "Хром",
-      "pl": "Chromium",
+      "pl": "Chrom",
       "cs": "Chromium"
     },
     "Classified Scan Databanks": {
@@ -1057,7 +1057,7 @@
       "de": "Kristallscherben",
       "fr": "Eclat de cristal",
       "ru": "Осколки кристаллов",
-      "pl": "Crystal Shards",
+      "pl": "Odłamki Kryształu",
       "cs": "Crystal Shards"
     },
     "Datamined Wake Exceptions": {
@@ -1147,7 +1147,7 @@
       "de": "Krümmer",
       "fr": "Collecteur d'échappement",
       "ru": "Выпускной коллектор",
-      "pl": "Exhaust Manifold",
+      "pl": "Kolektor Wydechowy",
       "cs": "Exhaust Manifold"
     },
     "Exquisite Focus Crystals": {
@@ -1174,7 +1174,7 @@
       "de": "Fehlerhafte Fokuskristalle",
       "fr": "Cristaux de focalisation imparfaits",
       "ru": "Поврежденные фокусировочные кристаллы",
-      "pl": "Flawed Focus Crystals",
+      "pl": "Wadliwe Kryształy Skupiające",
       "cs": "Flawed Focus Crystals"
     },
     "Focus Crystals": {
@@ -1183,7 +1183,7 @@
       "de": "Laserkristalle",
       "fr": "Cristaux de focalisation",
       "ru": "Фокусировочные кристаллы",
-      "pl": "Focus Crystals",
+      "pl": "Kryształy Skupiające",
       "cs": "Focus Crystals"
     },
     "Galvanising Alloys": {
@@ -1201,7 +1201,7 @@
       "de": "Germanium",
       "fr": "Germanium",
       "ru": "Германий",
-      "pl": "Germanium",
+      "pl": "German",
       "cs": "Germanium"
     },
     "Grid Resistors": {
@@ -1246,7 +1246,7 @@
       "de": "Wärmeaustauscher",
       "fr": "Echangeurs de chaleur",
       "ru": "Теплообменные агрегаты",
-      "pl": "Heat Exchangers",
+      "pl": "Wymieniacze Ciepła",
       "cs": "Heat Exchangers"
     },
     "Heat Resistant Ceramics": {
@@ -1345,7 +1345,7 @@
       "de": "Ionenverteiler",
       "fr": "Distributeur d'ions",
       "ru": "Ионный распределитель",
-      "pl": "Ion Distributor",
+      "pl": "Dystrybutor Jonowy",
       "cs": "Ion Distributor"
     },
     "Iron": {
@@ -1354,7 +1354,7 @@
       "de": "Eisen",
       "fr": "Fer",
       "ru": "Железо",
-      "pl": "Iron",
+      "pl": "Żelazo",
       "cs": "Iron"
     },
     "Irregular Emission Data": {
@@ -1381,7 +1381,7 @@
       "de": "Mangan",
       "fr": "Manganese",
       "ru": "Марганец",
-      "pl": "Manganese",
+      "pl": "Mangan",
       "cs": "Manganese"
     },
     "Mechanical Components": {
@@ -1426,7 +1426,7 @@
       "de": "Mikrocontroller",
       "fr": "Microcontrôleurs",
       "ru": "Микроконтроллеры",
-      "pl": "Micro Controllers",
+      "pl": "Mikro Kontrollery",
       "cs": "Micro Controllers"
     },
     "Micro-Weave Cooling Hoses": {
@@ -1516,7 +1516,7 @@
       "de": "Nickel",
       "fr": "Nickel",
       "ru": "Никель",
-      "pl": "Nickel",
+      "pl": "Nikiel",
       "cs": "Nickel"
     },
     "Niobium": {
@@ -1525,7 +1525,7 @@
       "de": "Niobium",
       "fr": "Niobium",
       "ru": "Ниобий",
-      "pl": "Niobium",
+      "pl": "Niob",
       "cs": "Niobium"
     },
     "Open Symmetric Keys": {
@@ -1543,7 +1543,7 @@
       "de": "Osmium",
       "fr": "Osmium",
       "ru": "Осмий",
-      "pl": "Osmium",
+      "pl": "Osm",
       "cs": "Osmium"
     },
     "Pattern Alpha Obelisk Data": {
@@ -1624,7 +1624,7 @@
       "de": "Phosphor",
       "fr": "Phosphore",
       "ru": "Фосфор",
-      "pl": "Phosphorus",
+      "pl": "Fosfor",
       "cs": "Phosphorus"
     },
     "Platinum": {
@@ -1633,7 +1633,7 @@
       "de": "Platin",
       "fr": "platinium",
       "ru": "Платина",
-      "pl": "Platinum",
+      "pl": "Platyna",
       "cs": "Platinum"
     },
     "Polonium": {
@@ -1642,7 +1642,7 @@
       "de": "Polonium",
       "fr": "Polonium",
       "ru": "Полоний",
-      "pl": "Polonium",
+      "pl": "Polon",
       "cs": "Polonium"
     },
     "Polymer Capacitors": {
@@ -1759,16 +1759,16 @@
       "de": "Ruthenium",
       "fr": "Ruthenium",
       "ru": "Рутений",
-      "pl": "Ruthenium",
+      "pl": "Ruten",
       "cs": "Ruthenium"
     },
     "Rhenium": {
       "es": null,
       "pt": "Rênio",
       "de": "Rhenium",
-      "fr": null,
+      "fr": "Rhénium",
       "ru": "Рений",
-      "pl": null,
+      "pl": "Ren",
       "cs": "Rhenium"
     },
     "Salvaged Alloys": {
@@ -1786,7 +1786,7 @@
       "de": "Samarium",
       "fr": "Samarium",
       "ru": "Самарий",
-      "pl": "Samarium",
+      "pl": "Samar",
       "cs": "Samarium"
     },
     "Security Firmware Patch": {
@@ -1804,7 +1804,7 @@
       "de": "Selen",
       "fr": "Selenium",
       "ru": "Селен",
-      "pl": "Selenium",
+      "pl": "Selen",
       "cs": "Selenium"
     },
     "Shield Emitters": {
@@ -1849,7 +1849,7 @@
       "de": "Schwefel",
       "fr": "Souffre",
       "ru": "Сера",
-      "pl": "Sulphur",
+      "pl": "Sulfur",
       "cs": "Sulphur"
     },
     "Tagged Encryption Codes": {
@@ -1885,7 +1885,7 @@
       "de": "Tellur",
       "fr": "Tellure",
       "ru": "Теллурий",
-      "pl": "Tellurium",
+      "pl": "Tellur",
       "cs": "Tellurium"
     },
     "Tempered Alloys": {
@@ -1894,7 +1894,7 @@
       "de": "Vergütete Legierungen",
       "fr": "Alliages trempés",
       "ru": "Закаленные сплавы",
-      "pl": "Tempered Alloys",
+      "pl": "Hartowane Stopy",
       "cs": "Tempered Alloys"
     },
     "Thermic Alloys": {
@@ -1903,7 +1903,7 @@
       "de": "Thermische Legierungen",
       "fr": "Alliages thermiques",
       "ru": "Термические сплавы",
-      "pl": "Thermic Alloys",
+      "pl": "Stopy Termiczne",
       "cs": "Thermic Alloys"
     },
     "Tin": {
@@ -1912,7 +1912,7 @@
       "de": "Zinn",
       "fr": "Etain",
       "ru": "Олово",
-      "pl": "Tin",
+      "pl": "Cyna",
       "cs": "Tin"
     },
     "Tungsten": {
@@ -1921,7 +1921,7 @@
       "de": "Wolfram",
       "fr": "Tungstène",
       "ru": "Вольфрам",
-      "pl": "Tungsten",
+      "pl": "Wolfram",
       "cs": "Tungsten"
     },
     "Unexpected Emission Data": {
@@ -1943,12 +1943,12 @@
       "cs": "Unidentified Scan Archives"
     },
     "Sensor Fragment": {
-      "es": "Fragmento Desconocido",
+      "es": "Fragmento de sensor",
       "pt": "Fragmento do sensor",
       "de": "Unbekanntes Fragment",
       "fr": "Fragment inconnu",
       "ru": "Обломок сенсора",
-      "pl": "Sensor Fragment",
+      "pl": "Fragmenty Sensorów",
       "cs": "Sensor Fragment"
     },
     "Untypical Shield Scans": {
@@ -1957,7 +1957,7 @@
       "de": "Untypische Schildscans",
       "fr": "Analyses de bouclier atypiques",
       "ru": "Нетипичные данные сканирования щитов",
-      "pl": "Untypical Shield Scans",
+      "pl": "Nietypowe Skany Osłon",
       "cs": "Untypical Shield Scans"
     },
     "Unusual Encrypted Files": {
@@ -1966,7 +1966,7 @@
       "de": "Ungewöhnliche verschlüsselte Files",
       "fr": "Fichiers cryptés inhabituels",
       "ru": "Особые зашифрованные файлы",
-      "pl": "Unusual Encrypted Files",
+      "pl": "Niezwykłe Szyfrowane Dane",
       "cs": "Unusual Encrypted Files"
     },
     "Vanadium": {
@@ -1975,7 +1975,7 @@
       "de": "Vanadium",
       "fr": "Vanadium",
       "ru": "Ванадий",
-      "pl": "Vanadium",
+      "pl": "Wanad",
       "cs": "Vanadium"
     },
     "Worn Shield Emitters": {
@@ -1984,7 +1984,7 @@
       "de": "Gebrauchte Schildemitter",
       "fr": "Émetteurs de bouclier usé",
       "ru": "Изношенные щитоизлучатели",
-      "pl": "Worn Shield Emitters",
+      "pl": "Używane Emitery Osłon",
       "cs": "Worn Shield Emitters"
     },
     "Yttrium": {
@@ -2002,7 +2002,7 @@
       "de": "Zink",
       "fr": "Zinc",
       "ru": "Цинк",
-      "pl": "Zinc",
+      "pl": "Cynk",
       "cs": "Zinc"
     },
     "Zirconium": {
@@ -2011,7 +2011,7 @@
       "de": "Zirconium",
       "fr": "Zirconium",
       "ru": "Цирконий",
-      "pl": "Zirconium",
+      "pl": "Cyrkon",
       "cs": "Zirconium"
     },
     "ECM": {
@@ -2029,7 +2029,7 @@
       "de": "Rumpfhülle",
       "fr": "Coque",
       "ru": "Корпус",
-      "pl": "Hull",
+      "pl": "Kadłub",
       "cs": "Hull"
     },
     "FSD Interdictor": {
@@ -2159,10 +2159,10 @@
       "cs": "Postup"
     },
     "Last update:": {
-      "es": "Ultima actualización",
-      "pt": "Última Atualização",
+      "es": "Ultima actualización:",
+      "pt": "Última Atualização:",
       "de": "Letzte Aktualisierung:",
-      "fr": "Dernière Mise à jour",
+      "fr": "Dernière Mise à jour:",
       "ru": "Последнее обновление:",
       "pl": "Ostatnia aktualizacja:",
       "cs": "Ostatní aktualizace:"
@@ -2182,7 +2182,7 @@
       "de": "Einträge ohne Bestand anzeigen?",
       "fr": "Afficher les entrées sans stock?",
       "ru": "Показывать пустые записи?",
-      "pl": "Pokaż składniki bez zapasów?",
+      "pl": "Pokazać składniki bez zapasów?",
       "cs": "Zobrazit položky, které nemám ve skladu?"
     },
     "Show only for favorites?": {
@@ -2394,7 +2394,7 @@
     },
     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envia una incidencia a GitHub con la siguiente información :",
-      "pt": "Algo deu errado na análise de seus logs, abra um problema no GitHub com esta informação",
+      "pt": "Algo deu errado na análise de seus logs, abra um problema no GitHub com esta informação :",
       "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
       "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
       "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
@@ -3001,7 +3001,7 @@
       "de": "Hochgeschwindigkeitsmunition",
       "fr": "Munitions à Haute Vélocité",
       "ru": "Высокоскоростные боеприпасы",
-      "pl": "High Velocity Munitions",
+      "pl": "Amunicja o Wysokiej Prędkości",
       "cs": "High Velocity Munitions"
     },
     "Large Calibre Munitions": {
@@ -3010,7 +3010,7 @@
       "de": "Großkalibrige Munition",
       "fr": "Munitions de gros Calibre",
       "ru": "Крупнокалиберные боеприпасы",
-      "pl": "Large Calibre Munitions",
+      "pl": "Amunicja Dużego Kalibru",
       "cs": "Large Calibre Munitions"
     },
     "None": {
@@ -3028,7 +3028,7 @@
       "de": "Plasmamunition",
       "fr": "Munitions plasma",
       "ru": "Плазменные боеприпасы",
-      "pl": "Plasma Munitions",
+      "pl": "Amunicja Plazmowa",
       "cs": "Plasma Munitions"
     },
     "Small Calibre Munitions": {
@@ -3037,7 +3037,7 @@
       "de": "Kleinkalibrige Munition",
       "fr": "Munitions de petit calibre",
       "ru": "Мелкокалиберные боеприпасы",
-      "pl": "Small Calibre Munitions",
+      "pl": "Amunicja Małego Kalibru",
       "cs": "Small Calibre Munitions"
     },
     "SRV Ammo Restock": {
@@ -3185,16 +3185,16 @@
       "cs": "Počet"
     },
     "Thargoid Ship Signature": {
-      "es": "Señal de nave desconocida",
+      "es": "Firma Térmica de Nave Thargoide",
       "pt": "Assinatura de nave desconhecida",
       "de": "Unbekannte Schiffsignatur",
       "fr": "Signature de Vaisseau Thargoid",
       "ru": "Сигнатура таргоидского корабля",
-      "pl": "Thargoid Ship Signature",
+      "pl": "Sygnatura Statku Thargoid'ów",
       "cs": "Thargoid Ship Signature"
     },
     "Thargoid Wake Data": {
-      "es": "Datos de estela desconocida",
+      "es": "Datos de Estela Thargoide",
       "pt": "Dados de Rastro Desconhecido",
       "de": "Unbekannte Sogwolke",
       "fr": "Donnée de Sillage Thargoid",
@@ -3325,7 +3325,7 @@
       "de": "Sensoren",
       "fr": "Capteurs",
       "ru": "Сенсоры",
-      "pl": "Sensors",
+      "pl": "Sensory",
       "cs": "Sensors"
     },
     "Surface Scanner": {
@@ -3334,7 +3334,7 @@
       "de": "Oberflächen-Scanner",
       "fr": "Scanner de Surface",
       "ru": "Сканер поверхности",
-      "pl": "Surface Scanner",
+      "pl": "Skaner Powierzchni",
       "cs": "Surface Scanner"
     },
     "Wake Scanner": {
@@ -3348,12 +3348,12 @@
     },
     "Last update: ": {
       "es": "Última actualización: ",
-      "pt": "Última atualização",
-      "de": "letzte Aktualisierung",
+      "pt": "Última atualização: ",
+      "de": "letzte Aktualisierung: ",
       "fr": "Dernière mise à jour: ",
       "ru": "Последнее обновление: ",
-      "pl": "Ostatnia aktualizacja:",
-      "cs": "Poslední aktualizace:"
+      "pl": "Ostatnia aktualizacja: ",
+      "cs": "Poslední aktualizace: "
     },
     "Silent Launch": {
       "es": "Iniciar Minimizado",
@@ -3424,7 +3424,7 @@
       "de": "Langstrecken-Scanner",
       "fr": "Scanner Longue Portée",
       "ru": "Сканер увеличенной дальности",
-      "pl": "Long Range Scanner",
+      "pl": "Skaner Dalekiego Zasięgu",
       "cs": "Long Range Scanner"
     },
     "Wide Angle Scanner": {
@@ -3433,7 +3433,7 @@
       "de": "Weitwinkel-Scanner",
       "fr": "Scanner à Angle Large",
       "ru": "Широкоугольный сканер",
-      "pl": "Wide Angle Scanner",
+      "pl": "Skaner Szerokokątny",
       "cs": "Wide Angle Scanner"
     },
     "Light Weight Scanner": {
@@ -3451,7 +3451,7 @@
       "de": "Schneller Scanner",
       "fr": "Scanner Rapide",
       "ru": "Быстрый сканер",
-      "pl": "Fast Scanner",
+      "pl": "Szybki Skaner",
       "cs": "Fast Scanner"
     },
     "Unlock": {
@@ -3464,10 +3464,10 @@
       "cs": "Odemknutí"
     },
     "Available Voices:": {
-      "es": "Voces Disponibles",
-      "pt": "Vozes disponiveis",
-      "de": "verfügbare Stimmen",
-      "fr": "Voix Disponibles",
+      "es": "Voces Disponibles:",
+      "pt": "Vozes disponiveis:",
+      "de": "verfügbare Stimmen:",
+      "fr": "Voix Disponibles:",
       "ru": "Доступные голоса:",
       "pl": "Dostępne głosy:",
       "cs": "Dostupné hlasy:"
@@ -3478,7 +3478,7 @@
       "de": "Gefilterte Einträge - Klick HIER um zu Löschen",
       "fr": "entrées filtrées - cliquez ici pour nettoyer",
       "ru": "отфильтрованные записи - нажмите для очистки",
-      "pl": null,
+      "pl": "Filtrowane wpisy - Kliknij to żeby wyczyścić",
       "cs": "Filtrované záznamy - klikni pro vyčistění"
     },
     "Thargoid Material Composition Data": {
@@ -3509,7 +3509,7 @@
       "cs": "Thargoid Structural Data"
     },
     "Thargoid Carapace": {
-      "es": null,
+      "es": "Caparazón Thargoide",
       "pt": "Carapaça Thargoid",
       "de": "unbekannte Panzerung",
       "fr": "Carapace Thargoid",
@@ -3527,7 +3527,7 @@
       "cs": "Thargoid Energy Cell"
     },
     "Thargoid Organic Circuitry": {
-      "es": "Circuito Orgánico Thargoide",
+      "es": "Circuitería Orgánica Thargoide",
       "pt": "Circuito Orgânico Thargoid",
       "de": "unbekannte organische Struktur",
       "fr": "Circuit Organique Thargoid",
@@ -3545,25 +3545,25 @@
       "cs": "Thargoid Technological Components"
     },
     "Ship Flight Data": {
-      "es": null,
+      "es": "Datos de Vuelos de Nave",
       "pt": "Dados de voo da nave",
       "de": "Schiff-Flug-Daten",
       "fr": "Donnée de Vol",
       "ru": "Полетные данные корабля",
-      "pl": null,
+      "pl": "Dane lotu Statku",
       "cs": "Ship Flight Data"
     },
     "Ship System Data": {
-      "es": null,
+      "es": "Datos de Sistemas de Nave",
       "pt": "Dados do sistema da nave",
       "de": "Schiff-System-Daten",
       "fr": "Données de Système de Navigation",
       "ru": "Данные бортовых систем корабля",
-      "pl": null,
+      "pl": "Dane Systemów Statku",
       "cs": "Ship System Data"
     },
     "Wreckage Components": {
-      "es": null,
+      "es": "Restos de Accidentes",
       "pt": "Destroços de componentes",
       "de": "Wrackteile",
       "fr": "Composants d'Épave",
@@ -3572,12 +3572,12 @@
       "cs": "Wreckage Components"
     },
     "Weapon Parts": {
-      "es": null,
+      "es": "Piezas de Armamento",
       "pt": "Partes de armas",
       "de": "Waffenteile",
       "fr": "Éléments d'Arme",
       "ru": "Детали вооружения",
-      "pl": null,
+      "pl": "Części Broni",
       "cs": "Weapon Parts"
     },
     "Bio-Mechanical Conduits": {
@@ -3604,7 +3604,7 @@
       "de": "Einstellungen",
       "fr": "Paramètres",
       "ru": "Настройки",
-      "pl": null,
+      "pl": "Ustawienia",
       "cs": "Nastavení"
     },
     "Configure Graphics": {
@@ -3613,7 +3613,7 @@
       "de": "Grafik einstellen",
       "fr": "Configuration Graphique",
       "ru": "Настройки графики",
-      "pl": null,
+      "pl": "Konfiguj Grafikę",
       "cs": "Nastav grafiku"
     },
     "100% Refill": {
@@ -3622,7 +3622,7 @@
       "de": "100% Nachfüllung",
       "fr": "100% de Recharge",
       "ru": "100% заправка",
-      "pl": null,
+      "pl": "100% uzupełnienia",
       "cs": "100% doplnění"
     },
     "100% Refill, +15% Heat Dissipation": {
@@ -3685,7 +3685,7 @@
       "de": "Gold",
       "fr": "Or",
       "ru": "Золото",
-      "pl": null,
+      "pl": "Złoto",
       "cs": "Gold"
     },
     "Kamitra Cigars": {
@@ -3712,7 +3712,7 @@
       "de": "Landminen",
       "fr": "Mines Terrestres",
       "ru": "Мины",
-      "pl": null,
+      "pl": "Miny Lądowe",
       "cs": "Landmines"
     },
     "Lavian Brandy": {
@@ -3730,7 +3730,7 @@
       "de": "Drohnen",
       "fr": "Drones",
       "ru": "Беспилотники",
-      "pl": null,
+      "pl": "Drony",
       "cs": "Limpety"
     },
     "Meta-alloys": {
@@ -3775,7 +3775,7 @@
       "de": "roh",
       "fr": "À l'état brut",
       "ru": "Неочищенные минералы",
-      "pl": null,
+      "pl": "Surowe",
       "cs": "Surové (Raw)"
     },
     "Raw Only": {
@@ -3784,11 +3784,11 @@
       "de": "nur roh",
       "fr": "Uniquement à l'état brut",
       "ru": "Только неочищенные минералы",
-      "pl": null,
+      "pl": "Tylko surowe",
       "cs": "Pouze surové(Raw only)"
     },
     "Manufactured": {
-      "es": null,
+      "es": "Manufacturado(s)",
       "pt": "Fabricado",
       "de": "hergestellt",
       "fr": "Manufacturé(s)",
@@ -3797,7 +3797,7 @@
       "cs": "Vyrobené(Manufactured)"
     },
     "Manufactured Only": {
-      "es": null,
+      "es": "Solo manufacturado(s)",
       "pt": "Apenas Fabricado",
       "de": "nur hergestellt",
       "fr": "Uniquement manufacturé(s)",
@@ -3806,17 +3806,17 @@
       "cs": "Pouze vyrobené(Manufact.only)"
     },
     "Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!": {
-      "es": null,
+      "es": "Ingrediente no reconocido (mostrando el nombre como aparece en los logs). Por favor abra un asunto en GitHub para notificar al autor cuál es el nombre real the este ingrediente!",
       "pt": "Ingrediente não reconhecido (mostrando o nome como aparece nos registros). Abra um problema do GitHub para que o autor saiba qual é o nome verdadeiro disso!",
       "de": "Unbekannter Bestandteil (zeigt den Namen, wie er in den Protokollen erscheint). Bitte öffnen Sie ein GitHub-Issue, um den Autor wissen zu lassen, wie dieser wirklich heißt!",
-      "fr": null,
+      "fr": "Ingrédients non reconnu( Nom apparaissant dans les logs). Ouvrez une issue sur Github pour faire savoir à l'auteur quel est le vrai nom de l'ingrédient !",
       "ru": "Нераспознанный ингредиент (отображается название из логов). Пожалуйста, создайте issue на GitHub, чтобы оповестить разработчика о фактическом названии!",
       "pl": null,
       "cs": "Nerozpoznaná ingredience (Zobrazené jméno je tak, jak se vyskytuje v logu). Prosím otevřete požadavek na GitHubu a dejte vědět autorovi správný název ingredience!"
     },
     "Group ingredients?": {
-      "es": null,
-      "pt": null,
+      "es": "Grupo de ingredientes?",
+      "pt": "Grupo de ingredientes?",
       "de": "Gruppenzutaten?",
       "fr": "Groupe d'ingrédients ?",
       "ru": "Группировать ингредиенты?",
@@ -3824,17 +3824,17 @@
       "cs": "Seskupovat ingredience?"
     },
     "Unknown": {
-      "es": null,
+      "es": "Desconocido",
       "pt": "Desconhecido",
       "de": "Unbekannt",
       "fr": "Inconnu",
       "ru": "Неизвестные",
-      "pl": null,
+      "pl": "Nieznane",
       "cs": "Neznámé"
     },
     "Carrying ": {
-      "es": null,
-      "pt": null,
+      "es": "Transportando",
+      "pt": "Transportando",
       "de": "Trasportieren ",
       "fr": "Capacité",
       "ru": "В наличии ",
@@ -3842,8 +3842,8 @@
       "cs": "Vlastněno "
     },
     "Emission Data": {
-      "es": null,
-      "pt": null,
+      "es": "Datos de emisión",
+      "pt": "Dados de emissão",
       "de": "Emissionsdaten",
       "fr": "Données d'émission",
       "ru": "Данные об излучениях",
@@ -3851,8 +3851,8 @@
       "cs": "Emission Data"
     },
     "Wake Scans": {
-      "es": null,
-      "pt": null,
+      "es": "Escaneos de estela",
+      "pt": "Escaneamento de Rastro",
       "de": "Sogwolken Scans",
       "fr": "Données de sillages",
       "ru": "Сканирования следа FSD",
@@ -3860,17 +3860,17 @@
       "cs": "Wake Scans"
     },
     "Shield Data": {
-      "es": null,
-      "pt": null,
+      "es": "Datos de escudo",
+      "pt": "Dados de escudo",
       "de": "Schilddaten",
       "fr": "Données de bouclier",
       "ru": "Данные о щитах",
-      "pl": null,
+      "pl": "Dane osłon",
       "cs": "Shield Data"
     },
     "Encryption Files": {
-      "es": null,
-      "pt": null,
+      "es": "Archivos de encriptación",
+      "pt": "Arquivos de encriptação",
       "de": "Verschlüsselungsdaten",
       "fr": "Fichiers cryptés",
       "ru": "Файлы шифрования",
@@ -3878,17 +3878,17 @@
       "cs": "Encryption Files"
     },
     "Data Archives": {
-      "es": null,
-      "pt": null,
+      "es": "Archivos de datos",
+      "pt": "Arquivos de dados",
       "de": "Datenarchive",
       "fr": "Archives de données",
       "ru": "Архивы данных",
-      "pl": null,
+      "pl": "Archiwa Danych",
       "cs": "Data Archives"
     },
     "Encoded Firmware": {
       "es": null,
-      "pt": null,
+      "pt": "Firmware codificado",
       "de": "Codierte Firmware",
       "fr": "Micrologiciels encodés",
       "ru": "Закодированные микропрограммы",
@@ -3896,71 +3896,71 @@
       "cs": "Encoded Firmware"
     },
     "Category 1": {
-      "es": null,
+      "es": "Categoría 1",
       "pt": "Categoria 1",
       "de": "Kategorie 1",
       "fr": "Matériaux bruts - Catégorie 1",
       "ru": "Категория 1",
-      "pl": null,
+      "pl": "Kategoria 1",
       "cs": "Kategorie 1"
     },
     "Category 2": {
-      "es": null,
+      "es": "Categoría 2",
       "pt": "Categoria 2",
       "de": "Kategorie 2",
       "fr": "Matériaux bruts - Catégorie 2",
       "ru": "Категория 2",
-      "pl": null,
+      "pl": "Kategoria 2",
       "cs": "Kategorie 2"
     },
     "Category 3": {
-      "es": null,
+      "es": "Categoría 3",
       "pt": "Categoria 3",
       "de": "Kategorie 3",
       "fr": "Matériaux bruts - Catégorie 3",
       "ru": "Категория 3",
-      "pl": null,
+      "pl": "Katerogia 3",
       "cs": "Kategorie 3"
     },
     "Category 4": {
-      "es": null,
+      "es": "Categoría 4",
       "pt": "Categoria 4",
       "de": "Kategorie 4",
       "fr": "Matériaux bruts - Catégorie 4",
       "ru": "Категория 4",
-      "pl": null,
+      "pl": "Kategoria 4",
       "cs": "Kategorie 4"
     },
     "Category 5": {
-      "es": null,
+      "es": "Categoría 5",
       "pt": "Categoria 5",
       "de": "Kategorie 5",
       "fr": "Matériaux bruts - Catégorie 5",
       "ru": "Категория 5",
-      "pl": null,
+      "pl": "Kategoria 5",
       "cs": "Kategorie 5"
     },
     "Category 6": {
-      "es": null,
+      "es": "Categoría 6",
       "pt": "Categoria 6",
       "de": "Kategorie 6",
       "fr": "Matériaux bruts - Catégorie 6",
       "ru": "Категория 6",
-      "pl": null,
+      "pl": "Kategoria 6",
       "cs": "Kategorie 6"
     },
     "Category 7": {
-      "es": null,
+      "es": "Categoría 7",
       "pt": "Categoria 7",
       "de": "Kategorie 7",
       "fr": "Matériaux bruts - Catégorie 7",
       "ru": "Категория 7",
-      "pl": null,
+      "pl": "Kategoria 7",
       "cs": "Kategorie 7"
     },
     "Chemical": {
-      "es": null,
-      "pt": null,
+      "es": "Químico",
+      "pt": "Químicos",
       "de": "Chemikalien",
       "fr": "Produits chimiques",
       "ru": "Химикаты",
@@ -3968,8 +3968,8 @@
       "cs": "Chemické (Chemical)"
     },
     "Thermic": {
-      "es": null,
-      "pt": "Térmico",
+      "es": "Térmico",
+      "pt": "Térmicos",
       "de": "Thermisch",
       "fr": "Thermiques",
       "ru": "Термические сплавы",
@@ -3977,35 +3977,35 @@
       "cs": "Termické (Thermic)"
     },
     "Heat": {
-      "es": null,
-      "pt": null,
+      "es": "Calor",
+      "pt": "Calor",
       "de": "Hitze",
       "fr": "Chaleur",
       "ru": "Теплообмен",
-      "pl": null,
+      "pl": "Ciepło",
       "cs": "Tepelné (Heat)"
     },
     "Conductive": {
-      "es": null,
-      "pt": null,
+      "es": "Conductivo",
+      "pt": "Condutivos",
       "de": "Leiter",
       "fr": "Conducteurs",
       "ru": "Проводники",
-      "pl": null,
+      "pl": "Przewodzące",
       "cs": "Konduktivní (Conductive)"
     },
     "Capacitors": {
-      "es": null,
-      "pt": null,
+      "es": "Condensadores",
+      "pt": "Capacitores",
       "de": "Kondensatoren",
       "fr": "Condensateurs",
       "ru": "Конденсаторы",
-      "pl": null,
+      "pl": "Kondensatory",
       "cs": "Kondenzátory (Capacitors)"
     },
     "Shielding": {
-      "es": null,
-      "pt": null,
+      "es": "Protección",
+      "pt": "Blindagem",
       "de": "Abschirmung",
       "fr": "Protection",
       "ru": "Защита",
@@ -4013,8 +4013,8 @@
       "cs": "Stínění (Shielding)"
     },
     "Composite": {
-      "es": null,
-      "pt": null,
+      "es": "Compuesto",
+      "pt": "Compostos",
       "de": "Komposite",
       "fr": "Composites",
       "ru": "Композиты",
@@ -4022,16 +4022,16 @@
       "cs": "Kompozity (Composite)"
     },
     "Crystals": {
-      "es": null,
-      "pt": null,
+      "es": "Cristales",
+      "pt": "Cristais",
       "de": "Kristalle",
       "fr": "Cristaux",
       "ru": "Кристаллы",
-      "pl": null,
+      "pl": "Kryształy",
       "cs": "Krystaly (Crystals)"
     },
     "Alloys": {
-      "es": null,
+      "es": "Aleaciones",
       "pt": "Ligas",
       "de": "Legierungen",
       "fr": "Alliages",
@@ -4040,109 +4040,109 @@
       "cs": "Slitiny (Alloys)"
     },
     "Lead": {
-      "es": null,
+      "es": "Plomo",
       "pt": "Chumbo",
       "de": "Blei",
-      "fr": null,
+      "fr": "Plomb",
       "ru": "Свинец",
       "pl": null,
       "cs": "Lead"
     },
     "Boron": {
-      "es": null,
+      "es": "Boro",
       "pt": "Boro",
       "de": "Bor",
-      "fr": null,
+      "fr": "Bore",
       "ru": "Бор",
       "pl": null,
       "cs": "Boron"
     },
     "Guardian Weapon Blueprint Segment": {
-      "es": null,
+      "es": "Fragmento de Plano de Armamento de Guardián",
       "pt": "Segmento de Diagrama de Arma Guardian",
       "de": "Guardian-Waffenbauplansegment",
-      "fr": null,
-      "ru": "Фрагмент чертежа оружия стражей",
+      "fr": "Morceau de plan d'arme Guardians",
+      "ru": "Фрагмент чертежа оружия Стражей",
       "pl": null,
       "cs": "Guardian Weapon Blueprint Segment"
     },
     "Guardian Power Cell": {
-      "es": null,
+      "es": "Célula de Energía de Guardián",
       "pt": "Bateria Guardian",
       "de": "Guardian-Energiezelle",
-      "fr": null,
-      "ru": "Энергоячейка стражей",
-      "pl": null,
+      "fr": "Cellule d'énergie Guardians",
+      "ru": "Энергоячейка Стражей",
+      "pl": "Ogniwa Mocy Strażników",
       "cs": "Guardian Power Cell"
     },
     "Guardian Technology Component": {
-      "es": null,
+      "es": "Componente Tecnológico de Guardián",
       "pt": "Componente de Tecnologia Guardian",
       "de": "Guardian-Technologiekomponente",
-      "fr": null,
-      "ru": "Компоненты технологий стражей",
+      "fr": "Composants technologique Guardians",
+      "ru": "Компоненты технологий Стражей",
       "pl": null,
       "cs": "Guardian Technology Component"
     },
     "Guardian Power Conduit": {
-      "es": null,
+      "es": "Conducto de Energía Guardián",
       "pt": "Condutores de Potência Guardian",
       "de": "Guardian-Energieleiter",
-      "fr": null,
-      "ru": "Энергопроводники стражей",
+      "fr": "Conduits d'énergie Guardians",
+      "ru": "Энергопроводники Стражей",
       "pl": null,
       "cs": "Guardian Power Conduit"
     },
     "Guardian Sentinel Weapon Parts": {
-      "es": null,
+      "es": "Piezas de Armamento de Centinela Guardián",
       "pt": "Peças de Armas Sentinela Guardian",
       "de": "Guardian-Wache-Waffenteile",
-      "fr": null,
-      "ru": "Детали вооружения стража Sentinel",
+      "fr": "Pièces d'armement de sentinelle Guardians",
+      "ru": "Детали вооружения часовых Стражей",
       "pl": null,
       "cs": "Guardian Sentinel Weapon Parts"
     },
     "Guardian Module Blueprint Segment": {
-      "es": null,
+      "es": "Fragmento de Plano de Módulo de Guardián",
       "pt": "Segmento de Diagrama de Módulo Guardian",
       "de": "Guardian-Modulbauplansegment",
-      "fr": null,
-      "ru": "Фрагмент чертежа модуля стражей",
+      "fr": "Morceau de plan de module Guardians",
+      "ru": "Фрагмент чертежа модуля Стражей",
       "pl": null,
       "cs": "Guardian Module Blueprint Segment"
     },
     "Guardian Sentinel Wreckage Components": {
-      "es": null,
+      "es": "Restos de accidentes de Guardián",
       "pt": "Componentes de Destroços Sentinela Guardian",
       "de": "Guardian-Wache Trümmerteile",
-      "fr": null,
-      "ru": "Обломки кораблекрушений стража Sentinel",
+      "fr": "Débris d'épave Guardians",
+      "ru": "Обломки часовых Стражей",
       "pl": null,
       "cs": "Guardian Sentinel Wreckage Components"
     },
     "Guardian Vessel Blueprint Segment": {
-      "es": null,
+      "es": "Fragmento de Plano de Nave de Guardián",
       "pt": null,
       "de": "Guardian-Schiffsbauplansegment",
-      "fr": null,
-      "ru": "Фрагмент чертежа судна стражей",
+      "fr": "Morceau de plan de chasseur Guardians",
+      "ru": "Фрагмент чертежа судна Стражей",
       "pl": null,
       "cs": "Guardian Vessel Blueprint Segment"
     },
     "Human": {
-      "es": null,
+      "es": "Humano",
       "pt": "Humano",
       "de": "Menschlich",
-      "fr": null,
-      "ru": "Технологии людей",
-      "pl": null,
+      "fr": "Humain",
+      "ru": "Люди",
+      "pl": "Człowiek",
       "cs": "Lidské"
     },
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
-      "es": null,
+      "es": "Bodega de carga resistente a corrosión (2D y 4D)",
       "pt": "Estante de Carga Anti-Corrosiva (2D e 4D)",
       "de": "Korrosionsresistentes Frachtegtell (2D and 4D)",
-      "fr": null,
+      "fr": "Compartiment de Soute Résistant à la Corrosion",
       "ru": "Коррозийно-устойчивый грузовой стеллаж (2D и 4D)",
       "pl": null,
       "cs": "Corrosion Resistant Cargo Rack (2D and 4D)"
@@ -4151,61 +4151,79 @@
       "es": null,
       "pt": "Estante de Mísseis Enzimáticos",
       "de": "Enzym Raketenrampe",
-      "fr": null,
+      "fr": "Batterie de Missiles Enzymatiques",
       "ru": "Блок энзимных ракет",
       "pl": null,
       "cs": "Enzyme Missile Rack"
     },
     "Guardian": {
-      "es": null,
+      "es": "Guardián",
       "pt": "Guardian",
       "de": "Guardian",
-      "fr": null,
-      "ru": "Технологии стражей",
-      "pl": null,
+      "fr": "Guardians",
+      "ru": "Стражи",
+      "pl": "Strażnik",
       "cs": "Guardiánské"
     },
+    "Guardian Ruins": {
+      "es": "Ruinas Guardianes",
+      "pt": "Ruínas Guardian",
+      "de": null,
+      "fr": "Ruines Guardians",
+      "ru": "Руины Стражей",
+      "pl": "Ruiny Strażników",
+      "cs": null
+    },
+    "Guardian Ruins (Active)": {
+      "es": "Ruinas Guardianes (Activas)",
+      "pt": "Ruínas Guardian (Ativa)",
+      "de": null,
+      "fr": "Ruines Guardians (Actives)",
+      "ru": "Руины Стражей (Активные)",
+      "pl": "Ruiny Strażników (Aktywne)",
+      "cs": null
+    },
     "Guardian Gauss Cannon (Fixed)": {
-      "es": null,
+      "es": "Cañón Gauss Guardián (Fijo)",
       "pt": "Canhão Gauss Guardian (Fixa)",
       "de": "Guardian-Gausskannone (Fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
-      "ru": "Пушка Гаусса стражей (фиксированное)",
+      "ru": "Пушка Гаусса Стражей (фиксированное)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed)"
     },
     "Guardian Plasma Charger (Fixed)": {
-      "es": null,
+      "es": "Cargador de Plasma Guardián (Fijo)",
       "pt": "Carregador de Plasma Guardian (Fixa)",
       "de": "Guardian-Plasmalader (Fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
-      "ru": "Плазменная пушка стражей (фиксированное)",
+      "ru": "Плазменная пушка Стражей (фиксированное)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed)"
     },
     "Guardian Plasma Charger (Turreted)": {
-      "es": null,
+      "es": "Cargador de Plasma Guardián (Torreta)",
       "pt": "Carregador de Plasma Guardian (Torretada)",
       "de": "Guardian-Plasmalader (Turm)",
       "fr": "Chargeur à plasma - Guardians (Tourelle)",
-      "ru": "Плазменная пушка стражей (турель)",
+      "ru": "Плазменная пушка Стражей (турель)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted)"
     },
     "Guardian Hybrid Power Plant": {
-      "es": null,
+      "es": "Núcleo de energía Guardián",
       "pt": "Gerador de Energia Guardian",
       "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
-      "ru": "Силовая установка стражей",
+      "ru": "Силовая установка Стражей",
       "pl": null,
       "cs": "Guardian Hybrid Power Plant"
     },
     "Meta Alloy Hull Reinforcement": {
       "es": null,
-      "pt": null,
+      "pt": "Conjunto de Reforço de Casco",
       "de": "Meta-Legierung-Hüllenverstärkung",
-      "fr": null,
+      "fr": "Renforcement de Coque en Méta-Alliage - Guardians",
       "ru": "Метасплавное усиление корпуса",
       "pl": null,
       "cs": "Meta Alloy Hull Reinforcement"
@@ -4214,7 +4232,7 @@
       "es": null,
       "pt": "Lançador de dardos de Liberação Remota (Fixa)",
       "de": "ferngesteuerter Flechettenwerfer (Fest)",
-      "fr": null,
+      "fr": "Lanceurs de Fléchettes Déclenchées à Distance (Fixe)",
       "ru": "Зенитная установка с дистанционным подрывом (фиксированное)",
       "pl": null,
       "cs": "Remote Release Flechette Launcher (Fixed)"
@@ -4223,97 +4241,97 @@
       "es": null,
       "pt": "Lançador de dardos de Liberação Remota (Torretada)",
       "de": "ferngesteuerter Flechettenwerfer (Turm)",
-      "fr": null,
+      "fr": "Lanceurs de Fléchettes Déclenchées à Distance (Tourelle)",
       "ru": "Зенитная установка с дистанционным подрывом (турель)",
       "pl": null,
       "cs": "Remote Release Flechette Launcher (Turreted)"
     },
     "Shock Cannon (Fixed)": {
-      "es": null,
+      "es": "Cañon de choque (Fijo)",
       "pt": "Canhão Elétrico (Fixa)",
       "de": "Schock Kanone (Fest)",
-      "fr": null,
+      "fr": "Canon de choc (Fixe)",
       "ru": "Шоковое орудие (фиксированное)",
       "pl": null,
       "cs": "Shock Cannon (Fixed)"
     },
     "Shock Cannon (Gimballed)": {
-      "es": null,
+      "es": "Cañon de choque (Guiado)",
       "pt": "Canhão Elétrico (Guiada)",
       "de": "Schock Kanone (Kardanisch)",
-      "fr": null,
+      "fr": "Canon de choc (PE Rotatif)",
       "ru": "Шоковое орудие (на карданной подвеске)",
       "pl": null,
       "cs": "Shock Cannon (Gimballed)"
     },
     "Shock Cannon (Turreted)": {
-      "es": null,
+      "es": "Cañon de choque (Torreta)",
       "pt": "Canhão Elétrico (Torretada)",
       "de": "Schock Kanone (Turm)",
-      "fr": null,
+      "fr": "Canon de choc (Tourelle)",
       "ru": "Шоковое орудие (турель)",
       "pl": null,
       "cs": "Shock Cannon (Turreted)"
     },
     "Concordant Sequence": {
-      "es": null,
+      "es": "Secuencia Concordante",
       "pt": null,
       "de": "gleichsinnige Sequenz",
-      "fr": null,
+      "fr": "Séquence concordante",
       "ru": "Последовательность координации",
       "pl": null,
       "cs": "Concordant Sequence"
     },
     "Regeneration Sequence": {
-      "es": null,
+      "es": "Secuencia de Regeneración",
       "pt": null,
       "de": "regenerierende Sequenz",
-      "fr": null,
+      "fr": "Séquence de régénération",
       "ru": "Последовательность восстановления",
       "pl": null,
       "cs": "Regeneration Sequence"
     },
     "Thermal Conduit": {
-      "es": null,
-      "pt": null,
+      "es": "Conductor Térmico",
+      "pt": "Condutor Térmico",
       "de": "Hitzerohr",
-      "fr": null,
+      "fr": "Décupleur Thermique",
       "ru": "Проводник тепла",
       "pl": null,
       "cs": "Thermal Conduit"
     },
     "Thermal Shock": {
-      "es": null,
-      "pt": null,
+      "es": "Choque Térmico",
+      "pt": "Choque Térmico",
       "de": "Thermischer Schock",
-      "fr": null,
+      "fr": "Choc Thermique",
       "ru": "Тепловой удар",
       "pl": null,
       "cs": "Thermal Shock"
     },
     "Thermal Vent": {
-      "es": null,
-      "pt": null,
+      "es": "Respiradero Térmico",
+      "pt": "Ventoinha Térmica",
       "de": "Thermische Entlastung",
-      "fr": null,
+      "fr": "Ventilation Thermique",
       "ru": "Теплоотдача",
       "pl": null,
       "cs": "Thermal Vent"
     },
     "Oversized": {
-      "es": null,
+      "es": "Sobredimensionado",
       "pt": null,
       "de": "Übergröße",
-      "fr": null,
+      "fr": "Armes XXL",
       "ru": "Сверхразмер",
       "pl": null,
       "cs": "Oversized"
     },
     "Stripped Down": {
-      "es": null,
+      "es": "Despojado",
       "pt": null,
       "de": "Reduktion",
-      "fr": null,
+      "fr": "Désossage",
       "ru": "Урезанный вариант",
       "pl": null,
       "cs": "Stripped Down"
@@ -4322,7 +4340,7 @@
       "es": null,
       "pt": null,
       "de": "Doppelt Versteift",
-      "fr": null,
+      "fr": "Armature Renforcée",
       "ru": "Двойная прочность",
       "pl": null,
       "cs": "Double Braced"
@@ -4331,16 +4349,16 @@
       "es": null,
       "pt": null,
       "de": "Flusssteuerung",
-      "fr": null,
+      "fr": "Contrôle du Flux",
       "ru": "Контроль интенсивности",
       "pl": null,
       "cs": "Flow Control"
     },
     "Inertial Impact": {
-      "es": null,
+      "es": "Impacto Inercial",
       "pt": null,
       "de": "Trägheitseinfluss",
-      "fr": null,
+      "fr": "Impact d'Inertie",
       "ru": "Инерционный удар",
       "pl": null,
       "cs": "Inertial Impact"
@@ -4349,7 +4367,7 @@
       "es": null,
       "pt": null,
       "de": "Phasensequenz",
-      "fr": null,
+      "fr": "Séquence de Phase",
       "ru": "Последовательность фазирования",
       "pl": null,
       "cs": "Phasing Sequence"
@@ -4358,7 +4376,7 @@
       "es": null,
       "pt": null,
       "de": "Mischungsbandbreite",
-      "fr": null,
+      "fr": "Spectre de Brouillage",
       "ru": "Отключающая сетка",
       "pl": null,
       "cs": "Scramble Spectrum"
@@ -4367,7 +4385,7 @@
       "es": null,
       "pt": null,
       "de": "Multi-Servos",
-      "fr": null,
+      "fr": "Servomécanismes Multiples",
       "ru": "Сервосистема",
       "pl": null,
       "cs": "Multi-Servos"
@@ -4376,16 +4394,16 @@
       "es": null,
       "pt": null,
       "de": "Emissionsgranate",
-      "fr": null,
+      "fr": "Munitions à Emissions",
       "ru": "Эмиссионные припасы",
       "pl": null,
       "cs": "Emissive Munitions"
     },
     "Auto Loader": {
-      "es": null,
+      "es": "Cargador automático",
       "pt": null,
       "de": "Auto-Laden",
-      "fr": null,
+      "fr": "Rechargement Automatique",
       "ru": "Автоматическая система заряжания",
       "pl": null,
       "cs": "Auto Loader"
@@ -4394,43 +4412,43 @@
       "es": null,
       "pt": null,
       "de": "Korrosionsgranate",
-      "fr": null,
+      "fr": "Obus Corrosifs",
       "ru": "Разъедающие боеприпасы",
       "pl": null,
       "cs": "Corrosive Shell"
     },
     "Incendiary Rounds": {
-      "es": null,
+      "es": "Rondas Incendiarias",
       "pt": null,
       "de": "Hitzesalven",
-      "fr": null,
+      "fr": "Munitions Incendiaires",
       "ru": "Зажигательные припасы",
       "pl": null,
       "cs": "Incendiary Rounds"
     },
     "Smart Rounds": {
-      "es": null,
+      "es": "Rondas Inteligentes",
       "pt": null,
       "de": "Intelligente Munition",
-      "fr": null,
+      "fr": "Munitions Intelligentes",
       "ru": "Умные боеприпасы",
       "pl": null,
       "cs": "Smart Rounds"
     },
     "Dispersal Field": {
-      "es": null,
+      "es": "Campo de Dispersión",
       "pt": null,
       "de": "Streuungsfeld",
-      "fr": null,
+      "fr": "Champ de Dispersion",
       "ru": "Рассеивающее поле",
       "pl": null,
       "cs": "Dispersal Field"
     },
     "Force Shell": {
-      "es": null,
+      "es": "Escudo de Fuerza",
       "pt": null,
       "de": "Impulsgranate",
-      "fr": null,
+      "fr": "Munitions Surpuissantes",
       "ru": "Усиленные снаряды",
       "pl": null,
       "cs": "Force Shell"
@@ -4439,16 +4457,16 @@
       "es": null,
       "pt": null,
       "de": "Hocheffizienzgranate",
-      "fr": null,
+      "fr": "Obus à Fragmentations",
       "ru": "Снаряды большой мощности",
       "pl": null,
       "cs": "High Yield Shell"
     },
     "Thermal Cascade": {
-      "es": null,
+      "es": "Cascada Térmica",
       "pt": null,
       "de": "Thermalkaskade",
-      "fr": null,
+      "fr": "Réverbérations Thermiques",
       "ru": "Термический залп",
       "pl": null,
       "cs": "Thermal Cascade"
@@ -4457,7 +4475,7 @@
       "es": null,
       "pt": null,
       "de": "Blendgranate",
-      "fr": null,
+      "fr": "Obus Aveuglant",
       "ru": "Ослепляющие снаряды",
       "pl": null,
       "cs": "Dazzle Shell"
@@ -4466,7 +4484,7 @@
       "es": null,
       "pt": null,
       "de": "Ableitungsmunition",
-      "fr": null,
+      "fr": "Munitions à Inertie",
       "ru": "Замедляющие боеприпасы",
       "pl": null,
       "cs": "Drag Munition"
@@ -4475,7 +4493,7 @@
       "es": null,
       "pt": null,
       "de": "Sperrgranate",
-      "fr": null,
+      "fr": "Obus de Criblage",
       "ru": "Заслоняющие снаряды",
       "pl": null,
       "cs": "Screening Shell"
@@ -4484,7 +4502,7 @@
       "es": null,
       "pt": null,
       "de": "Ableitungsmunition (nur Suchraketen)",
-      "fr": null,
+      "fr": "Munitions à Inertie (Auto-Guidés)",
       "ru": "Замедляющие боеприпасы (лоток с самонаведением)",
       "pl": null,
       "cs": "Drag Munition (Seeker only)"
@@ -4493,7 +4511,7 @@
       "es": null,
       "pt": null,
       "de": "Überladungsmunition",
-      "fr": null,
+      "fr": "Munitions à Surcharge",
       "ru": "Вызывающие перегрузку боеприпасы",
       "pl": null,
       "cs": "Overload Munitions"
@@ -4502,7 +4520,7 @@
       "es": null,
       "pt": null,
       "de": "Penetrationsmunition",
-      "fr": null,
+      "fr": "Munitions Perforantes (Non Auto-Guidés)",
       "ru": "Бронебойные боеголовки",
       "pl": null,
       "cs": "Penetrator Munitions (Dumbfire only)"
@@ -4511,7 +4529,7 @@
       "es": null,
       "pt": null,
       "de": "FSA-Unterbrechung (nur Dumbfire)",
-      "fr": null,
+      "fr": "Interruption FSD (Non Auto-Guidés)",
       "ru": "Помеха для FSD",
       "pl": null,
       "cs": "FSD Interrupt (Dumbfire only)"
@@ -4520,7 +4538,7 @@
       "es": null,
       "pt": null,
       "de": "Massesperremunition",
-      "fr": null,
+      "fr": "Munitions à Champ Gravitationnel",
       "ru": "Боеприпасы с гравитационным захватом",
       "pl": null,
       "cs": "Mass Lock Munition"
@@ -4529,7 +4547,7 @@
       "es": null,
       "pt": null,
       "de": "Penetrationsmunition",
-      "fr": null,
+      "fr": "Charge explosive Perforante",
       "ru": "Бронебойные снаряды",
       "pl": null,
       "cs": "Penetrator Payload"
@@ -4538,7 +4556,7 @@
       "es": null,
       "pt": null,
       "de": "Rückstrahlkaskade",
-      "fr": null,
+      "fr": "Réverbérations en Série",
       "ru": "Отраженный залп",
       "pl": null,
       "cs": "Reverberating Cascade"
@@ -4547,7 +4565,7 @@
       "es": null,
       "pt": null,
       "de": "Ionen-Disruption",
-      "fr": null,
+      "fr": "Perturbation Ionique",
       "ru": "Ионный дестабилизатор",
       "pl": null,
       "cs": "Ion Disruptor"
@@ -4556,7 +4574,7 @@
       "es": null,
       "pt": null,
       "de": "Strahlenbehältnis",
-      "fr": null,
+      "fr": "Cartouche Irradiante",
       "ru": "Светящаяся кассета",
       "pl": null,
       "cs": "Radiant Canister"
@@ -4565,7 +4583,7 @@
       "es": null,
       "pt": null,
       "de": "Frameshift-Blocker",
-      "fr": null,
+      "fr": "Cartouche de Verrouillage FSD",
       "ru": "Рамоблокирующая кассета",
       "pl": null,
       "cs": "Shift-Lock Canister"
@@ -4583,7 +4601,7 @@
       "es": null,
       "pt": null,
       "de": "Plasmaprojektil",
-      "fr": null,
+      "fr": "Munitions à Plasma",
       "ru": "Плазменный рельсовый заряд",
       "pl": null,
       "cs": "Plasma Slug"
@@ -4592,7 +4610,7 @@
       "es": null,
       "pt": null,
       "de": "Rückkopplungskaskade",
-      "fr": null,
+      "fr": "Réverbérations énergétiques",
       "ru": "Ответный залп",
       "pl": null,
       "cs": "Feedback Cascade"
@@ -4601,70 +4619,70 @@
       "es": null,
       "pt": null,
       "de": "Super-Durchdringer",
-      "fr": null,
+      "fr": "Munitions Ultra Perforantes",
       "ru": "Модуль сверхпробития",
       "pl": null,
       "cs": "Super Penetrator"
     },
     "@Technology": {
-      "es": null,
-      "pt": null,
+      "es": "@Tecnología",
+      "pt": "@Tecnologia",
       "de": "@Technologie",
-      "fr": null,
+      "fr": "@Technologie",
       "ru": "@Технология",
       "pl": null,
       "cs": "@Technologie"
     },
     "Module": {
-      "es": null,
+      "es": "Módulo",
       "pt": "Módulo",
       "de": "Module",
-      "fr": null,
+      "fr": "Module",
       "ru": "Модули",
       "pl": null,
       "cs": "Moduly"
     },
     "Synthesis": {
-      "es": null,
-      "pt": null,
+      "es": "Síntesis",
+      "pt": "Síntese",
       "de": "Synthese",
-      "fr": null,
+      "fr": "Synthèse",
       "ru": "Синтез",
       "pl": null,
       "cs": "Syntéza"
     },
     "Experimental": {
-      "es": null,
+      "es": "Experimental",
       "pt": "Experimental",
       "de": "Experimentell",
-      "fr": null,
+      "fr": "Expérimental",
       "ru": "Экспериментальные",
       "pl": null,
       "cs": "Experimentální"
     },
     "Technology": {
-      "es": null,
-      "pt": null,
+      "es": "Tecnología",
+      "pt": "Tecnologia",
       "de": "Technologie",
-      "fr": null,
+      "fr": "Technologie",
       "ru": "Технологии",
       "pl": null,
       "cs": "Technologie"
     },
     "Ancient/Guardian ruins": {
-      "es": null,
-      "pt": null,
+      "es": "Ruinas Antíguas/Guardianes",
+      "pt": "Reínas Antigas/Guardian",
       "de": "Uralte/Guardian Ruinen",
-      "fr": null,
-      "ru": "Руины стражей",
+      "fr": "Ruines Guardians",
+      "ru": "Руины Стражей",
       "pl": null,
       "cs": "Starobylé/Guardiánské ruiny"
     },
     "EDEngineer will try to remove blueprints from your shopping list if you craft them in game": {
-      "es": null,
-      "pt": null,
+      "es": "EDEngineer intentará eliminar planos de tu lista si los creas en el juego",
+      "pt": "O EDEngineer tentará remover blueprints da sua lista de compras se você as fazer no jogo",
       "de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
-      "fr": null,
+      "fr": "EDEngineer va essayer de retirer les plans de votre liste de courses si vous les assemblez dans le jeu",
       "ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
       "pl": null,
       "cs": "EDEngineer se pokusí odebrat plánky z vašeho nákupního seznamu, když je aplikujete ve hře"
@@ -4673,7 +4691,7 @@
       "es": null,
       "pt": null,
       "de": "Wärmeverteilung",
-      "fr": null,
+      "fr": "Répartition thermique",
       "ru": "Рассеивание тепла",
       "pl": null,
       "cs": "Thermal Spread"
@@ -4682,43 +4700,43 @@
       "es": null,
       "pt": null,
       "de": "monströs",
-      "fr": null,
+      "fr": "Modèle XXL",
       "ru": "Монстрация",
       "pl": null,
       "cs": "Monstered"
     },
     "Angled Plating": {
-      "es": null,
+      "es": "Blindaje Angulado",
       "pt": null,
       "de": "Abgewinkelte Beschichtung",
-      "fr": null,
+      "fr": "Blindage Anguleux",
       "ru": "Угловая броня",
       "pl": null,
       "cs": "Angled Plating"
     },
     "Layered Plating": {
-      "es": null,
+      "es": "Blindaje Compuesto",
       "pt": null,
       "de": "Mehrschichtige Beschichtung",
-      "fr": null,
+      "fr": "Blindage à Couches",
       "ru": "Многослойная броня",
       "pl": null,
       "cs": "Layered Plating"
     },
     "Reflective Plating": {
-      "es": null,
+      "es": "Blindaje Reflectante",
       "pt": null,
       "de": "Reflektierende Beschichtung",
-      "fr": null,
+      "fr": "Blindage Réfléchissant",
       "ru": "Отражающая броня",
       "pl": null,
       "cs": "Reflective Plating"
     },
     "Deep Plating": {
-      "es": null,
+      "es": "Blindaje Profundo",
       "pt": null,
       "de": "Tiefenüberzug",
-      "fr": null,
+      "fr": "Blindage Epais",
       "ru": "Утолщенная броня",
       "pl": null,
       "cs": "Deep Plating"
@@ -4727,16 +4745,16 @@
       "es": null,
       "pt": null,
       "de": "Boss-Zellen",
-      "fr": null,
+      "fr": "Cellules XXL",
       "ru": "Босс-ячейки",
       "pl": null,
       "cs": "Boss Cells"
     },
     "Recycling Cells": {
-      "es": null,
+      "es": "Celdas de Reciclaje",
       "pt": null,
       "de": "Recycling-Zellen",
-      "fr": null,
+      "fr": "Recyclage des Cellules",
       "ru": "Рециркуляционные ячейки",
       "pl": null,
       "cs": "Recycling Cells"
@@ -4745,7 +4763,7 @@
       "es": null,
       "pt": null,
       "de": "Kraftsperre",
-      "fr": null,
+      "fr": "Blocage de Force",
       "ru": "Усиленная блокировка",
       "pl": null,
       "cs": "Force Block"
@@ -4754,7 +4772,7 @@
       "es": null,
       "pt": null,
       "de": "Wärmesperre",
-      "fr": null,
+      "fr": "Blocage Thermique",
       "ru": "Блокировка тепла",
       "pl": null,
       "cs": "Thermo Block"
@@ -4763,16 +4781,16 @@
       "es": null,
       "pt": null,
       "de": "Explosionssperre",
-      "fr": null,
+      "fr": "Blocage d'Explosion",
       "ru": "Блокировка взрыва",
       "pl": null,
       "cs": "Blast Block"
     },
     "Super Capacitor": {
-      "es": null,
+      "es": "Super Condensador",
       "pt": null,
       "de": "Superkondensatoren",
-      "fr": null,
+      "fr": "Super COndensateurs",
       "ru": "Суперконденсатор",
       "pl": null,
       "cs": "Super Capacitor"
@@ -4781,7 +4799,7 @@
       "es": null,
       "pt": null,
       "de": "Hi-cap",
-      "fr": null,
+      "fr": "Puissance Renforcée",
       "ru": "Высокая емкость",
       "pl": null,
       "cs": "Hi-cap"
@@ -4790,16 +4808,16 @@
       "es": null,
       "pt": null,
       "de": "Mehrfachgewebe",
-      "fr": null,
+      "fr": "Filaments Multiples",
       "ru": "Мультипрошивка",
       "pl": null,
       "cs": "Multi-weave"
     },
     "Fast Charge": {
-      "es": null,
+      "es": "Carga Rápida",
       "pt": null,
       "de": "Schnelllader",
-      "fr": null,
+      "fr": "Chargement Rapide",
       "ru": "Быстрый заряд",
       "pl": null,
       "cs": "Fast Charge"
@@ -4808,259 +4826,277 @@
       "es": null,
       "pt": null,
       "de": "Lo-draw",
-      "fr": null,
+      "fr": "Consommation Réduite",
       "ru": "Пониженное потребление",
       "pl": null,
       "cs": "Lo-draw"
     },
     "Deep Charge": {
-      "es": null,
+      "es": "Carga Profunda",
       "pt": null,
       "de": "Tiefenladung",
-      "fr": null,
+      "fr": "Charge Profonde",
       "ru": "Заряд повышенной мощности",
       "pl": null,
       "cs": "Deep Charge"
     },
     "Mass Manager": {
-      "es": null,
-      "pt": null,
+      "es": "Gestor de Masa",
+      "pt": "Gestor de Massa",
       "de": "Massemanager",
-      "fr": null,
+      "fr": "Gestionnaire de Masse",
       "ru": "Распределитель гравитации",
       "pl": null,
       "cs": "Mass Manager"
     },
     "Drive Distributors": {
-      "es": null,
+      "es": "Distribuidores de Empuje",
       "pt": null,
       "de": "Antriebsverteiler",
-      "fr": null,
+      "fr": "Répartiteurs de réacteurs",
       "ru": "Распределители тяги",
       "pl": null,
       "cs": "Drive Distributors"
     },
     "Drag Drives": {
-      "es": null,
+      "es": "Impulsores de Arrastre",
       "pt": null,
       "de": "Drag Antriebe",
-      "fr": null,
+      "fr": "Débridage des réacteurs",
       "ru": "Ускорители",
       "pl": null,
       "cs": "Drag Drives"
     },
     "Super Conduits": {
-      "es": null,
+      "es": "Superconductores",
       "pt": null,
       "de": "Superleiter",
-      "fr": null,
+      "fr": "Super Conduits",
       "ru": "Сверхпроводники",
       "pl": null,
       "cs": "Super Conduits"
     },
     "Cluster Capacitor": {
-      "es": null,
+      "es": "Condensador de Cluster",
       "pt": null,
       "de": "Cluster Kondensator",
-      "fr": null,
+      "fr": "Batterie de Condensateurs",
       "ru": "Кассетный конденсатор",
       "pl": null,
       "cs": "Cluster Capacitor"
     },
     "Thargoid": {
-      "es": null,
+      "es": "Thargoide",
       "pt": "Thargoid",
       "de": "Thargoid",
-      "fr": null,
-      "ru": "Технологии таргоидов",
+      "fr": "Thargoid",
+      "ru": "Таргоиды",
       "pl": null,
       "cs": "Thargoidské"
+    },
+    "Thargoid Ship": {
+      "es": "Nave Thargoide",
+      "pt": "Nave Thargoid",
+      "de": null,
+      "fr": "Vaisseau Thargoid",
+      "ru": "Корабль Таргоидов",
+      "pl": null,
+      "cs": null
+    },
+    "Thargoid Site": {
+      "es": "Sitio Thargoide",
+      "pt": "Construção Thargoid",
+      "de": null,
+      "fr": "Site Thargoid",
+      "ru": "База Таргоидов",
+      "pl": null,
+      "cs": null
     },
     "Top Source Systems": {
       "es": null,
       "pt": null,
       "de": "Top Quellsysteme",
-      "fr": null,
+      "fr": "Principaux systèmes source",
       "ru": "Системы с обилием ресурсов",
       "pl": null,
       "cs": "Získáno nejvíce v systému"
     },
     "System:": {
-      "es": null,
-      "pt": null,
+      "es": "Sistema:",
+      "pt": "Sistema:",
       "de": "System:",
-      "fr": null,
+      "fr": "Système",
       "ru": "Система:",
       "pl": null,
       "cs": "Systém:"
     },
     "You have:": {
-      "es": null,
-      "pt": null,
+      "es": "Tienes:",
+      "pt": "Você tem:",
       "de": "Du hast:",
-      "fr": null,
+      "fr": "Vous avez:",
       "ru": "В наличии:",
       "pl": null,
-      "cs": "Máš"
+      "cs": "Máš:"
     },
     "(already needed)": {
-      "es": null,
-      "pt": null,
+      "es": "(Es Necesario)",
+      "pt": "(Já necessário)",
       "de": "(bereits benötigt)",
-      "fr": null,
+      "fr": "(déjà nécéssaire)",
       "ru": "(уже необходимо)",
       "pl": null,
       "cs": "(také potřebuješ)"
     },
     "Shows material trading suggestion (taking into account your cargo and the entire shopping list).": {
-      "es": null,
-      "pt": null,
+      "es": "Muestra sugerencia de comercio de materiales (teniendo en cuenta tu carga y la lista de componentes completa).",
+      "pt": "Mostra sugestão de negociação de material (levando em conta sua carga e toda a lista de compras)",
       "de": "Zeigt Materialhandelsvorschläge (unter Berücksichtigung Ihrer Ladung und der gesamten Einkaufsliste).",
-      "fr": null,
+      "fr": "Montrer les suggestions d'échange (en prennant en compte le contenu de votre cargo et de votre liste de courses).",
       "ru": "Показывает предложения по торговле материалами (учитывая ваш груз и весь список покупок).",
       "pl": null,
       "cs": "Zobrazuje návrh obchodování s materiálem (s ohledem na vaše cargo a celý nákupní seznam)."
     },
     "Suggestions are sorted by how big the trade is compared to your cargo, minus an eventual amount already needed in the shopping list.": {
-      "es": null,
-      "pt": null,
+      "es": "Las sugerencias están ordenadas por el tamaño de la transacción comparado con tu carga, menos una cantidad eventual necesaria para la lista de componentes.",
+      "pt": "As sugestões são classificadas pelo tamanho da troca comparado à sua carga, menos uma quantia eventual já necessária na lista de compras.",
       "de": "Vorschläge werden nach der Größe des Handels im Vergleich zu Ihrer Ladung sortiert, abzüglich einer eventuell bereits in der Einkaufsliste benötigten Menge.",
-      "fr": null,
+      "fr": "Les suggestions sont classées en fonction de l’importance de l’échange par rapport à votre cargaison, moins un nombre éventuel déjà nécessaire dans la liste de courses.",
       "ru": "Предложения сортируются по величине торговли по сравнению с вашим грузом, минус возможная сумма, уже необходимая в списке покупок.",
       "pl": null,
       "cs": "Návrhy jsou seřazeny podle toho, jak velký bude obchod v porovnání s materiály ve tvém cargu. Mínus případné položky, které jsou zapotřebí v nákupním seznamu."
     },
     "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
-      "es": null,
-      "pt": null,
+      "es": "Las entradas naranjas indican una sugerencia de comercio que no completará tus requisitos (pero puede que ayude).",
+      "pt": "As entradas em laranja indicam uma sugestão de negociação que não atenderá completamente a sua necessidade (mas pode ajudar).",
       "de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
-      "fr": null,
+      "fr": "Les entrées en orange indiquent une suggestion d’échange qui ne répondra pas complètement à vos besoins (mais qui pourrait aider).",
       "ru": "Оранжевые записи указывают предложения по торговле, которые не полностью отвечают требованиям (но могут помочь).",
       "pl": null,
       "cs": "Oranžové položky označují návrhy obchodu, které zcela nesplní tvůj požadavek, ale může ti pomoci."
     },
     "Materials Trader found at industrial economies, only trades in manufactured materials.": {
-      "es": null,
-      "pt": null,
+      "es": "Los comerciantes de materiales encontrados en las economías industriales, solo hacen transacciones con materiales manufacturados.",
+      "pt": "Os comerciantes de materiais encontrados em economias industriais, apenas comercializam materiais manufaturados.",
       "de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
-      "fr": null,
+      "fr": "Les commerçants de matériaux trouvés dans les économies industrielles, échangent seulement des matériaux manufacturés.",
       "ru": "Торговец материалами в системах с промышленной экономикой, обменивает только промышленные материалы.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'Industrial' ekonomikou, obchoduje pouze s vyrobenými materiály (Biotech conductors, Compound shielding atd.)."
     },
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
-      "es": null,
-      "pt": null,
+      "es": "Los comerciantes de materiales encontrados en las economías de estracción y refinería, solo hacen transacciones con materias primas encontradas en superficies de planetas y anillos planetarios.",
+      "pt": "Os comerciantes de materiais encontrados em economias de extração e refinaria, apenas comercializam materiais brutos encontrados na superfície de planetas ou em anéis planetários.",
       "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
-      "fr": null,
+      "fr": "Les commerçants de matériaux trouvés dans les économies d’extraction et de raffinerie, n'échangent que des matières premières trouvées sur des surfaces planétaires et des anneaux planétaires.",
       "ru": "Торговец материалами в системах с добычей ископаемых и переработкой, обменивает только сырьевые элементы.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'Extraction' a 'Rafinery ekonomikou', obchoduje pouze se surovými materiály, které se získávají na povrchu planet a při težbě v prstencích."
     },
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
-      "es": null,
-      "pt": null,
+      "es": "Los comerciantes de materiales encontrados en las economías de alta tecnología y militares, solo hacen transacciones con materiales codificados.",
+      "pt": "Os comerciantes de materiais encontrados em economias de Alta Tecnologia e Militar, apenas comercializam materiais codificados.",
       "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
-      "fr": null,
+      "fr": "Les commerçants de matériaux trouvés dans les économies High Tech et Militaraires, ne négocie que des matériaux encodés.",
       "ru": "Торговец материалами в системах с высокотехнологичной и военной экономикой, обменивает только зашифрованные данные.",
       "pl": null,
       "cs": "Obchodník s materiály se může necházet v systémech s 'High Tech' a 'Military ekonomikou', obchoduje pouze s daty."
     },
     "API ON": {
-      "es": null,
-      "pt": null,
+      "es": "API encendida",
+      "pt": "API Ativa",
       "de": "API AN",
-      "fr": null,
+      "fr": "API ON",
       "ru": "API ВКЛ",
       "pl": null,
       "cs": "API zapnuto"
     },
     "API OFF": {
-      "es": null,
-      "pt": null,
+      "es": "API apagada",
+      "pt": "API Inativa",
       "de": "API AUS",
-      "fr": null,
+      "fr": "API OFF",
       "ru": "API ВЫКЛ",
       "pl": null,
       "cs": "API vypnuto"
     },
     "Long Range FSD Interdictor": {
-      "es": null,
-      "pt": null,
+      "es": "Interdictor de MDD de Largo Alcance",
+      "pt": "Interditor de MDD de Longo Alcance",
       "de": null,
-      "fr": null,
+      "fr": "Intercepteur FSD longue portée",
       "ru": "FSD-перехватчик большой дальности",
       "pl": null,
       "cs": "Long Range FSD Interdictor"
     },
     "Guardian Plasma Charger Munitions": {
-      "es": null,
+      "es": "Munición de Cargador de Plasma Guardián",
       "pt": null,
       "de": "Guardian-Plasmaladermunition",
-      "fr": null,
-      "ru": "Боеприпасы для плазменных пушек стражей",
+      "fr": "Munitions de Chargeur Plasma Guardians",
+      "ru": "Боеприпасы для плазменных пушек Стражей",
       "pl": null,
       "cs": "Munice do Guardian Plasma Charger"
     },
     "Guardian Gauss Cannon Munitions": {
-      "es": null,
+      "es": "Munición de Cañón Gauss Guardián",
       "pt": null,
       "de": "Guardian-Gausskannonenmunition",
-      "fr": null,
-      "ru": "Боеприпасы для пушек Гаусса стражей",
+      "fr": "Munitions de Canon Gauss Guardians",
+      "ru": "Боеприпасы для пушек Гаусса Стражей",
       "pl": null,
       "cs": "Munice do Guardian Gauss Cannon"
     },
     "AX Small Calibre Munitions": {
-      "es": null,
+      "es": "Munición AX de calibre pequeño",
       "pt": null,
       "de": "Kleinkalibrige Munition (AX)",
-      "fr": null,
+      "fr": "Munitions Anti-Xeno Petit Calibre",
       "ru": "Мелкокалиберные боеприпасы АИ",
       "pl": null,
       "cs": "Munice malé ráže do AX zbraní (AX MC)"
     },
     "+5% Damage Boost": {
-      "es": null,
-      "pt": null,
+      "es": "Aumento de Daño +5%",
+      "pt": "Aumento de Dano de +5%",
       "de": "Bonus Schaden: +5%",
-      "fr": null,
+      "fr": "+5% de boost de dommage",
       "ru": "+5% к урону",
       "pl": null,
       "cs": "+5% boost k poškození"
     },
     "+10% Damage Boost": {
-      "es": null,
-      "pt": null,
+      "es": "Aumento de Daño +10%",
+      "pt": "Aumento de Dano de +10%",
       "de": "Bonus Schaden: +10%",
-      "fr": null,
+      "fr": "+10% de boost de dommage",
       "ru": "+10% к урону",
       "pl": null,
       "cs": "+10% boost k poškození"
     },
     "AX Remote Flak Munitions": {
-      "es": null,
+      "es": "Munición AX Antiaérea Remota",
       "pt": null,
       "de": "Munition für Ferngezündete Flak (AX)",
-      "fr": null,
+      "fr": "Munitions Anti-Xeno Flak à Distance",
       "ru": "Зенитные снаряды с дистанционным подрывом АИ",
       "pl": null,
       "cs": "Munice do AX Remote Flaku"
     },
     "Enzyme Missile Launcher Munitions": {
-      "es": null,
+      "es": "Munición de Lanzamisiles de Enzimas",
       "pt": null,
       "de": "Enzymraketenwerfermunition",
-      "fr": null,
+      "fr": "Munitions de Batterie de Missiles Enzymatiques",
       "ru": "Боеприпасы для энзимных ракетных установок",
       "pl": null,
       "cs": "Munice do Enzyme Missile Launcher"
     },
     "Flechette Launcher Munitions": {
-      "es": null,
+      "es": "Munición de Lanzador de Flechettes",
       "pt": null,
       "de": "Flechettewerfermunition",
-      "fr": null,
+      "fr": "Munitions de Lanceur de Fléchettes",
       "ru": "Стреловидные боеприпасы",
       "pl": null,
       "cs": "Munice do Flechette Launcher"
@@ -5069,25 +5105,25 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanonenmunition",
-      "fr": null,
-      "ru": "Боеприпасы для осколочных орудий стражей",
+      "fr": "Munitions Canon à Eclats - Guardians",
+      "ru": "Боеприпасы для осколочных орудий Стражей",
       "pl": null,
       "cs": "Munice do Guardian Shard Cannon"
     },
     "AX Explosive Munitions": {
-      "es": null,
+      "es": "Munición AX Explosiva",
       "pt": null,
       "de": "Explosivmunition (AX)",
-      "fr": null,
+      "fr": "Munitions Anti-Xeno Explosives",
       "ru": "Взрывчатые боеприпасы АИ",
       "pl": null,
       "cs": "Explozivní munice do AX zbraní (rakety)"
     },
     "+5% Damage": {
-      "es": null,
-      "pt": null,
+      "es": "+5% Daño",
+      "pt": "+5% de Dano",
       "de": "Bonus Schaden: +5%",
-      "fr": null,
+      "fr": "+5% de dommage",
       "ru": "+5% к урону",
       "pl": null,
       "cs": "+5% poškození"
@@ -5096,8 +5132,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
-      "fr": null,
-      "ru": "Пушка Гаусса стражей (фиксированное, средний слот)",
+      "fr": "Canon Gauss - Guardians (Fixe, Classe 2)",
+      "ru": "Пушка Гаусса Стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed, Medium)"
     },
@@ -5105,26 +5141,26 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
-      "fr": null,
-      "ru": "Пушка Гаусса стражей (фиксированное, малый слот)",
+      "fr": "Canon Gauss - Guardians (Fixe, Classe 1)",
+      "ru": "Пушка Гаусса Стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": "Guardian Gauss Cannon (Fixed, Small)"
     },
     "Guardian Hull Reinforcement": {
-      "es": null,
+      "es": "Potenciador de Casco Guardián",
       "pt": null,
       "de": "Guardian-Rumpfhüllenverstärkung",
-      "fr": null,
-      "ru": "Набор для усиления корпуса стражей",
+      "fr": "Renforcement de Coque - Guardians",
+      "ru": "Набор для усиления корпуса Стражей",
       "pl": null,
       "cs": "Guardian Hull Reinforcement"
     },
     "Guardian Module Reinforcement": {
-      "es": null,
+      "es": "Refuerzo de Modulo Guardián",
       "pt": null,
       "de": "Guardian-Modulverstärkung",
-      "fr": null,
-      "ru": "Набор для усиления модуля стражей",
+      "fr": "Renforcement de Modules - Guardians",
+      "ru": "Набор для усиления модуля Стражей",
       "pl": null,
       "cs": "Guardian Module Reinforcement"
     },
@@ -5132,8 +5168,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
-      "fr": null,
-      "ru": "Плазменная пушка стражей (фиксированное, большой слот)",
+      "fr": "Chargeur Plasma - Guardians (Fixe, Classe 3)",
+      "ru": "Плазменная пушка Стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed, Large)"
     },
@@ -5141,8 +5177,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 2)",
-      "fr": null,
-      "ru": "Плазменная пушка стражей (фиксированное, средний слот)",
+      "fr": "Chargeur Plasma - Guardians (Fixe, Classe 2)",
+      "ru": "Плазменная пушка Стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed, Medium)"
     },
@@ -5150,8 +5186,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 1)",
-      "fr": null,
-      "ru": "Плазменная пушка стражей (фиксированное, малый слот)",
+      "fr": "Chargeur Plasma - Guardians (Fixe, Classe 1)",
+      "ru": "Плазменная пушка Стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Fixed, Small)"
     },
@@ -5159,8 +5195,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 3)",
-      "fr": null,
-      "ru": "Плазменная пушка стражей (турель, большой слот)",
+      "fr": "Chargeur Plasma - Guardians (Tourelle, Classe 3)",
+      "ru": "Плазменная пушка Стражей (турель, большой слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted, Large)"
     },
@@ -5168,8 +5204,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 2)",
-      "fr": null,
-      "ru": "Плазменная пушка стражей (турель, средний слот)",
+      "fr": "Chargeur Plasma - Guardians (Tourelle, Classe 2)",
+      "ru": "Плазменная пушка Стражей (турель, средний слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted, Medium)"
     },
@@ -5177,26 +5213,26 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 1)",
-      "fr": null,
-      "ru": "Плазменная пушка стражей (турель, малый слот)",
+      "fr": "Chargeur Plasma - Guardians (Tourelle, Classe 1)",
+      "ru": "Плазменная пушка Стражей (турель, малый слот)",
       "pl": null,
       "cs": "Guardian Plasma Charger (Turreted, Small)"
     },
     "Guardian FSD Booster": {
-      "es": null,
+      "es": "Potenciador de Motor de Distórsion Guardián",
       "pt": null,
       "de": "Guardian-Frameshiftantrieb-Booster",
-      "fr": null,
-      "ru": "Ускоритель FSD стражей",
+      "fr": "Survolteur FSD - Guardians",
+      "ru": "Ускоритель FSD Стражей",
       "pl": null,
       "cs": "Guardian FSD Booster"
     },
     "Guardian Power Distributor": {
-      "es": null,
+      "es": "Distribuidor de Energia Guardián",
       "pt": null,
       "de": "Guardian-Energieverteiler",
-      "fr": null,
-      "ru": "Распределитель питания стражей",
+      "fr": "Répartiteur de Puissance - Guardians",
+      "ru": "Распределитель питания Стражей",
       "pl": null,
       "cs": "Guardian Power Distributor"
     },
@@ -5204,8 +5240,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 3)",
-      "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
+      "fr": "Canons à Eclats - Guardians (Fixe, Classe 3)",
+      "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Fixed, Large)"
     },
@@ -5213,8 +5249,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 2)",
-      "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, средний слот)",
+      "fr": "Canons à Eclats - Guardians (Fixe, Classe 2)",
+      "ru": "Осколочное орудие Стражей (фиксированное, средний слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Fixed, Medium)"
     },
@@ -5222,8 +5258,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 1)",
-      "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, малый слот)",
+      "fr": "Canons à Eclats - Guardians (Fixe, Classe 1)",
+      "ru": "Осколочное орудие Стражей (фиксированное, малый слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Fixed, Small)"
     },
@@ -5231,8 +5267,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 3)",
-      "fr": null,
-      "ru": "Осколочное орудие стражей (турель, большой слот)",
+      "fr": "Canons à Eclats - Guardians (Tourelle, Classe 3)",
+      "ru": "Осколочное орудие Стражей (турель, большой слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Turreted, Large)"
     },
@@ -5240,8 +5276,8 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 2)",
-      "fr": null,
-      "ru": "Осколочное орудие стражей (турель, средний слот)",
+      "fr": "Canons à Eclats - Guardians (Tourelle, Classe 2)",
+      "ru": "Осколочное орудие Стражей (турель, средний слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Turreted, Medium)"
     },
@@ -5249,17 +5285,17 @@
       "es": null,
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 1)",
-      "fr": null,
-      "ru": "Осколочное орудие стражей (турель, малый слот)",
+      "fr": "Canons à Eclats - Guardians (Tourelle, Classe 1)",
+      "ru": "Осколочное орудие Стражей (турель, малый слот)",
       "pl": null,
       "cs": "Guardian Shard Cannon (Turreted, Small)"
     },
     "Guardian Shield Reinforcement": {
-      "es": null,
+      "es": "Refuerzo de Escudo Guardián",
       "pt": null,
       "de": "Guardian-Schildverstärkung",
-      "fr": null,
-      "ru": "Набор для усиления щита стражей",
+      "fr": "Renforcement de Bouclier - Guardians",
+      "ru": "Набор для усиления щита Стражей",
       "pl": null,
       "cs": "Guardian Shield Reinforcement"
     },
@@ -5267,7 +5303,7 @@
       "es": null,
       "pt": null,
       "de": "Javelin (Fighter)",
-      "fr": null,
+      "fr": "Javelin (Chasseur)",
       "ru": "Javelin (Истребитель)",
       "pl": null,
       "cs": "Javelin (Fighter)"
@@ -5276,7 +5312,7 @@
       "es": null,
       "pt": null,
       "de": "Lance (Fighter)",
-      "fr": null,
+      "fr": "Lance (Chasseur)",
       "ru": "Lance (Истребитель)",
       "pl": null,
       "cs": "Lance (Fighter)"
@@ -5285,7 +5321,7 @@
       "es": null,
       "pt": null,
       "de": "Trident (Fighter)",
-      "fr": null,
+      "fr": "Trident (Chasseur)",
       "ru": "Trident (Истребитель)",
       "pl": null,
       "cs": "Trident (Fighter)"
@@ -5294,8 +5330,8 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
-      "ru": "Осколочное орудие стражей (фиксированное, большой слот)",
+      "fr": "Canon de Choc (Fixe, Classe 3)",
+      "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
       "cs": "Shock Cannon (Fixed, Large)"
     },
@@ -5303,7 +5339,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (Fixe, Classe 2)",
       "ru": "Шоковое орудие (фиксированное, средний слот)",
       "pl": null,
       "cs": "Shock Cannon (Fixed, Medium)"
@@ -5312,7 +5348,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (Fixe, Classe 1)",
       "ru": "Шоковое орудие (фиксированное, малый слот)",
       "pl": null,
       "cs": "Shock Cannon (Fixed, Small)"
@@ -5321,7 +5357,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (PE Rotatif, Classe 3)",
       "ru": "Шоковое орудие (на карданной подвеске, большой слот)",
       "pl": null,
       "cs": "Shock Cannon (Gimballed, Large)"
@@ -5330,7 +5366,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (PE Rotatif, Classe 2)",
       "ru": "Шоковое орудие (на карданной подвеске, средний слот)",
       "pl": null,
       "cs": "Shock Cannon (Gimballed, Medium)"
@@ -5339,7 +5375,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (PE Rotatif, Classe 1)",
       "ru": "Шоковое орудие (на карданной подвеске, малый слот)",
       "pl": null,
       "cs": "Shock Cannon (Gimballed, Small)"
@@ -5348,7 +5384,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (Tourelle, Classe 3)",
       "ru": "Шоковое орудие (турель, большой слот)",
       "pl": null,
       "cs": "Shock Cannon (Turreted, Large)"
@@ -5357,7 +5393,7 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (Tourelle, Classe 2)",
       "ru": "Шоковое орудие (турель, средний слот)",
       "pl": null,
       "cs": "Shock Cannon (Turreted, Medium)"
@@ -5366,113 +5402,113 @@
       "es": null,
       "pt": null,
       "de": null,
-      "fr": null,
+      "fr": "Canon de Choc (Tourelle, Classe 1)",
       "ru": "Шоковое орудие (турель, малый слот)",
       "pl": null,
       "cs": "Shock Cannon (Turreted, Small)"
     },
     "Ship Value:": {
-      "es": null,
-      "pt": null,
-      "de": "Wert dieses Shiffs",
-      "fr": null,
+      "es": "Valor de la Nave",
+      "pt": "Valor da Nave:",
+      "de": "Wert dieses Shiffs:",
+      "fr": "Valeur du Vaisseau",
       "ru": "Стоимость корабля:",
-      "pl": null,
+      "pl": "Wartość Statku:",
       "cs": "Cena lodi:"
     },
     "Modules Value:": {
-      "es": null,
-      "pt": null,
-      "de": "Wert der Module",
-      "fr": null,
+      "es": "Valor de Módulos",
+      "pt": "Valor dos Módulos:",
+      "de": "Wert der Module:",
+      "fr": "Valeur des modules",
       "ru": "Стоимость модулей:",
-      "pl": null,
+      "pl": "Wartość Modułów:",
       "cs": "Cena modulů:"
     },
     "Rebuy:": {
-      "es": null,
-      "pt": null,
-      "de": "Ersatzwert",
-      "fr": null,
+      "es": "Recompra",
+      "pt": "Recompra:",
+      "de": "Ersatzwert:",
+      "fr": "Racheter",
       "ru": "Страховка:",
       "pl": null,
       "cs": "Rebuy:"
     },
     "Loadout": {
-      "es": null,
-      "pt": null,
+      "es": "Equipamiento",
+      "pt": "Equipamento",
       "de": "Ausrüstung",
-      "fr": null,
+      "fr": "Equipement",
       "ru": "Оснащение",
       "pl": null,
       "cs": "Výzbroj"
     },
     "Cargo History (require API)": {
-      "es": null,
-      "pt": null,
+      "es": "Historial de Carga (Requiere API)",
+      "pt": "Histórico de Carga (requer API)",
       "de": "Fracht Historie (Benötigt API)",
-      "fr": null,
+      "fr": "Historique du cargo (API Nécessaire)",
       "ru": "История грузов (необходимо API)",
-      "pl": null,
+      "pl": "Historia Ładunku (Wymaga API)",
       "cs": "Historie nákladu (vyžaduje API)"
     },
     "Hardpoints": {
-      "es": null,
-      "pt": null,
+      "es": "Anclajes",
+      "pt": "Encaixes",
       "de": "Aufhängungen",
-      "fr": null,
+      "fr": "Points d'emport",
       "ru": "Орудийные гнезда",
       "pl": null,
       "cs": "Hardpoints"
     },
     "Utilities": {
-      "es": null,
-      "pt": null,
+      "es": "Anclajes de Apoyo",
+      "pt": "Encaixes de Apoio",
       "de": "Werkzeuge",
-      "fr": null,
+      "fr": "Supports Utilitaires",
       "ru": "Крепления утилит",
       "pl": null,
       "cs": "Utilities"
     },
     "Core Internal": {
-      "es": null,
-      "pt": null,
+      "es": "Internos Principales",
+      "pt": "Internos Principais",
       "de": "Intern (Basis)",
-      "fr": null,
+      "fr": "Interne Primordiaux",
       "ru": "Зарезервированные слоты",
       "pl": null,
       "cs": "Core Internal"
     },
     "Optional Internal": {
-      "es": null,
-      "pt": null,
+      "es": "Internos Ocionales",
+      "pt": "Internos Opcionais",
       "de": "Intern (Optional)",
-      "fr": null,
+      "fr": "Interne Optionnels",
       "ru": "Опциональные модули",
       "pl": null,
       "cs": "Optional Internal"
     },
     "Others/Livery": {
       "es": null,
-      "pt": null,
+      "pt": "Projeto",
       "de": "Diverses/Lackierung",
-      "fr": null,
+      "fr": "Autres/Livrée",
       "ru": "Прочее/Декали",
       "pl": null,
       "cs": "Ostatní/Livery"
     },
     "Occupied Escape Pod": {
-      "es": null,
+      "es": "Capsula de ecape ocupada",
       "pt": null,
       "de": "Besetzte Rettungskapsel",
-      "fr": null,
+      "fr": "Capsule de sauvetage occupée",
       "ru": "Спасательная капсула с пассажиром",
-      "pl": null,
+      "pl": "Zajęta kapsuła ratunkowa",
       "cs": "Occupied Escape Pod"
     },
     "Progenitor Cells": {
       "es": null,
-      "pt": null,
+      "pt": "Células progenitoras",
       "de": "Vorläuferzellen",
       "fr": null,
       "ru": "Прогениторные клетки",
@@ -5480,31 +5516,40 @@
       "cs": "Progenitor Cells"
     },
     "Sync?": {
-      "es": null,
-      "pt": null,
+      "es": "Sincronizar?",
+      "pt": "Sincronizar?",
       "de": "Synchronisieren?",
-      "fr": null,
+      "fr": "Synchroniser?",
       "ru": "Синхронизировать?",
-      "pl": null,
+      "pl": "Synchronizować?",
       "cs": "Synchronizovat?"
     },
     "Guardian Wreckage Components": {
-      "es": null,
+      "es": "Restos de Accidentes de Guardián",
       "pt": null,
       "de": "Guardian-Wrackteilkomponenten",
-      "fr": null,
-      "ru": "Обломки часовых стражей",
+      "fr": "Débris d'épave Guardians",
+      "ru": "Обломки часовых Стражей",
       "pl": null,
       "cs": "Guardian Wreckage Components"
     },
     "Reload all data": {
-      "es": null,
-      "pt": null,
+      "es": "Recargar todos los datos",
+      "pt": "Recarregar todos os dados",
+      "de": null,
+      "fr": "Recharger toutes les données",
+      "ru": "Перезагрузить все данные",
+      "pl": "Przeładuj wszystkie dane",
+      "cs": "Znovu načíst všechna data"
+    },
+    "Export/Import Settings": {
+      "es": "Exportar/Importar Configuraciones",
+      "pt": "Exportar/Importar Configurações",
       "de": null,
       "fr": null,
-      "ru": null,
-      "pl": null,
-      "cs": "Znovu načíst všechna data"
+      "ru": "Экспорт/Импорт настроек",
+      "pl": "Eksportuj/Importuj Ustawienia",
+      "cs": null
     }
   }
 }

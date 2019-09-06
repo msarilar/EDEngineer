@@ -444,6 +444,11 @@ namespace EDEngineer.Views
 
         public void HighlightShoppingListIngredient(List<BlueprintIngredient> ingredients, Blueprint blueprint, bool highlighted)
         {
+            if (ingredients == null)
+            {
+                return;
+            }
+
             foreach (
                 var ingredient in
                     blueprint.Ingredients.Join(ingredients,

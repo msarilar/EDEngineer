@@ -297,6 +297,18 @@ let start (token,
                 return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
+        GET >=> pathScan "/%s/shopping-list-details%s" (fun (commander, format) -> 
+          let toShoppingListItem (blueprint: Blueprint, count: int) =
+            { Blueprint = blueprint.ToSerializable(); Count = count }
+
+          (request(fun request ->
+            cmdr {
+                let! s = shoppingListRoute commander
+                let! f = FormatExtractor request format
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
+
         GET >=> pathScan "/%s/operations%s" (fun (commander, format) ->
           (request(fun request ->
             let timestampString = match request.queryParam "last" with
