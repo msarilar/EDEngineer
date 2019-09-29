@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.7",
+    "Content": "* Czech localization update, thanks to @JohnXaverius\r\n* New engineer Chloe Sedesi added, thanks to @CMDRTheDarkLord"
+  },
+  {
     "Version": "1.1.4.6",
     "Content": "* Fixed an issue that could trigger a crash of the app when hovering the shopping list blueprints/ingredients\r\n* Added a print button to the shopping list which will render it to an image file"
   },
