@@ -4172,7 +4172,7 @@
       "fr": "Ruines Guardians",
       "ru": "Руины Стражей",
       "pl": "Ruiny Strażników",
-      "cs": null
+      "cs": "Guardiánské ruiny"
     },
     "Guardian Ruins (Active)": {
       "es": "Ruinas Guardianes (Activas)",
@@ -4181,7 +4181,7 @@
       "fr": "Ruines Guardians (Actives)",
       "ru": "Руины Стражей (Активные)",
       "pl": "Ruiny Strażników (Aktywne)",
-      "cs": null
+      "cs": "Guardiánské ruiny (aktivní)"
     },
     "Guardian Gauss Cannon (Fixed)": {
       "es": "Cañón Gauss Guardián (Fijo)",
@@ -4901,7 +4901,7 @@
       "fr": "Vaisseau Thargoid",
       "ru": "Корабль Таргоидов",
       "pl": null,
-      "cs": null
+      "cs": "Tharogidská loď"
     },
     "Thargoid Site": {
       "es": "Sitio Thargoide",
@@ -4910,7 +4910,7 @@
       "fr": "Site Thargoid",
       "ru": "База Таргоидов",
       "pl": null,
-      "cs": null
+      "cs": "Thargoidské stanoviště"
     },
     "Top Source Systems": {
       "es": null,
@@ -5549,7 +5549,7 @@
       "fr": null,
       "ru": "Экспорт/Импорт настроек",
       "pl": "Eksportuj/Importuj Ustawienia",
-      "cs": null
+      "cs": "Exportuj/importuj nastavení"
     }
   }
 }
