@@ -33435,6 +33435,58 @@
     ]
   },
   {
+    "Type": "Unlock",
+    "Name": "Marsha Hicks",
+    "Engineers": [
+      "Marsha Hicks"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Osmium",
+        "Size": 10
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Petra Olmanova",
+    "Engineers": [
+      "Petra Olmanova"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Progenitor Cells",
+        "Size": 200
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Etienne Dorn",
+    "Engineers": [
+      "Etienne Dorn"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Occupied Escape Pod",
+        "Size": 25
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Chloe Sedesi",
+    "Engineers": [
+      "Chloe Sedesi"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Sensor Fragment",
+        "Size": 25
+      }
+    ]
+  },
+  {
     "Type": "Human",
     "Name": "Corrosion Resistant Cargo Rack (2D and 4D)",
     "Engineers": [
