@@ -8407,7 +8407,24 @@
         "Size": 1
       }
     ],
-    "Grade": 3,
+    "Grade": 1,
+    "Effects": [
+      {
+        "Effect": "+50%",
+        "Property": "Reload Time",
+        "IsGood": false
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Mass",
+        "IsGood": false
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Ammo Maximum",
+        "IsGood": true
+      }
+    ],
     "CoriolisGuid": "93c43a5d-106c-4481-b50b-c46311607209"
   },
   {
@@ -14931,7 +14948,24 @@
         "Size": 1
       }
     ],
-    "Grade": 3,
+    "Effects": [
+      {
+        "Effect": "+50%",
+        "Property": "Reload Time",
+        "IsGood": false
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Mass",
+        "IsGood": false
+      },
+      {
+        "Effect": "+50%",
+        "Property": "Ammo Maximum",
+        "IsGood": true
+      }
+    ],
+    "Grade": 1,
     "CoriolisGuid": "84b2fe9b-5c82-4b3c-8181-7c15aeb9ecf9"
   },
   {
@@ -21351,7 +21385,8 @@
     "Type": "Chaff Launcher",
     "Name": "Ammo Capacity",
     "Engineers": [
-      "Petra Olmanova"
+      "Petra Olmanova",
+      "Ram Tah"
     ],
     "Ingredients": [
       {
@@ -21376,29 +21411,7 @@
         "IsGood": true
       }
     ],
-    "Grade": 1
-  },
-  {
-    "Type": "Chaff Launcher",
-    "Name": "Ammo Capacity",
-    "Engineers": [
-      "Ram Tah"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Mechanical Scrap",
-        "Size": 1
-      },
-      {
-        "Name": "Niobium",
-        "Size": 1
-      },
-      {
-        "Name": "Vanadium",
-        "Size": 1
-      }
-    ],
-    "Grade": 3,
+    "Grade": 1,
     "CoriolisGuid": "cc81fa92-d36d-4619-98f9-4202d475b2d8"
   },
   {
