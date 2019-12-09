@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.8",
+    "Content": "* Add the missing unlock data for the Colonia and Witch Head engineers thanks to @CMDR-Cometborne \r\n* Fix for ammo capacity blueprints  thanks to @CMDR-Cometborne too !\r\nThe blueprints for the ammo capacity increase of point defence,\r\nheat sink launcher, and chaff launcher have been made more rational\r\nin-game.  Instead of having 3 grades with only grade 3 giving an\r\nextra usable shot, there is now only a grade 1 blueprint that results\r\nin a capacity increase.  This blueprint has the cost of the old g3\r\nblueprint."
+  },
+  {
     "Version": "1.1.4.7",
     "Content": "* Czech localization update, thanks to @JohnXaverius\r\n* New engineer Chloe Sedesi added, thanks to @CMDRTheDarkLord"
   },
