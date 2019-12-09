@@ -8407,7 +8407,6 @@
         "Size": 1
       }
     ],
-    "Grade": 1,
     "Effects": [
       {
         "Effect": "+50%",
@@ -8425,6 +8424,7 @@
         "IsGood": true
       }
     ],
+    "Grade": 1,
     "CoriolisGuid": "93c43a5d-106c-4481-b50b-c46311607209"
   },
   {
