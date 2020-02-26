@@ -425,5 +425,17 @@ namespace EDEngineer.Properties {
                 this["ClearAggregation"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AccessApiFromOtherComputers {
+            get {
+                return ((bool)(this["AccessApiFromOtherComputers"]));
+            }
+            set {
+                this["AccessApiFromOtherComputers"] = value;
+            }
+        }
     }
 }

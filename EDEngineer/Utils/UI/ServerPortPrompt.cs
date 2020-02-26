@@ -19,6 +19,15 @@ namespace EDEngineer.Utils.UI
                 Dock = DockStyle.Top
             };
 
+            var accessApiFromOtherComputersBox = new CheckBox
+            {
+                Checked = SettingsManager.AccessApiFromOtherComputers,
+                Height = 50,
+                Text = translator.Translate(
+                    "Access API from other computers? (tick only if you know what you're doing)"),
+                Dock = DockStyle.Top
+            };
+
             var textBox = new NumericUpDown
             {
                 TextAlign = HorizontalAlignment.Center,
@@ -69,13 +78,14 @@ namespace EDEngineer.Utils.UI
             {
                 FormBorderStyle = FormBorderStyle.FixedToolWindow,
                 Width = 400,
-                Height = textBox.Height + autoRunBox.Height + buttonsPanel.Height + 30,
+                Height = textBox.Height + autoRunBox.Height + accessApiFromOtherComputersBox.Height + buttonsPanel.Height + 30,
                 Text = translator.Translate("Select the port for the local API server"),
                 TopMost = true,
                 AcceptButton = buttonOk,
                 CancelButton = buttonCancel
             };
 
+            f.Controls.Add(accessApiFromOtherComputersBox);
             f.Controls.Add(autoRunBox);
             f.Controls.Add(textBox);
             f.Controls.Add(buttonsPanel);
@@ -85,6 +95,7 @@ namespace EDEngineer.Utils.UI
                 if (ushort.TryParse(textBox.Text, out port))
                 {
                     SettingsManager.AutoRunServer = autoRunBox.Checked;
+                    SettingsManager.AccessApiFromOtherComputers = accessApiFromOtherComputersBox.Checked;
                     return true;
                 }
             }

@@ -5550,6 +5550,15 @@
       "ru": "Экспорт/Импорт настроек",
       "pl": "Eksportuj/Importuj Ustawienia",
       "cs": "Exportuj/importuj nastavení"
+    },
+    "Access API from other computers? (tick only if you know what you're doing)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null
     }
   }
 }
