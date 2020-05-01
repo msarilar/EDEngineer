@@ -4211,7 +4211,7 @@
       "cs": "Guardian Plasma Charger (Turreted)"
     },
     "Guardian Hybrid Power Plant": {
-      "es": "Núcleo de Energía Híbrido Guardián",
+      "es": "Núcleo de Energía Híbrida Guardián",
       "pt": "Gerador de Energia Guardian",
       "de": "Guardian-Kraftwerk",
       "fr": "Générateur - Guardians",
@@ -4229,7 +4229,7 @@
       "cs": "Meta Alloy Hull Reinforcement"
     },
     "Remote Release Flechette Launcher (Fixed)": {
-      "es": "Lanzador Remoto Dardos (Fijo)",
+      "es": "Lanzador de Flechettes Remoto (Fijo)",
       "pt": "Lançador de dardos de Liberação Remota (Fixa)",
       "de": "ferngesteuerter Flechettenwerfer (Fest)",
       "fr": "Lanceurs de Fléchettes Déclenchées à Distance (Fixe)",
@@ -4238,7 +4238,7 @@
       "cs": "Remote Release Flechette Launcher (Fixed)"
     },
     "Remote Release Flechette Launcher (Turreted)": {
-      "es": "Lanzador Remoto Dardos (Torreta)",
+      "es": "Lanzador de Flechettes Remoto (Torreta)",
       "pt": "Lançador de dardos de Liberação Remota (Torretada)",
       "de": "ferngesteuerter Flechettenwerfer (Turm)",
       "fr": "Lanceurs de Fléchettes Déclenchées à Distance (Tourelle)",
@@ -5093,7 +5093,7 @@
       "cs": "Munice do Enzyme Missile Launcher"
     },
     "Flechette Launcher Munitions": {
-      "es": "Munición de Lanzador de Dardos",
+      "es": "Munición de Lanzador de Flechettes",
       "pt": null,
       "de": "Flechettewerfermunition",
       "fr": "Munitions de Lanceur de Fléchettes",
@@ -5102,7 +5102,7 @@
       "cs": "Munice do Flechette Launcher"
     },
     "Guardian Shard Cannon Munitions": {
-      "es": "Munición Cañón de Fragmentación Guardián",
+      "es": "Munición Cañón de Esquirlas Guardián",
       "pt": null,
       "de": "Guardian-Fragmentkanonenmunition",
       "fr": "Munitions Canon à Eclats - Guardians",
@@ -5129,7 +5129,7 @@
       "cs": "+5% poškození"
     },
     "Guardian Gauss Cannon (Fixed, Medium)": {
-      "es": "Cañón Gauss Guardián (Fijo, Clase 2)",
+      "es": "Cañón Gauss Guardián (Fijo) (Clase 2)",
       "pt": null,
       "de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
       "fr": "Canon Gauss - Guardians (Fixe, Classe 2)",
@@ -5138,7 +5138,7 @@
       "cs": "Guardian Gauss Cannon (Fixed, Medium)"
     },
     "Guardian Gauss Cannon (Fixed, Small)": {
-      "es": "Cañón Gauss Guardián (Fijo, Clase 1)",
+      "es": "Cañón Gauss Guardián (Fijo) (Clase 1)",
       "pt": null,
       "de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
       "fr": "Canon Gauss - Guardians (Fixe, Classe 1)",
@@ -5147,7 +5147,7 @@
       "cs": "Guardian Gauss Cannon (Fixed, Small)"
     },
     "Guardian Hull Reinforcement": {
-      "es": "Potenciador de Casco Guardián",
+      "es": "Paquete de Refuerzo Estructural Guardián",
       "pt": null,
       "de": "Guardian-Rumpfhüllenverstärkung",
       "fr": "Renforcement de Coque - Guardians",
@@ -5156,7 +5156,7 @@
       "cs": "Guardian Hull Reinforcement"
     },
     "Guardian Module Reinforcement": {
-      "es": "Refuerzo de Módulo Guardián",
+      "es": "Paquete de Refuerzo de Módulo Guardián",
       "pt": null,
       "de": "Guardian-Modulverstärkung",
       "fr": "Renforcement de Modules - Guardians",
@@ -5165,7 +5165,7 @@
       "cs": "Guardian Module Reinforcement"
     },
     "Guardian Plasma Charger (Fixed, Large)": {
-      "es": "Cargador de Plasma Guardián (Fijo, Clase 3)",
+      "es": "Cargador de Plasma Guardián (Fijo) (Clase 3)",
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
       "fr": "Chargeur Plasma - Guardians (Fixe, Classe 3)",
@@ -5174,7 +5174,7 @@
       "cs": "Guardian Plasma Charger (Fixed, Large)"
     },
     "Guardian Plasma Charger (Fixed, Medium)": {
-      "es": "Cargador de Plasma Guardián (Fijo, Clase 2)",
+      "es": "Cargador de Plasma Guardián (Fijo) (Clase 2)",
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 2)",
       "fr": "Chargeur Plasma - Guardians (Fixe, Classe 2)",
@@ -5183,7 +5183,7 @@
       "cs": "Guardian Plasma Charger (Fixed, Medium)"
     },
     "Guardian Plasma Charger (Fixed, Small)": {
-      "es": "Cargador de Plasma Guardián (Fijo, Clase 1)",
+      "es": "Cargador de Plasma Guardián (Fijo) (Clase 1)",
       "pt": null,
       "de": "Guardian-Plasmalader (Fest) (Klasse: 1)",
       "fr": "Chargeur Plasma - Guardians (Fixe, Classe 1)",
@@ -5192,7 +5192,7 @@
       "cs": "Guardian Plasma Charger (Fixed, Small)"
     },
     "Guardian Plasma Charger (Turreted, Large)": {
-      "es": "Cargador de Plasma Guardián (Torreta, Clase 3)",
+      "es": "Cargador de Plasma Guardián (Torreta) (Clase 3)",
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 3)",
       "fr": "Chargeur Plasma - Guardians (Tourelle, Classe 3)",
@@ -5201,7 +5201,7 @@
       "cs": "Guardian Plasma Charger (Turreted, Large)"
     },
     "Guardian Plasma Charger (Turreted, Medium)": {
-      "es": "Cargador de Plasma Guardián (Torreta, Clase 2)",
+      "es": "Cargador de Plasma Guardián (Torreta) (Clase 2)",
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 2)",
       "fr": "Chargeur Plasma - Guardians (Tourelle, Classe 2)",
@@ -5210,7 +5210,7 @@
       "cs": "Guardian Plasma Charger (Turreted, Medium)"
     },
     "Guardian Plasma Charger (Turreted, Small)": {
-      "es": "Cargador de Plasma Guardián (Torreta, Clase 1)",
+      "es": "Cargador de Plasma Guardián (Torreta) (Clase 1)",
       "pt": null,
       "de": "Guardian-Plasmalader (Turm) (Klasse: 1)",
       "fr": "Chargeur Plasma - Guardians (Tourelle, Classe 1)",
@@ -5228,7 +5228,7 @@
       "cs": "Guardian FSD Booster"
     },
     "Guardian Power Distributor": {
-      "es": "Distribuidor de Energía Guardián",
+      "es": "Distribuidor de Energía Híbrido Guardián",
       "pt": null,
       "de": "Guardian-Energieverteiler",
       "fr": "Répartiteur de Puissance - Guardians",
@@ -5237,7 +5237,7 @@
       "cs": "Guardian Power Distributor"
     },
     "Guardian Shard Cannon (Fixed, Large)": {
-      "es": "Cañón de Fragmentación Guardián (Fijo, Clase 3)",
+      "es": "Cañón de Esquirlas Guardián (Fijo) (Clase 3)",
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 3)",
       "fr": "Canons à Eclats - Guardians (Fixe, Classe 3)",
@@ -5246,7 +5246,7 @@
       "cs": "Guardian Shard Cannon (Fixed, Large)"
     },
     "Guardian Shard Cannon (Fixed, Medium)": {
-      "es": "Cañón de Fragmentación Guardián (Fijo, Clase 2)",
+      "es": "Cañón de Esquirlas Guardián (Fijo) (Clase 2)",
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 2)",
       "fr": "Canons à Eclats - Guardians (Fixe, Classe 2)",
@@ -5255,7 +5255,7 @@
       "cs": "Guardian Shard Cannon (Fixed, Medium)"
     },
     "Guardian Shard Cannon (Fixed, Small)": {
-      "es": "Cañón de Fragmentación Guardián (Fijo, Clase 1)",
+      "es": "Cañón de Esquirlas Guardián (Fijo) (Clase 1)",
       "pt": null,
       "de": "Guardian-Fragmentkanone (Fest) (Klasse: 1)",
       "fr": "Canons à Eclats - Guardians (Fixe, Classe 1)",
@@ -5264,7 +5264,7 @@
       "cs": "Guardian Shard Cannon (Fixed, Small)"
     },
     "Guardian Shard Cannon (Turreted, Large)": {
-      "es": "Cañón de Fragmentación Guardián (Torreta, Clase 3)",
+      "es": "Cañón de Esquirlas Guardián (Torreta) (Clase 3)",
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 3)",
       "fr": "Canons à Eclats - Guardians (Tourelle, Classe 3)",
@@ -5273,7 +5273,7 @@
       "cs": "Guardian Shard Cannon (Turreted, Large)"
     },
     "Guardian Shard Cannon (Turreted, Medium)": {
-      "es": "Cañón de Fragmentación Guardián (Torreta, Clase 2)",
+      "es": "Cañón de Esquirlas Guardián (Torreta) (Clase 2)",
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 2)",
       "fr": "Canons à Eclats - Guardians (Tourelle, Classe 2)",
@@ -5282,7 +5282,7 @@
       "cs": "Guardian Shard Cannon (Turreted, Medium)"
     },
     "Guardian Shard Cannon (Turreted, Small)": {
-      "es": "Cañón de Fragmentación Guardián (Torreta, Clase 1)",
+      "es": "Cañón de Esquirlas Guardián (Torreta) (Clase 1)",
       "pt": null,
       "de": "Guardian-Fragmentkanone (Turm) (Klasse: 1)",
       "fr": "Canons à Eclats - Guardians (Tourelle, Classe 1)",
@@ -5291,7 +5291,7 @@
       "cs": "Guardian Shard Cannon (Turreted, Small)"
     },
     "Guardian Shield Reinforcement": {
-      "es": "Refuerzo de Escudo Guardián",
+      "es": "Paquete de Refuerzo de Escudo Guardián",
       "pt": null,
       "de": "Guardian-Schildverstärkung",
       "fr": "Renforcement de Bouclier - Guardians",
@@ -5300,7 +5300,7 @@
       "cs": "Guardian Shield Reinforcement"
     },
     "Javelin (Fighter)": {
-      "es": "Javelin (Combate)",
+      "es": "Javelin XG8 (Caza)",
       "pt": null,
       "de": "Javelin (Fighter)",
       "fr": "Javelin (Chasseur)",
@@ -5309,7 +5309,7 @@
       "cs": "Javelin (Fighter)"
     },
     "Lance (Fighter)": {
-      "es": "Lance (Combate)",
+      "es": "Lance XG9 (Caza)",
       "pt": null,
       "de": "Lance (Fighter)",
       "fr": "Lance (Chasseur)",
@@ -5318,7 +5318,7 @@
       "cs": "Lance (Fighter)"
     },
     "Trident (Fighter)": {
-      "es": "Trident (Combate)",
+      "es": "Trident XG7 (Caza)",
       "pt": null,
       "de": "Trident (Fighter)",
       "fr": "Trident (Chasseur)",
@@ -5327,7 +5327,7 @@
       "cs": "Trident (Fighter)"
     },
     "Shock Cannon (Fixed, Large)": {
-      "es": "Cañón de Choque (Fijo, Clase 3)",
+      "es": "Cañón de Choque (Fijo) (Clase 3)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (Fixe, Classe 3)",
@@ -5336,7 +5336,7 @@
       "cs": "Shock Cannon (Fixed, Large)"
     },
     "Shock Cannon (Fixed, Medium)": {
-      "es": "Cañón de Choque (Fijo, Clase 2)",
+      "es": "Cañón de Choque (Fijo) (Clase 2)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (Fixe, Classe 2)",
@@ -5345,7 +5345,7 @@
       "cs": "Shock Cannon (Fixed, Medium)"
     },
     "Shock Cannon (Fixed, Small)": {
-      "es": "Cañón de Choque (Fijo, Clase 1)",
+      "es": "Cañón de Choque (Fijo) (Clase 1)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (Fixe, Classe 1)",
@@ -5354,7 +5354,7 @@
       "cs": "Shock Cannon (Fixed, Small)"
     },
     "Shock Cannon (Gimballed, Large)": {
-      "es": "Cañón de Choque (Autoguiado, Clase 3)",
+      "es": "Cañón de Choque (Autoguiado) (Clase 3)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (PE Rotatif, Classe 3)",
@@ -5363,7 +5363,7 @@
       "cs": "Shock Cannon (Gimballed, Large)"
     },
     "Shock Cannon (Gimballed, Medium)": {
-      "es": "Cañón de Choque (Autoguiado, Clase 2)",
+      "es": "Cañón de Choque (Autoguiado) (Clase 2)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (PE Rotatif, Classe 2)",
@@ -5372,7 +5372,7 @@
       "cs": "Shock Cannon (Gimballed, Medium)"
     },
     "Shock Cannon (Gimballed, Small)": {
-      "es": "Cañón de Choque (Autoguiado, Clase 1)",
+      "es": "Cañón de Choque (Autoguiado) (Clase 1)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (PE Rotatif, Classe 1)",
@@ -5381,7 +5381,7 @@
       "cs": "Shock Cannon (Gimballed, Small)"
     },
     "Shock Cannon (Turreted, Large)": {
-      "es": "Cañón de Choque (Torreta, Clase 3)",
+      "es": "Cañón de Choque (Torreta) (Clase 3)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (Tourelle, Classe 3)",
@@ -5390,7 +5390,7 @@
       "cs": "Shock Cannon (Turreted, Large)"
     },
     "Shock Cannon (Turreted, Medium)": {
-      "es": "Cañón de Choque (Torreta, Clase 2)",
+      "es": "Cañón de Choque (Torreta) (Clase 2)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (Tourelle, Classe 2)",
@@ -5399,7 +5399,7 @@
       "cs": "Shock Cannon (Turreted, Medium)"
     },
     "Shock Cannon (Turreted, Small)": {
-      "es": "Cañón de Choque (Torreta, Clase 1)",
+      "es": "Cañón de Choque (Torreta) (Clase 1)",
       "pt": null,
       "de": null,
       "fr": "Canon de Choc (Tourelle, Classe 1)",
