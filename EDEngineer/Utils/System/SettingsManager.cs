@@ -140,6 +140,16 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool AccessApiFromOtherComputers
+        {
+            get => Properties.Settings.Default.AccessApiFromOtherComputers;
+            set
+            {
+                Properties.Settings.Default.AccessApiFromOtherComputers = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public static int CargoTabIndex
         {
             get => Properties.Settings.Default.CargoTabIndex;

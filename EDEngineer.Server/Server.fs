@@ -66,7 +66,8 @@ let start (token,
            shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>,
            changeShoppingList:Action<string, Blueprint, int>,
            jsonSettingsGetter:Func<string, JsonSerializerSettings>,
-           logDirectory:string) =
+           logDirectory:string,
+           accessApiFromOtherComputers:bool) =
   
   let corsConfig = {
     defaultCORSConfig with
@@ -361,8 +362,10 @@ let start (token,
            >=> addHeader "Access-Control-Allow-Origin" "*"
            >=> cors corsConfig
 
+  let bindingIp = if accessApiFromOtherComputers then System.Net.IPAddress.Any else System.Net.IPAddress.Loopback
+
   startWebServer { 
     defaultConfig with 
       cancellationToken = token
-      bindings = [ HttpBinding.createSimple HTTP "127.0.0.1" port ] } app
+      bindings = [ HttpBinding.create HTTP bindingIp port ] } app
   state

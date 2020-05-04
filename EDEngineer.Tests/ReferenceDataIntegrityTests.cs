@@ -81,7 +81,8 @@ namespace EDEngineer.Tests
                 "Petra Olmanova",
                 "Marsha Hicks",
                 "Etienne Dorn",
-                "Mel Brandon"
+                "Mel Brandon",
+                "Chloe Sedesi"
             };
 
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
