@@ -38,7 +38,7 @@
     "cs": {
       "TwoLetterISOLanguageName": "cs",
       "Name": "Česky",
-      "NotReadyWarning": "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno musí být přeloženo. To co přeloženo nebude, bude nadále v angličtině."
+      "NotReadyWarning": "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno je přeloženo. Většina názvů ingame prvků zůstává v původním jazyce - angličtina, protože hra samotná neobsahuje češtinu. Překládat názvy zbraní/modulů/vylepšení/materiálů by jen vytvořilo zmatek v tom, o který modul opravdu jde a člověk by stejně musel hledat jeho anglický název."
     }
   },
   "Translations": {
@@ -5558,7 +5558,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null
+      "cs": "Přistupovat k API z jiného počítače? (vyberte pouze v případě, že víte o co jde)"
     }
   }
 }
