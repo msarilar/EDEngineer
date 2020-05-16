@@ -73,7 +73,7 @@
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
                             <TextBlock Grid.Row="5"
-                                       Visibility="{Binding Kind, Converter={StaticResource CommodityKindToCollapsed}}">
+                                       Visibility="{Binding DataContext.Value.Data.Kind, Converter={StaticResource CommodityKindToCollapsed}}">
                                 <Run Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Carrying '}"></Run>
                                 <Run Text="{Binding DataContext.Value.Count}"/>
                                 <Run Text="/"/>
@@ -1362,13 +1362,31 @@
                     </DataGrid>
 
                     <!-- SPLITTER -->
-                    <GridSplitter Height="3"
+                    <GridSplitter Height="5"
                                   Grid.Row="1"
                                   Background="DarkRed"
                                   x:Name="ShoppingListSplitter"
                                   HorizontalAlignment="Stretch"
                                   MouseDoubleClick="ShoppingListSplitterDoubleClicked"
-                                  Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}" />
+                                  Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}">
+                        <GridSplitter.ToolTip>
+                            <TextBlock Text="double click to reset" />
+                        </GridSplitter.ToolTip>
+                    </GridSplitter>
+
+                    <Border Grid.Row="1"
+                            HorizontalAlignment="Center"
+                            Background="Black"
+                            IsHitTestVisible="False"
+                            Visibility="{Binding ShoppingList.List, Converter={StaticResource ListToVisibility}}">
+                        <Label Content="drag ↕ me"
+                               Foreground="DarkRed"
+                               HorizontalAlignment="Center"
+                               FontSize="15"
+                               FontFamily="/Resources/Fonts/#Euro Caps"
+                               FontWeight="Bold"
+                               IsHitTestVisible="False"/>
+                    </Border>
 
                     <!-- SHOPPING LIST -->
                     <ScrollViewer Grid.Row="2"
@@ -1929,7 +1947,7 @@
                                                         Style="{DynamicResource ChromelessButtonStyle}"
                                                         Foreground="Red"
                                                         Click="ClearShoppingListButtonClicked"
-                                                        ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Clear'}">
+                                                        ToolTip="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Clear'}">
                                                     <iconPacks:PackIconMaterial Kind="Delete" />
                                                 </Button>
                                             </Grid>

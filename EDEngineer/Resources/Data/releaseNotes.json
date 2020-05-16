@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.4.11",
+    "Content": "* Fixed a couple of minor GUI issues (tooltip not showing in a few places)\r\n* Added a \"Drag Me\" indicator on the shopping list splitter (lots of people miss the fact that the list can be resized to make it scrollable)\r\n\r\n* Czech language update thanks to @JohnXaverius"
+  },
+  {
     "Version": "1.1.4.10",
     "Content": "* Spanish translation updated and completed, thanks to @LuisMorenoSerrano"
   },
