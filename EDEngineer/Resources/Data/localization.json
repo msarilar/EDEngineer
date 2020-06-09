@@ -39,6 +39,11 @@
       "TwoLetterISOLanguageName": "cs",
       "Name": "Česky",
       "NotReadyWarning": "Tento překlad není kompletní. Pokud si ho zvolíte, počítejte s tím, že ne všechno je přeloženo. Většina názvů ingame prvků zůstává v původním jazyce - angličtina, protože hra samotná neobsahuje češtinu. Překládat názvy zbraní/modulů/vylepšení/materiálů by jen vytvořilo zmatek v tom, o který modul opravdu jde a člověk by stejně musel hledat jeho anglický název."
+    },
+    "nl": {
+      "TwoLetterISOLanguageName": "nl",
+      "Name": "Nederlands",
+      "NotReadyWarning": "Deze vertaling is incompleet ! Als je deze taal kiest zal niet alle onderdelen van deze applicatie in het Nederlands getoont worden. Alles wat nog niet vertaald is zal in het Engels worden getoont."
     }
   },
   "Translations": {
@@ -49,7 +54,8 @@
       "fr": "Tir à Courte Portée",
       "ru": "Бластер малого радиуса",
       "pl": "Short Range Blaster",
-      "cs": "Short Range Blaster"
+      "cs": "Short Range Blaster",
+	  "nl": "Korte Afstand Blaster"
     },
     "Lightweight": {
       "es": "Aligerado",
@@ -58,7 +64,8 @@
       "fr": "Léger",
       "ru": "Облегченный",
       "pl": "Lekki",
-      "cs": "Lightweight"
+      "cs": "Lightweight",
+      "nl": "Lichtgewicht"
     },
     "Heavy Duty Hull Reinforcement": {
       "es": "Refuerzo Estructural de Alta Resistencia",
@@ -67,7 +74,8 @@
       "fr": "Renforts de coque lourd",
       "ru": "Утяжеление усилителя корпуса",
       "pl": "Heavy Duty Hull Reinforcement",
-      "cs": "Heavy Duty Hull Reinforcement"
+      "cs": "Heavy Duty Hull Reinforcement",
+      "nl": "Zware Rompversterking"
     },
     "Drive Strengthening": {
       "es": "Refuerzo de Motor",
@@ -76,7 +84,8 @@
       "fr": "Renforcement du réacteur",
       "ru": "Защищённый двигатель",
       "pl": "Wzmocnienie napędu",
-      "cs": "Drive Strengthening"
+      "cs": "Drive Strengthening",
+      "nl": "Aandrijving versterking"
     },
     "Efficient Weapon": {
       "es": "Arma Eficiente",
@@ -85,7 +94,8 @@
       "fr": "Arme efficace",
       "ru": "Эффективное оружие",
       "pl": "Wydajna Broń",
-      "cs": "Efficient Weapon"
+      "cs": "Efficient Weapon",
+      "nl": "Efficiënt Wapen"
     },
     "Lightweight Mount": {
       "es": "Anclaje Ligero",
@@ -94,7 +104,8 @@
       "fr": "Support léger",
       "ru": "Легкое крепление",
       "pl": "Lightweight Mount",
-      "cs": "Lightweight Mount"
+      "cs": "Lightweight Mount",
+      "nl": "Lichtgewicht Houder"
     },
     "Armoured": {
       "es": "Blindado",
@@ -103,7 +114,8 @@
       "fr": "Blindé",
       "ru": "Бронированный",
       "pl": "Opancerzony",
-      "cs": "Armoured"
+      "cs": "Armoured",
+      "nl": "Gepantserd"
     },
     "Reinforced": {
       "es": "Reforzado",
@@ -112,7 +124,8 @@
       "fr": "Renforcé",
       "ru": "Усиленный",
       "pl": "Wzmocnione",
-      "cs": "Reinforced"
+      "cs": "Reinforced",
+	  "nl": "Versterkt"
     },
     "Sturdy Mount": {
       "es": "Anclaje Robusto",
@@ -121,7 +134,8 @@
       "fr": "Support robuste",
       "ru": "Прочное крепление",
       "pl": "Sturdy Mount",
-      "cs": "Sturdy Mount"
+      "cs": "Sturdy Mount",
+	  "nl": "Robuste Houder"
     },
     "Longer Range FSD interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
@@ -130,7 +144,8 @@
       "fr": "Intercepteur FSD longue portée",
       "ru": "Увеличение дальности перехвата",
       "pl": "Longer Range FSD interdictor",
-      "cs": "Longer Range FSD interdictor"
+      "cs": "Longer Range FSD interdictor",
+	  "nl": "Langere afstand FSD-interdictor"
     },
     "Reinforced Shields": {
       "es": "Escudos Reforzados",
@@ -139,7 +154,8 @@
       "fr": "Bouclier renforcé",
       "ru": "Усиленный щит",
       "pl": "Wzmocnione Osłony",
-      "cs": "Reinforced Shields"
+      "cs": "Reinforced Shields",
+	  "nl": "Versterkte Schilden"
     },
     "Enhanced, Low Power Shields": {
       "es": "Escudos Mejorados de Baja Energía",
@@ -148,7 +164,8 @@
       "fr": "Boucliers amélioré à consommation réduite",
       "ru": "Энергосберегающий щит",
       "pl": "Wzmocnione Osłony Niskiej Mocy",
-      "cs": "Enhanced, Low Power Shields"
+      "cs": "Enhanced, Low Power Shields",
+	  "nl": "Verbeterde, Laag vermogen Schilden"
     },
     "Shielded": {
       "es": "Blindado",
@@ -157,7 +174,8 @@
       "fr": "Renforcé",
       "ru": "Бронированный",
       "pl": "Osłonięte",
-      "cs": "Shielded"
+      "cs": "Shielded",
+	  "nl": "Beschermd"
     },
     "Thermal Resistant": {
       "es": "Resistencia Térmica",
@@ -166,7 +184,8 @@
       "fr": "Résistance thermique",
       "ru": "Противотепловое усиление",
       "pl": "Odporny Na Temperaturę",
-      "cs": "Thermal Resistant"
+      "cs": "Thermal Resistant",
+	  "nl": "Thermisch resistent"
     },
     "Weapon Focused": {
       "es": "Orientado a Armas",
@@ -175,7 +194,8 @@
       "fr": "Optimisé armes",
       "ru": "Оружие-ориентированный",
       "pl": "Weapon Focused",
-      "cs": "Weapon Focused"
+      "cs": "Weapon Focused",
+	  "nl": "Wapengericht"
     },
     "Blast Resistant": {
       "es": "Blindaje Resistente a Explosiones",
@@ -184,7 +204,8 @@
       "fr": "Anti-explosion",
       "ru": "Противовзрывное усиление",
       "pl": "Odporny Na Wybuchy",
-      "cs": "Blast Resistant"
+      "cs": "Blast Resistant",
+	  "nl": "Explosiebestendig"
     },
     "High Capacity Magazine": {
       "es": "Cargador de Alta Capacidad",
@@ -193,7 +214,8 @@
       "fr": "Chargeur grande capacité",
       "ru": "Вместительный магазин",
       "pl": "High Capacity Magazine",
-      "cs": "High Capacity Magazine"
+      "cs": "High Capacity Magazine",
+	  "nl": "Hoge Capaciteit Magazijn"
     },
     "Kinetic Resistant": {
       "es": "Resistencia Cinética",
@@ -202,7 +224,8 @@
       "fr": "Résistance cinétique",
       "ru": "Противокинетическое усиление",
       "pl": "Kinetic Resistant",
-      "cs": "Kinetic Resistant"
+      "cs": "Kinetic Resistant",
+	  "nl": "Kinetisch Resistent"
     },
     "Focused Weapon": {
       "es": "Arma Concentrada",
@@ -211,7 +234,8 @@
       "fr": "Arme concentrée",
       "ru": "Сфокусированное оружие",
       "pl": "Focused Weapon",
-      "cs": "Focused Weapon"
+      "cs": "Focused Weapon",
+	  "nl": "Gericht Wapen"
     },
     "Thermal Resistant Shields": {
       "es": "Escudos de Resistencia Térmica",
@@ -220,7 +244,8 @@
       "fr": "Bouclier à résistance thermique",
       "ru": "Противотепловой щит",
       "pl": "Thermal Resistant Shields",
-      "cs": "Thermal Resistant Shields"
+      "cs": "Thermal Resistant Shields",
+	  "nl": "Thermisch Bestendige Schilden"
     },
     "Rapid Fire Modification": {
       "es": "Modificación de Tiro Rápido",
@@ -229,7 +254,8 @@
       "fr": "Modification cadence rapide",
       "ru": "Увеличение скорострельности",
       "pl": "Rapid Fire Modification",
-      "cs": "Rapid Fire Modification"
+      "cs": "Rapid Fire Modification",
+	  "nl": "Sneller Schieten Modificatie"
     },
     "Long Range Weapon": {
       "es": "Arma de Largo Alcance",
@@ -238,7 +264,8 @@
       "fr": "Armes à longue portée",
       "ru": "Увеличенная дальность",
       "pl": "Broń Dalekiego Zasięgu",
-      "cs": "Long Range Weapon"
+      "cs": "Long Range Weapon",
+	  "nl": "Lange Afstandswapen"
     },
     "Ammo Capacity": {
       "es": "Capacidad de Munición",
@@ -247,7 +274,8 @@
       "fr": "capacité de munition",
       "ru": "Боезапас",
       "pl": "Ammo Capacity",
-      "cs": "Ammo Capacity"
+      "cs": "Ammo Capacity",
+	  "nl": "Munitiecapaciteit"
     },
     "Overcharged Weapon": {
       "es": "Arma Sobrecargada",
@@ -256,7 +284,8 @@
       "fr": "Arme surchargée",
       "ru": "Усиленное оружие",
       "pl": "Przeładowana Broń",
-      "cs": "Overcharged Weapon"
+      "cs": "Overcharged Weapon",
+	  "nl": "Overladen Wapen"
     },
     "Low Emissions": {
       "es": "Bajas Emisiones",
@@ -265,7 +294,8 @@
       "fr": "Basse émission",
       "ru": "Снижение излучения",
       "pl": "Low Emissions",
-      "cs": "Low Emissions"
+      "cs": "Low Emissions",
+	  "nl": "Lage Emissies"
     },
     "System Focused": {
       "es": "Orientado a Sistemas",
@@ -274,7 +304,8 @@
       "fr": "Optimisé systèmes",
       "ru": "Системо-ориентированный",
       "pl": "System Focused",
-      "cs": "System Focused"
+      "cs": "System Focused",
+	  "nl": "Systeem Gefocust"
     },
     "Overcharged": {
       "es": "Sobrecargado",
@@ -283,7 +314,8 @@
       "fr": "Surchargé",
       "ru": "Усиленный",
       "pl": "Przeładowane",
-      "cs": "Overcharged"
+      "cs": "Overcharged",
+	  "nl": "Overladen"
     },
     "Increased FSD Range": {
       "es": "Aumento de Alcance de MDD",
@@ -292,7 +324,8 @@
       "fr": "Portée FSD améliorée",
       "ru": "Увеличенная дальность FSD",
       "pl": "Zwiększony zasięg FSD",
-      "cs": "Increased FSD Range"
+      "cs": "Increased FSD Range",
+	  "nl": "Vergroot FSD Afstand"
     },
     "Thermal Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Térmica",
@@ -301,7 +334,8 @@
       "fr": "Renforts de coque antithermique",
       "ru": "Противотепловое усиление",
       "pl": "Thermal Resistant Hull Reinforcement",
-      "cs": "Thermal Resistant Hull Reinforcement"
+      "cs": "Thermal Resistant Hull Reinforcement",
+	  "nl": "Hittebestendige Rompversterking"
     },
     "Dirty Drive Tuning": {
       "es": "Modificación de Motor Sucio",
@@ -310,7 +344,8 @@
       "fr": "Optimisation de réacteur détériorante",
       "ru": "«Грязная» донастройка",
       "pl": "Dirty Drive Tuning",
-      "cs": "Dirty Drive Tuning"
+      "cs": "Dirty Drive Tuning",
+	  "nl": "Vuile Aandrijvingafstemming"
     },
     "Engine Focused": {
       "es": "Orientado a Motor",
@@ -319,7 +354,8 @@
       "fr": "Optimisé moteur",
       "ru": "Двигатель-ориентированный",
       "pl": "Engine Focused",
-      "cs": "Engine Focused"
+      "cs": "Engine Focused",
+	  "nl": "Motor Gericht"
     },
     "Kinetic Resistant Hull Reinforcement": {
       "es": "Refuerzo Estructural de Resistencia Cinética",
@@ -328,7 +364,8 @@
       "fr": "Renforts de coque anti-cinétique",
       "ru": "Противокинетическое усиление",
       "pl": "Kinetic Resistant Hull Reinforcement",
-      "cs": "Kinetic Resistant Hull Reinforcement"
+      "cs": "Kinetic Resistant Hull Reinforcement",
+	  "nl": "Kinetisch Bestendige Rompversterking"
     },
     "High Charge Capacity": {
       "es": "Alta Capacidad de Carga",
@@ -337,7 +374,8 @@
       "fr": "Capacité Surchargée",
       "ru": "Высокоёмкий",
       "pl": "High Charge Capacity",
-      "cs": "High Charge Capacity"
+      "cs": "High Charge Capacity",
+	  "nl": "Hoge Laadcapaciteit"
     },
     "Rapid Charge": {
       "es": "Recarga Rápida",
@@ -346,7 +384,8 @@
       "fr": "Chargement rapide",
       "ru": "Быстрозаряжающийся",
       "pl": "Szybkie Ładowanie",
-      "cs": "Rapid Charge"
+      "cs": "Rapid Charge",
+	  "nl": "Snel Opladen"
     },
     "Expanded FSD Interdictor Capture Arc": {
       "es": "Arco de Captura de Interdictor de MDD Extendido",
@@ -355,7 +394,8 @@
       "fr": "Intercepteur FSD à angle de capture augmenté",
       "ru": "Увеличение угла перехвата",
       "pl": "Expanded FSD Interdictor Capture Arc",
-      "cs": "Expanded FSD Interdictor Capture Arc"
+      "cs": "Expanded FSD Interdictor Capture Arc",
+	  "nl": "Uitgebreide FSD Interdictor Capture Arc"
     },
     "Heavy Duty": {
       "es": "Alta Resistencia",
@@ -5522,7 +5562,8 @@
       "fr": "Synchroniser?",
       "ru": "Синхронизировать?",
       "pl": "Synchronizować?",
-      "cs": "Synchronizovat?"
+      "cs": "Synchronizovat?",
+	  "nl": "Synchroniseren?"
     },
     "Guardian Wreckage Components": {
       "es": "Restos de Accidente Guardián",
@@ -5531,7 +5572,8 @@
       "fr": "Débris d'épave Guardians",
       "ru": "Обломки часовых Стражей",
       "pl": null,
-      "cs": "Guardian Wreckage Components"
+      "cs": "Guardian Wreckage Components",
+	  "nl": "Guardian wrakstukken"
     },
     "Reload all data": {
       "es": "Recargar todos los datos",
@@ -5540,7 +5582,8 @@
       "fr": "Recharger toutes les données",
       "ru": "Перезагрузить все данные",
       "pl": "Przeładuj wszystkie dane",
-      "cs": "Znovu načíst všechna data"
+      "cs": "Znovu načíst všechna data",
+	  "nl": "Alle data vernieuwen"
     },
     "Export/Import Settings": {
       "es": "Exportar/Importar Ajustes",
@@ -5549,7 +5592,8 @@
       "fr": null,
       "ru": "Экспорт/Импорт настроек",
       "pl": "Eksportuj/Importuj Ustawienia",
-      "cs": "Exportuj/importuj nastavení"
+      "cs": "Exportuj/importuj nastavení",
+	  "nl": "Instellingen Exporteren/Importeren"
     },
     "Access API from other computers? (tick only if you know what you're doing)": {
       "es": "¿Acceso a la API desde otros equipos? (marcar sólo si sabes lo que estás haciendo)",
@@ -5558,7 +5602,8 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": "Přistupovat k API z jiného počítače? (vyberte pouze v případě, že víte o co jde)"
+      "cs": "Přistupovat k API z jiného počítače? (vyberte pouze v případě, že víte o co jde)",
+	  "nl": "Geef toegang tot de API vanaf andere computers? (Vink alleen aan als je weet wat je doet!): "
     }
   }
 }
