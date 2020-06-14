@@ -94,7 +94,7 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1.1.4.6")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1.1.4.11")]
         public string Version {
             get {
                 return ((string)(this["Version"]));
@@ -435,6 +435,16 @@ namespace EDEngineer.Properties {
             }
             set {
                 this["ShoppingListDirectory"] = value;
+            }
+        }
+
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AccessApiFromOtherComputers {
+            get {
+                return ((bool)(this["AccessApiFromOtherComputers"]));
+            }
+            set {
+                this["AccessApiFromOtherComputers"] = value;
             }
         }
     }

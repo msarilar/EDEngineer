@@ -64,7 +64,8 @@ namespace EDEngineer.Utils.System
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList.Composition),
                     (c, b, i) => viewModel.Commanders[c].ShoppingListChange(b, i),
                     c => viewModel.Commanders[c].JsonSettings,
-                    viewModel.LogDirectory);
+                    viewModel.LogDirectory,
+                    SettingsManager.AccessApiFromOtherComputers);
             }, cts.Token, TaskCreationOptions.LongRunning, TaskScheduler.Default)
             .ContinueWith(t =>
             {

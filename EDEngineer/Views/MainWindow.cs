@@ -488,6 +488,7 @@ namespace EDEngineer.Views
         private void ClearShoppingListButtonClicked(object sender, RoutedEventArgs e)
         {
             viewModel.CurrentCommander.Value.ClearShoppingList();
+            ShoppingListSplitterDoubleClicked(null, null);
         }
 
         private void ImportShoppingList(object sender, RoutedEventArgs e)
