@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using EDEngineer.Localization;
+using EDEngineer.Models.Utils;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Application = System.Windows.Application;
 
@@ -150,7 +151,7 @@ namespace EDEngineer.Utils.System
                     var userProfile = Environment.GetEnvironmentVariable("USERPROFILE");
                     if (userProfile != null)
                     {
-                        shoppingListDirectory = Path.Combine(userProfile, @"saved games\Frontier Developments\Elite Dangerous Shopping Lists");
+                        shoppingListDirectory = Path.Combine(userProfile, IO.GetManualChangesDirectory());
                     }
                 }
             }
