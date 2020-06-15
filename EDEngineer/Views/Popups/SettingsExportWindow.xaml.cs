@@ -39,13 +39,6 @@ namespace EDEngineer.Views.Popups
             var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
             var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
 
-            //if (shoppingList != null && shoppingList.Count > 0)
-            //{
-            //    Settings.Default.ShoppingList = shoppingList;
-
-            //    Settings.Default.Save();
-            //}
-
             refreshCallback(shoppingList);
         }
 
