@@ -198,7 +198,8 @@
                                          Background="Transparent"
                                          VerticalAlignment="Center"
                                          BorderBrush="Transparent"
-                                         FontSize="35"
+                                         FontSize="15"
+
                                          GotFocus="EntryCountTextBoxOnFocussed"
                                          LostFocus="EntryCountTextBoxOnLostFocus"
                                          PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
