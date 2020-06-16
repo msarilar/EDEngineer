@@ -472,13 +472,11 @@ namespace EDEngineer.Views
             try
             {
                 Helpers.SaveShoppingList(saveDirectory, serialisedShoppingList);
-                //File.WriteAllText(path, serialisedShoppingList);
-                //ClearShoppingList();
                 Settings.Default.Save();
             }
             catch
             {
-
+                MessageBox.Show("Shopping list could not be saved.");
             }
         }
 
