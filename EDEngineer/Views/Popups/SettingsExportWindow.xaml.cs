@@ -35,11 +35,7 @@ namespace EDEngineer.Views.Popups
 
         private void LoadShoppingListButtonClicked(object sender, RoutedEventArgs e)
         {
-            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
-            var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
-            var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
-
-            if (shoppingList.Count > 0)
+            if (Helpers.TryRetrieveShoppingList(out var shoppingList) && shoppingList.Count > 0)
             {
                 refreshCallback(shoppingList);
             }

@@ -428,16 +428,6 @@ namespace EDEngineer.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string ShoppingListDirectory {
-            get {
-                return ((string)(this["ShoppingListDirectory"]));
-            }
-            set {
-                this["ShoppingListDirectory"] = value;
-            }
-        }
-
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool AccessApiFromOtherComputers {
             get {

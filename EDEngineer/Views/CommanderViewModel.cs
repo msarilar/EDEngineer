@@ -409,43 +409,42 @@ namespace EDEngineer.Views
 
         public void ImportShoppingList()
         {
-            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
-            var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
-            var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
-
-            var blueprints = State.Blueprints;
-
-            if (shoppingList != null && shoppingList.Count > 0)
+            if (Helpers.TryRetrieveShoppingList(out var shoppingListItems))
             {
-                // Configure the message box to be displayed
-                var messageBoxText = "Do you want to clear the shopping list before import?";
-                var caption = "Shopping List Import";
-                var button = MessageBoxButton.YesNoCancel;
-                var icon = MessageBoxImage.Warning;
+                var blueprints = State.Blueprints;
 
-                // Display message box
-                var result = MessageBox.Show(messageBoxText, caption, button, icon);
-
-                // Process message box results
-                switch (result)
+                if (shoppingListItems != null && shoppingListItems.Count > 0)
                 {
-                    case MessageBoxResult.Yes:
-                        ClearShoppingList();
-                        break;
-                    case MessageBoxResult.No:
-                        // User pressed No, so just load into shopping list without clearing
-                        break;
-                    case MessageBoxResult.Cancel:
-                        // User pressed Cancel button so skip out of Import
-                        return;
+                    // Configure the message box to be displayed
+                    var messageBoxText = "Do you want to clear the shopping list before import?";
+                    var caption = "Shopping List Import";
+                    var button = MessageBoxButton.YesNoCancel;
+                    var icon = MessageBoxImage.Warning;
+
+                    // Display message box
+                    var result = MessageBox.Show(messageBoxText, caption, button, icon);
+
+                    // Process message box results
+                    switch (result)
+                    {
+                        case MessageBoxResult.Yes:
+                            ClearShoppingList();
+                            break;
+                        case MessageBoxResult.No:
+                            // User pressed No, so just load into shopping list without clearing
+                            break;
+                        case MessageBoxResult.Cancel:
+                            // User pressed Cancel button so skip out of Import
+                            return;
+                    }
+
+                    LoadShoppingListItems(shoppingListItems, blueprints);
+                    Settings.Default.Save();
                 }
 
-                LoadShoppingListItems(shoppingList, blueprints);
+                RefreshShoppingList();
 
-                Settings.Default.Save();
             }
-
-            RefreshShoppingList();
         }
 
         private void LoadShoppingListItems(StringCollection shoppingListItems, List<Blueprint> blueprints)
@@ -463,16 +462,9 @@ namespace EDEngineer.Views
 
         public void ExportShoppingList()
         {
-            var serialisedShoppingList = JsonConvert.SerializeObject(Settings.Default.ShoppingList);
-            Console.WriteLine(serialisedShoppingList);
-
-            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
-
-            var path = Path.Combine(saveDirectory, $"shoppingList.json");
             try
             {
-                Helpers.SaveShoppingList(saveDirectory, serialisedShoppingList);
-                Settings.Default.Save();
+                Helpers.SaveShoppingList();
             }
             catch
             {
