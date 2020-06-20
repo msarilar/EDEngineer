@@ -418,13 +418,13 @@ namespace EDEngineer.Views
             if (shoppingList != null && shoppingList.Count > 0)
             {
                 // Configure the message box to be displayed
-                string messageBoxText = "Do you want to clear the shopping list before import?";
-                string caption = "Shopping List Import";
-                MessageBoxButton button = MessageBoxButton.YesNoCancel;
-                MessageBoxImage icon = MessageBoxImage.Warning;
+                var messageBoxText = "Do you want to clear the shopping list before import?";
+                var caption = "Shopping List Import";
+                var button = MessageBoxButton.YesNoCancel;
+                var icon = MessageBoxImage.Warning;
 
                 // Display message box
-                MessageBoxResult result = MessageBox.Show(messageBoxText, caption, button, icon);
+                var result = MessageBox.Show(messageBoxText, caption, button, icon);
 
                 // Process message box results
                 switch (result)
