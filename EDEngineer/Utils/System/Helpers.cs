@@ -64,7 +64,7 @@ namespace EDEngineer.Utils.System
 
             if (!forcePickFolder)
             {
-                logDirectory = Properties.Settings.Default.LogDirectory;
+                logDirectory = Settings.Default.LogDirectory;
                 if (string.IsNullOrEmpty(logDirectory))
                 {
                     var userProfile = Environment.GetEnvironmentVariable("USERPROFILE");
@@ -135,8 +135,8 @@ namespace EDEngineer.Utils.System
                 }
             }
 
-            Properties.Settings.Default.LogDirectory = logDirectory;
-            Properties.Settings.Default.Save();
+            Settings.Default.LogDirectory = logDirectory;
+            Settings.Default.Save();
             return logDirectory;
         }
 
@@ -151,10 +151,12 @@ namespace EDEngineer.Utils.System
                 Multiselect = false,
                 IsFolderPicker = false,
                 EnsurePathExists = true,
-                DefaultExtension = ".shoppingList"
+                DefaultExtension = ".shoppingList",
+                DefaultDirectory = IO.GetManualChangesDirectory()
             };
 
             dialog.Filters.Add(new CommonFileDialogFilter("Shopping List Files (*.shoppingList)", ".shoppingList"));
+            dialog.Filters.Add(new CommonFileDialogFilter("Json Files (*.json)", ".json"));
 
             var pickFileResult = dialog.ShowDialog();
 

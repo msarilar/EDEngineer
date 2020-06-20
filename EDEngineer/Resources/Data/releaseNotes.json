@@ -1,47 +1,7 @@
 ﻿[
   {
-    "Version": "1.1.4.11",
-    "Content": "* Fixed a couple of minor GUI issues (tooltip not showing in a few places)\r\n* Added a \"Drag Me\" indicator on the shopping list splitter (lots of people miss the fact that the list can be resized to make it scrollable)\r\n\r\n* Czech language update thanks to @JohnXaverius"
-  },
-  {
-    "Version": "1.1.4.10",
-    "Content": "* Spanish translation updated and completed, thanks to @LuisMorenoSerrano"
-  },
-  {
-    "Version": "1.1.4.9",
-    "Content": "* Added an option when launching the local API to let other computers access it via the computer's running the server IP address."
-  },
-  {
-    "Version": "1.1.4.8",
-    "Content": "* Add the missing unlock data for the Colonia and Witch Head engineers thanks to @CMDR-Cometborne \r\n* Fix for ammo capacity blueprints  thanks to @CMDR-Cometborne too !\r\nThe blueprints for the ammo capacity increase of point defence,\r\nheat sink launcher, and chaff launcher have been made more rational\r\nin-game.  Instead of having 3 grades with only grade 3 giving an\r\nextra usable shot, there is now only a grade 1 blueprint that results\r\nin a capacity increase.  This blueprint has the cost of the old g3\r\nblueprint."
-  },
-  {
-    "Version": "1.1.4.7",
-    "Content": "* Czech localization update, thanks to @JohnXaverius\r\n* New engineer Chloe Sedesi added, thanks to @CMDRTheDarkLord"
-  },
-  {
-    "Version": "1.1.4.6",
-    "Content": "* Fixed an issue that could trigger a crash of the app when hovering the shopping list blueprints/ingredients\r\n* Added a print button to the shopping list which will render it to an image file"
-  },
-  {
-    "Version": "1.1.4.5",
-    "Content": "* Fixed a bug that could occur when loading the initial journal entry (caused by latest patch)"
-  },
-  {
-    "Version": "1.1.4.4",
-    "Content": "* Portuguese localization update thanks to @MegaMMC\r\n* Spanish localization update thanks to @Tihersarc\r\n* Russian and French localization update thanks to @VChet\r\n* @CMDR-Cometborne updated the blueprints offered by the Colonia engineers, including the new blueprints exclusive to Colonia (SCB G4, life support G5) !"
-  },
-  {
-    "Version": "1.1.4.3",
-    "Content": "* Fixed an issue with speech synthesis that could make the application fail to start\r\n\r\n* Polish localization update thanks to @Nicked111 \r\n* Portuguese localization update thanks to @MegaMMC"
-  },
-  {
-    "Version": "1.1.4.2",
-    "Content": "* Added an Export/Import settings window to the menu allowing you to save your settings to file and load them somewhere else\r\n* Fixed a bug that made the application crash when reducing the font size on the right panel to the minimum"
-  },
-  {
-    "Version": "1.1.4.1",
-    "Content": "Lots of contributions for this update, thanks a ton to the kind souls who submit pull requests to keep the application up to date!\r\n\r\nHave a lovely end of the year holidays everyone!\r\n\r\n=====\r\n\r\n* @CMDR-Cometborne :\r\nadded group Guardian/Thargoid to all unknowns\r\nadded hints where/how to get Thargoid stuff\r\nCorrect rarity value of Ship Flight Data\r\nAll existing DSS blueprints have been replace with a single new blueprint named expanded probe scanning radius\r\n\r\n* @CmdrWode :\r\nSplit both Guardian and Thargoid items into two subgroups (4 groups total)\r\nFix to deal with Cargo events that contain no Inventory field\r\n\r\n* @JohnXaverius :\r\nczech localization update\r\n\r\n* @enachos71 :\r\nGuardian Gauss Cannon Munitions was missing Guardian Technology Components, 6 needed in the blueprint\r\n\r\n* @TheBlackbird123 :\r\nspanish localization update"
+    "Version": "1.1.5.0",
+    "Content": "#1.1.5.0\r\n\r\n* Added ability to save/load shopping lists from file. You can access the feature in the \"Import/Export Settings\" window or, if you have a shopping list active, using the button Load/Save at the top of shopping list.\r\nThanks a lot for @lythix for coming up with the feature and implementing it!\r\n\r\n#1.1.4.11\r\n\r\n* Fixed a couple of minor GUI issues (tooltip not showing in a few places)\r\n* Added a \"Drag Me\" indicator on the shopping list splitter (lots of people miss the fact that the list can be resized to make it scrollable)\r\n\r\n* Czech language update thanks to @JohnXaverius\r\n\r\n#1.1.4.10\r\n\r\n* Spanish translation updated and completed, thanks to @LuisMorenoSerrano\r\n\r\n#1.1.4.9\r\n\r\n* Added an option when launching the local API to let other computers access it via the computer's running the server IP address.\r\n\r\n#1.1.4.8\r\n\r\n* Add the missing unlock data for the Colonia and Witch Head engineers thanks to @CMDR-Cometborne \r\n* Fix for ammo capacity blueprints  thanks to @CMDR-Cometborne too !\r\nThe blueprints for the ammo capacity increase of point defence,\r\nheat sink launcher, and chaff launcher have been made more rational\r\nin-game.  Instead of having 3 grades with only grade 3 giving an\r\nextra usable shot, there is now only a grade 1 blueprint that results\r\nin a capacity increase.  This blueprint has the cost of the old g3\r\nblueprint.\r\n\r\n#1.1.4.7\r\n\r\n* Czech localization update, thanks to @JohnXaverius\r\n* New engineer Chloe Sedesi added, thanks to @CMDRTheDarkLord\r\n\r\n#1.1.4.6\r\n\r\n* Fixed an issue that could trigger a crash of the app when hovering the shopping list blueprints/ingredients\r\n* Added a print button to the shopping list which will render it to an image file\r\n\r\n#1.1.4.5\r\n\r\n* Fixed a bug that could occur when loading the initial journal entry (caused by latest patch)\r\n\r\n#1.1.4.4\r\n\r\n* Portuguese localization update thanks to @MegaMMC\r\n* Spanish localization update thanks to @Tihersarc\r\n* Russian and French localization update thanks to @VChet\r\n* @CMDR-Cometborne updated the blueprints offered by the Colonia engineers, including the new blueprints exclusive to Colonia (SCB G4, life support G5) !\r\n\r\n#1.1.4.3\r\n\r\n* Fixed an issue with speech synthesis that could make the application fail to start\r\n\r\n* Polish localization update thanks to @Nicked111 \r\n* Portuguese localization update thanks to @MegaMMC\r\n\r\n#1.1.4.2\r\n\r\n* Added an Export/Import settings window to the menu allowing you to save your settings to file and load them somewhere else\r\n* Fixed a bug that made the application crash when reducing the font size on the right panel to the minimum\r\n\r\n#1.1.4.1\r\n\r\nLots of contributions for this update, thanks a ton to the kind souls who submit pull requests to keep the application up to date!\r\n\r\nHave a lovely end of the year holidays everyone!\r\n\r\n=====\r\n\r\n* @CMDR-Cometborne :\r\nadded group Guardian/Thargoid to all unknowns\r\nadded hints where/how to get Thargoid stuff\r\nCorrect rarity value of Ship Flight Data\r\nAll existing DSS blueprints have been replace with a single new blueprint named expanded probe scanning radius\r\n\r\n* @CmdrWode :\r\nSplit both Guardian and Thargoid items into two subgroups (4 groups total)\r\nFix to deal with Cargo events that contain no Inventory field\r\n\r\n* @JohnXaverius :\r\nczech localization update\r\n\r\n* @enachos71 :\r\nGuardian Gauss Cannon Munitions was missing Guardian Technology Components, 6 needed in the blueprint\r\n\r\n* @TheBlackbird123 :\r\nspanish localization update\r\n"
   },
   {
     "Version": "1.1.4.0",

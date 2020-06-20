@@ -525,7 +525,7 @@ namespace EDEngineer.Views
 
         private void DecrementShoppingList(object sender, RoutedEventArgs e)
         {
-            var tag = ((WpfButton)sender).Tag;
+            var tag = ((WpfButton) sender).Tag;
             viewModel.CurrentCommander.Value.ShoppingListChange((Blueprint)tag, -1);
 
             if (!viewModel.CurrentCommander.Value.ShoppingList.Composition.Any())
