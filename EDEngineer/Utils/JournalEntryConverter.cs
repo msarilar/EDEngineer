@@ -319,23 +319,27 @@ namespace EDEngineer.Utils
                 DumpOperations = new List<MaterialOperation>()
             };
 
-            foreach (var jToken in data["Inventory"])
-            {
-                dynamic cc = jToken;
-                if (!converter.TryGet(Kind.Commodity, (string) cc.Name, out var commodityName))
+            var inventoryData = data["Inventory"];
+
+            if (inventoryData != null)
+                foreach (var jToken in inventoryData)
                 {
-                    continue;
+                    dynamic cc = jToken;
+                    if (!converter.TryGet(Kind.Commodity, (string) cc.Name, out var commodityName))
+                    {
+                        continue;
+                    }
+
+                    int? count = cc.Value ?? cc.Count;
+
+                    var operation = new MaterialOperation
+                    {
+                        MaterialName = commodityName,
+                        Size = count ?? 1
+                    };
+
+                    dump.DumpOperations.Add(operation);
                 }
-                int? count = cc.Value ?? cc.Count;
-
-                var operation = new MaterialOperation
-                {
-                    MaterialName = commodityName,
-                    Size = count ?? 1
-                };
-
-                dump.DumpOperations.Add(operation);
-            }
 
             return dump;
         }

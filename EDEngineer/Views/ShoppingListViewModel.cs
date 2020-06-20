@@ -45,6 +45,7 @@ namespace EDEngineer.Views
         }
 
         public List<Blueprint> List => this.ToList();
+        public ILanguage Languages => this.languages;
 
         public List<Tuple<Blueprint, int>> Composition
             => blueprints.SelectMany(b => b).Where(b => b.ShoppingListCount > 0)

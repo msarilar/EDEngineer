@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -49,7 +50,7 @@ namespace EDEngineer.Views
                 OnPropertyChanged();
             }
         }
-        
+
         public event PropertyChangedEventHandler PropertyChanged;
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -62,7 +63,7 @@ namespace EDEngineer.Views
             commanderNotifications?.UnsubscribeNotifications();
             State.Cargo.InitLoad();
             // Clear state:
-            
+
             State.Cargo.Ingredients.ToList().ForEach(k => State.Cargo.IncrementCargo(k.Value.Data.Name, -1 * k.Value.Count));
             LastUpdate = Instant.MinValue;
 
@@ -406,6 +407,79 @@ namespace EDEngineer.Views
             }
         }
 
+        public void ImportShoppingList()
+        {
+            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
+            var fileContents = Helpers.RetrieveShoppingList(saveDirectory);
+            var shoppingList = JsonConvert.DeserializeObject<StringCollection>(fileContents);
+
+            var blueprints = State.Blueprints;
+
+            if (shoppingList != null && shoppingList.Count > 0)
+            {
+                // Configure the message box to be displayed
+                string messageBoxText = "Do you want to clear the shopping list before import?";
+                string caption = "Shopping List Import";
+                MessageBoxButton button = MessageBoxButton.YesNoCancel;
+                MessageBoxImage icon = MessageBoxImage.Warning;
+
+                // Display message box
+                MessageBoxResult result = MessageBox.Show(messageBoxText, caption, button, icon);
+
+                // Process message box results
+                switch (result)
+                {
+                    case MessageBoxResult.Yes:
+                        ClearShoppingList();
+                        break;
+                    case MessageBoxResult.No:
+                        // User pressed No, so just load into shopping list without clearing
+                        break;
+                    case MessageBoxResult.Cancel:
+                        // User pressed Cancel button so skip out of Import
+                        return;
+                }
+
+                LoadShoppingListItems(shoppingList, blueprints);
+
+                Settings.Default.Save();
+            }
+
+            RefreshShoppingList();
+        }
+
+        private void LoadShoppingListItems(StringCollection shoppingListItems, List<Blueprint> blueprints)
+        {
+            foreach (var item in shoppingListItems)
+            {
+                var itemName = item.Split(':');
+                var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
+                if (bluePrint != null)
+                {
+                    ShoppingListChange(bluePrint, 1);
+                }
+            }
+        }
+
+        public void ExportShoppingList()
+        {
+            var serialisedShoppingList = JsonConvert.SerializeObject(Settings.Default.ShoppingList);
+            Console.WriteLine(serialisedShoppingList);
+
+            var saveDirectory = Helpers.RetrieveShoppingListDirectory(false, Settings.Default.ShoppingListDirectory);
+
+            var path = Path.Combine(saveDirectory, $"shoppingList.json");
+            try
+            {
+                Helpers.SaveShoppingList(saveDirectory, serialisedShoppingList);
+                Settings.Default.Save();
+            }
+            catch
+            {
+                MessageBox.Show("Shopping list could not be saved.");
+            }
+        }
+
         public void ClearShoppingList()
         {
             foreach (var tuple in ShoppingList.Composition.ToList())
@@ -464,7 +538,7 @@ namespace EDEngineer.Views
 
         public void HighlightShoppingListBlueprint(List<Tuple<Blueprint, int>> blueprints, BlueprintIngredient ingredient, bool highlighted)
         {
-            foreach(var blueprint in blueprints.Select(i => i.Item1).Where(b => b.Ingredients.Any(i => i.Entry.Data.Name == ingredient.Entry.Data.Name)))
+            foreach (var blueprint in blueprints.Select(i => i.Item1).Where(b => b.Ingredients.Any(i => i.Entry.Data.Name == ingredient.Entry.Data.Name)))
             {
                 blueprint.ShoppingListHighlighted = highlighted;
             }
@@ -477,6 +551,13 @@ namespace EDEngineer.Views
             // relevant when live reloading a commander, because WPF didn't bind upon creating the object:
             OnPropertyChanged(nameof(ShoppingList));
             OnPropertyChanged(nameof(ShoppingListItem));
+        }
+
+        public void RefreshShoppingList( StringCollection shoppingList)
+        {
+            var blueprints = State.Blueprints;
+            LoadShoppingListItems(shoppingList, blueprints);
+            Settings.Default.Save();
         }
 
         public void ShowAllGradeChanges(ShoppingListBlock shoppingListBlock)

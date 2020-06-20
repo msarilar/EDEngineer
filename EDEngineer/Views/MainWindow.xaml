@@ -199,6 +199,7 @@
                                          VerticalAlignment="Center"
                                          BorderBrush="Transparent"
                                          FontSize="15"
+
                                          GotFocus="EntryCountTextBoxOnFocussed"
                                          LostFocus="EntryCountTextBoxOnLostFocus"
                                          PreviewTextInput="EntryCountTextBoxOnPreviewTextInput"
@@ -1884,6 +1885,8 @@
                                                     <ColumnDefinition Width="50"/>
                                                     <ColumnDefinition Width="50"/>
                                                     <ColumnDefinition Width="50"/>
+                                                    <ColumnDefinition Width="50"/>
+                                                    <ColumnDefinition Width="50"/>
                                                 </Grid.ColumnDefinitions>
                                                 <TextBlock Grid.Column="1"
                                                        VerticalAlignment="Center">
@@ -1926,11 +1929,36 @@
                                                               HorizontalAlignment="Center"/>
                                                 </StackPanel>
 
+                                                <Button Click="ImportShoppingList"
+                                                        FontWeight="Black"
+                                                        FontSize="22"
+                                                        VerticalAlignment="Center"
+                                                        VerticalContentAlignment="Center"
+                                                        Foreground="Blue"
+                                                        Grid.Row="0"
+                                                        Style="{DynamicResource ChromelessButtonStyle}"
+                                                        Grid.Column="4"
+                                                        Margin="5,0,5,0" >
+                                                    <iconPacks:PackIconMaterial Kind="FileImport" />
+                                                </Button>
+
+                                                <Button Click="ExportShoppingList"
+                                                        FontWeight="Black"
+                                                        FontSize="22"
+                                                        VerticalAlignment="Center"
+                                                        VerticalContentAlignment="Center"
+                                                        Foreground="Blue"
+                                                        Grid.Row="0"
+                                                        Style="{DynamicResource ChromelessButtonStyle}"
+                                                        Grid.Column="5"
+                                                        Margin="5,0,5,0" >
+                                                    <iconPacks:PackIconMaterial Kind="ContentSave" />
+                                                </Button>
 
                                                 <Button HorizontalAlignment="Stretch"
                                                         FontSize="16"
                                                         FontFamily="/Resources/Fonts/#Euro Caps"
-                                                        Grid.Column="4"
+                                                        Grid.Column="6"
                                                         x:Name="PrintShoppingListButton"
                                                         Style="{DynamicResource ChromelessButtonStyle}"
                                                         Foreground="Black"
@@ -1938,11 +1966,10 @@
                                                     <iconPacks:PackIconMaterial Kind="Printer" />
                                                 </Button>
 
-
                                                 <Button HorizontalAlignment="Stretch"
                                                         FontSize="16"
                                                         FontFamily="/Resources/Fonts/#Euro Caps"
-                                                        Grid.Column="5"
+                                                        Grid.Column="7"
                                                         x:Name="ClearShoppingListButton"
                                                         Style="{DynamicResource ChromelessButtonStyle}"
                                                         Foreground="Red"
@@ -1950,6 +1977,7 @@
                                                         ToolTip="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Clear'}">
                                                     <iconPacks:PackIconMaterial Kind="Delete" />
                                                 </Button>
+                                                
                                             </Grid>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>

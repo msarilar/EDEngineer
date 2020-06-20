@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
@@ -193,7 +194,7 @@ namespace EDEngineer.Views
                     System.Diagnostics.Process.Start($"http://localhost:{SettingsManager.ServerPort}/{viewModel.CurrentCommander.Key}/chart");
                 },
                 (o, e) => ClearAggregationAndRestart(o, null),
-                (o, e) => { new SettingsExportWindow(Restart).ShowDialog(); });
+                (o, e) => { new SettingsExportWindow(Restart, RefreshShoppingList).ShowDialog(); });
 
             icon = TrayIconManager.Init(menu);
 
@@ -450,6 +451,12 @@ namespace EDEngineer.Views
             w.Show();
         }
 
+        private void RefreshShoppingList(StringCollection shoppingList)
+        {
+            viewModel.CurrentCommander.Value.ClearShoppingList();
+            viewModel.CurrentCommander.Value.RefreshShoppingList(shoppingList);
+        }
+
         private void SaveDimensions()
         {
             SettingsManager.Dimensions = new WindowDimensions
@@ -482,6 +489,16 @@ namespace EDEngineer.Views
         {
             viewModel.CurrentCommander.Value.ClearShoppingList();
             ShoppingListSplitterDoubleClicked(null, null);
+        }
+
+        private void ImportShoppingList(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.ImportShoppingList();
+        }
+
+        private void ExportShoppingList(object sender, RoutedEventArgs e)
+        {
+            viewModel.CurrentCommander.Value.ExportShoppingList();
         }
 
         private void CheckAllButtonClicked(object sender, RoutedEventArgs e)
@@ -715,5 +732,7 @@ namespace EDEngineer.Views
         private int sortedColumns = 0;
         private DataGridColumn lastColumnSorted = null;
         private readonly Dictionary<DataGridColumn, string> headers = new Dictionary<DataGridColumn, string>();
+
+       
     }
 }
