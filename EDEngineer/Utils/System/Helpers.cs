@@ -157,6 +157,7 @@ namespace EDEngineer.Utils.System
 
             dialog.Filters.Add(new CommonFileDialogFilter("Shopping List Files (*.shoppingList)", ".shoppingList"));
             dialog.Filters.Add(new CommonFileDialogFilter("Json Files (*.json)", ".json"));
+            dialog.Filters.Add(new CommonFileDialogFilter("All Files (*.*)", ".*"));
 
             var pickFileResult = dialog.ShowDialog();
 

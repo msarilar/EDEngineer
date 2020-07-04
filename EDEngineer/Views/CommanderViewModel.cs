@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
-using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -29,14 +28,13 @@ namespace EDEngineer.Views
         public BlueprintFilters Filters { get; private set; }
         public ObservableCollection<Entry> HighlightedEntryData { get; } = new ObservableCollection<Entry>();
 
-        public ShoppingListViewModel ShoppingList => shoppingList;
+        public ShoppingListViewModel ShoppingList { get; private set; }
 
         private readonly JournalEntryConverter journalEntryConverter;
         public JsonSerializerSettings JsonSettings { get; }
 
         private readonly HashSet<Blueprint> favoritedBlueprints = new HashSet<Blueprint>();
         private Instant lastUpdate = Instant.MinValue;
-        private ShoppingListViewModel shoppingList;
         private readonly CommanderNotifications commanderNotifications;
 
         public Instant LastUpdate
@@ -322,7 +320,7 @@ namespace EDEngineer.Views
 
             Filters = new BlueprintFilters(languages, State.Blueprints);
 
-            shoppingList = new ShoppingListViewModel(State.Cargo, State.Blueprints, languages);
+            ShoppingList = new ShoppingListViewModel(State.Cargo, State.Blueprints, languages);
         }
 
         public void TryRemoveFromShoppingListByIngredients(BlueprintCategory category, string technicalModuleName, List<BlueprintIngredient> blueprintIngredients)
@@ -449,13 +447,18 @@ namespace EDEngineer.Views
 
         private void LoadShoppingListItems(StringCollection shoppingListItems, List<Blueprint> blueprints)
         {
+            var blueprintsByString = blueprints.ToDictionary(b => b.ToString(), b => b);
             foreach (var item in shoppingListItems)
             {
-                var itemName = item.Split(':');
-                var bluePrint = blueprints.FirstOrDefault(b => b.ToString() == itemName[1]);
-                if (bluePrint != null)
+                if (item == null)
                 {
-                    ShoppingListChange(bluePrint, 1);
+                    continue;
+                }
+
+                var itemName = item.Split(':');
+                if (blueprintsByString.TryGetValue(itemName[1], out var blueprint))
+                {
+                    ShoppingListChange(blueprint, 1);
                 }
             }
         }
