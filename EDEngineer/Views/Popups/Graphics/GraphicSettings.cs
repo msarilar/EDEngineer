@@ -14,7 +14,7 @@ namespace EDEngineer.Views.Popups.Graphics
         public GraphicSettings()
         {
             leftRatio = Properties.Settings.Default.LeftFontRatio;
-            rightRatio = Properties.Settings.Default.RightRatio;
+            rightRatio = Math.Max(61, Properties.Settings.Default.RightRatio);
             bottomRatio = Properties.Settings.Default.BottomFontRatio;
             opacity = Properties.Settings.Default.Opacity;
         }
@@ -55,7 +55,7 @@ namespace EDEngineer.Views.Popups.Graphics
             get => opacity;
             set
             {
-                if (Math.Abs(opacity - value) < 0.01)
+                if (Math.Abs(opacity - value) < 1)
                 {
                     return;
                 }
@@ -71,7 +71,12 @@ namespace EDEngineer.Views.Popups.Graphics
             get => leftRatio;
             set
             {
-                if (Math.Abs(leftRatio - value) < 0.01)
+                if (Math.Abs(leftRatio - value) < 1)
+                {
+                    return;
+                }
+
+                if (Math.Abs(value) < 1)
                 {
                     return;
                 }
@@ -86,10 +91,12 @@ namespace EDEngineer.Views.Popups.Graphics
             get => rightRatio;
             set
             {
-                if (Math.Abs(rightRatio - value) < 0.01)
+                if (Math.Abs(rightRatio - value) < 1)
                 {
                     return;
                 }
+
+                value = Math.Max(61, value);
 
                 rightRatio = value;
                 OnPropertyChanged();
@@ -102,6 +109,11 @@ namespace EDEngineer.Views.Popups.Graphics
             set
             {
                 if (Math.Abs(bottomRatio - value) < 0.01)
+                {
+                    return;
+                }
+
+                if (Math.Abs(value) < 0.1)
                 {
                     return;
                 }

@@ -95,17 +95,5 @@ namespace EDEngineer.Utils.UI
 
             return children;
         }
-
-        public static T FindUpVisualTree<T>(DependencyObject initial) where T : DependencyObject
-        {
-            var current = initial;
-
-            while (current != null && current.GetType() != typeof(T))
-            {
-                current = VisualTreeHelper.GetParent(current);
-            }
-
-            return current as T;
-        }
     }
 }
