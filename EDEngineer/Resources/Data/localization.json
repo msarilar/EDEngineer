@@ -5450,7 +5450,7 @@
     "Ship Value:": {
       "es": "Valor de la Nave:",
       "pt": "Valor da Nave:",
-      "de": "Wert dieses Shiffs:",
+      "de": "Shiffs Wert",
       "fr": "Valeur du Vaisseau",
       "ru": "Стоимость корабля:",
       "pl": "Wartość Statku:",
@@ -5513,7 +5513,7 @@
     "Core Internal": {
       "es": "Internos Principales",
       "pt": "Internos Principais",
-      "de": "Intern (Basis)",
+      "de": "Kern Intern",
       "fr": "Interne Primordiaux",
       "ru": "Зарезервированные слоты",
       "pl": null,
@@ -5522,7 +5522,7 @@
     "Optional Internal": {
       "es": "Internos Opcionales",
       "pt": "Internos Opcionais",
-      "de": "Intern (Optional)",
+      "de": "Wahlfreies Intern",
       "fr": "Interne Optionnels",
       "ru": "Опциональные модули",
       "pl": null,
@@ -5531,7 +5531,7 @@
     "Others/Livery": {
       "es": "Otros/Diseño",
       "pt": "Projeto",
-      "de": "Diverses/Lackierung",
+      "de": "Andere/Lackierung",
       "fr": "Autres/Livrée",
       "ru": "Прочее/Декали",
       "pl": null,
@@ -5578,7 +5578,7 @@
     "Reload all data": {
       "es": "Recargar todos los datos",
       "pt": "Recarregar todos os dados",
-      "de": null,
+      "de": "Alle Daten neu laden",
       "fr": "Recharger toutes les données",
       "ru": "Перезагрузить все данные",
       "pl": "Przeładuj wszystkie dane",
@@ -5588,7 +5588,7 @@
     "Export/Import Settings": {
       "es": "Exportar/Importar Ajustes",
       "pt": "Exportar/Importar Configurações",
-      "de": null,
+      "de": "Einstellungen Exportieren/Importieren",
       "fr": null,
       "ru": "Экспорт/Импорт настроек",
       "pl": "Eksportuj/Importuj Ustawienia",
@@ -5598,7 +5598,7 @@
     "Access API from other computers? (tick only if you know what you're doing)": {
       "es": "¿Acceso a la API desde otros equipos? (marcar sólo si sabes lo que estás haciendo)",
       "pt": null,
-      "de": null,
+      "de": "API von anderen Computern zugreifen? (Nur ankreuzen, wenn Sie wissen, was Sie tun)",
       "fr": null,
       "ru": null,
       "pl": null,
