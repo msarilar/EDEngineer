@@ -5600,7 +5600,7 @@
       "pt": null,
       "de": "API von anderen Computern zugreifen? (Nur ankreuzen, wenn Sie wissen, was Sie tun)",
       "fr": null,
-      "ru": null,
+      "ru": "Предоставить доступ к API с других компьютеров? (Отмечайте, только если знаете, что делаете)",
       "pl": null,
       "cs": "Přistupovat k API z jiného počítače? (vyberte pouze v případě, že víte o co jde)",
       "nl": "Geef toegang tot de API vanaf andere computers? (Vink alleen aan als je weet wat je doet!): "
