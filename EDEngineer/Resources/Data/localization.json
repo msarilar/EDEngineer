@@ -4208,7 +4208,7 @@
     "Guardian Ruins": {
       "es": "Ruinas Guardianes",
       "pt": "Ruínas Guardian",
-      "de": null,
+      "de": "Guardian Ruinen",
       "fr": "Ruines Guardians",
       "ru": "Руины Стражей",
       "pl": "Ruiny Strażników",
@@ -4217,7 +4217,7 @@
     "Guardian Ruins (Active)": {
       "es": "Ruinas Guardianes (Activa)",
       "pt": "Ruínas Guardian (Ativa)",
-      "de": null,
+      "de": "Guardian Ruinen (Aktiv)",
       "fr": "Ruines Guardians (Actives)",
       "ru": "Руины Стражей (Активные)",
       "pl": "Ruiny Strażników (Aktywne)",
@@ -4631,7 +4631,7 @@
     "Target Lock Breaker": {
       "es": "Interruptor de Selección",
       "pt": null,
-      "de": null,
+      "de": "Zielsperrunterbrecher",
       "fr": null,
       "ru": "Генератор помех для системы захвата цели",
       "pl": null,
@@ -4937,7 +4937,7 @@
     "Thargoid Ship": {
       "es": "Nave Thargoide",
       "pt": "Nave Thargoid",
-      "de": null,
+      "de": "Thargoid Schiff",
       "fr": "Vaisseau Thargoid",
       "ru": "Корабль Таргоидов",
       "pl": null,
@@ -4946,7 +4946,7 @@
     "Thargoid Site": {
       "es": "Sitio Thargoide",
       "pt": "Construção Thargoid",
-      "de": null,
+      "de": "Thargoid Gelände",
       "fr": "Site Thargoid",
       "ru": "База Таргоидов",
       "pl": null,
@@ -5063,7 +5063,7 @@
     "Long Range FSD Interdictor": {
       "es": "Interdictor de MDD de Largo Alcance",
       "pt": "Interditor de MDD de Longo Alcance",
-      "de": null,
+      "de": "Langstrecken-FSA-Unterbrecher",
       "fr": "Intercepteur FSD longue portée",
       "ru": "FSD-перехватчик большой дальности",
       "pl": null,
@@ -5369,7 +5369,7 @@
     "Shock Cannon (Fixed, Large)": {
       "es": "Cañón de Choque (Fijo) (Clase 3)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Fest) (Klasse: 3)",
       "fr": "Canon de Choc (Fixe, Classe 3)",
       "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
@@ -5378,7 +5378,7 @@
     "Shock Cannon (Fixed, Medium)": {
       "es": "Cañón de Choque (Fijo) (Clase 2)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Fest) (Klasse: 2)",
       "fr": "Canon de Choc (Fixe, Classe 2)",
       "ru": "Шоковое орудие (фиксированное, средний слот)",
       "pl": null,
@@ -5387,7 +5387,7 @@
     "Shock Cannon (Fixed, Small)": {
       "es": "Cañón de Choque (Fijo) (Clase 1)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Fest) (Klasse: 1)",
       "fr": "Canon de Choc (Fixe, Classe 1)",
       "ru": "Шоковое орудие (фиксированное, малый слот)",
       "pl": null,
@@ -5396,7 +5396,7 @@
     "Shock Cannon (Gimballed, Large)": {
       "es": "Cañón de Choque (Autoguiado) (Clase 3)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Kardanisch) (Klasse: 3)",
       "fr": "Canon de Choc (PE Rotatif, Classe 3)",
       "ru": "Шоковое орудие (на карданной подвеске, большой слот)",
       "pl": null,
@@ -5405,7 +5405,7 @@
     "Shock Cannon (Gimballed, Medium)": {
       "es": "Cañón de Choque (Autoguiado) (Clase 2)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Kardanisch) (Klasse: 2)",
       "fr": "Canon de Choc (PE Rotatif, Classe 2)",
       "ru": "Шоковое орудие (на карданной подвеске, средний слот)",
       "pl": null,
@@ -5414,7 +5414,7 @@
     "Shock Cannon (Gimballed, Small)": {
       "es": "Cañón de Choque (Autoguiado) (Clase 1)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Kardanisch) (Klasse: 1)",
       "fr": "Canon de Choc (PE Rotatif, Classe 1)",
       "ru": "Шоковое орудие (на карданной подвеске, малый слот)",
       "pl": null,
@@ -5423,7 +5423,7 @@
     "Shock Cannon (Turreted, Large)": {
       "es": "Cañón de Choque (Torreta) (Clase 3)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Turm) (Klasse: 3)",
       "fr": "Canon de Choc (Tourelle, Classe 3)",
       "ru": "Шоковое орудие (турель, большой слот)",
       "pl": null,
@@ -5432,7 +5432,7 @@
     "Shock Cannon (Turreted, Medium)": {
       "es": "Cañón de Choque (Torreta) (Clase 2)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Turm) (Klasse: 2)",
       "fr": "Canon de Choc (Tourelle, Classe 2)",
       "ru": "Шоковое орудие (турель, средний слот)",
       "pl": null,
@@ -5441,7 +5441,7 @@
     "Shock Cannon (Turreted, Small)": {
       "es": "Cañón de Choque (Torreta) (Clase 1)",
       "pt": null,
-      "de": null,
+      "de": "Schockkanone (Turm) (Klasse: 1)",
       "fr": "Canon de Choc (Tourelle, Classe 1)",
       "ru": "Шоковое орудие (турель, малый слот)",
       "pl": null,
@@ -5450,7 +5450,7 @@
     "Ship Value:": {
       "es": "Valor de la Nave:",
       "pt": "Valor da Nave:",
-      "de": "Shiffs Wert",
+      "de": "Shiffs Wert:",
       "fr": "Valeur du Vaisseau",
       "ru": "Стоимость корабля:",
       "pl": "Wartość Statku:",
