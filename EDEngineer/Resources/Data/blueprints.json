@@ -376,7 +376,7 @@
       }
     ],
     "Grade": 1,
-    "CoriolisGuid": "d5a539c5-120a-450f-bb68-e10abbeca8a9"
+    "CoriolisGuid": "e1e1bd93-3a3f-4454-bfe3-0e2b6840b43a"
   },
   {
     "Type": "Life Support",
@@ -409,7 +409,7 @@
       }
     ],
     "Grade": 2,
-    "CoriolisGuid": "b6a80556-c22a-466e-931c-239c208c9890"
+    "CoriolisGuid": "aaf29592-df21-4b4c-aeac-20252e75b8aa"
   },
   {
     "Type": "Life Support",
@@ -446,7 +446,7 @@
       }
     ],
     "Grade": 3,
-    "CoriolisGuid": "cbec8003-80e4-455a-84fe-257d2018386e"
+    "CoriolisGuid": "8876b27a-2c31-49f0-8a47-c11acd801c2b"
   },
   {
     "Type": "Life Support",
@@ -482,7 +482,7 @@
       }
     ],
     "Grade": 4,
-    "CoriolisGuid": "3a57effa-ccac-448d-8d1c-3e0966042e24"
+    "CoriolisGuid": "b7672f07-e10e-4371-989c-dd49e28c4b79"
   },
   {
     "Type": "Life Support",
@@ -516,7 +516,8 @@
         "IsGood": true
       }
     ],
-    "Grade": 5
+    "Grade": 5,
+    "CoriolisGuid": "ec9b7ac2-7a99-4f96-8bf1-061df58dba79"
   },
   {
     "Type": "Hull Reinforcement Package",
@@ -3899,7 +3900,7 @@
       }
     ],
     "Grade": 1,
-    "CoriolisGuid": "fc3e4f2e-04fb-4509-a31f-1121940e1bc6"
+    "CoriolisGuid": "05883145-2407-46a1-9eea-5a56ac549cfd"
   },
   {
     "Type": "Power Distributor",
@@ -3953,7 +3954,7 @@
       }
     ],
     "Grade": 2,
-    "CoriolisGuid": "437e00b1-a6fd-4d84-9242-075c3ce8adcb"
+    "CoriolisGuid": "5822ff0c-fa6c-4072-95be-e2534f37be00"
   },
   {
     "Type": "Power Distributor",
@@ -4011,7 +4012,7 @@
       }
     ],
     "Grade": 3,
-    "CoriolisGuid": "bfbadc34-e11a-4cc4-80cc-83dde5731e6f"
+    "CoriolisGuid": "d5040eac-fa75-4613-828d-ea71aefd9051"
   },
   {
     "Type": "Power Distributor",
@@ -4066,7 +4067,7 @@
       }
     ],
     "Grade": 4,
-    "CoriolisGuid": "7c41f9fc-90ec-435e-9d92-6024c32ac40d"
+    "CoriolisGuid": "32c94fd6-71c3-461b-80ed-bfe1543f9651"
   },
   {
     "Type": "Power Distributor",
@@ -4121,7 +4122,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "d9306721-43a4-45cd-b225-ac9174da4d13"
+    "CoriolisGuid": "1b073867-c10f-474b-88d7-5fb6c602b838"
   },
   {
     "Type": "Fragment Cannon",
@@ -11510,7 +11511,7 @@
       }
     ],
     "Grade": 1,
-    "CoriolisGuid": "e917ebe3-d5f1-4016-b8a9-2c759e16a7d4"
+    "CoriolisGuid": "06282764-2821-4604-ad2c-d9b148d562d0"
   },
   {
     "Type": "Power Plant",
@@ -11548,7 +11549,7 @@
       }
     ],
     "Grade": 2,
-    "CoriolisGuid": "f5921fc1-fb10-4d2f-8e0a-cd8d8e9e3a84"
+    "CoriolisGuid": "feb49620-2df8-4ec6-9a58-13f986aed81f"
   },
   {
     "Type": "Power Plant",
@@ -11589,7 +11590,7 @@
       }
     ],
     "Grade": 3,
-    "CoriolisGuid": "4389883f-c2b3-4487-9b1a-b668a761057a"
+    "CoriolisGuid": "9325c166-998d-4ea6-8dab-0aafcec76705"
   },
   {
     "Type": "Power Plant",
@@ -11630,7 +11631,7 @@
       }
     ],
     "Grade": 4,
-    "CoriolisGuid": "25ec26dd-63b8-4e83-9a6e-86e5b80c4771"
+    "CoriolisGuid": "6dd84c8d-1d21-4bf5-a747-f582ffe49a99"
   },
   {
     "Type": "Power Plant",
@@ -11670,7 +11671,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "4dcf6bdc-bcff-448a-92a0-7612de548db7"
+    "CoriolisGuid": "f8cee63e-9cdf-43e5-9584-a945d4c57aee"
   },
   {
     "Type": "Frame Shift Drive",
@@ -18433,7 +18434,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "dd40a1d9-9c29-424f-8362-0b76f2ef63a5"
+    "CoriolisGuid": "d0ff95ad-123a-4fd0-ae88-c46209068e3a"
   },
   {
     "Type": "Shield Booster",
