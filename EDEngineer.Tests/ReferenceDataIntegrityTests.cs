@@ -26,7 +26,7 @@ namespace EDEngineer.Tests
         [Test]
         public void Blueprints_are_properly_indented()
         {
-            var json = Helpers.GetBlueprintsJson();
+            var json = Helpers.GetBlueprintsJson().TrimEnd();
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(json);
             var serialized = JsonConvert.SerializeObject(blueprints, new JsonSerializerSettings
             {
