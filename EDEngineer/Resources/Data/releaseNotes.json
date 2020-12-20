@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.5.5",
+    "Content": "* Fixed coriolis interaction for a number of blueprints, thanks to @PwccaCode !\r\n\r\n* Portuguese localization update, thanks to @PwccaCode !\r\n* German localization update, thanks to @Tacitor !\r\n* Russian localization update, thanks to @ivanshum !\r\n\r\nHappy holidays to all commanders and their close ones. Please stay safe, we're all in this together and we'll get through these challenging times soon enough!"
+  },
+  {
     "Version": "1.1.5.3",
     "Content": "Fixed a potential crash during the loading of shopping list from file and made the process faster"
   },
