@@ -4162,7 +4162,7 @@
     },
     "Guardian Vessel Blueprint Segment": {
       "es": "Fragmento de Plano de Nave Guardián",
-      "pt": null,
+      "pt": "Fragmento de Diagrama de nave Guardian",
       "de": "Guardian-Schiffsbauplansegment",
       "fr": "Morceau de plan de chasseur Guardians",
       "ru": "Фрагмент чертежа судна Стражей",
@@ -4315,7 +4315,7 @@
     },
     "Concordant Sequence": {
       "es": "Secuencia Concordante",
-      "pt": null,
+      "pt": "Sequencia Concordante",
       "de": "gleichsinnige Sequenz",
       "fr": "Séquence concordante",
       "ru": "Последовательность координации",
@@ -4324,7 +4324,7 @@
     },
     "Regeneration Sequence": {
       "es": "Secuencia de Regeneración",
-      "pt": null,
+      "pt": "Sequencia de Regeneração",
       "de": "regenerierende Sequenz",
       "fr": "Séquence de régénération",
       "ru": "Последовательность восстановления",
@@ -4351,7 +4351,7 @@
     },
     "Thermal Vent": {
       "es": "Respiradero Térmico",
-      "pt": "Ventoinha Térmica",
+      "pt": "Exaustor Térmico",
       "de": "Thermische Entlastung",
       "fr": "Ventilation Thermique",
       "ru": "Теплоотдача",
@@ -4360,7 +4360,7 @@
     },
     "Oversized": {
       "es": "Sobredimensionado",
-      "pt": null,
+      "pt": "Reforçado",
       "de": "Übergröße",
       "fr": "Armes XXL",
       "ru": "Сверхразмер",
@@ -4369,7 +4369,7 @@
     },
     "Stripped Down": {
       "es": "Reducido",
-      "pt": null,
+      "pt": "Reduzido",
       "de": "Reduktion",
       "fr": "Désossage",
       "ru": "Урезанный вариант",
@@ -4378,7 +4378,7 @@
     },
     "Double Braced": {
       "es": "Doble Puntal",
-      "pt": null,
+      "pt": "Parrudo",
       "de": "Doppelt Versteift",
       "fr": "Armature Renforcée",
       "ru": "Двойная прочность",
@@ -4396,7 +4396,7 @@
     },
     "Inertial Impact": {
       "es": "Impacto Inercial",
-      "pt": null,
+      "pt": "Impacto Inercial",
       "de": "Trägheitseinfluss",
       "fr": "Impact d'Inertie",
       "ru": "Инерционный удар",
@@ -4405,7 +4405,7 @@
     },
     "Phasing Sequence": {
       "es": "Secuencia de Fase",
-      "pt": null,
+      "pt": "Sequencia Faseada",
       "de": "Phasensequenz",
       "fr": "Séquence de Phase",
       "ru": "Последовательность фазирования",
@@ -4423,7 +4423,7 @@
     },
     "Multi-Servos": {
       "es": "Multi-Servos",
-      "pt": null,
+      "pt": "Multi-Servos",
       "de": "Multi-Servos",
       "fr": "Servomécanismes Multiples",
       "ru": "Сервосистема",
@@ -4432,7 +4432,7 @@
     },
     "Emissive Munitions": {
       "es": "Munición de Emisiones",
-      "pt": null,
+      "pt": "Munições Emissivas",
       "de": "Emissionsgranate",
       "fr": "Munitions à Emissions",
       "ru": "Эмиссионные припасы",
@@ -4441,7 +4441,7 @@
     },
     "Auto Loader": {
       "es": "Autocargador",
-      "pt": null,
+      "pt": "Carregador Automatico",
       "de": "Auto-Laden",
       "fr": "Rechargement Automatique",
       "ru": "Автоматическая система заряжания",
@@ -4450,7 +4450,7 @@
     },
     "Corrosive Shell": {
       "es": "Proyectil Corrosivo",
-      "pt": null,
+      "pt": "Projeticl Corrosivo",
       "de": "Korrosionsgranate",
       "fr": "Obus Corrosifs",
       "ru": "Разъедающие боеприпасы",
@@ -4459,7 +4459,7 @@
     },
     "Incendiary Rounds": {
       "es": "Munición Incendiaria",
-      "pt": null,
+      "pt": "Projétil Incendiário",
       "de": "Hitzesalven",
       "fr": "Munitions Incendiaires",
       "ru": "Зажигательные припасы",
@@ -4468,7 +4468,7 @@
     },
     "Smart Rounds": {
       "es": "Munición Inteligente",
-      "pt": null,
+      "pt": "Projetil Inteligente",
       "de": "Intelligente Munition",
       "fr": "Munitions Intelligentes",
       "ru": "Умные боеприпасы",
@@ -4477,7 +4477,7 @@
     },
     "Dispersal Field": {
       "es": "Campo de Dispersión",
-      "pt": null,
+      "pt": "Campo de Dispersão",
       "de": "Streuungsfeld",
       "fr": "Champ de Dispersion",
       "ru": "Рассеивающее поле",
@@ -4594,7 +4594,7 @@
     },
     "Reverberating Cascade": {
       "es": "Reverberación en Cascada",
-      "pt": null,
+      "pt": "Cascata de Reverberação",
       "de": "Rückstrahlkaskade",
       "fr": "Réverbérations en Série",
       "ru": "Отраженный залп",
@@ -4603,7 +4603,7 @@
     },
     "Ion Disruptor": {
       "es": "Disrupción de Iones",
-      "pt": null,
+      "pt": "Disruptor de Ions",
       "de": "Ionen-Disruption",
       "fr": "Perturbation Ionique",
       "ru": "Ионный дестабилизатор",
@@ -4639,7 +4639,7 @@
     },
     "Plasma Slug": {
       "es": "Proyectil de Plasma",
-      "pt": null,
+      "pt": "Projetil de Plasma",
       "de": "Plasmaprojektil",
       "fr": "Munitions à Plasma",
       "ru": "Плазменный рельсовый заряд",
@@ -4657,7 +4657,7 @@
     },
     "Super Penetrator": {
       "es": "Súper Penetrante",
-      "pt": null,
+      "pt": "Super Penetrante",
       "de": "Super-Durchdringer",
       "fr": "Munitions Ultra Perforantes",
       "ru": "Модуль сверхпробития",
@@ -4711,7 +4711,7 @@
     },
     "Ancient/Guardian ruins": {
       "es": "Ruinas Antiguas/Guardianes",
-      "pt": "Reínas Antigas/Guardian",
+      "pt": "Ruínas Antigas/Guardian",
       "de": "Uralte/Guardian Ruinen",
       "fr": "Ruines Guardians",
       "ru": "Руины Стражей",
@@ -4720,7 +4720,7 @@
     },
     "EDEngineer will try to remove blueprints from your shopping list if you craft them in game": {
       "es": "EDEngineer intentará eliminar los planos de tu lista de la compra si los creas en el juego",
-      "pt": "O EDEngineer tentará remover blueprints da sua lista de compras se você as fazer no jogo",
+      "pt": "EDEngineer tentará remover blueprints da sua lista de compras se você as fazer no jogo",
       "de": "EDEngineer wird versuchen, Blaupausen von Ihrer Einkaufsliste zu entfernen, wenn Sie sie im Spiel erstellen.",
       "fr": "EDEngineer va essayer de retirer les plans de votre liste de courses si vous les assemblez dans le jeu",
       "ru": "EDEngineer попытается удалять чертежи из списка покупок при создании их в игре",
@@ -4729,7 +4729,7 @@
     },
     "Thermal Spread": {
       "es": "Difusión Térmica",
-      "pt": null,
+      "pt": "Propagação Térmica",
       "de": "Wärmeverteilung",
       "fr": "Répartition thermique",
       "ru": "Рассеивание тепла",
@@ -4738,7 +4738,7 @@
     },
     "Monstered": {
       "es": "A lo bestia",
-      "pt": null,
+      "pt": "Parrudo",
       "de": "monströs",
       "fr": "Modèle XXL",
       "ru": "Монстрация",
@@ -4747,7 +4747,7 @@
     },
     "Angled Plating": {
       "es": "Blindaje en Ángulo",
-      "pt": null,
+      "pt": "Blindagem Angulada",
       "de": "Abgewinkelte Beschichtung",
       "fr": "Blindage Anguleux",
       "ru": "Угловая броня",
@@ -4828,7 +4828,7 @@
     },
     "Super Capacitor": {
       "es": "Supercondensador",
-      "pt": null,
+      "pt": "Supercapacitor",
       "de": "Superkondensatoren",
       "fr": "Super COndensateurs",
       "ru": "Суперконденсатор",
@@ -4837,7 +4837,7 @@
     },
     "Hi-cap": {
       "es": "Alta Capacidad",
-      "pt": null,
+      "pt": "Alta Capacidade",
       "de": "Hi-cap",
       "fr": "Puissance Renforcée",
       "ru": "Высокая емкость",
@@ -4873,7 +4873,7 @@
     },
     "Deep Charge": {
       "es": "Carga Intensa",
-      "pt": null,
+      "pt": "Carga Profunda",
       "de": "Tiefenladung",
       "fr": "Charge Profonde",
       "ru": "Заряд повышенной мощности",
@@ -4891,7 +4891,7 @@
     },
     "Drive Distributors": {
       "es": "Distribuidores de Empuje",
-      "pt": null,
+      "pt": "Distribuidores do Motor",
       "de": "Antriebsverteiler",
       "fr": "Répartiteurs de réacteurs",
       "ru": "Распределители тяги",
@@ -4900,7 +4900,7 @@
     },
     "Drag Drives": {
       "es": "Impulsores de Arrastre",
-      "pt": null,
+      "pt": "Motores de Arrasto",
       "de": "Drag Antriebe",
       "fr": "Débridage des réacteurs",
       "ru": "Ускорители",
@@ -4909,7 +4909,7 @@
     },
     "Super Conduits": {
       "es": "Superconductores",
-      "pt": null,
+      "pt": "SuperConduites",
       "de": "Superleiter",
       "fr": "Super Conduits",
       "ru": "Сверхпроводники",
@@ -5080,7 +5080,7 @@
     },
     "Guardian Gauss Cannon Munitions": {
       "es": "Munición de Cañón Gauss Guardián",
-      "pt": null,
+      "pt": "Munição de Canhão Gauss",
       "de": "Guardian-Gausskannonenmunition",
       "fr": "Munitions de Canon Gauss Guardians",
       "ru": "Боеприпасы для пушек Гаусса Стражей",
@@ -5089,7 +5089,7 @@
     },
     "AX Small Calibre Munitions": {
       "es": "Munición AX de Calibre Pequeño",
-      "pt": null,
+      "pt": "Munição AX de Baixo Calibre",
       "de": "Kleinkalibrige Munition (AX)",
       "fr": "Munitions Anti-Xeno Petit Calibre",
       "ru": "Мелкокалиберные боеприпасы АИ",
@@ -5170,7 +5170,7 @@
     },
     "Guardian Gauss Cannon (Fixed, Medium)": {
       "es": "Cañón Gauss Guardián (Fijo) (Clase 2)",
-      "pt": null,
+      "pt": "Canhão Gauss Guardian (Fixo) (Classe 2)",
       "de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
       "fr": "Canon Gauss - Guardians (Fixe, Classe 2)",
       "ru": "Пушка Гаусса Стражей (фиксированное, средний слот)",
@@ -5179,7 +5179,7 @@
     },
     "Guardian Gauss Cannon (Fixed, Small)": {
       "es": "Cañón Gauss Guardián (Fijo) (Clase 1)",
-      "pt": null,
+      "pt": "Canhão Gauss guardian (Fixo) (Classe 1)",
       "de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
       "fr": "Canon Gauss - Guardians (Fixe, Classe 1)",
       "ru": "Пушка Гаусса Стражей (фиксированное, малый слот)",
@@ -5188,7 +5188,7 @@
     },
     "Guardian Hull Reinforcement": {
       "es": "Paquete de Refuerzo Estructural Guardián",
-      "pt": null,
+      "pt": "Reforço de Casco Guardian",
       "de": "Guardian-Rumpfhüllenverstärkung",
       "fr": "Renforcement de Coque - Guardians",
       "ru": "Набор для усиления корпуса Стражей",
@@ -5197,7 +5197,7 @@
     },
     "Guardian Module Reinforcement": {
       "es": "Paquete de Refuerzo de Módulo Guardián",
-      "pt": null,
+      "pt": "Reforço de Módulo Guardian",
       "de": "Guardian-Modulverstärkung",
       "fr": "Renforcement de Modules - Guardians",
       "ru": "Набор для усиления модуля Стражей",
@@ -5260,7 +5260,7 @@
     },
     "Guardian FSD Booster": {
       "es": "Potenciador de Motor de Distorsión Guardián",
-      "pt": null,
+      "pt": "Potenciador Do Motor de Distorção de Fase Guardian",
       "de": "Guardian-Frameshiftantrieb-Booster",
       "fr": "Survolteur FSD - Guardians",
       "ru": "Ускоритель FSD Стражей",
@@ -5269,7 +5269,7 @@
     },
     "Guardian Power Distributor": {
       "es": "Distribuidor de Energía Híbrido Guardián",
-      "pt": null,
+      "pt": "Distribuidor de Energia Híbrido Guardian",
       "de": "Guardian-Energieverteiler",
       "fr": "Répartiteur de Puissance - Guardians",
       "ru": "Распределитель питания Стражей",
@@ -5332,7 +5332,7 @@
     },
     "Guardian Shield Reinforcement": {
       "es": "Paquete de Refuerzo de Escudo Guardián",
-      "pt": null,
+      "pt": "Reforço de Escudo Guardian",
       "de": "Guardian-Schildverstärkung",
       "fr": "Renforcement de Bouclier - Guardians",
       "ru": "Набор для усиления щита Стражей",
@@ -5341,7 +5341,7 @@
     },
     "Javelin (Fighter)": {
       "es": "Javelin XG8 (Caza)",
-      "pt": null,
+      "pt": "Javelin (Caça)",
       "de": "Javelin (Fighter)",
       "fr": "Javelin (Chasseur)",
       "ru": "Javelin (Истребитель)",
@@ -5350,7 +5350,7 @@
     },
     "Lance (Fighter)": {
       "es": "Lance XG9 (Caza)",
-      "pt": null,
+      "pt": "Lance (Caça)",
       "de": "Lance (Fighter)",
       "fr": "Lance (Chasseur)",
       "ru": "Lance (Истребитель)",
@@ -5359,7 +5359,7 @@
     },
     "Trident (Fighter)": {
       "es": "Trident XG7 (Caza)",
-      "pt": null,
+      "pt": "Trident (Caça)",
       "de": "Trident (Fighter)",
       "fr": "Trident (Chasseur)",
       "ru": "Trident (Истребитель)",
@@ -5539,7 +5539,7 @@
     },
     "Occupied Escape Pod": {
       "es": "Cápsula de Escape ocupada",
-      "pt": null,
+      "pt": "Capsulas de Fuga Ocupadas",
       "de": "Besetzte Rettungskapsel",
       "fr": "Capsule de sauvetage occupée",
       "ru": "Спасательная капсула с пассажиром",
