@@ -32,6 +32,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -69,6 +70,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -109,6 +111,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -149,6 +152,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -217,6 +221,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -248,6 +253,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -283,6 +289,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -318,6 +325,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -676,6 +684,7 @@
     "Type": "Hull Reinforcement Package",
     "Name": "Heavy Duty Hull Reinforcement",
     "Engineers": [
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -783,6 +792,7 @@
     "Type": "Cannon",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -823,6 +833,7 @@
     "Type": "Cannon",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -863,6 +874,7 @@
     "Type": "Cannon",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -1271,6 +1283,7 @@
     "Type": "Multi-cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -1346,6 +1359,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -1388,6 +1402,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -1433,6 +1448,7 @@
     "Type": "Missile Rack",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -1478,6 +1494,7 @@
     "Type": "Missile Rack",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -1606,6 +1623,7 @@
     "Type": "Power Plant",
     "Name": "Armoured",
     "Engineers": [
+      "Etienne Dorn",
       "Marco Qwent",
       "Hera Tani"
     ],
@@ -1652,6 +1670,7 @@
     "Type": "Power Plant",
     "Name": "Armoured",
     "Engineers": [
+      "Etienne Dorn",
       "Marco Qwent",
       "Hera Tani"
     ],
@@ -1698,6 +1717,7 @@
     "Type": "Power Plant",
     "Name": "Armoured",
     "Engineers": [
+      "Etienne Dorn",
       "Hera Tani"
     ],
     "Ingredients": [
@@ -1803,6 +1823,7 @@
     "Type": "Chaff Launcher",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -1838,6 +1859,7 @@
     "Type": "Chaff Launcher",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -1873,6 +1895,7 @@
     "Type": "Chaff Launcher",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -1947,6 +1970,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -1989,6 +2013,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -2034,6 +2059,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -2079,6 +2105,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -2164,6 +2191,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Long Range FSD Interdictor",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker",
       "Tiana Fortune"
     ],
@@ -2206,6 +2234,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Long Range FSD Interdictor",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker",
       "Tiana Fortune"
     ],
@@ -2252,6 +2281,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Long Range FSD Interdictor",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker"
     ],
     "Ingredients": [
@@ -2292,6 +2322,51 @@
     ],
     "Grade": 4,
     "CoriolisGuid": "aaabe016-883e-4ec6-a0f0-dd519b4f0ca5"
+  },
+  {
+    "Type": "Frame Shift Drive Interdictor",
+    "Name": "Long Range FSD Interdictor",
+    "Engineers": [
+      "Mel Brandon"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Classified Scan Databanks",
+        "Size": 1
+      },
+      {
+        "Name": "Eccentric Hyperspace Trajectories",
+        "Size": 1
+      },
+      {
+        "Name": "Adaptive Encryptors Capture",
+        "Size": 1
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+50%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+60%",
+        "Property": "Range",
+        "IsGood": true
+      },
+      {
+        "Effect": "-30%",
+        "Property": "Facing Limit",
+        "IsGood": false
+      },
+      {
+        "Effect": "+30%",
+        "Property": "Mass",
+        "IsGood": false
+      }
+    ],
+    "Grade": 5,
+    "CoriolisGuid": "fix-me-to-be-defined"
   },
   {
     "Type": "Multi-cannon",
@@ -2447,6 +2522,7 @@
     "Type": "Multi-cannon",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -2675,6 +2751,7 @@
     "Type": "Shield Generator",
     "Name": "Reinforced Shields",
     "Engineers": [
+      "Mel Brandon",
       "Lei Cheung"
     ],
     "Ingredients": [
@@ -2923,6 +3000,7 @@
     "Type": "Shield Generator",
     "Name": "Enhanced, Low Power Shields",
     "Engineers": [
+      "Mel Brandon",
       "Lei Cheung"
     ],
     "Ingredients": [
@@ -3033,6 +3111,7 @@
     "Type": "Point Defence",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -3068,6 +3147,7 @@
     "Type": "Point Defence",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -3103,6 +3183,7 @@
     "Type": "Point Defence",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -3198,6 +3279,7 @@
     "Type": "Point Defence",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -3233,6 +3315,7 @@
     "Type": "Point Defence",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -3268,6 +3351,7 @@
     "Type": "Point Defence",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -3459,6 +3543,7 @@
     "Type": "Shield Booster",
     "Name": "Thermal Resistant",
     "Engineers": [
+      "Mel Brandon",
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -3529,6 +3614,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -3562,6 +3648,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -3599,6 +3686,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -3634,6 +3722,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -3698,6 +3787,7 @@
     "Type": "Rail Gun",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -3735,6 +3825,7 @@
     "Type": "Rail Gun",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -3776,6 +3867,7 @@
     "Type": "Rail Gun",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -3816,6 +3908,7 @@
     "Type": "Rail Gun",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -4018,6 +4111,7 @@
     "Type": "Power Distributor",
     "Name": "Weapon Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -4073,6 +4167,7 @@
     "Type": "Power Distributor",
     "Name": "Weapon Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -4200,6 +4295,7 @@
     "Type": "Fragment Cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -4246,6 +4342,7 @@
     "Type": "Fragment Cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -4291,6 +4388,7 @@
     "Type": "Fragment Cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -4365,6 +4463,7 @@
     "Type": "Mine Launcher",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder",
       "Juri Ishmaak"
     ],
@@ -4407,6 +4506,7 @@
     "Type": "Mine Launcher",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder",
       "Juri Ishmaak"
     ],
@@ -4453,6 +4553,7 @@
     "Type": "Mine Launcher",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -4498,6 +4599,7 @@
     "Type": "Mine Launcher",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -4708,6 +4810,7 @@
     "Type": "Beam Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -5049,6 +5152,7 @@
     "Type": "Prospector Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -5086,6 +5190,7 @@
     "Type": "Prospector Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -5224,6 +5329,7 @@
     "Type": "Prospector Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -5261,6 +5367,7 @@
     "Type": "Prospector Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -5492,6 +5599,7 @@
     "Type": "Multi-cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -5572,6 +5680,7 @@
     "Type": "Manifest Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -5605,6 +5714,7 @@
     "Type": "Manifest Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -5642,6 +5752,7 @@
     "Type": "Manifest Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -5677,6 +5788,7 @@
     "Type": "Manifest Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -5831,6 +5943,7 @@
     "Type": "Burst Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -5876,6 +5989,7 @@
     "Type": "Burst Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -6077,6 +6191,7 @@
     "Type": "Shield Booster",
     "Name": "Kinetic Resistant",
     "Engineers": [
+      "Mel Brandon",
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -6151,6 +6266,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -6188,6 +6304,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -6228,6 +6345,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -6268,6 +6386,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -6404,6 +6523,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -6439,6 +6559,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -6632,6 +6753,7 @@
     "Type": "Shield Generator",
     "Name": "Thermal Resistant Shields",
     "Engineers": [
+      "Mel Brandon",
       "Lei Cheung"
     ],
     "Ingredients": [
@@ -6702,6 +6824,7 @@
     "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -6735,6 +6858,7 @@
     "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -6772,6 +6896,7 @@
     "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -6807,6 +6932,7 @@
     "Type": "Wake Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -6956,6 +7082,7 @@
     "Type": "Burst Laser",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -6996,6 +7123,7 @@
     "Type": "Burst Laser",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -7192,6 +7320,7 @@
     "Type": "Pulse Laser",
     "Name": "Focused Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -7262,6 +7391,7 @@
     "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -7295,6 +7425,7 @@
     "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -7332,6 +7463,7 @@
     "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -7367,6 +7499,7 @@
     "Type": "Wake Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -7464,6 +7597,7 @@
     "Type": "Refinery",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Bill Turner",
       "Lori Jameson"
     ],
@@ -7500,6 +7634,7 @@
     "Type": "Refinery",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Lori Jameson"
     ],
     "Ingredients": [
@@ -7530,6 +7665,41 @@
     ],
     "Grade": 4,
     "CoriolisGuid": "48d62ffb-b0ff-47bf-9e4a-a8a4cfbd22bc"
+  },
+  {
+    "Type": "Refinery",
+    "Name": "Shielded",
+    "Engineers": [
+      "Marsha Hicks"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Core Dynamics Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Compound Shielding",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+300%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
+    "Grade": 5,
+    "CoriolisGuid": "fix-me-to-be-defined"
   },
   {
     "Type": "Kill Warrant Scanner",
@@ -7565,6 +7735,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -7598,6 +7769,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -7635,6 +7807,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -7670,6 +7843,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -7777,6 +7951,7 @@
     "Type": "Cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -7822,6 +7997,7 @@
     "Type": "Cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -7867,6 +8043,7 @@
     "Type": "Cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -7952,6 +8129,7 @@
     "Name": "Rapid Fire Modification",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -7999,6 +8177,7 @@
     "Name": "Rapid Fire Modification",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -8049,6 +8228,7 @@
     "Type": "Missile Rack",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -8099,6 +8279,7 @@
     "Type": "Missile Rack",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -8241,6 +8422,7 @@
     "Type": "Cannon",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -8291,6 +8473,7 @@
     "Type": "Cannon",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -8341,6 +8524,7 @@
     "Type": "Cannon",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -8571,6 +8755,7 @@
     "Type": "Burst Laser",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -8621,6 +8806,7 @@
     "Type": "Burst Laser",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -8847,6 +9033,7 @@
     "Type": "Pulse Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -8921,6 +9108,7 @@
     "Type": "Auto Field-Maintenance Unit",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Bill Turner",
       "Lori Jameson"
     ],
@@ -8953,6 +9141,7 @@
     "Type": "Auto Field-Maintenance Unit",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Bill Turner",
       "Lori Jameson"
     ],
@@ -8989,6 +9178,7 @@
     "Type": "Auto Field-Maintenance Unit",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Lori Jameson"
     ],
     "Ingredients": [
@@ -9019,6 +9209,41 @@
     ],
     "Grade": 4,
     "CoriolisGuid": "82195e56-cfe5-4996-a821-a820dcd9405d"
+  },
+  {
+    "Type": "Auto Field-Maintenance Unit",
+    "Name": "Shielded",
+    "Engineers": [
+      "Petra Olmanova"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Core Dynamics Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Compound Shielding",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+300%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
+    "Grade": 5,
+    "CoriolisGuid": "fix-me-to-be-defined"
   },
   {
     "Type": "Rail Gun",
@@ -9063,6 +9288,7 @@
     "Type": "Rail Gun",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -9105,6 +9331,7 @@
     "Type": "Rail Gun",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -9151,6 +9378,7 @@
     "Type": "Rail Gun",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -9196,6 +9424,7 @@
     "Type": "Rail Gun",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -9271,6 +9500,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -9304,6 +9534,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -9341,6 +9572,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -9378,6 +9610,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -9442,6 +9675,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -9473,6 +9707,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -9508,6 +9743,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -9543,6 +9779,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -9743,6 +9980,7 @@
     "Type": "Multi-cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -9817,6 +10055,7 @@
     "Type": "Rail Gun",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -9859,6 +10098,7 @@
     "Type": "Rail Gun",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -9905,6 +10145,7 @@
     "Type": "Rail Gun",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -9950,6 +10191,7 @@
     "Type": "Rail Gun",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -10029,6 +10271,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -10066,6 +10309,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -10106,6 +10350,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -10146,6 +10391,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -10259,6 +10505,7 @@
     "Type": "Power Plant",
     "Name": "Low Emissions",
     "Engineers": [
+      "Etienne Dorn",
       "Marco Qwent",
       "Hera Tani"
     ],
@@ -10300,6 +10547,7 @@
     "Type": "Power Plant",
     "Name": "Low Emissions",
     "Engineers": [
+      "Etienne Dorn",
       "Marco Qwent",
       "Hera Tani"
     ],
@@ -10341,6 +10589,7 @@
     "Type": "Power Plant",
     "Name": "Low Emissions",
     "Engineers": [
+      "Etienne Dorn",
       "Hera Tani"
     ],
     "Ingredients": [
@@ -10510,6 +10759,7 @@
     "Type": "Burst Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -10555,6 +10805,7 @@
     "Type": "Burst Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -10791,6 +11042,7 @@
     "Type": "Pulse Laser",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -11003,6 +11255,7 @@
     "Type": "Power Distributor",
     "Name": "System Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -11058,6 +11311,7 @@
     "Type": "Power Distributor",
     "Name": "System Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -11215,6 +11469,7 @@
     "Type": "Prospector Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -11252,6 +11507,7 @@
     "Type": "Prospector Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -11555,6 +11811,7 @@
     "Type": "Power Plant",
     "Name": "Overcharged",
     "Engineers": [
+      "Etienne Dorn",
       "Marco Qwent",
       "Hera Tani"
     ],
@@ -11596,6 +11853,7 @@
     "Type": "Power Plant",
     "Name": "Overcharged",
     "Engineers": [
+      "Etienne Dorn",
       "Marco Qwent",
       "Hera Tani"
     ],
@@ -11637,6 +11895,7 @@
     "Type": "Power Plant",
     "Name": "Overcharged",
     "Engineers": [
+      "Etienne Dorn",
       "Hera Tani"
     ],
     "Ingredients": [
@@ -11815,6 +12074,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Increased FSD Range",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk"
     ],
@@ -11861,6 +12121,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Increased FSD Range",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk"
     ],
@@ -12082,6 +12343,7 @@
     "Type": "Multi-cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -12157,6 +12419,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -12190,6 +12453,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -12227,6 +12491,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -12489,6 +12754,7 @@
     "Type": "Multi-cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -12579,6 +12845,7 @@
     "Name": "Rapid Fire Modification",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -12626,6 +12893,7 @@
     "Name": "Rapid Fire Modification",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -12676,6 +12944,7 @@
     "Type": "Mine Launcher",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -12726,6 +12995,7 @@
     "Type": "Mine Launcher",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -12875,6 +13145,7 @@
     "Type": "Fuel Scoop",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Lori Jameson"
     ],
     "Ingredients": [
@@ -12905,6 +13176,41 @@
     ],
     "Grade": 4,
     "CoriolisGuid": "457e3d79-cdc8-44e6-b98c-c360821b0131"
+  },
+  {
+    "Type": "Fuel Scoop",
+    "Name": "Shielded",
+    "Engineers": [
+      "Marsha Hicks"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Core Dynamics Composites",
+        "Size": 1
+      },
+      {
+        "Name": "Compound Shielding",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten",
+        "Size": 1
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Power Draw",
+        "IsGood": false
+      },
+      {
+        "Effect": "+300%",
+        "Property": "Integrity",
+        "IsGood": true
+      }
+    ],
+    "Grade": 5,
+    "CoriolisGuid": "fix-me-to-be-defined"
   },
   {
     "Type": "Rail Gun",
@@ -12954,6 +13260,7 @@
     "Type": "Rail Gun",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -13001,6 +13308,7 @@
     "Type": "Rail Gun",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -13052,6 +13360,7 @@
     "Type": "Rail Gun",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -13102,6 +13411,7 @@
     "Type": "Rail Gun",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -13325,6 +13635,7 @@
     "Type": "Hull Reinforcement Package",
     "Name": "Thermal Resistant Hull Reinforcement",
     "Engineers": [
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -13663,6 +13974,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13705,6 +14017,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13750,6 +14063,7 @@
     "Type": "Mine Launcher",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13795,6 +14109,7 @@
     "Type": "Mine Launcher",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13870,6 +14185,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13912,6 +14228,7 @@
     "Name": "Lightweight Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -13957,6 +14274,7 @@
     "Type": "Torpedo Pylon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -14002,6 +14320,7 @@
     "Type": "Torpedo Pylon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -14139,6 +14458,7 @@
     "Type": "Fragment Cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -14190,6 +14510,7 @@
     "Type": "Fragment Cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -14240,6 +14561,7 @@
     "Type": "Fragment Cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -14430,6 +14752,7 @@
     "Type": "Collector Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -14628,6 +14951,7 @@
     "Type": "Power Distributor",
     "Name": "Engine Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -14683,6 +15007,7 @@
     "Type": "Power Distributor",
     "Name": "Engine Focused",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -15149,6 +15474,7 @@
     "Type": "Pulse Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -15286,6 +15612,7 @@
     "Type": "Cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -15336,6 +15663,7 @@
     "Type": "Cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -15386,6 +15714,7 @@
     "Type": "Cannon",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -15466,6 +15795,7 @@
     "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -15499,6 +15829,7 @@
     "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -15536,6 +15867,7 @@
     "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -15571,6 +15903,7 @@
     "Type": "Wake Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -15636,6 +15969,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -15669,6 +16003,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -15706,6 +16041,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -15741,6 +16077,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -15858,6 +16195,7 @@
     "Type": "Cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -15903,6 +16241,7 @@
     "Type": "Cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -15948,6 +16287,7 @@
     "Type": "Cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -16038,6 +16378,7 @@
     "Name": "High Capacity Magazine",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16085,6 +16426,7 @@
     "Name": "High Capacity Magazine",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16135,6 +16477,7 @@
     "Type": "Mine Launcher",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16185,6 +16528,7 @@
     "Type": "Mine Launcher",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16391,6 +16735,7 @@
     "Type": "Pulse Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -16604,6 +16949,7 @@
     "Type": "Hull Reinforcement Package",
     "Name": "Kinetic Resistant Hull Reinforcement",
     "Engineers": [
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -16689,6 +17035,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16731,6 +17078,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -16776,6 +17124,7 @@
     "Type": "Torpedo Pylon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -16821,6 +17170,7 @@
     "Type": "Torpedo Pylon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -16983,6 +17333,7 @@
     "Type": "Power Distributor",
     "Name": "High Charge Capacity",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -17023,6 +17374,7 @@
     "Type": "Power Distributor",
     "Name": "High Charge Capacity",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -17108,6 +17460,7 @@
     "Name": "High Capacity Magazine",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -17155,6 +17508,7 @@
     "Name": "High Capacity Magazine",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -17205,6 +17559,7 @@
     "Type": "Missile Rack",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -17255,6 +17610,7 @@
     "Type": "Missile Rack",
     "Name": "High Capacity Magazine",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -17548,6 +17904,7 @@
     "Type": "Fragment Cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -17594,6 +17951,7 @@
     "Type": "Fragment Cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -17639,6 +17997,7 @@
     "Type": "Fragment Cannon",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -17719,6 +18078,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker",
       "Tiana Fortune"
     ],
@@ -17756,6 +18116,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker",
       "Tiana Fortune"
     ],
@@ -17797,6 +18158,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker"
     ],
     "Ingredients": [
@@ -17837,6 +18199,7 @@
     "Type": "Frame Shift Drive Interdictor",
     "Name": "Expanded FSD Interdictor Capture Arc",
     "Engineers": [
+      "Mel Brandon",
       "Colonel Bris Dekker"
     ],
     "Ingredients": [
@@ -17906,6 +18269,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -17939,6 +18303,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -17976,6 +18341,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -18013,6 +18379,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -18224,6 +18591,7 @@
     "Type": "Beam Laser",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -18616,6 +18984,7 @@
     "Type": "Shield Booster",
     "Name": "Heavy Duty",
     "Engineers": [
+      "Mel Brandon",
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -18733,6 +19102,7 @@
     "Type": "Cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -18778,6 +19148,7 @@
     "Type": "Cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -18823,6 +19194,7 @@
     "Type": "Cannon",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -19043,6 +19415,7 @@
     "Type": "Multi-cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -19228,6 +19601,7 @@
     "Type": "Collector Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -19572,6 +19946,7 @@
     "Type": "Burst Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -19612,6 +19987,7 @@
     "Type": "Burst Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -19781,6 +20157,7 @@
     "Type": "Burst Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -19826,6 +20203,7 @@
     "Type": "Burst Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -20127,6 +20505,7 @@
     "Type": "Fragment Cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -20178,6 +20557,7 @@
     "Type": "Fragment Cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -20228,6 +20608,7 @@
     "Type": "Fragment Cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -20308,6 +20689,7 @@
     "Type": "Manifest Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -20341,6 +20723,7 @@
     "Type": "Manifest Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -20378,6 +20761,7 @@
     "Type": "Manifest Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -20413,6 +20797,7 @@
     "Type": "Manifest Scanner",
     "Name": "Reinforced",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -20598,6 +20983,7 @@
     "Type": "Beam Laser",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -20725,6 +21111,7 @@
     "Type": "Cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -20775,6 +21162,7 @@
     "Type": "Cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -20825,6 +21213,7 @@
     "Type": "Cannon",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -20971,6 +21360,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -21006,6 +21396,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -21071,6 +21462,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -21104,6 +21496,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -21141,6 +21534,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -21178,6 +21572,7 @@
     "Type": "Fuel Transfer Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -21316,6 +21711,7 @@
     "Type": "Power Distributor",
     "Name": "Charge Enhanced",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -21351,6 +21747,7 @@
     "Type": "Power Distributor",
     "Name": "Charge Enhanced",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -21448,6 +21845,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -21490,6 +21888,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -21535,6 +21934,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -21580,6 +21980,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -21721,6 +22122,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -21756,6 +22158,7 @@
     "Type": "Heat Sink Launcher",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -21964,6 +22367,7 @@
     "Type": "Hull Reinforcement Package",
     "Name": "Blast Resistant Hull Reinforcement",
     "Engineers": [
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -22038,6 +22442,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -22080,6 +22485,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -22125,6 +22531,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -22170,6 +22577,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -22245,6 +22653,7 @@
     "Type": "Manifest Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -22278,6 +22687,7 @@
     "Type": "Manifest Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -22315,6 +22725,7 @@
     "Type": "Manifest Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -22350,6 +22761,7 @@
     "Type": "Manifest Scanner",
     "Name": "Lightweight",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -22415,6 +22827,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -22448,6 +22861,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -22485,6 +22899,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -22585,6 +23000,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -22616,6 +23032,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -22651,6 +23068,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -22686,6 +23104,7 @@
     "Type": "Electronic Countermeasure",
     "Name": "Reinforced",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -22803,6 +23222,7 @@
     "Type": "Fragment Cannon",
     "Name": "Double Shot",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -22849,6 +23269,7 @@
     "Type": "Fragment Cannon",
     "Name": "Double Shot",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -22894,6 +23315,7 @@
     "Type": "Fragment Cannon",
     "Name": "Double Shot",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -22969,6 +23391,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -23002,6 +23425,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge",
       "Ram Tah"
@@ -23039,6 +23463,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -23150,6 +23575,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -23197,6 +23623,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -23247,6 +23674,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -23297,6 +23725,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Rapid Fire Modification",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -23407,6 +23836,7 @@
     "Type": "Point Defence",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -23442,6 +23872,7 @@
     "Type": "Point Defence",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -23477,6 +23908,7 @@
     "Type": "Point Defence",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -23665,6 +24097,7 @@
     "Type": "Hull Reinforcement Package",
     "Name": "Lightweight Hull Reinforcement",
     "Engineers": [
+      "Petra Olmanova",
       "Selene Jean"
     ],
     "Ingredients": [
@@ -23861,6 +24294,7 @@
     "Type": "Shield Booster",
     "Name": "Resistance Augmented",
     "Engineers": [
+      "Mel Brandon",
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -24076,6 +24510,7 @@
     "Type": "Multi-cannon",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -24203,6 +24638,7 @@
     "Type": "Fragment Cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -24249,6 +24685,7 @@
     "Type": "Fragment Cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -24294,6 +24731,7 @@
     "Type": "Fragment Cannon",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -24574,6 +25012,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Zacariah Nemo",
       "Bill Turner"
     ],
@@ -24621,6 +25060,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -24671,6 +25111,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -24721,6 +25162,7 @@
     "Type": "Plasma Accelerator",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner"
     ],
     "Ingredients": [
@@ -24911,6 +25353,7 @@
     "Type": "Collector Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -25019,6 +25462,7 @@
     "Type": "Fragment Cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Tod McQuinn",
       "Zacariah Nemo"
     ],
@@ -25060,6 +25504,7 @@
     "Type": "Fragment Cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -25100,6 +25545,7 @@
     "Type": "Fragment Cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "Zacariah Nemo"
     ],
     "Ingredients": [
@@ -25257,6 +25703,7 @@
     "Type": "Power Distributor",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -25297,6 +25744,7 @@
     "Type": "Power Distributor",
     "Name": "Shielded",
     "Engineers": [
+      "Etienne Dorn",
       "The Dweller"
     ],
     "Ingredients": [
@@ -25475,6 +25923,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Faster FSD Boot Sequence",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk"
     ],
@@ -25521,6 +25970,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Faster FSD Boot Sequence",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk"
     ],
@@ -25639,6 +26089,7 @@
     "Type": "Cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -25679,6 +26130,7 @@
     "Type": "Cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -25719,6 +26171,7 @@
     "Type": "Cannon",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Marsha Hicks",
       "The Sarge"
     ],
     "Ingredients": [
@@ -25819,6 +26272,7 @@
     "Type": "Chaff Launcher",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -25854,6 +26308,7 @@
     "Type": "Chaff Launcher",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -25889,6 +26344,7 @@
     "Type": "Chaff Launcher",
     "Name": "Shielded",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -26090,6 +26546,7 @@
     "Type": "Pulse Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -26273,6 +26730,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Shielded FSD",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk"
     ],
@@ -26319,6 +26777,7 @@
     "Type": "Frame Shift Drive",
     "Name": "Shielded FSD",
     "Engineers": [
+      "Mel Brandon",
       "Felicity Farseer",
       "Elvira Martuuk"
     ],
@@ -26404,6 +26863,7 @@
     "Type": "Rail Gun",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -26446,6 +26906,7 @@
     "Type": "Rail Gun",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn",
       "The Sarge"
     ],
@@ -26492,6 +26953,7 @@
     "Type": "Rail Gun",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -26537,6 +26999,7 @@
     "Type": "Rail Gun",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Etienne Dorn",
       "Tod McQuinn"
     ],
     "Ingredients": [
@@ -26757,6 +27220,7 @@
     "Type": "Beam Laser",
     "Name": "Long Range Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -27164,6 +27628,7 @@
     "Type": "Burst Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -27209,6 +27674,7 @@
     "Type": "Burst Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -27412,6 +27878,7 @@
     "Type": "Shield Generator",
     "Name": "Kinetic Resistant Shields",
     "Engineers": [
+      "Mel Brandon",
       "Lei Cheung"
     ],
     "Ingredients": [
@@ -27608,6 +28075,7 @@
     "Type": "Shield Booster",
     "Name": "Blast Resistant",
     "Engineers": [
+      "Mel Brandon",
       "Didi Vatermann"
     ],
     "Ingredients": [
@@ -27814,6 +28282,7 @@
     "Type": "Pulse Laser",
     "Name": "Lightweight Mount",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -28092,6 +28561,7 @@
     "Type": "Missile Rack",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder",
       "Juri Ishmaak"
     ],
@@ -28135,6 +28605,7 @@
     "Name": "Sturdy Mount",
     "Engineers": [
       "Liz Ryder",
+      "Petra Olmanova",
       "Juri Ishmaak"
     ],
     "Ingredients": [
@@ -28180,6 +28651,7 @@
     "Type": "Missile Rack",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -28225,6 +28697,7 @@
     "Type": "Missile Rack",
     "Name": "Sturdy Mount",
     "Engineers": [
+      "Petra Olmanova",
       "Liz Ryder"
     ],
     "Ingredients": [
@@ -28330,6 +28803,7 @@
     "Type": "Chaff Launcher",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -28365,6 +28839,7 @@
     "Type": "Chaff Launcher",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -28400,6 +28875,7 @@
     "Type": "Chaff Launcher",
     "Name": "Lightweight",
     "Engineers": [
+      "Petra Olmanova",
       "Ram Tah"
     ],
     "Ingredients": [
@@ -28544,6 +29020,7 @@
     "Type": "Burst Laser",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -28584,6 +29061,7 @@
     "Type": "Burst Laser",
     "Name": "Short Range Blaster",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -30441,6 +30919,7 @@
     "Type": "Beam Laser",
     "Name": "Efficient Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -30641,6 +31120,7 @@
     "Type": "Beam Laser",
     "Name": "Overcharged Weapon",
     "Engineers": [
+      "Mel Brandon",
       "Broo Tarquin"
     ],
     "Ingredients": [
@@ -30763,6 +31243,7 @@
     "Type": "Sensors",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -30809,6 +31290,7 @@
     "Type": "Sensors",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -30853,6 +31335,7 @@
     "Type": "Sensors",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -30979,6 +31462,7 @@
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -31025,6 +31509,7 @@
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -31069,6 +31554,7 @@
     "Type": "Sensors",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -31195,6 +31681,7 @@
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -31241,6 +31728,7 @@
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Bill Turner",
       "Juri Ishmaak",
@@ -31285,6 +31773,7 @@
     "Type": "Sensors",
     "Name": "Light Weight Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Lori Jameson",
       "Juri Ishmaak",
       "Bill Turner",
@@ -31357,6 +31846,7 @@
     "Type": "Surface Scanner",
     "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Hera Tani",
@@ -31388,6 +31878,7 @@
     "Type": "Surface Scanner",
     "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Lori Jameson",
@@ -31423,6 +31914,7 @@
     "Type": "Surface Scanner",
     "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Lori Jameson",
@@ -31456,6 +31948,7 @@
     "Type": "Surface Scanner",
     "Name": "Expanded Probe Scanning Radius",
     "Engineers": [
+      "Etienne Dorn",
       "Bill Turner",
       "Juri Ishmaak",
       "Lori Jameson",
@@ -31524,6 +32017,7 @@
     "Type": "Manifest Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31562,6 +32056,7 @@
     "Type": "Manifest Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31604,6 +32099,7 @@
     "Type": "Manifest Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -31644,6 +32140,7 @@
     "Type": "Manifest Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -31719,6 +32216,7 @@
     "Type": "Manifest Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31757,6 +32255,7 @@
     "Type": "Manifest Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31799,6 +32298,7 @@
     "Type": "Manifest Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -31839,6 +32339,7 @@
     "Type": "Manifest Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -31914,6 +32415,7 @@
     "Type": "Manifest Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31952,6 +32454,7 @@
     "Type": "Manifest Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -31994,6 +32497,7 @@
     "Type": "Manifest Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32034,6 +32538,7 @@
     "Type": "Manifest Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32109,6 +32614,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32147,6 +32653,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32189,6 +32696,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32229,6 +32737,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32304,6 +32813,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32342,6 +32852,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32384,6 +32895,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32424,6 +32936,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32499,6 +33012,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32537,6 +33051,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32579,6 +33094,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32619,6 +33135,7 @@
     "Type": "Kill Warrant Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32694,6 +33211,7 @@
     "Type": "Wake Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32732,6 +33250,7 @@
     "Type": "Wake Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32774,6 +33293,7 @@
     "Type": "Wake Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32814,6 +33334,7 @@
     "Type": "Wake Scanner",
     "Name": "Long Range Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -32889,6 +33410,7 @@
     "Type": "Wake Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32927,6 +33449,7 @@
     "Type": "Wake Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -32969,6 +33492,7 @@
     "Type": "Wake Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -33009,6 +33533,7 @@
     "Type": "Wake Scanner",
     "Name": "Wide Angle Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -33084,6 +33609,7 @@
     "Type": "Wake Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -33122,6 +33648,7 @@
     "Type": "Wake Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune",
       "Bill Turner",
       "Lori Jameson"
@@ -33164,6 +33691,7 @@
     "Type": "Wake Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
@@ -33204,6 +33732,7 @@
     "Type": "Wake Scanner",
     "Name": "Fast Scanner",
     "Engineers": [
+      "Etienne Dorn",
       "Tiana Fortune"
     ],
     "Ingredients": [
