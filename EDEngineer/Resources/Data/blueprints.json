@@ -2366,7 +2366,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
+    "CoriolisGuid": "d62e9816-5457-11eb-a2cb-6805caa43529"
   },
   {
     "Type": "Multi-cannon",
@@ -7699,7 +7699,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
+    "CoriolisGuid": "be6ba667-5458-11eb-a2cb-6805caa43529"
   },
   {
     "Type": "Kill Warrant Scanner",
@@ -9243,7 +9243,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
+    "CoriolisGuid": "191479fe-5459-11eb-a2cb-6805caa43529"
   },
   {
     "Type": "Rail Gun",
@@ -12528,6 +12528,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Lightweight",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -13210,7 +13211,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
+    "CoriolisGuid": "91baeeeb-5459-11eb-a2cb-6805caa43529"
   },
   {
     "Type": "Rail Gun",
@@ -22936,6 +22937,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Reinforced",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
@@ -23500,6 +23502,7 @@
     "Type": "Hatch Breaker Limpet Controller",
     "Name": "Shielded",
     "Engineers": [
+      "Marsha Hicks",
       "Tiana Fortune",
       "The Sarge"
     ],
