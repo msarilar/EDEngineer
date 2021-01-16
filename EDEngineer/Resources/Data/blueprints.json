@@ -2366,7 +2366,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "fix-me-to-be-defined"
+    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
   },
   {
     "Type": "Multi-cannon",
@@ -7699,7 +7699,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "fix-me-to-be-defined"
+    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
   },
   {
     "Type": "Kill Warrant Scanner",
@@ -9243,7 +9243,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "fix-me-to-be-defined"
+    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
   },
   {
     "Type": "Rail Gun",
@@ -13210,7 +13210,7 @@
       }
     ],
     "Grade": 5,
-    "CoriolisGuid": "fix-me-to-be-defined"
+    "CoriolisGuid": "00000000-0000-0000-0000-000000000000"
   },
   {
     "Type": "Rail Gun",
