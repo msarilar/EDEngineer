@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.5.7",
+    "Content": "* Expanded state for when ingredients are grouped is now persistent\r\n\r\n* Add FSD experimental effects for Chloe Sedesi, thanks to @CMDR-Cometborne"
+  },
+  {
     "Version": "1.1.5.6",
     "Content": "* Update for the engineers in Colonia following the successful conclusion of operation La Forge with new blueprints ; thanks for the great work @CMDR-Cometborne"
   },
