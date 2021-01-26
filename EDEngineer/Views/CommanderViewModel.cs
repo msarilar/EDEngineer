@@ -227,6 +227,11 @@ namespace EDEngineer.Views
                 Settings.Default.ShowAllGrades = new StringCollection();
             }
 
+            if (Settings.Default.CollapsedIngredientGroups == null)
+            {
+                Settings.Default.CollapsedIngredientGroups = new StringCollection();
+            }
+
             foreach (var blueprint in State.Blueprints)
             {
                 var text = $"{CommanderName}:{blueprint}";

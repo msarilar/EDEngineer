@@ -494,6 +494,9 @@
                                                             <Expander IsExpanded="True"
                                                                     Padding="0"
                                                                     Style="{StaticResource GroupExpander}">
+                                                                <i:Interaction.Behaviors>
+                                                                    <f:PersistGroupExpandedStateBehavior GroupName="{Binding Name}" />
+                                                                </i:Interaction.Behaviors>
                                                                 <Expander.Header>
                                                                     <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                         <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
@@ -580,6 +583,9 @@
                                                         <Expander IsExpanded="True"
                                                                 Padding="0"
                                                                 Style="{StaticResource GroupExpander}">
+                                                            <i:Interaction.Behaviors>
+                                                                <f:PersistGroupExpandedStateBehavior GroupName="{Binding Name}" />
+                                                            </i:Interaction.Behaviors>
                                                             <Expander.Header>
                                                                 <MultiBinding Converter="{x:Static localization:Languages.Instance}">
                                                                     <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />

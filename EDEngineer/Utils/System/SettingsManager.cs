@@ -223,5 +223,25 @@ namespace EDEngineer.Utils.System
             Properties.Settings.Default.ShowAllGrades.Remove(label);
             Properties.Settings.Default.Save();
         }
+
+        public static class IngredientGroups
+        {
+            public static bool IsCollapsed(string group)
+            {
+                return Properties.Settings.Default.CollapsedIngredientGroups.Contains(group);
+            }
+
+            public static void Collapse(string group)
+            {
+                Properties.Settings.Default.CollapsedIngredientGroups.Add(group);
+                Properties.Settings.Default.Save();
+            }
+
+            public static void Expand(string group)
+            {
+                Properties.Settings.Default.CollapsedIngredientGroups.Remove(group);
+                Properties.Settings.Default.Save();
+            }
+        }
     }
 }
