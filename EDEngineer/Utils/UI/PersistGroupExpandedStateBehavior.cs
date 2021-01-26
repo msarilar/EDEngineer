@@ -15,13 +15,6 @@ namespace EDEngineer.Utils.UI
             typeof(PersistGroupExpandedStateBehavior),
             new PropertyMetadata(default(object)));
 
-        private static readonly DependencyProperty ExpandedStateStoreProperty =
-            DependencyProperty.RegisterAttached(
-                "ExpandedStateStore",
-                typeof(IDictionary<object, bool>),
-                typeof(PersistGroupExpandedStateBehavior),
-                new PropertyMetadata(default(IDictionary<object, bool>)));
-
         public object GroupName
         {
             get
