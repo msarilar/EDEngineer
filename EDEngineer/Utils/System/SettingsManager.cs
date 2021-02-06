@@ -12,6 +12,17 @@ namespace EDEngineer.Utils.System
     {
         public static void Init()
         {
+            try
+            {
+                var lang = Properties.Settings.Default.Language;
+            }
+            catch
+            {
+                Properties.Settings.Default.Reset();
+                Properties.Settings.Default.Save();
+                return;
+            }
+
             if (Properties.Settings.Default.UpgradeRequired)
             {
                 Properties.Settings.Default.Upgrade();

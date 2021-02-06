@@ -53,6 +53,11 @@ namespace EDEngineer.Utils.UI
 
         private bool GetExpandedState()
         {
+            if (GroupName == null)
+            {
+                return false;
+            }
+
             return !System.SettingsManager.IngredientGroups.IsCollapsed(GroupName.ToString());
         }
 
