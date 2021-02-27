@@ -40546,5 +40546,30 @@
         "IsGood": true
       }
     ]
+  },
+    {
+    "Type": "Human",
+    "Name": "Frameshrift Drive (Size 5) (Increaed Range + Faster Boot Sequence)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Tellurium",
+        "Size": 10
+      },
+      {
+        "Name": "Electrochemical Arrays",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Processors",
+        "Size": 12
+      },
+      {
+        "Name": "Datamined Wake Exceptions",
+        "Size": 10
+      }
+    ]
   }
 ]
