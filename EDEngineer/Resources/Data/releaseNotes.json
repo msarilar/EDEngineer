@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.5.9",
+    "Content": "* Added new technology Engineered FSD V1, thanks to @eisbaer9"
+  },
+  {
     "Version": "1.1.5.7",
     "Content": "* Expanded state for when ingredients are grouped is now persistent\r\n\r\n* Add FSD experimental effects for Chloe Sedesi, thanks to @CMDR-Cometborne"
   },
