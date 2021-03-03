@@ -40546,5 +40546,30 @@
         "IsGood": true
       }
     ]
+  },
+    {
+    "Type": "Human",
+    "Name": "Engineered FSD V1",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Tellurium",
+        "Size": 10
+      },
+      {
+        "Name": "Electrochemical Arrays",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Processors",
+        "Size": 12
+      },
+      {
+        "Name": "Datamined Wake Exceptions",
+        "Size": 10
+      }
+    ]
   }
 ]
