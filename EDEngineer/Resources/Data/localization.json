@@ -160,7 +160,7 @@
       "pl": "Longer Range FSD interdictor",
       "cs": "Longer Range FSD interdictor",
       "nl": "Langere afstand FSD-interdictor",
-      "cn": null
+      "cn": "Longer Range FSD 拦截器"
     },
     "Reinforced Shields": {
       "es": "Escudos Reforzados",
@@ -585,7 +585,7 @@
       "ru": "Набор для усиления корпуса",
       "pl": "Hull Reinforcement Package",
       "cs": "Hull Reinforcement Package",
-      "cn": null
+      "cn": "船体加固套组"
 
     },
     "Cannon": {
@@ -596,7 +596,7 @@
       "ru": "Орудие",
       "pl": "Działo",
       "cs": "Cannon",
-      "cn": null
+      "cn": "火炮"
     },
     "Thrusters": {
       "es": "Impulsores",
@@ -606,7 +606,7 @@
       "ru": "Маневровые двигатели",
       "pl": "Silniki",
       "cs": "Thrusters",
-      "cn": null
+      "cn": "推进器"
     },
     "Multi-cannon": {
       "es": "Multicañón",
@@ -616,7 +616,7 @@
       "ru": "Многоствольное орудие",
       "pl": "Multi-cannon",
       "cs": "Multi-cannon",
-      "cn": null
+      "cn": "多管火炮"
     },
     "Missile Rack": {
       "es": "Batería de Misiles",
@@ -626,7 +626,7 @@
       "ru": "Ракетный лоток",
       "pl": "Missile Rack",
       "cs": "Missile Rack",
-      "cn": null
+      "cn": "导弹发射架"
     },
     "Power Plant": {
       "es": "Núcleo de Energía",
@@ -636,7 +636,7 @@
       "ru": "Силовая установка",
       "pl": "Elektrownia",
       "cs": "Power Plant",
-      "cn": null
+      "cn": "发电机"
     },
     "Chaff Launcher": {
       "es": "Lanzador de Señuelos",
@@ -646,7 +646,7 @@
       "ru": "Разбрасыватель дип. отражателей",
       "pl": "Chaff Launcher",
       "cs": "Chaff Launcher",
-      "cn": null
+      "cn": "干扰箔条发射器"
     },
     "Frame Shift Drive Interdictor": {
       "es": "Interdictor de MDD",
@@ -656,7 +656,7 @@
       "ru": "FSD перехватчик",
       "pl": "Frame Shift Drive Interdictor",
       "cs": "Frame Shift Drive Interdictor",
-      "cn": null
+      "cn": "FSD拦截器"
     },
     "Shield Generator": {
       "es": "Generador de Escudos",
@@ -666,7 +666,7 @@
       "ru": "Щитогенератор",
       "pl": "Generator Osłon",
       "cs": "Shield Generator",
-      "cn": null
+      "cn": "能量护盾生成器"
     },
     "Point Defence": {
       "es": "Defensa de Punto",
@@ -676,7 +676,7 @@
       "ru": "Точечная оборона",
       "pl": "Obrona Punktowa",
       "cs": "Point Defence",
-      "cn": null
+      "cn": "点防御炮塔"
     },
     "Shield Booster": {
       "es": "Potenciador de Escudos",
@@ -686,7 +686,7 @@
       "ru": "Усилитель щита",
       "pl": "Wzmacniacz Osłon",
       "cs": "Shield Booster",
-      "cn": null
+      "cn": "能量护盾增幅器"
     },
     "Kill Warrant Scanner": {
       "es": "Escáner de Registro Criminal",
@@ -696,7 +696,7 @@
       "ru": "Сканер преступников",
       "pl": "Kill Warrant Scanner",
       "cs": "Kill Warrant Scanner",
-      "cn": null
+      "cn": "击杀委任扫描仪"
     },
     "Rail Gun": {
       "es": "Cañón de Riel",
@@ -706,7 +706,7 @@
       "ru": "Электромагнитная пушка",
       "pl": "Rail Gun",
       "cs": "Rail Gun",
-      "cn": null
+      "cn": "磁轨炮"
     },
     "Power Distributor": {
       "es": "Distribuidor de Energía",
@@ -716,7 +716,7 @@
       "ru": "Распределитель питания",
       "pl": "Dystrybutor Mocy",
       "cs": "Power Distributor",
-      "cn": null
+      "cn": "电力分配器"
     },
     "Fragment Cannon": {
       "es": "Cañón de Fragmentación",
@@ -726,7 +726,7 @@
       "ru": "Залповое орудие",
       "pl": "Fragment Cannon",
       "cs": "Fragment Cannon",
-      "cn": null
+      "cn": "破片火炮"
     },
     "Mine Launcher": {
       "es": "Lanzaminas",
@@ -736,7 +736,7 @@
       "ru": "Минирующее устройство",
       "pl": "Wyrzutnia Min",
       "cs": "Mine Launcher",
-      "cn": null
+      "cn": "空雷发射器"
     },
     "Beam Laser": {
       "es": "Láser de Rayo",
@@ -746,7 +746,7 @@
       "ru": "Пучковый лазер",
       "pl": "Laser Wiązkowy",
       "cs": "Beam Laser",
-      "cn": null
+      "cn": "集束雷射"
     },
     "Armour": {
       "es": "Blindaje",
@@ -756,7 +756,7 @@
       "ru": "Броня",
       "pl": "Opancerzenie",
       "cs": "Armour",
-      "cn": null
+      "cn": "飞船装甲"
     },
     "Prospector Limpet Controller": {
       "es": "Lanzador Dron Prospector",
@@ -766,7 +766,7 @@
       "ru": "Контроллер дронов геологов",
       "pl": "Prospector Limpet Controller",
       "cs": "Prospector Limpet Controller",
-      "cn": null
+      "cn": "矿物探勘无人机"
     },
     "Manifest Scanner": {
       "es": "Escáner de Carga",
@@ -776,7 +776,7 @@
       "ru": "Сканер накладной",
       "pl": "Manifest Scanner",
       "cs": "Manifest Scanner",
-      "cn": null
+      "cn": "货仓扫描仪"
     },
     "Burst Laser": {
       "es": "Láser de Ráfagas",
@@ -786,7 +786,7 @@
       "ru": "Пульсирующий лазер",
       "pl": "Burst Laser",
       "cs": "Burst Laser",
-      "cn": null
+      "cn": "爆裂雷射"
     },
     "Heat Sink Launcher": {
       "es": "Eyector Térmico",
@@ -796,7 +796,7 @@
       "ru": "Теплоотводная катапульта",
       "pl": "Wyrzutnia Radiatora",
       "cs": "Heat Sink Launcher",
-      "cn": null
+      "cn": "储热槽发射器"
     },
     "Pulse Laser": {
       "es": "Láser de Pulso",
@@ -806,7 +806,7 @@
       "ru": "Импульсный лазер",
       "pl": "Laser Pulsacyjny",
       "cs": "Pulse Laser",
-      "cn": null
+      "cn": "脉冲雷射"
     },
     "Refinery": {
       "es": "Refinería",
@@ -816,7 +816,7 @@
       "ru": "Очиститель",
       "pl": "Rafineria",
       "cs": "Refinery",
-      "cn": null
+      "cn": "精炼机"
     },
     "Auto Field-Maintenance Unit": {
       "es": "Unidad de Automantenimiento",
@@ -826,7 +826,7 @@
       "ru": "Блок автоматического полевого ремонта",
       "pl": "Auto Field-Maintenance Unit",
       "cs": "Auto Field-Maintenance Unit",
-      "cn": null
+      "cn": "部件维修套组"
     },
     "Fuel Transfer Limpet Controller": {
       "es": "Lanzador Dron Combustible",
@@ -836,7 +836,7 @@
       "ru": "Контроллер дронов заправщиков",
       "pl": "Fuel Transfer Limpet Controller",
       "cs": "Fuel Transfer Limpet Controller",
-      "cn": null
+      "cn": "燃料传输无人机"
     },
     "Frame Shift Drive": {
       "es": "Motor de Distorsión",
@@ -846,7 +846,7 @@
       "ru": "FSD",
       "pl": "Frame Shift Drive",
       "cs": "Frame Shift Drive",
-      "cn": null
+      "cn": "空间折叠引擎"
     },
     "Hatch Breaker Limpet Controller": {
       "es": "Lanzador Dron Extractor",
@@ -856,7 +856,7 @@
       "ru": "Контроллер дронов взломщиков",
       "pl": "Hatch Breaker Limpet Controller",
       "cs": "Hatch Breaker Limpet Controller",
-      "cn": null
+      "cn": "货舱门破坏无人机"
     },
     "Fuel Scoop": {
       "es": "Colector de Combustible",
@@ -866,7 +866,7 @@
       "ru": "Топливозаборник",
       "pl": "Fuel Scoop",
       "cs": "Fuel Scoop",
-      "cn": null
+      "cn": "油勺"
     },
     "Torpedo Pylon": {
       "es": "Lanzatorpedos",
@@ -876,7 +876,7 @@
       "ru": "Торпедная стойка",
       "pl": "Torpedo Pylon",
       "cs": "Torpedo Pylon",
-      "cn": null
+      "cn": "鱼雷发射管"
     },
     "Collector Limpet Controller": {
       "es": "Lanzador Dron Colector",
@@ -886,7 +886,7 @@
       "ru": "Контроллер дронов сборщиков",
       "pl": "Collector Limpet Controller",
       "cs": "Collector Limpet Controller",
-      "cn": null
+      "cn": "收集无人机"
     },
     "Shield Cell Bank": {
       "es": "Células de Escudo",
@@ -896,7 +896,7 @@
       "ru": "Щитонакопитель",
       "pl": "Shield Cell Bank",
       "cs": "Shield Cell Bank",
-      "cn": null
+      "cn": "能量护盾电池"
     },
     "Aberrant Shield Pattern Analysis": {
       "es": "Análisis de Patrón de Escudo Aberrantes",
@@ -2286,9 +2286,9 @@
       "ru": "ЭПД",
       "pl": "ECM",
       "cs": "ECM",
-      "cn": null
+      "cn": "电子反制仪"
     },
-    "Hull": {
+    "船体": {
       "es": "Casco",
       "pt": "Casco",
       "de": "Rumpfhülle",
@@ -2298,7 +2298,7 @@
       "cs": "Hull",
       "cn": null
     },
-    "FSD Interdictor": {
+    "FSD拦截器": {
       "es": "Interdictor MDD",
       "pt": "Interditor MDD",
       "de": "FSA-Unterbrecher",
@@ -2316,7 +2316,7 @@
       "ru": "Контроллер дронов геологов",
       "pl": "Prospector LC",
       "cs": "Prospector LC",
-      "cn": null
+      "cn": "矿物探勘无人机"
     },
     "Fuel Transfer LC": {
       "es": "LD Repostaje",
@@ -2326,7 +2326,7 @@
       "ru": "Контроллер дронов заправщиков",
       "pl": "Fuel Transfer LC",
       "cs": "Fuel Transfer LC",
-      "cn": null
+      "cn": "燃料传输无人机"
     },
     "Hatch Breaker LC": {
       "es": "LD Extractor",
@@ -2336,7 +2336,7 @@
       "ru": "Контроллер дронов взломщиков",
       "pl": "Hatch Breaker LC",
       "cs": "Hatch Breaker LC",
-      "cn": null
+      "cn": "货舱门破坏无人机"
     },
     "Collector LC": {
       "es": "LD Colector",
@@ -2346,7 +2346,7 @@
       "ru": "Контроллер дронов сборщиков",
       "pl": "Collector LC",
       "cs": "Collector LC",
-      "cn": null
+      "cn": "收集无人机"
     },
     "AFMU": {
       "es": "Unidad de Automantenimiento",
@@ -2356,7 +2356,7 @@
       "ru": "БАПР",
       "pl": "AFMU",
       "cs": "AFMU",
-      "cn": null
+      "cn": "部件维修套组"
     },
     "Data": {
       "es": "Datos",
@@ -2366,7 +2366,7 @@
       "ru": "Данные",
       "pl": "Dane",
       "cs": "Data",
-      "cn": null
+      "cn": "数据连接扫描仪"
     },
     "Commodity": {
       "es": "Mercancía",
