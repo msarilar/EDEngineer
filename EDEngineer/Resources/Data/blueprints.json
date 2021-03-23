@@ -40556,19 +40556,19 @@
     "Ingredients": [
       {
         "Name": "Tellurium",
-        "Size": 10
+        "Size": 26
       },
       {
         "Name": "Electrochemical Arrays",
-        "Size": 10
+        "Size": 26
       },
       {
         "Name": "Chemical Processors",
-        "Size": 12
+        "Size": 28
       },
       {
         "Name": "Datamined Wake Exceptions",
-        "Size": 10
+        "Size": 18
       }
     ]
   }
