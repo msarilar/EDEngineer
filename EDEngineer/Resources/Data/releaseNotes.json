@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.5.10",
+    "Content": "* Chinese localization available, thanks a lot to @YASAN666 and @skyter \r\n* Fixed Engineered FSD V1 materials, thanks to @RadarCZ \r\n\r\n* Fixed ruthenium maximum capacity\r\n* Heatsink refill now always 100%"
+  },
+  {
     "Version": "1.1.5.9",
     "Content": "* Added new technology Engineered FSD V1, thanks to @eisbaer9"
   },
