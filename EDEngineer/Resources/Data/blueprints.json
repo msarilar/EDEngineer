@@ -29905,7 +29905,7 @@
   },
   {
     "Type": "Heat Sink Launcher",
-    "Name": "50% Refill",
+    "Name": "100% Refill",
     "Engineers": [
       "@Synthesis"
     ],
