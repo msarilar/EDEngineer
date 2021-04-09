@@ -40571,5 +40571,34 @@
         "Size": 18
       }
     ]
+  },
+  {
+    "Type": "Human",
+    "Name": "Engineered Missile Rack V1",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Proto Radiolic Alloys",
+        "Size": 16
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 28
+      },
+      {
+        "Name": "Osmium",
+        "Size": 10
+      },
+      {
+        "Name": "Conductive Ceramics",
+        "Size": 24
+      },
+      {
+        "Name": "Hybrid Capacitors",
+        "Size": 26
+      }
+    ]
   }
 ]
