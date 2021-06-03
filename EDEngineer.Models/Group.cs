@@ -86,6 +86,21 @@ namespace EDEngineer.Models
         GuardianRuinsActive,
 
         [Description("Commodities")]
-        Commodities
+        Commodities,
+
+        [Description("Chemicals")]
+        Chemicals,
+
+        [Description("Tech")]
+        Tech,
+
+        [Description("Circuits")]
+        Circuits,
+
+        [Description("Item")]
+        Item,
+
+        [Description("Data")]
+        Data
     }
 }

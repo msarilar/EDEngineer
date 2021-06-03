@@ -107,7 +107,7 @@
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal"
                                     Grid.Row="0">
-                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                            <Image Source="{Binding Value.Data, Converter={StaticResource IngredientToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                    HorizontalAlignment="Left"
                                    Width="20"
                                    Height="20"
@@ -450,9 +450,9 @@
 
             <!-- MATERIALS / DATA / LOADOUT -->
             <controls:MetroTabControl Grid.Row="1"
-                                    Background="Black"
+                                      Background="Transparent"
                                       Margin="0,0,0,25"
-                                    SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
+                                      SelectedIndex="{Binding CargoTabIndex, Mode=TwoWay}">
                 <TabControl.Resources>
                     <Style TargetType="{x:Type TabPanel}">
                         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -466,7 +466,7 @@
                     <controls:MetroTabItem.HeaderTemplate>
                         <DataTemplate>
                             <TextBlock HorizontalAlignment="Center"
-                                    Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Materials'}"/>
+                                    Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Mats'}"/>
                         </DataTemplate>
                     </controls:MetroTabItem.HeaderTemplate>
                     <Grid>
@@ -567,6 +567,59 @@
                     <ScrollViewer>
                         <ItemsControl Background="Transparent"
                                 x:Name="Data"
+                                ItemTemplate="{StaticResource EntryTemplate}">
+                            <ItemsControl.ItemContainerStyle>
+                                <Style>
+                                    <Setter Property="FrameworkElement.Margin" Value="3" />
+                                </Style>
+                            </ItemsControl.ItemContainerStyle>
+                            <ItemsControl.GroupStyle>
+                                <GroupStyle>
+                                    <GroupStyle.ContainerStyle>
+                                        <Style TargetType="{x:Type GroupItem}">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                                        <Expander IsExpanded="True"
+                                                                Padding="0"
+                                                                Style="{StaticResource GroupExpander}">
+                                                            <i:Interaction.Behaviors>
+                                                                <f:PersistGroupExpandedStateBehavior GroupName="{Binding Name}" />
+                                                            </i:Interaction.Behaviors>
+                                                            <Expander.Header>
+                                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}">
+                                                                    <Binding Path="Name" Converter="{StaticResource EnumToDescription}" />
+                                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                                            RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                                </MultiBinding>
+                                                            </Expander.Header>
+                                                            <ItemsPresenter Margin="0"/>
+                                                        </Expander>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </GroupStyle.ContainerStyle>
+                                </GroupStyle>
+                            </ItemsControl.GroupStyle>
+                        </ItemsControl>
+                    </ScrollViewer>
+                </controls:MetroTabItem>
+
+                <!-- ODYSSEY -->
+                <controls:MetroTabItem Header="{Binding}"
+                                    FontFamily="/Resources/Fonts/#Euro Caps"
+                                    HorizontalAlignment="Center"
+                                    Width="{Binding ElementName=c1, Path=ActualWidth}">
+                    <controls:MetroTabItem.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock HorizontalAlignment="Center"
+                                    Text="{Binding DataContext.Languages.CurrentLanguage, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Odyssey'}"/>
+                        </DataTemplate>
+                    </controls:MetroTabItem.HeaderTemplate>
+                    <ScrollViewer>
+                        <ItemsControl Background="Transparent"
+                                x:Name="Odyssey"
                                 ItemTemplate="{StaticResource EntryTemplate}">
                             <ItemsControl.ItemContainerStyle>
                                 <Style>

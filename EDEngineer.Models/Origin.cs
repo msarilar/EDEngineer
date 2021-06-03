@@ -10,6 +10,7 @@ namespace EDEngineer.Models
         Market,
         NeededForEngineer,
         AncientGuardianRuins,
+        PlanetarySettlement,
         Unknown
     }
 }

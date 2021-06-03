@@ -156,6 +156,7 @@ namespace EDEngineer.Views
             Materials.ItemsSource = commander.FilterView(viewModel, Kind.Material, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
             Data.ItemsSource = commander.FilterView(viewModel, Kind.Data, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
             Commodities.ItemsSource = commander.FilterView(viewModel, Kind.Commodity, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
+            Odyssey.ItemsSource = commander.FilterView(viewModel, Kind.OdysseyIngredient, new CollectionViewSource { Source = commander.State.Cargo.Ingredients });
         }
 
         private void PostLoad(WindowDimensions dimensions)

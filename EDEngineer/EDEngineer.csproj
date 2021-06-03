@@ -160,6 +160,7 @@
     <Compile Include="Converters\BooleanToFontWeightConverter.cs" />
     <Compile Include="Converters\EngineerToSystem.cs" />
     <Compile Include="Converters\EntryDataToMaterialTraderLocation.cs" />
+    <Compile Include="Converters\IngredientToIconConverter.cs" />
     <Compile Include="Converters\ModuleModifierToColorConverter.cs" />
     <Compile Include="Converters\ShoppingListBlockToAllGradesVisibility.cs" />
     <Compile Include="Converters\EnumToDescription.cs" />
@@ -326,6 +327,11 @@
     <Resource Include="Resources\Images\rare.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\Images\odyssey-data.png" />
+    <Resource Include="Resources\Images\odyssey-circuits.png" />
+    <Resource Include="Resources\Images\odyssey-item.png" />
+    <Resource Include="Resources\Images\odyssey-tech.png" />
+    <Resource Include="Resources\Images\odyssey-chemicals.png" />
     <Resource Include="Resources\menu-export.ico" />
     <None Include="Resources\menu_settings_export.ico" />
     <Resource Include="Resources\menu-reload.ico" />

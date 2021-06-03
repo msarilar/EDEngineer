@@ -17,7 +17,7 @@ namespace EDEngineer.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public Rarity Rarity
         {
-            get => Kind == Kind.Commodity ? Rarity.Commodity : rarity;
+            get => Kind == Kind.Commodity ? Rarity.Commodity : Kind == Kind.OdysseyIngredient ? Rarity.Odyssey : rarity;
             set => rarity = value;
         }
 
@@ -30,6 +30,12 @@ namespace EDEngineer.Models
         public Subkind? Subkind { get; set; }
 
         public string KindStringForGui => Subkind?.ToString("G") ?? Kind.ToString("G");
+
+        public int? ValueCr { get; set; }
+
+        public int? BarterCost { get; set; }
+
+        public int? BarterValue { get; set; }
 
         [JsonConverter(typeof(StringEnumConverter))]
         public Group? Group
@@ -138,7 +144,9 @@ namespace EDEngineer.Models
             ["Needed for The Sarge (50)"] = Origin.NeededForEngineer,
             ["Needed for Bill Turner (50)"] = Origin.NeededForEngineer,
 
-            ["Ancient/Guardian ruins"] = Origin.AncientGuardianRuins
+            ["Ancient/Guardian ruins"] = Origin.AncientGuardianRuins,
+
+            ["Planetary Settlement"] = Origin.PlanetarySettlement
         };
     }
 }

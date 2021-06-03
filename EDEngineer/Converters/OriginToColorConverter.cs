@@ -41,6 +41,9 @@ namespace EDEngineer.Converters
                 case Origin.AncientGuardianRuins:
                     color = Colors.SlateGray;
                     break;
+                case Origin.PlanetarySettlement:
+                    color = Colors.LightSlateGray;
+                    break;
                 default:
                     color = Colors.RoyalBlue;
                     break;

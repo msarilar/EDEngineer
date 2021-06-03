@@ -16,6 +16,9 @@ namespace EDEngineer.Models
         Commodity = 4,
 
         [Description("Unknown")]
-        Unknown = 8
+        Unknown = 8,
+
+        [Description("Odyssey Ingredient")]
+        OdysseyIngredient = 16
     }
 }

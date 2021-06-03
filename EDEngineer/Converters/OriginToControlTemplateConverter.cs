@@ -31,6 +31,8 @@ namespace EDEngineer.Converters
                     return Application.Current.FindResource("NeededForEngineer");
                 case Origin.AncientGuardianRuins:
                     return Application.Current.FindResource("AncientGuardianRuins");
+                case Origin.PlanetarySettlement:
+                    return Application.Current.FindResource("PlanetarySettlement");
                 default:
                     return Application.Current.FindResource("OriginUnknown");
             }

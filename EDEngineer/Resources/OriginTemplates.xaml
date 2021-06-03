@@ -209,7 +209,7 @@
                 <!--Unknown tag: metadata-->
                 <!--Unknown tag: sodipodi:namedview-->
                 <Canvas Name="g3337">
-                    <Path Name="path3339" Fill="{TemplateBinding Foreground}">
+                    <Path Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M643.138 60.355l158.979 158.979L643.138 378.311v-54.453v-25h-25H308.321l165.71-161.701h144.106h25v-25   V60.355 M618.138 0v112.157H463.854L246.905 323.858h371.232v114.809l219.334-219.333L618.138 0L618.138 0z" FillRule="NonZero"/>
                         </Path.Data>
@@ -253,7 +253,7 @@
                 <!--Unknown tag: metadata-->
                 <!--Unknown tag: sodipodi:namedview-->
                 <Canvas Name="g3337">
-                    <Path Name="path3339" Fill="{TemplateBinding Foreground}">
+                    <Path Fill="{TemplateBinding Foreground}">
                         <Path.Data>
                             <PathGeometry Figures="M400.058 43.668c96.833 0 175.331 78.499 175.331 175.332s-78.498 175.331-175.331 175.331   S224.726 315.833 224.726 219S303.225 43.668 400.058 43.668 M400.058 23.668c-26.361 0-51.944 5.167-76.038 15.358   c-23.262 9.839-44.15 23.92-62.082 41.853c-17.933 17.932-32.014 38.82-41.853 62.082c-10.191 24.094-15.358 49.677-15.358 76.038   c0 26.36 5.167 51.943 15.358 76.038c9.839 23.262 23.92 44.149 41.853 62.082c17.932 17.933 38.82 32.014 62.082 41.853   c24.094 10.191 49.677 15.358 76.038 15.358c26.36 0 51.943-5.167 76.038-15.358c23.262-9.839 44.149-23.92 62.082-41.853   s32.014-38.82 41.853-62.082c10.191-24.095 15.358-49.678 15.358-76.038c0-26.361-5.167-51.944-15.358-76.038   c-9.839-23.262-23.92-44.15-41.853-62.082c-17.933-17.933-38.82-32.014-62.082-41.853   C452.001 28.836 426.418 23.668 400.058 23.668L400.058 23.668z" FillRule="NonZero"/>
                         </Path.Data>
@@ -301,6 +301,106 @@
                 <Path Name="path3338"  Fill="{TemplateBinding Foreground}">
                     <Path.Data>
                         <PathGeometry Figures="M24.25 4.62L24.25 9.47L28.13 9.47L28.13 12.3L32 12.3L32 19.23L0 19.23L0 13.3L3.88 13.3L3.88 8.46L7.75 8.46L7.75 4.62L11.63 4.62L11.63 0.77L20.38 0.77L20.38 4.62L24.25 4.62ZM4.87 13.3L12.43 13.3L12.43 12.3L4.87 12.3L4.87 13.3ZM19.57 9.46L23.25 9.46L23.25 8.46L19.57 8.46L19.57 9.46Z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path>
+            </Canvas>
+        </Viewbox>
+
+    </ControlTemplate>
+
+    <!-- <div>Icon made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+    <ControlTemplate x:Key="PlanetarySettlement"
+                     TargetType="Frame">
+        <Viewbox Stretch="Uniform">
+            <Canvas Name="Layer_1" Width="45" Height="45">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="-5" Y="0"/>
+                </Canvas.RenderTransform>
+                <Canvas.Resources/>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m47.101 7h-6.101v2h6.101c-.066-.323-.101-.658-.101-1s.035-.677.101-1z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m56.899 7c.066.323.101.658.101 1s-.035.677-.101 1h6.101v-2z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m20 23.045v-10.045h8v-4h-8v-4h-2v18.045c.33-.028.663-.045 1-.045s.67.017 1 .045z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m15.58 57h42.84c-2.271-9.729-11.009-17-21.42-17s-19.149 7.271-21.42 17zm14.42-3c0 .553-.447 1-1 1h-4c-.553 0-1-.447-1-1v-4c0-.553.447-1 1-1h4c.553 0 1 .447 1 1zm14-4c0-.553.447-1 1-1h4c.553 0 1 .447 1 1v4c0 .553-.447 1-1 1h-4c-.553 0-1-.447-1-1zm-4 0v4c0 .553-.447 1-1 1h-4c-.553 0-1-.447-1-1v-4c0-.553.447-1 1-1h4c.553 0 1 .447 1 1z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m20 23.045v1.955h-2v-1.955c-4.4.366-8.127 3.119-9.895 6.955h21.789c-1.767-3.836-5.494-6.589-9.894-6.955z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m46 51h2v2h-2z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m36 51h2v2h-2z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m26 51h2v2h-2z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m31 38.76v-2.76h-24v19h7.044c2.427-7.944 8.871-14.152 16.956-16.24z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m30.605 32h-23.21c-.168.648-.287 1.315-.344 2h23.899c-.058-.685-.177-1.352-.345-2z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m5 61h8.025c.056-1.366.226-2.702.502-4h-8.527z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m15.21 59c-.09.658-.154 1.325-.185 2h43.949c-.03-.675-.094-1.342-.185-2z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m52 13c2.414 0 4.434-1.721 4.899-4h-9.798c.465 2.279 2.485 4 4.899 4z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m52 3c-2.414 0-4.434 1.721-4.899 4h9.798c-.465-2.279-2.485-4-4.899-4z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <PathGeometry Figures="m24 17h8v-4h-2v1c0 .552-.447 1-1 1h-5z"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <EllipseGeometry Center="60,18" RadiusX="1" RadiusY="1"/>
+                    </Path.Data>
+                </Path>
+                <Path Fill="{TemplateBinding Foreground}">
+                    <Path.Data>
+                        <EllipseGeometry Center="51,26" RadiusX="2" RadiusY="2"/>
                     </Path.Data>
                 </Path>
             </Canvas>

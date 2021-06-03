@@ -117,6 +117,7 @@
             <converters:ModuleModifierToColorConverter x:Key="ModuleModifierToColorConverter"/>
             <converters:EntryDataToMaterialTraderLocation x:Key="EntryDataToMaterialTraderLocation"/>
             <converters:EngineerToSystem x:Key="EngineerToSystem"/>
+            <converters:IngredientToIconConverter x:Key="IngredientToIcon"/>
 
             <BitmapImage x:Key="DesignRaritySource" UriSource="Resources/Images/common.png"/>
 

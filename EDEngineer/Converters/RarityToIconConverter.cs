@@ -9,12 +9,17 @@ namespace EDEngineer.Converters
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            return ConvertRarityToIcon(value);
+        }
+
+        public static object ConvertRarityToIcon(object value)
+        {
             if (value == null)
             {
                 return "/Resources/Images/question-mark.png";
             }
 
-            switch ((Rarity) value)
+            switch ((Rarity)value)
             {
                 case Rarity.VeryCommon:
                     return "/Resources/Images/very-common.png";
