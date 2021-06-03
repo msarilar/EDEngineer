@@ -2315,8 +2315,8 @@
     "OriginDetails": ["Planetary Settlement"],
     "Group": ",
     "SettlementType": [""],
-    "BuildingType": ["LAB", " PROC", " PWR", " AGRI"],
-    "ContainerType": ["Agricultural Data Port", " Data Port", " Industrial Data Port", " Laboratory Data Port", " Power Data Port"]
+    "BuildingType": ["LAB", "PROC", "PWR", "AGRI"],
+    "ContainerType": ["Agricultural Data Port", "Data Port", "Industrial Data Port", "Laboratory Data Port", "Power Data Port"]
     },
     {
     "Name": "Air Quality Reports",
@@ -2329,7 +2329,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Industrial Data Port", " Power Data Port"]
+    "ContainerType": ["Industrial Data Port", "Power Data Port"]
     },
     {
     "Name": "Atmospheric Data",
@@ -2420,7 +2420,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Security Data Port", " Satellite Data Port"]
+    "ContainerType": ["Security Data Port", "Satellite Data Port"]
     },
     {
     "Name": "Blood Test Results",
@@ -2485,7 +2485,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Industrial Data Port", " Laboratory Data Port", " Power Data Port", " Security Data Port"]
+    "ContainerType": ["Industrial Data Port", "Laboratory Data Port", "Power Data Port", "Security Data Port"]
     },
     {
     "Name": "Chemical Formulae",
@@ -2524,7 +2524,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Industrial Data Port", " Laboratory Data Port"]
+    "ContainerType": ["Industrial Data Port", "Laboratory Data Port"]
     },
     {
     "Name": "Chemical Weapon Data",
@@ -2680,7 +2680,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Industrial Data Port", " Laboratory Data Port", " Power Data Port", " Security Data Port"]
+    "ContainerType": ["Industrial Data Port", "Laboratory Data Port", "Power Data Port", "Security Data Port"]
     },
     {
     "Name": "Employee Directory",
@@ -2771,7 +2771,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Industrial Data Port", " Power Data Port"]
+    "ContainerType": ["Industrial Data Port", "Power Data Port"]
     },
     {
     "Name": "Exploration Journals",
@@ -3004,8 +3004,8 @@
     "OriginDetails": ["Planetary Settlement"],
     "Group": ",
     "SettlementType": [""],
-    "BuildingType": ["HAB", " PROC", " STO"],
-    "ContainerType": ["Data Port", " Industrial", "  Data Port", " Laboratory Data Port", " Satellite Data Port"]
+    "BuildingType": ["HAB", "PROC", "STO"],
+    "ContainerType": ["Data Port", "Industrial", " Data Port", "Laboratory Data Port", "Satellite Data Port"]
     },
     {
     "Name": "Medical Records",
@@ -3147,7 +3147,7 @@
     "OriginDetails": ["Planetary Settlement"],
     "Group": ",
     "SettlementType": [""],
-    "BuildingType": ["HAB", " DORM"],
+    "BuildingType": ["HAB", "DORM"],
     "ContainerType": ["Data Port"]
     },
     {
@@ -3954,7 +3954,7 @@
     "Group": ",
     "SettlementType": [""],
     "BuildingType": [""],
-    "ContainerType": ["Industrial Locker (S)", " Research Locker (S)"]
+    "ContainerType": ["Industrial Locker (S)", "Research Locker (S)"]
     },
     {
     "Name": "Health Canister",
