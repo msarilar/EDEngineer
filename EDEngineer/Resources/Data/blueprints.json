@@ -41306,7 +41306,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis suit grade 2",
+    "Name": "Artemis grade 2",
     "Engineers": [
       "@Merchant"
     ],
@@ -41377,7 +41377,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis suit grade 3",
+    "Name": "Artemis grade 3",
     "Engineers": [
       "@Merchant"
     ],
@@ -41448,7 +41448,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis suit grade 4",
+    "Name": "Artemis grade 4",
     "Engineers": [
       "@Merchant"
     ],
@@ -41499,7 +41499,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis suit grade 5",
+    "Name": "Artemis grade 5",
     "Engineers": [
       "@Merchant"
     ],
@@ -41551,7 +41551,7 @@
 
   {
     "Type": "Suit",
-    "Name": "Dominator suit grade 2",
+    "Name": "Dominator grade 2",
     "Engineers": [
       "@Merchant"
     ],
@@ -41622,7 +41622,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator suit grade 3",
+    "Name": "Dominator grade 3",
     "Engineers": [
       "@Merchant"
     ],
@@ -41693,7 +41693,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator suit grade 4",
+    "Name": "Dominator grade 4",
     "Engineers": [
       "@Merchant"
     ],
@@ -41764,7 +41764,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator suit grade 5",
+    "Name": "Dominator grade 5",
     "Engineers": [
       "@Merchant"
     ],
@@ -41836,7 +41836,7 @@
 
   {
     "Type": "Suit",
-    "Name": "Maverick suit grade 2",
+    "Name": "Maverick grade 2",
     "Engineers": [
       "@Merchant"
     ],
@@ -41907,7 +41907,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick suit grade 3",
+    "Name": "Maverick grade 3",
     "Engineers": [
       "@Merchant"
     ],
@@ -41978,7 +41978,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick suit grade 4",
+    "Name": "Maverick grade 4",
     "Engineers": [
       "@Merchant"
     ],
@@ -42049,7 +42049,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick suit grade 5",
+    "Name": "Maverick grade 5",
     "Engineers": [
       "@Merchant"
     ],
