@@ -444,7 +444,7 @@
                 </Button.Content>
             </Button>
 
-            <UniformGrid Columns="3" Margin="5,0" Opacity="0" Grid.Row="1">
+            <UniformGrid Columns="4" Margin="5,0" Opacity="0" Grid.Row="1">
                 <Grid x:Name="c1"/>
                 <Grid/>
             </UniformGrid>

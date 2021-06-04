@@ -40600,5 +40600,187 @@
         "Size": 26
       }
     ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Enhanced tracking",
+    "Engineers": [
+      "Domino Green"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Topographical Surveys",
+        "Size": 10
+      },
+      {
+        "Name": "Stellar Activity Logs",
+        "Size": 10
+      },
+      {
+        "Name": "Spectral Analysis Data",
+        "Size": 10
+      },
+      {
+        "Name": "Transmitter",
+        "Size": 5
+      },
+      {
+        "Name": "Circuit Board",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Analysis time",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Analysis range",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Extra backpack capacity",
+    "Engineers": [
+      "Domino Green"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Inventory",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Inventory",
+        "Size": 10
+      },
+      {
+        "Name": "Digital Designs",
+        "Size": 10
+      },
+      {
+        "Name": "Epoxy Adhesive",
+        "Size": 10
+      },
+      {
+        "Name": "Memory Chip",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Backpack data capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Backpack component capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Backpack item capacity",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Greater range",
+    "Engineers": [
+      "Domino Green"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Ballistic Data",
+        "Size": 10
+      },
+      {
+        "Name": "Topographical Surveys",
+        "Size": 10
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      },
+      {
+        "Name": "RDX",
+        "Size": 10
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Reduced tool battery consumption",
+    "Engineers": [
+      "Domino Green"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Reactor Output Review",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Fuse",
+        "Size": 5
+      },
+      {
+        "Name": "Micro Transformer",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Tool energy drain multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Stability",
+    "Engineers": [
+      "Domino Green"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mining Analytics",
+        "Size": 10
+      },
+      {
+        "Name": "Risk Assessments",
+        "Size": 15
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Hydraulics",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+30%",
+        "Property": "Stability",
+        "IsGood": true
+      }
+    ]
   }
 ]
