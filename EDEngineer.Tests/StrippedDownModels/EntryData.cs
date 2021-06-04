@@ -16,5 +16,17 @@ namespace EDEngineer.Tests.StrippedDownModels
 
         public string Group { get; set; }
         public int? MaximumCapacity { get; set; }
+
+        public int? ValueCr { get; set; }
+
+        public int? BarterCost { get; set; }
+
+        public int? BarterValue { get; set; }
+
+        public string[] SettlementType { get; set; }
+
+        public string[] BuildingType { get; set; }
+
+        public string[] ContainerType { get; set; }
     }
 }

@@ -1876,2178 +1876,2713 @@
   },
   {
     "Name": "Aerogel",
+    "FormattedName": "aerogel",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "aerogel",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
-    "BuildingType": [ "LAB", "PROC" ],
-    "ContainerType": [ "Industrial Locker (S)", "Research Locker (L)" ]
+    "BuildingType": [
+      "LAB",
+      "PROC"
+    ],
+    "ContainerType": [
+      "Industrial Locker (S)",
+      "Research Locker (L)"
+    ]
   },
   {
     "Name": "Carbon Fibre Plating",
+    "FormattedName": "carbonfibreplating",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 600,
     "BarterCost": 11,
     "BarterValue": 6,
-    "FormattedName": "carbonfibreplating",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Chemical Catalyst",
+    "FormattedName": "chemicalcatalyst",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 400,
     "BarterCost": 7,
     "BarterValue": 4,
-    "FormattedName": "chemicalcatalyst",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Chemical Superbase",
+    "FormattedName": "chemicalsuperbase",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "chemicalsuperbase",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Circuit Board",
+    "FormattedName": "circuitboard",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "circuitboard",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Circuit Switch",
+    "FormattedName": "circuitswitch",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 200,
     "BarterCost": 4,
     "BarterValue": 2,
-    "FormattedName": "circuitswitch",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Electrical Fuse",
+    "FormattedName": "electricalfuse",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "electricalfuse",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Electrical Wiring",
+    "FormattedName": "electricalwiring",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "electricalwiring",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Electromagnet",
+    "FormattedName": "electromagnet",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "electromagnet",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Encrypted Memory Chip",
+    "FormattedName": "encryptedmemorychip",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 200,
     "BarterCost": 4,
     "BarterValue": 2,
-    "FormattedName": "encryptedmemorychip",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Epinephrine",
+    "FormattedName": "epinephrine",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "epinephrine",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Epoxy Adhesive",
+    "FormattedName": "epoxyadhesive",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "epoxyadhesive",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Graphene",
+    "FormattedName": "graphene",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 1300,
     "BarterCost": 23,
     "BarterValue": 12,
-    "FormattedName": "graphene",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
-    "BuildingType": [ "AGRI", "HAB", "LAB", "SEC" ],
-    "ContainerType": [ "Agricultural Locker (S)", "Locker (S)", "Locker (L)", "Research Locker (S)", "Research Locker (L)", "Security Locker (S)", "Security Locker (L)" ]
+    "BuildingType": [
+      "AGRI",
+      "HAB",
+      "LAB",
+      "SEC"
+    ],
+    "ContainerType": [
+      "Agricultural Locker (S)",
+      "Locker (S)",
+      "Locker (L)",
+      "Research Locker (S)",
+      "Research Locker (L)",
+      "Security Locker (S)",
+      "Security Locker (L)"
+    ]
   },
   {
     "Name": "Ion Battery",
+    "FormattedName": "ionbattery",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "ionbattery",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Memory Chip",
+    "FormattedName": "memorychip",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 200,
     "BarterCost": 4,
     "BarterValue": 2,
-    "FormattedName": "memorychip",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Metal Coil",
+    "FormattedName": "metalcoil",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "metalcoil",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Micro Hydraulics",
+    "FormattedName": "microhydraulics",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 400,
     "BarterCost": 7,
     "BarterValue": 4,
-    "FormattedName": "microhydraulics",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Micro Supercapacitor",
+    "FormattedName": "microsupercapacitor",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "microsupercapacitor",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Micro Thrusters",
+    "FormattedName": "microthrusters",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "microthrusters",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Micro Transformer",
+    "FormattedName": "microtransformer",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 400,
     "BarterCost": 7,
     "BarterValue": 4,
-    "FormattedName": "microtransformer",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Microelectrode",
+    "FormattedName": "microelectrode",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 900,
     "BarterCost": 16,
     "BarterValue": 8,
-    "FormattedName": "microelectrode",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Motor",
+    "FormattedName": "motor",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "motor",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Optical Fibre",
+    "FormattedName": "opticalfibre",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Circuits",
     "ValueCr": 600,
     "BarterCost": 11,
     "BarterValue": 6,
-    "FormattedName": "opticalfibre",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Circuits",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Optical Lens",
+    "FormattedName": "opticallens",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 500,
     "BarterCost": 9,
     "BarterValue": 5,
-    "FormattedName": "opticallens",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Oxygenic Bacteria",
+    "FormattedName": "oxygenicbacteria",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "oxygenicbacteria",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "pH Neutraliser",
+    "FormattedName": "phneutraliser",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": -1,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "phneutraliser",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "RDX",
+    "FormattedName": "rdx",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 400,
     "BarterCost": 7,
     "BarterValue": 4,
-    "FormattedName": "rdx",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Scrambler",
+    "FormattedName": "scrambler",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "scrambler",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Titanium Plating",
+    "FormattedName": "titaniumplating",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 600,
     "BarterCost": 11,
     "BarterValue": 6,
-    "FormattedName": "titaniumplating",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Transmitter",
+    "FormattedName": "transmitter",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 300,
     "BarterCost": 5,
     "BarterValue": 3,
-    "FormattedName": "transmitter",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Tungsten Carbide",
+    "FormattedName": "tungstencarbide",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": -1,
     "BarterCost": 11,
     "BarterValue": 6,
-    "FormattedName": "tungstencarbide",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
-    "BuildingType": [ "LAB", "PROC" ],
-    "ContainerType": [ "Industrial Locker (S)", "Industrial Locker (L)", "Research Locker (L)" ]
+    "BuildingType": [
+      "LAB",
+      "PROC"
+    ],
+    "ContainerType": [
+      "Industrial Locker (S)",
+      "Industrial Locker (L)",
+      "Research Locker (L)"
+    ]
   },
   {
     "Name": "Viscoelastic Polymer",
+    "FormattedName": "viscoelasticpolymer",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Chemicals",
     "ValueCr": 600,
     "BarterCost": 11,
     "BarterValue": 6,
-    "FormattedName": "viscoelasticpolymer",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Chemicals",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Weapon Component",
+    "FormattedName": "weaponcomponent",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Tech",
     "ValueCr": 1000,
     "BarterCost": 18,
     "BarterValue": 9,
-    "FormattedName": "weaponcomponent",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
-    "Group": "Tech",
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Accident Logs",
-    "ValueCr": 4000,
     "FormattedName": "accidentlogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 4000,
     "SettlementType": [],
-    "BuildingType": [ "LAB", "PROC", "PWR", "AGRI" ],
-    "ContainerType": [ "Agricultural Data Port", "Data Port", "Industrial Data Port", "Laboratory Data Port", "Power Data Port" ]
+    "BuildingType": [
+      "LAB",
+      "PROC",
+      "PWR",
+      "AGRI"
+    ],
+    "ContainerType": [
+      "Agricultural Data Port",
+      "Data Port",
+      "Industrial Data Port",
+      "Laboratory Data Port",
+      "Power Data Port"
+    ]
   },
   {
     "Name": "Air Quality Reports",
-    "ValueCr": 3000,
     "FormattedName": "airqualityreports",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 3000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port", "Power Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port",
+      "Power Data Port"
+    ]
   },
   {
     "Name": "Atmospheric Data",
-    "ValueCr": 4000,
     "FormattedName": "atmosphericdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 4000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Laboratory Data Port" ]
+    "ContainerType": [
+      "Laboratory Data Port"
+    ]
   },
   {
     "Name": "Audio Logs",
-    "ValueCr": -1,
     "FormattedName": "audiologs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Security Data Port" ]
+    "ContainerType": [
+      "Security Data Port"
+    ]
   },
   {
     "Name": "AX Combat Logs",
-    "ValueCr": -1,
     "FormattedName": "axcombatlogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Security Data Port" ]
+    "ContainerType": [
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Ballistic Data",
-    "ValueCr": -1,
     "FormattedName": "ballisticsdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Security Data Port" ]
+    "ContainerType": [
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Biological Weapon Data",
-    "ValueCr": -1,
     "FormattedName": "biologicalweapondata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Biometric Data",
-    "ValueCr": -1,
     "FormattedName": "biometricdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Security Data Port" ]
+    "ContainerType": [
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Blacklist Data",
-    "ValueCr": 14000,
     "FormattedName": "blacklistdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 14000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Security Data Port", "Satellite Data Port" ]
+    "ContainerType": [
+      "Security Data Port",
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Blood Test Results",
-    "ValueCr": -1,
     "FormattedName": "bloodtestresults",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Laboratory Data Port" ]
+    "ContainerType": [
+      "Laboratory Data Port"
+    ]
   },
   {
     "Name": "Campaign Plans",
-    "ValueCr": 12000,
     "FormattedName": "campaignplans",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 12000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Cat Media",
-    "ValueCr": 1000,
     "FormattedName": "catmedia",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Census Data",
-    "ValueCr": 8000,
     "FormattedName": "censusdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 8000,
     "SettlementType": [],
-    "BuildingType": [ "CMD" ],
-    "ContainerType": [ "Data Port" ]
+    "BuildingType": [
+      "CMD"
+    ],
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Chemical Experiment Data",
-    "ValueCr": 12000,
     "FormattedName": "chemicalexperimentdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 12000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port", "Laboratory Data Port", "Power Data Port", "Security Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port",
+      "Laboratory Data Port",
+      "Power Data Port",
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Chemical Formulae",
-    "ValueCr": 10000,
     "FormattedName": "chemicalformulae",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port"
+    ]
   },
   {
     "Name": "Chemical Inventory",
-    "ValueCr": 9000,
     "FormattedName": "chemicalinventory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 9000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port"
+    ]
   },
   {
     "Name": "Chemical Patents",
-    "ValueCr": 21000,
     "FormattedName": "chemicalpatents",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 21000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port", "Laboratory Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port",
+      "Laboratory Data Port"
+    ]
   },
   {
     "Name": "Chemical Weapon Data",
-    "ValueCr": -1,
     "FormattedName": "chemicalweapondata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Classic Entertainment",
-    "ValueCr": 7000,
     "FormattedName": "classicentertainment",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 7000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Clinical Trail Records",
-    "ValueCr": -1,
     "FormattedName": "clinicaltrailrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Cocktail Recipes",
-    "ValueCr": 3000,
     "FormattedName": "cocktailrecipes",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 3000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Combat Training Material",
-    "ValueCr": 9000,
     "FormattedName": "combattrainingmaterial",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 9000,
     "SettlementType": [],
-    "BuildingType": [ "CMD" ],
-    "ContainerType": [ "Security Data Port" ]
+    "BuildingType": [
+      "CMD"
+    ],
+    "ContainerType": [
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Combatant Performance",
-    "ValueCr": -1,
     "FormattedName": "combatantperformance",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Security Data Port" ]
+    "ContainerType": [
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Conflict History",
-    "ValueCr": -1,
     "FormattedName": "conflicthistory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Criminal Records",
-    "ValueCr": -1,
     "FormattedName": "criminalrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Crop Yield Analysis",
-    "ValueCr": -1,
     "FormattedName": "cropyieldanalysis",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Culinary Recipes",
-    "ValueCr": 1000,
     "FormattedName": "culinaryrecipes",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
-    "BuildingType": [ "HAB" ],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
     "Name": "Digital Designs",
-    "ValueCr": -1,
     "FormattedName": "digitaldesigns",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Duty Rota",
-    "ValueCr": 8000,
     "FormattedName": "dutyrota",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 8000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port", "Laboratory Data Port", "Power Data Port", "Security Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port",
+      "Laboratory Data Port",
+      "Power Data Port",
+      "Security Data Port"
+    ]
   },
   {
     "Name": "Employee Directory",
-    "ValueCr": 5000,
     "FormattedName": "employeedirectory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 5000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Employee Expenses",
-    "ValueCr": 4000,
     "FormattedName": "employeeexpenses",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 4000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Gene Sequencing Data",
-    "ValueCr": -1,
     "FormattedName": "genesequencingdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Genetic Research",
-    "ValueCr": -1,
     "FormattedName": "geneticresearch",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Employee Genetic Data",
-    "ValueCr": 20000,
     "FormattedName": "employeegeneticdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 20000,
     "SettlementType": [],
-    "BuildingType": [ "CMD" ],
-    "ContainerType": [ "Data Port" ]
+    "BuildingType": [
+      "CMD"
+    ],
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Employment History",
-    "ValueCr": -1,
     "FormattedName": "employmenthistory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Enhanced Interrogation Recordings",
-    "ValueCr": -1,
     "FormattedName": "enhancedinterrogationrecordings",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Espionage Material",
-    "ValueCr": -1,
     "FormattedName": "espionagematerial",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Evacuation Protocols",
-    "ValueCr": 9000,
     "FormattedName": "evacuationprotocols",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 9000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Data Port", "Power Data Port" ]
+    "ContainerType": [
+      "Industrial Data Port",
+      "Power Data Port"
+    ]
   },
   {
     "Name": "Exploration Journals",
-    "ValueCr": 10000,
     "FormattedName": "explorationjournals",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Faction Associates",
-    "ValueCr": 15000,
     "FormattedName": "factionassociates",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 15000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Faction Donator List",
-    "ValueCr": 16000,
     "FormattedName": "factiondonatorlist",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 16000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Faction News",
-    "ValueCr": 1000,
     "FormattedName": "factionnews",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Financial Projections",
-    "ValueCr": 6000,
     "FormattedName": "financialprojections",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 6000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Geographical Data",
-    "ValueCr": 1000,
     "FormattedName": "geographicaldata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Geological Data",
-    "ValueCr": 10000,
     "FormattedName": "geologicaldata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Hydroponic Data",
-    "ValueCr": -1,
     "FormattedName": "hydroponicdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Incident Logs",
-    "ValueCr": -1,
     "FormattedName": "incidentlogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Influence Projections",
-    "ValueCr": 1000,
     "FormattedName": "influenceprojections",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Internal Correspondence",
-    "ValueCr": 20000,
     "FormattedName": "internalcorrespondence",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 20000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Interrogation Recordings",
-    "ValueCr": -1,
     "FormattedName": "interrogationrecordings",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Interview Recordings",
-    "ValueCr": -1,
     "FormattedName": "interviewrecordings",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Job Applications",
-    "ValueCr": 1000,
     "FormattedName": "jobapplications",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
-    "BuildingType": [ "CMD" ],
-    "ContainerType": [ "Data Port" ]
+    "BuildingType": [
+      "CMD"
+    ],
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Kompromat",
-    "ValueCr": -1,
     "FormattedName": "kompromat",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Literary Fiction",
-    "ValueCr": -1,
     "FormattedName": "literaryfiction",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Maintenance Logs",
-    "ValueCr": 2000,
     "FormattedName": "maintenancelogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 2000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Manufacturing Instructions",
-    "ValueCr": 9000,
     "FormattedName": "manufacturinginstructions",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 9000,
     "SettlementType": [],
-    "BuildingType": [ "HAB", "PROC", "STO" ],
-    "ContainerType": [ "Data Port", "Industrial", " Data Port", "Laboratory Data Port", "Satellite Data Port" ]
+    "BuildingType": [
+      "HAB",
+      "PROC",
+      "STO"
+    ],
+    "ContainerType": [
+      "Data Port",
+      "Industrial",
+      " Data Port",
+      "Laboratory Data Port",
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Medical Records",
-    "ValueCr": 19000,
     "FormattedName": "medicalrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 19000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Meeting Minutes",
-    "ValueCr": 1000,
     "FormattedName": "meetingminutes",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 1000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Mineral Survey",
-    "ValueCr": 5000,
     "FormattedName": "mineralsurvey",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 5000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Mining Analytics",
-    "ValueCr": -1,
     "FormattedName": "mininganalytics",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Multimedia Entertainment",
-    "ValueCr": 3000,
     "FormattedName": "multimediaentertainment",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 3000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Network Access History",
-    "ValueCr": 6000,
     "FormattedName": "networkaccesshistory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 6000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Network Security Protocols",
-    "ValueCr": -1,
     "FormattedName": "networksecurityprotocols",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Next of Kin Records",
-    "ValueCr": 13000,
     "FormattedName": "nextofkinrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 13000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "NOC Data",
-    "ValueCr": 25000,
     "FormattedName": "nocdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 25000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Operational Manual",
-    "ValueCr": 7000,
     "FormattedName": "operationalmanual",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 7000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Opinion Polls",
-    "ValueCr": -1,
     "FormattedName": "opinionpolls",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [ "HAB", "DORM" ],
-    "ContainerType": [ "Data Port" ]
+    "BuildingType": [
+      "HAB",
+      "DORM"
+    ],
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Patient History",
-    "ValueCr": 9000,
     "FormattedName": "patienthistory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 9000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Patrol Routes",
-    "ValueCr": 14000,
     "FormattedName": "patrolroutes",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 14000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Payroll Information",
-    "ValueCr": 6000,
     "FormattedName": "payrollinformation",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 6000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Personal Logs",
-    "ValueCr": 6000,
     "FormattedName": "personallogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 6000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Pharmaceutical Patents",
-    "ValueCr": 21000,
     "FormattedName": "pharmaceuticalpatents",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 21000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Photo Albums",
-    "ValueCr": 3000,
     "FormattedName": "photoalbums",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 3000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Plant Growth Charts",
-    "ValueCr": -1,
     "FormattedName": "plantgrowthcharts",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Political Affiliations",
-    "ValueCr": -1,
     "FormattedName": "politicalaffiliations",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Prisoner Logs",
-    "ValueCr": -1,
     "FormattedName": "prisonerlogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Production Reports",
-    "ValueCr": 11000,
     "FormattedName": "productionreports",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 11000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Production Schedule",
-    "ValueCr": -1,
     "FormattedName": "productionschedule",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Propaganda",
-    "ValueCr": 17000,
     "FormattedName": "propaganda",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 17000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Purchase Records",
-    "ValueCr": 8000,
     "FormattedName": "purchaserecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 8000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Purchase Requests",
-    "ValueCr": 4000,
     "FormattedName": "purchaserequests",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 4000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Radioactivity Data",
-    "ValueCr": 16000,
     "FormattedName": "radioactivitydata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 16000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Reactor Output Review",
-    "ValueCr": 8000,
     "FormattedName": "reactoroutputreview",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 8000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Recycling Logs",
-    "ValueCr": 2000,
     "FormattedName": "recyclinglogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 2000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Residential Directory",
-    "ValueCr": -1,
     "FormattedName": "residentialdirectory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Risk Assessments",
-    "ValueCr": 2000,
     "FormattedName": "riskassessments",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 2000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Sales Records",
-    "ValueCr": 7000,
     "FormattedName": "salesrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 7000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Security Expenses",
-    "ValueCr": -1,
     "FormattedName": "securityexpenses",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Security Plans",
-    "ValueCr": -1,
     "FormattedName": "securityplans",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Seed Geneaology",
-    "ValueCr": -1,
     "FormattedName": "seedgeneaology",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Laboratory Data Port" ]
+    "ContainerType": [
+      "Laboratory Data Port"
+    ]
   },
   {
     "Name": "Settlement Assault Plans",
-    "ValueCr": -1,
     "FormattedName": "settlementassaultplans",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Settlement Defence Plans",
-    "ValueCr": -1,
     "FormattedName": "settlementdefenceplans",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Shareholder Information",
-    "ValueCr": 17000,
     "FormattedName": "shareholderinformation",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 17000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Slush Fund Logs",
-    "ValueCr": -1,
     "FormattedName": "alushfundlogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Smear Campaign Plans",
-    "ValueCr": -1,
     "FormattedName": "smearcampaignplans",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Spectral Analysis Data",
-    "ValueCr": -1,
     "FormattedName": "spectralanalysisdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Spyware",
-    "ValueCr": -1,
     "FormattedName": "spyware",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Stellar Activity Logs",
-    "ValueCr": 9000,
     "FormattedName": "stellaractivitylogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 9000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Surveillance Logs",
-    "ValueCr": 19000,
     "FormattedName": "surveilleancelogs",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 19000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Satellite Data Port" ]
+    "ContainerType": [
+      "Satellite Data Port"
+    ]
   },
   {
     "Name": "Tactical Plans",
-    "ValueCr": -1,
     "FormattedName": "tacticalplans",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Tax Records",
-    "ValueCr": 16000,
     "FormattedName": "taxrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 16000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Topographical Surveys",
-    "ValueCr": 12000,
     "FormattedName": "topographicalsurveys",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 12000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Travel Permits",
-    "ValueCr": -1,
     "FormattedName": "travelpermits",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Troop Deployment Records",
-    "ValueCr": 16000,
     "FormattedName": "troopdeploymentrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 16000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Union Membership",
-    "ValueCr": 4000,
     "FormattedName": "unionmembership",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 4000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Vaccination Records",
-    "ValueCr": 4000,
     "FormattedName": "vaccinationrecords",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 4000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Laboratory Data Port" ]
+    "ContainerType": [
+      "Laboratory Data Port"
+    ]
   },
   {
     "Name": "Vaccine Research",
-    "ValueCr": 13000,
     "FormattedName": "vaccineresearch",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 13000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Data Port" ]
+    "ContainerType": [
+      "Data Port"
+    ]
   },
   {
     "Name": "Virology Data",
-    "ValueCr": -1,
     "FormattedName": "virologydata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "VIP Security Detail",
-    "ValueCr": -1,
     "FormattedName": "vipsecuritydetail",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Virology Data",
-    "ValueCr": -1,
     "FormattedName": "virologydata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Virus",
-    "ValueCr": -1,
     "FormattedName": "virus",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Visitor Register",
-    "ValueCr": 6000,
     "FormattedName": "visitorregister",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": 6000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Weapon Inventory",
-    "ValueCr": -1,
     "FormattedName": "weaponinventory",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Weapon Test Data",
-    "ValueCr": -1,
     "FormattedName": "weapontestdata",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Xeno-Defence Protocols",
-    "ValueCr": -1,
     "FormattedName": "xenodefenceprotocols",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Agricultural Process Sample",
-    "ValueCr": -1,
     "FormattedName": "agriculturalprocesssample",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Biochemical Agent",
-    "ValueCr": -1,
     "FormattedName": "biochemicalagent",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Biological Sample",
-    "ValueCr": 35000,
     "FormattedName": "biologicalsample",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 35000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Building Schematic",
-    "ValueCr": -1,
     "FormattedName": "buildingschematic",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Californium",
-    "ValueCr": 100000,
     "FormattedName": "californium",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 100000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Cast Fossil",
-    "ValueCr": 35000,
     "FormattedName": "castfossil",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 35000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Chemical Process Sample",
-    "ValueCr": -1,
     "FormattedName": "ChemicalProcessSample",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Chemical Sample",
-    "ValueCr": 50000,
     "FormattedName": "chemicalsample",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 50000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Compact Library",
-    "ValueCr": 10000,
     "FormattedName": "compactlibrary",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Compression-Liquefied Gas",
-    "ValueCr": 35000,
     "FormattedName": "compressionliquefiedgas",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 35000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Deep Mantle Sample",
-    "ValueCr": 25000,
     "FormattedName": "deepmantlesample",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 25000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Degraded Power Regulator",
-    "ValueCr": 15000,
     "FormattedName": "degradedpowerregulator",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 15000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "G-Meds",
-    "ValueCr": 10000,
     "FormattedName": "gmeds",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Genetic Repair Meds",
-    "ValueCr": 100000,
     "FormattedName": "geneticrepairmeds",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 100000,
     "SettlementType": [],
     "BuildingType": [],
-    "ContainerType": [ "Industrial Locker (S)", "Research Locker (S)" ]
+    "ContainerType": [
+      "Industrial Locker (S)",
+      "Research Locker (S)"
+    ]
   },
   {
     "Name": "Health Canister",
-    "ValueCr": -1,
     "FormattedName": "healthcanister",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Health Monitor",
-    "ValueCr": 10000,
     "FormattedName": "healthmonitor",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Hush",
-    "ValueCr": -1,
     "FormattedName": "hush",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Inertia Canister",
-    "ValueCr": 35000,
     "FormattedName": "inertiacanister",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 35000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Infinity",
-    "ValueCr": 10000,
     "FormattedName": "infinity",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Inorganic Contaminant",
-    "ValueCr": -1,
     "FormattedName": "inorganiccontaminant",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Insight",
-    "ValueCr": 15000,
     "FormattedName": "insight",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 15000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Insight Data Bank",
-    "ValueCr": 25000,
     "FormattedName": "insightdatabank",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 25000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Insight Entertainment Suite",
-    "ValueCr": 20000,
     "FormattedName": "insightentertainmentsuite",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 20000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Ionised Gas",
-    "ValueCr": 35000,
     "FormattedName": "ionisedgas",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 35000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Lazarus",
-    "ValueCr": 125000,
     "FormattedName": "lazarus",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 125000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Microbial Inhibitor",
-    "ValueCr": 20000,
     "FormattedName": "microbialinhibitor",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 20000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Mutagenic Catalyst",
-    "ValueCr": -1,
     "FormattedName": "mutageniccatalyst",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Nutritional Concentrate",
-    "ValueCr": 10000,
     "FormattedName": "nutritionalconcentrate",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Personal Computer",
-    "ValueCr": 15000,
     "FormattedName": "personalcomputer",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 15000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Personal Documents",
-    "ValueCr": 10000,
     "FormattedName": "personaldocuments",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Petrified Fossil",
-    "ValueCr": 75000,
     "FormattedName": "petrifiedfossil",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 75000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Power Regulator",
-    "ValueCr": 50000,
     "FormattedName": "largecapacitypowerregulator",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
-    "SettlementType": [ "ALL" ],
-    "BuildingType": [ "PWR" ],
-    "ContainerType": [ "Regulator Housing" ]
+    "ValueCr": 50000,
+    "SettlementType": [
+      "ALL"
+    ],
+    "BuildingType": [
+      "PWR"
+    ],
+    "ContainerType": [
+      "Regulator Housing"
+    ]
   },
   {
     "Name": "Push",
-    "ValueCr": -1,
     "FormattedName": "push",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Pyrolytic Catalyst",
-    "ValueCr": -1,
     "FormattedName": "pyrolyticcatalyst",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Refinement Process Sample",
-    "ValueCr": 50000,
     "FormattedName": "refinementprocesssample",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 50000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Ship Schematic",
-    "ValueCr": 25000,
     "FormattedName": "shipschematic",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 25000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Suit Schematic",
-    "ValueCr": 50000,
     "FormattedName": "suitschematic",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 50000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Surveillance Equipment",
-    "ValueCr": 10000,
     "FormattedName": "surveillanceequipment",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Synthetic Genome",
-    "ValueCr": 100000,
     "FormattedName": "syntheticgenome",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 100000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Synthetic Pathogen",
-    "ValueCr": -1,
     "FormattedName": "syntheticpathogen",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "True Form Fossil",
-    "ValueCr": 100000,
     "FormattedName": "trueformfossil",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 100000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Universal Translator",
-    "ValueCr": 10000,
     "FormattedName": "universaltranslator",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 10000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Vehicle Schematic",
-    "ValueCr": 70000,
     "FormattedName": "vehicleschematic",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 70000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
   {
     "Name": "Weapon Schematic",
-    "ValueCr": 35000,
     "FormattedName": "weaponschematic",
     "Kind": "OdysseyIngredient",
-    "OriginDetails": [ "Planetary Settlement" ],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Item",
+    "ValueCr": 35000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
