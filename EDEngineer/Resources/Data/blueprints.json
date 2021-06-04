@@ -40605,7 +40605,8 @@
     "Type": "Suit",
     "Name": "Enhanced tracking",
     "Engineers": [
-      "Domino Green"
+      "Domino Green",
+      "Oden Geiger"
     ],
     "Ingredients": [
       {
@@ -40646,7 +40647,8 @@
     "Type": "Suit",
     "Name": "Extra backpack capacity",
     "Engineers": [
-      "Domino Green"
+      "Domino Green",
+      "Wellington Beck"
     ],
     "Ingredients": [
       {
@@ -40692,7 +40694,8 @@
     "Type": "Weapon",
     "Name": "Greater range",
     "Engineers": [
-      "Domino Green"
+      "Domino Green",
+      "Wellington Beck"
     ],
     "Ingredients": [
       {
@@ -40723,7 +40726,8 @@
     "Type": "Suit",
     "Name": "Reduced tool battery consumption",
     "Engineers": [
-      "Domino Green"
+      "Domino Green",
+      "Wellington Beck"
     ],
     "Ingredients": [
       {
@@ -40755,7 +40759,8 @@
     "Type": "Weapon",
     "Name": "Stability",
     "Engineers": [
-      "Domino Green"
+      "Domino Green",
+      "Oden Geiger"
     ],
     "Ingredients": [
       {
@@ -40781,6 +40786,522 @@
         "Property": "Stability",
         "IsGood": true
       }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Added melee damage",
+    "Engineers": [
+      "Kit Fowler",
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Combat Training Material",
+        "Size": 10
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Epinephrine",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Thrusters",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+150%",
+        "Property": "Weapon melee damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+150%",
+        "Property": "Fists melee damage multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Extra ammo capacity",
+    "Engineers": [
+      "Kit Fowler",
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Recycling Logs",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Test Data",
+        "Size": 10
+      },
+      {
+        "Name": "Production Reports",
+        "Size": 10
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+50%",
+        "Property": "Ammo capacity multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Faster shield regen",
+    "Engineers": [
+      "Kit Fowler",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Reactor Output Review",
+        "Size": 10
+      },
+      {
+        "Name": "Ion Battery",
+        "Size": 5
+      },
+      {
+        "Name": "Micro Transformer",
+        "Size": 15
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+33%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Magazine size",
+    "Engineers": [
+      "Kit Fowler",
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Test Data",
+        "Size": 10
+      },
+      {
+        "Name": "Security Expenses",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Stowed reloading",
+    "Engineers": [
+      "Kit Fowler",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Digital Designs",
+        "Size": 10
+      },
+      {
+        "Name": "Operational Manual",
+        "Size": 10
+      },
+      {
+        "Name": "Production Schedule",
+        "Size": 10
+      },
+      {
+        "Name": "Circuit Board",
+        "Size": 5
+      },
+      {
+        "Name": "Encrypted Memory Chip",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Damage resistance",
+    "Engineers": [
+      "Jude Navarro",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Inventory",
+        "Size": 10
+      },
+      {
+        "Name": "Ballistic Data",
+        "Size": 10
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Epoxy Adhesive",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Explosive damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Plasma damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Thermic damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Kinetic damage multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Reload speed",
+    "Engineers": [
+      "Jude Navarro",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Operational Manual",
+        "Size": 10
+      },
+      {
+        "Name": "Production Reports",
+        "Size": 10
+      },
+      {
+        "Name": "Combat Training Material",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Hydraulics",
+        "Size": 10
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Faster handling",
+    "Engineers": [
+      "Hero Ferrari"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Operational Manual",
+        "Size": 10
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Combat Training Material",
+        "Size": 10
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Improved jump assist",
+    "Engineers": [
+      "Hero Ferrari"
+    ],
+    "Ingredients": [
+      {
+        "Name": "G-Meds",
+        "Size": 10
+      },
+      {
+        "Name": "Topographical Surveys",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Thrusters",
+        "Size": 5
+      },
+      {
+        "Name": "Motor",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Increased air reserves",
+    "Engineers": [
+      "Hero Ferrari",
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Pharmaceutical Patents",
+        "Size": 5
+      },
+      {
+        "Name": "Air Quality Reports",
+        "Size": 15
+      },
+      {
+        "Name": "Oxygenic Bacteria",
+        "Size": 10
+      },
+      {
+        "Name": "pH Neutraliser",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Increased sprint duration",
+    "Engineers": [
+      "Hero Ferrari",
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Troop Deployment Records",
+        "Size": 5
+      },
+      {
+        "Name": "Gene Sequencing Data",
+        "Size": 5
+      },
+      {
+        "Name": "Clinical Trail Records",
+        "Size": 5
+      },
+      {
+        "Name": "Oxygenic Bacteria",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Catalyst",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Noise suppressor",
+    "Engineers": [
+      "Hero Ferrari",
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Atmospheric Data",
+        "Size": 10
+      },
+      {
+        "Name": "Mining Analytics",
+        "Size": 10
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Improved battery capacity",
+    "Engineers": [
+      "Wellington Beck",
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Reactor Output Review",
+        "Size": 10
+      },
+      {
+        "Name": "Maintenance Logs",
+        "Size": 15
+      },
+      {
+        "Name": "Ion Battery",
+        "Size": 5
+      },
+      {
+        "Name": "Micro Supercapacitor",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Scope",
+    "Engineers": [
+      "Wellington Beck",
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Spectral Analysis Data",
+        "Size": 10
+      },
+      {
+        "Name": "Biometric Data",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Lens",
+        "Size": 10
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Headshot damage",
+    "Engineers": [
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Test Data",
+        "Size": 10
+      },
+      {
+        "Name": "Medical Records",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Catalyst",
+        "Size": 10
+      },
+      {
+        "Name": "RDX",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Night vision",
+    "Engineers": [
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Surveillance Equipment",
+        "Size": 10
+      },
+      {
+        "Name": "Surveillance Logs",
+        "Size": 5
+      },
+      {
+        "Name": "Radioactivity Data",
+        "Size": 5
+      },
+      {
+        "Name": "NOC Data",
+        "Size": 5
+      },
+      {
+        "Name": "Circuit Switch",
+        "Size": 10
+      }
+    ],
+    "Effects": [
     ]
   }
 ]
