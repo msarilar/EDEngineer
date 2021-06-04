@@ -37,6 +37,12 @@ namespace EDEngineer.Models
 
         public int? BarterValue { get; set; }
 
+        public string[] SettlementType { get; set; }
+
+        public string[] BuildingType { get; set; }
+
+        public string[] ContainerType { get; set; }
+
         [JsonConverter(typeof(StringEnumConverter))]
         public Group? Group
         {

@@ -40,6 +40,7 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
@@ -79,13 +80,14 @@
                                 <Run Text="/"/>
                                 <Run Text="{Binding DataContext.Value.Data.MaximumCapacity}"/>
                             </TextBlock>
+                            <TextBlock Grid.Row="6"/>
                             <Border BorderThickness="1"
                                     BorderBrush="Black"
-                                    Grid.Row="6"/>
+                                    Grid.Row="7"/>
                             <TextBlock FontWeight="Bold"
-                                       Grid.Row="7"
+                                       Grid.Row="8"
                                        Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Top Source Systems'}"/>
-                            <ItemsControl Grid.Row="8">
+                            <ItemsControl Grid.Row="9">
                                 <ItemsControl.ItemsSource>
                                     <MultiBinding Converter="{StaticResource HistoryToTop5Converter}" FallbackValue="Sol (5)">
                                         <Binding Path="Tag.CurrentCommander.Value.State.History"/>
