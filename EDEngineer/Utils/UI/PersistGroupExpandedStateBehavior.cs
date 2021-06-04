@@ -73,6 +73,11 @@ namespace EDEngineer.Utils.UI
 
         private void SetExpanded(bool expanded)
         {
+            if (GroupName == null)
+			{
+                return;
+			}
+
             if(expanded)
             {
                 System.SettingsManager.IngredientGroups.Expand(GroupName.ToString());

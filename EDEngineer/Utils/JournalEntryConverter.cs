@@ -145,9 +145,42 @@ namespace EDEngineer.Utils
                     return ExtractLoadout(data);
                 case JournalEvent.Died:
                     return ExtractDied(data);
+                case JournalEvent.ShipLockerMaterials:
+                    return ExtractShipLockerMaterials(data);
+
                 default:
                     return null;
             }
+        }
+        private JournalOperation ExtractShipLockerMaterials(JObject data)
+        {
+
+            var dump = new DumpOperation
+            {
+                ResetFilter = new HashSet<Kind>
+                {
+                    Kind.OdysseyIngredient
+                },
+                DumpOperations = new List<MaterialOperation>()
+            };
+
+            foreach (var kind in new string[] { "Items", "Data", "Components" })
+                foreach (var jToken in data[kind])
+                {
+                    dynamic cc = jToken;
+                    var materialName = converter.GetOrCreate(Kind.OdysseyIngredient, (string)cc.Name);
+                    int? count = cc.Value ?? cc.Count;
+
+                    var operation = new MaterialOperation
+                    {
+                        MaterialName = materialName,
+                        Size = count ?? 1
+                    };
+
+                    dump.DumpOperations.Add(operation);
+                }
+
+            return dump;
         }
 
         private JournalOperation ExtractDied(JObject _)

@@ -25,6 +25,7 @@ namespace EDEngineer.Models
         Location,
         FSDJump,
         Loadout,
-        Died
+        Died,
+        ShipLockerMaterials
     }
 }
