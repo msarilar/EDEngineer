@@ -109,7 +109,7 @@
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal"
                                     Grid.Row="0">
-                            <Image Source="{Binding Value.Data.Rarity, Converter={StaticResource RarityToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
+                            <Image Source="{Binding Value.Data, Converter={StaticResource IngredientToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                    HorizontalAlignment="Left"
                                    Width="20"
                                    Height="20"
@@ -444,7 +444,7 @@
                 </Button.Content>
             </Button>
 
-            <UniformGrid Columns="4" Margin="5,0" Opacity="0" Grid.Row="1">
+            <UniformGrid Columns="3" Margin="5,0" Opacity="0" Grid.Row="1">
                 <Grid x:Name="c1"/>
                 <Grid/>
             </UniformGrid>
