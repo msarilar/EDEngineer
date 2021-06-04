@@ -2201,7 +2201,7 @@
   },
   {
     "Name": "pH Neutraliser",
-    "ValueCr": null,
+    "ValueCr": -1,
     "BarterCost": 5,
     "BarterValue": 3,
     "FormattedName": "phneutraliser",
@@ -2266,7 +2266,7 @@
   },
   {
     "Name": "Tungsten Carbide",
-    "ValueCr": null,
+    "ValueCr": -1,
     "BarterCost": 11,
     "BarterValue": 6,
     "FormattedName": "tungstencarbide",
@@ -2338,7 +2338,7 @@
   },
   {
     "Name": "Audio Logs",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "audiologs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2349,7 +2349,7 @@
   },
   {
     "Name": "AX Combat Logs",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "axcombatlogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2360,7 +2360,7 @@
   },
   {
     "Name": "Ballistic Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "ballisticsdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2371,7 +2371,7 @@
   },
   {
     "Name": "Biological Weapon Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "biologicalweapondata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2382,7 +2382,7 @@
   },
   {
     "Name": "Biometric Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "biometricdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2404,7 +2404,7 @@
   },
   {
     "Name": "Blood Test Results",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "bloodtestresults",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2492,7 +2492,7 @@
   },
   {
     "Name": "Chemical Weapon Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "chemicalweapondata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2514,7 +2514,7 @@
   },
   {
     "Name": "Clinical Trail Records",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "clinicaltrailrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2547,7 +2547,7 @@
   },
   {
     "Name": "Combatant Performance",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "combatantperformance",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2558,7 +2558,7 @@
   },
   {
     "Name": "Conflict History",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "conflicthistory",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2569,7 +2569,7 @@
   },
   {
     "Name": "Criminal Records",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "criminalrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2580,7 +2580,7 @@
   },
   {
     "Name": "Crop Yield Analysis",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "cropyieldanalysis",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2602,7 +2602,7 @@
   },
   {
     "Name": "Digital Designs",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "digitaldesigns",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2646,7 +2646,7 @@
   },
   {
     "Name": "Gene Sequencing Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "genesequencingdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2657,7 +2657,7 @@
   },
   {
     "Name": "Genetic Research",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "geneticresearch",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2679,7 +2679,7 @@
   },
   {
     "Name": "Employment History",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "employmenthistory",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2690,7 +2690,7 @@
   },
   {
     "Name": "Enhanced Interrogation Recordings",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "enhancedinterrogationrecordings",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2701,7 +2701,7 @@
   },
   {
     "Name": "Espionage Material",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "espionagematerial",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2800,7 +2800,7 @@
   },
   {
     "Name": "Hydroponic Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "hydroponicdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2811,7 +2811,7 @@
   },
   {
     "Name": "Incident Logs",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "incidentlogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2844,7 +2844,7 @@
   },
   {
     "Name": "Interrogation Recordings",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "interrogationrecordings",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2855,7 +2855,7 @@
   },
   {
     "Name": "Interview Recordings",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "interviewrecordings",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2877,7 +2877,7 @@
   },
   {
     "Name": "Kompromat",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "kompromat",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2888,7 +2888,7 @@
   },
   {
     "Name": "Literary Fiction",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "literaryfiction",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2954,7 +2954,7 @@
   },
   {
     "Name": "Mining Analytics",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "mininganalytics",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -2987,7 +2987,7 @@
   },
   {
     "Name": "Network Security Protocols",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "networksecurityprotocols",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3031,7 +3031,7 @@
   },
   {
     "Name": "Opinion Polls",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "opinionpolls",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3108,7 +3108,7 @@
   },
   {
     "Name": "Plant Growth Charts",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "plantgrowthcharts",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3119,7 +3119,7 @@
   },
   {
     "Name": "Political Affiliations",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "politicalaffiliations",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3130,7 +3130,7 @@
   },
   {
     "Name": "Prisoner Logs",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "prisonerlogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3152,7 +3152,7 @@
   },
   {
     "Name": "Production Schedule",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "productionschedule",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3229,7 +3229,7 @@
   },
   {
     "Name": "Residential Directory",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "residentialdirectory",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3262,7 +3262,7 @@
   },
   {
     "Name": "Security Expenses",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "securityexpenses",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3273,7 +3273,7 @@
   },
   {
     "Name": "Security Plans",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "securityplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3284,7 +3284,7 @@
   },
   {
     "Name": "Seed Geneaology",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "seedgeneaology",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3295,7 +3295,7 @@
   },
   {
     "Name": "Settlement Assault Plans",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "settlementassaultplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3306,7 +3306,7 @@
   },
   {
     "Name": "Settlement Defence Plans",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "settlementdefenceplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3328,7 +3328,7 @@
   },
   {
     "Name": "Slush Fund Logs",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "alushfundlogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3339,7 +3339,7 @@
   },
   {
     "Name": "Smear Campaign Plans",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "smearcampaignplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3350,7 +3350,7 @@
   },
   {
     "Name": "Spectral Analysis Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "spectralanalysisdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3361,7 +3361,7 @@
   },
   {
     "Name": "Spyware",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "spyware",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3394,7 +3394,7 @@
   },
   {
     "Name": "Tactical Plans",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "tacticalplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3427,7 +3427,7 @@
   },
   {
     "Name": "Travel Permits",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "travelpermits",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3482,7 +3482,7 @@
   },
   {
     "Name": "Virology Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "virologydata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3493,7 +3493,7 @@
   },
   {
     "Name": "VIP Security Detail",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "vipsecuritydetail",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3504,7 +3504,7 @@
   },
   {
     "Name": "Virology Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "virologydata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3515,7 +3515,7 @@
   },
   {
     "Name": "Virus",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "virus",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3537,7 +3537,7 @@
   },
   {
     "Name": "Weapon Inventory",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "weaponinventory",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3548,7 +3548,7 @@
   },
   {
     "Name": "Weapon Test Data",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "weapontestdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3559,7 +3559,7 @@
   },
   {
     "Name": "Xeno-Defence Protocols",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "xenodefenceprotocols",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3570,7 +3570,7 @@
   },
   {
     "Name": "Agricultural Process Sample",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "agriculturalprocesssample",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3581,7 +3581,7 @@
   },
   {
     "Name": "Biochemical Agent",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "biochemicalagent",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3603,7 +3603,7 @@
   },
   {
     "Name": "Building Schematic",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "buildingschematic",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3636,7 +3636,7 @@
   },
   {
     "Name": "Chemical Process Sample",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "ChemicalProcessSample",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3724,7 +3724,7 @@
   },
   {
     "Name": "Health Canister",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "healthcanister",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3746,7 +3746,7 @@
   },
   {
     "Name": "Hush",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "hush",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3779,7 +3779,7 @@
   },
   {
     "Name": "Inorganic Contaminant",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "inorganiccontaminant",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3856,7 +3856,7 @@
   },
   {
     "Name": "Mutagenic Catalyst",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "mutageniccatalyst",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3922,7 +3922,7 @@
   },
   {
     "Name": "Push",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "push",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3933,7 +3933,7 @@
   },
   {
     "Name": "Pyrolytic Catalyst",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "pyrolyticcatalyst",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
@@ -3999,7 +3999,7 @@
   },
   {
     "Name": "Synthetic Pathogen",
-    "ValueCr": null,
+    "ValueCr": -1,
     "FormattedName": "syntheticpathogen",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [ "Planetary Settlement" ],
