@@ -41303,5 +41303,799 @@
     ],
     "Effects": [
     ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis suit grade 2",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 2,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 1
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 5
+      },
+      {
+        "Name": "Graphene",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-42%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "0%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "16%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis suit grade 3",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 3,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 5
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 15
+      },
+      {
+        "Name": "Graphene",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-21%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "14%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "57%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "29%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis suit grade 4",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 4,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 10
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 25
+      },
+      {
+        "Name": "Graphene",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis suit grade 5",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 5,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 15
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 35
+      },
+      {
+        "Name": "Graphene",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+
+  {
+    "Type": "Suit",
+    "Name": "Dominator suit grade 2",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 2,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 1
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Graphene",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-34%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "7%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "58%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "16%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator suit grade 3",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 3,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 5
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 15
+      },
+      {
+        "Name": "Graphene",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-7%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "29%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "72%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "29%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator suit grade 4",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 4,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 10
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 25
+      },
+      {
+        "Name": "Graphene",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "19%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "46%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "78%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "46%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator suit grade 5",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 5,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 15
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 35
+      },
+      {
+        "Name": "Graphene",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "25%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "80%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+
+  {
+    "Type": "Suit",
+    "Name": "Maverick suit grade 2",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 2,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 1
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Graphene",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-34%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "7%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "58%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "16%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick suit grade 3",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 3,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 5
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 15
+      },
+      {
+        "Name": "Graphene",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-13%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "22%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "64%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "29%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick suit grade 4",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 4,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 10
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 25
+      },
+      {
+        "Name": "Graphene",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "6%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "35%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "70%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "41%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick suit grade 5",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 5,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 15
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 35
+      },
+      {
+        "Name": "Graphene",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
   }
 ]
