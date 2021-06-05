@@ -40719,8 +40719,7 @@
         "Size": 5
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -40921,8 +40920,7 @@
         "Size": 10
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Weapon",
@@ -40953,8 +40951,7 @@
         "Size": 15
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41037,8 +41034,7 @@
         "Size": 10
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Weapon",
@@ -41064,8 +41060,7 @@
         "Size": 5
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41091,8 +41086,7 @@
         "Size": 10
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41119,8 +41113,7 @@
         "Size": 15
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41151,8 +41144,7 @@
         "Size": 15
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Weapon",
@@ -41179,8 +41171,7 @@
         "Size": 5
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41211,8 +41202,7 @@
         "Size": 10
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Weapon",
@@ -41239,8 +41229,7 @@
         "Size": 5
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Weapon",
@@ -41270,8 +41259,7 @@
         "Size": 5
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41301,8 +41289,7 @@
         "Size": 10
       }
     ],
-    "Effects": [
-    ]
+    "Effects": []
   },
   {
     "Type": "Suit",
@@ -41310,7 +41297,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 2,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41373,7 +41359,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Suit",
@@ -41381,7 +41368,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 3,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41444,7 +41430,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Suit",
@@ -41452,7 +41439,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 4,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41495,7 +41481,8 @@
         "Property": "Shield health",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Suit",
@@ -41503,7 +41490,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 5,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41546,16 +41532,15 @@
         "Property": "Shield health",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
-
   {
     "Type": "Suit",
     "Name": "Dominator grade 2",
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 2,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41618,7 +41603,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Suit",
@@ -41626,7 +41612,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 3,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41689,7 +41674,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Suit",
@@ -41697,7 +41683,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 4,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41760,7 +41745,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Suit",
@@ -41768,7 +41754,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 5,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41831,16 +41816,15 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
-
   {
     "Type": "Suit",
     "Name": "Maverick grade 2",
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 2,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41903,7 +41887,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Suit",
@@ -41911,7 +41896,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 3,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -41974,7 +41958,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Suit",
@@ -41982,7 +41967,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 4,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -42045,7 +42029,8 @@
         "Property": "Explosive damage resistance",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Suit",
@@ -42053,7 +42038,6 @@
     "Engineers": [
       "@Merchant"
     ],
-    "Grade": 5,
     "Ingredients": [
       {
         "Name": "Suit Schematic",
@@ -42096,12 +42080,12 @@
         "Property": "Shield health",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Karma P-15 grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -42133,12 +42117,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Karma P-15 grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -42170,12 +42154,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Karma P-15 grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -42207,12 +42191,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Karma P-15 grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -42244,12 +42228,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Tormentor grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -42281,12 +42265,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Tormentor grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -42318,12 +42302,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Tormentor grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -42355,12 +42339,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Tormentor grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -42392,12 +42376,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "TK Zenith grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -42429,12 +42413,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "TK Zenith grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -42466,12 +42450,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "TK Zenith grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -42503,12 +42487,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "TK Zenith grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -42540,12 +42524,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Karma AR-50 grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -42577,12 +42561,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Karma AR-50 grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -42614,12 +42598,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Karma AR-50 grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -42651,12 +42635,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Karma AR-50 grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -42688,12 +42672,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Karma C-44 grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -42725,12 +42709,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Karma C-44 grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -42762,12 +42746,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Karma C-44 grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -42799,12 +42783,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Karma C-44 grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -42836,12 +42820,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Karma L-6 grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -42873,12 +42857,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Karma L-6 grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -42910,12 +42894,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Karma L-6 grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -42947,12 +42931,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Karma L-6 grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -42984,12 +42968,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Executioner grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -43021,12 +43005,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Executioner grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -43058,12 +43042,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Executioner grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -43095,12 +43079,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Executioner grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -43132,12 +43116,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Intimidator grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -43169,12 +43153,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Intimidator grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -43206,12 +43190,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Intimidator grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -43243,12 +43227,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Intimidator grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -43280,12 +43264,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Opressor grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -43317,12 +43301,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Opressor grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -43354,12 +43338,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Opressor grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -43391,12 +43375,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "Manticore Opressor grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -43428,12 +43412,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "TK Aphelion grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -43465,12 +43449,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "TK Aphelion grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -43502,12 +43486,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "TK Aphelion grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -43539,12 +43523,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "TK Aphelion grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -43576,12 +43560,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   },
   {
     "Type": "Weapon",
     "Name": "TK Eclipse grade 2",
-    "Grade": 2,
     "Engineers": [
       "@Merchant"
     ],
@@ -43613,12 +43597,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 2
   },
   {
     "Type": "Weapon",
     "Name": "TK Eclipse grade 3",
-    "Grade": 3,
     "Engineers": [
       "@Merchant"
     ],
@@ -43650,12 +43634,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 3
   },
   {
     "Type": "Weapon",
     "Name": "TK Eclipse grade 4",
-    "Grade": 4,
     "Engineers": [
       "@Merchant"
     ],
@@ -43687,12 +43671,12 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 4
   },
   {
     "Type": "Weapon",
     "Name": "TK Eclipse grade 5",
-    "Grade": 5,
     "Engineers": [
       "@Merchant"
     ],
@@ -43724,6 +43708,7 @@
         "Property": "Engineer modification slots",
         "IsGood": true
       }
-    ]
+    ],
+    "Grade": 5
   }
 ]

@@ -58,6 +58,7 @@ namespace EDEngineer.Tests
             {
                 "@Synthesis",
                 "@Technology",
+                "@Merchant",
                 "Bill Turner",
                 "Broo Tarquin",
                 "Colonel Bris Dekker",
@@ -82,7 +83,15 @@ namespace EDEngineer.Tests
                 "Marsha Hicks",
                 "Etienne Dorn",
                 "Mel Brandon",
-                "Chloe Sedesi"
+                "Chloe Sedesi",
+                "Domino Green",
+                "Oden Geiger",
+                "Wellington Beck",
+                "Kit Fowler",
+                "Jude Navarro",
+                "Uma Laszlo",
+                "Hero Ferrari",
+                "Terra Velasquez"
             };
 
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
