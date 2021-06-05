@@ -2612,7 +2612,7 @@
     "BuildingType": [],
     "ContainerType": [
       "Industrial Data Port",
-      "Laboratory Data Port",
+      "Laboratory Data Port"
     ]
   },
   {
@@ -3043,8 +3043,8 @@
     "FormattedName": "fleetregistry",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-		  "Planetary Settlement"
-	],
+      "Planetary Settlement"
+    ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
@@ -3055,9 +3055,9 @@
     "Name": "Gene Sequencing Data",
     "FormattedName": "genesequencingdata",
     "Kind": "OdysseyIngredient",
-	  "OriginDetails": [
-		  "Planetary Settlement"
-	],
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
@@ -3069,11 +3069,11 @@
     "FormattedName": "geneticreserach",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-	    "Planetary Settlement"
-	],
+      "Planetary Settlement"
+    ],
     "Group": "Data",
     "ValueCr": 21000,
-	  "SettlementType": [],
+    "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
@@ -4246,8 +4246,8 @@
     "FormattedName": "geneticsample",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-		  "Planetary Settlement"
-	  ],
+      "Planetary Settlement"
+    ],
     "Group": "Item",
     "ValueCr": -1,
     "SettlementType": [],
