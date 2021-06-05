@@ -40600,5 +40600,3130 @@
         "Size": 26
       }
     ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Enhanced tracking",
+    "Engineers": [
+      "Domino Green",
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Topographical Surveys",
+        "Size": 10
+      },
+      {
+        "Name": "Stellar Activity Logs",
+        "Size": 10
+      },
+      {
+        "Name": "Spectral Analysis Data",
+        "Size": 10
+      },
+      {
+        "Name": "Transmitter",
+        "Size": 5
+      },
+      {
+        "Name": "Circuit Board",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Analysis time",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Analysis range",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Extra backpack capacity",
+    "Engineers": [
+      "Domino Green",
+      "Wellington Beck"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Inventory",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Inventory",
+        "Size": 10
+      },
+      {
+        "Name": "Digital Designs",
+        "Size": 10
+      },
+      {
+        "Name": "Epoxy Adhesive",
+        "Size": 10
+      },
+      {
+        "Name": "Memory Chip",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Backpack data capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Backpack component capacity",
+        "IsGood": true
+      },
+      {
+        "Effect": "+100%",
+        "Property": "Backpack item capacity",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Greater range",
+    "Engineers": [
+      "Domino Green",
+      "Wellington Beck"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Ballistic Data",
+        "Size": 10
+      },
+      {
+        "Name": "Topographical Surveys",
+        "Size": 10
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      },
+      {
+        "Name": "RDX",
+        "Size": 10
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Reduced tool battery consumption",
+    "Engineers": [
+      "Domino Green",
+      "Wellington Beck"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Reactor Output Review",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Fuse",
+        "Size": 5
+      },
+      {
+        "Name": "Micro Transformer",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Tool energy drain multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Stability",
+    "Engineers": [
+      "Domino Green",
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mining Analytics",
+        "Size": 10
+      },
+      {
+        "Name": "Risk Assessments",
+        "Size": 15
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Hydraulics",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+30%",
+        "Property": "Stability",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Added melee damage",
+    "Engineers": [
+      "Kit Fowler",
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Combat Training Material",
+        "Size": 10
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Epinephrine",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Thrusters",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+150%",
+        "Property": "Weapon melee damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+150%",
+        "Property": "Fists melee damage multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Extra ammo capacity",
+    "Engineers": [
+      "Kit Fowler",
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Recycling Logs",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Test Data",
+        "Size": 10
+      },
+      {
+        "Name": "Production Reports",
+        "Size": 10
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+50%",
+        "Property": "Ammo capacity multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Faster shield regen",
+    "Engineers": [
+      "Kit Fowler",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Reactor Output Review",
+        "Size": 10
+      },
+      {
+        "Name": "Ion Battery",
+        "Size": 5
+      },
+      {
+        "Name": "Micro Transformer",
+        "Size": 15
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+33%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Magazine size",
+    "Engineers": [
+      "Kit Fowler",
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Test Data",
+        "Size": 10
+      },
+      {
+        "Name": "Security Expenses",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Stowed reloading",
+    "Engineers": [
+      "Kit Fowler",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Digital Designs",
+        "Size": 10
+      },
+      {
+        "Name": "Operational Manual",
+        "Size": 10
+      },
+      {
+        "Name": "Production Schedule",
+        "Size": 10
+      },
+      {
+        "Name": "Circuit Board",
+        "Size": 5
+      },
+      {
+        "Name": "Encrypted Memory Chip",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Damage resistance",
+    "Engineers": [
+      "Jude Navarro",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Inventory",
+        "Size": 10
+      },
+      {
+        "Name": "Ballistic Data",
+        "Size": 10
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Epoxy Adhesive",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "+10%",
+        "Property": "Explosive damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Plasma damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Thermic damage multiplier",
+        "IsGood": true
+      },
+      {
+        "Effect": "+10%",
+        "Property": "Kinetic damage multiplier",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Reload speed",
+    "Engineers": [
+      "Jude Navarro",
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Operational Manual",
+        "Size": 10
+      },
+      {
+        "Name": "Production Reports",
+        "Size": 10
+      },
+      {
+        "Name": "Combat Training Material",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Hydraulics",
+        "Size": 10
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Faster handling",
+    "Engineers": [
+      "Hero Ferrari"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Operational Manual",
+        "Size": 10
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Combat Training Material",
+        "Size": 10
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Improved jump assist",
+    "Engineers": [
+      "Hero Ferrari"
+    ],
+    "Ingredients": [
+      {
+        "Name": "G-Meds",
+        "Size": 10
+      },
+      {
+        "Name": "Topographical Surveys",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Thrusters",
+        "Size": 5
+      },
+      {
+        "Name": "Motor",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Increased air reserves",
+    "Engineers": [
+      "Hero Ferrari",
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Pharmaceutical Patents",
+        "Size": 5
+      },
+      {
+        "Name": "Air Quality Reports",
+        "Size": 15
+      },
+      {
+        "Name": "Oxygenic Bacteria",
+        "Size": 10
+      },
+      {
+        "Name": "pH Neutraliser",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Increased sprint duration",
+    "Engineers": [
+      "Hero Ferrari",
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Troop Deployment Records",
+        "Size": 5
+      },
+      {
+        "Name": "Gene Sequencing Data",
+        "Size": 5
+      },
+      {
+        "Name": "Clinical Trail Records",
+        "Size": 5
+      },
+      {
+        "Name": "Oxygenic Bacteria",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Catalyst",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Noise suppressor",
+    "Engineers": [
+      "Hero Ferrari",
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Atmospheric Data",
+        "Size": 10
+      },
+      {
+        "Name": "Mining Analytics",
+        "Size": 10
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Improved battery capacity",
+    "Engineers": [
+      "Wellington Beck",
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Reactor Output Review",
+        "Size": 10
+      },
+      {
+        "Name": "Maintenance Logs",
+        "Size": 15
+      },
+      {
+        "Name": "Ion Battery",
+        "Size": 5
+      },
+      {
+        "Name": "Micro Supercapacitor",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Scope",
+    "Engineers": [
+      "Wellington Beck",
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Spectral Analysis Data",
+        "Size": 10
+      },
+      {
+        "Name": "Biometric Data",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Lens",
+        "Size": 10
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Headshot damage",
+    "Engineers": [
+      "Uma Laszlo"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Test Data",
+        "Size": 10
+      },
+      {
+        "Name": "Medical Records",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Catalyst",
+        "Size": 10
+      },
+      {
+        "Name": "RDX",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Night vision",
+    "Engineers": [
+      "Oden Geiger"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Surveillance Equipment",
+        "Size": 10
+      },
+      {
+        "Name": "Surveillance Logs",
+        "Size": 5
+      },
+      {
+        "Name": "Radioactivity Data",
+        "Size": 5
+      },
+      {
+        "Name": "NOC Data",
+        "Size": 5
+      },
+      {
+        "Name": "Circuit Switch",
+        "Size": 10
+      }
+    ],
+    "Effects": [
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis grade 2",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 2,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 1
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 5
+      },
+      {
+        "Name": "Graphene",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-42%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "0%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "16%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis grade 3",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 3,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 5
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 15
+      },
+      {
+        "Name": "Graphene",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-21%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "14%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "57%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "29%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis grade 4",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 4,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 10
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 25
+      },
+      {
+        "Name": "Graphene",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis grade 5",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 5,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 15
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 35
+      },
+      {
+        "Name": "Graphene",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+
+  {
+    "Type": "Suit",
+    "Name": "Dominator grade 2",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 2,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 1
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Graphene",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-34%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "7%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "58%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "16%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator grade 3",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 3,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 5
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 15
+      },
+      {
+        "Name": "Graphene",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-7%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "29%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "72%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "29%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator grade 4",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 4,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 10
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 25
+      },
+      {
+        "Name": "Graphene",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "19%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "46%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "78%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "46%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator grade 5",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 5,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 15
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Titanium Plating",
+        "Size": 35
+      },
+      {
+        "Name": "Graphene",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "25%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "80%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+
+  {
+    "Type": "Suit",
+    "Name": "Maverick grade 2",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 2,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 1
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 5
+      },
+      {
+        "Name": "Graphene",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "22%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-34%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "7%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "58%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "16%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick grade 3",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 3,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 5
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 15
+      },
+      {
+        "Name": "Graphene",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "50%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "-13%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": false
+      },
+      {
+        "Effect": "22%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "64%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "29%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick grade 4",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 4,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 10
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 25
+      },
+      {
+        "Name": "Graphene",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "85%",
+        "Property": "Shield health",
+        "IsGood": true
+      },
+      {
+        "Effect": "6%",
+        "Property": "Kinetic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "35%",
+        "Property": "Plasma damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "70%",
+        "Property": "Thermic damage resistance",
+        "IsGood": true
+      },
+      {
+        "Effect": "41%",
+        "Property": "Explosive damage resistance",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick grade 5",
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Grade": 5,
+    "Ingredients": [
+      {
+        "Name": "Suit Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Health Monitor",
+        "Size": 15
+      },
+      {
+        "Name": "Power Regulator",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Carbon Fibre Plating",
+        "Size": 35
+      },
+      {
+        "Name": "Graphene",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield regeneration rate",
+        "IsGood": true
+      },
+      {
+        "Effect": "125%",
+        "Property": "Shield health",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma P-15 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma P-15 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma P-15 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma P-15 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
   }
 ]
