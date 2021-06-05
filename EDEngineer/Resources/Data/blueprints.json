@@ -42100,7 +42100,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "KARMA P-15 grade 2",
+    "Name": "Karma P-15 grade 2",
     "Grade": 2,
     "Engineers": [
       "@Merchant"
@@ -42137,7 +42137,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "KARMA P-15 grade 3",
+    "Name": "Karma P-15 grade 3",
     "Grade": 3,
     "Engineers": [
       "@Merchant"
@@ -42174,7 +42174,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "KARMA P-15 grade 4",
+    "Name": "Karma P-15 grade 4",
     "Grade": 4,
     "Engineers": [
       "@Merchant"
@@ -42211,7 +42211,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "KARMA P-15 grade 5",
+    "Name": "Karma P-15 grade 5",
     "Grade": 5,
     "Engineers": [
       "@Merchant"
