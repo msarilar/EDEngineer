@@ -21,6 +21,7 @@ namespace EDEngineer.Utils.System
             releaseNotesJson = ReadResource("releaseNotes");
             localizationJson = ReadResource("localization");
             entryDatasJson = ReadResource("entryData");
+            equipmentsJson = ReadResource("equipment");
         }
 
         public static string ReadResource(string resource)
@@ -36,6 +37,7 @@ namespace EDEngineer.Utils.System
         private static readonly string releaseNotesJson;
         private static readonly string localizationJson;
         private static readonly string entryDatasJson;
+        private static readonly string equipmentsJson;
 
         public static string GetBlueprintsJson()
         {
@@ -55,6 +57,11 @@ namespace EDEngineer.Utils.System
         public static string GetEntryDatasJson()
         {
             return entryDatasJson;
+        }
+
+        public static string GetEquipmentsJson()
+        {
+            return equipmentsJson;
         }
 
         public static string RetrieveLogDirectory(bool forcePickFolder, string currentLogDirectory)

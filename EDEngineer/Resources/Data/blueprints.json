@@ -41293,7 +41293,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis grade 2",
+    "Name": "Artemis",
     "Engineers": [
       "@Merchant"
     ],
@@ -41364,7 +41364,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis grade 3",
+    "Name": "Artemis",
     "Engineers": [
       "@Merchant"
     ],
@@ -41435,7 +41435,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis grade 4",
+    "Name": "Artemis",
     "Engineers": [
       "@Merchant"
     ],
@@ -41486,7 +41486,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Artemis grade 5",
+    "Name": "Artemis",
     "Engineers": [
       "@Merchant"
     ],
@@ -41537,7 +41537,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator grade 2",
+    "Name": "Dominator",
     "Engineers": [
       "@Merchant"
     ],
@@ -41608,7 +41608,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator grade 3",
+    "Name": "Dominator",
     "Engineers": [
       "@Merchant"
     ],
@@ -41679,7 +41679,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator grade 4",
+    "Name": "Dominator",
     "Engineers": [
       "@Merchant"
     ],
@@ -41750,7 +41750,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Dominator grade 5",
+    "Name": "Dominator",
     "Engineers": [
       "@Merchant"
     ],
@@ -41821,7 +41821,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick grade 2",
+    "Name": "Maverick",
     "Engineers": [
       "@Merchant"
     ],
@@ -41892,7 +41892,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick grade 3",
+    "Name": "Maverick",
     "Engineers": [
       "@Merchant"
     ],
@@ -41963,7 +41963,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick grade 4",
+    "Name": "Maverick",
     "Engineers": [
       "@Merchant"
     ],
@@ -42034,7 +42034,7 @@
   },
   {
     "Type": "Suit",
-    "Name": "Maverick grade 5",
+    "Name": "Maverick",
     "Engineers": [
       "@Merchant"
     ],
@@ -42085,7 +42085,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma P-15 grade 2",
+    "Name": "Karma P-15",
     "Engineers": [
       "@Merchant"
     ],
@@ -42122,7 +42122,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma P-15 grade 3",
+    "Name": "Karma P-15",
     "Engineers": [
       "@Merchant"
     ],
@@ -42159,7 +42159,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma P-15 grade 4",
+    "Name": "Karma P-15",
     "Engineers": [
       "@Merchant"
     ],
@@ -42196,7 +42196,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma P-15 grade 5",
+    "Name": "Karma P-15",
     "Engineers": [
       "@Merchant"
     ],
@@ -42233,7 +42233,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Tormentor grade 2",
+    "Name": "Manticore Tormentor",
     "Engineers": [
       "@Merchant"
     ],
@@ -42270,7 +42270,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Tormentor grade 3",
+    "Name": "Manticore Tormentor",
     "Engineers": [
       "@Merchant"
     ],
@@ -42307,7 +42307,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Tormentor grade 4",
+    "Name": "Manticore Tormentor",
     "Engineers": [
       "@Merchant"
     ],
@@ -42344,7 +42344,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Tormentor grade 5",
+    "Name": "Manticore Tormentor",
     "Engineers": [
       "@Merchant"
     ],
@@ -42381,7 +42381,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Zenith grade 2",
+    "Name": "TK Zenith",
     "Engineers": [
       "@Merchant"
     ],
@@ -42418,7 +42418,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Zenith grade 3",
+    "Name": "TK Zenith",
     "Engineers": [
       "@Merchant"
     ],
@@ -42455,7 +42455,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Zenith grade 4",
+    "Name": "TK Zenith",
     "Engineers": [
       "@Merchant"
     ],
@@ -42492,7 +42492,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Zenith grade 5",
+    "Name": "TK Zenith",
     "Engineers": [
       "@Merchant"
     ],
@@ -42529,7 +42529,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma AR-50 grade 2",
+    "Name": "Karma AR-50",
     "Engineers": [
       "@Merchant"
     ],
@@ -42566,7 +42566,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma AR-50 grade 3",
+    "Name": "Karma AR-50",
     "Engineers": [
       "@Merchant"
     ],
@@ -42603,7 +42603,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma AR-50 grade 4",
+    "Name": "Karma AR-50",
     "Engineers": [
       "@Merchant"
     ],
@@ -42640,7 +42640,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma AR-50 grade 5",
+    "Name": "Karma AR-50",
     "Engineers": [
       "@Merchant"
     ],
@@ -42677,7 +42677,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma C-44 grade 2",
+    "Name": "Karma C-44",
     "Engineers": [
       "@Merchant"
     ],
@@ -42714,7 +42714,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma C-44 grade 3",
+    "Name": "Karma C-44",
     "Engineers": [
       "@Merchant"
     ],
@@ -42751,7 +42751,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma C-44 grade 4",
+    "Name": "Karma C-44",
     "Engineers": [
       "@Merchant"
     ],
@@ -42788,7 +42788,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma C-44 grade 5",
+    "Name": "Karma C-44",
     "Engineers": [
       "@Merchant"
     ],
@@ -42825,7 +42825,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma L-6 grade 2",
+    "Name": "Karma L-6",
     "Engineers": [
       "@Merchant"
     ],
@@ -42862,7 +42862,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma L-6 grade 3",
+    "Name": "Karma L-6",
     "Engineers": [
       "@Merchant"
     ],
@@ -42899,7 +42899,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma L-6 grade 4",
+    "Name": "Karma L-6",
     "Engineers": [
       "@Merchant"
     ],
@@ -42936,7 +42936,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Karma L-6 grade 5",
+    "Name": "Karma L-6",
     "Engineers": [
       "@Merchant"
     ],
@@ -42973,7 +42973,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Executioner grade 2",
+    "Name": "Manticore Executioner",
     "Engineers": [
       "@Merchant"
     ],
@@ -43010,7 +43010,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Executioner grade 3",
+    "Name": "Manticore Executioner",
     "Engineers": [
       "@Merchant"
     ],
@@ -43047,7 +43047,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Executioner grade 4",
+    "Name": "Manticore Executioner",
     "Engineers": [
       "@Merchant"
     ],
@@ -43084,7 +43084,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Executioner grade 5",
+    "Name": "Manticore Executioner",
     "Engineers": [
       "@Merchant"
     ],
@@ -43121,7 +43121,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Intimidator grade 2",
+    "Name": "Manticore Intimidator",
     "Engineers": [
       "@Merchant"
     ],
@@ -43158,7 +43158,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Intimidator grade 3",
+    "Name": "Manticore Intimidator",
     "Engineers": [
       "@Merchant"
     ],
@@ -43195,7 +43195,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Intimidator grade 4",
+    "Name": "Manticore Intimidator",
     "Engineers": [
       "@Merchant"
     ],
@@ -43232,7 +43232,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Intimidator grade 5",
+    "Name": "Manticore Intimidator",
     "Engineers": [
       "@Merchant"
     ],
@@ -43269,7 +43269,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Opressor grade 2",
+    "Name": "Manticore Oppressor",
     "Engineers": [
       "@Merchant"
     ],
@@ -43306,7 +43306,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Opressor grade 3",
+    "Name": "Manticore Opressor",
     "Engineers": [
       "@Merchant"
     ],
@@ -43343,7 +43343,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Opressor grade 4",
+    "Name": "Manticore Opressor",
     "Engineers": [
       "@Merchant"
     ],
@@ -43380,7 +43380,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "Manticore Opressor grade 5",
+    "Name": "Manticore Opressor",
     "Engineers": [
       "@Merchant"
     ],
@@ -43417,7 +43417,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Aphelion grade 2",
+    "Name": "TK Aphelion",
     "Engineers": [
       "@Merchant"
     ],
@@ -43454,7 +43454,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Aphelion grade 3",
+    "Name": "TK Aphelion",
     "Engineers": [
       "@Merchant"
     ],
@@ -43491,7 +43491,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Aphelion grade 4",
+    "Name": "TK Aphelion",
     "Engineers": [
       "@Merchant"
     ],
@@ -43528,7 +43528,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Aphelion grade 5",
+    "Name": "TK Aphelion",
     "Engineers": [
       "@Merchant"
     ],
@@ -43565,7 +43565,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Eclipse grade 2",
+    "Name": "TK Eclipse",
     "Engineers": [
       "@Merchant"
     ],
@@ -43602,7 +43602,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Eclipse grade 3",
+    "Name": "TK Eclipse",
     "Engineers": [
       "@Merchant"
     ],
@@ -43639,7 +43639,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Eclipse grade 4",
+    "Name": "TK Eclipse",
     "Engineers": [
       "@Merchant"
     ],
@@ -43676,7 +43676,7 @@
   },
   {
     "Type": "Weapon",
-    "Name": "TK Eclipse grade 5",
+    "Name": "TK Eclipse",
     "Engineers": [
       "@Merchant"
     ],

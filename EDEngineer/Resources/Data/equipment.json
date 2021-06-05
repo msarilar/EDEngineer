@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "Suit",
+    "Name": "Flight Suit",
+    "Code": "flightsuit"
+  },
+  {
+    "Type": "Suit",
+    "Name": "Maverick",
+    "Code": "utilitysuit"
+  },
+  {
+    "Type": "Suit",
+    "Name": "Dominator",
+    "Code": "tacticalsuit"
+  },
+  {
+    "Type": "Suit",
+    "Name": "Artemis",
+    "Code": "explorationsuit"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma P-15",
+    "Code": "wpn_s_pistol_kinetic_sauto"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor",
+    "Code": "Wpn_S_Pistol_Plasma_Charged"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith",
+    "Code": "wpn_s_pistol_laser_sauto"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50",
+    "Code": "wpn_m_assaultrifle_kinetic_fauto"
+  },
+
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44",
+    "Code": "Wpn_M_SubMachineGun_Kinetic_FAuto"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6",
+    "Code": "wpn_m_launcher_rocket_sauto"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner",
+    "Code": "wpn_m_sniper_plasma_charged"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator",
+    "Code": "wpn_m_shotgun_plasma_doublebarrel"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Oppressor",
+    "Code": "wpn_m_assaultrifle_plasma_fauto"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion",
+    "Code": "wpn_m_assaultrifle_laser_fauto"
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse",
+    "Code": "wpn_m_submachinegun_laser_fauto"
+  }
+]

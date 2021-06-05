@@ -17,12 +17,14 @@ namespace EDEngineer.Tests
     {
         private StateCargo cargo;
         private List<EntryData> entries;
+        private List<Equipment> equipments;
 
         [SetUp]
         public void Setup()
         {
             entries = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
-            cargo = new StateCargo(entries, Mock.Of<ILanguage>(), StateCargo.COUNT_COMPARER);
+            equipments = JsonConvert.DeserializeObject<List<Equipment>>(Helpers.GetEquipmentsJson());
+            cargo = new StateCargo(entries, equipments, Mock.Of<ILanguage>(), StateCargo.COUNT_COMPARER);
         }
 
         [TestCase(1, 6)]

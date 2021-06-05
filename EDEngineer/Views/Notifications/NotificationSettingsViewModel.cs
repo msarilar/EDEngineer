@@ -51,7 +51,11 @@ namespace EDEngineer.Views.Notifications
             random = new Random();
             Languages = languages;
 
-            state = new State(new StateCargo(JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson()), languages, "Count"));
+            state = new State(new StateCargo(
+                JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson()),
+                JsonConvert.DeserializeObject<List<Equipment>>(Helpers.GetEquipmentsJson()),
+                languages, 
+                "Count"));
             state.Blueprints = new List<Blueprint>(JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson(), new BlueprintConverter(state.Cargo.Ingredients)));
 
             testCommanderNotifications = new CommanderNotifications(state);

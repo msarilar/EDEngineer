@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Equipment.cs" />
     <Compile Include="MaterialTrading\MaterialTrade.cs" />
     <Compile Include="MaterialTrading\MaterialTrader.cs" />
+    <Compile Include="Operations\UpgradeOperation.cs" />
     <Compile Include="State\CommanderAggregation.cs" />
     <Compile Include="State\StateAggregation.cs" />
     <Compile Include="BlueprintCategory.cs" />

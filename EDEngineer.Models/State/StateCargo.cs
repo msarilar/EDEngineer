@@ -16,12 +16,13 @@ namespace EDEngineer.Models.State
         public const string RARITY_COMPARER = "Rarity";
 
         private readonly List<EntryData> entryDatas;
+        private readonly List<Equipment> equipments;
 
         private readonly object stateLock = new object();
 
         private readonly IReadOnlyDictionary<string, Comparer> comparers;
 
-        public StateCargo(List<EntryData> entryDatas, ILanguage languages, string comparer)
+        public StateCargo(List<EntryData> entryDatas, List<Equipment> equipments, ILanguage languages, string comparer)
         {
             comparers = new Dictionary<string, Comparer>
             {
@@ -34,6 +35,7 @@ namespace EDEngineer.Models.State
             languages.PropertyChanged += (o, e) => Ingredients.RefreshSort();
             
             this.entryDatas = entryDatas;
+            this.equipments = equipments;
             LoadBaseData();
         }
 
