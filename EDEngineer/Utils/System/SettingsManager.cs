@@ -27,6 +27,7 @@ namespace EDEngineer.Utils.System
             {
                 Properties.Settings.Default.Upgrade();
                 Properties.Settings.Default.UpgradeRequired = false;
+                Properties.Settings.Default.FiltersChecked = null;
 
                 Properties.Settings.Default.Save();
             }

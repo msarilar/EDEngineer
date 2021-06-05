@@ -84,6 +84,7 @@ namespace EDEngineer.Tests
                 "Etienne Dorn",
                 "Mel Brandon",
                 "Chloe Sedesi",
+                // odyssey!
                 "Domino Green",
                 "Oden Geiger",
                 "Wellington Beck",
@@ -91,7 +92,8 @@ namespace EDEngineer.Tests
                 "Jude Navarro",
                 "Uma Laszlo",
                 "Hero Ferrari",
-                "Terra Velasquez"
+                "Terra Velasquez",
+                "@Merchant"
             };
 
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());

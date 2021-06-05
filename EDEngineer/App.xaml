@@ -42,6 +42,10 @@
                 #441e00
             </Color>
 
+            <Color x:Key="OdysseyIngredient">
+                #66eeb5
+            </Color>
+
             <SolidColorBrush x:Key="EliteOrangeBrush" Color="{StaticResource EliteOrange}"/>
             <SolidColorBrush x:Key="SynthesisBlueBrush" Color="{StaticResource SynthesisBlue}"/>
             <SolidColorBrush x:Key="IngredientHighlightedBrush" Color="{StaticResource IngredientHighlighted}"/>
@@ -54,6 +58,8 @@
             <SolidColorBrush x:Key="UnlockBrush" Color="MediumPurple"/>
             <SolidColorBrush x:Key="GreenBrush" Color="Green"/>
             <SolidColorBrush x:Key="MaterialTraderWillBeEnoughBrush" Color="DarkSlateGray"/>
+
+            <SolidColorBrush x:Key="OdysseyIngredientBrush" Color="{StaticResource OdysseyIngredient}"/>
 
             <converters:RarityToIconConverter x:Key="RarityToIcon" />
             <converters:ApiRunningToIndicatorConverter x:Key="ApiRunningToIndicator" />
