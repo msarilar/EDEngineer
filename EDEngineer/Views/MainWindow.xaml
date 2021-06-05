@@ -31,16 +31,24 @@
                              DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                                <RowDefinition/>
+                                <RowDefinition/> <!-- bad ingredient flag -->
+                                <RowDefinition/> <!-- not used in any blueprint flag -->
+                                <RowDefinition/> <!-- separator -->
+                                <RowDefinition/> <!-- subkind -->
+                                <RowDefinition/> <!-- origin details -->
+                                <RowDefinition/> <!-- carrying -->
+                                <RowDefinition/> <!-- separator -->
+                                <RowDefinition/> <!-- settlement label -->
+                                <RowDefinition/> <!-- settlement list -->
+                                <RowDefinition/> <!-- separator -->
+                                <RowDefinition/> <!-- building label -->
+                                <RowDefinition/> <!-- building list -->
+                                <RowDefinition/> <!-- separator -->
+                                <RowDefinition/> <!-- container label -->
+                                <RowDefinition/> <!-- container list -->
+                                <RowDefinition/> <!-- separator -->
+                                <RowDefinition/> <!-- top source systems label -->
+                                <RowDefinition/> <!-- top source systems list -->
                             </Grid.RowDefinitions>
                             <TextBlock FontWeight="Bold"
                                        Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Unrecognized Ingredient (showing name as it appears in the logs). Please open a GitHub issue to let the author know what is the real name of this!'}"
@@ -80,14 +88,90 @@
                                 <Run Text="/"/>
                                 <Run Text="{Binding DataContext.Value.Data.MaximumCapacity}"/>
                             </TextBlock>
-                            <TextBlock Grid.Row="6"/>
                             <Border BorderThickness="1"
                                     BorderBrush="Black"
-                                    Grid.Row="7"/>
+                                    Grid.Row="6"/>
+                            
+                            <!-- settlement -->
+                            <TextBlock Grid.Row="7"
+                                       FontWeight="Bold"
+                                       Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Settlement types:'}"
+                                       Visibility="{Binding DataContext.Value.Data.SettlementType, Converter={StaticResource ListToVisibility}}"/>
+                            <ItemsControl ItemsSource="{Binding DataContext.Value.Data.SettlementType}"
+                                          Grid.Row="8">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock>
+                                            <TextBlock.Text>
+                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Unknown">
+                                                    <Binding Path=""/>
+                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                </MultiBinding>
+                                            </TextBlock.Text></TextBlock>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            <Border BorderThickness="1"
+                                    BorderBrush="Black"
+                                    Grid.Row="9"
+                                    Visibility="{Binding DataContext.Value.Data.SettlementType, Converter={StaticResource ListToVisibility}}"/>
+
+                            <!-- building -->
+                            <TextBlock Grid.Row="10"
+                                       FontWeight="Bold"
+                                       Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Building types:'}"
+                                       Visibility="{Binding DataContext.Value.Data.BuildingType, Converter={StaticResource ListToVisibility}}"/>
+                            <ItemsControl ItemsSource="{Binding DataContext.Value.Data.BuildingType}"
+                                          Grid.Row="11">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock>
+                                            <TextBlock.Text>
+                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Unknown">
+                                                    <Binding Path=""/>
+                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                </MultiBinding>
+                                            </TextBlock.Text></TextBlock>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            <Border BorderThickness="1"
+                                    BorderBrush="Black"
+                                    Grid.Row="12"
+                                    Visibility="{Binding DataContext.Value.Data.BuildingType, Converter={StaticResource ListToVisibility}}"/>
+
+                            <!-- container -->
+                            <TextBlock Grid.Row="13"
+                                       FontWeight="Bold"
+                                       Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Container types:'}"
+                                       Visibility="{Binding DataContext.Value.Data.ContainerType, Converter={StaticResource ListToVisibility}}"/>
+                            <ItemsControl ItemsSource="{Binding DataContext.Value.Data.ContainerType}"
+                                          Grid.Row="14">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock>
+                                            <TextBlock.Text>
+                                                <MultiBinding Converter="{x:Static localization:Languages.Instance}" FallbackValue="Unknown">
+                                                    <Binding Path=""/>
+                                                    <Binding Path="DataContext.Languages.CurrentLanguage"
+                                                             RelativeSource="{RelativeSource FindAncestor, AncestorType={x:Type Window}}"/>
+                                                </MultiBinding>
+                                            </TextBlock.Text></TextBlock>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                            <Border BorderThickness="1"
+                                    BorderBrush="Black"
+                                    Grid.Row="15"
+                                    Visibility="{Binding DataContext.Value.Data.ContainerType, Converter={StaticResource ListToVisibility}}"/>
+
+                            <!-- top source systems -->
                             <TextBlock FontWeight="Bold"
-                                       Grid.Row="8"
+                                       Grid.Row="16"
                                        Text="{Binding Tag.Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Top Source Systems'}"/>
-                            <ItemsControl Grid.Row="9">
+                            <ItemsControl Grid.Row="17">
                                 <ItemsControl.ItemsSource>
                                     <MultiBinding Converter="{StaticResource HistoryToTop5Converter}" FallbackValue="Sol (5)">
                                         <Binding Path="Tag.CurrentCommander.Value.State.History"/>
@@ -106,9 +190,14 @@
                             <RowDefinition Height="*"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
                         <StackPanel VerticalAlignment="Center"
                                     Orientation="Horizontal"
-                                    Grid.Row="0">
+                                    Grid.Row="0"
+                                    Grid.Column="0">
                             <Image Source="{Binding Value.Data, Converter={StaticResource IngredientToIcon}, FallbackValue={StaticResource DesignRaritySource}}"
                                    HorizontalAlignment="Left"
                                    Width="20"
@@ -138,9 +227,40 @@
                                    Visibility="{Binding DataContext.ShowOriginIcons, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Converter={StaticResource BooleanToVisibility}}"
                                    VerticalAlignment="Center" />
                         </StackPanel>
+                        <StackPanel Orientation="Vertical"
+                                    Grid.Column="1"
+                                    VerticalAlignment="Center"
+                                    Grid.Row="0">
+                            <TextBlock FontSize="12"
+                                       FontFamily="/Resources/Fonts/#Euro Caps"
+                                       Visibility="{Binding Value.Data.ValueCr, Converter={StaticResource NullableToVisibility}}">
+                                    <Run Text="{Binding Value.Data.ValueCr, StringFormat=N0}"/>
+                                    <Run Text="CR"/>
+                            </TextBlock>
+                            <StackPanel Grid.Column="1"
+                                        Orientation="Horizontal">
+                                <TextBlock FontWeight="Bold"
+                                           FontSize="12"
+                                           Foreground="{StaticResource OdysseyIngredientBrush}"
+                                           Visibility="{Binding Value.Data.BarterCost, Converter={StaticResource NullableToVisibility}}">
+                                    <Run Text="Cost: "/>
+                                    <Run Text="{Binding Value.Data.BarterCost, StringFormat=N0}"/>
+                                    <Run Text="/ "/>
+                                </TextBlock>
+
+                                <TextBlock FontWeight="Bold"
+                                           FontSize="12"
+                                           Foreground="{StaticResource OdysseyIngredientBrush}"
+                                           Visibility="{Binding Value.Data.BarterValue, Converter={StaticResource NullableToVisibility}}">
+                                    <Run Text="Value: "/>
+                                    <Run Text="{Binding Value.Data.BarterValue, StringFormat=N0}"/>
+                                </TextBlock>
+                            </StackPanel>
+                        </StackPanel>
 
                         <Grid HorizontalAlignment="Right"
-                              Grid.Row="0">
+                              Grid.Row="0"
+                              Grid.ColumnSpan="2">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
                                 <ColumnDefinition x:Name="PART_TextBoxColumn" Width="*" />

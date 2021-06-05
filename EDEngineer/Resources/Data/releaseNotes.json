@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.0",
+    "Content": "* Odyssey materials and blueprints are now integrated in EDEngineer\n\nthanks a lot for the amazing contributions from @jpacelli62 and @Gimi1967\n\n\n\nstock in the cargo might not update properly yet - it hopefully should come soon\n\n\n\n* french localization update ; thanks a lot to @drmagoo33450 and @jpacelli62 "
+  },
+  {
     "Version": "1.1.5.10",
     "Content": "* Chinese localization available, thanks a lot to @YASAN666 and @skyter \r\n* Fixed Engineered FSD V1 materials, thanks to @RadarCZ \r\n\r\n* Fixed ruthenium maximum capacity\r\n* Heatsink refill now always 100%"
   },

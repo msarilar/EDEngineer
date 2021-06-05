@@ -12,7 +12,7 @@ namespace EDEngineer.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var list = (IList) value;
-            return list.Cast<object>().Any() ? Visibility.Visible : Visibility.Collapsed;
+            return list != null && list.Cast<object>().Any() ? Visibility.Visible : Visibility.Collapsed;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
