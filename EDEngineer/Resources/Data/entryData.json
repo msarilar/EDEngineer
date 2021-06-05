@@ -2613,8 +2613,6 @@
     "ContainerType": [
       "Industrial Data Port",
       "Laboratory Data Port",
-      "Power Data Port",
-      "Security Data Port"
     ]
   },
   {
@@ -2861,6 +2859,19 @@
     "ContainerType": []
   },
   {
+    "Name": "Extraction Yield Data",
+    "FormattedName": "extractionyielddata",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+      "Planetary Settlement"
+    ],
+    "Group": "Data",
+    "ValueCr": 6000,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
     "Name": "Gene Sequencing Data",
     "FormattedName": "genesequencingdata",
     "Kind": "OdysseyIngredient",
@@ -3024,6 +3035,45 @@
     "Group": "Data",
     "ValueCr": 6000,
     "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Fleet Registry",
+    "FormattedName": "fleetregistry",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+		  "Planetary Settlement"
+	],
+    "Group": "Data",
+    "ValueCr": -1,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Gene Sequencing Data",
+    "FormattedName": "genesequencingdata",
+    "Kind": "OdysseyIngredient",
+	  "OriginDetails": [
+		  "Planetary Settlement"
+	],
+    "Group": "Data",
+    "ValueCr": -1,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Genetic Reserach",
+    "FormattedName": "geneticreserach",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+	    "Planetary Settlement"
+	],
+    "Group": "Data",
+    "ValueCr": 21000,
+	  "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []
   },
@@ -4190,6 +4240,19 @@
       "Industrial Locker (S)",
       "Research Locker (S)"
     ]
+  },
+  {
+    "Name": "Genetic Sample",
+    "FormattedName": "geneticsample",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [
+		  "Planetary Settlement"
+	  ],
+    "Group": "Item",
+    "ValueCr": -1,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
   },
   {
     "Name": "Health Canister",
