@@ -42097,5 +42097,1633 @@
         "IsGood": true
       }
     ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "KARMA P-15 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "KARMA P-15 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "KARMA P-15 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "KARMA P-15 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Tormentor grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Zenith grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma AR-50 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma C-44 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 5
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 15
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 25
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Karma L-6 grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Compression-Liquefied Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Tungsten Carbide",
+        "Size": 35
+      },
+      {
+        "Name": "Weapon Component",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Executioner grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Intimidator grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 25
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Manticore Opressor grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Chemical Superbase",
+        "Size": 35
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Aphelion grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 2",
+    "Grade": 2,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 1
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 1
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 1
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 5
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 5
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "1",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 3",
+    "Grade": 3,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 5
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 5
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 5
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 15
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 15
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "2",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 4",
+    "Grade": 4,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 10
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 10
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 10
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 25
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "3",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
+  },
+  {
+    "Type": "Weapon",
+    "Name": "TK Eclipse grade 5",
+    "Grade": 5,
+    "Engineers": [
+      "@Merchant"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Weapon Schematic",
+        "Size": 15
+      },
+      {
+        "Name": "Ionised Gas",
+        "Size": 15
+      },
+      {
+        "Name": "Manufacturing Instructions",
+        "Size": 15
+      },
+      {
+        "Name": "Microelectrode",
+        "Size": 35
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 35
+      }
+    ],
+    "Effects": [
+      {
+        "Effect": "4",
+        "Property": "Engineer modification slots",
+        "IsGood": true
+      }
+    ]
   }
 ]
