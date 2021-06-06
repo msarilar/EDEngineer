@@ -1,5 +1,8 @@
+using System.Diagnostics;
+
 namespace EDEngineer.Models.Filters
 {
+    [DebuggerDisplay("{Type}")]
     public class TypeFilter : BlueprintFilter
     {
         public string Type { get; }

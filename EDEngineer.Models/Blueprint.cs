@@ -108,6 +108,11 @@ namespace EDEngineer.Models
                     return BlueprintCategory.Unlock;
                 }
 
+                if(Engineers.FirstOrDefault() == "@Merchant")
+                {
+                    return BlueprintCategory.Merchant;
+                }
+
                 if (Engineers.FirstOrDefault() == "@Technology")
                 {
                     return BlueprintCategory.Technology;

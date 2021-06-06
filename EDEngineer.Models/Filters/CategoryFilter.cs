@@ -1,5 +1,8 @@
+using System.Diagnostics;
+
 namespace EDEngineer.Models.Filters
 {
+    [DebuggerDisplay("{Category}")]
     public class CategoryFilter : BlueprintFilter
     {
         public BlueprintCategory Category { get; }

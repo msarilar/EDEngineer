@@ -6,6 +6,7 @@
         Synthesis,
         Experimental,
         Technology,
-        Unlock
+        Unlock,
+        Merchant
     }
 }

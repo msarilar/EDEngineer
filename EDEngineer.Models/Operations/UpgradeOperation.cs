@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EDEngineer.Models.Operations
 {
-	public class UpgradeOperation : JournalOperation
+    public class UpgradeOperation : JournalOperation
     {
         private Dictionary<string, int> _changes = new Dictionary<string, int>();
 
@@ -14,18 +14,18 @@ namespace EDEngineer.Models.Operations
 
         public string Name { get; set; }
 
-		public int Class { get; set; }
+        public int Class { get; set; }
 
-		public override Dictionary<string, int> Changes => throw new NotImplementedException();
+        public override Dictionary<string, int> Changes => _changes;
 
-		public override void Mutate(State.State state)
+        public override void Mutate(State.State state)
         {
             var equipement = GetEquipment(state);
             var blueprint = state.Blueprints.FirstOrDefault(x => x.BlueprintName == equipement.Name && x.Grade == Class);
-            if(blueprint != null)
-			{
-				foreach (var item in blueprint.Ingredients)
-				{
+            if (blueprint != null)
+            {
+                foreach (var item in blueprint.Ingredients)
+                {
                     state.IncrementCargo(item.Entry.Data.Name, -item.Size);
                     _changes.Add(item.Entry.Data.Name, -item.Size);
                 }
@@ -33,15 +33,16 @@ namespace EDEngineer.Models.Operations
         }
 
         private Equipment GetEquipment(State.State state)
-		{
+        {
             Equipment equipment;
-            if(Event == JournalEvent.UpgradeWeapon)
-			{
-                equipment = state.Equipments.FirstOrDefault(x => x.Code == Name);
-            } else
-			{
+            if (Event == JournalEvent.UpgradeWeapon)
+            {
+                equipment = state.Equipments[Name];
+            }
+            else
+            {
                 string suitType = Name.Split("_".ToCharArray())[0];
-                equipment = state.Equipments.FirstOrDefault(x => x.Code == suitType);
+                equipment = state.Equipments[suitType];
             }
             return equipment;
         }

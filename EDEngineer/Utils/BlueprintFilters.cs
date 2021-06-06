@@ -23,6 +23,12 @@ namespace EDEngineer.Utils
         public List<CraftableFilter> CraftableFilters { get; }
         public List<CategoryFilter> CategoryFilters { get; }
 
+        private bool _isMagicUpdate;
+
+        private TypeFilter _magicTypeFilter;
+        private EngineerFilter _magicEngineerFilter;
+        private GradeFilter _magicGradeFilter;
+
         public string SearchText
         {
             get => searchText;
@@ -45,11 +51,11 @@ namespace EDEngineer.Utils
                 .Select(b => b.Key)
                 .Where(b => b.HasValue)
                 .OrderBy(b => b)
-                .Select(g => new GradeFilter(g.GetValueOrDefault(), $"GF{g}") {  Checked = true }));
+                .Select(g => new GradeFilter(g.GetValueOrDefault(), $"GF{g}") { Checked = true }));
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()
-                .Except("@Synthesis", "@Technology")
+                .Except("@Synthesis", "@Technology", "@Merchant")
                 .OrderBy(language.Translate)
                 .Select(e => new EngineerFilter(e, $"EF{e}") { Checked = true }));
 
@@ -137,7 +143,10 @@ namespace EDEngineer.Utils
                             Properties.Settings.Default.FiltersChecked.Remove(filter.UniqueName);
                         }
 
-                        Properties.Settings.Default.Save();
+                        if (!_isMagicUpdate)
+                        {
+                            Properties.Settings.Default.Save();
+                        }
                     };
                 }
             }
@@ -147,44 +156,90 @@ namespace EDEngineer.Utils
 
         private void InsertMagicFilters()
         {
-            var magicTypeFilters = TypeFilter.MagicFilter;
-            TypeFilters.Insert(0, magicTypeFilters);
+            _magicTypeFilter = TypeFilter.MagicFilter;
+            TypeFilters.Insert(0, _magicTypeFilter);
 
-            var magicEngineerFilters = EngineerFilter.MagicFilter;
-            EngineerFilters.Insert(0, magicEngineerFilters);
+            _magicEngineerFilter = EngineerFilter.MagicFilter;
+            EngineerFilters.Insert(0, _magicEngineerFilter);
 
-            var magicGradeFilter = GradeFilter.MagicFilter;
-            GradeFilters.Insert(0, magicGradeFilter);
+            _magicGradeFilter = GradeFilter.MagicFilter;
+            GradeFilters.Insert(0, _magicGradeFilter);
 
-            var synthesisTypeFilter = new TypeFilter("@Synthesis", "TFSynthesis") { Checked = true };
+            var synthesisTypeFilter = new TypeFilter("@Synthesis", "TFSynthesis") { Checked = false } ;
             TypeFilters.Add(synthesisTypeFilter);
 
-            var technologyTypeFilter = new TypeFilter("@Technology", "TFTechnology") { Checked = true };
+            var technologyTypeFilter = new TypeFilter("@Technology", "TFTechnology") { Checked = false };
             TypeFilters.Add(technologyTypeFilter);
+        }
 
-            magicGradeFilter.PropertyChanged += (o, e) =>
+        private void UpdateFiltersFromMagicFilter(CollectionViewSource source, bool isChecked, IEnumerable<BlueprintFilter> filters)
+        {
+            if (!_isMagicUpdate)
             {
-                foreach (var filter in GradeFilters)
+                _isMagicUpdate = true;
+                foreach (var filter in filters)
                 {
-                    filter.Checked = magicGradeFilter.Checked;
+                    filter.Checked = isChecked;
                 }
-            };
+                _isMagicUpdate = false;
 
-            magicEngineerFilters.PropertyChanged += (o, e) =>
-            {
-                foreach (var filter in EngineerFilters)
-                {
-                    filter.Checked = magicEngineerFilters.Checked;
-                }
-            };
+                //Update view once done
+                Properties.Settings.Default.Save();
 
-            magicTypeFilters.PropertyChanged += (o, e) =>
+                source.View.Refresh();
+                OnPropertyChanged(nameof(EngineerFilters));
+                OnPropertyChanged(nameof(GradeFilters));
+                OnPropertyChanged(nameof(TypeFilters));
+                OnPropertyChanged(nameof(CraftableFilters));
+                OnPropertyChanged(nameof(IgnoredFavoriteFilters));
+            }
+        }
+
+        private void UpdateMagicFilterFromFilters(BlueprintFilter updatedFilter)
+        {
+            IEnumerable<BlueprintFilter> group = null;
+            BlueprintFilter magicFilter = null;
+
+            switch (updatedFilter.GetType().Name)
             {
-                foreach (var filter in TypeFilters)
+                case nameof(GradeFilter):
+                    group = GradeFilters;
+                    magicFilter = _magicGradeFilter;
+                    break;
+                case nameof(TypeFilter):
+                    group = TypeFilters;
+                    magicFilter = _magicTypeFilter;
+                    break;
+                case nameof(EngineerFilter):
+                    group = EngineerFilters;
+                    magicFilter = _magicEngineerFilter;
+                    break;
+                default:
+                    break;
+            }
+
+            if (group != null && magicFilter != null)
+            {
+                foreach (var filter in group)
                 {
-                    filter.Checked = magicTypeFilters.Checked;
+                    if (filter != magicFilter)
+                    {
+                        if (filter.Checked && !magicFilter.Checked)
+                        {
+                            _isMagicUpdate = true;
+                            magicFilter.Checked = true;
+                            _isMagicUpdate = false;
+                        }
+
+                        if (filter.Checked && magicFilter.Checked)
+                        {
+                            return;
+                        }
+                    }
                 }
-            };
+
+                magicFilter.Checked = false;
+            }
         }
 
         public List<BlueprintFilter> AllFilters { get; }
@@ -199,16 +254,24 @@ namespace EDEngineer.Utils
                 }
             };
 
+            _magicGradeFilter.PropertyChanged += (o, e) => UpdateFiltersFromMagicFilter(source, _magicGradeFilter.Checked, GradeFilters);
+            _magicEngineerFilter.PropertyChanged += (o, e) => UpdateFiltersFromMagicFilter(source, _magicEngineerFilter.Checked, EngineerFilters);
+            _magicTypeFilter.PropertyChanged += (o, e) => UpdateFiltersFromMagicFilter(source, _magicTypeFilter.Checked, TypeFilters);
+
             foreach (var filter in AllFilters)
             {
                 filter.PropertyChanged += (o, e) =>
                 {
-                    source.View.Refresh();
-                    OnPropertyChanged(nameof(EngineerFilters));
-                    OnPropertyChanged(nameof(GradeFilters));
-                    OnPropertyChanged(nameof(TypeFilters));
-                    OnPropertyChanged(nameof(CraftableFilters));
-                    OnPropertyChanged(nameof(IgnoredFavoriteFilters));
+                    if (!_isMagicUpdate)
+                    {
+                        source.View.Refresh();
+                        OnPropertyChanged(nameof(EngineerFilters));
+                        OnPropertyChanged(nameof(GradeFilters));
+                        OnPropertyChanged(nameof(TypeFilters));
+                        OnPropertyChanged(nameof(CraftableFilters));
+                        OnPropertyChanged(nameof(IgnoredFavoriteFilters));
+                        UpdateMagicFilterFromFilters((BlueprintFilter)o);
+                    }
                 };
             }
 
@@ -230,7 +293,7 @@ namespace EDEngineer.Utils
                 };
             }
 
-            foreach (var blueprint in (IEnumerable<Blueprint>) source.Source)
+            foreach (var blueprint in (IEnumerable<Blueprint>)source.Source)
             {
                 blueprint.PropertyChanged += (o, e) =>
                 {
@@ -240,13 +303,13 @@ namespace EDEngineer.Utils
                     }
                 };
             }
-            
-            source.Filter += (o,e) =>
+
+            source.Filter += (o, e) =>
             {
                 var blueprint = (Blueprint)e.Item;
 
                 var satisfySearchText = string.IsNullOrWhiteSpace(trimmedSearchText) ||
-                                        trimmedSearchText.Split(' ').All(t => 
+                                        trimmedSearchText.Split(' ').All(t =>
                                         blueprint.SearchableContent.IndexOf(t.Trim(),
                                             StringComparison.Ordinal) >= 0);
 

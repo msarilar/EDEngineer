@@ -96,7 +96,7 @@ namespace EDEngineer.Views
                 Error = (o, e) => e.ErrorContext.Handled = true
             };
             LoadBlueprints(languages, blueprints);
-            State.Equipments = equipments;
+            State.Equipments = equipments.ToDictionary(x=> x.Code);
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
             loadAction(this);

@@ -72,7 +72,7 @@ namespace EDEngineer.Models.State
 
         public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
         public List<Blueprint> Blueprints { get; set; }
-        public List<Equipment> Equipments { get; set; }
+        public Dictionary<string, Equipment> Equipments { get; set; }
 
 
         public StateCargo Cargo { get; }
