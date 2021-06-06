@@ -2688,8 +2688,8 @@
     "ContainerType": []
   },
   {
-    "Name": "Clinical Trail Records",
-    "FormattedName": "clinicaltrailrecords",
+    "Name": "Clinical Trial Records",
+    "FormattedName": "MedicalTrialRecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
@@ -3065,8 +3065,8 @@
     "ContainerType": []
   },
   {
-    "Name": "Genetic Reserach",
-    "FormattedName": "geneticreserach",
+    "Name": "Genetic Research",
+    "FormattedName": "GeneticResearch",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
@@ -3696,19 +3696,6 @@
     "ContainerType": []
   },
   {
-    "Name": "Security Plans",
-    "FormattedName": "securityplans",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [
-      "Planetary Settlement"
-    ],
-    "Group": "Data",
-    "ValueCr": -1,
-    "SettlementType": [],
-    "BuildingType": [],
-    "ContainerType": []
-  },
-  {
     "Name": "Seed Geneaology",
     "FormattedName": "seedgeneaology",
     "Kind": "OdysseyIngredient",
@@ -4136,7 +4123,7 @@
   },
   {
     "Name": "Chemical Process Sample",
-    "FormattedName": "ChemicalProcessSample",
+    "FormattedName": "chemicalprocesssample",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
@@ -4242,21 +4229,8 @@
     ]
   },
   {
-    "Name": "Genetic Sample",
+    "Name": "Biological Sample",
     "FormattedName": "geneticsample",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [
-      "Planetary Settlement"
-    ],
-    "Group": "Item",
-    "ValueCr": -1,
-    "SettlementType": [],
-    "BuildingType": [],
-    "ContainerType": []
-  },
-  {
-    "Name": "Health Canister",
-    "FormattedName": "healthcanister",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"

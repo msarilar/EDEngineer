@@ -93,16 +93,6 @@ namespace EDEngineer.Models.State
         {
             lock (stateLock)
             {
-                if (!Ingredients.ContainsKey(name))
-                {
-                    Ingredients[name] = new Entry(new EntryData
-                    {
-                        FormattedName = name,
-                        Kind = Kind.Unknown,
-                        Name = name,
-                        Unused = true
-                    });
-                }
                 Ingredients.Increment(name, change);
             }
 

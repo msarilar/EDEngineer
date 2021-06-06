@@ -109,7 +109,35 @@ namespace EDEngineer.Views
                 aggregation = GetAggregation();
             }
 
-            if (aggregation == null || !aggregation.Aggregations.Any())
+            bool loadAll = true;
+            if (aggregation != null && aggregation.Aggregations.Any())
+            {
+                try
+                {
+                    foreach (var key in aggregation.Aggregations.Keys)
+                    {
+                        var commanderState = new CommanderViewModel(key,
+                            c => c.LoadAggregation(aggregation.Aggregations[key]), Languages, entryDatas, equipments)
+                        {
+                            LastUpdate = aggregation.Aggregations[key].LastTimestamp
+                        };
+                        Commanders[key] = commanderState;
+                    }
+
+                    var latestInstant = aggregation?.Aggregations.Values.Max(c => c.LastTimestamp);
+                    var content = LogWatcher.GetFilesContentFrom(latestInstant);
+                    foreach (var key in content.Keys)
+                    {
+                        ApplyEvents(Tuple.Create(key, content[key]));
+                    }
+                    loadAll = false;
+                }
+                catch 
+                {
+                }
+            }
+
+            if (loadAll)
             {
                 var allLogs = LogWatcher.RetrieveAllLogs();
 
@@ -125,25 +153,7 @@ namespace EDEngineer.Views
                     Commanders[commander] = commanderState;
                 }
             }
-            else
-            {
-                foreach (var key in aggregation.Aggregations.Keys)
-                {
-                    var commanderState = new CommanderViewModel(key,
-                        c => c.LoadAggregation(aggregation.Aggregations[key]), Languages, entryDatas, equipments)
-                    {
-                        LastUpdate = aggregation.Aggregations[key].LastTimestamp
-                    };
-                    Commanders[key] = commanderState;
-                }
 
-                var latestInstant = aggregation?.Aggregations.Values.Max(c => c.LastTimestamp);
-                var content = LogWatcher.GetFilesContentFrom(latestInstant);
-                foreach (var key in content.Keys)
-                {
-                    ApplyEvents(Tuple.Create(key, content[key]));
-                }
-            }
 
             if (Commanders.Count == 0) // we found absolutely nothing
             {
