@@ -104,6 +104,7 @@ namespace EDEngineer.Utils
                                   .Select(c => new CategoryFilter(c, $"BCF{c}"))
                                   .ToList();
 
+            InsertMagicFilters();
             AllFilters = GradeFilters.Cast<BlueprintFilter>()
                 .Union(EngineerFilters)
                 .Union(TypeFilters)
@@ -113,7 +114,6 @@ namespace EDEngineer.Utils
 
             LoadSavedFilters();
 
-            InsertMagicFilters();
         }
 
         private void LoadSavedFilters()
@@ -165,10 +165,10 @@ namespace EDEngineer.Utils
             _magicGradeFilter = GradeFilter.MagicFilter;
             GradeFilters.Insert(0, _magicGradeFilter);
 
-            var synthesisTypeFilter = new TypeFilter("@Synthesis", "TFSynthesis") { Checked = false } ;
+            var synthesisTypeFilter = new TypeFilter("@Synthesis", "TFSynthesis");
             TypeFilters.Add(synthesisTypeFilter);
 
-            var technologyTypeFilter = new TypeFilter("@Technology", "TFTechnology") { Checked = false };
+            var technologyTypeFilter = new TypeFilter("@Technology", "TFTechnology");
             TypeFilters.Add(technologyTypeFilter);
         }
 
