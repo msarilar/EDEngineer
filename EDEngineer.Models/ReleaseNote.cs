@@ -4,5 +4,6 @@ namespace EDEngineer.Models
     {
         public string Version { get; set; }
         public string Content { get; set; }
+        public bool? Reset { get; set; }
     }
 }
