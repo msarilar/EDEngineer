@@ -35,11 +35,9 @@ namespace EDEngineer.Utils
             return objectType == typeof(JournalEntry);
         }
 
-        public override object ReadJson(JsonReader reader, Type objectType, object existingValue,
-            JsonSerializer serializer)
+        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
         {
             reader.DateParseHandling = DateParseHandling.None;
-
             JObject data;
 
             try
@@ -154,6 +152,15 @@ namespace EDEngineer.Utils
                 case JournalEvent.UpgradeSuit:
                 case JournalEvent.UpgradeWeapon:
                     return ExtractUpgrade(data, journalEvent);
+                case JournalEvent.ApproachSettlement:
+                    return ExtractApproachSettlement(data);
+                case JournalEvent.CollectItems:
+                    return ExtractCollectItems(data);
+                case JournalEvent.Docked:
+                    return ExtractDocked(data);
+                case JournalEvent.Undocked:
+                case JournalEvent.SupercruiseEntry:
+                    return new LeaveSettlementOperation();
                 default:
                     return null;
             }
@@ -307,6 +314,32 @@ namespace EDEngineer.Utils
         private JournalOperation ExtractSystemUpdated(JObject data)
         {
             return new SystemUpdatedOperation((string)data["StarSystem"]);
+        }
+
+        private JournalOperation ExtractApproachSettlement(JObject data)
+        {
+            return new ApproachSettlementOperation((string)data["Name"]);
+        }
+        private JournalOperation ExtractDocked(JObject data)
+        {
+            return new ApproachSettlementOperation((string)data["StationName"]);
+        }
+
+        private JournalOperation ExtractCollectItems(JObject data)
+        {
+            converter.TryGet(Kind.OdysseyIngredient, (string)data["Name"], out var ingredient);
+            if (ingredient != null)
+            {
+                return new CollectItemOperation
+                {
+                    MaterialName = ingredient,
+                    Size = (int)data["Count"],
+                };
+            }
+            else
+            {
+                return null;
+            }
         }
 
         private JournalOperation ExtractTechnologyBroker(JObject data)

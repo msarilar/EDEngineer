@@ -4,12 +4,21 @@ namespace EDEngineer.Models.State
 {
     public class StateHistory
     {
+        private string _system;
         public StateHistory()
         {
             System = "Sol";
         }
 
-        public string System { get; set; }
+
+        public string System { 
+            get => _system; 
+            set {
+                _system = value;
+                Settlement = string.Empty;
+            }
+        }
+        public string Settlement { get; set; }
         public void IncrementCargo(string name, int change)
         {
             if (change <= 0)
@@ -22,13 +31,19 @@ namespace EDEngineer.Models.State
                 Loots[name] = new Dictionary<string, int>();
             }
 
-            if (!Loots[name].ContainsKey(System))
+            string location = System;
+            if (!string.IsNullOrEmpty(Settlement))
             {
-                Loots[name][System] = change;
+                location = $"{Settlement} ({System})";
+            }
+            
+            if (!Loots[name].ContainsKey(location))
+            {
+                Loots[name][location] = change;
             }
             else
             {
-                Loots[name][System] += change;
+                Loots[name][location] += change;
             }
         }
 

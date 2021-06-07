@@ -30,6 +30,11 @@ namespace EDEngineer.Models
         UpgradeSuit,
         UpgradeWeapon,
         SellMicroResources,
-        TradeMicroResources
+        TradeMicroResources,
+        ApproachSettlement,
+        CollectItems,
+        Docked,
+        Undocked,
+        SupercruiseEntry
     }
 }

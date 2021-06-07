@@ -32,6 +32,11 @@ namespace EDEngineer.Models.State
             History.System = system;
         }
 
+        public void SetSettlement(string settlementName)
+        {
+            History.Settlement = settlementName;
+        }
+
         public void ApplyCraft(EngineerOperation engineerOperation)
         {
             Loadout.ApplyCraft(engineerOperation);
