@@ -92,7 +92,8 @@ namespace EDEngineer.Views
             Left = dimensions.Left;
             Top = dimensions.Top;
             Height = dimensions.Height;
-            this.SaveDimensions
+            WindowState = SettingsManager.Maximized ? WindowState.Maximized : WindowState;
+ 
             var logDirectory = Helpers.RetrieveLogDirectory(false, null);
             var task = Task.Factory.StartNew(() =>
             {
@@ -480,6 +481,7 @@ namespace EDEngineer.Views
                 LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
                 RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
             };
+            SettingsManager.Maximized = this.WindowState == WindowState.Maximized;
         }
 
         private void ResetWindowPositionButtonClicked(object sender, RoutedEventArgs e)
