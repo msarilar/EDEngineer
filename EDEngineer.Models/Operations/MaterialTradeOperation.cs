@@ -4,22 +4,36 @@ namespace EDEngineer.Models.Operations
 {
     public class MaterialTradeOperation : JournalOperation
     {
-        public string IngredientRemoved { get; set; }
-        public int RemovedQuantity { get; set; }
+        private Dictionary<string, int> _changes = new Dictionary<string, int>();
 
-        public string IngredientAdded { get; set; }
-        public int AddedQuantity { get; set; }
-        
-        public override void Mutate(State.State state)
+        public void AddIngredient(string ingredient, int count)
         {
-            state.IncrementCargo(IngredientRemoved, -1 * RemovedQuantity);
-            state.IncrementCargo(IngredientAdded, AddedQuantity);
+            if (!_changes.ContainsKey(ingredient))
+            {
+                _changes.Add(ingredient, 0);
+            }
+
+            _changes[ingredient] += count;
         }
 
-        public override Dictionary<string, int> Changes => new Dictionary<string, int>
+        public void RemoveIngredient(string ingredient, int count)
         {
-            [IngredientRemoved] = -1 * RemovedQuantity,
-            [IngredientAdded] = AddedQuantity,
-        };
+            if (!_changes.ContainsKey(ingredient))
+            {
+                _changes.Add(ingredient, 0);
+            }
+
+            _changes[ingredient] -= count;
+        }
+
+        public override void Mutate(State.State state)
+        {
+            foreach (var ingredient in _changes)
+            {
+                state.IncrementCargo(ingredient.Key, ingredient.Value);
+            }
+        }
+
+        public override Dictionary<string, int> Changes => _changes;
     }
 }

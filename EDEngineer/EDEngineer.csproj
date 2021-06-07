@@ -333,6 +333,7 @@
     <Resource Include="Resources\Images\odyssey-tech.png" />
     <Resource Include="Resources\Images\odyssey-chemicals.png" />
     <Resource Include="Resources\menu-export.ico" />
+    <EmbeddedResource Include="Resources\Data\equipment.json" />
     <None Include="Resources\menu_settings_export.ico" />
     <Resource Include="Resources\menu-reload.ico" />
     <Resource Include="Resources\Images\api-on.png" />

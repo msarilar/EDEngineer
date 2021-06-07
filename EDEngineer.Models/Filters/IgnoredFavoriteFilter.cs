@@ -1,7 +1,9 @@
 using System;
+using System.Diagnostics;
 
 namespace EDEngineer.Models.Filters
 {
+    [DebuggerDisplay("{Label}")]
     public class IgnoredFavoriteFilter : BlueprintFilter
     {
         public override string Label { get; }

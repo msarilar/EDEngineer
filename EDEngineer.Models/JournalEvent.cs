@@ -26,6 +26,10 @@ namespace EDEngineer.Models
         FSDJump,
         Loadout,
         Died,
-        ShipLockerMaterials
+        ShipLockerMaterials,
+        UpgradeSuit,
+        UpgradeWeapon,
+        SellMicroResources,
+        TradeMicroResources
     }
 }

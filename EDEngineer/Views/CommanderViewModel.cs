@@ -72,13 +72,13 @@ namespace EDEngineer.Views
             State.Cargo.CompleteLoad();
         }
 
-        public CommanderViewModel(string commanderName, Action<CommanderViewModel> loadAction, Languages languages, List<EntryData> entryDatas)
+        public CommanderViewModel(string commanderName, Action<CommanderViewModel> loadAction, Languages languages, List<EntryData> entryDatas, List<Equipment> equipments)
         {
             CommanderName = commanderName;
 
             var converter = new ItemNameConverter(entryDatas);
 
-            State = new State(new StateCargo(entryDatas, languages, SettingsManager.Comparer));
+            State = new State(new StateCargo(entryDatas, equipments, languages, SettingsManager.Comparer));
 
             commanderNotifications = new CommanderNotifications(State);
             var blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
@@ -96,7 +96,7 @@ namespace EDEngineer.Views
                 Error = (o, e) => e.ErrorContext.Handled = true
             };
             LoadBlueprints(languages, blueprints);
-
+            State.Equipments = equipments.ToDictionary(x=> x.Code);
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
             loadAction(this);

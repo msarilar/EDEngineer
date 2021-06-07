@@ -1,8 +1,10 @@
+using System.Diagnostics;
 using System.Linq;
 using EDEngineer.Models.Utils;
 
 namespace EDEngineer.Models.Filters
 {
+    [DebuggerDisplay("{Label}")]
     public class EngineerFilter : BlueprintFilter
     {
         public string Engineer { get; }
@@ -11,7 +13,7 @@ namespace EDEngineer.Models.Filters
 
         public override bool AppliesTo(Blueprint blueprint)
         {
-            return blueprint.Category.In(BlueprintCategory.Synthesis, BlueprintCategory.Technology) || blueprint.Engineers.Contains(Engineer);
+            return blueprint.Category.In(BlueprintCategory.Synthesis, BlueprintCategory.Technology, BlueprintCategory.Merchant) || blueprint.Engineers.Contains(Engineer);
         }
 
         public EngineerFilter(string engineer, string uniqueName) : base(uniqueName)

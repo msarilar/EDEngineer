@@ -75,6 +75,7 @@ namespace EDEngineer.Views
             logDirectory = directory;
             entryDatas =
                 JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
+            equipments = JsonConvert.DeserializeObject<List<Equipment>>(Helpers.GetEquipmentsJson());
             Languages = languages;
             GraphicSettings = new GraphicSettings();
             IngredientsGrouped = SettingsManager.IngredientsGrouped;
@@ -120,7 +121,7 @@ namespace EDEngineer.Views
                         continue;
                     }
 
-                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas);
+                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas, equipments);
                     Commanders[commander] = commanderState;
                 }
             }
@@ -129,7 +130,7 @@ namespace EDEngineer.Views
                 foreach (var key in aggregation.Aggregations.Keys)
                 {
                     var commanderState = new CommanderViewModel(key,
-                        c => c.LoadAggregation(aggregation.Aggregations[key]), Languages, entryDatas)
+                        c => c.LoadAggregation(aggregation.Aggregations[key]), Languages, entryDatas, equipments)
                     {
                         LastUpdate = aggregation.Aggregations[key].LastTimestamp
                     };
@@ -146,7 +147,7 @@ namespace EDEngineer.Views
 
             if (Commanders.Count == 0) // we found absolutely nothing
             {
-                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, c => {}, Languages, entryDatas);
+                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, c => {}, Languages, entryDatas, equipments);
             }
 
             if (Commanders.Any(k => k.Key == SettingsManager.SelectedCommander))
@@ -191,6 +192,7 @@ namespace EDEngineer.Views
         private KeyValuePair<string, CommanderViewModel> currentCommander;
         private string currentComparer;
         private readonly List<EntryData> entryDatas;
+        private readonly List<Equipment> equipments;
         private bool apiOn;
 
         public bool ShowZeroes
@@ -363,7 +365,7 @@ namespace EDEngineer.Views
             }
             else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
             {
-                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2), Languages, entryDatas);
+                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2), Languages, entryDatas, equipments);
                 Commanders[logs.Item1] = commanderState;
             }
         }

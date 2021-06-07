@@ -1,5 +1,8 @@
+using System.Diagnostics;
+
 namespace EDEngineer.Models.Filters
 {
+    [DebuggerDisplay("{Label}")]
     public class GradeFilter : BlueprintFilter
     {
         public int Grade { get; }

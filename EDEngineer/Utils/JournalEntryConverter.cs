@@ -32,7 +32,7 @@ namespace EDEngineer.Utils
 
         public override bool CanConvert(Type objectType)
         {
-            return objectType == typeof (JournalEntry);
+            return objectType == typeof(JournalEntry);
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue,
@@ -46,7 +46,7 @@ namespace EDEngineer.Utils
             {
                 data = JObject.Load(reader);
             }
-            catch(JsonReaderException)
+            catch (JsonReaderException)
             {
                 // malformed json outputted by the game, nothing we can do here
                 return new JournalEntry();
@@ -62,7 +62,7 @@ namespace EDEngineer.Utils
 
             try
             {
-                var eventString =(string) data["event"];
+                var eventString = (string)data["event"];
 
                 if (relevantJournalEvents.Contains(eventString))
                 {
@@ -86,7 +86,7 @@ namespace EDEngineer.Utils
             catch (Exception e)
             {
                 MessageBox.Show(
-                    languages.Translate("Something went wrong in parsing your logs, open an issue on GitHub with this information : ") + 
+                    languages.Translate("Something went wrong in parsing your logs, open an issue on GitHub with this information : ") +
                     Environment.NewLine +
                     $"LogEntry = {data}{Environment.NewLine}" +
                     $"Error:{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -147,11 +147,62 @@ namespace EDEngineer.Utils
                     return ExtractDied(data);
                 case JournalEvent.ShipLockerMaterials:
                     return ExtractShipLockerMaterials(data);
-
+                case JournalEvent.TradeMicroResources:
+                    return ExtractMicroResourcesTrade(data);
+                case JournalEvent.SellMicroResources:
+                    return ExtractMicroResourcesSold(data);
+                case JournalEvent.UpgradeSuit:
+                case JournalEvent.UpgradeWeapon:
+                    return ExtractUpgrade(data, journalEvent);
                 default:
                     return null;
             }
         }
+
+        private JournalOperation ExtractUpgrade(JObject data, JournalEvent journalEvent)
+        {
+            var upgrade = new UpgradeOperation()
+            {
+                Name = (string)data["Name"],
+                Class = (int)data["Class"],
+                Event = journalEvent
+            };
+
+            return upgrade;
+        }
+
+        private JournalOperation ExtractMicroResourcesSold(JObject data)
+        {
+            var trade = new MaterialTradeOperation();
+            var sold = data["MicroResources"];
+            foreach (var item in sold)
+            {
+                converter.TryGet(Kind.OdysseyIngredient, (string)item["Name"], out var ingredientRemoved);
+                var removedQuantity = (int)item["Count"];
+                trade.RemoveIngredient(ingredientRemoved, removedQuantity);
+            }
+
+            return trade;
+        }
+
+        private JournalOperation ExtractMicroResourcesTrade(JObject data)
+        {
+            var trade = new MaterialTradeOperation();
+            var offered = data["Offered"];
+            foreach (var item in offered)
+            {
+                converter.TryGet(Kind.OdysseyIngredient, (string)item["Name"], out var ingredientRemoved);
+                var removedQuantity = (int)item["Count"];
+                trade.RemoveIngredient(ingredientRemoved, removedQuantity);
+            }
+
+            converter.TryGet(Kind.OdysseyIngredient, (string)data["Received"], out var ingredientAdded);
+            var addedQuantity = (int)data["Count"];
+            trade.AddIngredient(ingredientAdded, addedQuantity);
+
+            return trade;
+        }
+
         private JournalOperation ExtractShipLockerMaterials(JObject data)
         {
 
@@ -194,7 +245,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractLoadout(JObject data)
         {
-            var ship = (string) data["Ship"];
+            var ship = (string)data["Ship"];
             if (ship.ToLowerInvariant().Contains("fighter"))
             {
                 return null;
@@ -221,10 +272,10 @@ namespace EDEngineer.Utils
                 var modifiers = new List<ModuleModifier>();
                 if (engineering != null && engineering.Count() > 0)
                 {
-                    engineer = (string) engineering["Engineer"];
+                    engineer = (string)engineering["Engineer"];
                     experimentalEffect = (string)engineering["ExperimentalEffect_Localised"];
-                    grade = (int) engineering["Level"];
-                    blueprintName = (string) engineering["BlueprintName"];
+                    grade = (int)engineering["Level"];
+                    blueprintName = (string)engineering["BlueprintName"];
                     var modifierSource = engineering["Modifiers"];
                     modifiers.AddRange(ExtractModifiers(modifierSource));
                 }
@@ -246,16 +297,16 @@ namespace EDEngineer.Utils
             return from modifier
                        in modifierSource
                    where modifier["Value"]?.Type == JTokenType.Float
-                   let label = (string) modifier["Label"]
-                   let value = (float) modifier["Value"]
-                   let originalValue = (float?) modifier["OriginalValue"]
-                   let lessIsGood = (int) modifier["LessIsGood"]
+                   let label = (string)modifier["Label"]
+                   let value = (float)modifier["Value"]
+                   let originalValue = (float?)modifier["OriginalValue"]
+                   let lessIsGood = (int)modifier["LessIsGood"]
                    select new ModuleModifier(label, value, originalValue, lessIsGood == 1);
         }
 
         private JournalOperation ExtractSystemUpdated(JObject data)
         {
-            return new SystemUpdatedOperation((string) data["StarSystem"]);
+            return new SystemUpdatedOperation((string)data["StarSystem"]);
         }
 
         private JournalOperation ExtractTechnologyBroker(JObject data)
@@ -288,18 +339,15 @@ namespace EDEngineer.Utils
         private JournalOperation ExtractMaterialTrade(JObject data)
         {
             converter.TryGet(Kind.Data | Kind.Material, (string)data["Received"]["Material"], out var ingredientAdded);
-            converter.TryGet(Kind.Data | Kind.Material, (string) data["Paid"]["Material"], out var ingredientRemoved);
+            converter.TryGet(Kind.Data | Kind.Material, (string)data["Paid"]["Material"], out var ingredientRemoved);
 
-            var addedQuantity = (int) data["Received"]["Quantity"];
+            var addedQuantity = (int)data["Received"]["Quantity"];
             var removedQuantity = (int)data["Paid"]["Quantity"];
 
-            return new MaterialTradeOperation
-            {
-                IngredientAdded = ingredientAdded,
-                IngredientRemoved = ingredientRemoved,
-                AddedQuantity = addedQuantity,
-                RemovedQuantity = removedQuantity
-            };
+            var trade = new MaterialTradeOperation();
+            trade.AddIngredient(ingredientAdded, addedQuantity);
+            trade.RemoveIngredient(ingredientRemoved, removedQuantity);
+            return trade;
         }
 
         private JournalOperation ExtractMaterialsDump(JObject data)
@@ -358,7 +406,7 @@ namespace EDEngineer.Utils
                 foreach (var jToken in inventoryData)
                 {
                     dynamic cc = jToken;
-                    if (!converter.TryGet(Kind.Commodity, (string) cc.Name, out var commodityName))
+                    if (!converter.TryGet(Kind.Commodity, (string)cc.Name, out var commodityName))
                     {
                         continue;
                     }
@@ -390,7 +438,7 @@ namespace EDEngineer.Utils
                 return null;
             }
 
-            var type = ((string) data["Type"]).ToLowerInvariant();
+            var type = ((string)data["Type"]).ToLowerInvariant();
             switch (type)
             {
                 case "encoded":
@@ -425,7 +473,7 @@ namespace EDEngineer.Utils
             return new CargoOperation
             {
                 CommodityName = marketSellName,
-                Size = -1*data["Count"]?.ToObject<int>() ?? -1
+                Size = -1 * data["Count"]?.ToObject<int>() ?? -1
             };
         }
 
@@ -520,12 +568,12 @@ namespace EDEngineer.Utils
         {
             var materialDiscardedName = converter.GetOrCreate(Kind.Data | Kind.Material, (string)data["Name"]);
 
-            if (((string) data["Category"]).ToLowerInvariant() == "encoded")
+            if (((string)data["Category"]).ToLowerInvariant() == "encoded")
             {
                 return new DataOperation
                 {
                     DataName = materialDiscardedName,
-                    Size = -1*data["Count"]?.ToObject<int>() ?? -1
+                    Size = -1 * data["Count"]?.ToObject<int>() ?? -1
                 };
             }
             else // Manufactured & Raw
@@ -533,7 +581,7 @@ namespace EDEngineer.Utils
                 return new MaterialOperation
                 {
                     MaterialName = materialDiscardedName,
-                    Size = -1*data["Count"]?.ToObject<int>() ?? -1
+                    Size = -1 * data["Count"]?.ToObject<int>() ?? -1
                 };
             }
         }
@@ -562,26 +610,28 @@ namespace EDEngineer.Utils
         {
             var materialCollectedName = converter.GetOrCreate(Kind.Data | Kind.Material, (string)data["Name"]);
 
-            if (((string) data["Category"]).ToLowerInvariant() == "encoded")
+            if (((string)data["Category"]).ToLowerInvariant() == "encoded")
             {
                 return new DataOperation
                 {
-                    DataName = materialCollectedName, Size = data["Count"]?.ToObject<int>() ?? 1
+                    DataName = materialCollectedName,
+                    Size = data["Count"]?.ToObject<int>() ?? 1
                 };
             }
             else // Manufactured & Raw
             {
                 return new MaterialOperation
                 {
-                    MaterialName = materialCollectedName, Size = data["Count"]?.ToObject<int>() ?? 1
+                    MaterialName = materialCollectedName,
+                    Size = data["Count"]?.ToObject<int>() ?? 1
                 };
             }
         }
 
         private JournalOperation ExtractEngineerOperation(JObject data)
         {
-            var operation = new EngineerOperation(BlueprintCategory.Module, (string) data["BlueprintName"],
-                (string) data["Module"], (string) data["Slot"], (string)data["Engineer"], (int?)data["Level"], (string)data["ApplyExperimentalEffect"])
+            var operation = new EngineerOperation(BlueprintCategory.Module, (string)data["BlueprintName"],
+                (string)data["Module"], (string)data["Slot"], (string)data["Engineer"], (int?)data["Level"], (string)data["ApplyExperimentalEffect"])
             {
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {
@@ -598,14 +648,15 @@ namespace EDEngineer.Utils
         {
             return new ManualChangeOperation
             {
-                Name = (string) data["Name"], Count = (int) data["Count"]
+                Name = (string)data["Name"],
+                Count = (int)data["Count"]
             };
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            var entry = (JournalEntry) value;
-            var operation = (ManualChangeOperation) entry.JournalOperation;
+            var entry = (JournalEntry)value;
+            var operation = (ManualChangeOperation)entry.JournalOperation;
             writer.WriteStartObject();
             writer.WritePropertyName("timestamp");
             writer.WriteValue(entry.Timestamp.ToString(InstantPattern.General.PatternText, CultureInfo.InvariantCulture));

@@ -58,6 +58,7 @@ namespace EDEngineer.Tests
             {
                 "@Synthesis",
                 "@Technology",
+                "@Merchant",
                 "Bill Turner",
                 "Broo Tarquin",
                 "Colonel Bris Dekker",
@@ -91,8 +92,7 @@ namespace EDEngineer.Tests
                 "Jude Navarro",
                 "Uma Laszlo",
                 "Hero Ferrari",
-                "Terra Velasquez",
-                "@Merchant"
+                "Terra Velasquez"
             };
 
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
