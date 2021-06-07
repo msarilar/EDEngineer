@@ -9,6 +9,8 @@ namespace EDEngineer.Utils.System
 {
     public static class ReleaseNotesManager
     {
+        public static bool RequireReset { get; set; }
+
         public static void ShowReleaseNotesIfNecessary()
         {
             var oldVersionString = Properties.Settings.Default.CurrentVersion;
@@ -40,6 +42,7 @@ namespace EDEngineer.Utils.System
         public static void ShowReleaseNotes(string title = "Release Notes")
         {
             var releaseNotes = JsonConvert.DeserializeObject<List<ReleaseNote>>(Helpers.GetReleaseNotesJson());
+            RequireReset = releaseNotes.FirstOrDefault()?.Reset == true;
 
             var list = releaseNotes.ToList();
             if (list.Any())

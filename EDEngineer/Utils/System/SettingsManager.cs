@@ -222,6 +222,17 @@ namespace EDEngineer.Utils.System
             }
         }
 
+        public static bool Maximized 
+        { 
+            get => Properties.Settings.Default.Maximized; 
+            set
+            {
+                Properties.Settings.Default.Maximized = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+
         public static List<string> ShowAllGrades => Properties.Settings.Default.ShowAllGrades.Cast<string>().ToList();
 
         public static void AddToAllGrades(string label)

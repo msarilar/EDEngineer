@@ -58,6 +58,11 @@ namespace EDEngineer.Views
             try
             {
                 ReleaseNotesManager.ShowReleaseNotesIfNecessary();
+                if (ReleaseNotesManager.RequireReset)
+                {
+                    Properties.Settings.Default.ClearAggregation = true;
+                    Properties.Settings.Default.Save();
+                }
             }
             catch
             {
@@ -87,10 +92,17 @@ namespace EDEngineer.Views
             Left = dimensions.Left;
             Top = dimensions.Top;
             Height = dimensions.Height;
+            WindowState = SettingsManager.Maximized ? WindowState.Maximized : WindowState;
+ 
             var logDirectory = Helpers.RetrieveLogDirectory(false, null);
             var task = Task.Factory.StartNew(() =>
             {
                 viewModel = new MainWindowViewModel(Languages.Instance, logDirectory);
+                if (ReleaseNotesManager.RequireReset)
+                {
+                    viewModel.ChangeAllFilters(true);
+                }
+
                 viewModel.PropertyChanged += (o, e) =>
                                              {
                                                  if (e.PropertyName == "ShowOnlyForFavorites" ||
@@ -469,6 +481,7 @@ namespace EDEngineer.Views
                 LeftSideWidth = ContentGrid.ColumnDefinitions[0].Width.Value,
                 RightSideWidth = ContentGrid.ColumnDefinitions[2].Width.Value
             };
+            SettingsManager.Maximized = this.WindowState == WindowState.Maximized;
         }
 
         private void ResetWindowPositionButtonClicked(object sender, RoutedEventArgs e)
