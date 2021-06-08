@@ -2689,7 +2689,7 @@
   },
   {
     "Name": "Clinical Trial Records",
-    "FormattedName": "MedicalTrialRecords",
+    "FormattedName": "medicaltrialrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
@@ -2885,19 +2885,6 @@
     "ContainerType": []
   },
   {
-    "Name": "Genetic Research",
-    "FormattedName": "geneticresearch",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [
-      "Planetary Settlement"
-    ],
-    "Group": "Data",
-    "ValueCr": -1,
-    "SettlementType": [],
-    "BuildingType": [],
-    "ContainerType": []
-  },
-  {
     "Name": "Employee Genetic Data",
     "FormattedName": "employeegeneticdata",
     "Kind": "OdysseyIngredient",
@@ -3066,7 +3053,7 @@
   },
   {
     "Name": "Genetic Research",
-    "FormattedName": "GeneticResearch",
+    "FormattedName": "geneticresearch",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
