@@ -10,7 +10,7 @@ namespace EDEngineer.Models.Operations
 
         public override void Mutate(State.State state)
         {
-            state.IncrementCargo(DataName, Size);
+            state.IncrementCargo(DataName, Size, false);
         }
 
         public override Dictionary<string, int> Changes => new Dictionary<string, int>
