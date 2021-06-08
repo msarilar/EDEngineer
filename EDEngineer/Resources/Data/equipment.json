@@ -27,7 +27,7 @@
   {
     "Type": "Weapon",
     "Name": "Manticore Tormentor",
-    "Code": "Wpn_S_Pistol_Plasma_Charged"
+    "Code": "wpn_s_pistol_plasma_charged"
   },
   {
     "Type": "Weapon",
@@ -43,7 +43,7 @@
   {
     "Type": "Weapon",
     "Name": "Karma C-44",
-    "Code": "Wpn_M_SubMachineGun_Kinetic_FAuto"
+    "Code": "wpn_m_submachinegun_kinetic_fauto"
   },
   {
     "Type": "Weapon",
