@@ -650,7 +650,7 @@ namespace EDEngineer.Utils
             {
                 CommodityRewards = (data["MaterialsReward"]
                     ?.Select(c => Tuple.Create(c,
-                                converter.TryGet(Kind.Data | Kind.Material | Kind.OdysseyIngredient, (string)c["Name"], out var rewardName),
+                                converter.TryGet(Kind.Data | Kind.Material, (string)c["Name"], out var rewardName),
                                 rewardName)) ?? Enumerable.Empty<Tuple<JToken, bool, string>>())
                     .Union(data["CommodityReward"]?.Select(c => Tuple.Create(c,
                                     converter.TryGet(Kind.Commodity, (string)c["Name"], out var rewardName),
