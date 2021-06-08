@@ -590,7 +590,7 @@ namespace EDEngineer.Tests
             }";
             #endregion
 
-            var converter = new JournalEntryConverter(new ItemNameConverter(new List<EntryData>()),
+            var converter = new JournalEntryConverter(new ItemNameConverter(new List<EntryData>(), new Dictionary<string, Equipment>()),
                 Mock.Of<ISimpleDictionary<String, Entry>>(), new Languages(), new List<Blueprint>());
 
             var jObject = JObject.Parse(loadout);
