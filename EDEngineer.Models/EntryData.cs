@@ -46,7 +46,7 @@ namespace EDEngineer.Models
         [JsonConverter(typeof(StringEnumConverter))]
         public Group? Group
         {
-            get => Kind == Kind.Commodity ? Models.Group.Commodities : group;
+            get => Kind == Kind.Commodity ? Models.Group.Commodities : group; 
             set => group = value;
         }
 
