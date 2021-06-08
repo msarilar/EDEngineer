@@ -76,12 +76,10 @@ namespace EDEngineer.Views
         {
             CommanderName = commanderName;
 
-            var converter = new ItemNameConverter(entryDatas);
+            var equipmentByName = equipments.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase);
+            var converter = new ItemNameConverter(entryDatas, equipmentByName);
 
-            State = new State(new StateCargo(entryDatas, equipments, languages, SettingsManager.Comparer))
-            {
-                Equipments = equipments.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase)
-            };
+            State = new State(new StateCargo(entryDatas, equipments, languages, SettingsManager.Comparer));
 
             commanderNotifications = new CommanderNotifications(State);
             var blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);

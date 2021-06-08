@@ -1,5 +1,18 @@
 ﻿[
   {
+    "Version": "1.1.6.2",
+    "Content": "* prevent app from crashing when logs contain unknown equipment (you'll get a popup for now instead)\r\n\r\n* top source system now list the settlement name as well, thanks to @DrDoomDmc"
+  },
+  {
+    "Version": "1.1.6.1",
+    "Content": "Great contributions from @DrDoomDmc:\r\n* handling of new journal events to update odyssey ingredients in cargo\r\n* performance improvement with filtering blueprints\r\n* ingredient names fix\r\n* the app remembers if it was maximized\r\n* @Synthesis and @Technology filters fixed"
+  },
+  {
+    "Version": "1.1.6.1",
+    "Content": "Great contributions from @DrDoomDmc:\r\n* handling of new journal events to update odyssey ingredients in cargo\r\n* performance improvement with filtering blueprints\r\n* ingredient names fix\r\n* the app remembers if it was maximized\r\n* @Synthesis and @Technology filters fixed",
+    "Reset": true
+  },
+  {
     "Version": "1.1.6.0",
     "Content": "* Odyssey materials and blueprints are now integrated in EDEngineer\r\nthanks a lot for the amazing contributions from @DrDoomDmc and @Gimi1967\r\n\r\nstock in the cargo might not update properly yet - it hopefully should come soon\r\n\r\n* french localization update ; thanks a lot to @drmagoo33450 and @DrDoomDmc "
   },
