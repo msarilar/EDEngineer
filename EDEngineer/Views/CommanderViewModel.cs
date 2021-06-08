@@ -76,7 +76,8 @@ namespace EDEngineer.Views
         {
             CommanderName = commanderName;
 
-            var converter = new ItemNameConverter(entryDatas);
+            var equipmentByName = equipments.ToDictionary(x => x.Code);
+            var converter = new ItemNameConverter(entryDatas, equipmentByName);
 
             State = new State(new StateCargo(entryDatas, equipments, languages, SettingsManager.Comparer));
 
@@ -96,7 +97,7 @@ namespace EDEngineer.Views
                 Error = (o, e) => e.ErrorContext.Handled = true
             };
             LoadBlueprints(languages, blueprints);
-            State.Equipments = equipments.ToDictionary(x=> x.Code);
+            State.Equipments = equipmentByName;
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
             loadAction(this);

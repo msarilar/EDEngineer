@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows.Forms;
 using EDEngineer.Models;
 
 namespace EDEngineer.Utils
@@ -8,10 +9,12 @@ namespace EDEngineer.Utils
     public class ItemNameConverter
     {
         private readonly List<EntryData> entryDatas;
+        private readonly IReadOnlyDictionary<string, Equipment> equipments;
 
-        public ItemNameConverter(List<EntryData> entryDatas)
+        public ItemNameConverter(List<EntryData> entryDatas, IReadOnlyDictionary<string, Equipment> equipments)
         {
             this.entryDatas = entryDatas;
+            this.equipments = equipments;
         }
 
         public EntryData this[string key] => entryDatas.First(e => e.Name == key);
@@ -33,6 +36,26 @@ namespace EDEngineer.Utils
             }
 
             return value;
+        }
+
+        public Equipment GetEquipment(JournalEvent @event, string name)
+        {
+            string key;
+            if (@event == JournalEvent.UpgradeWeapon)
+            {
+                key = name;
+            }
+            else
+            {
+                key = name.Split("_".ToCharArray())[0];
+            }
+
+            if (!equipments.TryGetValue(key, out var equipment))
+            {
+                _ = MessageBox.Show($"Unknown equipment {name}. Ctrl+C while this messagebox is on focus then kindly report this on github", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return equipment;
         }
 
         public bool TryGet(Kind kind, string key, out string name)

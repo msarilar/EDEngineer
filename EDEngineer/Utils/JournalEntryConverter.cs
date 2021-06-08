@@ -83,11 +83,10 @@ namespace EDEngineer.Utils
             }
             catch (Exception e)
             {
-                MessageBox.Show(
-                    languages.Translate("Something went wrong in parsing your logs, open an issue on GitHub with this information : ") +
-                    Environment.NewLine +
-                    $"LogEntry = {data}{Environment.NewLine}" +
-                    $"Error:{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                _ = MessageBox.Show(languages.Translate("Something went wrong in parsing your logs, open an issue on GitHub with this information : ") +
+                                    Environment.NewLine +
+                                    $"LogEntry = {data}{Environment.NewLine}" +
+                                    $"Error:{e}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             if (entry.JournalOperation != null)
@@ -168,11 +167,19 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractUpgrade(JObject data, JournalEvent journalEvent)
         {
+            var name = (string)data["Name"];
+
+            var equipment = converter.GetEquipment(journalEvent, name);
+
+            if(equipment == null)
+            {
+                return null;
+            }
+
             var upgrade = new UpgradeOperation()
             {
-                Name = (string)data["Name"],
-                Class = (int)data["Class"],
-                Event = journalEvent
+                EquipmentName = equipment.Name,
+                Class = (int)data["Class"]
             };
 
             return upgrade;
