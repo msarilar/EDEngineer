@@ -79,7 +79,7 @@ namespace EDEngineer.Utils
 
             var formattedKey = key.ToLowerInvariant();
 
-            var entry = entryDatas.FirstOrDefault(e => e.FormattedName == formattedKey && (e.Kind & kind) == e.Kind) ??
+            var entry = entryDatas.FirstOrDefault(e => string.Compare(e.FormattedName,formattedKey, true) == 0&& (e.Kind & kind) == e.Kind) ??
                         entryDatas.FirstOrDefault(e => e.FormattedName.Contains(formattedKey) && (e.Kind & kind) == e.Kind);
 
             localCache[cacheKey] = name = entry?.Name;

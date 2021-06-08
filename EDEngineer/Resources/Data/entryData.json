@@ -2689,7 +2689,7 @@
   },
   {
     "Name": "Clinical Trial Records",
-    "FormattedName": "MedicalTrialRecords",
+    "FormattedName": "medicaltrialrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
