@@ -21,30 +21,34 @@ namespace EDEngineer.Models.Operations
         public override void Mutate(State.State state)
         {
             var equipement = GetEquipment(state);
-            var blueprint = state.Blueprints.FirstOrDefault(x => x.BlueprintName == equipement.Name && x.Grade == Class);
-            if (blueprint != null)
+            if (equipement != null)
             {
-                foreach (var item in blueprint.Ingredients)
+                var blueprint = state.Blueprints.FirstOrDefault(x => x.BlueprintName == equipement.Name && x.Grade == Class);
+                if (blueprint != null)
                 {
-                    state.IncrementCargo(item.Entry.Data.Name, -item.Size);
-                    _changes.Add(item.Entry.Data.Name, -item.Size);
+                    foreach (var item in blueprint.Ingredients)
+                    {
+                        state.IncrementCargo(item.Entry.Data.Name, -item.Size);
+                        _changes.Add(item.Entry.Data.Name, -item.Size);
+                    }
                 }
             }
         }
 
         private Equipment GetEquipment(State.State state)
         {
-            Equipment equipment;
-            if (Event == JournalEvent.UpgradeWeapon)
+            string name = Name.ToLower();
+            if (this.Event == JournalEvent.UpgradeSuit)
             {
-                equipment = state.Equipments[Name];
+                name = name.Split("_".ToCharArray())[0];
             }
-            else
+
+            if (state.Equipments.TryGetValue(name, out Equipment equipment))
             {
-                string suitType = Name.Split("_".ToCharArray())[0];
-                equipment = state.Equipments[suitType];
+                return equipment;
             }
-            return equipment;
+
+            return null;
         }
     }
 }

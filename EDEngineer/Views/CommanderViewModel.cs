@@ -78,7 +78,10 @@ namespace EDEngineer.Views
 
             var converter = new ItemNameConverter(entryDatas);
 
-            State = new State(new StateCargo(entryDatas, equipments, languages, SettingsManager.Comparer));
+            State = new State(new StateCargo(entryDatas, equipments, languages, SettingsManager.Comparer))
+            {
+                Equipments = equipments.ToDictionary(x => x.Code, StringComparer.OrdinalIgnoreCase)
+            };
 
             commanderNotifications = new CommanderNotifications(State);
             var blueprintConverter = new BlueprintConverter(State.Cargo.Ingredients);
@@ -96,7 +99,6 @@ namespace EDEngineer.Views
                 Error = (o, e) => e.ErrorContext.Handled = true
             };
             LoadBlueprints(languages, blueprints);
-            State.Equipments = equipments.ToDictionary(x=> x.Code);
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
             loadAction(this);
