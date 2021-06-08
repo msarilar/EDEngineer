@@ -50,6 +50,9 @@
     <Compile Include="Equipment.cs" />
     <Compile Include="MaterialTrading\MaterialTrade.cs" />
     <Compile Include="MaterialTrading\MaterialTrader.cs" />
+    <Compile Include="Operations\CollectItemOperation.cs" />
+    <Compile Include="Operations\ApproachSettlementOperation.cs" />
+    <Compile Include="Operations\LeaveSettlementOperation.cs" />
     <Compile Include="Operations\UpgradeOperation.cs" />
     <Compile Include="State\CommanderAggregation.cs" />
     <Compile Include="State\StateAggregation.cs" />

@@ -1,19 +1,15 @@
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace EDEngineer.Models.Operations
 {
-    public class SystemUpdatedOperation : JournalOperation
+    public class LeaveSettlementOperation : JournalOperation
     {
-        public string System { get; }
-
-        public SystemUpdatedOperation(string system)
-        {
-            System = system;
-        }
-
         public override void Mutate(State.State state)
         {
-            state.SetSystem(System);
             state.SetSettlement(null);
         }
 
