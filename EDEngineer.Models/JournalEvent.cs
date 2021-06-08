@@ -38,6 +38,7 @@ namespace EDEngineer.Models
         SupercruiseEntry,
         BackpackChange,
         ApproachBody,
-        Touchdown
+        Touchdown,
+        TransferMicroResources
     }
 }

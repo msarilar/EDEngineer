@@ -148,6 +148,8 @@ namespace EDEngineer.Utils
                     return ExtractMicroResourcesTrade(data);
                 case JournalEvent.SellMicroResources:
                     return ExtractMicroResourcesSold(data);
+                case JournalEvent.TransferMicroResources:
+                    return ExtractTransferMicroResources(data);
                 case JournalEvent.UpgradeSuit:
                 case JournalEvent.UpgradeWeapon:
                     return ExtractUpgrade(data, journalEvent);
@@ -214,6 +216,24 @@ namespace EDEngineer.Utils
             };
 
             return upgrade;
+        }
+        
+        private JournalOperation ExtractTransferMicroResources(JObject data)
+        {
+            var operation = new MaterialTradeOperation();
+            var transferts = data["Transfers"];
+            foreach (var item in transferts)
+            {
+                converter.TryGet(Kind.OdysseyIngredient, (string)item["Name"], out var materialName);
+                if (materialName != null)
+                {
+                    var oldCount = (int)item["LockerOldCount"];
+                    var newCount = (int)item["LockerNewCount"];
+                    operation.AddIngredient(materialName, newCount - oldCount);
+                }
+            }
+
+            return operation;
         }
 
         private JournalOperation ExtractMicroResourcesSold(JObject data)
