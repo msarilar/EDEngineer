@@ -117,6 +117,41 @@ namespace EDEngineer.Tests
         }
 
         [Test]
+        public void EntryData_are_lowercased()
+        {
+            var entries = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
+            foreach (var entry in entries)
+            {
+                Check.That(entry.FormattedName).Equals(entry.FormattedName.ToLower());
+            }
+        }
+
+        [Test]
+        public void Equipments_are_lowercased()
+        {
+            var equipments = JsonConvert.DeserializeObject<List<Models.Equipment>>(Helpers.GetEquipmentsJson());
+            foreach (var equipment in equipments)
+            {
+                Check.That(equipment.Code).Equals(equipment.Code.ToLower());
+            }
+        }
+
+        [Test]
+        public void Equipments_and_blueprints_matches()
+        {
+            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
+            var equipments = JsonConvert.DeserializeObject<List<Models.Equipment>>(Helpers.GetEquipmentsJson());
+            var blueprintNames = blueprints.Select(x => x.Name).ToList();
+            foreach (var equipment in equipments)
+            {
+                if(equipment.Code != "flightsuit")
+                {
+                    Check.That(blueprintNames).Contains(equipment.Name);
+                }
+            }
+        }
+
+        [Test]
         public void Can_load_ingredients()
         {
             Check.ThatCode(() => JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson(), new JsonSerializerSettings
