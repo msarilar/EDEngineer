@@ -60,6 +60,7 @@ namespace EDEngineer.Tests
                 "@Synthesis",
                 "@Technology",
                 "@Merchant",
+                "@Bartender",
                 "Bill Turner",
                 "Broo Tarquin",
                 "Colonel Bris Dekker",

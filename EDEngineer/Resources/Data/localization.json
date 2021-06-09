@@ -8932,6 +8932,28 @@
       "cs": null,
       "nl": null,
       "cn": null
+    },
+    "@Bartender": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": "Barman",
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null
+    },
+    "@Merchant": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": "Marchand",
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null
     }
   }
 }

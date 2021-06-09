@@ -34032,7 +34032,8 @@
     "Type": "Unlock",
     "Name": "Kit Fowler",
     "Engineers": [
-      "Kit Fowler"
+      "Domino Green",
+      "@Bartender"
     ],
     "Ingredients": [
       {
@@ -34047,9 +34048,28 @@
   },
   {
     "Type": "Unlock",
+    "Name": "Yarden Bond",
+    "Engineers": [
+      "Kit Fowler",
+      "@Bartender"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Surveillance Equipment",
+        "Size": 5
+      },
+      {
+        "Name": "Smear Campaign Plans",
+        "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
     "Name": "Wellington Beck",
     "Engineers": [
-      "Wellington Beck"
+      "Hero Ferrari",
+      "@Bartender"
     ],
     "Ingredients": [
       {
@@ -34072,9 +34092,22 @@
   },
   {
     "Type": "Unlock",
+    "Name": "Uma Laszlo",
+    "Engineers": [
+      "Wellington Beck"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Insight Entertainment Suite",
+        "Size": 5
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
     "Name": "Terra Velasquez",
     "Engineers": [
-      "Terra Velasquez"
+      "Jude Navarro"
     ],
     "Ingredients": [
       {
@@ -34085,28 +34118,16 @@
   },
   {
     "Type": "Unlock",
-    "Name": "Yarden Bond",
-    "Engineers": [
-      "Yarden Bond"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Surveillance Equipment",
-        "Size": 5
-      },
-      {
-        "Name": "Smear Campaign Plans",
-        "Size": 8
-      }
-    ]
-  },
-  {
-    "Type": "Unlock",
     "Name": "Oden Geiger",
     "Engineers": [
-      "Oden Geiger"
+      "Terra Velasquez",
+      "@Bartender"
     ],
     "Ingredients": [
+      {
+        "Name": "Financial Projections",
+        "Size": 15
+      },
       {
         "Name": "Biological Sample",
         "Size": 20
@@ -34118,23 +34139,6 @@
       {
         "Name": "Genetic Research",
         "Size": 20
-      },
-      {
-        "Name": "Financial Projections",
-        "Size": 15
-      }
-    ]
-  },
-  {
-    "Type": "Unlock",
-    "Name": "Uma Laszlo",
-    "Engineers": [
-      "Uma Laszlo"
-    ],
-    "Ingredients": [
-      {
-        "Name": "Insight Entertainment Suite",
-        "Size": 5
       }
     ]
   },
