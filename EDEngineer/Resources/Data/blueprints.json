@@ -34029,6 +34029,120 @@
     ]
   },
   {
+    "Type": "Unlock",
+    "Name": "Kit Fowler",
+    "Engineers": [
+      "Domino Green",
+      "Bartender"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Push",
+        "Size": 5
+      },
+      {
+        "Name": "Opinion Polls",
+        "Size": 40
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Yarden Bond",
+    "Engineers": [
+      "Kit Fowler",
+      "Bartender"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Surveillance Equipment",
+        "Size": 5
+      },
+      {
+        "Name": "Smear Campaign Plans",
+        "Size": 8
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Wellington Beck",
+    "Engineers": [
+      "Hero Ferrari",
+      "Bartender"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Settlement Defence Plans",
+        "Size": 15
+      },
+      {
+        "Name": "Classic Entertainment",
+        "Size": 25
+      },
+      {
+        "Name": "Multimedia Entertainment",
+        "Size": 25
+      },
+      {
+        "Name": "Cat Media",
+        "Size": 25
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Uma Laszlo",
+    "Engineers": [
+      "Wellington Beck"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Insight Entertainment Suite",
+        "Size": 5
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Terra Velasquez",
+    "Engineers": [
+      "Jude Navarro"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Genetic Repair Meds",
+        "Size": 5
+      }
+    ]
+  },
+  {
+    "Type": "Unlock",
+    "Name": "Oden Geiger",
+    "Engineers": [
+      "Terra Velasquez",
+      "Bartender"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Financial Projections",
+        "Size": 15
+      },
+      {
+        "Name": "Biological Sample",
+        "Size": 20
+      },
+      {
+        "Name": "Employee Genetic Data",
+        "Size": 20
+      },
+      {
+        "Name": "Genetic Research",
+        "Size": 20
+      }
+    ]
+  },
+  {
     "Type": "Human",
     "Name": "Corrosion Resistant Cargo Rack (2D and 4D)",
     "Engineers": [
