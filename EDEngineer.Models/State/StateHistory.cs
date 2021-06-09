@@ -14,12 +14,16 @@ namespace EDEngineer.Models.State
         public string System { 
             get => _system; 
             set {
+                if(_system != value)
+                {
+                    Settlement = string.Empty;
+                }
+
                 _system = value;
-                Settlement = string.Empty;
             }
         }
         public string Settlement { get; set; }
-        public void IncrementCargo(string name, int change)
+        public void IncrementCargo(string name, int change, bool reward)
         {
             if (change <= 0)
             {
@@ -32,9 +36,16 @@ namespace EDEngineer.Models.State
             }
 
             string location = System;
-            if (!string.IsNullOrEmpty(Settlement))
+            if (reward)
             {
-                location = $"{Settlement} ({System})";
+                location = "Mission reward";
+            }
+            else
+            {
+                if (!string.IsNullOrEmpty(Settlement))
+                {
+                    location = $"{Settlement} ({System})";
+                }
             }
             
             if (!Loots[name].ContainsKey(location))

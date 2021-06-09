@@ -8,9 +8,12 @@ namespace EDEngineer.Models.Operations
 
         public int Size { get; set; }
 
+        public bool IsReward { get; set; }
+
+
         public override void Mutate(State.State state)
         {
-            state.IncrementCargo(CommodityName, Size);
+            state.IncrementCargo(CommodityName, Size, true);
         }
 
         public override Dictionary<string, int> Changes => new Dictionary<string, int>

@@ -148,6 +148,8 @@ namespace EDEngineer.Utils
                     return ExtractMicroResourcesTrade(data);
                 case JournalEvent.SellMicroResources:
                     return ExtractMicroResourcesSold(data);
+                case JournalEvent.TransferMicroResources:
+                    return ExtractTransferMicroResources(data);
                 case JournalEvent.UpgradeSuit:
                 case JournalEvent.UpgradeWeapon:
                     return ExtractUpgrade(data, journalEvent);
@@ -160,18 +162,49 @@ namespace EDEngineer.Utils
                 case JournalEvent.Undocked:
                 case JournalEvent.SupercruiseEntry:
                     return new LeaveSettlementOperation();
+                case JournalEvent.BackpackChange:
+                    return ExtractBackpackChange(data);
+                case JournalEvent.ApproachBody:
+                    return ExtractApproachBody(data);
+                case JournalEvent.Touchdown:
+                    return ExtractTouchdown(data);
                 default:
                     return null;
             }
         }
 
+        private JournalOperation ExtractBackpackChange(JObject data)
+        {
+            if (data.ContainsKey("Added"))
+            {
+                foreach (var item in data["Added"])
+                {
+                    if (((string)item["Type"]) == "Data")// No way to detect data download
+                    {
+                        var collect = new CollectItemOperation();
+                        converter.TryGet(Kind.OdysseyIngredient, (string)item["Name"], out var ingredient);
+                        if (ingredient == null)
+                        {
+                            return null;
+                        }
+
+                        var quantity = (int)item["Count"];
+                        collect.MaterialName = ingredient;
+                        collect.Size = quantity;
+                        return collect;
+                    }
+                }
+            }
+
+            return null;
+        }
+
         private JournalOperation ExtractUpgrade(JObject data, JournalEvent journalEvent)
         {
             var name = (string)data["Name"];
-
             var equipment = converter.GetEquipment(journalEvent, name);
 
-            if(equipment == null)
+            if (equipment == null)
             {
                 return null;
             }
@@ -183,6 +216,37 @@ namespace EDEngineer.Utils
             };
 
             return upgrade;
+        }
+        
+        private JournalOperation ExtractTransferMicroResources(JObject data)
+        {
+            var operation = new MaterialTradeOperation();
+            var transferts = data["Transfers"];
+            foreach (var item in transferts)
+            {
+                converter.TryGet(Kind.OdysseyIngredient, (string)item["Name"], out var materialName);
+                if (materialName != null)
+                {
+                    if (item["LockerOldCount"] != null && item["LockerNewCount"] != null)
+                    {
+                        var oldCount = (int)item["LockerOldCount"];
+                        var newCount = (int)item["LockerNewCount"];
+                        operation.AddIngredient(materialName, newCount - oldCount);
+                    } 
+                    else if ((string)item["Direction"] == "ToShipLocker")// old logs
+                    {
+                        var count = (int)item["Count"];
+                        operation.AddIngredient(materialName, count);
+                    }
+                    else if ((string)item["Direction"] == "ToBackpack")// old logs
+                    {
+                        var count = (int)item["Count"];
+                        operation.RemoveIngredient(materialName, count);
+                    }
+                }
+            }
+
+            return operation;
         }
 
         private JournalOperation ExtractMicroResourcesSold(JObject data)
@@ -327,6 +391,22 @@ namespace EDEngineer.Utils
         {
             return new ApproachSettlementOperation((string)data["Name"]);
         }
+
+        private JournalOperation ExtractApproachBody(JObject data)
+        {
+            return new ApproachSettlementOperation((string)data["Body"]);
+        }
+
+        private JournalOperation ExtractTouchdown(JObject data)
+        {
+            if(data.ContainsKey("NearestDestination_Localised"))
+            {
+                return new ApproachSettlementOperation((string)data["NearestDestination_Localised"]);
+            }
+
+            return new ApproachSettlementOperation((string)data["NearestDestination"]);
+        }
+
         private JournalOperation ExtractDocked(JObject data)
         {
             return new ApproachSettlementOperation((string)data["StationName"]);
@@ -595,7 +675,8 @@ namespace EDEngineer.Utils
                         {
                             CommodityName = c.Item3,
                             Size = c.Item1["Count"]?.ToObject<int>() ?? 1,
-                            JournalEvent = JournalEvent.MissionCompleted
+                            JournalEvent = JournalEvent.MissionCompleted,
+                            IsReward = true
                         };
                         return r;
                     }).ToList()

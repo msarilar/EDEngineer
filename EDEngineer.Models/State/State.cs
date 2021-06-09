@@ -16,10 +16,10 @@ namespace EDEngineer.Models.State
             Loadout = new StateLoadout();
         }
 
-        public void IncrementCargo(string name, int change)
+        public void IncrementCargo(string name, int change, bool reward = false)
         {
             Cargo.IncrementCargo(name, change);
-            History.IncrementCargo(name, change);
+            History.IncrementCargo(name, change, reward);
         }
 
         public void UpdateLoadout(ShipLoadout loadout)

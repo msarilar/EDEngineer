@@ -14,7 +14,6 @@ namespace EDEngineer.Models.Operations
         public override void Mutate(State.State state)
         {
             state.SetSystem(System);
-            state.SetSettlement(null);
         }
 
         public override Dictionary<string, int> Changes { get; } = new Dictionary<string, int>();

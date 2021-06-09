@@ -35,6 +35,10 @@ namespace EDEngineer.Models
         CollectItems,
         Docked,
         Undocked,
-        SupercruiseEntry
+        SupercruiseEntry,
+        BackpackChange,
+        ApproachBody,
+        Touchdown,
+        TransferMicroResources
     }
 }
