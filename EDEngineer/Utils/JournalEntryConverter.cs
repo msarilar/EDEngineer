@@ -293,23 +293,26 @@ namespace EDEngineer.Utils
                 DumpOperations = new List<MaterialOperation>()
             };
 
+            Dictionary<string, MaterialOperation> operations = new Dictionary<string, MaterialOperation>();
             foreach (var kind in new string[] { "Items", "Data", "Components" })
                 foreach (var jToken in data[kind])
                 {
                     dynamic cc = jToken;
                     var materialName = converter.GetOrCreate(Kind.OdysseyIngredient, (string)cc.Name);
                     int? count = cc.Value ?? cc.Count;
-
-                    var operation = new MaterialOperation
+                    if(!operations.ContainsKey(materialName))
                     {
-                        MaterialName = materialName,
-                        Size = count ?? 1
-                    };
-
-                    dump.DumpOperations.Add(operation);
+                        operations.Add(materialName, new MaterialOperation
+                        {
+                            MaterialName = materialName,
+                            Size = 0
+                        });
+                    }
+                    operations[materialName].Size += count ?? 1;
                 }
 
-            return dump;
+            dump.DumpOperations.AddRange(operations.Values);
+           return dump;
         }
 
         private JournalOperation ExtractDied(JObject _)
