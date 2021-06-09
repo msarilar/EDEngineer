@@ -227,9 +227,22 @@ namespace EDEngineer.Utils
                 converter.TryGet(Kind.OdysseyIngredient, (string)item["Name"], out var materialName);
                 if (materialName != null)
                 {
-                    var oldCount = (int)item["LockerOldCount"];
-                    var newCount = (int)item["LockerNewCount"];
-                    operation.AddIngredient(materialName, newCount - oldCount);
+                    if (item["LockerOldCount"] != null && item["LockerNewCount"] != null)
+                    {
+                        var oldCount = (int)item["LockerOldCount"];
+                        var newCount = (int)item["LockerNewCount"];
+                        operation.AddIngredient(materialName, newCount - oldCount);
+                    } 
+                    else if ((string)item["Direction"] == "ToShipLocker")// old logs
+                    {
+                        var count = (int)item["Count"];
+                        operation.AddIngredient(materialName, count);
+                    }
+                    else if ((string)item["Direction"] == "ToBackpack")// old logs
+                    {
+                        var count = (int)item["Count"];
+                        operation.RemoveIngredient(materialName, count);
+                    }
                 }
             }
 
