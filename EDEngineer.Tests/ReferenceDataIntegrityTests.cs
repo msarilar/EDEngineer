@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using EDEngineer.Localization;
 using EDEngineer.Models.Utils;
@@ -92,6 +93,7 @@ namespace EDEngineer.Tests
                 "Jude Navarro",
                 "Uma Laszlo",
                 "Hero Ferrari",
+                "Yarden Bond",
                 "Terra Velasquez"
             };
 
@@ -127,6 +129,38 @@ namespace EDEngineer.Tests
         }
 
         [Test]
+        public void EntryData_has_localization()
+        {
+            var entries = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
+            var languages = JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson());
+            var keys = languages.Translations.Select(x => x.Key).ToList();
+            foreach (var entry in entries)
+            {
+                Check.That(keys).Contains(entry.Name);
+            }
+        }
+
+        [Test]
+        public void Blueprint_has_localization()
+        {
+            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
+            var languages = JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson());
+            var keys = languages.Translations.Select(x => x.Key).ToList();
+            foreach (var item in blueprints)
+            {
+                if (item.Type != "Unlock")
+                {
+                    Check.That(keys).Contains(item.Name);
+                }
+
+                foreach (var ingredient in item.Ingredients)
+                {
+                    Check.That(keys).Contains(ingredient.Name);
+                }
+            }
+        }
+
+        [Test]
         public void Equipments_are_lowercased()
         {
             var equipments = JsonConvert.DeserializeObject<List<Models.Equipment>>(Helpers.GetEquipmentsJson());
@@ -144,9 +178,24 @@ namespace EDEngineer.Tests
             var blueprintNames = blueprints.Select(x => x.Name).ToList();
             foreach (var equipment in equipments)
             {
-                if(equipment.Code != "flightsuit")
+                if (equipment.Code != "flightsuit")
                 {
                     Check.That(blueprintNames).Contains(equipment.Name);
+                }
+            }
+        }
+
+        [Test]
+        public void Blueprints_and_ingredients_matches()
+        {
+            var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
+            var entryData = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
+            var ingredientsNames = entryData.Select(x => x.Name).ToList();
+            foreach (var blueprint in blueprints)
+            {
+                foreach (var ingredient in blueprint.Ingredients)
+                {
+                    Check.That(ingredientsNames).Contains(ingredient.Name);
                 }
             }
         }
