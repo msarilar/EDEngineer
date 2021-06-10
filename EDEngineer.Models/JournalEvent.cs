@@ -26,6 +26,7 @@ namespace EDEngineer.Models
         FSDJump,
         Loadout,
         Died,
+        ShipLocker,
         ShipLockerMaterials,
         UpgradeSuit,
         UpgradeWeapon,

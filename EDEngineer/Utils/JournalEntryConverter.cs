@@ -142,6 +142,7 @@ namespace EDEngineer.Utils
                     return ExtractLoadout(data);
                 case JournalEvent.Died:
                     return ExtractDied(data);
+                case JournalEvent.ShipLocker:
                 case JournalEvent.ShipLockerMaterials:
                     return ExtractShipLockerMaterials(data);
                 case JournalEvent.TradeMicroResources:
@@ -217,7 +218,7 @@ namespace EDEngineer.Utils
 
             return upgrade;
         }
-        
+
         private JournalOperation ExtractTransferMicroResources(JObject data)
         {
             var operation = new MaterialTradeOperation();
@@ -232,7 +233,7 @@ namespace EDEngineer.Utils
                         var oldCount = (int)item["LockerOldCount"];
                         var newCount = (int)item["LockerNewCount"];
                         operation.AddIngredient(materialName, newCount - oldCount);
-                    } 
+                    }
                     else if ((string)item["Direction"] == "ToShipLocker")// old logs
                     {
                         var count = (int)item["Count"];
@@ -284,35 +285,45 @@ namespace EDEngineer.Utils
         private JournalOperation ExtractShipLockerMaterials(JObject data)
         {
 
-            var dump = new DumpOperation
-            {
-                ResetFilter = new HashSet<Kind>
-                {
-                    Kind.OdysseyIngredient
-                },
-                DumpOperations = new List<MaterialOperation>()
-            };
-
             Dictionary<string, MaterialOperation> operations = new Dictionary<string, MaterialOperation>();
             foreach (var kind in new string[] { "Items", "Data", "Components" })
-                foreach (var jToken in data[kind])
+            {
+                if (data.ContainsKey(kind))
                 {
-                    dynamic cc = jToken;
-                    var materialName = converter.GetOrCreate(Kind.OdysseyIngredient, (string)cc.Name);
-                    int? count = cc.Value ?? cc.Count;
-                    if(!operations.ContainsKey(materialName))
+                    foreach (var jToken in data[kind])
                     {
-                        operations.Add(materialName, new MaterialOperation
+                        dynamic cc = jToken;
+                        var materialName = converter.GetOrCreate(Kind.OdysseyIngredient, (string)cc.Name);
+                        int? count = cc.Value ?? cc.Count;
+                        if (!operations.ContainsKey(materialName))
                         {
-                            MaterialName = materialName,
-                            Size = 0
-                        });
+                            operations.Add(materialName, new MaterialOperation
+                            {
+                                MaterialName = materialName,
+                                Size = 0
+                            });
+                        }
+                        operations[materialName].Size += count ?? 1;
                     }
-                    operations[materialName].Size += count ?? 1;
                 }
+            }
 
-            dump.DumpOperations.AddRange(operations.Values);
-           return dump;
+            if (operations.Values.Any())
+            {
+                var dump = new DumpOperation
+                {
+                    ResetFilter = new HashSet<Kind>
+                    {
+                        Kind.OdysseyIngredient
+                    },
+                    DumpOperations = new List<MaterialOperation>()
+                };
+
+                dump.DumpOperations.AddRange(operations.Values);
+                return dump;
+            }
+             
+            return null;
         }
 
         private JournalOperation ExtractDied(JObject _)
@@ -402,7 +413,7 @@ namespace EDEngineer.Utils
 
         private JournalOperation ExtractTouchdown(JObject data)
         {
-            if(data.ContainsKey("NearestDestination_Localised"))
+            if (data.ContainsKey("NearestDestination_Localised"))
             {
                 return new ApproachSettlementOperation((string)data["NearestDestination_Localised"]);
             }
@@ -666,7 +677,7 @@ namespace EDEngineer.Utils
             {
                 CommodityRewards = (data["MaterialsReward"]
                     ?.Select(c => Tuple.Create(c,
-                                converter.TryGet(Kind.Data | Kind.Material, (string)c["Name"], out var rewardName),
+                                converter.TryGet(Kind.Data | Kind.Material | Kind.OdysseyIngredient, (string)c["Name"], out var rewardName),
                                 rewardName)) ?? Enumerable.Empty<Tuple<JToken, bool, string>>())
                     .Union(data["CommodityReward"]?.Select(c => Tuple.Create(c,
                                     converter.TryGet(Kind.Commodity, (string)c["Name"], out var rewardName),
