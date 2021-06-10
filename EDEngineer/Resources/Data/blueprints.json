@@ -34033,7 +34033,7 @@
     "Name": "Kit Fowler",
     "Engineers": [
       "Domino Green",
-      "Bartender"
+      "@Bartender"
     ],
     "Ingredients": [
       {
@@ -34051,7 +34051,7 @@
     "Name": "Yarden Bond",
     "Engineers": [
       "Kit Fowler",
-      "Bartender"
+      "@Bartender"
     ],
     "Ingredients": [
       {
@@ -34069,7 +34069,7 @@
     "Name": "Wellington Beck",
     "Engineers": [
       "Hero Ferrari",
-      "Bartender"
+      "@Bartender"
     ],
     "Ingredients": [
       {
@@ -34121,7 +34121,7 @@
     "Name": "Oden Geiger",
     "Engineers": [
       "Terra Velasquez",
-      "Bartender"
+      "@Bartender"
     ],
     "Ingredients": [
       {
@@ -41173,6 +41173,40 @@
     "Effects": []
   },
   {
+    "Type": "Weapon",
+    "Name": "Improved Hip Fire Accuracy",
+    "Engineers": [
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Optical Lens",
+        "Size": 5
+      },
+      {
+        "Name": "Aerogel",
+        "Size": 20
+      },
+      {
+        "Name": "Optical Fibre",
+        "Size": 25
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 15
+      },
+      {
+        "Name": "Radioactivity Data",
+        "Size": 5
+      }
+    ],
+    "Effects": []
+  },
+  {
     "Type": "Suit",
     "Name": "Improved jump assist",
     "Engineers": [
@@ -41397,6 +41431,182 @@
       {
         "Name": "Circuit Switch",
         "Size": 10
+      }
+    ],
+    "Effects": []
+  },
+  {
+    "Type": "Suit",
+    "Name": "Quieter footsteps",
+    "Engineers": [
+      "Yarden Bond"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Settlement Assault Plans",
+        "Size": 5
+      },
+      {
+        "Name": "Tactical Plans",
+        "Size": 10
+      },
+      {
+        "Name": "Patrol Routes",
+        "Size": 10
+      },
+      {
+        "Name": "Micro Hydraulics",
+        "Size": 5
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 15
+      }
+    ],
+    "Effects": []
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Audio Masking",
+    "Engineers": [
+      "Yarden Bond"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Audio Logs",
+        "Size": 5
+      },
+      {
+        "Name": "Patrol Routes",
+        "Size": 10
+      },
+      {
+        "Name": "Scrambler",
+        "Size": 10
+      },
+      {
+        "Name": "Transmitter",
+        "Size": 15
+      },
+      {
+        "Name": "Circuit Board",
+        "Size": 5
+      }
+    ],
+    "Effects": []
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Higher Accuracy (Kinetic Weapons)",
+    "Engineers": [
+      "Yarden Bond"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Extraction Yield Data",
+        "Size": 10
+      },
+      {
+        "Name": "Biometric Data",
+        "Size": 5
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Viscoelastic Polymer",
+        "Size": 10
+      },
+      {
+        "Name": "RDX",
+        "Size": 10
+      }
+    ],
+    "Effects": []
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Higher Accuracy (Thermal Weapons)",
+    "Engineers": [
+      "Yarden Bond"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Radioactivity Data",
+        "Size": 5
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      },
+      {
+        "Name": "Optical Lens",
+        "Size": 5
+      },
+      {
+        "Name": "Electrical Wiring",
+        "Size": 15
+      }
+    ],
+    "Effects": []
+  },
+  {
+    "Type": "Weapon",
+    "Name": "Higher Accuracy (Plasma Weapons)",
+    "Engineers": [
+      "Yarden Bond"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Chemical Patents",
+        "Size": 5
+      },
+      {
+        "Name": "Combatant Performance",
+        "Size": 10
+      },
+      {
+        "Name": "Chemical Catalyst",
+        "Size": 10
+      },
+      {
+        "Name": "Electromagnet",
+        "Size": 10
+      },
+      {
+        "Name": "Metal Coil",
+        "Size": 10
+      }
+    ],
+    "Effects": []
+  },
+  {
+    "Type": "Suit",
+    "Name": "Combat Movement Speed",
+    "Engineers": [
+      "Terra Velasquez"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Evacuation Protocols",
+        "Size": 10
+      },
+      {
+        "Name": "Genetic Research",
+        "Size": 5
+      },
+      {
+        "Name": "Epinephrine",
+        "Size": 10
+      },
+      {
+        "Name": "pH Neutraliser",
+        "Size": 15
       }
     ],
     "Effects": []

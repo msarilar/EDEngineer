@@ -55,7 +55,7 @@ namespace EDEngineer.Utils
 
             EngineerFilters = new List<EngineerFilter>(availableBlueprints.SelectMany(b => b.Engineers)
                 .Distinct()
-                .Except("@Synthesis", "@Technology", "@Merchant")
+                .Except("@Synthesis", "@Technology", "@Merchant", "@Bartender")
                 .OrderBy(language.Translate)
                 .Select(e => new EngineerFilter(e, $"EF{e}") { Checked = true }));
 
