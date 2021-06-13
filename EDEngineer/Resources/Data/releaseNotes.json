@@ -1,7 +1,11 @@
 ﻿[
   {
+    "Version": "1.1.6.7",
+    "Content": "more great contributions from @DrDoomDmc:\r\n* Fix log format change\r\n* Show current settlement"
+  },
+  {
     "Version": "1.1.6.6",
-    "Content": "* engineer unlock recipes added thanks to @PiezPiedPy\r\n\r\n* more blueprints and fix of duplicate ingredients by @@DrDoomDmc"
+    "Content": "* engineer unlock recipes added thanks to @PiezPiedPy\r\n\r\n* more blueprints and fix of duplicate ingredients by @DrDoomDmc"
   },
   {
     "Version": "1.1.6.5",
