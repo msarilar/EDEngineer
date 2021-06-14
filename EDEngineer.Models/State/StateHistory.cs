@@ -1,10 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using EDEngineer.Models.Utils;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace EDEngineer.Models.State
 {
-    public class StateHistory
+    public class StateHistory : INotifyPropertyChanged
     {
         private string _system;
+        private string _settlement;
         public StateHistory()
         {
             System = "Sol";
@@ -20,9 +24,20 @@ namespace EDEngineer.Models.State
                 }
 
                 _system = value;
+                OnPropertyChanged();
+
             }
         }
-        public string Settlement { get; set; }
+        public string Settlement
+        {
+            get => _settlement;
+            set
+            {
+                _settlement = value;
+                OnPropertyChanged();
+            }
+        }
+
         public void IncrementCargo(string name, int change, bool reward)
         {
             if (change <= 0)
@@ -56,8 +71,16 @@ namespace EDEngineer.Models.State
             {
                 Loots[name][location] += change;
             }
+            OnPropertyChanged();
         }
 
         public Dictionary<string, Dictionary<string, int>> Loots { get; } = new Dictionary<string, Dictionary<string, int>>();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
