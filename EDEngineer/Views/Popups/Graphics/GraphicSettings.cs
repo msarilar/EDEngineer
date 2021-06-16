@@ -55,11 +55,6 @@ namespace EDEngineer.Views.Popups.Graphics
             get => opacity;
             set
             {
-                if (Math.Abs(opacity - value) < 1)
-                {
-                    return;
-                }
-
                 opacity = value;
                 OnPropertyChanged();
                 OnPropertyChanged(nameof(Opacity));
