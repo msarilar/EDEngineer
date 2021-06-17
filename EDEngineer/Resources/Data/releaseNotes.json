@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.8",
+    "Content": "Fixed cargo/location auto-update thanks to @DrDoomDmc"
+  },
+  {
     "Version": "1.1.6.7",
     "Content": "more great contributions from @DrDoomDmc:\r\n* Fix log format change\r\n* Show current settlement"
   },
