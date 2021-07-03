@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.9",
+    "Content": "fixed Slush Fund Logs ingredient parsing\r\n\r\n* Added heaps of ingredient details (price, sources etc...) thanks to @Gimi1967 for the contribution"
+  },
+  {
     "Version": "1.1.6.8",
     "Content": "Fixed cargo/location auto-update thanks to @DrDoomDmc"
   },
