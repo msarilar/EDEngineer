@@ -3906,7 +3906,7 @@
   },
   {
     "Name": "Slush Fund Logs",
-    "FormattedName": "alushfundlogs",
+    "FormattedName": "slushfundlogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
       "Planetary Settlement"
