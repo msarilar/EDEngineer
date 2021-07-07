@@ -1888,7 +1888,11 @@
     "SettlementType": [],
     "BuildingType": [
       "LAB",
-      "PROC"
+      "PROC",
+      "RES",
+      "IND",
+      "EXT",
+      "AGRI"
     ],
     "ContainerType": [
       "Industrial Locker (S)",
@@ -1907,7 +1911,9 @@
     "BarterCost": 11,
     "BarterValue": 6,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES"
+    ],
     "ContainerType": []
   },
   {
@@ -1922,7 +1928,10 @@
     "BarterCost": 7,
     "BarterValue": 4,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -1937,7 +1946,11 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "IND"
+    ],
     "ContainerType": []
   },
   {
@@ -1952,7 +1965,10 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -1973,7 +1989,12 @@
       "OPR",
       "PROC",
       "SEC",
-      "STO"
+      "STO",
+      "RES",
+      "IND",
+      "AGRI",
+      "CMD",
+      "EXT"
     ],
     "ContainerType": [
       "Industrial Locker (S)",
@@ -1998,7 +2019,9 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2013,7 +2036,10 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2028,7 +2054,11 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2043,7 +2073,10 @@
     "BarterCost": 4,
     "BarterValue": 2,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2058,7 +2091,11 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2073,7 +2110,11 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2092,7 +2133,9 @@
       "AGRI",
       "HAB",
       "LAB",
-      "SEC"
+      "SEC",
+      "RES",
+      "CMD"
     ],
     "ContainerType": [
       "Agricultural Locker (S)",
@@ -2116,7 +2159,10 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2131,7 +2177,10 @@
     "BarterCost": 4,
     "BarterValue": 2,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2146,7 +2195,13 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "RES",
+      "IND",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2161,7 +2216,10 @@
     "BarterCost": 7,
     "BarterValue": 4,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND"
+    ],
     "ContainerType": []
   },
   {
@@ -2176,7 +2234,10 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2191,7 +2252,12 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "RES",
+      "IND",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2206,7 +2272,13 @@
     "BarterCost": 7,
     "BarterValue": 4,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "IND",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2221,7 +2293,10 @@
     "BarterCost": 16,
     "BarterValue": 8,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2236,7 +2311,12 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "RES",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2251,7 +2331,11 @@
     "BarterCost": 11,
     "BarterValue": 6,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2266,7 +2350,10 @@
     "BarterCost": 9,
     "BarterValue": 5,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2281,7 +2368,10 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2296,7 +2386,11 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2311,7 +2405,12 @@
     "BarterCost": 7,
     "BarterValue": 4,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "RES",
+      "IND",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2326,7 +2425,10 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2346,7 +2448,8 @@
     ],
     "BuildingType": [
       "PROC",
-      "PWR"
+      "PWR",
+      "IND"
     ],
     "ContainerType": [
       "Industrial Locker (L)"
@@ -2364,7 +2467,9 @@
     "BarterCost": 5,
     "BarterValue": 3,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2381,7 +2486,11 @@
     "SettlementType": [],
     "BuildingType": [
       "LAB",
-      "PROC"
+      "PROC",
+      "RES",
+      "IND",
+      "EXT",
+      "AGRI"
     ],
     "ContainerType": [
       "Industrial Locker (S)",
@@ -2401,7 +2510,11 @@
     "BarterCost": 11,
     "BarterValue": 6,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2416,7 +2529,10 @@
     "BarterCost": 18,
     "BarterValue": 9,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2435,7 +2551,11 @@
       "LAB",
       "PROC",
       "PWR",
-      "AGRI"
+      "AGRI",
+      "IND",
+      "RES",
+      "HAB",
+      "EXT"
     ],
     "ContainerType": [
       "Agricultural Data Port",
@@ -2450,7 +2570,8 @@
     "FormattedName": "airqualityreports",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 3000,
@@ -2461,7 +2582,10 @@
       "HAB",
       "PROC",
       "PWR",
-      "STO"
+      "STO",
+      "IND",
+      "EXT",
+      "AGRI"
     ],
     "ContainerType": [
       "Industrial Data Port",
@@ -2474,12 +2598,18 @@
     "FormattedName": "atmosphericdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 4000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND"
+    ],
     "ContainerType": [
       "Laboratory Data Port"
     ]
@@ -2489,12 +2619,15 @@
     "FormattedName": "audiologs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": [
       "Security Data Port"
     ]
@@ -2510,7 +2643,8 @@
     "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [
-      "SEC"
+      "SEC",
+      "CMD"
     ],
     "ContainerType": [
       "Security Data Port"
@@ -2521,12 +2655,16 @@
     "FormattedName": "ballisticsdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": [
       "Security Data Port"
     ]
@@ -2549,12 +2687,16 @@
     "FormattedName": "biometricdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "CMD"
+    ],
     "ContainerType": [
       "Security Data Port"
     ]
@@ -2564,12 +2706,15 @@
     "FormattedName": "blacklistdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 14000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": [
       "Security Data Port",
       "Satellite Data Port"
@@ -2580,12 +2725,18 @@
     "FormattedName": "bloodtestresults",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "AGRI",
+      "LAB"
+    ],
     "ContainerType": [
       "Laboratory Data Port"
     ]
@@ -2600,7 +2751,9 @@
     "Group": "Data",
     "ValueCr": 12000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": [
       "Data Port"
     ]
@@ -2636,7 +2789,8 @@
     "ValueCr": 8000,
     "SettlementType": [],
     "BuildingType": [
-      "CMD"
+      "CMD",
+      "HAB"
     ],
     "ContainerType": [
       "Data Port"
@@ -2647,12 +2801,17 @@
     "FormattedName": "chemicalexperimentdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 12000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": [
       "Industrial Data Port",
       "Laboratory Data Port"
@@ -2663,12 +2822,17 @@
     "FormattedName": "chemicalformulae",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": [
       "Industrial Data Port"
     ]
@@ -2678,12 +2842,18 @@
     "FormattedName": "chemicalinventory",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 9000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND",
+      "EXT",
+      "AGRI"
+    ],
     "ContainerType": [
       "Industrial Data Port"
     ]
@@ -2693,12 +2863,17 @@
     "FormattedName": "chemicalpatents",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 21000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": [
       "Industrial Data Port",
       "Laboratory Data Port"
@@ -2741,12 +2916,16 @@
     "FormattedName": "medicaltrialrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 24000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES"
+    ],
     "ContainerType": []
   },
   {
@@ -2759,7 +2938,9 @@
     "Group": "Data",
     "ValueCr": 3000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": [
       "Data Port"
     ]
@@ -2769,13 +2950,16 @@
     "FormattedName": "combattrainingmaterial",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 9000,
     "SettlementType": [],
     "BuildingType": [
-      "CMD"
+      "CMD",
+      "RES",
+      "HAB"
     ],
     "ContainerType": [
       "Security Data Port"
@@ -2786,12 +2970,16 @@
     "FormattedName": "combatantperformance",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": [
       "Security Data Port"
     ]
@@ -2806,7 +2994,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": [
       "Security Data Port"
     ]
@@ -2821,7 +3011,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -2834,7 +3026,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -2857,12 +3051,15 @@
     "FormattedName": "digitaldesigns",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -2875,7 +3072,12 @@
     "Group": "Data",
     "ValueCr": 8000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "PWR",
+      "IND",
+      "CMD"
+    ],
     "ContainerType": [
       "Industrial Data Port",
       "Laboratory Data Port",
@@ -2912,7 +3114,9 @@
     "Group": "Data",
     "ValueCr": 4000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -2920,25 +3124,17 @@
     "FormattedName": "extractionyielddata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 6000,
     "SettlementType": [],
-    "BuildingType": [],
-    "ContainerType": []
-  },
-  {
-    "Name": "Gene Sequencing Data",
-    "FormattedName": "genesequencingdata",
-    "Kind": "OdysseyIngredient",
-    "OriginDetails": [
-      "Planetary Settlement"
+    "BuildingType": [
+      "RES",
+      "IND",
+      "EXT"
     ],
-    "Group": "Data",
-    "ValueCr": -1,
-    "SettlementType": [],
-    "BuildingType": [],
     "ContainerType": []
   },
   {
@@ -2955,7 +3151,8 @@
     ],
     "BuildingType": [
       "CMD",
-      "MED"
+      "MED",
+      "RES"
     ],
     "ContainerType": [
       "Data Port",
@@ -2972,7 +3169,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": [
       "Data Port"
     ]
@@ -2987,7 +3186,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -3008,12 +3209,17 @@
     "FormattedName": "evacuationprotocols",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 9000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "PWR",
+      "IND",
+      "HAB"
+    ],
     "ContainerType": [
       "Industrial Data Port",
       "Power Data Port"
@@ -3048,7 +3254,9 @@
     "Group": "Data",
     "ValueCr": 15000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3075,12 +3283,15 @@
     "FormattedName": "factionnews",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite"
     ],
     "Group": "Data",
     "ValueCr": 1000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": [
       "Satellite Data Port"
     ]
@@ -3095,7 +3306,9 @@
     "Group": "Data",
     "ValueCr": 6000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3116,12 +3329,17 @@
     "FormattedName": "genesequencingdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3129,7 +3347,8 @@
     "FormattedName": "geneticresearch",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 21000,
@@ -3139,7 +3358,9 @@
     ],
     "BuildingType": [
       "MED",
-      "PROC"
+      "PROC",
+      "RES",
+      "AGRI"
     ],
     "ContainerType": [
       "Medical Data Port",
@@ -3151,7 +3372,8 @@
     "FormattedName": "geographicaldata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite"
     ],
     "Group": "Data",
     "ValueCr": 1000,
@@ -3171,7 +3393,9 @@
     "Group": "Data",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -3184,7 +3408,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3197,7 +3423,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -3210,7 +3438,9 @@
     "Group": "Data",
     "ValueCr": 1000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3218,12 +3448,15 @@
     "FormattedName": "internalcorrespondence",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite"
     ],
     "Group": "Data",
     "ValueCr": 20000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": [
       "Satellite Data Port"
     ]
@@ -3238,7 +3471,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -3265,7 +3500,8 @@
     "ValueCr": 1000,
     "SettlementType": [],
     "BuildingType": [
-      "CMD"
+      "CMD",
+      "HAB"
     ],
     "ContainerType": [
       "Data Port"
@@ -3308,12 +3544,17 @@
     "FormattedName": "maintenancelogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 2000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "PWR",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3321,7 +3562,9 @@
     "FormattedName": "manufacturinginstructions",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 9000,
@@ -3331,7 +3574,9 @@
     "BuildingType": [
       "HAB",
       "PROC",
-      "STO"
+      "STO",
+      "IND",
+      "RES"
     ],
     "ContainerType": [
       "Data Port",
@@ -3345,12 +3590,15 @@
     "FormattedName": "medicalrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 19000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED"
+    ],
     "ContainerType": []
   },
   {
@@ -3363,7 +3611,9 @@
     "Group": "Data",
     "ValueCr": 1000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3371,12 +3621,16 @@
     "FormattedName": "mineralanalytics",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -3384,12 +3638,17 @@
     "FormattedName": "mineralsurvey",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 5000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "EXT"
+    ],
     "ContainerType": [
       "Data Port"
     ]
@@ -3399,12 +3658,16 @@
     "FormattedName": "mininganalytics",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "IND",
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -3436,7 +3699,9 @@
     "Group": "Data",
     "ValueCr": 6000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3462,7 +3727,9 @@
     "Group": "Data",
     "ValueCr": 13000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3470,7 +3737,9 @@
     "FormattedName": "nocdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 25000,
@@ -3485,12 +3754,19 @@
     "FormattedName": "operationalmanual",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 7000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "IND",
+      "CMD"
+    ],
     "ContainerType": [
       "Satellite Data Port"
     ]
@@ -3512,7 +3788,8 @@
       "DORM",
       "BAR",
       "OPR",
-      "CBN"
+      "CBN",
+      "CMD"
     ],
     "ContainerType": [
       "Data Port"
@@ -3528,7 +3805,9 @@
     "Group": "Data",
     "ValueCr": 9000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED"
+    ],
     "ContainerType": []
   },
   {
@@ -3536,12 +3815,16 @@
     "FormattedName": "patrolroutes",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 14000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -3554,7 +3837,9 @@
     "Group": "Data",
     "ValueCr": 6000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": [
       "Data Port"
     ]
@@ -3569,7 +3854,9 @@
     "Group": "Data",
     "ValueCr": 6000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3577,12 +3864,18 @@
     "FormattedName": "pharmaceuticalpatents",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 21000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3595,7 +3888,9 @@
     "Group": "Data",
     "ValueCr": 3000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3608,7 +3903,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3648,12 +3945,17 @@
     "FormattedName": "productionreports",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 11000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3661,12 +3963,17 @@
     "FormattedName": "productionschedule",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3674,7 +3981,8 @@
     "FormattedName": "propaganda",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite"
     ],
     "Group": "Data",
     "ValueCr": 17000,
@@ -3697,7 +4005,8 @@
       "Tourist"
     ],
     "BuildingType": [
-      "HAB"
+      "HAB",
+      "AGRI"
     ],
     "ContainerType": [
       "Habitat Data Port"
@@ -3713,7 +4022,9 @@
     "Group": "Data",
     "ValueCr": 4000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3721,7 +4032,9 @@
     "FormattedName": "radioactivitydata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 16000,
@@ -3729,7 +4042,9 @@
       "ALL"
     ],
     "BuildingType": [
-      "PWR"
+      "PWR",
+      "RES",
+      "IND"
     ],
     "ContainerType": [
       "Power Data Port"
@@ -3740,14 +4055,16 @@
     "FormattedName": "reactoroutputreview",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 8000,
     "SettlementType": [],
     "BuildingType": [
       "LAB",
-      "PWR"
+      "PWR",
+      "RES"
     ],
     "ContainerType": [
       "Laboratory Data Port",
@@ -3759,7 +4076,8 @@
     "FormattedName": "recyclinglogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 2000,
@@ -3767,7 +4085,8 @@
       "Tourist"
     ],
     "BuildingType": [
-      "HAB"
+      "HAB",
+      "IND"
     ],
     "ContainerType": [
       "Habitat Data Port"
@@ -3783,7 +4102,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3791,12 +4112,16 @@
     "FormattedName": "riskassessments",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 2000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -3823,12 +4148,15 @@
     "FormattedName": "securityexpenses",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -3854,7 +4182,10 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": [
       "Laboratory Data Port"
     ]
@@ -3864,13 +4195,15 @@
     "FormattedName": "settlementassaultplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [
-      "SEC"
+      "SEC",
+      "CMD"
     ],
     "ContainerType": [
       "Security Data Port"
@@ -3881,12 +4214,15 @@
     "FormattedName": "settlementdefenceplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers"
     ],
     "Group": "Data",
     "ValueCr": 22000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": [
       "Data Port"
     ]
@@ -3927,7 +4263,10 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB",
+      "CMD"  
+    ],
     "ContainerType": []
   },
   {
@@ -3935,12 +4274,17 @@
     "FormattedName": "spectralanalysisdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -3961,12 +4305,18 @@
     "FormattedName": "stellaractivitylogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 9000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -3974,13 +4324,16 @@
     "FormattedName": "surveilleancelogs",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 19000,
     "SettlementType": [],
     "BuildingType": [
-      "SEC"
+      "SEC",
+      "CMD"
     ],
     "ContainerType": [
       "Satellite Data Port",
@@ -3992,12 +4345,16 @@
     "FormattedName": "tacticalplans",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4010,7 +4367,9 @@
     "Group": "Data",
     "ValueCr": 16000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -4018,7 +4377,9 @@
     "FormattedName": "topographicalsurveys",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Crashed Satellite",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 12000,
@@ -4026,7 +4387,9 @@
       "High Tech"
     ],
     "BuildingType": [
-      "LAB"
+      "LAB",
+      "RES",
+      "IND"
     ],
     "ContainerType": [
       "Laboratory Data Port"
@@ -4056,12 +4419,15 @@
     "FormattedName": "troopdeploymentrecords",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": 16000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4074,7 +4440,9 @@
     "Group": "Data",
     "ValueCr": 4000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "PWR"
+    ],
     "ContainerType": []
   },
   {
@@ -4088,7 +4456,8 @@
     "ValueCr": 4000,
     "SettlementType": [],
     "BuildingType": [
-      "LAB"
+      "LAB",
+      "RES"
     ],
     "ContainerType": [
       "Laboratory Data Port"
@@ -4119,7 +4488,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES"
+    ],
     "ContainerType": []
   },
   {
@@ -4145,7 +4516,9 @@
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES"
+    ],
     "ContainerType": []
   },
   {
@@ -4185,12 +4558,15 @@
     "FormattedName": "weaponinventory",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4198,13 +4574,15 @@
     "FormattedName": "weapontestdata",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Data",
     "ValueCr": -1,
     "SettlementType": [],
     "BuildingType": [
-      "DORM"
+      "DORM",
+      "CMD"
     ],
     "ContainerType": [
       "Data Port"
@@ -4241,7 +4619,9 @@
     "FormattedName": "biochemicalagent",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site"
     ],
     "Group": "Item",
     "ValueCr": 125000,
@@ -4259,7 +4639,10 @@
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4272,7 +4655,10 @@
     "Group": "Item",
     "ValueCr": -1,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4285,7 +4671,9 @@
     "Group": "Item",
     "ValueCr": 100000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -4298,7 +4686,9 @@
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -4324,7 +4714,9 @@
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES"
+    ],
     "ContainerType": []
   },
   {
@@ -4337,7 +4729,11 @@
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4345,12 +4741,19 @@
     "FormattedName": "compressionliquefiedgas",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "PWR",
+      "IND",
+      "EXT",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4363,7 +4766,10 @@
     "Group": "Item",
     "ValueCr": 25000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -4371,12 +4777,16 @@
     "FormattedName": "degradedpowerregulator",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site"
     ],
     "Group": "Item",
     "ValueCr": 15000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES"
+    ],
     "ContainerType": []
   },
   {
@@ -4384,12 +4794,20 @@
     "FormattedName": "gmeds",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site",
+      "Mission reward"
     ],
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "MED",
+      "CMD",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4402,7 +4820,14 @@
     "Group": "Item",
     "ValueCr": 100000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "STO",
+      "RES",
+      "IND",
+      "EXT",
+      "AGRI"
+    ],
     "ContainerType": [
       "Industrial Locker (S)",
       "Research Locker (S)"
@@ -4418,7 +4843,10 @@
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4426,12 +4854,18 @@
     "FormattedName": "healthmonitor",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Surface Crash Site",
+      "Mission reward"
     ],
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "MED",
+      "RES",
+      "HAB"
+    ],
     "ContainerType": []
   },
   {
@@ -4439,7 +4873,9 @@
     "FormattedName": "hush",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site"
     ],
     "Group": "Item",
     "ValueCr": 75000,
@@ -4457,7 +4893,12 @@
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "PWR",
+      "IND",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4470,7 +4911,10 @@
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4496,7 +4940,11 @@
     "Group": "Item",
     "ValueCr": 15000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4509,7 +4957,11 @@
     "Group": "Item",
     "ValueCr": 25000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4530,12 +4982,19 @@
     "FormattedName": "ionisedgas",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "PWR",
+      "IND",
+      "EXT",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4543,7 +5002,9 @@
     "FormattedName": "lazarus",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site"
     ],
     "Group": "Item",
     "ValueCr": 125000,
@@ -4561,7 +5022,10 @@
     "Group": "Item",
     "ValueCr": 20000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4587,7 +5051,10 @@
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4600,7 +5067,11 @@
     "Group": "Item",
     "ValueCr": 15000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "RES",
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4613,7 +5084,10 @@
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4626,7 +5100,9 @@
     "Group": "Item",
     "ValueCr": 75000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -4653,7 +5129,9 @@
     "FormattedName": "push",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site"
     ],
     "Group": "Item",
     "ValueCr": 25000,
@@ -4712,7 +5190,10 @@
     "Group": "Item",
     "ValueCr": 25000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4720,12 +5201,17 @@
     "FormattedName": "suitschematic",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Mission reward"
     ],
     "Group": "Item",
     "ValueCr": 50000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "PWR",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4738,7 +5224,11 @@
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "EXT",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4751,7 +5241,9 @@
     "Group": "Item",
     "ValueCr": 100000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "AGRI"
+    ],
     "ContainerType": []
   },
   {
@@ -4759,7 +5251,9 @@
     "FormattedName": "syntheticpathogen",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers",
+      "Surface Crash Site"
     ],
     "Group": "Item",
     "ValueCr": 75000,
@@ -4784,7 +5278,9 @@
     "Group": "Item",
     "ValueCr": 100000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "EXT"
+    ],
     "ContainerType": []
   },
   {
@@ -4797,7 +5293,10 @@
     "Group": "Item",
     "ValueCr": 10000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "HAB",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4810,7 +5309,10 @@
     "Group": "Item",
     "ValueCr": 70000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "CMD"
+    ],
     "ContainerType": []
   },
   {
@@ -4818,12 +5320,17 @@
     "FormattedName": "weaponschematic",
     "Kind": "OdysseyIngredient",
     "OriginDetails": [
-      "Planetary Settlement"
+      "Planetary Settlement",
+      "Irregular Markers"
     ],
     "Group": "Item",
     "ValueCr": 35000,
     "SettlementType": [],
-    "BuildingType": [],
+    "BuildingType": [
+      "STO",
+      "PWR",
+      "CMD"
+    ],
     "ContainerType": []
   }
 ]
