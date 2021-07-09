@@ -5332,5 +5332,71 @@
       "CMD"
     ],
     "ContainerType": []
+  },
+  {
+    "Name": "Frag Grenade",
+    "FormattedName": "amm_grenade_frag",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [],
+    "Group": "Consumables",
+    "ValueCr": 2000,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Medkit",
+    "FormattedName": "healthpack",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [],
+    "Group": "Consumables",
+    "ValueCr": 1000,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Energy Cell",
+    "FormattedName": "energycell",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [],
+    "Group": "Consumables",
+    "ValueCr": 1000,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Shield Disruptor",
+    "FormattedName": "amm_grenade_emp",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [],
+    "Group": "Consumables",
+    "ValueCr": 2000,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "Shield Projector",
+    "FormattedName": "amm_grenade_shield",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [],
+    "Group": "Consumables",
+    "ValueCr": 2000,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
+  },
+  {
+    "Name": "E-Breach",
+    "FormattedName": "bypass",
+    "Kind": "OdysseyIngredient",
+    "OriginDetails": [],
+    "Group": "Consumables",
+    "ValueCr": -1,
+    "SettlementType": [],
+    "BuildingType": [],
+    "ContainerType": []
   }
 ]
