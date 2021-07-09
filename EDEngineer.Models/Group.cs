@@ -101,6 +101,9 @@ namespace EDEngineer.Models
         Item,
 
         [Description("Data")]
-        Data
+        Data,
+
+        [Description("Consumable")]
+        Consumable
     }
 }

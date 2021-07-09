@@ -40838,8 +40838,8 @@
       }
     ],
     "Effects": []
-    },
-    {
+  },
+  {
     "Type": "Weapon",
     "Name": "Greater range (Kinematic kinetic)",
     "Engineers": [
@@ -41642,7 +41642,7 @@
         "Size": 1
       },
       {
-        "Name": "ion Battery",
+        "Name": "Ion Battery",
         "Size": 10
       },
       {

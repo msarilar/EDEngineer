@@ -134,11 +134,17 @@ namespace EDEngineer.Tests
         {
             var entries = JsonConvert.DeserializeObject<List<EntryData>>(Helpers.GetEntryDatasJson());
             var languages = JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson());
-            var keys = languages.Translations.Select(x => x.Key).ToList();
+            var keys = languages.Translations.Select(x => x.Key).ToHashSet();
+            var missingTranslation = new HashSet<string>();
             foreach (var entry in entries)
             {
-                Check.That(keys).Contains(entry.Name);
+                if (!keys.Contains(entry.Name))
+                {
+                    missingTranslation.Add(entry.Name);
+                }
             }
+
+            Check.That(missingTranslation).IsEmpty();
         }
 
         [Test]
@@ -146,19 +152,28 @@ namespace EDEngineer.Tests
         {
             var blueprints = JsonConvert.DeserializeObject<List<Blueprint>>(Helpers.GetBlueprintsJson());
             var languages = JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson());
-            var keys = languages.Translations.Select(x => x.Key).ToList();
+            var keys = languages.Translations.Select(x => x.Key).ToHashSet();
+            var missingTranslation = new HashSet<string>();
             foreach (var item in blueprints)
             {
                 if (item.Type != "Unlock")
                 {
-                    Check.That(keys).Contains(item.Name);
+                    if(!keys.Contains(item.Name))
+                    {
+                        missingTranslation.Add(item.Name);
+                    }
                 }
 
                 foreach (var ingredient in item.Ingredients)
                 {
-                    Check.That(keys).Contains(ingredient.Name);
+                    if (!keys.Contains(ingredient.Name))
+                    {
+                        missingTranslation.Add(ingredient.Name);
+                    }
                 }
             }
+
+            Check.That(missingTranslation).IsEmpty();
         }
 
         [Test]
