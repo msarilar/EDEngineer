@@ -182,9 +182,9 @@ namespace EDEngineer.Utils.System
             return false;
         }
 
-        public static void SaveShoppingList()
+        public static void SaveShoppingList(string commanderName)
         {
-            var contents = JsonConvert.SerializeObject(Settings.Default.ShoppingList);
+            var contents = JsonConvert.SerializeObject(Settings.Default.ShoppingList.Cast<string>().Where(x => x.StartsWith(commanderName + ":")));
 
             var translator = Languages.Instance;
 

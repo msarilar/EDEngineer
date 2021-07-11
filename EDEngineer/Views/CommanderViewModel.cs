@@ -461,6 +461,7 @@ namespace EDEngineer.Views
                 }
 
                 var itemName = item.Split(':');
+
                 if (blueprintsByString.TryGetValue(itemName[1], out var blueprint))
                 {
                     ShoppingListChange(blueprint, 1);
@@ -472,7 +473,7 @@ namespace EDEngineer.Views
         {
             try
             {
-                Helpers.SaveShoppingList();
+                Helpers.SaveShoppingList(CommanderName);
             }
             catch
             {

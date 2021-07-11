@@ -30,6 +30,8 @@ namespace EDEngineer.Converters
                         return "/Resources/Images/odyssey-item.png";
                     case Group.Data:
                         return "/Resources/Images/odyssey-data.png";
+                    case Group.Consumable:
+                        return "/Resources/Images/odyssey-item.png";
                     default:
                         throw new ArgumentException("Invalid group for Odyssey Ingredient " + ingredient.Group);
                 }
