@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.10",
+    "Content": "* fixed shopping list import for multi commanders\r\n\r\n* Split 3 blueprints (Kinematic, Takada, Manticore) & Added Odyssey consumables as materials, thanks to @Gimi1967 for the great contribution\r\n\r\n* French localization update, thanks to @DrPulse"
+  },
+  {
     "Version": "1.1.6.9",
     "Content": "fixed Slush Fund Logs ingredient parsing\r\n\r\n* Added heaps of ingredient details (price, sources etc...) thanks to @Gimi1967 for the contribution"
   },
