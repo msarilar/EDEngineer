@@ -5394,7 +5394,7 @@
     "Kind": "OdysseyIngredient",
     "OriginDetails": [],
     "Group": "Consumable",
-    "ValueCr": -1,
+    "ValueCr": 25000,
     "SettlementType": [],
     "BuildingType": [],
     "ContainerType": []

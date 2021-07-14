@@ -40809,20 +40809,12 @@
     ],
     "Ingredients": [
       {
-        "Name": "Ionised Gas",
-        "Size": 1
-      },
-      {
         "Name": "Chemical Formulae",
         "Size": 10
       },
       {
         "Name": "Mineral Survey",
         "Size": 15
-      },
-      {
-        "Name": "Metal Coil",
-        "Size": 10
       },
       {
         "Name": "Motor",
@@ -40847,10 +40839,6 @@
       "Wellington Beck"
     ],
     "Ingredients": [
-      {
-        "Name": "Compression-Liquefied Gas",
-        "Size": 1
-      },
       {
         "Name": "Ballistic Data",
         "Size": 10
@@ -40883,20 +40871,12 @@
     ],
     "Ingredients": [
       {
-        "Name": "Ionised Gas",
-        "Size": 1
-      },
-      {
         "Name": "Stellar Activity Logs",
         "Size": 10
       },
       {
         "Name": "Risk Assessments",
-        "Size": 10
-      },
-      {
-        "Name": "Ion Battery",
-        "Size": 25
+        "Size": 15
       },
       {
         "Name": "Micro Transformer",
@@ -41272,18 +41252,6 @@
         "Size": 10
       },
       {
-        "Name": "Weapon Component",
-        "Size": 5
-      },
-      {
-        "Name": "Microelectrode",
-        "Size": 20
-      },
-      {
-        "Name": "Electrical Wiring",
-        "Size": 30
-      },
-      {
         "Name": "Chemical Catalyst",
         "Size": 10
       },
@@ -41319,18 +41287,6 @@
         "Size": 10
       },
       {
-        "Name": "Weapon Component",
-        "Size": 5
-      },
-      {
-        "Name": "Electromagnet",
-        "Size": 20
-      },
-      {
-        "Name": "Metal Coil",
-        "Size": 20
-      },
-      {
         "Name": "Viscoelastic Polymer",
         "Size": 10
       },
@@ -41356,14 +41312,6 @@
       {
         "Name": "Combatant Performance",
         "Size": 10
-      },
-      {
-        "Name": "Aerogel",
-        "Size": 20
-      },
-      {
-        "Name": "Optical Fibre",
-        "Size": 25
       },
       {
         "Name": "Metal Coil",
@@ -41588,10 +41536,6 @@
     ],
     "Ingredients": [
       {
-        "Name": "Frag Grenade",
-        "Size": 25
-      },
-      {
         "Name": "Weapon Test Data",
         "Size": 10
       },
@@ -41622,24 +41566,12 @@
     ],
     "Ingredients": [
       {
-        "Name": "Shield Disruptor",
-        "Size": 20
-      },
-      {
-        "Name": "Ionised Gas",
-        "Size": 1
-      },
-      {
         "Name": "Spectral Analysis Data",
         "Size": 10
       },
       {
         "Name": "Biometric Data",
         "Size": 5
-      },
-      {
-        "Name": "Weapon Component",
-        "Size": 1
       },
       {
         "Name": "Ion Battery",
