@@ -475,9 +475,9 @@ namespace EDEngineer.Views
             {
                 Helpers.SaveShoppingList(CommanderName);
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("Shopping list could not be saved.");
+                MessageBox.Show("Shopping list could not be saved." + Environment.NewLine + Environment.NewLine + e, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
