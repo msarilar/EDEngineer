@@ -40658,6 +40658,31 @@
   },
   {
     "Type": "Human",
+    "Name": "Engineered Detailed Surface Scanner V1",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 26
+      },
+      {
+        "Name": "Germanium",
+        "Size": 22
+      },
+      {
+        "Name": "Mechanical Components",
+        "Size": 28
+      },
+      {
+        "Name": "Niobium"
+        "Size": 24
+      }
+    ]
+  },
+  {
+    "Type": "Human",
     "Name": "Engineered FSD V1",
     "Engineers": [
       "@Technology"
