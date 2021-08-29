@@ -24,10 +24,10 @@
     <Window.Resources>
         <DataTemplate x:Key="EntryTemplate">
             <Grid Background="{StaticResource BackgroundBrush}"   
-                  MouseDown="IngredientOnMouseLeftButtonDown"
+                  MouseDown="IngredientOnMouseLeftButtonDown" ToolTipService.ShowDuration="3600000"
                   Tag="{Binding DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}">
                 <Grid.ToolTip>
-                    <ToolTip Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}"
+                    <ToolTip Tag="{Binding PlacementTarget.DataContext.Value.Data.OriginDetails, RelativeSource={x:Static RelativeSource.Self}}" 
                              DataContext="{Binding Path=PlacementTarget, RelativeSource={x:Static RelativeSource.Self}}">
                         <Grid>
                             <Grid.RowDefinitions>

@@ -254,10 +254,10 @@ namespace EDEngineer.Tests
         public void No_missing_string_format_indicators()
         {
             var localization = JsonConvert.DeserializeObject<Languages>(Helpers.GetLocalizationJson());
-            Check.That(localization.Translations
+            var missingKeys = localization.Translations
                                    .Where(kv => kv.Key.Contains("{0}") &&
-                                                kv.Value.Any(t => t.Value != null && !t.Value.Contains("{0}"))))
-                 .IsEmpty();
+                                                kv.Value.Any(t => t.Value != null && !t.Value.Contains("{0}"))).ToList();
+            Check.That(missingKeys).IsEmpty();
         }
     }
 }
