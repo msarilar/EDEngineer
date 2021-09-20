@@ -8,7 +8,7 @@
     "es": {
       "TwoLetterISOLanguageName": "es",
       "Name": "Español",
-      "NotReadyWarning": "¡Esta traducción está incompleta! Si lo selecciona, sólo se traducirán partes de la aplicación. Todo lo que aún no se ha traducido se mostrará en inglés."
+      "NotReadyWarning": "Esta traducción está incompleta. Si la seleccionas, solo se traducirán partes de la aplicación. Todo lo que no se haya traducido todavía se mostrará en inglés."
     },
     "pt": {
       "TwoLetterISOLanguageName": "pt",
@@ -58,7 +58,7 @@
   },
   "Translations": {
     "Short Range Blaster": {
-      "es": "Destructor de Corto Alcance",
+      "es": "Destructor de corto alcance",
       "pt": "Disparo de Curto Alcance",
       "de": "Kurzdistanzblaster",
       "fr": "Tir à Courte Portée",
@@ -82,7 +82,7 @@
       "tr": "Hafif"
     },
     "Heavy Duty Hull Reinforcement": {
-      "es": "Refuerzo Estructural de Alta Resistencia",
+      "es": "Refuerzo estructural de alta resistencia",
       "pt": "Reforço de Casco Pesado",
       "de": "Schwere Rumpfhüllenverstärkung",
       "fr": "Renforts de coque lourd",
@@ -94,7 +94,7 @@
       "tr": "Ağır Gövde Takviyesi"
     },
     "Drive Strengthening": {
-      "es": "Refuerzo de Motor",
+      "es": "Refuerzo de motor",
       "pt": "Reforçamento do Motor",
       "de": "Antriebsstärkung",
       "fr": "Renforcement du réacteur",
@@ -106,7 +106,7 @@
       "tr": "Motor Güçlendirme"
     },
     "Efficient Weapon": {
-      "es": "Arma Eficiente",
+      "es": "Arma eficiente",
       "pt": "Arma Eficiente",
       "de": "Waffeneffizienz",
       "fr": "Arme efficace",
@@ -118,7 +118,7 @@
       "tr": "Silah Verimliliği"
     },
     "Lightweight Mount": {
-      "es": "Anclaje Ligero",
+      "es": "Anclaje ligero",
       "pt": "Encaixe Leve",
       "de": "Leichtgewichtgeschütz",
       "fr": "Support léger",
@@ -154,7 +154,7 @@
       "tr": "Güçlendirilmiş"
     },
     "Sturdy Mount": {
-      "es": "Anclaje Robusto",
+      "es": "Anclaje robusto",
       "pt": "Encaixe Robusto",
       "de": "Robustes Gestell",
       "fr": "Support robuste",
@@ -166,7 +166,7 @@
       "tr": "Sağlam Kaplama"
     },
     "Longer Range FSD interdictor": {
-      "es": "Interdictor de MDD de Largo Alcance",
+      "es": "Interdictor de MDD de largo alcance",
       "pt": "Interditor de MDD de Longo Alcance",
       "de": "Langstrecken-FSA-Unterbrecher",
       "fr": "Intercepteur FSD longue portée",
@@ -178,7 +178,7 @@
       "tr": "Uzun Menzilli FSD Engelleyici"
     },
     "Reinforced Shields": {
-      "es": "Escudos Reforzados",
+      "es": "Escudos reforzados",
       "pt": "Escudos Reforçados",
       "de": "Verstärkte Schilde",
       "fr": "Bouclier renforcé",
@@ -190,7 +190,7 @@
       "tr": "Güçlendirilmiş Kalkanlar"
     },
     "Enhanced, Low Power Shields": {
-      "es": "Escudos Mejorados de Baja Energía",
+      "es": "Escudos mejorados de baja energía",
       "pt": "Escudos de Baixo Consumo, Aprimorados",
       "de": "Verbesserte Niedrigenergieschilde",
       "fr": "Boucliers amélioré à consommation réduite",
@@ -214,7 +214,7 @@
       "tr": "Kalkanlı"
     },
     "Thermal Resistant": {
-      "es": "Resistencia Térmica",
+      "es": "Resistencia térmica",
       "pt": "Resistência Térmica",
       "de": "Thermalresistent",
       "fr": "Résistance thermique",
@@ -226,7 +226,7 @@
       "tr": "Isıya Dirençli"
     },
     "Weapon Focused": {
-      "es": "Orientado a Armas",
+      "es": "Orientado a armas",
       "pt": "Foco nas Armas",
       "de": "Waffenfokussiert",
       "fr": "Optimisé armes",
@@ -2700,7 +2700,7 @@
       "tr": "Pencereyi Aç"
     },
     "Show entries with no stock?": {
-      "es": "¿Mostrar entradas sin stock?",
+      "es": "Mostrar elementos que no tienes",
       "pt": "Mostrar entradas sem estoque?",
       "de": "Einträge ohne Bestand anzeigen?",
       "fr": "Afficher les entrées sans stock?",
@@ -2711,7 +2711,7 @@
       "tr": "Mevcut olmayanları da göstermek ister misiniz?"
     },
     "Show only for favorites?": {
-      "es": "¿Mostras sólo los favoritos?",
+      "es": "Mostrar solo favoritos",
       "pt": "Mostrar somente os favoritos?",
       "de": "Nur Favoriten anzeigen?",
       "fr": "Montrer uniquement les favoris?",
@@ -2722,7 +2722,7 @@
       "tr": "Sadece fovarilerinizi görmek ister misiniz?"
     },
     "Grade Filter": {
-      "es": "Filtro de Grados",
+      "es": "Filtro de grados",
       "pt": "Filtro de grades",
       "de": "Zugangsgrad Filter",
       "fr": "Filtrer par Grades",
@@ -2733,7 +2733,7 @@
       "tr": "Sınıf Filtresi"
     },
     "Engineer Filter": {
-      "es": "Filtro de Ingenieros",
+      "es": "Filtro de ingenieros",
       "pt": "Filtro de engenheiros",
       "de": "Ingenieur Filter",
       "fr": "Filtrer par Ingénieurs",
@@ -2744,7 +2744,7 @@
       "tr": "Mühendis Filtresi"
     },
     "Type Filter": {
-      "es": "Filtro de Tipos",
+      "es": "Filtro de tipos",
       "pt": "Filtro de tipos",
       "de": "Typ Filter",
       "fr": "Filtrer par Type",
@@ -2755,7 +2755,7 @@
       "tr": "Tip Filtresi"
     },
     "Ignored And Favorite Filter": {
-      "es": "Filtro de Ignorados y Favoritos",
+      "es": "Filtro de ignorados y favoritos",
       "pt": "Filtro de Ignorados e Favoritos",
       "de": "Ignorierte und Favoriten Filter",
       "fr": "Filtrer par Ignorés et Favoris",
@@ -2766,7 +2766,7 @@
       "tr": "Görmezden Gelinen Favori Filtre"
     },
     "Craftable Filter": {
-      "es": "Filtro de Elaborados",
+      "es": "Filtro de elaborados",
       "pt": "Filtro de produções",
       "de": "Baubarkeit Filter",
       "fr": "Filtrer par Craft disponible",
@@ -2777,7 +2777,7 @@
       "tr": "Yapılabilenler Filtresi"
     },
     "Ingredient Filter (Reversed)": {
-      "es": "Filtro de Ingredientes (Inverso)",
+      "es": "Filtro de ingredientes (invertido)",
       "pt": "Filtro de ingredientes (Inverter)",
       "de": "Bestandteile Filter (invers)",
       "fr": "Filtrer par Ingrédients (Inversé)",
@@ -2810,7 +2810,7 @@
       "tr": "Sıfırla"
     },
     "Lock Window": {
-      "es": "Bloquear Ventana",
+      "es": "Bloquear ventana",
       "pt": "Bloquear janela",
       "de": "Fenster fixieren",
       "fr": "Bloquer la fenêtre",
@@ -2832,7 +2832,7 @@
       "tr": "Göster"
     },
     "Toggle Window Mode (Locked/Unlocked)": {
-      "es": "Cambiar el Modo Ventana (Bloqueado/Desbloqueado)",
+      "es": "Cambiar el modo ventana (bloqueado/desbloqueado)",
       "pt": "Alterar o modo janela (Bloqueado/Desbloquado)",
       "de": "Fenster Modus umschalten (fixiert/freigegeben)",
       "fr": "Mode de la fenêtre (Bloquer/arrière plan)",
@@ -2843,7 +2843,7 @@
       "tr": "Pencere Modunu Ayarla (Kilitli/Açık)"
     },
     "Reset Window Position": {
-      "es": "Restablecer Posición de la Ventana",
+      "es": "Restablecer posición de la ventana",
       "pt": "Reiniciar posição da janela",
       "de": "Fensterposition zurücksetzen",
       "fr": "Restaurer l'affichage de la fenêtre",
@@ -2854,7 +2854,7 @@
       "tr": "Pencere Pozisyonunu Sıfırla"
     },
     "Set Shortcut": {
-      "es": "Establecer Acceso Directo",
+      "es": "Establecer tecla para mostrar ventana",
       "pt": "Estabelecer acesso direto",
       "de": "Tastenkombination setzen",
       "fr": "Raccourcis",
@@ -2909,7 +2909,7 @@
       "tr": "İptal"
     },
     "Input a shortcut that's going to be used to show the window": {
-      "es": "Introduce el acceso directo que será utilizado para mostrar la ventana",
+      "es": "Introduce la tecla a usar para mostrar la ventana",
       "pt": "Introduz um atalho que será utilizado para mostrar a janela",
       "de": "Geben Sie eine Tastenkombination ein, die das Fenster anzeigt",
       "fr": "Configurer une touche pour afficher la fenêtre",
@@ -3030,7 +3030,7 @@
       "tr": "Yapılabilir"
     },
     "Non Craftable": {
-      "es": "No Elaborable",
+      "es": "No elaborable",
       "pt": "Não disponível para produção",
       "de": "Nicht baubare",
       "fr": "Non Craftable",
@@ -3041,7 +3041,7 @@
       "tr": "Yapılamaz"
     },
     "Missing Commodities": {
-      "es": "Mercancía Perdida",
+      "es": "Mercancía perdida",
       "pt": "Mercadoria Faltando",
       "de": "Fehlende Handelswaren",
       "fr": "Marchandise Manquantes",
@@ -3074,7 +3074,7 @@
       "tr": "Uygulama Kaynaklı Bir Hata Meydana Geldi"
     },
     "Unrecoverable Error": {
-      "es": "Error Irrecuperable",
+      "es": "Error irrecuperable",
       "pt": "Erro irrecuperável",
       "de": "Fataler Fehler",
       "fr": "Erreur Fatale",
@@ -3118,7 +3118,7 @@
       "tr": "Elite için kayıt dosyası bulunamadı. Kayıt dosyasını belirtmek zorundasınız"
     },
     "Selected directory doesn't seem to contain any log file ; are you sure?": {
-      "es": "El directorio seleccionado no parece contener ningún log ; ¿Estás seguro?",
+      "es": "El directorio seleccionado no parece contener ningún log ; ¿estás seguro?",
       "pt": "O diretório selecionado parece não conter nenhum arquivo de log ; você tem certeza?",
       "de": "Das gewählte Verzeichnis scheint keine Log Files zu enthalten ; Sind Sie sicher?",
       "fr": "Le répertoire choisi ne semble pas contenir de fichier ; êtes vous sûr?",
@@ -3140,7 +3140,7 @@
       "tr": "Hata"
     },
     "You did not select a log directory, EDEngineer won't be able to track changes. You can still use the app manually though.": {
-      "es": "No has seleccionado un directorio de logs, EDEngineer no podrá realizar seguimiento de los cambios. Todavía puedes usar la aplicación manualmente.",
+      "es": "Si no has seleccionado un directorio de logs, EDEngineer no podrá hacer un seguimiento de los cambios. Sin embargo, puedes utilizar la aplicación manualmente.",
       "pt": "Você não selecionou um diretório de registro, o EDEngineer não poderá acompanhar as alterações. Ainda assim, você ainda pode usar o aplicativo manualmente.",
       "de": "Sie haben kein Log Verzeichnis gewählt, EDEngineer wird die Bestandsänderungen nicht aktualisieren können. Sie können die App jedoch manuell benutzen.",
       "fr": "Vous n'avez pas choisi de dossier, EDEngineer ne sera pas capable de suivre vos changements. Il est cependant possible de continuer à utiliser l'application.",
@@ -3162,7 +3162,7 @@
       "tr": "Kullanılabilir dosya yok ; Değiştirmek için tıkla"
     },
     "Favorite Blueprint Ready": {
-      "es": "Plano Favorito Listo",
+      "es": "Plano favorito listo",
       "pt": "Diagrama favorito pronto",
       "de": "Bauplan fertig",
       "fr": "Recette Prête",
@@ -3173,7 +3173,7 @@
       "tr": "Favori Kalıp Hazır"
     },
     "Select Language": {
-      "es": "Escoger Idioma",
+      "es": "Seleccionar idioma",
       "pt": "Selecionar Idioma",
       "de": "Sprache wählen",
       "fr": "Choisissez la langue",
@@ -3206,7 +3206,7 @@
       "tr": "Madencilik"
     },
     "Mission reward": {
-      "es": "Recompensa de misiones",
+      "es": "Recompensa de misión",
       "pt": "Recompensa da missão",
       "de": "Missions-Belohnungen",
       "fr": "Récompense de mission",
@@ -3824,7 +3824,7 @@
       "tr": "Yerel API sunucusu için bir port seçin"
     },
     "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
-      "es": "¿Deseas la ejecución automática del servidor al iniciar EDEngineer con este puerto? (si no está marcada, el servidor se detendrá al bloquear/desbloquear la ventana)",
+      "es": "¿Ejecutar automáticamente el servidor al iniciar EDEngineer con este puerto? (si no está marcada, el servidor se detendrá al desbloquear/bloquear la ventana)",
       "pt": "Servidor de execução automática no EDEngineer, iniciar com esta porta? (se não estiver assinalado, o servidor pode parar quando a janela estiver bloqueada ou desbloqueada)",
       "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
       "fr": "Lancer automatiquement le serveur au démarrage avec ce port ? (sinon, le serveur s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
@@ -3835,7 +3835,7 @@
       "tr": "Bu bağlantı noktası ile EDEngineer başlangıcında sunucu otomatik olarak çalıştırılsın mı? (işaretli değilse, pencerenin kilidini açtığınızda/kilitlediğinizde sunucu duracaktır)"
     },
     "Shopping List": {
-      "es": "Lista de la Compra",
+      "es": "Lista de la compra",
       "pt": "Lista de compras",
       "de": "Einkaufsliste",
       "fr": "Liste de courses",
@@ -3912,7 +3912,7 @@
       "tr": "Bill Turner için gerekli (50)"
     },
     "Show information about resources?": {
-      "es": "¿Mostrar información sobre recursos?",
+      "es": "Mostrar información sobre recursos",
       "pt": "Mostrar informação sobre recursos?",
       "de": "Informationen über Ressourcen anzeigen?",
       "fr": "Afficher les informations sur les ressources ?",
@@ -4032,7 +4032,7 @@
       "tr": "Nadir"
     },
     "Very Rare": {
-      "es": "Muy Raro",
+      "es": "Muy raro",
       "pt": "Muito raro",
       "de": "sehr selten",
       "fr": "Très rare",
@@ -4043,7 +4043,7 @@
       "tr": "Çok Nadir"
     },
     "Very Common": {
-      "es": "Muy Común",
+      "es": "Muy común",
       "pt": "Muito comum",
       "de": "sehr häufig",
       "fr": "Très commun",
@@ -4076,7 +4076,7 @@
       "tr": "Standart"
     },
     "Multiple Blueprints Ready": {
-      "es": "Múltiples Planos Listos",
+      "es": "Múltiples planos listos",
       "pt": "Múltiplos Diagramas Prontos",
       "de": "verschiedene Baupläne fertig",
       "fr": "Multiple Plans de Fabrications Disponibles",
@@ -4109,7 +4109,7 @@
       "tr": "Sensörler"
     },
     "Surface Scanner": {
-      "es": "Escáner de Superficie",
+      "es": "Escáner de superficie",
       "pt": "Scanners de superfície",
       "de": "Oberflächen-Scanner",
       "fr": "Scanner de Surface",
@@ -4120,7 +4120,7 @@
       "tr": "Yüzey Tarayıcı"
     },
     "Wake Scanner": {
-      "es": "Escáner de Estela",
+      "es": "Escáner de estela",
       "pt": "Scanner de rastro",
       "de": "Sogwolkenscanner",
       "fr": "Scanner de Sillage",
@@ -4142,7 +4142,7 @@
       "tr": "Son Güncelleme: "
     },
     "Silent Launch": {
-      "es": "Iniciar Minimizado",
+      "es": "Iniciar minimizado",
       "pt": "Iniciar Minimizado",
       "de": "Start minimiert",
       "fr": "Démarrage Silencieux",
@@ -4153,7 +4153,7 @@
       "tr": "Sessiz Başlatma"   
     },
     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
-      "es": "Buscar planos disponibles (por Tipo, Nombre, Grado o Ingeniero) - separe los términos con un espacio para una búsqueda multicriterio",
+      "es": "Buscar planos disponibles (por tipo, nombre, grado o ingeniero) - separa los términos con un espacio para una búsqueda multicriterio",
       "pt": "Procure diagramas disponíveis (por Tipo, Nome, Grau ou Engenheiro) - separe os termos com um espaço para pesquisa multi-critério",
       "de": "Suche nach verfügbaren Bauplänen (Begriffe durch 'Leerzeichen' trennen)",
       "fr": "Rechercher les plans de fabrications visible (par Type, Nom, Grade ou Ingénieur) - séparez vos termes avec un espace pour une recharche multi-critères",
@@ -4164,7 +4164,7 @@
       "tr": "Görünür planları arayın (Tür, Ad, Derece veya Mühendise göre) - terimlerinizi çok kriterli arama için bir boşlukla bölün"
     },
     "Configure Notifications": {
-      "es": "Configurar Notificaciones",
+      "es": "Configurar notificaciones",
       "pt": "Configurar notificações",
       "de": "Benachrichtigung Konfigurieren",
       "fr": "Configurer les Notifications",
@@ -4186,7 +4186,7 @@
       "tr": "Bildirimler"
     },
     "Test Notification": {
-      "es": "Notificación de Prueba",
+      "es": "Notificación de prueba",
       "pt": "Notificação de teste",
       "de": "Test-Benachrichtigung",
       "fr": "Tester la Notification",
@@ -4219,7 +4219,7 @@
       "tr": "Ses"
     },
     "Long Range Scanner": {
-      "es": "Escáner de Largo Alcance",
+      "es": "Escáner de largo alcance",
       "pt": "Scanner de longo alcance",
       "de": "Langstrecken-Scanner",
       "fr": "Scanner Longue Portée",
@@ -4230,7 +4230,7 @@
       "tr": "Uzun Mesafe Tarayıcılar"
     },
     "Wide Angle Scanner": {
-      "es": "Escáner de Ángulo Amplio",
+      "es": "Escáner de ángulo amplio",
       "pt": "Scanner de ângulo amplo",
       "de": "Weitwinkel-Scanner",
       "fr": "Scanner à Angle Large",
@@ -4274,7 +4274,7 @@
       "tr": "Kilidi Aç"
     },
     "Available Voices:": {
-      "es": "Voces Disponibles:",
+      "es": "Voces disponibles:",
       "pt": "Vozes disponiveis:",
       "de": "verfügbare Stimmen:",
       "fr": "Voix Disponibles:",
@@ -4703,7 +4703,7 @@
       "tr": "Tanınmayan Bileşen (günlüklerde göründüğü gibi ad gösteriliyor). Lütfen yazara bunun gerçek adının ne olduğunu bildirmek için bir GitHub sorunu (issue) açın!"    
     },
     "Group ingredients?": {
-      "es": "¿Grupo de ingredientes?",
+      "es": "Agrupar ingredientes",
       "pt": "Grupo de ingredientes?",
       "de": "Gruppenzutaten?",
       "fr": "Groupe d'ingrédients ?",
@@ -4725,7 +4725,7 @@
       "tr": "Bilinmeyen"
     },
     "Carrying ": {
-      "es": "Transportando",
+      "es": "Tienes",
       "pt": "Transportando",
       "de": "Trasportieren ",
       "fr": "Capacité",
@@ -6045,7 +6045,7 @@
       "tr": "Targoid Bölgesi"    
     },
     "Top Source Systems": {
-      "es": "Mejores Sistemas Origen",
+      "es": "Sistemas donde encontrarlo",
       "pt": null,
       "de": "Top Quellsysteme",
       "fr": "Principaux systèmes source",
@@ -6111,7 +6111,7 @@
       "tr": "Öneriler, ticaretin kargonuza kıyasla ne kadar büyük olduğuna göre sıralanır, eksi ise alışveriş listesinde zaten ihtiyaç duyulan nihai bir miktardır"   
     },
     "Orange entries indicates a trade suggestion that will not completely fulfill your requirement (but might help).": {
-      "es": "Las entradas en naranja indican una sugerencia de comercio que no completará tus requisitos (pero puede que ayude).",
+      "es": "Las entradas naranjas indican una sugerencia de comercio que no completará tus necesidades (pero podría ayudar).",
       "pt": "As entradas em laranja indicam uma sugestão de negociação que não atenderá completamente a sua necessidade (mas pode ajudar).",
       "de": "Orange Einträge weisen auf einen Handelsvorschlag hin, der Ihre Anforderung nicht vollständig erfüllt (aber helfen könnte).",
       "fr": "Les entrées en orange indiquent une suggestion d’échange qui ne répondra pas complètement à vos besoins (mais qui pourrait aider).",
@@ -6122,7 +6122,7 @@
       "tr": "Turuncu girişler, gereksinimlerinizi tam olarak karşılamayan (ancak yardımcı olabilecek) bir ticaret önerisini belirtir."   
     },
     "Materials Trader found at industrial economies, only trades in manufactured materials.": {
-      "es": "Los Comerciantes de Materiales encontrados en las economías de tipo Industrial, sólo efectúan transacciones con materiales manufacturados.",
+      "es": "Los comerciantes de materiales encontrados en las economías de tipo industrial, solo comercian con materiales manufacturados.",
       "pt": "Os comerciantes de materiais encontrados em economias industriais, apenas comercializam materiais manufaturados.",
       "de": "Materialhändler in Industriesystemen, handeln nur mit verarbeiteten Materialien",
       "fr": "Les commerçants de matériaux trouvés dans les économies industrielles, échangent seulement des matériaux manufacturés.",
@@ -6133,7 +6133,7 @@
       "tr": "Endüstriyel ekonomilerde bulunan Malzeme Tüccarı (Material Trader), yalnızca üretilen malzemelerin ticaretini yapar."   
     },
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
-      "es": "Los Comerciantes de Materiales encontrados en las economías de Extracción y Refinería, soló efectúan transacciones con materias primas encontradas en superficies de planetas y anillos planetarios.",
+      "es": "Los comerciantes de materiales encontrados en las economías de extracción y refinería, solo comercian con materias primas encontradas en superficies de planetas y anillos planetarios.",
       "pt": "Os comerciantes de materiais encontrados em economias de extração e refinaria, apenas comercializam materiais brutos encontrados na superfície de planetas ou em anéis planetários.",
       "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
       "fr": "Les commerçants de matériaux trouvés dans les économies d’extraction et de raffinerie, n'échangent que des matières premières trouvées sur des surfaces planétaires et des anneaux planétaires.",
@@ -6144,7 +6144,7 @@
       "tr": "Materyal Tüccarı, çıkarma ve rafineri ekonomilerinde bulunur, yalnızca gezegen yüzeylerinde ve gezegen halkalarında bulunan hammaddelerin ticaretini yapar."   
     },
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
-      "es": "Los Comerciantes de Materiales encontrados en las economías de Alta Tecnología y Militar, sólo efectúan transacciones con materiales codificados.",
+      "es": "Los comerciantes de materiales encontrados en las economías de alta tecnología y militar, solo comercian con materiales codificados.",
       "pt": "Os comerciantes de materiais encontrados em economias de Alta Tecnologia e Militar, apenas comercializam materiais codificados.",
       "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
       "fr": "Les commerçants de matériaux trouvés dans les économies High Tech et Militaraires, ne négocie que des matériaux encodés.",
@@ -6155,7 +6155,7 @@
       "tr": "Yüksek Teknoloji ve Askeri ekonomilerde bulunan Malzeme Tüccarı, yalnızca kodlanmış malzeme (Encoded Materials) ticareti yapar."   
     },
     "API ON": {
-      "es": "API Encendida",
+      "es": "API activada",
       "pt": "API Ativa",
       "de": "API AN",
       "fr": "API ON",
@@ -6166,7 +6166,7 @@
       "tr": "API aktif" 
     },
     "API OFF": {
-      "es": "API Apagada",
+      "es": "API desactivada",
       "pt": "API Inativa",
       "de": "API AUS",
       "fr": "API OFF",
@@ -6177,7 +6177,7 @@
       "tr": "API Deaktif"
     },
     "Long Range FSD Interdictor": {
-      "es": "Interdictor de MDD de Largo Alcance",
+      "es": "Interdictor de MDD de largo alcance",
       "pt": "Interditor de MDD de Longo Alcance",
       "de": "Langstrecken-FSA-Unterbrecher",
       "fr": "Intercepteur FSD longue portée",
@@ -6830,7 +6830,7 @@
       "tr": "Dışa Aktarma/İçe Aktarma Ayarları"
     },
     "Access API from other computers? (tick only if you know what you're doing)": {
-      "es": "¿Acceso a la API desde otros equipos? (marcar sólo si sabes lo que estás haciendo)",
+      "es": "¿Acceso a la API desde otros equipos? (marcar solo si sabes lo que estás haciendo)",
       "pt": null,
       "de": "API von anderen Computern zugreifen? (Nur ankreuzen, wenn Sie wissen, was Sie tun)",
       "fr": "Accéder à l'API depuis d'autres ordinateurs ? (cocher uniquement si vous savez ce que vous faîtes)",
@@ -6962,7 +6962,7 @@
       "tr": "Sıkıştırma-Sıvılaştırılmış Gaz"    
     },
     "Graphene": {
-      "es": null,
+      "es": "Grafeno",
       "pt": null,
       "de": null,
       "fr": "Graphène",
@@ -6974,7 +6974,7 @@
       "tr": "Grafen"    
     },
     "Chemical Catalyst": {
-      "es": null,
+      "es": "Catalizador químico",
       "pt": null,
       "de": null,
       "fr": "Catalyseur chimique",
@@ -9196,7 +9196,7 @@
       "tr": "Kimyasallar"    
     },
     "Mats": {
-      "es": null,
+      "es": "Materiales",
       "pt": null,
       "de": null,
       "fr": "Matx",
