@@ -34761,6 +34761,122 @@
   },
   {
     "Type": "Guardian",
+    "Name": "Modified Gauss Cannon (Fixed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 18
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 20
+      },
+      {
+        "Name": "Niobium",
+        "Size": 15
+      },
+      {
+        "Name": "Thermal Cooling Units",
+        "Size": 6
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Modified Gauss Cannon (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Wreckage Components",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 15
+      },
+      {
+        "Name": "Niobium",
+        "Size": 9
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Modified Shard Cannon (Fixed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 18
+      },
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Wreckage Components",
+        "Size": 20
+      },
+      {
+        "Name": "Germanium",
+        "Size": 14
+      },
+      {
+        "Name": "Power Converter",
+        "Size": 12
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Modified Shard Cannon (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Wreckage Components",
+        "Size": 12
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 15
+      },
+      {
+        "Name": "Germanium",
+        "Size": 6
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
     "Name": "Javelin (Fighter)",
     "Engineers": [
       "@Technology"
