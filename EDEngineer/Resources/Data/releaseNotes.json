@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.12",
+    "Content": "* Turkish localization added - thanks a lot to @devmdeniz for providing the translation\r\n\r\n* Correct errors in Spanish language thanks to @Yllelder\r\n\r\n* Removed Colonel Bris Dekker from G5 FSDI EFICA thanks to @Spartelfant\r\n* Added Eng DSS V1 thanks to @jmbox\r\n* Added 4 new modified Guardian weapons thanks to jmbox"
+  },
+  {
     "Version": "1.1.6.11",
     "Content": "Update from @Gimi1967, thanks for the contribution!\r\n\r\nBlueprints for \"hip shot accuracy\", \"headshot damage\" and \"weapon range\" updated.\r\nAddresses issue #639\r\nRef developer post: https://forums.frontier.co.uk/threads/odyssey-update-weapon-engineering-recipe-fixes.585874/\r\nNew bluprints from INARA.\r\nAdded price for E-Breach\r\n(Of note, with this change, Odyssey consumables are no longer used in any blueprints.)"
   },
