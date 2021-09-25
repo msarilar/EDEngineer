@@ -10023,6 +10023,66 @@
       "nl": null,
       "cn": null,
       "tr": "Tek Seferlik İhlal Cihazı"
+    },
+    "Thermal Cooling Units": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null,
+      "tr": null
+    },
+    "Modified Gauss Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null,
+      "tr": null
+    },
+    "Modified Gauss Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null,
+      "tr": null
+    },
+    "Modified Shard Cannon (Fixed, Medium)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null,
+      "tr": null
+    },
+    "Modified Shard Cannon (Fixed, Small)": {
+      "es": null,
+      "pt": null,
+      "de": null,
+      "fr": null,
+      "ru": null,
+      "pl": null,
+      "cs": null,
+      "nl": null,
+      "cn": null,
+      "tr": null
     }
   }
 }

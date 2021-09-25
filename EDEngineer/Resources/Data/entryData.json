@@ -114,6 +114,15 @@
     ]
   },
   {
+    "Name": "Thermal Cooling Units",
+    "Rarity": "None",
+    "FormattedName": "thermalcoolingunits",
+    "Kind": "Commodity",
+    "OriginDetails": [
+      "Mission reward"
+    ]
+  },
+  {
     "Name": "Atypical Disrupted Wake Echoes",
     "Rarity": "VeryCommon",
     "FormattedName": "atypicaldisruptedwakeechoes",
