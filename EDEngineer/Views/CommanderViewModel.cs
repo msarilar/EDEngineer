@@ -151,9 +151,7 @@ namespace EDEngineer.Views
         public void ApplyEventsToSate(IEnumerable<string> allLogs)
         {
             var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, JsonSettings))
-                .Where(e => e?.Relevant == true)
-                .OrderBy(e => e.Timestamp)
-                .ToList();
+                .Where(e => e?.Relevant == true);
 
             foreach (var entry in entries.Where(entry => entry.Timestamp >= LastUpdate).ToList())
             {
