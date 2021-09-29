@@ -55,8 +55,9 @@ namespace EDEngineer.Views.Popups.Graphics
             get => opacity;
             set
             {
-                if (Math.Abs(opacity - value) < 1)
+                if (Math.Abs(value) < 1)
                 {
+                    opacity = 1;
                     return;
                 }
 

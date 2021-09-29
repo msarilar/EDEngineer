@@ -29,7 +29,7 @@ namespace EDEngineer.Models.Utils
             this.logDirectory = logDirectory;
         }
 
-        public void InitiateWatch(Action<Tuple<string, List<string>>> callback)
+        public void InitiateWatch(Action<Tuple<string, IEnumerable<string>>> callback)
         {
             if (watcher != null)
             {
@@ -92,14 +92,8 @@ namespace EDEngineer.Models.Utils
             periodicRefresher.Start();
         }
 
-        public Tuple<string, List<string>> ReadLinesWithoutLock(string file)
+        private IEnumerable<string> ReadFile(string file)
         {
-            if (!File.Exists(file))
-            {
-                return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
-            }
-
-            var gameLogLines = new List<string>();
             using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
@@ -109,8 +103,8 @@ namespace EDEngineer.Models.Utils
                 {
                     stream.Seek(positions[file], SeekOrigin.Begin);
                 }
-                
-                if(!fileCommanders.ContainsKey(file))
+
+                if (!fileCommanders.ContainsKey(file))
                 {
                     watchForLoadGameEvent = true;
                 }
@@ -118,17 +112,11 @@ namespace EDEngineer.Models.Utils
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    gameLogLines.Add(line);
+                    yield return line;
 
                     if (!watchForLoadGameEvent)
                     {
                         continue;
-                    }
-
-                    if (VersionIsBeta(line))
-                    {
-                        fileCommanders.Remove(file);
-                        return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
                     }
 
                     if (line.Contains($@"""event"":""{JournalEvent.LoadGame}"""))
@@ -149,6 +137,48 @@ namespace EDEngineer.Models.Utils
 
                 positions[file] = stream.Length;
             }
+        }
+
+        private readonly HashSet<string> betaFiles = new HashSet<string>();
+
+        private bool FileIsBeta(string file)
+        {
+            if(betaFiles.Contains(file))
+            {
+                return true;
+            }
+
+            using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (var reader = new StreamReader(stream, Encoding.UTF8))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    if (VersionIsBeta(line))
+                    {
+                        betaFiles.Add(line);
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        public Tuple<string, IEnumerable<string>> ReadLinesWithoutLock(string file)
+        {
+            if (!File.Exists(file))
+            {
+                return Tuple.Create(DEFAULT_COMMANDER_NAME, Enumerable.Empty<string>());
+            }
+
+            if(FileIsBeta(file))
+            {
+                fileCommanders.Remove(file);
+                return Tuple.Create(DEFAULT_COMMANDER_NAME, Enumerable.Empty<string>());
+            }
+
+            var gameLogLines = ReadFile(file);
 
             if (!fileCommanders.TryGetValue(file, out var commanderName))
             {
@@ -171,9 +201,9 @@ namespace EDEngineer.Models.Utils
 
         public static string ManualChangesDirectory { get; } = IO.GetManualChangesDirectory();
 
-        public Dictionary<string, List<string>> RetrieveAllLogs()
+        public Dictionary<string, IEnumerable<string>> RetrieveAllLogs()
         {
-            var gameLogLines = new Dictionary<string, List<string>>();
+            var gameLogLines = new Dictionary<string, IEnumerable<string>>();
             if (logDirectory != null && Directory.Exists(logDirectory))
             {
                 foreach (
@@ -192,7 +222,7 @@ namespace EDEngineer.Models.Utils
 
                     if (gameLogLines.ContainsKey(fileContents.Item1))
                     {
-                        gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
+                        gameLogLines[fileContents.Item1].Concat(fileContents.Item2);
                     }
                     else
                     {
@@ -236,7 +266,7 @@ namespace EDEngineer.Models.Utils
                 }
                 else
                 {
-                    gameLogLines[commanderName].AddRange(content);
+                    gameLogLines[commanderName].Concat(content);
                 }
 
                 // migrate old manualChanges.json files to new one:
@@ -256,7 +286,7 @@ namespace EDEngineer.Models.Utils
             watcher?.Dispose();
         }
 
-        public Dictionary<string, List<string>> GetFilesContentFrom(Instant? latestInstant)
+        public Dictionary<string, IEnumerable<string>> GetFilesContentFrom(Instant? latestInstant)
         {
             if (latestInstant.HasValue && logDirectory != null && Directory.Exists(logDirectory))
             {
@@ -276,12 +306,12 @@ namespace EDEngineer.Models.Utils
                 if (moreRecentFiles.Any())
                 {
                     return moreRecentFiles.Select(f => ReadLinesWithoutLock(f.FullName)).Aggregate(
-                        new Dictionary<string, List<string>>(),
+                        new Dictionary<string, IEnumerable<string>>(),
                         (current, content) =>
                         {
                             if (current.ContainsKey(content.Item1))
                             {
-                                current[content.Item1].AddRange(content.Item2);
+                                current[content.Item1].Concat(content.Item2);
                             }
                             else
                             {
@@ -296,14 +326,14 @@ namespace EDEngineer.Models.Utils
                 {
                     var content =
                         ReadLinesWithoutLock(files.OrderByDescending(f => f.LastWriteTimeUtc).First().FullName);
-                    return new Dictionary<string, List<string>>
+                    return new Dictionary<string, IEnumerable<string>>
                     {
                         [content.Item1] = content.Item2
                     };
                 }
             }
 
-            return new Dictionary<string, List<string>>();
+            return new Dictionary<string, IEnumerable<string>>();
         }
     }
 }

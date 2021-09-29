@@ -116,7 +116,7 @@ namespace EDEngineer.Views
                 foreach (var commander in allLogs.Keys)
                 {
                     // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
-                    if (allLogs[commander].Count <= 1)
+                    if (allLogs[commander].Skip(1).Any())
                     {
                         continue;
                     }
@@ -352,9 +352,9 @@ namespace EDEngineer.Views
             });
         }
 
-        public void ApplyEvents(Tuple<string, List<string>> logs)
+        public void ApplyEvents(Tuple<string, IEnumerable<string>> logs)
         {
-            if (logs.Item2.Count == 0)
+            if (!logs.Item2.Any())
             {
                 return;
             }

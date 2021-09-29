@@ -363,6 +363,7 @@
                         </Grid>
 
                         <Grid Grid.Row="1"
+                              Grid.ColumnSpan="2"
                               Visibility="{Binding Value.Data.Kind, Converter={StaticResource CommodityKindToCollapsed}}">
                             <controls:MetroProgressBar Value="{Binding Value.CarryingProgress, Mode=OneWay}"
                                                        Background="Transparent"
