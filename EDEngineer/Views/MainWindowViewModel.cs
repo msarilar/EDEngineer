@@ -116,12 +116,12 @@ namespace EDEngineer.Views
                 foreach (var commander in allLogs.Keys)
                 {
                     // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
-                    if (allLogs[commander].Skip(1).Any())
+                    if (allLogs[commander].Value.Skip(1).Any())
                     {
                         continue;
                     }
 
-                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas, equipments);
+                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander].Value), Languages, entryDatas, equipments);
                     Commanders[commander] = commanderState;
                 }
             }
@@ -352,20 +352,20 @@ namespace EDEngineer.Views
             });
         }
 
-        public void ApplyEvents(Tuple<string, IEnumerable<string>> logs)
+        public void ApplyEvents(Tuple<string, Lazy<IEnumerable<string>>> logs)
         {
-            if (!logs.Item2.Any())
+            if (!logs.Item2.Value.Any())
             {
                 return;
             }
 
             if (Commanders.ContainsKey(logs.Item1))
             {
-                Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
+                Commanders[logs.Item1].ApplyEventsToSate(logs.Item2.Value);
             }
             else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
             {
-                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2), Languages, entryDatas, equipments);
+                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2.Value), Languages, entryDatas, equipments);
                 Commanders[logs.Item1] = commanderState;
             }
         }
