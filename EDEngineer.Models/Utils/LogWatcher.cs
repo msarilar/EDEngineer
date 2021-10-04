@@ -182,6 +182,7 @@ namespace EDEngineer.Models.Utils
             }
 
             var gameLogLines = new Lazy<IEnumerable<string>>(() => ReadFile(file));
+            gameLogLines.Value.ToList(); // reify for now until better solution
 
             if (!fileCommanders.TryGetValue(file, out var commanderName))
             {
