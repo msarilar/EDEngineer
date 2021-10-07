@@ -20,7 +20,7 @@ namespace EDEngineer.Views
 {
     public class MainWindowViewModel : INotifyPropertyChanged, IDisposable
     {
-        public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; }  = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
+        public SortedObservableDictionary<string, CommanderViewModel> Commanders { get; } = new SortedObservableDictionary<string, CommanderViewModel>((a, b) => string.Compare(a.Key, b.Key, StringComparison.InvariantCultureIgnoreCase));
 
         public Languages Languages { get; }
 
@@ -116,12 +116,12 @@ namespace EDEngineer.Views
                 foreach (var commander in allLogs.Keys)
                 {
                     // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
-                    if (allLogs[commander].Value.Skip(1).Any())
+                    if (allLogs[commander].Count <= 1)
                     {
                         continue;
                     }
 
-                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander].Value), Languages, entryDatas, equipments);
+                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas, equipments);
                     Commanders[commander] = commanderState;
                 }
             }
@@ -147,7 +147,7 @@ namespace EDEngineer.Views
 
             if (Commanders.Count == 0) // we found absolutely nothing
             {
-                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, c => {}, Languages, entryDatas, equipments);
+                Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, c => { }, Languages, entryDatas, equipments);
             }
 
             if (Commanders.Any(k => k.Key == SettingsManager.SelectedCommander))
@@ -218,7 +218,8 @@ namespace EDEngineer.Views
         public int CargoTabIndex
         {
             get => SettingsManager.CargoTabIndex;
-            set {
+            set
+            {
                 SettingsManager.CargoTabIndex = value;
                 OnPropertyChanged();
             }
@@ -352,20 +353,20 @@ namespace EDEngineer.Views
             });
         }
 
-        public void ApplyEvents(Tuple<string, Lazy<IEnumerable<string>>> logs)
+        public void ApplyEvents(Tuple<string, List<string>> logs)
         {
-            if (!logs.Item2.Value.Any())
+            if (logs.Item2.Count == 0)
             {
                 return;
             }
 
             if (Commanders.ContainsKey(logs.Item1))
             {
-                Commanders[logs.Item1].ApplyEventsToSate(logs.Item2.Value);
+                Commanders[logs.Item1].ApplyEventsToSate(logs.Item2);
             }
             else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
             {
-                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2.Value), Languages, entryDatas, equipments);
+                var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2), Languages, entryDatas, equipments);
                 Commanders[logs.Item1] = commanderState;
             }
         }

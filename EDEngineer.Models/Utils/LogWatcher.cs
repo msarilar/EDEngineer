@@ -22,14 +22,14 @@ namespace EDEngineer.Models.Utils
 
         private readonly Dictionary<string, long> positions = new Dictionary<string, long>();
         private readonly Dictionary<string, FileInfo> fileInfos = new Dictionary<string, FileInfo>();
-        private readonly Dictionary<string, string> fileCommanders = new Dictionary<string, string>(); 
+        private readonly Dictionary<string, string> fileCommanders = new Dictionary<string, string>();
 
         public LogWatcher(string logDirectory)
         {
             this.logDirectory = logDirectory;
         }
 
-        public void InitiateWatch(Action<Tuple<string, Lazy<IEnumerable<string>>>> callback)
+        public void InitiateWatch(Action<Tuple<string, List<string>>> callback)
         {
             if (watcher != null)
             {
@@ -54,7 +54,7 @@ namespace EDEngineer.Models.Utils
                 IncludeSubdirectories = false,
                 NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.Size | NotifyFilters.FileName | NotifyFilters.CreationTime
             };
-            
+
             watcher.Changed += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
             watcher.Created += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
 
@@ -78,7 +78,7 @@ namespace EDEngineer.Models.Utils
                 .Select(f => fileInfos.GetOrAdd(f, k => new FileInfo(k)))
                 .OrderByDescending(f => f.CreationTimeUtc)
                 .FirstOrDefault();
-            
+
             periodicRefresher.Elapsed +=
                 (o, e) =>
                 {
@@ -92,9 +92,14 @@ namespace EDEngineer.Models.Utils
             periodicRefresher.Start();
         }
 
-        private List<string> ReadFile(string file)
+        public Tuple<string, List<string>> ReadLinesWithoutLock(string file)
         {
-            var results = new List<string>();
+            if (!File.Exists(file))
+            {
+                return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
+            }
+
+            var gameLogLines = new List<string>();
             using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var reader = new StreamReader(stream, Encoding.UTF8))
             {
@@ -113,11 +118,17 @@ namespace EDEngineer.Models.Utils
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    results.Add(line);
+                    gameLogLines.Add(line);
 
                     if (!watchForLoadGameEvent)
                     {
                         continue;
+                    }
+
+                    if (VersionIsBeta(line))
+                    {
+                        fileCommanders.Remove(file);
+                        return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
                     }
 
                     if (line.Contains($@"""event"":""{JournalEvent.LoadGame}"""))
@@ -138,51 +149,6 @@ namespace EDEngineer.Models.Utils
 
                 positions[file] = stream.Length;
             }
-
-            return results;
-        }
-
-        private readonly HashSet<string> betaFiles = new HashSet<string>();
-
-        private bool FileIsBeta(string file)
-        {
-            if(betaFiles.Contains(file))
-            {
-                return true;
-            }
-
-            using (var stream = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-            using (var reader = new StreamReader(stream, Encoding.UTF8))
-            {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    if (VersionIsBeta(line))
-                    {
-                        betaFiles.Add(line);
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public Tuple<string, Lazy<IEnumerable<string>>> ReadLinesWithoutLock(string file)
-        {
-            if (!File.Exists(file))
-            {
-                return Tuple.Create(DEFAULT_COMMANDER_NAME, new Lazy<IEnumerable<string>>(() => new List<string>()));
-            }
-
-            if(FileIsBeta(file))
-            {
-                fileCommanders.Remove(file);
-                return Tuple.Create(DEFAULT_COMMANDER_NAME, new Lazy<IEnumerable<string>>(() => new List<string>()));
-            }
-
-            var gameLogLines = new Lazy<IEnumerable<string>>(() => ReadFile(file));
-            gameLogLines.Value.ToList(); // reify for now until better solution
 
             if (!fileCommanders.TryGetValue(file, out var commanderName))
             {
@@ -205,35 +171,9 @@ namespace EDEngineer.Models.Utils
 
         public static string ManualChangesDirectory { get; } = IO.GetManualChangesDirectory();
 
-        public IEnumerable<string> YieldLazy(Lazy<IEnumerable<string>> first, Lazy<List<string>> second)
+        public Dictionary<string, List<string>> RetrieveAllLogs()
         {
-            foreach (var item in first.Value)
-            {
-                yield return item;
-            }
-
-            foreach (var item in second.Value)
-            {
-                yield return item;
-            }
-        }
-
-        public IEnumerable<string> YieldLazy(Lazy<IEnumerable<string>> first, Lazy<IEnumerable<string>> second)
-        {
-            foreach (var item in first.Value)
-            {
-                yield return item;
-            }
-
-            foreach (var item in second.Value)
-            {
-                yield return item;
-            }
-        }
-
-        public Dictionary<string, Lazy<IEnumerable<string>>> RetrieveAllLogs()
-        {
-            var gameLogLines = new Dictionary<string, Lazy<IEnumerable<string>>>();
+            var gameLogLines = new Dictionary<string, List<string>>();
             if (logDirectory != null && Directory.Exists(logDirectory))
             {
                 foreach (
@@ -252,12 +192,11 @@ namespace EDEngineer.Models.Utils
 
                     if (gameLogLines.ContainsKey(fileContents.Item1))
                     {
-                        var cpy = gameLogLines[fileContents.Item1];
-                        gameLogLines[fileContents.Item1] = new Lazy<IEnumerable<string>>(() => YieldLazy(cpy, fileContents.Item2));
+                        gameLogLines[fileContents.Item1].AddRange(fileContents.Item2);
                     }
                     else
                     {
-                        gameLogLines[fileContents.Item1] = new Lazy<IEnumerable<string>>(() => fileContents.Item2.Value);
+                        gameLogLines[fileContents.Item1] = fileContents.Item2;
                     }
                 }
             }
@@ -289,16 +228,15 @@ namespace EDEngineer.Models.Utils
                     continue;
                 }
 
-                var content = new Lazy<List<string>>(() => File.ReadAllLines(file).ToList());
-                
+                var content = File.ReadAllLines(file).ToList();
+
                 if (!gameLogLines.ContainsKey(commanderName))
                 {
-                    gameLogLines[commanderName] = new Lazy<IEnumerable<string>>(() => content.Value);
+                    gameLogLines[commanderName] = content;
                 }
                 else
                 {
-                    var cpy = gameLogLines[commanderName];
-                    gameLogLines[commanderName] = new Lazy<IEnumerable<string>>(() => YieldLazy(cpy, content));
+                    gameLogLines[commanderName].AddRange(content);
                 }
 
                 // migrate old manualChanges.json files to new one:
@@ -318,7 +256,7 @@ namespace EDEngineer.Models.Utils
             watcher?.Dispose();
         }
 
-        public Dictionary<string, Lazy<IEnumerable<string>>> GetFilesContentFrom(Instant? latestInstant)
+        public Dictionary<string, List<string>> GetFilesContentFrom(Instant? latestInstant)
         {
             if (latestInstant.HasValue && logDirectory != null && Directory.Exists(logDirectory))
             {
@@ -338,17 +276,16 @@ namespace EDEngineer.Models.Utils
                 if (moreRecentFiles.Any())
                 {
                     return moreRecentFiles.Select(f => ReadLinesWithoutLock(f.FullName)).Aggregate(
-                        new Dictionary<string, Lazy<IEnumerable<string>>>(),
+                        new Dictionary<string, List<string>>(),
                         (current, content) =>
                         {
                             if (current.ContainsKey(content.Item1))
                             {
-                                var cpy = current[content.Item1];
-                                current[content.Item1] = new Lazy<IEnumerable<string>>(() => YieldLazy(cpy, content.Item2));
+                                current[content.Item1].AddRange(content.Item2);
                             }
                             else
                             {
-                                current[content.Item1] = new Lazy<IEnumerable<string>>(() => content.Item2.Value);
+                                current[content.Item1] = content.Item2;
                             }
 
                             return current;
@@ -359,14 +296,14 @@ namespace EDEngineer.Models.Utils
                 {
                     var content =
                         ReadLinesWithoutLock(files.OrderByDescending(f => f.LastWriteTimeUtc).First().FullName);
-                    return new Dictionary<string, Lazy<IEnumerable<string>>>
+                    return new Dictionary<string, List<string>>
                     {
                         [content.Item1] = content.Item2
                     };
                 }
             }
 
-            return new Dictionary<string, Lazy<IEnumerable<string>>>();
+            return new Dictionary<string, List<string>>();
         }
     }
 }
