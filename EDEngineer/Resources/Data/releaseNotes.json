@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.18",
+    "Content": "* Fixes shopping list saving error"
+  },
+  {
     "Version": "1.1.6.13",
     "Content": "* Fixes opacity change issue (thanks to @jpacelli62 for figuring out the problem)\r\n* Fixed width of progress bar of cargo (thanks to @jpacelli62 for figuring out the problem)\r\n* Fixed out of memory issue for loading big log files"
   },

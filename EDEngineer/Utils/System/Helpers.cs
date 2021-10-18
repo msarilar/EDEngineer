@@ -184,7 +184,7 @@ namespace EDEngineer.Utils.System
 
         public static void SaveShoppingList(string commanderName)
         {
-            var contents = JsonConvert.SerializeObject(Settings.Default.ShoppingList.Cast<string>().Where(x => x.StartsWith(commanderName + ":")));
+            var contents = JsonConvert.SerializeObject(Settings.Default.ShoppingList.Cast<string>().Where(x => x != null && x.StartsWith(commanderName + ":")));
 
             var translator = Languages.Instance;
 
