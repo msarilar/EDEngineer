@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.19",
+    "Content": "* Fixes opacity slider when window is locked\r\n\r\n* Russian localization update thanks to @qigel"
+  },
+  {
     "Version": "1.1.6.18",
     "Content": "* Fixes shopping list saving error"
   },
