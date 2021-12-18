@@ -6845,7 +6845,7 @@
     "Power Regulator": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Energieregulator",
       "fr": "Régulateur de puissance",
       "ru": "Регулятор мощности",
       "pl": null,
@@ -6965,7 +6965,7 @@
     "Graphene": {
       "es": "Grafeno",
       "pt": null,
-      "de": null,
+      "de": "Graphen",
       "fr": "Graphène",
       "ru": "Графен",
       "pl": null,
@@ -6989,7 +6989,7 @@
     "Circuit Board": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schaltplatte",
       "fr": "Circuit imprimé",
       "ru": "Электроплата",
       "pl": null,
@@ -7001,7 +7001,7 @@
     "Circuit Switch": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Elektroschalter",
       "fr": "Commutateur",
       "ru": "Переключатель цепи",
       "pl": null,
@@ -7037,7 +7037,7 @@
     "Micro Supercapacitor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mikro-Superkondensator",
       "fr": "Microsupercondensateur",
       "ru": "Микросуперконденсаторы",
       "pl": null,
@@ -7049,7 +7049,7 @@
     "Micro Transformer": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mikro-Transformator",
       "fr": "Microtransformateur",
       "ru": "Микротрансформатор",
       "pl": null,
@@ -7133,7 +7133,7 @@
     "Microelectrode": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mikroelektrode",
       "fr": "Microélectrode",
       "ru": "Микроэлектрод",
       "pl": null,
@@ -7145,7 +7145,7 @@
     "Aerogel": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Aerogel",
       "fr": "Aérogel",
       "ru": "Аэрогель",
       "pl": null,
@@ -7169,7 +7169,7 @@
     "Electrical Wiring": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Elektroverkabelung",
       "fr": "Câblage électrique",
       "ru": "Электропроводка",
       "pl": null,
@@ -7205,7 +7205,7 @@
     "Optical Fibre": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Glasfaser",
       "fr": "Fibre optique",
       "ru": "Оптоволокно",
       "pl": null,
@@ -7241,7 +7241,7 @@
     "Infinity": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Unendlichkeit",
       "fr": "Infini",
       "ru": "Infinity",
       "pl": null,
@@ -7301,7 +7301,7 @@
     "Degraded Power Regulator": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ausrangierter Energieregulator",
       "fr": "Régulateur de puissance endommagé",
       "ru": "Нерабочий регулятор мощности",
       "pl": null,
@@ -7313,7 +7313,7 @@
     "Insight": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Insight",
       "fr": "Insight",
       "ru": "Insight",
       "pl": null,
@@ -7397,7 +7397,7 @@
     "Electromagnet": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Elektromagnet",
       "fr": "Électroaimant",
       "ru": "Электромагнит",
       "pl": null,
@@ -7409,7 +7409,7 @@
     "Motor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Motor",
       "fr": "Moteur",
       "ru": "Мотор",
       "pl": null,
@@ -7517,7 +7517,7 @@
     "Metal Coil": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Metallspule",
       "fr": "Bobine métallique",
       "ru": "Металлическая катушка",
       "pl": null,
@@ -7529,7 +7529,7 @@
     "Epinephrine": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Epinephrin",
       "fr": "Épinéphrine",
       "ru": "Эпинефрин",
       "pl": null,
@@ -8503,7 +8503,7 @@
     "Virus": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Virus",
       "fr": "Virus",
       "ru": null,
       "pl": null,
@@ -9607,7 +9607,7 @@
     "Artemis": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Artemis",
       "fr": "Artemis",
       "ru": null,
       "pl": null,
@@ -9619,7 +9619,7 @@
     "Dominator": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Dominator",
       "fr": "Dominator",
       "ru": null,
       "pl": null,
@@ -9631,7 +9631,7 @@
     "Maverick": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Maverick",
       "fr": "Maverick",
       "ru": null,
       "pl": null,
@@ -9643,7 +9643,7 @@
     "Karma P-15": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Karma P-15",
       "fr": "Karma P-15",
       "ru": null,
       "pl": null,
@@ -9655,7 +9655,7 @@
     "Manticore Tormentor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Manticore Tormentor",
       "fr": "Manticore Tormentor",
       "ru": null,
       "pl": null,
@@ -9667,7 +9667,7 @@
     "TK Zenith": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "TK Zenith",
       "fr": "TK Zenith",
       "ru": null,
       "pl": null,
@@ -9679,7 +9679,7 @@
     "Karma AR-50": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Karma AR-50",
       "fr": "Karma AR-50",
       "ru": null,
       "pl": null,
@@ -9691,7 +9691,7 @@
     "Karma C-44": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Karma C-44",
       "fr": "Karma C-44",
       "ru": null,
       "pl": null,
@@ -9703,7 +9703,7 @@
     "Karma L-6": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Karma L-6",
       "fr": "Karma L-6",
       "ru": null,
       "pl": null,
@@ -9715,7 +9715,7 @@
     "Manticore Executioner": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Manticore Executioner",
       "fr": "Manticore Executioner",
       "ru": null,
       "pl": null,
@@ -9727,7 +9727,7 @@
     "Manticore Intimidator": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Manticore Intimidator",
       "fr": "Manticore Intimidator",
       "ru": null,
       "pl": null,
@@ -9739,7 +9739,7 @@
     "Manticore Oppressor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Manticore Oppressor",
       "fr": "Manticore Oppressor",
       "ru": null,
       "pl": null,
@@ -9751,7 +9751,7 @@
     "Manticore Opressor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Manticore Opressor",
       "fr": "Manticore Opressor",
       "ru": null,
       "pl": null,
@@ -9763,7 +9763,7 @@
     "TK Aphelion": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "TK Aphelion",
       "fr": "TK Aphelion",
       "ru": null,
       "pl": null,
@@ -9775,7 +9775,7 @@
     "TK Eclipse": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "TK Eclipse",
       "fr": "TK Eclipse",
       "ru": null,
       "pl": null,
@@ -9787,7 +9787,7 @@
     "@Bartender": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Barmann",
       "fr": "Barman",
       "ru": null,
       "pl": null,
@@ -9799,7 +9799,7 @@
     "@Merchant": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Händler",
       "fr": "Marchand",
       "ru": null,
       "pl": null,
@@ -9967,7 +9967,7 @@
     "Medkit": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Medkit",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -9979,7 +9979,7 @@
     "Energy Cell": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Energie-Zelle",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -9991,7 +9991,7 @@
     "Shield Projector": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schild-Generator",
       "fr": null,
       "ru": null,
       "pl": null,
