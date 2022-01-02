@@ -6857,7 +6857,7 @@
     "Weapon Schematic": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Waffenplan",
       "fr": "Plan d'arme",
       "ru": "Чертёж оружия",
       "pl": null,
@@ -6881,7 +6881,7 @@
     "G-Meds": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "G-Medizin",
       "fr": "Traitement gravitationnel",
       "ru": "G-препараты",
       "pl": null,
@@ -6905,7 +6905,7 @@
     "Ionised Gas": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ionisiertes Gas",
       "fr": "Gaz ionisé",
       "ru": "Ионизированный газ",
       "pl": null,
@@ -6929,7 +6929,7 @@
     "Compact Library": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kompakt-Bibliothek",
       "fr": "Bibliothèque de poche",
       "ru": "Компактная библиотека",
       "pl": null,
@@ -6953,7 +6953,7 @@
     "Compression-Liquefied Gas": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Komprimiertes Flüssiggas",
       "fr": "Gaz liquéfié",
       "ru": "Сжиженный газ",
       "pl": null,
@@ -6977,7 +6977,7 @@
     "Chemical Catalyst": {
       "es": "Catalizador químico",
       "pt": null,
-      "de": null,
+      "de": "Chemischer Katalysator",
       "fr": "Catalyseur chimique",
       "ru": "Химический катализатор",
       "pl": null,
@@ -7013,7 +7013,7 @@
     "Encrypted Memory Chip": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verschlüsselter Speicherchip",
       "fr": "Puce mémoire cryptée",
       "ru": "Зашифрованная плата памяти",
       "pl": null,
@@ -7025,7 +7025,7 @@
     "Memory Chip": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Speicherchip",
       "fr": "Puce mémoire",
       "ru": "Плата памяти",
       "pl": null,
@@ -7061,7 +7061,7 @@
     "Optical Lens": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Optische Linse",
       "fr": "Lentille optique",
       "ru": "Оптические линзы",
       "pl": null,
@@ -7073,7 +7073,7 @@
     "Scrambler": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Störsender",
       "fr": "Brouilleur",
       "ru": "Шифратор",
       "pl": null,
@@ -7097,7 +7097,7 @@
     "Oxygenic Bacteria": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Sauerstoffbakterien",
       "fr": "Bactérie oxygénique",
       "ru": "Кислородные бактерии",
       "pl": null,
@@ -7109,7 +7109,7 @@
     "pH Neutraliser": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "pH-Neutralisator",
       "fr": "Neutralisateur de pH",
       "ru": "Нейтрализатор pH",
       "pl": null,
@@ -7121,7 +7121,7 @@
     "Ion Battery": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ionen-Batterie",
       "fr": "Batterie ionique",
       "ru": "Ионная батарея",
       "pl": null,
@@ -7181,7 +7181,7 @@
     "Viscoelastic Polymer": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Viskoelastisches Polymer",
       "fr": "Polymère viscoélastique",
       "ru": "Вязкоэластичный полимер",
       "pl": null,
@@ -7217,7 +7217,7 @@
     "Health Monitor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Gesundheitsmonitor",
       "fr": "Moniteur médical",
       "ru": "Монитор здоровья",
       "pl": null,
@@ -7277,7 +7277,7 @@
     "Suit Schematic": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Anzugplan",
       "fr": "Plan de combinaison",
       "ru": "Эскиз комбинезона",
       "pl": null,
@@ -7337,7 +7337,7 @@
     "Vehicle Schematic": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Fahrzeugplan",
       "fr": "Plan de véhicule",
       "ru": "Чертёж транспорта",
       "pl": null,
@@ -7373,7 +7373,7 @@
     "Ballistic Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ballistische Daten",
       "fr": "Données balistiques",
       "ru": "Баллистические данные",
       "pl": null,
@@ -7433,7 +7433,7 @@
     "Weapon Component": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Waffenkomponente",
       "fr": "Composant d'arme",
       "ru": "Компонент оружия",
       "pl": null,
@@ -7457,7 +7457,7 @@
     "Epoxy Adhesive": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Epoxy-Klebstoff",
       "fr": "Colle époxy",
       "ru": "Эпоксидный клей",
       "pl": null,
@@ -7469,7 +7469,7 @@
     "Tungsten Carbide": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Wolframcarbid",
       "fr": "Carbure de tungstène",
       "ru": "Карбид вольфрама",
       "pl": null,
@@ -7481,7 +7481,7 @@
     "Manufacturing Instructions": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Herstellungsanweisung",
       "fr": "Guides industriels",
       "ru": "Производственные инструкции",
       "pl": null,
@@ -7493,7 +7493,7 @@
     "Push": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Drücken",
       "fr": "Boost",
       "ru": "Рывок",
       "pl": null,
@@ -7853,7 +7853,7 @@
     "Micro Thrusters": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mikro-Schubdüsen",
       "fr": "Micropropulseurs",
       "ru": "Маневровые микродвигатели",
       "pl": null,
@@ -7865,7 +7865,7 @@
     "Micro Hydraulics": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mikrohydraulikgeräte",
       "fr": "Micro hydraulique",
       "ru": "Микрогидравлика",
       "pl": null,
@@ -9163,7 +9163,7 @@
     "Tech": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Technik",
       "fr": "Technologies",
       "ru": null,
       "pl": null,
@@ -9175,7 +9175,7 @@
     "Circuits": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schaltungen",
       "fr": "Circuits",
       "ru": null,
       "pl": null,
@@ -9187,7 +9187,7 @@
     "Chemicals": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemikalien",
       "fr": "Produits chimiques",
       "ru": null,
       "pl": null,
@@ -9199,7 +9199,7 @@
     "Mats": {
       "es": "Materiales",
       "pt": null,
-      "de": null,
+      "de": "Materialien",
       "fr": "Matx",
       "ru": null,
       "pl": null,
@@ -9211,7 +9211,7 @@
     "Suit": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Anzug",
       "fr": "Combinaison",
       "ru": null,
       "pl": null,
@@ -9223,7 +9223,7 @@
     "Weapon": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Waffe",
       "fr": "Arme",
       "ru": null,
       "pl": null,
@@ -9235,7 +9235,7 @@
     "Reduced tool battery consumption": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "reduzierter Werzeug-Energieverbrauch ",
       "fr": "Consommation des outils réduite",
       "ru": null,
       "pl": null,
@@ -9259,7 +9259,7 @@
     "Extra backpack capacity": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Zusätzliche Rucksackkapazität",
       "fr": "Capacité de sac à dos accrue",
       "ru": null,
       "pl": null,
@@ -9271,7 +9271,7 @@
     "Stability": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Stabilität",
       "fr": "Stabilité",
       "ru": null,
       "pl": null,
@@ -9283,7 +9283,7 @@
     "Greater range": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Größere Reichweite",
       "fr": "Portée améliorée",
       "ru": null,
       "pl": null,
@@ -9295,7 +9295,7 @@
     "Increased sprint duration": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Sprintdauer",
       "fr": "Durée de course améliorée",
       "ru": null,
       "pl": null,
@@ -9307,7 +9307,7 @@
     "Improved jump assist": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Sprungunterstützung",
       "fr": "Assistance de saut améliorée",
       "ru": null,
       "pl": null,
@@ -9319,7 +9319,7 @@
     "Increased air reserves": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Luftreserve",
       "fr": "Réserves d'oxygène augmentées",
       "ru": null,
       "pl": null,
@@ -9343,7 +9343,7 @@
     "Noise suppressor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schalldämpfer",
       "fr": "Silencieux",
       "ru": null,
       "pl": null,
@@ -9355,7 +9355,7 @@
     "Magazine size": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Magazinkapazität",
       "fr": "Taille du chargeur",
       "ru": null,
       "pl": null,
@@ -9367,7 +9367,7 @@
     "Damage resistance": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schadenswiderstand",
       "fr": "Résistance aux dégats",
       "ru": null,
       "pl": null,
@@ -9379,7 +9379,7 @@
     "Added melee damage": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "zusätzlicher Nahkampfschaden",
       "fr": "Dégats au corps à corps supplémentaires",
       "ru": null,
       "pl": null,
@@ -9391,7 +9391,7 @@
     "Reload speed": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Nachladegeschwindigkeit",
       "fr": "Vitesse de rechargement",
       "ru": null,
       "pl": null,
@@ -9403,7 +9403,7 @@
     "Extra ammo capacity": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Zusätzliche Magazinkapazität",
       "fr": "Capacité de chargeur accrue",
       "ru": null,
       "pl": null,
@@ -9415,7 +9415,7 @@
     "Faster shield regen": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "schnellere Schildregenation",
       "fr": "Régénération des boucliers accélérée",
       "ru": null,
       "pl": null,
@@ -9427,7 +9427,7 @@
     "Stowed reloading": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Nachladen im Holster",
       "fr": "Rechargement rangé",
       "ru": null,
       "pl": null,
@@ -9439,7 +9439,7 @@
     "Headshot damage": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kopfschussschaden",
       "fr": "Dégâts de tirs à la tête",
       "ru": null,
       "pl": null,
@@ -9451,7 +9451,7 @@
     "Improved battery capacity": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "verbesserte Batteriekapazität",
       "fr": "Capacité de batterie améliorée",
       "ru": null,
       "pl": null,
@@ -9463,7 +9463,7 @@
     "Scope": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Visier",
       "fr": "Viseur",
       "ru": null,
       "pl": null,
@@ -9475,7 +9475,7 @@
     "Night vision": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Nachtsicht",
       "fr": "Vision nocturne",
       "ru": null,
       "pl": null,
@@ -9487,7 +9487,7 @@
     "Improved Hip Fire Accuracy": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "verbesserte Hüftfeuergenauigkeit",
       "fr": "Amélioration de la précision du tir au jugé",
       "ru": null,
       "pl": null,
