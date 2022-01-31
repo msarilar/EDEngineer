@@ -70,7 +70,7 @@
       "tr": "Kısa Menzilli Patlatıcı"
     },
     "Lightweight": {
-      "es": "Aligerado",
+      "es": "Ligero",
       "pt": "Leve",
       "de": "Leicht",
       "fr": "Léger",
@@ -9569,7 +9569,7 @@
       "tr": "Savaş Hareket Hızı"
     },
     "Expanded Probe Scanning Radius": {
-      "es": null,
+      "es": "Radio de Escaneo de Sonda Ampliado",
       "pt": null,
       "de": null,
       "fr": "Rayon de scan de sonde étendu",
@@ -9581,7 +9581,7 @@
       "tr": "Genişletilmiş Prob Tarama Yarıçapı"
     },
     "Engineered FSD V1": {
-      "es": null,
+      "es": "MDD Modificado V1",
       "pt": null,
       "de": null,
       "fr": "FSD Ingénieré V1",
@@ -9593,7 +9593,7 @@
       "tr": "Mühendislikli Zıplama Modülü (FSD) V1"
     },
     "Engineered Missile Rack V1": {
-      "es": null,
+      "es": "Lanzamisiles Guiado Modificado V1",
       "pt": null,
       "de": null,
       "fr": "Rack à missiles Ingéniéré V1",
@@ -10013,7 +10013,7 @@
       "tr": "Tek Seferlik İhlal Cihazı"
     },
     "Engineered Detailed Surface Scanner V1": {
-      "es": null,
+      "es": "Escáner de Análisi de Superficie Adaptado V1",
       "pt": null,
       "de": null,
       "fr": null,
@@ -10025,7 +10025,7 @@
       "tr": "Tek Seferlik İhlal Cihazı"
     },
     "Thermal Cooling Units": {
-      "es": null,
+      "es": "Unidades de Enfriamiento Térmico",
       "pt": null,
       "de": null,
       "fr": null,
@@ -10037,7 +10037,7 @@
       "tr": null
     },
     "Modified Gauss Cannon (Fixed, Medium)": {
-      "es": null,
+      "es": "Cañón Gauss Guardián Modificado (Fijo) (Clase: 2)",
       "pt": null,
       "de": null,
       "fr": null,
@@ -10049,7 +10049,7 @@
       "tr": null
     },
     "Modified Gauss Cannon (Fixed, Small)": {
-      "es": null,
+      "es": "Cañón Gauss Guardián Modificado (Fijo) (Clase: 1)",
       "pt": null,
       "de": null,
       "fr": null,
@@ -10061,7 +10061,7 @@
       "tr": null
     },
     "Modified Shard Cannon (Fixed, Medium)": {
-      "es": null,
+      "es": "Cañón de Esquirlas Guardián Modificado (Fijo) (Clase: 2)",
       "pt": null,
       "de": null,
       "fr": null,
@@ -10073,7 +10073,7 @@
       "tr": null
     },
     "Modified Shard Cannon (Fixed, Small)": {
-      "es": null,
+      "es": "Cañón de Esquirlas Guardián Modificado (Fijo) (Clase: 1)",
       "pt": null,
       "de": null,
       "fr": null,
