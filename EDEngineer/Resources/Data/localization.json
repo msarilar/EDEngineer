@@ -8273,7 +8273,7 @@
     "Ship Schematic": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schiffsplan",
       "fr": "Plan de vaisseau",
       "ru": "План корабля",
       "pl": null,
@@ -8285,7 +8285,7 @@
     "Pyrolytic Catalyst": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Pyrolytischer Katalysator",
       "fr": "Catalyseur pyrolytique",
       "ru": "Пиролитический катализатор",
       "pl": null,
@@ -8297,7 +8297,7 @@
     "Weapon Test Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Informationen zu Waffentests",
       "fr": "Données de test d'armes",
       "ru": "Сведения об испытаниях вооружения",
       "pl": null,
@@ -8309,7 +8309,7 @@
     "Employee Genetic Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Genetische Daten von Arbeitern",
       "fr": "Données génétiques d'employés",
       "ru": "Генетические данные работников",
       "pl": null,
@@ -8321,7 +8321,7 @@
     "Classic Entertainment": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Klassische Unterhaltung",
       "fr": "Médiathèque classique",
       "ru": "Классические развлечения",
       "pl": null,
@@ -8333,7 +8333,7 @@
     "Opinion Polls": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Meinungsumfragen",
       "fr": "Sondages",
       "ru": "Опросы общественного мнения",
       "pl": null,
@@ -8345,7 +8345,7 @@
     "Security Expenses": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Sicherheitskosten",
       "fr": "Dépenses de sécurité",
       "ru": "Расходы на охрану",
       "pl": null,
@@ -8357,7 +8357,7 @@
     "Spyware": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Spyware",
       "fr": "Programme-espion",
       "ru": "Шпионские программы",
       "pl": null,
@@ -8369,7 +8369,7 @@
     "Troop Deployment Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Aufzeichnungen über den Landebetrieb",
       "fr": "Comptes-rendus opérationnels",
       "ru": "Записи о десантных операциях",
       "pl": null,
@@ -8381,7 +8381,7 @@
     "Chemical Patents": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemische Patente",
       "fr": "Brevets chimiques",
       "ru": "Патенты на химические вещества",
       "pl": null,
@@ -8393,7 +8393,7 @@
     "Genetic Repair Meds": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Genetische Korrekturmedikamente",
       "fr": "Traitements génétiques",
       "ru": "Препараты генетической коррекции",
       "pl": null,
@@ -8405,7 +8405,7 @@
     "Inorganic Contaminant": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Anorganische Verunreinigung",
       "fr": "Contaminant inorganique",
       "ru": "Неорганический загрязнитель",
       "pl": null,
@@ -8417,7 +8417,7 @@
     "Medical Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Medizinische Berichte",
       "fr": "Dossiers médicaux",
       "ru": "Медицинские отчеты",
       "pl": null,
@@ -8431,7 +8431,7 @@
     "Synthetic Genome": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Synthetisches Genom",
       "fr": "Génome de synthèse",
       "ru": "Синтетический геном",
       "pl": null,
@@ -8443,7 +8443,7 @@
     "Mutagenic Catalyst": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "DNA-Mutationskatalysator",
       "fr": "Catalyseur mutagène",
       "ru": "Катализатор мутаций ДНК",
       "pl": null,
@@ -8455,7 +8455,7 @@
     "Chemical Process Sample": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemisches Reaktionsmuster",
       "fr": "Échantillon de production chimique",
       "ru": "Образец химической реакции",
       "pl": null,
@@ -8479,7 +8479,7 @@
     "Agricultural Process Sample": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Beispiel landwirtschaftlicher Prozess",
       "fr": "Échantillon de production agricole",
       "ru": "Образец сельхозпроцесса",
       "pl": null,
@@ -8491,7 +8491,7 @@
     "Xeno-Defence Protocols": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Alien Threat Defense-Protokolle",
       "fr": "Protocoles anti-xénomorphes",
       "ru": "Протоколы защиты от инопланетной угрозы",
       "pl": null,
@@ -8515,7 +8515,7 @@
     "Virology Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Virologische Daten",
       "fr": "Données de virologie",
       "ru": "Данные вирусологии",
       "pl": null,
@@ -8527,9 +8527,9 @@
     "VIP Security Detail": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "VIP-Sicherheitsdetail",
       "fr": "Protection rapprochée de VIP",
-      "ru": null,
+      "ru": "Подробности охраны важных персон",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -8551,7 +8551,7 @@
     "Vaccination Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Impfzeitschriften",
       "fr": "Dossiers de vaccination",
       "ru": "Журналы вакцинации",
       "pl": null,
@@ -8563,7 +8563,7 @@
     "Tactical Plans": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Taktische Pläne",
       "fr": "Plans stratégiques",
       "ru": "Тактические планы",
       "pl": null,
@@ -8575,7 +8575,7 @@
     "Spectral Analysis Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Spektralanalysedaten",
       "fr": "Données d'analyse spectrale",
       "ru": "Данные спектрального анализа",
       "pl": null,
@@ -8587,7 +8587,7 @@
     "Smear Campaign Plans": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Pläne für Abstrich Kampagnen",
       "fr": "Campagne de calomnie",
       "ru": "Планы кампании по дискредитации",
       "pl": null,
@@ -8599,7 +8599,7 @@
     "Slush Fund Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Matsсh-Fonds-Protokolle",
       "fr": "Caisse noire",
       "ru": "Журналы «грязного» финансирования",
       "pl": null,
@@ -8611,7 +8611,7 @@
     "Shareholder Information": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Informationen über Aktionäre",
       "fr": "Actionnariat",
       "ru": "Сведения об акционерах",
       "pl": null,
@@ -8623,7 +8623,7 @@
     "Settlement Assault Plans": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Pläne zum Sturm auf die Siedlung",
       "fr": "Plans d'assaut d'une installation",
       "ru": "Планы штурма поселения",
       "pl": null,
@@ -8635,7 +8635,7 @@
     "Seed Geneaology": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Samen-Genealogie",
       "fr": "Patrimoine génétique de semences",
       "ru": null,
       "pl": null,
@@ -8647,7 +8647,7 @@
     "Risk Assessments": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Risikoabschätzung",
       "fr": "Evaluation des risques",
       "ru": "Оценка рисков",
       "pl": null,
@@ -8659,7 +8659,7 @@
     "Purchase Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kaufaufzeichnungen",
       "fr": "Registre d'acquisitions",
       "ru": "Платежные ведомости",
       "pl": null,
@@ -8683,7 +8683,7 @@
     "Prisoner Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Dossier über Gefangene",
       "fr": "Dossiers pénitentiaires",
       "ru": "Досье на заключённых",
       "pl": null,
@@ -8695,7 +8695,7 @@
     "Political Affiliations": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Politische Zugehörigkeit",
       "fr": "Affiliations politiques",
       "ru": "Политическая принадлежность",
       "pl": null,
@@ -8707,7 +8707,7 @@
     "Pharmaceutical Patents": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Pharmazeutische Patente",
       "fr": "Brevets pharmaceutiques",
       "ru": "Фармацевтические патенты",
       "pl": null,
@@ -8719,7 +8719,7 @@
     "Personal Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Persönliche Zeitschriften",
       "fr": "Journaux personnels",
       "ru": "Личные журналы",
       "pl": null,
@@ -8731,7 +8731,7 @@
     "Patrol Routes": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Patrouillenpläne",
       "fr": "Itinéraires de patrouille",
       "ru": "Схемы патрулирования",
       "pl": null,
@@ -8743,7 +8743,7 @@
     "Patient History": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Krankengeschichte des Patienten",
       "fr": "Antécédents médicaux",
       "ru": "История болезни пациента",
       "pl": null,
@@ -8755,7 +8755,7 @@
     "NOC Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Geheimagentendaten",
       "fr": "Données d'agent clandestin",
       "ru": "Данные тайного агента",
       "pl": null,
@@ -8767,7 +8767,7 @@
     "Network Security Protocols": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Netzwerksicherheitsprotokolle",
       "fr": "Protocoles de sécurité réseau",
       "ru": "Протоколы информационной безопасности",
       "pl": null,
@@ -8779,7 +8779,7 @@
     "Meeting Minutes": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Sitzungsprotokoll",
       "fr": "Compte-rendu de réunion",
       "ru": "Протоколы заседаний",
       "pl": null,
@@ -8791,7 +8791,7 @@
     "Kompromat": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kompromittierende Daten",
       "fr": "Kompromat",
       "ru": "Компрометирующие сведения",
       "pl": null,
@@ -8803,7 +8803,7 @@
     "Interview Recordings": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Interviewaufzeichnungen",
       "fr": "Enregistrements d'entretiens",
       "ru": "Записи интервью",
       "pl": null,
@@ -8815,7 +8815,7 @@
     "Interrogation Recordings": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Protokolle der Verhöre",
       "fr": "Enregistrements d'interrogatoires",
       "ru": "Записи допросов",
       "pl": null,
@@ -8827,7 +8827,7 @@
     "Incident Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Vorfall-Protokoll",
       "fr": "Journaux d'incidents",
       "ru": "Журнал происшествий",
       "pl": null,
@@ -8839,7 +8839,7 @@
     "Hydroponic Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hydroponische Daten",
       "fr": "Données hydroponiques",
       "ru": "Данные по работе гидропоники",
       "pl": null,
@@ -8851,7 +8851,7 @@
     "Geological Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Geologische Daten",
       "fr": "Données géologiques",
       "ru": "Геологические данные",
       "pl": null,
@@ -8863,7 +8863,7 @@
     "Geographical Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Geografische Daten",
       "fr": "Données géologiques",
       "ru": "Географические сведения",
       "pl": null,
@@ -8875,7 +8875,7 @@
     "Financial Projections": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Finanzielle Prognosen",
       "fr": "Projections financières",
       "ru": "Финансовые прогнозы",
       "pl": null,
@@ -8887,7 +8887,7 @@
     "Faction Donator List": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Spendenliste der Fraktion",
       "fr": "Liste de donateurs d'une faction",
       "ru": "Список пожертвований для фракции",
       "pl": null,
@@ -8899,7 +8899,7 @@
     "Faction Associates": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Fraktionspartner",
       "fr": "Affiliations d'une faction",
       "ru": "Партнеры фракции",
       "pl": null,
@@ -8911,7 +8911,7 @@
     "Espionage Material": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Spionageberichte",
       "fr": "Documents confidentiels",
       "ru": "Шпионские отчёты",
       "pl": null,
@@ -8923,7 +8923,7 @@
     "Enhanced Interrogation Recordings": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Detaillierte Protokolle der Verhöre",
       "fr": "Enregistrements d'interrogatoire poussés",
       "ru": "Подробные записи допросов",
       "pl": null,
@@ -8935,7 +8935,7 @@
     "Employment History": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Arbeitsbuch des Mitarbeiters",
       "fr": "Expérience professionnelle",
       "ru": "Трудовая книжка",
       "pl": null,
@@ -8947,9 +8947,9 @@
     "Employee Expenses": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mitarbeiterausgaben",
       "fr": "Notes de frais",
-      "ru": "Расходы сотрудников",
+      "ru": "Расходы на сотрудников",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -8959,7 +8959,7 @@
     "Crop Yield Analysis": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Ertragsanalyse",
       "fr": "Analyse de rendement agricole",
       "ru": "Анализ урожайности",
       "pl": null,
@@ -8971,7 +8971,7 @@
     "Criminal Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kriminalberichte",
       "fr": "Casiers judiciaires",
       "ru": "Криминальные сводки",
       "pl": null,
@@ -8983,7 +8983,7 @@
     "Combatant Performance": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kampfwirksamkeit",
       "fr": "Performances de combat",
       "ru": "Боевая эффективность",
       "pl": null,
@@ -8995,9 +8995,9 @@
     "Cocktail Recipes": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Cocktail-Rezepte",
       "fr": "Recettes de cocktails",
-      "ru": "Рецеаты коктейлей",
+      "ru": "Рецепты коктейлей",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -9007,7 +9007,7 @@
     "Clinical Trial Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Aufzeichnungen über klinische Studien",
       "fr": "Essais cliniques",
       "ru": "Записи клинических испытаний",
       "pl": null,
@@ -9019,7 +9019,7 @@
     "Chemical Weapon Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Daten zu Chemiewaffen",
       "fr": "Données d'armes chimiques",
       "ru": "Данные по химическому оружию",
       "pl": null,
@@ -9031,7 +9031,7 @@
     "Chemical Experiment Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemische Forschungsaufzeichnungen",
       "fr": "Données d'expériences chimiques",
       "ru": "Записи о химических исследованиях",
       "pl": null,
@@ -9043,7 +9043,7 @@
     "Blood Test Results": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Bluttestergebnisse",
       "fr": "Résultats de tests sanguins",
       "ru": "Результаты тестов крови",
       "pl": null,
@@ -9055,7 +9055,7 @@
     "Blacklist Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schwarze Liste",
       "fr": "Liste noire",
       "ru": "Черный список",
       "pl": null,
@@ -9067,7 +9067,7 @@
     "Biological Weapon Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Informationen zu Biowaffen",
       "fr": "Données d'arme biologique",
       "ru": "Сведения по биологическому оружию",
       "pl": null,
@@ -9079,7 +9079,7 @@
     "AX Combat Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "AX-Kampfprotokolle",
       "fr": "Jounaux de combat AX",
       "ru": "Журналы боевых операций АИ",
       "pl": null,
@@ -9091,7 +9091,7 @@
     "Audio Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Audioaufnahmen",
       "fr": "Journaux audio",
       "ru": "Аудиозаписи",
       "pl": null,
@@ -9103,7 +9103,7 @@
     "Extraction Yield Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Rentabilität der Ressourcengewinnung",
       "fr": "Données de rendement minier",
       "ru": "Данные о доходности ресурсодобычи",
       "pl": null,
@@ -9115,7 +9115,7 @@
     "Fleet Registry": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Flottenregister",
       "fr": "Registre de flotte",
       "ru": "Реестр флота",
       "pl": null,
@@ -9127,7 +9127,7 @@
     "Atmospheric Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Planetarische Siedlung",
       "fr": "Données athmosphériques",
       "ru": "Атмосферные данные",
       "pl": null,
@@ -9151,7 +9151,7 @@
     "Item": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Artikel",
       "fr": "Marchandises",
       "ru": "Товары",
       "pl": null,
@@ -9247,7 +9247,7 @@
     "Enhanced tracking": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbessertes Tracking",
       "fr": "Suivi amélioré",
       "ru": "Улучшенное слежение",
       "pl": null,
@@ -9331,7 +9331,7 @@
     "Faster handling": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schnelle Verarbeitung",
       "fr": "Maniabilité améliorée",
       "ru": "Ускоренная обработка",
       "pl": null,
@@ -9499,7 +9499,7 @@
     "Quieter footsteps": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Gedämpfte Schrittgeräusche",
       "fr": "Réduction des bruits de pas",
       "ru": "Приглушенные звуки шагов",
       "pl": null,
@@ -9511,7 +9511,7 @@
     "Audio Masking": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Akustische Maskierung",
       "fr": "Réduction du bruit de tir",
       "ru": "Акустическая маскировка",
       "pl": null,
@@ -9523,7 +9523,7 @@
     "Higher Accuracy (Kinetic Weapons)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Genauigkeit (Kinetikwaffe)",
       "fr": "Précision Accrue (Armes Cinétiques)",
       "ru": "Повышенная точность (Кинетическое оружие)",
       "pl": null,
@@ -9535,7 +9535,7 @@
     "Higher Accuracy (Thermal Weapons)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Genauigkeit (Laserwaffe)",
       "fr": "Précision Accrue (Armes Termiques)",
       "ru": "Повышенная точность (Термическое оружие)",
       "pl": null,
@@ -9547,7 +9547,7 @@
     "Higher Accuracy (Plasma Weapons)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Genauigkeit (Plasmawaffe)",
       "fr": "Précision Accrue (Armes Plasma)",
       "ru": "Повышенная точность (Плазменное оружие)",
       "pl": null,
@@ -9559,7 +9559,7 @@
     "Combat Movement Speed": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Bewegungsgeschwindigkeit bekämpfen",
       "fr": "Vitesse de déplacement au combat",
       "ru": "Скорость боевого передвижения",
       "pl": null,
@@ -9571,7 +9571,7 @@
     "Expanded Probe Scanning Radius": {
       "es": "Radio de Escaneo de Sonda Ampliado",
       "pt": null,
-      "de": null,
+      "de": "Erweiterte Reichweite der Sonde",
       "fr": "Rayon de scan de sonde étendu",
       "ru": "Расширенный радиус действия зонда",
       "pl": null,
@@ -9583,7 +9583,7 @@
     "Engineered FSD V1": {
       "es": "MDD Modificado V1",
       "pt": null,
-      "de": null,
+      "de": "überarbeitete FSD V1",
       "fr": "FSD Ingénieré V1",
       "ru": "Перепроектированный пакет FSD V1",
       "pl": null,
@@ -9595,7 +9595,7 @@
     "Engineered Missile Rack V1": {
       "es": "Lanzamisiles Guiado Modificado V1",
       "pt": null,
-      "de": null,
+      "de": "überarbeitetes Raketengestell V1",
       "fr": "Rack à missiles Ingéniéré V1",
       "ru": "Перепроектированная ракетная кассета V1",
       "pl": null,
@@ -9811,7 +9811,7 @@
     "Mineral Analytics": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mineralanalyse",
       "fr": "Analyse Minérale",
       "ru": "Анализ минералов",
       "pl": null,
@@ -9823,7 +9823,7 @@
     "Security Plans": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Sicherheitspläne",
       "fr": "Plans de Sécurité",
       "ru": "Планы безопасности",
       "pl": null,
@@ -9835,7 +9835,7 @@
     "Greater range (Manticore plasma)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Erhöhte Reichweite (Plasma von Manticore)",
       "fr": null,
       "ru": "Повышенная дальность (плазменное от Manticore)",
       "pl": null,
@@ -9847,7 +9847,7 @@
     "Greater range (Kinematic kinetic)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Erhöhte Reichweite (Kugeln von Kinematic)",
       "fr": null,
       "ru": "Повышенная дальность (пулевое от Kinematic)",
       "pl": null,
@@ -9859,7 +9859,7 @@
     "Greater range (Takada laser)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Erhöhte Reichweite (Laser von Takada)",
       "fr": null,
       "ru": "Повышенная дальность (лазерное от Takada)",
       "pl": null,
@@ -9871,7 +9871,7 @@
     "Improved Hip Fire Accuracy (Manticore plasma)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Genauigkeit aus der Hüfte (Plasma von Manticore)",
       "fr": null,
       "ru": "Улучшенная точность от бедра (плазменное от Manticore)",
       "pl": null,
@@ -9883,7 +9883,7 @@
     "Improved Hip Fire Accuracy (Kinematic kinetic)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Genauigkeit aus der Hüfte (Kugeln von Kinematic)",
       "fr": null,
       "ru": "Улучшенная точность от бедра (пулевое от Kinematic)",
       "pl": null,
@@ -9895,7 +9895,7 @@
     "Improved Hip Fire Accuracy (Takada laser)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verbesserte Genauigkeit aus der Hüfte (Laser von Takada)",
       "fr": null,
       "ru": "Улучшенная точность от бедра (лазерное от Takada)",
       "pl": null,
@@ -9907,9 +9907,9 @@
     "Headshot damage (Manticore plasma)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kopfshaden (Plasma von Manticore)",
       "fr": null,
-      "ru": "Урон в голову (плазменное от Manticore),
+      "ru": "Урон в голову (плазменное от Manticore)",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -9919,9 +9919,9 @@
     "Headshot damage (Kinematic kinetic)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kopfshaden (Kugeln von Kinematic)",
       "fr": null,
-      "ru": "Урон в голову (пулевое от Kinematic),
+      "ru": "Урон в голову (пулевое от Kinematic)",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -9931,7 +9931,7 @@
     "Frag Grenade": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Splittergranate",
       "fr": null,
       "ru": "Осколочная граната",
       "pl": null,
@@ -9943,9 +9943,9 @@
     "Headshot damage (Takada laser)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kopfshaden (Laser von Takada)",
       "fr": null,
-      "ru": "Урон в голову (лазерное от Takada),
+      "ru": "Урон в голову (лазерное от Takada)",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -9955,7 +9955,7 @@
     "Shield Disruptor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Schild-Unterbrecher",
       "fr": null,
       "ru": "Разрушитель щита",
       "pl": null,
@@ -9967,7 +9967,7 @@
     "Medkit": {
       "es": null,
       "pt": null,
-      "de": "Medkit",
+      "de": "Verbandskasten",
       "fr": null,
       "ru": "Аптечка",
       "pl": null,
@@ -10015,7 +10015,7 @@
     "Engineered Detailed Surface Scanner V1": {
       "es": "Escáner de Análisi de Superficie Adaptado V1",
       "pt": null,
-      "de": null,
+      "de": "überarbeiteter detaillierter Oberflächenscanner V1",
       "fr": null,
       "ru": "Перепроектированный подробный сканер поверхности V1",
       "pl": null,
@@ -10027,7 +10027,7 @@
     "Thermal Cooling Units": {
       "es": "Unidades de Enfriamiento Térmico",
       "pt": null,
-      "de": null,
+      "de": "Kühlblöcke",
       "fr": null,
       "ru": "Блоки охлаждения",
       "pl": null,
@@ -10039,7 +10039,7 @@
     "Modified Gauss Cannon (Fixed, Medium)": {
       "es": "Cañón Gauss Guardián Modificado (Fijo) (Clase: 2)",
       "pt": null,
-      "de": null,
+      "de": "Modifizierte Gauß-Kanone (fest, mittlerer)",
       "fr": null,
       "ru": "Модифицированная гаусс-пушка (фиксированная, средний слот)",
       "pl": null,
@@ -10051,7 +10051,7 @@
     "Modified Gauss Cannon (Fixed, Small)": {
       "es": "Cañón Gauss Guardián Modificado (Fijo) (Clase: 1)",
       "pt": null,
-      "de": null,
+      "de": "Modifizierte Gauß-Kanone (fest, klein)",
       "fr": null,
       "ru": "Модифицированная гаусс-пушка (фиксированная, малый слот)",
       "pl": null,
@@ -10063,7 +10063,7 @@
     "Modified Shard Cannon (Fixed, Medium)": {
       "es": "Cañón de Esquirlas Guardián Modificado (Fijo) (Clase: 2)",
       "pt": null,
-      "de": null,
+      "de": "Modifizierte Splitterkanone (fest, mittlerer)",
       "fr": null,
       "ru": "Модифицированный «дробовик» (фиксированный, средний слот)",
       "pl": null,
@@ -10075,7 +10075,7 @@
     "Modified Shard Cannon (Fixed, Small)": {
       "es": "Cañón de Esquirlas Guardián Modificado (Fijo) (Clase: 1)",
       "pt": null,
-      "de": null,
+      "de": "Modifizierte Splitterkanone (fest, klein)",
       "fr": null,
       "ru": "Модифицированный «дробовик» (фиксированный, малый слот)",
       "pl": null,
