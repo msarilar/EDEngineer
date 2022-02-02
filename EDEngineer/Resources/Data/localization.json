@@ -4268,7 +4268,7 @@
       "pt": "Desbloquear",
       "de": "Freischalten",
       "fr": "Déverrouiller",
-      "ru": "Расшифровка",
+      "ru": "Разблокировка",
       "pl": "Odblokowanie",
       "cs": "Odemknutí",
       "cn": "解锁",
@@ -7229,7 +7229,7 @@
     "Building Schematic": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Gebäudeschema",
       "fr": "Plan de bâtiment",
       "ru": "Чертёж здания",
       "pl": null,
@@ -7253,7 +7253,7 @@
     "Insight Entertainment Suite": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Unterhaltungssuite Insight",
       "fr": "Divertissements Insight",
       "ru": "Медиаустройство InSight",
       "pl": null,
@@ -7265,7 +7265,7 @@
     "Nutritional Concentrate": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Nährstoffkonzentrat",
       "fr": "Concentré nutritif",
       "ru": "Питательный концентрат",
       "pl": null,
@@ -7289,7 +7289,7 @@
     "Universal Translator": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Universalübersetzer",
       "fr": "Traducteur universel",
       "ru": "Универсальный переводчик",
       "pl": null,
@@ -7325,7 +7325,7 @@
     "Microbial Inhibitor": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mikrobieller Inhibitor",
       "fr": "Inhibiteur microbien",
       "ru": "Микробный ингибитор",
       "pl": null,
@@ -7349,7 +7349,7 @@
     "Insight Data Bank": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "InSight-Datenbank",
       "fr": "Banque de données d'Insight",
       "ru": "Банк данных InSight",
       "pl": null,
@@ -7361,7 +7361,7 @@
     "Personal Documents": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Persönliche Dokumente",
       "fr": "Documents personnels",
       "ru": "Личные документы",
       "pl": null,
@@ -7385,7 +7385,7 @@
     "Radioactivity Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Informationen über Radioaktivität",
       "fr": "Relevés de radioactivité",
       "ru": "Информация о радиоактивности",
       "pl": null,
@@ -7421,7 +7421,7 @@
     "Titanium Plating": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Rüstung aus Titan",
       "fr": "Plaques en titane",
       "ru": "Титановая броня",
       "pl": null,
@@ -7445,7 +7445,7 @@
     "Electrical Fuse": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Elektro-Sicherung",
       "fr": "Fusible électrique",
       "ru": "Предохранитель",
       "pl": null,
@@ -7505,7 +7505,7 @@
     "Synthetic Pathogen": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Synthetischer Erreger",
       "fr": "Pathogène de synthèse",
       "ru": "Синтетический патоген",
       "pl": null,
@@ -7541,7 +7541,7 @@
     "Cast Fossil": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Versteinerter Abdruck",
       "fr": "Moulage de fossile",
       "ru": "Окаменелый отпечаток",
       "pl": null,
@@ -7553,7 +7553,7 @@
     "True Form Fossil": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Wahres Form Fossil",
       "fr": "Fossile intact",
       "ru": "Окаменелость истинной формы",
       "pl": null,
@@ -7565,7 +7565,7 @@
     "Californium": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kalifornien",
       "fr": "Californium",
       "ru": "Калифорний",
       "pl": null,
@@ -7577,7 +7577,7 @@
     "Refinement Process Sample": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Beispiel für einen Reinigungsprozess",
       "fr": "Échantillon de production de raffinage",
       "ru": "Образец с очистного производства",
       "pl": null,
@@ -7589,9 +7589,9 @@
     "Surveillance Equipment": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Überwachungsausrüstung",
       "fr": "Équipement de surveillance",
-      "ru": "Оборудование для наблюдения",
+      "ru": "Оборудование видеонаблюдения",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -7601,7 +7601,7 @@
     "Petrified Fossil": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Versteinertes Fossil",
       "fr": "Fossile pétrifié",
       "ru": "Окаменелость",
       "pl": null,
@@ -7613,7 +7613,7 @@
     "Accident Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Unfallprotokolle",
       "fr": "Journaux d'accidents",
       "ru": "Журнал происшествий",
       "pl": null,
@@ -7649,7 +7649,7 @@
     "Multimedia Entertainment": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Multimediale Unterhaltung",
       "fr": "Médiathèque",
       "ru": "Мультимедийные развлечения",
       "pl": null,
@@ -7661,7 +7661,7 @@
     "Recycling Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Zeitschrift für Abfallrecycling",
       "fr": "Journaux de recyclage",
       "ru": "Журнал утилизации отходов",
       "pl": null,
@@ -7673,7 +7673,7 @@
     "Residential Directory": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Das Adressbuch",
       "fr": "Annuaire résidentiel",
       "ru": "Адресная книга",
       "pl": null,
@@ -7685,7 +7685,7 @@
     "Union Membership": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Gemeinschaftsmitgliedsschaft",
       "fr": "Liste d'adhérents",
       "ru": "Список членов союза",
       "pl": null,
@@ -7697,7 +7697,7 @@
     "Payroll Information": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Informationen zur Gehaltsabrechnung",
       "fr": "Informations salariales",
       "ru": "Платёжная ведомость",
       "pl": null,
@@ -7709,7 +7709,7 @@
     "Duty Rota": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Dienstplan",
       "fr": "Planning professionnel",
       "ru": "График дежурств",
       "pl": null,
@@ -7721,7 +7721,7 @@
     "Maintenance Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Wartungsprotokoll",
       "fr": "Journaux de maintenance",
       "ru": "Журнал обслуживания",
       "pl": null,
@@ -7733,7 +7733,7 @@
     "Topographical Surveys": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Topographische Forschung",
       "fr": "Levés topographiques",
       "ru": "Топографические исследования",
       "pl": null,
@@ -7745,7 +7745,7 @@
     "Travel Permits": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Reisegenehmigungen",
       "fr": "Autorisations de déplacement",
       "ru": "Разрешение на поездки",
       "pl": null,
@@ -7757,7 +7757,7 @@
     "Mineral Survey": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mineralienübersicht",
       "fr": "Rapport de prospection",
       "ru": "Результаты геологической разведки",
       "pl": null,
@@ -7805,7 +7805,7 @@
     "Influence Projections": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "einfluss Vorhersagen",
       "fr": "Perspectives",
       "ru": "Прогноз влияния",
       "pl": null,
@@ -7817,7 +7817,7 @@
     "Stellar Activity Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Stellar-Aktivitätsprotokolle",
       "fr": "Journaux d'activité stellaire",
       "ru": "Журналы звёздной активности",
       "pl": null,
@@ -7829,7 +7829,7 @@
     "Visitor Register": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Besucherverzeichnis",
       "fr": "Registre de visites",
       "ru": "Реестр посетителей",
       "pl": null,
@@ -7841,7 +7841,7 @@
     "Chemical Inventory": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemisches Inventar",
       "fr": "Inventaire chimique",
       "ru": "Опись химикатов",
       "pl": null,
@@ -7877,9 +7877,9 @@
     "Weapon Inventory": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Waffeninventar",
       "fr": "Inventaire d'armement",
-      "ru": "Опись оружия и боеприпасов",
+      "ru": "Опись вооружения",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -7901,7 +7901,7 @@
     "Campaign Plans": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kampagnenplan",
       "fr": "Plans de campagne",
       "ru": "План кампании",
       "pl": null,
@@ -7913,7 +7913,7 @@
     "Combat Training Material": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kampftrainingsmaterial",
       "fr": "Méthodes d'entraînement au combat",
       "ru": "Учебные материалы по боевой подготовке",
       "pl": null,
@@ -7925,7 +7925,7 @@
     "Culinary Recipes": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kochen Rezepte",
       "fr": "Recettes culinaires",
       "ru": "Кулинарные рецепты",
       "pl": null,
@@ -7937,7 +7937,7 @@
     "Employee Directory": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Mitarbeiterverzeichnis",
       "fr": "Registre des employés",
       "ru": "Досье работников",
       "pl": null,
@@ -7949,7 +7949,7 @@
     "Evacuation Protocols": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Evakuierungspläne",
       "fr": "Protocoles d'évacuation",
       "ru": "Планы эвакуации",
       "pl": null,
@@ -7961,7 +7961,7 @@
     "Purchase Requests": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Kaufanfragen",
       "fr": "Demandes d'achats",
       "ru": "Запросы на покупку",
       "pl": null,
@@ -7973,7 +7973,7 @@
     "Next of Kin Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Aufzeichnungen über die nächsten Angehörigen",
       "fr": "Liste de proches",
       "ru": "Сведения о ближайших родственниках",
       "pl": null,
@@ -7985,7 +7985,7 @@
     "Job Applications": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Bewerbungen für die Anstellung",
       "fr": "Candidatures professionnelles",
       "ru": "Заявления о приёме на работу",
       "pl": null,
@@ -7997,7 +7997,7 @@
     "Exploration Journals": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Explorationsjournale",
       "fr": "Journaux d'exploration",
       "ru": "Исследовательские дневники",
       "pl": null,
@@ -8009,7 +8009,7 @@
     "Transmitter": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Sender",
       "fr": "Transmetteur",
       "ru": "Передатчик",
       "pl": null,
@@ -8021,7 +8021,7 @@
     "Propaganda": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Propaganda",
       "fr": "Propagande",
       "ru": "Пропаганда",
       "pl": null,
@@ -8033,7 +8033,7 @@
     "Digital Designs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Digitale Designs",
       "fr": "Plans numériques",
       "ru": "Дизайнерские проекты",
       "pl": null,
@@ -8045,7 +8045,7 @@
     "Biochemical Agent": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Biochemischer Wirkstoff",
       "fr": "Agent biochimique",
       "ru": "Биохимический агент",
       "pl": null,
@@ -8069,7 +8069,7 @@
     "Lazarus": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Lazarus",
       "fr": "Lazare",
       "ru": "Лазарь",
       "pl": null,
@@ -8081,7 +8081,7 @@
     "Reactor Output Review": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Überprüfung der Reaktorleistung",
       "fr": "Évaluation énergétique",
       "ru": "Оценка выходной мощности реактора",
       "pl": null,
@@ -8093,9 +8093,9 @@
     "Surveillance Logs": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Protokolle des Überwachungs",
       "fr": "Journaux de surveillance",
-      "ru": "Журналы наблюдения",
+      "ru": "Журналы систем наблюдения",
       "pl": null,
       "cs": null,
       "nl": null,
@@ -8105,7 +8105,7 @@
     "Operational Manual": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Handbuch",
       "fr": "Mode d'emploi",
       "ru": "Руководство по эксплуатации",
       "pl": null,
@@ -8117,7 +8117,7 @@
     "Settlement Defence Plans": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Siedlung Verteidigungspläne",
       "fr": "Plans de défense d'une installation",
       "ru": "Планы обороны поселения",
       "pl": null,
@@ -8129,7 +8129,7 @@
     "Conflict History": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Geschichte des Konflikts",
       "fr": "Historique de conflit",
       "ru": "История конфликта",
       "pl": null,
@@ -8141,7 +8141,7 @@
     "Sales Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verkaufsberichte",
       "fr": "Historique des ventes",
       "ru": "Отчёты о продажах",
       "pl": null,
@@ -8153,7 +8153,7 @@
     "Gene Sequencing Data": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Gensequenzierung Daten",
       "fr": "Données de séquençage génétique",
       "ru": "Данные о секвенировании генов",
       "pl": null,
@@ -8165,7 +8165,7 @@
     "Chemical Formulae": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemische Formeln",
       "fr": "Formules chimiques",
       "ru": "Химические формулы",
       "pl": null,
@@ -8201,7 +8201,7 @@
     "Cat Media": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Katzenmedien",
       "fr": "Médiathèque féline",
       "ru": "Медиаконтент с котиками",
       "pl": null,
@@ -8213,7 +8213,7 @@
     "Literary Fiction": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Die fiktion Literatur",
       "fr": "Romans",
       "ru": "Художественная литература",
       "pl": null,
@@ -8225,7 +8225,7 @@
     "Network Access History": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Verlauf der Netzwerkaktivität",
       "fr": "Historique réseau",
       "ru": "История сетевой активности",
       "pl": null,
@@ -8237,7 +8237,7 @@
     "Photo Albums": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Fotoalben",
       "fr": "Albums photo",
       "ru": "Фотоальбомы",
       "pl": null,
@@ -8249,7 +8249,7 @@
     "Tax Records": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Steuerberichte",
       "fr": "Dossiers fiscaux",
       "ru": "Налоговые отчёты",
       "pl": null,
@@ -8261,7 +8261,7 @@
     "Internal Correspondence": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Interne Korrespondenz",
       "fr": "Mémo interne",
       "ru": "Внутренняя корреспонденция",
       "pl": null,
@@ -8589,7 +8589,7 @@
       "pt": null,
       "de": null,
       "fr": "Campagne de calomnie",
-      "ru": "Планы подрывной кампании (антиреклама)",
+      "ru": "Планы кампании по дискредитации",
       "pl": null,
       "cs": null,
       "nl": null,
