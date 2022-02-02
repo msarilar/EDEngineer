@@ -72,6 +72,17 @@ namespace EDEngineer.Views
             State.Cargo.CompleteLoad();
         }
 
+        public void PostLoad()
+        {
+            State.BlueprintCrafted += (o, e) =>
+            {
+                TryRemoveFromShoppingListByIngredients(e.Category, e.TechnicalType,
+                    e.IngredientsConsumed);
+                State.ApplyCraft(e);
+            };
+            ShoppingList.SynchronizeWithLogs = SettingsManager.SyncShoppingList;
+        }
+
         public CommanderViewModel(string commanderName, Action<CommanderViewModel> loadAction, Languages languages, List<EntryData> entryDatas, List<Equipment> equipments)
         {
             CommanderName = commanderName;
@@ -100,14 +111,6 @@ namespace EDEngineer.Views
             languages.PropertyChanged += (o, e) => OnPropertyChanged(nameof(Filters));
 
             loadAction(this);
-
-            State.BlueprintCrafted += (o, e) =>
-                                      {
-                                          TryRemoveFromShoppingListByIngredients(e.Category, e.TechnicalType,
-                                              e.IngredientsConsumed);
-                                          State.ApplyCraft(e);
-                                      };
-            ShoppingList.SynchronizeWithLogs = SettingsManager.SyncShoppingList;
 
             languages.PropertyChanged += (o, e) =>
                                          {
@@ -153,7 +156,7 @@ namespace EDEngineer.Views
             var entries = allLogs.Select(l => JsonConvert.DeserializeObject<JournalEntry>(l, JsonSettings))
                 .Where(e => e?.Relevant == true);
 
-            foreach (var entry in entries.Where(entry => entry.Timestamp >= LastUpdate).ToList())
+            foreach (var entry in entries.Where(entry => entry.Timestamp >= LastUpdate))
             {
                 MutateState(entry);
             }

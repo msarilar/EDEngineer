@@ -111,19 +111,32 @@ namespace EDEngineer.Views
 
             if (aggregation == null || !aggregation.Aggregations.Any())
             {
-                var allLogs = LogWatcher.RetrieveAllLogs();
-
-                foreach (var commander in allLogs.Keys)
+                var ended = true;
+                do
                 {
-                    // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
-                    if (allLogs[commander].Count <= 1)
-                    {
-                        continue;
-                    }
 
-                    var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas, equipments);
-                    Commanders[commander] = commanderState;
+                    var allLogs = LogWatcher.RetrieveAllLogs(1000, out ended);
+
+                    foreach (var commander in allLogs.Keys)
+                    {
+                        // some file contains only one line unrelated to anything, could generate Dummy Commander if we don't skip
+                        if (allLogs[commander].Count <= 1)
+                        {
+                            continue;
+                        }
+
+                        if (Commanders.ContainsKey(commander))
+                        {
+                            Commanders[commander].LoadLogs(allLogs[commander]);
+                        }
+                        else
+                        {
+                            var commanderState = new CommanderViewModel(commander, c => c.LoadLogs(allLogs[commander]), Languages, entryDatas, equipments);
+                            Commanders[commander] = commanderState;
+                        }
+                    }
                 }
+                while (!ended);
             }
             else
             {
@@ -148,6 +161,11 @@ namespace EDEngineer.Views
             if (Commanders.Count == 0) // we found absolutely nothing
             {
                 Commanders[LogWatcher.DEFAULT_COMMANDER_NAME] = new CommanderViewModel(LogWatcher.DEFAULT_COMMANDER_NAME, c => { }, Languages, entryDatas, equipments);
+            }
+
+            foreach(var commander in Commanders.Values)
+            {
+                commander.PostLoad();
             }
 
             if (Commanders.Any(k => k.Key == SettingsManager.SelectedCommander))
@@ -367,6 +385,7 @@ namespace EDEngineer.Views
             else if (logs.Item1 != LogWatcher.DEFAULT_COMMANDER_NAME)
             {
                 var commanderState = new CommanderViewModel(logs.Item1, c => c.LoadLogs(logs.Item2), Languages, entryDatas, equipments);
+                commanderState.PostLoad();
                 Commanders[logs.Item1] = commanderState;
             }
         }

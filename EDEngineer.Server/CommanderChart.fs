@@ -39,7 +39,9 @@ let chartData commander logDirectory (settings:JsonSerializerSettings) (language
         item.JournalOperation.Changes
         |> Seq.fold microFolder map
 
-    logWatcher.RetrieveAllLogs().[commander]
+    let logs, _ = logWatcher.RetrieveAllLogs(-1)
+
+    logs.[commander]
     |> Seq.map (fun l -> JsonConvert.DeserializeObject<JournalEntry>(l, settings))
     |> Seq.filter (fun e ->
         e <> null &&

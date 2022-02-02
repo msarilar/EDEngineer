@@ -55,8 +55,8 @@ namespace EDEngineer.Models.Utils
                 NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.Size | NotifyFilters.FileName | NotifyFilters.CreationTime
             };
 
-            watcher.Changed += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
-            watcher.Created += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath)); };
+            watcher.Changed += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath, -1, out var _)); };
+            watcher.Created += (o, e) => { callback(ReadLinesWithoutLock(e.FullPath, -1, out var _)); };
 
             InitPeriodicRefresh();
         }
@@ -92,8 +92,9 @@ namespace EDEngineer.Models.Utils
             periodicRefresher.Start();
         }
 
-        public Tuple<string, List<string>> ReadLinesWithoutLock(string file)
+        public Tuple<string, List<string>> ReadLinesWithoutLock(string file, int maxLines, out bool ended)
         {
+            ended = true;
             if (!File.Exists(file))
             {
                 return Tuple.Create(DEFAULT_COMMANDER_NAME, new List<string>());
@@ -116,8 +117,22 @@ namespace EDEngineer.Models.Utils
                 }
 
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                int lineNumber = 0;
+                while (true)
                 {
+                    if((line = reader.ReadLine()) == null)
+                    {
+                        break;
+                    }
+
+                    if (maxLines != -1 && lineNumber >= maxLines)
+                    {
+                        ended = false;
+                        break;
+                    }
+
+                    lineNumber++;
+
                     gameLogLines.Add(line);
 
                     if (!watchForLoadGameEvent)
@@ -171,8 +186,9 @@ namespace EDEngineer.Models.Utils
 
         public static string ManualChangesDirectory { get; } = IO.GetManualChangesDirectory();
 
-        public Dictionary<string, List<string>> RetrieveAllLogs()
+        public Dictionary<string, List<string>> RetrieveAllLogs(int page, out bool ended)
         {
+            ended = true;
             var gameLogLines = new Dictionary<string, List<string>>();
             if (logDirectory != null && Directory.Exists(logDirectory))
             {
@@ -184,7 +200,7 @@ namespace EDEngineer.Models.Utils
                                      f != null && Path.GetFileName(f).StartsWith("Journal.") &&
                                      Path.GetFileName(f).EndsWith(".log")))
                 {
-                    var fileContents = ReadLinesWithoutLock(file);
+                    var fileContents = ReadLinesWithoutLock(file, page * 1000, out ended);
                     if (fileContents.Item1 == DEFAULT_COMMANDER_NAME)
                     {
                         continue;
@@ -275,7 +291,7 @@ namespace EDEngineer.Models.Utils
 
                 if (moreRecentFiles.Any())
                 {
-                    return moreRecentFiles.Select(f => ReadLinesWithoutLock(f.FullName)).Aggregate(
+                    return moreRecentFiles.Select(f => ReadLinesWithoutLock(f.FullName, -1, out var _)).Aggregate(
                         new Dictionary<string, List<string>>(),
                         (current, content) =>
                         {
@@ -295,7 +311,7 @@ namespace EDEngineer.Models.Utils
                 if (files.Any())
                 {
                     var content =
-                        ReadLinesWithoutLock(files.OrderByDescending(f => f.LastWriteTimeUtc).First().FullName);
+                        ReadLinesWithoutLock(files.OrderByDescending(f => f.LastWriteTimeUtc).First().FullName, -1, out var _);
                     return new Dictionary<string, List<string>>
                     {
                         [content.Item1] = content.Item2
