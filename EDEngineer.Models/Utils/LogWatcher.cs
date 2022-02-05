@@ -200,7 +200,7 @@ namespace EDEngineer.Models.Utils
                                      f != null && Path.GetFileName(f).StartsWith("Journal.") &&
                                      Path.GetFileName(f).EndsWith(".log")))
                 {
-                    var fileContents = ReadLinesWithoutLock(file, page * 1000, out ended);
+                    var fileContents = ReadLinesWithoutLock(file, page, out ended);
                     if (fileContents.Item1 == DEFAULT_COMMANDER_NAME)
                     {
                         continue;

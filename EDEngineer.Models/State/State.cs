@@ -75,7 +75,6 @@ namespace EDEngineer.Models.State
             Loadout.Loadout = dump.Loadout;
         }
 
-        public LinkedList<JournalEntry> Operations { get; } = new LinkedList<JournalEntry>();
         public List<Blueprint> Blueprints { get; set; }
         public StateCargo Cargo { get; }
         public StateHistory History { get; }

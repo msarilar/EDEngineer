@@ -310,25 +310,6 @@ let start (token,
                 return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
-        GET >=> pathScan "/%s/operations%s" (fun (commander, format) ->
-          (request(fun request ->
-            let timestampString = match request.queryParam "last" with
-                                  | Choice1Of2 s     -> Some(s)
-                                  | Choice2Of2 _ -> None
-
-            cmdr {
-              let! state = stateRoute commander
-              let! f = FormatExtractor request format
-              let! timestamp = timeRoute timestampString
-              let! l = LanguageExtractor <| request.queryParam "lang"
-              let operations = state.Operations
-                               |> Seq.filter
-                                 (fun e -> match e.Timestamp with
-                                           | t when t >= timestamp -> true
-                                           | _                     -> false)
-              return (operations, l) |> FormatPicker(f) |> OK >=> MimeType(f)
-            })))
-
         GET >=> pathScan "/%s/chart" (fun commander ->
           (request(fun request ->
             cmdr {

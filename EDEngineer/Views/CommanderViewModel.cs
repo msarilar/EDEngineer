@@ -164,7 +164,6 @@ namespace EDEngineer.Views
 
         private void MutateState(JournalEntry entry)
         {
-            State.Operations.AddLast(entry);
             entry.JournalOperation.Mutate(State);
             LastUpdate = Instant.Max(LastUpdate, entry.Timestamp);
         }
