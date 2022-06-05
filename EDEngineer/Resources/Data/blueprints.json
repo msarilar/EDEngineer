@@ -40852,6 +40852,31 @@
     ]
   },
   {
+    "Type": "Human",
+    "Name": "Modified Mining Laser",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 20
+      },
+      {
+        "Name": "Osmium",
+        "Size": 16
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 28
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 24
+      }
+    ]
+  },
+  {
     "Type": "Suit",
     "Name": "Enhanced tracking",
     "Engineers": [
