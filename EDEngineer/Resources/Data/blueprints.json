@@ -30445,6 +30445,96 @@
     "Grade": 3
   },
   {
+    "Type": "Shock Cannon Munitions",
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Grid Resistors",
+        "Size": 3
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 2
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 2
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 2
+      },
+      {
+        "Name": "Lead",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Shock Cannon Munitions",
+    "Name": "+5% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Grid Resistors",
+        "Size": 5
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 3
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 4
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 5
+      },
+      {
+        "Name": "Lead",
+        "Size": 3
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Shock Cannon Munitions",
+    "Name": "+10% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Grid Resistors",
+        "Size": 7
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 4
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 6
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 8
+      },
+      {
+        "Name": "Lead",
+        "Size": 5
+      }
+    ],
+    "Grade": 3
+  },
+  {
     "Type": "AFM Refill",
     "Name": "None",
     "Engineers": [
