@@ -34877,6 +34877,64 @@
   },
   {
     "Type": "Guardian",
+    "Name": "Modified Plasma Charger (Fixed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 5
+      },
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 5
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 4
+      },
+      {
+        "Name": "Power Transfer Bus",
+        "Size": 2
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Modified Plasma Charger (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 3
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 4
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 3
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 2
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
     "Name": "Javelin (Fighter)",
     "Engineers": [
       "@Technology"
