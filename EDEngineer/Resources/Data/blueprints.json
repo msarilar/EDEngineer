@@ -30445,6 +30445,96 @@
     "Grade": 3
   },
   {
+    "Type": "Shock Cannon Munitions",
+    "Name": "None",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Grid Resistors",
+        "Size": 3
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 2
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 2
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 2
+      },
+      {
+        "Name": "Lead",
+        "Size": 2
+      }
+    ],
+    "Grade": 1
+  },
+  {
+    "Type": "Shock Cannon Munitions",
+    "Name": "+5% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Grid Resistors",
+        "Size": 5
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 3
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 4
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 5
+      },
+      {
+        "Name": "Lead",
+        "Size": 3
+      }
+    ],
+    "Grade": 2
+  },
+  {
+    "Type": "Shock Cannon Munitions",
+    "Name": "+10% Damage Boost",
+    "Engineers": [
+      "@Synthesis"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Grid Resistors",
+        "Size": 7
+      },
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 4
+      },
+      {
+        "Name": "Focus Crystals",
+        "Size": 6
+      },
+      {
+        "Name": "Phase Alloys",
+        "Size": 8
+      },
+      {
+        "Name": "Lead",
+        "Size": 5
+      }
+    ],
+    "Grade": 3
+  },
+  {
     "Type": "AFM Refill",
     "Name": "None",
     "Engineers": [
@@ -34872,6 +34962,64 @@
       {
         "Name": "Germanium",
         "Size": 6
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Modified Plasma Charger (Fixed, Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Power Conduit",
+        "Size": 5
+      },
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 5
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 4
+      },
+      {
+        "Name": "Power Transfer Bus",
+        "Size": 2
+      }
+    ]
+  },
+  {
+    "Type": "Guardian",
+    "Name": "Modified Plasma Charger (Fixed, Small)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Guardian Weapon Blueprint Segment",
+        "Size": 1
+      },
+      {
+        "Name": "Guardian Power Cell",
+        "Size": 3
+      },
+      {
+        "Name": "Guardian Technology Component",
+        "Size": 4
+      },
+      {
+        "Name": "Guardian Sentinel Weapon Parts",
+        "Size": 3
+      },
+      {
+        "Name": "Arsenic",
+        "Size": 2
       }
     ]
   },
@@ -40848,6 +40996,31 @@
       {
         "Name": "Hybrid Capacitors",
         "Size": 26
+      }
+    ]
+  },
+  {
+    "Type": "Human",
+    "Name": "Modified Mining Laser",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Arsenic",
+        "Size": 20
+      },
+      {
+        "Name": "Osmium",
+        "Size": 16
+      },
+      {
+        "Name": "Phosphorus",
+        "Size": 28
+      },
+      {
+        "Name": "Rhenium",
+        "Size": 24
       }
     ]
   },
