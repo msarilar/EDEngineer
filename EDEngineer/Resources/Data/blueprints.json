@@ -34862,19 +34862,19 @@
       },
       {
         "Name": "Guardian Power Cell",
-        "Size": 18
+        "Size": 5
       },
       {
         "Name": "Guardian Technology Component",
-        "Size": 20
+        "Size": 5
       },
       {
         "Name": "Niobium",
-        "Size": 15
+        "Size": 4
       },
       {
         "Name": "Thermal Cooling Units",
-        "Size": 6
+        "Size": 2
       }
     ]
   },
@@ -34891,19 +34891,19 @@
       },
       {
         "Name": "Guardian Power Conduit",
-        "Size": 12
+        "Size": 3
       },
       {
         "Name": "Guardian Wreckage Components",
-        "Size": 12
+        "Size": 3
       },
       {
         "Name": "Guardian Sentinel Weapon Parts",
-        "Size": 15
+        "Size": 4
       },
       {
         "Name": "Niobium",
-        "Size": 9
+        "Size": 2
       }
     ]
   },
@@ -34916,7 +34916,7 @@
     "Ingredients": [
       {
         "Name": "Guardian Technology Component",
-        "Size": 18
+        "Size": 5
       },
       {
         "Name": "Guardian Weapon Blueprint Segment",
@@ -34924,15 +34924,15 @@
       },
       {
         "Name": "Guardian Wreckage Components",
-        "Size": 20
+        "Size": 5
       },
       {
         "Name": "Germanium",
-        "Size": 14
+        "Size": 4
       },
       {
         "Name": "Power Converter",
-        "Size": 12
+        "Size": 2
       }
     ]
   },
@@ -34949,19 +34949,19 @@
       },
       {
         "Name": "Guardian Power Conduit",
-        "Size": 12
+        "Size": 3
       },
       {
         "Name": "Guardian Wreckage Components",
-        "Size": 12
+        "Size": 3
       },
       {
         "Name": "Guardian Sentinel Weapon Parts",
-        "Size": 15
+        "Size": 4
       },
       {
         "Name": "Germanium",
-        "Size": 6
+        "Size": 2
       }
     ]
   },
