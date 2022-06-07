@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.23",
+    "Content": "* Added Modified Mining Laser, Modified Plasma Charger, Shock Cannon Munitions thanks to @CMDRTreya\r\n * Corrected material costs for Modified Plasma, Modified Shard also thanks to @CMDRTreya"
+  },
+  {
     "Version": "1.1.6.21",
     "Content": "* Spanish localization update thanks to @PentiumFallen\r\n* Russian and German localization update thanks to @Dushess\r\n* Missing price of odyssey materials updated thanks to @tloimu"
   },
