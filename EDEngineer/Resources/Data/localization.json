@@ -6849,7 +6849,7 @@
       "fr": "Régulateur de puissance",
       "ru": "Регулятор мощности",
       "pl": null,
-      "cs": null,
+      "cs": "Power Regulator",
       "nl": null,
       "cn": null,
       "tr": "Güç Regülatörü"
@@ -6861,7 +6861,7 @@
       "fr": "Plan d'arme",
       "ru": "Чертёж оружия",
       "pl": null,
-      "cs": null,
+      "cs": "Weapon Schematic",
       "nl": null,
       "cn": null,
       "tr": "Silah Şematiği"
@@ -6873,7 +6873,7 @@
       "fr": "Échantillon chimique",
       "ru": "Образец химпроизводства",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Sample",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Örnek"
@@ -6885,7 +6885,7 @@
       "fr": "Traitement gravitationnel",
       "ru": "G-медпрепараты",
       "pl": null,
-      "cs": null,
+      "cs": "G-Meds",
       "nl": null,
       "cn": null,
       "tr": "G Kiti"
@@ -6897,7 +6897,7 @@
       "fr": "Conteneur inertiel",
       "ru": "Инертный контейнер",
       "pl": null,
-      "cs": null,
+      "cs": "Inertia Canister",
       "nl": null,
       "cn": null,
       "tr": "Alet Kutusu"
@@ -6909,7 +6909,7 @@
       "fr": "Gaz ionisé",
       "ru": "Ионизированный газ",
       "pl": null,
-      "cs": null,
+      "cs": "Ionised Gas",
       "nl": null,
       "cn": null,
       "tr": "İyonize Gaz"
@@ -6921,7 +6921,7 @@
       "fr": "Ordinateur personnel",
       "ru": "Персональный компьютер",
       "pl": null,
-      "cs": null,
+      "cs": "Personal Computer",
       "nl": null,
       "cn": null,
       "tr": "Kişisel Bilgisayar"
@@ -6933,7 +6933,7 @@
       "fr": "Bibliothèque de poche",
       "ru": "Компактная библиотека",
       "pl": null,
-      "cs": null,
+      "cs": "Compact Library",
       "nl": null,
       "cn": null,
       "tr": "Kompakt Kitaplık"
@@ -6945,7 +6945,7 @@
       "fr": "Échantillon de manteau inférieur",
       "ru": "Образец из глубинной мантии",
       "pl": null,
-      "cs": null,
+      "cs": "Deep Mantle Sample",
       "nl": null,
       "cn": null,
       "tr": "Derin Manto Örneği"
@@ -6957,7 +6957,7 @@
       "fr": "Gaz liquéfié",
       "ru": "Сжиженный газ",
       "pl": null,
-      "cs": null,
+      "cs": "Compression-Liquefied Gas",
       "nl": null,
       "cn": null,
       "tr": "Sıkıştırma-Sıvılaştırılmış Gaz"
@@ -6969,7 +6969,7 @@
       "fr": "Graphène",
       "ru": "Графен",
       "pl": null,
-      "cs": null,
+      "cs": "Graphene",
       "nl": null,
       "cn": null,
       "tr": "Grafen"
@@ -6981,7 +6981,7 @@
       "fr": "Catalyseur chimique",
       "ru": "Химический катализатор",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Catalyst",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Katalizör"
@@ -6993,7 +6993,7 @@
       "fr": "Circuit imprimé",
       "ru": "Электроплата",
       "pl": null,
-      "cs": null,
+      "cs": "Circuit Board",
       "nl": null,
       "cn": null,
       "tr": "Devre Kartı"
@@ -7005,7 +7005,7 @@
       "fr": "Commutateur",
       "ru": "Выключатель цепи",
       "pl": null,
-      "cs": null,
+      "cs": "Circuit Switch",
       "nl": null,
       "cn": null,
       "tr": "Devre Anahtarı"
@@ -7017,7 +7017,7 @@
       "fr": "Puce mémoire cryptée",
       "ru": "Зашифрованная плата памяти",
       "pl": null,
-      "cs": null,
+      "cs": "Encrypted Memory Chip",
       "nl": null,
       "cn": null,
       "tr": "Çözülmüş Hafıza Çipi"
@@ -7029,7 +7029,7 @@
       "fr": "Puce mémoire",
       "ru": "Плата памяти",
       "pl": null,
-      "cs": null,
+      "cs": "Memory Chip",
       "nl": null,
       "cn": null,
       "tr": "Hafıza Çipi"
@@ -7041,7 +7041,7 @@
       "fr": "Microsupercondensateur",
       "ru": "Микросуперконденсатор",
       "pl": null,
-      "cs": null,
+      "cs": "Micro Supercapacitor",
       "nl": null,
       "cn": null,
       "tr": "Mikro Süperkapasitör"
@@ -7053,7 +7053,7 @@
       "fr": "Microtransformateur",
       "ru": "Микротрансформатор",
       "pl": null,
-      "cs": null,
+      "cs": "Micro Transformer",
       "nl": null,
       "cn": null,
       "tr": "Mikro Transformatör"
@@ -7065,7 +7065,7 @@
       "fr": "Lentille optique",
       "ru": "Оптические линзы",
       "pl": null,
-      "cs": null,
+      "cs": "Optical Lens",
       "nl": null,
       "cn": null,
       "tr": "Optik Lens"
@@ -7077,7 +7077,7 @@
       "fr": "Brouilleur",
       "ru": "Шифратор",
       "pl": null,
-      "cs": null,
+      "cs": "Scrambler",
       "nl": null,
       "cn": null,
       "tr": "Karıştırıcı"
@@ -7089,7 +7089,7 @@
       "fr": "RDX",
       "ru": "Гексоген",
       "pl": null,
-      "cs": null,
+      "cs": "RDX",
       "nl": null,
       "cn": null,
       "tr": "RDX"
@@ -7101,7 +7101,7 @@
       "fr": "Bactérie oxygénique",
       "ru": "Кислородные бактерии",
       "pl": null,
-      "cs": null,
+      "cs": "Oxygenic Bacteria",
       "nl": null,
       "cn": null,
       "tr": "Oksijenik Bakteriler"
@@ -7113,7 +7113,7 @@
       "fr": "Neutralisateur de pH",
       "ru": "Нейтрализатор pH",
       "pl": null,
-      "cs": null,
+      "cs": "pH Neutraliser",
       "nl": null,
       "cn": null,
       "tr": "pH Dengeleyicisi"
@@ -7125,7 +7125,7 @@
       "fr": "Batterie ionique",
       "ru": "Ионная батарея",
       "pl": null,
-      "cs": null,
+      "cs": "Ion Battery",
       "nl": null,
       "cn": null,
       "tr": "İyon Bataryası"
@@ -7137,7 +7137,7 @@
       "fr": "Microélectrode",
       "ru": "Микроэлектрод",
       "pl": null,
-      "cs": null,
+      "cs": "Microelectrode",
       "nl": null,
       "cn": null,
       "tr": "Mikroelektrot"
@@ -7149,7 +7149,7 @@
       "fr": "Aérogel",
       "ru": "Аэрогель",
       "pl": null,
-      "cs": null,
+      "cs": "Aerogel",
       "nl": null,
       "cn": null,
       "tr": "Aerojel"
@@ -7161,7 +7161,7 @@
       "fr": "Superbase chimique",
       "ru": "Химическое супероснование",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Superbase",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Süper Baz"
@@ -7173,7 +7173,7 @@
       "fr": "Câblage électrique",
       "ru": "Электропроводка",
       "pl": null,
-      "cs": null,
+      "cs": "Electrical Wiring",
       "nl": null,
       "cn": null,
       "tr": "Elektrik Kablolaması"
@@ -7185,7 +7185,7 @@
       "fr": "Polymère viscoélastique",
       "ru": "Вязкоэластичный полимер",
       "pl": null,
-      "cs": null,
+      "cs": "Viscoelastic Polymer",
       "nl": null,
       "cn": null,
       "tr": "Viskoelastik Polimer"
@@ -7197,7 +7197,7 @@
       "fr": "Plaques en fibres de carbone",
       "ru": "Углеволоконная броня",
       "pl": null,
-      "cs": null,
+      "cs": "Carbon Fibre Plating",
       "nl": null,
       "cn": null,
       "tr": "Karbon Fiber Kaplama"
@@ -7209,7 +7209,7 @@
       "fr": "Fibre optique",
       "ru": "Оптоволокно",
       "pl": null,
-      "cs": null,
+      "cs": "Optical Fibre",
       "nl": null,
       "cn": null,
       "tr": "Fiber Optik"
@@ -7221,7 +7221,7 @@
       "fr": "Moniteur médical",
       "ru": "Медицинский монитор",
       "pl": null,
-      "cs": null,
+      "cs": "Health Monitor",
       "nl": null,
       "cn": null,
       "tr": "Sağlık Ekranı"
@@ -7233,7 +7233,7 @@
       "fr": "Plan de bâtiment",
       "ru": "Чертёж здания",
       "pl": null,
-      "cs": null,
+      "cs": "Building Schematic",
       "nl": null,
       "cn": null,
       "tr": "Bina Şeması"
@@ -7245,7 +7245,7 @@
       "fr": "Infini",
       "ru": "Infinity",
       "pl": null,
-      "cs": null,
+      "cs": "Infinity",
       "nl": null,
       "cn": null,
       "tr": "Sınırsız"
@@ -7257,7 +7257,7 @@
       "fr": "Divertissements Insight",
       "ru": "Медиаустройство InSight",
       "pl": null,
-      "cs": null,
+      "cs": "Insight Entertainment Suite",
       "nl": null,
       "cn": null,
       "tr": "İçgörü Eğlence Kıyafeti"
@@ -7269,7 +7269,7 @@
       "fr": "Concentré nutritif",
       "ru": "Питательный концентрат",
       "pl": null,
-      "cs": null,
+      "cs": "Nutritional Concentrate",
       "nl": null,
       "cn": null,
       "tr": "Besin Konsantresi"
@@ -7281,7 +7281,7 @@
       "fr": "Plan de combinaison",
       "ru": "Эскиз комбинезона",
       "pl": null,
-      "cs": null,
+      "cs": "Suit Schematic",
       "nl": null,
       "cn": null,
       "tr": "Giysi Şematiği"
@@ -7293,7 +7293,7 @@
       "fr": "Traducteur universel",
       "ru": "Универсальный переводчик",
       "pl": null,
-      "cs": null,
+      "cs": "Universal Translator",
       "nl": null,
       "cn": null,
       "tr": "Evrensel Çevirici"
@@ -7305,7 +7305,7 @@
       "fr": "Régulateur de puissance endommagé",
       "ru": "Выработанный регулятор мощности",
       "pl": null,
-      "cs": null,
+      "cs": "Degraded Power Regulator",
       "nl": null,
       "cn": null,
       "tr": "Düşük Güç Regülatörü"
@@ -7317,7 +7317,7 @@
       "fr": "Insight",
       "ru": "Insight",
       "pl": null,
-      "cs": null,
+      "cs": "Insight",
       "nl": null,
       "cn": null,
       "tr": "İçgörü"
@@ -7329,7 +7329,7 @@
       "fr": "Inhibiteur microbien",
       "ru": "Микробный ингибитор",
       "pl": null,
-      "cs": null,
+      "cs": "Microbial Inhibitor",
       "nl": null,
       "cn": null,
       "tr": "Mikrobik İnhibitör"
@@ -7341,7 +7341,7 @@
       "fr": "Plan de véhicule",
       "ru": "Чертёж транспорта",
       "pl": null,
-      "cs": null,
+      "cs": "Vehicle Schematic",
       "nl": null,
       "cn": null,
       "tr": "Araç Şematiği"
@@ -7353,7 +7353,7 @@
       "fr": "Banque de données d'Insight",
       "ru": "Банк данных InSight",
       "pl": null,
-      "cs": null,
+      "cs": "Insight Data Bank",
       "nl": null,
       "cn": null,
       "tr": "İçgörü Veri Bankası"
@@ -7365,7 +7365,7 @@
       "fr": "Documents personnels",
       "ru": "Личные документы",
       "pl": null,
-      "cs": null,
+      "cs": "Personal Documents",
       "nl": null,
       "cn": null,
       "tr": "Kişisel Dökümanlar"
@@ -7377,7 +7377,7 @@
       "fr": "Données balistiques",
       "ru": "Баллистические данные",
       "pl": null,
-      "cs": null,
+      "cs": "Ballistic Data",
       "nl": null,
       "cn": null,
       "tr": "Balistik Veriler"
@@ -7389,7 +7389,7 @@
       "fr": "Relevés de radioactivité",
       "ru": "Информация о радиоактивности",
       "pl": null,
-      "cs": null,
+      "cs": "Radioactivity Data",
       "nl": null,
       "cn": null,
       "tr": "Radyoaktivite Verileri"
@@ -7401,7 +7401,7 @@
       "fr": "Électroaimant",
       "ru": "Электромагнит",
       "pl": null,
-      "cs": null,
+      "cs": "Electromagnet",
       "nl": null,
       "cn": null,
       "tr": "Elektromanyetik"
@@ -7413,7 +7413,7 @@
       "fr": "Moteur",
       "ru": "Мотор",
       "pl": null,
-      "cs": null,
+      "cs": "Motor",
       "nl": null,
       "cn": null,
       "tr": "Motor"
@@ -7425,7 +7425,7 @@
       "fr": "Plaques en titane",
       "ru": "Титановая броня",
       "pl": null,
-      "cs": null,
+      "cs": "Titanium Plating",
       "nl": null,
       "cn": null,
       "tr": "Titanyum Kaplama"
@@ -7437,7 +7437,7 @@
       "fr": "Composant d'arme",
       "ru": "Компонент оружия",
       "pl": null,
-      "cs": null,
+      "cs": "Weapon Component",
       "nl": null,
       "cn": null,
       "tr": "Silah Bileşeni"
@@ -7449,7 +7449,7 @@
       "fr": "Fusible électrique",
       "ru": "Предохранитель",
       "pl": null,
-      "cs": null,
+      "cs": "Electrical Fuse",
       "nl": null,
       "cn": null,
       "tr": "Elektrik Sigortası"
@@ -7461,7 +7461,7 @@
       "fr": "Colle époxy",
       "ru": "Эпоксидный клей",
       "pl": null,
-      "cs": null,
+      "cs": "Epoxy Adhesive",
       "nl": null,
       "cn": null,
       "tr": "Epoksi Yapıştırıcı"
@@ -7473,7 +7473,7 @@
       "fr": "Carbure de tungstène",
       "ru": "Карбид вольфрама",
       "pl": null,
-      "cs": null,
+      "cs": "Tungsten Carbide",
       "nl": null,
       "cn": null,
       "tr": "Tungsten Karbür"
@@ -7485,7 +7485,7 @@
       "fr": "Guides industriels",
       "ru": "Производственные инструкции",
       "pl": null,
-      "cs": null,
+      "cs": "Manufacturing Instructions",
       "nl": null,
       "cn": null,
       "tr": "Üretim Talimatları"
@@ -7497,7 +7497,7 @@
       "fr": "Boost",
       "ru": "Рывок",
       "pl": null,
-      "cs": null,
+      "cs": "Push",
       "nl": null,
       "cn": null,
       "tr": "Baskılamak"
@@ -7509,7 +7509,7 @@
       "fr": "Pathogène de synthèse",
       "ru": "Синтетический патоген",
       "pl": null,
-      "cs": null,
+      "cs": "Synthetic Pathogen",
       "nl": null,
       "cn": null,
       "tr": "Sentetik Patojen"
@@ -7521,7 +7521,7 @@
       "fr": "Bobine métallique",
       "ru": "Металлическая катушка",
       "pl": null,
-      "cs": null,
+      "cs": "Metal Coil",
       "nl": null,
       "cn": null,
       "tr": "Metal Bobin"
@@ -7533,7 +7533,7 @@
       "fr": "Épinéphrine",
       "ru": "Эпинефрин",
       "pl": null,
-      "cs": null,
+      "cs": "Epinephrine",
       "nl": null,
       "cn": null,
       "tr": "Epinefrin"
@@ -7545,7 +7545,7 @@
       "fr": "Moulage de fossile",
       "ru": "Окаменелый отпечаток",
       "pl": null,
-      "cs": null,
+      "cs": "Cast Fossil",
       "nl": null,
       "cn": null,
       "tr": "Fosil Dökümü"
@@ -7557,7 +7557,7 @@
       "fr": "Fossile intact",
       "ru": "Окаменелость истинной формы",
       "pl": null,
-      "cs": null,
+      "cs": "True Form Fossil",
       "nl": null,
       "cn": null,
       "tr": "Bozulmamış Fosil"
@@ -7569,7 +7569,7 @@
       "fr": "Californium",
       "ru": "Калифорний",
       "pl": null,
-      "cs": null,
+      "cs": "Californium",
       "nl": null,
       "cn": null,
       "tr": "Kalifoniyum"
@@ -7581,7 +7581,7 @@
       "fr": "Échantillon de production de raffinage",
       "ru": "Образец с очистного производства",
       "pl": null,
-      "cs": null,
+      "cs": "Refinement Process Sample",
       "nl": null,
       "cn": null,
       "tr": "İyileştirme İşlemi Örneği"
@@ -7593,7 +7593,7 @@
       "fr": "Équipement de surveillance",
       "ru": "Оборудование видеонаблюдения",
       "pl": null,
-      "cs": null,
+      "cs": "Surveillance Equipment",
       "nl": null,
       "cn": null,
       "tr": "Gözetim Ekipmanı"
@@ -7605,7 +7605,7 @@
       "fr": "Fossile pétrifié",
       "ru": "Окаменелость",
       "pl": null,
-      "cs": null,
+      "cs": "Petrified Fossil",
       "nl": null,
       "cn": null,
       "tr": "Taşlaşmış Fosil"
@@ -7617,7 +7617,7 @@
       "fr": "Journaux d'accidents",
       "ru": "Журнал происшествий",
       "pl": null,
-      "cs": null,
+      "cs": "Accident Logs",
       "nl": null,
       "cn": null,
       "tr": "Kaza Kayıtları"
@@ -7629,7 +7629,7 @@
       "fr": "Rapports de qualité de l'air",
       "ru": "Отчёты о качестве воздуха",
       "pl": null,
-      "cs": null,
+      "cs": "Air Quality Reports",
       "nl": null,
       "cn": null,
       "tr": "Hava Kalitesi Raporları"
@@ -7641,7 +7641,7 @@
       "fr": "Données de recensement",
       "ru": "Данные переписи населения",
       "pl": null,
-      "cs": null,
+      "cs": "Census Data",
       "nl": null,
       "cn": null,
       "tr": "Nüfus Sayım Verileri"
@@ -7653,7 +7653,7 @@
       "fr": "Médiathèque",
       "ru": "Мультимедийные развлечения",
       "pl": null,
-      "cs": null,
+      "cs": "Multimedia Entertainment",
       "nl": null,
       "cn": null,
       "tr": "Multimedya Eğlencesi"
@@ -7665,7 +7665,7 @@
       "fr": "Journaux de recyclage",
       "ru": "Журнал утилизации отходов",
       "pl": null,
-      "cs": null,
+      "cs": "Recycling Logs",
       "nl": null,
       "cn": null,
       "tr": "Geri Dönüşüm Günlükleri"
@@ -7677,7 +7677,7 @@
       "fr": "Annuaire résidentiel",
       "ru": "Адресная книга",
       "pl": null,
-      "cs": null,
+      "cs": "Residential Directory",
       "nl": null,
       "cn": null,
       "tr": "Konut Dizini"
@@ -7689,7 +7689,7 @@
       "fr": "Liste d'adhérents",
       "ru": "Список членов союза",
       "pl": null,
-      "cs": null,
+      "cs": "Union Membership",
       "nl": null,
       "cn": null,
       "tr": "Birlik Üyeliği"
@@ -7701,7 +7701,7 @@
       "fr": "Informations salariales",
       "ru": "Платёжная ведомость",
       "pl": null,
-      "cs": null,
+      "cs": "Payroll Information",
       "nl": null,
       "cn": null,
       "tr": "Bordro Bilgileri"
@@ -7713,7 +7713,7 @@
       "fr": "Planning professionnel",
       "ru": "График дежурств",
       "pl": null,
-      "cs": null,
+      "cs": "Duty Rota",
       "nl": null,
       "cn": null,
       "tr": "Görev Rotası"
@@ -7725,7 +7725,7 @@
       "fr": "Journaux de maintenance",
       "ru": "Журнал обслуживания",
       "pl": null,
-      "cs": null,
+      "cs": "Maintenance Logs",
       "nl": null,
       "cn": null,
       "tr": "Bakım Kayıtları"
@@ -7737,7 +7737,7 @@
       "fr": "Levés topographiques",
       "ru": "Топографические исследования",
       "pl": null,
-      "cs": null,
+      "cs": "Topographical Surveys",
       "nl": null,
       "cn": null,
       "tr": "Topografik Araştırmalar"
@@ -7749,7 +7749,7 @@
       "fr": "Autorisations de déplacement",
       "ru": "Разрешение на поездки",
       "pl": null,
-      "cs": null,
+      "cs": "Travel Permits",
       "nl": null,
       "cn": null,
       "tr": "Seyehat İzinleri"
@@ -7761,7 +7761,7 @@
       "fr": "Rapport de prospection",
       "ru": "Результаты геологической разведки",
       "pl": null,
-      "cs": null,
+      "cs": "Mineral Survey",
       "nl": null,
       "cn": null,
       "tr": "Maden Araştırması"
@@ -7773,7 +7773,7 @@
       "fr": "Analyses minières",
       "ru": "Анализ горнодобывающей промышленности",
       "pl": null,
-      "cs": null,
+      "cs": "Mining Analytics",
       "nl": null,
       "cn": null,
       "tr": "Madenci Analizleri"
@@ -7785,7 +7785,7 @@
       "fr": "Rapports de production",
       "ru": "Отчёты о производстве",
       "pl": null,
-      "cs": null,
+      "cs": "Production Reports",
       "nl": null,
       "cn": null,
       "tr": "Üretim Raporları"
@@ -7797,7 +7797,7 @@
       "fr": "Actualité d'une faction",
       "ru": "Новости фракции",
       "pl": null,
-      "cs": null,
+      "cs": "Faction News",
       "nl": null,
       "cn": null,
       "tr": "Fraksiyon Haberleri"
@@ -7809,7 +7809,7 @@
       "fr": "Perspectives",
       "ru": "Прогноз влияния",
       "pl": null,
-      "cs": null,
+      "cs": "Influence Projections",
       "nl": null,
       "cn": null,
       "tr": "Etki (İnfluence) Projeksiyonları"
@@ -7821,7 +7821,7 @@
       "fr": "Journaux d'activité stellaire",
       "ru": "Журналы звёздной активности",
       "pl": null,
-      "cs": null,
+      "cs": "Stellar Activity Logs",
       "nl": null,
       "cn": null,
       "tr": "Uydu Aktivite Kayıtları"
@@ -7833,7 +7833,7 @@
       "fr": "Registre de visites",
       "ru": "Реестр посетителей",
       "pl": null,
-      "cs": null,
+      "cs": "Visitor Register",
       "nl": null,
       "cn": null,
       "tr": "Ziyaretçi Kaydı"
@@ -7845,7 +7845,7 @@
       "fr": "Inventaire chimique",
       "ru": "Опись химикатов",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Inventory",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Envanter"
@@ -7857,7 +7857,7 @@
       "fr": "Micropropulseurs",
       "ru": "Двигатели ориентирования",
       "pl": null,
-      "cs": null,
+      "cs": "Micro Thrusters",
       "nl": null,
       "cn": null,
       "tr": "Mikro İticiler"
@@ -7869,7 +7869,7 @@
       "fr": "Micro hydraulique",
       "ru": "Микрогидравлика",
       "pl": null,
-      "cs": null,
+      "cs": "Micro Hydraulics",
       "nl": null,
       "cn": null,
       "tr": "Mikro Hidrolik"
@@ -7881,7 +7881,7 @@
       "fr": "Inventaire d'armement",
       "ru": "Опись вооружения",
       "pl": null,
-      "cs": null,
+      "cs": "Weapon Inventory",
       "nl": null,
       "cn": null,
       "tr": "Silah Envanteri"
@@ -7893,7 +7893,7 @@
       "fr": "Données biométriques",
       "ru": "Биометрические данные",
       "pl": null,
-      "cs": null,
+      "cs": "Biometric Data",
       "nl": null,
       "cn": null,
       "tr": "Biyometrik Veri"
@@ -7905,7 +7905,7 @@
       "fr": "Plans de campagne",
       "ru": "План кампании",
       "pl": null,
-      "cs": null,
+      "cs": "Campaign Plans",
       "nl": null,
       "cn": null,
       "tr": "Kampanya Planları"
@@ -7917,7 +7917,7 @@
       "fr": "Méthodes d'entraînement au combat",
       "ru": "Учебные материалы по боевой подготовке",
       "pl": null,
-      "cs": null,
+      "cs": "Combat Training Material",
       "nl": null,
       "cn": null,
       "tr": "Savaş Eğitim Materyali"
@@ -7929,7 +7929,7 @@
       "fr": "Recettes culinaires",
       "ru": "Кулинарные рецепты",
       "pl": null,
-      "cs": null,
+      "cs": "Culinary Recipes",
       "nl": null,
       "cn": null,
       "tr": "Mutfak Tarifleri"
@@ -7941,7 +7941,7 @@
       "fr": "Registre des employés",
       "ru": "Досье работников",
       "pl": null,
-      "cs": null,
+      "cs": "Employee Directory",
       "nl": null,
       "cn": null,
       "tr": "Çalışan Dizini"
@@ -7953,7 +7953,7 @@
       "fr": "Protocoles d'évacuation",
       "ru": "Планы эвакуации",
       "pl": null,
-      "cs": null,
+      "cs": "Evacuation Protocols",
       "nl": null,
       "cn": null,
       "tr": "Tahliye Protokolleri"
@@ -7965,7 +7965,7 @@
       "fr": "Demandes d'achats",
       "ru": "Запросы на покупку",
       "pl": null,
-      "cs": null,
+      "cs": "Purchase Requests",
       "nl": null,
       "cn": null,
       "tr": "Satın Alım İstekleri"
@@ -7977,7 +7977,7 @@
       "fr": "Liste de proches",
       "ru": "Сведения о ближайших родственниках",
       "pl": null,
-      "cs": null,
+      "cs": "Next of Kin Records",
       "nl": null,
       "cn": null,
       "tr": "Akraba Listesi"
@@ -7989,7 +7989,7 @@
       "fr": "Candidatures professionnelles",
       "ru": "Заявления о приёме на работу",
       "pl": null,
-      "cs": null,
+      "cs": "Job Applications",
       "nl": null,
       "cn": null,
       "tr": "İşe Alımlar"
@@ -8001,7 +8001,7 @@
       "fr": "Journaux d'exploration",
       "ru": "Исследовательские дневники",
       "pl": null,
-      "cs": null,
+      "cs": "Exploration Journals",
       "nl": null,
       "cn": null,
       "tr": "Keşif Günlükleri"
@@ -8013,7 +8013,7 @@
       "fr": "Transmetteur",
       "ru": "Передатчик",
       "pl": null,
-      "cs": null,
+      "cs": "Transmitter",
       "nl": null,
       "cn": null,
       "tr": "Verici"
@@ -8025,7 +8025,7 @@
       "fr": "Propagande",
       "ru": "Пропаганда",
       "pl": null,
-      "cs": null,
+      "cs": "Propaganda",
       "nl": null,
       "cn": null,
       "tr": "Propaganda"
@@ -8037,7 +8037,7 @@
       "fr": "Plans numériques",
       "ru": "Дизайнерские проекты",
       "pl": null,
-      "cs": null,
+      "cs": "Digital Designs",
       "nl": null,
       "cn": null,
       "tr": "Dijital Tasarımlar"
@@ -8049,7 +8049,7 @@
       "fr": "Agent biochimique",
       "ru": "Биохимический агент",
       "pl": null,
-      "cs": null,
+      "cs": "Biochemical Agent",
       "nl": null,
       "cn": null,
       "tr": "Biyokimyasal Ajan"
@@ -8061,7 +8061,7 @@
       "fr": "Chut",
       "ru": "Тс-с",
       "pl": null,
-      "cs": null,
+      "cs": "Hush",
       "nl": null,
       "cn": null,
       "tr": "Sus"
@@ -8073,7 +8073,7 @@
       "fr": "Lazare",
       "ru": "Лазарь",
       "pl": null,
-      "cs": null,
+      "cs": "Lazarus",
       "nl": null,
       "cn": null,
       "tr": "Lazarus"
@@ -8085,7 +8085,7 @@
       "fr": "Évaluation énergétique",
       "ru": "Оценка выходной мощности реактора",
       "pl": null,
-      "cs": null,
+      "cs": "Reactor Output Review",
       "nl": null,
       "cn": null,
       "tr": "Reaktör Çıkışı İncelemesi"
@@ -8097,7 +8097,7 @@
       "fr": "Journaux de surveillance",
       "ru": "Журналы систем наблюдения",
       "pl": null,
-      "cs": null,
+      "cs": "Surveillance Logs",
       "nl": null,
       "cn": null,
       "tr": "Gözetim Günlükleri"
@@ -8109,7 +8109,7 @@
       "fr": "Mode d'emploi",
       "ru": "Руководство по эксплуатации",
       "pl": null,
-      "cs": null,
+      "cs": "Operational Manual",
       "nl": null,
       "cn": null,
       "tr": "Kullanım Klavuzu"
@@ -8121,7 +8121,7 @@
       "fr": "Plans de défense d'une installation",
       "ru": "Планы обороны поселения",
       "pl": null,
-      "cs": null,
+      "cs": "Settlement Defence Plans",
       "nl": null,
       "cn": null,
       "tr": "Uydu Defans Planları"
@@ -8133,7 +8133,7 @@
       "fr": "Historique de conflit",
       "ru": "История конфликта",
       "pl": null,
-      "cs": null,
+      "cs": "Conflict History",
       "nl": null,
       "cn": null,
       "tr": "Karışıklık (Conflict) Geçmişi"
@@ -8145,7 +8145,7 @@
       "fr": "Historique des ventes",
       "ru": "Отчёты о продажах",
       "pl": null,
-      "cs": null,
+      "cs": "Sales Records",
       "nl": null,
       "cn": null,
       "tr": "Satış Kayıtları"
@@ -8157,7 +8157,7 @@
       "fr": "Données de séquençage génétique",
       "ru": "Данные о секвенировании генов",
       "pl": null,
-      "cs": null,
+      "cs": "Gene Sequencing Data",
       "nl": null,
       "cn": null,
       "tr": "Gen Sıralama Verileri"
@@ -8169,7 +8169,7 @@
       "fr": "Formules chimiques",
       "ru": "Химические формулы",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Formulae",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Formüller"
@@ -8181,7 +8181,7 @@
       "fr": "Courbes de croissance végétale",
       "ru": "Графики роста растений",
       "pl": null,
-      "cs": null,
+      "cs": "Plant Growth Charts",
       "nl": null,
       "cn": null,
       "tr": "Bitki Büyüme Tabloları"
@@ -8193,7 +8193,7 @@
       "fr": "Recherches génétiques",
       "ru": "Генетические исследования",
       "pl": null,
-      "cs": null,
+      "cs": "Genetic Research",
       "nl": null,
       "cn": null,
       "tr": "Genetik Araştırma"
@@ -8205,7 +8205,7 @@
       "fr": "Médiathèque féline",
       "ru": "Медиаконтент с котиками",
       "pl": null,
-      "cs": null,
+      "cs": "Cat Media"
       "nl": null,
       "cn": null,
       "tr": "Kedi Medyası"
@@ -8217,7 +8217,7 @@
       "fr": "Romans",
       "ru": "Художественная литература",
       "pl": null,
-      "cs": null,
+      "cs": "Literary Fiction",
       "nl": null,
       "cn": null,
       "tr": "Edebi Kurgu"
@@ -8229,7 +8229,7 @@
       "fr": "Historique réseau",
       "ru": "История сетевой активности",
       "pl": null,
-      "cs": null,
+      "cs": "Network Access History",
       "nl": null,
       "cn": null,
       "tr": "İnternet Geçmişi"
@@ -8241,7 +8241,7 @@
       "fr": "Albums photo",
       "ru": "Фотоальбомы",
       "pl": null,
-      "cs": null,
+      "cs": "Photo Albums",
       "nl": null,
       "cn": null,
       "tr": "Fotoğraf Albümleri"
@@ -8253,7 +8253,7 @@
       "fr": "Dossiers fiscaux",
       "ru": "Налоговые отчёты",
       "pl": null,
-      "cs": null,
+      "cs": "Tax Records",
       "nl": null,
       "cn": null,
       "tr": "Vergi Kayıtları"
@@ -8265,7 +8265,7 @@
       "fr": "Mémo interne",
       "ru": "Внутренняя корреспонденция",
       "pl": null,
-      "cs": null,
+      "cs": "Internal Correspondence",
       "nl": null,
       "cn": null,
       "tr": "Dahili Yazışma"
@@ -8277,7 +8277,7 @@
       "fr": "Plan de vaisseau",
       "ru": "План корабля",
       "pl": null,
-      "cs": null,
+      "cs": "Ship Schematic",
       "nl": null,
       "cn": null,
       "tr": "Gemi Şematiği"
@@ -8289,7 +8289,7 @@
       "fr": "Catalyseur pyrolytique",
       "ru": "Пиролитический катализатор",
       "pl": null,
-      "cs": null,
+      "cs": "Pyrolytic Catalyst",
       "nl": null,
       "cn": null,
       "tr": "Pirolitik Katalizör"
@@ -8301,7 +8301,7 @@
       "fr": "Données de test d'armes",
       "ru": "Сведения об испытаниях вооружения",
       "pl": null,
-      "cs": null,
+      "cs": "Weapon Test Data",
       "nl": null,
       "cn": null,
       "tr": "Silah Test Verileri"
@@ -8313,7 +8313,7 @@
       "fr": "Données génétiques d'employés",
       "ru": "Генетические данные работников",
       "pl": null,
-      "cs": null,
+      "cs": "Employee Genetic Data",
       "nl": null,
       "cn": null,
       "tr": "Çalışan Genetik Verileri"
@@ -8325,7 +8325,7 @@
       "fr": "Médiathèque classique",
       "ru": "Классические развлечения",
       "pl": null,
-      "cs": null,
+      "cs": "Classic Entertainment",
       "nl": null,
       "cn": null,
       "tr": "Klasik Eğlence"
@@ -8337,7 +8337,7 @@
       "fr": "Sondages",
       "ru": "Опросы общественного мнения",
       "pl": null,
-      "cs": null,
+      "cs": "Opinion Polls",
       "nl": null,
       "cn": null,
       "tr": "Görüş Anketleri"
@@ -8349,7 +8349,7 @@
       "fr": "Dépenses de sécurité",
       "ru": "Расходы на охрану",
       "pl": null,
-      "cs": null,
+      "cs": "Security Expenses",
       "nl": null,
       "cn": null,
       "tr": "Güvenlik Giderleri"
@@ -8361,7 +8361,7 @@
       "fr": "Programme-espion",
       "ru": "Шпионские программы",
       "pl": null,
-      "cs": null,
+      "cs": "Spyware",
       "nl": null,
       "cn": null,
       "tr": "Casus Yazılım"
@@ -8373,7 +8373,7 @@
       "fr": "Comptes-rendus opérationnels",
       "ru": "Записи о десантных операциях",
       "pl": null,
-      "cs": null,
+      "cs": "Troop Deployment Records",
       "nl": null,
       "cn": null,
       "tr": "Birlik Dağıtım Kayıtları"
@@ -8385,7 +8385,7 @@
       "fr": "Brevets chimiques",
       "ru": "Патенты на химические вещества",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Patents",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Patentler"
@@ -8397,7 +8397,7 @@
       "fr": "Traitements génétiques",
       "ru": "Препараты генетической коррекции",
       "pl": null,
-      "cs": null,
+      "cs": "Genetic Repair Meds",
       "nl": null,
       "cn": null,
       "tr": "Genetik Onarım İlaçları"
@@ -8409,7 +8409,7 @@
       "fr": "Contaminant inorganique",
       "ru": "Неорганический загрязнитель",
       "pl": null,
-      "cs": null,
+      "cs": "Inorganic Contaminant",
       "nl": null,
       "cn": null,
       "tr": "İnorganik Kirletici"
@@ -8421,7 +8421,7 @@
       "fr": "Dossiers médicaux",
       "ru": "Медицинские отчеты",
       "pl": null,
-      "cs": null,
+      "cs": "Medical Records",
       "nl": null,
       "cn": null,
       "tr": "Medikal Kayıtlar"
@@ -8435,7 +8435,7 @@
       "fr": "Génome de synthèse",
       "ru": "Синтетический геном",
       "pl": null,
-      "cs": null,
+      "cs": "Synthetic Genome",
       "nl": null,
       "cn": null,
       "tr": "Sentetik Genom"
@@ -8447,7 +8447,7 @@
       "fr": "Catalyseur mutagène",
       "ru": "Катализатор мутаций ДНК",
       "pl": null,
-      "cs": null,
+      "cs": "Mutagenic Catalyst",
       "nl": null,
       "cn": null,
       "tr": "Mutajenik Katalizör"
@@ -8459,7 +8459,7 @@
       "fr": "Échantillon de production chimique",
       "ru": "Образец химической реакции",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Process Sample",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal İşlem Örneği"
@@ -8471,7 +8471,7 @@
       "fr": "Échantillons biologiques",
       "ru": "Образец биометериала",
       "pl": null,
-      "cs": null,
+      "cs": "Biological Sample",
       "nl": null,
       "cn": null,
       "tr": "Biyolojik Örnek"
@@ -8483,7 +8483,7 @@
       "fr": "Échantillon de production agricole",
       "ru": "Образец сельхозпроцесса",
       "pl": null,
-      "cs": null,
+      "cs": "Agricultural Process Sample",
       "nl": null,
       "cn": null,
       "tr": "Tarımsal Süreç Örneği"
@@ -8495,7 +8495,7 @@
       "fr": "Protocoles anti-xénomorphes",
       "ru": "Протоколы защиты от инопланетной угрозы",
       "pl": null,
-      "cs": null,
+      "cs": "Xeno-Defence Protocols",
       "nl": null,
       "cn": null,
       "tr": "Xeno-Savunma Protokolleri"
@@ -8507,7 +8507,7 @@
       "fr": "Virus",
       "ru": "ВИрус",
       "pl": null,
-      "cs": null,
+      "cs": "Virus",
       "nl": null,
       "cn": null,
       "tr": "Virüs"
@@ -8519,7 +8519,7 @@
       "fr": "Données de virologie",
       "ru": "Данные вирусологии",
       "pl": null,
-      "cs": null,
+      "cs": "Virology Data",
       "nl": null,
       "cn": null,
       "tr": "Viroloji Verileri"
@@ -8531,7 +8531,7 @@
       "fr": "Protection rapprochée de VIP",
       "ru": "Подробности охраны важных персон",
       "pl": null,
-      "cs": null,
+      "cs": "VIP Security Detail",
       "nl": null,
       "cn": null,
       "tr": "VIP Güvenlik Detayları"
@@ -8543,7 +8543,7 @@
       "fr": "Recherches vaccinales",
       "ru": "Исследования в области вакцин",
       "pl": null,
-      "cs": null,
+      "cs": "Vaccine Research",
       "nl": null,
       "cn": null,
       "tr": "Aşı Araştırması"
@@ -8555,7 +8555,7 @@
       "fr": "Dossiers de vaccination",
       "ru": "Журналы вакцинации",
       "pl": null,
-      "cs": null,
+      "cs": "Vaccination Records",
       "nl": null,
       "cn": null,
       "tr": "Aşı Kayıtları"
@@ -8567,7 +8567,7 @@
       "fr": "Plans stratégiques",
       "ru": "Тактические планы",
       "pl": null,
-      "cs": null,
+      "cs": "Tactical Plans",
       "nl": null,
       "cn": null,
       "tr": "Taktiksel Planlar"
@@ -8579,7 +8579,7 @@
       "fr": "Données d'analyse spectrale",
       "ru": "Данные спектрального анализа",
       "pl": null,
-      "cs": null,
+      "cs": "Spectral Analysis Data",
       "nl": null,
       "cn": null,
       "tr": "Sğektral Analiz Verileri"
@@ -8591,7 +8591,7 @@
       "fr": "Campagne de calomnie",
       "ru": "Планы кампании по дискредитации",
       "pl": null,
-      "cs": null,
+      "cs": "Smear Campaign Plans",
       "nl": null,
       "cn": null,
       "tr": "Karalama Kampanyası Planları"
@@ -8603,7 +8603,7 @@
       "fr": "Caisse noire",
       "ru": "Журналы «грязного» финансирования",
       "pl": null,
-      "cs": null,
+      "cs": "Slush Fund Logs",
       "nl": null,
       "cn": null,
       "tr": "Slush Fon Günlükleri"
@@ -8615,7 +8615,7 @@
       "fr": "Actionnariat",
       "ru": "Сведения об акционерах",
       "pl": null,
-      "cs": null,
+      "cs": "Shareholder Information",
       "nl": null,
       "cn": null,
       "tr": "Hissedar Bilgileri"
@@ -8627,7 +8627,7 @@
       "fr": "Plans d'assaut d'une installation",
       "ru": "Планы штурма поселения",
       "pl": null,
-      "cs": null,
+      "cs": "Settlement Assault Plans",
       "nl": null,
       "cn": null,
       "tr": "Yerleşim Saldırı Planları"
@@ -8639,7 +8639,7 @@
       "fr": "Patrimoine génétique de semences",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Seed Geneaology",
       "nl": null,
       "cn": null,
       "tr": "Tohum Şecere"
@@ -8651,7 +8651,7 @@
       "fr": "Evaluation des risques",
       "ru": "Оценка рисков",
       "pl": null,
-      "cs": null,
+      "cs": "Risk Assessments",
       "nl": null,
       "cn": null,
       "tr": "Risk Değerlendirmesi"
@@ -8663,7 +8663,7 @@
       "fr": "Registre d'acquisitions",
       "ru": "Платежные ведомости",
       "pl": null,
-      "cs": null,
+      "cs": "Purchase Records",
       "nl": null,
       "cn": null,
       "tr": "Satın Alım Kayıtları"
@@ -8675,7 +8675,7 @@
       "fr": "Planning de production",
       "ru": "График выпуска продукции",
       "pl": null,
-      "cs": null,
+      "cs": "Production Schedule",
       "nl": null,
       "cn": null,
       "tr": "Üretim Planı"
@@ -8687,7 +8687,7 @@
       "fr": "Dossiers pénitentiaires",
       "ru": "Досье на заключённых",
       "pl": null,
-      "cs": null,
+      "cs": "Prisoner Logs",
       "nl": null,
       "cn": null,
       "tr": "Suçlu Kayıtları"
@@ -8699,7 +8699,7 @@
       "fr": "Affiliations politiques",
       "ru": "Политическая принадлежность",
       "pl": null,
-      "cs": null,
+      "cs": "Political Affiliations",
       "nl": null,
       "cn": null,
       "tr": "Siyasi Bağlantılar"
@@ -8711,7 +8711,7 @@
       "fr": "Brevets pharmaceutiques",
       "ru": "Фармацевтические патенты",
       "pl": null,
-      "cs": null,
+      "cs": "Pharmaceutical Patents",
       "nl": null,
       "cn": null,
       "tr": "İlaç Patentleri"
@@ -8723,7 +8723,7 @@
       "fr": "Journaux personnels",
       "ru": "Личные журналы",
       "pl": null,
-      "cs": null,
+      "cs": "Personal Logs",
       "nl": null,
       "cn": null,
       "tr": "Personel Kayıtlar"
@@ -8735,7 +8735,7 @@
       "fr": "Itinéraires de patrouille",
       "ru": "Схемы патрулирования",
       "pl": null,
-      "cs": null,
+      "cs": "Patrol Routes",
       "nl": null,
       "cn": null,
       "tr": "Devriye Rotaları"
@@ -8747,7 +8747,7 @@
       "fr": "Antécédents médicaux",
       "ru": "История болезни пациента",
       "pl": null,
-      "cs": null,
+      "cs": "Patient History",
       "nl": null,
       "cn": null,
       "tr": "Hasta Geçmişi"
@@ -8759,7 +8759,7 @@
       "fr": "Données d'agent clandestin",
       "ru": "Данные тайного агента",
       "pl": null,
-      "cs": null,
+      "cs": "NOC Data",
       "nl": null,
       "cn": null,
       "tr": "Resmi Olmayan Veriler"
@@ -8771,7 +8771,7 @@
       "fr": "Protocoles de sécurité réseau",
       "ru": "Протоколы информационной безопасности",
       "pl": null,
-      "cs": null,
+      "cs": "Network Security Protocols",
       "nl": null,
       "cn": null,
       "tr": "Ağ Güvenlik Protokolleri"
@@ -8783,7 +8783,7 @@
       "fr": "Compte-rendu de réunion",
       "ru": "Протоколы заседаний",
       "pl": null,
-      "cs": null,
+      "cs": "Meeting Minutes",
       "nl": null,
       "cn": null,
       "tr": "Tanışma Süreci"
@@ -8795,7 +8795,7 @@
       "fr": "Kompromat",
       "ru": "Компрометирующие сведения",
       "pl": null,
-      "cs": null,
+      "cs": "Kompromat",
       "nl": null,
       "cn": null,
       "tr": "Kompromat"
@@ -8807,7 +8807,7 @@
       "fr": "Enregistrements d'entretiens",
       "ru": "Записи интервью",
       "pl": null,
-      "cs": null,
+      "cs": "Interview Recordings",
       "nl": null,
       "cn": null,
       "tr": "İşe Alım Süreci Kayıtları"
@@ -8819,7 +8819,7 @@
       "fr": "Enregistrements d'interrogatoires",
       "ru": "Записи допросов",
       "pl": null,
-      "cs": null,
+      "cs": "Interrogation Recordings",
       "nl": null,
       "cn": null,
       "tr": "Sorgu Kayıtları"
@@ -8831,7 +8831,7 @@
       "fr": "Journaux d'incidents",
       "ru": "Журнал происшествий",
       "pl": null,
-      "cs": null,
+      "cs": "Incident Logs",
       "nl": null,
       "cn": null,
       "tr": "Olay Günlükleri"
@@ -8843,7 +8843,7 @@
       "fr": "Données hydroponiques",
       "ru": "Данные по работе гидропоники",
       "pl": null,
-      "cs": null,
+      "cs": "Hydroponic Data",
       "nl": null,
       "cn": null,
       "tr": "Hidroponik Veri"
@@ -8855,7 +8855,7 @@
       "fr": "Données géologiques",
       "ru": "Геологические данные",
       "pl": null,
-      "cs": null,
+      "cs": "Geological Data",
       "nl": null,
       "cn": null,
       "tr": "Jeolojik Veriler"
@@ -8867,7 +8867,7 @@
       "fr": "Données géologiques",
       "ru": "Географические сведения",
       "pl": null,
-      "cs": null,
+      "cs": "Geographical Data",
       "nl": null,
       "cn": null,
       "tr": "Coğrafi Veriler"
@@ -8879,7 +8879,7 @@
       "fr": "Projections financières",
       "ru": "Финансовые прогнозы",
       "pl": null,
-      "cs": null,
+      "cs": "Financial Projections",
       "nl": null,
       "cn": null,
       "tr": "Finansal Projeler"
@@ -8891,7 +8891,7 @@
       "fr": "Liste de donateurs d'une faction",
       "ru": "Список пожертвований для фракции",
       "pl": null,
-      "cs": null,
+      "cs": "Faction Donator List",
       "nl": null,
       "cn": null,
       "tr": "Fraksiyon Bağışçı Listesi"
@@ -8903,7 +8903,7 @@
       "fr": "Affiliations d'une faction",
       "ru": "Партнеры фракции",
       "pl": null,
-      "cs": null,
+      "cs": "Faction Associates",
       "nl": null,
       "cn": null,
       "tr": "Fraksiyon Ortakları"
@@ -8915,7 +8915,7 @@
       "fr": "Documents confidentiels",
       "ru": "Шпионские отчёты",
       "pl": null,
-      "cs": null,
+      "cs": "Espionage Material",
       "nl": null,
       "cn": null,
       "tr": "Casusluk Malzemesi"
@@ -8927,7 +8927,7 @@
       "fr": "Enregistrements d'interrogatoire poussés",
       "ru": "Подробные записи допросов",
       "pl": null,
-      "cs": null,
+      "cs": "Enhanced Interrogation Recordings",
       "nl": null,
       "cn": null,
       "tr": "Gelişmiş Sorgu Kayıtları"
@@ -8939,7 +8939,7 @@
       "fr": "Expérience professionnelle",
       "ru": "Трудовая книжка",
       "pl": null,
-      "cs": null,
+      "cs": "Employment History",
       "nl": null,
       "cn": null,
       "tr": "Çalışan Geçmişi"
@@ -8951,7 +8951,7 @@
       "fr": "Notes de frais",
       "ru": "Расходы на сотрудников",
       "pl": null,
-      "cs": null,
+      "cs": "Employee Expenses",
       "nl": null,
       "cn": null,
       "tr": "Çalışan Giderleri"
@@ -8963,7 +8963,7 @@
       "fr": "Analyse de rendement agricole",
       "ru": "Анализ урожайности",
       "pl": null,
-      "cs": null,
+      "cs": "Crop Yield Analysis",
       "nl": null,
       "cn": null,
       "tr": "Ürün Verim Analizi"
@@ -8975,7 +8975,7 @@
       "fr": "Casiers judiciaires",
       "ru": "Криминальные сводки",
       "pl": null,
-      "cs": null,
+      "cs": "Criminal Records",
       "nl": null,
       "cn": null,
       "tr": "Kriminal Kayıtlar"
@@ -8987,7 +8987,7 @@
       "fr": "Performances de combat",
       "ru": "Боевая эффективность",
       "pl": null,
-      "cs": null,
+      "cs": "Combatant Performance",
       "nl": null,
       "cn": null,
       "tr": "Savaşçı Performansı"
@@ -8999,7 +8999,7 @@
       "fr": "Recettes de cocktails",
       "ru": "Рецепты коктейлей",
       "pl": null,
-      "cs": null,
+      "cs": "Cocktail Recipes",
       "nl": null,
       "cn": null,
       "tr": "Kokteyli Tarifleri"
@@ -9011,7 +9011,7 @@
       "fr": "Essais cliniques",
       "ru": "Записи клинических испытаний",
       "pl": null,
-      "cs": null,
+      "cs": "Clinical Trial Records",
       "nl": null,
       "cn": null,
       "tr": "Klinik Deneme Kayıtları"
@@ -9023,7 +9023,7 @@
       "fr": "Données d'armes chimiques",
       "ru": "Данные по химическому оружию",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Weapon Data",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Silah Verisi"
@@ -9035,7 +9035,7 @@
       "fr": "Données d'expériences chimiques",
       "ru": "Записи о химических исследованиях",
       "pl": null,
-      "cs": null,
+      "cs": "Chemical Experiment Data",
       "nl": null,
       "cn": null,
       "tr": "Kimyasal Tecrübe Verisi"
@@ -9047,7 +9047,7 @@
       "fr": "Résultats de tests sanguins",
       "ru": "Результаты тестов крови",
       "pl": null,
-      "cs": null,
+      "cs": "Blood Test Results",
       "nl": null,
       "cn": null,
       "tr": "Kan Testi Sonuçları"
@@ -9059,7 +9059,7 @@
       "fr": "Liste noire",
       "ru": "Черный список",
       "pl": null,
-      "cs": null,
+      "cs": "Blacklist Data",
       "nl": null,
       "cn": null,
       "tr": "Karaliste Verisi"
@@ -9071,7 +9071,7 @@
       "fr": "Données d'arme biologique",
       "ru": "Сведения по биологическому оружию",
       "pl": null,
-      "cs": null,
+      "cs": "Biological Weapon Data",
       "nl": null,
       "cn": null,
       "tr": "Biyolojik Silah Verisi"
@@ -9083,7 +9083,7 @@
       "fr": "Jounaux de combat AX",
       "ru": "Журналы боевых операций АИ",
       "pl": null,
-      "cs": null,
+      "cs": "AX Combat Logs",
       "nl": null,
       "cn": null,
       "tr": "AX Savaş Kayıtları"
@@ -9095,7 +9095,7 @@
       "fr": "Journaux audio",
       "ru": "Аудиозаписи",
       "pl": null,
-      "cs": null,
+      "cs": "Audio Logs",
       "nl": null,
       "cn": null,
       "tr": "Ses Kayıtları"
@@ -9107,7 +9107,7 @@
       "fr": "Données de rendement minier",
       "ru": "Данные о доходности ресурсодобычи",
       "pl": null,
-      "cs": null,
+      "cs": "Extraction Yield Data",
       "nl": null,
       "cn": null,
       "tr": "Çıkarma Gemisi Verileri"
@@ -9119,7 +9119,7 @@
       "fr": "Registre de flotte",
       "ru": "Реестр флота",
       "pl": null,
-      "cs": null,
+      "cs": "Fleet Registry",
       "nl": null,
       "cn": null,
       "tr": "Filo Kaydı"
@@ -9131,7 +9131,7 @@
       "fr": "Données athmosphériques",
       "ru": "Атмосферные данные",
       "pl": null,
-      "cs": null,
+      "cs": "Atmospheric Data",
       "nl": null,
       "cn": null,
       "tr": "Atmosferik Veri"
@@ -9143,7 +9143,7 @@
       "fr": "Base planétaire",
       "ru": "Планетарное поселение",
       "pl": null,
-      "cs": null,
+      "cs": "Planetary Settlement",
       "nl": null,
       "cn": null,
       "tr": "Gezegen Uydusu"
@@ -9155,7 +9155,7 @@
       "fr": "Marchandises",
       "ru": "Товары",
       "pl": null,
-      "cs": null,
+      "cs": "Item",
       "nl": null,
       "cn": null,
       "tr": "Eşyalar"
@@ -9167,7 +9167,7 @@
       "fr": "Technologies",
       "ru": "Технологии",
       "pl": null,
-      "cs": null,
+      "cs": "Tech",
       "nl": null,
       "cn": null,
       "tr": "Teknolojiler"
@@ -9179,7 +9179,7 @@
       "fr": "Circuits",
       "ru": "Схемы",
       "pl": null,
-      "cs": null,
+      "cs": "Circuits",
       "nl": null,
       "cn": null,
       "tr": "Devreler"
@@ -9191,7 +9191,7 @@
       "fr": "Produits chimiques",
       "ru": "Химические вещества",
       "pl": null,
-      "cs": null,
+      "cs": "Chemicals",
       "nl": null,
       "cn": null,
       "tr": "Kimyasallar"
@@ -9203,7 +9203,7 @@
       "fr": "Matx",
       "ru": "Материалы",
       "pl": null,
-      "cs": null,
+      "cs": "Mats",
       "nl": null,
       "cn": null,
       "tr": "Matlar"
@@ -9215,7 +9215,7 @@
       "fr": "Combinaison",
       "ru": "Костюм",
       "pl": null,
-      "cs": null,
+      "cs": "Suit",
       "nl": null,
       "cn": null,
       "tr": "Kıyafet"
@@ -9227,7 +9227,7 @@
       "fr": "Arme",
       "ru": "Оружие",
       "pl": null,
-      "cs": null,
+      "cs": "Weapon",
       "nl": null,
       "cn": null,
       "tr": "Silah"
@@ -9239,7 +9239,7 @@
       "fr": "Consommation des outils réduite",
       "ru": "Уменьшенный расход батареи инструмента",
       "pl": null,
-      "cs": null,
+      "cs": "Reduced tool battery consumption",
       "nl": null,
       "cn": null,
       "tr": "Azaltılmış Alet Pil Tüketimi"
@@ -9251,7 +9251,7 @@
       "fr": "Suivi amélioré",
       "ru": "Улучшенное слежение",
       "pl": null,
-      "cs": null,
+      "cs": "Enhanced tracking",
       "nl": null,
       "cn": null,
       "tr": "Gelişmiş İzleme"
@@ -9263,7 +9263,7 @@
       "fr": "Capacité de sac à dos accrue",
       "ru": "Повышенный объем рюкзака",
       "pl": null,
-      "cs": null,
+      "cs": "Extra backpack capacity",
       "nl": null,
       "cn": null,
       "tr": "Ekstra Çanta Kapasitesi"
@@ -9275,7 +9275,7 @@
       "fr": "Stabilité",
       "ru": "Стабильность",
       "pl": null,
-      "cs": null,
+      "cs": "Stability",
       "nl": null,
       "cn": null,
       "tr": "Stabilize"
@@ -9287,7 +9287,7 @@
       "fr": "Portée améliorée",
       "ru": "Бóльшая дальность",
       "pl": null,
-      "cs": null,
+      "cs": "Greater range",
       "nl": null,
       "cn": null,
       "tr": "Geniş Menzil"
@@ -9299,7 +9299,7 @@
       "fr": "Durée de course améliorée",
       "ru": "Увеличенное время спринта",
       "pl": null,
-      "cs": null,
+      "cs": "Increased sprint duration",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Koşu Süresi"
@@ -9311,7 +9311,7 @@
       "fr": "Assistance de saut améliorée",
       "ru": "Улучшенная помощь в прыжке",
       "pl": null,
-      "cs": null,
+      "cs": "Improved jump assist",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Zıplama Desteği"
@@ -9323,7 +9323,7 @@
       "fr": "Réserves d'oxygène augmentées",
       "ru": "Повышенная ёмкость воздушных баллонов",
       "pl": null,
-      "cs": null,
+      "cs": "Increased air reserves",
       "nl": null,
       "cn": null,
       "tr": "Arttırılmış Hava Rezervleri"
@@ -9335,7 +9335,7 @@
       "fr": "Maniabilité améliorée",
       "ru": "Ускоренная обработка",
       "pl": null,
-      "cs": null,
+      "cs": "Faster handling",
       "nl": null,
       "cn": null,
       "tr": "Daha Hızlı Kullanım"
@@ -9347,7 +9347,7 @@
       "fr": "Silencieux",
       "ru": "Глушитель",
       "pl": null,
-      "cs": null,
+      "cs": "Noise suppressor",
       "nl": null,
       "cn": null,
       "tr": "Gürültü Bastırıcı"
@@ -9359,7 +9359,7 @@
       "fr": "Taille du chargeur",
       "ru": "Ёмкость магазина",
       "pl": null,
-      "cs": null,
+      "cs": "Magazine size",
       "nl": null,
       "cn": null,
       "tr": "Şarjör Kapasitesi"
@@ -9371,7 +9371,7 @@
       "fr": "Résistance aux dégats",
       "ru": "Поглощение урона",
       "pl": null,
-      "cs": null,
+      "cs": "Damage resistance",
       "nl": null,
       "cn": null,
       "tr": "Hasar Direnci"
@@ -9383,7 +9383,7 @@
       "fr": "Dégats au corps à corps supplémentaires",
       "ru": "Добавлен урон в рукопашном режиме",
       "pl": null,
-      "cs": null,
+      "cs": "Added melee damage",
       "nl": null,
       "cn": null,
       "tr": "Yakın Dövüş Hasarı Eklendi"
@@ -9395,7 +9395,7 @@
       "fr": "Vitesse de rechargement",
       "ru": "Скорость перезарядки",
       "pl": null,
-      "cs": null,
+      "cs": "Reload speed",
       "nl": null,
       "cn": null,
       "tr": "Yenileme Hızı"
@@ -9407,7 +9407,7 @@
       "fr": "Capacité de chargeur accrue",
       "ru": "Повышенный боезапас",
       "pl": null,
-      "cs": null,
+      "cs": "Extra ammo capacity",
       "nl": null,
       "cn": null,
       "tr": "Ekstra Mermi Kapasitesi"
@@ -9419,7 +9419,7 @@
       "fr": "Régénération des boucliers accélérée",
       "ru": "Ускоренная регенерация щита",
       "pl": null,
-      "cs": null,
+      "cs": "Faster shield regen",
       "nl": null,
       "cn": null,
       "tr": "Hızlı Kalkan Yenilenmesi"
@@ -9431,7 +9431,7 @@
       "fr": "Rechargement rangé",
       "ru": "Перезарядка в походном положении",
       "pl": null,
-      "cs": null,
+      "cs": "Stowed reloading",
       "nl": null,
       "cn": null,
       "tr": "İstiflenmiş Yeniden Yükleme"
@@ -9443,7 +9443,7 @@
       "fr": "Dégâts de tirs à la tête",
       "ru": "Урон в голову",
       "pl": null,
-      "cs": null,
+      "cs": "Headshot damage",
       "nl": null,
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı"
@@ -9455,7 +9455,7 @@
       "fr": "Capacité de batterie améliorée",
       "ru": "Увеличенная ёмкость батареи",
       "pl": null,
-      "cs": null,
+      "cs": "Improved battery capacity",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Batarya Kapasitesi"
@@ -9467,7 +9467,7 @@
       "fr": "Viseur",
       "ru": "Прицел",
       "pl": null,
-      "cs": null,
+      "cs": "Scope",
       "nl": null,
       "cn": null,
       "tr": "Dürbün"
@@ -9479,7 +9479,7 @@
       "fr": "Vision nocturne",
       "ru": "ПНВ",
       "pl": null,
-      "cs": null,
+      "cs": "Night vision",
       "nl": null,
       "cn": null,
       "tr": "Gece Görüşü"
@@ -9491,7 +9491,7 @@
       "fr": "Amélioration de la précision du tir au jugé",
       "ru": "Повышенная точность стрельбы от бедра",
       "pl": null,
-      "cs": null,
+      "cs": "Improved Hip Fire Accuracy",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Kalça Ateşi Doğruluğu"
@@ -9503,7 +9503,7 @@
       "fr": "Réduction des bruits de pas",
       "ru": "Приглушенные звуки шагов",
       "pl": null,
-      "cs": null,
+      "cs": "Quieter footsteps",
       "nl": null,
       "cn": null,
       "tr": "Sessiz Adımlar"
@@ -9515,7 +9515,7 @@
       "fr": "Réduction du bruit de tir",
       "ru": "Акустическая маскировка",
       "pl": null,
-      "cs": null,
+      "cs": "Audio Masking",
       "nl": null,
       "cn": null,
       "tr": "Ses Maskeleme"
@@ -9527,7 +9527,7 @@
       "fr": "Précision Accrue (Armes Cinétiques)",
       "ru": "Повышенная точность (Кинетическое оружие)",
       "pl": null,
-      "cs": null,
+      "cs": "Higher Accuracy (Kinetic Weapons)",
       "nl": null,
       "cn": null,
       "tr": "Daha Yüksek Doğruluk (Kinetik Silahlar)"
@@ -9539,7 +9539,7 @@
       "fr": "Précision Accrue (Armes Termiques)",
       "ru": "Повышенная точность (Термическое оружие)",
       "pl": null,
-      "cs": null,
+      "cs": "Higher Accuracy (Thermal Weapons)",
       "nl": null,
       "cn": null,
       "tr": "Daha Yüksek Doğruluk (Termal Silahlar)"
@@ -9551,7 +9551,7 @@
       "fr": "Précision Accrue (Armes Plasma)",
       "ru": "Повышенная точность (Плазменное оружие)",
       "pl": null,
-      "cs": null,
+      "cs": "Higher Accuracy (Plasma Weapons)",
       "nl": null,
       "cn": null,
       "tr": "Daha Yüksek Doğruluk (Plazma Silahları)"
@@ -9563,7 +9563,7 @@
       "fr": "Vitesse de déplacement au combat",
       "ru": "Скорость боевого передвижения",
       "pl": null,
-      "cs": null,
+      "cs": "Combat Movement Speed",
       "nl": null,
       "cn": null,
       "tr": "Savaş Hareket Hızı"
@@ -9575,7 +9575,7 @@
       "fr": "Rayon de scan de sonde étendu",
       "ru": "Расширенный радиус действия зонда",
       "pl": null,
-      "cs": null,
+      "cs": "Expanded Probe Scanning Radius",
       "nl": null,
       "cn": null,
       "tr": "Genişletilmiş Prob Tarama Yarıçapı"
@@ -9587,7 +9587,7 @@
       "fr": "FSD Ingénieré V1",
       "ru": "Перепроектированный пакет FSD V1",
       "pl": null,
-      "cs": null,
+      "cs": "Engineered FSD V1",
       "nl": null,
       "cn": null,
       "tr": "Mühendislikli Zıplama Modülü (FSD) V1"
@@ -9599,7 +9599,7 @@
       "fr": "Rack à missiles Ingéniéré V1",
       "ru": "Перепроектированная ракетная кассета V1",
       "pl": null,
-      "cs": null,
+      "cs": "Engineered Missile Rack V1",
       "nl": null,
       "cn": null,
       "tr": "Mühendislikli Füze Raf Silahı V1"
@@ -9611,7 +9611,7 @@
       "fr": "Artemis",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Artemis",
       "nl": null,
       "cn": null,
       "tr": "Artemis"
@@ -9623,7 +9623,7 @@
       "fr": "Dominator",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Dominator",
       "nl": null,
       "cn": null,
       "tr": "Egemen"
@@ -9635,7 +9635,7 @@
       "fr": "Maverick",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Maverick",
       "nl": null,
       "cn": null,
       "tr": "Başıbuyruk"
@@ -9647,7 +9647,7 @@
       "fr": "Karma P-15",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Karma P-15",
       "nl": null,
       "cn": null,
       "tr": "Karma P-15"
@@ -9659,7 +9659,7 @@
       "fr": "Manticore Tormentor",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Manticore Tormentor",
       "nl": null,
       "cn": null,
       "tr": "Mantikor İşkenceci"
@@ -9671,7 +9671,7 @@
       "fr": "TK Zenith",
       "ru": "ТК «Зенит»",
       "pl": null,
-      "cs": null,
+      "cs": "TK Zenith",
       "nl": null,
       "cn": null,
       "tr": "TK Başucu"
@@ -9683,7 +9683,7 @@
       "fr": "Karma AR-50",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Karma AR-50",
       "nl": null,
       "cn": null,
       "tr": "Karma AR-50"
@@ -9695,7 +9695,7 @@
       "fr": "Karma C-44",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Karma C-44",
       "nl": null,
       "cn": null,
       "tr": "Karma C-44"
@@ -9707,7 +9707,7 @@
       "fr": "Karma L-6",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Karma L-6",
       "nl": null,
       "cn": null,
       "tr": "Karma L-6"
@@ -9719,7 +9719,7 @@
       "fr": "Manticore Executioner",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Manticore Executioner",
       "nl": null,
       "cn": null,
       "tr": "Mantikor Cellat"
@@ -9731,7 +9731,7 @@
       "fr": "Manticore Intimidator",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Manticore Intimidator",
       "nl": null,
       "cn": null,
       "tr": "Mantikor Gözdağı"
@@ -9743,7 +9743,7 @@
       "fr": "Manticore Oppressor",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Manticore Oppressor",
       "nl": null,
       "cn": null,
       "tr": "Mantikor Ezici"
@@ -9755,7 +9755,7 @@
       "fr": "Manticore Opressor",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Manticore Opressor",
       "nl": null,
       "cn": null,
       "tr": "Mantikor Ezici"
@@ -9767,7 +9767,7 @@
       "fr": "TK Aphelion",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "TK Aphelion",
       "nl": null,
       "cn": null,
       "tr": "TK Bulmaca"
@@ -9779,7 +9779,7 @@
       "fr": "TK Eclipse",
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "TK Eclipse",
       "nl": null,
       "cn": null,
       "tr": "TK Tutulması"
@@ -9791,7 +9791,7 @@
       "fr": "Barman",
       "ru": "Бармен",
       "pl": null,
-      "cs": null,
+      "cs": "@Bartender",
       "nl": null,
       "cn": null,
       "tr": "Barmen"
@@ -9803,7 +9803,7 @@
       "fr": "Marchand",
       "ru": "Торговец",
       "pl": null,
-      "cs": null,
+      "cs": "@Merchant",
       "nl": null,
       "cn": null,
       "tr": "Mercan"
@@ -9815,7 +9815,7 @@
       "fr": "Analyse Minérale",
       "ru": "Анализ минералов",
       "pl": null,
-      "cs": null,
+      "cs": "Mineral Analytics",
       "nl": null,
       "cn": null,
       "tr": "Mineral Analizleri"
@@ -9827,7 +9827,7 @@
       "fr": "Plans de Sécurité",
       "ru": "Планы безопасности",
       "pl": null,
-      "cs": null,
+      "cs": "Security Plans",
       "nl": null,
       "cn": null,
       "tr": "Güvenlik Planları"
@@ -9839,7 +9839,7 @@
       "fr": null,
       "ru": "Повышенная дальность (плазменное от Manticore)",
       "pl": null,
-      "cs": null,
+      "cs": "Greater range (Manticore plasma)",
       "nl": null,
       "cn": null,
       "tr": "Geniş Menzil (Mantikor Plazma)"
@@ -9851,7 +9851,7 @@
       "fr": null,
       "ru": "Повышенная дальность (пулевое от Kinematic)",
       "pl": null,
-      "cs": null,
+      "cs": "Greater range (Kinematic kinetic)",
       "nl": null,
       "cn": null,
       "tr": "Geniş Menzil (Kinematik Kinetik)"
@@ -9863,7 +9863,7 @@
       "fr": null,
       "ru": "Повышенная дальность (лазерное от Takada)",
       "pl": null,
-      "cs": null,
+      "cs": "Greater range (Takada laser)",
       "nl": null,
       "cn": null,
       "tr": "Geniş Menzil (Takada Lazeri)"
@@ -9875,7 +9875,7 @@
       "fr": null,
       "ru": "Улучшенная точность от бедра (плазменное от Manticore)",
       "pl": null,
-      "cs": null,
+      "cs": "Improved Hip Fire Accuracy (Manticore plasma)",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Kalça Ateşi Doğruluğu (Manticore Plazma)"
@@ -9887,7 +9887,7 @@
       "fr": null,
       "ru": "Улучшенная точность от бедра (пулевое от Kinematic)",
       "pl": null,
-      "cs": null,
+      "cs": "Improved Hip Fire Accuracy (Kinematic kinetic)",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Kalça Ateşi Doğruluğu (Kinematik Kinetik)"
@@ -9899,7 +9899,7 @@
       "fr": null,
       "ru": "Улучшенная точность от бедра (лазерное от Takada)",
       "pl": null,
-      "cs": null,
+      "cs": "Improved Hip Fire Accuracy (Takada laser)",
       "nl": null,
       "cn": null,
       "tr": "Geliştirilmiş Kalça Ateşi Doğruluğu (Takada Lazer)"
@@ -9911,7 +9911,7 @@
       "fr": null,
       "ru": "Урон в голову (плазменное от Manticore)",
       "pl": null,
-      "cs": null,
+      "cs": "Headshot damage (Manticore plasma)",
       "nl": null,
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı (Mantikor Plazma)"
@@ -9923,7 +9923,7 @@
       "fr": null,
       "ru": "Урон в голову (пулевое от Kinematic)",
       "pl": null,
-      "cs": null,
+      "cs": "Headshot damage (Kinematic kinetic)",
       "nl": null,
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı (Kinematik Kinetik)"
@@ -9935,7 +9935,7 @@
       "fr": null,
       "ru": "Осколочная граната",
       "pl": null,
-      "cs": null,
+      "cs": "Frag Grenade",
       "nl": null,
       "cn": null,
       "tr": "Yakın El Bombası"
@@ -9947,7 +9947,7 @@
       "fr": null,
       "ru": "Урон в голову (лазерное от Takada)",
       "pl": null,
-      "cs": null,
+      "cs": "Headshot damage (Takada laser)",
       "nl": null,
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı (Takada Lazeri)"
@@ -9959,7 +9959,7 @@
       "fr": null,
       "ru": "Разрушитель щита",
       "pl": null,
-      "cs": null,
+      "cs": "Shield Disruptor",
       "nl": null,
       "cn": null,
       "tr": "Kalkan Bozucu"
@@ -9971,7 +9971,7 @@
       "fr": null,
       "ru": "Аптечка",
       "pl": null,
-      "cs": null,
+      "cs": "Medkit",
       "nl": null,
       "cn": null,
       "tr": "İlk Yardım Kiti"
@@ -9983,7 +9983,7 @@
       "fr": null,
       "ru": "Энергоячейка",
       "pl": null,
-      "cs": null,
+      "cs": "Energy Cell",
       "nl": null,
       "cn": null,
       "tr": "Enerji Hücresi"
@@ -9995,7 +9995,7 @@
       "fr": null,
       "ru": "Излучатель щита",
       "pl": null,
-      "cs": null,
+      "cs": "Shield Projector",
       "nl": null,
       "cn": null,
       "tr": "Kalkan Projektörü"
@@ -10007,7 +10007,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "E-Breach",
       "nl": null,
       "cn": null,
       "tr": "Tek Seferlik İhlal Cihazı"
@@ -10019,7 +10019,7 @@
       "fr": null,
       "ru": "Перепроектированный подробный сканер поверхности V1",
       "pl": null,
-      "cs": null,
+      "cs": "Engineered Detailed Surface Scanner V1",
       "nl": null,
       "cn": null,
       "tr": "Tek Seferlik İhlal Cihazı"
@@ -10031,7 +10031,7 @@
       "fr": null,
       "ru": "Блоки охлаждения",
       "pl": null,
-      "cs": null,
+      "cs": "Thermal Cooling Units",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10043,7 +10043,7 @@
       "fr": null,
       "ru": "Модифицированная гаусс-пушка (фиксированная, средний слот)",
       "pl": null,
-      "cs": null,
+      "cs": "Modified Gauss Cannon (Fixed, Medium)",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10055,7 +10055,7 @@
       "fr": null,
       "ru": "Модифицированная гаусс-пушка (фиксированная, малый слот)",
       "pl": null,
-      "cs": null,
+      "cs": "Modified Gauss Cannon (Fixed, Small)",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10067,7 +10067,7 @@
       "fr": null,
       "ru": "Модифицированный «дробовик» (фиксированный, средний слот)",
       "pl": null,
-      "cs": null,
+      "cs": "Modified Shard Cannon (Fixed, Medium)",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10079,7 +10079,7 @@
       "fr": null,
       "ru": "Модифицированный «дробовик» (фиксированный, малый слот)",
       "pl": null,
-      "cs": null,
+      "cs": "Modified Shard Cannon (Fixed, Small)",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10091,7 +10091,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Modified Plasma Charger (Fixed, Medium)",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10103,7 +10103,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Modified Plasma Charger (Fixed, Small)",
       "nl": null,
       "cn": null,
       "tr": null
@@ -10115,7 +10115,7 @@
       "fr": null,
       "ru": null,
       "pl": null,
-      "cs": null,
+      "cs": "Modified Mining Laser",
       "nl": null,
       "cn": null,
       "tr": null
