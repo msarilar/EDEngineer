@@ -5069,7 +5069,7 @@
     "Guardian Sentinel Wreckage Components": {
       "es": "Restos de Accidente Guardián",
       "pt": "Componentes de Destroços Sentinela Guardian",
-      "de": "Guardian-Wache Trümmerteile",
+      "de": "Guardian-Wache-Trümmerteile",
       "fr": "Débris d'épave Guardians",
       "ru": "Обломки часовых Стражей",
       "pl": null,
@@ -5102,7 +5102,7 @@
     "Corrosion Resistant Cargo Rack (2D and 4D)": {
       "es": "Bodega de Carga Resistente a Corrosión (2D y 4D)",
       "pt": "Estante de Carga Anti-Corrosiva (2D e 4D)",
-      "de": "Korrosionsresistentes Frachtegtell (2D and 4D)",
+      "de": "Korrosionsresistenter Frachtraum (2D und 4D)",
       "fr": "Compartiment de Soute Résistant à la Corrosion",
       "ru": "Коррозийно-устойчивый грузовой стеллаж (2D и 4D)",
       "pl": null,
@@ -5113,7 +5113,7 @@
     "Enzyme Missile Rack": {
       "es": "Lanzamisiles de Enzimas",
       "pt": "Estante de Mísseis Enzimáticos",
-      "de": "Enzym Raketenrampe",
+      "de": "Enzymraketenrampe",
       "fr": "Batterie de Missiles Enzymatiques",
       "ru": "Блок энзимных ракет",
       "pl": null,
@@ -5135,7 +5135,7 @@
     "Guardian Ruins": {
       "es": "Ruinas Guardianes",
       "pt": "Ruínas Guardian",
-      "de": "Guardian Ruinen",
+      "de": "Guardian-Ruinen",
       "fr": "Ruines Guardians",
       "ru": "Руины Стражей",
       "pl": "Ruiny Strażników",
@@ -5146,7 +5146,7 @@
     "Guardian Ruins (Active)": {
       "es": "Ruinas Guardianes (Activa)",
       "pt": "Ruínas Guardian (Ativa)",
-      "de": "Guardian Ruinen (Aktiv)",
+      "de": "Guardian-Ruinen (aktiv)",
       "fr": "Ruines Guardians (Actives)",
       "ru": "Руины Стражей (Активные)",
       "pl": "Ruiny Strażników (Aktywne)",
@@ -5157,7 +5157,7 @@
     "Guardian Gauss Cannon (Fixed)": {
       "es": "Cañón Gauss Guardián (Fijo)",
       "pt": "Canhão Gauss Guardian (Fixa)",
-      "de": "Guardian-Gausskannone (Fest)",
+      "de": "Guardian-Gaußkannone (fest)",
       "fr": "Canon de gauss - Guardians (Fixe)",
       "ru": "Пушка Гаусса Стражей (фиксированное)",
       "pl": null,
@@ -5168,7 +5168,7 @@
     "Guardian Plasma Charger (Fixed)": {
       "es": "Cargador de Plasma Guardián (Fijo)",
       "pt": "Carregador de Plasma Guardian (Fixa)",
-      "de": "Guardian-Plasmalader (Fest)",
+      "de": "Guardian-Plasmalader (fest)",
       "fr": "Chargeur à plasma - Guardians (Fixe)",
       "ru": "Плазменная пушка Стражей (фиксированное)",
       "pl": null,
@@ -5190,7 +5190,7 @@
     "Guardian Hybrid Power Plant": {
       "es": "Núcleo de Energía Híbrida Guardián",
       "pt": "Gerador de Energia Guardian",
-      "de": "Guardian-Kraftwerk",
+      "de": "Guardian-Hybridkraftwerk",
       "fr": "Générateur - Guardians",
       "ru": "Силовая установка Стражей",
       "pl": null,
@@ -5212,7 +5212,7 @@
     "Remote Release Flechette Launcher (Fixed)": {
       "es": "Lanzador de Flechettes Remoto (Fijo)",
       "pt": "Lançador de dardos de Liberação Remota (Fixa)",
-      "de": "ferngesteuerter Flechettenwerfer (Fest)",
+      "de": "Ferngesteuerter Flechettenwerfer (Fest)",
       "fr": "Lanceurs de Fléchettes Déclenchées à Distance (Fixe)",
       "ru": "Зенитная установка с дистанционным подрывом (фиксированное)",
       "pl": null,
@@ -5223,7 +5223,7 @@
     "Remote Release Flechette Launcher (Turreted)": {
       "es": "Lanzador de Flechettes Remoto (Torreta)",
       "pt": "Lançador de dardos de Liberação Remota (Torretada)",
-      "de": "ferngesteuerter Flechettenwerfer (Turm)",
+      "de": "Ferngesteuerter Flechettenwerfer (Turm)",
       "fr": "Lanceurs de Fléchettes Déclenchées à Distance (Tourelle)",
       "ru": "Зенитная установка с дистанционным подрывом (турель)",
       "pl": null,
@@ -5234,7 +5234,7 @@
     "Shock Cannon (Fixed)": {
       "es": "Cañón de Choque (Fijo)",
       "pt": "Canhão Elétrico (Fixa)",
-      "de": "Schock Kanone (Fest)",
+      "de": "Schockkanone (Fest)",
       "fr": "Canon de choc (Fixe)",
       "ru": "Шоковое орудие (фиксированное)",
       "pl": null,
@@ -5245,7 +5245,7 @@
     "Shock Cannon (Gimballed)": {
       "es": "Cañón de Choque (Guiado)",
       "pt": "Canhão Elétrico (Guiada)",
-      "de": "Schock Kanone (Kardanisch)",
+      "de": "Schockanone (kardanisch)",
       "fr": "Canon de choc (PE Rotatif)",
       "ru": "Шоковое орудие (на карданной подвеске)",
       "pl": null,
@@ -5256,7 +5256,7 @@
     "Shock Cannon (Turreted)": {
       "es": "Cañón de choque (Torreta)",
       "pt": "Canhão Elétrico (Torretada)",
-      "de": "Schock Kanone (Turm)",
+      "de": "Schockkanone (Turm)",
       "fr": "Canon de choc (Tourelle)",
       "ru": "Шоковое орудие (турель)",
       "pl": null,
@@ -5267,7 +5267,7 @@
     "Concordant Sequence": {
       "es": "Secuencia Concordante",
       "pt": "Sequencia Concordante",
-      "de": "gleichsinnige Sequenz",
+      "de": "Gleichsinnige Sequenz",
       "fr": "Séquence concordante",
       "ru": "Последовательность координации",
       "pl": null,
@@ -5278,7 +5278,7 @@
     "Regeneration Sequence": {
       "es": "Secuencia de Regeneración",
       "pt": "Sequencia de Regeneração",
-      "de": "regenerierende Sequenz",
+      "de": "Regenerierende Sequenz",
       "fr": "Séquence de régénération",
       "ru": "Последовательность восстановления",
       "pl": null,
@@ -5333,7 +5333,7 @@
     "Stripped Down": {
       "es": "Reducido",
       "pt": "Reduzido",
-      "de": "Reduktion",
+      "de": "Vereinfacht",
       "fr": "Désossage",
       "ru": "Урезанный вариант",
       "pl": null,
@@ -5421,7 +5421,7 @@
     "Auto Loader": {
       "es": "Autocargador",
       "pt": "Carregador Automatico",
-      "de": "Auto-Laden",
+      "de": "Autolader",
       "fr": "Rechargement Automatique",
       "ru": "Автоматическая система заряжания",
       "pl": null,
@@ -5575,7 +5575,7 @@
     "FSD Interrupt (Dumbfire only)": {
       "es": "Interrumpir MDD (sólo No Guiado)",
       "pt": null,
-      "de": "FSA-Unterbrechung (nur Dumbfire)",
+      "de": "FSA-Unterbrechung (nur ungelenkt)",
       "fr": "Interruption FSD (Non Auto-Guidés)",
       "ru": "Помеха для FSD",
       "pl": null,
@@ -5619,7 +5619,7 @@
     "Ion Disruptor": {
       "es": "Disrupción de Iones",
       "pt": "Disruptor de Ions",
-      "de": "Ionen-Disruption",
+      "de": "Ionen-Disruptor",
       "fr": "Perturbation Ionique",
       "ru": "Ионный дестабилизатор",
       "pl": null,
@@ -5652,7 +5652,7 @@
     "Target Lock Breaker": {
       "es": "Interruptor de Selección",
       "pt": null,
-      "de": "Zielsperrunterbrecher",
+      "de": "Zielaufschaltungsunterbrecher",
       "fr": "Interruption de verrouillage de la cible",
       "ru": "Генератор помех для системы захвата цели",
       "pl": null,
@@ -5685,7 +5685,7 @@
     "Super Penetrator": {
       "es": "Súper Penetrante",
       "pt": "Super Penetrante",
-      "de": "Super-Durchdringer",
+      "de": "Super-Penetrator",
       "fr": "Munitions Ultra Perforantes",
       "ru": "Модуль сверхпробития",
       "pl": null,
@@ -5784,7 +5784,7 @@
     "Monstered": {
       "es": "A lo bestia",
       "pt": "Parrudo",
-      "de": "monströs",
+      "de": "Monströs",
       "fr": "Modèle XXL",
       "ru": "Монстрация",
       "pl": null,
@@ -5894,7 +5894,7 @@
     "Super Capacitor": {
       "es": "Supercondensador",
       "pt": "Supercapacitor",
-      "de": "Superkondensatoren",
+      "de": "Superkondensator",
       "fr": "Super COndensateurs",
       "ru": "Суперконденсатор",
       "pl": null,
@@ -5905,7 +5905,7 @@
     "Hi-cap": {
       "es": "Alta Capacidad",
       "pt": "Alta Capacidade",
-      "de": "Hi-cap",
+      "de": "Hochkapazität",
       "fr": "Puissance Renforcée",
       "ru": "Высокая емкость",
       "pl": null,
@@ -5938,7 +5938,7 @@
     "Lo-draw": {
       "es": "Consumo Reducido",
       "pt": null,
-      "de": "Lo-draw",
+      "de": "Niedrigverbrauch",
       "fr": "Consommation Réduite",
       "ru": "Пониженное потребление",
       "pl": null,
@@ -5982,7 +5982,7 @@
     "Drag Drives": {
       "es": "Impulsores de Arrastre",
       "pt": "Motores de Arrasto",
-      "de": "Drag Antriebe",
+      "de": "Drag-Antriebe",
       "fr": "Débridage des réacteurs",
       "ru": "Ускорители",
       "pl": null,
@@ -6004,7 +6004,7 @@
     "Cluster Capacitor": {
       "es": "Condensador de Grupo",
       "pt": null,
-      "de": "Cluster Kondensator",
+      "de": "Bündelkondensator",
       "fr": "Batterie de Condensateurs",
       "ru": "Кассетный конденсатор",
       "pl": null,
@@ -6136,7 +6136,7 @@
     "Materials Trader found at extraction and refinery economies, only trades in raw material found on planet surfaces and planetary rings.": {
       "es": "Los comerciantes de materiales encontrados en las economías de extracción y refinería, solo comercian con materias primas encontradas en superficies de planetas y anillos planetarios.",
       "pt": "Os comerciantes de materiais encontrados em economias de extração e refinaria, apenas comercializam materiais brutos encontrados na superfície de planetas ou em anéis planetários.",
-      "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und Planetenringen vorkommen.",
+      "de": "Materialhändler, der in der Bergbau- und Raffineriewirtschaft tätig ist, handelt nur mit Rohstoffen, die auf Planetenoberflächen und in Planetenringen vorkommen.",
       "fr": "Les commerçants de matériaux trouvés dans les économies d’extraction et de raffinerie, n'échangent que des matières premières trouvées sur des surfaces planétaires et des anneaux planétaires.",
       "ru": "Торговец материалами в системах с добычей ископаемых и переработкой, обменивает только сырьевые элементы.",
       "pl": null,
@@ -6147,7 +6147,7 @@
     "Materials Trader found at High Tech and Military economies, only trades in encoded materials.": {
       "es": "Los comerciantes de materiales encontrados en las economías de alta tecnología y militar, solo comercian con materiales codificados.",
       "pt": "Os comerciantes de materiais encontrados em economias de Alta Tecnologia e Militar, apenas comercializam materiais codificados.",
-      "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit verschlüsselten Materialien.",
+      "de": "Materialhändler in High-Tech- und Militär-Systemen, handeln nur mit codierten Materialien.",
       "fr": "Les commerçants de matériaux trouvés dans les économies High Tech et Militaraires, ne négocie que des matériaux encodés.",
       "ru": "Торговец материалами в системах с высокотехнологичной и военной экономикой, обменивает только зашифрованные данные.",
       "pl": null,
@@ -6202,7 +6202,7 @@
     "Guardian Gauss Cannon Munitions": {
       "es": "Munición de Cañón Gauss Guardián",
       "pt": "Munição de Canhão Gauss",
-      "de": "Guardian-Gausskannonenmunition",
+      "de": "Guardian-Gaußkanonenmunition",
       "fr": "Munitions de Canon Gauss Guardians",
       "ru": "Боеприпасы для пушек Гаусса Стражей",
       "pl": null,
@@ -6246,7 +6246,7 @@
     "AX Remote Flak Munitions": {
       "es": "Munición AX Antiaérea Remota",
       "pt": null,
-      "de": "Munition für Ferngezündete Flak (AX)",
+      "de": "Munition für ferngezündete Flak (AX)",
       "fr": "Munitions Anti-Xeno Flak à Distance",
       "ru": "Зенитные снаряды с дистанционным подрывом АИ",
       "pl": null,
@@ -6312,7 +6312,7 @@
     "Guardian Gauss Cannon (Fixed, Medium)": {
       "es": "Cañón Gauss Guardián (Fijo) (Clase 2)",
       "pt": "Canhão Gauss Guardian (Fixo) (Classe 2)",
-      "de": "Guardian-Gausskanone (Fest) (Klasse: 2)",
+      "de": "Guardian-Gaußkanone (fest) (Klasse: 2)",
       "fr": "Canon Gauss - Guardians (Fixe, Classe 2)",
       "ru": "Пушка Гаусса Стражей (фиксированное, средний слот)",
       "pl": null,
@@ -6323,7 +6323,7 @@
     "Guardian Gauss Cannon (Fixed, Small)": {
       "es": "Cañón Gauss Guardián (Fijo) (Clase 1)",
       "pt": "Canhão Gauss guardian (Fixo) (Classe 1)",
-      "de": "Guardian-Gausskanone (Fest) (Klasse: 1)",
+      "de": "Guardian-Gaußkanone (fest) (Klasse: 1)",
       "fr": "Canon Gauss - Guardians (Fixe, Classe 1)",
       "ru": "Пушка Гаусса Стражей (фиксированное, малый слот)",
       "pl": null,
@@ -6356,18 +6356,18 @@
     "Guardian Plasma Charger (Fixed, Large)": {
       "es": "Cargador de Plasma Guardián (Fijo) (Clase 3)",
       "pt": null,
-      "de": "Guardian-Plasmalader (Fest) (Klasse: 3)",
+      "de": "Guardian-Plasmalader (fest) (Klasse: 3)",
       "fr": "Chargeur Plasma - Guardians (Fixe, Classe 3)",
       "ru": "Плазменная пушка Стражей (фиксированное, большой слот)",
       "pl": null,
-      "cs": "Guardian Plasma Charger (Fixed, Large)",
+      "cs": "Guardian Plasma Charger (fixed, Large)",
       "cn": null,
       "tr": "Muhafız Plazma Şarj Cihazı (Sabit, Büyük)"
     },
     "Guardian Plasma Charger (Fixed, Medium)": {
       "es": "Cargador de Plasma Guardián (Fijo) (Clase 2)",
       "pt": null,
-      "de": "Guardian-Plasmalader (Fest) (Klasse: 2)",
+      "de": "Guardian-Plasmalader (fest) (Klasse: 2)",
       "fr": "Chargeur Plasma - Guardians (Fixe, Classe 2)",
       "ru": "Плазменная пушка Стражей (фиксированное, средний слот)",
       "pl": null,
@@ -6378,7 +6378,7 @@
     "Guardian Plasma Charger (Fixed, Small)": {
       "es": "Cargador de Plasma Guardián (Fijo) (Clase 1)",
       "pt": null,
-      "de": "Guardian-Plasmalader (Fest) (Klasse: 1)",
+      "de": "Guardian-Plasmalader (fest) (Klasse: 1)",
       "fr": "Chargeur Plasma - Guardians (Fixe, Classe 1)",
       "ru": "Плазменная пушка Стражей (фиксированное, малый слот)",
       "pl": null,
@@ -6422,7 +6422,7 @@
     "Guardian FSD Booster": {
       "es": "Potenciador de Motor de Distorsión Guardián",
       "pt": "Potenciador Do Motor de Distorção de Fase Guardian",
-      "de": "Guardian-Frameshiftantrieb-Booster",
+      "de": "Guardian-Frameshiftantriebsbooster",
       "fr": "Survolteur FSD - Guardians",
       "ru": "Ускоритель FSD Стражей",
       "pl": null,
@@ -6444,7 +6444,7 @@
     "Guardian Shard Cannon (Fixed, Large)": {
       "es": "Cañón de Esquirlas Guardián (Fijo) (Clase 3)",
       "pt": null,
-      "de": "Guardian-Fragmentkanone (Fest) (Klasse: 3)",
+      "de": "Guardian-Fragmentkanone (fest) (Klasse: 3)",
       "fr": "Canons à Eclats - Guardians (Fixe, Classe 3)",
       "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
@@ -6455,7 +6455,7 @@
     "Guardian Shard Cannon (Fixed, Medium)": {
       "es": "Cañón de Esquirlas Guardián (Fijo) (Clase 2)",
       "pt": null,
-      "de": "Guardian-Fragmentkanone (Fest) (Klasse: 2)",
+      "de": "Guardian-Fragmentkanone (fest) (Klasse: 2)",
       "fr": "Canons à Eclats - Guardians (Fixe, Classe 2)",
       "ru": "Осколочное орудие Стражей (фиксированное, средний слот)",
       "pl": null,
@@ -6466,7 +6466,7 @@
     "Guardian Shard Cannon (Fixed, Small)": {
       "es": "Cañón de Esquirlas Guardián (Fijo) (Clase 1)",
       "pt": null,
-      "de": "Guardian-Fragmentkanone (Fest) (Klasse: 1)",
+      "de": "Guardian-Fragmentkanone (fest) (Klasse: 1)",
       "fr": "Canons à Eclats - Guardians (Fixe, Classe 1)",
       "ru": "Осколочное орудие Стражей (фиксированное, малый слот)",
       "pl": null,
@@ -6521,7 +6521,7 @@
     "Javelin (Fighter)": {
       "es": "Javelin XG8 (Caza)",
       "pt": "Javelin (Caça)",
-      "de": "Javelin (Fighter)",
+      "de": "Javelin (Jäger)",
       "fr": "Javelin (Chasseur)",
       "ru": "Javelin (Истребитель)",
       "pl": null,
@@ -6532,7 +6532,7 @@
     "Lance (Fighter)": {
       "es": "Lance XG9 (Caza)",
       "pt": "Lance (Caça)",
-      "de": "Lance (Fighter)",
+      "de": "Lance (Jäger)",
       "fr": "Lance (Chasseur)",
       "ru": "Lance (Истребитель)",
       "pl": null,
@@ -6543,7 +6543,7 @@
     "Trident (Fighter)": {
       "es": "Trident XG7 (Caza)",
       "pt": "Trident (Caça)",
-      "de": "Trident (Fighter)",
+      "de": "Trident (Jäger)",
       "fr": "Trident (Chasseur)",
       "ru": "Trident (Истребитель)",
       "pl": null,
@@ -6554,7 +6554,7 @@
     "Shock Cannon (Fixed, Large)": {
       "es": "Cañón de Choque (Fijo) (Clase 3)",
       "pt": null,
-      "de": "Schockkanone (Fest) (Klasse: 3)",
+      "de": "Schockkanone (fest) (Klasse: 3)",
       "fr": "Canon de Choc (Fixe, Classe 3)",
       "ru": "Осколочное орудие Стражей (фиксированное, большой слот)",
       "pl": null,
@@ -6565,7 +6565,7 @@
     "Shock Cannon (Fixed, Medium)": {
       "es": "Cañón de Choque (Fijo) (Clase 2)",
       "pt": null,
-      "de": "Schockkanone (Fest) (Klasse: 2)",
+      "de": "Schockkanone (fest) (Klasse: 2)",
       "fr": "Canon de Choc (Fixe, Classe 2)",
       "ru": "Шоковое орудие (фиксированное, средний слот)",
       "pl": null,
@@ -6576,7 +6576,7 @@
     "Shock Cannon (Fixed, Small)": {
       "es": "Cañón de Choque (Fijo) (Clase 1)",
       "pt": null,
-      "de": "Schockkanone (Fest) (Klasse: 1)",
+      "de": "Schockkanone (fest) (Klasse: 1)",
       "fr": "Canon de Choc (Fixe, Classe 1)",
       "ru": "Шоковое орудие (фиксированное, малый слот)",
       "pl": null,
@@ -6587,7 +6587,7 @@
     "Shock Cannon (Gimballed, Large)": {
       "es": "Cañón de Choque (Autoguiado) (Clase 3)",
       "pt": null,
-      "de": "Schockkanone (Kardanisch) (Klasse: 3)",
+      "de": "Schockkanone (kardanisch) (Klasse: 3)",
       "fr": "Canon de Choc (PE Rotatif, Classe 3)",
       "ru": "Шоковое орудие (на карданной подвеске, большой слот)",
       "pl": null,
@@ -6598,7 +6598,7 @@
     "Shock Cannon (Gimballed, Medium)": {
       "es": "Cañón de Choque (Autoguiado) (Clase 2)",
       "pt": null,
-      "de": "Schockkanone (Kardanisch) (Klasse: 2)",
+      "de": "Schockkanone (kardanisch) (Klasse: 2)",
       "fr": "Canon de Choc (PE Rotatif, Classe 2)",
       "ru": "Шоковое орудие (на карданной подвеске, средний слот)",
       "pl": null,
@@ -6609,7 +6609,7 @@
     "Shock Cannon (Gimballed, Small)": {
       "es": "Cañón de Choque (Autoguiado) (Clase 1)",
       "pt": null,
-      "de": "Schockkanone (Kardanisch) (Klasse: 1)",
+      "de": "Schockkanone (kardanisch) (Klasse: 1)",
       "fr": "Canon de Choc (PE Rotatif, Classe 1)",
       "ru": "Шоковое орудие (на карданной подвеске, малый слот)",
       "pl": null,
@@ -6653,7 +6653,7 @@
     "Ship Value:": {
       "es": "Valor de la Nave:",
       "pt": "Valor da Nave:",
-      "de": "Shiffs Wert:",
+      "de": "Shiffswert:",
       "fr": "Valeur du Vaisseau",
       "ru": "Стоимость корабля:",
       "pl": "Wartość Statku:",
@@ -6675,7 +6675,7 @@
     "Rebuy:": {
       "es": "Recompra:",
       "pt": "Recompra:",
-      "de": "Ersatzwert:",
+      "de": "Wiederbeschaffungskosten:",
       "fr": "Racheter",
       "ru": "Страховка:",
       "pl": null,
@@ -6708,7 +6708,7 @@
     "Hardpoints": {
       "es": "Anclajes",
       "pt": "Encaixes",
-      "de": "Aufhängungen",
+      "de": "Waffenaufhängungen",
       "fr": "Points d'emport",
       "ru": "Орудийные гнезда",
       "pl": null,
@@ -6719,7 +6719,7 @@
     "Utilities": {
       "es": "Anclajes de Apoyo",
       "pt": "Encaixes de Apoio",
-      "de": "Werkzeuge",
+      "de": "Unterstützungskomponenten",
       "fr": "Supports Utilitaires",
       "ru": "Крепления утилит",
       "pl": null,
@@ -6730,7 +6730,7 @@
     "Core Internal": {
       "es": "Internos Principales",
       "pt": "Internos Principais",
-      "de": "Kern Intern",
+      "de": "Interne Kernkomponenten",
       "fr": "Interne Primordiaux",
       "ru": "Зарезервированные слоты",
       "pl": null,
@@ -6741,7 +6741,7 @@
     "Optional Internal": {
       "es": "Internos Opcionales",
       "pt": "Internos Opcionais",
-      "de": "Wahlfreies Intern",
+      "de": "Interne Zusatzkomponenten",
       "fr": "Interne Optionnels",
       "ru": "Опциональные модули",
       "pl": null,
@@ -6752,7 +6752,7 @@
     "Others/Livery": {
       "es": "Otros/Diseño",
       "pt": "Projeto",
-      "de": "Andere/Lackierung",
+      "de": "Andere Komponenten/Lackierung",
       "fr": "Autres/Livrée",
       "ru": "Прочее/Декали",
       "pl": null,
@@ -6833,7 +6833,7 @@
     "Access API from other computers? (tick only if you know what you're doing)": {
       "es": "¿Acceso a la API desde otros equipos? (marcar solo si sabes lo que estás haciendo)",
       "pt": null,
-      "de": "API von anderen Computern zugreifen? (Nur ankreuzen, wenn Sie wissen, was Sie tun)",
+      "de": "Auf API von anderen Computern zugreifen? (Nur ankreuzen, wenn Sie wissen, was Sie tun)",
       "fr": "Accéder à l'API depuis d'autres ordinateurs ? (cocher uniquement si vous savez ce que vous faîtes)",
       "ru": "Предоставить доступ к API с других компьютеров? (Отмечайте, только если знаете, что делаете)",
       "pl": null,
@@ -6869,7 +6869,7 @@
     "Chemical Sample": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemische Probe",
       "fr": "Échantillon chimique",
       "ru": "Образец химпроизводства",
       "pl": null,
@@ -6881,7 +6881,7 @@
     "G-Meds": {
       "es": null,
       "pt": null,
-      "de": "G-Medizin",
+      "de": "G-Medikamente",
       "fr": "Traitement gravitationnel",
       "ru": "G-медпрепараты",
       "pl": null,
@@ -6893,7 +6893,7 @@
     "Inertia Canister": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Trägheitsbehälter",
       "fr": "Conteneur inertiel",
       "ru": "Инертный контейнер",
       "pl": null,
@@ -6917,7 +6917,7 @@
     "Personal Computer": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Personal Computer",
       "fr": "Ordinateur personnel",
       "ru": "Персональный компьютер",
       "pl": null,
@@ -6941,7 +6941,7 @@
     "Deep Mantle Sample": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Probe vom unteren Erdmantel ",
       "fr": "Échantillon de manteau inférieur",
       "ru": "Образец из глубинной мантии",
       "pl": null,
@@ -6953,7 +6953,7 @@
     "Compression-Liquefied Gas": {
       "es": null,
       "pt": null,
-      "de": "Komprimiertes Flüssiggas",
+      "de": "Kompressionsverflüssigtes Gas",
       "fr": "Gaz liquéfié",
       "ru": "Сжиженный газ",
       "pl": null,
@@ -6989,7 +6989,7 @@
     "Circuit Board": {
       "es": null,
       "pt": null,
-      "de": "Schaltplatte",
+      "de": "Leiterplatte",
       "fr": "Circuit imprimé",
       "ru": "Электроплата",
       "pl": null,
@@ -7001,7 +7001,7 @@
     "Circuit Switch": {
       "es": null,
       "pt": null,
-      "de": "Elektroschalter",
+      "de": "Schaltkreisschalter",
       "fr": "Commutateur",
       "ru": "Выключатель цепи",
       "pl": null,
@@ -7085,7 +7085,7 @@
     "RDX": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Hexogen",
       "fr": "RDX",
       "ru": "Гексоген",
       "pl": null,
@@ -7157,7 +7157,7 @@
     "Chemical Superbase": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Chemische Superlauge",
       "fr": "Superbase chimique",
       "ru": "Химическое супероснование",
       "pl": null,
@@ -7193,7 +7193,7 @@
     "Carbon Fibre Plating": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Carbonfaserpanzerung",
       "fr": "Plaques en fibres de carbone",
       "ru": "Углеволоконная броня",
       "pl": null,
@@ -7253,7 +7253,7 @@
     "Insight Entertainment Suite": {
       "es": null,
       "pt": null,
-      "de": "Unterhaltungssuite Insight",
+      "de": "Unterhaltungssuite InSight",
       "fr": "Divertissements Insight",
       "ru": "Медиаустройство InSight",
       "pl": null,
@@ -7301,7 +7301,7 @@
     "Degraded Power Regulator": {
       "es": null,
       "pt": null,
-      "de": "Ausrangierter Energieregulator",
+      "de": "Verschlissener Energieregulator",
       "fr": "Régulateur de puissance endommagé",
       "ru": "Выработанный регулятор мощности",
       "pl": null,
@@ -7313,7 +7313,7 @@
     "Insight": {
       "es": null,
       "pt": null,
-      "de": "Insight",
+      "de": "InSight",
       "fr": "Insight",
       "ru": "Insight",
       "pl": null,
@@ -7385,7 +7385,7 @@
     "Radioactivity Data": {
       "es": null,
       "pt": null,
-      "de": "Informationen über Radioaktivität",
+      "de": "Radioaktivitätsdaten",
       "fr": "Relevés de radioactivité",
       "ru": "Информация о радиоактивности",
       "pl": null,
@@ -7421,7 +7421,7 @@
     "Titanium Plating": {
       "es": null,
       "pt": null,
-      "de": "Rüstung aus Titan",
+      "de": "Titanpanzerung",
       "fr": "Plaques en titane",
       "ru": "Титановая броня",
       "pl": null,
@@ -7445,7 +7445,7 @@
     "Electrical Fuse": {
       "es": null,
       "pt": null,
-      "de": "Elektro-Sicherung",
+      "de": "Elektrische Sicherung",
       "fr": "Fusible électrique",
       "ru": "Предохранитель",
       "pl": null,
@@ -7493,7 +7493,7 @@
     "Push": {
       "es": null,
       "pt": null,
-      "de": "Drücken",
+      "de": "Aufputsch-Droge",
       "fr": "Boost",
       "ru": "Рывок",
       "pl": null,
@@ -7541,7 +7541,7 @@
     "Cast Fossil": {
       "es": null,
       "pt": null,
-      "de": "Versteinerter Abdruck",
+      "de": "Fossilienabguss",
       "fr": "Moulage de fossile",
       "ru": "Окаменелый отпечаток",
       "pl": null,
@@ -7553,7 +7553,7 @@
     "True Form Fossil": {
       "es": null,
       "pt": null,
-      "de": "Wahres Form Fossil",
+      "de": "Intaktes Fossil",
       "fr": "Fossile intact",
       "ru": "Окаменелость истинной формы",
       "pl": null,
@@ -7565,7 +7565,7 @@
     "Californium": {
       "es": null,
       "pt": null,
-      "de": "Kalifornien",
+      "de": "Californium",
       "fr": "Californium",
       "ru": "Калифорний",
       "pl": null,
@@ -7577,7 +7577,7 @@
     "Refinement Process Sample": {
       "es": null,
       "pt": null,
-      "de": "Beispiel für einen Reinigungsprozess",
+      "de": "Raffinationsprozessmuster",
       "fr": "Échantillon de production de raffinage",
       "ru": "Образец с очистного производства",
       "pl": null,
@@ -7661,7 +7661,7 @@
     "Recycling Logs": {
       "es": null,
       "pt": null,
-      "de": "Zeitschrift für Abfallrecycling",
+      "de": "Abfallrecyclingsaufzeichnungen",
       "fr": "Journaux de recyclage",
       "ru": "Журнал утилизации отходов",
       "pl": null,
@@ -7673,7 +7673,7 @@
     "Residential Directory": {
       "es": null,
       "pt": null,
-      "de": "Das Adressbuch",
+      "de": "Wohnverzeichnis",
       "fr": "Annuaire résidentiel",
       "ru": "Адресная книга",
       "pl": null,
@@ -7697,7 +7697,7 @@
     "Payroll Information": {
       "es": null,
       "pt": null,
-      "de": "Informationen zur Gehaltsabrechnung",
+      "de": "Gehaltsabrechnungen",
       "fr": "Informations salariales",
       "ru": "Платёжная ведомость",
       "pl": null,
@@ -7721,7 +7721,7 @@
     "Maintenance Logs": {
       "es": null,
       "pt": null,
-      "de": "Wartungsprotokoll",
+      "de": "Wartungsprotokolle",
       "fr": "Journaux de maintenance",
       "ru": "Журнал обслуживания",
       "pl": null,
@@ -7733,7 +7733,7 @@
     "Topographical Surveys": {
       "es": null,
       "pt": null,
-      "de": "Topographische Forschung",
+      "de": "Topographische Vermessungen",
       "fr": "Levés topographiques",
       "ru": "Топографические исследования",
       "pl": null,
@@ -7805,7 +7805,7 @@
     "Influence Projections": {
       "es": null,
       "pt": null,
-      "de": "einfluss Vorhersagen",
+      "de": "Einflussvorhersagen",
       "fr": "Perspectives",
       "ru": "Прогноз влияния",
       "pl": null,
@@ -7901,7 +7901,7 @@
     "Campaign Plans": {
       "es": null,
       "pt": null,
-      "de": "Kampagnenplan",
+      "de": "Kampagnenpläne",
       "fr": "Plans de campagne",
       "ru": "План кампании",
       "pl": null,
@@ -7925,7 +7925,7 @@
     "Culinary Recipes": {
       "es": null,
       "pt": null,
-      "de": "Kochen Rezepte",
+      "de": "Kochrezepte",
       "fr": "Recettes culinaires",
       "ru": "Кулинарные рецепты",
       "pl": null,
@@ -7985,7 +7985,7 @@
     "Job Applications": {
       "es": null,
       "pt": null,
-      "de": "Bewerbungen für die Anstellung",
+      "de": "Bewerbungen",
       "fr": "Candidatures professionnelles",
       "ru": "Заявления о приёме на работу",
       "pl": null,
@@ -8057,7 +8057,7 @@
     "Hush": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Beruhigungs-Droge",
       "fr": "Chut",
       "ru": "Тс-с",
       "pl": null,
@@ -8081,7 +8081,7 @@
     "Reactor Output Review": {
       "es": null,
       "pt": null,
-      "de": "Überprüfung der Reaktorleistung",
+      "de": "Reaktorleistungsüberprüfung",
       "fr": "Évaluation énergétique",
       "ru": "Оценка выходной мощности реактора",
       "pl": null,
@@ -8093,7 +8093,7 @@
     "Surveillance Logs": {
       "es": null,
       "pt": null,
-      "de": "Protokolle des Überwachungs",
+      "de": "Überwachungsprotokolle",
       "fr": "Journaux de surveillance",
       "ru": "Журналы систем наблюдения",
       "pl": null,
@@ -8117,7 +8117,7 @@
     "Settlement Defence Plans": {
       "es": null,
       "pt": null,
-      "de": "Siedlung Verteidigungspläne",
+      "de": "Siedlungs-Verteidigungspläne",
       "fr": "Plans de défense d'une installation",
       "ru": "Планы обороны поселения",
       "pl": null,
@@ -8153,7 +8153,7 @@
     "Gene Sequencing Data": {
       "es": null,
       "pt": null,
-      "de": "Gensequenzierung Daten",
+      "de": "Gensequenzierungsdaten",
       "fr": "Données de séquençage génétique",
       "ru": "Данные о секвенировании генов",
       "pl": null,
@@ -8177,7 +8177,7 @@
     "Plant Growth Charts": {
       "es": null,
       "pt": null,
-      "de": "Pflanzenwachstum Diagramme",
+      "de": "Pflanzenwachstumsdiagramme",
       "fr": "Courbes de croissance végétale",
       "ru": "Графики роста растений",
       "pl": null,
@@ -8213,7 +8213,7 @@
     "Literary Fiction": {
       "es": null,
       "pt": null,
-      "de": "Die fiktion Literatur",
+      "de": "Literarische Fiktion",
       "fr": "Romans",
       "ru": "Художественная литература",
       "pl": null,
@@ -8297,7 +8297,7 @@
     "Weapon Test Data": {
       "es": null,
       "pt": null,
-      "de": "Informationen zu Waffentests",
+      "de": "Waffentestdaten",
       "fr": "Données de test d'armes",
       "ru": "Сведения об испытаниях вооружения",
       "pl": null,
@@ -8357,7 +8357,7 @@
     "Spyware": {
       "es": null,
       "pt": null,
-      "de": "Spyware",
+      "de": "Spionage-Software",
       "fr": "Programme-espion",
       "ru": "Шпионские программы",
       "pl": null,
@@ -8369,7 +8369,7 @@
     "Troop Deployment Records": {
       "es": null,
       "pt": null,
-      "de": "Aufzeichnungen über den Landebetrieb",
+      "de": "Truppeneinsatzprotokolle",
       "fr": "Comptes-rendus opérationnels",
       "ru": "Записи о десантных операциях",
       "pl": null,
@@ -8479,7 +8479,7 @@
     "Agricultural Process Sample": {
       "es": null,
       "pt": null,
-      "de": "Beispiel landwirtschaftlicher Prozess",
+      "de": "Muster aus landwirtschaftlichem Prozess",
       "fr": "Échantillon de production agricole",
       "ru": "Образец сельхозпроцесса",
       "pl": null,
@@ -8491,7 +8491,7 @@
     "Xeno-Defence Protocols": {
       "es": null,
       "pt": null,
-      "de": "Alien Threat Defense-Protokolle",
+      "de": "Xeno-Defense-Protokolle",
       "fr": "Protocoles anti-xénomorphes",
       "ru": "Протоколы защиты от инопланетной угрозы",
       "pl": null,
@@ -8551,7 +8551,7 @@
     "Vaccination Records": {
       "es": null,
       "pt": null,
-      "de": "Impfzeitschriften",
+      "de": "Impfprotokolle",
       "fr": "Dossiers de vaccination",
       "ru": "Журналы вакцинации",
       "pl": null,
@@ -8587,7 +8587,7 @@
     "Smear Campaign Plans": {
       "es": null,
       "pt": null,
-      "de": "Pläne für Abstrich Kampagnen",
+      "de": "Hetzkampagnen-Pläne",
       "fr": "Campagne de calomnie",
       "ru": "Планы кампании по дискредитации",
       "pl": null,
@@ -8611,7 +8611,7 @@
     "Shareholder Information": {
       "es": null,
       "pt": null,
-      "de": "Informationen über Aktionäre",
+      "de": "Aktionärsinformationen",
       "fr": "Actionnariat",
       "ru": "Сведения об акционерах",
       "pl": null,
@@ -8623,7 +8623,7 @@
     "Settlement Assault Plans": {
       "es": null,
       "pt": null,
-      "de": "Pläne zum Sturm auf die Siedlung",
+      "de": "Siedlungs-Angriffspläne",
       "fr": "Plans d'assaut d'une installation",
       "ru": "Планы штурма поселения",
       "pl": null,
@@ -8719,7 +8719,7 @@
     "Personal Logs": {
       "es": null,
       "pt": null,
-      "de": "Persönliche Zeitschriften",
+      "de": "Persönliche Aufzeichnungen",
       "fr": "Journaux personnels",
       "ru": "Личные журналы",
       "pl": null,
@@ -8731,7 +8731,7 @@
     "Patrol Routes": {
       "es": null,
       "pt": null,
-      "de": "Patrouillenpläne",
+      "de": "Patrouillenrouten",
       "fr": "Itinéraires de patrouille",
       "ru": "Схемы патрулирования",
       "pl": null,
@@ -8743,7 +8743,7 @@
     "Patient History": {
       "es": null,
       "pt": null,
-      "de": "Krankengeschichte des Patienten",
+      "de": "Anamnese",
       "fr": "Antécédents médicaux",
       "ru": "История болезни пациента",
       "pl": null,
@@ -8755,7 +8755,7 @@
     "NOC Data": {
       "es": null,
       "pt": null,
-      "de": "Geheimagentendaten",
+      "de": "Daten geheimdienstlicher Operationen",
       "fr": "Données d'agent clandestin",
       "ru": "Данные тайного агента",
       "pl": null,
@@ -8815,7 +8815,7 @@
     "Interrogation Recordings": {
       "es": null,
       "pt": null,
-      "de": "Protokolle der Verhöre",
+      "de": "Verhörprotokolle",
       "fr": "Enregistrements d'interrogatoires",
       "ru": "Записи допросов",
       "pl": null,
@@ -8923,7 +8923,7 @@
     "Enhanced Interrogation Recordings": {
       "es": null,
       "pt": null,
-      "de": "Detaillierte Protokolle der Verhöre",
+      "de": "Detaillierte Verhörprotokolle",
       "fr": "Enregistrements d'interrogatoire poussés",
       "ru": "Подробные записи допросов",
       "pl": null,
@@ -8935,7 +8935,7 @@
     "Employment History": {
       "es": null,
       "pt": null,
-      "de": "Arbeitsbuch des Mitarbeiters",
+      "de": "Beschäftigungshistorie",
       "fr": "Expérience professionnelle",
       "ru": "Трудовая книжка",
       "pl": null,
@@ -8959,7 +8959,7 @@
     "Crop Yield Analysis": {
       "es": null,
       "pt": null,
-      "de": "Ertragsanalyse",
+      "de": "Ernteertragsanalyse",
       "fr": "Analyse de rendement agricole",
       "ru": "Анализ урожайности",
       "pl": null,
@@ -9091,7 +9091,7 @@
     "Audio Logs": {
       "es": null,
       "pt": null,
-      "de": "Audioaufnahmen",
+      "de": "Aufnahmeprotokolle",
       "fr": "Journaux audio",
       "ru": "Аудиозаписи",
       "pl": null,
@@ -9127,7 +9127,7 @@
     "Atmospheric Data": {
       "es": null,
       "pt": null,
-      "de": "Planetarische Siedlung",
+      "de": "Atmosphärendaten",
       "fr": "Données athmosphériques",
       "ru": "Атмосферные данные",
       "pl": null,
@@ -9139,7 +9139,7 @@
     "Planetary Settlement": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Planetare Siedlung,
       "fr": "Base planétaire",
       "ru": "Планетарное поселение",
       "pl": null,
@@ -9151,7 +9151,7 @@
     "Item": {
       "es": null,
       "pt": null,
-      "de": "Artikel",
+      "de": "Gegenstand",
       "fr": "Marchandises",
       "ru": "Товары",
       "pl": null,
@@ -9331,7 +9331,7 @@
     "Faster handling": {
       "es": null,
       "pt": null,
-      "de": "Schnelle Verarbeitung",
+      "de": "Schnellere Handhabung",
       "fr": "Maniabilité améliorée",
       "ru": "Ускоренная обработка",
       "pl": null,
@@ -9379,7 +9379,7 @@
     "Added melee damage": {
       "es": null,
       "pt": null,
-      "de": "zusätzlicher Nahkampfschaden",
+      "de": "Zusätzlicher Nahkampfschaden",
       "fr": "Dégats au corps à corps supplémentaires",
       "ru": "Добавлен урон в рукопашном режиме",
       "pl": null,
@@ -9415,7 +9415,7 @@
     "Faster shield regen": {
       "es": null,
       "pt": null,
-      "de": "schnellere Schildregenation",
+      "de": "Schnellere Schildregenation",
       "fr": "Régénération des boucliers accélérée",
       "ru": "Ускоренная регенерация щита",
       "pl": null,
@@ -9463,7 +9463,7 @@
     "Scope": {
       "es": null,
       "pt": null,
-      "de": "Visier",
+      "de": "Zielfernrohr",
       "fr": "Viseur",
       "ru": "Прицел",
       "pl": null,
@@ -9487,7 +9487,7 @@
     "Improved Hip Fire Accuracy": {
       "es": null,
       "pt": null,
-      "de": "verbesserte Hüftfeuergenauigkeit",
+      "de": "Verbesserte Hüftfeuergenauigkeit",
       "fr": "Amélioration de la précision du tir au jugé",
       "ru": "Повышенная точность стрельбы от бедра",
       "pl": null,
@@ -9523,7 +9523,7 @@
     "Higher Accuracy (Kinetic Weapons)": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Genauigkeit (Kinetikwaffe)",
+      "de": "Verbesserte Genauigkeit (Kinetikwaffen)",
       "fr": "Précision Accrue (Armes Cinétiques)",
       "ru": "Повышенная точность (Кинетическое оружие)",
       "pl": null,
@@ -9535,7 +9535,7 @@
     "Higher Accuracy (Thermal Weapons)": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Genauigkeit (Laserwaffe)",
+      "de": "Verbesserte Genauigkeit (Laserwaffen)",
       "fr": "Précision Accrue (Armes Termiques)",
       "ru": "Повышенная точность (Термическое оружие)",
       "pl": null,
@@ -9547,7 +9547,7 @@
     "Higher Accuracy (Plasma Weapons)": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Genauigkeit (Plasmawaffe)",
+      "de": "Verbesserte Genauigkeit (Plasmawaffen)",
       "fr": "Précision Accrue (Armes Plasma)",
       "ru": "Повышенная точность (Плазменное оружие)",
       "pl": null,
@@ -9559,7 +9559,7 @@
     "Combat Movement Speed": {
       "es": null,
       "pt": null,
-      "de": "Bewegungsgeschwindigkeit bekämpfen",
+      "de": "Kampfbewegungsgeschwindigkeit",
       "fr": "Vitesse de déplacement au combat",
       "ru": "Скорость боевого передвижения",
       "pl": null,
@@ -9571,7 +9571,7 @@
     "Expanded Probe Scanning Radius": {
       "es": "Radio de Escaneo de Sonda Ampliado",
       "pt": null,
-      "de": "Erweiterte Reichweite der Sonde",
+      "de": "Erweiterter Sonden-Suchradius",
       "fr": "Rayon de scan de sonde étendu",
       "ru": "Расширенный радиус действия зонда",
       "pl": null,
@@ -9787,7 +9787,7 @@
     "@Bartender": {
       "es": null,
       "pt": null,
-      "de": "Barmann",
+      "de": "Barkeeper",
       "fr": "Barman",
       "ru": "Бармен",
       "pl": null,
@@ -9871,7 +9871,7 @@
     "Improved Hip Fire Accuracy (Manticore plasma)": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Genauigkeit aus der Hüfte (Plasma von Manticore)",
+      "de": "Verbesserte Hüftfeuergenauigkeit (Plasma von Manticore)",
       "fr": null,
       "ru": "Улучшенная точность от бедра (плазменное от Manticore)",
       "pl": null,
@@ -9883,7 +9883,7 @@
     "Improved Hip Fire Accuracy (Kinematic kinetic)": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Genauigkeit aus der Hüfte (Kugeln von Kinematic)",
+      "de": "Verbesserte Hüftfeuergenauigkeit (Kugeln von Kinematic)",
       "fr": null,
       "ru": "Улучшенная точность от бедра (пулевое от Kinematic)",
       "pl": null,
@@ -9895,7 +9895,7 @@
     "Improved Hip Fire Accuracy (Takada laser)": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Genauigkeit aus der Hüfte (Laser von Takada)",
+      "de": "Verbesserte Hüftfeuergenauigkeit (Laser von Takada)",
       "fr": null,
       "ru": "Улучшенная точность от бедра (лазерное от Takada)",
       "pl": null,
@@ -9907,7 +9907,7 @@
     "Headshot damage (Manticore plasma)": {
       "es": null,
       "pt": null,
-      "de": "Kopfshaden (Plasma von Manticore)",
+      "de": "Kopfschussschaden (Plasma von Manticore)",
       "fr": null,
       "ru": "Урон в голову (плазменное от Manticore)",
       "pl": null,
@@ -9919,7 +9919,7 @@
     "Headshot damage (Kinematic kinetic)": {
       "es": null,
       "pt": null,
-      "de": "Kopfshaden (Kugeln von Kinematic)",
+      "de": "Kopfschussschaden (Kugeln von Kinematic)",
       "fr": null,
       "ru": "Урон в голову (пулевое от Kinematic)",
       "pl": null,
@@ -9943,7 +9943,7 @@
     "Headshot damage (Takada laser)": {
       "es": null,
       "pt": null,
-      "de": "Kopfshaden (Laser von Takada)",
+      "de": "Kopfschussschaden (Laser von Takada)",
       "fr": null,
       "ru": "Урон в голову (лазерное от Takada)",
       "pl": null,
@@ -9955,7 +9955,7 @@
     "Shield Disruptor": {
       "es": null,
       "pt": null,
-      "de": "Schild-Unterbrecher",
+      "de": "Schildunterbrecher",
       "fr": null,
       "ru": "Разрушитель щита",
       "pl": null,
@@ -9979,7 +9979,7 @@
     "Energy Cell": {
       "es": null,
       "pt": null,
-      "de": "Energie-Zelle",
+      "de": "Energiezelle",
       "fr": null,
       "ru": "Энергоячейка",
       "pl": null,
@@ -9991,7 +9991,7 @@
     "Shield Projector": {
       "es": null,
       "pt": null,
-      "de": "Schild-Generator",
+      "de": "Schildgenerator",
       "fr": null,
       "ru": "Излучатель щита",
       "pl": null,
@@ -10003,7 +10003,7 @@
     "E-Breach": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "elektronisches Aufbruchswerkzeug",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -10027,7 +10027,7 @@
     "Thermal Cooling Units": {
       "es": "Unidades de Enfriamiento Térmico",
       "pt": null,
-      "de": "Kühlblöcke",
+      "de": "Kühlelemente",
       "fr": null,
       "ru": "Блоки охлаждения",
       "pl": null,
@@ -10039,7 +10039,7 @@
     "Modified Gauss Cannon (Fixed, Medium)": {
       "es": "Cañón Gauss Guardián Modificado (Fijo) (Clase: 2)",
       "pt": null,
-      "de": "Modifizierte Gauß-Kanone (fest, mittlerer)",
+      "de": "Modifizierte Gauß-Kanone (fest, mittel)",
       "fr": null,
       "ru": "Модифицированная гаусс-пушка (фиксированная, средний слот)",
       "pl": null,
@@ -10063,7 +10063,7 @@
     "Modified Shard Cannon (Fixed, Medium)": {
       "es": "Cañón de Esquirlas Guardián Modificado (Fijo) (Clase: 2)",
       "pt": null,
-      "de": "Modifizierte Splitterkanone (fest, mittlerer)",
+      "de": "Modifizierte Splitterkanone (fest, mittel)",
       "fr": null,
       "ru": "Модифицированный «дробовик» (фиксированный, средний слот)",
       "pl": null,
@@ -10087,7 +10087,7 @@
     "Modified Plasma Charger (Fixed, Medium)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Modifizierter Plasmalader (fest, mittel)",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -10099,7 +10099,7 @@
     "Modified Plasma Charger (Fixed, Small)": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Modifizierter Plasmalader (fest, klein)",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -10111,7 +10111,7 @@
     "Modified Mining Laser": {
       "es": null,
       "pt": null,
-      "de": null,
+      "de": "Modifizierter Bergbaulaser",
       "fr": null,
       "ru": null,
       "pl": null,
