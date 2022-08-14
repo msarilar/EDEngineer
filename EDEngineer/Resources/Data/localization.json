@@ -69,10 +69,10 @@
       "cn": null,
       "tr": "Kısa Menzilli Patlatıcı"
     },
-    "Lightweight": {
+     "Lightweight": {
       "es": "Ligero",
       "pt": "Leve",
-      "de": "Leicht",
+      "de": "Leichtgewicht",
       "fr": "Léger",
       "ru": "Облегченный",
       "pl": "Lekki",
@@ -994,10 +994,10 @@
       "cn": null,
       "tr": "Anormal Kalkan Model Analizi"
     },
-    "Abnormal Compact Emission Data": {
+     "Abnormal Compact Emission Data": {
       "es": "Datos de Emisiones Compactas Anormales",
       "pt": "Dados de Emissão Compáctos Anormais",
-      "de": "Anormale Kompakte Emissionsdaten",
+      "de": "Anormale kompakte Emissionsdaten",
       "fr": "Données d'émissions compactes anormales",
       "ru": "Аномальные компактные данные об излучении",
       "pl": "Abnormal Compact Emission Data",
@@ -1049,7 +1049,7 @@
       "cn": null,
       "tr": "Antimon (Rastık Taşı)"
     },
-    "Arsenic": {
+   "Arsenic": {
       "es": "Arsénico",
       "pt": "Arsênico",
       "de": "Arsen",
@@ -1093,7 +1093,7 @@
       "cn": null,
       "tr": "Atipik Şifreleme Arşivleri"
     },
-    "Basic Conductors": {
+   "Basic Conductors": {
       "es": "Conductores Básicos",
       "pt": "Condutores básicos",
       "de": "Einfache Leiter",
@@ -1104,7 +1104,7 @@
       "cn": null,
       "tr": "Temel İletkenler"
     },
-    "Biotech Conductors": {
+   "Biotech Conductors": {
       "es": "Conductores Biotecnológicos",
       "pt": "Condutores biotecnológicos",
       "de": "Biotech-Leiter",
@@ -1115,7 +1115,7 @@
       "cn": null,
       "tr": "Biyoteknoloji İletkenleri"
     },
-    "Bromellite": {
+   "Bromellite": {
       "es": "Bromelita",
       "pt": "Bromelito",
       "de": "Bromellit",
@@ -1126,7 +1126,7 @@
       "cn": null,
       "tr": "Bromelit"
     },
-    "Cadmium": {
+   "Cadmium": {
       "es": "Cadmio",
       "pt": "Cádmio",
       "de": "Kadmium",
@@ -1137,7 +1137,7 @@
       "cn": null,
       "tr": "Kadmiyum"
     },
-    "Carbon": {
+   "Carbon": {
       "es": "Carbono",
       "pt": "Carbono",
       "de": "Kohlenstoff",
@@ -1148,7 +1148,7 @@
       "cn": null,
       "tr": "Karbon"
     },
-    "Chemical Distillery": {
+   "Chemical Distillery": {
       "es": "Destilería Química",
       "pt": "Destilaria química",
       "de": "Chemiedestillerie",
@@ -1159,7 +1159,7 @@
       "cn": null,
       "tr": "Kimyasal Damıtımevi"
     },
-    "Chemical Manipulators": {
+   "Chemical Manipulators": {
       "es": "Manipuladores Químicos",
       "pt": "Manipuladores químicos",
       "de": "Chemische Manipulatoren",
@@ -1170,7 +1170,7 @@
       "cn": null,
       "tr": "Kimyasal Manipülatörler"
     },
-    "Chemical Processors": {
+   "Chemical Processors": {
       "es": "Procesadores Químicos",
       "pt": "Processadores químicos",
       "de": "Chemische Prozessoren",
@@ -1181,10 +1181,10 @@
       "cn": null,
       "tr": "Kimyasal İşlemciler"
     },
-    "Chemical Storage Units": {
+   "Chemical Storage Units": {
       "es": "Unidades de Almacenamiento Químico",
       "pt": "Unidades de armazenamento químico",
-      "de": "Chemische Lagereinheiten",
+      "de": "Lagerungseiten für Chemiestoffe
       "fr": "Unités de stockage chimique",
       "ru": "Контейнеры для химикатов",
       "pl": "Chemical Storage Units",
@@ -1192,7 +1192,7 @@
       "cn": null,
       "tr": "Kimyasal Depolama Birimleri"
     },
-    "Chromium": {
+   "Chromium": {
       "es": "Cromo",
       "pt": "Cromo",
       "de": "Chrom",
@@ -1236,10 +1236,10 @@
       "cn": null,
       "tr": "CMM Kompozit"
     },
-    "Compact Composites": {
+   "Compact Composites": {
       "es": "Compuestos Compactos",
       "pt": "Compostos compactos",
-      "de": "Kompakt-Komposit",
+      "de": "Kompaktkmposite,
       "fr": "Composites compacts",
       "ru": "Спрессованные композиты",
       "pl": "Compact Composites",
@@ -1247,7 +1247,7 @@
       "cn": null,
       "tr": "Kompakt Kompozitler"
     },
-    "Compound Shielding": {
+   "Compound Shielding": {
       "es": "Escudos Compuestos",
       "pt": "Proteção Composta",
       "de": "Verbundschilde",
@@ -1269,7 +1269,7 @@
       "cn": null,
       "tr": "İletken Seramikler"
     },
-    "Conductive Components": {
+   "Conductive Components": {
       "es": "Componentes Conductivos",
       "pt": "Componentes Condutores",
       "de": "Leitfähige Komponenten",
@@ -1280,7 +1280,7 @@
       "cn": null,
       "tr": "İletken Bileşenler"
     },
-    "Conductive Polymers": {
+   "Conductive Polymers": {
       "es": "Polímeros Conductivos",
       "pt": "Polímeros Condutores",
       "de": "Leitfähige Polymere",
@@ -1291,7 +1291,7 @@
       "cn": null,
       "tr": "İletken Polimerler"
     },
-    "Configurable Components": {
+   "Configurable Components": {
       "es": "Componentes Configurables",
       "pt": "Componentes Configuráveis",
       "de": "Konfigurierbare Komponenten",
@@ -1302,7 +1302,7 @@
       "cn": null,
       "tr": "Ayarlanılabilir Bileşenler"
     },
-    "Core Dynamics Composites": {
+   "Core Dynamics Composites": {
       "es": "Compuestos de Core Dynamics",
       "pt": "Componentes da Core Dynamics",
       "de": "Core Dynamics Kompositwerkstoffe",
@@ -1324,7 +1324,7 @@
       "cn": null,
       "tr": "Kırık Endüstriyel Ürün Yazılımı"
     },
-    "Crystal Shards": {
+   "Crystal Shards": {
       "es": "Piedras de Cristal",
       "pt": "Fragmentos de Cristais",
       "de": "Kristallscherben",
@@ -1390,7 +1390,7 @@
       "cn": null,
       "tr": "Eksantrik Hiperuzay Yörüngeleri"
     },
-    "Electrochemical Arrays": {
+   "Electrochemical Arrays": {
       "es": "Matriz Electroquímica",
       "pt": "Matrizes Eletroquímicas",
       "de": "Elektrochemische Detektoren",
@@ -1445,7 +1445,7 @@
       "cn": null,
       "tr": "Egzoz Manifoldu"
     },
-    "Exquisite Focus Crystals": {
+   "Exquisite Focus Crystals": {
       "es": "Cristales de Enfoque Exquisitos",
       "pt": "Cristais de Focalização Finos",
       "de": "Erlesene Laserkristalle",
@@ -1456,7 +1456,7 @@
       "cn": null,
       "tr": "Enfes Odak Kristalleri"
     },
-    "Filament Composites": {
+   "Filament Composites": {
       "es": "Compuestos de Filamentos",
       "pt": "Compostos De Filamentos",
       "de": "Filament-Komposite",
@@ -1467,7 +1467,7 @@
       "cn": null,
       "tr": "Filament Kompozitler"
     },
-    "Flawed Focus Crystals": {
+   "Flawed Focus Crystals": {
       "es": "Cristales de Enfoque Defectuosos",
       "pt": "Cristais de Focalização Falhos",
       "de": "Fehlerhafte Fokuskristalle",
@@ -1478,7 +1478,7 @@
       "cn": null,
       "tr": "Kusurlu Odak Kristalleri"
     },
-    "Focus Crystals": {
+   "Focus Crystals": {
       "es": "Cristales de Enfoque",
       "pt": "Cristais de Focalização",
       "de": "Laserkristalle",
@@ -1489,7 +1489,7 @@
       "cn": null,
       "tr": "Odak Kristalleri"
     },
-    "Galvanising Alloys": {
+   "Galvanising Alloys": {
       "es": "Aleaciones Galvanizadas",
       "pt": "Ligas Galvanizadas",
       "de": "Galvanisierende Legierungen",
@@ -1500,7 +1500,7 @@
       "cn": null,
       "tr": "Galvanizleme Alaşımları"
     },
-    "Germanium": {
+   "Germanium": {
       "es": "Germanio",
       "pt": "Germânio",
       "de": "Germanium",
@@ -1511,7 +1511,7 @@
       "cn": null,
       "tr": "Germanyum"
     },
-    "Grid Resistors": {
+   "Grid Resistors": {
       "es": "Red Resistiva",
       "pt": "Resistores de Grade",
       "de": "Gitterwiderstände",
@@ -1533,7 +1533,7 @@
       "cn": null,
       "tr": "Donanım Tanılama Sensörü"
     },
-    "Heat Conduction Wiring": {
+   "Heat Conduction Wiring": {
       "es": "Cableado de Conducción Calorífica",
       "pt": "Fiação De Condução Térmica",
       "de": "Wärmeleitungsverdrahtung",
@@ -1544,7 +1544,7 @@
       "cn": null,
       "tr": "Isı İletim Kablolaması"
     },
-    "Heat Dispersion Plate": {
+   "Heat Dispersion Plate": {
       "es": "Placa de Dispersión de Calor",
       "pt": "Placa de Dispersão Térmica",
       "de": "Wärmeverteilungsplatte",
@@ -1555,7 +1555,7 @@
       "cn": null,
       "tr": "Isı Dağılım Plakası"
     },
-    "Heat Exchangers": {
+   "Heat Exchangers": {
       "es": "Intercambiadores de Calor",
       "pt": "Trocadores Térmicos",
       "de": "Wärmeaustauscher",
@@ -1566,7 +1566,7 @@
       "cn": null,
       "tr": "Isı Eşanjörleri"
     },
-    "Heat Resistant Ceramics": {
+   "Heat Resistant Ceramics": {
       "es": "Cerámicas Resistentes al Calor",
       "pt": "Cêramicas Termoresistentes",
       "de": "Hitzefeste Keramik",
@@ -1577,7 +1577,7 @@
       "cn": null,
       "tr": "Isıya Dayanıklı Seramikler"
     },
-    "Heat Vanes": {
+   "Heat Vanes": {
       "es": "Palas Térmicas",
       "pt": "Ventoinha Térmica",
       "de": "Wärmeleitbleche",
@@ -1599,7 +1599,7 @@
       "cn": null,
       "tr": "Soğutucu Ara Bağlantısı"
     },
-    "High Density Composites": {
+   "High Density Composites": {
       "es": "Compuestos de Alta Densidad",
       "pt": "Compostos de alta densidade",
       "de": "Komposite hoher Dichte",
@@ -1621,7 +1621,7 @@
       "cn": null,
       "tr": "HN Şok Dağı"
     },
-    "Hybrid Capacitors": {
+   "Hybrid Capacitors": {
       "es": "Capacitadores Híbridos",
       "pt": "Capacitores Híbridos",
       "de": "Hybridkondensatoren",
@@ -1632,7 +1632,7 @@
       "cn": null,
       "tr": "Hibrit Kondansatörleri"
     },
-    "Imperial Shielding": {
+   "Imperial Shielding": {
       "es": "Escudos Imperiales",
       "pt": "Proteção Imperial",
       "de": "Imperiale Schilde",
@@ -1643,7 +1643,7 @@
       "cn": null,
       "tr": "İmparatorluk Kalkanlaması"
     },
-    "Improvised Components": {
+   "Improvised Components": {
       "es": "Componentes Improvisados",
       "pt": "Componentes Improvisados",
       "de": "Behelfskomponenten",
@@ -1687,7 +1687,7 @@
       "cn": null,
       "tr": "İyon Dağıtıcı"
     },
-    "Iron": {
+   "Iron": {
       "es": "Hierro",
       "pt": "Ferro",
       "de": "Eisen",
@@ -1720,7 +1720,7 @@
       "cn": null,
       "tr": "Manyetik Yayıcı Bobin"
     },
-    "Manganese": {
+   "Manganese": {
       "es": "Manganeso",
       "pt": "Manganês",
       "de": "Mangan",
@@ -1742,7 +1742,7 @@
       "cn": null,
       "tr": "Mekanik Bileşenler"
     },
-    "Mechanical Equipment": {
+   "Mechanical Equipment": {
       "es": "Equipamiento Mecánico",
       "pt": "Equipamento Mecânico",
       "de": "Mechanisches Equipment",
@@ -1753,7 +1753,7 @@
       "cn": null,
       "tr": "Mekanik Ekipman"
     },
-    "Mechanical Scrap": {
+   "Mechanical Scrap": {
       "es": "Chatarra Mecánica",
       "pt": "Sucata Mecânica",
       "de": "Mechanischer Schrott",
@@ -1764,7 +1764,7 @@
       "cn": null,
       "tr": "Mekanik Hurda"
     },
-    "Mercury": {
+   "Mercury": {
       "es": "Mercurio",
       "pt": "Mercúrio",
       "de": "Quecksilber",
@@ -1797,7 +1797,7 @@
       "cn": null,
       "tr": "Mikro Örgülü Soğutma Hortumları"
     },
-    "Military Grade Alloys": {
+   "Military Grade Alloys": {
       "es": "Aleaciones de Grado Militar",
       "pt": "Ligas nível militar",
       "de": "Militärqualitätslegierungen",
@@ -1808,7 +1808,7 @@
       "cn": null,
       "tr": "Askeri Sınıf Alaşımlar"
     },
-    "Military Supercapacitors": {
+   "Military Supercapacitors": {
       "es": "Supercapacitadores Militares",
       "pt": "Supercapacitores militares",
       "de": "Militärische Superkondensatoren",
@@ -1852,7 +1852,7 @@
       "cn": null,
       "tr": "Modüler Terminaller"
     },
-    "Molybdenum": {
+   "Molybdenum": {
       "es": "Molibdeno",
       "pt": "Molibdênio",
       "de": "Molibdän",
@@ -1885,7 +1885,7 @@
       "cn": null,
       "tr": "Neofabrik Yalıtım"
     },
-    "Nickel": {
+   "Nickel": {
       "es": "Níquel",
       "pt": "Níquel",
       "de": "Nickel",
@@ -1896,7 +1896,7 @@
       "cn": null,
       "tr": "Nikel"
     },
-    "Niobium": {
+   "Niobium": {
       "es": "Niobio",
       "pt": "Nióbio",
       "de": "Niobium",
@@ -1917,7 +1917,7 @@
       "cs": "Open Symmetric Keys",
       "cn": null,
       "tr": "Açık Simetrik Anahtarlar"
-    },
+   },
     "Osmium": {
       "es": "Osmio",
       "pt": "Ósmio",
@@ -1929,7 +1929,7 @@
       "cn": null,
       "tr": "Osmiyum"
     },
-    "Pattern Alpha Obelisk Data": {
+   "Pattern Alpha Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Alpha",
       "pt": "Dados de Obelisco de Padrão Alfa",
       "de": "Alpha-Muster-Obeliskendaten",
@@ -1940,7 +1940,7 @@
       "cn": null,
       "tr": "Model Alfa Dikilitaş Verileri"
     },
-    "Pattern Beta Obelisk Data": {
+   "Pattern Beta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Beta",
       "pt": "Dados de Obelisco de Padrão Beta",
       "de": "Beta-Muster-Obeliskendaten",
@@ -1951,7 +1951,7 @@
       "cn": null,
       "tr": "Desen Beta Dikilitaş Verileri"
     },
-    "Pattern Delta Obelisk Data": {
+   "Pattern Delta Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Delta",
       "pt": "Dados de Obelisco de Padrão Delta",
       "de": "Delta-Muster-Obeliskendaten",
@@ -1962,7 +1962,7 @@
       "cn": null,
       "tr": "Desen Delta Dikilitaş Verileri"
     },
-    "Pattern Epsilon Obelisk Data": {
+   "Pattern Epsilon Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Epsilon",
       "pt": "Dados de Obelisco de Padrão Epsilon",
       "de": "Epsilon-Muster-Obeliskendaten",
@@ -1973,7 +1973,7 @@
       "cn": null,
       "tr": "Desen Epsilon Dikilitaş Verileri"
     },
-    "Pattern Gamma Obelisk Data": {
+   "Pattern Gamma Obelisk Data": {
       "es": "Datos de Obelisco de Patrón Gamma",
       "pt": "Dados de Obelisco de Padrão Gama",
       "de": "Gamma-Muster-Obeliskendaten",
@@ -1995,7 +1995,7 @@
       "cn": null,
       "tr": "Özgün Kalkan Frekans Verileri"
     },
-    "Pharmaceutical Isolators": {
+   "Pharmaceutical Isolators": {
       "es": "Aislantes Farmacéuticos",
       "pt": "Isolantes farmacêuticos",
       "de": "Pharmazeutische Isolatoren",
@@ -2006,7 +2006,7 @@
       "cn": null,
       "tr": "İlaç İzolatörleri"
     },
-    "Phase Alloys": {
+   "Phase Alloys": {
       "es": "Aleaciones de Fase",
       "pt": "Ligas de Fase",
       "de": "Phasenlegierungen",
@@ -2017,7 +2017,7 @@
       "cn": null,
       "tr": "Faz Alaşımları"
     },
-    "Phosphorus": {
+   "Phosphorus": {
       "es": "Fósforo",
       "pt": "Fósforo",
       "de": "Phosphor",
@@ -2028,7 +2028,7 @@
       "cn": null,
       "tr": "Fosfor"
     },
-    "Platinum": {
+   "Platinum": {
       "es": "Platino",
       "pt": "Platina",
       "de": "Platin",
@@ -2039,7 +2039,7 @@
       "cn": null,
       "tr": "Platinyum"
     },
-    "Polonium": {
+   "Polonium": {
       "es": "Polonio",
       "pt": "Polônio",
       "de": "Polonium",
@@ -2050,7 +2050,7 @@
       "cn": null,
       "tr": "Polonyum"
     },
-    "Polymer Capacitors": {
+   "Polymer Capacitors": {
       "es": "Capacitadores de Polímeros",
       "pt": "Capacitores de Polímeros",
       "de": "Polymerkondensatoren",
@@ -2082,7 +2082,7 @@
       "cs": "Power Transfer Bus",
       "cn": null,
       "tr": "Güç Aktarım Veri Yolu"
-    },
+   },
     "Praseodymium": {
       "es": "Praseodimio",
       "pt": "Praseodímio",
@@ -2094,7 +2094,7 @@
       "cn": null,
       "tr": "Praseodimyum"
     },
-    "Precipitated Alloys": {
+   "Precipitated Alloys": {
       "es": "Aleaciones de Precipitación",
       "pt": "Ligas Precipitadas",
       "de": "Gehärtete Legierungen",
@@ -2105,7 +2105,7 @@
       "cn": null,
       "tr": "Çökeltilmiş Alaşımlar"
     },
-    "Proprietary Composites": {
+   "Proprietary Composites": {
       "es": "Compuestos con Patente",
       "pt": "Compostos Propietários",
       "de": "Kompositwerkstoffe",
@@ -2116,7 +2116,7 @@
       "cn": null,
       "tr": "Tescilli Kompozitler"
     },
-    "Proto Heat Radiators": {
+   "Proto Heat Radiators": {
       "es": "Protorradiadores Térmicos",
       "pt": "Proto radiadores térmicos",
       "de": "Proto-Wärmestrahler",
@@ -2127,7 +2127,7 @@
       "cn": null,
       "tr": "Proto Isı Radyatörleri"
     },
-    "Proto Light Alloys": {
+   "Proto Light Alloys": {
       "es": "Protoaleaciones Ligeras",
       "pt": "Proto ligas leves",
       "de": "Leichte Legierungen (Proto)",
@@ -2138,7 +2138,7 @@
       "cn": null,
       "tr": "Proto Hafif Alaşımlar"
     },
-    "Proto Radiolic Alloys": {
+   "Proto Radiolic Alloys": {
       "es": "Aleaciones Protorradiadas",
       "pt": "Proto ligas radiólicas",
       "de": "Radiologische Legierungen (Proto)",
@@ -2160,7 +2160,7 @@
       "cn": null,
       "tr": "Radyasyon Baffle"
     },
-    "Refined Focus Crystals": {
+   "Refined Focus Crystals": {
       "es": "Cristales de Enfoque Refinados",
       "pt": "Cristais de focalização refinado",
       "de": "Raffinierte Laserkristalle",
@@ -2182,7 +2182,7 @@
       "cn": null,
       "tr": "Güçlendirilmiş Montaj Plakası"
     },
-    "Ruthenium": {
+   "Ruthenium": {
       "es": "Rutenio",
       "pt": "Rutênio",
       "de": "Ruthenium",
@@ -2413,10 +2413,10 @@
       "cn": null,
       "tr": "Tanımlanamayan Tarama Arşivleri"
     },
-    "Sensor Fragment": {
+     "Sensor Fragment": {
       "es": "Fragmento de Sensor",
       "pt": "Fragmento do sensor",
-      "de": "Unbekanntes Fragment",
+      "de": "Sensorfragment",
       "fr": "Fragment inconnu",
       "ru": "Обломок сенсора",
       "pl": "Fragmenty Sensorów",
@@ -2512,7 +2512,7 @@
       "cn": "电子反制仪",
       "tr": "MKM"
     },
-    "船体": {
+     "Hull": {
       "es": "Casco",
       "pt": "Casco",
       "de": "Rumpfhülle",
@@ -2520,10 +2520,10 @@
       "ru": "Корпус",
       "pl": "Kadłub",
       "cs": "Hull",
-      "cn": null,
+      "cn": "船体",
       "tr": "Gövde"
     },
-    "FSD拦截器": {
+     "FSD interdictor": {
       "es": "Interdictor MDD",
       "pt": "Interditor MDD",
       "de": "FSA-Unterbrecher",
@@ -2688,10 +2688,10 @@
       "cn": "最近更新",
       "tr": "Son Güncelleme:"
     },
-    "Unlock Window": {
+     "Unlock Window": {
       "es": "Desbloquear Ventana",
       "pt": "Desbloquear janela",
-      "de": "Fixierung aufheben",
+      "de": "Fensterfixierung aufheben",
       "fr": "Débloquer la Fenêtre",
       "ru": "Разблокировать окно",
       "pl": "Odblokuj okno",
@@ -2699,10 +2699,10 @@
       "cn": "解锁窗口",
       "tr": "Pencereyi Aç"
     },
-    "Show entries with no stock?": {
+     "Show entries with no stock?": {
       "es": "Mostrar elementos que no tienes",
       "pt": "Mostrar entradas sem estoque?",
-      "de": "Einträge ohne Bestand anzeigen?",
+      "de": "Einträge ohne Warenbestand anzeigen?",
       "fr": "Afficher les entrées sans stock?",
       "ru": "Показывать пустые записи?",
       "pl": "Pokazać składniki bez zapasów?",
@@ -2721,10 +2721,10 @@
       "cn": "是否仅显示收藏夹内容？",
       "tr": "Sadece fovarilerinizi görmek ister misiniz?"
     },
-    "Grade Filter": {
+     "Grade Filter": {
       "es": "Filtro de grados",
       "pt": "Filtro de grades",
-      "de": "Zugangsgrad Filter",
+      "de": "Qualitätsgrad-Filter",
       "fr": "Filtrer par Grades",
       "ru": "Фильтр по уровню",
       "pl": "Filtr poziomu",
@@ -2732,10 +2732,10 @@
       "cn": "等级分类",
       "tr": "Sınıf Filtresi"
     },
-    "Engineer Filter": {
+     "Engineer Filter": {
       "es": "Filtro de ingenieros",
       "pt": "Filtro de engenheiros",
-      "de": "Ingenieur Filter",
+      "de": "Ingenieur-Filter",
       "fr": "Filtrer par Ingénieurs",
       "ru": "Фильтр по инженеру",
       "pl": "Filtr inżyniera",
@@ -2743,10 +2743,10 @@
       "cn": "工程师分类",
       "tr": "Mühendis Filtresi"
     },
-    "Type Filter": {
+     "Type Filter": {
       "es": "Filtro de tipos",
       "pt": "Filtro de tipos",
-      "de": "Typ Filter",
+      "de": "Typ-Filter",
       "fr": "Filtrer par Type",
       "ru": "Фильтр по типу",
       "pl": "Filtr typu",
@@ -2754,10 +2754,10 @@
       "cn": "部件种类",
       "tr": "Tip Filtresi"
     },
-    "Ignored And Favorite Filter": {
+     "Ignored And Favorite Filter": {
       "es": "Filtro de ignorados y favoritos",
       "pt": "Filtro de Ignorados e Favoritos",
-      "de": "Ignorierte und Favoriten Filter",
+      "de": "Ignorierte und Favoriten-Filter",
       "fr": "Filtrer par Ignorés et Favoris",
       "ru": "Фильтр по игнорируемым и избранным",
       "pl": "Filtr ulubionych i ignorowanych",
@@ -2765,10 +2765,10 @@
       "cn": "按忽略和收藏分类",
       "tr": "Görmezden Gelinen Favori Filtre"
     },
-    "Craftable Filter": {
+     "Craftable Filter": {
       "es": "Filtro de elaborados",
       "pt": "Filtro de produções",
-      "de": "Baubarkeit Filter",
+      "de": "Baubarkeit-Filter",
       "fr": "Filtrer par Craft disponible",
       "ru": "Фильтр по доступности",
       "pl": "Filtr możliwych do stworzenia",
@@ -2776,10 +2776,10 @@
       "cn": "是否可用于制作",
       "tr": "Yapılabilenler Filtresi"
     },
-    "Ingredient Filter (Reversed)": {
+     "Ingredient Filter (Reversed)": {
       "es": "Filtro de ingredientes (invertido)",
       "pt": "Filtro de ingredientes (Inverter)",
-      "de": "Bestandteile Filter (invers)",
+      "de": "Bestandteile-Filter (invers)",
       "fr": "Filtrer par Ingrédients (Inversé)",
       "ru": "Фильтр по ингредиентам (Обратный)",
       "pl": "Filtr składników (odwrócony)",
@@ -2831,10 +2831,10 @@
       "cn": "显示",
       "tr": "Göster"
     },
-    "Toggle Window Mode (Locked/Unlocked)": {
+     "Toggle Window Mode (Locked/Unlocked)": {
       "es": "Cambiar el modo ventana (bloqueado/desbloqueado)",
       "pt": "Alterar o modo janela (Bloqueado/Desbloquado)",
-      "de": "Fenster Modus umschalten (fixiert/freigegeben)",
+      "de": "Fenster-Modus umschalten (fixiert/freigegeben)",
       "fr": "Mode de la fenêtre (Bloquer/arrière plan)",
       "ru": "Переключить режим окна (Заблокировано/Разблокировано)",
       "pl": "Przełącz tryb okna (zablokowany/odblokowany)",
@@ -2952,10 +2952,10 @@
       "cn": "请求的快捷键 ({0}) 无效",
       "tr": "İstenilen Kısayol ({0}) Geçerli Değil"
     },
-    "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
+     "You must use a regular key to accompany the modifier key like (Ctrl+F10 or Shift+R)": {
       "es": "Debes utilizar una tecla normal para acompañar la tecla modificadora como (Ctrl+F10 o Mayús+R)",
-      "pt": "Você deve usar uma tecla comum para acompanhar a tecla modificadora como (Ctrl+F10 ou Shift+R)",
-      "de": "Sie müssen eine reguläre Taste zusammen mit einer modifizierenden Taste verwenden wie (Strg+F10 or Shift+R)",
+      "pt": "Você deve usar uma tecla comum para acompanhar a tecla modificadora como (Strg+F10 ou Shift+R)",
+      "de": "Sie müssen eine reguläre Taste zusammen mit einer modifizierenden Taste verwenden wie (Strg+F10 or Umschalt+R)",
       "fr": "Vous devez utiliser une touche normale pour accompagner la touche de modification comme (Ctrl + F10 ou Maj + R)",
       "ru": "Вы должны использовать символьную клавишу вместе с клавишей-модификатором, например (Ctrl+F10 или Shift+R)",
       "pl": "Musisz skorzystać z regularnego klawisza towarzyszącemu modyfikatorowi (np. Ctrl+F10 lub Shift+R)",
@@ -2963,10 +2963,10 @@
       "cn": "必须使用功能键配合常规按键比如 (Ctrl+F10 or Shift+R)",
       "tr": "Ctrl+F10 veya Shift+R) gibi normal bir tuş kullanmalısınız"
     },
-    "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
+     "Something went wrong in parsing your logs, open an issue on GitHub with this information :": {
       "es": "Se ha producido un error al analizar tus registros, envía una incidencia a GitHub con la siguiente información :",
       "pt": "Algo deu errado na análise de seus logs, abra um problema no GitHub com esta informação :",
-      "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben :",
+      "de": "Es ist ein Fehler beim Parsen Ihrer Logs aufgetreten, bitte öffnen Sie eine Issue-Meldung auf GitHub mit folgenden Angaben:",
       "fr": "Erreur lors de la lecture de vos logs, merci d'ouvrir un ticket sur GitHub :",
       "ru": "Что-то пошло не так при чтении ваших логов, создайте issue на GitHub c этой информацией :",
       "pl": "Coś poszło nie tak podczas parsowania twoich logów, stwórz issue na GitHub-ie z tą informacją :",
@@ -2974,10 +2974,10 @@
       "cn": "解析日志时出错，请在GitHub上反馈",
       "tr": "Günlüklerinizi ayrıştırırken bir şeyler ters gitti, bu bilgilerle GitHub'da bir sorun (issue) açın:"
     },
-    "Unknown material, please contact the author ! {0}": {
+     "Unknown material, please contact the author ! {0}": {
       "es": "¡Material desconocido, contacta con el autor! {0}",
       "pt": "Material Thargoid, entre em contato com o autor! {0}",
-      "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor ! {0}",
+      "de": "Unbekanntes Material, bitte kontaktieren Sie den Autor! {0}",
       "fr": "Matériau inconnu, contactez l'auteur ! {0}",
       "ru": "Неизвестный материал, пожалуйста свяжитесь с автором ! {0}",
       "pl": "Nieznany materiał, skontaktuj się z autorem ! {0}",
@@ -2996,10 +2996,10 @@
       "cn": "其它",
       "tr": "Hiç biri"
     },
-    "Favorite": {
+     "Favorite": {
       "es": "Favorito",
       "pt": "Favorito",
-      "de": "Favoriten",
+      "de": "Favorit",
       "fr": "Favoris",
       "ru": "Избранные",
       "pl": "Ulubione",
@@ -3095,10 +3095,10 @@
       "cn": "关闭",
       "tr": "Kapat"
     },
-    "Select a new log directory": {
+     "Select a new log directory": {
       "es": "Selecciona un nuevo directorio de logs",
       "pt": "Selecione um novo diretório de log",
-      "de": "Wählen Sie ein neues Log Verzeichnis aus",
+      "de": "Wählen Sie ein neues Log-Verzeichnis aus",
       "fr": "Choisissez un nouveau répertoire de logs",
       "ru": "Выбрать новую папку с log файлом",
       "pl": "Wybierz nowy katalog z logami",
@@ -3117,10 +3117,10 @@
       "cn": "找不到游戏的日志文件夹，请手动选择",
       "tr": "Elite için kayıt dosyası bulunamadı. Kayıt dosyasını belirtmek zorundasınız"
     },
-    "Selected directory doesn't seem to contain any log file ; are you sure?": {
+     "Selected directory doesn't seem to contain any log file ; are you sure?": {
       "es": "El directorio seleccionado no parece contener ningún log ; ¿estás seguro?",
       "pt": "O diretório selecionado parece não conter nenhum arquivo de log ; você tem certeza?",
-      "de": "Das gewählte Verzeichnis scheint keine Log Files zu enthalten ; Sind Sie sicher?",
+      "de": "Das gewählte Verzeichnis scheint keine Log-Files zu enthalten, sind Sie sicher?",
       "fr": "Le répertoire choisi ne semble pas contenir de fichier ; êtes vous sûr?",
       "ru": "Выбранная папка не содержит log файл ; вы уверены?",
       "pl": "Wygląda na to że wybrany katalog nie zawiera żadnego pliku z logami ; czy jesteś pewien?",
@@ -3150,10 +3150,10 @@
       "cn": "您没有选择日志文件夹，EDEngineer将无法自动同步。不过，你仍然可以手动使用该应用程序。",
       "tr": "Kayıt dosyası seçmedin. EDEngineer değişiklikleri takıp edemeyecek. Yine de uygulamayı manuel olarak kullanabilirsin."
     },
-    "No folder in use ; click to change": {
+     "No folder in use ; click to change": {
       "es": "Ninguna carpeta en uso ; haz clic para cambiar",
       "pt": "Nenhuma pasta em uso ; clique para mudar",
-      "de": "Kein Verzeichnis in Verwendung ; Klicken Sie zum Ändern",
+      "de": "Kein Verzeichnis in Verwendung; Klicken Sie zum Ändern",
       "fr": "Aucun répertoire ; cliquez ici pour changer",
       "ru": "Папка не указана ; нажмите для изменения",
       "pl": "Brak folderu w użyciu ; kliknij by zmienić",
@@ -3205,10 +3205,10 @@
       "cn": "采矿",
       "tr": "Madencilik"
     },
-    "Mission reward": {
+     "Mission reward": {
       "es": "Recompensa de misión",
       "pt": "Recompensa da missão",
-      "de": "Missions-Belohnungen",
+      "de": "Missions-Belohnung",
       "fr": "Récompense de mission",
       "ru": "Награда за миссию",
       "pl": "Nagroda za ukończenie misji",
@@ -3216,10 +3216,10 @@
       "cn": "任务奖励",
       "tr": "Görev Ödülü"
     },
-    "Mining (ice rings)": {
+     "Mining (ice rings)": {
       "es": "Minería (anillos helados)",
       "pt": "Mineração (anéis de gelo)",
-      "de": "Abbau (Eis Ringe)",
+      "de": "Abbau (Eis-Ringe)",
       "fr": "Minage (anneaux glacés)",
       "ru": "Добыча (ледяные кольца)",
       "pl": "Górnictwo (pierścienie: lodowe)",
@@ -3337,10 +3337,10 @@
       "cn": "摧毁未知遗迹（UA）",
       "tr": "Yok Edilmiş Bilinmeyen Yapı"
     },
-    "Ship scanning (combat ships)": {
+     "Ship scanning (combat ships)": {
       "es": "Escaneo de naves (naves de combate)",
       "pt": "Escaneamento de naves (naves de combate)",
-      "de": "Schiff Scan (Kampfschiffe)",
+      "de": "Schiffs-Scan (Kampfschiffe)",
       "fr": "Scan de vaisseaux de Combat",
       "ru": "Сканирование корабля (боевые)",
       "pl": "Skanowanie statków (typ: bojowe)",
@@ -3362,7 +3362,7 @@
     "Ship scanning (transport ships)": {
       "es": "Escaneo de naves (naves de transporte)",
       "pt": "Escaneamento de naves (naves de transporte)",
-      "de": "Schiff Scan (Transportschiffe)",
+      "de": "Schiffs-Scan (Transportschiffe)",
       "fr": "Scan de vaisseaux (Type : Transport)",
       "ru": "Сканирование корабля (транспортные)",
       "pl": "Skanowanie statków (typ: transportowe)",
@@ -3395,7 +3395,7 @@
     "Ship scanning": {
       "es": "Escaneo de naves",
       "pt": "Escaneamento de naves",
-      "de": "Schiff Scan",
+       "de": "Schiffs-Scan",
       "fr": "Scan de vaisseaux",
       "ru": "Сканирование корабля",
       "pl": "Skanowanie statków",
@@ -3672,7 +3672,7 @@
     "AFM Refill": {
       "es": "Recarga de UAM",
       "pt": "Recarga de UMT",
-      "de": "AFW-Auffrischung",
+      "de": "AFW wiederauffüllen",
       "fr": "Unité de maintenance rechargée",
       "ru": "Снабжение АПР",
       "pl": "AFM Refill",
@@ -3823,10 +3823,10 @@
       "cn": "选择本地API服务器的端口",
       "tr": "Yerel API sunucusu için bir port seçin"
     },
-    "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
+     "Auto run server on EDEngineer startup with this port? (if not ticked, the server will stop when you unlock/lock the window)": {
       "es": "¿Ejecutar automáticamente el servidor al iniciar EDEngineer con este puerto? (si no está marcada, el servidor se detendrá al desbloquear/bloquear la ventana)",
       "pt": "Servidor de execução automática no EDEngineer, iniciar com esta porta? (se não estiver assinalado, o servidor pode parar quando a janela estiver bloqueada ou desbloqueada)",
-      "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim freigeben/fixieren des Fensters stoppen)",
+      "de": "Soll der Server beim Starten von EDEngineer automatisch mit diesem Port starten? (Wenn nicht selektiert, wird der Server beim Freigeben/Fixieren des Fensters stoppen)",
       "fr": "Lancer automatiquement le serveur au démarrage avec ce port ? (sinon, le serveur s'arrêtera lorsque vous changerez le mode de la fenêtre (Bloquer/arrière plan)')",
       "ru": "Запускать сервер с этим портом автоматически при запуске EDEngineer? (если этот параметр не выбран, сервер остановится, когда вы разблокируете/заблокируете окно)",
       "pl": "Automatycznie uruchamiaj serwer podczas włączania EDEngineer na tym porcie? (jeżeli nie zaznaczone, serwer zostanie zatrzymany kiedy odblokujesz/zablokujesz okno)",
@@ -3933,10 +3933,10 @@
       "cn": "数量",
       "tr": "Sayı"
     },
-    "Thargoid Ship Signature": {
+     "Thargoid Ship Signature": {
       "es": "Firma Térmica de Nave Thargoide",
       "pt": "Assinatura de nave desconhecida",
-      "de": "Unbekannte Schiffsignatur",
+      "de": "Thargoid Schiffssignatur",
       "fr": "Signature de Vaisseau Thargoid",
       "ru": "Сигнатура таргоидского корабля",
       "pl": "Sygnatura Statku Thargoid'ów",
@@ -3947,7 +3947,7 @@
     "Thargoid Wake Data": {
       "es": "Datos de Estela Thargoide",
       "pt": "Dados de Rastro Desconhecido",
-      "de": "Unbekannte Sogwolke",
+      "de": "Thargoid Sogwolke",
       "fr": "Donnée de Sillage Thargoid",
       "ru": "Данные следа таргоидского корабля",
       "pl": "Thargoid Wake Data",
@@ -3955,10 +3955,10 @@
       "cn": null,
       "tr": "Thargoid Uyanma Verileri"
     },
-    "Check all filters": {
+     "Check all filters": {
       "es": "Marcar todos los filtros",
       "pt": "Marcar todos os filtros",
-      "de": "Alle Filter anwählen",
+      "de": "Alle Filter auswählen",
       "fr": "Tous les filtres",
       "ru": "Включить все фильтры",
       "pl": "Zaznacz wszystkie filtry",
@@ -4153,10 +4153,10 @@
       "cn": null,
       "tr": "Sessiz Başlatma"
     },
-    "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
+     "Search visible blueprints (by Type, Name, Grade or Engineer) - split your terms with a space for multi-criteria search": {
       "es": "Buscar planos disponibles (por tipo, nombre, grado o ingeniero) - separa los términos con un espacio para una búsqueda multicriterio",
       "pt": "Procure diagramas disponíveis (por Tipo, Nome, Grau ou Engenheiro) - separe os termos com um espaço para pesquisa multi-critério",
-      "de": "Suche nach verfügbaren Bauplänen (Begriffe durch 'Leerzeichen' trennen)",
+      "de": "Suche nach verfügbaren Bauplänen (nach Typ, Name oder Ingenieur) - Begriffe durch 'Leerzeichen' für die Suche nach mehreren Kriterien trennen)",
       "fr": "Rechercher les plans de fabrications visible (par Type, Nom, Grade ou Ingénieur) - séparez vos termes avec un espace pour une recharche multi-critères",
       "ru": "Поиск видимых чертежей (по Типу, Названию, Уровню или Инженеру) - введите условия через пробел для использования нескольких критериев сортировки",
       "pl": "Przeszukaj widoczne schematy (po Typie, Nazwie, Poziomie lub nazwie Inżyniera) - oddziel terminy przy użyciu spacji by wyszukiwać za pomocą wielokrotnych kryterii",
@@ -4164,10 +4164,10 @@
       "cn": "搜索可见的蓝图（按类型、名称、等级或工程师）-用空格分隔术语，以便进行多条件搜索",
       "tr": "Görünür planları arayın (Tür, Ad, Derece veya Mühendise göre) - terimlerinizi çok kriterli arama için bir boşlukla bölün"
     },
-    "Configure Notifications": {
+     "Configure Notifications": {
       "es": "Configurar notificaciones",
       "pt": "Configurar notificações",
-      "de": "Benachrichtigung Konfigurieren",
+      "de": "Benachrichtigungen konfigurieren",
       "fr": "Configurer les Notifications",
       "ru": "Настройка оповещений",
       "pl": "Skonfiguruj powiadomienia",
@@ -4175,10 +4175,10 @@
       "cn": "通知设定",
       "tr": "Bildirimleri Ayarla"
     },
-    "Notifications": {
+     "Notifications": {
       "es": "Notificaciones",
       "pt": "Notificações",
-      "de": "Benachrichtigung",
+      "de": "Benachrichtigungen",
       "fr": "Notifications",
       "ru": "Оповещения",
       "pl": "Powiadomienia",
@@ -4285,10 +4285,10 @@
       "cn": "可用语音",
       "tr": "Mevcut Sesler"
     },
-    "filtered entries - click this to clear": {
+     "filtered entries - click this to clear": {
       "es": "entradas filtradas - haz clic aquí para limpiar",
       "pt": "Entradas filtradas - Clique nela para limpar",
-      "de": "Gefilterte Einträge - Klick HIER um zu Löschen",
+      "de": "Gefilterte Einträge - Klicke HIER um zu Löschen",
       "fr": "entrées filtrées - cliquez ici pour nettoyer",
       "ru": "отфильтрованные записи - нажмите для очистки",
       "pl": "Filtrowane wpisy - Kliknij to żeby wyczyścić",
@@ -4296,10 +4296,10 @@
       "cn": "已过滤的条目-单击清除",
       "tr": "filtrelenmiş girişler - temizlemek için buna tıklayın"
     },
-    "Thargoid Material Composition Data": {
+     "Thargoid Material Composition Data": {
       "es": "Datos de Composición de Material Thargoide",
       "pt": "Dados de composição de material Thargoid",
-      "de": "unbekannte Materialzusammensetzung",
+      "de": "Thargoid Materialzusammensetzung",
       "fr": "Donnée de Composition de Matérel Thargoid",
       "ru": "Данные о составе таргоидских материалов",
       "pl": null,
@@ -4307,10 +4307,10 @@
       "cn": null,
       "tr": "Thargoid Malzeme Bileşimi Verileri"
     },
-    "Thargoid Residue Data": {
+     "Thargoid Residue Data": {
       "es": "Datos de Residuo Thargoide",
       "pt": "Dados de resíduo Thargoid",
-      "de": "unbekannte Rückstandsdatenanalyse",
+      "de": "Thargoid Rückstandsdatenanalyse",
       "fr": "Résidus de Données Thargoid",
       "ru": "Данные об осадке таргоидского происхождения",
       "pl": null,
@@ -4318,10 +4318,10 @@
       "cn": null,
       "tr": "Thargoid Kalıntı Verileri"
     },
-    "Thargoid Structural Data": {
+     "Thargoid Structural Data": {
       "es": "Datos Estructurales Thargoide",
       "pt": "Dados de Estrutura Thargoid",
-      "de": "unbekannte Strukturdaten",
+      "de": "Thargoid Strukturdaten",
       "fr": "Données Structurelles Thargoid",
       "ru": "Данные о структуре таргоидского объекта",
       "pl": null,
@@ -4329,10 +4329,10 @@
       "cn": null,
       "tr": "Thargoid Yapısal Veriler"
     },
-    "Thargoid Carapace": {
+     "Thargoid Carapace": {
       "es": "Caparazón Thargoide",
       "pt": "Carapaça Thargoid",
-      "de": "unbekannte Panzerung",
+      "de": "Thargoid Panzerung",
       "fr": "Carapace Thargoid",
       "ru": "Таргоидский панцирь",
       "pl": null,
@@ -4340,10 +4340,10 @@
       "cn": null,
       "tr": "Targoid Kabuk"
     },
-    "Thargoid Energy Cell": {
+     "Thargoid Energy Cell": {
       "es": "Célula de Energía Thargoide",
       "pt": "Célula de Energia Thargoid",
-      "de": "unbekannte Energiezelle",
+      "de": "Thargoid Energiezelle",
       "fr": "Cellule d'Énergie Thargoid",
       "ru": "Таргоидская энергоячейка",
       "pl": null,
@@ -4351,10 +4351,10 @@
       "cn": null,
       "tr": "Targoid Enerji Hücresi"
     },
-    "Thargoid Organic Circuitry": {
+     "Thargoid Organic Circuitry": {
       "es": "Circuitería Orgánica Thargoide",
       "pt": "Circuito Orgânico Thargoid",
-      "de": "unbekannte organische Struktur",
+      "de": "Thargoid organische Struktur",
       "fr": "Circuit Organique Thargoid",
       "ru": "Таргоидская органическая схема",
       "pl": null,
@@ -4362,10 +4362,10 @@
       "cn": null,
       "tr": "Thargoid Organik Devre"
     },
-    "Thargoid Technological Components": {
+     "Thargoid Technological Components": {
       "es": "Componentes Tecnológicos Thargoide",
       "pt": "Componente Tecnológico Thargoid",
-      "de": "unbekannte Technologie-Komponente",
+      "de": "Thargoid Technologie-Komponente",
       "fr": "Composants Technologique Thargoid",
       "ru": "Компоненты таргоидской техники",
       "pl": null,
@@ -4373,10 +4373,10 @@
       "cn": null,
       "tr": "Thargoid Teknolojik Bileşenler"
     },
-    "Ship Flight Data": {
+     "Ship Flight Data": {
       "es": "Datos de Vuelos de Nave",
       "pt": "Dados de voo da nave",
-      "de": "Schiff-Flug-Daten",
+      "de": "Schiffs-Flugdaten",
       "fr": "Donnée de Vol",
       "ru": "Полетные данные корабля",
       "pl": "Dane lotu Statku",
@@ -4384,10 +4384,10 @@
       "cn": null,
       "tr": "Gemi Uçuş Verisi"
     },
-    "Ship System Data": {
+     "Ship System Data": {
       "es": "Datos de Sistemas de Nave",
       "pt": "Dados do sistema da nave",
-      "de": "Schiff-System-Daten",
+      "de": "Schiffs-Systemdaten",
       "fr": "Données de Système de Navigation",
       "ru": "Данные бортовых систем корабля",
       "pl": "Dane Systemów Statku",
@@ -4648,10 +4648,10 @@
       "cn": null,
       "tr": "Xihe Arkadaşları"
     },
-    "Raw": {
+     "Raw": {
       "es": "Materiales",
       "pt": "Bruto",
-      "de": "roh",
+      "de": "Elemente",
       "fr": "À l'état brut",
       "ru": "Неочищенные минералы",
       "pl": "Surowe",
@@ -4659,10 +4659,10 @@
       "cn": "原始",
       "tr": "Saf"
     },
-    "Raw Only": {
+     "Raw Only": {
       "es": "Sólo Materiales",
       "pt": "Apenas Bruto",
-      "de": "nur roh",
+      "de": "Nur Elemente",
       "fr": "Uniquement à l'état brut",
       "ru": "Только неочищенные минералы",
       "pl": "Tylko surowe",
@@ -4670,10 +4670,10 @@
       "cn": "仅限原始",
       "tr": "Sadece Saf"
     },
-    "Manufactured": {
+     "Manufactured": {
       "es": "Manufacturados",
       "pt": "Fabricado",
-      "de": "hergestellt",
+      "de": "Gefertigt",
       "fr": "Manufacturé(s)",
       "ru": "Компоненты",
       "pl": null,
@@ -4681,10 +4681,10 @@
       "cn": "人造",
       "tr": "İmal (Manufactured)"
     },
-    "Manufactured Only": {
+     "Manufactured Only": {
       "es": "Sólo Manufacturados",
       "pt": "Apenas Fabricado",
-      "de": "nur hergestellt",
+      "de": "Nur Gefertigt",
       "fr": "Uniquement manufacturé(s)",
       "ru": "Только компоненты",
       "pl": null,
@@ -4703,10 +4703,10 @@
       "cn": null,
       "tr": "Tanınmayan Bileşen (günlüklerde göründüğü gibi ad gösteriliyor). Lütfen yazara bunun gerçek adının ne olduğunu bildirmek için bir GitHub sorunu (issue) açın!"
     },
-    "Group ingredients?": {
+     "Group ingredients?": {
       "es": "Agrupar ingredientes",
       "pt": "Grupo de ingredientes?",
-      "de": "Gruppenzutaten?",
+      "de": "Bestandteile gruppieren?",
       "fr": "Groupe d'ingrédients ?",
       "ru": "Группировать ингредиенты?",
       "pl": null,
@@ -5000,10 +5000,10 @@
       "cn": null,
       "tr": "Bor"
     },
-    "Guardian Weapon Blueprint Segment": {
+     "Guardian Weapon Blueprint Segment": {
       "es": "Fragmento de Plano de Armamento Guardián",
       "pt": "Segmento de Diagrama de Arma Guardian",
-      "de": "Guardian-Waffenbauplansegment",
+      "de": "Guardian-Waffenbauplanfragment",
       "fr": "Morceau de plan d'arme Guardians",
       "ru": "Фрагмент чертежа оружия Стражей",
       "pl": null,
@@ -5055,11 +5055,10 @@
       "cn": null,
       "tr": "Muhafız Sentinel Silah Parçaları"
     },
-    "Guardian Module Blueprint Segment": {
+     "Guardian Module Blueprint Segment": {
       "es": "Fragmento de Plano de Módulo Guardián",
       "pt": "Segmento de Diagrama de Módulo Guardian",
-      "de": "Guardian-Modulbauplansegment",
-      "fr": "Morceau de plan de module Guardians",
+      "de": "Guardian-Modulbauplanfragmentardians",
       "ru": "Фрагмент чертежа модуля Стражей",
       "pl": null,
       "cs": "Guardian Module Blueprint Segment",
@@ -5077,10 +5076,10 @@
       "cn": null,
       "tr": "Guardian Sentinel Enkazı Bileşenleri"
     },
-    "Guardian Vessel Blueprint Segment": {
+     "Guardian Vessel Blueprint Segment": {
       "es": "Fragmento de Plano de Nave Guardián",
       "pt": "Fragmento de Diagrama de nave Guardian",
-      "de": "Guardian-Schiffsbauplansegment",
+      "de": "Guardian-Schiffsbauplanfragment",
       "fr": "Morceau de plan de chasseur Guardians",
       "ru": "Фрагмент чертежа судна Стражей",
       "pl": null,
@@ -5957,7 +5956,7 @@
       "cn": null,
       "tr": "Derin Şarj"
     },
-    "Mass Manager": {
+     "Mass Manager": {
       "es": "Gestión de Masa",
       "pt": "Gestor de Massa",
       "de": "Massemanager",
@@ -6419,10 +6418,10 @@
       "cn": null,
       "tr": "Muhafız Plazma Şarj Cihazı (Taretli ,Küçük)"
     },
-    "Guardian FSD Booster": {
+     "Guardian FSD Booster": {
       "es": "Potenciador de Motor de Distorsión Guardián",
       "pt": "Potenciador Do Motor de Distorção de Fase Guardian",
-      "de": "Guardian-Frameshiftantriebsbooster",
+      "de": "Guardian-Frameshiftantrieb-Booster",
       "fr": "Survolteur FSD - Guardians",
       "ru": "Ускоритель FSD Стражей",
       "pl": null,
@@ -6672,10 +6671,10 @@
       "cn": "模块价值:",
       "tr": "Modül Değeri"
     },
-    "Rebuy:": {
+     "Rebuy:": {
       "es": "Recompra:",
       "pt": "Recompra:",
-      "de": "Wiederbeschaffungskosten:",
+      "de": "Ersatzwert:",
       "fr": "Racheter",
       "ru": "Страховка:",
       "pl": null,
@@ -6866,10 +6865,10 @@
       "cn": null,
       "tr": "Silah Şematiği"
     },
-    "Chemical Sample": {
+     "Chemical Sample": {
       "es": null,
       "pt": null,
-      "de": "Chemische Probe",
+      "de": "Chemieprobe",
       "fr": "Échantillon chimique",
       "ru": "Образец химпроизводства",
       "pl": null,
@@ -6878,10 +6877,10 @@
       "cn": null,
       "tr": "Kimyasal Örnek"
     },
-    "G-Meds": {
+     "G-Meds": {
       "es": null,
       "pt": null,
-      "de": "G-Medikamente",
+      "de": "G-Medizin",
       "fr": "Traitement gravitationnel",
       "ru": "G-медпрепараты",
       "pl": null,
@@ -6890,10 +6889,10 @@
       "cn": null,
       "tr": "G Kiti"
     },
-    "Inertia Canister": {
+     "Inertia Canister": {
       "es": null,
       "pt": null,
-      "de": "Trägheitsbehälter",
+      "de": "Trägheits-Container",
       "fr": "Conteneur inertiel",
       "ru": "Инертный контейнер",
       "pl": null,
@@ -6938,10 +6937,10 @@
       "cn": null,
       "tr": "Kompakt Kitaplık"
     },
-    "Deep Mantle Sample": {
+     "Deep Mantle Sample": {
       "es": null,
       "pt": null,
-      "de": "Probe vom unteren Erdmantel ",
+      "de": "Innerer-Mantel-Probe ",
       "fr": "Échantillon de manteau inférieur",
       "ru": "Образец из глубинной мантии",
       "pl": null,
@@ -6950,10 +6949,10 @@
       "cn": null,
       "tr": "Derin Manto Örneği"
     },
-    "Compression-Liquefied Gas": {
+     "Compression-Liquefied Gas": {
       "es": null,
       "pt": null,
-      "de": "Kompressionsverflüssigtes Gas",
+      "de": "Komprimiertes Flüssiggas",
       "fr": "Gaz liquéfié",
       "ru": "Сжиженный газ",
       "pl": null,
@@ -6962,7 +6961,7 @@
       "cn": null,
       "tr": "Sıkıştırma-Sıvılaştırılmış Gaz"
     },
-    "Graphene": {
+     "Graphene": {
       "es": "Grafeno",
       "pt": null,
       "de": "Graphen",
@@ -6974,7 +6973,7 @@
       "cn": null,
       "tr": "Grafen"
     },
-    "Chemical Catalyst": {
+     "Chemical Catalyst": {
       "es": "Catalizador químico",
       "pt": null,
       "de": "Chemischer Katalysator",
@@ -6986,10 +6985,10 @@
       "cn": null,
       "tr": "Kimyasal Katalizör"
     },
-    "Circuit Board": {
+     "Circuit Board": {
       "es": null,
       "pt": null,
-      "de": "Leiterplatte",
+      "de": "Schaltplatte",
       "fr": "Circuit imprimé",
       "ru": "Электроплата",
       "pl": null,
@@ -6998,10 +6997,10 @@
       "cn": null,
       "tr": "Devre Kartı"
     },
-    "Circuit Switch": {
+     "Circuit Switch": {
       "es": null,
       "pt": null,
-      "de": "Schaltkreisschalter",
+      "de": "Elektroschalter",
       "fr": "Commutateur",
       "ru": "Выключатель цепи",
       "pl": null,
@@ -7037,7 +7036,7 @@
     "Micro Supercapacitor": {
       "es": null,
       "pt": null,
-      "de": "Mikro-Superkondensator",
+      "de": "Mikro-Superkondensatoren",
       "fr": "Microsupercondensateur",
       "ru": "Микросуперконденсатор",
       "pl": null,
@@ -7154,10 +7153,10 @@
       "cn": null,
       "tr": "Aerojel"
     },
-    "Chemical Superbase": {
+     "Chemical Superbase": {
       "es": null,
       "pt": null,
-      "de": "Chemische Superlauge",
+      "de": "Chemische Superbase",
       "fr": "Superbase chimique",
       "ru": "Химическое супероснование",
       "pl": null,
@@ -7190,10 +7189,10 @@
       "cn": null,
       "tr": "Viskoelastik Polimer"
     },
-    "Carbon Fibre Plating": {
+     "Carbon Fibre Plating": {
       "es": null,
       "pt": null,
-      "de": "Carbonfaserpanzerung",
+      "de": "Carbonfaserplatten",
       "fr": "Plaques en fibres de carbone",
       "ru": "Углеволоконная броня",
       "pl": null,
@@ -7226,10 +7225,10 @@
       "cn": null,
       "tr": "Sağlık Ekranı"
     },
-    "Building Schematic": {
+     "Building Schematic": {
       "es": null,
       "pt": null,
-      "de": "Gebäudeschema",
+      "de": "Gebäudeplan",
       "fr": "Plan de bâtiment",
       "ru": "Чертёж здания",
       "pl": null,
@@ -7253,7 +7252,7 @@
     "Insight Entertainment Suite": {
       "es": null,
       "pt": null,
-      "de": "Unterhaltungssuite InSight",
+       "de": "Insight-Entertainment-Bibliothek",
       "fr": "Divertissements Insight",
       "ru": "Медиаустройство InSight",
       "pl": null,
@@ -7262,10 +7261,10 @@
       "cn": null,
       "tr": "İçgörü Eğlence Kıyafeti"
     },
-    "Nutritional Concentrate": {
+     "Nutritional Concentrate": {
       "es": null,
       "pt": null,
-      "de": "Nährstoffkonzentrat",
+      "de": "Nahrungskonzentrat",
       "fr": "Concentré nutritif",
       "ru": "Питательный концентрат",
       "pl": null,
@@ -7286,10 +7285,10 @@
       "cn": null,
       "tr": "Giysi Şematiği"
     },
-    "Universal Translator": {
+     "Universal Translator": {
       "es": null,
       "pt": null,
-      "de": "Universalübersetzer",
+      "de": "Universal-Übersetzer",
       "fr": "Traducteur universel",
       "ru": "Универсальный переводчик",
       "pl": null,
@@ -7301,7 +7300,7 @@
     "Degraded Power Regulator": {
       "es": null,
       "pt": null,
-      "de": "Verschlissener Energieregulator",
+       "de": "Ausrangierter Energieregulator",
       "fr": "Régulateur de puissance endommagé",
       "ru": "Выработанный регулятор мощности",
       "pl": null,
@@ -7310,10 +7309,10 @@
       "cn": null,
       "tr": "Düşük Güç Regülatörü"
     },
-    "Insight": {
+     "Insight": {
       "es": null,
       "pt": null,
-      "de": "InSight",
+      "de": "Insight",
       "fr": "Insight",
       "ru": "Insight",
       "pl": null,
@@ -7322,10 +7321,10 @@
       "cn": null,
       "tr": "İçgörü"
     },
-    "Microbial Inhibitor": {
+     "Microbial Inhibitor": {
       "es": null,
       "pt": null,
-      "de": "Mikrobieller Inhibitor",
+      "de": "Mikrobieller Hemmstoff",
       "fr": "Inhibiteur microbien",
       "ru": "Микробный ингибитор",
       "pl": null,
@@ -7346,10 +7345,10 @@
       "cn": null,
       "tr": "Araç Şematiği"
     },
-    "Insight Data Bank": {
+     "Insight Data Bank": {
       "es": null,
       "pt": null,
-      "de": "InSight-Datenbank",
+      "de": "Insight-Datenbank",
       "fr": "Banque de données d'Insight",
       "ru": "Банк данных InSight",
       "pl": null,
@@ -7382,10 +7381,10 @@
       "cn": null,
       "tr": "Balistik Veriler"
     },
-    "Radioactivity Data": {
+     "Radioactivity Data": {
       "es": null,
       "pt": null,
-      "de": "Radioaktivitätsdaten",
+      "de": "Daten zur Radioaktivität",
       "fr": "Relevés de radioactivité",
       "ru": "Информация о радиоактивности",
       "pl": null,
@@ -7418,10 +7417,10 @@
       "cn": null,
       "tr": "Motor"
     },
-    "Titanium Plating": {
+     "Titanium Plating": {
       "es": null,
       "pt": null,
-      "de": "Titanpanzerung",
+      "de": "Titanplatten",
       "fr": "Plaques en titane",
       "ru": "Титановая броня",
       "pl": null,
@@ -7442,10 +7441,10 @@
       "cn": null,
       "tr": "Silah Bileşeni"
     },
-    "Electrical Fuse": {
+     "Electrical Fuse": {
       "es": null,
       "pt": null,
-      "de": "Elektrische Sicherung",
+      "de": "Elektrosicherung",
       "fr": "Fusible électrique",
       "ru": "Предохранитель",
       "pl": null,
@@ -7478,10 +7477,10 @@
       "cn": null,
       "tr": "Tungsten Karbür"
     },
-    "Manufacturing Instructions": {
+     "Manufacturing Instructions": {
       "es": null,
       "pt": null,
-      "de": "Herstellungsanweisung",
+      "de": "Herstellungsanweisungen",
       "fr": "Guides industriels",
       "ru": "Производственные инструкции",
       "pl": null,
@@ -7490,10 +7489,10 @@
       "cn": null,
       "tr": "Üretim Talimatları"
     },
-    "Push": {
+     "Push": {
       "es": null,
       "pt": null,
-      "de": "Aufputsch-Droge",
+      "de": "Push-Droge",
       "fr": "Boost",
       "ru": "Рывок",
       "pl": null,
@@ -7538,10 +7537,10 @@
       "cn": null,
       "tr": "Epinefrin"
     },
-    "Cast Fossil": {
+     "Cast Fossil": {
       "es": null,
       "pt": null,
-      "de": "Fossilienabguss",
+      "de": "Fossilienfund",
       "fr": "Moulage de fossile",
       "ru": "Окаменелый отпечаток",
       "pl": null,
@@ -7550,10 +7549,10 @@
       "cn": null,
       "tr": "Fosil Dökümü"
     },
-    "True Form Fossil": {
+   "True Form Fossil": {
       "es": null,
       "pt": null,
-      "de": "Intaktes Fossil",
+      "de": "Makelloses Fossil",
       "fr": "Fossile intact",
       "ru": "Окаменелость истинной формы",
       "pl": null,
@@ -7562,7 +7561,7 @@
       "cn": null,
       "tr": "Bozulmamış Fosil"
     },
-    "Californium": {
+   "Californium": {
       "es": null,
       "pt": null,
       "de": "Californium",
@@ -7574,10 +7573,10 @@
       "cn": null,
       "tr": "Kalifoniyum"
     },
-    "Refinement Process Sample": {
+   "Refinement Process Sample": {
       "es": null,
       "pt": null,
-      "de": "Raffinationsprozessmuster",
+      "de": "Raffinerieverfahren-Probe",
       "fr": "Échantillon de production de raffinage",
       "ru": "Образец с очистного производства",
       "pl": null,
@@ -7586,7 +7585,7 @@
       "cn": null,
       "tr": "İyileştirme İşlemi Örneği"
     },
-    "Surveillance Equipment": {
+   "Surveillance Equipment": {
       "es": null,
       "pt": null,
       "de": "Überwachungsausrüstung",
@@ -7598,7 +7597,7 @@
       "cn": null,
       "tr": "Gözetim Ekipmanı"
     },
-    "Petrified Fossil": {
+   "Petrified Fossil": {
       "es": null,
       "pt": null,
       "de": "Versteinertes Fossil",
@@ -7610,10 +7609,10 @@
       "cn": null,
       "tr": "Taşlaşmış Fosil"
     },
-    "Accident Logs": {
+   "Accident Logs": {
       "es": null,
       "pt": null,
-      "de": "Unfallprotokolle",
+      "de": "Unfall-Logs",
       "fr": "Journaux d'accidents",
       "ru": "Журнал происшествий",
       "pl": null,
@@ -7622,10 +7621,10 @@
       "cn": null,
       "tr": "Kaza Kayıtları"
     },
-    "Air Quality Reports": {
+     "Air Quality Reports": {
       "es": null,
       "pt": null,
-      "de": "Luftqualitätsberichte",
+      "de": "Berichte zur Luftqualität",
       "fr": "Rapports de qualité de l'air",
       "ru": "Отчёты о качестве воздуха",
       "pl": null,
@@ -7634,10 +7633,10 @@
       "cn": null,
       "tr": "Hava Kalitesi Raporları"
     },
-    "Census Data": {
+     "Census Data": {
       "es": null,
       "pt": null,
-      "de": "Volkszählungsdaten",
+      "de": "Zensusdaten",
       "fr": "Données de recensement",
       "ru": "Данные переписи населения",
       "pl": null,
@@ -7646,10 +7645,10 @@
       "cn": null,
       "tr": "Nüfus Sayım Verileri"
     },
-    "Multimedia Entertainment": {
+     "Multimedia Entertainment": {
       "es": null,
       "pt": null,
-      "de": "Multimediale Unterhaltung",
+      "de": "Multimedia-Unterhaltung",
       "fr": "Médiathèque",
       "ru": "Мультимедийные развлечения",
       "pl": null,
@@ -7658,10 +7657,10 @@
       "cn": null,
       "tr": "Multimedya Eğlencesi"
     },
-    "Recycling Logs": {
+     "Recycling Logs": {
       "es": null,
       "pt": null,
-      "de": "Abfallrecyclingsaufzeichnungen",
+      "de": "Recycling-Logs",
       "fr": "Journaux de recyclage",
       "ru": "Журнал утилизации отходов",
       "pl": null,
@@ -7670,10 +7669,10 @@
       "cn": null,
       "tr": "Geri Dönüşüm Günlükleri"
     },
-    "Residential Directory": {
+     "Residential Directory": {
       "es": null,
       "pt": null,
-      "de": "Wohnverzeichnis",
+      "de": "Einwohnerverzeichnis",
       "fr": "Annuaire résidentiel",
       "ru": "Адресная книга",
       "pl": null,
@@ -7682,10 +7681,10 @@
       "cn": null,
       "tr": "Konut Dizini"
     },
-    "Union Membership": {
+     "Union Membership": {
       "es": null,
       "pt": null,
-      "de": "Gemeinschaftsmitgliedsschaft",
+      "de": "Gewerkschaftsmitgliedschaft",
       "fr": "Liste d'adhérents",
       "ru": "Список членов союза",
       "pl": null,
@@ -7694,10 +7693,10 @@
       "cn": null,
       "tr": "Birlik Üyeliği"
     },
-    "Payroll Information": {
+     "Payroll Information": {
       "es": null,
       "pt": null,
-      "de": "Gehaltsabrechnungen",
+      "de": "Gehaltsinformationen",
       "fr": "Informations salariales",
       "ru": "Платёжная ведомость",
       "pl": null,
@@ -7706,10 +7705,10 @@
       "cn": null,
       "tr": "Bordro Bilgileri"
     },
-    "Duty Rota": {
+     "Duty Rota": {
       "es": null,
       "pt": null,
-      "de": "Dienstplan",
+      "de": "Dienstpläne",
       "fr": "Planning professionnel",
       "ru": "График дежурств",
       "pl": null,
@@ -7718,10 +7717,10 @@
       "cn": null,
       "tr": "Görev Rotası"
     },
-    "Maintenance Logs": {
+     "Maintenance Logs": {
       "es": null,
       "pt": null,
-      "de": "Wartungsprotokolle",
+      "de": "Wartungs-Logs",
       "fr": "Journaux de maintenance",
       "ru": "Журнал обслуживания",
       "pl": null,
@@ -7730,10 +7729,10 @@
       "cn": null,
       "tr": "Bakım Kayıtları"
     },
-    "Topographical Surveys": {
+     "Topographical Surveys": {
       "es": null,
       "pt": null,
-      "de": "Topographische Vermessungen",
+      "de": "Topographische Erhebung
       "fr": "Levés topographiques",
       "ru": "Топографические исследования",
       "pl": null,
@@ -7742,10 +7741,10 @@
       "cn": null,
       "tr": "Topografik Araştırmalar"
     },
-    "Travel Permits": {
+     "Travel Permits": {
       "es": null,
       "pt": null,
-      "de": "Reisegenehmigungen",
+      "de": "Reiseerlaubnisse",
       "fr": "Autorisations de déplacement",
       "ru": "Разрешение на поездки",
       "pl": null,
@@ -7766,10 +7765,10 @@
       "cn": null,
       "tr": "Maden Araştırması"
     },
-    "Mining Analytics": {
+     "Mining Analytics": {
       "es": null,
       "pt": null,
-      "de": "Bergbau-Analytik",
+      "de": "Abbau-Analytik",
       "fr": "Analyses minières",
       "ru": "Анализ горнодобывающей промышленности",
       "pl": null,
@@ -7802,10 +7801,10 @@
       "cn": null,
       "tr": "Fraksiyon Haberleri"
     },
-    "Influence Projections": {
+     "Influence Projections": {
       "es": null,
       "pt": null,
-      "de": "Einflussvorhersagen",
+      "de": "Einfluss-Projektionen",
       "fr": "Perspectives",
       "ru": "Прогноз влияния",
       "pl": null,
@@ -7814,10 +7813,10 @@
       "cn": null,
       "tr": "Etki (İnfluence) Projeksiyonları"
     },
-    "Stellar Activity Logs": {
+     "Stellar Activity Logs": {
       "es": null,
       "pt": null,
-      "de": "Stellar-Aktivitätsprotokolle",
+      "de": "Sternenaktivitäts-Logs",
       "fr": "Journaux d'activité stellaire",
       "ru": "Журналы звёздной активности",
       "pl": null,
@@ -7826,10 +7825,10 @@
       "cn": null,
       "tr": "Uydu Aktivite Kayıtları"
     },
-    "Visitor Register": {
+     "Visitor Register": {
       "es": null,
       "pt": null,
-      "de": "Besucherverzeichnis",
+      "de": "Besucherliste",
       "fr": "Registre de visites",
       "ru": "Реестр посетителей",
       "pl": null,
@@ -7838,10 +7837,10 @@
       "cn": null,
       "tr": "Ziyaretçi Kaydı"
     },
-    "Chemical Inventory": {
+     "Chemical Inventory": {
       "es": null,
       "pt": null,
-      "de": "Chemisches Inventar",
+      "de": "Chemische Betsandsliste",
       "fr": "Inventaire chimique",
       "ru": "Опись химикатов",
       "pl": null,
@@ -7874,10 +7873,10 @@
       "cn": null,
       "tr": "Mikro Hidrolik"
     },
-    "Weapon Inventory": {
+     "Weapon Inventory": {
       "es": null,
       "pt": null,
-      "de": "Waffeninventar",
+      "de": "Waffeninventarliste",
       "fr": "Inventaire d'armement",
       "ru": "Опись вооружения",
       "pl": null,
@@ -7910,10 +7909,10 @@
       "cn": null,
       "tr": "Kampanya Planları"
     },
-    "Combat Training Material": {
+     "Combat Training Material": {
       "es": null,
       "pt": null,
-      "de": "Kampftrainingsmaterial",
+      "de": "Kampftraining-Materialien",
       "fr": "Méthodes d'entraînement au combat",
       "ru": "Учебные материалы по боевой подготовке",
       "pl": null,
@@ -7922,10 +7921,10 @@
       "cn": null,
       "tr": "Savaş Eğitim Materyali"
     },
-    "Culinary Recipes": {
+     "Culinary Recipes": {
       "es": null,
       "pt": null,
-      "de": "Kochrezepte",
+      "de": "Kulinarische Rezepte",
       "fr": "Recettes culinaires",
       "ru": "Кулинарные рецепты",
       "pl": null,
@@ -7946,10 +7945,10 @@
       "cn": null,
       "tr": "Çalışan Dizini"
     },
-    "Evacuation Protocols": {
+     "Evacuation Protocols": {
       "es": null,
       "pt": null,
-      "de": "Evakuierungspläne",
+      "de": "Evakuierungsprotokolle",
       "fr": "Protocoles d'évacuation",
       "ru": "Планы эвакуации",
       "pl": null,
@@ -7958,10 +7957,10 @@
       "cn": null,
       "tr": "Tahliye Protokolleri"
     },
-    "Purchase Requests": {
+     "Purchase Requests": {
       "es": null,
       "pt": null,
-      "de": "Kaufanfragen",
+      "de": "Kaufaufzeichnungen",
       "fr": "Demandes d'achats",
       "ru": "Запросы на покупку",
       "pl": null,
@@ -7970,10 +7969,10 @@
       "cn": null,
       "tr": "Satın Alım İstekleri"
     },
-    "Next of Kin Records": {
+     "Next of Kin Records": {
       "es": null,
       "pt": null,
-      "de": "Aufzeichnungen über die nächsten Angehörigen",
+      "de": "Angehörigen-Aufzeichnungen",
       "fr": "Liste de proches",
       "ru": "Сведения о ближайших родственниках",
       "pl": null,
@@ -7994,10 +7993,10 @@
       "cn": null,
       "tr": "İşe Alımlar"
     },
-    "Exploration Journals": {
+     "Exploration Journals": {
       "es": null,
       "pt": null,
-      "de": "Explorationsjournale",
+      "de": "Erkundungstagebücher",
       "fr": "Journaux d'exploration",
       "ru": "Исследовательские дневники",
       "pl": null,
@@ -8030,10 +8029,10 @@
       "cn": null,
       "tr": "Propaganda"
     },
-    "Digital Designs": {
+     "Digital Designs": {
       "es": null,
       "pt": null,
-      "de": "Digitale Designs",
+      "de": "Digitale Konzepte",
       "fr": "Plans numériques",
       "ru": "Дизайнерские проекты",
       "pl": null,
@@ -8054,10 +8053,10 @@
       "cn": null,
       "tr": "Biyokimyasal Ajan"
     },
-    "Hush": {
+     "Hush": {
       "es": null,
       "pt": null,
-      "de": "Beruhigungs-Droge",
+      "de": "Schnurr-Droge",
       "fr": "Chut",
       "ru": "Тс-с",
       "pl": null,
@@ -8066,10 +8065,10 @@
       "cn": null,
       "tr": "Sus"
     },
-    "Lazarus": {
+     "Lazarus": {
       "es": null,
       "pt": null,
-      "de": "Lazarus",
+      "de": "Lazarus-Droge",
       "fr": "Lazare",
       "ru": "Лазарь",
       "pl": null,
@@ -8078,10 +8077,10 @@
       "cn": null,
       "tr": "Lazarus"
     },
-    "Reactor Output Review": {
+     "Reactor Output Review": {
       "es": null,
       "pt": null,
-      "de": "Reaktorleistungsüberprüfung",
+      "de": "Evaluirung der Reaktorleistung",
       "fr": "Évaluation énergétique",
       "ru": "Оценка выходной мощности реактора",
       "pl": null,
@@ -8090,10 +8089,10 @@
       "cn": null,
       "tr": "Reaktör Çıkışı İncelemesi"
     },
-    "Surveillance Logs": {
+     "Surveillance Logs": {
       "es": null,
       "pt": null,
-      "de": "Überwachungsprotokolle",
+      "de": "Überwachungs-Logs",
       "fr": "Journaux de surveillance",
       "ru": "Журналы систем наблюдения",
       "pl": null,
@@ -8102,10 +8101,10 @@
       "cn": null,
       "tr": "Gözetim Günlükleri"
     },
-    "Operational Manual": {
+     "Operational Manual": {
       "es": null,
       "pt": null,
-      "de": "Handbuch",
+      "de": "Bedienungsanleitung",
       "fr": "Mode d'emploi",
       "ru": "Руководство по эксплуатации",
       "pl": null,
@@ -8114,10 +8113,10 @@
       "cn": null,
       "tr": "Kullanım Klavuzu"
     },
-    "Settlement Defence Plans": {
+     "Settlement Defence Plans": {
       "es": null,
       "pt": null,
-      "de": "Siedlungs-Verteidigungspläne",
+      "de": "Siedlungsverteidigungspläne",
       "fr": "Plans de défense d'une installation",
       "ru": "Планы обороны поселения",
       "pl": null,
@@ -8126,10 +8125,10 @@
       "cn": null,
       "tr": "Uydu Defans Planları"
     },
-    "Conflict History": {
+     "Conflict History": {
       "es": null,
       "pt": null,
-      "de": "Geschichte des Konflikts",
+      "de": "Konflikthistorie",
       "fr": "Historique de conflit",
       "ru": "История конфликта",
       "pl": null,
@@ -8138,10 +8137,10 @@
       "cn": null,
       "tr": "Karışıklık (Conflict) Geçmişi"
     },
-    "Sales Records": {
+     "Sales Records": {
       "es": null,
       "pt": null,
-      "de": "Verkaufsberichte",
+      "de": "Verkaufszahlen",
       "fr": "Historique des ventes",
       "ru": "Отчёты о продажах",
       "pl": null,
@@ -8150,10 +8149,10 @@
       "cn": null,
       "tr": "Satış Kayıtları"
     },
-    "Gene Sequencing Data": {
+     "Gene Sequencing Data": {
       "es": null,
       "pt": null,
-      "de": "Gensequenzierungsdaten",
+      "de": "Gen-Sequenzierungsdaten",
       "fr": "Données de séquençage génétique",
       "ru": "Данные о секвенировании генов",
       "pl": null,
@@ -8174,10 +8173,10 @@
       "cn": null,
       "tr": "Kimyasal Formüller"
     },
-    "Plant Growth Charts": {
+     "Plant Growth Charts": {
       "es": null,
       "pt": null,
-      "de": "Pflanzenwachstumsdiagramme",
+      "de": "Diagramme zum Pflanzenwachstum",
       "fr": "Courbes de croissance végétale",
       "ru": "Графики роста растений",
       "pl": null,
@@ -8186,10 +8185,10 @@
       "cn": null,
       "tr": "Bitki Büyüme Tabloları"
     },
-    "Genetic Research": {
+     "Genetic Research": {
       "es": null,
       "pt": null,
-      "de": "Genetische Forschung",
+      "de": "Genforschung",
       "fr": "Recherches génétiques",
       "ru": "Генетические исследования",
       "pl": null,
@@ -8198,10 +8197,10 @@
       "cn": null,
       "tr": "Genetik Araştırma"
     },
-    "Cat Media": {
+     "Cat Media": {
       "es": null,
       "pt": null,
-      "de": "Katzenmedien",
+      "de": "Katzen-Medien",
       "fr": "Médiathèque féline",
       "ru": "Медиаконтент с котиками",
       "pl": null,
@@ -8210,11 +8209,10 @@
       "cn": null,
       "tr": "Kedi Medyası"
     },
-    "Literary Fiction": {
+     "Literary Fiction": {
       "es": null,
       "pt": null,
-      "de": "Literarische Fiktion",
-      "fr": "Romans",
+      "de": "Belletristik",
       "ru": "Художественная литература",
       "pl": null,
       "cs": null,
@@ -8222,10 +8220,10 @@
       "cn": null,
       "tr": "Edebi Kurgu"
     },
-    "Network Access History": {
+     "Network Access History": {
       "es": null,
       "pt": null,
-      "de": "Verlauf der Netzwerkaktivität",
+      "de": "Netzwerkzugriffshistorie",
       "fr": "Historique réseau",
       "ru": "История сетевой активности",
       "pl": null,
@@ -8246,10 +8244,10 @@
       "cn": null,
       "tr": "Fotoğraf Albümleri"
     },
-    "Tax Records": {
+     "Tax Records": {
       "es": null,
       "pt": null,
-      "de": "Steuerberichte",
+      "de": "Steuerunterlagen",
       "fr": "Dossiers fiscaux",
       "ru": "Налоговые отчёты",
       "pl": null,
@@ -8306,10 +8304,10 @@
       "cn": null,
       "tr": "Silah Test Verileri"
     },
-    "Employee Genetic Data": {
+     "Employee Genetic Data": {
       "es": null,
       "pt": null,
-      "de": "Genetische Daten von Arbeitern",
+      "de": "Gen-Daten von Mitarbeitern",
       "fr": "Données génétiques d'employés",
       "ru": "Генетические данные работников",
       "pl": null,
@@ -8330,10 +8328,10 @@
       "cn": null,
       "tr": "Klasik Eğlence"
     },
-    "Opinion Polls": {
+     "Opinion Polls": {
       "es": null,
       "pt": null,
-      "de": "Meinungsumfragen",
+      "de": "Unfrageergebnisse",
       "fr": "Sondages",
       "ru": "Опросы общественного мнения",
       "pl": null,
@@ -8342,10 +8340,10 @@
       "cn": null,
       "tr": "Görüş Anketleri"
     },
-    "Security Expenses": {
+     "Security Expenses": {
       "es": null,
       "pt": null,
-      "de": "Sicherheitskosten",
+      "de": "Aufwendungen für Sicherheit",
       "fr": "Dépenses de sécurité",
       "ru": "Расходы на охрану",
       "pl": null,
@@ -8354,10 +8352,10 @@
       "cn": null,
       "tr": "Güvenlik Giderleri"
     },
-    "Spyware": {
+     "Spyware": {
       "es": null,
       "pt": null,
-      "de": "Spionage-Software",
+      "de": "Spyware",
       "fr": "Programme-espion",
       "ru": "Шпионские программы",
       "pl": null,
@@ -8390,10 +8388,10 @@
       "cn": null,
       "tr": "Kimyasal Patentler"
     },
-    "Genetic Repair Meds": {
+     "Genetic Repair Meds": {
       "es": null,
       "pt": null,
-      "de": "Genetische Korrekturmedikamente",
+      "de": "Gen-Reparatursets",
       "fr": "Traitements génétiques",
       "ru": "Препараты генетической коррекции",
       "pl": null,
@@ -8402,10 +8400,10 @@
       "cn": null,
       "tr": "Genetik Onarım İlaçları"
     },
-    "Inorganic Contaminant": {
+     "Inorganic Contaminant": {
       "es": null,
       "pt": null,
-      "de": "Anorganische Verunreinigung",
+      "de": "Anorganischer Schadstoff",
       "fr": "Contaminant inorganique",
       "ru": "Неорганический загрязнитель",
       "pl": null,
@@ -8414,10 +8412,10 @@
       "cn": null,
       "tr": "İnorganik Kirletici"
     },
-    "Medical Records": {
+     "Medical Records": {
       "es": null,
       "pt": null,
-      "de": "Medizinische Berichte",
+      "de": "Medizinische Daten",
       "fr": "Dossiers médicaux",
       "ru": "Медицинские отчеты",
       "pl": null,
@@ -8426,9 +8424,7 @@
       "cn": null,
       "tr": "Medikal Kayıtlar"
     },
-
-
-    "Synthetic Genome": {
+   "Synthetic Genome": {
       "es": null,
       "pt": null,
       "de": "Synthetisches Genom",
@@ -8440,10 +8436,10 @@
       "cn": null,
       "tr": "Sentetik Genom"
     },
-    "Mutagenic Catalyst": {
+     "Mutagenic Catalyst": {
       "es": null,
       "pt": null,
-      "de": "DNA-Mutationskatalysator",
+      "de": "Mutatgen-Katalysator",
       "fr": "Catalyseur mutagène",
       "ru": "Катализатор мутаций ДНК",
       "pl": null,
@@ -8452,10 +8448,10 @@
       "cn": null,
       "tr": "Mutajenik Katalizör"
     },
-    "Chemical Process Sample": {
+     "Chemical Process Sample": {
       "es": null,
       "pt": null,
-      "de": "Chemisches Reaktionsmuster",
+      "de": "Chemieverfahren-Probe",
       "fr": "Échantillon de production chimique",
       "ru": "Образец химической реакции",
       "pl": null,
@@ -8476,10 +8472,10 @@
       "cn": null,
       "tr": "Biyolojik Örnek"
     },
-    "Agricultural Process Sample": {
+     "Agricultural Process Sample": {
       "es": null,
       "pt": null,
-      "de": "Muster aus landwirtschaftlichem Prozess",
+      "de": "Agrikulturverfahren-Probe",
       "fr": "Échantillon de production agricole",
       "ru": "Образец сельхозпроцесса",
       "pl": null,
@@ -8488,10 +8484,10 @@
       "cn": null,
       "tr": "Tarımsal Süreç Örneği"
     },
-    "Xeno-Defence Protocols": {
+     "Xeno-Defence Protocols": {
       "es": null,
       "pt": null,
-      "de": "Xeno-Defense-Protokolle",
+      "de": "Xeno-Abwehr-Protokolle",
       "fr": "Protocoles anti-xénomorphes",
       "ru": "Протоколы защиты от инопланетной угрозы",
       "pl": null,
@@ -8524,10 +8520,10 @@
       "cn": null,
       "tr": "Viroloji Verileri"
     },
-    "VIP Security Detail": {
+     "VIP Security Detail": {
       "es": null,
       "pt": null,
-      "de": "VIP-Sicherheitsdetail",
+      "de": "VIP-Sicherheitsdienst",
       "fr": "Protection rapprochée de VIP",
       "ru": "Подробности охраны важных персон",
       "pl": null,
@@ -8548,10 +8544,10 @@
       "cn": null,
       "tr": "Aşı Araştırması"
     },
-    "Vaccination Records": {
+     "Vaccination Records": {
       "es": null,
       "pt": null,
-      "de": "Impfprotokolle",
+      "de": "Aufzeichnungen zu Impfungen",
       "fr": "Dossiers de vaccination",
       "ru": "Журналы вакцинации",
       "pl": null,
@@ -8560,10 +8556,10 @@
       "cn": null,
       "tr": "Aşı Kayıtları"
     },
-    "Tactical Plans": {
+     "Tactical Plans": {
       "es": null,
       "pt": null,
-      "de": "Taktische Pläne",
+      "de": "Taktikpläne",
       "fr": "Plans stratégiques",
       "ru": "Тактические планы",
       "pl": null,
@@ -8572,10 +8568,10 @@
       "cn": null,
       "tr": "Taktiksel Planlar"
     },
-    "Spectral Analysis Data": {
+     "Spectral Analysis Data": {
       "es": null,
       "pt": null,
-      "de": "Spektralanalysedaten",
+      "de": "Spektralanalyse-Daten",
       "fr": "Données d'analyse spectrale",
       "ru": "Данные спектрального анализа",
       "pl": null,
@@ -8584,10 +8580,10 @@
       "cn": null,
       "tr": "Sğektral Analiz Verileri"
     },
-    "Smear Campaign Plans": {
+     "Smear Campaign Plans": {
       "es": null,
       "pt": null,
-      "de": "Hetzkampagnen-Pläne",
+      "de": "Pläne für Verleumdungskampagne",
       "fr": "Campagne de calomnie",
       "ru": "Планы кампании по дискредитации",
       "pl": null,
@@ -8596,10 +8592,10 @@
       "cn": null,
       "tr": "Karalama Kampanyası Planları"
     },
-    "Slush Fund Logs": {
+     "Slush Fund Logs": {
       "es": null,
       "pt": null,
-      "de": "Matsсh-Fonds-Protokolle",
+      "de": "Schmiergeld-Logs",
       "fr": "Caisse noire",
       "ru": "Журналы «грязного» финансирования",
       "pl": null,
@@ -8620,10 +8616,10 @@
       "cn": null,
       "tr": "Hissedar Bilgileri"
     },
-    "Settlement Assault Plans": {
+     "Settlement Assault Plans": {
       "es": null,
       "pt": null,
-      "de": "Siedlungs-Angriffspläne",
+      "de": "Siedlungsangriffspläne",
       "fr": "Plans d'assaut d'une installation",
       "ru": "Планы штурма поселения",
       "pl": null,
@@ -8632,10 +8628,10 @@
       "cn": null,
       "tr": "Yerleşim Saldırı Planları"
     },
-    "Seed Geneaology": {
+     "Seed Geneaology": {
       "es": null,
       "pt": null,
-      "de": "Samen-Genealogie",
+      "de": "Saatgut-Genealogie",
       "fr": "Patrimoine génétique de semences",
       "ru": null,
       "pl": null,
@@ -8644,10 +8640,10 @@
       "cn": null,
       "tr": "Tohum Şecere"
     },
-    "Risk Assessments": {
+     "Risk Assessments": {
       "es": null,
       "pt": null,
-      "de": "Risikoabschätzung",
+      "de": "Gefährdungsbeurteilungen",
       "fr": "Evaluation des risques",
       "ru": "Оценка рисков",
       "pl": null,
@@ -8668,10 +8664,10 @@
       "cn": null,
       "tr": "Satın Alım Kayıtları"
     },
-    "Production Schedule": {
+     "Production Schedule": {
       "es": null,
       "pt": null,
-      "de": "Produktionsplan",
+      "de": "Produktionszeitplan",
       "fr": "Planning de production",
       "ru": "График выпуска продукции",
       "pl": null,
@@ -8680,10 +8676,10 @@
       "cn": null,
       "tr": "Üretim Planı"
     },
-    "Prisoner Logs": {
+     "Prisoner Logs": {
       "es": null,
       "pt": null,
-      "de": "Dossier über Gefangene",
+      "de": "Gefangenen-Logs",
       "fr": "Dossiers pénitentiaires",
       "ru": "Досье на заключённых",
       "pl": null,
@@ -8692,10 +8688,10 @@
       "cn": null,
       "tr": "Suçlu Kayıtları"
     },
-    "Political Affiliations": {
+     "Political Affiliations": {
       "es": null,
       "pt": null,
-      "de": "Politische Zugehörigkeit",
+      "de": "Politische Beziehungen",
       "fr": "Affiliations politiques",
       "ru": "Политическая принадлежность",
       "pl": null,
@@ -8716,10 +8712,10 @@
       "cn": null,
       "tr": "İlaç Patentleri"
     },
-    "Personal Logs": {
+     "Personal Logs": {
       "es": null,
       "pt": null,
-      "de": "Persönliche Aufzeichnungen",
+      "de": "Persönliche Logs",
       "fr": "Journaux personnels",
       "ru": "Личные журналы",
       "pl": null,
@@ -8740,10 +8736,10 @@
       "cn": null,
       "tr": "Devriye Rotaları"
     },
-    "Patient History": {
+     "Patient History": {
       "es": null,
       "pt": null,
-      "de": "Anamnese",
+      "de": "Patientenhistorie",
       "fr": "Antécédents médicaux",
       "ru": "История болезни пациента",
       "pl": null,
@@ -8752,10 +8748,10 @@
       "cn": null,
       "tr": "Hasta Geçmişi"
     },
-    "NOC Data": {
+     "NOC Data": {
       "es": null,
       "pt": null,
-      "de": "Daten geheimdienstlicher Operationen",
+      "de": "Geheimoperation-Daten",
       "fr": "Données d'agent clandestin",
       "ru": "Данные тайного агента",
       "pl": null,
@@ -8776,10 +8772,10 @@
       "cn": null,
       "tr": "Ağ Güvenlik Protokolleri"
     },
-    "Meeting Minutes": {
+     "Meeting Minutes": {
       "es": null,
       "pt": null,
-      "de": "Sitzungsprotokoll",
+      "de": "Besprechungsprotokolle",
       "fr": "Compte-rendu de réunion",
       "ru": "Протоколы заседаний",
       "pl": null,
@@ -8788,10 +8784,10 @@
       "cn": null,
       "tr": "Tanışma Süreci"
     },
-    "Kompromat": {
+     "Kompromat": {
       "es": null,
       "pt": null,
-      "de": "Kompromittierende Daten",
+      "de": "Kompromittierendes Material",
       "fr": "Kompromat",
       "ru": "Компрометирующие сведения",
       "pl": null,
@@ -8800,10 +8796,10 @@
       "cn": null,
       "tr": "Kompromat"
     },
-    "Interview Recordings": {
+     "Interview Recordings": {
       "es": null,
       "pt": null,
-      "de": "Interviewaufzeichnungen",
+      "de": "Aufzeichnungen von Vorstellungsgesprächen",
       "fr": "Enregistrements d'entretiens",
       "ru": "Записи интервью",
       "pl": null,
@@ -8812,10 +8808,10 @@
       "cn": null,
       "tr": "İşe Alım Süreci Kayıtları"
     },
-    "Interrogation Recordings": {
+     "Interrogation Recordings": {
       "es": null,
       "pt": null,
-      "de": "Verhörprotokolle",
+      "de": "Vernehmungsaufzeichnungen",
       "fr": "Enregistrements d'interrogatoires",
       "ru": "Записи допросов",
       "pl": null,
@@ -8824,10 +8820,10 @@
       "cn": null,
       "tr": "Sorgu Kayıtları"
     },
-    "Incident Logs": {
+     "Incident Logs": {
       "es": null,
       "pt": null,
-      "de": "Vorfall-Protokoll",
+      "de": "Zwischenfall-Logs",
       "fr": "Journaux d'incidents",
       "ru": "Журнал происшествий",
       "pl": null,
@@ -8836,10 +8832,10 @@
       "cn": null,
       "tr": "Olay Günlükleri"
     },
-    "Hydroponic Data": {
+     "Hydroponic Data": {
       "es": null,
       "pt": null,
-      "de": "Hydroponische Daten",
+      "de": "Hydrokultur-Daten",
       "fr": "Données hydroponiques",
       "ru": "Данные по работе гидропоники",
       "pl": null,
@@ -8860,10 +8856,10 @@
       "cn": null,
       "tr": "Jeolojik Veriler"
     },
-    "Geographical Data": {
+     "Geographical Data": {
       "es": null,
       "pt": null,
-      "de": "Geografische Daten",
+      "de": "Geologische Daten",
       "fr": "Données géologiques",
       "ru": "Географические сведения",
       "pl": null,
@@ -8872,10 +8868,10 @@
       "cn": null,
       "tr": "Coğrafi Veriler"
     },
-    "Financial Projections": {
+     "Financial Projections": {
       "es": null,
       "pt": null,
-      "de": "Finanzielle Prognosen",
+      "de": "Finanzprognosen",
       "fr": "Projections financières",
       "ru": "Финансовые прогнозы",
       "pl": null,
@@ -8884,10 +8880,10 @@
       "cn": null,
       "tr": "Finansal Projeler"
     },
-    "Faction Donator List": {
+     "Faction Donator List": {
       "es": null,
       "pt": null,
-      "de": "Spendenliste der Fraktion",
+      "de": "Spenderliste einer Fraktion",
       "fr": "Liste de donateurs d'une faction",
       "ru": "Список пожертвований для фракции",
       "pl": null,
@@ -8908,10 +8904,10 @@
       "cn": null,
       "tr": "Fraksiyon Ortakları"
     },
-    "Espionage Material": {
+     "Espionage Material": {
       "es": null,
       "pt": null,
-      "de": "Spionageberichte",
+      "de": "Spionagematerial",
       "fr": "Documents confidentiels",
       "ru": "Шпионские отчёты",
       "pl": null,
@@ -8920,10 +8916,10 @@
       "cn": null,
       "tr": "Casusluk Malzemesi"
     },
-    "Enhanced Interrogation Recordings": {
+     "Enhanced Interrogation Recordings": {
       "es": null,
       "pt": null,
-      "de": "Detaillierte Verhörprotokolle",
+      "de": "Optimierte Vernehmungsaufzeichnungen",
       "fr": "Enregistrements d'interrogatoire poussés",
       "ru": "Подробные записи допросов",
       "pl": null,
@@ -8947,7 +8943,7 @@
     "Employee Expenses": {
       "es": null,
       "pt": null,
-      "de": "Mitarbeiterausgaben",
+      "de": "Aufwendungen für Mitarbeiter",
       "fr": "Notes de frais",
       "ru": "Расходы на сотрудников",
       "pl": null,
@@ -8956,10 +8952,10 @@
       "cn": null,
       "tr": "Çalışan Giderleri"
     },
-    "Crop Yield Analysis": {
+     "Crop Yield Analysis": {
       "es": null,
       "pt": null,
-      "de": "Ernteertragsanalyse",
+      "de": "Ernteertrag-Analyse",
       "fr": "Analyse de rendement agricole",
       "ru": "Анализ урожайности",
       "pl": null,
@@ -8968,10 +8964,10 @@
       "cn": null,
       "tr": "Ürün Verim Analizi"
     },
-    "Criminal Records": {
+     "Criminal Records": {
       "es": null,
       "pt": null,
-      "de": "Kriminalberichte",
+      "de": "Strafakten",
       "fr": "Casiers judiciaires",
       "ru": "Криминальные сводки",
       "pl": null,
@@ -8980,10 +8976,10 @@
       "cn": null,
       "tr": "Kriminal Kayıtlar"
     },
-    "Combatant Performance": {
+     "Combatant Performance": {
       "es": null,
       "pt": null,
-      "de": "Kampfwirksamkeit",
+      "de": "Kampfleistung",
       "fr": "Performances de combat",
       "ru": "Боевая эффективность",
       "pl": null,
@@ -9004,10 +9000,10 @@
       "cn": null,
       "tr": "Kokteyli Tarifleri"
     },
-    "Clinical Trial Records": {
+     "Clinical Trial Records": {
       "es": null,
       "pt": null,
-      "de": "Aufzeichnungen über klinische Studien",
+      "de": "Kinische Prüfberichte
       "fr": "Essais cliniques",
       "ru": "Записи клинических испытаний",
       "pl": null,
@@ -9016,10 +9012,10 @@
       "cn": null,
       "tr": "Klinik Deneme Kayıtları"
     },
-    "Chemical Weapon Data": {
+     "Chemical Weapon Data": {
       "es": null,
       "pt": null,
-      "de": "Daten zu Chemiewaffen",
+      "de": "Chemiewaffen-Daten"
       "fr": "Données d'armes chimiques",
       "ru": "Данные по химическому оружию",
       "pl": null,
@@ -9028,10 +9024,10 @@
       "cn": null,
       "tr": "Kimyasal Silah Verisi"
     },
-    "Chemical Experiment Data": {
+     "Chemical Experiment Data": {
       "es": null,
       "pt": null,
-      "de": "Chemische Forschungsaufzeichnungen",
+      "de": "Chemieexperiment-Daten"
       "fr": "Données d'expériences chimiques",
       "ru": "Записи о химических исследованиях",
       "pl": null,
@@ -9040,10 +9036,10 @@
       "cn": null,
       "tr": "Kimyasal Tecrübe Verisi"
     },
-    "Blood Test Results": {
+     "Blood Test Results": {
       "es": null,
       "pt": null,
-      "de": "Bluttestergebnisse",
+      "de": "Bluttest-Ergebnisse",
       "fr": "Résultats de tests sanguins",
       "ru": "Результаты тестов крови",
       "pl": null,
@@ -9052,10 +9048,10 @@
       "cn": null,
       "tr": "Kan Testi Sonuçları"
     },
-    "Blacklist Data": {
+     "Blacklist Data": {
       "es": null,
       "pt": null,
-      "de": "Schwarze Liste",
+      "de": "Daten der schwarzen Liste",
       "fr": "Liste noire",
       "ru": "Черный список",
       "pl": null,
@@ -9064,10 +9060,10 @@
       "cn": null,
       "tr": "Karaliste Verisi"
     },
-    "Biological Weapon Data": {
+     "Biological Weapon Data": {
       "es": null,
       "pt": null,
-      "de": "Informationen zu Biowaffen",
+      "de": "Biowaffen-Daten",
       "fr": "Données d'arme biologique",
       "ru": "Сведения по биологическому оружию",
       "pl": null,
@@ -9076,10 +9072,10 @@
       "cn": null,
       "tr": "Biyolojik Silah Verisi"
     },
-    "AX Combat Logs": {
+     "AX Combat Logs": {
       "es": null,
       "pt": null,
-      "de": "AX-Kampfprotokolle",
+      "de": "AX-Kampf-Logs",
       "fr": "Jounaux de combat AX",
       "ru": "Журналы боевых операций АИ",
       "pl": null,
@@ -9088,10 +9084,10 @@
       "cn": null,
       "tr": "AX Savaş Kayıtları"
     },
-    "Audio Logs": {
+     "Audio Logs": {
       "es": null,
       "pt": null,
-      "de": "Aufnahmeprotokolle",
+      "de": "Audio-Logs",
       "fr": "Journaux audio",
       "ru": "Аудиозаписи",
       "pl": null,
@@ -9100,10 +9096,10 @@
       "cn": null,
       "tr": "Ses Kayıtları"
     },
-    "Extraction Yield Data": {
+     "Extraction Yield Data": {
       "es": null,
       "pt": null,
-      "de": "Rentabilität der Ressourcengewinnung",
+      "de": "Daten zur Förderungsausbeute",
       "fr": "Données de rendement minier",
       "ru": "Данные о доходности ресурсодобычи",
       "pl": null,
@@ -9112,10 +9108,10 @@
       "cn": null,
       "tr": "Çıkarma Gemisi Verileri"
     },
-    "Fleet Registry": {
+     "Fleet Registry": {
       "es": null,
       "pt": null,
-      "de": "Flottenregister",
+      "de": "Flottenliste",
       "fr": "Registre de flotte",
       "ru": "Реестр флота",
       "pl": null,
@@ -9124,10 +9120,10 @@
       "cn": null,
       "tr": "Filo Kaydı"
     },
-    "Atmospheric Data": {
+     "Atmospheric Data": {
       "es": null,
       "pt": null,
-      "de": "Atmosphärendaten",
+      "de": "Atmosphärische Daten",
       "fr": "Données athmosphériques",
       "ru": "Атмосферные данные",
       "pl": null,
@@ -9232,10 +9228,10 @@
       "cn": null,
       "tr": "Silah"
     },
-    "Reduced tool battery consumption": {
+     "Reduced tool battery consumption": {
       "es": null,
       "pt": null,
-      "de": "reduzierter Werzeug-Energieverbrauch ",
+      "de": "Verringerter Werkzeug-Batterieverbrauch ",
       "fr": "Consommation des outils réduite",
       "ru": "Уменьшенный расход батареи инструмента",
       "pl": null,
@@ -9268,7 +9264,7 @@
       "cn": null,
       "tr": "Ekstra Çanta Kapasitesi"
     },
-    "Stability": {
+     "Stability": {
       "es": null,
       "pt": null,
       "de": "Stabilität",
@@ -9280,7 +9276,7 @@
       "cn": null,
       "tr": "Stabilize"
     },
-    "Greater range": {
+     "Greater range": {
       "es": null,
       "pt": null,
       "de": "Größere Reichweite",
@@ -9316,10 +9312,10 @@
       "cn": null,
       "tr": "Geliştirilmiş Zıplama Desteği"
     },
-    "Increased air reserves": {
+     "Increased air reserves": {
       "es": null,
       "pt": null,
-      "de": "Verbesserte Luftreserve",
+      "de": "Erhöhte Luftreserven",
       "fr": "Réserves d'oxygène augmentées",
       "ru": "Повышенная ёмкость воздушных баллонов",
       "pl": null,
@@ -9328,7 +9324,7 @@
       "cn": null,
       "tr": "Arttırılmış Hava Rezervleri"
     },
-    "Faster handling": {
+     "Faster handling": {
       "es": null,
       "pt": null,
       "de": "Schnellere Handhabung",
@@ -9340,10 +9336,10 @@
       "cn": null,
       "tr": "Daha Hızlı Kullanım"
     },
-    "Noise suppressor": {
+     "Noise suppressor": {
       "es": null,
       "pt": null,
-      "de": "Schalldämpfer",
+      "de": "Geräusch-Unterdrückung",
       "fr": "Silencieux",
       "ru": "Глушитель",
       "pl": null,
@@ -9352,10 +9348,10 @@
       "cn": null,
       "tr": "Gürültü Bastırıcı"
     },
-    "Magazine size": {
+     "Magazine size": {
       "es": null,
       "pt": null,
-      "de": "Magazinkapazität",
+      "de": "Magazingröße",
       "fr": "Taille du chargeur",
       "ru": "Ёмкость магазина",
       "pl": null,
@@ -9388,10 +9384,10 @@
       "cn": null,
       "tr": "Yakın Dövüş Hasarı Eklendi"
     },
-    "Reload speed": {
+     "Reload speed": {
       "es": null,
       "pt": null,
-      "de": "Nachladegeschwindigkeit",
+      "de": "Nachlade-Ggeschwindigkeit",
       "fr": "Vitesse de rechargement",
       "ru": "Скорость перезарядки",
       "pl": null,
@@ -9400,10 +9396,10 @@
       "cn": null,
       "tr": "Yenileme Hızı"
     },
-    "Extra ammo capacity": {
+     "Extra ammo capacity": {
       "es": null,
       "pt": null,
-      "de": "Zusätzliche Magazinkapazität",
+      "de": "Zusätzliche Munitionskapazität",
       "fr": "Capacité de chargeur accrue",
       "ru": "Повышенный боезапас",
       "pl": null,
@@ -9412,10 +9408,10 @@
       "cn": null,
       "tr": "Ekstra Mermi Kapasitesi"
     },
-    "Faster shield regen": {
+$$    "Faster shield regen": {
       "es": null,
       "pt": null,
-      "de": "Schnellere Schildregenation",
+      "de": "Schnellere Schildregenration",
       "fr": "Régénération des boucliers accélérée",
       "ru": "Ускоренная регенерация щита",
       "pl": null,
@@ -9424,10 +9420,10 @@
       "cn": null,
       "tr": "Hızlı Kalkan Yenilenmesi"
     },
-    "Stowed reloading": {
+     "Stowed reloading": {
       "es": null,
       "pt": null,
-      "de": "Nachladen im Holster",
+      "de": "Nachladen bei verwahrter Waffe",
       "fr": "Rechargement rangé",
       "ru": "Перезарядка в походном положении",
       "pl": null,
@@ -9436,7 +9432,7 @@
       "cn": null,
       "tr": "İstiflenmiş Yeniden Yükleme"
     },
-    "Headshot damage": {
+     "Headshot damage": {
       "es": null,
       "pt": null,
       "de": "Kopfschussschaden",
@@ -9448,10 +9444,10 @@
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı"
     },
-    "Improved battery capacity": {
+     "Improved battery capacity": {
       "es": null,
       "pt": null,
-      "de": "verbesserte Batteriekapazität",
+      "de": "Verbesserte Batteriekapazität",
       "fr": "Capacité de batterie améliorée",
       "ru": "Увеличенная ёмкость батареи",
       "pl": null,
@@ -9460,10 +9456,10 @@
       "cn": null,
       "tr": "Geliştirilmiş Batarya Kapasitesi"
     },
-    "Scope": {
+     "Scope": {
       "es": null,
       "pt": null,
-      "de": "Zielfernrohr",
+      "de": "Visier",
       "fr": "Viseur",
       "ru": "Прицел",
       "pl": null,
@@ -9496,10 +9492,10 @@
       "cn": null,
       "tr": "Geliştirilmiş Kalça Ateşi Doğruluğu"
     },
-    "Quieter footsteps": {
+     "Quieter footsteps": {
       "es": null,
       "pt": null,
-      "de": "Gedämpfte Schrittgeräusche",
+      "de": "Leises Auftreten",
       "fr": "Réduction des bruits de pas",
       "ru": "Приглушенные звуки шагов",
       "pl": null,
@@ -9508,10 +9504,10 @@
       "cn": null,
       "tr": "Sessiz Adımlar"
     },
-    "Audio Masking": {
+     "Audio Masking": {
       "es": null,
       "pt": null,
-      "de": "Akustische Maskierung",
+      "de": "Audiomaskierung",
       "fr": "Réduction du bruit de tir",
       "ru": "Акустическая маскировка",
       "pl": null,
@@ -9568,10 +9564,10 @@
       "cn": null,
       "tr": "Savaş Hareket Hızı"
     },
-    "Expanded Probe Scanning Radius": {
+     "Expanded Probe Scanning Radius": {
       "es": "Radio de Escaneo de Sonda Ampliado",
       "pt": null,
-      "de": "Erweiterter Sonden-Suchradius",
+      "de": "Erweiterter Sonden-Scanradius",
       "fr": "Rayon de scan de sonde étendu",
       "ru": "Расширенный радиус действия зонда",
       "pl": null,
@@ -9583,7 +9579,7 @@
     "Engineered FSD V1": {
       "es": "MDD Modificado V1",
       "pt": null,
-      "de": "überarbeitete FSD V1",
+      "de": "Überarbeiteter FSD V1",
       "fr": "FSD Ingénieré V1",
       "ru": "Перепроектированный пакет FSD V1",
       "pl": null,
@@ -9595,7 +9591,7 @@
     "Engineered Missile Rack V1": {
       "es": "Lanzamisiles Guiado Modificado V1",
       "pt": null,
-      "de": "überarbeitetes Raketengestell V1",
+      "de": "Üüberarbeitetes Raketengestell V1",
       "fr": "Rack à missiles Ingéniéré V1",
       "ru": "Перепроектированная ракетная кассета V1",
       "pl": null,
@@ -9604,7 +9600,7 @@
       "cn": null,
       "tr": "Mühendislikli Füze Raf Silahı V1"
     },
-    "Artemis": {
+     "Artemis": {
       "es": null,
       "pt": null,
       "de": "Artemis",
@@ -9616,7 +9612,7 @@
       "cn": null,
       "tr": "Artemis"
     },
-    "Dominator": {
+     "Dominator": {
       "es": null,
       "pt": null,
       "de": "Dominator",
@@ -9628,7 +9624,7 @@
       "cn": null,
       "tr": "Egemen"
     },
-    "Maverick": {
+     "Maverick": {
       "es": null,
       "pt": null,
       "de": "Maverick",
@@ -9928,10 +9924,10 @@
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı (Kinematik Kinetik)"
     },
-    "Frag Grenade": {
+     "Frag Grenade": {
       "es": null,
       "pt": null,
-      "de": "Splittergranate",
+      "de": "Splitter-Granate",
       "fr": null,
       "ru": "Осколочная граната",
       "pl": null,
@@ -9940,7 +9936,7 @@
       "cn": null,
       "tr": "Yakın El Bombası"
     },
-    "Headshot damage (Takada laser)": {
+     "Headshot damage (Takada laser)": {
       "es": null,
       "pt": null,
       "de": "Kopfschussschaden (Laser von Takada)",
@@ -9952,10 +9948,10 @@
       "cn": null,
       "tr": "Kafadan Vuruş Hasarı (Takada Lazeri)"
     },
-    "Shield Disruptor": {
+     "Shield Disruptor": {
       "es": null,
       "pt": null,
-      "de": "Schildunterbrecher",
+      "de": "Schild-Unterbrecher",
       "fr": null,
       "ru": "Разрушитель щита",
       "pl": null,
@@ -9963,11 +9959,11 @@
       "nl": null,
       "cn": null,
       "tr": "Kalkan Bozucu"
-    },
+     },
     "Medkit": {
       "es": null,
       "pt": null,
-      "de": "Verbandskasten",
+      "de": "Medikit",
       "fr": null,
       "ru": "Аптечка",
       "pl": null,
@@ -9976,10 +9972,10 @@
       "cn": null,
       "tr": "İlk Yardım Kiti"
     },
-    "Energy Cell": {
+     "Energy Cell": {
       "es": null,
       "pt": null,
-      "de": "Energiezelle",
+      "de": "Energie-Zelle",
       "fr": null,
       "ru": "Энергоячейка",
       "pl": null,
@@ -9988,10 +9984,10 @@
       "cn": null,
       "tr": "Enerji Hücresi"
     },
-    "Shield Projector": {
+     "Shield Projector": {
       "es": null,
       "pt": null,
-      "de": "Schildgenerator",
+      "de": "Schild-Generator",
       "fr": null,
       "ru": "Излучатель щита",
       "pl": null,
@@ -10000,10 +9996,10 @@
       "cn": null,
       "tr": "Kalkan Projektörü"
     },
-    "E-Breach": {
+     "E-Breach": {
       "es": null,
       "pt": null,
-      "de": "elektronisches Aufbruchswerkzeug",
+      "de": "E-Breach",
       "fr": null,
       "ru": null,
       "pl": null,
@@ -10012,10 +10008,10 @@
       "cn": null,
       "tr": "Tek Seferlik İhlal Cihazı"
     },
-    "Engineered Detailed Surface Scanner V1": {
+     "Engineered Detailed Surface Scanner V1": {
       "es": "Escáner de Análisi de Superficie Adaptado V1",
       "pt": null,
-      "de": "überarbeiteter detaillierter Oberflächenscanner V1",
+      "de": "Überarbeiteter Detail-Oberflächenscanner V1",
       "fr": null,
       "ru": "Перепроектированный подробный сканер поверхности V1",
       "pl": null,
