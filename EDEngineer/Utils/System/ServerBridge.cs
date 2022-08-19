@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using EDEngineer.Models;
 using EDEngineer.Utils.UI;
 using EDEngineer.Views;
 using EDEngineer.Views.Popups;
@@ -61,7 +62,7 @@ namespace EDEngineer.Utils.System
                     port,
                     viewModel.Languages,
                     () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.State),
-                    () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => kv.Value.ShoppingList.Composition),
+                    () => viewModel.Commanders.ToDictionary(kv => kv.Key, kv => (IShoppingList)kv.Value.ShoppingList),
                     (c, b, i) => viewModel.Commanders[c].ShoppingListChange(b, i),
                     c => viewModel.Commanders[c].JsonSettings,
                     viewModel.LogDirectory,

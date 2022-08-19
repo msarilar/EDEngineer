@@ -9,7 +9,6 @@ namespace EDEngineer
     /// </summary>
     public partial class App
     {
-        private bool closed = false;
         public App()
         {
             AppDomain.CurrentDomain.UnhandledException += (o, e) =>

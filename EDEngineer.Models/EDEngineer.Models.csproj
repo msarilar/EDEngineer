@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Equipment.cs" />
+    <Compile Include="IShoppingList.cs" />
     <Compile Include="MaterialTrading\MaterialTrade.cs" />
     <Compile Include="MaterialTrading\MaterialTrader.cs" />
     <Compile Include="Operations\CollectItemOperation.cs" />

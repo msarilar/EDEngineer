@@ -63,7 +63,7 @@ let start (token,
            port,
            translator:ILanguage,
            state:Func<IDictionary<string, State>>,
-           shopppingLists:Func<IDictionary<string, List<Tuple<Blueprint, int>>>>,
+           shopppingLists:Func<IDictionary<string, IShoppingList>>,
            changeShoppingList:Action<string, Blueprint, int>,
            jsonSettingsGetter:Func<string, JsonSerializerSettings>,
            logDirectory:string,
@@ -286,18 +286,6 @@ let start (token,
                  return (sprintf "Tried to change shopping list by %i but result would be negative (Blueprint %s)" size blueprintString) |> BAD_REQUEST
             })))
 
-        GET >=> pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
-          let toShoppingListItem (blueprint: Blueprint, count: int) =
-            { Blueprint = blueprint.ToSerializable(); Count = count }
-
-          (request(fun request ->
-            cmdr {
-                let! s = shoppingListRoute commander
-                let! f = FormatExtractor request format
-                let! l = LanguageExtractor <| request.queryParam "lang"
-                return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
-            })))
-
         GET >=> pathScan "/%s/shopping-list-details%s" (fun (commander, format) -> 
           let toShoppingListItem (blueprint: Blueprint, count: int) =
             { Blueprint = blueprint.ToSerializable(); Count = count }
@@ -307,7 +295,19 @@ let start (token,
                 let! s = shoppingListRoute commander
                 let! f = FormatExtractor request format
                 let! l = LanguageExtractor <| request.queryParam "lang"
-                return (s |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
+                return (s.FirstOrDefault(), l) |> FormatPicker(f) |> OK >=> MimeType(f)
+            })))
+
+        GET >=> pathScan "/%s/shopping-list%s" (fun (commander, format) -> 
+          let toShoppingListItem (blueprint: Blueprint, count: int) =
+            { Blueprint = blueprint.ToSerializable(); Count = count }
+
+          (request(fun request ->
+            cmdr {
+                let! s = shoppingListRoute commander
+                let! f = FormatExtractor request format
+                let! l = LanguageExtractor <| request.queryParam "lang"
+                return (s.Composition |> Seq.map toShoppingListItem, l) |> FormatPicker(f) |> OK >=> MimeType(f)
             })))
 
         GET >=> pathScan "/%s/operations%s" (fun (commander, format) ->

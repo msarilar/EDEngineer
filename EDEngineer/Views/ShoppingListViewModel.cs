@@ -12,7 +12,7 @@ using EDEngineer.Utils.System;
 
 namespace EDEngineer.Views
 {
-    public class ShoppingListViewModel : INotifyPropertyChanged, IEnumerable<Blueprint>
+    public class ShoppingListViewModel : INotifyPropertyChanged, IShoppingList
     {
         private bool synchronizeWithLogs;
         private readonly StateCargo stateCargo;
