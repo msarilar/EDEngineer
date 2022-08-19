@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.24",
+    "Content": "* Added 'shopping-list-details' API endpoint that lists all ingredients needed in the shopping list of the selected commander:\r\nexample URI: localhost:XXXXX/YourCommanderName/shopping-list-details\r\n\r\n* German localization update, thanks to @\r\n* Czech localization update, thanks to @"
+  },
+  {
     "Version": "1.1.6.23",
     "Content": "* Added Modified Mining Laser, Modified Plasma Charger, Shock Cannon Munitions thanks to @CMDRTreya\r\n * Corrected material costs for Modified Plasma, Modified Shard also thanks to @CMDRTreya"
   },
