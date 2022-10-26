@@ -20,7 +20,7 @@ open EDEngineer.Models.State
 open EDEngineer.Models
 
 type Format = Json | Xml | Csv
-type cargoType = { Kind: string; Name: string; Count: int; }
+type cargoType = { Kind: string; Name: string; Count: int; Rarity: string; Group: string }
 type ShoppingListItem = {
     Blueprint:Object;
     Count:int;
@@ -104,6 +104,8 @@ let start (token,
                                                                           Kind = e.Data.Kind.ToString();
                                                                           Name = e.Data.Name;
                                                                           Count = e.Count;
+                                                                          Rarity = e.Data.Rarity.ToString();
+                                                                          Group = if e.Data.Group.HasValue then e.Data.Group.Value.ToString() else null
                                                                         })
                                                   |> List.ofSeq
   let toGuid str =
