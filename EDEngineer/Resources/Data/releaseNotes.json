@@ -1,5 +1,9 @@
 ﻿[
   {
+    "Version": "1.1.6.25",
+    "Content": "* Added group and rarity to the API cargo export"
+  },
+  {
     "Version": "1.1.6.24",
     "Content": "* Added 'shopping-list-details' API endpoint that lists all ingredients needed in the shopping list of the selected commander:\r\nexample URI: localhost:XXXXX/YourCommanderName/shopping-list-details\r\n\r\n* German localization update, thanks to @\r\n* Czech localization update, thanks to @"
   },

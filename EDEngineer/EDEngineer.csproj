@@ -32,8 +32,8 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>24</ApplicationRevision>
-    <ApplicationVersion>1.1.6.24</ApplicationVersion>
+    <ApplicationRevision>25</ApplicationRevision>
+    <ApplicationVersion>1.1.6.25</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -575,6 +575,11 @@
     <PreBuildEvent>
     </PreBuildEvent>
   </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties resources_4data_4releasenotes_1json__JsonSchema="https://appliedengdesign.github.io/cnccodes-json-schema/draft/2022-07/schema" />
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
