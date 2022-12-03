@@ -78,7 +78,7 @@
       "pl": "Lekki",
       "cs": "Lightweight",
       "nl": "Lichtgewicht",
-      "cn": null,
+      "cn": "轻",
       "tr": "Hafif"
     },
     "Heavy Duty Hull Reinforcement": {
@@ -90,7 +90,7 @@
       "pl": "Heavy Duty Hull Reinforcement",
       "cs": "Heavy Duty Hull Reinforcement",
       "nl": "Zware Rompversterking",
-      "cn": null,
+      "cn": "重型船体加固",
       "tr": "Ağır Gövde Takviyesi"
     },
     "Drive Strengthening": {
@@ -138,7 +138,7 @@
       "pl": "Opancerzony",
       "cs": "Armoured",
       "nl": "Gepantserd",
-      "cn": null,
+      "cn": "装甲的",
       "tr": "Zırhlı"
     },
     "Reinforced": {
@@ -174,7 +174,7 @@
       "pl": "Longer Range FSD interdictor",
       "cs": "Longer Range FSD interdictor",
       "nl": "Langere afstand FSD-interdictor",
-      "cn": "Longer Range FSD 拦截器",
+      "cn": "远程 FSD 拦截器",
       "tr": "Uzun Menzilli FSD Engelleyici"
     },
     "Reinforced Shields": {
@@ -1145,7 +1145,7 @@
       "ru": "Углерод",
       "pl": "Węgiel",
       "cs": "Carbon",
-      "cn": null,
+      "cn": "碳",
       "tr": "Karbon"
     },
     "Chemical Distillery": {
