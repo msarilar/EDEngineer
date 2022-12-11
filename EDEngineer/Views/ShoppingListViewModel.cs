@@ -18,12 +18,25 @@ namespace EDEngineer.Views
         private readonly StateCargo stateCargo;
         private readonly ILanguage languages;
         private readonly List<IGrouping<Tuple<string, string>, Blueprint>> blueprints;
+        public List<Blueprint> list = null;
 
         public ShoppingListViewModel(StateCargo stateCargo, List<Blueprint> blueprints, ILanguage languages)
         {
             this.blueprints = blueprints.GroupBy(b => Tuple.Create(b.Type, b.BlueprintName)).ToList();
             this.stateCargo = stateCargo;
             this.languages = languages;
+            list = this.ToList();
+
+            foreach (var blueprint in blueprints)
+            {
+                blueprint.PropertyChanged += (o, e) =>
+                                             {
+                                                 if (e.PropertyName == "ShoppingListCount")
+                                                 {
+                                                     list = this.ToList();
+                                                 }
+                                             };
+            }
 
             foreach (var ingredientsValue in stateCargo.Ingredients)
             {
@@ -44,7 +57,7 @@ namespace EDEngineer.Views
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public List<Blueprint> List => this.ToList();
+        public List<Blueprint> List => list;
         public ILanguage Languages => this.languages;
 
         public List<Tuple<Blueprint, int>> Composition
@@ -205,13 +218,13 @@ namespace EDEngineer.Views
         }
 
         public Dictionary<EntryData, int> Deduction =>
-            this.ToList()
+                list
                 .FirstOrDefault()
                 ?.Ingredients
                 .ToDictionary(i => i.Entry.Data, i => i.Size);
 
         public Dictionary<Entry, int> MissingIngredients =>
-            this.ToList()
+                list
                 .FirstOrDefault()
                 ?.Ingredients
                 .Where(i => i.Size - i.Entry.Count > 0)
