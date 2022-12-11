@@ -242,7 +242,6 @@ namespace EDEngineer.Views
                     if (Settings.Default.Favorites.Contains($"{blueprint}"))
                     {
                         Settings.Default.Favorites.Remove($"{blueprint}");
-                        Settings.Default.Save();
                     }
                 }
                 else if (Settings.Default.Favorites.Contains($"{blueprint}"))
@@ -251,7 +250,6 @@ namespace EDEngineer.Views
                     favoritedBlueprints.Add(blueprint);
                     Settings.Default.Favorites.Remove($"{blueprint}");
                     Settings.Default.Favorites.Add(text);
-                    Settings.Default.Save();
                 }
 
                 if (Settings.Default.Ignored.Contains(text))
@@ -261,7 +259,6 @@ namespace EDEngineer.Views
                     if (Settings.Default.Ignored.Contains($"{blueprint}"))
                     {
                         Settings.Default.Ignored.Remove($"{blueprint}");
-                        Settings.Default.Save();
                     }
                 }
                 else if (Settings.Default.Ignored.Contains($"{blueprint}"))
@@ -269,7 +266,6 @@ namespace EDEngineer.Views
                     blueprint.Ignored = true;
                     Settings.Default.Ignored.Remove($"{blueprint}");
                     Settings.Default.Ignored.Add(text);
-                    Settings.Default.Save();
                 }
 
                 blueprint.ShoppingListCount = Settings.Default.ShoppingList.Cast<string>().Count(l => l == text);
@@ -321,6 +317,7 @@ namespace EDEngineer.Views
                 };
             }
 
+            Settings.Default.Save();
             Filters = new BlueprintFilters(languages, State.Blueprints);
 
             ShoppingList = new ShoppingListViewModel(State.Cargo, State.Blueprints, languages);
