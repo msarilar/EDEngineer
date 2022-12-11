@@ -219,27 +219,35 @@ namespace EDEngineer.Views
 
         public IEnumerator<Blueprint> GetEnumerator()
         {
-            var ingredients = blueprints
-                .SelectMany(b => b)
-                .SelectMany(b => Enumerable.Repeat(b, b.ShoppingListCount))
-                .SelectMany(b => b.Ingredients)
-                .ToList();
+            var ingredients = new Dictionary<Entry, int>();
+            foreach (var b in blueprints.SelectMany(b => b).Where(b => b.ShoppingListCount > 0))
+            {
+                foreach (var ingredient in b.Ingredients)
+                {
+                    if (!ingredients.ContainsKey(ingredient.Entry))
+                    {
+                        ingredients[ingredient.Entry] = 0;
+                    }
+                    ingredients[ingredient.Entry] += ingredient.Size * b.ShoppingListCount;
+                }
+            }
 
             if (!ingredients.Any())
             {
                 yield break;
             }
 
-            var composition = ingredients.GroupBy(i => i.Entry.Data.Name)
-                                         .Select(
-                                             i =>
-                                                 new BlueprintIngredient(i.First().Entry,
-                                                     i.Sum(c => c.Size)))
-                                         .OrderBy(i => i.Entry.Count - i.Size > 0 ? 1 : 0)
-                                         .ThenByDescending(i => i.Entry.Data.Subkind)
-                                         .ThenBy(i => i.Entry.Data.Kind)
-                                         .ThenBy(i => languages.Translate(i.Entry.Data.Name))
-                                         .ToList();
+            var composition = new List<BlueprintIngredient>();
+            foreach (var i in ingredients)
+            {
+                composition.Add(new BlueprintIngredient(i.Key, i.Value));
+            }
+
+            composition = composition.OrderBy(i => i.Entry.Count - i.Size > 0 ? 1 : 0)
+                                     .ThenByDescending(i => i.Entry.Data.Subkind)
+                                     .ThenBy(i => i.Entry.Data.Kind)
+                                     .ThenBy(i => languages.Translate(i.Entry.Data.Name))
+                                     .ToList();
 
             var metaBlueprint = new Blueprint(languages,
                 "",
