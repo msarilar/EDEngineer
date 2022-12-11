@@ -312,7 +312,10 @@ namespace EDEngineer.Views
                             Settings.Default.ShoppingList.Add(text);
                         }
 
-                        Settings.Default.Save();
+                        if (!importingShoppingList)
+                        {
+                            Settings.Default.Save();
+                        }
                     }
                 };
             }
@@ -400,8 +403,12 @@ namespace EDEngineer.Views
             {
                 blueprint.ShoppingListCount += i;
 
-                OnPropertyChanged(nameof(ShoppingList));
-                OnPropertyChanged(nameof(ShoppingListItem));
+                // Don't bother UI when there is import in progress.
+                if (!importingShoppingList)
+                {
+                    OnPropertyChanged(nameof(ShoppingList));
+                    OnPropertyChanged(nameof(ShoppingListItem));
+                }
             }
         }
 
@@ -409,6 +416,7 @@ namespace EDEngineer.Views
         {
             if (Helpers.TryRetrieveShoppingList(out var shoppingListItems))
             {
+                importingShoppingList = true;
                 var blueprints = State.Blueprints;
 
                 if (shoppingListItems != null && shoppingListItems.Count > 0)
@@ -433,6 +441,7 @@ namespace EDEngineer.Views
                             break;
                         case MessageBoxResult.Cancel:
                             // User pressed Cancel button so skip out of Import
+                            importingShoppingList = false;
                             return;
                     }
 
@@ -441,7 +450,7 @@ namespace EDEngineer.Views
                 }
 
                 RefreshShoppingList();
-
+                importingShoppingList = false;
             }
         }
 
@@ -478,13 +487,20 @@ namespace EDEngineer.Views
 
         public void ClearShoppingList()
         {
+            var importingShoppingListOld = importingShoppingList;
+            importingShoppingList = true;
+
             foreach (var tuple in ShoppingList.Composition.ToList())
             {
                 ShoppingListChange(tuple.Item1, tuple.Item2 * -1);
             }
+
+            importingShoppingList = importingShoppingListOld;
         }
 
         public int ShoppingListItem => 0;
+
+        public bool importingShoppingList { get; private set; }
 
         public override string ToString()
         {
