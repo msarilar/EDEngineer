@@ -248,17 +248,12 @@ namespace EDEngineer.Views
                 yield break;
             }
 
-            var composition = new List<BlueprintIngredient>();
-            foreach (var i in ingredients)
-            {
-                composition.Add(new BlueprintIngredient(i.Key, i.Value));
-            }
-
-            composition = composition.OrderBy(i => i.Entry.Count - i.Size > 0 ? 1 : 0)
-                                     .ThenByDescending(i => i.Entry.Data.Subkind)
-                                     .ThenBy(i => i.Entry.Data.Kind)
-                                     .ThenBy(i => languages.Translate(i.Entry.Data.Name))
-                                     .ToList();
+            var composition = ingredients.Select(i => new BlueprintIngredient(i.Key, i.Value))
+                                         .OrderBy(i => i.Entry.Count - i.Size > 0 ? 1 : 0)
+                                         .ThenByDescending(i => i.Entry.Data.Subkind)
+                                         .ThenBy(i => i.Entry.Data.Kind)
+                                         .ThenBy(i => languages.Translate(i.Entry.Data.Name))
+                                         .ToList();
 
             var metaBlueprint = new Blueprint(languages,
                 "",
