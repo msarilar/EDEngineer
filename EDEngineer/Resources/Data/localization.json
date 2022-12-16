@@ -6950,7 +6950,7 @@
       "tr": "Derin Manto Örneği"
     },
     "Compression-Liquefied Gas": {
-      "es": null,
+      "es": "Gas licuado comprimido",
       "pt": null,
       "de": "Komprimiertes Flüssiggas",
       "fr": "Gaz liquéfié",
@@ -6986,7 +6986,7 @@
       "tr": "Kimyasal Katalizör"
     },
     "Circuit Board": {
-      "es": null,
+      "es": "Placa base",
       "pt": null,
       "de": "Schaltplatte",
       "fr": "Circuit imprimé",
@@ -6998,7 +6998,7 @@
       "tr": "Devre Kartı"
     },
     "Circuit Switch": {
-      "es": null,
+      "es": "Conmutador",
       "pt": null,
       "de": "Elektroschalter",
       "fr": "Commutateur",
@@ -7010,7 +7010,7 @@
       "tr": "Devre Anahtarı"
     },
     "Encrypted Memory Chip": {
-      "es": null,
+      "es": "Chip de memoria cifrado",
       "pt": null,
       "de": "Verschlüsselter Speicherchip",
       "fr": "Puce mémoire cryptée",
@@ -7022,7 +7022,7 @@
       "tr": "Çözülmüş Hafıza Çipi"
     },
     "Memory Chip": {
-      "es": null,
+      "es": "Chip de memoria",
       "pt": null,
       "de": "Speicherchip",
       "fr": "Puce mémoire",
@@ -7034,7 +7034,7 @@
       "tr": "Hafıza Çipi"
     },
     "Micro Supercapacitor": {
-      "es": null,
+      "es": "Microsupercondensador",
       "pt": null,
       "de": "Mikro-Superkondensatoren",
       "fr": "Microsupercondensateur",
@@ -7046,7 +7046,7 @@
       "tr": "Mikro Süperkapasitör"
     },
     "Micro Transformer": {
-      "es": null,
+      "es": "Microtransformador",
       "pt": null,
       "de": "Mikro-Transformator",
       "fr": "Microtransformateur",
@@ -7058,7 +7058,7 @@
       "tr": "Mikro Transformatör"
     },
     "Optical Lens": {
-      "es": null,
+      "es": "Lente óptica",
       "pt": null,
       "de": "Optische Linse",
       "fr": "Lentille optique",
@@ -7070,7 +7070,7 @@
       "tr": "Optik Lens"
     },
     "Scrambler": {
-      "es": null,
+      "es": "Desmodulador",
       "pt": null,
       "de": "Störsender",
       "fr": "Brouilleur",
@@ -7082,7 +7082,7 @@
       "tr": "Karıştırıcı"
     },
     "RDX": {
-      "es": null,
+      "es": "RDX",
       "pt": null,
       "de": "Hexogen",
       "fr": "RDX",
@@ -7094,7 +7094,7 @@
       "tr": "RDX"
     },
     "Oxygenic Bacteria": {
-      "es": null,
+      "es": "Bacterias oxigénicas",
       "pt": null,
       "de": "Sauerstoffbakterien",
       "fr": "Bactérie oxygénique",
@@ -7106,7 +7106,7 @@
       "tr": "Oksijenik Bakteriler"
     },
     "pH Neutraliser": {
-      "es": null,
+      "es": "Neutralizador de pH",
       "pt": null,
       "de": "pH-Neutralisator",
       "fr": "Neutralisateur de pH",
@@ -7118,7 +7118,7 @@
       "tr": "pH Dengeleyicisi"
     },
     "Ion Battery": {
-      "es": null,
+      "es": "Batería de iones",
       "pt": null,
       "de": "Ionen-Batterie",
       "fr": "Batterie ionique",
@@ -7130,7 +7130,7 @@
       "tr": "İyon Bataryası"
     },
     "Microelectrode": {
-      "es": null,
+      "es": "Microelectrodo",
       "pt": null,
       "de": "Mikroelektrode",
       "fr": "Microélectrode",
@@ -7142,7 +7142,7 @@
       "tr": "Mikroelektrot"
     },
     "Aerogel": {
-      "es": null,
+      "es": "Aerogel",
       "pt": null,
       "de": "Aerogel",
       "fr": "Aérogel",
@@ -7154,7 +7154,7 @@
       "tr": "Aerojel"
     },
     "Chemical Superbase": {
-      "es": null,
+      "es": "Superbase química",
       "pt": null,
       "de": "Chemische Superbase",
       "fr": "Superbase chimique",
@@ -7166,7 +7166,7 @@
       "tr": "Kimyasal Süper Baz"
     },
     "Electrical Wiring": {
-      "es": null,
+      "es": "Cables eléctricos",
       "pt": null,
       "de": "Elektroverkabelung",
       "fr": "Câblage électrique",
@@ -7178,7 +7178,7 @@
       "tr": "Elektrik Kablolaması"
     },
     "Viscoelastic Polymer": {
-      "es": null,
+      "es": "Polímetro viscoelástico",
       "pt": null,
       "de": "Viskoelastisches Polymer",
       "fr": "Polymère viscoélastique",
@@ -7190,7 +7190,7 @@
       "tr": "Viskoelastik Polimer"
     },
     "Carbon Fibre Plating": {
-      "es": null,
+      "es": "Placa de fibra de carbono",
       "pt": null,
       "de": "Carbonfaserplatten",
       "fr": "Plaques en fibres de carbone",
@@ -7202,7 +7202,7 @@
       "tr": "Karbon Fiber Kaplama"
     },
     "Optical Fibre": {
-      "es": null,
+      "es": "Fibra óptica",
       "pt": null,
       "de": "Glasfaser",
       "fr": "Fibre optique",
@@ -7214,7 +7214,7 @@
       "tr": "Fiber Optik"
     },
     "Health Monitor": {
-      "es": null,
+      "es": "Monitor de salud",
       "pt": null,
       "de": "Gesundheitsmonitor",
       "fr": "Moniteur médical",
@@ -7226,7 +7226,7 @@
       "tr": "Sağlık Ekranı"
     },
     "Building Schematic": {
-      "es": null,
+      "es": "Esquema de edificio",
       "pt": null,
       "de": "Gebäudeplan",
       "fr": "Plan de bâtiment",
@@ -7238,7 +7238,7 @@
       "tr": "Bina Şeması"
     },
     "Infinity": {
-      "es": null,
+      "es": "Infinity",
       "pt": null,
       "de": "Unendlichkeit",
       "fr": "Infini",
@@ -7250,7 +7250,7 @@
       "tr": "Sınırsız"
     },
     "Insight Entertainment Suite": {
-      "es": null,
+      "es": "Paquete de entretenimiento de Insight",
       "pt": null,
       "de": "Insight-Entertainment-Bibliothek",
       "fr": "Divertissements Insight",
@@ -7262,7 +7262,7 @@
       "tr": "İçgörü Eğlence Kıyafeti"
     },
     "Nutritional Concentrate": {
-      "es": null,
+      "es": "Concentrado nutritivo",
       "pt": null,
       "de": "Nahrungskonzentrat",
       "fr": "Concentré nutritif",
@@ -7274,7 +7274,7 @@
       "tr": "Besin Konsantresi"
     },
     "Suit Schematic": {
-      "es": null,
+      "es": "Esquema de traje",
       "pt": null,
       "de": "Anzugplan",
       "fr": "Plan de combinaison",
@@ -7286,7 +7286,7 @@
       "tr": "Giysi Şematiği"
     },
     "Universal Translator": {
-      "es": null,
+      "es": "Traductor universal",
       "pt": null,
       "de": "Universal-Übersetzer",
       "fr": "Traducteur universel",
@@ -7298,7 +7298,7 @@
       "tr": "Evrensel Çevirici"
     },
     "Degraded Power Regulator": {
-      "es": null,
+      "es": "Regulador de potencia degradado",
       "pt": null,
       "de": "Ausrangierter Energieregulator",
       "fr": "Régulateur de puissance endommagé",
@@ -7310,7 +7310,7 @@
       "tr": "Düşük Güç Regülatörü"
     },
     "Insight": {
-      "es": null,
+      "es": "Insight",
       "pt": null,
       "de": "Insight",
       "fr": "Insight",
@@ -7322,7 +7322,7 @@
       "tr": "İçgörü"
     },
     "Microbial Inhibitor": {
-      "es": null,
+      "es": "Inhibidor microbiano",
       "pt": null,
       "de": "Mikrobieller Hemmstoff",
       "fr": "Inhibiteur microbien",
@@ -7334,7 +7334,7 @@
       "tr": "Mikrobik İnhibitör"
     },
     "Vehicle Schematic": {
-      "es": null,
+      "es": "Esquema de vehículo",
       "pt": null,
       "de": "Fahrzeugplan",
       "fr": "Plan de véhicule",
@@ -7346,7 +7346,7 @@
       "tr": "Araç Şematiği"
     },
     "Insight Data Bank": {
-      "es": null,
+      "es": "Banco de datos de Insight",
       "pt": null,
       "de": "Insight-Datenbank",
       "fr": "Banque de données d'Insight",
@@ -7358,7 +7358,7 @@
       "tr": "İçgörü Veri Bankası"
     },
     "Personal Documents": {
-      "es": null,
+      "es": "Documentos personales",
       "pt": null,
       "de": "Persönliche Dokumente",
       "fr": "Documents personnels",
@@ -7370,7 +7370,7 @@
       "tr": "Kişisel Dökümanlar"
     },
     "Ballistic Data": {
-      "es": null,
+      "es": "Datos balísticos",
       "pt": null,
       "de": "Ballistische Daten",
       "fr": "Données balistiques",
@@ -7382,7 +7382,7 @@
       "tr": "Balistik Veriler"
     },
     "Radioactivity Data": {
-      "es": null,
+      "es": "Datos de radioactividad",
       "pt": null,
       "de": "Daten zur Radioaktivität",
       "fr": "Relevés de radioactivité",
@@ -7394,7 +7394,7 @@
       "tr": "Radyoaktivite Verileri"
     },
     "Electromagnet": {
-      "es": null,
+      "es": "Electroimán",
       "pt": null,
       "de": "Elektromagnet",
       "fr": "Électroaimant",
@@ -7406,7 +7406,7 @@
       "tr": "Elektromanyetik"
     },
     "Motor": {
-      "es": null,
+      "es": "Motor",
       "pt": null,
       "de": "Motor",
       "fr": "Moteur",
@@ -7418,7 +7418,7 @@
       "tr": "Motor"
     },
     "Titanium Plating": {
-      "es": null,
+      "es": "Placa de titanio",
       "pt": null,
       "de": "Titanplatten",
       "fr": "Plaques en titane",
@@ -7430,7 +7430,7 @@
       "tr": "Titanyum Kaplama"
     },
     "Weapon Component": {
-      "es": null,
+      "es": "Componente de arma",
       "pt": null,
       "de": "Waffenkomponente",
       "fr": "Composant d'arme",
@@ -7442,7 +7442,7 @@
       "tr": "Silah Bileşeni"
     },
     "Electrical Fuse": {
-      "es": null,
+      "es": "Fusible",
       "pt": null,
       "de": "Elektrosicherung",
       "fr": "Fusible électrique",
@@ -7454,7 +7454,7 @@
       "tr": "Elektrik Sigortası"
     },
     "Epoxy Adhesive": {
-      "es": null,
+      "es": "Resina epoxi",
       "pt": null,
       "de": "Epoxy-Klebstoff",
       "fr": "Colle époxy",
@@ -7466,7 +7466,7 @@
       "tr": "Epoksi Yapıştırıcı"
     },
     "Tungsten Carbide": {
-      "es": null,
+      "es": "Carburo de tungsteno",
       "pt": null,
       "de": "Wolframcarbid",
       "fr": "Carbure de tungstène",
@@ -7478,7 +7478,7 @@
       "tr": "Tungsten Karbür"
     },
     "Manufacturing Instructions": {
-      "es": null,
+      "es": "Instrucciones de fabricación",
       "pt": null,
       "de": "Herstellungsanweisungen",
       "fr": "Guides industriels",
@@ -7490,7 +7490,7 @@
       "tr": "Üretim Talimatları"
     },
     "Push": {
-      "es": null,
+      "es": "Push",
       "pt": null,
       "de": "Push-Droge",
       "fr": "Boost",
@@ -7502,7 +7502,7 @@
       "tr": "Baskılamak"
     },
     "Synthetic Pathogen": {
-      "es": null,
+      "es": "Patógeno sintético",
       "pt": null,
       "de": "Synthetischer Erreger",
       "fr": "Pathogène de synthèse",
@@ -7514,7 +7514,7 @@
       "tr": "Sentetik Patojen"
     },
     "Metal Coil": {
-      "es": null,
+      "es": "Bobina de metal",
       "pt": null,
       "de": "Metallspule",
       "fr": "Bobine métallique",
@@ -7526,7 +7526,7 @@
       "tr": "Metal Bobin"
     },
     "Epinephrine": {
-      "es": null,
+      "es": "Epinefrina",
       "pt": null,
       "de": "Epinephrin",
       "fr": "Épinéphrine",
@@ -7538,7 +7538,7 @@
       "tr": "Epinefrin"
     },
     "Cast Fossil": {
-      "es": null,
+      "es": "Molde de fósil",
       "pt": null,
       "de": "Fossilienfund",
       "fr": "Moulage de fossile",
@@ -7550,7 +7550,7 @@
       "tr": "Fosil Dökümü"
     },
     "True Form Fossil": {
-      "es": null,
+      "es": "Fósil puro",
       "pt": null,
       "de": "Makelloses Fossil",
       "fr": "Fossile intact",
@@ -7562,7 +7562,7 @@
       "tr": "Bozulmamış Fosil"
     },
     "Californium": {
-      "es": null,
+      "es": "Californio",
       "pt": null,
       "de": "Californium",
       "fr": "Californium",
@@ -7574,7 +7574,7 @@
       "tr": "Kalifoniyum"
     },
     "Refinement Process Sample": {
-      "es": null,
+      "es": "Muestra de proceso refinado",
       "pt": null,
       "de": "Raffinerieverfahren-Probe",
       "fr": "Échantillon de production de raffinage",
@@ -7586,7 +7586,7 @@
       "tr": "İyileştirme İşlemi Örneği"
     },
     "Surveillance Equipment": {
-      "es": null,
+      "es": "Equipo de supervivencia",
       "pt": null,
       "de": "Überwachungsausrüstung",
       "fr": "Équipement de surveillance",
@@ -7598,7 +7598,7 @@
       "tr": "Gözetim Ekipmanı"
     },
     "Petrified Fossil": {
-      "es": null,
+      "es": "Fósil petrificado",
       "pt": null,
       "de": "Versteinertes Fossil",
       "fr": "Fossile pétrifié",
@@ -7610,7 +7610,7 @@
       "tr": "Taşlaşmış Fosil"
     },
     "Accident Logs": {
-      "es": null,
+      "es": "Registros de accidentes",
       "pt": null,
       "de": "Unfall-Logs",
       "fr": "Journaux d'accidents",
@@ -7622,7 +7622,7 @@
       "tr": "Kaza Kayıtları"
     },
     "Air Quality Reports": {
-      "es": null,
+      "es": "Registros de calidad del aire",
       "pt": null,
       "de": "Berichte zur Luftqualität",
       "fr": "Rapports de qualité de l'air",
@@ -7634,7 +7634,7 @@
       "tr": "Hava Kalitesi Raporları"
     },
     "Census Data": {
-      "es": null,
+      "es": "Datos censales",
       "pt": null,
       "de": "Zensusdaten",
       "fr": "Données de recensement",
@@ -7646,7 +7646,7 @@
       "tr": "Nüfus Sayım Verileri"
     },
     "Multimedia Entertainment": {
-      "es": null,
+      "es": "Entretenimiento multimedia",
       "pt": null,
       "de": "Multimedia-Unterhaltung",
       "fr": "Médiathèque",
@@ -7658,7 +7658,7 @@
       "tr": "Multimedya Eğlencesi"
     },
     "Recycling Logs": {
-      "es": null,
+      "es": "Registros de reciclaje",
       "pt": null,
       "de": "Recycling-Logs",
       "fr": "Journaux de recyclage",
@@ -7670,7 +7670,7 @@
       "tr": "Geri Dönüşüm Günlükleri"
     },
     "Residential Directory": {
-      "es": null,
+      "es": "Directorio residencial",
       "pt": null,
       "de": "Einwohnerverzeichnis",
       "fr": "Annuaire résidentiel",
@@ -7682,7 +7682,7 @@
       "tr": "Konut Dizini"
     },
     "Union Membership": {
-      "es": null,
+      "es": "Afiliación sindical",
       "pt": null,
       "de": "Gewerkschaftsmitgliedschaft",
       "fr": "Liste d'adhérents",
@@ -7694,7 +7694,7 @@
       "tr": "Birlik Üyeliği"
     },
     "Payroll Information": {
-      "es": null,
+      "es": "Información salarial",
       "pt": null,
       "de": "Gehaltsinformationen",
       "fr": "Informations salariales",
@@ -7706,7 +7706,7 @@
       "tr": "Bordro Bilgileri"
     },
     "Duty Rota": {
-      "es": null,
+      "es": "Turnos de guardia",
       "pt": null,
       "de": "Dienstpläne",
       "fr": "Planning professionnel",
@@ -7718,7 +7718,7 @@
       "tr": "Görev Rotası"
     },
     "Maintenance Logs": {
-      "es": null,
+      "es": "Registros de mantenimiento",
       "pt": null,
       "de": "Wartungs-Logs",
       "fr": "Journaux de maintenance",
@@ -7730,7 +7730,7 @@
       "tr": "Bakım Kayıtları"
     },
     "Topographical Surveys": {
-      "es": null,
+      "es": "Estudios topográficos",
       "pt": null,
       "de": "Topographische Erhebung",
       "fr": "Levés topographiques",
@@ -7742,7 +7742,7 @@
       "tr": "Topografik Araştırmalar"
     },
     "Travel Permits": {
-      "es": null,
+      "es": "Permisos de viaje",
       "pt": null,
       "de": "Reiseerlaubnisse",
       "fr": "Autorisations de déplacement",
@@ -7754,7 +7754,7 @@
       "tr": "Seyehat İzinleri"
     },
     "Mineral Survey": {
-      "es": null,
+      "es": "Estudio mineral",
       "pt": null,
       "de": "Mineralienübersicht",
       "fr": "Rapport de prospection",
@@ -7766,7 +7766,7 @@
       "tr": "Maden Araştırması"
     },
     "Mining Analytics": {
-      "es": null,
+      "es": "Análisis de minería",
       "pt": null,
       "de": "Abbau-Analytik",
       "fr": "Analyses minières",
@@ -7778,7 +7778,7 @@
       "tr": "Madenci Analizleri"
     },
     "Production Reports": {
-      "es": null,
+      "es": "Informes de producción",
       "pt": null,
       "de": "Produktionsberichte",
       "fr": "Rapports de production",
