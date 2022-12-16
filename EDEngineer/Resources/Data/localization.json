@@ -6842,7 +6842,7 @@
       "tr": "API'ye diğer bilgisayarlardan erişilsin mi? (yalnızca ne yaptığınızı biliyorsanız işaretleyin)"
     },
     "Power Regulator": {
-      "es": null,
+      "es": "Regulador de potencia",
       "pt": null,
       "de": "Energieregulator",
       "fr": "Régulateur de puissance",
@@ -6854,7 +6854,7 @@
       "tr": "Güç Regülatörü"
     },
     "Weapon Schematic": {
-      "es": null,
+      "es": "Esquema de arma",
       "pt": null,
       "de": "Waffenplan",
       "fr": "Plan d'arme",
@@ -6866,7 +6866,7 @@
       "tr": "Silah Şematiği"
     },
     "Chemical Sample": {
-      "es": null,
+      "es": "Muestra química",
       "pt": null,
       "de": "Chemieprobe",
       "fr": "Échantillon chimique",
@@ -6878,7 +6878,7 @@
       "tr": "Kimyasal Örnek"
     },
     "G-Meds": {
-      "es": null,
+      "es": "Medicinas G",
       "pt": null,
       "de": "G-Medizin",
       "fr": "Traitement gravitationnel",
@@ -6890,7 +6890,7 @@
       "tr": "G Kiti"
     },
     "Inertia Canister": {
-      "es": null,
+      "es": "Contenedor de inercia",
       "pt": null,
       "de": "Trägheits-Container",
       "fr": "Conteneur inertiel",
@@ -6902,7 +6902,7 @@
       "tr": "Alet Kutusu"
     },
     "Ionised Gas": {
-      "es": null,
+      "es": "Gas ionizado",
       "pt": null,
       "de": "Ionisiertes Gas",
       "fr": "Gaz ionisé",
@@ -6914,7 +6914,7 @@
       "tr": "İyonize Gaz"
     },
     "Personal Computer": {
-      "es": null,
+      "es": "Ordenador personal",
       "pt": null,
       "de": "Personal Computer",
       "fr": "Ordinateur personnel",
@@ -6926,7 +6926,7 @@
       "tr": "Kişisel Bilgisayar"
     },
     "Compact Library": {
-      "es": null,
+      "es": "Biblioteca compacta",
       "pt": null,
       "de": "Kompakt-Bibliothek",
       "fr": "Bibliothèque de poche",
@@ -6938,7 +6938,7 @@
       "tr": "Kompakt Kitaplık"
     },
     "Deep Mantle Sample": {
-      "es": null,
+      "es": "Muestra del manto profundo",
       "pt": null,
       "de": "Innerer-Mantel-Probe ",
       "fr": "Échantillon de manteau inférieur",
