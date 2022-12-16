@@ -7790,7 +7790,7 @@
       "tr": "Üretim Raporları"
     },
     "Faction News": {
-      "es": null,
+      "es": "Noticias de facción",
       "pt": null,
       "de": "Fraktionsnachrichten",
       "fr": "Actualité d'une faction",
@@ -7802,7 +7802,7 @@
       "tr": "Fraksiyon Haberleri"
     },
     "Influence Projections": {
-      "es": null,
+      "es": "Previsiones de influencia",
       "pt": null,
       "de": "Einfluss-Projektionen",
       "fr": "Perspectives",
@@ -7826,7 +7826,7 @@
       "tr": "Uydu Aktivite Kayıtları"
     },
     "Visitor Register": {
-      "es": null,
+      "es": "Registros de actividad estelar",
       "pt": null,
       "de": "Besucherliste",
       "fr": "Registre de visites",
@@ -7838,7 +7838,7 @@
       "tr": "Ziyaretçi Kaydı"
     },
     "Chemical Inventory": {
-      "es": null,
+      "es": "Inventario químico",
       "pt": null,
       "de": "Chemische Betsandsliste",
       "fr": "Inventaire chimique",
@@ -7850,7 +7850,7 @@
       "tr": "Kimyasal Envanter"
     },
     "Micro Thrusters": {
-      "es": null,
+      "es": "Microimpulsores",
       "pt": null,
       "de": "Mikro-Schubdüsen",
       "fr": "Micropropulseurs",
@@ -7862,7 +7862,7 @@
       "tr": "Mikro İticiler"
     },
     "Micro Hydraulics": {
-      "es": null,
+      "es": "Microhidráulica",
       "pt": null,
       "de": "Mikrohydraulikgeräte",
       "fr": "Micro hydraulique",
@@ -7874,7 +7874,7 @@
       "tr": "Mikro Hidrolik"
     },
     "Weapon Inventory": {
-      "es": null,
+      "es": "Inventario de armas",
       "pt": null,
       "de": "Waffeninventarliste",
       "fr": "Inventaire d'armement",
@@ -7886,7 +7886,7 @@
       "tr": "Silah Envanteri"
     },
     "Biometric Data": {
-      "es": null,
+      "es": "Datos biométricos",
       "pt": null,
       "de": "Biometrische Daten",
       "fr": "Données biométriques",
@@ -7898,7 +7898,7 @@
       "tr": "Biyometrik Veri"
     },
     "Campaign Plans": {
-      "es": null,
+      "es": "Planes de campaña",
       "pt": null,
       "de": "Kampagnenpläne",
       "fr": "Plans de campagne",
@@ -7910,7 +7910,7 @@
       "tr": "Kampanya Planları"
     },
     "Combat Training Material": {
-      "es": null,
+      "es": "Material de entrenamiento de combate",
       "pt": null,
       "de": "Kampftraining-Materialien",
       "fr": "Méthodes d'entraînement au combat",
@@ -7922,7 +7922,7 @@
       "tr": "Savaş Eğitim Materyali"
     },
     "Culinary Recipes": {
-      "es": null,
+      "es": "Recetas culinarias",
       "pt": null,
       "de": "Kulinarische Rezepte",
       "fr": "Recettes culinaires",
@@ -7934,7 +7934,7 @@
       "tr": "Mutfak Tarifleri"
     },
     "Employee Directory": {
-      "es": null,
+      "es": "Directorio de empleados",
       "pt": null,
       "de": "Mitarbeiterverzeichnis",
       "fr": "Registre des employés",
@@ -7946,7 +7946,7 @@
       "tr": "Çalışan Dizini"
     },
     "Evacuation Protocols": {
-      "es": null,
+      "es": "Protocolos de evacuación",
       "pt": null,
       "de": "Evakuierungsprotokolle",
       "fr": "Protocoles d'évacuation",
@@ -7958,7 +7958,7 @@
       "tr": "Tahliye Protokolleri"
     },
     "Purchase Requests": {
-      "es": null,
+      "es": "Solicitudes de compra",
       "pt": null,
       "de": "Kaufaufzeichnungen",
       "fr": "Demandes d'achats",
@@ -7970,7 +7970,7 @@
       "tr": "Satın Alım İstekleri"
     },
     "Next of Kin Records": {
-      "es": null,
+      "es": "Registros familiares",
       "pt": null,
       "de": "Angehörigen-Aufzeichnungen",
       "fr": "Liste de proches",
@@ -7982,7 +7982,7 @@
       "tr": "Akraba Listesi"
     },
     "Job Applications": {
-      "es": null,
+      "es": "Solicitudes de empleo",
       "pt": null,
       "de": "Bewerbungen",
       "fr": "Candidatures professionnelles",
@@ -7994,7 +7994,7 @@
       "tr": "İşe Alımlar"
     },
     "Exploration Journals": {
-      "es": null,
+      "es": "Diarios de exploración",
       "pt": null,
       "de": "Erkundungstagebücher",
       "fr": "Journaux d'exploration",
@@ -8006,7 +8006,7 @@
       "tr": "Keşif Günlükleri"
     },
     "Transmitter": {
-      "es": null,
+      "es": "Transmisor",
       "pt": null,
       "de": "Sender",
       "fr": "Transmetteur",
@@ -8018,7 +8018,7 @@
       "tr": "Verici"
     },
     "Propaganda": {
-      "es": null,
+      "es": "Propaganda",
       "pt": null,
       "de": "Propaganda",
       "fr": "Propagande",
@@ -8030,7 +8030,7 @@
       "tr": "Propaganda"
     },
     "Digital Designs": {
-      "es": null,
+      "es": "Diseños digitales",
       "pt": null,
       "de": "Digitale Konzepte",
       "fr": "Plans numériques",
@@ -8042,7 +8042,7 @@
       "tr": "Dijital Tasarımlar"
     },
     "Biochemical Agent": {
-      "es": null,
+      "es": "Agente bioquímico",
       "pt": null,
       "de": "Biochemischer Wirkstoff",
       "fr": "Agent biochimique",
@@ -8054,7 +8054,7 @@
       "tr": "Biyokimyasal Ajan"
     },
     "Hush": {
-      "es": null,
+      "es": "Hush",
       "pt": null,
       "de": "Schnurr-Droge",
       "fr": "Chut",
@@ -8066,7 +8066,7 @@
       "tr": "Sus"
     },
     "Lazarus": {
-      "es": null,
+      "es": "Lazarus",
       "pt": null,
       "de": "Lazarus-Droge",
       "fr": "Lazare",
@@ -8078,7 +8078,7 @@
       "tr": "Lazarus"
     },
     "Reactor Output Review": {
-      "es": null,
+      "es": "Informe de capacidad del reactor",
       "pt": null,
       "de": "Evaluirung der Reaktorleistung",
       "fr": "Évaluation énergétique",
@@ -8090,7 +8090,7 @@
       "tr": "Reaktör Çıkışı İncelemesi"
     },
     "Surveillance Logs": {
-      "es": null,
+      "es": "Registros de vigilancia",
       "pt": null,
       "de": "Überwachungs-Logs",
       "fr": "Journaux de surveillance",
@@ -8102,7 +8102,7 @@
       "tr": "Gözetim Günlükleri"
     },
     "Operational Manual": {
-      "es": null,
+      "es": "Manual de operaciones",
       "pt": null,
       "de": "Bedienungsanleitung",
       "fr": "Mode d'emploi",
@@ -8114,7 +8114,7 @@
       "tr": "Kullanım Klavuzu"
     },
     "Settlement Defence Plans": {
-      "es": null,
+      "es": "Planes de defensa del asentamiento",
       "pt": null,
       "de": "Siedlungsverteidigungspläne",
       "fr": "Plans de défense d'une installation",
@@ -8126,7 +8126,7 @@
       "tr": "Uydu Defans Planları"
     },
     "Conflict History": {
-      "es": null,
+      "es": "Historial de conflictos",
       "pt": null,
       "de": "Konflikthistorie",
       "fr": "Historique de conflit",
@@ -8138,7 +8138,7 @@
       "tr": "Karışıklık (Conflict) Geçmişi"
     },
     "Sales Records": {
-      "es": null,
+      "es": "Registros de ventas",
       "pt": null,
       "de": "Verkaufszahlen",
       "fr": "Historique des ventes",
@@ -8150,7 +8150,7 @@
       "tr": "Satış Kayıtları"
     },
     "Gene Sequencing Data": {
-      "es": null,
+      "es": "Datos de secuenciación genética",
       "pt": null,
       "de": "Gen-Sequenzierungsdaten",
       "fr": "Données de séquençage génétique",
@@ -8162,7 +8162,7 @@
       "tr": "Gen Sıralama Verileri"
     },
     "Chemical Formulae": {
-      "es": null,
+      "es": "Chemical Formulae",
       "pt": null,
       "de": "Chemische Formeln",
       "fr": "Formules chimiques",
@@ -8174,7 +8174,7 @@
       "tr": "Kimyasal Formüller"
     },
     "Plant Growth Charts": {
-      "es": null,
+      "es": "Gráficos de crecimiento de plantas",
       "pt": null,
       "de": "Diagramme zum Pflanzenwachstum",
       "fr": "Courbes de croissance végétale",
@@ -8186,7 +8186,7 @@
       "tr": "Bitki Büyüme Tabloları"
     },
     "Genetic Research": {
-      "es": null,
+      "es": "Estudio genético",
       "pt": null,
       "de": "Genforschung",
       "fr": "Recherches génétiques",
@@ -8198,7 +8198,7 @@
       "tr": "Genetik Araştırma"
     },
     "Cat Media": {
-      "es": null,
+      "es": "Catálogo de medios",
       "pt": null,
       "de": "Katzen-Medien",
       "fr": "Médiathèque féline",
@@ -8210,7 +8210,7 @@
       "tr": "Kedi Medyası"
     },
     "Literary Fiction": {
-      "es": null,
+      "es": "Ficción literaria",
       "pt": null,
       "de": "Belletristik",
       "ru": "Художественная литература",
@@ -8221,7 +8221,7 @@
       "tr": "Edebi Kurgu"
     },
     "Network Access History": {
-      "es": null,
+      "es": "Historial de acceso a la red",
       "pt": null,
       "de": "Netzwerkzugriffshistorie",
       "fr": "Historique réseau",
@@ -8233,7 +8233,7 @@
       "tr": "İnternet Geçmişi"
     },
     "Photo Albums": {
-      "es": null,
+      "es": "Álbumes de fotos",
       "pt": null,
       "de": "Fotoalben",
       "fr": "Albums photo",
@@ -8245,7 +8245,7 @@
       "tr": "Fotoğraf Albümleri"
     },
     "Tax Records": {
-      "es": null,
+      "es": "Registros fiscales",
       "pt": null,
       "de": "Steuerunterlagen",
       "fr": "Dossiers fiscaux",
@@ -8257,7 +8257,7 @@
       "tr": "Vergi Kayıtları"
     },
     "Internal Correspondence": {
-      "es": null,
+      "es": "Correspondencia interna",
       "pt": null,
       "de": "Interne Korrespondenz",
       "fr": "Mémo interne",
@@ -8269,7 +8269,7 @@
       "tr": "Dahili Yazışma"
     },
     "Ship Schematic": {
-      "es": null,
+      "es": "Esquema de nave",
       "pt": null,
       "de": "Schiffsplan",
       "fr": "Plan de vaisseau",
@@ -8281,7 +8281,7 @@
       "tr": "Gemi Şematiği"
     },
     "Pyrolytic Catalyst": {
-      "es": null,
+      "es": "Catalizador pirolítico",
       "pt": null,
       "de": "Pyrolytischer Katalysator",
       "fr": "Catalyseur pyrolytique",
@@ -8293,7 +8293,7 @@
       "tr": "Pirolitik Katalizör"
     },
     "Weapon Test Data": {
-      "es": null,
+      "es": "Datos de pruebas armamentísticas",
       "pt": null,
       "de": "Waffentestdaten",
       "fr": "Données de test d'armes",
@@ -8305,7 +8305,7 @@
       "tr": "Silah Test Verileri"
     },
     "Employee Genetic Data": {
-      "es": null,
+      "es": "Datos genéticos de empleados",
       "pt": null,
       "de": "Gen-Daten von Mitarbeitern",
       "fr": "Données génétiques d'employés",
