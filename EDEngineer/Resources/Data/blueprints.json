@@ -6425,6 +6425,37 @@
   },
   {
     "Type": "Heat Sink Launcher",
+    "Name": "Modified Heat Sink Launcher",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 8
+      },
+      {
+        "Name": "Niobium",
+        "Size": 6
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 6
+      },
+      {
+        "Name": "Mechanical Components",
+        "Size": 4
+      },
+    ]
+	"Effects": [
+      {
+        "Effect": "+100%",
+        "Property": "Capacity",
+        "IsGood": true
+      }
+  },
+  {
+    "Type": "Heat Sink Launcher",
     "Name": "Reinforced",
     "Engineers": [
       "Ram Tah",
