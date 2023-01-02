@@ -1798,13 +1798,14 @@
   },
   {
     "Name": "Thargoid Interdiction Telemetry",
-    "Rarity": "Standard",
+    "Rarity": "VeryRare",
     "FormattedName": "tg_interdictiondata",
     "Kind": "Data",
     "OriginDetails": [
       "Ship scanning (Thargoid interceptors)"
     ],
-    "Group": "ThargoidShip"
+    "Group": "ThargoidShip",
+    "MaximumCapacity": 200
   }, 
   {
     "Name": "Guardian Weapon Blueprint Segment",
