@@ -485,6 +485,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
@@ -498,6 +499,14 @@
                               FontSize="16"
                               FontFamily="/Resources/Fonts/#Euro Caps"
                               Grid.Column="1"
+                              ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show capped entries?'}"
+                              IsChecked="{Binding ShowFull, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <iconPacks:PackIconMaterial Kind="Texture" />
+                </ToggleButton>
+                <ToggleButton HorizontalAlignment="Stretch"
+                              FontSize="16"
+                              FontFamily="/Resources/Fonts/#Euro Caps"
+                              Grid.Column="2"
                               ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show only for favorites?'}"
                               IsChecked="{Binding ShowOnlyForFavorites, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="Star" Foreground="{StaticResource EliteOrangeBrush}" />
@@ -505,7 +514,7 @@
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
                               FontFamily="/Resources/Fonts/#Euro Caps"
-                              Grid.Column="2"
+                              Grid.Column="3"
                               ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Show information about resources?'}"
                               IsChecked="{Binding ShowOriginIcons, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="InformationOutline" Foreground="{StaticResource EliteOrangeBrush}" />
@@ -513,14 +522,14 @@
                 <ToggleButton HorizontalAlignment="Stretch"
                               FontSize="16"
                               FontFamily="/Resources/Fonts/#Euro Caps"
-                              Grid.Column="3"
+                              Grid.Column="4"
                               ToolTip="{Binding Languages.CurrentLanguage, Converter={x:Static localization:Languages.Instance}, ConverterParameter='Group ingredients?'}"
                               IsChecked="{Binding IngredientsGrouped, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
                     <iconPacks:PackIconMaterial Kind="PackageVariantClosed" Foreground="{StaticResource EliteOrangeBrush}" />
                 </ToggleButton>
                 <Border BorderBrush="{StaticResource EliteOrangeBrush}"
                         BorderThickness="2"
-                        Grid.Column="4">
+                        Grid.Column="5">
                     <ComboBox ItemsSource="{Binding Comparers}"
                                 SelectedItem="{Binding CurrentComparer, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                 HorizontalContentAlignment="Center"

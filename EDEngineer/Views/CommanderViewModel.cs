@@ -175,12 +175,15 @@ namespace EDEngineer.Views
                 e.Accepted = ((entry.Data.Kind & kind) == entry.Data.Kind || entry.Data.Kind == Kind.Unknown) &&
                        (parentViewModel.MaterialSubkindFilter == null || entry.Data.Kind == Kind.Data || parentViewModel.MaterialSubkindFilter == entry.Data.Subkind) &&
                        (parentViewModel.ShowZeroes || entry.Count != 0) &&
+                       (parentViewModel.ShowFull || entry.Count < entry.Data.MaximumCapacity) &&
                        (!parentViewModel.ShowOnlyForFavorites || favoritedBlueprints.Any(b => b.Ingredients.Any(i => i.Entry == entry)));
             };
 
             parentViewModel.PropertyChanged += (o, e) =>
             {
-                if (e.PropertyName == nameof(parentViewModel.ShowZeroes) || e.PropertyName == nameof(parentViewModel.ShowOnlyForFavorites))
+                if (e.PropertyName == nameof(parentViewModel.ShowZeroes) ||
+                    e.PropertyName == nameof(parentViewModel.ShowFull) ||
+                    e.PropertyName == nameof(parentViewModel.ShowOnlyForFavorites))
                 {
                     source.View.Refresh();
                 }
