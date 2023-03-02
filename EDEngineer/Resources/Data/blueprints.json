@@ -34290,6 +34290,31 @@
     ]
   },
   {
+    "Type": "Human",
+    "Name": "Sirius Modified Heat Sink Launcher",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Mechanical Components",
+        "Size": 5
+      },
+      {
+        "Name": "Mechanical Scrap",
+        "Size": 8
+      },
+      {
+        "Name": "Niobium",
+        "Size": 6
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 6
+      }
+    ]
+  },
+  {
     "Type": "Guardian",
     "Name": "Guardian Gauss Cannon (Fixed, Medium)",
     "Engineers": [
