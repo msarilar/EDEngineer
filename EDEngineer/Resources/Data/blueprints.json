@@ -18264,7 +18264,8 @@
         "IsGood": false
       }
     ],
-    "Grade": 5
+    "Grade": 5,
+    "CoriolisGuid": "dd804ba4-5186-44b5-a096-6490b5806165"
   },
   {
     "Type": "Fuel Transfer Limpet Controller",
