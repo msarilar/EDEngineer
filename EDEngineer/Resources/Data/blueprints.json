@@ -6445,14 +6445,15 @@
       {
         "Name": "Mechanical Components",
         "Size": 4
-      },
-    ]
-	"Effects": [
+      }
+    ],
+    "Effects": [
       {
         "Effect": "+100%",
         "Property": "Capacity",
         "IsGood": true
       }
+    ]
   },
   {
     "Type": "Heat Sink Launcher",
