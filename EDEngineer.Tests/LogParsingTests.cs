@@ -14,6 +14,9 @@ namespace EDEngineer.Tests
     [TestFixture]
     public class LogParsingTests
     {
+        private readonly JournalEntryConverter converter = new JournalEntryConverter(new ItemNameConverter(new List<EntryData>(), new Dictionary<string, Equipment>()),
+            Mock.Of<ISimpleDictionary<string, Entry>>(), new Languages(), new List<Blueprint>());
+
         [Test]
         public void Can_convert_loadout()
         {
@@ -590,12 +593,49 @@ namespace EDEngineer.Tests
             }";
             #endregion
 
-            var converter = new JournalEntryConverter(new ItemNameConverter(new List<EntryData>(), new Dictionary<string, Equipment>()),
-                Mock.Of<ISimpleDictionary<String, Entry>>(), new Languages(), new List<Blueprint>());
-
             var jObject = JObject.Parse(loadout);
 
             Check.ThatCode(() => converter.ExtractOperation(jObject, JournalEvent.Loadout)).DoesNotThrow();
+        }
+
+        [Test]
+        public void Can_parse_event()
+        {
+            #region json
+            const string json = @"{
+             ""timestamp"":""2023-03-17T01:40:41Z"",
+             ""event"":""Synthesis"",
+             ""Name"":""AX Dumbfire Ammo Premium"",
+             ""Materials"":[
+              {
+               ""Name"":""tungsten"",
+               ""count"":5
+              },
+              {
+               ""Name"":""mercury"",
+               ""count"":4
+              },
+              {
+               ""Name"":""polonium"",
+               ""count"":2
+              },
+              {
+               ""Name"":""tg_biomechanicalsconduits"",
+               ""Name_Localised"":""Bio-Mechanical Conduits"",
+               ""count"":5
+              },
+              {
+               ""Name"":""tg_shipflightdata"",
+               ""Name_Localised"":""Ship Flight Data"",
+               ""count"":6
+              }
+             ]
+            }";
+            #endregion
+
+            var jObject = JObject.Parse(json);
+
+            Check.ThatCode(() => converter.ExtractOperation(jObject, JournalEvent.Synthesis)).DoesNotThrow();
         }
     }
 }

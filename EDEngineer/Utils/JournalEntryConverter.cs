@@ -17,14 +17,37 @@ namespace EDEngineer.Utils
     public class JournalEntryConverter : JsonConverter
     {
         private readonly ItemNameConverter converter;
-        private readonly ISimpleDictionary<string, Entry> entries;
+        private readonly Func<string, string, Entry> getEntry;
         private readonly Languages languages;
         private static readonly HashSet<string> relevantJournalEvents = new HashSet<string>(Enum.GetNames(typeof(JournalEvent)));
 
         public JournalEntryConverter(ItemNameConverter converter, ISimpleDictionary<string, Entry> entries, Languages languages, IEnumerable<Blueprint> blueprints)
         {
             this.converter = converter;
-            this.entries = entries;
+            this.getEntry = (name, localizedName) =>
+            {
+                if(!entries.ContainsKey(name))
+                {
+                    if (string.IsNullOrEmpty(localizedName))
+                    {
+                        localizedName = name;
+                    }
+
+                    entries[name] = new Entry(new EntryData()
+                    {
+                        FormattedName = name,
+                        Name = localizedName,
+                        SettlementType = new string[0],
+                        BuildingType = new string[0],
+                        ContainerType = new string[0],
+                        Kind = Kind.Unknown,
+                        Rarity = Rarity.None,
+                        Group = Group.Item
+                    });
+                }
+
+                return entries[name];
+            };
             this.languages = languages;
         }
 
@@ -450,21 +473,21 @@ namespace EDEngineer.Utils
                 IngredientsConsumed = (data["Ingredients"]?.Select(c =>
                     {
                         dynamic cc = c;
-                        return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
-                    }) ?? Enumerable.Empty<Tuple<bool, string, int>>())
+                        return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count, (string)cc.Name_Localised);
+                    }) ?? Enumerable.Empty<Tuple<bool, string, int, string>>())
                     .Union(data["Materials"]?.Select(c =>
                     {
                         dynamic cc = c;
                         var filter = cc.Category == "Encoded" ? Kind.Data : Kind.Material;
-                        return Tuple.Create(converter.TryGet(filter, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
-                    }) ?? Enumerable.Empty<Tuple<bool, string, int>>())
+                        return Tuple.Create(converter.TryGet(filter, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count, (string)cc.Name_Localised);
+                    }) ?? Enumerable.Empty<Tuple<bool, string, int, string>>())
                     .Union(data["Commodities"]?.Select(c =>
                     {
                         dynamic cc = c;
-                        return Tuple.Create(converter.TryGet(Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count);
-                    }) ?? Enumerable.Empty<Tuple<bool, string, int>>())
+                        return Tuple.Create(converter.TryGet(Kind.Commodity, (string)cc.Name, out var ingredient), ingredient, (int)cc.Count, (string)cc.Name_Localised);
+                    }) ?? Enumerable.Empty<Tuple<bool, string, int, string>>())
                     .Where(c => c.Item1)
-                    .Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList()
+                    .Select(c => new BlueprintIngredient(getEntry(c.Item2, c.Item4), c.Item3)).ToList()
             };
 
             return operation.IngredientsConsumed.Any() ? operation : null;
@@ -734,7 +757,7 @@ namespace EDEngineer.Utils
                 var synthesisIngredientName = converter.GetOrCreate(Kind.Material, (string)cc.Name);
                 int? count = cc.Value ?? cc.Count;
 
-                synthesisOperation.IngredientsConsumed.Add(new BlueprintIngredient(entries[synthesisIngredientName],
+                synthesisOperation.IngredientsConsumed.Add(new BlueprintIngredient(getEntry(synthesisIngredientName, (string)cc.Name_Localised),
                     count ?? 1));
             }
 
@@ -771,8 +794,8 @@ namespace EDEngineer.Utils
                 IngredientsConsumed = data["Ingredients"].Select(c =>
                 {
                     dynamic cc = c;
-                    return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var rewardName), rewardName, (int)(cc.Value ?? cc.Count));
-                }).Where(c => c.Item1).Select(c => new BlueprintIngredient(entries[c.Item2], c.Item3)).ToList(),
+                    return Tuple.Create(converter.TryGet(Kind.Data | Kind.Material | Kind.Commodity, (string)cc.Name, out var rewardName), rewardName, (int)(cc.Value ?? cc.Count), (string)cc.Name_Localised);
+                }).Where(c => c.Item1).Select(c => new BlueprintIngredient(getEntry(c.Item2, c.Item4), c.Item3)).ToList(),
                 Modifiers = ExtractModifiers(data["Modifiers"]).ToList()
             };
 
