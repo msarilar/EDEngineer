@@ -1,4 +1,8 @@
 ﻿[
+    {
+        "Version": "1.1.6.26",
+        "Content": "* localization updates thanks to @qigel, @ovdro, @AwesomeGenius, @rdbn8310\r\n* fixed coriolis interop for G5 Wide Arc Interdictor thanks to @CMDR-WDX\r\n* blueprints updated with missing recipes thanks to @O-to-the-o, @windraver\r\n* fixed ingredients and added new thargoid stuff thanks to @seedubya\r\nh\r\n* handle unrecognized ingredients in synthesis logs to avoid crashing the app"
+    },
   {
     "Version": "1.1.6.25",
     "Content": "* Added group and rarity to the API cargo export"
