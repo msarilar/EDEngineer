@@ -107,6 +107,7 @@ namespace EDEngineer.Views
                                              {
                                                  if (e.PropertyName == "ShowOnlyForFavorites" ||
                                                      e.PropertyName == "ShowZeroes" ||
+                                                     e.PropertyName == "ShowFull" ||
                                                      e.PropertyName == "CurrentCommander" ||
                                                      e.PropertyName == "MaterialSubkindFilter" ||
                                                      e.PropertyName == "IngredientsGrouped")

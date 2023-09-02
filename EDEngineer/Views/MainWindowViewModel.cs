@@ -184,6 +184,7 @@ namespace EDEngineer.Views
         }
 
         private bool showZeroes = true;
+        private bool showFull = true;
         private bool showOnlyForFavorites;
         private bool showOriginIcons = true;
         private bool ingredientsGrouped;
@@ -201,6 +202,15 @@ namespace EDEngineer.Views
             set
             {
                 showZeroes = value;
+                OnPropertyChanged();
+            }
+        }
+        public bool ShowFull
+        {
+            get => showFull;
+            set
+            {
+                showFull = value;
                 OnPropertyChanged();
             }
         }

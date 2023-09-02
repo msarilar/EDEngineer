@@ -18,12 +18,25 @@ namespace EDEngineer.Views
         private readonly StateCargo stateCargo;
         private readonly ILanguage languages;
         private readonly List<IGrouping<Tuple<string, string>, Blueprint>> blueprints;
+        public List<Blueprint> list = null;
 
         public ShoppingListViewModel(StateCargo stateCargo, List<Blueprint> blueprints, ILanguage languages)
         {
             this.blueprints = blueprints.GroupBy(b => Tuple.Create(b.Type, b.BlueprintName)).ToList();
             this.stateCargo = stateCargo;
             this.languages = languages;
+            list = this.ToList();
+
+            foreach (var blueprint in blueprints)
+            {
+                blueprint.PropertyChanged += (o, e) =>
+                                             {
+                                                 if (e.PropertyName == "ShoppingListCount")
+                                                 {
+                                                     list = this.ToList();
+                                                 }
+                                             };
+            }
 
             foreach (var ingredientsValue in stateCargo.Ingredients)
             {
@@ -44,7 +57,7 @@ namespace EDEngineer.Views
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        public List<Blueprint> List => this.ToList();
+        public List<Blueprint> List => list;
         public ILanguage Languages => this.languages;
 
         public List<Tuple<Blueprint, int>> Composition
@@ -205,36 +218,37 @@ namespace EDEngineer.Views
         }
 
         public Dictionary<EntryData, int> Deduction =>
-            this.ToList()
-                .FirstOrDefault()
+            list.FirstOrDefault()
                 ?.Ingredients
                 .ToDictionary(i => i.Entry.Data, i => i.Size);
 
         public Dictionary<Entry, int> MissingIngredients =>
-            this.ToList()
-                .FirstOrDefault()
+            list.FirstOrDefault()
                 ?.Ingredients
                 .Where(i => i.Size - i.Entry.Count > 0)
                 .ToDictionary(i => i.Entry, i => i.Size - i.Entry.Count);
 
         public IEnumerator<Blueprint> GetEnumerator()
         {
-            var ingredients = blueprints
-                .SelectMany(b => b)
-                .SelectMany(b => Enumerable.Repeat(b, b.ShoppingListCount))
-                .SelectMany(b => b.Ingredients)
-                .ToList();
+            var ingredients = new Dictionary<Entry, int>();
+            foreach (var b in blueprints.SelectMany(b => b).Where(b => b.ShoppingListCount > 0))
+            {
+                foreach (var ingredient in b.Ingredients)
+                {
+                    if (!ingredients.ContainsKey(ingredient.Entry))
+                    {
+                        ingredients[ingredient.Entry] = 0;
+                    }
+                    ingredients[ingredient.Entry] += ingredient.Size * b.ShoppingListCount;
+                }
+            }
 
             if (!ingredients.Any())
             {
                 yield break;
             }
 
-            var composition = ingredients.GroupBy(i => i.Entry.Data.Name)
-                                         .Select(
-                                             i =>
-                                                 new BlueprintIngredient(i.First().Entry,
-                                                     i.Sum(c => c.Size)))
+            var composition = ingredients.Select(i => new BlueprintIngredient(i.Key, i.Value))
                                          .OrderBy(i => i.Entry.Count - i.Size > 0 ? 1 : 0)
                                          .ThenByDescending(i => i.Entry.Data.Subkind)
                                          .ThenBy(i => i.Entry.Data.Kind)
