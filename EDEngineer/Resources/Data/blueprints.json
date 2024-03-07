@@ -34348,6 +34348,68 @@
     ]
   },
   {
+    "Type": "Human",
+    "Name": "Sirius Modified AX Missile Rack (Large)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 9
+      },
+      {
+        "Name": "High Density Composites",
+        "Size": 10
+      },
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 20
+      },
+      {
+        "Name": "Military Supercapacitors",
+        "Size": 10
+      },
+      {
+        "Name": "Technetium",
+        "Size": 3
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 13
+      }
+    ]
+  },
+{
+    "Type": "Human",
+    "Name": "Sirius Modified AX Missile Rack (Medium)",
+    "Engineers": [
+      "@Technology"
+    ],
+    "Ingredients": [
+      {
+        "Name": "Heat Dispersion Plate",
+        "Size": 6
+      },
+      {
+        "Name": "High Density Composites",
+        "Size": 5
+      },
+      {
+        "Name": "Mechanical Equipment",
+        "Size": 12
+      },
+      {
+        "Name": "Military Supercapacitors",
+        "Size": 5
+      },
+      {
+        "Name": "Vanadium",
+        "Size": 8
+      }
+    ]
+  },
+  {
     "Type": "Guardian",
     "Name": "Guardian Gauss Cannon (Fixed, Medium)",
     "Engineers": [
